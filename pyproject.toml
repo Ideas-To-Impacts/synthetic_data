@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fideon-synth"
+version = "1.0.0"
+description = "Synthetic insurance documents with gold answers conforming to the canonical schema"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Proprietary" }
+
+dependencies = [
+    "reportlab>=4.0",
+    "PyMuPDF>=1.23",
+    "Pillow>=10.0",
+    "numpy>=1.24",
+    "jsonschema>=4.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+# only needed to measure how readable the scanned variants are
+ocr = ["rapidocr-onnxruntime>=1.3"]
+
+[project.scripts]
+fideon-synth = "fideon_synth.cli:main"
+
+[tool.setuptools]
+packages = ["fideon_synth", "fideon_synth.forms"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
