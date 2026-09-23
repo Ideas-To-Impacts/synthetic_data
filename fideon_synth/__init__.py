@@ -27,6 +27,7 @@ with it. ``examples/new_form.py`` is a working skeleton.
 """
 
 from .corpus import Built, Corpus, Report
+from .generator import SyntheticGenerator
 from .draw import Column, Sheet, Table, render
 from .fields import (NO_EVIDENCE, as_number, date_fv, derived, fmt_money, fv,
                      is_field, money, money_from, walk, yes_no)

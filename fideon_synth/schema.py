@@ -29,6 +29,8 @@ DOC_TYPE = "policy_check"
 
 #: Where the canonical schemas are checked out, in order of preference.
 CANDIDATES = [
+    Path(__file__).resolve().parent.parent / "config",
+    Path(r"E:\fideon-synth\config"),
     Path(r"E:\SML\SLM L1\config\canonical_schema"),
     Path(r"C:\SML\SLM L1\config\canonical_schema"),
     Path.home() / "SLM L1" / "config" / "canonical_schema",

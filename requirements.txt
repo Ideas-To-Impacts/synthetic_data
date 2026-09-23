@@ -1,0 +1,13 @@
+# Core dependencies for fideon-synth
+reportlab>=4.0
+PyMuPDF>=1.23
+Pillow>=10.0
+numpy>=1.24
+jsonschema>=4.0
+
+# PDF parsing and manipulation
+pdfplumber>=0.10.0
+
+# Optional / Testing dependencies
+pytest>=7.4
+rapidocr-onnxruntime>=1.3; extra == "ocr"

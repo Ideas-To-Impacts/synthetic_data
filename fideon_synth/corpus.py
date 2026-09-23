@@ -90,8 +90,8 @@ class Report:
 class Corpus:
     """One template, rendered to a directory, checked as it goes."""
 
-    def __init__(self, template, out_dir, schema_dir=None, scanned=True,
-                 profiles=None, indent=2):
+    def __init__(self, template, out_dir, schema_dir=None, scanned=False,
+                 profiles=None, indent=2, pdf_subdir="PDF", gold_subdir="gold_json"):
         self.template = template
         self.out = Path(out_dir)
         self.scanned = scanned
@@ -100,8 +100,8 @@ class Corpus:
         self.schema = CanonicalSchema.load(template.lob, schema_dir,
                                            template.doc_type)
 
-        self.pdf_dir = self.out / "pdf"
-        self.gold_dir = self.out / "gold"
+        self.pdf_dir = self.out / pdf_subdir
+        self.gold_dir = self.out / gold_subdir
         self.scan_dir = self.out / "scanned"
         self.scan_gold_dir = self.out / "gold_scanned"
         dirs = [self.pdf_dir, self.gold_dir]

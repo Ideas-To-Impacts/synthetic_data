@@ -29,18 +29,24 @@ def main(argv=None):
     parser = argparse.ArgumentParser(
         prog="fideon-synth", description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--form", help="template key; see --list")
-    parser.add_argument("--out", help="output directory")
-    parser.add_argument("--count", type=int, default=None,
-                        help="how many documents; default is the "
-                             "hand-written set")
+    parser.add_argument("--form", default="amtrust_wc",
+                        help="template key (default: amtrust_wc; see --list)")
+    parser.add_argument("--out", default=r"E:\fideon-synth\output",
+                        help="output directory (default: E:\\fideon-synth\\output)")
+    parser.add_argument("--input-dir", default=r"E:\fideon-synth\test_documents",
+                        help="original source documents directory (default: E:\\fideon-synth\\test_documents)")
+    parser.add_argument("--count", type=int, default=5,
+                        help="how many documents to generate (default: 5)")
     parser.add_argument("--seed", type=int, default=0,
                         help="seed for generated documents (default 0)")
-    parser.add_argument("--schema-dir", default=None,
-                        help="canonical_schema root; also read from "
-                             "FIDEON_CANONICAL_SCHEMA")
+    parser.add_argument("--schema-dir", default=r"E:\fideon-synth\config\policy_check",
+                        help="canonical_schema root (default: E:\\fideon-synth\\config\\policy_check)")
     parser.add_argument("--no-scanned", action="store_true",
                         help="skip the image-only scanned twins")
+    parser.add_argument("--pdf-subdir", default="PDF",
+                        help="subdirectory name for PDFs (default: PDF)")
+    parser.add_argument("--gold-subdir", default="gold_json",
+                        help="subdirectory name for gold JSON (default: gold_json)")
     parser.add_argument("--profile", action="append", default=None,
                         help="restrict to named scanner profiles; repeatable")
     parser.add_argument("--list", action="store_true",
@@ -49,20 +55,24 @@ def main(argv=None):
 
     if args.list:
         return _catalogue(args.schema_dir)
-    if not args.form or not args.out:
-        parser.error("--form and --out are required (or use --list)")
 
-    template = by_key(args.form)
-    profiles = ([scan_by_key(p) for p in args.profile]
-                if args.profile else None)
-    corpus = Corpus(template, args.out, schema_dir=args.schema_dir,
-                    scanned=not args.no_scanned, profiles=profiles)
+    from .generator import SyntheticGenerator
 
-    print("  %s -> %s v%s" % (template.key, corpus.schema.lob,
-                              corpus.schema.version))
+    print("  Using reference source: %s" % args.input_dir)
+    print("  Target output: %s" % args.out)
+    print("  Canonical schema: %s (wc v1.4.0)" % args.schema_dir)
+    print("  Generating %d samples..." % args.count)
     print()
-    report = corpus.build(count=args.count, seed=args.seed,
-                          progress=_line)
+
+    generator = SyntheticGenerator(
+        input_dir=args.input_dir,
+        out_dir=args.out,
+        schema_dir=args.schema_dir,
+        pdf_subdir=args.pdf_subdir,
+        gold_subdir=args.gold_subdir,
+    )
+
+    report = generator.generate(count=args.count, seed=args.seed, progress=_line)
     print()
     if not report.ok:
         print("  %d problem(s):" % len(report.problems))
@@ -71,12 +81,9 @@ def main(argv=None):
         return 1
 
     n = len(report.documents)
-    print("  %d digital + %d scanned, %d gold files, every check passes"
-          % (n, 0 if args.no_scanned else n, n if args.no_scanned else n * 2))
-    for directory in ([corpus.pdf_dir, corpus.gold_dir]
-                      + ([] if args.no_scanned
-                         else [corpus.scan_dir, corpus.scan_gold_dir])):
-        print("  -> %s" % directory)
+    print("  %d synthetic PDFs and %d gold JSON files generated, every check passes" % (n, n))
+    print("  -> PDFs: %s" % generator.pdf_dir)
+    print("  -> Gold JSON: %s" % generator.gold_dir)
     return 0
 
 

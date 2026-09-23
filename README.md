@@ -9,27 +9,21 @@ and each with an image-only scanned twin.
 ```bash
 pip install -e .
 
-fideon-synth --list
-fideon-synth --form leatherstocking_dwelling_fire --out ./out
-fideon-synth --form leatherstocking_dwelling_fire --out ./out --count 50
+# Generate 5 synthetic samples by default:
+fideon-synth
+
+# Generate N samples (e.g. 10):
+fideon-synth --count 10
+
+# Or customize input, output, and count explicitly:
+fideon-synth --input-dir E:\fideon-synth\test_documents --out E:\fideon-synth\output --count 10
 ```
 
-```python
-from fideon_synth import Corpus
-from fideon_synth.forms import LeatherstockingDwellingFire
-
-report = Corpus(LeatherstockingDwellingFire(), "out/").build(count=20)
-print(report.summary())
-assert report.ok
-```
-
-Output lands in four directories:
+Output lands in:
 
 ```
-out/pdf/            digital, with a real text layer
-out/gold/           gold for those
-out/scanned/        image-only, one scanner profile each
-out/gold_scanned/   gold for those
+output/PDF/          digital synthetic PDFs
+output/gold_json/    canonical gold JSON conforming to config/policy_check/
 ```
 
 ---
