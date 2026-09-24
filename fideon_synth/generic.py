@@ -40,7 +40,7 @@ from typing import Dict, List, Optional
 
 import fitz
 
-from . import overlay, pageref, structure
+from . import overlay, pageref, recover, structure
 from .corpus import Built, Report
 from .fields import NO_EVIDENCE, as_number, derived, fv, strip_evidence
 from .scan import by_key as scan_by_key, scan_pdf
@@ -894,6 +894,36 @@ def _drop_carrier(found, cell_list, carrier):
     return [f for f in found if id(f) not in drop]
 
 
+def _layer_line(layer, r):
+    """The text layer's characters printed across a line's box, in order -
+    with some slack, as a layer can sit a little off its print."""
+    band = fitz.Rect(r.x0 - 0.5 * r.height, r.y0, r.x1 + 3 * r.height, r.y1)
+    row = [ch for ch in layer
+           if band.contains(fitz.Point((ch.box.x0 + ch.box.x1) / 2, (ch.box.y0 + ch.box.y1) / 2))]
+    return "".join(ch.c for ch in sorted(row, key=lambda ch: ch.box.x0))
+
+
+def _layer_word(layer, r):
+    """The text layer's whole word(s) printed over ``r``, and their box: the
+    characters on its line that overlap it, grown to the word's ends."""
+    row = sorted((ch for ch in layer if ch.box.y0 < r.y1 and ch.box.y1 > r.y0
+                  and abs((ch.box.y0 + ch.box.y1) / 2 - (r.y0 + r.y1) / 2) < 0.5 * r.height),
+                 key=lambda ch: ch.box.x0)
+    hit = [k for k, ch in enumerate(row) if ch.box.x1 > r.x0 - 1 and ch.box.x0 < r.x1 + 1]
+    if not hit:
+        return "", r
+    a, b = hit[0], hit[-1]
+    gap = lambda k: row[k + 1].box.x0 - row[k].box.x1
+    while a > 0 and gap(a - 1) < 0.35 * row[a].box.height:
+        a -= 1
+    while b < len(row) - 1 and gap(b) < 0.35 * row[b].box.height:
+        b += 1
+    box = fitz.Rect(row[a].box)
+    for ch in row[a:b + 1]:
+        box |= ch.box
+    return "".join(ch.c for ch in row[a:b + 1]), box
+
+
 def _signature_ink(pages):
     """The printed label of a signature line with handwriting beside or over
     it - dark ink where no text is - or None. A scan draws the signature
@@ -976,11 +1006,25 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
         doc = fitz.open(str(source_pdf))
         built.pages = len(doc)
         found_all, plans, pages = [], [], []
+        recovered = {}
         for page in doc:
             ink = overlay.Ink(page)
-            visible = not overlay.invisible_text(page)
+            invisible = overlay.invisible_text(page)
+            visible = not invisible
             matrix = fitz.Identity if visible else overlay.calibrate(page, ink)
-            cell_list = overlay.cells(page, matrix, ink)
+            extra = drop = None
+            if recover.is_scanned(page, invisible):
+                # read the scan again: what its OCR layer left out or garbled
+                layer = overlay.layer_chars(page, matrix)
+                runs, drop = recover.reconcile(
+                    recover.read_page(page),
+                    lambda r, layer=layer: _layer_line(layer, r),
+                    lambda r, layer=layer: _layer_word(layer, r))
+                if runs:
+                    recovered[page.number] = runs
+                    extra = recover.as_chars(runs, matrix)
+                    visible = False                # draw as on a scan
+            cell_list = overlay.cells(page, matrix, ink, extra=extra, drop=drop)
             found = _drop_carrier(find_values(cell_list), cell_list, source_pdf.parent.parent.name)
             pages.append((page, ink, matrix, visible, cell_list, found))
         _sweep(pages, _carrier_marks(source_pdf.parent.parent.name))
@@ -1019,6 +1063,9 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
         laid_out = reader.read()
         for page, reps, ink, matrix in plans:
             overlay.apply(page, reps, ink, matrix)
+            if page.number in recovered:
+                recover.write_back(page, recovered[page.number],
+                                   [r.visible_rect for r in reps])
         doc.save(str(digital), garbage=3, deflate=True)
         doc.close()
 
@@ -1075,6 +1122,7 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
             "render": "scanned_only",
             "scanner_profile": stats["profile"],
             "values_replaced": sum(1 for f in found_all if f.new != f.text),
+            "text_recovered_by_ocr": sum(len(r) for r in recovered.values()),
             "date_shift_days": faker.days,
             "money_factor": round(faker.factor, 4),
             "synthetic": True,

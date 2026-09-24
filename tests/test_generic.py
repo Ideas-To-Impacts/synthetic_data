@@ -9,6 +9,7 @@ as a scan with an invisible OCR layer - the two kinds the corpus holds.
 from __future__ import annotations
 
 import json
+import re
 import sys
 from datetime import date
 
@@ -251,6 +252,56 @@ def test_leadered_schedule_drivers_units_and_discounts(tmp_path, schema, monkeyp
     discounts = {raw(d["description"]): d for d in gold["premium"]["discounts_and_credits"]}
     assert discounts["Discount if paid in full"]["amount"]["parsed"] == -22
     assert {"Claim Free Renewal", "Home Owner"} <= set(discounts)
+
+
+def _image_only(path, tmp_path, layer_lines=()):
+    """The page as a picture, with an invisible OCR layer holding only
+    ``layer_lines`` - none for a pure image scan."""
+    src = fitz.open(str(_digital(tmp_path / "print.pdf")))
+    pix = src[0].get_pixmap(dpi=200)
+    doc = fitz.open()
+    page = doc.new_page(width=612, height=792)
+    page.insert_image(page.rect, pixmap=pix)
+    for x, y, size, text in layer_lines:
+        page.insert_text((x, y), text, fontsize=size, fontname="tiro", render_mode=3)
+    doc.save(str(path))
+    return path
+
+
+def _ocr_source(tmp_path, layer_lines=()):
+    pytest.importorskip("rapidocr_onnxruntime")
+    folder = tmp_path / "data" / "Markel American Insurance Company" / "ocean_marine"
+    folder.mkdir(parents=True)
+    return _image_only(folder / "boat.pdf", tmp_path, layer_lines)
+
+
+def test_an_image_only_scan_is_read_by_ocr(tmp_path, schema):
+    # no text layer at all: without reading the image nothing would be
+    # replaced, and the original insured would ship in the synthetic copy
+    source = _ocr_source(tmp_path)
+    out = tmp_path / "out"
+    out.mkdir()
+    built = generic.synthesize(source, out / "b.pdf", out / "b.json", schema, Values("t"))
+    assert built.ok, built.problems
+    gold = json.loads(built.gold.read_text("utf-8"))
+    assert gold["fideon:provenance"]["text_recovered_by_ocr"] > 5
+    number = gold["policy"]["policy_number"]["raw"]
+    assert number.startswith("MSB0000") and number != "MSB00001028349"
+    assert gold["named_insured"]["primary_name"]["raw"] not in ORIGINALS
+
+
+def test_a_line_the_scan_layer_left_out_is_recovered(tmp_path, schema):
+    # the scanner's OCR kept every line but the FEIN; it is printed, so it
+    # is replaced and reaches the gold all the same
+    kept = [line for line in LINES if "FEIN" not in line[3]]
+    source = _ocr_source(tmp_path, kept)
+    out = tmp_path / "out"
+    out.mkdir()
+    built = generic.synthesize(source, out / "b.pdf", out / "b.json", schema, Values("t"))
+    assert built.ok, built.problems
+    gold = json.loads(built.gold.read_text("utf-8"))
+    fein = gold["named_insured"]["fein"]["raw"]
+    assert re.fullmatch(r"\d{2}-\d{7}", fein) and fein != "87-2200775"
 
 
 def test_calibrate_recovers_a_flipped_text_layer(tmp_path):

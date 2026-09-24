@@ -302,12 +302,29 @@ class Cell:
         return r
 
 
-def cells(page, matrix=fitz.Identity, ink: Optional[Ink] = None) -> List[Cell]:
+def layer_chars(page, matrix=fitz.Identity):
+    """The text layer's characters, in visible page coordinates."""
+    chars = []
+    for block in page.get_text("rawdict")["blocks"]:
+        for line in block.get("lines", []):
+            for span in line["spans"]:
+                for ch in span["chars"]:
+                    if ch["c"].strip() and ch["c"] != "\ufffd":
+                        ocr = fitz.Rect(ch["bbox"])
+                        chars.append(Char(ch["c"], ocr * matrix, ocr, span["font"],
+                                          span["size"], span.get("color", 0)))
+    return chars
+
+
+def cells(page, matrix=fitz.Identity, ink: Optional[Ink] = None,
+          extra=None, drop=None) -> List[Cell]:
     """Every cell on the page, top to bottom, left to right.
 
     Words and columns are told apart by the blank space printed between
     characters (see :meth:`Ink.blank`); without ``ink`` the text-layer boxes
-    are used instead."""
+    are used instead. ``extra`` adds characters read from the page image
+    that the layer lacks, and ``drop`` removes the layer's characters inside
+    the given rects (see :mod:`recover`)."""
     chars = []
     for block in page.get_text("rawdict")["blocks"]:
         for line in block.get("lines", []):
@@ -323,6 +340,11 @@ def cells(page, matrix=fitz.Identity, ink: Optional[Ink] = None) -> List[Cell]:
                     chars.append(Char(ch["c"], ocr * matrix, ocr, span["font"],
                                       span["size"], span.get("color", 0), space))
                     space = False
+    if drop:
+        chars = [ch for ch in chars if not any(
+            r.contains(fitz.Point((ch.box.x0 + ch.box.x1) / 2, (ch.box.y0 + ch.box.y1) / 2))
+            for r in drop)]
+    chars += list(extra or [])
     chars.sort(key=lambda ch: (ch.box.y1, ch.box.x0))
     # text printed twice a hair apart (a poor man's bold) is one text
     kept, recent = [], []

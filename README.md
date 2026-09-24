@@ -67,6 +67,22 @@ is not recognised and stays as printed; table rows are replaced but not
 labelled; a scaled total can differ from its scaled parts by a rounding unit.
 `FIDEON_KEEP_DIGITAL=1` keeps the pre-scan render for inspection.
 
+**Scanned sources are read again with OCR.** A scan's own text layer often
+drops or garbles printed text (a form number, a date stamp), and an image-only
+PDF has no text at all - text the generator cannot see is neither replaced nor
+put in the gold. With the OCR extra installed, each scanned page is re-read
+from its image and reconciled with its layer: missing text is added, garbled
+values and lines are replaced, and what is added is checked against the page
+like everything else. Install it with:
+
+```bash
+pip install -e ".[ocr]"
+```
+
+Without it, scanned pages are read from their text layer alone; set
+`FIDEON_NO_OCR=1` to skip it on purpose. It adds about six seconds per scanned
+page; pages with a real text layer are not re-read.
+
 ---
 
 ## The four checks

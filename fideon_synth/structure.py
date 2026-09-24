@@ -632,6 +632,8 @@ class Reader:
                     self._unit_set(rels[0], value)
                     self._use(f)
                 continue
+            if f.kind == "date" and "transaction" in label and "effective" in label:
+                _put(self.gold, "document.transaction_effective_date", self.field("date", f.new))
             if f.kind == "date" and "transaction" in label:
                 after = cell.text[f.end:].split()
                 word = after[0] if after else ""
@@ -1214,6 +1216,15 @@ class Reader:
         centers = {k: s.cx for k, s in cols.items() if k != "name"}
         value_left = min(s.rect.x0 for k, s in cols.items() if k != "name") - 25
         unit = self._current()
+        self.ded_type = None
+        above = self.lines[i - 1] if i and self.lines[i - 1].page == head.page else None
+        if above is not None and "deductible" in cols and \
+                head.y - above.y < 1.8 * max(head.height, above.height):
+            d = cols["deductible"]
+            for s in above.segs:
+                if s.found is None and s.rect.x1 > d.rect.x0 - 4 and s.rect.x0 < d.rect.x1 + 4 \
+                        and re.fullmatch(r"[A-Za-z]{3,}", s.text):
+                    self.ded_type = fv(s.text, s.text.title())
         prev, j = head.y, i + 1
         name_x, last, pending, included = None, None, None, None
         last_x = last_line = None
@@ -1339,10 +1350,14 @@ class Reader:
                     continue
                 item = self._coverage(unit, name, vals, extra, forms, said_name, said_extra)
                 item.setdefault("coverage_description", fv(pending["name"]))
+                pending["used"] = True             # a group heading, spent on its rows
                 last = item
                 continue
+            # a name printed on the line over its row's values - one that
+            # reads on: "Coverage M - Owners, Landlords, and Tenants (OLT),"
             if pending and name and not pending.get("item") and not pending.get("desc") \
-                    and abs(x0 - pending["x"]) < 3:
+                    and not pending.get("used") and abs(x0 - pending["x"]) < 3 \
+                    and re.search(r"(?:[,\-/&]|\b(?:and|of|or|for|the))$", pending["name"], re.I):
                 whole = pending["name"] + " " + name
                 pending = None
                 last = self._coverage(unit, whole, vals, extra, forms, fv(whole), said_extra)
@@ -1432,6 +1447,9 @@ class Reader:
             name = next((n for n in self.coverage_names if n.endswith(" " + name)), name)
         key = "form_title" if forms else "coverage_name"
         item = {key: fv(name, evidence=(said or {}).get("_evidence", printed))}
+        if vals.get("deductible") is not None and getattr(self, "ded_type", None) is not None \
+                and not INCLUDED.match(vals["deductible"].text):
+            item["deductible_type"] = copy.deepcopy(self.ded_type)
         for col, field in (("limit", "limit_amount"), ("deductible", "deductible_amount"),
                            ("premium", "premium")):
             s = vals.get(col)
