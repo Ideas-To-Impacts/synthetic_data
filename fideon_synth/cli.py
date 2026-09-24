@@ -7,6 +7,9 @@ Command line for fideon-synth.
     fideon-synth --form leatherstocking_dwelling_fire --out ./out --count 50
     fideon-synth --form ... --out ./out --no-scanned --seed 7
 
+    # generic: every PDF under a folder (or one PDF), --count samples each
+    fideon-synth --source "Data\\original data\\Markel American Insurance Company" --out ./out --count 1
+
 Exits non-zero if any document fails a check, so it can sit in a build
 without anyone having to read the output to find out whether it worked.
 """
@@ -33,8 +36,8 @@ def main(argv=None):
                         help="template key (default: amtrust_wc; see --list)")
     parser.add_argument("--out", default=r"E:\fideon-synth\output",
                         help="output directory (default: E:\\fideon-synth\\output)")
-    parser.add_argument("--input-dir", default=r"Data\original PDFs",
-                        help="original source documents directory (default: Data\\original PDFs)")
+    parser.add_argument("--input-dir", default=r"Data\original data",
+                        help="original source documents directory (default: Data\\original data)")
     parser.add_argument("--count", type=int, default=5,
                         help="how many documents to generate (default: 5)")
     parser.add_argument("--seed", type=int, default=0,
@@ -56,6 +59,9 @@ def main(argv=None):
                         help="dwelling_fire only: restrict to sources whose carrier/name contains this text; repeatable")
     parser.add_argument("--list", action="store_true",
                         help="show templates, schemas and scanner profiles")
+    parser.add_argument("--source", default=None,
+                        help="generic mode: a source PDF, or a folder whose PDFs are all used; "
+                             "--count is then samples per PDF")
     args = parser.parse_args(argv)
 
     if args.list:
@@ -63,6 +69,9 @@ def main(argv=None):
 
     if args.lob == "dwelling_fire":
         return _dwelling_fire(args)
+
+    if args.source:
+        return _generic(args)
 
     from .generator import SyntheticGenerator
 
@@ -118,6 +127,30 @@ def _dwelling_fire(args):
     print("  -> PDFs: %s" % generator.pdf_root)
     print("  -> Gold JSON: %s" % generator.gold_root)
     return 0
+
+
+def _generic(args):
+    from .generic import generate_folder
+
+    source = Path(args.source)
+    if not source.exists():
+        print("  Source not found: %s" % source)
+        return 2
+    print("  Source: %s" % source)
+    print("  Target output: %s" % args.out)
+    print("  %d sample(s) per PDF" % args.count)
+    print()
+    report = generate_folder(source, args.out, schema_dir=args.schema_dir,
+                             count=args.count, seed=args.seed,
+                             pdf_subdir=args.pdf_subdir, gold_subdir=args.gold_subdir,
+                             progress=_line)
+    print()
+    n = len(report.documents)
+    bad = [d for d in report.documents if not d.ok]
+    print("  %d synthetic PDFs, %d with problems" % (n, len(bad)))
+    print("  -> PDFs: %s" % (Path(args.out) / args.pdf_subdir))
+    print("  -> Gold JSON: %s" % (Path(args.out) / args.gold_subdir))
+    return 1 if bad else 0
 
 
 def _line(built):

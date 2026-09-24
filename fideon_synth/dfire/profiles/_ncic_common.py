@@ -81,7 +81,7 @@ def keep_entries(source, replace, skip_fonts=()):
     import fitz
     from pathlib import Path
     from ...generator import _base14
-    root = Path(__file__).resolve().parents[3] / "Data" / "original PDFs"
+    root = Path(__file__).resolve().parents[3] / "Data" / "original data"
     doc = fitz.open(str(root / source))
     seen, out, skipped = set(), [], set()
     for page in doc:

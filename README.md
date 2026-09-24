@@ -16,7 +16,7 @@ fideon-synth
 fideon-synth --count 10
 
 # Or customize input, output, and count explicitly:
-fideon-synth --input-dir "Data\original PDFs" --out E:\fideon-synth\output --count 10
+fideon-synth --input-dir "Data\original data" --out E:\fideon-synth\output --count 10
 ```
 
 Output lands in:
@@ -25,6 +25,47 @@ Output lands in:
 output/PDF/          high-quality image-only scanned PDFs
 output/gold_json/    canonical gold JSON conforming to config/policy_check/
 ```
+
+## Any source document: `--source`
+
+The generic generator takes any source PDF - or every PDF under a folder -
+and makes synthetic twins of it, with no per-carrier code:
+
+```bash
+# one sample per PDF for a carrier
+fideon-synth --source "Data\original data\Markel American Insurance Company" --schema-dir config\policy_check --out output --count 1
+
+# 3 samples of one document
+fideon-synth --source "Data\original data\Progressive\auto\progressive_autob.pdf" --schema-dir config\policy_check --out output --count 3
+```
+
+Sources are read as `<Carrier>/<lob>/<file>.pdf`: the folder name picks the
+schema (`_fallback` if there is none), the carrier folder is the carrier.
+
+For each document it:
+
+1. reads the layout from the text layer - real text, or a scan's invisible
+   OCR layer (one that is flipped or scaled against the page is detected and
+   corrected);
+2. finds identifying values by shape and position - dates, money, phones,
+   emails, FEINs, policy/hull/account numbers, street and city lines, PO
+   boxes, and names above an address or under "Insured", "Agent", "Clients";
+3. replaces them consistently - one original, one replacement, everywhere it
+   is printed; every date by the same offset (terms stay valid); money by one
+   factor; identifiers keep their shape. The carrier's own name and address
+   stay;
+4. whites out the printed value and draws the new one at the size, baseline
+   and face (serif or sans) measured from the page, then rescans;
+5. matches each value's printed label to the schema's field names and
+   aliases for the gold. Values it changed but could not place confidently go
+   to `fideon:unmapped` with their label and pages - the gold never guesses.
+   A required section it found no label for is listed in `fideon:incomplete`.
+
+A document fails only if an original identifying value survives, or the gold
+claims a value that is not on the page. Known limits: a value the OCR misread
+is not recognised and stays as printed; table rows are replaced but not
+labelled; a scaled total can differ from its scaled parts by a rounding unit.
+`FIDEON_KEEP_DIGITAL=1` keeps the pre-scan render for inspection.
 
 ---
 

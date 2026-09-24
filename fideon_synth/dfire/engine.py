@@ -3,7 +3,7 @@ Engine for dwelling-fire synthetic documents.
 
 A *profile* (``profiles/<source stem>.py``) describes one source PDF:
 
-    SOURCE  = r"Carrier Folder\\dwelling_fire\\name.pdf"     # under Data/original PDFs
+    SOURCE  = r"Carrier Folder\\dwelling_fire\\name.pdf"     # under Data/original data
     draw(v, C)   -> dict of drawn values (v: seeded Values, C: dfire.corpora)
     REPLACE      = [ (printed_text, "{template}", {options}), ... ]
     gold(d)      -> gold dict shaped like the canonical dwelling_fire schema
@@ -592,7 +592,7 @@ def _date_problems(gold):
 # -- generation -------------------------------------------------------------------------
 
 class DwellingFireGenerator:
-    def __init__(self, input_dir=r"Data\original PDFs", out_dir="output",
+    def __init__(self, input_dir=r"Data\original data", out_dir="output",
                  schema_dir="config/policy_check", pdf_subdir="PDF",
                  gold_subdir="gold_json", scan=True):
         self.scan = scan
