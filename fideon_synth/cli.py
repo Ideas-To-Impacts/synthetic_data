@@ -49,12 +49,20 @@ def main(argv=None):
                         help="subdirectory name for gold JSON (default: gold_json)")
     parser.add_argument("--profile", action="append", default=None,
                         help="restrict to named scanner profiles; repeatable")
+    parser.add_argument("--lob", default="wc", choices=["wc", "dwelling_fire"],
+                        help="wc: the AmTrust workers' comp source (default); dwelling_fire: every "
+                             "dwelling_fire source PDF, --count variations of each")
+    parser.add_argument("--only", action="append", default=None,
+                        help="dwelling_fire only: restrict to sources whose carrier/name contains this text; repeatable")
     parser.add_argument("--list", action="store_true",
                         help="show templates, schemas and scanner profiles")
     args = parser.parse_args(argv)
 
     if args.list:
         return _catalogue(args.schema_dir)
+
+    if args.lob == "dwelling_fire":
+        return _dwelling_fire(args)
 
     from .generator import SyntheticGenerator
 
@@ -84,6 +92,31 @@ def main(argv=None):
     print("  %d synthetic PDFs and %d gold JSON files generated, every check passes" % (n, n))
     print("  -> PDFs: %s" % generator.pdf_dir)
     print("  -> Gold JSON: %s" % generator.gold_dir)
+    return 0
+
+
+def _dwelling_fire(args):
+    from .dfire.engine import DwellingFireGenerator
+
+    print("  Using reference sources: %s" % args.input_dir)
+    print("  Target output: %s" % args.out)
+    print("  Canonical schema: %s (dwelling_fire)" % args.schema_dir)
+    print("  Generating %d variation(s) of each dwelling_fire source..." % args.count)
+    print()
+    generator = DwellingFireGenerator(
+        input_dir=args.input_dir, out_dir=args.out, schema_dir=args.schema_dir,
+        pdf_subdir=args.pdf_subdir, gold_subdir=args.gold_subdir, scan=not args.no_scanned)
+    report = generator.generate(count=args.count, seed=args.seed, only=args.only, progress=_line)
+    print()
+    if not report.ok:
+        print("  %d problem(s):" % len(report.problems))
+        for problem in report.problems:
+            print("    - %s" % problem)
+        return 1
+    n = len(report.documents)
+    print("  %d synthetic PDFs and %d gold JSON files generated, every check passes" % (n, n))
+    print("  -> PDFs: %s" % generator.pdf_root)
+    print("  -> Gold JSON: %s" % generator.gold_root)
     return 0
 
 

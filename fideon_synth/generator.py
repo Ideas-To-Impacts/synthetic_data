@@ -54,7 +54,6 @@ COMPANY_PREFIX = [
     "Sawmill", "Tamarack", "Upland", "Valley Forge", "Westbrook",
 ]
 
-# noun, entity kinds it is used with
 COMPANY_NOUN = [
     "Realty", "Properties", "Hospitality", "Logistics", "Builders", "Timber & Mill",
     "Transport Services", "Lodging", "Contracting", "Excavating", "Landscaping",
@@ -66,7 +65,7 @@ COMPANY_NOUN = [
     "Nursery & Garden", "Stone Works", "Cabinetry", "Sign & Print", "Home Services",
 ]
 
-CORP_SUFFIX = ["Inc.", "Corp.", "Incorporated"]
+CORP_SUFFIX = ["Inc.", "Co.", "Corp.", "Company", "Incorporated"]
 
 AGENCY_HEAD = [
     "CHENANGO", "KEYSTONE", "DELAWARE", "GENESEE", "SUSQUEHANNA", "OTSEGO",
