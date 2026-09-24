@@ -67,6 +67,13 @@ class Profile:
 
 PROFILES = [
     Profile(
+        key="high_quality",
+        label="high-quality scan, 400 dpi",
+        dpi=400, jpeg_quality=98,
+        skew=(0.0, 0.0), blur=(0.0, 0.0), noise=(0.0, 0.0),
+        contrast=(1.0, 1.0), brightness=(1.0, 1.0),
+    ),
+    Profile(
         key="office_flatbed",
         label="office flatbed, 300 dpi",
         dpi=300, jpeg_quality=86,
