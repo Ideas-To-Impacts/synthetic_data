@@ -3,7 +3,7 @@
   "title": "Ocean Marine / Watercraft policy",
   "fideon:doc_type": "policy_check",
   "fideon:lob": "ocean_marine",
-  "fideon:note": "Generated from the supplied Watercraft schema v3.0.0 by scripts/build_canonical_policy_schemas.py, filed under `ocean_marine`. config/lob_registry.yaml decides that boats, watercraft and yachts ARE this line and that a second code would be another name for it. The previous hand-written file pointed five different sections at one 21-field `Item` definition, so it asserted that an operator and a form each have a hull material and a top speed. Do not hand-edit; edit the source and regenerate. Extended by scripts/canonical_schema_extensions.py with fields the supplied skeleton did not carry; re-run it after any regeneration. Hand-extended 2026-09-24 with fields and aliases seen in the Markel watercraft declarations and HawkSoft policy-history PDFs (scripts/ is not in this repo); carry these over if the file is regenerated. Hand-extended again 2026-09-24 with registration_number, operator years_of_experience/license_type/association_membership, premium paid_in_full_premium/total_discounts and billing remittance_address/phone, seen in the Progressive and Travelers boat PDFs; carry these over too. Hand-extended a third time 2026-09-24 after checking all six ocean_marine PDFs: billing payable_to/payment_options, navigation seasonal_restrictions, loss_history_none_reported, operators no_violations_reported, moorage_season, contact phone_type, document source_url/print_time, and aliases for labels those PDFs print; carry these over too. Aliases added 2026-09-24 for every remaining heading and label the six ocean_marine PDFs print.",
+  "fideon:note": "Generated from the supplied Watercraft schema v3.0.0 by scripts/build_canonical_policy_schemas.py, filed under `ocean_marine`. config/lob_registry.yaml decides that boats, watercraft and yachts ARE this line and that a second code would be another name for it. The previous hand-written file pointed five different sections at one 21-field `Item` definition, so it asserted that an operator and a form each have a hull material and a top speed. Do not hand-edit; edit the source and regenerate. Extended by scripts/canonical_schema_extensions.py with fields the supplied skeleton did not carry; re-run it after any regeneration. Hand-extended 2026-09-24 with fields and aliases seen in the Markel watercraft declarations and HawkSoft policy-history PDFs (scripts/ is not in this repo); carry these over if the file is regenerated. Hand-extended again 2026-09-24 with registration_number, operator years_of_experience/license_type/association_membership, premium paid_in_full_premium/total_discounts and billing remittance_address/phone, seen in the Progressive and Travelers boat PDFs; carry these over too. Hand-extended a third time 2026-09-24 after checking all six ocean_marine PDFs: billing payable_to/payment_options, navigation seasonal_restrictions, loss_history_none_reported, operators no_violations_reported, moorage_season, contact phone_type, document source_url/print_time, and aliases for labels those PDFs print; carry these over too. Aliases added 2026-09-24 for every remaining heading and label the six ocean_marine PDFs print. Aliases and the renewal_offer expiring_policy_expiration_date field added 2026-09-24 after auditing the six ocean_marine samples against their gold; \"Clients\" moved from contact.contact_name to additional_named_insureds; carry these over too. Fields watercraft[].personal_effects_limit, policy.policy_period_location_basis, document.print_code and billing.payment_coupon_scan_line added 2026-09-24, the last printed items of the six ocean_marine PDFs without a field; carry these over too. text_sections (with $defs.TextSection, as in dwelling_fire.json), policy.product_code and billing.billing_note added 2026-09-24 so the printed prose and the last unkeyed values of the six ocean_marine PDFs have a home; carry these over too.",
   "fideon:source": {
     "schema_id": "fideon.canonical.watercraft",
     "version": "3.0.0",
@@ -124,7 +124,8 @@
           "fideon:aliases": [
             "Print Time",
             "Printed At",
-            "Time Printed"
+            "Time Printed",
+            "Printed"
           ]
         },
         "page_count": {
@@ -157,7 +158,9 @@
             "Company Copy",
             "File Copy",
             "Insured Copy",
-            "Office Copy"
+            "Office Copy",
+            "Producer Copy",
+            "Agency Copy"
           ]
         },
         "batch_number": {
@@ -174,6 +177,13 @@
             "Changes",
             "Summary of Changes",
             "Summary of Your Changes"
+          ]
+        },
+        "print_code": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Print Code",
+            "Form Print Code"
           ]
         }
       }
@@ -250,7 +260,9 @@
             "website": {
               "$ref": "#/$defs/FieldValue",
               "fideon:aliases": [
-                "Online Service"
+                "Online Service",
+                "Log in at",
+                "Online at"
               ]
             }
           }
@@ -354,7 +366,11 @@
               "$ref": "#/$defs/FieldValue"
             },
             "website": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Website",
+                "Web Site"
+              ]
             }
           }
         },
@@ -462,7 +478,10 @@
           ]
         },
         "time_zone": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Standard Time"
+          ]
         },
         "policy_term_months": {
           "$ref": "#/$defs/FieldValue",
@@ -529,6 +548,21 @@
             "Insured Since",
             "Policyholder Since"
           ]
+        },
+        "policy_period_location_basis": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "At the residence premises",
+            "At the address of the named insured",
+            "Policy period location basis"
+          ]
+        },
+        "product_code": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Product Code",
+            "Use product code"
+          ]
         }
       }
     },
@@ -543,7 +577,12 @@
           ]
         },
         "doing_business_as": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Doing Business As",
+            "DBA",
+            "d/b/a"
+          ]
         },
         "entity_type": {
           "$ref": "#/$defs/FieldValue"
@@ -631,7 +670,8 @@
                 "Cell Phone",
                 "Home Phone",
                 "Work Phone",
-                "Phone Type"
+                "Phone Type",
+                "Mobile Phone"
               ]
             },
             "fax": {
@@ -650,9 +690,7 @@
             "contact_name": {
               "$ref": "#/$defs/FieldValue",
               "fideon:aliases": [
-                "Contact Name",
-                "Clients",
-                "Client"
+                "Contact Name"
               ]
             }
           }
@@ -725,7 +763,11 @@
                 }
               }
             }
-          }
+          },
+          "fideon:aliases": [
+            "Clients",
+            "Client"
+          ]
         }
       },
       "fideon:aliases": [
@@ -1029,7 +1071,8 @@
           "fideon:aliases": [
             "Total 12 month policy premium if paid in full",
             "Pay in Full",
-            "Paid in Full Premium"
+            "Paid in Full Premium",
+            "Total policy premium if paid in full"
           ]
         },
         "basic_premium": {
@@ -1472,7 +1515,23 @@
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "For Billing Questions",
-            "Billing Phone"
+            "Billing Phone",
+            "Call us at",
+            "By calling",
+            "Automatic Payments"
+          ]
+        },
+        "payment_coupon_scan_line": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Scan Line",
+            "Payment Coupon Scan Line"
+          ]
+        },
+        "billing_note": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "This is not a bill"
           ]
         }
       }
@@ -2115,6 +2174,13 @@
                   "Premium Summary",
                   "Unit Premium"
                 ]
+              },
+              "personal_effects_limit": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Personal Effects",
+                  "Personal Property"
+                ]
               }
             }
           },
@@ -2554,13 +2620,23 @@
           "type": "object",
           "properties": {
             "renewal_effective_date": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Renewal offer is for the policy period",
+                "Renewal Effective Date"
+              ]
             },
             "renewal_expiration_date": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Renewal Expiration Date"
+              ]
             },
             "renewal_premium": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "12-month policy premium excluding billing fees"
+              ]
             },
             "expiring_premium": {
               "$ref": "#/$defs/FieldValue"
@@ -2575,10 +2651,17 @@
               "$ref": "#/$defs/FieldValue"
             },
             "offer_issue_date": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Renewal Offer Date"
+              ]
             },
             "payment_due_date": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Renewal Payment Due By",
+                "Renewal Payment Due"
+              ]
             },
             "renewal_conditions": {
               "$ref": "#/$defs/FieldValue"
@@ -2605,6 +2688,14 @@
                   }
                 }
               }
+            },
+            "expiring_policy_expiration_date": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Current policy period ends",
+                "Your current policy will expire on",
+                "Current policy expires"
+              ]
             }
           }
         },
@@ -2649,7 +2740,11 @@
                 "type": "object",
                 "properties": {
                   "change_description": {
-                    "$ref": "#/$defs/FieldValue"
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "has been removed from your policy",
+                      "has been added to your policy"
+                    ]
                   },
                   "field_changed": {
                     "$ref": "#/$defs/FieldValue"
@@ -3825,6 +3920,12 @@
           }
         }
       }
+    },
+    "text_sections": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/TextSection"
+      }
     }
   },
   "$defs": {
@@ -3880,6 +3981,48 @@
           "type": "boolean"
         }
       }
+    },
+    "TextSection": {
+      "type": "object",
+      "description": "A block of printed text exactly as the document carries it: a prose paragraph, notice, condition or disclaimer, or the page's remaining label/footer text. Nothing the page prints is left out of the gold; structured fields above hold the values, these hold the words.",
+      "properties": {
+        "section_id": {
+          "type": "string"
+        },
+        "section_title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "section_type": {
+          "type": "string",
+          "enum": [
+            "prose",
+            "other"
+          ]
+        },
+        "raw_text": {
+          "type": "string"
+        },
+        "page_range": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "form_number": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "section_id",
+        "raw_text",
+        "page_range"
+      ]
     }
   }
 }

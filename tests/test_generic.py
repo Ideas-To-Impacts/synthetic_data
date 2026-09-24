@@ -296,6 +296,36 @@ def test_wrapped_dates_ruled_schedules_and_scan_lines_leave_nothing(tmp_path, sc
     assert [row["installment_number"]["parsed"] for row in plan] == [1, 2, 3, 4]
 
 
+def test_printed_prose_reaches_the_gold_as_text_sections(tmp_path, schema):
+    # a bold heading over a paragraph whose last line is one word, and a
+    # sentence carrying a replaced date: the gold holds the words as printed
+    folder = tmp_path / "data" / "Markel American Insurance Company" / "ocean_marine"
+    folder.mkdir(parents=True)
+    doc = fitz.open()
+    page = doc.new_page(width=612, height=792)
+    for x, y, size, text in LINES:
+        page.insert_text((x, y), text, fontsize=size, fontname="tiro")
+    page.insert_text((48, 400), "Deductibles", fontsize=11, fontname="hebo")
+    page.insert_text((60, 416), "All physical damage losses, regardless of loss settlement option and",
+                     fontsize=10, fontname="helv")
+    page.insert_text((60, 428), "whether partial or total, are subject to the applicable",
+                     fontsize=10, fontname="helv")
+    page.insert_text((60, 440), "deductible.", fontsize=10, fontname="helv")
+    page.insert_text((60, 470), "Your coverage begins on 08/26/2026 at 12:01 a.m. at the address shown.",
+                     fontsize=10, fontname="helv")
+    doc.save(str(folder / "prose.pdf"))
+    out = tmp_path / "out"
+    out.mkdir()
+    built = generic.synthesize(folder / "prose.pdf", out / "p.pdf", out / "p.json", schema, Values("t"))
+    assert built.ok, built.problems
+    sections = list(json.loads(built.gold.read_text("utf-8"))["text_sections"].values())
+    deductibles, = [s for s in sections if s["section_title"] == "Deductibles"]
+    assert deductibles["raw_text"].endswith("subject to the applicable deductible.")
+    assert deductibles["page_range"] == [1]
+    begins, = [s for s in sections if s["raw_text"].startswith("Your coverage begins on")]
+    assert "08/26/2026" not in begins["raw_text"]         # the replaced date, not the original
+
+
 def _image_only(path, tmp_path, layer_lines=()):
     """The page as a picture, with an invisible OCR layer holding only
     ``layer_lines`` - none for a pure image scan."""

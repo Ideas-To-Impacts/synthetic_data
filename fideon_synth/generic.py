@@ -41,7 +41,7 @@ from typing import Dict, List, Optional
 
 import fitz
 
-from . import overlay, pageref, recover, structure
+from . import overlay, pageref, prose, recover, structure
 from .corpus import Built, Report
 from .fields import NO_EVIDENCE, as_number, derived, fv, strip_evidence
 from .scan import by_key as scan_by_key, scan_pdf
@@ -180,7 +180,7 @@ SYNONYMS = {
 }
 KIND_FITS = {
     "date": re.compile(r"date"),
-    "money": re.compile(r"premium|amount|limit|fee|deductible|value|surcharge|tax"),
+    "money": re.compile(r"premium|amount|limit|fee|deductible|value|surcharge|tax|discounts|savings|cost"),
     "id": re.compile(r"number|code|_id|fein"), "digits": re.compile(r"number|code|_id|fein"),
     "fein": re.compile(r"fein"), "phone": re.compile(r"phone|fax"),
     "email": re.compile(r"email"),
@@ -201,8 +201,11 @@ def label_index(schema):
     def visit(node, path):
         if "[]" in path:
             return
-        for alias in node.get("fideon:aliases", []) or []:
-            index.setdefault(_norm_label(alias), path)
+        # a section's heading ("Insurer" over the carrier block) is not a
+        # field: it must not take the phrase from the field that has it
+        if path in schema.leaves:
+            for alias in node.get("fideon:aliases", []) or []:
+                index.setdefault(_norm_label(alias), path)
         if "$ref" in node:
             name = node["$ref"].split("/")[-1]
             if name == "FieldValue":
@@ -702,8 +705,9 @@ def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text):
                 _set(gold, path, fv(f.new))
                 placed.add(path)
                 continue
-            # a second policyholder printed in the same mailing block
-            if base == "named_insured" and not f.label:
+            # a second policyholder printed in the same mailing block, or
+            # under a label that names policyholders ("CLIENTS")
+            if base == "named_insured" and (not f.label or INSURED_LABEL.search(f.label)):
                 extra = gold["named_insured"].setdefault("additional_named_insureds", [])
                 if f.new != gold["named_insured"]["primary_name"]["raw"] and \
                         not any(e["name"]["raw"] == f.new for e in extra):
@@ -1186,6 +1190,15 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
         for item in unmapped:
             item["page_ref"] = [i + 1 for i, t in enumerate(texts)
                                 if pageref.on_page(pageref._norm(item["value"]), t)]
+
+        if "text_sections" in schema.merged["properties"]:
+            # the printed paragraphs no field holds, in the replaced wording
+            gold["text_sections"] = prose.text_sections(digital, {f.new for f in found_all if f.new})
+            blob = " ".join(s["raw_text"] for s in gold["text_sections"].values()).lower()
+            built.problems += ["source value %r survived into text_sections" % t
+                               for t in sorted({f.key or f.text for f in found_all
+                                                if f.kind in PII and f.new != f.text and not f.blank
+                                                and pageref.on_page(pageref._norm(f.key or f.text), blob)})]
 
         stats = scan_pdf(digital, built.pdf, scan_by_key("high_quality"), seed=seed)
         built.profile = stats["profile"]

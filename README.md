@@ -65,6 +65,12 @@ For each document it:
    to `fideon:unmapped` with their label and pages - the gold never guesses.
    A required section it found no label for is listed in `fideon:incomplete`.
 
+Printed paragraphs no field holds - a deductible condition, a navigation
+restriction, a renewal notice, a disclaimer - go to the gold's
+`text_sections`, one per paragraph, titled by the heading over it, in the
+replaced wording. A scanned page's prose is read by OCR from the finished
+image rather than copied from the scan's text layer, which is often garbled.
+
 A document fails only if an original identifying value survives, or the gold
 claims a value that is not on the page. Known limits: a value the OCR misread
 is not recognised and stays as printed; table rows are replaced but not

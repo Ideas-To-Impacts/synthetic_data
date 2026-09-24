@@ -1159,6 +1159,16 @@ class Reader:
             for row in self.gold["billing"]["installments"]:
                 row.setdefault("installment_fee", copy.deepcopy(self.fee))
         self._phones()
+        # "use product code BY2", and "This is not a bill. You will be billed
+        # separately ..." - wherever they are printed, in a section or not
+        for line in self.lines:
+            for cell in line.cells:
+                m = re.search(r"(?i)\bproduct code ([A-Z0-9]{2,8})\b", cell.text)
+                if m and "policy.product_code" in self.schema.leaves:
+                    _put(self.gold, "policy.product_code", fv(m.group(1)))
+                m = re.match(r"\s*(This is not a bill\.(?:\s+[^.]{0,80}\.)?)", cell.text, re.I)
+                if m and "billing.billing_note" in self.schema.leaves:
+                    _put(self.gold, "billing.billing_note", fv(m.group(1)))
         from .generic import INSURER_NAME
         for n, _, cells, found in self.pages:
             for f in found:

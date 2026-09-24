@@ -65,15 +65,15 @@ def is_scanned(page, invisible) -> bool:
     return any(fitz.Rect(i["bbox"]).get_area() > 0.5 * area for i in page.get_image_info())
 
 
-def read_page(page) -> List[Tuple[str, fitz.Rect, float]]:
+def read_page(page, dpi=DPI) -> List[Tuple[str, fitz.Rect, float]]:
     """(text, rect in page points, confidence) for every line the engine reads."""
     ocr = engine()
     if ocr is None:
         return []
-    pix = page.get_pixmap(dpi=DPI)
+    pix = page.get_pixmap(dpi=dpi)
     img = np.frombuffer(pix.samples, np.uint8).reshape(pix.height, pix.width, pix.n)[:, :, :3]
     result, _ = ocr(np.ascontiguousarray(img))
-    scale = 72.0 / DPI
+    scale = 72.0 / dpi
     lines = []
     for box, text, conf in result or []:
         xs = [p[0] for p in box]
