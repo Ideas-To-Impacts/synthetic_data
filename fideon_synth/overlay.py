@@ -538,8 +538,13 @@ def apply(page, replacements: List[Replacement], ink: Ink, matrix=fitz.Identity)
             rep.font = face
         placed.append((rep, size, baseline, cover, left, right))
 
+    # only the middle of the old text's line: OCR boxes of tightly set lines
+    # overlap by a point, and a redaction takes every character it touches -
+    # the value on the next line would leave the text layer while it stays
+    # printed on the page
     for rep, *_ in placed:
-        page.add_redact_annot(rep.ocr_rect + (0.25, 0.25, -0.25, -0.25), fill=False)
+        inset = max(0.25, 0.3 * rep.ocr_rect.height)
+        page.add_redact_annot(rep.ocr_rect + (0.25, inset, -0.25, -inset), fill=False)
     page.apply_redactions(images=fitz.PDF_REDACT_IMAGE_NONE,
                           graphics=fitz.PDF_REDACT_LINE_ART_NONE)
 

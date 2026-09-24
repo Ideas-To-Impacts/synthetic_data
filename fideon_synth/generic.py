@@ -38,7 +38,7 @@ from typing import Dict, List, Optional
 
 import fitz
 
-from . import overlay, pageref
+from . import overlay, pageref, structure
 from .corpus import Built, Report
 from .fields import NO_EVIDENCE, as_number, derived, fv, strip_evidence
 from .scan import by_key as scan_by_key, scan_pdf
@@ -188,7 +188,11 @@ def label_index(schema):
         for key, sub in (node.get("properties") or {}).items():
             visit(sub, f"{path}.{key}" if path else key)
 
-    for key in ("policy", "premium", "document", "producer", "named_insured", "signature"):
+    # these first, so their phrasings win; then every other section except the
+    # per-document-type blocks, which only a document of that type fills
+    first = ("policy", "premium", "document", "producer", "named_insured", "signature")
+    for key in first + tuple(k for k in schema.merged["properties"]
+                             if k not in first and k != "document_type_detail"):
         if key in schema.merged["properties"]:
             visit(schema.merged["properties"][key], key)
     index.update(SYNONYMS)
@@ -592,6 +596,12 @@ def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text):
         base = "named_insured" if f.role == "insured" else "producer"
         name_path = base + (".primary_name" if base == "named_insured" else ".agency_name")
         if name_path in placed:
+            # a second name under its own label: "CLIENTS" is a contact
+            path = match_label(_norm_label(f.label), f.kind, index)
+            if path and path not in placed:
+                _set(gold, path, fv(f.new))
+                placed.add(path)
+                continue
             unmapped.append({"kind": f.kind, "label": f.label.strip(), "value": f.new,
                              "page": f.cell.page + 1})
             continue
@@ -836,6 +846,12 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
                     room=(nxt.rect.x0 - 3) if nxt is not None else page.rect.width - 18))
             found_all += found
             plans.append((page, reps, ink, matrix))
+        carrier = source_pdf.parent.parent.name
+        index = label_index(schema)
+        reader = structure.Reader([(p.number, p.rect.height, cell_list, found)
+                                   for p, _, _, _, cell_list, found in pages],
+                                  schema, index, carrier)
+        laid_out = reader.read()
         for page, reps, ink, matrix in plans:
             overlay.apply(page, reps, ink, matrix)
         doc.save(str(digital), garbage=3, deflate=True)
@@ -853,10 +869,10 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
                         and pageref.on_page(pageref._norm(f.key or f.text), rest)})
         built.problems += ["source value %r is still in the generated PDF" % t for t in leaks]
 
-        carrier = source_pdf.parent.parent.name
         title = schema.merged.get("title", "")
-        gold, unmapped = build_gold(found_all, label_index(schema), carrier, title,
-                                    built.pdf.name, built.pages, whole)
+        gold, unmapped = build_gold([f for f in found_all if id(f) not in reader.consumed],
+                                    index, carrier, title, built.pdf.name, built.pages, whole)
+        structure.finish(structure.merge(gold, laid_out), schema)
         resolved, misses = pageref.attach(gold, digital)
         built.problems += ["gold says %s = %r is printed, but it is not on any page"
                            % (p, raw) for p, raw in misses]

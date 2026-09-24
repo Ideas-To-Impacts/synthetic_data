@@ -9,6 +9,7 @@ as a scan with an invisible OCR layer - the two kinds the corpus holds.
 from __future__ import annotations
 
 import json
+import sys
 from datetime import date
 
 import fitz
@@ -118,6 +119,68 @@ def test_same_value_gets_same_replacement_everywhere(tmp_path, schema):
     text = " ".join(fitz.open(str(digital))[0].get_text().split())
     new = json.loads(built.gold.read_text("utf-8"))["policy"]["policy_number"]["raw"]
     assert text.count(new) == 2 and "MSB00001028349" not in text
+
+
+SCHEDULE = LINES[:9] + [
+    (40, 230, 10, "Unit Description: 1914 FAY & BOWEN FANTAIL LAUNCH"),
+    (380, 230, 10, "HIN: 327939"),
+    (40, 250, 10, "TERM: 12 Months"),
+    (60, 300, 10, "COVERAGE"), (260, 300, 10, "LIMIT"),
+    (360, 300, 10, "DEDUCTIBLE"), (470, 300, 10, "PREMIUM"),
+    (40, 314, 10, "Watercraft Liability"), (260, 314, 10, "$300,000"),
+    (365, 314, 10, "$0"), (470, 314, 10, "$71"),
+    (40, 328, 10, "Medical Payments"), (260, 328, 10, "$10,000"),
+    (365, 328, 10, "$0"), (470, 328, 10, "$18"),
+    (40, 342, 10, "Oil Pollution Liability"), (260, 342, 10, "$1,076,000"),
+    (470, 342, 10, "incl."),
+    (40, 420, 10, "Forms and Endorsements"),
+    (40, 434, 9, "MAM5001-0407 - The Markel Boat Policy"),
+    (40, 446, 9, "MAMS047-0407 - New York Amendatory Endorsement"),
+    (40, 520, 10, "Location #"), (150, 520, 10, "Address"),
+    (40, 534, 10, "1"), (150, 534, 10, "12 Cove Way"),
+    (150, 546, 10, "Long Lake, NY 12847"),
+]
+
+
+def test_schedules_lists_and_plain_labels_reach_the_gold(tmp_path, schema, monkeypatch):
+    # what no single label names: a unit, its coverage table, the forms list,
+    # a location schedule and text that is never replaced
+    monkeypatch.setattr(sys.modules[__name__], "LINES", SCHEDULE)
+    source = _source(tmp_path, "boat.pdf")
+    out = tmp_path / "out"
+    out.mkdir()
+    built = generic.synthesize(source, out / "b.pdf", out / "b.json", schema, Values("t"))
+    assert built.ok, built.problems              # every value is on the page it claims
+    gold = json.loads(built.gold.read_text("utf-8"))
+    raw = lambda node: node["raw"]
+
+    assert gold["document"]["document_type"]["parsed"] == "Declaration"
+    assert gold["policy"]["policy_term_months"]["parsed"] == 12
+
+    unit, = gold["watercraft"]["watercraft"]
+    assert raw(unit["unit_description"]) == "1914 FAY & BOWEN FANTAIL LAUNCH"
+    assert unit["year"]["parsed"] == 1914
+    hin = raw(unit["hull_identification_number"])
+    assert hin != "327939" and len(hin) == 6
+
+    names = [raw(c["coverage_name"]) for c in unit["coverages"]]
+    assert names == ["Watercraft Liability", "Medical Payments", "Oil Pollution Liability"]
+    liability = unit["coverages"][0]
+    assert raw(liability["limit_amount"]) == \
+        raw(gold["watercraft"]["liability_coverages"]["bodily_injury_and_property_damage_limit"])
+    assert unit["coverages"][2]["is_included"]["parsed"] == "Yes"
+    assert gold["watercraft"]["liability_coverages"]["fuel_spill_liability_included"]["parsed"] == "Yes"
+
+    forms = [raw(f["form_number"]) for f in gold["forms_and_endorsements"]]
+    assert forms == ["MAM5001-0407", "MAM5047-0407"]          # the OCR's S read back as 5
+    assert raw(gold["policy"]["policy_form_name"]) == "The Markel Boat Policy"
+
+    location, = gold["locations"]
+    assert raw(location["location_number"]) == "1"
+    assert raw(location["address"]["line_1"]) != "12 Cove Way"
+
+    # a value placed in a schedule is not listed again as unmapped
+    assert not [u for u in gold["fideon:unmapped"] if u["kind"] == "money"]
 
 
 def test_calibrate_recovers_a_flipped_text_layer(tmp_path):
