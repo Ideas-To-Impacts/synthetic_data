@@ -7,6 +7,9 @@ Command line for fideon-synth.
     fideon-synth --form leatherstocking_dwelling_fire --out ./out --count 50
     fideon-synth --form ... --out ./out --no-scanned --seed 7
 
+    # generic: every PDF under a folder (or one PDF), --count samples each
+    fideon-synth --source "Data\\original PDFs\\Markel American Insurance Company" --out ./out --count 1
+
 Exits non-zero if any document fails a check, so it can sit in a build
 without anyone having to read the output to find out whether it worked.
 """
@@ -51,10 +54,16 @@ def main(argv=None):
                         help="restrict to named scanner profiles; repeatable")
     parser.add_argument("--list", action="store_true",
                         help="show templates, schemas and scanner profiles")
+    parser.add_argument("--source", default=None,
+                        help="generic mode: a source PDF, or a folder whose PDFs are all used; "
+                             "--count is then samples per PDF")
     args = parser.parse_args(argv)
 
     if args.list:
         return _catalogue(args.schema_dir)
+
+    if args.source:
+        return _generic(args)
 
     from .generator import SyntheticGenerator
 
@@ -85,6 +94,30 @@ def main(argv=None):
     print("  -> PDFs: %s" % generator.pdf_dir)
     print("  -> Gold JSON: %s" % generator.gold_dir)
     return 0
+
+
+def _generic(args):
+    from .generic import generate_folder
+
+    source = Path(args.source)
+    if not source.exists():
+        print("  Source not found: %s" % source)
+        return 2
+    print("  Source: %s" % source)
+    print("  Target output: %s" % args.out)
+    print("  %d sample(s) per PDF" % args.count)
+    print()
+    report = generate_folder(source, args.out, schema_dir=args.schema_dir,
+                             count=args.count, seed=args.seed,
+                             pdf_subdir=args.pdf_subdir, gold_subdir=args.gold_subdir,
+                             progress=_line)
+    print()
+    n = len(report.documents)
+    bad = [d for d in report.documents if not d.ok]
+    print("  %d synthetic PDFs, %d with problems" % (n, len(bad)))
+    print("  -> PDFs: %s" % (Path(args.out) / args.pdf_subdir))
+    print("  -> Gold JSON: %s" % (Path(args.out) / args.gold_subdir))
+    return 1 if bad else 0
 
 
 def _line(built):
