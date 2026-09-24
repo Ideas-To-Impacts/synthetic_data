@@ -65,8 +65,9 @@ def is_scanned(page, invisible) -> bool:
     return any(fitz.Rect(i["bbox"]).get_area() > 0.5 * area for i in page.get_image_info())
 
 
-def read_page(page, dpi=DPI) -> List[Tuple[str, fitz.Rect, float]]:
-    """(text, rect in page points, confidence) for every line the engine reads."""
+def read_page(page, dpi=DPI, min_conf=None) -> List[Tuple[str, fitz.Rect, float]]:
+    """(text, rect in page points, confidence) for every line the engine reads
+    at ``min_conf`` or better (default :data:`MIN_CONFIDENCE`)."""
     ocr = engine()
     if ocr is None:
         return []
@@ -79,7 +80,7 @@ def read_page(page, dpi=DPI) -> List[Tuple[str, fitz.Rect, float]]:
         xs = [p[0] for p in box]
         ys = [p[1] for p in box]
         rect = fitz.Rect(min(xs) * scale, min(ys) * scale, max(xs) * scale, max(ys) * scale)
-        if conf >= MIN_CONFIDENCE and text.strip():
+        if conf >= (MIN_CONFIDENCE if min_conf is None else min_conf) and text.strip():
             lines.append((text, rect, float(conf)))
     return lines
 
@@ -153,6 +154,20 @@ def reconcile(lines, layer_line, layer_near):
     outside every layer box and still be in the layer."""
     added, dropped = [], []
     for text, rect, conf in lines:
+        # a figure standing alone in a column - a premium "3", "81" - read
+        # surely where the layer has nothing, or a different figure ("5", "EE")
+        figure = text.strip()
+        if conf >= 0.95 and re.fullmatch(r"\$?\d[\d,]*(?:\.\d\d)?", figure):
+            under, whole = layer_near(rect)
+            under = under.strip()
+            if under == figure:
+                continue
+            if under and len(re.sub(r"\s", "", under)) > len(figure) + 3:
+                continue                          # the layer's word there is something longer
+            if under:
+                dropped.append(whole)
+            added.append((figure, rect))
+            continue
         chars = _chars_of(text, rect)
         mine, where = _key(text)
         theirs, _ = _key(layer_line(rect))

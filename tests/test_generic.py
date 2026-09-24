@@ -411,6 +411,34 @@ def test_headings_are_not_names():
     assert generic._looks_like_name("Patriotic Insurance Group")
     assert not generic._looks_like_name("VEHICLE FOR PRODUCTION")
     assert not generic._looks_like_name("Watercraft & Equipment, Agreed Value")
+    assert not generic._looks_like_name("NAMED INSURED(S)")      # a label, not a person
+    assert not generic._looks_like_name("Your Agent")
+
+
+def test_amounts_dates_and_one_identifier_printed_two_ways():
+    money = next(rx for kind, rx in generic.PATTERNS if kind == "money")
+    assert money.match("$22.00, plus you").group(0) == "$22.00"
+    assert money.match("$1,076,000").group(0) == "$1,076,000"
+    assert any(rx.fullmatch("08-04-2026") for kind, rx in generic.PATTERNS if kind == "date")
+
+    faker = generic.Faker(Values(4))
+    shift = faker._date("08-04-2026")
+    assert re.fullmatch(r"\d{2}-\d{2}-\d{4}", shift) and shift != "08-04-2026"
+    # "884806529 908 9" and "type in your policy number 8848065299089"
+    cell = overlay.Cell("884806529 908 9 8848065299089", [None] * 29, 0, 0)
+    spaced = faker(generic.Found("digits", cell, 0, 15))
+    joined = faker(generic.Found("digits", cell, 16, 29))
+    assert spaced.count(" ") == 2 and spaced.replace(" ", "") == joined != "8848065299089"
+
+
+def test_a_model_number_ends_the_make():
+    from fideon_synth import structure
+    unit = {"unit_description": generic.fv("2015 Correct Craft/Nautique 200 Sport Nautique")}
+    structure.Reader._make_model(None, unit)
+    assert unit["make"]["raw"] == "Correct Craft/Nautique" and unit["model"]["raw"] == "200 Sport Nautique"
+    unit = {"unit_description": generic.fv("1914 FAY & BOWEN FANTAIL LAUNCH")}
+    structure.Reader._make_model(None, unit)
+    assert unit["make"]["raw"] == "FAY & BOWEN"
 
 
 def test_labels_match_schema_fields(schema):

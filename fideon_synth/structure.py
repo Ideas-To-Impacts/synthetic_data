@@ -818,9 +818,15 @@ class Reader:
             make, model = by.group(2).strip(), (by.group(1) + " " + (by.group(3) or "")).strip()
         else:
             words = rest.split()
-            k = 1
-            while k + 1 < len(words) and words[k] in ("&", "and", "-"):
-                k += 2                           # "FAY & BOWEN"
+            # a model number ends the make: "Correct Craft/Nautique 200 Sport
+            # Nautique", "Sea Ray 240 Sundancer"
+            num = next((k for k, w in enumerate(words[:4]) if k and re.match(r"\d", w)), None)
+            if num is not None:
+                k = num
+            else:
+                k = 1
+                while k + 1 < len(words) and words[k] in ("&", "and", "-"):
+                    k += 2                       # "FAY & BOWEN"
             make, model = " ".join(words[:k]), " ".join(words[k:])
         if make:
             unit["make"] = derived(make, desc["raw"], score=0.7)
@@ -1247,6 +1253,7 @@ class Reader:
                     self.ded_type = fv(s.text, s.text.title())
         prev, j = head.y, i + 1
         name_x, last, pending, included = None, None, None, None
+        included_clean = True
         last_x = last_line = None
         while j < len(self.lines) and self.lines[j].page == head.page:
             line = self.lines[j]
@@ -1297,12 +1304,17 @@ class Reader:
                     self._targets(unit, name.split(None, 1)[1], yes=True)
                     last.setdefault("notes", fv(name))
                     continue
-                if name.endswith(":") and re.match(r"(?i)included with", name):
-                    included = name.rstrip(":").strip()
+                if name.endswith((":", ".")) and re.match(r"(?i)included\s*with\b", name):
+                    included = name.rstrip(":.").strip()
+                    # a heading a scan's layer garbled ("includedwith Comprehensaivnde
+                    # Collision.") says the rows are included, not in its own words
+                    included_clean = name.endswith(":")
                     continue
                 if included and name_x is not None and x0 > name_x + 2:
-                    item = {"coverage_name": fv(name), "is_included": yes_no(True, included),
-                            "notes": fv(included)}
+                    item = {"coverage_name": fv(name),
+                            "is_included": yes_no(True, included if included_clean else name)}
+                    if included_clean:
+                        item["notes"] = fv(included)
                     unit.setdefault("coverages", []).append(item)
                     self._targets(unit, name, yes=True)
                     continue
@@ -1383,7 +1395,7 @@ class Reader:
                 last = self._coverage(unit, whole, vals, extra, forms, fv(whole), said_extra)
                 last_x, last_line = x0, line.y
                 continue
-            pending = None
+            held, pending = pending, None
 
             # ── a limit printed under its row: "Bodily Injury ... $300,000 ..." ──
             if last is not None and name and name_x is not None and x0 > name_x + 3 \
@@ -1395,6 +1407,25 @@ class Reader:
                 self._targets(unit, name, limit=last["limit_amount"])
                 continue
             # ── "Purchase Price $35,000" / "Agreed Value $52,000" under a row ──
+            # ── a premium or "included" set a hair below its row's name ──
+            if not name and values and "limit" not in vals \
+                    and ("premium" in vals or "deductible" in vals) \
+                    and (last is not None or held):
+                if held and not held.get("used") and not held.get("item") \
+                        and not held.get("desc"):
+                    # the name over it was no group heading: "Roadside Assistance"
+                    last = self._coverage(unit, held["name"], {}, "", forms,
+                                          fv(held["name"]), None)
+                    last_x, last_line = held["x"], line.y
+                for col, field in (("deductible", "deductible_amount"), ("premium", "premium")):
+                    s = vals.get(col)
+                    if s is None:
+                        continue
+                    if INCLUDED.match(s.text):
+                        last.setdefault("is_included", yes_no(True, s.text.rstrip(".*")))
+                    else:
+                        last.setdefault(field, self._amount(s))
+                continue
             if not name and last is not None and values:
                 s = values[0]
                 label = self.norm(extra)

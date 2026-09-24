@@ -105,8 +105,9 @@ PATTERNS = [   # (kind, regex) - earlier kinds win overlaps
         r"(?:\s+(?:UNIT|APT|SUITE|STE|#)\s*[\w-]+)?" % "|".join(sorted(STATES)), re.I)),
     ("date", re.compile(r"(?<![\d/])\d{1,2}/\d{1,2}/(?:\d{4}|\d{2})(?![\d/])")),
     ("date", re.compile(r"(?<![\d-])\d{4}-\d{2}-\d{2}(?![\d-])")),
+    ("date", re.compile(r"(?<![\d-])\d{1,2}-\d{1,2}-\d{4}(?![\d-])")),
     ("date", re.compile(r"\b(?:%s)\.? \d{1,2}, \d{4}\b" % "|".join(MONTHS + [m[:3] for m in MONTHS] + ["Sept"]))),
-    ("money", re.compile(r"\$\s?\d{1,3}(?:,\d{3})*(?:\.\d{2})?(?![\d,])")),
+    ("money", re.compile(r"\$\s?\d{1,3}(?:,\d{3})*(?:\.\d{2})?(?!\d|,\d)")),
     ("id", re.compile(_B + r"(?=[A-Z0-9-]*\d)(?=[A-Z0-9-]*[A-Z])[A-Z0-9][A-Z0-9-]{5,}" + _E)),
     ("digits", re.compile(r"(?<![\w$,./-])\d{5,}(?:\s-\s\d{3,}|(?:\s\d{1,4}){1,2}(?=\s*$))?"
                           r"(?![\w,./-])")),
@@ -271,7 +272,7 @@ class Found:
 
 
 def _date_of(text):
-    for fmt in ("%m/%d/%Y", "%m/%d/%y", "%Y-%m-%d", "%B %d, %Y", "%b %d, %Y", "%b. %d, %Y"):
+    for fmt in ("%m/%d/%Y", "%m/%d/%y", "%Y-%m-%d", "%m-%d-%Y", "%B %d, %Y", "%b %d, %Y", "%b. %d, %Y"):
         try:
             return datetime.strptime(text, fmt).date()
         except ValueError:
@@ -369,6 +370,8 @@ def _looks_like_name(text):
     words = text.split()
     if not 2 <= len(words) <= 5 or ":" in text or NOT_A_NAME.search(text):
         return False
+    if NAME_LABEL.search(text) or re.search(r"\bnamed\b|\(s\)", text, re.I):
+        return False                      # a label: "NAMED INSURED(S)", "Your Agent"
     if re.search(r"\b(for|to|the|in|on|by|with|if|is|are|be|this|that|your|our|from|at)\b",
                  text, re.I):
         return False                      # a heading or a sentence, not a name
@@ -536,6 +539,12 @@ class Faker:
     def __call__(self, f: Found) -> str:
         if f.blank:
             return ""
+        if f.kind in ("id", "digits") and not f.key:
+            key = ("ident", re.sub(r"\s", "", f.text).lower())
+            if key not in self.memo:
+                self.memo[key] = self._id(f.text)
+            chars = iter(re.sub(r"\s", "", self.memo[key]))
+            return "".join(c if c.isspace() else next(chars) for c in f.text)
         key = (f.kind, f.key or _key(f.text))
         if key not in self.memo:
             self.memo[key] = getattr(self, "_" + f.kind)(f.whole or f.text)
@@ -624,7 +633,7 @@ class Faker:
         flat_old, flat_new = re.sub(r"\s", "", old), list(re.sub(r"\s", "", new))
         for (kind, key), value in self.memo.items():
             digits = re.sub(r"\D", "", key)
-            if kind in ("id", "digits") and len(digits) >= 6 and digits in flat_old:
+            if kind in ("id", "digits", "ident") and len(digits) >= 6 and digits in flat_old:
                 repl = re.sub(r"\D", "", value)
                 if len(repl) == len(digits):
                     at = flat_old.index(digits)
@@ -643,12 +652,13 @@ class Faker:
         if d is None:
             return old
         n = d + timedelta(days=self.days)
-        if "/" in old:
-            mo, dy, yr = old.split("/")
+        sep = "/" if "/" in old else "-" if re.fullmatch(r"\d{1,2}-\d{1,2}-\d{4}", old) else None
+        if sep:
+            mo, dy, yr = old.split(sep)
             parts = [("%02d" if len(mo) == 2 else "%d") % n.month,
                      ("%02d" if len(dy) == 2 else "%d") % n.day,
                      str(n.year) if len(yr) == 4 else "%02d" % (n.year % 100)]
-            return "/".join(parts)
+            return sep.join(parts)
         if "-" in old:
             return n.isoformat()
         return "%s %d, %d" % (n.strftime("%B" if old.split()[0] in MONTHS else "%b"), n.day, n.year)
@@ -670,7 +680,7 @@ def _set(doc, path, value):
 
 def _field(kind, raw):
     if kind == "date":
-        for fmt in ("%m/%d/%Y", "%m/%d/%y", "%Y-%m-%d", "%B %d, %Y", "%b %d, %Y"):
+        for fmt in ("%m/%d/%Y", "%m/%d/%y", "%Y-%m-%d", "%m-%d-%Y", "%B %d, %Y", "%b %d, %Y"):
             try:
                 return fv(raw, datetime.strptime(raw, fmt).strftime("%Y-%m-%d"))
             except ValueError:
