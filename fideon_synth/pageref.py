@@ -66,6 +66,12 @@ def attach(doc, pdf_path):
         needle = _norm(str(evidence)) if evidence is not None else ""
         field["page_ref"] = [i + 1 for i, text in enumerate(texts)
                              if on_page(needle, text)]
+        squeezed = re.sub(r"\s+", "", needle)
+        if not field["page_ref"] and len(squeezed) >= 8:
+            # an OCR layer spaces words its own way ("Liabilit Tyo"); the
+            # same characters in the same order are the same printed text
+            field["page_ref"] = [i + 1 for i, text in enumerate(texts)
+                                 if squeezed in re.sub(r"\s+", "", text)]
         if field["page_ref"]:
             resolved += 1
         elif evidence is not None:

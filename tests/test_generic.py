@@ -183,6 +183,76 @@ def test_schedules_lists_and_plain_labels_reach_the_gold(tmp_path, schema, monke
     assert not [u for u in gold["fideon:unmapped"] if u["kind"] == "money"]
 
 
+LEADERS = LINES[:9] + [
+    (48, 220, 11, "Drivers and household residents"),
+    (108, 236, 10, "Delphine Calloway"),
+    (108, 248, 10, "Age: 55"), (294, 248, 10, "Gender: Male"),
+    (108, 260, 10, "Marital status: Married"),
+    (48, 290, 11, "Outline of coverage"),
+    (108, 304, 10, "2024 Viaggio by Misty Harbor 20 Lago Series"),
+    (108, 316, 10, "Total Horsepower: 20"),
+    (108, 328, 10, "Outboard #1"), (179, 328, 10, "Year: 2024"), (252, 328, 10, "Make: Mercury"),
+    (108, 340, 10, "Trailer information"), (180, 340, 10, "Year: 2024"),
+    (252, 340, 10, "Make: Venture"),
+    (350, 356, 10, "Limits"), (480, 356, 10, "Deductible"), (540, 356, 10, "Premium"),
+    (107, 370, 10, "Liability To Others"), (550, 370, 10, "$27"),
+    (114, 382, 10, "Bodily Injury and Property Damage Liability"),
+    (350, 382, 9, "$300,000 combined single limit each accident"),
+    (117, 394, 10, "Includes Fuel Spill Liability"),
+    (108, 408, 10, "Medical Payments ....................................................."),
+    (350, 408, 10, "$5,000 each person ................................"),
+    (559, 408, 10, "2"),
+    (108, 422, 10, "Included with Comprehensive and Collision:"),
+    (112, 434, 10, "Wreckage Removal"),
+    (108, 448, 10, "Total 12 month policy premium"), (543, 448, 10, "$264"),
+    (108, 460, 10, "Discount if paid in full"), (552, 460, 10, "-22"),
+    (48, 490, 11, "Premium discounts"),
+    (108, 504, 10, "Policy"),
+    (108, 516, 10, "MSB00001028349"), (294, 516, 10, "Claim Free Renewal and Home Owner"),
+]
+
+
+def test_leadered_schedule_drivers_units_and_discounts(tmp_path, schema, monkeypatch):
+    # a coverage summary laid out with dot leaders and no "Coverage" heading:
+    # a limit on the line under its row, a note, an included list, totals and
+    # discounts, and the drivers, the unit, its motor and trailer around it
+    monkeypatch.setattr(sys.modules[__name__], "LINES", LEADERS)
+    source = _source(tmp_path, "boat.pdf")
+    out = tmp_path / "out"
+    out.mkdir()
+    built = generic.synthesize(source, out / "b.pdf", out / "b.json", schema, Values("t"))
+    assert built.ok, built.problems
+    gold = json.loads(built.gold.read_text("utf-8"))
+    raw = lambda node: node["raw"]
+    block = gold["watercraft"]
+
+    driver, = block["operators"]
+    assert raw(driver["name"]) == raw(gold["named_insured"]["primary_name"])
+    assert driver["age"]["parsed"] == 55 and raw(driver["gender"]) == "Male"
+
+    unit, = block["watercraft"]
+    assert raw(unit["unit_description"]).endswith("20 Lago Series") and unit["year"]["parsed"] == 2024
+    assert raw(unit["total_horsepower"]) == "20"
+    assert raw(unit["motors"][0]["make"]) == "Mercury" and raw(unit["motors"][0]["motor_number"]) == "1"
+    assert raw(unit["trailer"]["make"]) == "Venture"
+
+    names = [raw(c["coverage_name"]) for c in unit["coverages"]]
+    assert names == ["Liability To Others", "Medical Payments", "Wreckage Removal"]
+    liability, medical, wreck = unit["coverages"]
+    assert raw(liability["limit_amount"]) == \
+        raw(block["liability_coverages"]["bodily_injury_and_property_damage_limit"])
+    assert raw(liability["limit_basis"]) == "combined single limit each accident"
+    assert raw(liability["coverage_description"]) == "Bodily Injury and Property Damage Liability"
+    assert block["liability_coverages"]["fuel_spill_liability_included"]["parsed"] == "Yes"
+    assert raw(medical["premium"]) == "2" and raw(medical["limit_basis"]) == "each person"
+    assert wreck["is_included"]["parsed"] == "Yes"
+
+    assert "total_policy_premium" in gold["premium"]
+    discounts = {raw(d["description"]): d for d in gold["premium"]["discounts_and_credits"]}
+    assert discounts["Discount if paid in full"]["amount"]["parsed"] == -22
+    assert {"Claim Free Renewal", "Home Owner"} <= set(discounts)
+
+
 def test_calibrate_recovers_a_flipped_text_layer(tmp_path):
     # a printed web page can carry its OCR layer flipped and scaled against
     # the drawing; every position depends on putting it back

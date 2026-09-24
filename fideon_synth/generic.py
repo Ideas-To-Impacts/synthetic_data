@@ -16,15 +16,17 @@ No per-carrier or per-document code. For each source PDF:
    Number:") is matched to the canonical schema's field names and aliases.
    Only confident matches go into the schema fields; everything else that was
    changed is listed under ``fideon:unmapped`` with its label and pages, so
-   the gold never asserts a field it only guessed.
+   the gold never asserts a field it only guessed. What is laid out rather
+   than labelled - coverage and location tables, the forms list, a unit's
+   details, plain text such as "TERM: 12 Months" - is read by
+   :mod:`structure`.
 
 The line of business is the source's folder name (``.../<Carrier>/<lob>/x.pdf``)
 and picks the schema; the carrier is the folder above it.
 
 Known limits, reported rather than hidden: a value the OCR misread is not
-recognised and stays as printed; table cells (coverage rows) are replaced but
-not labelled; money totals can differ by a rounding unit from their scaled
-parts.
+recognised and stays as printed; money totals can differ by a rounding unit
+from their scaled parts.
 """
 
 from __future__ import annotations
@@ -58,7 +60,7 @@ COMPANY_WORDS = {"llc", "inc", "inc.", "corp", "corp.", "corporation", "company"
                  "co", "co.", "group", "agency", "insurance", "lp", "llp", "ltd",
                  "trust", "partners", "services", "associates", "brokers",
                  "brokerage", "holdings", "ventures", "properties", "realty",
-                 "marine", "agents", "risk", "underwriters"}
+                 "marine", "agents", "risk", "underwriters", "ins"}
 #: (city, ZIP) - real towns, main post-office ZIPs.
 TOWNS = [
     ("Cooperstown", "13326"), ("Oneonta", "13820"), ("Norwich", "13815"),
@@ -94,17 +96,23 @@ PATTERNS = [   # (kind, regex) - earlier kinds win overlaps
         r"(?<![A-Za-z])((?:(?!%s\b)[A-Z][A-Za-z.']+\s){0,2}(?!%s\b)[A-Z][A-Za-z.']+),?\s+([A-Z]{2})\s+(\d{5})(?:-\d{4})?(?!\d)"
         % (_SUFFIX, _SUFFIX))),
     ("street", re.compile(
-        r"(?<![\w/$.,-])\d{1,6}\s+(?!\d)(?:[A-Za-z0-9.']+\s){0,3}(?:St|Street|Rd|Road|Ave|Avenue|Way|"
+        r"(?<![\w/$.,-])\d{1,6}\s+(?:(?:(?-i:%s|US|SR|CR)|State\s+Route|County\s+Road|Route|Rte|Hwy)"
+        r"[- ]\d{1,4}\b(?![-/])|"
+        r"(?!\d)(?:[A-Za-z0-9.']+\s){0,3}(?:St|Street|Rd|Road|Ave|Avenue|Way|"
         r"Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Blvd|Hwy|Highway|Route|Rte|Pkwy|Ter|Terrace|"
-        r"Cir|Circle|Trl|Trail|Pt|Point|Cove|Loop|Run|Pike|Path|Row|Sq)\b\.?", re.I)),
+        r"Cir|Circle|Trl|Trail|Pt|Point|Cove|Loop|Run|Pike|Path|Row|Sq)\b\.?)"
+        r"(?:\s+(?:UNIT|APT|SUITE|STE|#)\s*[\w-]+)?" % "|".join(sorted(STATES)), re.I)),
     ("date", re.compile(r"(?<![\d/])\d{1,2}/\d{1,2}/(?:\d{4}|\d{2})(?![\d/])")),
     ("date", re.compile(r"(?<![\d-])\d{4}-\d{2}-\d{2}(?![\d-])")),
     ("date", re.compile(r"\b(?:%s)\.? \d{1,2}, \d{4}\b" % "|".join(MONTHS + [m[:3] for m in MONTHS] + ["Sept"]))),
     ("money", re.compile(r"\$\s?\d{1,3}(?:,\d{3})*(?:\.\d{2})?(?![\d,])")),
     ("id", re.compile(_B + r"(?=[A-Z0-9-]*\d)(?=[A-Z0-9-]*[A-Z])[A-Z0-9][A-Z0-9-]{5,}" + _E)),
-    ("digits", re.compile(r"(?<![\w$,./-])\d{5,}(?:\s-\s\d{3,})?(?![\w,./-])")),
+    ("digits", re.compile(r"(?<![\w$,./-])\d{5,}(?:\s-\s\d{3,}|(?:\s\d{1,4}){1,2}(?=\s*$))?"
+                          r"(?![\w,./-])")),
 ]
 FORM_NUMBER = re.compile(r"^[A-Z]{2,6}\d{2,5}-\d{4}$")     # forms keep their numbers
+#: what follows a form number: its state and edition, "CW (11-23)", "NY (06/21)"
+EDITION = re.compile(r"^\s*(?:[A-Z]{2}\s*)?\(\d{2}[-/]\d{2}\)")
 ID_LABEL = re.compile(r"\b(number|no|id|code|hin|vin|account|acct|agency|customer|"
                       r"ref|serial|hull|loan|certificate|claim|policy|#)\b", re.I)
 NAME_LABEL = re.compile(r"\b(insured|insureds|client|clients|agent|producer|"
@@ -113,7 +121,13 @@ PRODUCER_LABEL = re.compile(r"\b(agent|producer|agency|broker)\b", re.I)
 INSURED_LABEL = re.compile(r"\b(insured|insureds|client|clients|applicant|owner)\b", re.I)
 NOT_A_NAME = re.compile(r"\b(page|policy|coverage|date|premium|limit|number|total|"
                         r"address|description|declarations|location|endorsement|"
-                        r"information|type|plan|form|effective|expiration|period)\b", re.I)
+                        r"information|type|plan|form|effective|expiration|period|amount|"
+                        r"paid|loss|losses|claim|violation|operator|vehicle|owner|original|"
+                        r"discount|discounts|free|renewal|online|payment|summary|"
+                        r"watercraft)\b", re.I)
+#: a line that names an insurer rather than a policyholder or an agency
+INSURER_NAME = re.compile(r"\b(?:insurance|indemnity|assurance|casualty)\s+(?:company|co\.?|"
+                          r"corporation|corp\.?)(?:\s|$)|\bunderwriters\b", re.I)
 PII = {"email", "phone", "fein", "pobox", "cityline", "street", "id", "digits",
        "person", "company"}
 
@@ -132,6 +146,11 @@ SYNONYMS = {
     "policy period": "policy.effective_date", "from": "policy.effective_date",
     "effective": "policy.effective_date",
     "expiration date": "policy.expiration_date", "to": "policy.expiration_date",
+    "coverage begins on": "policy.effective_date", "coverage began on": "policy.effective_date",
+    "policy expires on": "policy.expiration_date", "expires on": "policy.expiration_date",
+    "policy period ends on": "policy.expiration_date",
+    "policy service": "producer.contact.phone",
+    "pay initial installment": "billing.amount_due",
     "expiration": "policy.expiration_date", "expires": "policy.expiration_date",
     "transaction effective date": "document.transaction_effective_date",
     "issue date": "document.issue_date", "date issued": "document.issue_date",
@@ -231,6 +250,7 @@ class Found:
         self.new = None
         self.key = None           # the whole value, when this is one piece of it
         self.blank = False        # a later piece of a value split across cells
+        self.no_zip = False       # a known town printed here without its ZIP
 
     @property
     def rect(self):
@@ -251,6 +271,8 @@ def _detect(cell_list):
                 text = m.group(0)
                 if kind == "id" and (FORM_NUMBER.match(text) or len(re.sub(r"\D", "", text)) < 3):
                     continue
+                if kind in ("id", "digits") and EDITION.match(cell.text[e:]):
+                    continue                      # a form number and its edition
                 if kind == "cityline" and m.group(2) not in STATES:
                     continue
                 found.append(Found(kind, cell, s, e))
@@ -314,6 +336,8 @@ def _label_for(f, cell_list):
     """The text that labels a value: text before it in its own cell, else the
     cell to its left, else the cell above it."""
     prefix = f.cell.text[f.after:f.start].strip()
+    if f.after and prefix.lower() in ("-", "\u2013", "to", "through", "thru"):
+        return "to"                               # the end of "from A - B"
     if prefix and re.search(r"[A-Za-z]", prefix):
         return prefix
     left = _left(f.cell, cell_list)
@@ -372,10 +396,12 @@ def find_values(cell_list):
     for f in found:
         if f.kind in ("street", "pobox") and f.start == 0:
             up = _above(f.cell, cell_list)
-            if up is not None and _looks_like_name(up.text):
+            while up is not None and _looks_like_name(up.text) and id(up) not in names:
                 names[id(up)] = (up, None)
+                up = _above(up, cell_list)        # a second insured stacked above
     for cell in cell_list:
-        if NAME_LABEL.search(cell.text) and len(cell.text) < 45:
+        if NAME_LABEL.search(cell.text) and len(cell.text) < 45 and len(cell.text.split()) <= 5 \
+                and not re.search(r"\d", cell.text):
             for cand in (_below(cell, cell_list, max_gap=3.2), ):
                 if cand is not None and _looks_like_name(cand.text):
                     names[id(cand)] = (cand, cell.text)
@@ -406,8 +432,17 @@ def find_values(cell_list):
             f.role = "producer"
         elif INSURED_LABEL.search(context or ""):
             f.role = "insured"
-        elif f.kind == "company" and re.search(r"insurance|agency|brokers?", f.text, re.I):
+        elif f.kind == "company" and re.search(r"insurance|agency|brokers?|\bins\b", f.text, re.I):
             f.role = "producer"
+    # a mailing block with no label over it - an envelope window - holds the
+    # policyholder: people, above an address, when no label named anyone else
+    streets = [f.cell for f in found if f.kind in ("street", "pobox")]
+    block = [f for f in found if f.kind == "person" and any(
+        s.rect.y0 > f.rect.y0 and s.rect.y0 - f.rect.y1 < 4 * f.rect.height
+        and abs(s.rect.x0 - f.rect.x0) < 14 for s in streets)]
+    if block and not any(f.role for f in block):
+        for f in block:
+            f.role = "insured"
     return found
 
 
@@ -456,7 +491,12 @@ class Faker:
         key = (f.kind, f.key or _key(f.text))
         if key not in self.memo:
             self.memo[key] = getattr(self, "_" + f.kind)(f.text)
-        return _case_like(self.memo[key], f.text)
+        new = self.memo[key]
+        if f.no_zip:
+            new = re.sub(r"\s+\d{5}(?:-\d{4})?$", "", new)
+        if f.kind == "date" and f.key and _key(f.text) != f.key:
+            return new                       # a garbled copy: print the date cleanly
+        return _case_like(new, f.text)
 
     def _unique(self, make, old):
         for _ in range(50):
@@ -554,6 +594,8 @@ class Faker:
         value = amount * self.factor
         if not cents and amount >= 10000 and amount % 1000 == 0:
             value = round(value / 1000) * 1000
+        if old.endswith(".00"):
+            value = round(value)               # "$535.00" totals whole-dollar rows
         text = "{:,.2f}".format(value) if cents else "{:,}".format(int(round(value)))
         return ("$ " if old.startswith("$ ") else "$") + text
 
@@ -590,9 +632,11 @@ def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text):
     by_cell = {}
     for f in found:
         by_cell.setdefault(id(f.cell), []).append(f)
-    for f in found:
-        if f.kind not in ("person", "company") or f.role is None:
-            continue
+    # the first name printed in a block is its primary one: a policy's
+    # second insured sits under the first
+    ordered = sorted((f for f in found if f.kind in ("person", "company") and f.role),
+                     key=lambda f: (f.cell.page, f.rect.y0, f.rect.x0))
+    for f in ordered:
         base = "named_insured" if f.role == "insured" else "producer"
         name_path = base + (".primary_name" if base == "named_insured" else ".agency_name")
         if name_path in placed:
@@ -601,6 +645,14 @@ def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text):
             if path and path not in placed:
                 _set(gold, path, fv(f.new))
                 placed.add(path)
+                continue
+            # a second policyholder printed in the same mailing block
+            if base == "named_insured" and not f.label:
+                extra = gold["named_insured"].setdefault("additional_named_insureds", [])
+                if f.new != gold["named_insured"]["primary_name"]["raw"] and \
+                        not any(e["name"]["raw"] == f.new for e in extra):
+                    extra.append({"name": fv(f.new), "entity_type": derived(
+                        "Individual" if f.kind == "person" else "Organization", f.new)})
                 continue
             unmapped.append({"kind": f.kind, "label": f.label.strip(), "value": f.new,
                              "page": f.cell.page + 1})
@@ -612,12 +664,16 @@ def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text):
                 "Individual" if f.kind == "person" else "Organization", f.new)
         addr = base + (".mailing_address" if base == "named_insured" else ".address")
         cell = f.cell
-        for _ in range(3):
+        for _ in range(5):
             cell = _below(cell, [x.cell for x in found])
             if cell is None:
                 break
             for g in by_cell.get(id(cell), []):
-                if g.kind in ("street", "pobox"):
+                if g.kind in ("email", "phone") and not g.blank:
+                    # printed under the mailing address: this party's contact
+                    _set(gold, base + ".contact." + g.kind, fv(g.new))
+                    placed.add(id(g))
+                elif g.kind in ("street", "pobox"):
                     _set(gold, addr + ".line_1", fv(g.new)); g.label = g.label or "(address)"
                     placed.add(id(g))
                 elif g.kind == "cityline":
@@ -638,7 +694,9 @@ def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text):
         if path and path not in placed:
             _set(gold, path, _field(f.kind, f.new))
             placed.add(path)
-        elif path and _get(gold, path) is not None and _get(gold, path)["raw"] == f.new:
+        elif path and _get(gold, path) is not None and (
+                _get(gold, path)["raw"] == f.new
+                or _get(gold, path).get("parsed") == _field(f.kind, f.new).get("parsed")):
             continue                                  # same value printed again
         else:
             unmapped.append({"kind": f.kind, "label": f.label.strip(), "value": f.new,
@@ -690,6 +748,19 @@ def _sweep(pages, marks=()):
         (glued if kinds[k] in ("person", "company") else r"(?<![A-Za-z0-9])")
         + r"\s+".join(map(re.escape, k.split())) + r"(?![A-Za-z0-9])"
         for k in sorted(kinds, key=len, reverse=True)), re.I)
+    garbled, towns = [], []
+    for *_, found in pages:
+        for f in found:
+            if f.kind == "date" and not f.blank:
+                m = re.fullmatch(r"(\d{1,2})/(\d{1,2})/(\d{4})", f.text)
+                if m:
+                    garbled.append((_key(f.text), re.compile(
+                        r"(?<![\d/])\d{1,2}[/1lI|]?0?%s[/1lI|]%s(?![\d/])" % (m.group(2), m.group(3)))))
+            if f.kind == "cityline" and not f.blank:
+                m = PATTERNS[4][1].fullmatch(f.text)
+                if m:
+                    towns.append((_key(f.text), re.compile(
+                        r"(?<![A-Za-z])%s,\s*%s(?!\s*\d)(?![A-Za-z])" % (re.escape(m.group(1)), m.group(2)))))
     for page, ink, matrix, visible, cell_list, found in pages:
         taken = {}
         for f in found:
@@ -724,6 +795,31 @@ def _sweep(pages, marks=()):
                     f.label = _label_for(f, cell_list)
                     found.append(f)
                     taken.setdefault(id(cell), []).append((s, e))
+        # a known date the OCR read with its slashes as 1s: "112912026" is
+        # 7/29/2026 printed in a stamp - the day and year must match exactly
+        for cell in cell_list:
+            spans = taken.setdefault(id(cell), [])
+            for key, rx in garbled:
+                for m in rx.finditer(cell.text):
+                    s, e = m.span()
+                    if any(s < te and ts < e for ts, te in spans):
+                        continue
+                    f = Found("date", cell, s, e)
+                    f.key = key
+                    f.label = _label_for(f, cell_list)
+                    found.append(f)
+                    spans.append((s, e))
+            # a known town printed without its ZIP: "Signed ... at Inlet, NY"
+            for key, rx in towns:
+                for m in rx.finditer(cell.text):
+                    s, e = m.span()
+                    if any(s < te and ts < e for ts, te in spans):
+                        continue
+                    f = Found("cityline", cell, s, e)
+                    f.key, f.no_zip = key, True
+                    f.label = _label_for(f, cell_list)
+                    found.append(f)
+                    spans.append((s, e))
         # and a value wrapped onto the next line of a narrow column
         for cell in cell_list:
             head = _key(cell.text)
@@ -771,19 +867,87 @@ def _drop_carrier(found, cell_list, carrier):
                     f.start += len(mark)
                     f.text = f.cell.text[f.start:f.end]
                     break
-    drop = set()
+    drop, heads = set(), []
     for f in found:
         if f.kind == "company" and marks & set(re.findall(r"[a-z]{4,}", f.text.lower())):
             drop.add(id(f))
-            cell = f.cell
-            for _ in range(3):              # and the address printed under it
-                cell = _below(cell, cell_list)
-                if cell is None:
-                    break
-                for g in found:
-                    if g.cell is cell and g.kind in ("street", "pobox", "cityline"):
-                        drop.add(id(g))
+            heads.append(f.cell)
+    # the carrier's name printed as plain text heads its address too: the
+    # remittance block under "PROGRESSIVE", or "One Tower Square, Hartford"
+    # two lines under "TRAVCO INSURANCE COMPANY"
+    for cell in cell_list:
+        words = cell.text.split()
+        if 0 < len(words) <= 6 and not any(g.cell is cell for g in found) and (
+                marks & set(re.findall(r"[a-z]{4,}", cell.text.lower()))
+                or INSURER_NAME.search(cell.text)):
+            heads.append(cell)
+    for head in heads:
+        cell = head
+        for _ in range(3):                  # and the address printed under it
+            cell = _below(cell, cell_list)
+            if cell is None or NAME_LABEL.search(cell.text) or _looks_like_name(cell.text) \
+                    and not (marks & set(re.findall(r"[a-z]{4,}", cell.text.lower()))):
+                break                       # another party's block begins
+            for g in found:
+                if g.cell is cell and g.kind in ("street", "pobox", "cityline"):
+                    drop.add(id(g))
     return [f for f in found if id(f) not in drop]
+
+
+def _signature_ink(pages):
+    """The printed label of a signature line with handwriting beside or over
+    it - dark ink where no text is - or None. A scan draws the signature
+    into the page image, so it is found in the ink, not the text layer."""
+    import numpy as np
+    for page, ink, matrix, visible, cell_list, found in pages:
+        for cell in cell_list:
+            if not re.match(r"(?i)^(signed\b|signature\b|authorized (?:representative )?signature)",
+                            cell.text.strip()):
+                continue
+            r = cell.rect
+            h = max(r.height, 6)
+            band = fitz.Rect(r.x0, r.y0 - 3.5 * h, page.rect.width - 20, r.y1 + 0.5 * h)
+            z = ink.zoom
+            y0, y1 = int(max(0, band.y0 * z)), int(min(ink.mask.shape[0], band.y1 * z))
+            x0, x1 = int(max(0, band.x0 * z)), int(min(ink.mask.shape[1], band.x1 * z))
+            region = ink.mask[y0:y1, x0:x1].copy()
+            if not region.size:
+                continue
+            region[region.mean(1) > 0.5, :] = False      # rules across the band
+            region[:, region.mean(0) > 0.5] = False
+            for other in cell_list:                      # printed text is not a hand
+                q = other.rect
+                if q is None or not q.intersects(band):
+                    continue
+                pad = 0.3 * q.height
+                a, b = int(max(0, (q.x0 - pad) * z)) - x0, int((q.x1 + pad) * z) - x0
+                c, d = int(max(0, (q.y0 - pad) * z)) - y0, int((q.y1 + pad) * z) - y0
+                region[max(0, c):max(0, d), max(0, a):max(0, b)] = False
+            if region.mean() > 0.004 and np.count_nonzero(region.any(0)) > 20 * z:
+                label = re.match(r"(?i)^(signed(?: on)?|(?:authorized (?:representative )?)?signature)",
+                                 cell.text.strip())
+                return label.group(1)            # the label, not the replaced date after it
+    return None
+
+
+def _walk_fields(doc):
+    from .fields import walk
+    return walk({k: v for k, v in doc.items() if not k.startswith("fideon")})
+
+
+def _drop_path(doc, path):
+    """Remove the field at an indexed path ("a.b[2].c"); True if it was there."""
+    keys = re.findall(r"[^.\[\]]+|\[\d+\]", path)
+    node = doc
+    for k in keys[:-1]:
+        node = node[int(k[1:-1])] if k.startswith("[") else node.get(k)
+        if node is None:
+            return False
+    last = keys[-1]
+    if last.startswith("[") or not isinstance(node, dict) or last not in node:
+        return False
+    del node[last]
+    return True
 
 
 def _alignment(f, cell_list):
@@ -846,6 +1010,7 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
                     room=(nxt.rect.x0 - 3) if nxt is not None else page.rect.width - 18))
             found_all += found
             plans.append((page, reps, ink, matrix))
+        signed = _signature_ink(pages)
         carrier = source_pdf.parent.parent.name
         index = label_index(schema)
         reader = structure.Reader([(p.number, p.rect.height, cell_list, found)
@@ -873,7 +1038,25 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
         gold, unmapped = build_gold([f for f in found_all if id(f) not in reader.consumed],
                                     index, carrier, title, built.pdf.name, built.pages, whole)
         structure.finish(structure.merge(gold, laid_out), schema)
+        if signed and "signature.signature_present" in schema.leaves:
+            gold.setdefault("signature", {}).setdefault(
+                "signature_present", derived("Yes", signed))
+        unmapped = [u for u in unmapped if not reader.repeated(u)]
+        held = {str(fld["raw"]).lower() for _, fld in _walk_fields(gold)}
+        unmapped = [u for u in unmapped if str(u["value"]).lower() not in held]
         resolved, misses = pageref.attach(gold, digital)
+        # text copied off a page - never a replaced value - can be garbled by
+        # an OCR layer, or printed in pieces the text layer keeps apart
+        # ("(Vantage 1)" with "Vantage" stored elsewhere). It is set aside,
+        # listed, rather than asserted. A replaced value is never set aside:
+        # its absence from the page is a real failure
+        new_values = {f.new for f in found_all if f.new}
+        unverified = [(p, raw) for p, raw in misses if raw not in new_values
+                      and not any(v in str(raw) for v in new_values if len(v) > 3)
+                      and _drop_path(gold, p)]
+        misses = [m for m in misses if m not in unverified]
+        if unverified:
+            gold["fideon:unverified"] = [{"path": p, "value": raw} for p, raw in unverified]
         built.problems += ["gold says %s = %r is printed, but it is not on any page"
                            % (p, raw) for p, raw in misses]
         for item in unmapped:

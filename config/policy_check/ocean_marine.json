@@ -12,7 +12,7 @@
     "field_count": 760,
     "corpus_document_count": 4,
     "corpus_carrier_count": null,
-    "aliased_fields": 163,
+    "aliased_fields": 166,
     "filed_under_lob": "ocean_marine",
     "extensions_applied": "scripts/canonical_schema_extensions.py"
   },
@@ -1887,9 +1887,17 @@
                     "$ref": "#/$defs/FieldValue"
                   },
                   "physical_damage_deductible": {
-                    "$ref": "#/$defs/FieldValue"
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "Trailer Deductible"
+                    ]
                   }
-                }
+                },
+                "fideon:aliases": [
+                  "Trailer information",
+                  "Trailer Details",
+                  "Trailer"
+                ]
               },
               "purchase_date": {
                 "$ref": "#/$defs/FieldValue"
@@ -2169,7 +2177,11 @@
                 ]
               },
               "relationship_to_insured": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Additional information",
+                  "Relationship to Insured"
+                ]
               },
               "driver_status": {
                 "$ref": "#/$defs/FieldValue"

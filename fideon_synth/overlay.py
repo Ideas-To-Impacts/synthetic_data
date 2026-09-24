@@ -104,6 +104,8 @@ class Ink:
         cols = self.cols(y0, y1)
         w = len(cols)
         a, b = int(max(0, (x0 - 1) * z)), int(min(w, x1 * z))
+        if glued:                           # never start left of the value's own box
+            a = int(max(a, (x0 + 0.5) * z))
         if a > 0 and cols[a] and (cols[a - 1] or glued):
             # the box starts inside the previous word's ink (a label run up
             # against the value): skip to the first blank, then the value
@@ -354,6 +356,30 @@ def cells(page, matrix=fitz.Identity, ink: Optional[Ink] = None) -> List[Cell]:
         typed = [ch.box for ch in row if ch.c not in FILL]
         row[:] = [ch for ch in row if ch.c not in FILL or not any(
             min(ch.box.x1, b.x1) - max(ch.box.x0, b.x0) > 0.3 * ch.box.width for b in typed)]
+        # a leader between columns ("Uninsured Boater ....... $300,000") is
+        # layout, not text: drop it and break the cell where it stood. A lone
+        # full stop is punctuation; a run of three, or any ellipsis glyph, is a
+        # leader
+        breaks, kept, k = set(), [], 0
+        while k < len(row):
+            if row[k].c in FILL:
+                run = k
+                while run < len(row) and row[run].c in FILL:
+                    run += 1
+                if run - k >= 3 or any(ch.c == "\u2026" for ch in row[k:run]):
+                    # a break only where the leader spans a gap: a stray leader
+                    # glyph drawn inside a word ("Nautica...l") joins it back
+                    if run < len(row) and k > 0 and \
+                            row[run].box.x0 - row[k - 1].box.x1 > 0.5 * row[run].box.height:
+                        breaks.add(id(row[run]))
+                    k = run
+                    continue
+                kept.extend(row[k:run])
+                k = run
+                continue
+            kept.append(row[k])
+            k += 1
+        row[:] = kept
         if not row:
             continue
         height = float(np.median([ch.box.height for ch in row]))
@@ -364,10 +390,11 @@ def cells(page, matrix=fitz.Identity, ink: Optional[Ink] = None) -> List[Cell]:
         for ch in row:
             if prev is not None:
                 gap = ch.box.x0 - prev.box.x1
-                column = gap > 1.1 * height
+                column = gap > 1.1 * height or id(ch) in breaks
                 # a compressed OCR layer leaves wide gaps between words that
                 # are printed a normal space apart; the ink says which
-                if column and ink is not None and ink.blank(top, bottom, ch.box.x0) < 0.9 * height:
+                if column and id(ch) not in breaks and ink is not None \
+                        and ink.blank(top, bottom, ch.box.x0) < 0.9 * height:
                     column = False
                 if column:
                     out.append(Cell("".join(text), members, r, page.number))
