@@ -1,0 +1,1348 @@
+{
+  "document": {
+    "document_type": {
+      "raw": "POLICY INFORMATION PAGE",
+      "parsed": "Information Page",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "flagged": false
+    },
+    "document_title_as_stated": {
+      "raw": "WORKERS COMPENSATION AND EMPLOYERS LIABILITY INSURANCE POLICY",
+      "parsed": "WORKERS COMPENSATION AND EMPLOYERS LIABILITY INSURANCE POLICY",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "flagged": false
+    },
+    "line_of_business_as_stated": {
+      "raw": "WORKERS COMPENSATION",
+      "parsed": "WORKERS COMPENSATION",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "flagged": false
+    },
+    "page_count": {
+      "raw": "31",
+      "parsed": 31,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        22,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "flagged": false
+    },
+    "source_file_name": {
+      "raw": "sample_001.pdf",
+      "parsed": "sample_001.pdf",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "issue_date": {
+      "raw": "7/9/2024",
+      "parsed": "2024-07-09",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        2,
+        6
+      ],
+      "flagged": false
+    }
+  },
+  "carrier": {
+    "company_name": {
+      "raw": "Technology Insurance Company, Inc.",
+      "parsed": "Technology Insurance Company, Inc.",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        6,
+        7,
+        8,
+        9,
+        10,
+        20,
+        31
+      ],
+      "flagged": false
+    },
+    "address": {
+      "line_1": {
+        "raw": "59 Maiden Lane, 43rd Floor",
+        "parsed": "59 Maiden Lane, 43rd Floor",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "New York",
+        "parsed": "New York",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          6,
+          7,
+          8,
+          9,
+          18,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          6,
+          7,
+          8,
+          9,
+          17,
+          21,
+          23,
+          29,
+          30,
+          31
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "10038",
+        "parsed": "10038",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "named_insured": {
+    "primary_name": {
+      "raw": "Harrowgate Realty LLC",
+      "parsed": "Harrowgate Realty LLC",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        17,
+        18,
+        19,
+        20,
+        21,
+        23,
+        24,
+        26,
+        27,
+        28,
+        30,
+        31
+      ],
+      "flagged": false
+    },
+    "entity_type": {
+      "raw": "Limited Liability Company",
+      "parsed": "Limited Liability Company",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        17,
+        18,
+        19,
+        20,
+        21,
+        23,
+        24,
+        26,
+        27,
+        28,
+        30,
+        31
+      ],
+      "flagged": false
+    },
+    "mailing_address": {
+      "line_1": {
+        "raw": "Old Forge, NY 13420",
+        "parsed": "Old Forge, NY 13420",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          6,
+          7
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Old Forge",
+        "parsed": "Old Forge",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          6,
+          7
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          6,
+          7,
+          8,
+          9,
+          17,
+          21,
+          23,
+          29,
+          30,
+          31
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13420",
+        "parsed": "13420",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          6,
+          7
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "producer": {
+    "agency_name": {
+      "raw": "DELAWARE AGENCY SERVICES",
+      "parsed": "DELAWARE AGENCY SERVICES",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3,
+        6
+      ],
+      "flagged": false
+    },
+    "address": {
+      "line_1": {
+        "raw": "PO BOX 460",
+        "parsed": "PO BOX 460",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "city": {
+        "raw": "HANCOCK",
+        "parsed": "HANCOCK",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          6
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          6,
+          7,
+          8,
+          9,
+          17,
+          21,
+          23,
+          29,
+          30,
+          31
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13783",
+        "parsed": "13783",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          6
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "policy": {
+    "policy_number": {
+      "raw": "TWC4663845",
+      "parsed": "TWC4663845",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        17,
+        18,
+        19,
+        20,
+        21,
+        23,
+        24,
+        26,
+        27,
+        28,
+        30,
+        31
+      ],
+      "flagged": false
+    },
+    "prior_policy_number": {
+      "raw": "TWC4541014",
+      "parsed": "TWC4541014",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        2,
+        6
+      ],
+      "flagged": false
+    },
+    "effective_date": {
+      "raw": "8/14/2024",
+      "parsed": "2024-08-14",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        2,
+        6,
+        10,
+        30,
+        31
+      ],
+      "flagged": false
+    },
+    "expiration_date": {
+      "raw": "8/14/2025",
+      "parsed": "2025-08-14",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        6,
+        30,
+        31
+      ],
+      "flagged": false
+    },
+    "policy_type": {
+      "raw": "Workers Compensation",
+      "parsed": "Workers Compensation",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "flagged": false
+    }
+  },
+  "premium": {
+    "total_policy_premium": {
+      "raw": "$3,280.00",
+      "parsed": 3280.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "estimated_annual_premium": {
+      "raw": "$3,004.00",
+      "parsed": 3004.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "deposit_premium": {
+      "raw": "$3,280.00",
+      "parsed": 3280.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "minimum_premium": {
+      "raw": "$600.00",
+      "parsed": 600.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "surcharges": [
+      {
+        "description": {
+          "raw": "New York State Assessment",
+          "parsed": "New York State Assessment",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            9
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$276.00",
+          "parsed": 276.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "workers_compensation": {
+    "item_1_insured": {
+      "named_insured": {
+        "raw": "Harrowgate Realty LLC",
+        "parsed": "Harrowgate Realty LLC",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          6,
+          7,
+          8,
+          9,
+          10,
+          17,
+          18,
+          19,
+          20,
+          21,
+          23,
+          24,
+          26,
+          27,
+          28,
+          30,
+          31
+        ],
+        "flagged": false
+      },
+      "legal_entity_type": {
+        "raw": "Limited Liability Company",
+        "parsed": "Limited Liability Company",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          2,
+          6,
+          7,
+          8,
+          9,
+          10,
+          17,
+          18,
+          19,
+          20,
+          21,
+          23,
+          24,
+          26,
+          27,
+          28,
+          30,
+          31
+        ],
+        "flagged": false
+      },
+      "ncci_code": {
+        "raw": "39071",
+        "parsed": "39071",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          6
+        ],
+        "flagged": false
+      }
+    },
+    "item_2_policy_period": {
+      "effective_date": {
+        "raw": "8/14/2024",
+        "parsed": "2024-08-14",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          6,
+          10,
+          30,
+          31
+        ],
+        "flagged": false
+      },
+      "expiration_date": {
+        "raw": "8/14/2025",
+        "parsed": "2025-08-14",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          6,
+          30,
+          31
+        ],
+        "flagged": false
+      },
+      "state_of_issue": {
+        "raw": "New York",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          6,
+          7,
+          8,
+          9,
+          18,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "flagged": false
+      }
+    },
+    "item_3_coverage": {
+      "part_one_states": [
+        {
+          "raw": "New York",
+          "parsed": "NY",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            18,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "flagged": false
+        }
+      ],
+      "part_two_employers_liability_bodily_injury_by_accident_each_accident": {
+        "raw": "$100,000.00",
+        "parsed": 100000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "part_two_employers_liability_bodily_injury_by_disease_policy_limit": {
+        "raw": "$500,000.00",
+        "parsed": 500000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "part_two_employers_liability_bodily_injury_by_disease_each_employee": {
+        "raw": "$100,000.00",
+        "parsed": 100000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "part_three_other_states_insurance": [
+        {
+          "raw": "All states except ND, OH, WA, WY and State(s) Designated in Item 3.A",
+          "parsed": "All states except ND, OH, WA, WY and State(s) Designated in Item 3.A",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            6
+          ],
+          "flagged": false
+        }
+      ]
+    },
+    "item_4_premium_basis": [
+      {
+        "state": {
+          "raw": "New York",
+          "parsed": "NY",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            18,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "flagged": false
+        },
+        "class_code": {
+          "raw": "9052",
+          "parsed": "9052",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            9
+          ],
+          "flagged": false
+        },
+        "classification_description": {
+          "raw": "Hotel NOC: All Other Employees & Drivers",
+          "parsed": "Hotel NOC: All Other Employees & Drivers",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "number_of_employees": {
+          "raw": "2",
+          "parsed": 2,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            9,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "flagged": false
+        },
+        "estimated_annual_remuneration": {
+          "raw": "$83,000.00",
+          "parsed": 83000.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "rate_per_100_of_remuneration": {
+          "raw": "3.41",
+          "parsed": 3.41,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "estimated_annual_premium": {
+          "raw": "$2,830.00",
+          "parsed": 2830.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        }
+      }
+    ],
+    "premium_adjustments": {
+      "experience_modification_factor": {
+        "raw": "0.98",
+        "parsed": 0.98,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "expense_constant": {
+        "raw": "$200.00",
+        "parsed": 200.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "terrorism_premium": {
+        "raw": "$28.00",
+        "parsed": 28.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "catastrophe_premium": {
+        "raw": "$3.00",
+        "parsed": 3.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          21
+        ],
+        "flagged": false
+      },
+      "total_estimated_annual_premium": {
+        "raw": "$3,004.00",
+        "parsed": 3004.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "deposit_premium": {
+        "raw": "$3,280.00",
+        "parsed": 3280.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "minimum_premium": {
+        "raw": "$600.00",
+        "parsed": 600.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      }
+    }
+  },
+  "signature": {
+    "title": {
+      "raw": "Authorized Representative",
+      "parsed": "Authorized Representative",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        6
+      ],
+      "flagged": false
+    },
+    "signature_date": {
+      "raw": "7/9/2024",
+      "parsed": "2024-07-09",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        2,
+        6
+      ],
+      "flagged": false
+    }
+  },
+  "fideon:absent": [
+    "billing.amount_due",
+    "billing.bill_to_party",
+    "billing.billing_plan",
+    "billing.due_date",
+    "billing.installments[].amount",
+    "billing.installments[].due_date",
+    "billing.installments[].installment_fee",
+    "billing.installments[].installment_number",
+    "billing.payment_frequency",
+    "billing.payment_method",
+    "billing.payment_plan",
+    "carrier.address.country",
+    "carrier.address.county",
+    "carrier.address.county_code",
+    "carrier.address.line_2",
+    "carrier.company_structure",
+    "carrier.contact.email",
+    "carrier.contact.fax",
+    "carrier.contact.phone",
+    "carrier.contact.website",
+    "carrier.fein",
+    "carrier.group_name",
+    "carrier.is_surplus_lines",
+    "carrier.naic_number",
+    "carrier.state_of_issue",
+    "carrier.surplus_lines_broker_name",
+    "carrier.surplus_lines_license_number",
+    "carrier.writing_company_name",
+    "claim_reporting.claim_reporting_instructions",
+    "claim_reporting.claims_address.city",
+    "claim_reporting.claims_address.country",
+    "claim_reporting.claims_address.county",
+    "claim_reporting.claims_address.county_code",
+    "claim_reporting.claims_address.line_1",
+    "claim_reporting.claims_address.line_2",
+    "claim_reporting.claims_address.postal_code",
+    "claim_reporting.claims_address.state",
+    "claim_reporting.claims_email",
+    "claim_reporting.claims_notice_recipient",
+    "claim_reporting.claims_phone",
+    "deductibles[].amount",
+    "deductibles[].applies_to",
+    "deductibles[].deductible_type",
+    "deductibles[].maximum_amount",
+    "deductibles[].minimum_amount",
+    "deductibles[].notes",
+    "deductibles[].percentage",
+    "deductibles[].percentage_basis",
+    "deductibles[].waiting_period",
+    "document.applicable_coverages[]",
+    "document.batch_number",
+    "document.copy_type",
+    "document.coverage_parts_present[]",
+    "document.language",
+    "document.print_date",
+    "document.source_carrier_folder",
+    "document.source_system",
+    "document.summary_of_changes",
+    "document.transaction_effective_date",
+    "document.transaction_reason",
+    "document.transaction_type",
+    "forms_and_endorsements[].applies_to",
+    "forms_and_endorsements[].deductible_amount",
+    "forms_and_endorsements[].edition_date",
+    "forms_and_endorsements[].form_group",
+    "forms_and_endorsements[].form_number",
+    "forms_and_endorsements[].form_title",
+    "forms_and_endorsements[].form_type",
+    "forms_and_endorsements[].group_premium",
+    "forms_and_endorsements[].is_included",
+    "forms_and_endorsements[].is_mandatory",
+    "forms_and_endorsements[].limit_amount",
+    "forms_and_endorsements[].premium",
+    "interested_parties[].address.city",
+    "interested_parties[].address.country",
+    "interested_parties[].address.county",
+    "interested_parties[].address.county_code",
+    "interested_parties[].address.line_1",
+    "interested_parties[].address.line_2",
+    "interested_parties[].address.postal_code",
+    "interested_parties[].address.state",
+    "interested_parties[].applies_to",
+    "interested_parties[].clause_type",
+    "interested_parties[].description_of_interest",
+    "interested_parties[].is_payor",
+    "interested_parties[].loan_number",
+    "interested_parties[].name",
+    "interested_parties[].party_type",
+    "interested_parties[].rank",
+    "locations[].address.city",
+    "locations[].address.country",
+    "locations[].address.county",
+    "locations[].address.county_code",
+    "locations[].address.line_1",
+    "locations[].address.line_2",
+    "locations[].address.postal_code",
+    "locations[].address.state",
+    "locations[].alarm_type",
+    "locations[].building_description",
+    "locations[].building_number",
+    "locations[].business_description",
+    "locations[].construction_type",
+    "locations[].coverages[].aggregate_limit_amount",
+    "locations[].coverages[].applies_to",
+    "locations[].coverages[].coinsurance_percentage",
+    "locations[].coverages[].coverage_code",
+    "locations[].coverages[].coverage_description",
+    "locations[].coverages[].coverage_name",
+    "locations[].coverages[].deductible_amount",
+    "locations[].coverages[].deductible_basis",
+    "locations[].coverages[].deductible_type",
+    "locations[].coverages[].form_reference",
+    "locations[].coverages[].is_excluded",
+    "locations[].coverages[].is_included",
+    "locations[].coverages[].limit_amount",
+    "locations[].coverages[].limit_basis",
+    "locations[].coverages[].notes",
+    "locations[].coverages[].premium",
+    "locations[].coverages[].retention_amount",
+    "locations[].coverages[].sublimit_amount",
+    "locations[].coverages[].sublimit_basis",
+    "locations[].coverages[].valuation_basis",
+    "locations[].coverages[].waiting_period",
+    "locations[].interest",
+    "locations[].location_number",
+    "locations[].number_of_stories",
+    "locations[].occupancy_description",
+    "locations[].protection_class",
+    "locations[].sprinklered",
+    "locations[].square_footage",
+    "locations[].territory_code",
+    "locations[].year_built",
+    "loss_history[].claim_number",
+    "loss_history[].description",
+    "loss_history[].loss_date",
+    "loss_history[].paid_amount",
+    "loss_history[].reserved_amount",
+    "loss_history[].status",
+    "named_insured.additional_named_insureds[].address.city",
+    "named_insured.additional_named_insureds[].address.country",
+    "named_insured.additional_named_insureds[].address.county",
+    "named_insured.additional_named_insureds[].address.county_code",
+    "named_insured.additional_named_insureds[].address.line_1",
+    "named_insured.additional_named_insureds[].address.line_2",
+    "named_insured.additional_named_insureds[].address.postal_code",
+    "named_insured.additional_named_insureds[].address.state",
+    "named_insured.additional_named_insureds[].effective_date",
+    "named_insured.additional_named_insureds[].entity_type",
+    "named_insured.additional_named_insureds[].name",
+    "named_insured.additional_named_insureds[].relationship",
+    "named_insured.business_description",
+    "named_insured.contact.email",
+    "named_insured.contact.fax",
+    "named_insured.contact.phone",
+    "named_insured.contact.website",
+    "named_insured.doing_business_as",
+    "named_insured.fein",
+    "named_insured.mailing_address.country",
+    "named_insured.mailing_address.county",
+    "named_insured.mailing_address.county_code",
+    "named_insured.mailing_address.line_2",
+    "named_insured.naics_code",
+    "named_insured.physical_address.city",
+    "named_insured.physical_address.country",
+    "named_insured.physical_address.county",
+    "named_insured.physical_address.county_code",
+    "named_insured.physical_address.line_1",
+    "named_insured.physical_address.line_2",
+    "named_insured.physical_address.postal_code",
+    "named_insured.physical_address.state",
+    "named_insured.sic_code",
+    "named_insured.years_in_business",
+    "policy.account_id",
+    "policy.alternate_policy_identifiers[].identifier_type",
+    "policy.alternate_policy_identifiers[].identifier_value",
+    "policy.anniversary_date",
+    "policy.audit_frequency",
+    "policy.cancellation_date",
+    "policy.cancellation_reason",
+    "policy.certificate_number",
+    "policy.effective_time",
+    "policy.expiration_time",
+    "policy.is_assessable",
+    "policy.is_renewal",
+    "policy.minimum_earned_premium_percentage",
+    "policy.nonrenewal_notice_date",
+    "policy.plan_type",
+    "policy.policy_form_edition",
+    "policy.policy_form_name",
+    "policy.policy_form_number",
+    "policy.policy_term_months",
+    "policy.policyholder_since_date",
+    "policy.program_name",
+    "policy.renewal_of_policy_number",
+    "policy.time_zone",
+    "premium.additional_insured_processing_fee",
+    "premium.additional_premium",
+    "premium.administrative_fee",
+    "premium.basic_premium",
+    "premium.discounts_and_credits[].amount",
+    "premium.discounts_and_credits[].applies_to",
+    "premium.discounts_and_credits[].description",
+    "premium.discounts_and_credits[].edition_date",
+    "premium.discounts_and_credits[].form_reference",
+    "premium.discounts_and_credits[].is_applied",
+    "premium.discounts_and_credits[].percentage",
+    "premium.exposure_amount",
+    "premium.fire_fee",
+    "premium.forms_and_endorsements_premium",
+    "premium.guaranty_association_surcharge",
+    "premium.inspection_fee",
+    "premium.motor_vehicle_law_enforcement_fee",
+    "premium.policy_fee",
+    "premium.premium_by_coverage_part[].coverage_part",
+    "premium.premium_by_coverage_part[].premium",
+    "premium.rate_per_unit",
+    "premium.rating_basis",
+    "premium.return_premium",
+    "premium.service_fee",
+    "premium.stamping_fee",
+    "premium.surcharges[].applies_to",
+    "premium.surcharges[].edition_date",
+    "premium.surcharges[].form_reference",
+    "premium.surcharges[].percentage",
+    "premium.surplus_lines_tax",
+    "premium.taxes_and_fees[].amount",
+    "premium.taxes_and_fees[].applies_to",
+    "premium.taxes_and_fees[].description",
+    "premium.taxes_and_fees[].is_fully_earned",
+    "producer.address.country",
+    "producer.address.county",
+    "producer.address.county_code",
+    "producer.address.line_2",
+    "producer.commission_percentage",
+    "producer.contact.email",
+    "producer.contact.fax",
+    "producer.contact.phone",
+    "producer.contact.website",
+    "producer.license_number",
+    "producer.producer_code",
+    "producer.producer_contact_name",
+    "signature.authorized_representative_name",
+    "signature.countersignature_date",
+    "signature.countersignature_state",
+    "state_notices[].form_reference",
+    "state_notices[].notice_title",
+    "state_notices[].state",
+    "terrorism.catastrophe_terrorism_premium",
+    "terrorism.certified_acts_limit",
+    "terrorism.disclosure_form_number",
+    "terrorism.federal_share_percentage",
+    "terrorism.program_cap_disclosure",
+    "terrorism.terrorism_disposition",
+    "terrorism.terrorism_exclusion_form_number",
+    "terrorism.terrorism_premium",
+    "terrorism.terrorism_rate",
+    "terrorism.terrorism_rejection_date",
+    "terrorism.terrorism_rejection_indicator",
+    "terrorism.tria_coverage_elected",
+    "workers_compensation.audit.audit_frequency",
+    "workers_compensation.audit.audit_type",
+    "workers_compensation.audit.payroll_reporting_basis",
+    "workers_compensation.deductible_program.aggregate_deductible",
+    "workers_compensation.deductible_program.deductible_type",
+    "workers_compensation.deductible_program.per_claim_deductible",
+    "workers_compensation.item_1_insured.bureau_file_number",
+    "workers_compensation.item_1_insured.fein",
+    "workers_compensation.item_1_insured.other_workplaces[].city",
+    "workers_compensation.item_1_insured.other_workplaces[].country",
+    "workers_compensation.item_1_insured.other_workplaces[].county",
+    "workers_compensation.item_1_insured.other_workplaces[].line_1",
+    "workers_compensation.item_1_insured.other_workplaces[].line_2",
+    "workers_compensation.item_1_insured.other_workplaces[].postal_code",
+    "workers_compensation.item_1_insured.other_workplaces[].state",
+    "workers_compensation.item_1_insured.risk_id_number",
+    "workers_compensation.item_2_policy_period.effective_time",
+    "workers_compensation.item_3_coverage.endorsement_states[]",
+    "workers_compensation.item_3_coverage.uscla_or_federal_coverage[]",
+    "workers_compensation.item_4_premium_basis[].location_number",
+    "workers_compensation.officers_and_owners[].class_code",
+    "workers_compensation.officers_and_owners[].included_or_excluded",
+    "workers_compensation.officers_and_owners[].name",
+    "workers_compensation.officers_and_owners[].ownership_percentage",
+    "workers_compensation.officers_and_owners[].remuneration",
+    "workers_compensation.officers_and_owners[].title",
+    "workers_compensation.premium_adjustments.assessments_and_surcharges[].amount",
+    "workers_compensation.premium_adjustments.assessments_and_surcharges[].description",
+    "workers_compensation.premium_adjustments.assessments_and_surcharges[].rate",
+    "workers_compensation.premium_adjustments.experience_modification_effective_date",
+    "workers_compensation.premium_adjustments.merit_or_schedule_rating_factor",
+    "workers_compensation.premium_adjustments.premium_discount",
+    "workers_compensation.premium_adjustments.waiver_of_subrogation_charge",
+    "workers_compensation.rate_components.additional_adjustment_factor",
+    "workers_compensation.rate_components.catastrophe_provision_rate",
+    "workers_compensation.rate_components.classification_loss_cost",
+    "workers_compensation.rate_components.contribution_clause",
+    "workers_compensation.rate_components.future_trends_factor",
+    "workers_compensation.rate_components.legislative_changes_factor",
+    "workers_compensation.rate_components.loss_adjustment_expense_factor",
+    "workers_compensation.rate_components.loss_cost_multiplier",
+    "workers_compensation.rate_components.loss_cost_revision_effective_date",
+    "workers_compensation.rate_components.rating_bureau",
+    "workers_compensation.rate_components.terrorism_rate",
+    "workers_compensation.waivers_of_subrogation[].entity_name",
+    "workers_compensation.waivers_of_subrogation[].job_description",
+    "workers_compensation.waivers_of_subrogation[].premium_charge",
+    "workers_compensation.waivers_of_subrogation[].waiver_type"
+  ],
+  "fideon:provenance": {
+    "generator": "fideon-synth",
+    "source": "test_documents",
+    "schema": "wc v1.4.0",
+    "render": "scanned_only",
+    "scanner_profile": "fax, 200 dpi bitonal",
+    "synthetic": true,
+    "note": "Scanned synthetic document generated from reference source test_documents."
+  }
+}
