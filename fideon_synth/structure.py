@@ -1009,16 +1009,21 @@ class Reader:
         lines, j = self._section(i, gap=4)
         rows = []
         for line in lines:
+            pending = None                         # a date cell, its amount to its right
             for cell in line.cells:
                 found = [g for g in self.found_in.get(id(cell), []) if not g.blank]
                 money = [g for g in found if g.kind == "money"]
-                dates = [g for g in found if g.kind == "date"]
+                dates = [g for g in found if g.kind == "date"] or \
+                    ([pending] if pending is not None else [])
+                pending = None
                 if re.search(r"(?i)installment fee of", cell.text):
                     if money:                      # "**An installment fee of $5.00 ..."
                         self._use(money[0])
                         self.fee = fv(money[0].new, as_number(money[0].new))
                     continue
                 if not money:
+                    if dates and cell.text.strip() == dates[0].text.strip():
+                        pending = dates[0]
                     continue
                 row = {"installment_number": derived(str(len(rows) + 1), parsed=len(rows) + 1),
                        "amount": fv(money[0].new, as_number(money[0].new))}
@@ -1027,6 +1032,11 @@ class Reader:
                     row["due_date"] = self.field("date", dates[0].new)
                     self._use(dates[0])
                 rows.append(row)
+        # a schedule set in two columns reads across: Jan, Mar, Feb, Apr
+        if rows and all(r.get("due_date", {}).get("parsed") for r in rows):
+            rows.sort(key=lambda r: r["due_date"]["parsed"])
+            for n, r in enumerate(rows, 1):
+                r["installment_number"] = derived(str(n), parsed=n)
         if rows:
             self.gold.setdefault("billing", {})["installments"] = rows
         return j

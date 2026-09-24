@@ -51,11 +51,15 @@ For each document it:
    emails, FEINs, policy/hull/account numbers, street and city lines, PO
    boxes, and names above an address or under "Insured", "Agent", "Clients";
 3. replaces them consistently - one original, one replacement, everywhere it
-   is printed; every date by the same offset (terms stay valid); money by one
-   factor; identifiers keep their shape. The carrier's own name and address
-   stay;
+   is printed; every date by the same offset (terms stay valid), including a
+   date wrapped over two lines; identifiers keep their shape, and a coupon's
+   scan line is replaced with the new policy number inside it. Amounts stay
+   as printed - a scaled total never equals the sum of its rounded scaled
+   parts. The carrier's own name and address stay;
 4. whites out the printed value and draws the new one at the size, baseline
-   and face (serif or sans) measured from the page, then rescans;
+   and face (serif or sans) measured from the page - condensed when it is
+   longer than the old one, so it never runs into the words after it - then
+   rescans;
 5. matches each value's printed label to the schema's field names and
    aliases for the gold. Values it changed but could not place confidently go
    to `fideon:unmapped` with their label and pages - the gold never guesses.
@@ -64,7 +68,8 @@ For each document it:
 A document fails only if an original identifying value survives, or the gold
 claims a value that is not on the page. Known limits: a value the OCR misread
 is not recognised and stays as printed; table rows are replaced but not
-labelled; a scaled total can differ from its scaled parts by a rounding unit.
+labelled. An original date or identifier left anywhere - even inside a longer
+run of digits - fails the document.
 `FIDEON_KEEP_DIGITAL=1` keeps the pre-scan render for inspection.
 
 **Scanned sources are read again with OCR.** A scan's own text layer often

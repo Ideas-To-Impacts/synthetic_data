@@ -10,7 +10,9 @@ No per-carrier or per-document code. For each source PDF:
    under a label such as "Insured", "Agent" or "Clients".
 3. **Replace** them consistently: one original always gets one replacement,
    every date moves by the same offset (so terms and date order survive),
-   money scales by one factor, identifiers keep their shape.
+   identifiers keep their shape. Amounts stay as printed: they identify
+   no one, and a scaled total can never equal the sum of its rounded
+   scaled parts, so scaling would break the arithmetic the gold asserts.
 4. **Draw** the replacements in place and rescan the result.
 5. **Label** what it can for the gold: a value's printed label ("Policy
    Number:") is matched to the canonical schema's field names and aliases.
@@ -25,8 +27,7 @@ The line of business is the source's folder name (``.../<Carrier>/<lob>/x.pdf``)
 and picks the schema; the carrier is the folder above it.
 
 Known limits, reported rather than hidden: a value the OCR misread is not
-recognised and stays as printed; money totals can differ by a rounding unit
-from their scaled parts.
+recognised and stays as printed.
 """
 
 from __future__ import annotations
@@ -129,7 +130,14 @@ NOT_A_NAME = re.compile(r"\b(page|policy|coverage|date|premium|limit|number|tota
 INSURER_NAME = re.compile(r"\b(?:insurance|indemnity|assurance|casualty)\s+(?:company|co\.?|"
                           r"corporation|corp\.?)(?:\s|$)|\bunderwriters\b", re.I)
 PII = {"email", "phone", "fein", "pobox", "cityline", "street", "id", "digits",
-       "person", "company"}
+       "person", "company", "scanline"}
+#: a machine-read line - a payment coupon's scan line, a MICR line: only
+#: groups of digits, many of them. It encodes the policy number, the amount
+#: and the due date, so it is replaced whole
+SCANLINE = re.compile(r"\d{4,}(?:\s+\d{3,}){1,9}")
+#: a date broken over two lines: "... through May 23," / "2027. Your ..."
+DATE_HEAD = re.compile(r"(?<![A-Za-z])(?:%s)\.? \d{1,2}(?=,?\s*$)" % "|".join(
+    MONTHS + [m[:3] for m in MONTHS] + ["Sept"]))
 
 
 # ── the schema, as label phrases ────────────────────────────────────────────
@@ -251,16 +259,53 @@ class Found:
         self.key = None           # the whole value, when this is one piece of it
         self.blank = False        # a later piece of a value split across cells
         self.no_zip = False       # a known town printed here without its ZIP
+        self.whole = None         # the whole value, when this is one line of it
+        self.part = None          # 0 = its first line, 1 = the line it ends on
 
     @property
     def rect(self):
         return self.cell.span_rect(self.start, self.end)
 
 
+def _date_of(text):
+    for fmt in ("%m/%d/%Y", "%m/%d/%y", "%Y-%m-%d", "%B %d, %Y", "%b %d, %Y", "%b. %d, %Y"):
+        try:
+            return datetime.strptime(text, fmt).date()
+        except ValueError:
+            continue
+    return None
+
+
+def _wrapped_dates(cell_list, found):
+    """A date whose year was set on the next line of a paragraph."""
+    out = []
+    for cell in cell_list:
+        m = DATE_HEAD.search(cell.text)
+        if m is None or any(f.cell is cell and f.start < m.end() and m.start() < f.end
+                            for f in found):
+            continue
+        below = _below(cell, cell_list)
+        if below is None or any(f.cell is below and f.start < 4 for f in found):
+            continue
+        year = re.match(r"\d{4}(?![\d/,])", below.text)
+        whole = m.group(0).replace(".", "") + ", " + (year.group(0) if year else "")
+        if year is None or _date_of(whole) is None:
+            continue
+        for n, (c, s, e) in enumerate(((cell, m.start(), m.end()), (below, 0, 4))):
+            f = Found("date", c, s, e)
+            f.whole, f.key, f.part = whole, _key(whole), n
+            out.append(f)
+    return out
+
+
 def _detect(cell_list):
     found = []
     for cell in cell_list:
         if re.search(r"https?:|www\.|://", cell.text):
+            continue
+        if SCANLINE.fullmatch(cell.text.strip()) and len(re.sub(r"\D", "", cell.text)) >= 20:
+            s = len(cell.text) - len(cell.text.lstrip())
+            found.append(Found("scanline", cell, s, s + len(cell.text.strip())))
             continue
         taken = []
         for kind, rx in PATTERNS:
@@ -381,6 +426,7 @@ def _label_above(r, cell_list, max_gap=2.2):
 def find_values(cell_list):
     """Everything on a page worth replacing, labelled where a label exists."""
     found = _detect(cell_list)
+    found += _wrapped_dates(cell_list, found)
     for f in found:
         before = [g.end for g in found if g.cell is f.cell and g.end <= f.start]
         f.after = max(before, default=0)
@@ -479,7 +525,6 @@ class Faker:
     def __init__(self, vals: Values, originals=()):
         self.v = vals
         self.days = vals.choice([-1, 1]) * vals.integer(45, 540)
-        self.factor = vals.rng.uniform(0.82, 1.28)
         self.memo: Dict[tuple, str] = {}
         # a replacement must not be another original value of this document -
         # the insured's town handed to the agent is still the insured's town
@@ -490,8 +535,11 @@ class Faker:
             return ""
         key = (f.kind, f.key or _key(f.text))
         if key not in self.memo:
-            self.memo[key] = getattr(self, "_" + f.kind)(f.text)
+            self.memo[key] = getattr(self, "_" + f.kind)(f.whole or f.text)
         new = self.memo[key]
+        if f.part is not None:               # one line of a wrapped date
+            head, _, year = new.rpartition(" ")
+            return head.rstrip(",") if f.part == 0 else year
         if f.no_zip:
             new = re.sub(r"\s+\d{5}(?:-\d{4})?$", "", new)
         if f.kind == "date" and f.key and _key(f.text) != f.key:
@@ -566,14 +614,30 @@ class Faker:
     _digits = _id
 
     # dates and money
+    def _scanline(self, old):
+        """New digits in the same groups, with the replaced identifiers the
+        line encodes spliced back in where the originals stood."""
+        new = _reshape_digits(old, self.v)
+        flat_old, flat_new = re.sub(r"\s", "", old), list(re.sub(r"\s", "", new))
+        for (kind, key), value in self.memo.items():
+            digits = re.sub(r"\D", "", key)
+            if kind in ("id", "digits") and len(digits) >= 6 and digits in flat_old:
+                repl = re.sub(r"\D", "", value)
+                if len(repl) == len(digits):
+                    at = flat_old.index(digits)
+                    flat_new[at:at + len(digits)] = repl
+        out, k = [], 0
+        for c in new:
+            if c.isdigit():
+                out.append(flat_new[k])
+                k += 1
+            else:
+                out.append(c)
+        return "".join(out)
+
     def _date(self, old):
-        for fmt in ("%m/%d/%Y", "%m/%d/%y", "%Y-%m-%d", "%B %d, %Y", "%b %d, %Y", "%b. %d, %Y"):
-            try:
-                d = datetime.strptime(old, fmt).date()
-                break
-            except ValueError:
-                continue
-        else:
+        d = _date_of(old)
+        if d is None:
             return old
         n = d + timedelta(days=self.days)
         if "/" in old:
@@ -587,17 +651,9 @@ class Faker:
         return "%s %d, %d" % (n.strftime("%B" if old.split()[0] in MONTHS else "%b"), n.day, n.year)
 
     def _money(self, old):
-        amount = as_number(old)
-        if not amount:
-            return old
-        cents = "." in old
-        value = amount * self.factor
-        if not cents and amount >= 10000 and amount % 1000 == 0:
-            value = round(value / 1000) * 1000
-        if old.endswith(".00"):
-            value = round(value)               # "$535.00" totals whole-dollar rows
-        text = "{:,.2f}".format(value) if cents else "{:,}".format(int(round(value)))
-        return ("$ " if old.startswith("$ ") else "$") + text
+        # kept: a premium schedule's total is the sum of rows printed
+        # without a "$", and any scaling rounds the parts apart from it
+        return old
 
 
 # ── gold ────────────────────────────────────────────────────────────────────
@@ -983,6 +1039,8 @@ def _drop_path(doc, path):
 def _alignment(f, cell_list):
     """``right`` when the value sits in a right-aligned column - the cells
     above and below it end where it ends but start elsewhere."""
+    if f.cell.text[f.end:].strip(" ,;.-–"):
+        return "left"                     # words follow it: it is set in a sentence
     r = f.rect
     lefts = rights = 0
     for c in cell_list:
@@ -1029,6 +1087,10 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
             pages.append((page, ink, matrix, visible, cell_list, found))
         _sweep(pages, _carrier_marks(source_pdf.parent.parent.name))
         faker = Faker(vals, [f.text for *_, found in pages for f in found if f.kind in PII])
+        for *_, found in pages:          # a scan line encodes the others
+            for f in found:
+                if f.kind != "scanline":
+                    f.new = faker(f)
         for page, ink, matrix, visible, cell_list, found in pages:
             reps = []
             for f in found:
@@ -1043,6 +1105,15 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
                 # it, so it is redrawn with it
                 end = f.end + (f.end < len(f.cell.text) and f.cell.text[f.end] in ",;-\u2013")
                 tail = f.cell.text[f.end:end]
+                # the words printed after it in its own line: the new value
+                # must end a space before them, not run over them
+                room = (nxt.rect.x0 - 3) if nxt is not None else page.rect.width - 18
+                after = end
+                while after < len(f.cell.text) and f.cell.chars[after] is None:
+                    after += 1
+                if after < len(f.cell.text) and f.cell.chars[end - 1] is not None:
+                    gap = f.cell.chars[after].box.x0 - f.cell.chars[end - 1].box.x1
+                    room = f.cell.chars[after].box.x0 - max(1.5, 0.8 * gap)
                 reps.append(overlay.Replacement(
                     page=page.number, old=f.text + tail, new=f.new + tail,
                     visible_rect=f.cell.span_rect(f.start, end),
@@ -1050,8 +1121,7 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
                     font=overlay.base14(first.font, visible), face_known=visible,
                     glued=f.start > 0 and f.cell.text[f.start - 1] not in " ",
                     color=first.color if visible else 0,
-                    align=_alignment(f, cell_list),
-                    room=(nxt.rect.x0 - 3) if nxt is not None else page.rect.width - 18))
+                    align=_alignment(f, cell_list), room=room))
             found_all += found
             plans.append((page, reps, ink, matrix))
         signed = _signature_ink(pages)
@@ -1076,13 +1146,20 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
             rest = rest.replace(new, " ")
         # a value split across cells is checked whole: its first piece alone
         # ("CEDARLINE") can be a word of some other name on the page
-        leaks = sorted({f.key or f.text for f in found_all if f.kind in PII and f.new != f.text
+        leaks = sorted({f.key or f.text for f in found_all
+                        if (f.kind in PII or f.kind == "date") and f.new != f.text
                         and not f.blank
                         and pageref.on_page(pageref._norm(f.key or f.text), rest)})
+        # a policy number is also encoded inside a coupon's scan line
+        runs = re.sub(r"(?<=\d)\s(?=\d)", "", rest)
+        leaks += sorted({f.text for f in found_all if f.kind in ("id", "digits")
+                         and f.new != f.text and len(re.sub(r"\D", "", f.text)) >= 7
+                         and re.sub(r"\D", "", f.text) in runs} - set(leaks))
         built.problems += ["source value %r is still in the generated PDF" % t for t in leaks]
 
         title = schema.merged.get("title", "")
-        gold, unmapped = build_gold([f for f in found_all if id(f) not in reader.consumed],
+        gold, unmapped = build_gold([f for f in found_all if id(f) not in reader.consumed
+                                     and f.part is None and f.kind != "scanline"],
                                     index, carrier, title, built.pdf.name, built.pages, whole)
         structure.finish(structure.merge(gold, laid_out), schema)
         if signed and "signature.signature_present" in schema.leaves:
@@ -1124,7 +1201,6 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
             "values_replaced": sum(1 for f in found_all if f.new != f.text),
             "text_recovered_by_ocr": sum(len(r) for r in recovered.values()),
             "date_shift_days": faker.days,
-            "money_factor": round(faker.factor, 4),
             "synthetic": True,
             "note": "Identifying values replaced with invented ones. Fields under "
                     "fideon:unmapped were changed but could not be matched to a "

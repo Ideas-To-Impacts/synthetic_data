@@ -254,6 +254,48 @@ def test_leadered_schedule_drivers_units_and_discounts(tmp_path, schema, monkeyp
     assert {"Claim Free Renewal", "Home Owner"} <= set(discounts)
 
 
+RENEWAL = LINES[:9] + [
+    (48, 230, 10, "Your current policy period ends May 23, 2026 at 12:01 a.m. The renewal is"),
+    (48, 242, 10, "for the period May 23, 2026 through May 23,"),
+    (48, 254, 10, "2027. Your 12-month policy premium is $264.00."),
+    (48, 290, 11, "Your Payment Schedule"),
+    (55, 306, 8, "Date"), (128, 306, 8, "Amount**"), (174, 306, 8, "Date"), (247, 306, 8, "Amount**"),
+    (55, 318, 7.5, "May 23, 2026"), (133, 318, 7.5, "$71.00"),
+    (174, 318, 7.5, "Jul 23, 2026"), (252, 318, 7.5, "$71.00"),
+    (55, 330, 7.5, "Jun 23, 2026"), (133, 330, 7.5, "$71.00"),
+    (174, 330, 7.5, "Aug 23, 2026"), (252, 330, 7.5, "$71.00"),
+    # the rule under each row is a line of dots, set a little lower
+    (55, 321, 8, "." * 40), (174, 321, 8, "." * 40),
+    (55, 333, 8, "." * 40), (174, 333, 8, "." * 40),
+    (46, 350, 7, "**An installment fee of $5.00 per installment is included."),
+    # a coupon's scan line: the policy number and the amount inside it
+    (87, 600, 10, "030800001028349131055 0007100 0026900 5000693"),
+]
+
+
+def test_wrapped_dates_ruled_schedules_and_scan_lines_leave_nothing(tmp_path, schema, monkeypatch):
+    monkeypatch.setattr(sys.modules[__name__], "LINES", RENEWAL)
+    monkeypatch.setenv("FIDEON_KEEP_DIGITAL", "1")
+    source = _source(tmp_path, "renewal.pdf")
+    out = tmp_path / "out"
+    out.mkdir()
+    built = generic.synthesize(source, out / "r.pdf", out / "r.json", schema, Values("t"))
+    assert built.ok, built.problems
+    text = " ".join(p.get_text() for p in fitz.open(str(out / "_temp_r.pdf")))
+    for original in ("May 23", "Jun 23", "Jul 23", "Aug 23", "00001028349"):
+        assert original not in text
+    gold = json.loads(built.gold.read_text("utf-8"))
+    policy = re.sub(r"\D", "", gold["policy"]["policy_number"]["raw"])
+    assert policy in re.sub(r"\s", "", text)          # the scan line carries the new number
+
+    # amounts are kept, so the schedule still adds up to what it says
+    assert "$264.00" in text and text.count("$71.00") == 4
+    plan = gold["billing"]["installments"]
+    dues = [row["due_date"]["parsed"] for row in plan]
+    assert len(dues) == 4 and dues == sorted(dues)
+    assert [row["installment_number"]["parsed"] for row in plan] == [1, 2, 3, 4]
+
+
 def _image_only(path, tmp_path, layer_lines=()):
     """The page as a picture, with an invisible OCR layer holding only
     ``layer_lines`` - none for a pure image scan."""

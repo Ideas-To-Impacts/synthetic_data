@@ -272,6 +272,7 @@ class Char:
     size: float
     color: int
     space_before: bool = False    # the text layer put a space before this char
+    leader: bool = False          # one dot of a line drawn as a row of dots
 
 
 @dataclass
@@ -329,6 +330,9 @@ def cells(page, matrix=fitz.Identity, ink: Optional[Ink] = None,
     for block in page.get_text("rawdict")["blocks"]:
         for line in block.get("lines", []):
             space = False
+            # a text line that is all dots is a rule drawn under a row, not text
+            glyphs = [ch["c"] for span in line["spans"] for ch in span["chars"] if ch["c"].strip()]
+            leader = len(glyphs) >= 3 and sum(c in FILL for c in glyphs) >= 0.8 * len(glyphs)
             for span in line["spans"]:
                 for ch in span["chars"]:
                     if not ch["c"].strip():
@@ -338,7 +342,8 @@ def cells(page, matrix=fitz.Identity, ink: Optional[Ink] = None,
                         continue
                     ocr = fitz.Rect(ch["bbox"])
                     chars.append(Char(ch["c"], ocr * matrix, ocr, span["font"],
-                                      span["size"], span.get("color", 0), space))
+                                      span["size"], span.get("color", 0), space,
+                                      leader and ch["c"] in FILL))
                     space = False
     if drop:
         chars = [ch for ch in chars if not any(
@@ -378,6 +383,18 @@ def cells(page, matrix=fitz.Identity, ink: Optional[Ink] = None,
         typed = [ch.box for ch in row if ch.c not in FILL]
         row[:] = [ch for ch in row if ch.c not in FILL or not any(
             min(ch.box.x1, b.x1) - max(ch.box.x0, b.x0) > 0.3 * ch.box.width for b in typed)]
+        # a dot of a rule set a little under the row falls in the spaces of
+        # the text over it: "Jul 23,. 2026", "$71..00"
+        typed = [ch for ch in row if ch.c not in FILL]
+        def inside(ch):
+            left = [b for b in typed if b.box.x1 <= ch.box.x0 + 0.5 * ch.box.width]
+            right = [b for b in typed if b.box.x0 >= ch.box.x1 - 0.5 * ch.box.width]
+            if not left or not right:
+                return False
+            a = max(left, key=lambda b: b.box.x1)
+            b = min(right, key=lambda b: b.box.x0)
+            return b.box.x0 - a.box.x1 < 1.1 * max(a.box.height, b.box.height)
+        row[:] = [ch for ch in row if not ch.leader or not inside(ch)]
         # a leader between columns ("Uninsured Boater ....... $300,000") is
         # layout, not text: drop it and break the cell where it stood. A lone
         # full stop is punctuation; a run of three, or any ellipsis glyph, is a
@@ -608,9 +625,16 @@ def apply(page, replacements: List[Replacement], ink: Ink, matrix=fitz.Identity)
             x = right - width
         else:
             x = left
-            if rep.room is not None and x + width > rep.room:
-                shrink = max(0.72, (rep.room - x) / width)
-                size, width = size * shrink, width * shrink
+        squeeze = 1.0
+        if rep.room is not None and x + width > rep.room and rep.align != "right":
+            # a longer value set where a shorter one stood - "January 24,
+            # 2027" for "May 23, 2026" in a sentence - is set condensed, as
+            # tight forms are, and only then smaller, so it never runs into
+            # the words after it
+            fit = max(0.05, (rep.room - x) / width)
+            squeeze = max(0.62, fit)
+            size *= max(0.8, fit / squeeze)
         c = rep.color
-        page.insert_text((x, baseline), rep.new, fontname=rep.font, fontsize=size,
+        morph = (fitz.Point(x, baseline), fitz.Matrix(squeeze, 1)) if squeeze < 1 else None
+        page.insert_text((x, baseline), rep.new, fontname=rep.font, fontsize=size, morph=morph,
                          color=((c >> 16 & 255) / 255, (c >> 8 & 255) / 255, (c & 255) / 255))
