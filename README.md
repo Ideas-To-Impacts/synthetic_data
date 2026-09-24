@@ -16,7 +16,7 @@ fideon-synth
 fideon-synth --count 10
 
 # Or customize input, output, and count explicitly:
-fideon-synth --input-dir "Data\original PDFs" --out E:\fideon-synth\output --count 10
+fideon-synth --input-dir "Data\original data" --out E:\fideon-synth\output --count 10
 ```
 
 Output lands in:

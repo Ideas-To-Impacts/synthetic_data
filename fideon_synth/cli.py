@@ -8,7 +8,7 @@ Command line for fideon-synth.
     fideon-synth --form ... --out ./out --no-scanned --seed 7
 
     # generic: every PDF under a folder (or one PDF), --count samples each
-    fideon-synth --source "Data\\original PDFs\\Markel American Insurance Company" --out ./out --count 1
+    fideon-synth --source "Data\\original data\\Markel American Insurance Company" --out ./out --count 1
 
 Exits non-zero if any document fails a check, so it can sit in a build
 without anyone having to read the output to find out whether it worked.
@@ -36,8 +36,8 @@ def main(argv=None):
                         help="template key (default: amtrust_wc; see --list)")
     parser.add_argument("--out", default=r"E:\fideon-synth\output",
                         help="output directory (default: E:\\fideon-synth\\output)")
-    parser.add_argument("--input-dir", default=r"Data\original PDFs",
-                        help="original source documents directory (default: Data\\original PDFs)")
+    parser.add_argument("--input-dir", default=r"Data\original data",
+                        help="original source documents directory (default: Data\\original data)")
     parser.add_argument("--count", type=int, default=5,
                         help="how many documents to generate (default: 5)")
     parser.add_argument("--seed", type=int, default=0,
@@ -52,6 +52,11 @@ def main(argv=None):
                         help="subdirectory name for gold JSON (default: gold_json)")
     parser.add_argument("--profile", action="append", default=None,
                         help="restrict to named scanner profiles; repeatable")
+    parser.add_argument("--lob", default="wc", choices=["wc", "dwelling_fire"],
+                        help="wc: the AmTrust workers' comp source (default); dwelling_fire: every "
+                             "dwelling_fire source PDF, --count variations of each")
+    parser.add_argument("--only", action="append", default=None,
+                        help="dwelling_fire only: restrict to sources whose carrier/name contains this text; repeatable")
     parser.add_argument("--list", action="store_true",
                         help="show templates, schemas and scanner profiles")
     parser.add_argument("--source", default=None,
@@ -61,6 +66,9 @@ def main(argv=None):
 
     if args.list:
         return _catalogue(args.schema_dir)
+
+    if args.lob == "dwelling_fire":
+        return _dwelling_fire(args)
 
     if args.source:
         return _generic(args)
@@ -93,6 +101,31 @@ def main(argv=None):
     print("  %d synthetic PDFs and %d gold JSON files generated, every check passes" % (n, n))
     print("  -> PDFs: %s" % generator.pdf_dir)
     print("  -> Gold JSON: %s" % generator.gold_dir)
+    return 0
+
+
+def _dwelling_fire(args):
+    from .dfire.engine import DwellingFireGenerator
+
+    print("  Using reference sources: %s" % args.input_dir)
+    print("  Target output: %s" % args.out)
+    print("  Canonical schema: %s (dwelling_fire)" % args.schema_dir)
+    print("  Generating %d variation(s) of each dwelling_fire source..." % args.count)
+    print()
+    generator = DwellingFireGenerator(
+        input_dir=args.input_dir, out_dir=args.out, schema_dir=args.schema_dir,
+        pdf_subdir=args.pdf_subdir, gold_subdir=args.gold_subdir, scan=not args.no_scanned)
+    report = generator.generate(count=args.count, seed=args.seed, only=args.only, progress=_line)
+    print()
+    if not report.ok:
+        print("  %d problem(s):" % len(report.problems))
+        for problem in report.problems:
+            print("    - %s" % problem)
+        return 1
+    n = len(report.documents)
+    print("  %d synthetic PDFs and %d gold JSON files generated, every check passes" % (n, n))
+    print("  -> PDFs: %s" % generator.pdf_root)
+    print("  -> Gold JSON: %s" % generator.gold_root)
     return 0
 
 

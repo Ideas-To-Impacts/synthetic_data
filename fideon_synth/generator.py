@@ -2,7 +2,7 @@
 Common Synthetic Data Generator.
 
 A single unified generator that:
-1. Takes the original source PDF documents in `Data/original PDFs/`
+1. Takes the original source PDF documents in `Data/original data/`
 2. Generates synthetic variations - insured (name, entity type, address, FEIN),
    producer, policy numbers, dates, class of business, payroll, rates and every
    premium figure that follows from them
@@ -54,7 +54,6 @@ COMPANY_PREFIX = [
     "Sawmill", "Tamarack", "Upland", "Valley Forge", "Westbrook",
 ]
 
-# noun, entity kinds it is used with
 COMPANY_NOUN = [
     "Realty", "Properties", "Hospitality", "Logistics", "Builders", "Timber & Mill",
     "Transport Services", "Lodging", "Contracting", "Excavating", "Landscaping",
@@ -66,7 +65,7 @@ COMPANY_NOUN = [
     "Nursery & Garden", "Stone Works", "Cabinetry", "Sign & Print", "Home Services",
 ]
 
-CORP_SUFFIX = ["Inc.", "Corp.", "Incorporated"]
+CORP_SUFFIX = ["Inc.", "Co.", "Corp.", "Company", "Incorporated"]
 
 AGENCY_HEAD = [
     "CHENANGO", "KEYSTONE", "DELAWARE", "GENESEE", "SUSQUEHANNA", "OTSEGO",
@@ -263,7 +262,7 @@ class SyntheticGenerator:
 
     def __init__(
         self,
-        input_dir: str | Path = r"Data\original PDFs",
+        input_dir: str | Path = r"Data\original data",
         out_dir: str | Path = r"E:\fideon-synth\output",
         schema_dir: str | Path = r"E:\fideon-synth\config\policy_check",
         pdf_subdir: str = "PDF",
