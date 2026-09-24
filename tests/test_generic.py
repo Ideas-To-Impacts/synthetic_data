@@ -326,6 +326,35 @@ def test_printed_prose_reaches_the_gold_as_text_sections(tmp_path, schema):
     assert "08/26/2026" not in begins["raw_text"]         # the replaced date, not the original
 
 
+def test_facts_a_page_states_in_sentences_and_footers(tmp_path, schema):
+    folder = tmp_path / "data" / "Progressive" / "ocean_marine"
+    folder.mkdir(parents=True)
+    doc = fitz.open()
+    page = doc.new_page(width=612, height=792)
+    for x, y, size, text in LINES[:9] + [
+            (48, 250, 10, "This renewal offer is for the policy period 08/26/2026 through 08/26/2027."),
+            (48, 266, 10, "Your current policy period ends 08/26/2026 at 12:01 a.m."),
+            (48, 282, 10, "Changes: The Automatic Card Payments (ACP) discount has been removed from your"),
+            (48, 294, 10, "policy."),
+            (48, 310, 10, "Manage your policy at progressiveagent.com or call us."),
+            (48, 760, 8, "Form A016 (07/19)")]:
+        page.insert_text((x, y), text, fontsize=size, fontname="helv")
+    doc.save(str(folder / "facts.pdf"))
+    out = tmp_path / "out"
+    out.mkdir()
+    built = generic.synthesize(folder / "facts.pdf", out / "f.pdf", out / "f.json", schema, Values("t"))
+    assert built.ok, built.problems
+    gold = json.loads(built.gold.read_text("utf-8"))
+    offer = gold["document_type_detail"]["renewal_offer"]
+    start, end = offer["renewal_effective_date"]["parsed"], offer["renewal_expiration_date"]["parsed"]
+    assert start < end and start != "2026-08-26"                      # replaced, and in order
+    assert offer["expiring_policy_expiration_date"]["parsed"] == start
+    change, = gold["document_type_detail"]["policy_change"]["changes"]
+    assert change["change_description"]["raw"].endswith("has been removed from your policy.")
+    assert gold["carrier"]["contact"]["website"]["raw"] == "progressiveagent.com"
+    assert "A016" in [f["form_number"]["raw"] for f in gold["forms_and_endorsements"]]
+
+
 def _image_only(path, tmp_path, layer_lines=()):
     """The page as a picture, with an invisible OCR layer holding only
     ``layer_lines`` - none for a pure image scan."""

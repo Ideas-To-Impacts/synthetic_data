@@ -378,6 +378,7 @@ class Reader:
         self._footer_form_number()
         self._print_date()
         self._whole_document()
+        self._printed_facts()
 
         if self.operators:
             if self.none_violations is not None:
@@ -505,6 +506,160 @@ class Reader:
                     _put(self.gold, "carrier.address.state", fv(m.group(2).strip(), state))
                     return
             return
+
+    def _has(self, path):
+        return path in self.schema.leaves
+
+    def _printed_facts(self):
+        """Facts a page states in its own words rather than beside a label:
+        the forms named in page footers, the web addresses, the renewal
+        offer's dates, a change "removed from your policy", where the period
+        runs, a print code, a coupon's scan line, the time a page was printed."""
+        self._footer_forms()
+        self._websites()
+        self._renewal_dates()
+        self._change_sentences()
+        for line in self.lines:
+            for cell in line.cells:
+                m = re.search(r"(?i)\bat the (residence premises|address of the named insured)\b",
+                              cell.text)
+                if m and self._has("policy.policy_period_location_basis"):
+                    _put(self.gold, "policy.policy_period_location_basis", fv(m.group(0)))
+        for _, height, cells, found in self.pages:
+            for f in found:
+                if f.kind == "scanline" and not f.blank and self._has("billing.payment_coupon_scan_line"):
+                    _put(self.gold, "billing.payment_coupon_scan_line", fv(f.new))
+                # "9/18/26, 2:39 PM": the time printed with the print date
+                if f.kind == "date" and not f.blank and self._has("document.print_time") and \
+                        (_get(self.gold, "document.print_date") or {}).get("raw") == f.new:
+                    m = re.match(r"\s*,?\s*(\d{1,2}:\d{2}\s?[AP]M)\b", f.cell.text[f.end:], re.I)
+                    if m:
+                        _put(self.gold, "document.print_time", fv(m.group(1)))
+        # a print code repeated in the footer of several pages: "577/0DQD25"
+        seen = {}
+        for n, height, cells, _ in self.pages:
+            for c in cells:
+                text = c.text.strip()
+                if c.rect is not None and c.rect.y0 > 0.85 * height and \
+                        re.fullmatch(r"[0-9A-Z]{2,5}/[0-9A-Z]{4,10}", text) and \
+                        re.search(r"[A-Z]", text) and re.search(r"\d", text):
+                    seen.setdefault(text, set()).add(n)
+        codes = [t for t, pages in seen.items() if len(pages) >= 2]
+        if codes and self._has("document.print_code"):
+            _put(self.gold, "document.print_code", fv(codes[0]))
+
+    def _footer_forms(self):
+        """"Form 6489 NY (06/21)", "PL-50776 NY (11-23)": a form printed on
+        its own at a page's foot, and the policy contract a sentence names,
+        join the forms list - once each."""
+        if not self._has("forms_and_endorsements[].form_number"):
+            return
+        forms = self.gold.setdefault("forms_and_endorsements", [])
+        have = {re.sub(r"\W", "", f["form_number"]["raw"]).lower() for f in forms if "form_number" in f}
+        shape = re.compile(r"^(?:Form\s+)?((?:[A-Z]{1,6}-?)?\d{3,5}[A-Z]?(?: [A-Z]{2})?)\s?\((\d{2}[-/]\d{2})\)$")
+        for n, height, cells, _ in self.pages:
+            for c in cells:
+                m = shape.match(c.text.strip())
+                if not m or c.rect is None:
+                    continue
+                # "Form A016 (07/19)" names a form wherever a page ends its
+                # text; a bare "PL-50776 NY (11-23)" only in the footer band
+                if not c.text.strip().lower().startswith("form ") and c.rect.y0 < 0.8 * height:
+                    continue
+                key = re.sub(r"\W", "", m.group(1)).lower()
+                if key in have:
+                    continue
+                have.add(key)
+                forms.append({"form_number": fv(m.group(1)), "edition_date": fv(m.group(2))})
+        contract = _get(self.gold, "policy.policy_form_number")
+        if contract is not None:
+            key = re.sub(r"\W", "", contract["raw"]).lower()
+            if key not in have:
+                item = {"form_number": copy.deepcopy(contract), "form_type": derived("Policy", contract["raw"])}
+                edition = _get(self.gold, "policy.policy_form_edition")
+                if edition is not None:
+                    item["edition_date"] = copy.deepcopy(edition)
+                forms.insert(0, item)
+        if not forms:
+            del self.gold["forms_and_endorsements"]
+
+    def _websites(self):
+        """A web address: the carrier's own site, or the page's own address
+        when a printout carries it ("https://attachment-viewer...")."""
+        site = re.compile(r"(?i)(?<![\w@./])((?:https?://)?(?:www\.)?[a-z0-9-]+(?:\.[a-z0-9-]+)*"
+                          r"\.(?:com|net|org|app|us|gov)(?:/[\w./%-]*)?)")
+        for line in self.lines:
+            for cell in line.cells:
+                for m in site.finditer(cell.text):
+                    url = m.group(1).rstrip("./")
+                    if url.lower().startswith("http") and "/" in url.split("//", 1)[1]:
+                        if self._has("document.source_url"):
+                            _put(self.gold, "document.source_url", fv(url))
+                    elif any(mark in url.lower() for mark in self.marks) and \
+                            self._has("carrier.contact.website"):
+                        _put(self.gold, "carrier.contact.website", fv(url))
+
+    def _renewal_dates(self):
+        """"This renewal offer is for the policy period A through B", "Your
+        current policy period ends C", "Renewal Payment ... Due By: D"."""
+        ro = "document_type_detail.renewal_offer."
+        if not self._has(ro + "renewal_effective_date"):
+            return
+        dates = []                                 # (page, y, x, new, prefix) in reading order
+        for line in self.lines:
+            text = ""
+            for cell in line.cells:
+                for f in sorted(self.found_in.get(id(cell), []), key=lambda g: g.start):
+                    if f.kind != "date" or f.blank:
+                        continue
+                    new = f.new
+                    if f.part == 0:                # a date wrapped onto the next line
+                        tail = next((g for fs in self.found_in.values() for g in fs
+                                     if g.part == 1 and g.key == f.key), None)
+                        new = f.new + ", " + tail.new if tail is not None else None
+                    elif f.part == 1:
+                        continue
+                    if new:
+                        dates.append((line, new, text + cell.text[:f.start]))
+                text += cell.text + " "
+        offer = False
+        for k, (line, new, before) in enumerate(dates):
+            b = before.lower()
+            if re.search(r"renewal offer is for the policy period\s*$", b):
+                _put(self.gold, ro + "renewal_effective_date", self.field("date", new))
+                offer = True
+                nxt = dates[k + 1] if k + 1 < len(dates) else None
+                if nxt is not None and re.search(r"\b(?:through|to|-)\s*$", nxt[2].lower()):
+                    _put(self.gold, ro + "renewal_expiration_date", self.field("date", nxt[1]))
+            elif re.search(r"current policy (?:period ends|will expire on|expires on)\s*$", b) and \
+                    self._has(ro + "expiring_policy_expiration_date"):
+                _put(self.gold, ro + "expiring_policy_expiration_date", self.field("date", new))
+            elif re.search(r"due by:?\s*$", b) and "renewal payment" in b:
+                _put(self.gold, ro + "payment_due_date", self.field("date", new))
+        issued = _get(self.gold, "document.issue_date")
+        if offer and issued is not None:
+            _put(self.gold, ro + "offer_issue_date", copy.deepcopy(issued))
+
+    def _change_sentences(self):
+        """"The Automatic Card Payments (ACP) discount has been removed from
+        your policy." - a change the document states as a sentence."""
+        path = "document_type_detail.policy_change.changes[].change_description"
+        if not self._has(path):
+            return
+        for k, line in enumerate(self.lines):
+            text = re.sub(r"^\s*Changes?:\s*", "", line.text)
+            if not re.search(r"(?i)\bhas been (?:removed from|added to)(?: your)?$|"
+                             r"\bhas been (?:removed from|added to) your policy\.", text):
+                continue
+            nxt = self.lines[k + 1] if k + 1 < len(self.lines) else None
+            if not text.rstrip().endswith(".") and nxt is not None and nxt.page == line.page:
+                text = text.rstrip() + " " + nxt.text.strip()
+            m = re.search(r"([A-Z][^.]*?\bhas been (?:removed from|added to) your policy\.)", text)
+            if m:
+                changes = self.gold.setdefault("document_type_detail", {}) \
+                    .setdefault("policy_change", {}).setdefault("changes", [])
+                if not any(c.get("change_description", {}).get("raw") == m.group(1) for c in changes):
+                    changes.append({"change_description": fv(m.group(1))})
 
     def _print_date(self):
         """A date in a page's header or footer band that no label claims is
@@ -1149,14 +1304,19 @@ class Reader:
         summary, the phone numbers placed by what is printed around them."""
         first = min(self.cells) if self.cells else None
         joined = " ".join(l.text for l in self.lines if l.page == first)
+        # a right-hand column can be read between the two lines of the title:
+        # "This is your Renewal" | "1- 845-555-0166" | "Declarations Page"
         m = re.search(r"\bThis is your ((?:revised )?(Renewal|New Business|Policy Change)?)\s*"
-                      r"(Declarations Page)", joined, re.I)
+                      r"(?:[^.]{0,40}?\s)?(Declarations Page)", joined, re.I)
         if m and _get(self.gold, "document.document_title_as_stated") is None:
             title = (m.group(1) + " " + m.group(3)).strip()
             _put(self.gold, "document.document_title_as_stated", fv(title, evidence=m.group(3)))
             _put(self.gold, "document.document_type", fv(m.group(3), "Declaration"))
             if m.group(2):
                 _put(self.gold, "document.transaction_type", fv(m.group(2), m.group(2).title()))
+            if m.group(2) and m.group(2).lower() == "renewal" and "policy.is_renewal" in self.schema.leaves:
+                # "This is your Renewal Declarations Page" says so; it prints no Yes
+                _put(self.gold, "policy.is_renewal", derived("Yes", m.group(2)))
         dtype = (_get(self.gold, "document.document_type") or {}).get("parsed")
         if dtype == "Policy Change":
             _put(self.gold, "document.transaction_type",
@@ -1267,6 +1427,12 @@ class Reader:
             x0 = first.rect.x0
             left = [s for s in line.segs if s.rect.x1 <= value_left]
             right = [s for s in line.segs if s.rect.x1 > value_left]
+            # a long name runs on past where the value columns begin: "Total
+            # 12 month policy premium if paid | in full" - words set a space
+            # after it are still the name
+            while left and right and right[0].found is None and not VALUE.match(right[0].text) \
+                    and right[0].rect.x0 - left[-1].rect.x1 < 0.8 * line.height:
+                left.append(right.pop(0))
             name = " ".join(s.text for s in left).strip()
             values = [s for s in right if s.found is not None and s.found.kind == "money"
                       or s.found is None and VALUE.match(s.text) and not _worded(s)]
