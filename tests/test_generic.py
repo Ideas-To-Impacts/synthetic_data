@@ -17,6 +17,7 @@ import fitz
 import pytest
 
 from fideon_synth import CanonicalSchema, Values, generic, overlay
+from fideon_synth.fields import as_date
 
 pytestmark = pytest.mark.filterwarnings("ignore")
 
@@ -98,8 +99,8 @@ def test_synthesize_replaces_and_labels(tmp_path, schema, scanned):
     assert gold["carrier"]["company_name"]["raw"] == "Markel American Insurance Company"
 
     # every date moves by one offset, so the term is still a year
-    eff = date.fromisoformat(gold["policy"]["effective_date"]["parsed"])
-    exp = date.fromisoformat(gold["policy"]["expiration_date"]["parsed"])
+    eff = as_date(gold["policy"]["effective_date"]["parsed"])      # parsed as MM/DD/YYYY
+    exp = as_date(gold["policy"]["expiration_date"]["parsed"])
     assert (exp - eff).days in (365, 366)
     assert eff != date(2026, 8, 26)
 
@@ -291,7 +292,7 @@ def test_wrapped_dates_ruled_schedules_and_scan_lines_leave_nothing(tmp_path, sc
     # amounts are kept, so the schedule still adds up to what it says
     assert "$264.00" in text and text.count("$71.00") == 4
     plan = gold["billing"]["installments"]
-    dues = [row["due_date"]["parsed"] for row in plan]
+    dues = [as_date(row["due_date"]["parsed"]) for row in plan]
     assert len(dues) == 4 and dues == sorted(dues)
     assert [row["installment_number"]["parsed"] for row in plan] == [1, 2, 3, 4]
 
@@ -347,7 +348,7 @@ def test_facts_a_page_states_in_sentences_and_footers(tmp_path, schema):
     gold = json.loads(built.gold.read_text("utf-8"))
     offer = gold["document_type_detail"]["renewal_offer"]
     start, end = offer["renewal_effective_date"]["parsed"], offer["renewal_expiration_date"]["parsed"]
-    assert start < end and start != "2026-08-26"                      # replaced, and in order
+    assert as_date(start) < as_date(end) and start != "08/26/2026"    # replaced, and in order
     assert offer["expiring_policy_expiration_date"]["parsed"] == start
     change, = gold["document_type_detail"]["policy_change"]["changes"]
     assert change["change_description"]["raw"].endswith("has been removed from your policy.")
@@ -480,6 +481,17 @@ def test_labels_match_schema_fields(schema):
     assert match("TOTAL ANNUAL PREMIUM:", "money") == "premium.total_policy_premium"
     # a label that names a field of the wrong kind is not a match
     assert match("Policy Number:", "money") is None
+
+
+def test_parsed_dates_must_be_month_day_year(schema):
+    # the schema declares the form; a date parsed any other way is reported
+    from fideon_synth.fields import fv
+    good = {"policy": {"effective_date": fv("May 6, 2026", "05/06/2026")},
+            "forms_and_endorsements": [{"edition_date": fv("04/07")}]}   # no day: exempt
+    bad = {"policy": {"effective_date": fv("May 6, 2026", "2026-05-06")}}
+    assert schema.format_errors(good) == []
+    assert schema.format_errors(bad) == [
+        "parsed date '2026-05-06' is not MM/DD/YYYY at policy.effective_date"]
 
 
 def test_faker_keeps_formats_and_is_consistent():

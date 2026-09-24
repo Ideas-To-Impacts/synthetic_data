@@ -41,7 +41,7 @@ import fitz  # PyMuPDF
 
 from .. import pageref
 from ..corpus import Built, Report
-from ..fields import date_fv, derived, fmt_money, fv, money, money_from, walk_indexed
+from ..fields import as_date, date_fv, derived, fmt_money, fv, money, money_from, walk_indexed
 from ..generator import _base14, _bounded, _color
 from ..scan import by_key as scan_by_key, scan_pdf
 from ..schema import CanonicalSchema
@@ -582,7 +582,7 @@ def _date_problems(gold):
     try:
         eff = gold["policy"]["effective_date"]["parsed"]
         exp = gold["policy"]["expiration_date"]["parsed"]
-        if eff and exp and eff > exp:
+        if as_date(eff) and as_date(exp) and as_date(eff) > as_date(exp):
             return ["policy.effective_date %s is after expiration_date %s" % (eff, exp)]
     except KeyError:
         pass

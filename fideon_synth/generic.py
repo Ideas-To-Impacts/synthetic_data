@@ -43,7 +43,7 @@ import fitz
 
 from . import overlay, pageref, prose, recover, structure
 from .corpus import Built, Report
-from .fields import NO_EVIDENCE, as_number, derived, fv, strip_evidence
+from .fields import DATE_FORMAT, NO_EVIDENCE, as_number, derived, fv, strip_evidence
 from .scan import by_key as scan_by_key, scan_pdf
 from .schema import CanonicalSchema, available
 from .values import GIVEN, STREET_NAME, SURNAME, Values
@@ -682,7 +682,7 @@ def _field(kind, raw):
     if kind == "date":
         for fmt in ("%m/%d/%Y", "%m/%d/%y", "%Y-%m-%d", "%m-%d-%Y", "%B %d, %Y", "%b %d, %Y"):
             try:
-                return fv(raw, datetime.strptime(raw, fmt).strftime("%Y-%m-%d"))
+                return fv(raw, datetime.strptime(raw, fmt).strftime(DATE_FORMAT))
             except ValueError:
                 pass
     if kind == "money":

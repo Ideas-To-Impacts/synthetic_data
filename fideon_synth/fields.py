@@ -140,10 +140,24 @@ def money_from(value, evidence=None):
     return money(fmt_money(value), evidence)
 
 
+#: Every date's ``parsed`` value: month/day/year, the way US insurance
+#: documents print it (``fideon:parsed_formats`` in config/policy_check).
+DATE_FORMAT = "%m/%d/%Y"
+
+
 def date_fv(printed, fmt="%m/%d/%Y", evidence=None):
-    """A date FieldValue: ``raw`` as printed, ``parsed`` as ISO."""
-    iso = datetime.strptime(printed, fmt).strftime("%Y-%m-%d")
-    return fv(printed, iso, evidence)
+    """A date FieldValue: ``raw`` as printed, ``parsed`` as MM/DD/YYYY."""
+    parsed = datetime.strptime(printed, fmt).strftime(DATE_FORMAT)
+    return fv(printed, parsed, evidence)
+
+
+def as_date(parsed):
+    """A parsed date back as a date, or None. Order dates with this, never as
+    text: as strings 12/31/2025 sorts after 01/01/2026."""
+    try:
+        return datetime.strptime(parsed, DATE_FORMAT).date()
+    except (TypeError, ValueError):
+        return None
 
 
 def yes_no(flag, evidence):

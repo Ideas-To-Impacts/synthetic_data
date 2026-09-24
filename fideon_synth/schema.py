@@ -187,4 +187,24 @@ class CanonicalSchema:
         return ["%s at %s" % (e.message,
                               "/".join(str(x) for x in e.path) or "(root)")
                 for e in sorted(self._validator.iter_errors(doc),
-                                key=lambda e: list(e.path))]
+                                key=lambda e: list(e.path))] + self.format_errors(doc)
+
+    def format_errors(self, doc):
+        """Parsed values not in the form ``fideon:parsed_formats`` declares -
+        a date field whose ``parsed`` is not MM/DD/YYYY, say. JSON Schema
+        cannot say this: every field shares one FieldValue definition."""
+        import re
+        from .fields import walk_indexed
+        out = []
+        for kind, spec in self.merged.get("fideon:parsed_formats", {}).items():
+            applies, pattern = re.compile(spec["applies_to"]), re.compile(spec["pattern"])
+            skip = set(spec.get("exceptions", []))
+            for path, field in walk_indexed(doc):
+                name = re.sub(r"\[\d+\]", "", path.rsplit(".", 1)[-1])
+                parsed = field.get("parsed")
+                if name in skip or not applies.search(name) or parsed is None:
+                    continue
+                if not (isinstance(parsed, str) and pattern.match(parsed)):
+                    out.append("parsed %s %r is not %s at %s"
+                               % (kind, parsed, spec["format"], path))
+        return out

@@ -30,9 +30,8 @@ from __future__ import annotations
 
 import copy
 import re
-from datetime import date
 
-from .fields import as_number, derived, fv, is_field, yes_no
+from .fields import as_date, as_number, derived, fv, is_field, yes_no
 
 STATE_NAMES = {
     "alabama": "AL", "alaska": "AK", "arizona": "AZ", "arkansas": "AR", "california": "CA",
@@ -1194,8 +1193,8 @@ class Reader:
                     self._use(dates[0])
                 rows.append(row)
         # a schedule set in two columns reads across: Jan, Mar, Feb, Apr
-        if rows and all(r.get("due_date", {}).get("parsed") for r in rows):
-            rows.sort(key=lambda r: r["due_date"]["parsed"])
+        if rows and all(as_date(r.get("due_date", {}).get("parsed")) for r in rows):
+            rows.sort(key=lambda r: as_date(r["due_date"]["parsed"]))
             for n, r in enumerate(rows, 1):
                 r["installment_number"] = derived(str(n), parsed=n)
         if rows:
@@ -1816,10 +1815,7 @@ def finish(gold, schema):
     policy = gold.get("policy", {})
     eff, exp = policy.get("effective_date"), policy.get("expiration_date")
     if "policy_term_months" not in policy and eff and exp:
-        try:
-            a, b = date.fromisoformat(eff["parsed"]), date.fromisoformat(exp["parsed"])
-        except (TypeError, ValueError):
-            a = b = None
+        a, b = as_date(eff["parsed"]), as_date(exp["parsed"])
         if a and b:
             months = (b.year - a.year) * 12 + b.month - a.month - (b.day < a.day - 1)
             if months > 0:
