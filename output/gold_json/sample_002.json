@@ -113,8 +113,8 @@
       "flagged": false
     },
     "issue_date": {
-      "raw": "7/17/2024",
-      "parsed": "2024-07-17",
+      "raw": "4/5/2025",
+      "parsed": "2025-04-05",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -141,7 +141,16 @@
         8,
         9,
         10,
+        17,
+        18,
+        19,
         20,
+        21,
+        23,
+        24,
+        26,
+        27,
+        28,
         31
       ],
       "flagged": false
@@ -171,7 +180,6 @@
           2,
           3,
           6,
-          7,
           8,
           9,
           18,
@@ -224,8 +232,8 @@
   },
   "named_insured": {
     "primary_name": {
-      "raw": "Adirondack Timber & Mill LLC",
-      "parsed": "Adirondack Timber & Mill LLC",
+      "raw": "Brightwater Inn & Suites Corp.",
+      "parsed": "Brightwater Inn & Suites Corp.",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -253,38 +261,32 @@
       "flagged": false
     },
     "entity_type": {
-      "raw": "Limited Liability Company",
-      "parsed": "Limited Liability Company",
+      "raw": "Corporation",
+      "parsed": "Corporation",
       "confidence": {
         "score": 1.0,
         "source": "structural"
       },
+      "page_ref": [],
+      "flagged": false
+    },
+    "fein": {
+      "raw": "868316545",
+      "parsed": "868316545",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
       "page_ref": [
-        2,
         6,
-        7,
-        8,
-        9,
-        10,
-        17,
-        18,
-        19,
-        20,
-        21,
-        23,
-        24,
-        26,
-        27,
-        28,
-        30,
-        31
+        7
       ],
       "flagged": false
     },
     "mailing_address": {
       "line_1": {
-        "raw": "Old Forge, NY 13420",
-        "parsed": "Old Forge, NY 13420",
+        "raw": "200 Stonefence Rd",
+        "parsed": "200 Stonefence Rd",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -297,8 +299,8 @@
         "flagged": false
       },
       "city": {
-        "raw": "Old Forge",
-        "parsed": "Old Forge",
+        "raw": "Cobleskill",
+        "parsed": "Cobleskill",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -334,8 +336,8 @@
         "flagged": false
       },
       "postal_code": {
-        "raw": "13420",
-        "parsed": "13420",
+        "raw": "12043",
+        "parsed": "12043",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -351,8 +353,8 @@
   },
   "producer": {
     "agency_name": {
-      "raw": "DELAWARE AGENCY SERVICES",
-      "parsed": "DELAWARE AGENCY SERVICES",
+      "raw": "MADISON AGENCY, LLC",
+      "parsed": "MADISON AGENCY, LLC",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -365,18 +367,20 @@
     },
     "address": {
       "line_1": {
-        "raw": "PO BOX 460",
-        "parsed": "PO BOX 460",
+        "raw": "309 EAST MARKET ST",
+        "parsed": "309 EAST MARKET ST",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
         },
-        "page_ref": [],
+        "page_ref": [
+          6
+        ],
         "flagged": false
       },
       "city": {
-        "raw": "HANCOCK",
-        "parsed": "HANCOCK",
+        "raw": "AMSTERDAM",
+        "parsed": "AMSTERDAM",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -410,8 +414,8 @@
         "flagged": false
       },
       "postal_code": {
-        "raw": "13783",
-        "parsed": "13783",
+        "raw": "12010",
+        "parsed": "12010",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -425,8 +429,8 @@
   },
   "policy": {
     "policy_number": {
-      "raw": "TWC4724048",
-      "parsed": "TWC4724048",
+      "raw": "TWC6760806",
+      "parsed": "TWC6760806",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -453,8 +457,8 @@
       "flagged": false
     },
     "prior_policy_number": {
-      "raw": "TWC4584082",
-      "parsed": "TWC4584082",
+      "raw": "TWC6086018",
+      "parsed": "TWC6086018",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -466,8 +470,8 @@
       "flagged": false
     },
     "effective_date": {
-      "raw": "8/14/2024",
-      "parsed": "2024-08-14",
+      "raw": "5/4/2025",
+      "parsed": "2025-05-04",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -476,14 +480,24 @@
         2,
         6,
         10,
+        17,
+        18,
+        19,
+        20,
+        21,
+        23,
+        24,
+        26,
+        27,
+        28,
         30,
         31
       ],
       "flagged": false
     },
     "expiration_date": {
-      "raw": "8/14/2025",
-      "parsed": "2025-08-14",
+      "raw": "5/4/2026",
+      "parsed": "2026-05-04",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -533,33 +547,54 @@
   },
   "premium": {
     "total_policy_premium": {
-      "raw": "$5,486.00",
-      "parsed": 5486.0,
+      "raw": "$6,625.00",
+      "parsed": 6625.0,
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
       },
-      "page_ref": [],
+      "page_ref": [
+        6,
+        9,
+        10
+      ],
       "flagged": false
     },
     "estimated_annual_premium": {
-      "raw": "$5,024.00",
-      "parsed": 5024.0,
+      "raw": "$6,084.00",
+      "parsed": 6084.0,
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
       },
-      "page_ref": [],
+      "page_ref": [
+        6,
+        9,
+        17,
+        18,
+        19,
+        20,
+        21,
+        23,
+        24,
+        26,
+        27,
+        28
+      ],
       "flagged": false
     },
     "deposit_premium": {
-      "raw": "$5,486.00",
-      "parsed": 5486.0,
+      "raw": "$6,625.00",
+      "parsed": 6625.0,
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
       },
-      "page_ref": [],
+      "page_ref": [
+        6,
+        9,
+        10
+      ],
       "flagged": false
     },
     "minimum_premium": {
@@ -569,7 +604,9 @@
         "score": 1.0,
         "source": "deterministic"
       },
-      "page_ref": [],
+      "page_ref": [
+        6
+      ],
       "flagged": false
     },
     "surcharges": [
@@ -587,13 +624,16 @@
           "flagged": false
         },
         "amount": {
-          "raw": "$462.00",
-          "parsed": 462.0,
+          "raw": "$541.00",
+          "parsed": 541.0,
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
           },
-          "page_ref": [],
+          "page_ref": [
+            6,
+            9
+          ],
           "flagged": false
         }
       }
@@ -602,8 +642,8 @@
   "workers_compensation": {
     "item_1_insured": {
       "named_insured": {
-        "raw": "Adirondack Timber & Mill LLC",
-        "parsed": "Adirondack Timber & Mill LLC",
+        "raw": "Brightwater Inn & Suites Corp.",
+        "parsed": "Brightwater Inn & Suites Corp.",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -631,31 +671,25 @@
         "flagged": false
       },
       "legal_entity_type": {
-        "raw": "Limited Liability Company",
-        "parsed": "Limited Liability Company",
+        "raw": "Corporation",
+        "parsed": "Corporation",
         "confidence": {
           "score": 1.0,
           "source": "structural"
         },
+        "page_ref": [],
+        "flagged": false
+      },
+      "fein": {
+        "raw": "868316545",
+        "parsed": "868316545",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
         "page_ref": [
-          2,
           6,
-          7,
-          8,
-          9,
-          10,
-          17,
-          18,
-          19,
-          20,
-          21,
-          23,
-          24,
-          26,
-          27,
-          28,
-          30,
-          31
+          7
         ],
         "flagged": false
       },
@@ -674,8 +708,8 @@
     },
     "item_2_policy_period": {
       "effective_date": {
-        "raw": "8/14/2024",
-        "parsed": "2024-08-14",
+        "raw": "5/4/2025",
+        "parsed": "2025-05-04",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -684,14 +718,24 @@
           2,
           6,
           10,
+          17,
+          18,
+          19,
+          20,
+          21,
+          23,
+          24,
+          26,
+          27,
+          28,
           30,
           31
         ],
         "flagged": false
       },
       "expiration_date": {
-        "raw": "8/14/2025",
-        "parsed": "2025-08-14",
+        "raw": "5/4/2026",
+        "parsed": "2026-05-04",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -715,7 +759,6 @@
           2,
           3,
           6,
-          7,
           8,
           9,
           18,
@@ -744,7 +787,6 @@
             2,
             3,
             6,
-            7,
             8,
             9,
             18,
@@ -766,7 +808,11 @@
           "score": 1.0,
           "source": "deterministic"
         },
-        "page_ref": [],
+        "page_ref": [
+          6,
+          18,
+          22
+        ],
         "flagged": false
       },
       "part_two_employers_liability_bodily_injury_by_disease_policy_limit": {
@@ -776,7 +822,10 @@
           "score": 1.0,
           "source": "deterministic"
         },
-        "page_ref": [],
+        "page_ref": [
+          6,
+          18
+        ],
         "flagged": false
       },
       "part_two_employers_liability_bodily_injury_by_disease_each_employee": {
@@ -786,7 +835,11 @@
           "score": 1.0,
           "source": "deterministic"
         },
-        "page_ref": [],
+        "page_ref": [
+          6,
+          18,
+          22
+        ],
         "flagged": false
       },
       "part_three_other_states_insurance": [
@@ -818,7 +871,6 @@
             2,
             3,
             6,
-            7,
             8,
             9,
             18,
@@ -833,8 +885,21 @@
           "flagged": false
         },
         "class_code": {
-          "raw": "9052",
-          "parsed": "9052",
+          "raw": "0042",
+          "parsed": "0042",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            9,
+            28
+          ],
+          "flagged": false
+        },
+        "classification_description": {
+          "raw": "Landscape Gardening & Drivers",
+          "parsed": "Landscape Gardening & Drivers",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -842,16 +907,6 @@
           "page_ref": [
             9
           ],
-          "flagged": false
-        },
-        "classification_description": {
-          "raw": "Hotel NOC: All Other Employees & Drivers",
-          "parsed": "Hotel NOC: All Other Employees & Drivers",
-          "confidence": {
-            "score": 1.0,
-            "source": "deterministic"
-          },
-          "page_ref": [],
           "flagged": false
         },
         "number_of_employees": {
@@ -865,7 +920,6 @@
             2,
             3,
             4,
-            5,
             6,
             7,
             9,
@@ -875,17 +929,8 @@
             14,
             15,
             16,
-            17,
             18,
-            19,
-            20,
-            21,
             22,
-            23,
-            24,
-            26,
-            27,
-            28,
             29,
             30,
             31
@@ -893,47 +938,53 @@
           "flagged": false
         },
         "estimated_annual_remuneration": {
-          "raw": "$132,000.00",
-          "parsed": 132000.0,
+          "raw": "$68,000.00",
+          "parsed": 68000.0,
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
           },
-          "page_ref": [],
+          "page_ref": [
+            9
+          ],
           "flagged": false
         },
         "rate_per_100_of_remuneration": {
-          "raw": "3.29",
-          "parsed": 3.29,
+          "raw": "8.88",
+          "parsed": 8.88,
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
           },
-          "page_ref": [],
+          "page_ref": [
+            9
+          ],
           "flagged": false
         },
         "estimated_annual_premium": {
-          "raw": "$4,343.00",
-          "parsed": 4343.0,
+          "raw": "$6,038.00",
+          "parsed": 6038.0,
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
           },
-          "page_ref": [],
+          "page_ref": [
+            9
+          ],
           "flagged": false
         }
       }
     ],
     "premium_adjustments": {
       "experience_modification_factor": {
-        "raw": "1.1",
-        "parsed": 1.1,
+        "raw": "97%",
+        "parsed": 0.97,
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
         },
         "page_ref": [
-          2
+          9
         ],
         "flagged": false
       },
@@ -944,47 +995,96 @@
           "score": 1.0,
           "source": "deterministic"
         },
-        "page_ref": [],
+        "page_ref": [
+          2,
+          6,
+          7,
+          9,
+          22,
+          31
+        ],
         "flagged": false
       },
       "terrorism_premium": {
-        "raw": "$43.00",
-        "parsed": 43.0,
+        "raw": "$24.00",
+        "parsed": 24.0,
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
         },
-        "page_ref": [],
+        "page_ref": [
+          4,
+          9,
+          28
+        ],
         "flagged": false
       },
       "catastrophe_premium": {
-        "raw": "$4.00",
-        "parsed": 4.0,
+        "raw": "$3.00",
+        "parsed": 3.0,
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
         },
-        "page_ref": [],
+        "page_ref": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          9,
+          11,
+          12,
+          13,
+          14,
+          16,
+          17,
+          18,
+          21,
+          22,
+          25,
+          28,
+          29,
+          30
+        ],
         "flagged": false
       },
       "total_estimated_annual_premium": {
-        "raw": "$5,024.00",
-        "parsed": 5024.0,
+        "raw": "$6,084.00",
+        "parsed": 6084.0,
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
         },
-        "page_ref": [],
+        "page_ref": [
+          6,
+          9,
+          17,
+          18,
+          19,
+          20,
+          21,
+          23,
+          24,
+          26,
+          27,
+          28
+        ],
         "flagged": false
       },
       "deposit_premium": {
-        "raw": "$5,486.00",
-        "parsed": 5486.0,
+        "raw": "$6,625.00",
+        "parsed": 6625.0,
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
         },
-        "page_ref": [],
+        "page_ref": [
+          6,
+          9,
+          10
+        ],
         "flagged": false
       },
       "minimum_premium": {
@@ -994,7 +1094,9 @@
           "score": 1.0,
           "source": "deterministic"
         },
-        "page_ref": [],
+        "page_ref": [
+          6
+        ],
         "flagged": false
       }
     }
@@ -1014,8 +1116,8 @@
       "flagged": false
     },
     "signature_date": {
-      "raw": "7/17/2024",
-      "parsed": "2024-07-17",
+      "raw": "4/5/2025",
+      "parsed": "2025-04-05",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -1184,7 +1286,6 @@
     "named_insured.contact.phone",
     "named_insured.contact.website",
     "named_insured.doing_business_as",
-    "named_insured.fein",
     "named_insured.mailing_address.country",
     "named_insured.mailing_address.county",
     "named_insured.mailing_address.county_code",
@@ -1294,7 +1395,6 @@
     "workers_compensation.deductible_program.deductible_type",
     "workers_compensation.deductible_program.per_claim_deductible",
     "workers_compensation.item_1_insured.bureau_file_number",
-    "workers_compensation.item_1_insured.fein",
     "workers_compensation.item_1_insured.other_workplaces[].city",
     "workers_compensation.item_1_insured.other_workplaces[].country",
     "workers_compensation.item_1_insured.other_workplaces[].county",
@@ -1338,11 +1438,11 @@
   ],
   "fideon:provenance": {
     "generator": "fideon-synth",
-    "source": "test_documents",
+    "source": "reference_documents",
     "schema": "wc v1.4.0",
     "render": "scanned_only",
-    "scanner_profile": "phone photo, uneven light",
+    "scanner_profile": "high-quality scan, 400 dpi",
     "synthetic": true,
-    "note": "Scanned synthetic document generated from reference source test_documents."
+    "note": "Scanned synthetic document generated from reference source documents."
   }
 }

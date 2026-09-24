@@ -33,8 +33,8 @@ def main(argv=None):
                         help="template key (default: amtrust_wc; see --list)")
     parser.add_argument("--out", default=r"E:\fideon-synth\output",
                         help="output directory (default: E:\\fideon-synth\\output)")
-    parser.add_argument("--input-dir", default=r"E:\fideon-synth\test_documents",
-                        help="original source documents directory (default: E:\\fideon-synth\\test_documents)")
+    parser.add_argument("--input-dir", default=r"Data\original PDFs",
+                        help="original source documents directory (default: Data\\original PDFs)")
     parser.add_argument("--count", type=int, default=5,
                         help="how many documents to generate (default: 5)")
     parser.add_argument("--seed", type=int, default=0,
