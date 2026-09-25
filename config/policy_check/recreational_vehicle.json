@@ -150,7 +150,6 @@
             "Summary of Your Changes"
           ]
         },
-<<<<<<< Updated upstream
         "transaction_date": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
@@ -162,7 +161,8 @@
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "SUPERSEDES ANY PREVIOUS DECLARATIONS"
-=======
+          ]
+        },
         "print_time": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
@@ -185,7 +185,6 @@
             "URL",
             "Link",
             "Source URL"
->>>>>>> Stashed changes
           ]
         }
       }
@@ -645,7 +644,6 @@
             "Policyholder Since"
           ]
         },
-<<<<<<< Updated upstream
         "policy_status": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
@@ -859,7 +857,8 @@
           "fideon:aliases": [
             "NEW YORK STATE INSURANCE IDENTIFICATION CARD",
             "NEW YORK STATE INSURANCE IDENTIFICATION"
-=======
+          ]
+        },
         "product_code": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
@@ -873,7 +872,6 @@
             "At the residence premises",
             "At the address of the named insured",
             "Policy period location basis"
->>>>>>> Stashed changes
           ]
         }
       }
@@ -1875,7 +1873,6 @@
             "Pay initial installment"
           ]
         },
-<<<<<<< Updated upstream
         "pay_in_full_discount": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
@@ -2039,7 +2036,8 @@
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "Payments can be made online"
-=======
+          ]
+        },
         "billing_note": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
@@ -2061,7 +2059,6 @@
             "Call us at",
             "By calling",
             "Automatic Payments"
->>>>>>> Stashed changes
           ]
         }
       }

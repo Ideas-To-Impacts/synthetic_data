@@ -679,7 +679,6 @@ class Faker:
     def __call__(self, f: Found) -> str:
         if f.blank:
             return ""
-<<<<<<< Updated upstream
         if f.kind in ("id", "digits"):
             # one identifier, one replacement, wherever and however it is
             # printed: "103-194-455" and the ID card's "103194455" alike
@@ -687,10 +686,6 @@ class Faker:
             ident = re.sub(r"\D", "", base) if re.fullmatch(r"[\d\s-]+", base) \
                 else re.sub(r"\s", "", base).lower()
             key = ("ident", ident)
-=======
-        if f.kind in ("id", "digits") and not f.blank and                 (not f.key or re.sub(r"\s", "", f.key) == re.sub(r"\s", "", f.text.lower())):
-            key = ("ident", re.sub(r"\s", "", f.text).lower())
->>>>>>> Stashed changes
             if key not in self.memo:
                 self.memo[key] = self._id(f.text)
             chars = iter(re.sub(r"[^A-Za-z0-9]", "", self.memo[key]))
@@ -975,21 +970,22 @@ def _sweep(pages, marks=()):
                 kinds.setdefault(_key(f.text), f.kind)
     # a long number is found again with a label or prefix run into it:
     # "Policy Number085121419", "ER78202066"
-    loose = {k for k, kind in kinds.items() if kind in ("id", "digits")
-             and re.fullmatch(r"\d{7,}", k.replace(" ", ""))}
+    long_digits = {k for k, kind in kinds.items() if kind in ("id", "digits")
+                   and re.fullmatch(r"\d{7,}", k.replace(" ", ""))}
     if not kinds:
         return
     # a name can be run into the word before it ("Prepared forMartin
     # Lindqvist"); a lowercase-to-capital join is a boundary for names only
     glued = r"(?:(?<![A-Za-z0-9])|(?-i:(?<=[a-z])(?=[A-Z]))%s)" % "".join(
         "|(?<=%s)" % re.escape(m) for m in sorted(marks))
-<<<<<<< Updated upstream
     # a name or address set in a text layer with no spaces or with commas for
     # them - "BURKHARDEVANSINC", "ROBERT,A,QUEEN" - is the same value
     loose = {"person", "company", "pobox", "street", "cityline"}
     canon = {re.sub(r"[\s,-]", "", k): k for k in sorted(kinds, key=len)}
 
     def words(k):
+        if k in long_digits:              # "23101304" printed "23 10 13 04" too
+            return r"\s?".join(re.escape(c) for c in k.replace(" ", ""))
         # an all-digit identifier printed with or without its dashes:
         # "103-194-455" on the declarations is "103194455" on the ID card
         groups = re.split(r"[\s-]+", k)
@@ -999,18 +995,9 @@ def _sweep(pages, marks=()):
         sep = r"[\s,]*" if kinds[k] in loose and len(k.split()) >= 2 and len(k) >= 8 else r"\s+"
         return sep.join(map(re.escape, k.split()))
     pattern = re.compile("|".join(
-        (glued if kinds[k] in ("person", "company") else r"(?<![A-Za-z0-9])")
-        + words(k) + r"(?![A-Za-z0-9])"
-=======
-    def shape(k):
-        if k in loose:                    # "23101304" printed "23 10 13 04" too
-            return r"\s?".join(re.escape(c) for c in k.replace(" ", ""))
-        return r"\s+".join(map(re.escape, k.split()))
-    pattern = re.compile("|".join(
-        (glued if kinds[k] in ("person", "company") else r"(?<!\d)" if k in loose
+        (glued if kinds[k] in ("person", "company") else r"(?<!\d)" if k in long_digits
          else r"(?<![A-Za-z0-9])")
-        + shape(k) + (r"(?!\d)" if k in loose else r"(?![A-Za-z0-9])")
->>>>>>> Stashed changes
+        + words(k) + (r"(?!\d)" if k in long_digits else r"(?![A-Za-z0-9])")
         for k in sorted(kinds, key=len, reverse=True)), re.I)
     garbled, towns = [], []
     for *_, found in pages:
@@ -1053,18 +1040,10 @@ def _sweep(pages, marks=()):
                        for c, s, e in pieces.values()):
                     continue
                 full = _key(m.group(0))
-<<<<<<< Updated upstream
                 if full not in kinds:                  # matched without its spaces, dashes or with commas
                     full = canon.get(re.sub(r"[\s,-]", "", full))
                     if full is None:
                         continue
-=======
-                if full not in kinds:             # a spaced copy of a long number
-                    bare = re.sub(r"\s", "", full)
-                    full = next((k for k in loose if re.sub(r"\s", "", k) == bare), full)
-                if full not in kinds:
-                    continue
->>>>>>> Stashed changes
                 for n, (cell, s, e) in enumerate(pieces.values()):
                     f = Found(kinds[full], cell, s, e)
                     f.key, f.blank = full, n > 0
