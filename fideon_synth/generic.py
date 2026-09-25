@@ -345,6 +345,35 @@ def _wrapped_dates(cell_list, found):
     return out
 
 
+#: a street with no street-type word: "9581 Millbrook", "2646 SUMMIT"
+BARE_STREET = re.compile(r"\d{1,6}\s+[A-Za-z][A-Za-z.'-]*(?:\s+[A-Za-z0-9][A-Za-z0-9.'#-]*){0,4}")
+#: a name label with the first name run into it: "Named InsuredWINSLOW"
+GLUED_LABEL = re.compile(r"((?:named\s+)?insureds?(?:\(s\))?:?)\s*([A-Z][A-Za-z'-]+)$", re.I)
+
+
+def _one_word_name(text):
+    """A single capitalised word that can be a name in an address block."""
+    t = text.strip()
+    return bool(re.fullmatch(r"[A-Z][A-Za-z'-]{2,}", t)) and not NOT_A_NAME.search(t)         and not NAME_LABEL.search(t) and t.lower() not in COMPANY_WORDS
+
+
+def _bare_streets(cell_list, found):
+    """A street known by where it stands, not by its words: a line that opens
+    with a house number, set over a "City, ST ZIP" line in its column."""
+    out = []
+    for f in found:
+        if f.kind != "cityline" or f.start != 0:
+            continue
+        up = _above(f.cell, cell_list)
+        if up is None or any(g.cell is up for g in found + out) or ":" in up.text:
+            continue
+        text = up.text.strip()
+        if BARE_STREET.fullmatch(text) and abs(up.rect.x0 - f.cell.rect.x0) < 6                 and not NOT_A_NAME.search(text):
+            s = len(up.text) - len(up.text.lstrip())
+            out.append(Found("street", up, s, s + len(text)))
+    return out
+
+
 def _detect(cell_list):
     found = []
     for cell in cell_list:
@@ -506,6 +535,7 @@ def find_values(cell_list):
     """Everything on a page worth replacing, labelled where a label exists."""
     found = _detect(cell_list)
     found += _wrapped_dates(cell_list, found)
+    found += _bare_streets(cell_list, found)
     for f in found:
         before = [g.end for g in found if g.cell is f.cell and g.end <= f.start]
         f.after = max(before, default=0)
@@ -523,10 +553,23 @@ def find_values(cell_list):
     names = {}
     for f in found:
         if f.kind in ("street", "pobox") and f.start == 0:
-            up = _above(f.cell, cell_list)
-            while up is not None and _looks_like_name(up.text) and id(up) not in names:
-                names[id(up)] = (up, None)
+            # the names stacked over an address; a one-word line ("MEDINA")
+            # counts only in a block a name label heads, where it can be
+            # nothing else
+            chain, up = [], _above(f.cell, cell_list)
+            while up is not None and id(up) not in names and                     (_looks_like_name(up.text) or _one_word_name(up.text)):
+                chain.append(up)
                 up = _above(up, cell_list)        # a second insured stacked above
+            headed = up is not None and (NAME_LABEL.search(up.text) or GLUED_LABEL.match(up.text))
+            for k, cell in enumerate(chain):
+                if not headed and not _looks_like_name(cell.text):
+                    break
+                names[id(cell)] = (cell, None)
+            glued = GLUED_LABEL.match(up.text) if headed and chain else None
+            if glued and _one_word_name(glued.group(2)) and not any(g.cell is up for g in found):
+                g = Found("person", up, glued.start(2), glued.end(2))   # "Named InsuredWINSLOW"
+                g.label = glued.group(1)
+                found.append(g)
     for cell in cell_list:
         if NAME_LABEL.search(cell.text) and len(cell.text) < 45 and len(cell.text.split()) <= 5 \
                 and not re.search(r"\d", cell.text):
@@ -730,6 +773,8 @@ class Faker:
     def _person(self, old):
         words = old.split()
         def make():
+            if len(words) == 1:               # "MEDINA": one word for one word
+                return self.v.choice(SURNAME)
             parts = [self.v.choice(GIVEN), self.v.choice(SURNAME)]
             if len(words) >= 3 and len(words[1].strip(".")) == 1:
                 parts.insert(1, self.v.choice("ABCDEFGHJKLMNPRSTW") + ".")
@@ -850,7 +895,7 @@ def _field(kind, raw):
     return fv(raw)
 
 
-def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text):
+def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text, cells=None):
     gold = {"document": {"source_file_name": derived(pdf_name),
                          "page_count": derived(str(pages), NO_EVIDENCE, pages)}}
     on_page = pageref.on_page(pageref._norm(carrier), page_text)
@@ -894,11 +939,14 @@ def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text):
                 "Individual" if f.kind == "person" else "Organization", f.new)
         addr = base + (".mailing_address" if base == "named_insured" else ".address")
         cell = f.cell
-        for _ in range(5):
-            # a name's own second line ("... GROUP" / "BROKERAGE INC") sits
-            # between it and its address, so the first step reaches further
-            cell = _below(cell, [x.cell for x in found], max_gap=3.0 if cell is f.cell else 1.8)
-            if cell is None:
+        # down the lines of the name's own page - a cell at the same place on
+        # another page is no part of this block - stepping past a short label
+        # set in the block ("Residence Premises") and a name's own second line
+        # ("BROKERAGE INC"), and stopping at a sentence
+        pool = (cells or {}).get(f.cell.page) or [x.cell for x in found if x.cell.page == f.cell.page]
+        for _ in range(8):
+            cell = _below(cell, pool, max_gap=3.0 if cell is f.cell else 1.8)
+            if cell is None or (len(cell.text.split()) > 6 and id(cell) not in by_cell):
                 break
             for g in by_cell.get(id(cell), []):
                 if g.kind in ("email", "phone") and not g.blank:
@@ -1268,7 +1316,9 @@ def _carrier_marks(carrier):
                "underwriters", "surplus", "cooperative", "national", "american",
                "general", "services", "insurers", "indemnity", "specialty", "fire",
                "property", "preferred", "corp", "corporation", "inc", "llc", "first"}
-    return {w for w in re.findall(r"[a-z]{4,}", carrier.lower()) if w not in generic}
+    marks = {w for w in re.findall(r"[a-z]{4,}", carrier.lower()) if w not in generic}
+    # and a carrier known by its initials: "CNA", "NCIC", "DMIC"
+    return marks | {w.lower() for w in re.findall(r"\b[A-Z]{3,5}\b", carrier)}
 
 
 def _drop_carrier(found, cell_list, carrier):
@@ -1286,8 +1336,10 @@ def _drop_carrier(found, cell_list, carrier):
                     break
     drop, heads = set(), []
     for f in found:
-        words = set(re.findall(r"[a-z]{4,}", f.text.lower()))
-        if f.kind == "company" and marks & words or f.kind == "person" and words and words <= marks:
+        words = set(re.findall(r"[a-z]{3,}", f.text.lower()))
+        first = (re.findall(r"[a-z]{3,}", f.text.lower()) or [""])[0]
+        if f.kind == "company" and marks & words or f.kind == "person" and words and words <= marks \
+                or f.kind in ("person", "company") and first in marks:   # "CNA Granite Row"
             drop.add(id(f))
             heads.append(f.cell)
     # the carrier's name printed as plain text heads its address too: the
@@ -1296,7 +1348,7 @@ def _drop_carrier(found, cell_list, carrier):
     for cell in cell_list:
         words = cell.text.split()
         if 0 < len(words) <= 6 and not any(g.cell is cell for g in found) and (
-                marks & set(re.findall(r"[a-z]{4,}", cell.text.lower()))
+                marks & set(re.findall(r"[a-z]{3,}", cell.text.lower()))
                 or INSURER_NAME.search(cell.text)):
             heads.append(cell)
     for head in heads:
@@ -1304,7 +1356,7 @@ def _drop_carrier(found, cell_list, carrier):
         for _ in range(3):                  # and the address printed under it
             cell = _below(cell, cell_list)
             if cell is None or NAME_LABEL.search(cell.text) or _looks_like_name(cell.text) \
-                    and not (marks & set(re.findall(r"[a-z]{4,}", cell.text.lower()))):
+                    and not (marks & set(re.findall(r"[a-z]{3,}", cell.text.lower()))):
                 break                       # another party's block begins
             for g in found:
                 if g.cell is cell and g.kind in ("street", "pobox", "cityline"):
@@ -1598,7 +1650,8 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
         title = schema.merged.get("title", "")
         gold, unmapped = build_gold([f for f in found_all if id(f) not in reader.consumed
                                      and f.part is None and f.kind != "scanline"],
-                                    index, carrier, title, built.pdf.name, built.pages, whole)
+                                    index, carrier, title, built.pdf.name, built.pages, whole,
+                                    {cl[0].page: cl for *_, cl, _ in pages if cl})   # the document is closed by now
         structure.finish(structure.merge(gold, laid_out), schema)
         vocab = _vocabulary(whole)
         for _, fld in _walk_fields(gold):

@@ -541,6 +541,30 @@ def test_copies_the_layout_hides_are_replaced_too(tmp_path, schema):
     assert "Residence Premises" not in json.loads(gold)["named_insured"]["primary_name"]["raw"]
 
 
+def test_an_address_block_is_read_by_its_shape(tmp_path, schema):
+    # a street with no street-type word, one-word names stacked in a block a
+    # glued label heads, and a subheading between the names and the address
+    folder = tmp_path / "data" / "Markel American Insurance Company" / "ocean_marine"
+    folder.mkdir(parents=True)
+    doc = fitz.open()
+    page = doc.new_page(width=612, height=792)
+    for x, y, size, text in LINES[:4] + [
+            (40, 150, 10, "Named InsuredWINSLOW"), (40, 162, 10, "TERESA UNDERHILL"),
+            (40, 174, 10, "MEDINA"), (40, 186, 10, "2646 SUMMIT"), (40, 198, 10, "CORTLAND, NY 13045")]:
+        page.insert_text((x, y), text, fontsize=size, fontname="helv")
+    doc.save(str(folder / "block.pdf"))
+    out = tmp_path / "out"
+    out.mkdir()
+    built = generic.synthesize(folder / "block.pdf", out / "b.pdf", out / "b.json", schema, Values("t"))
+    assert built.ok, built.problems              # no original name or street left
+    gold = json.loads(built.gold.read_text("utf-8"))
+    insured = gold["named_insured"]
+    assert insured["mailing_address"]["line_1"]["raw"] != "2646 SUMMIT"
+    names = [insured["primary_name"]["raw"]] + [a["name"]["raw"] for a in insured.get("additional_named_insureds", [])]
+    assert not {"WINSLOW", "TERESA UNDERHILL", "MEDINA"} & set(names)
+    assert len(names) == 3
+
+
 def test_a_model_number_ends_the_make():
     from fideon_synth import structure
     unit = {"unit_description": generic.fv("2015 Correct Craft/Nautique 200 Sport Nautique")}
