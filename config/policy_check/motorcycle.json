@@ -9,10 +9,10 @@
     "version": "1.4.0",
     "line_of_business_as_supplied": "Motorcycle",
     "line_specific_block": "motorcycle",
-    "field_count": 725,
+    "field_count": 760,
     "corpus_document_count": 1,
     "corpus_carrier_count": 1,
-    "aliased_fields": 133,
+    "aliased_fields": 167,
     "field_count_as_supplied": 395,
     "extensions_applied": "scripts/canonical_schema_extensions.py"
   },
@@ -1833,7 +1833,8 @@
               "territory_code": {
                 "$ref": "#/$defs/FieldValue",
                 "fideon:aliases": [
-                  "Terr", "Terr."
+                  "Terr",
+                  "Terr."
                 ]
               },
               "rating_tier": {
@@ -3758,48 +3759,6 @@
           "type": "boolean"
         }
       }
-    },
-    "TextSection": {
-      "type": "object",
-      "description": "A block of printed text exactly as the document carries it: a prose paragraph, notice, condition or disclaimer, or the page's remaining label/footer text. Nothing the page prints is left out of the gold; structured fields above hold the values, these hold the words.",
-      "properties": {
-        "section_id": {
-          "type": "string"
-        },
-        "section_title": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "section_type": {
-          "type": "string",
-          "enum": [
-            "prose",
-            "other"
-          ]
-        },
-        "raw_text": {
-          "type": "string"
-        },
-        "page_range": {
-          "type": "array",
-          "items": {
-            "type": "integer"
-          }
-        },
-        "form_number": {
-          "type": [
-            "string",
-            "null"
-          ]
-        }
-      },
-      "required": [
-        "section_id",
-        "raw_text",
-        "page_range"
-      ]
     }
   }
 }

@@ -9,10 +9,10 @@
     "version": "3.0.0",
     "line_of_business_as_supplied": "Personal Umbrella",
     "line_specific_block": "personal_umbrella",
-    "field_count": 630,
+    "field_count": 648,
     "corpus_document_count": 3,
     "corpus_carrier_count": null,
-    "aliased_fields": 119,
+    "aliased_fields": 137,
     "extensions_applied": "scripts/canonical_schema_extensions.py"
   },
   "fideon:mandatory_fields": [
@@ -3292,48 +3292,6 @@
           "type": "boolean"
         }
       }
-    },
-    "TextSection": {
-      "type": "object",
-      "description": "A block of printed text exactly as the document carries it: a prose paragraph, notice, condition or disclaimer, or the page's remaining label/footer text. Nothing the page prints is left out of the gold; structured fields above hold the values, these hold the words.",
-      "properties": {
-        "section_id": {
-          "type": "string"
-        },
-        "section_title": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "section_type": {
-          "type": "string",
-          "enum": [
-            "prose",
-            "other"
-          ]
-        },
-        "raw_text": {
-          "type": "string"
-        },
-        "page_range": {
-          "type": "array",
-          "items": {
-            "type": "integer"
-          }
-        },
-        "form_number": {
-          "type": [
-            "string",
-            "null"
-          ]
-        }
-      },
-      "required": [
-        "section_id",
-        "raw_text",
-        "page_range"
-      ]
     }
   }
 }
