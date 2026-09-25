@@ -142,6 +142,10 @@ LABELLED_NAME = re.compile(r"\b(insured)\s*:?\s*([A-Z][A-Za-z.'-]*(?:\s+[A-Z][A-
 #: a ZIP+4 after a state that is not one - an address a redaction scrambled
 SCRAMBLED_ZIP = re.compile(r",[^,]*?\b([A-Z]{2,5})\s+(\d{5}-\d{4})\s*$")
 INSURED_LABEL = re.compile(r"\b(insured|insureds|client|clients|applicant|owner)\b", re.I)
+#: a name label immediately followed by a colon, mid-line in a cell that also
+#: holds other fields ("POLICY NUMBER: ... NAMED INSURED: Cordelia Whitlock")
+INLINE_NAME_LABEL = re.compile(
+    r"\b(?:named\s+insureds?|insureds?|applicant|owner|agent|producer|agency)\s*:\s*", re.I)
 NOT_A_NAME = re.compile(r"\b(page|policy|coverage|date|premium|limit|number|total|"
                         r"address|description|declarations|location|endorsement|"
                         r"information|type|plan|form|effective|expiration|period|amount|"
@@ -340,6 +344,7 @@ class Found:
         self.no_zip = False       # a known town printed here without its ZIP
         self.whole = None         # the whole value, when this is one line of it
         self.part = None          # 0 = its first line, 1 = the line it ends on
+        self.whole_head_words = None  # a two-line company name: words on line 1
         self.name_part = None     # 0/1 = the first/last name alone of the person in ``key``
         self.city_only = False    # the town alone of the city line in ``key``
         self.split = None         # "month": the first line holds the month alone
@@ -528,6 +533,21 @@ def _left(cell, cell_list):
     return best
 
 
+def _at_top(cell, cell_list):
+    """Is ``cell`` at or near the very top of its page - a masthead - with
+    nothing above it but another masthead-shaped line?"""
+    up = cell
+    for _ in range(2):
+        above = _above(up, cell_list, max_gap=3.5, x_tol=60)
+        if above is None:
+            return True
+        if not re.search(r"insurance|agency|brokers?|\bins\b|^a\s+(stock|mutual)\b",
+                         above.text, re.I):
+            return False
+        up = above
+    return _above(up, cell_list, max_gap=3.5, x_tol=60) is None
+
+
 def _looks_like_name(text):
     words = text.split()
     if not 2 <= len(words) <= 5 or ":" in text or NOT_A_NAME.search(text):
@@ -684,18 +704,68 @@ def find_values(cell_list):
             if _demographic(other.text):
                 names[id(cell)] = (cell, "")
                 break
+    # a name that runs onto the cell below it ("STABLE ROCK INSURANCE" /
+    # "AGENCY LLC", both stacked above the same address) is one name, and
+    # must be replaced once: two independent fakes for the same original
+    # leaves the second an unmatched, mismatched fragment
+    continuations = {}          # id(head cell) -> tail cell
+    consumed = set()            # id(tail cell), not a name of its own
+    for cell, _label in names.values():
+        below = _below(cell, cell_list, max_gap=1.6, x_tol=6)
+        if below is not None and id(below) in names \
+                and set(w.lower().strip(",") for w in below.text.split()) <= COMPANY_WORDS:
+            continuations[id(cell)] = below
+            consumed.add(id(below))
     for cell, label in names.values():
-        if any(f.cell is cell for f in found):
+        if any(f.cell is cell for f in found) or id(cell) in consumed:
             continue
         words = {w.lower().strip(",.") for w in cell.text.split()}
         if words <= COMPANY_WORDS:
             continue                          # "AGENCY LLC": no name in it
-        # two people printed together ("Juno Prentice & Hazel Vance") are two names
-        for s, e in _name_spans(cell.text):
-            part = {w.lower().strip(",.") for w in cell.text[s:e].split()}
-            f = Found("company" if part & COMPANY_WORDS else "person", cell, s, e)
-            f.label = label or ""
-            found.append(f)
+        spans = _name_spans(cell.text)
+        if len(spans) > 1:
+            # two people printed together ("Juno Prentice & Hazel Vance") are two names
+            for s, e in spans:
+                part = {w.lower().strip(",.") for w in cell.text[s:e].split()}
+                f = Found("company" if part & COMPANY_WORDS else "person", cell, s, e)
+                f.label = label or ""
+                found.append(f)
+            continue
+        kind = "company" if words & COMPANY_WORDS else "person"
+        f = Found(kind, cell, 0, len(cell.text))
+        f.label = label or ""
+        found.append(f)
+        cont = continuations.get(id(cell))
+        if kind == "company" and cont is not None:
+            whole = cell.text + " " + cont.text
+            f.whole, f.key, f.part = whole, _key(whole), 0
+            g = Found("company", cont, 0, len(cont.text))
+            g.whole, g.key, g.part, g.label = whole, _key(whole), 1, ""
+            g.whole_head_words = len(cell.text.split())
+            found.append(g)
+
+    # a name printed on the same line as its label, sharing a cell with other
+    # fields ("POLICY NUMBER: CYC237253-10 NAMED INSURED: Cordelia Whitlock") -
+    # the whole-cell checks above reject this cell outright for its digits and
+    # length, so the label and name are pulled from within its text instead;
+    # the cell may already hold an unrelated match (the policy number itself)
+    for cell in cell_list:
+        if any(f.cell is cell and f.kind in ("person", "company") for f in found):
+            continue
+        for m in INLINE_NAME_LABEL.finditer(cell.text):
+            tail = cell.text[m.end():]
+            end = len(tail)
+            for stop in NAME_LABEL.finditer(tail):
+                end = min(end, stop.start())
+            candidate = tail[:end].strip(" :-")
+            if _looks_like_name(candidate):
+                start = m.end() + (len(tail[:end]) - len(tail[:end].lstrip(" :-")))
+                kind = "company" if set(w.lower().strip(",") for w in candidate.split()) \
+                    & COMPANY_WORDS else "person"
+                f = Found(kind, cell, start, start + len(candidate.strip()))
+                f.label = m.group(0)
+                found.append(f)
+                break
     # an agency printed with its agency code: "BURKHARD EVANS INC - #909255",
     # the code wrapped under it ("... BROKERAGE INC -" / "#913886"), or set in
     # the next column ("GRANITE ROW  |  - #495001")
@@ -761,7 +831,12 @@ def find_values(cell_list):
             f.role = "producer"
         elif INSURED_LABEL.search(context or ""):
             f.role = "insured"
-        elif f.kind == "company" and re.search(r"insurance|agency|brokers?|\bins\b", f.text, re.I):
+        elif f.kind == "company" and re.search(r"insurance|agency|brokers?|\bins\b", f.text, re.I) \
+                and not _at_top(f.cell, cell_list):
+            # the carrier's own masthead - printed first on the page, with
+            # nothing above it (or only another masthead line, "A Stock
+            # Insurance Company") - is not a producer just because it says
+            # "Insurance Company"; a real, unlabelled agency name sits lower
             f.role = "producer"
     # a mailing block with no label over it - an envelope window - holds the
     # policyholder: people, above an address, when no label named anyone else
@@ -965,9 +1040,18 @@ class Faker:
         if f.part is not None and f.split == "month":   # "August" / "26, 2027"
             month, _, rest = new.partition(" ")
             return month if f.part == 0 else rest
-        if f.part is not None:               # one line of a wrapped date
+        if f.part is not None and f.kind == "date":   # one line of a wrapped date
             head, _, year = new.rpartition(" ")
             return head.rstrip(",") if f.part == 0 else year
+        if f.part is not None and f.kind == "company":  # one line of a two-line name
+            # the new name keeps as many words on each line as the original
+            # had there, so a shorter or longer replacement still wraps where
+            # the source did rather than at wherever its own company words end
+            words = new.split()
+            head_len = f.whole_head_words if f.part == 1 else len(f.text.split())
+            if f.part == 0:
+                return " ".join(words[:head_len]) or new
+            return " ".join(words[head_len:]) or new
         if f.no_zip:
             new = re.sub(r"\s+\d{5}(?:-\d{4})?$", "", new)
         if f.kind == "date" and f.key and _key(f.text) != f.key:
@@ -1152,7 +1236,8 @@ def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text, cel
         by_cell.setdefault(id(f.cell), []).append(f)
     # the first name printed in a block is its primary one: a policy's
     # second insured sits under the first
-    ordered = sorted((f for f in found if f.kind in ("person", "company") and f.role),
+    ordered = sorted((f for f in found if f.kind in ("person", "company") and f.role
+                      and f.part != 1),
                      key=lambda f: (f.cell.page, f.rect.y0, f.rect.x0))
     for f in ordered:
         base = "named_insured" if f.role == "insured" else "producer"
@@ -1177,7 +1262,15 @@ def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text, cel
                              "page": f.cell.page + 1})
             continue
         placed.add(name_path)
-        _set(gold, name_path, fv(f.new))
+        whole_new = f.new
+        if f.part == 0:
+            # a two-line company name: the gold states it whole, as it reads,
+            # not only the fragment printed on this particular line
+            tail = next((g.new for g in found if g.kind == f.kind and g.part == 1
+                        and g.key == f.key), None)
+            if tail:
+                whole_new = f.new + " " + tail
+        _set(gold, name_path, fv(whole_new))
         if base == "named_insured":
             gold["named_insured"]["entity_type"] = derived(
                 "Individual" if f.kind == "person" else "Organization", f.new)
@@ -1228,6 +1321,12 @@ def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text, cel
                 _get(gold, path)["raw"] == f.new
                 or _get(gold, path).get("parsed") == _field(f.kind, f.new).get("parsed")):
             continue                                  # same value printed again
+        elif f.kind in ("person", "company") and _key(f.new) in (
+                _key((_get(gold, "producer.agency_name") or {}).get("raw") or ""),
+                _key((_get(gold, "named_insured.primary_name") or {}).get("raw") or "")):
+            continue                  # this party's name, printed again in a
+                                       # different case with no label a field
+                                       # can be matched to
         else:
             unmapped.append({"kind": f.kind, "label": f.label.strip(), "value": f.new,
                              "page": f.cell.page + 1})
@@ -1266,8 +1365,15 @@ def _sweep(pages, marks=()):
     kinds = {}
     for *_, found in pages:
         for f in found:
-            if f.kind in PII and len(f.text) >= 4 and not f.blank:
-                kinds.setdefault(_key(f.text), f.kind)
+            if f.kind in PII and not f.blank:
+                if f.part is not None:
+                    # one line of a name that continues onto the next cell -
+                    # the fragment alone ("AGENCY LLC") is not a value to
+                    # sweep for on its own; the whole name is
+                    if f.part == 0 and f.whole and len(f.whole) >= 4:
+                        kinds.setdefault(_key(f.whole), f.kind)
+                elif len(f.text) >= 4:
+                    kinds.setdefault(_key(f.text), f.kind)
     # a long number is found again with a label or prefix run into it:
     # "Policy Number085121419", "ER78202066"
     long_digits = {k for k, kind in kinds.items() if kind in ("id", "digits")
@@ -2068,7 +2174,8 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
 
         title = schema.merged.get("title", "")
         gold, unmapped = build_gold([f for f in found_all if id(f) not in reader.consumed
-                                     and f.part is None and f.kind != "scanline"],
+                                     and (f.part is None or f.kind == "company")
+                                     and f.kind != "scanline"],
                                     index, carrier, title, built.pdf.name, built.pages, whole,
                                     {cl[0].page: cl for *_, cl, _ in pages if cl})   # the document is closed by now
         structure.finish(structure.merge(gold, laid_out), schema)
