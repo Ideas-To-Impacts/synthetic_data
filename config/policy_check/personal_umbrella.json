@@ -110,7 +110,8 @@
             "Print Date",
             "Printed On",
             "Process Date",
-            "PROCESSING DATE"
+            "PROCESSING DATE",
+            "Printed Date"
           ]
         },
         "page_count": {
@@ -187,13 +188,20 @@
           "$ref": "#/$defs/FieldValue"
         },
         "writing_company_name": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Policy Issued By"
+          ]
         },
         "group_name": {
           "$ref": "#/$defs/FieldValue"
         },
         "naic_number": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "NAIC #",
+            "NAIC"
+          ]
         },
         "fein": {
           "$ref": "#/$defs/FieldValue"
@@ -283,17 +291,24 @@
       "type": "object",
       "properties": {
         "agency_name": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Agent Information"
+          ]
         },
         "producer_code": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "Agency Code",
-            "Agent"
+            "Agent",
+            "Agent ID"
           ]
         },
         "producer_contact_name": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Insurance Agent's Printed Name"
+          ]
         },
         "address": {
           "type": "object",
@@ -435,7 +450,10 @@
           "$ref": "#/$defs/FieldValue"
         },
         "policy_type": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Type of Policy"
+          ]
         },
         "effective_date": {
           "$ref": "#/$defs/FieldValue",
@@ -446,7 +464,9 @@
             "Policy Effective Date",
             "Policy Period From",
             "Policy Term Effective Date",
-            "Start Date"
+            "Start Date",
+            "Policy Term",
+            "Eff. Date"
           ]
         },
         "expiration_date": {
@@ -466,7 +486,10 @@
           "$ref": "#/$defs/FieldValue"
         },
         "policy_term_months": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Term"
+          ]
         },
         "anniversary_date": {
           "$ref": "#/$defs/FieldValue"
@@ -551,7 +574,9 @@
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "Insured Name",
-            "Named Insured"
+            "Named Insured",
+            "Insured's Name",
+            "Client Name"
           ]
         },
         "doing_business_as": {
@@ -1016,7 +1041,10 @@
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "Policy Total Premium",
-            "Total Policy Premium"
+            "Total Policy Premium",
+            "Total Full Term Premium",
+            "Total Policy Cost",
+            "Total Charges"
           ]
         },
         "basic_premium": {
@@ -1033,7 +1061,11 @@
           "$ref": "#/$defs/FieldValue"
         },
         "minimum_premium": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Minimum Written Premium",
+            "Minimum Written"
+          ]
         },
         "return_premium": {
           "$ref": "#/$defs/FieldValue"
@@ -1186,7 +1218,11 @@
           ]
         },
         "stamping_fee": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Stamp Fee",
+            "Stamp"
+          ]
         },
         "policy_fee": {
           "$ref": "#/$defs/FieldValue"
@@ -1348,7 +1384,8 @@
             "Billing Phone",
             "Call us at",
             "By calling",
-            "Automatic Payments"
+            "Automatic Payments",
+            "For payment questions call"
           ]
         }
       }

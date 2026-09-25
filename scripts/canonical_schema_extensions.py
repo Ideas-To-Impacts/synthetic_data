@@ -5293,6 +5293,25 @@ ALIASES = {'document.document_title_as_stated': ['Evidence of Insurance'],
                                             'previously owned risk in which you have or had an insured '
                                             'interest?']}
 
+# Phrasings the other personal lines print for the same fields (the
+# personal-lines review): kept here so every personal line answers to them.
+SHARED_ALIASES = {'carrier.writing_company_name': ['Policy Issued By'],
+ 'producer.producer_code': ['Agent ID'],
+ 'producer.agency_name': ['Agent Information'],
+ 'producer.producer_contact_name': ["Insurance Agent's Printed Name"],
+ 'named_insured.primary_name': ['Client Name'],
+ 'document.print_date': ['Printed Date'],
+ 'policy.policy_type': ['Type of Policy'],
+ 'policy.effective_date': ['Eff. Date'],
+ 'policy.policy_term_months': ['Term'],
+ 'premium.minimum_premium': ['Minimum Written Premium', 'Minimum Written'],
+ 'premium.total_policy_premium': ['Total Full Term Premium', 'Total Policy Cost', 'Total Charges'],
+ 'premium.stamping_fee': ['Stamp Fee', 'Stamp'],
+ 'carrier.naic_number': ['NAIC #'],
+ 'billing.phone': ['For payment questions call']}
+for _path, _labels in SHARED_ALIASES.items():
+    ALIASES[_path] = ALIASES.get(_path, []) + [a for a in _labels if a not in ALIASES.get(_path, [])]
+
 ALIASES_REMOVED = {'document.applicable_coverages': ['Applicable Coverage(s)', 'Other Coverage(s) As Specified'],
  'document.transaction_reason': ['Amended Date', 'Modifies Coverage(s) at Renewal'],
  'policy.effective_date': ['Inception Date'],
@@ -5334,6 +5353,10 @@ VERBATIM_PROPERTIES = {'additional_fields': {'type': 'array',
                                                               'row']},
                                             'cells': {'type': 'array', 'items': {'type': 'string'}}},
                              'required': ['page', 'kind', 'cells']}}}
+# the renewal offer, policy change, endorsement, ... block every personal line
+# shares, as the watercraft schema keeps it
+VERBATIM_PROPERTIES['document_type_detail'] = json.loads(
+    (SCHEMA.parent / "ocean_marine.json").read_text("utf-8"))["properties"]["document_type_detail"]
 
 VERBATIM_DEFS = {'TextSection': {'type': 'object',
                  'description': 'A block of printed text exactly as the document carries it: a prose '

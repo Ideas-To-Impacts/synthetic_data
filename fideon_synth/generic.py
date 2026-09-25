@@ -299,7 +299,13 @@ def label_index(schema):
     # takes "Inception Date" there, not to the policyholder's tenure
     if "policy.original_inception_date" in schema.leaves:
         index["inception date"] = "policy.original_inception_date"
-    return {k: v for k, v in index.items() if k and v in schema.leaves}
+    index = {k: v for k, v in index.items() if k and v in schema.leaves}
+    # a text layer that drops the spaces between words ("PolicyEffectiveDate")
+    # still names the same field
+    for k, v in list(index.items()):
+        if " " in k and len(k) >= 10:
+            index.setdefault(k.replace(" ", ""), v)
+    return index
 
 
 def match_label(label, kind, index):
@@ -309,8 +315,9 @@ def match_label(label, kind, index):
         return None
     fits = KIND_FITS.get(kind)
     ok = (lambda p: fits.search(p.rsplit(".", 1)[-1])) if fits else (lambda p: True)
-    if label in index and ok(index[label]):
-        return index[label]
+    for whole in (label, label.replace(" ", "")):   # "Named StormPercentage Deductible"
+        if whole in index and ok(index[whole]):
+            return index[whole]
     padded = " %s " % label
     best = None
     for phrase, path in index.items():

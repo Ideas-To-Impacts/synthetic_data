@@ -585,6 +585,9 @@ def test_labels_match_schema_fields(schema):
     assert match("TOTAL ANNUAL PREMIUM:", "money") == "premium.total_policy_premium"
     # a label that names a field of the wrong kind is not a match
     assert match("Policy Number:", "money") is None
+    # a text layer that lost the spaces between the words
+    assert match("PolicyEffectiveDate", "date") == "policy.effective_date"
+    assert match("TOTAL ANNUALPREMIUM:", "money") == "premium.total_policy_premium"
 
 
 def test_parsed_dates_must_be_month_day_year(schema):

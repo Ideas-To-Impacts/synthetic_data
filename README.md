@@ -41,6 +41,8 @@ fideon-synth --source "Data\original data\Progressive\auto\progressive_autob.pdf
 
 Sources are read as `<Carrier>/<lob>/<file>.pdf`: the folder name picks the
 schema (`_fallback` if there is none), the carrier folder is the carrier.
+The schemas are looked up in a folder named `policy_check` (the document
+type), so `config/policy_check` must keep that name.
 
 For each document it:
 

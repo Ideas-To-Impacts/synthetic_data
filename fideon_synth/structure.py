@@ -928,7 +928,7 @@ class Reader:
                     self._current().setdefault("year", derived(year.group(0), year.group(0),
                                                                int(year.group(0))))
             return
-        path = self.index.get(label)
+        path = self.index.get(label) or self.index.get(label.replace(" ", ""))
         if path and not NOT_TEXT.search(path.rsplit(".", 1)[-1]):
             _put(self.gold, path, self._plain(path, value))
             return
