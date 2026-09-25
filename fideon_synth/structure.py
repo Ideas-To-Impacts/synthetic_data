@@ -801,8 +801,13 @@ class Reader:
             scalar = self.match(label, f.kind, self.index)
             rels = [r for r in self.unit_index.get(label, []) if self._unit_fits(f.kind, r)]
             if not scalar and rels:
+                if self._repeated_on_row(cell, label):
+                    continue
                 value = self._address(f) if rels[0].endswith("address") else \
                     (self.field(f.kind, f.new) if f.kind in ("date", "money") else fv(f.new))
+                if f.kind in ("id", "digits") and self._held_by_unit(rels[0], value):
+                    self._use(f)                   # a VIN printed again, in a discount table
+                    continue
                 if value:
                     self._unit_set(rels[0], value)
                     self._use(f)
@@ -886,12 +891,15 @@ class Reader:
             label, value = m.group(1), m.group(2).strip()
         elif cell.text.count(":") == 1 and cell.text.rstrip().endswith(":"):
             nxt = self._right_of(cell) or self._below_of(cell)
-            if nxt is None or ":" in nxt.text or self.found_in.get(id(nxt)):
+            if nxt is None or ":" in nxt.text or self.found_in.get(id(nxt)) or \
+                    not self._value_like(nxt.text):
                 return
             label, value, vcell = cell.text.rstrip()[:-1], nxt.text.strip(), nxt
-        elif whole and not NOT_TEXT.search(whole.rsplit(".", 1)[-1]):
+        elif whole and not NOT_TEXT.search(whole.rsplit(".", 1)[-1]) \
+                and not cell.text.strip()[:1].islower():   # "occupation." wrapped out of a sentence
             nxt = self._right_of(cell)             # "Your Insurer  |  TRAVCO INSURANCE COMPANY"
-            if nxt is None or ":" in nxt.text or self.found_in.get(id(nxt)):
+            if nxt is None or ":" in nxt.text or self.found_in.get(id(nxt)) or \
+                    not self._value_like(nxt.text):
                 return
             label, value, vcell = cell.text, nxt.text.strip(), nxt
         else:
@@ -901,6 +909,8 @@ class Reader:
             return
         label = self.norm(label)
         rels = [r for r in self.unit_index.get(label, []) if not NOT_TEXT.search(r.rsplit(".", 1)[-1])]
+        if rels and self._repeated_on_row(cell, label):
+            return
         if rels:
             self._unit_set(rels[0], self._plain(rels[0], value))
             season = re.match(r"(?i)(summer|winter|spring|fall|autumn)\b", label)
@@ -923,6 +933,27 @@ class Reader:
             if key and self.units_at and key not in ("year", "make", "model"):
                 self._sub_set(part, key, self._plain(key, value), new=False)
                 return
+
+    def _is_label(self, text):
+        """Printed text that is itself a label: in a grid of labels over their
+        values, the cell beside "Buyout Indicator" is "Channel Of Process"."""
+        n = self.norm(text.strip().rstrip(":"))
+        return bool(n) and (n in self.index or n in self.unit_index or n in self.op_index
+                            or n in self.heads)
+
+    def _value_like(self, text):
+        return bool(re.search(r"[A-Za-z0-9]", text)) and not self._is_label(text)
+
+    def _held_by_unit(self, rel, value):
+        """An identifier some unit already has: the same unit, printed again."""
+        return "." not in rel and is_field(value) and \
+            any(is_field(u.get(rel)) and u[rel]["raw"] == value["raw"] for u in self.units)
+
+    def _repeated_on_row(self, cell, label):
+        """The same label printed again along the row - one column per unit,
+        which this reader cannot tell apart, so it does not guess."""
+        return sum(1 for o in self.cells[cell.page] if o.row == cell.row and ":" in o.text
+                   and self.norm(o.text.split(":", 1)[0]) == label) >= 2
 
     def _below_of(self, cell):
         """The cell printed directly under ``cell``, left edges aligned."""
@@ -1144,7 +1175,7 @@ class Reader:
         for line in lines:
             if len(line.cells) == 1:
                 name = self._looks_named(line.cells[0])
-                if name:
+                if name and not self._is_label(name):
                     current = {"name": fv(name)}
                     self.operators.append(current)
                     continue

@@ -191,6 +191,9 @@ KIND_FITS = {
     "id": re.compile(r"number|code|_id|fein"), "digits": re.compile(r"number|code|_id|fein"),
     "fein": re.compile(r"fein"), "phone": re.compile(r"phone|fax"),
     "email": re.compile(r"email"),
+    # a person's name belongs in a name field, not in whatever field's label
+    # happens to sit above it ("RATING STATE: NY" over a policyholder)
+    "person": re.compile(r"name|insured|representative|designee|agent|holder|contact|driver|operator"),
 }
 
 
