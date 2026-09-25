@@ -32,7 +32,9 @@
         4,
         5,
         6,
-        7
+        7,
+        9,
+        11
       ],
       "flagged": false
     },
@@ -105,8 +107,8 @@
   },
   "named_insured": {
     "primary_name": {
-      "raw": "Beatrix Brackenridge",
-      "parsed": "Beatrix Brackenridge",
+      "raw": "Montague Underhill",
+      "parsed": "Montague Underhill",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -166,6 +168,7 @@
           9,
           11,
           15,
+          29,
           30
         ],
         "flagged": false
@@ -227,6 +230,7 @@
           9,
           11,
           15,
+          29,
           30
         ],
         "flagged": false
@@ -235,8 +239,8 @@
     "additional_named_insureds": [
       {
         "name": {
-          "raw": "Henrietta Ellingham",
-          "parsed": "Henrietta Ellingham",
+          "raw": "Henrietta Crowthorne",
+          "parsed": "Henrietta Crowthorne",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -261,8 +265,8 @@
       },
       {
         "name": {
-          "raw": "Perpetua Fernsby",
-          "parsed": "Perpetua Fernsby",
+          "raw": "Thaddeus Pettigrew",
+          "parsed": "Thaddeus Pettigrew",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -287,8 +291,8 @@
       },
       {
         "name": {
-          "raw": "Georgiana Harrowgate",
-          "parsed": "Georgiana Harrowgate",
+          "raw": "Hollis Mortlake",
+          "parsed": "Hollis Mortlake",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -315,34 +319,8 @@
       },
       {
         "name": {
-          "raw": "Ottoline Larkspur",
-          "parsed": "Ottoline Larkspur",
-          "confidence": {
-            "score": 1.0,
-            "source": "deterministic"
-          },
-          "page_ref": [
-            29
-          ],
-          "flagged": false
-        },
-        "entity_type": {
-          "raw": "Individual",
-          "parsed": "Individual",
-          "confidence": {
-            "score": 1.0,
-            "source": "structural"
-          },
-          "page_ref": [
-            29
-          ],
-          "flagged": false
-        }
-      },
-      {
-        "name": {
-          "raw": "Juniper Larkspur",
-          "parsed": "Juniper Larkspur",
+          "raw": "Barnaby Underhill",
+          "parsed": "Barnaby Underhill",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -367,8 +345,34 @@
       },
       {
         "name": {
-          "raw": "Leopold Copperfield",
-          "parsed": "Leopold Copperfield",
+          "raw": "Seraphina Brackenridge",
+          "parsed": "Seraphina Brackenridge",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            29
+          ],
+          "flagged": false
+        },
+        "entity_type": {
+          "raw": "Individual",
+          "parsed": "Individual",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            29
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "name": {
+          "raw": "Rosalind Larkspur",
+          "parsed": "Rosalind Larkspur",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -395,8 +399,8 @@
       },
       {
         "name": {
-          "raw": "Thaddeus Ellingham",
-          "parsed": "Thaddeus Ellingham",
+          "raw": "Lavinia Mortlake",
+          "parsed": "Lavinia Mortlake",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -421,8 +425,8 @@
       },
       {
         "name": {
-          "raw": "Clementine Ellingham",
-          "parsed": "Clementine Ellingham",
+          "raw": "Henrietta Winterbourne",
+          "parsed": "Henrietta Winterbourne",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -447,36 +451,8 @@
       },
       {
         "name": {
-          "raw": "Juniper Blackwood",
-          "parsed": "Juniper Blackwood",
-          "confidence": {
-            "score": 1.0,
-            "source": "deterministic"
-          },
-          "page_ref": [
-            29,
-            30
-          ],
-          "flagged": false
-        },
-        "entity_type": {
-          "raw": "Individual",
-          "parsed": "Individual",
-          "confidence": {
-            "score": 1.0,
-            "source": "structural"
-          },
-          "page_ref": [
-            29,
-            30
-          ],
-          "flagged": false
-        }
-      },
-      {
-        "name": {
-          "raw": "CLEMENTINE UNDERHILL",
-          "parsed": "CLEMENTINE UNDERHILL",
+          "raw": "Perpetua Barrowclough",
+          "parsed": "Perpetua Barrowclough",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -503,8 +479,36 @@
       },
       {
         "name": {
-          "raw": "Ambrose Thistlewood",
-          "parsed": "Ambrose Thistlewood",
+          "raw": "CORNELIUS THISTLEWOOD",
+          "parsed": "CORNELIUS THISTLEWOOD",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            29,
+            30
+          ],
+          "flagged": false
+        },
+        "entity_type": {
+          "raw": "Individual",
+          "parsed": "Individual",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            29,
+            30
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "name": {
+          "raw": "Rutherford Vantassel",
+          "parsed": "Rutherford Vantassel",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -529,7 +533,139 @@
       }
     ]
   },
+  "producer": {
+    "agency_name": {
+      "raw": "PIONEER INSURANCE GROUP BROKERAGE INC",
+      "parsed": "PIONEER INSURANCE GROUP BROKERAGE INC",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3,
+        7
+      ],
+      "flagged": false
+    },
+    "contact": {
+      "phone": {
+        "raw": "607-555-0196",
+        "parsed": "607-555-0196",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          29,
+          30
+        ],
+        "flagged": false
+      }
+    },
+    "address": {
+      "line_1": {
+        "raw": "164 BIRCHBARK LN",
+        "parsed": "164 BIRCHBARK LN",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Corning",
+        "parsed": "Corning",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          29,
+          30
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          10,
+          11,
+          12,
+          15,
+          17,
+          19,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          29,
+          30,
+          31,
+          32,
+          35,
+          37,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "14830",
+        "parsed": "14830",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          29,
+          30
+        ],
+        "flagged": false
+      }
+    }
+  },
   "policy": {
+    "policy_number": {
+      "raw": "305-119-764",
+      "parsed": "305-119-764",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        15
+      ],
+      "flagged": false
+    },
     "expiration_date": {
       "raw": "10/21/2024",
       "parsed": "10/21/2024",
@@ -542,7 +678,9 @@
         4,
         5,
         6,
-        7
+        7,
+        9,
+        11
       ],
       "flagged": false
     },
@@ -555,6 +693,24 @@
       },
       "page_ref": [
         3
+      ],
+      "flagged": false
+    },
+    "effective_date": {
+      "raw": "10/22/2023",
+      "parsed": "10/22/2023",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11
       ],
       "flagged": false
     },
@@ -573,6 +729,16 @@
         6,
         7
       ],
+      "flagged": false
+    },
+    "policy_term_months": {
+      "raw": "12",
+      "parsed": 12,
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
       "flagged": false
     }
   },
@@ -604,8 +770,8 @@
   },
   "claim_reporting": {
     "claims_phone": {
-      "raw": "518-555-0105",
-      "parsed": "518-555-0105",
+      "raw": "518-555-0101",
+      "parsed": "518-555-0101",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -616,36 +782,6 @@
         12
       ],
       "flagged": false
-    }
-  },
-  "producer": {
-    "contact": {
-      "phone": {
-        "raw": "(607) 555-0122",
-        "parsed": "(607) 555-0122",
-        "confidence": {
-          "score": 1.0,
-          "source": "deterministic"
-        },
-        "page_ref": [
-          13
-        ],
-        "flagged": false
-      }
-    },
-    "address": {
-      "city": {
-        "raw": "Signature of Insured",
-        "parsed": "Signature of Insured",
-        "confidence": {
-          "score": 1.0,
-          "source": "deterministic"
-        },
-        "page_ref": [
-          15
-        ],
-        "flagged": false
-      }
     }
   },
   "billing": {
@@ -690,8 +826,8 @@
     "operators": [
       {
         "name": {
-          "raw": "Maeve Ellery",
-          "parsed": "Maeve Ellery",
+          "raw": "Juniper Hollingsworth",
+          "parsed": "Juniper Hollingsworth",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -704,8 +840,8 @@
       },
       {
         "name": {
-          "raw": "NIKOLIAI OREKHOV",
-          "parsed": "NIKOLIAI OREKHOV",
+          "raw": "CLEMENTINE STONEBRIDGE",
+          "parsed": "CLEMENTINE STONEBRIDGE",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -718,8 +854,8 @@
       },
       {
         "name": {
-          "raw": "Beatrix Brackenridge",
-          "parsed": "Beatrix Brackenridge",
+          "raw": "Montague Underhill",
+          "parsed": "Montague Underhill",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -768,14 +904,15 @@
           "flagged": false
         },
         "vin_or_hull_id": {
-          "raw": "5BPS665133V000311",
-          "parsed": "5BPS665133V000311",
+          "raw": "7BPS277942V000313",
+          "parsed": "7BPS277942V000313",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
           },
           "page_ref": [
             5,
+            6,
             9
           ],
           "flagged": false
@@ -875,14 +1012,15 @@
           "flagged": false
         },
         "vin_or_hull_id": {
-          "raw": "SN7DAPPS1FC578289",
-          "parsed": "SN7DAPPS1FC578289",
+          "raw": "SN8DAPPS4FC699414",
+          "parsed": "SN8DAPPS4FC699414",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
           },
           "page_ref": [
             5,
+            6,
             11
           ],
           "flagged": false
@@ -1207,7 +1345,6 @@
     "policy.coverage_package.package_components[].component_name",
     "policy.coverage_package.package_components[].component_value",
     "policy.coverage_package.package_name",
-    "policy.effective_date",
     "policy.effective_time",
     "policy.expiration_time",
     "policy.id_cards[].effective_date",
@@ -1226,10 +1363,8 @@
     "policy.policy_form_edition",
     "policy.policy_form_name",
     "policy.policy_form_number",
-    "policy.policy_number",
     "policy.policy_rate_control",
     "policy.policy_status",
-    "policy.policy_term_months",
     "policy.policy_tier",
     "policy.policyholder_since_date",
     "policy.prior_policy_number",
@@ -1294,11 +1429,7 @@
     "producer.address.country",
     "producer.address.county",
     "producer.address.county_code",
-    "producer.address.line_1",
     "producer.address.line_2",
-    "producer.address.postal_code",
-    "producer.address.state",
-    "producer.agency_name",
     "producer.agent_of_record",
     "producer.buyout_indicator",
     "producer.commission_percentage",
@@ -1541,10 +1672,12 @@
     {
       "kind": "phone",
       "label": "servicecenter@amig.com | www.amig.com/customer",
-      "value": "845-555-0121",
+      "value": "607-555-0141",
       "page": 1,
       "page_ref": [
         1,
+        9,
+        11,
         13,
         19,
         33,
@@ -1557,7 +1690,7 @@
     {
       "kind": "phone",
       "label": "phone | 8 a.m. to 8 p.m. Eastern | 1-",
-      "value": "315-555-0190",
+      "value": "716-555-0142",
       "page": 1,
       "page_ref": [
         1
@@ -1566,7 +1699,7 @@
     {
       "kind": "pobox",
       "label": "American Modern Insurance Group® |",
-      "value": "PO Box 368",
+      "value": "PO Box 733",
       "page": 1,
       "page_ref": [
         1,
@@ -1575,8 +1708,8 @@
     },
     {
       "kind": "cityline",
-      "label": "1-800-543-2644 phone | 8 a.m. to 8 p.m. Eastern | 1-800-217-5150 fax",
-      "value": "Skaneateles, NY 13152",
+      "label": "1-607-555-0141 phone | 8 a.m. to 8 p.m. Eastern | 1-716-555-0142 fax",
+      "value": "Norwich, NY 13815",
       "page": 1,
       "page_ref": [
         1
@@ -1597,8 +1730,8 @@
     },
     {
       "kind": "street",
-      "label": "RSG SPECIALTY LLC - #495001",
-      "value": "2041 ALDER BROOK LN",
+      "label": "PIONEER LLC - #997843",
+      "value": "4462 PALMER HILL RD",
       "page": 3,
       "page_ref": [
         3
@@ -1606,17 +1739,8 @@
     },
     {
       "kind": "cityline",
-      "label": "6450 TRANSIT RD.",
-      "value": "SKANEATELES NY 13152",
-      "page": 3,
-      "page_ref": [
-        3
-      ]
-    },
-    {
-      "kind": "street",
-      "label": "PATRIOTIC INSURANCE GROUP BROKERAGE INC -",
-      "value": "518 MILL POND WAY",
+      "label": "4462 PALMER HILL RD",
+      "value": "DELHI NY 13753",
       "page": 3,
       "page_ref": [
         3
@@ -1624,8 +1748,8 @@
     },
     {
       "kind": "cityline",
-      "label": "159 NY-28",
-      "value": "CAZENOVIA NY 13035",
+      "label": "164 BIRCHBARK LN",
+      "value": "CORTLAND NY 13045",
       "page": 3,
       "page_ref": [
         3
@@ -1650,9 +1774,36 @@
       ]
     },
     {
+      "kind": "company",
+      "label": "Contracted Agency:",
+      "value": "PIONEER LLC",
+      "page": 3,
+      "page_ref": [
+        3
+      ]
+    },
+    {
+      "kind": "digits",
+      "label": "PIONEER LLC",
+      "value": "997843",
+      "page": 3,
+      "page_ref": [
+        3
+      ]
+    },
+    {
+      "kind": "digits",
+      "label": "PIONEER INSURANCE GROUP BROKERAGE INC",
+      "value": "565536",
+      "page": 3,
+      "page_ref": [
+        3
+      ]
+    },
+    {
       "kind": "cityline",
       "label": "UNKNOWN,",
-      "value": "COBLESKILL NY 12043",
+      "value": "ONEONTA NY 13820",
       "page": 5,
       "page_ref": [
         5
@@ -1661,7 +1812,7 @@
     {
       "kind": "cityline",
       "label": "UNKNOWN,",
-      "value": "COBLESKILL NY 12043",
+      "value": "ONEONTA NY 13820",
       "page": 5,
       "page_ref": [
         5
@@ -1679,7 +1830,7 @@
     {
       "kind": "cityline",
       "label": "UNKNOWN,",
-      "value": "COBLESKILL NY 12043",
+      "value": "ONEONTA NY 13820",
       "page": 5,
       "page_ref": [
         5
@@ -1688,7 +1839,7 @@
     {
       "kind": "cityline",
       "label": "UNKNOWN,",
-      "value": "COBLESKILL NY 12043",
+      "value": "ONEONTA NY 13820",
       "page": 5,
       "page_ref": [
         5
@@ -1704,27 +1855,9 @@
       ]
     },
     {
-      "kind": "id",
-      "label": "Forms that apply to vehicle #1: 2004, SKI-DOO, LEGEND 380 FAN,",
-      "value": "8BPS943246V000653",
-      "page": 6,
-      "page_ref": [
-        6
-      ]
-    },
-    {
-      "kind": "id",
-      "label": "Forms that apply to vehicle #2: 2015, POLARIS, ADVENTURE AX/YS,",
-      "value": "SN7DAPPS7FC277942",
-      "page": 6,
-      "page_ref": [
-        6
-      ]
-    },
-    {
       "kind": "pobox",
       "label": "Mailing address",
-      "value": "PO Box 523",
+      "value": "PO Box 758",
       "page": 7,
       "page_ref": [
         7,
@@ -1733,8 +1866,8 @@
     },
     {
       "kind": "street",
-      "label": "Main Administrative Office",
-      "value": "4193 Elderberry Ln",
+      "label": "Henrietta Crowthorne",
+      "value": "1603 Durant Rd",
       "page": 7,
       "page_ref": [
         7
@@ -1742,8 +1875,8 @@
     },
     {
       "kind": "cityline",
-      "label": "PO Box 5323",
-      "value": "Potsdam, NY 13676",
+      "label": "PO Box 758",
+      "value": "Herkimer, NY 13350",
       "page": 7,
       "page_ref": [
         7,
@@ -1752,8 +1885,8 @@
     },
     {
       "kind": "cityline",
-      "label": "7000 Midland Blvd.",
-      "value": "Old Forge, NY 13420",
+      "label": "1603 Durant Rd",
+      "value": "Saranac Lake, NY 12983",
       "page": 7,
       "page_ref": [
         7,
@@ -1761,19 +1894,9 @@
       ]
     },
     {
-      "kind": "id",
-      "label": "MEIAI:D 1 OL-AH8N0",
-      "value": "51D5-25",
-      "page": 9,
-      "page_ref": [
-        9,
-        11
-      ]
-    },
-    {
-      "kind": "id",
+      "kind": "digits",
       "label": "Name & Address of Issuer",
-      "value": "B03O10U--52L9E186V18ARD",
+      "value": "305119764",
       "page": 9,
       "page_ref": [
         9,
@@ -1781,8 +1904,26 @@
       ]
     },
     {
+      "kind": "phone",
+      "label": "PHONE: 1-",
+      "value": "607-555-0141",
+      "page": 9,
+      "page_ref": [
+        1,
+        9,
+        11,
+        13,
+        19,
+        33,
+        35,
+        37,
+        47,
+        49
+      ]
+    },
+    {
       "kind": "cityline",
-      "label": "PO BOX 1185",
+      "label": "PO BOX 162",
       "value": "COOPERSTOWN NY 13326",
       "page": 9,
       "page_ref": [
@@ -1794,62 +1935,50 @@
       ]
     },
     {
-      "kind": "id",
-      "label": "MEIICAI:DA 1 OLN-AH8 MN0",
-      "value": "6O3D4-D26",
-      "page": 9,
-      "page_ref": [
-        9,
-        11
-      ]
-    },
-    {
-      "kind": "id",
-      "label": "061 AMERICAN MODERN HOME INSURANCE COMPANY",
-      "value": "BE01OR52U-N-80L1",
-      "page": 9,
-      "page_ref": [
-        9,
-        11
-      ]
-    },
-    {
-      "kind": "id",
-      "label": "061 AMERICAN MODERN HOME INSURANCE COMPANY",
-      "value": "HE579OV59AMRED",
-      "page": 9,
-      "page_ref": [
-        9,
-        11
-      ]
-    },
-    {
-      "kind": "cityline",
-      "label": "CPaOsp BeOr NXo 1rc1r8o5ss",
-      "value": "COOPERSTOWN NY 13326",
-      "page": 9,
-      "page_ref": [
-        1,
-        3,
-        9,
-        11,
-        15
-      ]
-    },
-    {
-      "kind": "id",
-      "label": "MEIAI:D 1 OL-AH8N0",
-      "value": "51D5-25",
-      "page": 11,
-      "page_ref": [
-        9,
-        11
-      ]
-    },
-    {
-      "kind": "id",
+      "kind": "digits",
       "label": "Name & Address of Issuer",
-      "value": "B03O10U--52L9E186V18ARD",
+      "value": "305119764",
+      "page": 9,
+      "page_ref": [
+        9,
+        11
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "PHONE: 1-",
+      "value": "607-555-0141",
+      "page": 9,
+      "page_ref": [
+        1,
+        9,
+        11,
+        13,
+        19,
+        33,
+        35,
+        37,
+        47,
+        49
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "PO BOX 162",
+      "value": "COOPERSTOWN NY 13326",
+      "page": 9,
+      "page_ref": [
+        1,
+        3,
+        9,
+        11,
+        15
+      ]
+    },
+    {
+      "kind": "digits",
+      "label": "Name & Address of Issuer",
+      "value": "305119764",
       "page": 11,
       "page_ref": [
         9,
@@ -1857,8 +1986,26 @@
       ]
     },
     {
+      "kind": "phone",
+      "label": "PHONE: 1-",
+      "value": "607-555-0141",
+      "page": 11,
+      "page_ref": [
+        1,
+        9,
+        11,
+        13,
+        19,
+        33,
+        35,
+        37,
+        47,
+        49
+      ]
+    },
+    {
       "kind": "cityline",
-      "label": "PO BOX 1185",
+      "label": "PO BOX 162",
       "value": "COOPERSTOWN NY 13326",
       "page": 11,
       "page_ref": [
@@ -1870,9 +2017,9 @@
       ]
     },
     {
-      "kind": "id",
-      "label": "MEIICAI:DA 1 OLN-AH8 MN0",
-      "value": "6O3D4-D26",
+      "kind": "digits",
+      "label": "Name & Address of Issuer",
+      "value": "305119764",
       "page": 11,
       "page_ref": [
         9,
@@ -1880,28 +2027,26 @@
       ]
     },
     {
-      "kind": "id",
-      "label": "061 AMERICAN MODERN HOME INSURANCE COMPANY",
-      "value": "BE01OR52U-N-80L1",
+      "kind": "phone",
+      "label": "PHONE: 1-",
+      "value": "607-555-0141",
       "page": 11,
       "page_ref": [
+        1,
         9,
-        11
-      ]
-    },
-    {
-      "kind": "id",
-      "label": "061 AMERICAN MODERN HOME INSURANCE COMPANY",
-      "value": "HE579OV59AMRED",
-      "page": 11,
-      "page_ref": [
-        9,
-        11
+        11,
+        13,
+        19,
+        33,
+        35,
+        37,
+        47,
+        49
       ]
     },
     {
       "kind": "cityline",
-      "label": "CPaOsp BeOr NXo 1rc1r8o5ss",
+      "label": "PO BOX 162",
       "value": "COOPERSTOWN NY 13326",
       "page": 11,
       "page_ref": [
@@ -1915,10 +2060,12 @@
     {
       "kind": "phone",
       "label": "Automated Customer Service and Direct Customer Care: 1-",
-      "value": "845-555-0121",
+      "value": "607-555-0141",
       "page": 13,
       "page_ref": [
         1,
+        9,
+        11,
         13,
         19,
         33,
@@ -1930,8 +2077,8 @@
     },
     {
       "kind": "street",
-      "label": "Fifth Third Bank",
-      "value": "8420 Hemlock Ridge Rd",
+      "label": "Thaddeus Pettigrew",
+      "value": "1763 Sawkill Rd",
       "page": 13,
       "page_ref": [
         13
@@ -1949,7 +2096,7 @@
     {
       "kind": "pobox",
       "label": "American Modern Home Insurance Company",
-      "value": "PO BOX 368",
+      "value": "PO BOX 733",
       "page": 13,
       "page_ref": [
         1,
@@ -1959,7 +2106,7 @@
     {
       "kind": "pobox",
       "label": "ATTENTION:",
-      "value": "PO BOX 523",
+      "value": "PO BOX 758",
       "page": 15,
       "page_ref": [
         7,
@@ -1969,7 +2116,7 @@
     {
       "kind": "cityline",
       "label": "ATTENTION:",
-      "value": "POTSDAM, NY 13676",
+      "value": "HERKIMER, NY 13350",
       "page": 15,
       "page_ref": [
         7,
@@ -1978,7 +2125,7 @@
     },
     {
       "kind": "cityline",
-      "label": "PO BOX 1185",
+      "label": "PO BOX 162",
       "value": "COOPERSTOWN NY 13326",
       "page": 15,
       "page_ref": [
@@ -2048,10 +2195,12 @@
     {
       "kind": "phone",
       "label": "insurance agent or broker, or call our toll-free telephone number:",
-      "value": "845-555-0121",
+      "value": "607-555-0141",
       "page": 19,
       "page_ref": [
         1,
+        9,
+        11,
         13,
         19,
         33,
@@ -2396,8 +2545,8 @@
     },
     {
       "kind": "street",
-      "label": "Empire Safety Council",
-      "value": "828 Elderberry Ln",
+      "label": "Hollis Mortlake",
+      "value": "674 Cobbler Hill Rd",
       "page": 29,
       "page_ref": [
         29,
@@ -2406,8 +2555,8 @@
     },
     {
       "kind": "street",
-      "label": "AAA Driver Improvement Program",
-      "value": "8849 Birchbark Ln",
+      "label": "Barnaby Underhill",
+      "value": "3844 Poplar Point",
       "page": 29,
       "page_ref": [
         29,
@@ -2416,8 +2565,8 @@
     },
     {
       "kind": "cityline",
-      "label": "Empire Safety Council",
-      "value": "Oneonta, NY 13820",
+      "label": "Hollis Mortlake",
+      "value": "Delhi, NY 13753",
       "page": 29,
       "page_ref": [
         29,
@@ -2426,8 +2575,8 @@
     },
     {
       "kind": "cityline",
-      "label": "AAA Driver Improvement Program",
-      "value": "Little Falls, NY 13365",
+      "label": "Barnaby Underhill",
+      "value": "Cortland, NY 13045",
       "page": 29,
       "page_ref": [
         29
@@ -2435,8 +2584,8 @@
     },
     {
       "kind": "phone",
-      "label": "176 Terry Road",
-      "value": "518-555-0195",
+      "label": "674 Cobbler Hill Rd",
+      "value": "315-555-0135",
       "page": 29,
       "page_ref": [
         29,
@@ -2445,8 +2594,8 @@
     },
     {
       "kind": "phone",
-      "label": "1415 Kellum Place",
-      "value": "607-555-0180",
+      "label": "3844 Poplar Point",
+      "value": "518-555-0160",
       "page": 29,
       "page_ref": [
         29,
@@ -2456,7 +2605,7 @@
     {
       "kind": "street",
       "label": "An Online Defensive Driving Course By Improv",
-      "value": "558 Palmer Hill Rd",
+      "value": "918 Tannery Flats",
       "page": 29,
       "page_ref": [
         29,
@@ -2466,7 +2615,7 @@
     {
       "kind": "cityline",
       "label": "National Safety Council",
-      "value": "Clayton, NY 13624",
+      "value": "Cooperstown, NY 13326",
       "page": 29,
       "page_ref": [
         29,
@@ -2476,7 +2625,7 @@
     {
       "kind": "cityline",
       "label": "An Online Defensive Driving Course By Improv",
-      "value": "Cobleskill, NY 12043",
+      "value": "Canandaigua, NY 14424",
       "page": 29,
       "page_ref": [
         29,
@@ -2486,7 +2635,7 @@
     {
       "kind": "phone",
       "label": "200 Salina Meadows Parkway - Ste. 200",
-      "value": "315-555-0177",
+      "value": "607-555-0163",
       "page": 29,
       "page_ref": [
         29,
@@ -2495,8 +2644,8 @@
     },
     {
       "kind": "phone",
-      "label": "575 Lexington Avenue, 4th Floor",
-      "value": "845-555-0135",
+      "label": "918 Tannery Flats, 4th Floor",
+      "value": "845-555-0188",
       "page": 29,
       "page_ref": [
         29,
@@ -2505,8 +2654,8 @@
     },
     {
       "kind": "street",
-      "label": "National Traffic Safety Institute (NTSI)",
-      "value": "136 Mill Pond Way",
+      "label": "Seraphina Brackenridge",
+      "value": "851 Durant Rd",
       "page": 29,
       "page_ref": [
         29,
@@ -2515,8 +2664,8 @@
     },
     {
       "kind": "street",
-      "label": "Driver Training Associates (DTA)",
-      "value": "931 Sawkill Rd",
+      "label": "Timberline LLC",
+      "value": "688 Quarry Ridge Rd",
       "page": 29,
       "page_ref": [
         29,
@@ -2525,27 +2674,8 @@
     },
     {
       "kind": "cityline",
-      "label": "National Traffic Safety Institute (NTSI)",
-      "value": "Saranac Lake, NY 12983",
-      "page": 29,
-      "page_ref": [
-        29
-      ]
-    },
-    {
-      "kind": "cityline",
-      "label": "Driver Training Associates (DTA)",
-      "value": "Watertown, NY 13601",
-      "page": 29,
-      "page_ref": [
-        29,
-        30
-      ]
-    },
-    {
-      "kind": "phone",
-      "label": "201 Edward Curry Avenue - Suite 206",
-      "value": "716-555-0185",
+      "label": "Seraphina Brackenridge",
+      "value": "Glens Falls, NY 12801",
       "page": 29,
       "page_ref": [
         29
@@ -2553,18 +2683,17 @@
     },
     {
       "kind": "phone",
-      "label": "125 High Rock Avenue, Suite 210",
-      "value": "716-555-0142",
+      "label": "851 Durant Rd - Suite 206",
+      "value": "716-555-0159",
       "page": 29,
       "page_ref": [
-        29,
-        30
+        29
       ]
     },
     {
       "kind": "cityline",
       "label": "New York Safety Program (NYSP)",
-      "value": "Delhi, NY 13753",
+      "value": "Hamilton, NY 13346",
       "page": 29,
       "page_ref": [
         29
@@ -2572,8 +2701,8 @@
     },
     {
       "kind": "street",
-      "label": "American Safety Council",
-      "value": "720 Durant Rd",
+      "label": "Perpetua Barrowclough",
+      "value": "951 Cranberry Bog Rd",
       "page": 29,
       "page_ref": [
         29,
@@ -2583,7 +2712,7 @@
     {
       "kind": "phone",
       "label": "8302 5th Avenue",
-      "value": "315-555-0176",
+      "value": "518-555-0106",
       "page": 29,
       "page_ref": [
         29
@@ -2592,7 +2721,7 @@
     {
       "kind": "cityline",
       "label": "(Available in English and Spanish)",
-      "value": "Oswego, NY 13126",
+      "value": "Little Falls, NY 13365",
       "page": 29,
       "page_ref": [
         29,
@@ -2602,7 +2731,7 @@
     {
       "kind": "phone",
       "label": "http://www.nysponline.com",
-      "value": "518-555-0188",
+      "value": "518-555-0195",
       "page": 29,
       "page_ref": [
         29,
@@ -2611,8 +2740,8 @@
     },
     {
       "kind": "street",
-      "label": "USA Training Company",
-      "value": "111 Stonefence Rd",
+      "label": "Timberline Company",
+      "value": "861 Quarry Ridge Rd",
       "page": 29,
       "page_ref": [
         29
@@ -2620,8 +2749,8 @@
     },
     {
       "kind": "cityline",
-      "label": "USA Training Company",
-      "value": "Glens Falls, NY 12801",
+      "label": "Timberline Company",
+      "value": "Binghamton, NY 13901",
       "page": 29,
       "page_ref": [
         29
@@ -2629,8 +2758,8 @@
     },
     {
       "kind": "street",
-      "label": "I DRIVE SAFELY, LLC",
-      "value": "23 Stonefence Rd",
+      "label": "cornelius thistlewood, LLC",
+      "value": "33 Birchbark Ln",
       "page": 29,
       "page_ref": [
         29
@@ -2638,8 +2767,8 @@
     },
     {
       "kind": "phone",
-      "label": "295 Greenwich Street - Suite 350",
-      "value": "716-555-0134",
+      "label": "861 Quarry Ridge Rd - Suite 350",
+      "value": "315-555-0177",
       "page": 29,
       "page_ref": [
         29
@@ -2647,8 +2776,8 @@
     },
     {
       "kind": "cityline",
-      "label": "I DRIVE SAFELY, LLC",
-      "value": "Corning, NY 14830",
+      "label": "cornelius thistlewood, LLC",
+      "value": "Skaneateles, NY 13152",
       "page": 29,
       "page_ref": [
         29
@@ -2657,7 +2786,7 @@
     {
       "kind": "phone",
       "label": "http://www.NewYorkDefensiveDriving.com",
-      "value": "315-555-0172",
+      "value": "845-555-0135",
       "page": 29,
       "page_ref": [
         29
@@ -2666,161 +2795,151 @@
     {
       "kind": "street",
       "label": "AARP",
-      "value": "46169 Mill Pond Way",
+      "value": "14625 Mill Pond Way",
       "page": 29,
       "page_ref": [
         29
-      ]
-    },
-    {
-      "kind": "cityline",
-      "label": "AARP",
-      "value": "Ithaca, NY 14850",
-      "page": 29,
-      "page_ref": [
-        29
-      ]
-    },
-    {
-      "kind": "phone",
-      "label": "13805 West Road #22",
-      "value": "315-555-0172",
-      "page": 29,
-      "page_ref": [
-        29
-      ]
-    },
-    {
-      "kind": "street",
-      "label": "American Safety",
-      "value": "721 Tannery Flats",
-      "page": 29,
-      "page_ref": [
-        29,
-        30
-      ]
-    },
-    {
-      "kind": "cityline",
-      "label": "American Safety",
-      "value": "Hamilton, NY 13346",
-      "page": 29,
-      "page_ref": [
-        29,
-        30
-      ]
-    },
-    {
-      "kind": "phone",
-      "label": "111 Washington Avenue - Suite 606",
-      "value": "315-555-0161",
-      "page": 29,
-      "page_ref": [
-        29,
-        30
-      ]
-    },
-    {
-      "kind": "company",
-      "label": "",
-      "value": "Oakmont LLC",
-      "page": 29,
-      "page_ref": [
-        29
-      ]
-    },
-    {
-      "kind": "company",
-      "label": "",
-      "value": "Fernbank Company",
-      "page": 29,
-      "page_ref": [
-        29,
-        30
-      ]
-    },
-    {
-      "kind": "street",
-      "label": "Empire Safety Council",
-      "value": "828 Elderberry Ln",
-      "page": 30,
-      "page_ref": [
-        29,
-        30
-      ]
-    },
-    {
-      "kind": "street",
-      "label": "USA Training Company",
-      "value": "54 Bramble Hollow Rd",
-      "page": 30,
-      "page_ref": [
-        30
-      ]
-    },
-    {
-      "kind": "cityline",
-      "label": "Empire Safety Council",
-      "value": "Oneonta, NY 13820",
-      "page": 30,
-      "page_ref": [
-        29,
-        30
-      ]
-    },
-    {
-      "kind": "cityline",
-      "label": "USA Training Company",
-      "value": "Hamilton, NY 13346",
-      "page": 30,
-      "page_ref": [
-        29,
-        30
-      ]
-    },
-    {
-      "kind": "phone",
-      "label": "176 Terry Road",
-      "value": "518-555-0195",
-      "page": 30,
-      "page_ref": [
-        29,
-        30
-      ]
-    },
-    {
-      "kind": "phone",
-      "label": "99 Washington Avenue - Suite 400",
-      "value": "315-555-0179",
-      "page": 30,
-      "page_ref": [
-        30
-      ]
-    },
-    {
-      "kind": "street",
-      "label": "National Point and Insurance Reduction Course",
-      "value": "558 Palmer Hill Rd",
-      "page": 30,
-      "page_ref": [
-        29,
-        30
-      ]
-    },
-    {
-      "kind": "cityline",
-      "label": "National Point and Insurance Reduction Course",
-      "value": "Cobleskill, NY 12043",
-      "page": 30,
-      "page_ref": [
-        29,
-        30
       ]
     },
     {
       "kind": "cityline",
       "label": "AARP",
       "value": "Elmira, NY 14901",
+      "page": 29,
+      "page_ref": [
+        29
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "14625 Mill Pond Way",
+      "value": "845-555-0156",
+      "page": 29,
+      "page_ref": [
+        29
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "Rosalind Larkspur",
+      "value": "949 Stonefence Rd",
+      "page": 29,
+      "page_ref": [
+        29,
+        30
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "Rosalind Larkspur",
+      "value": "Potsdam, NY 13676",
+      "page": 29,
+      "page_ref": [
+        29,
+        30
+      ]
+    },
+    {
+      "kind": "company",
+      "label": "",
+      "value": "Timberline LLC",
+      "page": 29,
+      "page_ref": [
+        29
+      ]
+    },
+    {
+      "kind": "company",
+      "label": "",
+      "value": "Timberline Company",
+      "page": 29,
+      "page_ref": [
+        29,
+        30
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "Hollis Mortlake",
+      "value": "674 Cobbler Hill Rd",
+      "page": 30,
+      "page_ref": [
+        29,
+        30
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "Timberline Company",
+      "value": "70 Durant Rd",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "Hollis Mortlake",
+      "value": "Delhi, NY 13753",
+      "page": 30,
+      "page_ref": [
+        29,
+        30
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "Timberline Company",
+      "value": "Potsdam, NY 13676",
+      "page": 30,
+      "page_ref": [
+        29,
+        30
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "674 Cobbler Hill Rd",
+      "value": "315-555-0135",
+      "page": 30,
+      "page_ref": [
+        29,
+        30
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "70 Durant Rd - Suite 400",
+      "value": "845-555-0170",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "National Point and Insurance Reduction Course",
+      "value": "918 Tannery Flats",
+      "page": 30,
+      "page_ref": [
+        29,
+        30
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "National Point and Insurance Reduction Course",
+      "value": "Canandaigua, NY 14424",
+      "page": 30,
+      "page_ref": [
+        29,
+        30
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "AARP",
+      "value": "Watertown, NY 13601",
       "page": 30,
       "page_ref": [
         30
@@ -2828,8 +2947,8 @@
     },
     {
       "kind": "phone",
-      "label": "575 Lexington Avenue, 4th Floor",
-      "value": "845-555-0135",
+      "label": "918 Tannery Flats, 4th Floor",
+      "value": "845-555-0188",
       "page": 30,
       "page_ref": [
         29,
@@ -2839,7 +2958,7 @@
     {
       "kind": "phone",
       "label": "780 3rd Avenue - 33rd Floor",
-      "value": "518-555-0185",
+      "value": "607-555-0153",
       "page": 30,
       "page_ref": [
         30
@@ -2847,8 +2966,8 @@
     },
     {
       "kind": "street",
-      "label": "American Automobile Association (AAA)",
-      "value": "8849 Birchbark Ln",
+      "label": "Lavinia Mortlake",
+      "value": "3844 Poplar Point",
       "page": 30,
       "page_ref": [
         29,
@@ -2858,7 +2977,7 @@
     {
       "kind": "cityline",
       "label": "www.LowCostAccidentPrevention.com",
-      "value": "Geneva, NY 14456",
+      "value": "Ithaca, NY 14850",
       "page": 30,
       "page_ref": [
         30
@@ -2866,8 +2985,8 @@
     },
     {
       "kind": "cityline",
-      "label": "American Automobile Association (AAA)",
-      "value": "Cazenovia, NY 13035",
+      "label": "Lavinia Mortlake",
+      "value": "Clayton, NY 13624",
       "page": 30,
       "page_ref": [
         30
@@ -2876,7 +2995,7 @@
     {
       "kind": "phone",
       "label": "535 South Broadway, Suite 216",
-      "value": "845-555-0143",
+      "value": "845-555-0103",
       "page": 30,
       "page_ref": [
         30
@@ -2884,8 +3003,8 @@
     },
     {
       "kind": "phone",
-      "label": "1415 Kellum Place",
-      "value": "607-555-0180",
+      "label": "3844 Poplar Point",
+      "value": "518-555-0160",
       "page": 30,
       "page_ref": [
         29,
@@ -2894,8 +3013,8 @@
     },
     {
       "kind": "street",
-      "label": "American Safety",
-      "value": "721 Tannery Flats",
+      "label": "Rosalind Larkspur",
+      "value": "949 Stonefence Rd",
       "page": 30,
       "page_ref": [
         29,
@@ -2905,7 +3024,7 @@
     {
       "kind": "cityline",
       "label": "National Safety Council",
-      "value": "Clayton, NY 13624",
+      "value": "Cooperstown, NY 13326",
       "page": 30,
       "page_ref": [
         29,
@@ -2914,8 +3033,8 @@
     },
     {
       "kind": "cityline",
-      "label": "American Safety",
-      "value": "Hamilton, NY 13346",
+      "label": "Rosalind Larkspur",
+      "value": "Potsdam, NY 13676",
       "page": 30,
       "page_ref": [
         29,
@@ -2925,17 +3044,7 @@
     {
       "kind": "phone",
       "label": "200 Salina Meadows Parkway - Ste. 200",
-      "value": "315-555-0177",
-      "page": 30,
-      "page_ref": [
-        29,
-        30
-      ]
-    },
-    {
-      "kind": "phone",
-      "label": "111 Washington Avenue - Suite 606",
-      "value": "315-555-0161",
+      "value": "607-555-0163",
       "page": 30,
       "page_ref": [
         29,
@@ -2944,18 +3053,8 @@
     },
     {
       "kind": "street",
-      "label": "National Traffic Safety Institute",
-      "value": "136 Mill Pond Way",
-      "page": 30,
-      "page_ref": [
-        29,
-        30
-      ]
-    },
-    {
-      "kind": "street",
-      "label": "American Safety Council",
-      "value": "720 Durant Rd",
+      "label": "Henrietta Winterbourne",
+      "value": "851 Durant Rd",
       "page": 30,
       "page_ref": [
         29,
@@ -2964,8 +3063,8 @@
     },
     {
       "kind": "cityline",
-      "label": "National Traffic Safety Institute",
-      "value": "Cooperstown, NY 13326",
+      "label": "Henrietta Winterbourne",
+      "value": "Owego, NY 13827",
       "page": 30,
       "page_ref": [
         30
@@ -2973,8 +3072,8 @@
     },
     {
       "kind": "cityline",
-      "label": "American Safety Council",
-      "value": "Oswego, NY 13126",
+      "label": "Perpetua Barrowclough",
+      "value": "Little Falls, NY 13365",
       "page": 30,
       "page_ref": [
         29,
@@ -2983,8 +3082,8 @@
     },
     {
       "kind": "phone",
-      "label": "201 Edward Curry Avenue - Suite 206",
-      "value": "518-555-0108",
+      "label": "851 Durant Rd - Suite 206",
+      "value": "716-555-0135",
       "page": 30,
       "page_ref": [
         30
@@ -2992,8 +3091,8 @@
     },
     {
       "kind": "phone",
-      "label": "218 West Main Street",
-      "value": "518-555-0188",
+      "label": "951 Cranberry Bog Rd",
+      "value": "518-555-0195",
       "page": 30,
       "page_ref": [
         29,
@@ -3002,8 +3101,8 @@
     },
     {
       "kind": "street",
-      "label": "Driver Training Associates",
-      "value": "931 Sawkill Rd",
+      "label": "Pioneer Associates",
+      "value": "688 Quarry Ridge Rd",
       "page": 30,
       "page_ref": [
         29,
@@ -3013,7 +3112,7 @@
     {
       "kind": "cityline",
       "label": "New York Safety Program",
-      "value": "Kingston, NY 12401",
+      "value": "Old Forge, NY 13420",
       "page": 30,
       "page_ref": [
         30
@@ -3021,8 +3120,8 @@
     },
     {
       "kind": "cityline",
-      "label": "Driver Training Associates",
-      "value": "Watertown, NY 13601",
+      "label": "Pioneer Associates",
+      "value": "Corning, NY 14830",
       "page": 30,
       "page_ref": [
         29,
@@ -3032,7 +3131,7 @@
     {
       "kind": "phone",
       "label": "8302 5th Avenue - 2nd Floor",
-      "value": "518-555-0181",
+      "value": "315-555-0197",
       "page": 30,
       "page_ref": [
         30
@@ -3040,8 +3139,8 @@
     },
     {
       "kind": "phone",
-      "label": "125 High Rock Avenue, Suite 210",
-      "value": "716-555-0142",
+      "label": "688 Quarry Ridge Rd, Suite 210",
+      "value": "518-555-0128",
       "page": 30,
       "page_ref": [
         29,
@@ -3051,7 +3150,7 @@
     {
       "kind": "street",
       "label": "DBA Defensive Drivers Discount",
-      "value": "688 Quarry Ridge Rd",
+      "value": "769 Cranberry Bog Rd",
       "page": 30,
       "page_ref": [
         30
@@ -3060,7 +3159,7 @@
     {
       "kind": "street",
       "label": "NYDDC LLC",
-      "value": "45 Mill Pond Way",
+      "value": "78 Hemlock Ridge Rd",
       "page": 30,
       "page_ref": [
         30
@@ -3068,8 +3167,8 @@
     },
     {
       "kind": "cityline",
-      "label": "I DRIVE SAFELY",
-      "value": "Utica, NY 13501",
+      "label": "cornelius thistlewood",
+      "value": "Oneonta, NY 13820",
       "page": 30,
       "page_ref": [
         30
@@ -3077,8 +3176,8 @@
     },
     {
       "kind": "phone",
-      "label": "800 Yonkers Avenue",
-      "value": "518-555-0107",
+      "label": "769 Cranberry Bog Rd",
+      "value": "607-555-0156",
       "page": 30,
       "page_ref": [
         30
@@ -3086,8 +3185,8 @@
     },
     {
       "kind": "phone",
-      "label": "80 Business Park Drive, Suite 202",
-      "value": "845-555-0162",
+      "label": "78 Hemlock Ridge Rd, Suite 202",
+      "value": "518-555-0144",
       "page": 30,
       "page_ref": [
         30
@@ -3096,7 +3195,7 @@
     {
       "kind": "company",
       "label": "",
-      "value": "Fernbank Company",
+      "value": "Timberline Company",
       "page": 30,
       "page_ref": [
         29,
@@ -3106,7 +3205,7 @@
     {
       "kind": "person",
       "label": "",
-      "value": "Rosalind Ashworth",
+      "value": "Waldemar Danforth",
       "page": 30,
       "page_ref": [
         30
@@ -3115,7 +3214,7 @@
     {
       "kind": "company",
       "label": "",
-      "value": "Fernbank Associates",
+      "value": "Pioneer Associates",
       "page": 30,
       "page_ref": [
         30
@@ -3124,10 +3223,12 @@
     {
       "kind": "phone",
       "label": "Call 1-",
-      "value": "845-555-0121",
+      "value": "607-555-0141",
       "page": 33,
       "page_ref": [
         1,
+        9,
+        11,
         13,
         19,
         33,
@@ -3140,7 +3241,7 @@
     {
       "kind": "cityline",
       "label": "Privacy Compliance, 7000 Midland Boulevard,",
-      "value": "Old Forge, NY 13420",
+      "value": "Saranac Lake, NY 12983",
       "page": 35,
       "page_ref": [
         7,
@@ -3150,10 +3251,12 @@
     {
       "kind": "phone",
       "label": "for more information about your opt out rights, please contact us by calling 1-",
-      "value": "845-555-0121",
+      "value": "607-555-0141",
       "page": 35,
       "page_ref": [
         1,
+        9,
+        11,
         13,
         19,
         33,
@@ -3166,7 +3269,7 @@
     {
       "kind": "email",
       "label": "us at",
-      "value": "waldemar.brackenridge@example.com",
+      "value": "alastair.barrowclough@example.com",
       "page": 35,
       "page_ref": [
         35
@@ -3175,7 +3278,7 @@
     {
       "kind": "cityline",
       "label": "Compliance, 7000 Midland Boulevard,",
-      "value": "Old Forge, NY 13420",
+      "value": "Saranac Lake, NY 12983",
       "page": 35,
       "page_ref": [
         7,
@@ -3185,7 +3288,7 @@
     {
       "kind": "email",
       "label": ", emailing",
-      "value": "alastair.harrowgate@example.com",
+      "value": "silas.ashworth@example.com",
       "page": 35,
       "page_ref": [
         35
@@ -3194,7 +3297,7 @@
     {
       "kind": "phone",
       "label": "under Nevada state law. In addition to contacting American Modern Insurance Group, Nevada residents",
-      "value": "607-555-0115",
+      "value": "845-555-0143",
       "page": 35,
       "page_ref": [
         35
@@ -3203,7 +3306,7 @@
     {
       "kind": "street",
       "label": "Department of Justice, Bureau of Consumer Protection:",
-      "value": "323 Mill Pond Way",
+      "value": "398 Stonefence Rd",
       "page": 35,
       "page_ref": [
         35
@@ -3212,7 +3315,7 @@
     {
       "kind": "pobox",
       "label": "American Family Home Insurance Company,",
-      "value": "P.O. Box 486",
+      "value": "P.O. Box 26",
       "page": 37,
       "page_ref": [
         37,
@@ -3223,7 +3326,7 @@
     {
       "kind": "cityline",
       "label": "information on how to improve your Financial Responsibility rating, you may contact your",
-      "value": "Lake Placid, NY 12946",
+      "value": "Geneva, NY 14456",
       "page": 37,
       "page_ref": [
         37,
@@ -3233,10 +3336,12 @@
     {
       "kind": "phone",
       "label": "authorized insurance agent through whom you purchased this policy, or you may contact",
-      "value": "845-555-0121",
+      "value": "607-555-0141",
       "page": 37,
       "page_ref": [
         1,
+        9,
+        11,
         13,
         19,
         33,
@@ -3838,7 +3943,7 @@
     },
     {
       "kind": "money",
-      "label": "Passenger's Bodily Injury Damages",
+      "label": "Rutherford Vantassel",
       "value": "$25,000",
       "page": 44,
       "page_ref": [
@@ -4169,29 +4274,32 @@
     {
       "kind": "id",
       "label": "36-month period prior to the policy term effective date.",
-      "value": "MS-NY-N-0005",
+      "value": "MS-NY-N-0003",
       "page": 45,
       "page_ref": [
-        19,
-        45
+        45,
+        46
       ]
     },
     {
       "kind": "id",
       "label": "",
-      "value": "MS-NY-N-0009",
+      "value": "MS-NY-N-0003",
       "page": 46,
       "page_ref": [
+        45,
         46
       ]
     },
     {
       "kind": "phone",
       "label": "or at 1-",
-      "value": "845-555-0121",
+      "value": "607-555-0141",
       "page": 47,
       "page_ref": [
         1,
+        9,
+        11,
         13,
         19,
         33,
@@ -4204,7 +4312,7 @@
     {
       "kind": "pobox",
       "label": "American Modern Insurance Group,",
-      "value": "P.O. Box 486",
+      "value": "P.O. Box 26",
       "page": 47,
       "page_ref": [
         37,
@@ -4215,7 +4323,7 @@
     {
       "kind": "cityline",
       "label": "information on how to improve your Financial Responsibility rating, you may contact your",
-      "value": "Lake Placid, NY 12946",
+      "value": "Geneva, NY 14456",
       "page": 47,
       "page_ref": [
         37,
@@ -4225,7 +4333,7 @@
     {
       "kind": "pobox",
       "label": "American Family Home Insurance Company at",
-      "value": "P.O. Box 486",
+      "value": "P.O. Box 26",
       "page": 49,
       "page_ref": [
         37,
@@ -4236,10 +4344,12 @@
     {
       "kind": "phone",
       "label": "authorized insurance agent through whom you purchased this policy, or you may contact",
-      "value": "845-555-0121",
+      "value": "607-555-0141",
       "page": 49,
       "page_ref": [
         1,
+        9,
+        11,
         13,
         19,
         33,
@@ -4255,8 +4365,8 @@
     "source": "American Modern/recreational_vehicle/american_modern_recv_snowmobile_1.pdf",
     "schema": "recreational_vehicle v1.4.0",
     "render": "scanned_only",
-    "scanner_profile": "high-quality scan, 400 dpi",
-    "values_replaced": 192,
+    "scanner_profile": "high-quality scan, 400 dpi (grayscale, JPEG 85)",
+    "values_replaced": 220,
     "text_recovered_by_ocr": 0,
     "date_shift_days": -467,
     "synthetic": true,

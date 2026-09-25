@@ -45,8 +45,8 @@
   },
   "named_insured": {
     "primary_name": {
-      "raw": "Henrietta Barrowclough",
-      "parsed": "Henrietta Barrowclough",
+      "raw": "Delphine Mortlake",
+      "parsed": "Delphine Mortlake",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -72,8 +72,8 @@
     },
     "mailing_address": {
       "line_1": {
-        "raw": "566 ELDERBERRY LN",
-        "parsed": "566 ELDERBERRY LN",
+        "raw": "614 POPLAR POINT",
+        "parsed": "614 POPLAR POINT",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -84,8 +84,8 @@
         "flagged": false
       },
       "city": {
-        "raw": "ITHACA",
-        "parsed": "ITHACA",
+        "raw": "ROME",
+        "parsed": "ROME",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -108,8 +108,8 @@
         "flagged": false
       },
       "postal_code": {
-        "raw": "14850",
-        "parsed": "14850",
+        "raw": "13440",
+        "parsed": "13440",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -136,8 +136,8 @@
     },
     "contact": {
       "phone": {
-        "raw": "(845) 555-0101",
-        "parsed": "(845) 555-0101",
+        "raw": "(518) 555-0173",
+        "parsed": "(518) 555-0173",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -200,8 +200,8 @@
       "flagged": false
     },
     "bind_id": {
-      "raw": "A520698",
-      "parsed": "A520698",
+      "raw": "A842578",
+      "parsed": "A842578",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -403,8 +403,8 @@
     "operators": [
       {
         "name": {
-          "raw": "Henrietta Barrowclough",
-          "parsed": "Henrietta Barrowclough",
+          "raw": "Delphine Mortlake",
+          "parsed": "Delphine Mortlake",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -433,8 +433,8 @@
           "flagged": false
         },
         "vin_or_hull_id": {
-          "raw": "6BPSEH8B53V000093",
-          "parsed": "6BPSEH8B53V000093",
+          "raw": "8BPSEH1B33V000076",
+          "parsed": "8BPSEH1B33V000076",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -1021,6 +1021,15 @@
   ],
   "fideon:unmapped": [
     {
+      "kind": "digits",
+      "label": "AUTO - SPECIAL:",
+      "value": "175645574",
+      "page": 1,
+      "page_ref": [
+        1
+      ]
+    },
+    {
       "kind": "money",
       "label": "HBE GROUP INC (02 64653)",
       "value": "$390.56",
@@ -1040,8 +1049,8 @@
     },
     {
       "kind": "id",
-      "label": "2BPSEH6B66V000060",
-      "value": "5BPSESBA6BV000307",
+      "label": "8BPSEH1B33V000076",
+      "value": "1BPSESBA7BV000602",
       "page": 1,
       "page_ref": [
         1
@@ -1050,7 +1059,7 @@
     {
       "kind": "digits",
       "label": "Class Code:",
-      "value": "1236606502",
+      "value": "5206981807",
       "page": 1,
       "page_ref": [
         1
@@ -1059,7 +1068,7 @@
     {
       "kind": "digits",
       "label": "Class Code:",
-      "value": "1236606502",
+      "value": "5206981807",
       "page": 1,
       "page_ref": [
         1
@@ -1212,7 +1221,7 @@
     "schema": "recreational_vehicle v1.4.0",
     "render": "scanned_only",
     "scanner_profile": "high-quality scan, 400 dpi",
-    "values_replaced": 25,
+    "values_replaced": 26,
     "text_recovered_by_ocr": 0,
     "date_shift_days": -493,
     "synthetic": true,

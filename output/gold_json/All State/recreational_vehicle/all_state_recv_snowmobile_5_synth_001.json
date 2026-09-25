@@ -21,8 +21,8 @@
       "flagged": false
     },
     "batch_number": {
-      "raw": "014169467889257",
-      "parsed": "014169467889257",
+      "raw": "099257523388275",
+      "parsed": "099257523388275",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -57,8 +57,8 @@
   },
   "named_insured": {
     "primary_name": {
-      "raw": "Marguerite Larkspur",
-      "parsed": "Marguerite Larkspur",
+      "raw": "Alastair Stonebridge",
+      "parsed": "Alastair Stonebridge",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -81,6 +81,56 @@
         2
       ],
       "flagged": false
+    },
+    "mailing_address": {
+      "line_1": {
+        "raw": "PO BX 842",
+        "parsed": "PO BX 842",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "ELMIRA",
+        "parsed": "ELMIRA",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "14901",
+        "parsed": "14901",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
     }
   },
   "producer": {
@@ -98,8 +148,8 @@
     },
     "contact": {
       "phone": {
-        "raw": "(716) 555-0137",
-        "parsed": "(716) 555-0137",
+        "raw": "(607) 555-0117",
+        "parsed": "(607) 555-0117",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -366,8 +416,8 @@
           "flagged": false
         },
         "vin_or_hull_id": {
-          "raw": "6HD3KEF14KB620884",
-          "parsed": "6HD3KEF14KB620884",
+          "raw": "5HD5KEF14KB269467",
+          "parsed": "5HD5KEF14KB269467",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -634,14 +684,10 @@
     "named_insured.doing_business_as",
     "named_insured.fein",
     "named_insured.gender",
-    "named_insured.mailing_address.city",
     "named_insured.mailing_address.country",
     "named_insured.mailing_address.county",
     "named_insured.mailing_address.county_code",
-    "named_insured.mailing_address.line_1",
     "named_insured.mailing_address.line_2",
-    "named_insured.mailing_address.postal_code",
-    "named_insured.mailing_address.state",
     "named_insured.marital_status",
     "named_insured.naics_code",
     "named_insured.occupation",
@@ -1008,6 +1054,15 @@
   ],
   "fideon:unmapped": [
     {
+      "kind": "digits",
+      "label": "AUTO - SPECIAL:",
+      "value": "748045204",
+      "page": 1,
+      "page_ref": [
+        1
+      ]
+    },
+    {
       "kind": "money",
       "label": "HBE GROUP INC (02 64653)",
       "value": "$340.75",
@@ -1020,24 +1075,6 @@
       "kind": "money",
       "label": "$340.75",
       "value": "$342.09",
-      "page": 1,
-      "page_ref": [
-        1
-      ]
-    },
-    {
-      "kind": "street",
-      "label": "Mailing Address",
-      "value": "9333 TANNERY FLATS",
-      "page": 1,
-      "page_ref": [
-        1
-      ]
-    },
-    {
-      "kind": "cityline",
-      "label": "3818 STATE ROUTE 28, OLD",
-      "value": "ROME, NY 13440",
       "page": 1,
       "page_ref": [
         1
@@ -1111,7 +1148,7 @@
     "schema": "recreational_vehicle v1.4.0",
     "render": "scanned_only",
     "scanner_profile": "high-quality scan, 400 dpi",
-    "values_replaced": 19,
+    "values_replaced": 21,
     "text_recovered_by_ocr": 0,
     "date_shift_days": 539,
     "synthetic": true,
