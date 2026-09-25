@@ -92,6 +92,12 @@
         "transaction_effective_date": {
           "$ref": "#/$defs/FieldValue"
         },
+        "transaction_expiration_date": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Transaction Expiration"
+          ]
+        },
         "issue_date": {
           "$ref": "#/$defs/FieldValue"
         },
@@ -364,6 +370,25 @@
         },
         "commission_percentage": {
           "$ref": "#/$defs/FieldValue"
+        },
+        "territory_code": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Territory"
+          ]
+        },
+        "paperless_indicator": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Paper Off",
+            "Paperless"
+          ]
+        },
+        "direct_mail_indicator": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Direct Mail"
+          ]
         }
       },
       "fideon:aliases": [
@@ -673,11 +698,31 @@
               "name": {
                 "$ref": "#/$defs/FieldValue"
               },
+              "insured_role": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Primary Insured",
+                  "Named Insured",
+                  "Insured Type"
+                ]
+              },
               "entity_type": {
                 "$ref": "#/$defs/FieldValue"
               },
               "relationship": {
                 "$ref": "#/$defs/FieldValue"
+              },
+              "marital_status": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Marital Status"
+                ]
+              },
+              "gender": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Gender"
+                ]
               },
               "effective_date": {
                 "$ref": "#/$defs/FieldValue",
@@ -1596,7 +1641,10 @@
               "$ref": "#/$defs/FieldValue"
             },
             "self_insured_retention": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Deductible"
+              ]
             },
             "uninsured_underinsured_motorist_limit": {
               "$ref": "#/$defs/FieldValue"
@@ -1668,8 +1716,41 @@
                   },
                   "country": {
                     "$ref": "#/$defs/FieldValue"
+                  },
+                  "county_code": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "County Code"
+                    ]
+                  },
+                  "sub_county": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "Sub County"
+                    ]
                   }
                 }
+              },
+              "territory_code": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Territory"
+                ]
+              },
+              "table_code": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Table Code"
+                ]
+              },
+              "number_of_families": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Number of Families"
+                ]
+              },
+              "year_built": {
+                "$ref": "#/$defs/FieldValue"
               },
               "is_rented_to_others": {
                 "$ref": "#/$defs/FieldValue"
@@ -1705,6 +1786,18 @@
               "actual_limit": {
                 "$ref": "#/$defs/FieldValue"
               },
+              "property_damage_limit": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Property Damage"
+                ]
+              },
+              "vehicle_count": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Vehicles"
+                ]
+              },
               "effective_date": {
                 "$ref": "#/$defs/FieldValue",
                 "fideon:aliases": [
@@ -1734,8 +1827,28 @@
               "name": {
                 "$ref": "#/$defs/FieldValue"
               },
+              "insured_role": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Primary Insured",
+                  "Named Insured",
+                  "Insured Type"
+                ]
+              },
               "relationship": {
                 "$ref": "#/$defs/FieldValue"
+              },
+              "marital_status": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Marital Status"
+                ]
+              },
+              "gender": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Gender"
+                ]
               },
               "date_of_birth": {
                 "$ref": "#/$defs/FieldValue"
@@ -3084,6 +3197,48 @@
     }
   },
   "$defs": {
+    "TextSection": {
+      "type": "object",
+      "description": "A block of printed text exactly as the document carries it: a prose paragraph, notice, condition or disclaimer, or the page's remaining label/footer text. Nothing the page prints is left out of the gold; structured fields above hold the values, these hold the words.",
+      "properties": {
+        "section_id": {
+          "type": "string"
+        },
+        "section_title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "section_type": {
+          "type": "string",
+          "enum": [
+            "prose",
+            "other"
+          ]
+        },
+        "raw_text": {
+          "type": "string"
+        },
+        "page_range": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "form_number": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "section_id",
+        "raw_text",
+        "page_range"
+      ]
+    },
     "FieldValue": {
       "type": "object",
       "required": [
