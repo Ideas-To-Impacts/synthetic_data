@@ -9,10 +9,10 @@
     "version": "1.4.0",
     "line_of_business_as_supplied": "Flood",
     "line_specific_block": "flood",
-    "field_count": 371,
+    "field_count": 686,
     "corpus_document_count": 5,
     "corpus_carrier_count": 2,
-    "aliased_fields": 43,
+    "aliased_fields": 151,
     "field_count_as_supplied": 341,
     "extensions_applied": "scripts/canonical_schema_extensions.py"
   },
@@ -1849,6 +1849,18 @@
               "fideon:aliases": [
                 "Loss of Use",
                 "Loss Use"
+              ]
+            },
+            "other_structures_deductible": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Other Structures Deductible"
+              ]
+            },
+            "loss_of_use_deductible": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Loss of Use Deductible"
               ]
             }
           }

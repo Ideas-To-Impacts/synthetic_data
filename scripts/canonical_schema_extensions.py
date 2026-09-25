@@ -5513,7 +5513,7 @@ def _walk(schema):
                 for k, v in it["properties"].items():
                     w(v, "%s[].%s" % (p, k))
     for k, v in schema["properties"].items():
-        if k not in VERBATIM_PROPERTIES:
+        if k not in VERBATIM_PROPERTIES or k == "document_type_detail":   # fields, not free text
             w(v, k)
     return out
 
