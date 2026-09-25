@@ -106,8 +106,8 @@
   },
   "named_insured": {
     "primary_name": {
-      "raw": "Wilhelmina Harrowgate",
-      "parsed": "Wilhelmina Harrowgate",
+      "raw": "Delphine Ellingham",
+      "parsed": "Delphine Ellingham",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -183,9 +183,21 @@
       }
     },
     "contact": {
+      "phone": {
+        "raw": "716-555-0173",
+        "parsed": "716-555-0173",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
       "email": {
-        "raw": "bartholomew.ellingham@example.com",
-        "parsed": "bartholomew.ellingham@example.com",
+        "raw": "alastair.mortlake@example.com",
+        "parsed": "alastair.mortlake@example.com",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -389,8 +401,8 @@
           "flagged": false
         },
         "vin_or_hull_id": {
-          "raw": "SN2PB8JS74C200309",
-          "parsed": "SN2PB8JS74C200309",
+          "raw": "SN7PB5JS20C130942",
+          "parsed": "SN7PB5JS20C130942",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -463,8 +475,8 @@
           "flagged": false
         },
         "vin_or_hull_id": {
-          "raw": "SN5DCH3P9HC648883",
-          "parsed": "SN5DCH3P9HC648883",
+          "raw": "SN9DCH6P5HC988372",
+          "parsed": "SN9DCH6P5HC988372",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -530,8 +542,8 @@
       },
       "address": {
         "line_1": {
-          "raw": "9078 Windfall Rd",
-          "parsed": "9078 Windfall Rd",
+          "raw": "2607 Cranberry Bog Rd",
+          "parsed": "2607 Cranberry Bog Rd",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -543,8 +555,8 @@
           "flagged": false
         },
         "city": {
-          "raw": "Lake Placid",
-          "parsed": "Lake Placid",
+          "raw": "Geneva",
+          "parsed": "Geneva",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -569,8 +581,8 @@
           "flagged": false
         },
         "postal_code": {
-          "raw": "12946",
-          "parsed": "12946",
+          "raw": "14456",
+          "parsed": "14456",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -775,7 +787,6 @@
     "named_insured.address_standardization_status",
     "named_insured.business_description",
     "named_insured.contact.fax",
-    "named_insured.contact.phone",
     "named_insured.contact.website",
     "named_insured.date_moved_to_current_address",
     "named_insured.doing_business_as",
@@ -1262,6 +1273,15 @@
       ]
     },
     {
+      "kind": "digits",
+      "label": "NY /",
+      "value": "150829997",
+      "page": 1,
+      "page_ref": [
+        1
+      ]
+    },
+    {
       "kind": "date",
       "label": "",
       "value": "06/29/2025",
@@ -1277,7 +1297,7 @@
     "schema": "recreational_vehicle v1.4.0",
     "render": "scanned_only",
     "scanner_profile": "high-quality scan, 400 dpi",
-    "values_replaced": 26,
+    "values_replaced": 29,
     "text_recovered_by_ocr": 0,
     "date_shift_days": -73,
     "synthetic": true,

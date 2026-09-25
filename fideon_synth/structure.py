@@ -629,7 +629,8 @@ class Reader:
                     if f.part == 0:                # a date wrapped onto the next line
                         tail = next((g for fs in self.found_in.values() for g in fs
                                      if g.part == 1 and g.key == f.key), None)
-                        new = f.new + ", " + tail.new if tail is not None else None
+                        joint = " " if getattr(f, "split", None) == "month" else ", "
+                        new = f.new + joint + tail.new if tail is not None else None
                     elif f.part == 1:
                         continue
                     if new:

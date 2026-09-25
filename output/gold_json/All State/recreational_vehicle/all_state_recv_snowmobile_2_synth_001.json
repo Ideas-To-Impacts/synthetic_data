@@ -21,8 +21,8 @@
       "flagged": false
     },
     "batch_number": {
-      "raw": "057431736060891",
-      "parsed": "057431736060891",
+      "raw": "032446721400532",
+      "parsed": "032446721400532",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -57,8 +57,8 @@
   },
   "named_insured": {
     "primary_name": {
-      "raw": "Delphine Stonebridge",
-      "parsed": "Delphine Stonebridge",
+      "raw": "Perpetua Thistlewood",
+      "parsed": "Perpetua Thistlewood",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -86,8 +86,44 @@
     },
     "mailing_address": {
       "line_1": {
-        "raw": "PO BOX 119",
-        "parsed": "PO BOX 119",
+        "raw": "PO BOX 229",
+        "parsed": "PO BOX 229",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "ITHACA",
+        "parsed": "ITHACA",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "14850",
+        "parsed": "14850",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -114,8 +150,8 @@
     },
     "contact": {
       "phone": {
-        "raw": "(845) 555-0123",
-        "parsed": "(845) 555-0123",
+        "raw": "(315) 555-0165",
+        "parsed": "(315) 555-0165",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -383,8 +419,8 @@
           "flagged": false
         },
         "vin_or_hull_id": {
-          "raw": "SN2NP6AS10C934001",
-          "parsed": "SN2NP6AS10C934001",
+          "raw": "SN3NP5AS75C511023",
+          "parsed": "SN3NP5AS75C511023",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -599,13 +635,10 @@
     "named_insured.doing_business_as",
     "named_insured.fein",
     "named_insured.gender",
-    "named_insured.mailing_address.city",
     "named_insured.mailing_address.country",
     "named_insured.mailing_address.county",
     "named_insured.mailing_address.county_code",
     "named_insured.mailing_address.line_2",
-    "named_insured.mailing_address.postal_code",
-    "named_insured.mailing_address.state",
     "named_insured.marital_status",
     "named_insured.naics_code",
     "named_insured.occupation",
@@ -975,6 +1008,15 @@
   ],
   "fideon:unmapped": [
     {
+      "kind": "digits",
+      "label": "AUTO - SPECIAL:",
+      "value": "921370150",
+      "page": 1,
+      "page_ref": [
+        1
+      ]
+    },
+    {
       "kind": "money",
       "label": "HBE GROUP INC (02 64653)",
       "value": "$1,112.33",
@@ -1002,18 +1044,9 @@
       ]
     },
     {
-      "kind": "street",
-      "label": "Current Address",
-      "value": "308 HEMLOCK RIDGE RD",
-      "page": 1,
-      "page_ref": [
-        1
-      ]
-    },
-    {
-      "kind": "cityline",
-      "label": "257 FLETCHER RD, OLD",
-      "value": "ONEONTA, NY 13820",
+      "kind": "digits",
+      "label": "PO BOX 229, OLD FORGE, NY",
+      "value": "50010 - 0007",
       "page": 1,
       "page_ref": [
         1
@@ -1021,8 +1054,8 @@
     },
     {
       "kind": "id",
-      "label": "SN1NP5AS33C308116",
-      "value": "SN1ND7BS37C724654",
+      "label": "SN3NP5AS75C511023",
+      "value": "SN4ND5BS31C426123",
       "page": 1,
       "page_ref": [
         1
@@ -1030,8 +1063,8 @@
     },
     {
       "kind": "id",
-      "label": "SN1ND5BS33C316949",
-      "value": "SN2BP2GS1DC333492",
+      "label": "SN4ND5BS31C426123",
+      "value": "SN7BP7GS4DC125534",
       "page": 1,
       "page_ref": [
         1
@@ -1039,8 +1072,8 @@
     },
     {
       "kind": "id",
-      "label": "SN1BP6GS5DC765978",
-      "value": "SN2DP4PS3GC712366",
+      "label": "SN7BP7GS4DC125534",
+      "value": "SN3DP1PS7GC683849",
       "page": 1,
       "page_ref": [
         1
@@ -1049,7 +1082,7 @@
     {
       "kind": "street",
       "label": "2016 POLARIS RUSH 800",
-      "value": "4901 SUSQUEHANNA TERRACE",
+      "value": "8707 TANNERY FLATS",
       "page": 1,
       "page_ref": [
         1,
@@ -1058,8 +1091,8 @@
     },
     {
       "kind": "id",
-      "label": "SN1DP8PS0GC162641",
-      "value": "3XAST6BS63B520658",
+      "label": "SN3DP1PS7GC683849",
+      "value": "5XAST4BS29B742358",
       "page": 1,
       "page_ref": [
         1
@@ -1067,8 +1100,8 @@
     },
     {
       "kind": "id",
-      "label": "4XAST5BS62B220074",
-      "value": "SN4TKV9R5NC804319",
+      "label": "5XAST4BS29B742358",
+      "value": "SN3TKV5R3NC683711",
       "page": 1,
       "page_ref": [
         1
@@ -1076,8 +1109,8 @@
     },
     {
       "kind": "id",
-      "label": "SN1TKV6R9NC815505",
-      "value": "SN7TKP5R3NC458242",
+      "label": "SN3TKV5R3NC683711",
+      "value": "SN7TKP1R6NC574317",
       "page": 1,
       "page_ref": [
         1
@@ -1086,7 +1119,7 @@
     {
       "kind": "street",
       "label": "",
-      "value": "4901 SUSQUEHANNA TERRACE",
+      "value": "8707 TANNERY FLATS",
       "page": 1,
       "page_ref": [
         1,
@@ -1095,8 +1128,8 @@
     },
     {
       "kind": "cityline",
-      "label": "PO BOX 2, OLD",
-      "value": "ONEONTA, NY",
+      "label": "PO BOX 229, OLD",
+      "value": "ITHACA, NY",
       "page": 1,
       "page_ref": [
         1
@@ -1105,7 +1138,7 @@
     {
       "kind": "digits",
       "label": "Class Code:",
-      "value": "4711969095",
+      "value": "1608918956",
       "page": 2,
       "page_ref": [
         2
@@ -1114,7 +1147,7 @@
     {
       "kind": "digits",
       "label": "Class Code:",
-      "value": "4711969095",
+      "value": "1608918956",
       "page": 2,
       "page_ref": [
         2
@@ -1123,7 +1156,7 @@
     {
       "kind": "digits",
       "label": "Class Code:",
-      "value": "4711969095",
+      "value": "1608918956",
       "page": 2,
       "page_ref": [
         2
@@ -1333,7 +1366,7 @@
     {
       "kind": "street",
       "label": "",
-      "value": "4901 SUSQUEHANNA TERRACE",
+      "value": "8707 TANNERY FLATS",
       "page": 2,
       "page_ref": [
         1,
@@ -1343,7 +1376,7 @@
     {
       "kind": "street",
       "label": "",
-      "value": "4901 SUSQUEHANNA TERRACE",
+      "value": "8707 TANNERY FLATS",
       "page": 2,
       "page_ref": [
         1,
@@ -1357,7 +1390,7 @@
     "schema": "recreational_vehicle v1.4.0",
     "render": "scanned_only",
     "scanner_profile": "high-quality scan, 400 dpi",
-    "values_replaced": 33,
+    "values_replaced": 35,
     "text_recovered_by_ocr": 0,
     "date_shift_days": -403,
     "synthetic": true,

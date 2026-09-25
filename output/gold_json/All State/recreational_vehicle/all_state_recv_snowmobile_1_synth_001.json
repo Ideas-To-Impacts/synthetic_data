@@ -45,14 +45,15 @@
   },
   "named_insured": {
     "primary_name": {
-      "raw": "Montague Marchbanks",
-      "parsed": "Montague Marchbanks",
+      "raw": "Ambrose Ashworth",
+      "parsed": "Ambrose Ashworth",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
       },
       "page_ref": [
-        1
+        1,
+        2
       ],
       "flagged": false
     },
@@ -64,9 +65,60 @@
         "source": "structural"
       },
       "page_ref": [
-        1
+        1,
+        2
       ],
       "flagged": false
+    },
+    "mailing_address": {
+      "line_1": {
+        "raw": "PO BX 622",
+        "parsed": "PO BX 622",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "KINGSTON",
+        "parsed": "KINGSTON",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "12401",
+        "parsed": "12401",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
     }
   },
   "producer": {
@@ -84,8 +136,8 @@
     },
     "contact": {
       "phone": {
-        "raw": "(716) 555-0116",
-        "parsed": "(716) 555-0116",
+        "raw": "(607) 555-0150",
+        "parsed": "(607) 555-0150",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -352,8 +404,8 @@
           "flagged": false
         },
         "vin_or_hull_id": {
-          "raw": "2BPSMMBB6BBV00008",
-          "parsed": "2BPSMMBB6BBV00008",
+          "raw": "3BPSMMBB9BBV00004",
+          "parsed": "3BPSMMBB9BBV00004",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -569,14 +621,10 @@
     "named_insured.doing_business_as",
     "named_insured.fein",
     "named_insured.gender",
-    "named_insured.mailing_address.city",
     "named_insured.mailing_address.country",
     "named_insured.mailing_address.county",
     "named_insured.mailing_address.county_code",
-    "named_insured.mailing_address.line_1",
     "named_insured.mailing_address.line_2",
-    "named_insured.mailing_address.postal_code",
-    "named_insured.mailing_address.state",
     "named_insured.marital_status",
     "named_insured.naics_code",
     "named_insured.occupation",
@@ -946,6 +994,15 @@
   ],
   "fideon:unmapped": [
     {
+      "kind": "digits",
+      "label": "AUTO - SPECIAL:",
+      "value": "824549157",
+      "page": 1,
+      "page_ref": [
+        1
+      ]
+    },
+    {
       "kind": "money",
       "label": "$334.20",
       "value": "$371.33",
@@ -955,27 +1012,9 @@
       ]
     },
     {
-      "kind": "street",
-      "label": "Mailing Address",
-      "value": "6097 COBBLER HILL RD",
-      "page": 1,
-      "page_ref": [
-        1
-      ]
-    },
-    {
-      "kind": "cityline",
-      "label": "3818 STATE ROUTE 28, OLD",
-      "value": "CAZENOVIA, NY 13035",
-      "page": 1,
-      "page_ref": [
-        1
-      ]
-    },
-    {
       "kind": "id",
-      "label": "2BPSMMBB0BBV00003",
-      "value": "5BPSUSBA7BV000026",
+      "label": "3BPSMMBB9BBV00004",
+      "value": "4BPSUSBA6BV000024",
       "page": 1,
       "page_ref": [
         1
@@ -1110,7 +1149,7 @@
     "schema": "recreational_vehicle v1.4.0",
     "render": "scanned_only",
     "scanner_profile": "high-quality scan, 400 dpi",
-    "values_replaced": 16,
+    "values_replaced": 20,
     "text_recovered_by_ocr": 0,
     "date_shift_days": 156,
     "synthetic": true,

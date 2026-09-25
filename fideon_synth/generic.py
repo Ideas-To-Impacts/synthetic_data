@@ -44,7 +44,10 @@ import fitz
 from . import overlay, pageref, prose, recover, structure
 from .corpus import Built, Report
 from .fields import DATE_FORMAT, NO_EVIDENCE, as_number, derived, fv, strip_evidence
-from .scan import by_key as scan_by_key, scan_pdf
+from .scan import HIGH_QUALITY_COMPACT, by_key as scan_by_key, scan_pdf
+
+#: a scan larger than this is stored compactly: GitHub's recommended largest file
+SHARE_LIMIT = 50 * 1024 * 1024
 from .schema import CanonicalSchema, available
 from .values import GIVEN, STREET_NAME, SURNAME, Values
 
@@ -90,9 +93,9 @@ _SUFFIX = (r"(?i:St|Street|Rd|Road|Ave|Avenue|Way|Ln|Lane|Dr|Drive|Pl|Place|Ct|C
 _E = r"(?![A-Za-z0-9])"
 PATTERNS = [   # (kind, regex) - earlier kinds win overlaps
     ("email", re.compile(r"[\w.+-]+@[\w-]+(?:\.[A-Za-z]{2,})+")),
-    ("phone", re.compile(r"(?<!\d)(?:\(\d{3}\)\s?|\d{3}[-.])\d{3}[-.]\d{4}(?!\d)")),
+    ("phone", re.compile(r"(?<!\d)(?:\(\d{3}\)\s?|\d{3}[-.‐-–])\d{3}[-.‐-–]\d{4}(?!\d)")),
     ("fein", re.compile(r"(?<![\d-])\d{2}-\d{7}(?![\d-])")),
-    ("pobox", re.compile(r"\bP\.?\s?O\.?\s?Box\s+\d+\b", re.I)),
+    ("pobox", re.compile(r"\bP\.?\s?O\.?\s?(?:Box|BX)\s+\d+\b", re.I)),
     ("cityline", re.compile(
         r"(?<![A-Za-z])((?:(?!%s\b)[A-Z][A-Za-z.']+\s){0,2}(?!%s\b)[A-Z][A-Za-z.']+),?\s+([A-Z]{2})\s+(\d{5})(?:-\d{4})?(?!\d)"
         % (_SUFFIX, _SUFFIX))),
@@ -122,6 +125,13 @@ ID_LABEL = re.compile(r"\b(number|no|id|code|hin|vin|account|acct|agency|custome
 NAME_LABEL = re.compile(r"\b(insured|insureds|client|clients|agent|producer|"
                         r"operator|operators|owner|applicant|contact)\b", re.I)
 PRODUCER_LABEL = re.compile(r"\b(agent|producer|agency|broker)\b", re.I)
+DRIVER_LABEL = re.compile(r"\b(drivers?|operators?)\b", re.I)
+CODED_NAME = re.compile(r"(.+?)\s+-\s*#\s*(\d{3,})\s*")       # "BURKHARD EVANS INC - #909255"
+CODE_ONLY = re.compile(r"\s*#\s*(\d{3,})\s*")                 # "#913886" on its own line
+DASH_CODE = re.compile(r"\s*-\s*#\s*(\d{3,})\s*")             # "- #495001" in its own column
+LABELLED_NAME = re.compile(r"\b(insured)\s*:?\s*([A-Z][A-Za-z.'-]*(?:\s+[A-Z][A-Za-z.'-]*){1,3})\s*$", re.I)
+#: a ZIP+4 after a state that is not one - an address a redaction scrambled
+SCRAMBLED_ZIP = re.compile(r",[^,]*?\b([A-Z]{2,5})\s+(\d{5}-\d{4})\s*$")
 INSURED_LABEL = re.compile(r"\b(insured|insureds|client|clients|applicant|owner)\b", re.I)
 NOT_A_NAME = re.compile(r"\b(page|policy|coverage|date|premium|limit|number|total|"
                         r"address|description|declarations|location|endorsement|"
@@ -137,9 +147,15 @@ PII = {"email", "phone", "fein", "pobox", "cityline", "street", "id", "digits",
 #: a machine-read line - a payment coupon's scan line, a MICR line: only
 #: groups of digits, many of them. It encodes the policy number, the amount
 #: and the due date, so it is replaced whole
-SCANLINE = re.compile(r"\d{4,}(?:\s+\d{3,}){1,9}")
+SCANLINE = re.compile(r"\d{4,}(?:\s+\d{3,}){1,9}(?:\s+\d{1,2})?")   # and a check digit
+DASHED_ID = re.compile(r"(?<![\w$,./-])\d{2,5}(?:\s?-\s?|\s)(\d{7,})(?:(?:\s?-\s?|\s)\d{1,4})?(?![\w,./-])")
+GROUPED_ID = re.compile(r"(?<![\w$,./-])\d{2,5}(?:-\d{2,5}){2,}(?![\w,./-])")
+TIMED_DATE = re.compile(r"(?<![\d/])(\d{1,2}/\d{1,2}/\d{4})(?=\d{1,2}:\d{2})")
 #: a date broken over two lines: "... through May 23," / "2027. Your ..."
 DATE_HEAD = re.compile(r"(?<![A-Za-z])(?:%s)\.? \d{1,2}(?=,?\s*$)" % "|".join(
+    MONTHS + [m[:3] for m in MONTHS] + ["Sept"]))
+#: a month name that ends its line, the day and year set on the next
+MONTH_TAIL = re.compile(r"(?<![A-Za-z])(?:%s)\.?(?=\s*$)" % "|".join(
     MONTHS + [m[:3] for m in MONTHS] + ["Sept"]))
 
 
@@ -270,6 +286,8 @@ class Found:
         self.no_zip = False       # a known town printed here without its ZIP
         self.whole = None         # the whole value, when this is one line of it
         self.part = None          # 0 = its first line, 1 = the line it ends on
+        self.split = None         # "month": the first line holds the month alone
+        self.aside = False        # a name replaced but not the policy's insured or agent
 
     @property
     def rect(self):
@@ -304,6 +322,26 @@ def _wrapped_dates(cell_list, found):
             f = Found("date", c, s, e)
             f.whole, f.key, f.part = whole, _key(whole), n
             out.append(f)
+    # and one whose month ends a line with the day and year on the next:
+    # "...policy period August 26, 2026 through August" / "26, 2027."
+    for cell in cell_list:
+        m = MONTH_TAIL.search(cell.text)
+        if m is None or any(f.cell is cell and f.start < m.end() and m.start() < f.end
+                            for f in found + out):
+            continue
+        below = _below(cell, cell_list)
+        if below is None or any(f.cell is below and f.start < 8 for f in found + out):
+            continue
+        rest = re.match(r"\d{1,2},\s*\d{4}(?![\d/,])", below.text)
+        if rest is None:
+            continue
+        whole = m.group(0).replace(".", "") + " " + re.sub(r",\s*", ", ", rest.group(0))
+        if _date_of(whole) is None:
+            continue
+        for n, (c, s, e) in enumerate(((cell, m.start(), m.end()), (below, 0, rest.end()))):
+            f = Found("date", c, s, e)
+            f.whole, f.key, f.part, f.split = whole, _key(whole), n, "month"
+            out.append(f)
     return out
 
 
@@ -331,6 +369,35 @@ def _detect(cell_list):
                 if kind == "cityline" and m.group(2) not in STATES:
                     continue
                 found.append(Found(kind, cell, s, e))
+                taken.append((s, e))
+        # an all-digit number set in groups - "255-0072123586-16", "255 -
+        # 0072123586": its long core is the identifier, the same wherever it
+        # is printed; a product code before it and a sequence after it stay
+        for m in DASHED_ID.finditer(cell.text):
+            s, e = m.span(1)
+            if not any(s < te and ts < e for ts, te in taken):
+                found.append(Found("id", cell, s, e))
+                taken.append((s, e))
+        # an all-digit number in three or more short groups, "103-194-455":
+        # an identifier where a label says so (see find_values)
+        for m in GROUPED_ID.finditer(cell.text):
+            s, e = m.span()
+            if len(re.sub(r"\D", "", m.group(0))) >= 8 and _date_of(m.group(0)) is None \
+                    and not any(s < te and ts < e for ts, te in taken):
+                found.append(Found("digits", cell, s, e))
+                taken.append((s, e))
+        # a scrambled address keeps its ZIP+4: "WPSWNSWWCV, GHZT 29346-8107"
+        m = SCRAMBLED_ZIP.search(cell.text)
+        if m and m.group(1) not in STATES:
+            s, e = m.span(2)
+            if not any(s < te and ts < e for ts, te in taken):
+                found.append(Found("id", cell, s, e))
+                taken.append((s, e))
+        # a date with the time run into it: "09/19/202412:01A.M."
+        for m in TIMED_DATE.finditer(cell.text):
+            s, e = m.span(1)
+            if _date_of(m.group(1)) and not any(s < te and ts < e for ts, te in taken):
+                found.append(Found("date", cell, s, e))
                 taken.append((s, e))
     return found
 
@@ -445,7 +512,10 @@ def find_values(cell_list):
         f.label = _label_for(f, cell_list)
     # a bare run of digits is only an identifier when a label says so, and
     # a form number keeps its number however it is shaped
-    found = [f for f in found if (f.kind != "digits" or ID_LABEL.search(f.label))
+    # (nine digits or more is an identifier whatever labels it - a policy or
+    # licence number: "AUTO - SPECIAL: 933712824", "NY / 110916892")
+    found = [f for f in found if (f.kind != "digits" or ID_LABEL.search(f.label)
+                                  or len(re.sub(r"\D", "", f.text)) >= 9)
              and (f.kind != "id" or len(re.sub(r"\D", "", f.text)) >= 5 or ID_LABEL.search(f.label))
              and not (f.kind in ("id", "digits") and re.search(r"\bforms?\b", f.label, re.I))]
 
@@ -463,6 +533,15 @@ def find_values(cell_list):
             for cand in (_below(cell, cell_list, max_gap=3.2), ):
                 if cand is not None and _looks_like_name(cand.text):
                     names[id(cand)] = (cand, cell.text)
+    # a list of drivers is one name per line under its label ("Listed
+    # Drivers:"): every name in it, not only the first
+    for cell in cell_list:
+        if DRIVER_LABEL.search(cell.text) and len(cell.text) < 45 and len(cell.text.split()) <= 5 \
+                and not re.search(r"\d", cell.text):
+            cand = _below(cell, cell_list, max_gap=3.2)
+            while cand is not None and _looks_like_name(cand.text) and id(cand) not in names:
+                names[id(cand)] = (cand, cell.text)
+                cand = _below(cand, cell_list)
     for cell, label in names.values():
         if any(f.cell is cell for f in found):
             continue
@@ -471,10 +550,56 @@ def find_values(cell_list):
         f = Found(kind, cell, 0, len(cell.text))
         f.label = label or ""
         found.append(f)
+    # an agency printed with its agency code: "BURKHARD EVANS INC - #909255",
+    # the code wrapped under it ("... BROKERAGE INC -" / "#913886"), or set in
+    # the next column ("GRANITE ROW  |  - #495001")
+    for cell in cell_list:
+        pieces = []
+        m = CODED_NAME.fullmatch(cell.text)
+        if m and _looks_like_name(m.group(1)):
+            pieces = [(cell, *m.span(1)), (cell, *m.span(2))]
+        m = re.fullmatch(r"(.+?)\s+-\s*", cell.text)
+        below = _below(cell, cell_list) if m else None
+        if m and below is not None and CODE_ONLY.fullmatch(below.text) and _looks_like_name(m.group(1)):
+            pieces = [(cell, *m.span(1)), (below, *CODE_ONLY.fullmatch(below.text).span(1))]
+        m = DASH_CODE.fullmatch(cell.text)
+        left = _left(cell, cell_list) if m else None
+        if m and left is not None and _looks_like_name(left.text):
+            pieces = [(left, 0, len(left.text)), (cell, *m.span(1))]
+        elif m and left is not None:
+            # the name at the end of a cell run into the column before it:
+            # "Policy Discounts GRANITE ROW"
+            t = re.search(r"(?:^|\s)([A-Z][A-Z&.'-]*(?:\s+[A-Z][A-Z&.'-]*){1,4})\s*$", left.text)
+            if t and t.start(1) > 0 and not left.text[:t.start(1)].strip().isupper() \
+                    and _looks_like_name(t.group(1)):
+                pieces = [(left, *t.span(1)), (cell, *m.span(1))]
+        def free(c, s, e):
+            return not any(g.cell is c and g.start < e and s < g.end for g in found)
+        if not pieces or not free(*pieces[0]):
+            continue
+        name = Found("company", *pieces[0])      # a name with an agency code is an agency
+        name.label = ""
+        # the wholesaler under "Contracted Agency:" is not the policy's agent
+        up = _above(pieces[0][0], cell_list, max_gap=3.5, x_tol=60)
+        if up is not None and re.search(r"\bcontracted\b", up.text, re.I):
+            name.aside, name.label = True, up.text.strip()
+        found.append(name)
+        if free(*pieces[1]):
+            code = Found("digits", *pieces[1])
+            code.label = pieces[0][0].text[pieces[0][1]:pieces[0][2]]
+            found.append(code)
+    # a label and the name it introduces in one cell: "INSURED JANET DANFORTH"
+    for cell in cell_list:
+        m = LABELLED_NAME.search(cell.text)
+        if m and _looks_like_name(m.group(2)) and not any(
+                g.cell is cell and g.start < m.end(2) and m.start(2) < g.end for g in found):
+            f = Found("person", cell, *m.span(2))
+            f.label, f.aside = m.group(1), True    # replaced; the mailing block names the insured
+            found.append(f)
 
     # who a name-and-address block belongs to
     for f in found:
-        if f.kind not in ("person", "company"):
+        if f.kind not in ("person", "company") or f.aside:
             continue
         context = f.label
         up = f.cell
@@ -495,7 +620,7 @@ def find_values(cell_list):
     # a mailing block with no label over it - an envelope window - holds the
     # policyholder: people, above an address, when no label named anyone else
     streets = [f.cell for f in found if f.kind in ("street", "pobox")]
-    block = [f for f in found if f.kind == "person" and any(
+    block = [f for f in found if f.kind == "person" and not f.aside and any(
         s.rect.y0 > f.rect.y0 and s.rect.y0 - f.rect.y1 < 4 * f.rect.height
         and abs(s.rect.x0 - f.rect.x0) < 14 for s in streets)]
     if block and not any(f.role for f in block):
@@ -545,16 +670,24 @@ class Faker:
     def __call__(self, f: Found) -> str:
         if f.blank:
             return ""
-        if f.kind in ("id", "digits") and not f.key:
-            key = ("ident", re.sub(r"\s", "", f.text).lower())
+        if f.kind in ("id", "digits"):
+            # one identifier, one replacement, wherever and however it is
+            # printed: "103-194-455" and the ID card's "103194455" alike
+            base = f.key or f.text
+            ident = re.sub(r"\D", "", base) if re.fullmatch(r"[\d\s-]+", base) \
+                else re.sub(r"\s", "", base).lower()
+            key = ("ident", ident)
             if key not in self.memo:
                 self.memo[key] = self._id(f.text)
-            chars = iter(re.sub(r"\s", "", self.memo[key]))
-            return "".join(c if c.isspace() else next(chars) for c in f.text)
+            chars = iter(re.sub(r"[^A-Za-z0-9]", "", self.memo[key]))
+            return "".join(next(chars, c) if c.isalnum() else c for c in f.text)
         key = (f.kind, f.key or _key(f.text))
         if key not in self.memo:
             self.memo[key] = getattr(self, "_" + f.kind)(f.whole or f.text)
         new = self.memo[key]
+        if f.part is not None and f.split == "month":   # "August" / "26, 2027"
+            month, _, rest = new.partition(" ")
+            return month if f.part == 0 else rest
         if f.part is not None:               # one line of a wrapped date
             head, _, year = new.rpartition(" ")
             return head.rstrip(",") if f.part == 0 else year
@@ -615,7 +748,7 @@ class Faker:
         line = "01%02d" % self.v.integer(0, 99)
         if old.startswith("("):
             return "(%s) 555-%s" % (area, line)
-        sep = "." if "." in old else "-"
+        sep = "." if "." in old else "-"      # a typographic dash is drawn as a plain one
         return sep.join([area, "555", line])
 
     def _email(self, old):
@@ -820,9 +953,23 @@ def _sweep(pages, marks=()):
     # Lindqvist"); a lowercase-to-capital join is a boundary for names only
     glued = r"(?:(?<![A-Za-z0-9])|(?-i:(?<=[a-z])(?=[A-Z]))%s)" % "".join(
         "|(?<=%s)" % re.escape(m) for m in sorted(marks))
+    # a name or address set in a text layer with no spaces or with commas for
+    # them - "BURKHARDEVANSINC", "ROBERT,A,QUEEN" - is the same value
+    loose = {"person", "company", "pobox", "street", "cityline"}
+    canon = {re.sub(r"[\s,-]", "", k): k for k in sorted(kinds, key=len)}
+
+    def words(k):
+        # an all-digit identifier printed with or without its dashes:
+        # "103-194-455" on the declarations is "103194455" on the ID card
+        groups = re.split(r"[\s-]+", k)
+        if kinds[k] in ("id", "digits") and len(groups) >= 2 and all(g.isdigit() for g in groups) \
+                and len("".join(groups)) >= 8:
+            return r"\s*-?\s*".join(groups)     # "37-3001-144", "37 - 3001 - 144", "37 3001 144"
+        sep = r"[\s,]*" if kinds[k] in loose and len(k.split()) >= 2 and len(k) >= 8 else r"\s+"
+        return sep.join(map(re.escape, k.split()))
     pattern = re.compile("|".join(
         (glued if kinds[k] in ("person", "company") else r"(?<![A-Za-z0-9])")
-        + r"\s+".join(map(re.escape, k.split())) + r"(?![A-Za-z0-9])"
+        + words(k) + r"(?![A-Za-z0-9])"
         for k in sorted(kinds, key=len, reverse=True)), re.I)
     garbled, towns = [], []
     for *_, found in pages:
@@ -865,6 +1012,10 @@ def _sweep(pages, marks=()):
                        for c, s, e in pieces.values()):
                     continue
                 full = _key(m.group(0))
+                if full not in kinds:                  # matched without its spaces, dashes or with commas
+                    full = canon.get(re.sub(r"[\s,-]", "", full))
+                    if full is None:
+                        continue
                 for n, (cell, s, e) in enumerate(pieces.values()):
                     f = Found(kinds[full], cell, s, e)
                     f.key, f.blank = full, n > 0
@@ -914,6 +1065,21 @@ def _sweep(pages, marks=()):
                     found.append(f)
                     taken.setdefault(id(c), []).append((0, len(c.text)))
                 break
+        # and the front of a known name, cut off mid-word where the rest of
+        # the line was blacked out: "PATRIOTIC INSU" of "PATRIOTIC INSURANCE
+        # GROUP BROKERAGE INC"
+        for cell in cell_list:
+            head = _key(cell.text)
+            if len(head) < 10 or " " not in head or taken.get(id(cell)):
+                continue
+            full = next((k for k, kind in kinds.items() if kind in ("person", "company")
+                         and k.startswith(head) and k != head), None)
+            if full is not None:
+                f = Found(kinds[full], cell, 0, len(cell.text))
+                f.key = full
+                f.label = _label_for(f, cell_list)
+                found.append(f)
+                taken.setdefault(id(cell), []).append((0, len(cell.text)))
 
 
 def _key(text):
@@ -1297,6 +1463,9 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
                                                 and pageref.on_page(pageref._norm(f.key or f.text), blob)})]
 
         stats = scan_pdf(digital, built.pdf, scan_by_key("high_quality"), seed=seed)
+        if built.pdf.stat().st_size > SHARE_LIMIT:
+            # too large to share: the same scan, stored compactly
+            stats = scan_pdf(digital, built.pdf, HIGH_QUALITY_COMPACT, seed=seed)
         built.profile = stats["profile"]
         strip_evidence(gold)
         gold["fideon:absent"] = schema.absent_from(pageref.stated_paths(gold))
