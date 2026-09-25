@@ -26,6 +26,19 @@
       "policy.effective_date <= policy.expiration_date"
     ]
   },
+  "fideon:parsed_formats": {
+    "date": {
+      "format": "MM/DD/YYYY",
+      "strftime": "%m/%d/%Y",
+      "pattern": "^(0[1-9]|1[0-2])/(0[1-9]|[12][0-9]|3[01])/[0-9]{4}$",
+      "example": "05/06/2026",
+      "applies_to": "(^|_)dated?(_|$)",
+      "exceptions": [
+        "edition_date"
+      ],
+      "note": "US insurance documents print dates month/day/year, so every date's parsed value is MM/DD/YYYY: two-digit month and day, four-digit year, whatever the page prints (5/6/26, May 6, 2026 and 2026-05-06 are all parsed as 05/06/2026). raw stays exactly as printed. applies_to matches field names such as effective_date, date_of_birth and replaces_prior_declaration_dated. A form edition_date (\"04/07\") has no day and keeps its printed form. A value that is not a calendar date (\"Full Prior Acts\", \"None\") has parsed null. Compare dates as dates, not strings: as text, 12/31/2025 sorts after 01/01/2026 - this includes the date_ordering audit rules."
+    }
+  },
   "type": "object",
   "required": [
     "carrier",
@@ -40,7 +53,21 @@
           "$ref": "#/$defs/FieldValue"
         },
         "document_title_as_stated": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "AUTOMOBILE POLICY CONTINUATION DECLARATIONS",
+            "Automobile Policy Declarations",
+            "Classic Automobile Endorsement Policy Declarations",
+            "Classic Automobile Policy",
+            "Classic Automobile Policy - New York",
+            "Classic Automobile Renewal Policy Declarations",
+            "NEW YORK STATE INSURANCE IDENTIFICATION CARD",
+            "NYCM AUTOMOBILE ENDORSEMENT SUMMARY",
+            "Personal Auto Declarations Page",
+            "THIS IS NOT A BILL",
+            "Your Auto Policy is Ready for Renewal",
+            "Your Motorcycle Policy is Ready for Renewal"
+          ]
         },
         "line_of_business_as_stated": {
           "$ref": "#/$defs/FieldValue"
@@ -74,14 +101,42 @@
           "fideon:aliases": [
             "Amended Date",
             "Modifies Coverage(s) at Renewal",
+            "Reason",
             "Reason(s) for Modification"
           ]
         },
         "transaction_effective_date": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Effective Date of Endorsement",
+            "Policy Changes Made As Of",
+            "Transaction Effective"
+          ]
+        },
+        "transaction_date": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Transaction Date"
+          ]
+        },
+        "transaction_expiration_date": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Transaction Expiration"
+          ]
+        },
+        "transaction_number": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Change Number"
+          ]
         },
         "issue_date": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Issue Date",
+            "Issued On"
+          ]
         },
         "print_date": {
           "$ref": "#/$defs/FieldValue",
@@ -92,7 +147,10 @@
             "Print Date",
             "Printed On",
             "Process Date",
-            "PROCESSING DATE"
+            "PROCESSING DATE",
+            "Date Mailed",
+            "Date of Mailing",
+            "Generated"
           ]
         },
         "page_count": {
@@ -117,7 +175,8 @@
             "Company Copy",
             "File Copy",
             "Insured Copy",
-            "Office Copy"
+            "Office Copy",
+            "Reference Copy"
           ]
         },
         "batch_number": {
@@ -135,6 +194,26 @@
             "Summary of Changes",
             "Summary of Your Changes"
           ]
+        },
+        "download_tracking_number": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "DOWNLOAD TRACKING #"
+          ]
+        },
+        "additional_information": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Additional Information",
+            "FOR YOUR INFORMATION",
+            "Important Details and Messages"
+          ]
+        },
+        "remarks": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "REMARKS"
+          ]
         }
       }
     },
@@ -142,7 +221,14 @@
       "type": "object",
       "properties": {
         "company_name": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Issued By",
+            "NAME AND ADDRESS OF ISSUER",
+            "Name & Address of Issuer",
+            "Policy Issued by",
+            "Underwritten By"
+          ]
         },
         "writing_company_name": {
           "$ref": "#/$defs/FieldValue"
@@ -203,7 +289,10 @@
               "$ref": "#/$defs/FieldValue"
             },
             "website": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Online service"
+              ]
             }
           }
         },
@@ -225,6 +314,7 @@
             "A Mutual Company",
             "A Reciprocal",
             "A Stock Corporation",
+            "A stock company",
             "Mutual Company",
             "Stock Company"
           ]
@@ -234,7 +324,8 @@
         "Insurer",
         "Carrier",
         "Insurance Company",
-        "Underwriting Company"
+        "Underwriting Company",
+        "Your Insurer"
       ]
     },
     "producer": {
@@ -247,7 +338,9 @@
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "Agency Code",
-            "Agent"
+            "Agency ID",
+            "Agent",
+            "Producer Code"
           ]
         },
         "producer_contact_name": {
@@ -288,8 +381,13 @@
             "phone": {
               "$ref": "#/$defs/FieldValue",
               "fideon:aliases": [
+                "FOR POLICY QUESTIONS OR CHANGES PLEASE CALL",
+                "For Policy Service Call",
                 "Home",
                 "Mobile",
+                "Phone O",
+                "Policy questions or changes",
+                "Telephone",
                 "Work"
               ]
             },
@@ -301,7 +399,10 @@
               ]
             },
             "email": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "EMAIL"
+              ]
             },
             "website": {
               "$ref": "#/$defs/FieldValue"
@@ -316,17 +417,27 @@
         }
       },
       "fideon:aliases": [
+        "AGENCY NAME AND ADDRESS",
         "Agency",
+        "Agency Address",
+        "Agency Information",
         "Agent",
+        "Agent or Broker",
+        "Broker",
         "Producer",
-        "Broker"
+        "Your Agency's Name and Address"
       ]
     },
     "policy": {
       "type": "object",
       "properties": {
         "policy_number": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "POLICY #",
+            "Your Auto Policy Number",
+            "Your Policy Number"
+          ]
         },
         "prior_policy_number": {
           "$ref": "#/$defs/FieldValue",
@@ -338,7 +449,9 @@
         "account_id": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
-            "Account ID"
+            "Account ID",
+            "Client Number",
+            "Your Account Number"
           ]
         },
         "certificate_number": {
@@ -359,7 +472,10 @@
                 "$ref": "#/$defs/FieldValue"
               }
             }
-          }
+          },
+          "fideon:aliases": [
+            "PACKAGE POLICY NUMBER"
+          ]
         },
         "program_name": {
           "$ref": "#/$defs/FieldValue"
@@ -368,10 +484,16 @@
           "$ref": "#/$defs/FieldValue"
         },
         "policy_form_number": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Policy Form"
+          ]
         },
         "policy_form_edition": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Policy Edition"
+          ]
         },
         "policy_type": {
           "$ref": "#/$defs/FieldValue"
@@ -380,12 +502,14 @@
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "Both dates",
+            "EFF DATE",
             "Effective Date Of Policy",
             "Inception Date",
             "Policy Effective Date",
             "Policy Period From",
             "Policy Term Effective Date",
-            "Start Date"
+            "Start Date",
+            "The policy period is from"
           ]
         },
         "expiration_date": {
@@ -405,7 +529,11 @@
           "$ref": "#/$defs/FieldValue"
         },
         "policy_term_months": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "TERM",
+            "Term Length"
+          ]
         },
         "anniversary_date": {
           "$ref": "#/$defs/FieldValue"
@@ -463,10 +591,79 @@
             "Continuously Insured Since",
             "Customer Since",
             "Insured Since",
-            "Policyholder Since"
+            "Policyholder Since",
+            "Protected Since"
+          ]
+        },
+        "state_of_issue": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Policy State"
+          ]
+        },
+        "rating_tier": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Crown Level",
+            "Information Used to Rate Your Policy",
+            "Policy tier",
+            "Rating Tier",
+            "Tier Code",
+            "Your Policy Rating Tier is"
+          ]
+        },
+        "final_market_type": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Final Market"
+          ]
+        },
+        "quote_number": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "QUOTE #"
+          ]
+        },
+        "account_type": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "ACCOUNT TYPE"
+          ]
+        },
+        "underwriting_exceptions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "level": {
+                "$ref": "#/$defs/FieldValue"
+              },
+              "exception_type": {
+                "$ref": "#/$defs/FieldValue"
+              },
+              "original_value": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "ORIGINAL VALUE"
+                ]
+              },
+              "overridden_value": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "OVERRIDDEN VALUE"
+                ]
+              }
+            }
+          },
+          "fideon:aliases": [
+            "EXCEPTIONS"
           ]
         }
-      }
+      },
+      "fideon:aliases": [
+        "GENERAL POLICY INFORMATION",
+        "Policy Information"
+      ]
     },
     "named_insured": {
       "type": "object",
@@ -565,7 +762,10 @@
               "$ref": "#/$defs/FieldValue"
             },
             "email": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "EMAIL"
+              ]
             },
             "website": {
               "$ref": "#/$defs/FieldValue"
@@ -641,13 +841,86 @@
               }
             }
           }
+        },
+        "insurance_score": {
+          "type": "object",
+          "properties": {
+            "ordered_date": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "ORDERED DATE"
+              ]
+            },
+            "report_type": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "REPORT"
+              ]
+            },
+            "coded_score": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "CODED SCORE"
+              ]
+            }
+          },
+          "fideon:aliases": [
+            "INSURANCE SCORE INFORMATION",
+            "Insurance Score"
+          ]
+        },
+        "third_party_designee": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Third party designee's name"
+              ]
+            },
+            "address": {
+              "type": "object",
+              "properties": {
+                "line_1": {
+                  "$ref": "#/$defs/FieldValue"
+                },
+                "line_2": {
+                  "$ref": "#/$defs/FieldValue"
+                },
+                "city": {
+                  "$ref": "#/$defs/FieldValue"
+                },
+                "state": {
+                  "$ref": "#/$defs/FieldValue"
+                },
+                "postal_code": {
+                  "$ref": "#/$defs/FieldValue"
+                },
+                "county": {
+                  "$ref": "#/$defs/FieldValue"
+                },
+                "country": {
+                  "$ref": "#/$defs/FieldValue"
+                }
+              }
+            },
+            "status": {
+              "$ref": "#/$defs/FieldValue"
+            }
+          },
+          "fideon:aliases": [
+            "THIRD PARTY DESIGNEE",
+            "Third Party Designee"
+          ]
         }
       },
       "fideon:aliases": [
-        "Named Insured",
+        "APPLICANT NAME AND ADDRESS",
+        "Applicant Name",
         "Insured",
-        "Policyholder",
-        "Applicant Name"
+        "Named Insured",
+        "Named Insured and Address",
+        "Policyholder"
       ]
     },
     "locations": {
@@ -820,6 +1093,12 @@
               "Description",
               "Structure Description"
             ]
+          },
+          "legal_description": {
+            "$ref": "#/$defs/FieldValue",
+            "fideon:aliases": [
+              "Legal Description"
+            ]
           }
         }
       },
@@ -838,6 +1117,8 @@
             "$ref": "#/$defs/FieldValue",
             "fideon:aliases": [
               "Interest Type",
+              "LOSS PAYEE",
+              "Loss Payee",
               "Mortgagee or Secured Party"
             ]
           },
@@ -904,9 +1185,20 @@
               "Payer",
               "Payor"
             ]
+          },
+          "status": {
+            "$ref": "#/$defs/FieldValue",
+            "fideon:aliases": [
+              "STATUS"
+            ]
           }
         }
-      }
+      },
+      "fideon:aliases": [
+        "ADDITIONAL INTERESTS AND LOSS PAYEES",
+        "Additional Interests",
+        "Interest Information"
+      ]
     },
     "premium": {
       "type": "object",
@@ -915,7 +1207,15 @@
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "Policy Total Premium",
-            "Total Policy Premium"
+            "Quoted Premium Amount",
+            "Term Amount",
+            "Total 12 month policy premium",
+            "Total 6 Month Policy Premium (All Vehicles)",
+            "Total 6 month policy premium and fees",
+            "Total Annual Auto Premium",
+            "Total Policy Premium",
+            "Total Premium for This Policy",
+            "Your Total Premium for the Policy Period"
           ]
         },
         "basic_premium": {
@@ -935,7 +1235,11 @@
           "$ref": "#/$defs/FieldValue"
         },
         "return_premium": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Total Return Policy Premium",
+            "Total return premium"
+          ]
         },
         "additional_premium": {
           "$ref": "#/$defs/FieldValue"
@@ -972,7 +1276,10 @@
                 "$ref": "#/$defs/FieldValue"
               }
             }
-          }
+          },
+          "fideon:aliases": [
+            "Fee Details"
+          ]
         },
         "surcharges": {
           "type": "array",
@@ -998,7 +1305,10 @@
                 "$ref": "#/$defs/FieldValue"
               }
             }
-          }
+          },
+          "fideon:aliases": [
+            "Premium surcharges"
+          ]
         },
         "discounts_and_credits": {
           "type": "array",
@@ -1027,7 +1337,10 @@
                 "$ref": "#/$defs/FieldValue"
               }
             }
-          }
+          },
+          "fideon:aliases": [
+            "Premium discounts"
+          ]
         },
         "surplus_lines_tax": {
           "$ref": "#/$defs/FieldValue"
@@ -1049,6 +1362,7 @@
             "DMV FEE",
             "Enforcement Fee",
             "MVLE Fee",
+            "Mandatory New York Law Enforcement Fee",
             "Motor Vehicle Law Enforcement Fee",
             "NEW YORK MOTOR VEHICLE LAW ENFORCEMENT FEE"
           ]
@@ -1103,6 +1417,43 @@
             "Endorsement Premium",
             "Forms/Endorsements Premium",
             "Total Endorsement Premium"
+          ]
+        },
+        "subtotal_premium": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "AUTO PREMIUM",
+            "Subtotal Policy Premium (All Vehicles)",
+            "Subtotal for your vehicle(s)",
+            "Subtotal policy premium",
+            "Subtotals for your vehicles",
+            "Total Coverage Premiums"
+          ]
+        },
+        "paid_in_full_total_premium": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Total 12 month policy premium if paid in full",
+            "Total 6 month policy premium if paid in full and fees"
+          ]
+        },
+        "transaction_premium_change_amount": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "This change decreases the premium by"
+          ]
+        },
+        "total_discount_savings_amount": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Total Savings from these discounts",
+            "Your Total Savings Reflected in Your Total Premium"
+          ]
+        },
+        "prorated_premium_amount": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Quoted Pro-rated Premium Amount"
           ]
         }
       },
@@ -1164,21 +1515,32 @@
       "type": "object",
       "properties": {
         "billing_plan": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Bill Plan"
+          ]
         },
         "payment_plan": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
+            "Choose a Payment Option",
             "Pay Plan",
+            "Pay in Full",
+            "Pay in Installments",
             "Your Policy Pay Plan is"
           ]
         },
         "payment_method": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
+            "AutoPay",
+            "Bill by Mail / Email",
             "ELECTRONIC FUND",
             "Electronic Fund Transfer",
+            "Electronic Funds Transfer (EFT)",
+            "PAY TYPE",
             "Pay by Check",
+            "Recurring Credit Card (RCC)",
             "Repetitive EFT"
           ]
         },
@@ -1197,7 +1559,10 @@
           "$ref": "#/$defs/FieldValue"
         },
         "due_date": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Renewal Payment Due By"
+          ]
         },
         "installments": {
           "type": "array",
@@ -1214,15 +1579,61 @@
                 "$ref": "#/$defs/FieldValue"
               },
               "installment_fee": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Installment Charge"
+                ]
               }
             }
           },
           "fideon:aliases": [
-            "Pay initial installment"
+            "Pay initial installment",
+            "Renewal Payment Schedule",
+            "Your Payment Schedule"
+          ]
+        },
+        "paperless_delivery_indicator": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Paper Off"
+          ]
+        },
+        "preferred_due_day": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "PREFERRED DUE DAY"
+          ]
+        },
+        "late_charge": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Late Charge"
+          ]
+        },
+        "returned_payment_fee": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Payments returned by your bank"
+          ]
+        },
+        "billing_phone": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Billing and Payment Information"
+          ]
+        },
+        "bill_status": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "BILL WILL FOLLOW"
           ]
         }
-      }
+      },
+      "fideon:aliases": [
+        "ACCOUNT INFORMATION",
+        "Payment Coupon",
+        "What's Due & When"
+      ]
     },
     "forms_and_endorsements": {
       "type": "array",
@@ -1236,7 +1647,10 @@
             "$ref": "#/$defs/FieldValue"
           },
           "form_title": {
-            "$ref": "#/$defs/FieldValue"
+            "$ref": "#/$defs/FieldValue",
+            "fideon:aliases": [
+              "Form Name"
+            ]
           },
           "form_type": {
             "$ref": "#/$defs/FieldValue"
@@ -1257,7 +1671,10 @@
             "$ref": "#/$defs/FieldValue"
           },
           "is_included": {
-            "$ref": "#/$defs/FieldValue"
+            "$ref": "#/$defs/FieldValue",
+            "fideon:aliases": [
+              "Included in this Packet"
+            ]
           },
           "is_mandatory": {
             "$ref": "#/$defs/FieldValue"
@@ -1269,6 +1686,7 @@
               "Basic Forms",
               "Forms & Endorsements",
               "Mandatory Forms",
+              "Mandatory Forms for All Vehicles",
               "Optional Forms"
             ]
           },
@@ -1278,6 +1696,12 @@
         }
       },
       "fideon:aliases": [
+        "Form Summary",
+        "Forms and Endorsements",
+        "INDEX",
+        "Policy Contract and Endorsements",
+        "Policy Coverage Sections and Endorsements That Form a Part of This Policy",
+        "Policy Endorsements",
         "Privacy Disclosure Notice",
         "SCHEDULE OF ADDITIONAL ENDORSEMENTS",
         "Service of Suit Endorsement",
@@ -1342,9 +1766,42 @@
           },
           "status": {
             "$ref": "#/$defs/FieldValue"
+          },
+          "category": {
+            "$ref": "#/$defs/FieldValue",
+            "fideon:aliases": [
+              "CATEGORY"
+            ]
+          },
+          "loss_from": {
+            "$ref": "#/$defs/FieldValue",
+            "fideon:aliases": [
+              "LOSS FROM"
+            ]
+          },
+          "points": {
+            "$ref": "#/$defs/FieldValue",
+            "fideon:aliases": [
+              "POINTS"
+            ]
+          },
+          "occurrence_count": {
+            "$ref": "#/$defs/FieldValue",
+            "fideon:aliases": [
+              "OCCR"
+            ]
+          },
+          "dispute_indicator": {
+            "$ref": "#/$defs/FieldValue",
+            "fideon:aliases": [
+              "DISPUTE IND"
+            ]
           }
         }
-      }
+      },
+      "fideon:aliases": [
+        "MANUAL LOSSES"
+      ]
     },
     "state_notices": {
       "type": "array",
@@ -1357,19 +1814,48 @@
           "notice_title": {
             "$ref": "#/$defs/FieldValue",
             "fideon:aliases": [
+              "ADVISORY NOTICE TO POLICYHOLDERS",
+              "DECLINATION FORM",
+              "EXPLANATION OF STATUTORY UNINSURED MOTORISTS COVERAGE AND SUPPLEMENTARY UNINSURED/UNDERINSURED MOTORISTS COVERAGE",
+              "IMPORTANT NOTICE",
+              "IMPORTANT NOTICE ABOUT BILLING OPTIONS AND DISCLOSURES",
+              "IMPORTANT NOTICE SUPPLEMENTAL SPOUSAL LIABILITY COVERAGE",
+              "IMPORTANT QUESTIONS FOR NEW YORK POLICYHOLDERS",
+              "INFORMATION CONCERNING TRANSPORTATION NETWORK COMPANIES",
+              "Information Concerning Peer-to-Peer Car Sharing Programs",
               "LVANIA NOTICE",
+              "NEW YORK AUTOMOBILE POLICYHOLDER NOTICE",
+              "NEW YORK ID CARD IMPORTANT NOTICE",
               "NEW YORK NOTICE",
+              "NEW YORK RENTAL REIMBURSEMENT COVERAGE DISCLOSURE",
+              "NEW YORK REQUIRED NOTICE OF AVAILABILITY OF SUPPLEMENTARY UNINSURED/UNDERINSURED MOTORISTS COVERAGE",
+              "NOTICE TO POLICYHOLDERS",
               "NOTICE TO SENIOR CITIZENS",
+              "PEER-TO-PEER CAR SHARING PROGRAM",
               "PENNSYLVANIA NOTICE",
+              "POLICYHOLDER DISCLOSURE NOTICE",
+              "PRIVACY NOTICE",
               "Privacy Disclosure Notice",
-              "State Notice"
+              "Privacy Notice",
+              "RATING INFORMATION - NEW YORK",
+              "Rental Vehicle Coverage Notice to Policyholders - New York",
+              "SUPPLEMENTAL SPOUSAL LIABILITY INSURANCE DECLINATION FORM",
+              "Safe Driver Insurance Plan",
+              "State Notice",
+              "Supplemental Spousal Liability Insurance Notice",
+              "TRANSPORTATION NETWORK COMPANY SERVICES",
+              "Third Party Designee Notice-Named Insureds who Are 65 Years of Age or Older",
+              "USE OF CREDIT NOTIFICATION"
             ]
           },
           "form_reference": {
             "$ref": "#/$defs/FieldValue"
           }
         }
-      }
+      },
+      "fideon:aliases": [
+        "Other Important Notices and Enclosures"
+      ]
     },
     "claim_reporting": {
       "type": "object",
@@ -1388,9 +1874,13 @@
         "claims_phone": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
+            "24 hour claim service",
             "CUSTOMER CARE",
+            "Claim",
             "Customer Service",
+            "For Claim Service Call",
             "Report a Claim",
+            "Service and Claims",
             "To Report a Claim"
           ]
         },
@@ -1425,8 +1915,18 @@
               "$ref": "#/$defs/FieldValue"
             }
           }
+        },
+        "roadside_assistance_phone": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Roadside assistance",
+            "TO GET ROADSIDE ASSISTANCE CALL TOLL FREE"
+          ]
         }
-      }
+      },
+      "fideon:aliases": [
+        "Contact Information"
+      ]
     },
     "signature": {
       "type": "object",
@@ -1457,6 +1957,32 @@
           "fideon:aliases": [
             "Countersignature Date"
           ]
+        },
+        "officer_signatories": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "$ref": "#/$defs/FieldValue"
+              },
+              "title": {
+                "$ref": "#/$defs/FieldValue"
+              }
+            }
+          }
+        },
+        "named_insured_signature": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Named Insured's signature"
+          ]
+        },
+        "designee_signature": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Designee's signature"
+          ]
         }
       }
     },
@@ -1469,16 +1995,29 @@
             "type": "object",
             "properties": {
               "vehicle_number": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "VEH",
+                  "Veh Num"
+                ]
               },
               "year": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Year"
+                ]
               },
               "make": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Make"
+                ]
               },
               "model": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Model"
+                ]
               },
               "body_type": {
                 "$ref": "#/$defs/FieldValue"
@@ -1487,12 +2026,21 @@
                 "$ref": "#/$defs/FieldValue",
                 "fideon:aliases": [
                   "Identification Number",
+                  "Identification Numbers",
                   "VEHICLENUMBER",
-                  "Vehicle ID Number"
+                  "VIN",
+                  "VIN NUMBER",
+                  "Vehicle ID Number",
+                  "Vehicle Identification Number"
                 ]
               },
               "vehicle_use": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Personal Use",
+                  "Primary use of the vehicle",
+                  "Use of Vehicle"
+                ]
               },
               "garaging_address": {
                 "type": "object",
@@ -1520,17 +2068,34 @@
                   }
                 },
                 "fideon:aliases": [
-                  "Garaging Zip Code"
+                  "Garaging Address Information",
+                  "Garaging Zip Code",
+                  "Location of Vehicle",
+                  "VEHICLE GARAGING INFORMATION (if different than mailing address)"
                 ]
               },
               "garaging_territory": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Rating Territory",
+                  "TERR",
+                  "Territory",
+                  "Vehicle Symbol / Rating Territory"
+                ]
               },
               "cost_new": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "ORIGINAL COST NEW",
+                  "Original Cost New"
+                ]
               },
               "stated_amount": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Agreed Value",
+                  "Guaranteed Value"
+                ]
               },
               "actual_cash_value": {
                 "$ref": "#/$defs/FieldValue"
@@ -1542,7 +2107,156 @@
                 "$ref": "#/$defs/FieldValue"
               },
               "symbol_or_class_code": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "SYM",
+                  "Vehicle Symbol",
+                  "Vehicle Symbol / Rating Territory"
+                ]
+              },
+              "class_code": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "CLASS",
+                  "Class Code"
+                ]
+              },
+              "purchase_date": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Purchase Date"
+                ]
+              },
+              "rating_tier": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Tier"
+                ]
+              },
+              "rating_band": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Band"
+                ]
+              },
+              "garaging_type": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Garaging"
+                ]
+              },
+              "vehicle_category": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Vehicle Type"
+                ]
+              },
+              "low_speed_vehicle_indicator": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "LOW SPEED VEHICLE",
+                  "Low Speed Vehicle"
+                ]
+              },
+              "principal_driver_name": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Principal Driver"
+                ]
+              },
+              "rated_driver_name": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "RATED DRIVER",
+                  "Rated Driver"
+                ]
+              },
+              "engine_displacement": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Engine displacement"
+                ]
+              },
+              "new_or_used_indicator": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "NEW/USED"
+                ]
+              },
+              "joint_ownership_indicator": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "JOINT OWNERSHIP"
+                ]
+              },
+              "license_plate_number": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "PLATE NUMBER"
+                ]
+              },
+              "miles_per_day": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "MILES PER DAY"
+                ]
+              },
+              "days_per_week_driven": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "DAYS PER WEEK"
+                ]
+              },
+              "exception_driver_name": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "EXCEPTION DRIVER"
+                ]
+              },
+              "registered_to_name": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "VEHICLE REGISTERED TO"
+                ]
+              },
+              "coverage_rating_symbols": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "coverage_type": {
+                      "$ref": "#/$defs/FieldValue"
+                    },
+                    "symbol": {
+                      "$ref": "#/$defs/FieldValue"
+                    }
+                  }
+                },
+                "fideon:aliases": [
+                  "BI SYMBOL",
+                  "COLL SYMBOL",
+                  "CSL SYMBOL",
+                  "OTC SYMBOL",
+                  "PD SYMBOL",
+                  "Symbol (Bodily Injury)",
+                  "Symbol (Collision)",
+                  "Symbol (Combined Single Limit)",
+                  "Symbol (Med Pay)",
+                  "Symbol (Other Than Collision)",
+                  "Symbol (PIP)",
+                  "Symbol (Property Damage)"
+                ]
+              },
+              "applicable_coverage_codes": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/FieldValue"
+                },
+                "fideon:aliases": [
+                  "Liab BI",
+                  "Liab PD",
+                  "Supp UM/UIM"
+                ]
               },
               "coverages": {
                 "type": "array",
@@ -1559,13 +2273,19 @@
                       "$ref": "#/$defs/FieldValue"
                     },
                     "form_reference": {
-                      "$ref": "#/$defs/FieldValue"
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "See Endorsement"
+                      ]
                     },
                     "applies_to": {
                       "$ref": "#/$defs/FieldValue"
                     },
                     "limit_amount": {
-                      "$ref": "#/$defs/FieldValue"
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "COVERAGE LIMIT"
+                      ]
                     },
                     "limit_basis": {
                       "$ref": "#/$defs/FieldValue"
@@ -1619,7 +2339,12 @@
                       "$ref": "#/$defs/FieldValue"
                     }
                   }
-                }
+                },
+                "fideon:aliases": [
+                  "Coverage Information for Vehicle",
+                  "Coverages, Limits of Liability and Premiums",
+                  "VEHICLE COVERAGES"
+                ]
               },
               "lienholder": {
                 "type": "object",
@@ -1670,14 +2395,48 @@
                   },
                   "description_of_interest": {
                     "$ref": "#/$defs/FieldValue"
+                  },
+                  "status": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "STATUS"
+                    ]
+                  },
+                  "form_reference": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "FORM"
+                    ]
                   }
-                }
+                },
+                "fideon:aliases": [
+                  "Lienholder Information",
+                  "Lienholder/Lease Company",
+                  "Lienholder/Loss Payees Information"
+                ]
               },
               "premium": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "PREM",
+                  "Premium by Vehicle",
+                  "TOTAL VEHICLE PREMIUM"
+                ]
               }
             }
-          }
+          },
+          "fideon:aliases": [
+            "ADDITIONAL VEHICLE INFORMATION",
+            "Covered Vehicle Description",
+            "Driver and Vehicle Details",
+            "VEHICLE DESCRIPTION INFORMATION",
+            "VEHICLE USAGE INFORMATION",
+            "Vehicle",
+            "Vehicle Information",
+            "Vehicle Summary",
+            "Vehicle(s) We Cover",
+            "Your Vehicles"
+          ]
         },
         "drivers": {
           "type": "array",
@@ -1685,43 +2444,151 @@
             "type": "object",
             "properties": {
               "driver_number": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "DRV"
+                ]
               },
               "name": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Driver Name"
+                ]
               },
               "date_of_birth": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "BIRTH",
+                  "DOB",
+                  "Date of Birth"
+                ]
               },
               "age": {
                 "$ref": "#/$defs/FieldValue"
               },
               "gender": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Sex"
+                ]
               },
               "marital_status": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "MAR",
+                  "MARITAL",
+                  "Marital Status"
+                ]
               },
               "license_number": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "License Number"
+                ]
               },
               "license_state": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "License State"
+                ]
               },
               "date_licensed": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Date First Licensed",
+                  "ISSUE DATE"
+                ]
               },
               "relationship_to_insured": {
                 "$ref": "#/$defs/FieldValue"
               },
               "driver_status": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Driver Type",
+                  "Status"
+                ]
+              },
+              "operator_type": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "PRIN/OCCASIONAL",
+                  "PRIN/OCCASIONAL OPERATOR",
+                  "Principal/Occasional Operator"
+                ]
+              },
+              "occupation": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "OCCUPATION",
+                  "Occupation"
+                ]
+              },
+              "license_status": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "License Status"
+                ]
+              },
+              "years_driving_experience": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "years driving experience"
+                ]
+              },
+              "driver_class_description": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Driver Class"
+                ]
+              },
+              "is_named_insured": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Additional Information: Named insured"
+                ]
+              },
+              "ssn": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "SSN"
+                ]
+              },
+              "education_level": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "EDUCATION LEVEL"
+                ]
+              },
+              "non_rated_explanation": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "NON RATED EXPLANATION"
+                ]
+              },
+              "employment_status": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "EMPLOYMENT STATUS"
+                ]
+              },
+              "business_on_premises_indicator": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "BUSINESS ON PREMISES"
+                ]
               },
               "assigned_vehicle_number": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "VEH"
+                ]
               },
               "excluded_driver": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Excluded Person(s)"
+                ]
               },
               "violations_and_accidents": {
                 "type": "array",
@@ -1729,16 +2596,47 @@
                   "type": "object",
                   "properties": {
                     "date": {
-                      "$ref": "#/$defs/FieldValue"
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Incident Date"
+                      ]
                     },
                     "description": {
                       "$ref": "#/$defs/FieldValue"
                     },
                     "points": {
                       "$ref": "#/$defs/FieldValue"
+                    },
+                    "applies_to": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Applies To"
+                      ]
+                    },
+                    "occurrence_count": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "OCCUR"
+                      ]
+                    },
+                    "report_source": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "REPORT"
+                      ]
+                    },
+                    "dispute_indicator": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "DISPUTE INDICATOR"
+                      ]
                     }
                   }
-                }
+                },
+                "fideon:aliases": [
+                  "Accident(s) and Violation(s)",
+                  "VIOLATIONS"
+                ]
               },
               "driver_discounts": {
                 "type": "array",
@@ -1747,19 +2645,39 @@
                 }
               }
             }
-          }
+          },
+          "fideon:aliases": [
+            "ADDITIONAL DRIVER AND HOUSEHOLD MEMBER INFORMATION",
+            "DRIVER AND HOUSEHOLD MEMBER INFORMATION",
+            "Driver Information",
+            "Driver Summary",
+            "Drivers",
+            "Drivers and household residents",
+            "Operator(s) and Household Member(s)"
+          ]
         },
         "liability_coverages": {
           "type": "object",
           "properties": {
             "bodily_injury_per_person_limit": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Bodily Injury - Each Person",
+                "Bodily Injury Liability"
+              ]
             },
             "bodily_injury_per_accident_limit": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Bodily Injury Liability"
+              ]
             },
             "property_damage_limit": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Property Damage - Each Accident",
+                "Property Damage Liability"
+              ]
             },
             "combined_single_limit": {
               "$ref": "#/$defs/FieldValue"
@@ -1767,25 +2685,40 @@
             "medical_payments_limit": {
               "$ref": "#/$defs/FieldValue",
               "fideon:aliases": [
+                "Med Payments",
+                "Medical Expense Limit",
                 "Medical Payments",
                 "Medical Payments Limit",
                 "Medical Payments Limit (any one person)"
               ]
             },
             "uninsured_motorist_bodily_injury_limit": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Uninsured/Underinsured Motorists"
+              ]
             },
             "underinsured_motorist_bodily_injury_limit": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Uninsured/Underinsured Motorists"
+              ]
             },
             "uninsured_motorist_property_damage_limit": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Uninsured Motorists Property Damage"
+              ]
             },
             "uninsured_motorist_deductible": {
               "$ref": "#/$defs/FieldValue"
             },
             "personal_injury_protection_limit": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "PIP",
+                "Personal Injury Protection"
+              ]
             },
             "personal_injury_protection_options": {
               "type": "array",
@@ -1794,7 +2727,15 @@
               }
             },
             "supplementary_uninsured_underinsured_limit": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "SUM",
+                "Supplementary Uninsured/Underinsured Motorist",
+                "Supplementary Uninsured/Underinsured Motorist (SUM)",
+                "Supplementary Uninsured/Underinsured Motorists",
+                "Supplementary Uninsured/Underinsured Motorists (SUM)",
+                "UM/SUM"
+              ]
             },
             "no_fault_benefits_description": {
               "$ref": "#/$defs/FieldValue"
@@ -1802,10 +2743,29 @@
             "bodily_injury_split_limits": {
               "$ref": "#/$defs/FieldValue",
               "fideon:aliases": [
-                "BODILY INJURY SPLIT LIMITS"
+                "BODILY INJURY SPLIT LIMITS",
+                "STAT/SUM"
+              ]
+            },
+            "supplemental_spousal_liability": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Including Supplemental Spousal Liability",
+                "SUPP SPOUSAL LIAB",
+                "Supplemental Spousal BI",
+                "Supplemental Spousal Liability",
+                "Supplemental Spousal Liability Included",
+                "Without Supplemental Spousal Liability"
               ]
             }
-          }
+          },
+          "fideon:aliases": [
+            "Coverage Details",
+            "Coverage Summary",
+            "Liability",
+            "Liability To Others",
+            "Policy Coverages"
+          ]
         },
         "no_fault_benefits": {
           "type": "object",
@@ -1816,8 +2776,21 @@
             "no_fault_state": {
               "$ref": "#/$defs/FieldValue"
             },
+            "tort_threshold_type": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "No Threshold",
+                "Personal Injury Protection - Verbal Threshold",
+                "Verbal Threshold"
+              ]
+            },
             "mandatory_pip_limit": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Mandatory PIP",
+                "Mandatory Personal Injury Protection",
+                "Medical Expense Benefits"
+              ]
             },
             "mandatory_pedestrian_pip_limit": {
               "$ref": "#/$defs/FieldValue",
@@ -1828,21 +2801,46 @@
             "additional_pip_limit": {
               "$ref": "#/$defs/FieldValue",
               "fideon:aliases": [
+                "APIP",
+                "Added PIP",
+                "Added Personal Injury Protection Benefits",
                 "Additional PIP",
+                "Additional Personal Injury Protection",
+                "Additional Personal Injury Protection - Full",
+                "BROADENED ADDITIONAL PIP",
+                "Extended Medical Expenses",
                 "Increased PIP"
               ]
             },
             "basic_economic_loss_limit": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Mandatory Basic Economic Loss"
+              ]
             },
             "optional_basic_economic_loss_limit": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "OBEL",
+                "Optional Basic Economic Loss",
+                "Optional Basic Economical Loss"
+              ]
             },
             "aggregate_no_fault_benefits_available": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Aggregate No Fault Benefits Available",
+                "Aggregate PIP Benefits",
+                "Aggregate Pedestrian No-Fault Benefits",
+                "Total Aggregate PIP",
+                "Total No-Fault Benefits Available"
+              ]
             },
             "maximum_monthly_work_loss": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Maximum Monthly Work Loss"
+              ]
             },
             "additional_monthly_work_loss": {
               "$ref": "#/$defs/FieldValue"
@@ -1851,7 +2849,10 @@
               "$ref": "#/$defs/FieldValue"
             },
             "death_benefit": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Death Benefit"
+              ]
             },
             "additional_death_benefits": {
               "$ref": "#/$defs/FieldValue"
@@ -1860,7 +2861,11 @@
               "$ref": "#/$defs/FieldValue"
             },
             "other_necessary_expenses_per_day": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Other Necessary Expenses (per day)",
+                "Other Reasonable & Necessary Expenses (per day)"
+              ]
             },
             "additional_other_necessary_expenses": {
               "$ref": "#/$defs/FieldValue"
@@ -1872,7 +2877,10 @@
               "$ref": "#/$defs/FieldValue"
             },
             "no_fault_deductible": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "PIP DEDUCTIBLE"
+              ]
             },
             "applies_to_named_insured_only": {
               "$ref": "#/$defs/FieldValue"
@@ -1882,6 +2890,13 @@
               "items": {
                 "$ref": "#/$defs/FieldValue"
               }
+            },
+            "out_of_state_pip_limit": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "OUT OF STATE PERSONAL INJURY PROTECTION (PIP)",
+                "OUT OF STATE PIP"
+              ]
             }
           }
         },
@@ -1891,22 +2906,34 @@
             "comprehensive_deductible": {
               "$ref": "#/$defs/FieldValue",
               "fideon:aliases": [
+                "Comprehensive",
                 "OTHER THAN COLL",
                 "Other Than Collision",
                 "Other Than Collision Loss"
               ]
             },
             "collision_deductible": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Collision Loss"
+              ]
             },
             "full_glass_coverage": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Comprehensive - Full Glass",
+                "Comprehensive Window Glass",
+                "FULL COVERAGE WINDOW GLASS"
+              ]
             },
             "towing_and_labor_limit": {
               "$ref": "#/$defs/FieldValue"
             },
             "rental_reimbursement_limit": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Rental Reimbursement"
+              ]
             },
             "rental_reimbursement_daily_maximum": {
               "$ref": "#/$defs/FieldValue"
@@ -1918,7 +2945,11 @@
               "$ref": "#/$defs/FieldValue"
             },
             "custom_equipment_limit": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Accessory Coverage",
+                "CUSTOMIZING"
+              ]
             },
             "substitute_transportation_limit": {
               "$ref": "#/$defs/FieldValue"
@@ -1926,6 +2957,8 @@
             "transportation_expenses_limit": {
               "$ref": "#/$defs/FieldValue",
               "fideon:aliases": [
+                "Extended Transportation Expenses",
+                "OPTIONAL LIMITS TRANSPORTATION EXPENSES COVERAGE",
                 "TRANSPORTATION EXP",
                 "TRAVEL - TRANSPORTATION EXPENSES (FAMILY PLUS)"
               ]
@@ -1938,7 +2971,10 @@
               ]
             },
             "roadside_assistance_limit": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Roadside Assistance Coverage"
+              ]
             },
             "other_than_collision_deductible": {
               "$ref": "#/$defs/FieldValue"
@@ -1950,9 +2986,88 @@
               ]
             },
             "full_glass_deductible": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Glass Deductible"
+              ]
+            },
+            "comprehensive_premium": {
               "$ref": "#/$defs/FieldValue"
+            },
+            "collision_premium": {
+              "$ref": "#/$defs/FieldValue"
+            },
+            "valuation_basis": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Actual Cash Value"
+              ]
+            },
+            "spare_parts_limit": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Spare Parts"
+              ]
+            },
+            "pet_injury_coverage_limit": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "PET INJURY COVERAGE"
+              ]
+            },
+            "personal_articles_coverage_limit": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "PERSONAL ARTICLES",
+                "PERSONAL ARTICLES COVERAGE"
+              ]
+            },
+            "excess_equipment_limit": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "EXCESS EQUIPMENT"
+              ]
+            },
+            "media_equipment_limit": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "TAPES/DISCS & MEDIA"
+              ]
+            },
+            "excess_sound_equipment_limit": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "EXCESS SOUND"
+              ]
+            },
+            "audio_visual_equipment_limit": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "AUDIO/VISUAL"
+              ]
+            },
+            "new_car_replacement_indicator": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "NEW CAR REPLACEMENT"
+              ]
+            },
+            "oem_parts_indicator": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "OEM PARTS"
+              ]
+            },
+            "extended_non_owned_indicator": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "EXTENDED NON-OWNED"
+              ]
             }
-          }
+          },
+          "fideon:aliases": [
+            "Coverage for Damage to your Auto(s)"
+          ]
         },
         "attached_trailer_or_coupler": {
           "type": "object",
@@ -1981,7 +3096,10 @@
             "trailer_description": {
               "$ref": "#/$defs/FieldValue"
             }
-          }
+          },
+          "fideon:aliases": [
+            "COUPLER INFO"
+          ]
         },
         "additional_coverages": {
           "type": "array",
@@ -2004,7 +3122,11 @@
                 "$ref": "#/$defs/FieldValue"
               },
               "limit_amount": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Item Limit",
+                  "Total Amount of Insurance"
+                ]
               },
               "limit_basis": {
                 "$ref": "#/$defs/FieldValue"
@@ -2058,7 +3180,12 @@
                 "$ref": "#/$defs/FieldValue"
               }
             }
-          }
+          },
+          "fideon:aliases": [
+            "Additional Policy Benefits",
+            "Coverage Enhancements",
+            "Optional Coverages"
+          ]
         },
         "discounts": {
           "type": "array",
@@ -2068,18 +3195,73 @@
               "discount_name": {
                 "$ref": "#/$defs/FieldValue",
                 "fideon:aliases": [
+                  "5 Year Claims Free Discount",
+                  "5 Year Claims-Free Discount",
                   "ABS Discount",
+                  "ACCIDENT FREE CREDIT",
+                  "ACCOUNT DISCOUNT",
                   "ANTI-LOCK BRAKES",
+                  "ANTI-THEFT",
                   "ANTI-THEFT DEVICE",
+                  "AWAY AT SCHOOL",
+                  "Accident Prevention Course Credit",
                   "Accident Prevention Course Discount",
+                  "Affinity Group Discount",
+                  "Anti Lock Brake",
+                  "Anti Theft",
+                  "Anti-Lock Brakes and/or Daytime Running Lights",
+                  "Anti-Lock Brakes/Passive Restraint",
                   "Anti-Lock Braking System (ABS) Discount",
+                  "Anti-Theft Discount",
+                  "Away at School Discount",
+                  "CLAIMS FREE DISCOUNT",
+                  "CONTINUOUS INSURANCE CREDIT",
+                  "COUPLER (COMBO)",
                   "CUSTOMIZING",
+                  "Claim Experience Discount",
+                  "Claim Free Renewal",
+                  "Companion Home Discount",
+                  "Companion Package: Home Discount",
+                  "Continuous Insurance: Diamond",
                   "DAYTIME RUNNING LAMPS",
+                  "DRIVER TRAINING",
+                  "Daytime Running Lamps",
+                  "Daytime Running Lights",
+                  "Daytime Running Lights Discount",
+                  "Discount if paid in full",
+                  "Discount/Credit",
+                  "Driving Training Discount",
+                  "EFT Discount",
+                  "ELECTRONIC FUND TRANSFER",
+                  "EMPLOYEE DISCOUNT",
+                  "EXCESS VEHICLE CREDIT",
+                  "Five-Year Accident Free",
+                  "GOOD STUDENT DISCOUNT",
+                  "Good Student Discount",
                   "HOME OWNERSHIP",
+                  "HYBRID VEHICLE DISCOUNT",
+                  "Home Owner",
+                  "INCONTROL",
+                  "INJURY PROTECTION DISCOUNT",
+                  "LOW MILEAGE DISCOUNT",
                   "Multi-Car Discount",
+                  "Multi-Policy",
+                  "Multi-Policy/Affiliate",
                   "Multi-Vehicle Discount",
+                  "Multiple Cars",
                   "NEW CAR DISCOUNT",
-                  "PASSIVE RESTRAINT"
+                  "NO-FAULT WORK LOSS REDUCTION",
+                  "New Driver Family Discount",
+                  "PAID IN FULL DISCOUNT",
+                  "PASSIVE RESTRAINT",
+                  "Paid in Full Discount",
+                  "Passive Restraint",
+                  "Pay in Full Discount",
+                  "SENIOR DISCOUNT",
+                  "Three-Year Safe Driver",
+                  "VALUABLES CREDIT",
+                  "eDocument Discount",
+                  "eSignature"
                 ]
               },
               "applies_to": {
@@ -2092,7 +3274,17 @@
                 "$ref": "#/$defs/FieldValue"
               }
             }
-          }
+          },
+          "fideon:aliases": [
+            "DISCOUNTS AND SURCHARGES",
+            "Discount Information",
+            "Discount(s) and Credit(s)",
+            "Discounts Applied Details",
+            "Discounts Included in Your Premium",
+            "Policy Discounts/Credits, Surcharges, Other",
+            "VEHICLE DISCOUNTS",
+            "Your policy discounts"
+          ]
         },
         "household": {
           "type": "object",
@@ -2127,9 +3319,21 @@
               "$ref": "#/$defs/FieldValue"
             },
             "residence_ownership": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "HOMEOWNERSHIP"
+              ]
+            },
+            "unlicensed_household_members_under_19_count": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "UNLICENSED HOUSEHOLD MEMBERS < 19"
+              ]
             }
-          }
+          },
+          "fideon:aliases": [
+            "Additional Household Members"
+          ]
         },
         "travel_package": {
           "type": "object",
@@ -2158,6 +3362,26 @@
               "$ref": "#/$defs/FieldValue"
             }
           }
+        },
+        "accident_forgiveness_status": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Accident Forgiveness"
+          ]
+        },
+        "loyalty_rewards": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "reward_name": {
+                "$ref": "#/$defs/FieldValue"
+              }
+            }
+          },
+          "fideon:aliases": [
+            "Your loyalty rewards"
+          ]
         }
       }
     }
@@ -2184,7 +3408,8 @@
             "string",
             "number",
             "null"
-          ]
+          ],
+          "description": "The value in its standard form: a number for money and counts, a two-letter code for a state, and MM/DD/YYYY for every date (see fideon:parsed_formats)."
         },
         "confidence": {
           "type": "object",

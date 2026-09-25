@@ -189,7 +189,7 @@ def test_unknown_profile_lists_the_real_ones():
 @pytest.fixture(scope="module")
 def built(tmp_path_factory):
     out = tmp_path_factory.mktemp("corpus")
-    corpus = Corpus(LeatherstockingDwellingFire(), out)
+    corpus = Corpus(LeatherstockingDwellingFire(), out, scanned=True)
     return corpus, corpus.build(count=2)
 
 

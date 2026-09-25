@@ -3,16 +3,16 @@
   "title": "Ocean Marine / Watercraft policy",
   "fideon:doc_type": "policy_check",
   "fideon:lob": "ocean_marine",
-  "fideon:note": "Generated from the supplied Watercraft schema v3.0.0 by scripts/build_canonical_policy_schemas.py, filed under `ocean_marine`. config/lob_registry.yaml decides that boats, watercraft and yachts ARE this line and that a second code would be another name for it. The previous hand-written file pointed five different sections at one 21-field `Item` definition, so it asserted that an operator and a form each have a hull material and a top speed. Do not hand-edit; edit the source and regenerate. Extended by scripts/canonical_schema_extensions.py with fields the supplied skeleton did not carry; re-run it after any regeneration.",
+  "fideon:note": "Generated from the supplied Watercraft schema v3.0.0 by scripts/build_canonical_policy_schemas.py, filed under `ocean_marine`. config/lob_registry.yaml decides that boats, watercraft and yachts ARE this line and that a second code would be another name for it. The previous hand-written file pointed five different sections at one 21-field `Item` definition, so it asserted that an operator and a form each have a hull material and a top speed. Do not hand-edit; edit the source and regenerate. Extended by scripts/canonical_schema_extensions.py with fields the supplied skeleton did not carry; re-run it after any regeneration. Hand-extended 2026-09-24 with fields and aliases seen in the Markel watercraft declarations and HawkSoft policy-history PDFs (scripts/ is not in this repo); carry these over if the file is regenerated. Hand-extended again 2026-09-24 with registration_number, operator years_of_experience/license_type/association_membership, premium paid_in_full_premium/total_discounts and billing remittance_address/phone, seen in the Progressive and Travelers boat PDFs; carry these over too. Hand-extended a third time 2026-09-24 after checking all six ocean_marine PDFs: billing payable_to/payment_options, navigation seasonal_restrictions, loss_history_none_reported, operators no_violations_reported, moorage_season, contact phone_type, document source_url/print_time, and aliases for labels those PDFs print; carry these over too. Aliases added 2026-09-24 for every remaining heading and label the six ocean_marine PDFs print. Aliases and the renewal_offer expiring_policy_expiration_date field added 2026-09-24 after auditing the six ocean_marine samples against their gold; \"Clients\" moved from contact.contact_name to additional_named_insureds; carry these over too. Fields watercraft[].personal_effects_limit, policy.policy_period_location_basis, document.print_code and billing.payment_coupon_scan_line added 2026-09-24, the last printed items of the six ocean_marine PDFs without a field; carry these over too. text_sections (with $defs.TextSection, as in dwelling_fire.json), policy.product_code and billing.billing_note added 2026-09-24 so the printed prose and the last unkeyed values of the six ocean_marine PDFs have a home; carry these over too.",
   "fideon:source": {
     "schema_id": "fideon.canonical.watercraft",
     "version": "3.0.0",
     "line_of_business_as_supplied": "Watercraft",
     "line_specific_block": "watercraft",
-    "field_count": 718,
+    "field_count": 760,
     "corpus_document_count": 4,
     "corpus_carrier_count": null,
-    "aliased_fields": 83,
+    "aliased_fields": 166,
     "filed_under_lob": "ocean_marine",
     "extensions_applied": "scripts/canonical_schema_extensions.py"
   },
@@ -25,6 +25,19 @@
     "date_ordering": [
       "policy.effective_date <= policy.expiration_date"
     ]
+  },
+  "fideon:parsed_formats": {
+    "date": {
+      "format": "MM/DD/YYYY",
+      "strftime": "%m/%d/%Y",
+      "pattern": "^(0[1-9]|1[0-2])/(0[1-9]|[12][0-9]|3[01])/[0-9]{4}$",
+      "example": "05/06/2026",
+      "applies_to": "(^|_)dated?(_|$)",
+      "exceptions": [
+        "edition_date"
+      ],
+      "note": "US insurance documents print dates month/day/year, so every date's parsed value is MM/DD/YYYY: two-digit month and day, four-digit year, whatever the page prints (5/6/26, May 6, 2026 and 2026-05-06 are all parsed as 05/06/2026). raw stays exactly as printed. applies_to matches field names such as effective_date, date_of_birth and replaces_prior_declaration_dated. A form edition_date (\"04/07\") has no day and keeps its printed form. A value that is not a calendar date (\"Full Prior Acts\", \"None\") has parsed null. Compare dates as dates, not strings: as text, 12/31/2025 sorts after 01/01/2026 - this includes the date_ordering audit rules."
+    }
   },
   "type": "object",
   "required": [
@@ -41,6 +54,13 @@
         },
         "document_title_as_stated": {
           "$ref": "#/$defs/FieldValue"
+        },
+        "form_number": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Declarations Form Number",
+            "Dec Page Form Number"
+          ]
         },
         "line_of_business_as_stated": {
           "$ref": "#/$defs/FieldValue"
@@ -74,14 +94,31 @@
           "fideon:aliases": [
             "Amended Date",
             "Modifies Coverage(s) at Renewal",
-            "Reason(s) for Modification"
+            "Reason(s) for Modification",
+            "Reason For Change"
+          ]
+        },
+        "transaction_date": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Transaction Date",
+            "Trans Date"
           ]
         },
         "transaction_effective_date": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Transaction Effective Date",
+            "Change Effective",
+            "Policy changes effective"
+          ]
         },
         "issue_date": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Issued On Date",
+            "Issued on"
+          ]
         },
         "print_date": {
           "$ref": "#/$defs/FieldValue",
@@ -93,6 +130,15 @@
             "Printed On",
             "Process Date",
             "PROCESSING DATE"
+          ]
+        },
+        "print_time": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Print Time",
+            "Printed At",
+            "Time Printed",
+            "Printed"
           ]
         },
         "page_count": {
@@ -110,6 +156,14 @@
         "source_system": {
           "$ref": "#/$defs/FieldValue"
         },
+        "source_url": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "URL",
+            "Link",
+            "Source URL"
+          ]
+        },
         "copy_type": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
@@ -117,7 +171,9 @@
             "Company Copy",
             "File Copy",
             "Insured Copy",
-            "Office Copy"
+            "Office Copy",
+            "Producer Copy",
+            "Agency Copy"
           ]
         },
         "batch_number": {
@@ -135,6 +191,13 @@
             "Summary of Changes",
             "Summary of Your Changes"
           ]
+        },
+        "print_code": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Print Code",
+            "Form Print Code"
+          ]
         }
       }
     },
@@ -145,7 +208,12 @@
           "$ref": "#/$defs/FieldValue"
         },
         "writing_company_name": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Underwritten by",
+            "Your Insurer",
+            "Insurer"
+          ]
         },
         "group_name": {
           "$ref": "#/$defs/FieldValue"
@@ -203,7 +271,12 @@
               "$ref": "#/$defs/FieldValue"
             },
             "website": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Online Service",
+                "Log in at",
+                "Online at"
+              ]
             }
           }
         },
@@ -247,7 +320,9 @@
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "Agency Code",
-            "Agent"
+            "Agent",
+            "Agency ID",
+            "Agency Number"
           ]
         },
         "producer_contact_name": {
@@ -304,7 +379,11 @@
               "$ref": "#/$defs/FieldValue"
             },
             "website": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Website",
+                "Web Site"
+              ]
             }
           }
         },
@@ -338,7 +417,11 @@
         "account_id": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
-            "Account ID"
+            "Account ID",
+            "Customer Ref#",
+            "Customer Ref",
+            "Customer Reference",
+            "Your Account Number"
           ]
         },
         "certificate_number": {
@@ -374,7 +457,10 @@
           "$ref": "#/$defs/FieldValue"
         },
         "policy_type": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Policy Type"
+          ]
         },
         "effective_date": {
           "$ref": "#/$defs/FieldValue",
@@ -399,13 +485,23 @@
           ]
         },
         "effective_time": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "12:01 A.M. Standard Time"
+          ]
         },
         "time_zone": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Standard Time"
+          ]
         },
         "policy_term_months": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Term",
+            "Policy Term"
+          ]
         },
         "anniversary_date": {
           "$ref": "#/$defs/FieldValue"
@@ -465,6 +561,21 @@
             "Insured Since",
             "Policyholder Since"
           ]
+        },
+        "policy_period_location_basis": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "At the residence premises",
+            "At the address of the named insured",
+            "Policy period location basis"
+          ]
+        },
+        "product_code": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Product Code",
+            "Use product code"
+          ]
         }
       }
     },
@@ -479,7 +590,12 @@
           ]
         },
         "doing_business_as": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Doing Business As",
+            "DBA",
+            "d/b/a"
+          ]
         },
         "entity_type": {
           "$ref": "#/$defs/FieldValue"
@@ -561,14 +677,34 @@
                 "Work"
               ]
             },
+            "phone_type": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Cell Phone",
+                "Home Phone",
+                "Work Phone",
+                "Phone Type",
+                "Mobile Phone"
+              ]
+            },
             "fax": {
               "$ref": "#/$defs/FieldValue"
             },
             "email": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Email Address",
+                "Information"
+              ]
             },
             "website": {
               "$ref": "#/$defs/FieldValue"
+            },
+            "contact_name": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Contact Name"
+              ]
             }
           }
         },
@@ -640,7 +776,11 @@
                 }
               }
             }
-          }
+          },
+          "fideon:aliases": [
+            "Clients",
+            "Client"
+          ]
         }
       },
       "fideon:aliases": [
@@ -656,7 +796,11 @@
         "type": "object",
         "properties": {
           "location_number": {
-            "$ref": "#/$defs/FieldValue"
+            "$ref": "#/$defs/FieldValue",
+            "fideon:aliases": [
+              "Location #",
+              "Location"
+            ]
           },
           "building_number": {
             "$ref": "#/$defs/FieldValue"
@@ -692,6 +836,12 @@
                 ]
               }
             }
+          },
+          "legal_description": {
+            "$ref": "#/$defs/FieldValue",
+            "fideon:aliases": [
+              "Legal Description"
+            ]
           },
           "occupancy_description": {
             "$ref": "#/$defs/FieldValue"
@@ -911,7 +1061,11 @@
             ]
           }
         }
-      }
+      },
+      "fideon:aliases": [
+        "Loss Payee",
+        "Additional Insured"
+      ]
     },
     "premium": {
       "type": "object",
@@ -920,14 +1074,26 @@
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "Policy Total Premium",
-            "Total Policy Premium"
+            "Total Policy Premium",
+            "Total 12 month policy premium",
+            "Total Premium for this Policy"
+          ]
+        },
+        "paid_in_full_premium": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Total 12 month policy premium if paid in full",
+            "Pay in Full",
+            "Paid in Full Premium",
+            "Total policy premium if paid in full"
           ]
         },
         "basic_premium": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "Basic Premium",
-            "Premium At Inception"
+            "Premium At Inception",
+            "Unit Premium"
           ]
         },
         "estimated_annual_premium": {
@@ -984,6 +1150,15 @@
             }
           }
         },
+        "total_taxes_and_fees": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Policy Taxes/Fees",
+            "Taxes/Fees",
+            "Taxes and Fees",
+            "Total Taxes and Fees"
+          ]
+        },
         "surcharges": {
           "type": "array",
           "items": {
@@ -1034,10 +1209,26 @@
                 "$ref": "#/$defs/FieldValue"
               },
               "is_applied": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Discounts Applied"
+                ]
               }
             }
-          }
+          },
+          "fideon:aliases": [
+            "Premium discounts",
+            "Discount if paid in full",
+            "Discounts"
+          ]
+        },
+        "total_discounts": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Total Savings",
+            "Savings Reflected in Your Total Premium",
+            "Total Discounts"
+          ]
         },
         "surplus_lines_tax": {
           "$ref": "#/$defs/FieldValue"
@@ -1112,7 +1303,8 @@
           "fideon:aliases": [
             "Endorsement Premium",
             "Forms/Endorsements Premium",
-            "Total Endorsement Premium"
+            "Total Endorsement Premium",
+            "Endorsment Premium"
           ]
         }
       },
@@ -1180,7 +1372,8 @@
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "Pay Plan",
-            "Your Policy Pay Plan is"
+            "Your Policy Pay Plan is",
+            "Payment Plan"
           ]
         },
         "payment_method": {
@@ -1207,7 +1400,11 @@
           "$ref": "#/$defs/FieldValue"
         },
         "due_date": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Due By",
+            "What's Due & When"
+          ]
         },
         "installments": {
           "type": "array",
@@ -1229,7 +1426,125 @@
             }
           },
           "fideon:aliases": [
-            "Pay initial installment"
+            "Pay initial installment",
+            "Your Payment Schedule",
+            "Renewal Payment Schedule",
+            "Payment Schedule"
+          ]
+        },
+        "remittance_address": {
+          "type": "object",
+          "properties": {
+            "line_1": {
+              "$ref": "#/$defs/FieldValue"
+            },
+            "line_2": {
+              "$ref": "#/$defs/FieldValue"
+            },
+            "city": {
+              "$ref": "#/$defs/FieldValue"
+            },
+            "state": {
+              "$ref": "#/$defs/FieldValue"
+            },
+            "postal_code": {
+              "$ref": "#/$defs/FieldValue"
+            }
+          },
+          "fideon:aliases": [
+            "Payment Coupon",
+            "Remit To",
+            "Mail Payment To"
+          ]
+        },
+        "payable_to": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Make check payable to",
+            "Payable To",
+            "Make Checks Payable To"
+          ]
+        },
+        "payment_options": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "plan_name": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Pay in Installments",
+                  "Pay in Full",
+                  "Payment Option"
+                ]
+              },
+              "total_cost": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Total Cost"
+                ]
+              },
+              "savings": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Includes savings of",
+                  "Savings"
+                ]
+              },
+              "down_payment": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Pay initial installment",
+                  "Initial Installment",
+                  "Down Payment"
+                ]
+              },
+              "installment_amount": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Installment Amount"
+                ]
+              },
+              "number_of_installments": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Number of Installments"
+                ]
+              },
+              "installment_fee": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Installment Fee"
+                ]
+              }
+            }
+          },
+          "fideon:aliases": [
+            "Choose a Payment Option",
+            "Payment Options"
+          ]
+        },
+        "phone": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "For Billing Questions",
+            "Billing Phone",
+            "Call us at",
+            "By calling",
+            "Automatic Payments"
+          ]
+        },
+        "payment_coupon_scan_line": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Scan Line",
+            "Payment Coupon Scan Line"
+          ]
+        },
+        "billing_note": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "This is not a bill"
           ]
         }
       }
@@ -1297,7 +1612,8 @@
         "SCHEDULE OF ADDITIONAL ENDORSEMENTS",
         "Service of Suit Endorsement",
         "Vehicle Under Construction Endorsement",
-        "attached at time of issue"
+        "attached at time of issue",
+        "Forms and Endorsements"
       ]
     },
     "deductibles": {
@@ -1359,7 +1675,20 @@
             "$ref": "#/$defs/FieldValue"
           }
         }
-      }
+      },
+      "fideon:aliases": [
+        "Violations or Losses",
+        "Watercraft losses",
+        "Losses"
+      ]
+    },
+    "loss_history_none_reported": {
+      "$ref": "#/$defs/FieldValue",
+      "fideon:aliases": [
+        "Watercraft losses for operator(s) within the last 5 years: None",
+        "Losses: None",
+        "No Losses"
+      ]
     },
     "state_notices": {
       "type": "array",
@@ -1406,7 +1735,9 @@
             "CUSTOMER CARE",
             "Customer Service",
             "Report a Claim",
-            "To Report a Claim"
+            "To Report a Claim",
+            "For Claim Service",
+            "To report a claim"
           ]
         },
         "claims_email": {
@@ -1459,6 +1790,16 @@
         "signature_date": {
           "$ref": "#/$defs/FieldValue"
         },
+        "signature_location": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Signed at",
+            "Signed On At"
+          ]
+        },
+        "signature_present": {
+          "$ref": "#/$defs/FieldValue"
+        },
         "countersignature_state": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
@@ -1486,11 +1827,24 @@
               "unit_number": {
                 "$ref": "#/$defs/FieldValue"
               },
+              "unit_description": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Unit Description"
+                ]
+              },
               "year": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Year"
+                ]
               },
               "make": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Make/Model",
+                  "Make"
+                ]
               },
               "model": {
                 "$ref": "#/$defs/FieldValue"
@@ -1499,7 +1853,24 @@
                 "$ref": "#/$defs/FieldValue"
               },
               "hull_identification_number": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "HIN",
+                  "Hull ID",
+                  "Hull ID Number",
+                  "Hull Identification Number",
+                  "Hull ID #",
+                  "Hull Identification #"
+                ]
+              },
+              "registration_number": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Registration number",
+                  "Registration #",
+                  "Registration No",
+                  "State Registration Number"
+                ]
               },
               "length": {
                 "$ref": "#/$defs/FieldValue"
@@ -1511,10 +1882,17 @@
                 "$ref": "#/$defs/FieldValue"
               },
               "propulsion_type": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Propulsion type"
+                ]
               },
               "number_of_motors": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Number of Engines",
+                  "Number of motors"
+                ]
               },
               "total_horsepower": {
                 "$ref": "#/$defs/FieldValue"
@@ -1543,10 +1921,19 @@
                       "$ref": "#/$defs/FieldValue"
                     },
                     "motor_type": {
-                      "$ref": "#/$defs/FieldValue"
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Engine Type"
+                      ]
                     }
                   }
-                }
+                },
+                "fideon:aliases": [
+                  "Outboard",
+                  "Outboard #1",
+                  "Motor",
+                  "Engine"
+                ]
               },
               "trailer": {
                 "type": "object",
@@ -1572,9 +1959,17 @@
                     "$ref": "#/$defs/FieldValue"
                   },
                   "physical_damage_deductible": {
-                    "$ref": "#/$defs/FieldValue"
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "Trailer Deductible"
+                    ]
                   }
-                }
+                },
+                "fideon:aliases": [
+                  "Trailer information",
+                  "Trailer Details",
+                  "Trailer"
+                ]
               },
               "purchase_date": {
                 "$ref": "#/$defs/FieldValue"
@@ -1583,7 +1978,12 @@
                 "$ref": "#/$defs/FieldValue"
               },
               "agreed_value": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Agreed Value",
+                  "Watercraft & Equipment, Agreed Value",
+                  "Watercraft and Auxiliary Equipment Value"
+                ]
               },
               "actual_cash_value": {
                 "$ref": "#/$defs/FieldValue"
@@ -1607,7 +2007,10 @@
                     "$ref": "#/$defs/FieldValue"
                   },
                   "postal_code": {
-                    "$ref": "#/$defs/FieldValue"
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "Summer Mooring Zip"
+                    ]
                   },
                   "county": {
                     "$ref": "#/$defs/FieldValue"
@@ -1615,7 +2018,20 @@
                   "country": {
                     "$ref": "#/$defs/FieldValue"
                   }
-                }
+                },
+                "fideon:aliases": [
+                  "Unit Mooring Location",
+                  "Mooring Location",
+                  "Storage Location"
+                ]
+              },
+              "moorage_season": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Summer Mooring",
+                  "Winter Storage",
+                  "Mooring Season"
+                ]
               },
               "coverages": {
                 "type": "array",
@@ -1688,16 +2104,28 @@
                       ]
                     },
                     "is_included": {
-                      "$ref": "#/$defs/FieldValue"
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Included with Comprehensive and Collision",
+                        "Included",
+                        "incl."
+                      ]
                     },
                     "is_excluded": {
                       "$ref": "#/$defs/FieldValue"
                     },
                     "notes": {
-                      "$ref": "#/$defs/FieldValue"
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Note",
+                        "*Note"
+                      ]
                     }
                   }
-                }
+                },
+                "fideon:aliases": [
+                  "Coverage and Rating Information"
+                ]
               },
               "lienholder": {
                 "type": "object",
@@ -1756,11 +2184,23 @@
                 "fideon:aliases": [
                   "Total Premium",
                   "Policy Premium",
-                  "Premium Summary"
+                  "Premium Summary",
+                  "Unit Premium"
+                ]
+              },
+              "personal_effects_limit": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Personal Effects",
+                  "Personal Property"
                 ]
               }
             }
-          }
+          },
+          "fideon:aliases": [
+            "Outline of coverage",
+            "Boat Information"
+          ]
         },
         "operators": {
           "type": "array",
@@ -1791,11 +2231,36 @@
               "license_state": {
                 "$ref": "#/$defs/FieldValue"
               },
+              "license_type": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "License Type",
+                  "Boating License"
+                ]
+              },
               "date_licensed": {
                 "$ref": "#/$defs/FieldValue"
               },
+              "years_of_experience": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Years of Boating Experience",
+                  "Boating Experience"
+                ]
+              },
+              "association_membership": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Watercraft Association",
+                  "Association Membership"
+                ]
+              },
               "relationship_to_insured": {
-                "$ref": "#/$defs/FieldValue"
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Additional information",
+                  "Relationship to Insured"
+                ]
               },
               "driver_status": {
                 "$ref": "#/$defs/FieldValue"
@@ -1821,7 +2286,19 @@
                       "$ref": "#/$defs/FieldValue"
                     }
                   }
-                }
+                },
+                "fideon:aliases": [
+                  "Violations or Losses",
+                  "Violations"
+                ]
+              },
+              "no_violations_reported": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Auto/Watercraft violations for operator(s) within the last 5 years: None",
+                  "Violations: None",
+                  "No Violations"
+                ]
               },
               "driver_discounts": {
                 "type": "array",
@@ -1830,28 +2307,65 @@
                 }
               }
             }
-          }
+          },
+          "fideon:aliases": [
+            "Named Operators",
+            "Operator Information",
+            "Drivers and household residents"
+          ]
         },
         "liability_coverages": {
           "type": "object",
           "properties": {
             "bodily_injury_and_property_damage_limit": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Watercraft Liability",
+                "P&I (Liability)",
+                "Protection and Indemnity",
+                "Liability To Others",
+                "Liability Coverage",
+                "Bodily Injury and Property Damage Liability",
+                "Liability (Protection and Indemnity) Coverage"
+              ]
             },
             "combined_single_limit_each_accident": {
               "$ref": "#/$defs/FieldValue"
             },
             "fuel_spill_liability_included": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Oil Pollution Liability",
+                "Fuel Spill Liability"
+              ]
+            },
+            "oil_pollution_liability_limit": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Oil Pollution Liability",
+                "Fuel Spill Liability",
+                "Accidental Fuel Spill",
+                "Accidental Fuel Spill Liability Coverage"
+              ]
             },
             "wreck_removal_limit": {
               "$ref": "#/$defs/FieldValue"
             },
             "uninsured_boater_limit": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Uninsured Watercraft",
+                "Uninsured Boaters",
+                "Uninsured Boater",
+                "Uninsured Boater Coverage"
+              ]
             },
             "medical_payments_each_person_limit": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Medical Payments",
+                "Med"
+              ]
             },
             "water_sports_liability_limit": {
               "$ref": "#/$defs/FieldValue"
@@ -1882,7 +2396,11 @@
               "$ref": "#/$defs/FieldValue"
             },
             "personal_effects_limit": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Personal Effects",
+                "Personal Property"
+              ]
             },
             "fishing_equipment_limit": {
               "$ref": "#/$defs/FieldValue"
@@ -1891,10 +2409,40 @@
               "$ref": "#/$defs/FieldValue"
             },
             "on_water_towing_limit": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Emergency Towing and Assist",
+                "Towing",
+                "Services while afloat",
+                "Commercial Towing and Assistance Coverage",
+                "Commercial Towing & Assistance"
+              ]
             },
             "hurricane_haul_out_limit": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Hurricane/Tsunami Haul Out Expense Reimbursement",
+                "Hurricane Haul Out"
+              ]
+            },
+            "diminishing_deductible_amount": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Diminishing Deductible"
+              ]
+            },
+            "boat_trailer_included": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Boat Trailer"
+              ]
+            },
+            "dinghy_included": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Dinghy",
+                "Tender"
+              ]
             }
           }
         },
@@ -1902,7 +2450,15 @@
           "type": "object",
           "properties": {
             "navigational_territory": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Navigation Limits",
+                "Navigation Limit",
+                "Navigational Limits",
+                "Coastal Navigation",
+                "Navigation Territory",
+                "Navigational Information"
+              ]
             },
             "layup_period_start": {
               "$ref": "#/$defs/FieldValue"
@@ -1915,8 +2471,47 @@
             },
             "rental_or_charter_permitted": {
               "$ref": "#/$defs/FieldValue"
+            },
+            "seasonal_restrictions": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "area": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "Will not be in",
+                      "Restricted Area"
+                    ]
+                  },
+                  "start": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "Between",
+                      "Restriction Start"
+                    ]
+                  },
+                  "end": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "And",
+                      "Restriction End"
+                    ]
+                  }
+                }
+              },
+              "fideon:aliases": [
+                "It is warranted that the watercraft will not be in",
+                "Seasonal Restriction"
+              ]
             }
           }
+        },
+        "changed_risk_location_state": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Changed Risk Location State"
+          ]
         },
         "additional_coverages": {
           "type": "array",
@@ -2038,13 +2633,23 @@
           "type": "object",
           "properties": {
             "renewal_effective_date": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Renewal offer is for the policy period",
+                "Renewal Effective Date"
+              ]
             },
             "renewal_expiration_date": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Renewal Expiration Date"
+              ]
             },
             "renewal_premium": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "12-month policy premium excluding billing fees"
+              ]
             },
             "expiring_premium": {
               "$ref": "#/$defs/FieldValue"
@@ -2059,10 +2664,17 @@
               "$ref": "#/$defs/FieldValue"
             },
             "offer_issue_date": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Renewal Offer Date"
+              ]
             },
             "payment_due_date": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Renewal Payment Due By",
+                "Renewal Payment Due"
+              ]
             },
             "renewal_conditions": {
               "$ref": "#/$defs/FieldValue"
@@ -2089,6 +2701,14 @@
                   }
                 }
               }
+            },
+            "expiring_policy_expiration_date": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Current policy period ends",
+                "Your current policy will expire on",
+                "Current policy expires"
+              ]
             }
           }
         },
@@ -2115,7 +2735,11 @@
               "$ref": "#/$defs/FieldValue"
             },
             "net_change_amount": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Premium Change",
+                "Premium change"
+              ]
             },
             "additional_or_return_premium": {
               "$ref": "#/$defs/FieldValue"
@@ -2129,7 +2753,11 @@
                 "type": "object",
                 "properties": {
                   "change_description": {
-                    "$ref": "#/$defs/FieldValue"
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "has been removed from your policy",
+                      "has been added to your policy"
+                    ]
                   },
                   "field_changed": {
                     "$ref": "#/$defs/FieldValue"
@@ -2283,16 +2911,25 @@
           "type": "object",
           "properties": {
             "inception_date": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Inception Date"
+              ]
             },
             "protected_since_date": {
               "$ref": "#/$defs/FieldValue"
             },
             "term_length": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Term"
+              ]
             },
             "term_amount": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Term Amount"
+              ]
             },
             "transactions": {
               "type": "array",
@@ -2300,10 +2937,16 @@
                 "type": "object",
                 "properties": {
                   "transaction_date": {
-                    "$ref": "#/$defs/FieldValue"
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "Transaction Date"
+                    ]
                   },
                   "transaction_effective_date": {
-                    "$ref": "#/$defs/FieldValue"
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "Transaction Effective Date"
+                    ]
                   },
                   "transaction_type": {
                     "$ref": "#/$defs/FieldValue",
@@ -3290,6 +3933,12 @@
           }
         }
       }
+    },
+    "text_sections": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/TextSection"
+      }
     }
   },
   "$defs": {
@@ -3314,7 +3963,8 @@
             "string",
             "number",
             "null"
-          ]
+          ],
+          "description": "The value in its standard form: a number for money and counts, a two-letter code for a state, and MM/DD/YYYY for every date (see fideon:parsed_formats)."
         },
         "confidence": {
           "type": "object",
@@ -3345,6 +3995,48 @@
           "type": "boolean"
         }
       }
+    },
+    "TextSection": {
+      "type": "object",
+      "description": "A block of printed text exactly as the document carries it: a prose paragraph, notice, condition or disclaimer, or the page's remaining label/footer text. Nothing the page prints is left out of the gold; structured fields above hold the values, these hold the words.",
+      "properties": {
+        "section_id": {
+          "type": "string"
+        },
+        "section_title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "section_type": {
+          "type": "string",
+          "enum": [
+            "prose",
+            "other"
+          ]
+        },
+        "raw_text": {
+          "type": "string"
+        },
+        "page_range": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "form_number": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "section_id",
+        "raw_text",
+        "page_range"
+      ]
     }
   }
 }

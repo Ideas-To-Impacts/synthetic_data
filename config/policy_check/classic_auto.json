@@ -25,6 +25,19 @@
       "policy.effective_date <= policy.expiration_date"
     ]
   },
+  "fideon:parsed_formats": {
+    "date": {
+      "format": "MM/DD/YYYY",
+      "strftime": "%m/%d/%Y",
+      "pattern": "^(0[1-9]|1[0-2])/(0[1-9]|[12][0-9]|3[01])/[0-9]{4}$",
+      "example": "05/06/2026",
+      "applies_to": "(^|_)dated?(_|$)",
+      "exceptions": [
+        "edition_date"
+      ],
+      "note": "US insurance documents print dates month/day/year, so every date's parsed value is MM/DD/YYYY: two-digit month and day, four-digit year, whatever the page prints (5/6/26, May 6, 2026 and 2026-05-06 are all parsed as 05/06/2026). raw stays exactly as printed. applies_to matches field names such as effective_date, date_of_birth and replaces_prior_declaration_dated. A form edition_date (\"04/07\") has no day and keeps its printed form. A value that is not a calendar date (\"Full Prior Acts\", \"None\") has parsed null. Compare dates as dates, not strings: as text, 12/31/2025 sorts after 01/01/2026 - this includes the date_ordering audit rules."
+    }
+  },
   "type": "object",
   "required": [
     "carrier",
@@ -3191,7 +3204,8 @@
             "string",
             "number",
             "null"
-          ]
+          ],
+          "description": "The value in its standard form: a number for money and counts, a two-letter code for a state, and MM/DD/YYYY for every date (see fideon:parsed_formats)."
         },
         "confidence": {
           "type": "object",
