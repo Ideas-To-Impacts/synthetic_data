@@ -82,6 +82,10 @@ def read_page(page, dpi=DPI, min_conf=None, turn=0) -> List[Tuple[str, fitz.Rect
         ys = [p[1] for p in box]
         rect = fitz.Rect(min(xs) * scale, min(ys) * scale, max(xs) * scale, max(ys) * scale)
         if conf >= (MIN_CONFIDENCE if min_conf is None else min_conf) and text.strip():
+            if len(text.split()) <= 5:
+                # the engine reads a registered mark after a name as "?":
+                # "Sign & Glide?", "Propulsion Plus?"
+                text = re.sub(r"(?<=[A-Za-z])\?(?=\s|$)", "®", text)
             lines.append((text, rect, float(conf)))
     return lines
 
@@ -243,14 +247,19 @@ def reconcile(lines, layer_line, layer_near, layer_span=None, stretched=None):
     return added, dropped
 
 
-def write_back(page, runs, skip):
+def write_back(page, runs, skip, swaps=()):
     """Put recovered text into the page's text layer, invisibly, where it
     is printed - so a gold value read from it can be found on the page.
     Runs inside a replacement's cover (``skip``) are left out: the new value
-    is drawn there instead."""
+    is drawn there instead. Every other run gets the document's replacements
+    (``swaps``, original -> new) first: text read off the source image must
+    not bring an original value back."""
     for text, rect in runs:
         if any(rect.intersects(s) for s in skip):
             continue
+        for old, new in swaps:
+            text = re.sub(r"\s*".join(map(re.escape, old.replace(" ", ""))), lambda m, new=new: new,
+                          text, flags=re.I)
         size = max(4.0, rect.height * 0.8)
         page.insert_text(fitz.Point(rect.x0, rect.y1 - 0.2 * rect.height), text,
                          fontname="helv", fontsize=size, render_mode=3)

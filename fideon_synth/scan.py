@@ -63,6 +63,7 @@ class Profile:
     tint: tuple = field(default=(1.0, 1.0, 1.0))   # per-channel gain
     contrast: tuple = (0.98, 1.06)
     brightness: tuple = (0.98, 1.04)
+    store_gray: bool = False           # keep a grayscale page as one channel, not three
 
 
 PROFILES = [
@@ -118,6 +119,19 @@ PROFILES = [
         contrast=(0.94, 1.04), brightness=(0.96, 1.03),
     ),
 ]
+
+
+#: the high-quality scan of a document too large to share - GitHub rejects a
+#: file over 100 MB and warns over 50. The same 400 dpi and the same clean
+#: page, stored as the grayscale it already is and compressed at an ordinary
+#: scanner's quality. Not one of PROFILES: those are handed out in turn.
+HIGH_QUALITY_COMPACT = Profile(
+    key="high_quality_compact",
+    label="high-quality scan, 400 dpi (grayscale, JPEG 85)",
+    dpi=400, jpeg_quality=85, store_gray=True,
+    skew=(0.0, 0.0), blur=(0.0, 0.0), noise=(0.0, 0.0),
+    contrast=(1.0, 1.0), brightness=(1.0, 1.0),
+)
 
 
 def _rng(*parts):
@@ -259,6 +273,8 @@ def scan_pdf(src, dst, profile, seed):
         pix = page.get_pixmap(dpi=profile.dpi, colorspace=fitz.csRGB)
         img = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
         img = _degrade(img, profile, rng)
+        if profile.store_gray and profile.grayscale:
+            img = img.convert("L")
         buf = io.BytesIO()
         img.save(buf, format="JPEG", quality=profile.jpeg_quality,
                  optimize=True)

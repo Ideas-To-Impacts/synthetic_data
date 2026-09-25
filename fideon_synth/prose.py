@@ -30,10 +30,18 @@ OCR_DPI = 300
 _CODE = re.compile(r"\b[A-Z]{2,}-?\d{3,}")
 
 
+#: a bullet printed before a list item; a font's symbol bullet often
+#: arrives as U+F0B7 or as the replacement character
+_BULLET = set("•●▪◦·�*-")
+#: "Watercraft and Auxiliary Equipment Value: $196,245" - a label and its value
+_LABEL_ROW = re.compile(r"^[^:]{2,60}:\s*(.*)$")
+
+
 class Line:
-    def __init__(self, centre, height, x0, text, gap, bold):
+    def __init__(self, centre, height, x0, text, gap, bold, cells):
         self.centre, self.height, self.x0 = centre, height, x0
         self.text, self.gap, self.bold = text, gap, bold
+        self.cells = cells                   # [(x0, text)] split at column gaps
 
     @property
     def words(self):
@@ -41,25 +49,53 @@ class Line:
 
     def prose(self):
         ink = self.text.replace(" ", "")
-        return (self.words >= 6 and not self.gap and not self.bold
+        label = _LABEL_ROW.match(self.text)
+        text = self.text.strip()
+        # a short sentence is prose too: "Enclosed are your policy documents."
+        sentence = self.words >= 4 and re.match(r"[A-Z*\"'(]", text) and re.search(r"[.!?]$", text) \
+            and re.search(r"[a-z]{3}", text)
+        if len(re.findall(r"[A-Za-z)#]:(?:\s|$)", self.text)) >= 2:
+            return False                                     # "Year: 2026 Make: Yamaha ..." is a row
+        if re.search(r"\b[A-Z]{2}\s+\d{5}(?:-\d{4})?$", text):
+            return False                                     # "... Hartford, CT 06183" is an address
+        return ((self.words >= 6 or sentence) and not self.gap
+                and not (self.bold and self.words < 10)      # a bold heading, not a bold paragraph
+                and not (label and len(label.group(1).split()) <= 4)
                 and len(_CODE.findall(self.text)) < 2        # a list of forms is not prose
                 and not _CODE.match(self.text)               # nor one line of it
                 and sum(c.isalpha() for c in ink) > 0.6 * len(ink))
 
     def heading(self):
-        """A title over a paragraph: bold where the type is known, else a
-        short line with no figures that is not a sentence."""
+        """A title over a paragraph: short bold type where the type is
+        known, else a short line with no figures that is not a sentence."""
         if self.gap or self.words > 12 or not re.search(r"[A-Za-z]{3}", self.text):
             return False
         if self.bold is not None:
-            return self.bold
+            return self.bold and self.words < 10
         return not re.search(r"\d", self.text) and not self.text.rstrip().endswith(".")
+
+    def items(self):
+        """The list items on this line - "• Pay a bill    • Update your
+        policy" - or None when it is not a line of a bulleted list."""
+        out, k = [], 0
+        while k < len(self.cells):
+            text = self.cells[k][1].strip()
+            if text in _BULLET and k + 1 < len(self.cells):
+                out.append(self.cells[k + 1][1].strip())
+                k += 2
+            elif len(text) > 2 and text[0] in _BULLET and text[1] == " ":
+                out.append(text[2:].strip())
+                k += 1
+            else:
+                return None
+        return out or None
 
 
 def _rows(pieces, column=0.9, tight=True):
     """(top, bottom, x0, x1, text, bold) pieces -> visual lines, top to bottom.
-    A space wider than ``column`` line heights separates columns; with
-    ``tight``, pieces set against each other are joined without one."""
+    A space wider than ``column`` line heights separates columns - unless the
+    line is justified, its words all set that far apart; with ``tight``,
+    pieces set against each other are joined without a space."""
     pieces = sorted(pieces, key=lambda p: ((p[0] + p[1]) / 2, p[2]))
     rows, current = [], []
     for p in pieces:
@@ -73,16 +109,25 @@ def _rows(pieces, column=0.9, tight=True):
     out = []
     for row in rows:
         row.sort(key=lambda r: r[2][2])
+        spaces = [cur[2] - prev[3] for (_, _, prev), (_, _, cur) in zip(row, row[1:])]
+        # a line's usual space is its lower quartile: a table row's own
+        # column gaps must not pass for its ordinary spacing
+        usual = sorted(spaces)[len(spaces) // 4] if len(spaces) >= 3 else 0.0
         parts, gap = [row[0][2][4]], False
-        for (_, height, prev), (_, _, cur) in zip(row, row[1:]):
-            space = cur[2] - prev[3]
-            wide = space > column * height
+        cells = [[row[0][2][2], row[0][2][4]]]
+        for space, (_, height, prev), (_, _, cur) in zip(spaces, row, row[1:]):
+            wide = space > column * height and space > 2.5 * usual
             gap = gap or wide
             glued = tight and space <= 0.12 * height
             parts.append(("  " if wide else "" if glued else " ") + cur[4])
+            if wide:
+                cells.append([cur[2], cur[4]])
+            else:
+                cells[-1][1] += ("" if glued else " ") + cur[4]
         flags = [r[2][5] for r in row]
         bold = None if None in flags else all(flags)
-        out.append(Line(row[0][0], row[0][1], row[0][2][2], "".join(parts), gap, bold))
+        out.append(Line(row[0][0], row[0][1], row[0][2][2], "".join(parts), gap, bold,
+                        [tuple(c) for c in cells]))
     return out
 
 
@@ -129,6 +174,31 @@ def _ocr_lines(page):
                   for text, r, _ in recover.read_page(page, dpi=OCR_DPI)], column=2.5)
 
 
+def _section(out, n, title, text, kind="prose"):
+    text = re.sub(r"\s+", " ", text).strip()
+    form = _FORM_NO.search(text)
+    sid = "page%d_s%d" % (n, len(out) + 1)
+    out[sid] = {"section_id": sid, "section_title": title, "section_type": kind,
+                "raw_text": text, "page_range": [n],
+                "form_number": form.group(0) if form else None}
+
+
+def _title_over(lines, i):
+    above = lines[i - 1] if i > 0 else None
+    if above is None or not above.heading() \
+            or lines[i].centre - above.centre > 2.4 * above.height:
+        return None
+    # a heading set on two lines: "On-Water Towing and Assistance with No"
+    # over "Out-of-Pocket Expenses1."
+    title, k = [above.text], i - 2
+    while k >= 0 and len(title) < 3 and lines[k].heading() and lines[k].bold == above.bold \
+            and not re.search(r"[.!?:]$", lines[k].text.rstrip()) \
+            and lines[k + 1].centre - lines[k].centre <= 1.6 * lines[k].height:
+        title.insert(0, lines[k].text)
+        k -= 1
+    return re.sub(r"\s+", " ", " ".join(title)).strip()
+
+
 def _sections(lines, n):
     out = {}
     # where the type is unknown (a scan read by OCR), a heading is told by the
@@ -138,34 +208,62 @@ def _sections(lines, n):
                 and not re.search(r"[.,;:]$", a.text.rstrip()) \
                 and b.centre - a.centre <= 2.4 * a.height:
             a.bold = True
-    k = i = 0
+    i = 0
     while i < len(lines):
+        items = lines[i].items()
+        if items:
+            # a bulleted list, however many columns it is set in, is one section
+            j = i
+            while j + 1 < len(lines) and lines[j + 1].items() \
+                    and lines[j + 1].centre - lines[j].centre <= 2.2 * lines[j].height:
+                j += 1
+                items += lines[j].items()
+            above = lines[i - 1] if i > 0 else None
+            title = None
+            if above is not None and above.text.rstrip().endswith(":") \
+                    and lines[i].centre - above.centre <= 2.4 * above.height:
+                title = re.sub(r"\s+", " ", above.text).strip()
+            _section(out, n, title, "; ".join(items), "other")
+            i = j + 1
+            continue
         if not lines[i].prose():
+            # a sidebar shares its rows with the column beside it: a cell that
+            # is a whole sentence on its own is prose all the same
+            # ("Boat Insurance  |  Contact your agent for personalized service.")
+            if lines[i].gap:
+                for _, text in lines[i].cells:
+                    cell = Line(lines[i].centre, lines[i].height, 0, text.strip(), False,
+                                lines[i].bold, [(0, text.strip())])
+                    if cell.prose() and re.search(r"[.!?]$", cell.text):
+                        _section(out, n, None, cell.text)
             i += 1
             continue
-        j = i
+        parts, j = [lines[i].text], i
         while j + 1 < len(lines):
             nxt, cur = lines[j + 1], lines[j]
-            if nxt.centre - cur.centre > 1.8 * cur.height or nxt.gap or nxt.bold:
+            ends = re.search(r"[.!?:]$", cur.text.rstrip())
+            # a line that carries on an unfinished sentence is the paragraph's,
+            # bold or not: "... Policy Coverages, Forms and" | "Endorsements ..."
+            if nxt.centre - cur.centre > 1.8 * cur.height or nxt.items() \
+                    or (nxt.heading() and ends):
                 break
-            # a paragraph's last line can be a word or two: "deductible."
-            if not nxt.prose() and re.search(r"[.!?:]$", cur.text.rstrip()):
+            if nxt.gap:
+                # another column beside the paragraph's next line: "Make check"
+                # | "payable to Progressive ...  Pay initial installment: $71.00"
+                if not ends and abs(nxt.cells[0][0] - lines[i].x0) < 3:
+                    parts.append(nxt.cells[0][1])
+                    j += 1
                 break
+            # a paragraph's last line can be a word or two: "deductible." - but
+            # not an address set under a name line ("..., Hartford, CT 06183")
+            if not nxt.prose() and (ends or re.search(r"\b[A-Z]{2}\s+\d{5}(?:-\d{4})?$",
+                                                      nxt.text.strip())):
+                break
+            parts.append(nxt.text)
             j += 1
             if not nxt.prose():
                 break
-        k += 1
-        title = None
-        above = lines[i - 1] if i > 0 else None
-        if above is not None and above.heading() \
-                and lines[i].centre - above.centre <= 2.4 * above.height:
-            title = re.sub(r"\s+", " ", above.text).strip()
-        text = re.sub(r"\s+", " ", " ".join(l.text for l in lines[i:j + 1])).strip()
-        form = _FORM_NO.search(text)
-        sid = "page%d_s%d" % (n, k)
-        out[sid] = {"section_id": sid, "section_title": title, "section_type": "prose",
-                    "raw_text": text, "page_range": [n],
-                    "form_number": form.group(0) if form else None}
+        _section(out, n, _title_over(lines, i), " ".join(parts))
         i = j + 1
     return out
 

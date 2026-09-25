@@ -156,6 +156,18 @@ class Ink:
             bottom += 1
         return (p0 + top) / z, (p0 + bottom + 1) / z
 
+    def next_ink(self, y0, y1, x, limit):
+        """Where the next printed word right of ``x`` begins - the first ink
+        after a blank - or None before ``limit``."""
+        z = self.zoom
+        cols = self.cols(y0, y1)
+        p, stop = int(max(0, x * z)), int(min(len(cols), limit * z))
+        while p < stop and cols[p]:
+            p += 1
+        while p < stop and not cols[p]:
+            p += 1
+        return p / z if p < stop else None
+
     def word_start(self, y0, y1, x, gap):
         """Where the printed word under ``x`` begins: back over ink and over
         blanks narrower than ``gap``."""
@@ -273,6 +285,7 @@ class Char:
     color: int
     space_before: bool = False    # the text layer put a space before this char
     leader: bool = False          # one dot of a line drawn as a row of dots
+    line: object = None           # the text-layer line it came from
 
 
 @dataclass
@@ -317,6 +330,49 @@ def layer_chars(page, matrix=fitz.Identity):
     return chars
 
 
+def _untangle(row):
+    """Text lines the layout printed over each other on one baseline - an ID
+    card's "01/31/2025" across "(Not acceptable to obtain registration...)" -
+    are separate rows: sorted together they would interleave letter by letter.
+    Lines side by side, the usual case, stay one row exactly as they were."""
+    groups = {}
+    for ch in row:
+        if ch.line is not None and ch.c not in FILL:
+            groups.setdefault(ch.line, []).append(ch)
+    height = float(np.median([ch.box.height for ch in row]))
+    # a layer line can hold two columns far apart ("Lake Forest, IL 60045 ...
+    # NY 13360" in a scan's layer): each run of it between wide gaps is its
+    # own span, so it overlaps nothing it merely spans across
+    pieces = []
+    for g in groups.values():
+        g = sorted(g, key=lambda c: c.box.x0)
+        run = [g[0]]
+        for a, b in zip(g, g[1:]):
+            if b.box.x0 - a.box.x1 > 1.5 * height:
+                pieces.append(run)
+                run = []
+            run.append(b)
+        pieces.append(run)
+    spans = [(min(c.box.x0 for c in g), max(c.box.x1 for c in g), g)
+             for g in pieces if len(g) >= 2]
+    if len(spans) < 2:
+        return [row]
+    overlap = lambda a, b: min(a[1], b[1]) - max(a[0], b[0]) > max(2.0, 0.5 * height)
+    if not any(overlap(a, b) for i, a in enumerate(spans) for b in spans[i + 1:]):
+        return [row]
+    parts = []                                   # each a list of spans that do not overlap
+    for span in sorted(spans, key=lambda s: s[0]):
+        home = next((p for p in parts if not any(overlap(span, q) for q in p)), None)
+        if home is None:
+            parts.append([span])
+        else:
+            home.append(span)
+    placed = {id(c) for p in parts for s in p for c in s[2]}
+    first = [c for s in parts[0] for c in s[2]] + [c for c in row if id(c) not in placed]
+    return [sorted(first, key=lambda c: c.box.x0)] + \
+        [sorted((c for s in p for c in s[2]), key=lambda c: c.box.x0) for p in parts[1:]]
+
+
 def cells(page, matrix=fitz.Identity, ink: Optional[Ink] = None,
           extra=None, drop=None, stretch=None) -> List[Cell]:
     """Every cell on the page, top to bottom, left to right.
@@ -330,8 +386,8 @@ def cells(page, matrix=fitz.Identity, ink: Optional[Ink] = None,
     ``(band, x0, x1, print_x0, print_x1)`` - where they are removed from the
     layer (their ``ocr`` box) is unchanged."""
     chars = []
-    for block in page.get_text("rawdict")["blocks"]:
-        for line in block.get("lines", []):
+    for b_no, block in enumerate(page.get_text("rawdict")["blocks"]):
+        for l_no, line in enumerate(block.get("lines", [])):
             space = False
             # a text line that is all dots is a rule drawn under a row, not text
             glyphs = [ch["c"] for span in line["spans"] for ch in span["chars"] if ch["c"].strip()]
@@ -346,7 +402,7 @@ def cells(page, matrix=fitz.Identity, ink: Optional[Ink] = None,
                     ocr = fitz.Rect(ch["bbox"])
                     chars.append(Char(ch["c"], ocr * matrix, ocr, span["font"],
                                       span["size"], span.get("color", 0), space,
-                                      leader and ch["c"] in FILL))
+                                      leader and ch["c"] in FILL, (b_no, l_no)))
                     space = False
     for band, x0, x1, p0, p1 in stretch or []:
         k = (p1 - p0) / max(x1 - x0, 1e-6)
@@ -383,6 +439,7 @@ def cells(page, matrix=fitz.Identity, ink: Optional[Ink] = None,
                 row.append(ch)
                 continue
         rows.append([ch])
+    rows = [part for row in rows for part in _untangle(row)]
 
     out = []
     for r, row in enumerate(rows):
@@ -488,6 +545,7 @@ class Replacement:
     room: Optional[float] = None      # x the new text must not run past
     face_known: bool = False          # font taken from a visible text layer
     glued: bool = False               # printed against a label (HIN:327939)
+    follows: bool = False             # more words printed after it on its line
 
 
 def _size_from_ink(text, glyphs):
@@ -556,6 +614,29 @@ def metrics(page, ink: Ink, matrix=fitz.Identity):
     return float(np.median(sizes)), float(np.median(bases)), face
 
 
+BG_DPI = 36
+
+
+def _paper(pix, rect, pad=1.5):
+    """The paper colour in a thin ring around ``rect``: the commonest light
+    pixel there, ink left out. White unless the ring says otherwise."""
+    z = BG_DPI / 72.0
+    arr = np.frombuffer(pix.samples, np.uint8).reshape(pix.height, pix.width, pix.n)[:, :, :3]
+    x0, y0 = int(max(0, (rect.x0 - pad) * z)), int(max(0, (rect.y0 - pad) * z))
+    x1, y1 = int(min(pix.width - 1, (rect.x1 + pad) * z)), int(min(pix.height - 1, (rect.y1 + pad) * z))
+    if x1 <= x0 or y1 <= y0:
+        return WHITE
+    ring = np.concatenate([arr[y0, x0:x1 + 1], arr[y1, x0:x1 + 1], arr[y0:y1 + 1, x0], arr[y0:y1 + 1, x1]])
+    light = ring[ring.mean(1) > 170]
+    if len(light) < max(4, 0.4 * len(ring)):
+        return WHITE
+    colors, counts = np.unique((light // 8) * 8, axis=0, return_counts=True)
+    c = colors[counts.argmax()] + 4
+    if c.min() > 235:
+        return WHITE
+    return tuple(float(v) / 255 for v in np.clip(c, 0, 255))
+
+
 def apply(page, replacements: List[Replacement], ink: Ink, matrix=fitz.Identity):
     """Remove, cover and redraw every replacement on one page."""
     if not replacements:
@@ -579,7 +660,7 @@ def apply(page, replacements: List[Replacement], ink: Ink, matrix=fitz.Identity)
             # comma or a time printed after it is not part of it
             printed = fitz.get_text_length(rep.old, fontname=rep.font, fontsize=size)
             limit = min(rep.room if rep.room is not None else page.rect.width,
-                        x0 + 1.06 * printed + 0.5)
+                        x0 + 1.2 * printed + 0.5)
             left, right = ink.run(*band, x0, max(x0 + 1, r.x1 - (r.x0 - x0)), limit,
                                   gap=0.2 * size, glued=rep.glued)
             right = max(right, min(r.x1, limit))
@@ -588,9 +669,41 @@ def apply(page, replacements: List[Replacement], ink: Ink, matrix=fitz.Identity)
             if line is None:
                 break
             s, base = _size_from_ink(rep.old, fitz.Rect(left, line[0], right, line[1]))
-            if not 0.45 < s / (k * h) < 1.6:
+            if not 0.45 < s / (k * h) < 1.3:          # two tight lines read as one
                 break
             size, baseline, ok = s, base, True
+        if rep.old[-1:] in ",;" and ok:
+            # the old value's own comma, set a hair apart, is covered with it -
+            # the new value brings its own
+            # scanned from where the run ended, not from the next blank: the
+            # comma can begin right there
+            cols = ink.cols(baseline - 0.7 * size, baseline + 0.25 * size)
+            z, reach = ink.zoom, right + 0.18 * size   # a mark hugs; a word space is wider
+            p = int(right * z)
+            while p < len(cols) and cols[p]:      # the rest of the last glyph
+                p += 1
+            right = max(right, p / z)
+            while p < min(len(cols), reach * z) and not cols[p]:
+                p += 1
+            if p < min(len(cols), reach * z):     # one mark after a hair of space
+                q = p
+                while q < len(cols) and cols[q]:
+                    q += 1
+                if (q - p) / z < 0.35 * size:
+                    right = q / z
+        if rep.follows and ok:
+            # the next word's own ink bounds the new value - on a scan the
+            # text layer can sit a few points off the print
+            nxt = ink.next_ink(baseline - 0.7 * size, baseline - 0.05 * size, right,
+                               right + 6 * size)
+            if nxt is not None:
+                bound = nxt - 0.3 * size
+                rep.room = bound if rep.room is None else min(rep.room, bound)
+        if rep.face_known:
+            # a real text layer knows where the value starts: skipping ink
+            # set against a label ("1-315...") would leave a gap once the old
+            # text is gone
+            left = min(left, r.x0)
         measured.append([rep, size, baseline, left, right, ok])
 
     # a value whose own line could not be read takes the size the other
@@ -609,6 +722,12 @@ def apply(page, replacements: List[Replacement], ink: Ink, matrix=fitz.Identity)
         r = rep.visible_rect
         cover = fitz.Rect(left - 0.5, min(baseline - 0.8 * size, r.y0 + 0.1 * r.height),
                           right + 0.5, max(baseline + 0.25 * size, r.y1 - 0.1 * r.height))
+        # and the old value's ink just under its baseline: a baseline put a
+        # point too high leaves a comma's tail or a descender showing. Only
+        # downward, and not as far as the next line's letters
+        tail = ink.bbox(fitz.Rect(left, cover.y1 - 0.1 * size, right, baseline + 0.3 * size))
+        if tail is not None:
+            cover.y1 = max(cover.y1, min(tail.y1 + 0.3, baseline + 0.3 * size))
         if not rep.face_known:
             rep.font = face
         placed.append((rep, size, baseline, cover, left, right))
@@ -623,8 +742,18 @@ def apply(page, replacements: List[Replacement], ink: Ink, matrix=fitz.Identity)
     page.apply_redactions(images=fitz.PDF_REDACT_IMAGE_NONE,
                           graphics=fitz.PDF_REDACT_LINE_ART_NONE)
 
+    # a cover takes the paper colour around it: a value printed on a grey
+    # panel is covered in grey, not a white patch
+    shade = page.get_pixmap(dpi=BG_DPI, colorspace=fitz.csRGB, annots=False)
     for rep, size, baseline, cover, left, right in placed:
-        page.draw_rect(cover, color=None, fill=WHITE, overlay=True)
+        fill = _paper(shade, cover)
+        page.draw_rect(cover, color=None, fill=fill, overlay=True)
+        if rep.old[:1] in "Jjfgpqy":
+            # the hook of a "J" curls back under the baseline, left of where the
+            # ink above it begins: covered by the band alone it leaves a dot
+            page.draw_rect(fitz.Rect(left - 0.35 * size, baseline - 0.05 * size,
+                                     left + 0.5, baseline + 0.3 * size),
+                           color=None, fill=fill, overlay=True)
 
     for rep, size, baseline, cover, left, right in placed:
         if not rep.new.strip():

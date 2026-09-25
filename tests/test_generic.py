@@ -314,6 +314,11 @@ def test_printed_prose_reaches_the_gold_as_text_sections(tmp_path, schema):
     page.insert_text((60, 440), "deductible.", fontsize=10, fontname="helv")
     page.insert_text((60, 470), "Your coverage begins on 08/26/2026 at 12:01 a.m. at the address shown.",
                      fontsize=10, fontname="helv")
+    for x, y, text in ((60, 520, "- Pay a bill"), (260, 520, "- Update your policy"),
+                       (60, 534, "- Report a claim"), (260, 534, "- Check recalls")):
+        page.insert_text((x, y), text, fontsize=10, fontname="helv")
+    page.insert_text((60, 580), "Watercraft and Equipment Value Total Agreed Amount: $19,000",
+                     fontsize=10, fontname="helv")
     doc.save(str(folder / "prose.pdf"))
     out = tmp_path / "out"
     out.mkdir()
@@ -325,6 +330,10 @@ def test_printed_prose_reaches_the_gold_as_text_sections(tmp_path, schema):
     assert deductibles["page_range"] == [1]
     begins, = [s for s in sections if s["raw_text"].startswith("Your coverage begins on")]
     assert "08/26/2026" not in begins["raw_text"]         # the replaced date, not the original
+    # a list set in two columns is one section; a "Label: value" row is no prose
+    listed, = [s for s in sections if s["section_type"] == "other"]
+    assert listed["raw_text"] == "Pay a bill; Update your policy; Report a claim; Check recalls"
+    assert not any(s["raw_text"].startswith("Watercraft and Equipment Value") for s in sections)
 
 
 def test_facts_a_page_states_in_sentences_and_footers(tmp_path, schema):
@@ -459,6 +468,101 @@ def test_amounts_dates_and_one_identifier_printed_two_ways():
     spaced = faker(generic.Found("digits", cell, 0, 15))
     joined = faker(generic.Found("digits", cell, 16, 29))
     assert spaced.count(" ") == 2 and spaced.replace(" ", "") == joined != "8848065299089"
+
+
+def test_rules_that_hold_for_any_document(schema):
+    from fideon_synth import structure, prose
+    # an operator the page calls "Named insured" is one
+    gold = {"named_insured": {"primary_name": generic.fv("Clementine Crowthorne")},
+            "watercraft": {"operators": [
+                {"name": generic.fv("Clementine Crowthorne"), "relationship_to_insured": generic.fv("Named insured")},
+                {"name": generic.fv("Marguerite Everly"), "relationship_to_insured": generic.fv("Named insured")},
+                {"name": generic.fv("Tom Everly"), "relationship_to_insured": generic.fv("Son")}]}}
+    structure.finish(gold, schema)
+    assert [e["name"]["raw"] for e in gold["named_insured"]["additional_named_insureds"]] == ["Marguerite Everly"]
+    # where a period ends, and its time - "A.M." may have wrapped to the next line
+    assert structure.EXPIRES_AT.search("This policy period ends on 02/25/2027 at 12:01 a.m.").group(1) == "12:01 a.m."
+    assert structure.EXPIRES_AT.search("STANDARD TIME to May 6, 2027 at 12:01").group(1) == "12:01"
+    # an ISO form number is a form's, never an identifier to replace
+    assert generic.ISO_FORM.match("CG20180413") and generic.ISO_FORM.match("CG 20 18 04 13")
+    assert not generic.ISO_FORM.match("MSB00001028349")
+    # words OCR ran together come apart only into words the document prints
+    vocab = generic._vocabulary("combined single limit each accident Liability To Others "
+                                "Liability to progressive agent")
+    assert generic._unglue("combinedsinglelimiteachaccident", vocab) == "combined single limit each accident"
+    assert generic._unglue("LiabilityTo Others", vocab) == "Liability To Others"
+    assert generic._unglue("progressiveagent.com", vocab) == "progressiveagent.com"   # an address
+    assert generic._unglue("Progressiveagent", vocab) == "Progressiveagent"           # maybe a name
+    # a policy-wide value the units print differently is dropped
+    gold = {"watercraft": {"physical_damage_coverages": {"personal_effects_limit": generic.fv("$3,000"),
+                                                         "on_water_towing_limit": generic.fv("$1,000")},
+                           "watercraft": [{"personal_effects_limit": generic.fv("$3,000")},
+                                          {"personal_effects_limit": generic.fv("$5,000")}]}}
+    structure.finish(gold, schema)
+    assert list(gold["watercraft"]["physical_damage_coverages"]) == ["on_water_towing_limit"]
+    # a form number keeps its state code
+    assert structure._form_of(structure.FORM_REF.search("BY-300 NY (11-23)")) == "BY-300 NY"
+    # rows of labels and address lines are not prose; a short sentence is
+    line = lambda text: prose.Line(0, 10, 0, text, False, False, [(0, text)])
+    assert not line("Outboard #1 Year: 2026 Make: Yamaha Horsepower: 150").prose()
+    assert not line("One Tower Square, Hartford, CT 06183").prose()
+    assert line("Enclosed are your policy documents.").prose()
+
+
+def test_a_date_shift_never_lands_one_original_date_on_another():
+    faker = generic.Faker(Values(5))
+    faker.days = 122                                   # April 9 -> August 9
+    faker.avoid(["April 9, 2026", "August 9, 2026"])
+    assert faker.days != 122
+
+
+def test_copies_the_layout_hides_are_replaced_too(tmp_path, schema):
+    # a policy number printed spaced in a header, a date stamped up the margin,
+    # an agency name wrapped onto "AGENCY LLC", and a heading the document
+    # also uses in lower case - which is no one's name
+    folder = tmp_path / "data" / "Markel American Insurance Company" / "ocean_marine"
+    folder.mkdir(parents=True)
+    doc = fitz.open()
+    page = doc.new_page(width=612, height=792)
+    for x, y, size, text in LINES + [
+            (40, 330, 10, "Account Number: 7382910455"), (400, 40, 9, "73 82 91 04 55"),
+            (300, 260, 10, "Stable Rock Insurance"), (300, 272, 10, "AGENCY LLC"),
+            (300, 284, 10, "12 Mill Rd"), (300, 296, 10, "Utica, NY 13501"),
+            (40, 360, 10, "Residence Premises"),
+            (40, 380, 10, "Coverage applies on the residence premises only.")]:
+        page.insert_text((x, y), text, fontsize=size, fontname="helv")
+    page.insert_text((590, 300), "08/26/2026", fontsize=7, fontname="helv", rotate=90)
+    doc.save(str(folder / "hidden.pdf"))
+    out = tmp_path / "out"
+    out.mkdir()
+    built = generic.synthesize(folder / "hidden.pdf", out / "h.pdf", out / "h.json", schema, Values("t"))
+    assert built.ok, built.problems
+    gold = built.gold.read_text("utf-8")
+    assert "Residence Premises" not in json.loads(gold)["named_insured"]["primary_name"]["raw"]
+
+
+def test_an_address_block_is_read_by_its_shape(tmp_path, schema):
+    # a street with no street-type word, one-word names stacked in a block a
+    # glued label heads, and a subheading between the names and the address
+    folder = tmp_path / "data" / "Markel American Insurance Company" / "ocean_marine"
+    folder.mkdir(parents=True)
+    doc = fitz.open()
+    page = doc.new_page(width=612, height=792)
+    for x, y, size, text in LINES[:4] + [
+            (40, 150, 10, "Named InsuredWINSLOW"), (40, 162, 10, "TERESA UNDERHILL"),
+            (40, 174, 10, "MEDINA"), (40, 186, 10, "2646 SUMMIT"), (40, 198, 10, "CORTLAND, NY 13045")]:
+        page.insert_text((x, y), text, fontsize=size, fontname="helv")
+    doc.save(str(folder / "block.pdf"))
+    out = tmp_path / "out"
+    out.mkdir()
+    built = generic.synthesize(folder / "block.pdf", out / "b.pdf", out / "b.json", schema, Values("t"))
+    assert built.ok, built.problems              # no original name or street left
+    gold = json.loads(built.gold.read_text("utf-8"))
+    insured = gold["named_insured"]
+    assert insured["mailing_address"]["line_1"]["raw"] != "2646 SUMMIT"
+    names = [insured["primary_name"]["raw"]] + [a["name"]["raw"] for a in insured.get("additional_named_insureds", [])]
+    assert not {"WINSLOW", "TERESA UNDERHILL", "MEDINA"} & set(names)
+    assert len(names) == 3
 
 
 def test_a_model_number_ends_the_make():

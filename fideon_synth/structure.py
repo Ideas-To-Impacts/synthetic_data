@@ -72,9 +72,17 @@ SEASON = re.compile(r"not be in ([A-Z][a-z]+(?: [A-Z][a-z]+)*) for the period be
                     r"([A-Z][a-z]+ \d{1,2})(?:\s*(?:st|nd|rd|th))?\s+and\s+([A-Z][a-z]+ \d{1,2})")
 EFFECTIVE_AT = re.compile(r"\b(?:begins on|began on|period is from)\b.*?\bat\s+(?:the later of\s+)?"
                           r"(\d{1,2}:\d{2}\s*[AaPp]\.?\s?[Mm]\.?)(\s+STANDARD TIME)?", re.I)
+#: "This policy period ends on <date> at 12:01 a.m.", "... to <date> at 12:01 A.M."
+EXPIRES_AT = re.compile(r"(?:\b(?:expires on|ends on|period ends)\b|\bTIME\s+to\b)[^.]*?\bat\s+"
+                        r"(\d{1,2}:\d{2}(?:\s*[AaPp]\.?\s?[Mm]\.?)?)", re.I)
 LOCATION_HEAD = {"number": {"location", "loc", "#"}, "address": {"address"},
                  "legal": {"legal"}}
 FORM_LINE = re.compile(r"^(?:(?P<num>[A-Z]{2,6}[0-9A-Z]{2,6}-\d{4})\s*)?-\s*(?P<title>\S.*)$")
+def _form_of(ref):
+    """A form number as printed with its state code: "BY-300 NY", "BY-403 CW"."""
+    return ref.group(1) + (" " + ref.group(2) if ref.group(2) else "")
+
+
 FORM_SHAPE = re.compile(r"^([A-Z]{2,6})(\d{3,5})-\d{4}$")
 #: fields whose value is a date, an amount or an identifier - never a plain word
 NOT_TEXT = re.compile(r"date|premium|amount|limit|fee|deductible|number(?!_of_)|_id$|"
@@ -290,6 +298,7 @@ class Reader:
                         self.form_digits.setdefault(m.group(1), len(m.group(2)))
 
         self.gold, self.consumed = {}, set()
+        self.conflicts = set()           # policy-wide paths the units disagree on
         self.units, self.locations, self.deductibles = [], [], []
         self.cur = -1                     # the unit being read; a unit can be returned to
         self.operators, self.discounts, self.skip = [], [], set()
@@ -378,6 +387,11 @@ class Reader:
         self._print_date()
         self._whole_document()
         self._printed_facts()
+        for path in self.conflicts:           # set from the first unit, then contradicted
+            keys = path.split(".")
+            node = _get(self.gold, ".".join(keys[:-1])) if len(keys) > 1 else self.gold
+            if isinstance(node, dict):
+                node.pop(keys[-1], None)
 
         if self.operators:
             if self.none_violations is not None:
@@ -615,7 +629,8 @@ class Reader:
                     if f.part == 0:                # a date wrapped onto the next line
                         tail = next((g for fs in self.found_in.values() for g in fs
                                      if g.part == 1 and g.key == f.key), None)
-                        new = f.new + ", " + tail.new if tail is not None else None
+                        joint = " " if getattr(f, "split", None) == "month" else ", "
+                        new = f.new + joint + tail.new if tail is not None else None
                     elif f.part == 1:
                         continue
                     if new:
@@ -693,23 +708,30 @@ class Reader:
         return num
 
     def _footer_form_number(self):
-        # the page's own form number, under whichever name the schema gives it
+        """The form a document is printed on: the form number in its page
+        footers - the one most pages carry, not an insert's own ("PL-50957"
+        on a two-page summary before four pages of "PL-50776 NY")."""
+        # under whichever name the schema gives it
         path = "document.form_number"
         if path not in self.schema.leaves and "document.document_form_number" in self.schema.leaves:
             path = "document.document_form_number"
+        seen = {}                                   # value -> pages, in page order
         for n, height, cells, _ in self.pages:
             for c in cells:
                 text = c.text.strip()
                 if c.rect is None or c.rect.y0 <= 0.9 * height or text in self.form_numbers:
                     continue
                 if re.fullmatch(r"[A-Z]{2,6}[0-9A-Z]{2,6}-\d{4}", text):
-                    _put(self.gold, path, fv(self._fix_form(text), evidence=text))
-                    return
-                m = FORM_REF.fullmatch(text) or re.fullmatch(
-                    r"Form\s+([0-9A-Z-]+(?:\s[A-Z]{2})?)\s*\((\d{2}/\d{2})\)", text)
-                if m:                               # "PL-50776 NY (11-23)", "Form 6489 NY (06/21)"
-                    _put(self.gold, path, fv(text))
-                    return
+                    value = fv(self._fix_form(text), evidence=text)
+                elif FORM_REF.fullmatch(text) or re.fullmatch(
+                        r"Form\s+([0-9A-Z-]+(?:\s[A-Z]{2})?)\s*\((\d{2}/\d{2})\)", text):
+                    value = fv(text)                # "PL-50776 NY (11-23)", "Form 6489 NY (06/21)"
+                else:
+                    continue
+                seen.setdefault(value["raw"], [value, set()])[1].add(n)
+        if seen:
+            value, _ = max(seen.values(), key=lambda v: len(v[1]))   # first of the most printed
+            _put(self.gold, path, value)
 
     # ── labelled values ─────────────────────────────────────────────────────
 
@@ -784,8 +806,13 @@ class Reader:
             scalar = self.match(label, f.kind, self.index)
             rels = [r for r in self.unit_index.get(label, []) if self._unit_fits(f.kind, r)]
             if not scalar and rels:
+                if self._repeated_on_row(cell, label):
+                    continue
                 value = self._address(f) if rels[0].endswith("address") else \
                     (self.field(f.kind, f.new) if f.kind in ("date", "money") else fv(f.new))
+                if f.kind in ("id", "digits") and self._held_by_unit(rels[0], value):
+                    self._use(f)                   # a VIN printed again, in a discount table
+                    continue
                 if value:
                     self._unit_set(rels[0], value)
                     self._use(f)
@@ -812,6 +839,17 @@ class Reader:
             _put(self.gold, "policy.effective_time", fv(m.group(1)))
             _put(self.gold, "policy.expiration_time", fv(m.group(1)))
             _put(self.gold, "policy.time_zone", fv(m.group(2).strip()))
+        m = EXPIRES_AT.search(cell.text)
+        if m and found:
+            when = m.group(1)
+            if not re.search(r"[AaPp]\.?\s?[Mm]", when) and not cell.text[m.end():].strip():
+                # "... at 12:01" | "A.M. STANDARD TIME ...": the time wraps
+                row = next((k for k, l in enumerate(self.lines) if cell in l.cells), None)
+                nxt = self.lines[row + 1] if row is not None and row + 1 < len(self.lines) else None
+                ampm = re.match(r"\s*([AaPp]\.?\s?[Mm]\.?)", nxt.text) if nxt is not None else None
+                when = when + " " + ampm.group(1) if ampm else None
+            if when:
+                _put(self.gold, "policy.expiration_time", fv(when))
         m = EFFECTIVE_AT.search(cell.text)
         if m and found:
             _put(self.gold, "policy.effective_time", fv(m.group(1)))
@@ -858,12 +896,15 @@ class Reader:
             label, value = m.group(1), m.group(2).strip()
         elif cell.text.count(":") == 1 and cell.text.rstrip().endswith(":"):
             nxt = self._right_of(cell) or self._below_of(cell)
-            if nxt is None or ":" in nxt.text or self.found_in.get(id(nxt)):
+            if nxt is None or ":" in nxt.text or self.found_in.get(id(nxt)) or \
+                    not self._value_like(nxt.text):
                 return
             label, value, vcell = cell.text.rstrip()[:-1], nxt.text.strip(), nxt
-        elif whole and not NOT_TEXT.search(whole.rsplit(".", 1)[-1]):
+        elif whole and not NOT_TEXT.search(whole.rsplit(".", 1)[-1]) \
+                and not cell.text.strip()[:1].islower():   # "occupation." wrapped out of a sentence
             nxt = self._right_of(cell)             # "Your Insurer  |  TRAVCO INSURANCE COMPANY"
-            if nxt is None or ":" in nxt.text or self.found_in.get(id(nxt)):
+            if nxt is None or ":" in nxt.text or self.found_in.get(id(nxt)) or \
+                    not self._value_like(nxt.text):
                 return
             label, value, vcell = cell.text, nxt.text.strip(), nxt
         else:
@@ -873,6 +914,8 @@ class Reader:
             return
         label = self.norm(label)
         rels = [r for r in self.unit_index.get(label, []) if not NOT_TEXT.search(r.rsplit(".", 1)[-1])]
+        if rels and self._repeated_on_row(cell, label):
+            return
         if rels:
             self._unit_set(rels[0], self._plain(rels[0], value))
             season = re.match(r"(?i)(summer|winter|spring|fall|autumn)\b", label)
@@ -895,6 +938,27 @@ class Reader:
             if key and self.units_at and key not in ("year", "make", "model"):
                 self._sub_set(part, key, self._plain(key, value), new=False)
                 return
+
+    def _is_label(self, text):
+        """Printed text that is itself a label: in a grid of labels over their
+        values, the cell beside "Buyout Indicator" is "Channel Of Process"."""
+        n = self.norm(text.strip().rstrip(":"))
+        return bool(n) and (n in self.index or n in self.unit_index or n in self.op_index
+                            or n in self.heads)
+
+    def _value_like(self, text):
+        return bool(re.search(r"[A-Za-z0-9]", text)) and not self._is_label(text)
+
+    def _held_by_unit(self, rel, value):
+        """An identifier some unit already has: the same unit, printed again."""
+        return "." not in rel and is_field(value) and \
+            any(is_field(u.get(rel)) and u[rel]["raw"] == value["raw"] for u in self.units)
+
+    def _repeated_on_row(self, cell, label):
+        """The same label printed again along the row - one column per unit,
+        which this reader cannot tell apart, so it does not guess."""
+        return sum(1 for o in self.cells[cell.page] if o.row == cell.row and ":" in o.text
+                   and self.norm(o.text.split(":", 1)[0]) == label) >= 2
 
     def _below_of(self, cell):
         """The cell printed directly under ``cell``, left edges aligned."""
@@ -1116,7 +1180,7 @@ class Reader:
         for line in lines:
             if len(line.cells) == 1:
                 name = self._looks_named(line.cells[0])
-                if name:
+                if name and not self._is_label(name):
                     current = {"name": fv(name)}
                     self.operators.append(current)
                     continue
@@ -1138,8 +1202,10 @@ class Reader:
         "Vehicle | 2025 Starcraft | Original Owner", or a row of names under
         "The following discounts reduced your premium:"."""
         lines, j = self._section(i)
-        scope = None
-        for line in lines:
+        scope, skip = None, set()
+        for k, line in enumerate(lines):
+            if k in skip:
+                continue
             texts = [c.text.strip() for c in line.cells]
             if len(texts) == 1 and self.norm(texts[0]) in ("policy", "vehicle", "watercraft", "boat"):
                 scope = texts[0]
@@ -1151,6 +1217,13 @@ class Reader:
             if len(texts) >= 2 and scope and re.search(r"[A-Za-z]", texts[-1]) and \
                     (f or UNIT_LINE.match(applies.text.strip())):
                 target = f[0].new if f else applies.text.strip()
+                nxt = lines[k + 1] if k + 1 < len(lines) else None
+                if not f and nxt is not None and len(nxt.cells) == 1 and ":" not in nxt.text \
+                        and abs(nxt.cells[0].rect.x0 - applies.rect.x0) < 3 \
+                        and self.norm(nxt.text) not in ("policy", "vehicle", "watercraft", "boat") \
+                        and nxt.y - line.y < 1.8 * line.height:
+                    target += " " + nxt.text.strip()          # the name wraps onto the next line
+                    skip.add(k + 1)
                 for name in re.split(r",\s*|\s+and\s+", texts[-1]):
                     if name.strip():
                         self.discounts.append({"description": fv(name.strip()),
@@ -1460,7 +1533,7 @@ class Reader:
             if not values:
                 ref = FORM_REF.search(line.text)
                 if ref and last is not None:       # "See Endorsement BY-403 CW (11-23)"
-                    last.setdefault("form_number", fv(ref.group(1)))
+                    last.setdefault("form_number", fv(_form_of(ref)))
                     last.setdefault("edition_date", fv(ref.group(3)))
                     continue
                 if not name and extra and last is not None:
@@ -1479,6 +1552,8 @@ class Reader:
                     # Collision.") says the rows are included, not in its own words
                     included_clean = name.endswith(":")
                     continue
+                if included and re.match(r"(?:and|or|&)\b", name):
+                    continue                       # "and Collision": the heading's own rest
                 if included and name_x is not None and x0 > name_x + 2:
                     item = {"coverage_name": fv(name),
                             "is_included": yes_no(True, included if included_clean else name)}
@@ -1659,6 +1734,16 @@ class Reader:
                 value = fv(text)
             else:
                 continue
+            if where == "scalar":
+                # a policy-wide field fed from each unit's row holds only when
+                # the units agree: $3,000 on one boat and $5,000 on the next
+                # says nothing about the policy as a whole
+                have = _get(self.gold, path)
+                if path in self.conflicts:
+                    continue
+                if have is not None and str(have.get("raw")) != str(value.get("raw")):
+                    self.conflicts.add(path)
+                    continue
             _put(self.gold if where == "scalar" else unit, path, value)
 
     def _amount(self, seg):
@@ -1687,11 +1772,25 @@ class Reader:
             else:
                 item[field] = self._amount(s)
         # words in the limit column beside a figure qualify it; alone they
-        # say how the coverage is valued or how far it reaches
+        # say how the coverage is valued or how far it reaches - words, not a
+        # speck a scan's layer made letters of ("EE")
+        if extra and len(re.sub(r"[^A-Za-z]", "", extra)) < 4 and not re.search(r"\d", extra):
+            extra = ""
+        figure = re.fullmatch(r"\$?\d{1,3}(?:,\d{3})*(?:\.\d\d)?", extra.strip()) if extra else None
+        if figure and "limit_amount" not in item:
+            # "1,000" in the limit area of a table's continued rows, whose
+            # columns were not found again on the next page
+            item["limit_amount"] = fv(figure.group(0), as_number(figure.group(0)))
+            extra = ""
         if extra:
             said_extra = said_extra or fv(extra)
             if "limit_amount" in item:
                 item["limit_basis"] = said_extra
+                # "Agreed Value $52,000": the limit is also the unit's own value
+                rels = [r for r in self.unit_index.get(self.norm(extra), [])
+                        if r.endswith(("price", "value"))]
+                if rels and unit is not None:
+                    unit.setdefault(rels[0], copy.deepcopy(item["limit_amount"]))
             elif re.search(r"\d", extra):
                 item["coverage_description"] = copy.deepcopy(said_extra)
             else:
@@ -1778,7 +1877,7 @@ class Reader:
             ref = FORM_REF.fullmatch(line.cells[-1].text.strip()) if len(line.cells) >= 2 else None
             if ref:                                # "Boat Policy  |  BY-100 CW (11-23)"
                 title = " ".join(c.text for c in line.cells[:-1]).strip()
-                num = ref.group(1)
+                num = _form_of(ref)
                 item = {"form_number": fv(num), "edition_date": fv(ref.group(3)),
                         "form_title": fv(title), "is_included": yes_no(True, head.text)}
                 if re.search(r"\bpolicy$", title, re.I):
@@ -1829,6 +1928,38 @@ def finish(gold, schema):
             months = (b.year - a.year) * 12 + b.month - a.month - (b.day < a.day - 1)
             if months > 0:
                 policy["policy_term_months"] = derived(str(months), parsed=months)
+
+    # a policy-wide field whose units print it differently says nothing for
+    # the policy: "Personal Property $3,000" on one boat's tile, $5,000 on the next
+    at = unit_list(schema)
+    units = (_get(gold, at[0]) or []) if at else []
+    block = gold.get(at[0].split(".")[0]) if at else None
+    if isinstance(block, dict) and len(units) >= 2:
+        for part in [block] + [v for v in block.values() if isinstance(v, dict) and not is_field(v)]:
+            for key in [k for k, v in part.items() if is_field(v)]:
+                seen = {str(u[key]["raw"]) for u in units if isinstance(u, dict) and is_field(u.get(key))}
+                if len(seen) >= 2:
+                    del part[key]
+
+    # a driver or operator the page calls "Named insured" is one, though only
+    # the first of them heads the mailing block
+    insured = gold.get("named_insured")
+    if isinstance(insured, dict) and "named_insured.additional_named_insureds[].name" in schema.leaves:
+        known = {str((insured.get("primary_name") or {}).get("raw", "")).lower()}
+        known |= {str(e["name"]["raw"]).lower() for e in insured.get("additional_named_insureds", [])}
+        for section in gold.values():
+            for people in (section.values() if isinstance(section, dict) else []):
+                if not (isinstance(people, list) and people and isinstance(people[0], dict)):
+                    continue
+                for person in people:
+                    rel, name = person.get("relationship_to_insured"), person.get("name")
+                    if is_field(rel) and is_field(name) and re.fullmatch(
+                            r"(?i)named insured", str(rel["raw"]).strip()) \
+                            and str(name["raw"]).lower() not in known:
+                        insured.setdefault("additional_named_insureds", []).append(
+                            {"name": copy.deepcopy(name),
+                             "entity_type": derived("Individual", name["raw"])})
+                        known.add(str(name["raw"]).lower())
 
     if (_get(gold, "document.document_type") or {}).get("parsed") != "Policy History":
         return gold
