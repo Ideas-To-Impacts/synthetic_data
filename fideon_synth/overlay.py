@@ -601,19 +601,19 @@ def apply(page, replacements: List[Replacement], ink: Ink, matrix=fitz.Identity)
             # scanned from where the run ended, not from the next blank: the
             # comma can begin right there
             cols = ink.cols(baseline - 0.7 * size, baseline + 0.25 * size)
-            z, reach = ink.zoom, right + 0.35 * size
+            z, reach = ink.zoom, right + 0.18 * size   # a mark hugs; a word space is wider
             p = int(right * z)
-            for _ in range(2):                    # the rest of the last glyph, then the mark
-                while p < min(len(cols), reach * z) and not cols[p]:
-                    p += 1
-                if p >= min(len(cols), reach * z):
-                    break
+            while p < len(cols) and cols[p]:      # the rest of the last glyph
+                p += 1
+            right = max(right, p / z)
+            while p < min(len(cols), reach * z) and not cols[p]:
+                p += 1
+            if p < min(len(cols), reach * z):     # one mark after a hair of space
                 q = p
                 while q < len(cols) and cols[q]:
                     q += 1
-                if (q - p) / z >= 0.35 * size:
-                    break                         # a word, not a mark
-                right, p = q / z, q
+                if (q - p) / z < 0.35 * size:
+                    right = q / z
         if rep.follows and ok:
             # the next word's own ink bounds the new value - on a scan the
             # text layer can sit a few points off the print
@@ -640,11 +640,12 @@ def apply(page, replacements: List[Replacement], ink: Ink, matrix=fitz.Identity)
         r = rep.visible_rect
         cover = fitz.Rect(left - 0.5, min(baseline - 0.8 * size, r.y0 + 0.1 * r.height),
                           right + 0.5, max(baseline + 0.25 * size, r.y1 - 0.1 * r.height))
-        # and all the old value's own ink between its ends: a baseline put a
-        # point too high leaves a comma's tail or a descender showing
-        glyphs = ink.bbox(fitz.Rect(left, cover.y0 - 0.2 * size, right, cover.y1 + 0.35 * size))
-        if glyphs is not None and glyphs.height < 1.5 * size:
-            cover |= fitz.Rect(left - 0.5, glyphs.y0 - 0.3, right + 0.5, glyphs.y1 + 0.3)
+        # and the old value's ink just under its baseline: a baseline put a
+        # point too high leaves a comma's tail or a descender showing. Only
+        # downward, and not as far as the next line's letters
+        tail = ink.bbox(fitz.Rect(left, cover.y1 - 0.1 * size, right, baseline + 0.3 * size))
+        if tail is not None:
+            cover.y1 = max(cover.y1, min(tail.y1 + 0.3, baseline + 0.3 * size))
         if not rep.face_known:
             rep.font = face
         placed.append((rep, size, baseline, cover, left, right))

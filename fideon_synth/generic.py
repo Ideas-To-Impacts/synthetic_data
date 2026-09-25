@@ -1203,7 +1203,17 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
             gold["fideon:unverified"] = [{"path": p, "value": raw} for p, raw in unverified]
         built.problems += ["gold says %s = %r is printed, but it is not on any page"
                            % (p, raw) for p, raw in misses]
+        # a label is copied off the source page, and can itself be a value
+        # that was replaced - the insured's street over its city line
+        swaps = sorted({(f.key or f.text): f.new for f in found_all
+                        if f.new and f.new != f.text and not f.blank and f.part is None
+                        and (f.kind in PII or f.kind == "date")}.items(),
+                       key=lambda kv: -len(kv[0]))
         for item in unmapped:
+            for old, new in swaps:
+                item["label"] = re.sub(r"(?<![A-Za-z0-9])%s(?![A-Za-z0-9])"
+                                       % r"\s+".join(map(re.escape, old.split())),
+                                       lambda m, new=new: new, item["label"], flags=re.I)
             item["page_ref"] = [i + 1 for i, t in enumerate(texts)
                                 if pageref.on_page(pageref._norm(item["value"]), t)]
 
@@ -1242,7 +1252,12 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
         built.problems += [e for e in errors if e not in missing]
         if missing:
             gold["fideon:incomplete"] = [e.split("'")[1] if "'" in e else e for e in missing]
-        built.gold.write_text(json.dumps(gold, indent=2, ensure_ascii=False), encoding="utf-8")
+        # and nothing the gold carries may be an original value either
+        written = json.dumps(gold, indent=2, ensure_ascii=False)
+        flat = pageref._norm(written)
+        built.problems += ["source value %r is in the gold" % old for old, _ in swaps
+                           if len(old) >= 4 and pageref.on_page(pageref._norm(old), flat)]
+        built.gold.write_text(written, encoding="utf-8")
         built.fields = resolved + len(misses)
     except Exception as exc:  # one bad source must not stop a folder run
         built.problems.append("%s: %s" % (type(exc).__name__, exc))
