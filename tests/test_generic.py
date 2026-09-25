@@ -470,6 +470,31 @@ def test_amounts_dates_and_one_identifier_printed_two_ways():
     assert spaced.count(" ") == 2 and spaced.replace(" ", "") == joined != "8848065299089"
 
 
+def test_rules_that_hold_for_any_document(schema):
+    from fideon_synth import structure, prose
+    # an operator the page calls "Named insured" is one
+    gold = {"named_insured": {"primary_name": generic.fv("Clementine Crowthorne")},
+            "watercraft": {"operators": [
+                {"name": generic.fv("Clementine Crowthorne"), "relationship_to_insured": generic.fv("Named insured")},
+                {"name": generic.fv("Marguerite Everly"), "relationship_to_insured": generic.fv("Named insured")},
+                {"name": generic.fv("Tom Everly"), "relationship_to_insured": generic.fv("Son")}]}}
+    structure.finish(gold, schema)
+    assert [e["name"]["raw"] for e in gold["named_insured"]["additional_named_insureds"]] == ["Marguerite Everly"]
+    # where a period ends, and its time - "A.M." may have wrapped to the next line
+    assert structure.EXPIRES_AT.search("This policy period ends on 02/25/2027 at 12:01 a.m.").group(1) == "12:01 a.m."
+    assert structure.EXPIRES_AT.search("STANDARD TIME to May 6, 2027 at 12:01").group(1) == "12:01"
+    # an ISO form number is a form's, never an identifier to replace
+    assert generic.ISO_FORM.match("CG20180413") and generic.ISO_FORM.match("CG 20 18 04 13")
+    assert not generic.ISO_FORM.match("MSB00001028349")
+    # a form number keeps its state code
+    assert structure._form_of(structure.FORM_REF.search("BY-300 NY (11-23)")) == "BY-300 NY"
+    # rows of labels and address lines are not prose; a short sentence is
+    line = lambda text: prose.Line(0, 10, 0, text, False, False, [(0, text)])
+    assert not line("Outboard #1 Year: 2026 Make: Yamaha Horsepower: 150").prose()
+    assert not line("One Tower Square, Hartford, CT 06183").prose()
+    assert line("Enclosed are your policy documents.").prose()
+
+
 def test_a_model_number_ends_the_make():
     from fideon_synth import structure
     unit = {"unit_description": generic.fv("2015 Correct Craft/Nautique 200 Sport Nautique")}

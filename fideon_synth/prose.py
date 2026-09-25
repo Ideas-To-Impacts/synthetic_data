@@ -50,7 +50,15 @@ class Line:
     def prose(self):
         ink = self.text.replace(" ", "")
         label = _LABEL_ROW.match(self.text)
-        return (self.words >= 6 and not self.gap
+        text = self.text.strip()
+        # a short sentence is prose too: "Enclosed are your policy documents."
+        sentence = self.words >= 4 and re.match(r"[A-Z*\"'(]", text) and re.search(r"[.!?]$", text) \
+            and re.search(r"[a-z]{3}", text)
+        if self.text.count(":") >= 2:
+            return False                                     # "Year: 2026 Make: Yamaha ..." is a row
+        if re.search(r"\b[A-Z]{2}\s+\d{5}(?:-\d{4})?$", text):
+            return False                                     # "... Hartford, CT 06183" is an address
+        return ((self.words >= 6 or sentence) and not self.gap
                 and not (self.bold and self.words < 10)      # a bold heading, not a bold paragraph
                 and not (label and len(label.group(1).split()) <= 4)
                 and len(_CODE.findall(self.text)) < 2        # a list of forms is not prose
@@ -237,8 +245,10 @@ def _sections(lines, n):
                     parts.append(nxt.cells[0][1])
                     j += 1
                 break
-            # a paragraph's last line can be a word or two: "deductible."
-            if not nxt.prose() and ends:
+            # a paragraph's last line can be a word or two: "deductible." - but
+            # not an address set under a name line ("..., Hartford, CT 06183")
+            if not nxt.prose() and (ends or re.search(r"\b[A-Z]{2}\s+\d{5}(?:-\d{4})?$",
+                                                      nxt.text.strip())):
                 break
             parts.append(nxt.text)
             j += 1

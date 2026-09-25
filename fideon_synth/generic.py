@@ -113,6 +113,8 @@ PATTERNS = [   # (kind, regex) - earlier kinds win overlaps
                           r"(?![\w,./-])")),
 ]
 FORM_NUMBER = re.compile(r"^[A-Z]{2,6}\d{2,5}-\d{4}$")     # forms keep their numbers
+#: an ISO form number, spaced or run together: "CG 20 18 04 13", "CG20180413", "IL00171198"
+ISO_FORM = re.compile(r"^[A-Z]{2}\s?\d{2}\s?\d{2}\s?\d{2}\s?\d{2}$")
 #: what follows a form number: its state and edition, "CW (11-23)", "NY (06/21)"
 EDITION = re.compile(r"^\s*(?:[A-Z]{2}\s*)?\(\d{2}[-/]\d{2}\)")
 ID_LABEL = re.compile(r"\b(number|no|id|code|hin|vin|account|acct|agency|customer|"
@@ -318,7 +320,8 @@ def _detect(cell_list):
                 if any(s < te and ts < e for ts, te in taken):
                     continue
                 text = m.group(0)
-                if kind == "id" and (FORM_NUMBER.match(text) or len(re.sub(r"\D", "", text)) < 3):
+                if kind == "id" and (FORM_NUMBER.match(text) or ISO_FORM.match(text)
+                                     or len(re.sub(r"\D", "", text)) < 3):
                     continue
                 if kind in ("id", "digits") and EDITION.match(cell.text[e:]):
                     continue                      # a form number and its edition
