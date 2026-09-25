@@ -285,6 +285,7 @@ class Char:
     color: int
     space_before: bool = False    # the text layer put a space before this char
     leader: bool = False          # one dot of a line drawn as a row of dots
+    line: object = None           # the text-layer line it came from
 
 
 @dataclass
@@ -329,6 +330,49 @@ def layer_chars(page, matrix=fitz.Identity):
     return chars
 
 
+def _untangle(row):
+    """Text lines the layout printed over each other on one baseline - an ID
+    card's "01/31/2025" across "(Not acceptable to obtain registration...)" -
+    are separate rows: sorted together they would interleave letter by letter.
+    Lines side by side, the usual case, stay one row exactly as they were."""
+    groups = {}
+    for ch in row:
+        if ch.line is not None and ch.c not in FILL:
+            groups.setdefault(ch.line, []).append(ch)
+    height = float(np.median([ch.box.height for ch in row]))
+    # a layer line can hold two columns far apart ("Lake Forest, IL 60045 ...
+    # NY 13360" in a scan's layer): each run of it between wide gaps is its
+    # own span, so it overlaps nothing it merely spans across
+    pieces = []
+    for g in groups.values():
+        g = sorted(g, key=lambda c: c.box.x0)
+        run = [g[0]]
+        for a, b in zip(g, g[1:]):
+            if b.box.x0 - a.box.x1 > 1.5 * height:
+                pieces.append(run)
+                run = []
+            run.append(b)
+        pieces.append(run)
+    spans = [(min(c.box.x0 for c in g), max(c.box.x1 for c in g), g)
+             for g in pieces if len(g) >= 2]
+    if len(spans) < 2:
+        return [row]
+    overlap = lambda a, b: min(a[1], b[1]) - max(a[0], b[0]) > max(2.0, 0.5 * height)
+    if not any(overlap(a, b) for i, a in enumerate(spans) for b in spans[i + 1:]):
+        return [row]
+    parts = []                                   # each a list of spans that do not overlap
+    for span in sorted(spans, key=lambda s: s[0]):
+        home = next((p for p in parts if not any(overlap(span, q) for q in p)), None)
+        if home is None:
+            parts.append([span])
+        else:
+            home.append(span)
+    placed = {id(c) for p in parts for s in p for c in s[2]}
+    first = [c for s in parts[0] for c in s[2]] + [c for c in row if id(c) not in placed]
+    return [sorted(first, key=lambda c: c.box.x0)] + \
+        [sorted((c for s in p for c in s[2]), key=lambda c: c.box.x0) for p in parts[1:]]
+
+
 def cells(page, matrix=fitz.Identity, ink: Optional[Ink] = None,
           extra=None, drop=None) -> List[Cell]:
     """Every cell on the page, top to bottom, left to right.
@@ -339,8 +383,8 @@ def cells(page, matrix=fitz.Identity, ink: Optional[Ink] = None,
     that the layer lacks, and ``drop`` removes the layer's characters inside
     the given rects (see :mod:`recover`)."""
     chars = []
-    for block in page.get_text("rawdict")["blocks"]:
-        for line in block.get("lines", []):
+    for b_no, block in enumerate(page.get_text("rawdict")["blocks"]):
+        for l_no, line in enumerate(block.get("lines", [])):
             space = False
             # a text line that is all dots is a rule drawn under a row, not text
             glyphs = [ch["c"] for span in line["spans"] for ch in span["chars"] if ch["c"].strip()]
@@ -355,7 +399,7 @@ def cells(page, matrix=fitz.Identity, ink: Optional[Ink] = None,
                     ocr = fitz.Rect(ch["bbox"])
                     chars.append(Char(ch["c"], ocr * matrix, ocr, span["font"],
                                       span["size"], span.get("color", 0), space,
-                                      leader and ch["c"] in FILL))
+                                      leader and ch["c"] in FILL, (b_no, l_no)))
                     space = False
     if drop:
         chars = [ch for ch in chars if not any(
@@ -386,6 +430,7 @@ def cells(page, matrix=fitz.Identity, ink: Optional[Ink] = None,
                 row.append(ch)
                 continue
         rows.append([ch])
+    rows = [part for row in rows for part in _untangle(row)]
 
     out = []
     for r, row in enumerate(rows):
@@ -615,7 +660,7 @@ def apply(page, replacements: List[Replacement], ink: Ink, matrix=fitz.Identity)
             if line is None:
                 break
             s, base = _size_from_ink(rep.old, fitz.Rect(left, line[0], right, line[1]))
-            if not 0.45 < s / (k * h) < 1.6:
+            if not 0.45 < s / (k * h) < 1.3:          # two tight lines read as one
                 break
             size, baseline, ok = s, base, True
         if rep.old[-1:] in ",;" and ok:

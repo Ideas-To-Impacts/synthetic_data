@@ -629,7 +629,8 @@ class Reader:
                     if f.part == 0:                # a date wrapped onto the next line
                         tail = next((g for fs in self.found_in.values() for g in fs
                                      if g.part == 1 and g.key == f.key), None)
-                        new = f.new + ", " + tail.new if tail is not None else None
+                        joint = " " if getattr(f, "split", None) == "month" else ", "
+                        new = f.new + joint + tail.new if tail is not None else None
                     elif f.part == 1:
                         continue
                     if new:
@@ -1547,6 +1548,8 @@ class Reader:
                     # Collision.") says the rows are included, not in its own words
                     included_clean = name.endswith(":")
                     continue
+                if included and re.match(r"(?:and|or|&)\b", name):
+                    continue                       # "and Collision": the heading's own rest
                 if included and name_x is not None and x0 > name_x + 2:
                     item = {"coverage_name": fv(name),
                             "is_included": yes_no(True, included if included_clean else name)}

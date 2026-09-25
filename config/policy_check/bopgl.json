@@ -3,7 +3,7 @@
   "title": "Businessowners Liability policy",
   "fideon:doc_type": "policy_check",
   "fideon:lob": "bopgl",
-  "fideon:note": "Repo-defined line with no equivalent in the supplied drop. Core re-based on policy_core v1.4.0 by scripts/build_canonical_policy_schemas.py; the 3 line-specific block(s) are the repo's own and are kept verbatim. Extended by scripts/canonical_schema_extensions.py with fields the supplied skeleton did not carry; re-run it after any regeneration.",
+  "fideon:note": "Repo-defined line with no equivalent in the supplied drop. Core re-based on policy_core v1.4.0 by scripts/build_canonical_policy_schemas.py; the 3 line-specific block(s) are the repo's own and are kept verbatim. Extended by scripts/canonical_schema_extensions.py with fields the supplied skeleton did not carry; re-run it after any regeneration. Fields carried over from ocean_marine 2026-09-25 (text_sections and printed facts every line of business prints): text_sections, document.print_time, document.print_code, document.source_url, policy.product_code, policy.policy_period_location_basis, billing.billing_note, billing.payment_coupon_scan_line, billing.phone.",
   "fideon:source": {
     "schema_id": "fideon.canonical.policy_core",
     "version": "1.4.0",
@@ -149,6 +149,30 @@
             "Changes",
             "Summary of Changes",
             "Summary of Your Changes"
+          ]
+        },
+        "print_time": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Print Time",
+            "Printed At",
+            "Time Printed",
+            "Printed"
+          ]
+        },
+        "print_code": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Print Code",
+            "Form Print Code"
+          ]
+        },
+        "source_url": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "URL",
+            "Link",
+            "Source URL"
           ]
         }
       }
@@ -479,6 +503,21 @@
             "Customer Since",
             "Insured Since",
             "Policyholder Since"
+          ]
+        },
+        "product_code": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Product Code",
+            "Use product code"
+          ]
+        },
+        "policy_period_location_basis": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "At the residence premises",
+            "At the address of the named insured",
+            "Policy period location basis"
           ]
         }
       }
@@ -1236,6 +1275,29 @@
           "fideon:aliases": [
             "Pay initial installment"
           ]
+        },
+        "billing_note": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "This is not a bill"
+          ]
+        },
+        "payment_coupon_scan_line": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Scan Line",
+            "Payment Coupon Scan Line"
+          ]
+        },
+        "phone": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "For Billing Questions",
+            "Billing Phone",
+            "Call us at",
+            "By calling",
+            "Automatic Payments"
+          ]
         }
       }
     },
@@ -1525,6 +1587,12 @@
         }
       },
       "additionalProperties": false
+    },
+    "text_sections": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/TextSection"
+      }
     }
   },
   "$defs": {
@@ -1713,6 +1781,48 @@
         }
       },
       "additionalProperties": false
+    },
+    "TextSection": {
+      "type": "object",
+      "description": "A block of printed text exactly as the document carries it: a prose paragraph, notice, condition or disclaimer, or the page's remaining label/footer text. Nothing the page prints is left out of the gold; structured fields above hold the values, these hold the words.",
+      "properties": {
+        "section_id": {
+          "type": "string"
+        },
+        "section_title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "section_type": {
+          "type": "string",
+          "enum": [
+            "prose",
+            "other"
+          ]
+        },
+        "raw_text": {
+          "type": "string"
+        },
+        "page_range": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "form_number": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "section_id",
+        "raw_text",
+        "page_range"
+      ]
     }
   }
 }

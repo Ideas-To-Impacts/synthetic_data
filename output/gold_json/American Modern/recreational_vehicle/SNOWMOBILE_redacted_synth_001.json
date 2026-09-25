@@ -93,10 +93,126 @@
       "flagged": false
     }
   },
+  "producer": {
+    "agency_name": {
+      "raw": "STONECROP INSURANCE GROUP BROKERAGE INC",
+      "parsed": "STONECROP INSURANCE GROUP BROKERAGE INC",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        3,
+        5
+      ],
+      "flagged": false
+    },
+    "contact": {
+      "phone": {
+        "raw": "716-555-0191",
+        "parsed": "716-555-0191",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          37,
+          38
+        ],
+        "flagged": false
+      }
+    },
+    "address": {
+      "city": {
+        "raw": "Canandaigua",
+        "parsed": "Canandaigua",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          37,
+          38
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          23,
+          25,
+          27,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          37,
+          38,
+          39,
+          40,
+          43,
+          45,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "14424",
+        "parsed": "14424",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          37,
+          38
+        ],
+        "flagged": false
+      },
+      "line_1": {
+        "raw": "4075 Elderberry Ln",
+        "parsed": "4075 Elderberry Ln",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          37,
+          38
+        ],
+        "flagged": false
+      }
+    }
+  },
   "named_insured": {
     "primary_name": {
-      "raw": "Seraphina Blackwood",
-      "parsed": "Seraphina Blackwood",
+      "raw": "Barnaby Blackwood",
+      "parsed": "Barnaby Blackwood",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -221,8 +337,8 @@
     "additional_named_insureds": [
       {
         "name": {
-          "raw": "ALASTAIR MORTLAKE",
-          "parsed": "ALASTAIR MORTLAKE",
+          "raw": "WALDEMAR STONEBRIDGE",
+          "parsed": "WALDEMAR STONEBRIDGE",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -234,8 +350,7 @@
             38,
             42,
             43,
-            51,
-            54
+            51
           ],
           "flagged": false
         },
@@ -253,8 +368,7 @@
             38,
             42,
             43,
-            51,
-            54
+            51
           ],
           "flagged": false
         }
@@ -262,6 +376,22 @@
     ]
   },
   "policy": {
+    "policy_number": {
+      "raw": "796-262-273",
+      "parsed": "796-262-273",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        3,
+        4,
+        5,
+        23
+      ],
+      "flagged": false
+    },
     "expiration_date": {
       "raw": "10/25/2026",
       "parsed": "10/25/2026",
@@ -270,7 +400,9 @@
         "source": "deterministic"
       },
       "page_ref": [
-        3
+        3,
+        7,
+        9
       ],
       "flagged": false
     },
@@ -286,14 +418,15 @@
       ],
       "flagged": false
     },
-    "policy_number": {
-      "raw": "977434523",
-      "parsed": "977434523",
+    "effective_date": {
+      "raw": "10/25/2025",
+      "parsed": "10/25/2025",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
       },
       "page_ref": [
+        3,
         7,
         9
       ],
@@ -313,6 +446,16 @@
         5
       ],
       "flagged": false
+    },
+    "policy_term_months": {
+      "raw": "12",
+      "parsed": 12,
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
     }
   },
   "premium": {
@@ -331,8 +474,8 @@
   },
   "claim_reporting": {
     "claims_phone": {
-      "raw": "518-555-0188",
-      "parsed": "518-555-0188",
+      "raw": "716-555-0184",
+      "parsed": "716-555-0184",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -343,36 +486,6 @@
         10
       ],
       "flagged": false
-    }
-  },
-  "producer": {
-    "contact": {
-      "phone": {
-        "raw": "(315) 555-0195",
-        "parsed": "(315) 555-0195",
-        "confidence": {
-          "score": 1.0,
-          "source": "deterministic"
-        },
-        "page_ref": [
-          21
-        ],
-        "flagged": false
-      }
-    },
-    "address": {
-      "city": {
-        "raw": "Signature of Insured",
-        "parsed": "Signature of Insured",
-        "confidence": {
-          "score": 1.0,
-          "source": "deterministic"
-        },
-        "page_ref": [
-          23
-        ],
-        "flagged": false
-      }
     }
   },
   "billing": {
@@ -415,6 +528,26 @@
     }
   },
   "recreational_vehicle": {
+    "no_fault_benefits": {
+      "death_benefit": {
+        "raw": "Silverbirch LLC",
+        "parsed": "Silverbirch LLC",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          29,
+          31,
+          33,
+          42,
+          43,
+          49
+        ],
+        "flagged": false
+      }
+    },
     "units": [
       {
         "coverages": [
@@ -1286,7 +1419,6 @@
     "policy.coverage_package.package_components[].component_name",
     "policy.coverage_package.package_components[].component_value",
     "policy.coverage_package.package_name",
-    "policy.effective_date",
     "policy.effective_time",
     "policy.expiration_time",
     "policy.id_cards[].effective_date",
@@ -1307,7 +1439,6 @@
     "policy.policy_form_number",
     "policy.policy_rate_control",
     "policy.policy_status",
-    "policy.policy_term_months",
     "policy.policy_tier",
     "policy.policyholder_since_date",
     "policy.prior_policy_number",
@@ -1373,11 +1504,7 @@
     "producer.address.country",
     "producer.address.county",
     "producer.address.county_code",
-    "producer.address.line_1",
     "producer.address.line_2",
-    "producer.address.postal_code",
-    "producer.address.state",
-    "producer.agency_name",
     "producer.agent_of_record",
     "producer.buyout_indicator",
     "producer.commission_percentage",
@@ -1449,7 +1576,6 @@
     "recreational_vehicle.no_fault_benefits.applies_to_named_insured_only",
     "recreational_vehicle.no_fault_benefits.basic_economic_loss_limit",
     "recreational_vehicle.no_fault_benefits.covered_persons[]",
-    "recreational_vehicle.no_fault_benefits.death_benefit",
     "recreational_vehicle.no_fault_benefits.funeral_benefit",
     "recreational_vehicle.no_fault_benefits.is_applicable",
     "recreational_vehicle.no_fault_benefits.mandatory_pedestrian_pip_limit",
@@ -1630,8 +1756,8 @@
     },
     {
       "kind": "phone",
-      "label": "contact PATRIOTIC INSURANCE GROUP BROKERAGE INC at",
-      "value": "(716) 555-0174",
+      "label": "contact STONECROP INSURANCE GROUP BROKERAGE INC at",
+      "value": "(716) 555-0197",
       "page": 1,
       "page_ref": [
         1,
@@ -1641,7 +1767,7 @@
     {
       "kind": "email",
       "label": "Customer Service",
-      "value": "rosalind.vantassel@example.com",
+      "value": "bartholomew.mortlake@example.com",
       "page": 1,
       "page_ref": [
         1
@@ -1650,7 +1776,16 @@
     {
       "kind": "id",
       "label": "Customer Service",
-      "value": "IL-CW-CL-0072",
+      "value": "IL-CW-CL-0062",
+      "page": 1,
+      "page_ref": [
+        1
+      ]
+    },
+    {
+      "kind": "pobox",
+      "label": "| www.amig.com/customer",
+      "value": "PO Box 521",
       "page": 1,
       "page_ref": [
         1
@@ -1659,19 +1794,43 @@
     {
       "kind": "cityline",
       "label": "| www.amig.com/customer",
-      "value": "Delhi, NY 13753",
+      "value": "Saranac Lake, NY 12983",
       "page": 1,
       "page_ref": [
         1
       ]
     },
     {
-      "kind": "date",
-      "label": "RENEGADE X",
-      "value": "10/25/2025",
-      "page": 3,
+      "kind": "person",
+      "label": "",
+      "value": "CORNELIUS BRACKENRIDGE",
+      "page": 1,
       "page_ref": [
-        3
+        1,
+        3,
+        23
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "PolicyHolder:",
+      "value": "CORNELIUS BRACKENRIDGE",
+      "page": 1,
+      "page_ref": [
+        1,
+        3,
+        23
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "Dear",
+      "value": "CORNELIUS BRACKENRIDGE",
+      "page": 1,
+      "page_ref": [
+        1,
+        3,
+        23
       ]
     },
     {
@@ -1689,31 +1848,100 @@
     },
     {
       "kind": "digits",
-      "label": "Policy Discounts GRANITE ROW",
-      "value": "837952",
+      "label": "Policy Discounts SILVERBIRCH LLC",
+      "value": "705886",
       "page": 3,
       "page_ref": [
         3
       ]
     },
     {
+      "kind": "person",
+      "label": "Drivers",
+      "value": "CORNELIUS BRACKENRIDGE",
+      "page": 3,
+      "page_ref": [
+        1,
+        3,
+        23
+      ]
+    },
+    {
+      "kind": "digits",
+      "label": "STONECROP INSURANCE GROUP BROKERAGE INC",
+      "value": "824894",
+      "page": 3,
+      "page_ref": [
+        3
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "10/25/2025 to 10/25/2026 12:",
+      "value": "CORNELIUS BRACKENRIDGE",
+      "page": 3,
+      "page_ref": [
+        1,
+        3,
+        23
+      ]
+    },
+    {
       "kind": "id",
       "label": "",
-      "value": "8STPJHPN2BD146058",
+      "value": "6STPJHPN4BD829486",
       "page": 4,
       "page_ref": [
         4,
+        5,
         7
       ]
     },
     {
       "kind": "id",
+      "label": "009 7HM UBCV MD, AHWJQ JD",
+      "value": "91452-7275",
+      "page": 4,
+      "page_ref": [
+        4
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "009 7HM UBCV MD, AHWJQ JD",
+      "value": "91452-7275",
+      "page": 4,
+      "page_ref": [
+        4
+      ]
+    },
+    {
+      "kind": "id",
       "label": "Vehicle #2:",
-      "value": "9VZJSC7L97K348945",
+      "value": "9VZJSC9L46K460187",
       "page": 4,
       "page_ref": [
         4,
+        5,
         9
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "009 7HM UBCV MD, AHWJQ JD",
+      "value": "91452-7275",
+      "page": 4,
+      "page_ref": [
+        4
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "009 7HM UBCV MD, AHWJQ JD",
+      "value": "91452-7275",
+      "page": 4,
+      "page_ref": [
+        4
       ]
     },
     {
@@ -1728,7 +1956,7 @@
     {
       "kind": "pobox",
       "label": "",
-      "value": "PO Box 517",
+      "value": "PO Box 662",
       "page": 5,
       "page_ref": [
         5
@@ -1736,8 +1964,8 @@
     },
     {
       "kind": "cityline",
-      "label": "PO Box 4258",
-      "value": "Watertown, NY 13601",
+      "label": "PO Box 662",
+      "value": "Rome, NY 13440",
       "page": 5,
       "page_ref": [
         5
@@ -1746,7 +1974,7 @@
     {
       "kind": "cityline",
       "label": "1235 Commerce",
-      "value": "Cazenovia, NY 13035",
+      "value": "Skaneateles, NY 13152",
       "page": 5,
       "page_ref": [
         5,
@@ -1756,25 +1984,29 @@
     {
       "kind": "id",
       "label": "Forms that apply to vehicle #1: 2016, SKI DOO, RENEGADE ADRLNE 900,",
-      "value": "9STPJHPN7BD914526",
+      "value": "6STPJHPN4BD829486",
       "page": 5,
       "page_ref": [
-        5
+        4,
+        5,
+        7
       ]
     },
     {
       "kind": "id",
       "label": "Forms that apply to vehicle #2: 2006, SKI DOO, RENEGADE X,",
-      "value": "3VZJSC8L68K936360",
+      "value": "9VZJSC9L46K460187",
       "page": 5,
       "page_ref": [
-        5
+        4,
+        5,
+        9
       ]
     },
     {
       "kind": "person",
       "label": "Report a Claim:",
-      "value": "Lavinia Vantassel",
+      "value": "Montague Larkspur",
       "page": 5,
       "page_ref": [
         5,
@@ -1785,9 +2017,19 @@
       ]
     },
     {
+      "kind": "digits",
+      "label": "Policy Number",
+      "value": "796262273",
+      "page": 7,
+      "page_ref": [
+        7,
+        9
+      ]
+    },
+    {
       "kind": "street",
       "label": "Fairmount Works",
-      "value": "8230 BRAMBLE HOLLOW RD",
+      "value": "4165 DURANT RD",
       "page": 7,
       "page_ref": [
         7,
@@ -1797,7 +2039,7 @@
     {
       "kind": "phone",
       "label": "PHONE: 1-",
-      "value": "845-555-0159",
+      "value": "607-555-0120",
       "page": 7,
       "page_ref": [
         7,
@@ -1825,17 +2067,28 @@
     {
       "kind": "id",
       "label": "9886 ORCHARD Year Make",
-      "value": "8STPJHPN2BD146058",
+      "value": "6STPJHPN4BD829486",
       "page": 7,
       "page_ref": [
         4,
+        5,
         7
+      ]
+    },
+    {
+      "kind": "digits",
+      "label": "Policy Number",
+      "value": "796262273",
+      "page": 7,
+      "page_ref": [
+        7,
+        9
       ]
     },
     {
       "kind": "street",
       "label": "Fairmount Works",
-      "value": "8230 BRAMBLE HOLLOW RD",
+      "value": "4165 DURANT RD",
       "page": 7,
       "page_ref": [
         7,
@@ -1845,7 +2098,7 @@
     {
       "kind": "phone",
       "label": "PHONE: 1-",
-      "value": "845-555-0159",
+      "value": "607-555-0120",
       "page": 7,
       "page_ref": [
         7,
@@ -1873,17 +2126,100 @@
     {
       "kind": "id",
       "label": "9886 ORCHARD Year Make",
-      "value": "8STPJHPN2BD146058",
+      "value": "6STPJHPN4BD829486",
       "page": 7,
       "page_ref": [
         4,
+        5,
         7
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "INSURED",
+      "value": "PEREGRINE FERNSBY",
+      "page": 7,
+      "page_ref": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "INSURED",
+      "value": "PEREGRINE FERNSBY",
+      "page": 7,
+      "page_ref": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "insured",
+      "value": "CLEMENTINE CROWTHORNE",
+      "page": 7,
+      "page_ref": [
+        7,
+        9,
+        16,
+        43
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "The name of t",
+      "value": "CLEMENTINE CROWTHORNE",
+      "page": 7,
+      "page_ref": [
+        7,
+        9,
+        16,
+        43
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "INSURED",
+      "value": "PEREGRINE FERNSBY",
+      "page": 8,
+      "page_ref": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "INSURED",
+      "value": "PEREGRINE FERNSBY",
+      "page": 8,
+      "page_ref": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "kind": "digits",
+      "label": "Policy Number",
+      "value": "796262273",
+      "page": 9,
+      "page_ref": [
+        7,
+        9
       ]
     },
     {
       "kind": "street",
       "label": "Fairmount Works",
-      "value": "8230 BRAMBLE HOLLOW RD",
+      "value": "4165 DURANT RD",
       "page": 9,
       "page_ref": [
         7,
@@ -1893,7 +2229,7 @@
     {
       "kind": "phone",
       "label": "PHONE: 1-",
-      "value": "845-555-0159",
+      "value": "607-555-0120",
       "page": 9,
       "page_ref": [
         7,
@@ -1921,17 +2257,28 @@
     {
       "kind": "id",
       "label": "",
-      "value": "9VZJSC7L97K348945",
+      "value": "9VZJSC9L46K460187",
       "page": 9,
       "page_ref": [
         4,
+        5,
+        9
+      ]
+    },
+    {
+      "kind": "digits",
+      "label": "Name & Nudsabt km Fpsmoz",
+      "value": "796262273",
+      "page": 9,
+      "page_ref": [
+        7,
         9
       ]
     },
     {
       "kind": "street",
       "label": "Fairmount Works",
-      "value": "8230 BRAMBLE HOLLOW RD",
+      "value": "4165 DURANT RD",
       "page": 9,
       "page_ref": [
         7,
@@ -1941,7 +2288,7 @@
     {
       "kind": "phone",
       "label": "PHONE: 1-",
-      "value": "845-555-0159",
+      "value": "607-555-0120",
       "page": 9,
       "page_ref": [
         7,
@@ -1969,26 +2316,99 @@
     {
       "kind": "id",
       "label": "9886 ORCHARD Year Make",
-      "value": "9VZJSC7L97K348945",
+      "value": "9VZJSC9L46K460187",
       "page": 9,
       "page_ref": [
         4,
+        5,
         9
       ]
     },
     {
-      "kind": "digits",
-      "label": "Name & Nudsabt km Fpsmoz",
-      "value": "519487182",
+      "kind": "person",
+      "label": "INSURED",
+      "value": "PEREGRINE FERNSBY",
       "page": 9,
       "page_ref": [
-        9
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "INSURED",
+      "value": "PEREGRINE FERNSBY",
+      "page": 9,
+      "page_ref": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "insured",
+      "value": "CLEMENTINE CROWTHORNE",
+      "page": 9,
+      "page_ref": [
+        7,
+        9,
+        16,
+        43
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "The name of t",
+      "value": "CLEMENTINE CROWTHORNE",
+      "page": 9,
+      "page_ref": [
+        7,
+        9,
+        16,
+        43
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "INSURED",
+      "value": "PEREGRINE FERNSBY",
+      "page": 10,
+      "page_ref": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "INSURED",
+      "value": "PEREGRINE FERNSBY",
+      "page": 10,
+      "page_ref": [
+        7,
+        8,
+        9,
+        10
       ]
     },
     {
       "kind": "pobox",
       "label": "MAIN ADMINISTRATIVE OFFICE",
-      "value": "P.O. BOX 498",
+      "value": "P.O. BOX 484",
+      "page": 11,
+      "page_ref": [
+        11
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "WPSWNSWWCV, GHZT",
+      "value": "51948-8182",
       "page": 11,
       "page_ref": [
         11
@@ -1997,7 +2417,7 @@
     {
       "kind": "phone",
       "label": "For service information or questions concerning this policy,",
-      "value": "845-555-0159",
+      "value": "607-555-0120",
       "page": 12,
       "page_ref": [
         7,
@@ -2054,9 +2474,33 @@
       ]
     },
     {
+      "kind": "person",
+      "label": "results from the total theft of your covered",
+      "value": "Clementine Crowthorne",
+      "page": 16,
+      "page_ref": [
+        7,
+        9,
+        16,
+        43
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "CLEMENTINE CROWTHORNE",
+      "value": "Clementine Crowthorne",
+      "page": 16,
+      "page_ref": [
+        7,
+        9,
+        16,
+        43
+      ]
+    },
+    {
       "kind": "phone",
       "label": "d Direct Customer Care: 1-",
-      "value": "845-555-0159",
+      "value": "607-555-0120",
       "page": 21,
       "page_ref": [
         7,
@@ -2071,7 +2515,7 @@
     {
       "kind": "pobox",
       "label": "Standard Mailing:",
-      "value": "PO BOX 552",
+      "value": "PO BOX 772",
       "page": 21,
       "page_ref": [
         21
@@ -2080,7 +2524,7 @@
     {
       "kind": "street",
       "label": "Overnight Mailing:",
-      "value": "289 Birchbark Ln",
+      "value": "640 Palmer Hill Rd",
       "page": 21,
       "page_ref": [
         21
@@ -2089,7 +2533,7 @@
     {
       "kind": "cityline",
       "label": "ATTENTION:",
-      "value": "LITTLE FALLS, NY 13365",
+      "value": "COBLESKILL, NY 12043",
       "page": 23,
       "page_ref": [
         23
@@ -2105,6 +2549,17 @@
         3,
         7,
         9,
+        23
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "Insured's Name:",
+      "value": "CORNELIUS BRACKENRIDGE",
+      "page": 23,
+      "page_ref": [
+        1,
+        3,
         23
       ]
     },
@@ -2133,9 +2588,18 @@
       ]
     },
     {
+      "kind": "person",
+      "label": "Insured",
+      "value": "RUTHERFORD FAIRWEATHER",
+      "page": 25,
+      "page_ref": [
+        25
+      ]
+    },
+    {
       "kind": "phone",
       "label": "insurance agent or broker, or call our toll-free telephone number:",
-      "value": "845-555-0159",
+      "value": "607-555-0120",
       "page": 27,
       "page_ref": [
         7,
@@ -2490,7 +2954,7 @@
     {
       "kind": "cityline",
       "label": "Empire Safety Council",
-      "value": "Geneva, NY 14456",
+      "value": "Little Falls, NY 13365",
       "page": 37,
       "page_ref": [
         37,
@@ -2500,7 +2964,7 @@
     {
       "kind": "cityline",
       "label": "AAA Driver Improvement Program",
-      "value": "Binghamton, NY 13901",
+      "value": "Geneva, NY 14456",
       "page": 37,
       "page_ref": [
         37
@@ -2509,7 +2973,7 @@
     {
       "kind": "street",
       "label": "",
-      "value": "4672 Stonefence Rd",
+      "value": "8479 Poplar Point",
       "page": 37,
       "page_ref": [
         37,
@@ -2519,7 +2983,7 @@
     {
       "kind": "street",
       "label": "",
-      "value": "793 Alder Brook Ln",
+      "value": "502 Alder Brook Ln",
       "page": 37,
       "page_ref": [
         37,
@@ -2528,7 +2992,7 @@
     },
     {
       "kind": "phone",
-      "label": "4265 Millbrook Avenue",
+      "label": "8479 Poplar Point",
       "value": "845-555-0105",
       "page": 37,
       "page_ref": [
@@ -2553,16 +3017,6 @@
       "page": 37,
       "page_ref": [
         37
-      ]
-    },
-    {
-      "kind": "cityline",
-      "label": "Ashcroft Industries",
-      "value": "Canandaigua, NY 14424",
-      "page": 37,
-      "page_ref": [
-        37,
-        38
       ]
     },
     {
@@ -2595,7 +3049,7 @@
     {
       "kind": "cityline",
       "label": "AARP",
-      "value": "Cobleskill, NY 12043",
+      "value": "Norwich, NY 13815",
       "page": 37,
       "page_ref": [
         37
@@ -2604,17 +3058,7 @@
     {
       "kind": "street",
       "label": "",
-      "value": "2373 Durant Rd",
-      "page": 37,
-      "page_ref": [
-        37,
-        38
-      ]
-    },
-    {
-      "kind": "phone",
-      "label": "- Suite 606",
-      "value": "845-555-0155",
+      "value": "5313 Beaver Meadow Rd",
       "page": 37,
       "page_ref": [
         37,
@@ -2623,8 +3067,8 @@
     },
     {
       "kind": "street",
-      "label": "Classroom Course Providers",
-      "value": "6994 Cranberry Bog Rd",
+      "label": "Rosalind Blackwood",
+      "value": "8829 Hemlock Ridge Rd",
       "page": 38,
       "page_ref": [
         38
@@ -2633,7 +3077,7 @@
     {
       "kind": "cityline",
       "label": "Empire Safety Council",
-      "value": "Geneva, NY 14456",
+      "value": "Little Falls, NY 13365",
       "page": 38,
       "page_ref": [
         37,
@@ -2643,7 +3087,7 @@
     {
       "kind": "phone",
       "label": "- Suite 400",
-      "value": "716-555-0157",
+      "value": "716-555-0117",
       "page": 38,
       "page_ref": [
         38
@@ -2652,7 +3096,7 @@
     {
       "kind": "street",
       "label": "",
-      "value": "793 Alder Brook Ln",
+      "value": "502 Alder Brook Ln",
       "page": 38,
       "page_ref": [
         37,
@@ -2662,7 +3106,7 @@
     {
       "kind": "cityline",
       "label": "AARP",
-      "value": "Rome, NY 13440",
+      "value": "Corning, NY 14830",
       "page": 38,
       "page_ref": [
         38
@@ -2691,7 +3135,7 @@
     {
       "kind": "cityline",
       "label": "American Automobile Association (AAA)",
-      "value": "Corning, NY 14830",
+      "value": "Delhi, NY 13753",
       "page": 38,
       "page_ref": [
         38
@@ -2700,7 +3144,7 @@
     {
       "kind": "street",
       "label": "",
-      "value": "4672 Stonefence Rd",
+      "value": "8479 Poplar Point",
       "page": 38,
       "page_ref": [
         37,
@@ -2710,7 +3154,7 @@
     {
       "kind": "street",
       "label": "",
-      "value": "2373 Durant Rd",
+      "value": "5313 Beaver Meadow Rd",
       "page": 38,
       "page_ref": [
         37,
@@ -2719,18 +3163,8 @@
     },
     {
       "kind": "phone",
-      "label": "4265 Millbrook Avenue",
+      "label": "8479 Poplar Point",
       "value": "845-555-0105",
-      "page": 38,
-      "page_ref": [
-        37,
-        38
-      ]
-    },
-    {
-      "kind": "phone",
-      "label": "- Suite 606",
-      "value": "845-555-0155",
       "page": 38,
       "page_ref": [
         37,
@@ -2749,7 +3183,7 @@
     {
       "kind": "cityline",
       "label": "New York Safety Program",
-      "value": "Norwich, NY 13815",
+      "value": "Elmira, NY 14901",
       "page": 38,
       "page_ref": [
         38
@@ -2758,7 +3192,7 @@
     {
       "kind": "street",
       "label": "Discount",
-      "value": "9582 Tannery Flats",
+      "value": "1386 Quarry Ridge Rd",
       "page": 38,
       "page_ref": [
         38
@@ -2766,8 +3200,8 @@
     },
     {
       "kind": "street",
-      "label": "BLUE FORK",
-      "value": "5881 Stonefence Rd",
+      "label": "Waldemar Stonebridge",
+      "value": "7366 Alder Brook Ln",
       "page": 38,
       "page_ref": [
         38
@@ -2775,8 +3209,8 @@
     },
     {
       "kind": "phone",
-      "label": "5579 Orchard Road",
-      "value": "845-555-0152",
+      "label": "1386 Quarry Ridge Rd",
+      "value": "716-555-0124",
       "page": 38,
       "page_ref": [
         38
@@ -2785,7 +3219,7 @@
     {
       "kind": "phone",
       "label": ", Suite 202",
-      "value": "518-555-0111",
+      "value": "315-555-0114",
       "page": 38,
       "page_ref": [
         38
@@ -2794,7 +3228,7 @@
     {
       "kind": "person",
       "label": "",
-      "value": "Cornelius Thistlewood",
+      "value": "Rosalind Blackwood",
       "page": 38,
       "page_ref": [
         38
@@ -2803,7 +3237,7 @@
     {
       "kind": "person",
       "label": "",
-      "value": "Lavinia Vantassel",
+      "value": "Montague Larkspur",
       "page": 41,
       "page_ref": [
         5,
@@ -2816,7 +3250,7 @@
     {
       "kind": "person",
       "label": "WHAT DOES",
-      "value": "Lavinia Vantassel",
+      "value": "Montague Larkspur",
       "page": 41,
       "page_ref": [
         5,
@@ -2829,7 +3263,7 @@
     {
       "kind": "person",
       "label": "their customers’personal information; the reasons",
-      "value": "Lavinia Vantassel",
+      "value": "Montague Larkspur",
       "page": 41,
       "page_ref": [
         5,
@@ -2842,7 +3276,7 @@
     {
       "kind": "phone",
       "label": "Call 1-",
-      "value": "845-555-0159",
+      "value": "607-555-0120",
       "page": 41,
       "page_ref": [
         7,
@@ -2857,7 +3291,7 @@
     {
       "kind": "person",
       "label": "The",
-      "value": "Lavinia Vantassel",
+      "value": "Montague Larkspur",
       "page": 42,
       "page_ref": [
         5,
@@ -2870,7 +3304,7 @@
     {
       "kind": "person",
       "label": "financial and nonfinancial companies.",
-      "value": "Lavinia Vantassel",
+      "value": "Montague Larkspur",
       "page": 42,
       "page_ref": [
         5,
@@ -2883,7 +3317,7 @@
     {
       "kind": "cityline",
       "label": "Fairmount Automotive",
-      "value": "Cazenovia, NY 13035",
+      "value": "Skaneateles, NY 13152",
       "page": 43,
       "page_ref": [
         5,
@@ -2893,7 +3327,7 @@
     {
       "kind": "email",
       "label": "us at",
-      "value": "barnaby.ravensdale@example.com",
+      "value": "thaddeus.barrowclough@example.com",
       "page": 43,
       "page_ref": [
         43
@@ -2902,7 +3336,7 @@
     {
       "kind": "cityline",
       "label": "for m pt out rights, please con",
-      "value": "Cazenovia, NY 13035",
+      "value": "Skaneateles, NY 13152",
       "page": 43,
       "page_ref": [
         5,
@@ -2912,7 +3346,7 @@
     {
       "kind": "cityline",
       "label": "Fairmount Automotive",
-      "value": "Cazenovia, NY 13035",
+      "value": "Skaneateles, NY 13152",
       "page": 43,
       "page_ref": [
         5,
@@ -2922,7 +3356,7 @@
     {
       "kind": "email",
       "label": "can contact the Nevada",
-      "value": "octavia.barrowclough@example.com",
+      "value": "ignatius.copperfield@example.com",
       "page": 43,
       "page_ref": [
         43
@@ -2931,7 +3365,7 @@
     {
       "kind": "phone",
       "label": "under Nevad",
-      "value": "518-555-0157",
+      "value": "518-555-0114",
       "page": 43,
       "page_ref": [
         43
@@ -2940,7 +3374,7 @@
     {
       "kind": "street",
       "label": "r Protection:",
-      "value": "986 Poplar Point",
+      "value": "642 Fish Creek Rd",
       "page": 43,
       "page_ref": [
         43
@@ -2949,7 +3383,7 @@
     {
       "kind": "person",
       "label": "with companies outside of",
-      "value": "Lavinia Vantassel",
+      "value": "Montague Larkspur",
       "page": 43,
       "page_ref": [
         5,
@@ -2962,7 +3396,7 @@
     {
       "kind": "person",
       "label": "companies to the extent required by California law.",
-      "value": "Lavinia Vantassel",
+      "value": "Montague Larkspur",
       "page": 43,
       "page_ref": [
         5,
@@ -2975,7 +3409,7 @@
     {
       "kind": "person",
       "label": "This notice is being provided by the following",
-      "value": "Lavinia Vantassel",
+      "value": "Montague Larkspur",
       "page": 43,
       "page_ref": [
         5,
@@ -2987,8 +3421,8 @@
     },
     {
       "kind": "person",
-      "label": "This notice is being provided by the following AmericanFairmount Automotive",
-      "value": "Lavinia Vantassel",
+      "label": "This notice is being provided by the following Montague Larkspur",
+      "value": "Montague Larkspur",
       "page": 43,
       "page_ref": [
         5,
@@ -2999,9 +3433,43 @@
       ]
     },
     {
+      "kind": "person",
+      "label": "Winslow Motorworks",
+      "value": "Clementine Crowthorne",
+      "page": 43,
+      "page_ref": [
+        7,
+        9,
+        16,
+        43
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "Fairmount Works",
+      "value": "Clementine Crowthorne",
+      "page": 43,
+      "page_ref": [
+        7,
+        9,
+        16,
+        43
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "Meridian Automotive Services",
+      "value": "Alastair Vantassel",
+      "page": 43,
+      "page_ref": [
+        43,
+        65
+      ]
+    },
+    {
       "kind": "pobox",
       "label": "Fairmount Enterprises Fairmount Enterprises ,",
-      "value": "P.O. Box 131",
+      "value": "P.O. Box 215",
       "page": 45,
       "page_ref": [
         45,
@@ -3012,7 +3480,7 @@
     {
       "kind": "cityline",
       "label": "Fairmount Enterprises Fairmount Enterprises ,",
-      "value": "Elmira, NY 14901",
+      "value": "Hammondsport, NY 14840",
       "page": 45,
       "page_ref": [
         45,
@@ -3022,7 +3490,7 @@
     {
       "kind": "cityline",
       "label": "ontact",
-      "value": "Elmira, NY 14901",
+      "value": "Hammondsport, NY 14840",
       "page": 45,
       "page_ref": [
         45,
@@ -3318,6 +3786,27 @@
         50,
         51,
         52
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "Insured",
+      "value": "WINIFRED WINTERBOURNE",
+      "page": 50,
+      "page_ref": [
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "Insured",
+      "value": "HENRIETTA STONEBRIDGE",
+      "page": 50,
+      "page_ref": [
+        50,
+        51
       ]
     },
     {
@@ -3630,6 +4119,78 @@
       "value": "$125,000",
       "page": 51,
       "page_ref": [
+        51
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "Insured",
+      "value": "WINIFRED WINTERBOURNE",
+      "page": 51,
+      "page_ref": [
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "Insured",
+      "value": "HENRIETTA STONEBRIDGE",
+      "page": 51,
+      "page_ref": [
+        50,
+        51
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "Insured",
+      "value": "WINIFRED WINTERBOURNE",
+      "page": 51,
+      "page_ref": [
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "Insured",
+      "value": "HENRIETTA STONEBRIDGE",
+      "page": 51,
+      "page_ref": [
+        50,
+        51
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "insured",
+      "value": "HENRIETTA FERNSBY",
+      "page": 51,
+      "page_ref": [
+        51
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "Insured",
+      "value": "WINIFRED WINTERBOURNE",
+      "page": 51,
+      "page_ref": [
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "Insured",
+      "value": "HENRIETTA STONEBRIDGE",
+      "page": 51,
+      "page_ref": [
+        50,
         51
       ]
     },
@@ -3965,14 +4526,54 @@
       ]
     },
     {
+      "kind": "person",
+      "label": "Insured",
+      "value": "WINIFRED WINTERBOURNE",
+      "page": 52,
+      "page_ref": [
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "Insured",
+      "value": "WALDEMAR QUILLFEATHER",
+      "page": 52,
+      "page_ref": [
+        52
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "Passenger",
+      "value": "WINIFRED WINTERBOURNE",
+      "page": 52,
+      "page_ref": [
+        50,
+        51,
+        52
+      ]
+    },
+    {
       "kind": "id",
       "label": "36-month period prior to the policy term effective date.",
-      "value": "MS-NY-N-0004",
+      "value": "MS-NY-N-0002",
       "page": 53,
       "page_ref": [
-        47,
-        48,
-        53
+        45,
+        53,
+        54
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "insured",
+      "value": "JUNIPER BRACKENRIDGE",
+      "page": 54,
+      "page_ref": [
+        54
       ]
     },
     {
@@ -3982,13 +4583,14 @@
       "page": 54,
       "page_ref": [
         45,
+        53,
         54
       ]
     },
     {
       "kind": "pobox",
-      "label": "AmericanFairmount Automotive",
-      "value": "P.O. Box 131",
+      "label": "Montague Larkspur",
+      "value": "P.O. Box 215",
       "page": 55,
       "page_ref": [
         45,
@@ -3999,7 +4601,7 @@
     {
       "kind": "cityline",
       "label": "information on how to improve your Financial Responsibility rating, you may contact your",
-      "value": "Elmira, NY 14901",
+      "value": "Hammondsport, NY 14840",
       "page": 55,
       "page_ref": [
         45,
@@ -4009,7 +4611,7 @@
     {
       "kind": "phone",
       "label": "or at 1-",
-      "value": "845-555-0159",
+      "value": "607-555-0120",
       "page": 55,
       "page_ref": [
         7,
@@ -4024,7 +4626,7 @@
     {
       "kind": "person",
       "label": "authorize or you may contact",
-      "value": "Lavinia Vantassel",
+      "value": "Montague Larkspur",
       "page": 55,
       "page_ref": [
         5,
@@ -4037,12 +4639,58 @@
     {
       "kind": "pobox",
       "label": "at",
-      "value": "P.O. Box 131",
+      "value": "P.O. Box 215",
       "page": 57,
       "page_ref": [
         45,
         55,
         57
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "insured",
+      "value": "ALASTAIR VANTASSEL",
+      "page": 65,
+      "page_ref": [
+        43,
+        65
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "insured",
+      "value": "AMBROSE CALLOWAY",
+      "page": 65,
+      "page_ref": [
+        65
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "insured",
+      "value": "HOLLIS THISTLEWOOD",
+      "page": 69,
+      "page_ref": [
+        69
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "Insured",
+      "value": "CORNELIUS HOLLINGSWORTH",
+      "page": 70,
+      "page_ref": [
+        70
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "insured",
+      "value": "BEATRIX RAVENSDALE",
+      "page": 71,
+      "page_ref": [
+        71
       ]
     },
     {
@@ -4131,8 +4779,8 @@
     "source": "American Modern/recreational_vehicle/SNOWMOBILE_redacted.pdf",
     "schema": "recreational_vehicle v1.4.0",
     "render": "scanned_only",
-    "scanner_profile": "high-quality scan, 400 dpi",
-    "values_replaced": 136,
+    "scanner_profile": "high-quality scan, 400 dpi (grayscale, JPEG 85)",
+    "values_replaced": 213,
     "text_recovered_by_ocr": 0,
     "date_shift_days": 303,
     "synthetic": true,

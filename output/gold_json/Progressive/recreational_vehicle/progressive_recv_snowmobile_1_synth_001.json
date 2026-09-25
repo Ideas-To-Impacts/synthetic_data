@@ -79,8 +79,8 @@
   },
   "producer": {
     "agency_name": {
-      "raw": "TIMBERLINE INS GROUP",
-      "parsed": "TIMBERLINE INS GROUP",
+      "raw": "PINECREST INS GROUP",
+      "parsed": "PINECREST INS GROUP",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -93,8 +93,8 @@
     },
     "address": {
       "line_1": {
-        "raw": "369 ALDER BROOK LN",
-        "parsed": "369 ALDER BROOK LN",
+        "raw": "659 COBBLER HILL RD",
+        "parsed": "659 COBBLER HILL RD",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -106,8 +106,8 @@
         "flagged": false
       },
       "city": {
-        "raw": "KINGSTON",
-        "parsed": "KINGSTON",
+        "raw": "LAKE PLACID",
+        "parsed": "LAKE PLACID",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -134,8 +134,8 @@
         "flagged": false
       },
       "postal_code": {
-        "raw": "12401",
-        "parsed": "12401",
+        "raw": "12946",
+        "parsed": "12946",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -149,8 +149,8 @@
     },
     "contact": {
       "phone": {
-        "raw": "315-555-0154",
-        "parsed": "315-555-0154",
+        "raw": "716-555-0184",
+        "parsed": "716-555-0184",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -165,8 +165,8 @@
   },
   "named_insured": {
     "primary_name": {
-      "raw": "Ignatius Larkspur",
-      "parsed": "Ignatius Larkspur",
+      "raw": "Perpetua Marchbanks",
+      "parsed": "Perpetua Marchbanks",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -198,8 +198,8 @@
     },
     "mailing_address": {
       "line_1": {
-        "raw": "PO BOX 124",
-        "parsed": "PO BOX 124",
+        "raw": "PO BOX 730",
+        "parsed": "PO BOX 730",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -211,8 +211,8 @@
         "flagged": false
       },
       "city": {
-        "raw": "POTSDAM",
-        "parsed": "POTSDAM",
+        "raw": "OWEGO",
+        "parsed": "OWEGO",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -239,8 +239,8 @@
         "flagged": false
       },
       "postal_code": {
-        "raw": "13676",
-        "parsed": "13676",
+        "raw": "13827",
+        "parsed": "13827",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -255,8 +255,8 @@
     "additional_named_insureds": [
       {
         "name": {
-          "raw": "THADDEUS F. DANFORTH",
-          "parsed": "THADDEUS F. DANFORTH",
+          "raw": "THADDEUS S. HARROWGATE",
+          "parsed": "THADDEUS S. HARROWGATE",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -291,8 +291,8 @@
   },
   "policy": {
     "policy_number": {
-      "raw": "685770054",
-      "parsed": "685770054",
+      "raw": "265300159",
+      "parsed": "265300159",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -302,6 +302,7 @@
         2,
         3,
         4,
+        5,
         6
       ],
       "flagged": false
@@ -342,6 +343,20 @@
       },
       "page_ref": [
         4
+      ],
+      "flagged": false
+    },
+    "expiration_time": {
+      "raw": "12:01 a.m.",
+      "parsed": "12:01 a.m.",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        4,
+        5
       ],
       "flagged": false
     },
@@ -427,8 +442,8 @@
     "units": [
       {
         "vin_or_hull_id": {
-          "raw": "6BPSMMBBOBBV00009",
-          "parsed": "6BPSMMBBOBBV00009",
+          "raw": "6BPSMMBBOBBV00005",
+          "parsed": "6BPSMMBBOBBV00005",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -441,8 +456,8 @@
         },
         "storage_address": {
           "postal_code": {
-            "raw": "96773",
-            "parsed": "96773",
+            "raw": "29069",
+            "parsed": "29069",
             "confidence": {
               "score": 1.0,
               "source": "deterministic"
@@ -469,8 +484,8 @@
       },
       {
         "vin_or_hull_id": {
-          "raw": "3BPSUSBA4BV000011",
-          "parsed": "3BPSUSBA4BV000011",
+          "raw": "7BPSUSBA6BV000098",
+          "parsed": "7BPSUSBA6BV000098",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -483,8 +498,8 @@
         },
         "storage_address": {
           "postal_code": {
-            "raw": "96773",
-            "parsed": "96773",
+            "raw": "29069",
+            "parsed": "29069",
             "confidence": {
               "score": 1.0,
               "source": "deterministic"
@@ -512,8 +527,8 @@
       },
       {
         "vin_or_hull_id": {
-          "raw": "1BPSDBNR4NV00059",
-          "parsed": "1BPSDBNR4NV00059",
+          "raw": "4BPSDBNR1NV00026",
+          "parsed": "4BPSDBNR1NV00026",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -525,8 +540,8 @@
         },
         "storage_address": {
           "postal_code": {
-            "raw": "96773",
-            "parsed": "96773",
+            "raw": "29069",
+            "parsed": "29069",
             "confidence": {
               "score": 1.0,
               "source": "deterministic"
@@ -712,8 +727,8 @@
   },
   "claim_reporting": {
     "claims_phone": {
-      "raw": "845-555-0148",
-      "parsed": "845-555-0148",
+      "raw": "315-555-0101",
+      "parsed": "315-555-0101",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -1099,7 +1114,6 @@
     "policy.coverage_package.package_components[].component_name",
     "policy.coverage_package.package_components[].component_value",
     "policy.coverage_package.package_name",
-    "policy.expiration_time",
     "policy.id_cards[].effective_date",
     "policy.id_cards[].expiration_date",
     "policy.id_cards[].id_card_form_number",
@@ -1413,17 +1427,8 @@
   "fideon:unmapped": [
     {
       "kind": "id",
-      "label": "Form_SCTNID_CTGRY.",
-      "value": "NY04932916",
-      "page": 1,
-      "page_ref": [
-        1
-      ]
-    },
-    {
-      "kind": "id",
       "label": "Q",
-      "value": "TH06300",
+      "value": "TH04932",
       "page": 1,
       "page_ref": [
         1,
@@ -1437,7 +1442,7 @@
     {
       "kind": "id",
       "label": "U POLWHITEFONT",
-      "value": "QWMZVSYQ2RXZULCW6VEPW4ILQG0009",
+      "value": "QWMZVSYQ4RXZULCW9VEPW5ILQG0006",
       "page": 1,
       "page_ref": [
         1,
@@ -1457,8 +1462,8 @@
     },
     {
       "kind": "cityline",
-      "label": "PO BOX 202",
-      "value": "POTSDAM, NY 13676",
+      "label": "PO BOX 730",
+      "value": "OWEGO, NY 13827",
       "page": 1,
       "page_ref": [
         1,
@@ -1565,23 +1570,9 @@
       ]
     },
     {
-      "kind": "digits",
-      "label": "",
-      "value": "582242123",
-      "page": 1,
-      "page_ref": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ]
-    },
-    {
       "kind": "id",
       "label": "Q",
-      "value": "TH06300",
+      "value": "TH04932",
       "page": 2,
       "page_ref": [
         1,
@@ -1595,7 +1586,7 @@
     {
       "kind": "id",
       "label": "U POLWHITEFONT",
-      "value": "QWMZVSYQ2RXZULCW6VEPW4ILQG0009",
+      "value": "QWMZVSYQ4RXZULCW9VEPW5ILQG0006",
       "page": 2,
       "page_ref": [
         1,
@@ -1782,23 +1773,9 @@
       ]
     },
     {
-      "kind": "digits",
-      "label": "",
-      "value": "582242123",
-      "page": 2,
-      "page_ref": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ]
-    },
-    {
       "kind": "id",
       "label": "Q",
-      "value": "TH06300",
+      "value": "TH04932",
       "page": 3,
       "page_ref": [
         1,
@@ -1812,7 +1789,7 @@
     {
       "kind": "id",
       "label": "U POLWHITEFONT",
-      "value": "QWMZVSYQ2RXZULCW6VEPW4ILQG0009",
+      "value": "QWMZVSYQ4RXZULCW9VEPW5ILQG0006",
       "page": 3,
       "page_ref": [
         1,
@@ -1821,23 +1798,9 @@
       ]
     },
     {
-      "kind": "digits",
-      "label": "",
-      "value": "582242123",
-      "page": 3,
-      "page_ref": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ]
-    },
-    {
       "kind": "id",
       "label": "Form_SCTNID_CTGRY.",
-      "value": "XX0103A068",
+      "value": "XX0223A058",
       "page": 4,
       "page_ref": [
         4
@@ -1846,7 +1809,7 @@
     {
       "kind": "id",
       "label": "Q",
-      "value": "TH06300",
+      "value": "TH04932",
       "page": 4,
       "page_ref": [
         1,
@@ -1860,7 +1823,7 @@
     {
       "kind": "id",
       "label": "INS COVERLTR U POLWHITEFONT",
-      "value": "QWMZVSYQ2RXZULCW2VEPW3ILQG0005",
+      "value": "QWMZVSYQ3RXZULCW3VEPW5ILQG0003",
       "page": 4,
       "page_ref": [
         4,
@@ -1870,8 +1833,8 @@
     },
     {
       "kind": "cityline",
-      "label": "159 NY-28",
-      "value": "KINGSTON, NY 12401",
+      "label": "659 COBBLER HILL RD",
+      "value": "LAKE PLACID, NY 12946",
       "page": 4,
       "page_ref": [
         1,
@@ -1909,7 +1872,7 @@
     {
       "kind": "phone",
       "label": "started at progressiveagent.com or call us at 1-",
-      "value": "845-555-0123",
+      "value": "315-555-0118",
       "page": 4,
       "page_ref": [
         4,
@@ -1935,23 +1898,9 @@
       ]
     },
     {
-      "kind": "digits",
-      "label": "",
-      "value": "582242123",
-      "page": 4,
-      "page_ref": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ]
-    },
-    {
       "kind": "id",
       "label": "Q",
-      "value": "TH06300",
+      "value": "TH04932",
       "page": 5,
       "page_ref": [
         1,
@@ -1965,7 +1914,7 @@
     {
       "kind": "id",
       "label": "INS COVERLTR U POLWHITEFONT",
-      "value": "QWMZVSYQ2RXZULCW2VEPW3ILQG0005",
+      "value": "QWMZVSYQ3RXZULCW3VEPW5ILQG0003",
       "page": 5,
       "page_ref": [
         4,
@@ -1976,7 +1925,7 @@
     {
       "kind": "phone",
       "label": "by calling 1-",
-      "value": "845-555-0123",
+      "value": "315-555-0118",
       "page": 5,
       "page_ref": [
         4,
@@ -2003,7 +1952,7 @@
     },
     {
       "kind": "date",
-      "label": "Aug 26, 2026",
+      "label": "Jul 14, 2025",
       "value": "Aug 14, 2025",
       "page": 5,
       "page_ref": [
@@ -2012,7 +1961,7 @@
     },
     {
       "kind": "date",
-      "label": "Oct 26, 2026",
+      "label": "Sep 13, 2025",
       "value": "Oct 14, 2025",
       "page": 5,
       "page_ref": [
@@ -2020,23 +1969,9 @@
       ]
     },
     {
-      "kind": "digits",
-      "label": "",
-      "value": "582242123",
-      "page": 5,
-      "page_ref": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ]
-    },
-    {
       "kind": "id",
       "label": "Q",
-      "value": "TH06300",
+      "value": "TH04932",
       "page": 6,
       "page_ref": [
         1,
@@ -2050,7 +1985,7 @@
     {
       "kind": "id",
       "label": "INS COVERLTR U POLWHITEFONT",
-      "value": "QWMZVSYQ2RXZULCW2VEPW3ILQG0005",
+      "value": "QWMZVSYQ3RXZULCW3VEPW5ILQG0003",
       "page": 6,
       "page_ref": [
         4,
@@ -2061,23 +1996,9 @@
     {
       "kind": "id",
       "label": "Form_SCTNID_CTGRY.",
-      "value": "XX0684A032",
+      "value": "XX0403A059",
       "page": 6,
       "page_ref": [
-        6
-      ]
-    },
-    {
-      "kind": "digits",
-      "label": "",
-      "value": "582242123",
-      "page": 6,
-      "page_ref": [
-        1,
-        2,
-        3,
-        4,
-        5,
         6
       ]
     }
@@ -2088,7 +2009,7 @@
     "schema": "recreational_vehicle v1.4.0",
     "render": "scanned_only",
     "scanner_profile": "high-quality scan, 400 dpi",
-    "values_replaced": 85,
+    "values_replaced": 86,
     "text_recovered_by_ocr": 0,
     "date_shift_days": -408,
     "synthetic": true,
