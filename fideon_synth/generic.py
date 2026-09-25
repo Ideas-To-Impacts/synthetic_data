@@ -531,8 +531,10 @@ def find_values(cell_list):
         if NAME_LABEL.search(cell.text) and len(cell.text) < 45 and len(cell.text.split()) <= 5 \
                 and not re.search(r"\d", cell.text):
             # the name under its label, or beside it: "Named Insured(s):  Redhaven Properties LLC"
+            # - beside it only after a colon: "Named Insured  |  Primary Residence"
+            # without one is two column headings, not a label and its value
             right = min((c for c in cell_list if c.row == cell.row and c.rect.x0 > cell.rect.x1),
-                        key=lambda c: c.rect.x0, default=None)
+                        key=lambda c: c.rect.x0, default=None) if cell.text.rstrip().endswith(":") else None
             for cand in (_below(cell, cell_list, max_gap=3.2), right):
                 if cand is not None and _looks_like_name(cand.text):
                     names[id(cand)] = (cand, cell.text)

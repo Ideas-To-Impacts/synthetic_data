@@ -339,11 +339,24 @@ def _untangle(row):
     for ch in row:
         if ch.line is not None and ch.c not in FILL:
             groups.setdefault(ch.line, []).append(ch)
+    height = float(np.median([ch.box.height for ch in row]))
+    # a layer line can hold two columns far apart ("Lake Forest, IL 60045 ...
+    # NY 13360" in a scan's layer): each run of it between wide gaps is its
+    # own span, so it overlaps nothing it merely spans across
+    pieces = []
+    for g in groups.values():
+        g = sorted(g, key=lambda c: c.box.x0)
+        run = [g[0]]
+        for a, b in zip(g, g[1:]):
+            if b.box.x0 - a.box.x1 > 1.5 * height:
+                pieces.append(run)
+                run = []
+            run.append(b)
+        pieces.append(run)
     spans = [(min(c.box.x0 for c in g), max(c.box.x1 for c in g), g)
-             for g in groups.values() if len(g) >= 2]
+             for g in pieces if len(g) >= 2]
     if len(spans) < 2:
         return [row]
-    height = float(np.median([ch.box.height for ch in row]))
     overlap = lambda a, b: min(a[1], b[1]) - max(a[0], b[0]) > max(2.0, 0.5 * height)
     if not any(overlap(a, b) for i, a in enumerate(spans) for b in spans[i + 1:]):
         return [row]

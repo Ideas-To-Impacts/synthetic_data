@@ -1548,6 +1548,8 @@ class Reader:
                     # Collision.") says the rows are included, not in its own words
                     included_clean = name.endswith(":")
                     continue
+                if included and re.match(r"(?:and|or|&)\b", name):
+                    continue                       # "and Collision": the heading's own rest
                 if included and name_x is not None and x0 > name_x + 2:
                     item = {"coverage_name": fv(name),
                             "is_included": yes_no(True, included if included_clean else name)}
