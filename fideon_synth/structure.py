@@ -298,6 +298,7 @@ class Reader:
                         self.form_digits.setdefault(m.group(1), len(m.group(2)))
 
         self.gold, self.consumed = {}, set()
+        self.conflicts = set()           # policy-wide paths the units disagree on
         self.units, self.locations, self.deductibles = [], [], []
         self.cur = -1                     # the unit being read; a unit can be returned to
         self.operators, self.discounts, self.skip = [], [], set()
@@ -386,6 +387,11 @@ class Reader:
         self._print_date()
         self._whole_document()
         self._printed_facts()
+        for path in self.conflicts:           # set from the first unit, then contradicted
+            keys = path.split(".")
+            node = _get(self.gold, ".".join(keys[:-1])) if len(keys) > 1 else self.gold
+            if isinstance(node, dict):
+                node.pop(keys[-1], None)
 
         if self.operators:
             if self.none_violations is not None:
@@ -1685,6 +1691,16 @@ class Reader:
                 value = fv(text)
             else:
                 continue
+            if where == "scalar":
+                # a policy-wide field fed from each unit's row holds only when
+                # the units agree: $3,000 on one boat and $5,000 on the next
+                # says nothing about the policy as a whole
+                have = _get(self.gold, path)
+                if path in self.conflicts:
+                    continue
+                if have is not None and str(have.get("raw")) != str(value.get("raw")):
+                    self.conflicts.add(path)
+                    continue
             _put(self.gold if where == "scalar" else unit, path, value)
 
     def _amount(self, seg):
@@ -1869,6 +1885,18 @@ def finish(gold, schema):
             months = (b.year - a.year) * 12 + b.month - a.month - (b.day < a.day - 1)
             if months > 0:
                 policy["policy_term_months"] = derived(str(months), parsed=months)
+
+    # a policy-wide field whose units print it differently says nothing for
+    # the policy: "Personal Property $3,000" on one boat's tile, $5,000 on the next
+    at = unit_list(schema)
+    units = (_get(gold, at[0]) or []) if at else []
+    block = gold.get(at[0].split(".")[0]) if at else None
+    if isinstance(block, dict) and len(units) >= 2:
+        for part in [block] + [v for v in block.values() if isinstance(v, dict) and not is_field(v)]:
+            for key in [k for k, v in part.items() if is_field(v)]:
+                seen = {str(u[key]["raw"]) for u in units if isinstance(u, dict) and is_field(u.get(key))}
+                if len(seen) >= 2:
+                    del part[key]
 
     # a driver or operator the page calls "Named insured" is one, though only
     # the first of them heads the mailing block

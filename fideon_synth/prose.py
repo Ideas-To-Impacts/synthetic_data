@@ -54,7 +54,7 @@ class Line:
         # a short sentence is prose too: "Enclosed are your policy documents."
         sentence = self.words >= 4 and re.match(r"[A-Z*\"'(]", text) and re.search(r"[.!?]$", text) \
             and re.search(r"[a-z]{3}", text)
-        if self.text.count(":") >= 2:
+        if len(re.findall(r"[A-Za-z)#]:(?:\s|$)", self.text)) >= 2:
             return False                                     # "Year: 2026 Make: Yamaha ..." is a row
         if re.search(r"\b[A-Z]{2}\s+\d{5}(?:-\d{4})?$", text):
             return False                                     # "... Hartford, CT 06183" is an address
@@ -227,6 +227,15 @@ def _sections(lines, n):
             i = j + 1
             continue
         if not lines[i].prose():
+            # a sidebar shares its rows with the column beside it: a cell that
+            # is a whole sentence on its own is prose all the same
+            # ("Boat Insurance  |  Contact your agent for personalized service.")
+            if lines[i].gap:
+                for _, text in lines[i].cells:
+                    cell = Line(lines[i].centre, lines[i].height, 0, text.strip(), False,
+                                lines[i].bold, [(0, text.strip())])
+                    if cell.prose() and re.search(r"[.!?]$", cell.text):
+                        _section(out, n, None, cell.text)
             i += 1
             continue
         parts, j = [lines[i].text], i

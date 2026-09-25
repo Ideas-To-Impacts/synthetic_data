@@ -1132,6 +1132,61 @@ def _signature_ink(pages):
     return None
 
 
+def _vocabulary(text):
+    """How often each word is printed in the document."""
+    counts = {}
+    for w in re.findall(r"[a-z]+", text.lower()):
+        counts[w] = counts.get(w, 0) + 1
+    return counts
+
+
+def _unglue(text, vocab, titled=False):
+    """Words a scan's OCR ran together, set apart again: "combinedsingle-
+    limiteachaccident", "LiabilityTo", "LossReplacement/PurchasePrice".
+    A run is split only into words the document prints elsewhere on their
+    own - each at least as often as the run itself. Web addresses,
+    e-mails and anything with a digit are left as printed. A capitalised
+    run ("Pleaserefer") is split only in prose (``titled``): in a field it
+    may be a name - "Timberline" is not "Timber line"."""
+    def split(run):
+        low = run.lower()
+        if len(low) < 8:
+            return run
+        if not titled and run[0].isupper() and not re.search(r"[a-z][A-Z]", run):
+            return run
+        best = {0: []}
+        for i in range(1, len(low) + 1):
+            for j in range(max(0, i - 20), i):
+                word = low[j:i]
+                if word == low:
+                    continue                      # the run is not its own part
+                if j in best and (vocab.get(word, 0) >= 1 and (len(word) >= 3 or word in
+                                  ("a", "an", "by", "to", "of", "in", "on", "or", "at", "is", "be", "if", "as"))):
+                    cand = best[j] + [(j, i)]
+                    if i not in best or len(cand) < len(best[i]):
+                        best[i] = cand
+        parts = best.get(len(low))
+        if not parts or len(parts) < 2:
+            return run
+        # the run printed as a word ("liabilityto" in a scan's layer and again
+        # in its OCR re-read) yields only to parts printed at least as often;
+        # "MyTravelers" stays whole where "my" is rare
+        if min(vocab.get(low[a:b], 0) for a, b in parts) < vocab.get(low, 0):
+            return run
+        return " ".join(run[a:b] for a, b in parts)
+
+    out = []
+    for token in re.split(r"(\s+)", text):
+        if not token.strip() or re.search(r"\d|@|www|https?:|\.(?:com|net|org|app|gov)(?![a-z])",
+                                          token, re.I):
+            out.append(token)
+            continue
+        # "policy.Please": a sentence run into the next
+        token = re.sub(r"(?<=[a-z]{2})\.(?=[A-Z][a-z])", ". ", token)
+        out.append(re.sub(r"[A-Za-z]+", lambda m: split(m.group(0)), token))
+    return "".join(out)
+
+
 def _walk_fields(doc):
     from .fields import walk
     return walk({k: v for k, v in doc.items() if not k.startswith("fideon")})
@@ -1157,6 +1212,8 @@ def _alignment(f, cell_list):
     above and below it end where it ends but start elsewhere."""
     if f.cell.text[f.end:].strip(" ,;.-–"):
         return "left"                     # words follow it: it is set in a sentence
+    if f.start > 0 and not f.cell.text[f.start - 1].isspace():
+        return "left"                     # set against what precedes it: "1-800-876-5581"
     r = f.rect
     lefts = rights = 0
     for c in cell_list:
@@ -1282,6 +1339,14 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
                                      and f.kind != "scanline"],
                                     index, carrier, title, built.pdf.name, built.pages, whole)
         structure.finish(structure.merge(gold, laid_out), schema)
+        vocab = _vocabulary(whole)
+        for _, fld in _walk_fields(gold):
+            if isinstance(fld.get("raw"), str) and fld["confidence"]["source"] == "deterministic":
+                fixed = _unglue(fld["raw"], vocab)
+                if fixed != fld["raw"]:
+                    if fld.get("parsed") == fld["raw"]:
+                        fld["parsed"] = fixed
+                    fld["raw"] = fixed
         if signed and "signature.signature_present" in schema.leaves:
             gold.setdefault("signature", {}).setdefault(
                 "signature_present", derived("Yes", signed))
@@ -1303,13 +1368,25 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
             gold["fideon:unverified"] = [{"path": p, "value": raw} for p, raw in unverified]
         built.problems += ["gold says %s = %r is printed, but it is not on any page"
                            % (p, raw) for p, raw in misses]
+        # a label is copied off the source page, and can itself be a value
+        # that was replaced - the insured's street over its city line
+        swaps = sorted({(f.key or f.text): f.new for f in found_all
+                        if f.new and f.new != f.text and not f.blank and f.part is None
+                        and (f.kind in PII or f.kind == "date")}.items(),
+                       key=lambda kv: -len(kv[0]))
         for item in unmapped:
+            for old, new in swaps:
+                item["label"] = re.sub(r"(?<![A-Za-z0-9])%s(?![A-Za-z0-9])"
+                                       % r"\s+".join(map(re.escape, old.split())),
+                                       lambda m, new=new: new, item["label"], flags=re.I)
             item["page_ref"] = [i + 1 for i, t in enumerate(texts)
                                 if pageref.on_page(pageref._norm(item["value"]), t)]
 
         if "text_sections" in schema.merged["properties"]:
             # the printed paragraphs no field holds, in the replaced wording
             gold["text_sections"] = prose.text_sections(digital, {f.new for f in found_all if f.new})
+            for sec in gold["text_sections"].values():
+                sec["raw_text"] = _unglue(sec["raw_text"], vocab, titled=True)
             blob = " ".join(s["raw_text"] for s in gold["text_sections"].values()).lower()
             built.problems += ["source value %r survived into text_sections" % t
                                for t in sorted({f.key or f.text for f in found_all
@@ -1342,7 +1419,12 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
         built.problems += [e for e in errors if e not in missing]
         if missing:
             gold["fideon:incomplete"] = [e.split("'")[1] if "'" in e else e for e in missing]
-        built.gold.write_text(json.dumps(gold, indent=2, ensure_ascii=False), encoding="utf-8")
+        # and nothing the gold carries may be an original value either
+        written = json.dumps(gold, indent=2, ensure_ascii=False)
+        flat = pageref._norm(written)
+        built.problems += ["source value %r is in the gold" % old for old, _ in swaps
+                           if len(old) >= 4 and pageref.on_page(pageref._norm(old), flat)]
+        built.gold.write_text(written, encoding="utf-8")
         built.fields = resolved + len(misses)
     except Exception as exc:  # one bad source must not stop a folder run
         built.problems.append("%s: %s" % (type(exc).__name__, exc))

@@ -560,6 +560,29 @@ def metrics(page, ink: Ink, matrix=fitz.Identity):
     return float(np.median(sizes)), float(np.median(bases)), face
 
 
+BG_DPI = 36
+
+
+def _paper(pix, rect, pad=1.5):
+    """The paper colour in a thin ring around ``rect``: the commonest light
+    pixel there, ink left out. White unless the ring says otherwise."""
+    z = BG_DPI / 72.0
+    arr = np.frombuffer(pix.samples, np.uint8).reshape(pix.height, pix.width, pix.n)[:, :, :3]
+    x0, y0 = int(max(0, (rect.x0 - pad) * z)), int(max(0, (rect.y0 - pad) * z))
+    x1, y1 = int(min(pix.width - 1, (rect.x1 + pad) * z)), int(min(pix.height - 1, (rect.y1 + pad) * z))
+    if x1 <= x0 or y1 <= y0:
+        return WHITE
+    ring = np.concatenate([arr[y0, x0:x1 + 1], arr[y1, x0:x1 + 1], arr[y0:y1 + 1, x0], arr[y0:y1 + 1, x1]])
+    light = ring[ring.mean(1) > 170]
+    if len(light) < max(4, 0.4 * len(ring)):
+        return WHITE
+    colors, counts = np.unique((light // 8) * 8, axis=0, return_counts=True)
+    c = colors[counts.argmax()] + 4
+    if c.min() > 235:
+        return WHITE
+    return tuple(float(v) / 255 for v in np.clip(c, 0, 255))
+
+
 def apply(page, replacements: List[Replacement], ink: Ink, matrix=fitz.Identity):
     """Remove, cover and redraw every replacement on one page."""
     if not replacements:
@@ -601,19 +624,19 @@ def apply(page, replacements: List[Replacement], ink: Ink, matrix=fitz.Identity)
             # scanned from where the run ended, not from the next blank: the
             # comma can begin right there
             cols = ink.cols(baseline - 0.7 * size, baseline + 0.25 * size)
-            z, reach = ink.zoom, right + 0.35 * size
+            z, reach = ink.zoom, right + 0.18 * size   # a mark hugs; a word space is wider
             p = int(right * z)
-            for _ in range(2):                    # the rest of the last glyph, then the mark
-                while p < min(len(cols), reach * z) and not cols[p]:
-                    p += 1
-                if p >= min(len(cols), reach * z):
-                    break
+            while p < len(cols) and cols[p]:      # the rest of the last glyph
+                p += 1
+            right = max(right, p / z)
+            while p < min(len(cols), reach * z) and not cols[p]:
+                p += 1
+            if p < min(len(cols), reach * z):     # one mark after a hair of space
                 q = p
                 while q < len(cols) and cols[q]:
                     q += 1
-                if (q - p) / z >= 0.35 * size:
-                    break                         # a word, not a mark
-                right, p = q / z, q
+                if (q - p) / z < 0.35 * size:
+                    right = q / z
         if rep.follows and ok:
             # the next word's own ink bounds the new value - on a scan the
             # text layer can sit a few points off the print
@@ -622,6 +645,11 @@ def apply(page, replacements: List[Replacement], ink: Ink, matrix=fitz.Identity)
             if nxt is not None:
                 bound = nxt - 0.3 * size
                 rep.room = bound if rep.room is None else min(rep.room, bound)
+        if rep.face_known:
+            # a real text layer knows where the value starts: skipping ink
+            # set against a label ("1-315...") would leave a gap once the old
+            # text is gone
+            left = min(left, r.x0)
         measured.append([rep, size, baseline, left, right, ok])
 
     # a value whose own line could not be read takes the size the other
@@ -640,11 +668,12 @@ def apply(page, replacements: List[Replacement], ink: Ink, matrix=fitz.Identity)
         r = rep.visible_rect
         cover = fitz.Rect(left - 0.5, min(baseline - 0.8 * size, r.y0 + 0.1 * r.height),
                           right + 0.5, max(baseline + 0.25 * size, r.y1 - 0.1 * r.height))
-        # and all the old value's own ink between its ends: a baseline put a
-        # point too high leaves a comma's tail or a descender showing
-        glyphs = ink.bbox(fitz.Rect(left, cover.y0 - 0.2 * size, right, cover.y1 + 0.35 * size))
-        if glyphs is not None and glyphs.height < 1.5 * size:
-            cover |= fitz.Rect(left - 0.5, glyphs.y0 - 0.3, right + 0.5, glyphs.y1 + 0.3)
+        # and the old value's ink just under its baseline: a baseline put a
+        # point too high leaves a comma's tail or a descender showing. Only
+        # downward, and not as far as the next line's letters
+        tail = ink.bbox(fitz.Rect(left, cover.y1 - 0.1 * size, right, baseline + 0.3 * size))
+        if tail is not None:
+            cover.y1 = max(cover.y1, min(tail.y1 + 0.3, baseline + 0.3 * size))
         if not rep.face_known:
             rep.font = face
         placed.append((rep, size, baseline, cover, left, right))
@@ -659,14 +688,18 @@ def apply(page, replacements: List[Replacement], ink: Ink, matrix=fitz.Identity)
     page.apply_redactions(images=fitz.PDF_REDACT_IMAGE_NONE,
                           graphics=fitz.PDF_REDACT_LINE_ART_NONE)
 
+    # a cover takes the paper colour around it: a value printed on a grey
+    # panel is covered in grey, not a white patch
+    shade = page.get_pixmap(dpi=BG_DPI, colorspace=fitz.csRGB, annots=False)
     for rep, size, baseline, cover, left, right in placed:
-        page.draw_rect(cover, color=None, fill=WHITE, overlay=True)
+        fill = _paper(shade, cover)
+        page.draw_rect(cover, color=None, fill=fill, overlay=True)
         if rep.old[:1] in "Jjfgpqy":
             # the hook of a "J" curls back under the baseline, left of where the
             # ink above it begins: covered by the band alone it leaves a dot
             page.draw_rect(fitz.Rect(left - 0.35 * size, baseline - 0.05 * size,
                                      left + 0.5, baseline + 0.3 * size),
-                           color=None, fill=WHITE, overlay=True)
+                           color=None, fill=fill, overlay=True)
 
     for rep, size, baseline, cover, left, right in placed:
         if not rep.new.strip():
