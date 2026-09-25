@@ -90,7 +90,7 @@
     },
     "transaction_effective_date": {
       "raw": "04-17-2026",
-      "parsed": "2026-04-17",
+      "parsed": "04/17/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -101,11 +101,12 @@
         3,
         4
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "PRINT DATE"
     },
     "print_date": {
       "raw": "04-17-2026",
-      "parsed": "2026-04-17",
+      "parsed": "04/17/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -116,7 +117,8 @@
         3,
         4
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "PRINT DATE"
     },
     "summary_of_changes": {
       "raw": "SUB CO. CODE HAS BEEN CHANGED FROM ' ' TO '9' FOR LOC 1. ADDED LOC 1 FORM HO 04 41.",
@@ -425,7 +427,8 @@
         1,
         4
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "AGENCY CODE"
     },
     "territory": {
       "raw": "3R",
@@ -452,7 +455,8 @@
           1,
           4
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "PHONE O"
       },
       "fax": {
         "raw": "315-369-2245",
@@ -465,7 +469,8 @@
           1,
           4
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "F"
       },
       "email": {
         "raw": "service@adirondacklakesins.com",
@@ -478,7 +483,8 @@
           1,
           4
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "EMAIL"
       }
     }
   },
@@ -528,13 +534,14 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "QUOTE #"
         }
       }
     ],
     "effective_date": {
       "raw": "01-08-2026",
-      "parsed": "2026-01-08",
+      "parsed": "01/08/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -547,7 +554,7 @@
     },
     "expiration_date": {
       "raw": "01-08-2027",
-      "parsed": "2027-01-08",
+      "parsed": "01/08/2027",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -604,7 +611,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "BASIC FORM"
     }
   },
   "named_insured": {
@@ -621,7 +629,8 @@
         3,
         4
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "PRIMARY"
     },
     "entity_type": {
       "raw": "Individual",
@@ -647,7 +656,8 @@
             2,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "NAMED"
         },
         "entity_type": {
           "raw": "Individual",
@@ -729,7 +739,8 @@
           1,
           4
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "EMAIL"
       },
       "phones": [
         {
@@ -757,7 +768,8 @@
               1,
               4
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "PHONE H"
           }
         }
       ]
@@ -790,7 +802,8 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "PRIMARY"
         },
         "marital_status": {
           "raw": "MARRIED",
@@ -802,7 +815,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "PRIMARY"
         },
         "gender": {
           "raw": "MALE",
@@ -814,11 +828,12 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "PRIMARY"
         },
         "date_of_birth": {
           "raw": "02-11-1950",
-          "parsed": "1950-02-11",
+          "parsed": "02/11/1950",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -826,7 +841,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "PRIMARY"
         },
         "ssn_masked": {
           "raw": "NOT AVAILABLE",
@@ -838,7 +854,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "PRIMARY"
         },
         "occupation": {
           "raw": "SELF EMPLOYED",
@@ -850,7 +867,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Harold Vandermeer"
         },
         "employment_status": {
           "raw": "SELF-EMPLOYED",
@@ -862,7 +880,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Harold Vandermeer"
         },
         "business_on_premises": {
           "raw": "NO",
@@ -903,7 +922,8 @@
             2,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "NAMED"
         },
         "marital_status": {
           "raw": "MARRIED",
@@ -915,7 +935,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "PRIMARY"
         },
         "gender": {
           "raw": "FEMALE",
@@ -927,11 +948,12 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "NAMED"
         },
         "date_of_birth": {
           "raw": "09-23-1952",
-          "parsed": "1952-09-23",
+          "parsed": "09/23/1952",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -939,7 +961,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "NAMED"
         },
         "ssn_masked": {
           "raw": "XXXXX4827",
@@ -951,7 +974,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "NAMED"
         },
         "occupation": {
           "raw": "SELF EMPLOYED",
@@ -963,7 +987,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Harold Vandermeer"
         },
         "employment_status": {
           "raw": "SELF-EMPLOYED",
@@ -975,7 +1000,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Harold Vandermeer"
         },
         "business_on_premises": {
           "raw": "NO",
@@ -1100,7 +1126,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Interest"
       },
       "form_reference": {
         "raw": "HO 04 41",
@@ -1143,7 +1170,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Quoted Premium Amount"
     },
     "pro_rata_premium_change": {
       "raw": "0.00",
@@ -1155,7 +1183,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Quoted Pro-rated Premium Amount"
     }
   },
   "billing": {
@@ -1598,7 +1627,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "DEDUCTIBLE"
       }
     },
     "section_i_property_coverages": {
@@ -1802,7 +1832,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "BASIC FORM"
         },
         "number_of_families": {
           "raw": "1",
@@ -1918,7 +1949,8 @@
             "page_ref": [
               2
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "COUNTY"
           },
           "sub_county": {
             "raw": "REMAINDER OF COUNTY",
@@ -1957,7 +1989,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "PRIMARY HEAT SOURCE"
         },
         "secondary_heating_type": {
           "raw": "NONE",
@@ -1982,7 +2015,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "FOUNDATION TYPE"
         },
         "fuel_tank_location": {
           "raw": "NONE",
@@ -2211,7 +2245,8 @@
           "page_ref": [
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "TOTAL AMOUNT JEWELRY"
         },
         "form_reference": {
           "raw": "IM-175",
@@ -2236,7 +2271,8 @@
           "page_ref": [
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "TOTAL IM SCHEDULE"
         }
       },
       {
@@ -2301,7 +2337,8 @@
           "page_ref": [
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "TOTAL AMOUNT JEWELRY"
         },
         "form_reference": {
           "raw": "IM-175",
@@ -2326,7 +2363,8 @@
           "page_ref": [
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "TOTAL IM SCHEDULE"
         }
       },
       {
@@ -2390,7 +2428,8 @@
           "page_ref": [
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "TOTAL AMOUNT JEWELRY"
         },
         "form_reference": {
           "raw": "IM-175",
@@ -2415,7 +2454,8 @@
           "page_ref": [
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "TOTAL IM SCHEDULE"
         }
       },
       {
@@ -2481,7 +2521,8 @@
           "page_ref": [
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "TOTAL AMOUNT JEWELRY"
         },
         "form_reference": {
           "raw": "IM-175",
@@ -2506,7 +2547,8 @@
           "page_ref": [
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "TOTAL IM SCHEDULE"
         }
       },
       {
@@ -2570,7 +2612,8 @@
           "page_ref": [
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "TOTAL AMOUNT JEWELRY"
         },
         "form_reference": {
           "raw": "IM-175",
@@ -2595,7 +2638,8 @@
           "page_ref": [
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "TOTAL IM SCHEDULE"
         }
       },
       {
@@ -2658,7 +2702,8 @@
           "page_ref": [
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "TOTAL AMOUNT JEWELRY"
         },
         "form_reference": {
           "raw": "IM-175",
@@ -2683,7 +2728,8 @@
           "page_ref": [
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "TOTAL IM SCHEDULE"
         }
       },
       {
@@ -2774,7 +2820,8 @@
           "page_ref": [
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "TOTAL IM SCHEDULE"
         }
       }
     ],
@@ -2788,7 +2835,8 @@
       "page_ref": [
         4
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "TOTAL IM SCHEDULE"
     }
   },
   "underwriting": {
@@ -2807,11 +2855,12 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "PRIMARY"
         },
         "ordered_date": {
           "raw": "06-02-2023",
-          "parsed": "2023-06-02",
+          "parsed": "06/02/2023",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -2819,7 +2868,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Harold Vandermeer"
         },
         "report_vendor": {
           "raw": "NCF",
@@ -2831,7 +2881,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Harold Vandermeer"
         },
         "coded_score": {
           "raw": "C",
@@ -2862,11 +2913,12 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "PRIMARY"
         },
         "ordered_date": {
           "raw": "05-27-2017",
-          "parsed": "2017-05-27",
+          "parsed": "05/27/2017",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -2874,7 +2926,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Harold Vandermeer"
         },
         "report_vendor": {
           "raw": "NCF",
@@ -2886,7 +2939,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Harold Vandermeer"
         },
         "coded_score": {
           "raw": "EE",
@@ -2904,6 +2958,9 @@
     ]
   },
   "fideon:absent": [
+    "additional_fields[].label",
+    "additional_fields[].section",
+    "additional_fields[].value",
     "billing.amount_due",
     "billing.amount_enclosed",
     "billing.bank_account_number_masked",
@@ -3872,6 +3929,9 @@
     "premium.taxes_and_fees[].is_fully_earned",
     "premium.total_discount_amount",
     "premium.total_fees_amount",
+    "printed_lines[].cells[]",
+    "printed_lines[].kind",
+    "printed_lines[].page",
     "producer.address.country",
     "producer.address.county",
     "producer.address.county_code",
@@ -3900,6 +3960,7 @@
     "state_notices[].civil_penalty_amount",
     "state_notices[].contact_phone",
     "state_notices[].contact_website",
+    "state_notices[].copyright_notice",
     "state_notices[].edition_date",
     "state_notices[].form_reference",
     "state_notices[].form_reference_edition",
@@ -3958,6 +4019,7 @@
     "underwriting.consumer_report_disclosures[].reporting_agency_address.line_2",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.postal_code",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.state",
+    "underwriting.consumer_report_disclosures[].reporting_agency_phone",
     "underwriting.consumer_report_disclosures[].reporting_agency_website",
     "underwriting.consumer_report_disclosures[].updated_report_days",
     "underwriting.exceptions[].exception_type",
@@ -3985,6 +4047,624 @@
     "synthetic": true,
     "note": "Scanned synthetic document generated from the reference document: every original value rewritten in place with an invented one; page_ref measured on the rewritten PDF before scanning.",
     "scanner_profile": "high-quality scan, 400 dpi",
-    "page_refs_measured_on": "text-layer twin of nycm_endorsement_summary_im_schedule.pdf before scanning"
-  }
+    "page_refs_measured_on": "text-layer twin of nycm_endorsement_summary_im_schedule.pdf before scanning",
+    "prose": "text_sections, printed_label and printed_lines added by main's prose.text_sections / dfire.engine; scanned pages none read by OCR of the published scan"
+  },
+  "text_sections": {
+    "page1_s1": {
+      "section_id": "page1_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "New York Central Mutual Fire Insurance Company 1899 Central Plaza East, Edmeston NY 13335-1899",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s2": {
+      "section_id": "page1_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "POLICY PERIOD FROM 01-08-2026 TO 01-08-2027 12:01 AM STANDARD TIME AT INSURED ADDRESS Quoted Premium Amount: 15287.00",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page3_s1": {
+      "section_id": "page3_s1",
+      "section_title": "SUMMARY OF CHANGES",
+      "section_type": "prose",
+      "raw_text": "SUB CO. CODE HAS BEEN CHANGED FROM ' ' TO '9' FOR LOC 1. ADDED LOC 1 FORM HO 04 41.",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page4_s1": {
+      "section_id": "page4_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "New York Central Mutual Fire Insurance Company 1899 Central Plaza East, Edmeston NY 13335-1899",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page4_s2": {
+      "section_id": "page4_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "POLICY PERIOD FROM 01-08-2026 TO 01-08-2027 12:01 AM STANDARD TIME AT INSURED ADDRESS",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page4_s3": {
+      "section_id": "page4_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "1 GRAVY LADLE, 1 CAKE SERVER, 1 BUTTER KNIFE, 1 SUGAR SPOON",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    }
+  },
+  "printed_lines": [
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "APPLICANT NAME AND ADDRESS:",
+        "AGENCY NAME AND ADDRESS:"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "DOWNLOAD TRACKING #:"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "LOCATION DESCRIPTION"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "LOC TYPE",
+        "YEAR",
+        "TERR",
+        "FT TO",
+        "MILES TO",
+        "PROT",
+        "CONSTRUCTION",
+        "FIRE DISTRICT"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "BUILT",
+        "HYDRANT",
+        "FIRE DEPT",
+        "CLASS",
+        "GROUP"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "LOCATION COVERAGES"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "LOCATION NUMBER"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "SPECIAL PROGRAM"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "SECTION I: PROPERTY DAMAGE"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "A: DWELLING"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "B: OTHER STRUCTURES"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "C: PERSONAL PROPERTY"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "D: LOSS OF USE"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "SECTION II: LIABILITY"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "E: PERSONAL LIABILITY EACH"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "OCCURRENCE"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "F: MEDICAL PAYMENTS TO OTHERS"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "LOCATION FORMS"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "FORM NAME",
+        "FORM EDITION",
+        "FORM DETAILS"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "header",
+      "cells": [
+        "ADDITIONAL LOCATION DETAILS"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "LOCATION NUMBER"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "NUMBER OF FAMILIES"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "TOWN/ROW HOUSE"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "SECONDARY INDICATOR"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "PRIMARY POLICY NUMBER"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "DOUBLEWIDE"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "SUB COUNTY"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "NUMBER OF UNITS"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "UNITS BETWEEN FIRE WALLS"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "ACTUAL CASH VALUE"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "LEAD ABATEMENT"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "CERTIFICATE OF OCCUPANCY DATE"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "MONTHS OCCUPIED ANNUALLY"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "ROOF RENOVATIONS"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "ROOF INSTALLATION YEAR"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "PRIMARY HEAT INSTALLATION YEAR"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "ALTERNATE HEAT SOURCE"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "FUEL TANK LOCATION"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "GATED COMMUNITY"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "SWIMMING POOL"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "LOCATION ADDRESS (if different than mailing address)"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "MORTGAGEE(S)"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "ORDER",
+        "NAME/ADDRESS",
+        "LOAN NUMBER"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "INSURED INFORMATION"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "ROLE APPENDAGE",
+        "SEX",
+        "DOB",
+        "SSN"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "EMPLOYMENT INFORMATION"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "OCCUPATION NAME",
+        "EMPLOYMENT STATUS",
+        "BUSINESS ON PREMISES"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "INSURANCE SCORE INFORMATION"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "ORDERED DATE",
+        "REPORT",
+        "CODED SCORE"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "ACCOUNT INFORMATION"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "ACCOUNT TYPE",
+        "ACCOUNT #",
+        "PAY TYPE",
+        "PREFERRED DUE DAY"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "EXCEPTIONS"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "LEVEL",
+        "ORIGINAL",
+        "OVERRIDDEN"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "VALUE",
+        "VALUE"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "MANUAL LOSSES"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "header",
+      "cells": [
+        "DESCRIPTION",
+        "CATEGORY",
+        "LOSS FROM",
+        "POINTS",
+        "OCCR",
+        "DISPUTE",
+        "CAT"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "REMARKS"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "NYCM INLAND MARINE SCHEDULE"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "caption",
+      "cells": [
+        "APPLICANT NAME AND ADDRESS:",
+        "AGENCY NAME AND ADDRESS:"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "DOWNLOAD TRACKING #:"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "row",
+      "cells": [
+        "IM-175 - PERSONAL ARTICLES COVERAGE"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "caption",
+      "cells": [
+        "DESCRIPTION",
+        "SERIAL #",
+        "APPR. DATE",
+        "VALUE"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "caption",
+      "cells": [
+        "DESCRIPTION",
+        "SERIAL #",
+        "APPR. DATE",
+        "VALUE"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "row",
+      "cells": [
+        "TOTAL AMOUNT IM-175 - PERSONAL ARTICLES COVERAGE"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "header",
+      "cells": [
+        "QUOTE #: Q32957140",
+        "POLICY #: 4731582",
+        "Harold Vandermeer",
+        "EFF DATE: 04-17-2026",
+        "PRINT DATE: 04-17-2026"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "DOWNLOAD TRACKING #:",
+        "AGENCY CODE: 07326",
+        "TERRITORY: 3R"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "Tier: 9"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "LOC",
+        "LOC TYPE",
+        "YEAR",
+        "TERR",
+        "FT TO",
+        "MILES TO",
+        "PROT",
+        "PREM",
+        "CONSTRUCTION",
+        "FIRE DISTRICT"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "TYPE",
+        "NAME",
+        "ROLE APPENDAGE",
+        "MAR",
+        "SEX",
+        "DOB",
+        "SSN"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "IND"
+      ]
+    }
+  ]
 }

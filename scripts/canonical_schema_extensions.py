@@ -375,6 +375,7 @@ ADDED = [('document.document_form_number', 'field'),
  ('state_notices[].loss_ratio_disclosure', 'field'),
  ('state_notices[].provided_by', 'list_scalar'),
  ('state_notices[].form_reference_edition', 'field'),
+ ('state_notices[].copyright_notice', 'field'),
  ('claim_reporting.proof_of_loss_days', 'field'),
  ('claim_reporting.claim_payment_days', 'field'),
  ('claim_reporting.appraiser_selection_days', 'field'),
@@ -781,6 +782,7 @@ ADDED = [('document.document_form_number', 'field'),
  ('underwriting.consumer_report_disclosures[].reevaluation_days', 'field'),
  ('underwriting.consumer_report_disclosures[].updated_report_days', 'field'),
  ('underwriting.consumer_report_disclosures[].form_reference', 'field'),
+ ('underwriting.consumer_report_disclosures[].reporting_agency_phone', 'field'),
  ('underwriting.prior_losses_last_5_years', 'field')]
 
 # ── 2. merged duplicates (removed field -> kept field) ──────────────────────
@@ -5302,6 +5304,50 @@ ALIASES_REMOVED = {'document.applicable_coverages': ['Applicable Coverage(s)', '
 
 SOURCE_NOTE = '2026-09-24: 409 fields added from a 69-PDF / 11-carrier homeowners gap analysis; misplaced aliases moved (Inception Date, Mail To, Amended Date, Modifies Coverage(s) at Renewal, Authorized Representative, Applicable Coverage(s)). Applied directly to this file: the generator scripts named in fideon:note are not in this repo. Second pass (same day, stricter re-review of every page): +212 fields, section/list/column-header aliases, form-embedded thresholds (claim, appraisal, liberalization, watercraft/vehicle, vacancy), per-building copies of dwelling and coverage detail in scheduled_locations[]; underwriting.consumer_report_disclosure became consumer_report_disclosures[]. Third pass: +19 fields; scheduled_locations[] blocks inherit the aliases of their top-level twins; hyphen/en-dash/double-dash variants of coverage labels; column headers (LIMIT, PREMIUM, Limit of Liability) sit on every field they span; a few labels (Appraisal, Policy period, Secured Party Coverage, Payment basis) deliberately name two sibling fields because one printed clause carries both values. Fourth pass: final residual labels; every mix of hyphen/en dash/double hyphen in coverage labels; fields previously covered only by a heading now carry their own label. Fifth pass (independent, value-first review of every page): 33 fields added; wrong aliases fixed (Premium At Inception is the total policy premium; Mortgagee Clause, Who is providing this notice?, Watercraft, PAGE, Special Limits of Liability re-homed). Refinement: merged duplicate fields (homeowners.dwelling.distance_to_fire_station -> homeowners.rating_characteristics.distance_to_fire_station; homeowners.dwelling.distance_to_hydrant -> homeowners.rating_characteristics.feet_from_hydrant; homeowners.dwelling.vacancy_threshold_days -> homeowners.dwelling.vacancy_thresholds[].days; homeowners.dwelling.number_of_weeks_rented -> homeowners.seasonal_rental[].number_of_weeks_rented; homeowners.scheduled_locations[].number_of_weeks_rented -> homeowners.seasonal_rental[].number_of_weeks_rented); every field annotated with fideon:value_type and a generated description.'
 
+# ── 5. blocks carried over as-is ────────────────────────────────────────────
+# main's prose convention (config/policy_check/dwelling_fire.json): keyed fields
+# hold the values, these hold every other printed word, so nothing the page
+# prints is missing from the gold.
+VERBATIM_PROPERTIES = {'additional_fields': {'type': 'array',
+                       'description': 'Printed label/value pairs that have no dedicated field above, kept as '
+                                      'key and value: the label as the document prints it, the section '
+                                      'heading it sits under, and the value as a FieldValue (raw, parsed, '
+                                      'page_ref).',
+                       'items': {'type': 'object',
+                                 'properties': {'section': {'type': ['string', 'null']},
+                                                'label': {'type': 'string'},
+                                                'value': {'$ref': '#/$defs/FieldValue'}},
+                                 'required': ['label', 'value']}},
+ 'text_sections': {'type': 'object', 'additionalProperties': {'$ref': '#/$defs/TextSection'}},
+ 'printed_lines': {'type': 'array',
+                   'description': 'Printed lines that no keyed field, label or prose section already '
+                                  'carries: section headings, column headers, captions, page headers and '
+                                  'footers, empty labels. Together with the keyed fields and text_sections, '
+                                  'nothing the page prints is missing from the gold.',
+                   'items': {'type': 'object',
+                             'properties': {'page': {'type': 'integer'},
+                                            'kind': {'type': 'string',
+                                                     'enum': ['heading',
+                                                              'caption',
+                                                              'header',
+                                                              'footer',
+                                                              'row']},
+                                            'cells': {'type': 'array', 'items': {'type': 'string'}}},
+                             'required': ['page', 'kind', 'cells']}}}
+
+VERBATIM_DEFS = {'TextSection': {'type': 'object',
+                 'description': 'A block of printed text exactly as the document carries it: a prose '
+                                "paragraph, notice, condition or disclaimer, or the page's remaining "
+                                'label/footer text. Nothing the page prints is left out of the gold; '
+                                'structured fields above hold the values, these hold the words.',
+                 'properties': {'section_id': {'type': 'string'},
+                                'section_title': {'type': ['string', 'null']},
+                                'section_type': {'type': 'string', 'enum': ['prose', 'other']},
+                                'raw_text': {'type': 'string'},
+                                'page_range': {'type': 'array', 'items': {'type': 'integer'}},
+                                'form_number': {'type': ['string', 'null']}},
+                 'required': ['section_id', 'raw_text', 'page_range']}}
+
 # ── 4. value types and descriptions ─────────────────────────────────────────
 SCOPE_NOTES = {
     "premium.premium_by_coverage_part": "Coverage/limit/premium table rows as printed. The named per-coverage "
@@ -5376,7 +5422,7 @@ def human(name):
 
 
 TYPE_TEXT = {"money": "Money amount; parsed is the number (negative for credits), null for Incl./***/N/A.",
-             "date": "Date; parsed is ISO yyyy-mm-dd.",
+             "date": "Date; parsed is MM/DD/YYYY (see fideon:parsed_formats).",
              "datetime": "Time or date-time as printed; parsed normalised where possible.",
              "percentage": "Percentage; parsed is the number (10% -> 10).",
              "integer": "Whole number (count, days, years...); parsed is the number.",
@@ -5444,7 +5490,8 @@ def _walk(schema):
                 for k, v in it["properties"].items():
                     w(v, "%s[].%s" % (p, k))
     for k, v in schema["properties"].items():
-        w(v, k)
+        if k not in VERBATIM_PROPERTIES:
+            w(v, k)
     return out
 
 
@@ -5473,7 +5520,8 @@ def _annotate(schema):
                 for k, v in it["properties"].items():
                     visit(v, "%s[].%s" % (path, k), trail + [name])
     for k, v in schema["properties"].items():
-        visit(v, k, [])
+        if k not in VERBATIM_PROPERTIES:
+            visit(v, k, [])
 
 
 def extend(schema):
@@ -5504,6 +5552,10 @@ def extend(schema):
             node["fideon:aliases"] = rest
         else:
             node.pop("fideon:aliases", None)
+    for key, node in VERBATIM_PROPERTIES.items():
+        schema["properties"][key] = json.loads(json.dumps(node))
+    for key, node in VERBATIM_DEFS.items():
+        schema.setdefault("$defs", {})[key] = json.loads(json.dumps(node))
     _annotate(schema)
     fields = [p for p, _, k in _walk(schema) if k in ("field", "list_scalar")]
     src = schema.setdefault("fideon:source", {})

@@ -65,13 +65,14 @@ def is_scanned(page, invisible) -> bool:
     return any(fitz.Rect(i["bbox"]).get_area() > 0.5 * area for i in page.get_image_info())
 
 
-def read_page(page, dpi=DPI, min_conf=None) -> List[Tuple[str, fitz.Rect, float]]:
+def read_page(page, dpi=DPI, min_conf=None, turn=0) -> List[Tuple[str, fitz.Rect, float]]:
     """(text, rect in page points, confidence) for every line the engine reads
-    at ``min_conf`` or better (default :data:`MIN_CONFIDENCE`)."""
+    at ``min_conf`` or better (default :data:`MIN_CONFIDENCE`). With ``turn``
+    the page is read a quarter turn round; its rects are then of that image."""
     ocr = engine()
     if ocr is None:
         return []
-    pix = page.get_pixmap(dpi=dpi)
+    pix = page.get_pixmap(matrix=fitz.Matrix(dpi / 72, dpi / 72).prerotate(turn)) if turn         else page.get_pixmap(dpi=dpi)
     img = np.frombuffer(pix.samples, np.uint8).reshape(pix.height, pix.width, pix.n)[:, :, :3]
     result, _ = ocr(np.ascontiguousarray(img))
     scale = 72.0 / dpi
@@ -90,12 +91,17 @@ def read_page(page, dpi=DPI, min_conf=None) -> List[Tuple[str, fitz.Rect, float]
 
 
 def _chars_of(text, rect):
-    """The line's characters spread across its box in proportion - the
-    engine gives a box per line, not per glyph."""
-    n = max(len(text), 1)
-    step = rect.width / n
-    return [(c, fitz.Rect(rect.x0 + k * step, rect.y0, rect.x0 + (k + 1) * step, rect.y1))
-            for k, c in enumerate(text)]
+    """The line's characters spread across its box by their printed widths -
+    the engine gives a box per line, not per glyph, and "MITSUBISHI" is far
+    wider than "1,:" - so a value at the end of a long line lands on its print."""
+    widths = [fitz.get_text_length(c, fontname="helv", fontsize=1) or 0.278 for c in text]
+    total = sum(widths) or 1.0
+    out, x = [], rect.x0
+    for c, w in zip(text, widths):
+        step = rect.width * w / total
+        out.append((c, fitz.Rect(x, rect.y0, x + step, rect.y1)))
+        x += step
+    return out
 
 
 def _covered(box, layer):
@@ -143,7 +149,7 @@ def _key(text):
     return "".join(c for _, c in keep), [k for k, _ in keep]
 
 
-def reconcile(lines, layer_line, layer_near):
+def reconcile(lines, layer_line, layer_near, layer_span=None, stretched=None):
     """What to add and what to drop.
 
     Returns ``(added, dropped)``: ``added`` is ``[(text, rect)]`` runs of
@@ -155,7 +161,14 @@ def reconcile(lines, layer_line, layer_near):
 
     What the layer lacks is found by comparing text, not positions: a scan's
     layer is often set narrower than the print, so a printed word can lie
-    outside every layer box and still be in the layer."""
+    outside every layer box and still be in the layer.
+
+    ``layer_span(rect)``, when given, is ``(x0, x1, n)`` of the layer's ``n``
+    letters and digits set across a line's box. A layer that holds the line's
+    text but is squeezed well inside its print - a value at the end of the
+    line then sits a word or two left of its ink - is listed in ``stretched``
+    as ``(band, x0, x1, print_x0, print_x1)``, for its characters to be set
+    back across the print (see :func:`overlay.cells`)."""
     added, dropped = [], []
     for text, rect, conf in lines:
         # a figure standing alone in a column - a premium "3", "81" - read
@@ -175,6 +188,12 @@ def reconcile(lines, layer_line, layer_near):
         chars = _chars_of(text, rect)
         mine, where = _key(text)
         theirs, _ = _key(layer_line(rect))
+        if stretched is not None and layer_span is not None and len(mine) >= 12 and mine in theirs:
+            span = layer_span(rect)
+            if span is not None and span[1] - span[0] < 0.85 * rect.width                     and 0.9 * len(mine) <= span[2] <= 1.15 * len(mine):
+                band = fitz.Rect(rect.x0 - 0.5 * rect.height, rect.y0, rect.x1 + 0.5 * rect.height, rect.y1)
+                stretched.append((band, span[0], span[1], rect.x0, rect.x1))
+                continue
         if mine and mine not in theirs:
             match = difflib.SequenceMatcher(None, theirs, mine, autojunk=False)
             held = sum(b.size for b in match.get_matching_blocks()) / len(mine)
@@ -186,8 +205,12 @@ def reconcile(lines, layer_line, layer_near):
                 added.append((text, rect))
                 continue
             for tag, i1, i2, j1, j2 in match.get_opcodes():
-                if tag != "insert" or j2 - j1 < 3:
-                    continue                      # only what the layer has no text for
+                # only what the layer has no text for - or, for a number, has
+                # other text in its place: "POLICY #: 80320020" whose layer
+                # runs on into the next word ("POLICY #: Jun")
+                number = tag == "replace" and len(re.sub(r"\D", "", mine[j1:j2])) >= 5
+                if tag != "insert" and not number or j2 - j1 < 3:
+                    continue
                 a, b = where[j1], where[j2 - 1] + 1
                 # widen to the whole printed token around it
                 while a > 0 and not text[a - 1].isspace():
