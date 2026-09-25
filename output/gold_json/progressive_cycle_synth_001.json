@@ -1,0 +1,1262 @@
+{
+  "document": {
+    "source_file_name": {
+      "raw": "progressive_cycle_synth_001.pdf",
+      "parsed": "progressive_cycle_synth_001.pdf",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "page_count": {
+      "raw": "2",
+      "parsed": 2,
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "line_of_business_as_stated": {
+      "raw": "Motorcycle policy",
+      "parsed": "Motorcycle policy",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "form_number": {
+      "raw": "Form 6489 NY (07/07)",
+      "parsed": "Form 6489 NY (07/07)",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "document_title_as_stated": {
+      "raw": "Declarations Page",
+      "parsed": "Declarations Page",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "document_type": {
+      "raw": "Declarations Page",
+      "parsed": "Declaration",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "carrier": {
+    "company_name": {
+      "raw": "Progressive",
+      "parsed": "Progressive",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "contact": {
+      "website": {
+        "raw": "progressiveagent.com",
+        "parsed": "progressiveagent.com",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "producer": {
+    "agency_name": {
+      "raw": "CEDARHOLLOW INS GROUP",
+      "parsed": "CEDARHOLLOW INS GROUP",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "address": {
+      "line_1": {
+        "raw": "643 POPLAR POINT",
+        "parsed": "643 POPLAR POINT",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "NORWICH",
+        "parsed": "NORWICH",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13815",
+        "parsed": "13815",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "contact": {
+      "phone": {
+        "raw": "607-555-0134",
+        "parsed": "607-555-0134",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "named_insured": {
+    "primary_name": {
+      "raw": "Ignatius Hollingsworth",
+      "parsed": "Ignatius Hollingsworth",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "entity_type": {
+      "raw": "Individual",
+      "parsed": "Individual",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "mailing_address": {
+      "line_1": {
+        "raw": "PO BOX 903",
+        "parsed": "PO BOX 903",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "ONEONTA",
+        "parsed": "ONEONTA",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13820",
+        "parsed": "13820",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "policy": {
+    "policy_number": {
+      "raw": "786784092",
+      "parsed": "786784092",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "effective_date": {
+      "raw": "Feb 1, 2027",
+      "parsed": "02/01/2027",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "expiration_date": {
+      "raw": "Feb 1, 2028",
+      "parsed": "02/01/2028",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "effective_time": {
+      "raw": "12:01 a.m.",
+      "parsed": "12:01 a.m.",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "expiration_time": {
+      "raw": "12:01 a.m.",
+      "parsed": "12:01 a.m.",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "policy_form_number": {
+      "raw": "5979 NY",
+      "parsed": "5979 NY",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "policy_form_edition": {
+      "raw": "10/17",
+      "parsed": "10/17",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "policy_term_months": {
+      "raw": "12",
+      "parsed": 12,
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    }
+  },
+  "motorcycle": {
+    "no_fault_benefits": {
+      "mandatory_pedestrian_pip_limit": {
+        "raw": "$50,000",
+        "parsed": 50000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    },
+    "units": [
+      {
+        "vin": {
+          "raw": "4HD1KEF99KB389216",
+          "parsed": "4HD1KEF99KB389216",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "premium": {
+          "raw": "$70",
+          "parsed": 70.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "actual_cash_value": {
+          "raw": "$500",
+          "parsed": 500.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "actual_cash_value": {
+          "raw": "$500",
+          "parsed": 500.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "vin": {
+          "raw": "4HD1KEF99KB389216",
+          "parsed": "4HD1KEF99KB389216",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "claim_reporting": {
+    "claims_phone": {
+      "raw": "315-555-0127",
+      "parsed": "315-555-0127",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "forms_and_endorsements": [
+    {
+      "form_number": {
+        "raw": "5979 NY",
+        "parsed": "5979 NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Policy",
+        "parsed": "Policy",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "10/17",
+        "parsed": "10/17",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "6489 NY",
+        "parsed": "6489 NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "07/07",
+        "parsed": "07/07",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    }
+  ],
+  "text_sections": {
+    "page1_s1": {
+      "section_id": "page1_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "To report a claim. Your coverage began on February 1, 2027 at the later of 12:01 a.m. or the effective time shown on your application. This policy period ends on February 1, 2028 at 12:01 a.m.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s2": {
+      "section_id": "page1_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Your insurance policy and any policy endorsements contain a full explanation of your coverage. The policy limits shown for a vehicle may not be combined with the limits for the same coverage on another vehicle. The policy contract is form 5979 NY (10/17). The contract is modified by form A135 NY (11/13).",
+      "page_range": [
+        1
+      ],
+      "form_number": "A135 NY (11/13)"
+    },
+    "page1_s3": {
+      "section_id": "page1_s3",
+      "section_title": "SEE ENCLOSURE FOR SUPPLEMENTAL SPOUSAL LIABILITY INSURANCE NOTICE Supplementary Uninsured/Underinsured Motorist: (SUM)",
+      "section_type": "prose",
+      "raw_text": "The maximum amount payable under SUM coverage shall be the policy's SUM limits reduced and thus offset by motor vehicle bodily injury liability insurance policy or bond payments received from, or on behalf of, any negligent party involved in the accident, as specified in the SUM endorsement.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page2_s1": {
+      "section_id": "page2_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Please review the Rating Information provided in the Required Information Notice, Form 4746, included in this mailing, for a description of discounts which may be available if you qualify.",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s2": {
+      "section_id": "page2_s2",
+      "section_title": "Premium surcharges",
+      "section_type": "prose",
+      "raw_text": "This policy is not surcharged. Surcharges may be applied in the future as outlined in the Rating Information provided in the Required Information Notice, Form 4746, included in this mailing.",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s3": {
+      "section_id": "page2_s3",
+      "section_title": "Important information about Accessories on your motorcycle/off-road vehicle",
+      "section_type": "prose",
+      "raw_text": "Coverage for physical damage to your motorcycle/off-road vehicle extends only to the vehicle as it comes from the factory. Accessories added on at the dealership or by an individual, and therefore not provided as original equipment by the manufacturer, are not considered part of the vehicle as delivered from the factory. If you have purchased comprehensive or collision coverage, we provide up to $3000 of accessory coverage at no additional charge to you. Please review the value of the accessories on your vehicle. Should you wish to purchase coverage for more accessories, additional accessory coverage is available at very reasonable rates.",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s4": {
+      "section_id": "page2_s4",
+      "section_title": "Policy tier",
+      "section_type": "prose",
+      "raw_text": "This policy has been assigned to the Standard C tier.",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    }
+  },
+  "fideon:absent": [
+    "billing.account_balance",
+    "billing.amount_due",
+    "billing.bill_to_party",
+    "billing.billing_plan",
+    "billing.due_date",
+    "billing.installments[].amount",
+    "billing.installments[].due_date",
+    "billing.installments[].installment_fee",
+    "billing.installments[].installment_number",
+    "billing.last_bill_amount",
+    "billing.paperless_billing_enrolled",
+    "billing.payment_frequency",
+    "billing.payment_method",
+    "billing.payment_plan",
+    "carrier.address.city",
+    "carrier.address.country",
+    "carrier.address.county",
+    "carrier.address.county_code",
+    "carrier.address.line_1",
+    "carrier.address.line_2",
+    "carrier.address.postal_code",
+    "carrier.address.state",
+    "carrier.company_structure",
+    "carrier.contact.email",
+    "carrier.contact.fax",
+    "carrier.contact.phone",
+    "carrier.fein",
+    "carrier.group_name",
+    "carrier.is_surplus_lines",
+    "carrier.naic_number",
+    "carrier.state_of_issue",
+    "carrier.surplus_lines_broker_name",
+    "carrier.surplus_lines_license_number",
+    "carrier.writing_company_name",
+    "claim_reporting.claim_reporting_instructions",
+    "claim_reporting.claims_address.city",
+    "claim_reporting.claims_address.country",
+    "claim_reporting.claims_address.county",
+    "claim_reporting.claims_address.county_code",
+    "claim_reporting.claims_address.line_1",
+    "claim_reporting.claims_address.line_2",
+    "claim_reporting.claims_address.postal_code",
+    "claim_reporting.claims_address.state",
+    "claim_reporting.claims_email",
+    "claim_reporting.claims_notice_recipient",
+    "deductibles[].amount",
+    "deductibles[].applies_to",
+    "deductibles[].deductible_type",
+    "deductibles[].maximum_amount",
+    "deductibles[].minimum_amount",
+    "deductibles[].notes",
+    "deductibles[].percentage",
+    "deductibles[].percentage_basis",
+    "deductibles[].waiting_period",
+    "document.address_standardization_status",
+    "document.applicable_coverages[]",
+    "document.application_date",
+    "document.application_of_origin",
+    "document.application_time",
+    "document.batch_number",
+    "document.bind_date",
+    "document.bind_id",
+    "document.bind_time",
+    "document.buyout_indicator",
+    "document.channel_of_bind",
+    "document.channel_of_origin",
+    "document.channel_of_process",
+    "document.control_number",
+    "document.copy_type",
+    "document.coverage_parts_present[]",
+    "document.front_end_matched",
+    "document.geocode_status",
+    "document.issue_date",
+    "document.language",
+    "document.print_date",
+    "document.source_carrier_folder",
+    "document.source_of_quote",
+    "document.source_system",
+    "document.summary_of_changes",
+    "document.transaction_effective_date",
+    "document.transaction_reason",
+    "document.transaction_type",
+    "document.version_number",
+    "forms_and_endorsements[].applies_to",
+    "forms_and_endorsements[].deductible_amount",
+    "forms_and_endorsements[].form_group",
+    "forms_and_endorsements[].form_title",
+    "forms_and_endorsements[].group_premium",
+    "forms_and_endorsements[].is_included",
+    "forms_and_endorsements[].is_mandatory",
+    "forms_and_endorsements[].limit_amount",
+    "forms_and_endorsements[].premium",
+    "interested_parties[].address.city",
+    "interested_parties[].address.country",
+    "interested_parties[].address.county",
+    "interested_parties[].address.county_code",
+    "interested_parties[].address.line_1",
+    "interested_parties[].address.line_2",
+    "interested_parties[].address.postal_code",
+    "interested_parties[].address.state",
+    "interested_parties[].applies_to",
+    "interested_parties[].clause_type",
+    "interested_parties[].description_of_interest",
+    "interested_parties[].is_payor",
+    "interested_parties[].loan_number",
+    "interested_parties[].name",
+    "interested_parties[].party_type",
+    "interested_parties[].rank",
+    "locations[].address.city",
+    "locations[].address.country",
+    "locations[].address.county",
+    "locations[].address.county_code",
+    "locations[].address.line_1",
+    "locations[].address.line_2",
+    "locations[].address.postal_code",
+    "locations[].address.state",
+    "locations[].alarm_type",
+    "locations[].building_description",
+    "locations[].building_number",
+    "locations[].business_description",
+    "locations[].construction_type",
+    "locations[].coverages[].aggregate_limit_amount",
+    "locations[].coverages[].applies_to",
+    "locations[].coverages[].coinsurance_percentage",
+    "locations[].coverages[].coverage_code",
+    "locations[].coverages[].coverage_description",
+    "locations[].coverages[].coverage_name",
+    "locations[].coverages[].deductible_amount",
+    "locations[].coverages[].deductible_basis",
+    "locations[].coverages[].deductible_type",
+    "locations[].coverages[].form_reference",
+    "locations[].coverages[].is_excluded",
+    "locations[].coverages[].is_included",
+    "locations[].coverages[].limit_amount",
+    "locations[].coverages[].limit_basis",
+    "locations[].coverages[].notes",
+    "locations[].coverages[].premium",
+    "locations[].coverages[].retention_amount",
+    "locations[].coverages[].sublimit_amount",
+    "locations[].coverages[].sublimit_basis",
+    "locations[].coverages[].valuation_basis",
+    "locations[].coverages[].waiting_period",
+    "locations[].interest",
+    "locations[].location_number",
+    "locations[].number_of_stories",
+    "locations[].occupancy_description",
+    "locations[].protection_class",
+    "locations[].sprinklered",
+    "locations[].square_footage",
+    "locations[].territory_code",
+    "locations[].year_built",
+    "loss_history[].claim_number",
+    "loss_history[].description",
+    "loss_history[].loss_date",
+    "loss_history[].paid_amount",
+    "loss_history[].reserved_amount",
+    "loss_history[].status",
+    "motorcycle.additional_coverages[].aggregate_limit_amount",
+    "motorcycle.additional_coverages[].applies_to",
+    "motorcycle.additional_coverages[].coinsurance_percentage",
+    "motorcycle.additional_coverages[].coverage_code",
+    "motorcycle.additional_coverages[].coverage_description",
+    "motorcycle.additional_coverages[].coverage_name",
+    "motorcycle.additional_coverages[].deductible_amount",
+    "motorcycle.additional_coverages[].deductible_basis",
+    "motorcycle.additional_coverages[].deductible_type",
+    "motorcycle.additional_coverages[].form_reference",
+    "motorcycle.additional_coverages[].is_excluded",
+    "motorcycle.additional_coverages[].is_included",
+    "motorcycle.additional_coverages[].limit_amount",
+    "motorcycle.additional_coverages[].limit_basis",
+    "motorcycle.additional_coverages[].notes",
+    "motorcycle.additional_coverages[].premium",
+    "motorcycle.additional_coverages[].retention_amount",
+    "motorcycle.additional_coverages[].sublimit_amount",
+    "motorcycle.additional_coverages[].sublimit_basis",
+    "motorcycle.additional_coverages[].valuation_basis",
+    "motorcycle.additional_coverages[].waiting_period",
+    "motorcycle.layup_period.layup_coverages_suspended[]",
+    "motorcycle.layup_period.layup_end_date",
+    "motorcycle.layup_period.layup_start_date",
+    "motorcycle.liability_coverages.bodily_injury_per_accident_limit",
+    "motorcycle.liability_coverages.bodily_injury_per_person_limit",
+    "motorcycle.liability_coverages.combined_single_limit",
+    "motorcycle.liability_coverages.guest_passenger_liability_limit",
+    "motorcycle.liability_coverages.medical_payments_limit",
+    "motorcycle.liability_coverages.property_damage_limit",
+    "motorcycle.liability_coverages.supplementary_uninsured_underinsured_limit",
+    "motorcycle.liability_coverages.underinsured_motorist_limit",
+    "motorcycle.liability_coverages.uninsured_motorist_limit",
+    "motorcycle.no_fault_benefits.additional_death_benefits",
+    "motorcycle.no_fault_benefits.additional_monthly_work_loss",
+    "motorcycle.no_fault_benefits.additional_other_necessary_expenses",
+    "motorcycle.no_fault_benefits.additional_pip_limit",
+    "motorcycle.no_fault_benefits.aggregate_death_benefits",
+    "motorcycle.no_fault_benefits.aggregate_no_fault_benefits_available",
+    "motorcycle.no_fault_benefits.aggregate_other_necessary_expenses",
+    "motorcycle.no_fault_benefits.aggregate_work_loss",
+    "motorcycle.no_fault_benefits.applies_to_named_insured_only",
+    "motorcycle.no_fault_benefits.basic_economic_loss_limit",
+    "motorcycle.no_fault_benefits.covered_persons[]",
+    "motorcycle.no_fault_benefits.death_benefit",
+    "motorcycle.no_fault_benefits.funeral_benefit",
+    "motorcycle.no_fault_benefits.is_applicable",
+    "motorcycle.no_fault_benefits.mandatory_pip_limit",
+    "motorcycle.no_fault_benefits.maximum_monthly_work_loss",
+    "motorcycle.no_fault_benefits.no_fault_deductible",
+    "motorcycle.no_fault_benefits.no_fault_state",
+    "motorcycle.no_fault_benefits.optional_basic_economic_loss_limit",
+    "motorcycle.no_fault_benefits.other_necessary_expenses_per_day",
+    "motorcycle.operators[].age",
+    "motorcycle.operators[].assigned_vehicle_number",
+    "motorcycle.operators[].date_licensed",
+    "motorcycle.operators[].date_of_birth",
+    "motorcycle.operators[].driver_discounts[]",
+    "motorcycle.operators[].driver_number",
+    "motorcycle.operators[].driver_status",
+    "motorcycle.operators[].excluded_driver",
+    "motorcycle.operators[].gender",
+    "motorcycle.operators[].license_number",
+    "motorcycle.operators[].license_state",
+    "motorcycle.operators[].marital_status",
+    "motorcycle.operators[].name",
+    "motorcycle.operators[].relationship_to_insured",
+    "motorcycle.operators[].violations_and_accidents[].date",
+    "motorcycle.operators[].violations_and_accidents[].description",
+    "motorcycle.operators[].violations_and_accidents[].points",
+    "motorcycle.physical_damage_coverages.collision_deductible",
+    "motorcycle.physical_damage_coverages.comprehensive_deductible",
+    "motorcycle.physical_damage_coverages.custom_parts_and_equipment_limit",
+    "motorcycle.physical_damage_coverages.roadside_assistance",
+    "motorcycle.physical_damage_coverages.safety_apparel_limit",
+    "motorcycle.physical_damage_coverages.total_loss_settlement_basis",
+    "motorcycle.physical_damage_coverages.trip_interruption_limit",
+    "motorcycle.units[].accessories_schedule[].amount",
+    "motorcycle.units[].accessories_schedule[].description",
+    "motorcycle.units[].annual_mileage",
+    "motorcycle.units[].billing_group",
+    "motorcycle.units[].coverages[].aggregate_limit_amount",
+    "motorcycle.units[].coverages[].applies_to",
+    "motorcycle.units[].coverages[].coinsurance_percentage",
+    "motorcycle.units[].coverages[].coverage_code",
+    "motorcycle.units[].coverages[].coverage_description",
+    "motorcycle.units[].coverages[].coverage_name",
+    "motorcycle.units[].coverages[].deductible_amount",
+    "motorcycle.units[].coverages[].deductible_basis",
+    "motorcycle.units[].coverages[].deductible_type",
+    "motorcycle.units[].coverages[].form_reference",
+    "motorcycle.units[].coverages[].is_excluded",
+    "motorcycle.units[].coverages[].is_included",
+    "motorcycle.units[].coverages[].limit_amount",
+    "motorcycle.units[].coverages[].limit_basis",
+    "motorcycle.units[].coverages[].notes",
+    "motorcycle.units[].coverages[].premium",
+    "motorcycle.units[].coverages[].retention_amount",
+    "motorcycle.units[].coverages[].sublimit_amount",
+    "motorcycle.units[].coverages[].sublimit_basis",
+    "motorcycle.units[].coverages[].valuation_basis",
+    "motorcycle.units[].coverages[].waiting_period",
+    "motorcycle.units[].engine_displacement_cc",
+    "motorcycle.units[].garaging_address.city",
+    "motorcycle.units[].garaging_address.country",
+    "motorcycle.units[].garaging_address.county",
+    "motorcycle.units[].garaging_address.line_1",
+    "motorcycle.units[].garaging_address.line_2",
+    "motorcycle.units[].garaging_address.postal_code",
+    "motorcycle.units[].garaging_address.state",
+    "motorcycle.units[].lienholder.address.city",
+    "motorcycle.units[].lienholder.address.country",
+    "motorcycle.units[].lienholder.address.county",
+    "motorcycle.units[].lienholder.address.line_1",
+    "motorcycle.units[].lienholder.address.line_2",
+    "motorcycle.units[].lienholder.address.postal_code",
+    "motorcycle.units[].lienholder.address.state",
+    "motorcycle.units[].lienholder.applies_to",
+    "motorcycle.units[].lienholder.clause_type",
+    "motorcycle.units[].lienholder.description_of_interest",
+    "motorcycle.units[].lienholder.loan_number",
+    "motorcycle.units[].lienholder.name",
+    "motorcycle.units[].lienholder.party_type",
+    "motorcycle.units[].lienholder.rank",
+    "motorcycle.units[].make",
+    "motorcycle.units[].miles_one_way",
+    "motorcycle.units[].model",
+    "motorcycle.units[].rating_tier",
+    "motorcycle.units[].stated_amount",
+    "motorcycle.units[].territory_code",
+    "motorcycle.units[].unit_number",
+    "motorcycle.units[].unit_type",
+    "motorcycle.units[].usage_class",
+    "motorcycle.units[].year",
+    "named_insured.additional_named_insureds[].address.city",
+    "named_insured.additional_named_insureds[].address.country",
+    "named_insured.additional_named_insureds[].address.county",
+    "named_insured.additional_named_insureds[].address.county_code",
+    "named_insured.additional_named_insureds[].address.line_1",
+    "named_insured.additional_named_insureds[].address.line_2",
+    "named_insured.additional_named_insureds[].address.postal_code",
+    "named_insured.additional_named_insureds[].address.state",
+    "named_insured.additional_named_insureds[].effective_date",
+    "named_insured.additional_named_insureds[].entity_type",
+    "named_insured.additional_named_insureds[].name",
+    "named_insured.additional_named_insureds[].relationship",
+    "named_insured.business_description",
+    "named_insured.contact.email",
+    "named_insured.contact.fax",
+    "named_insured.contact.phone",
+    "named_insured.contact.website",
+    "named_insured.date_moved_to_current_address",
+    "named_insured.doing_business_as",
+    "named_insured.fein",
+    "named_insured.mailing_address.country",
+    "named_insured.mailing_address.county",
+    "named_insured.mailing_address.county_code",
+    "named_insured.mailing_address.line_2",
+    "named_insured.naics_code",
+    "named_insured.ownership_type",
+    "named_insured.physical_address.city",
+    "named_insured.physical_address.country",
+    "named_insured.physical_address.county",
+    "named_insured.physical_address.county_code",
+    "named_insured.physical_address.line_1",
+    "named_insured.physical_address.line_2",
+    "named_insured.physical_address.postal_code",
+    "named_insured.physical_address.state",
+    "named_insured.residence_type",
+    "named_insured.sic_code",
+    "named_insured.years_in_business",
+    "policy.account_id",
+    "policy.alternate_policy_identifiers[].identifier_type",
+    "policy.alternate_policy_identifiers[].identifier_value",
+    "policy.anniversary_date",
+    "policy.audit_frequency",
+    "policy.cancellation_date",
+    "policy.cancellation_reason",
+    "policy.certificate_number",
+    "policy.is_assessable",
+    "policy.is_renewal",
+    "policy.minimum_earned_premium_percentage",
+    "policy.nonrenewal_notice_date",
+    "policy.original_year",
+    "policy.plan_type",
+    "policy.policy_form_name",
+    "policy.policy_status",
+    "policy.policy_type",
+    "policy.policyholder_since_date",
+    "policy.prior_policy_number",
+    "policy.program_name",
+    "policy.renewal_of_policy_number",
+    "policy.time_zone",
+    "policy.times_renewed",
+    "premium.additional_insured_processing_fee",
+    "premium.additional_premium",
+    "premium.administrative_fee",
+    "premium.annualized_adjusted_premium",
+    "premium.basic_premium",
+    "premium.deposit_premium",
+    "premium.discounts_and_credits[].amount",
+    "premium.discounts_and_credits[].applies_to",
+    "premium.discounts_and_credits[].description",
+    "premium.discounts_and_credits[].edition_date",
+    "premium.discounts_and_credits[].form_reference",
+    "premium.discounts_and_credits[].is_applied",
+    "premium.discounts_and_credits[].percentage",
+    "premium.estimated_annual_premium",
+    "premium.exposure_amount",
+    "premium.fire_fee",
+    "premium.forms_and_endorsements_premium",
+    "premium.guaranty_association_surcharge",
+    "premium.inspection_fee",
+    "premium.minimum_premium",
+    "premium.minimum_written_premium",
+    "premium.motor_vehicle_law_enforcement_fee",
+    "premium.policy_fee",
+    "premium.premium_by_coverage_part[].coverage_part",
+    "premium.premium_by_coverage_part[].premium",
+    "premium.rate_control_number",
+    "premium.rate_per_unit",
+    "premium.rating_basis",
+    "premium.return_premium",
+    "premium.service_fee",
+    "premium.stamping_fee",
+    "premium.surcharges[].amount",
+    "premium.surcharges[].applies_to",
+    "premium.surcharges[].description",
+    "premium.surcharges[].edition_date",
+    "premium.surcharges[].form_reference",
+    "premium.surcharges[].percentage",
+    "premium.surplus_lines_tax",
+    "premium.taxes_and_fees[].amount",
+    "premium.taxes_and_fees[].applies_to",
+    "premium.taxes_and_fees[].description",
+    "premium.taxes_and_fees[].is_fully_earned",
+    "premium.total_policy_premium",
+    "producer.address.country",
+    "producer.address.county",
+    "producer.address.county_code",
+    "producer.address.line_2",
+    "producer.commission_percentage",
+    "producer.contact.email",
+    "producer.contact.fax",
+    "producer.contact.website",
+    "producer.license_number",
+    "producer.producer_code",
+    "producer.producer_contact_name",
+    "signature.authorized_representative_name",
+    "signature.countersignature_date",
+    "signature.countersignature_state",
+    "signature.signature_date",
+    "signature.title",
+    "state_notices[].form_reference",
+    "state_notices[].notice_title",
+    "state_notices[].state",
+    "terrorism.catastrophe_terrorism_premium",
+    "terrorism.certified_acts_limit",
+    "terrorism.disclosure_form_number",
+    "terrorism.federal_share_percentage",
+    "terrorism.program_cap_disclosure",
+    "terrorism.terrorism_disposition",
+    "terrorism.terrorism_exclusion_form_number",
+    "terrorism.terrorism_premium",
+    "terrorism.terrorism_rate",
+    "terrorism.terrorism_rejection_date",
+    "terrorism.terrorism_rejection_indicator",
+    "terrorism.tria_coverage_elected"
+  ],
+  "fideon:unmapped": [
+    {
+      "kind": "id",
+      "label": "N",
+      "value": "TH01592",
+      "page": 1,
+      "page_ref": [
+        1,
+        2
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "U POLWHITEFONT",
+      "value": "WAZJDASZX6OVEBSHBSUYRQGSZA0004",
+      "page": 1,
+      "page_ref": [
+        1,
+        2
+      ]
+    },
+    {
+      "kind": "date",
+      "label": "Progressive Northwestern Ins Co",
+      "value": "February 8, 2027",
+      "page": 1,
+      "page_ref": [
+        1
+      ]
+    },
+    {
+      "kind": "date",
+      "label": "ends on",
+      "value": "February 1, 2028",
+      "page": 1,
+      "page_ref": [
+        1
+      ]
+    },
+    {
+      "kind": "digits",
+      "label": "",
+      "value": "823939572",
+      "page": 1,
+      "page_ref": [
+        1,
+        2
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "N",
+      "value": "TH01592",
+      "page": 2,
+      "page_ref": [
+        1,
+        2
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "U POLWHITEFONT",
+      "value": "WAZJDASZX6OVEBSHBSUYRQGSZA0004",
+      "page": 2,
+      "page_ref": [
+        1,
+        2
+      ]
+    },
+    {
+      "kind": "digits",
+      "label": "Garaging Zip Code :",
+      "value": "94619",
+      "page": 2,
+      "page_ref": [
+        2
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Bodily Injury Liability",
+      "value": "$250,000",
+      "page": 2,
+      "page_ref": [
+        2
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "each person/",
+      "value": "$500,000",
+      "page": 2,
+      "page_ref": [
+        2
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Property Damage Liability",
+      "value": "$100,000",
+      "page": 2,
+      "page_ref": [
+        2
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "$250,000 each person/$500,000 each accident",
+      "value": "$0",
+      "page": 2,
+      "page_ref": [
+        2
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Death Benefit",
+      "value": "$2,000",
+      "page": 2,
+      "page_ref": [
+        2
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Maximum Monthly Work Loss",
+      "value": "$2,000",
+      "page": 2,
+      "page_ref": [
+        2
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Other Reasonable & Necessary Expenses (per day)",
+      "value": "$25",
+      "page": 2,
+      "page_ref": [
+        2
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Supplementary Uninsured/Underinsured Motorist",
+      "value": "$250,000",
+      "page": 2,
+      "page_ref": [
+        2
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "each person/",
+      "value": "$500,000",
+      "page": 2,
+      "page_ref": [
+        2
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Accessory Coverage",
+      "value": "$3,000",
+      "page": 2,
+      "page_ref": [
+        2
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "included.",
+      "value": "$405",
+      "page": 2,
+      "page_ref": [
+        2
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Anti-Lock Brakes",
+      "value": "$34",
+      "page": 2,
+      "page_ref": [
+        2
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Paid in Full",
+      "value": "$56",
+      "page": 2,
+      "page_ref": [
+        2
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Multi-Policy",
+      "value": "$22",
+      "page": 2,
+      "page_ref": [
+        2
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Home Owner",
+      "value": "$120",
+      "page": 2,
+      "page_ref": [
+        2
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Transfer",
+      "value": "$88",
+      "page": 2,
+      "page_ref": [
+        2
+      ]
+    },
+    {
+      "kind": "digits",
+      "label": "",
+      "value": "823939572",
+      "page": 2,
+      "page_ref": [
+        1,
+        2
+      ]
+    }
+  ],
+  "fideon:provenance": {
+    "generator": "fideon-synth generic",
+    "source": "Progressive/motorcycle/progressive_cycle.pdf",
+    "schema": "motorcycle v1.4.0",
+    "render": "scanned_only",
+    "scanner_profile": "high-quality scan, 400 dpi",
+    "values_replaced": 27,
+    "text_recovered_by_ocr": 0,
+    "date_shift_days": 524,
+    "synthetic": true,
+    "note": "Identifying values replaced with invented ones. Fields under fideon:unmapped were changed but could not be matched to a schema field with confidence."
+  }
+}

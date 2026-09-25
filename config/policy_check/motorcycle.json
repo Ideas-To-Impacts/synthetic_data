@@ -148,6 +148,102 @@
             "Summary of Changes",
             "Summary of Your Changes"
           ]
+        },
+        "application_date": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Application Date"
+          ]
+        },
+        "application_time": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Application Time"
+          ]
+        },
+        "bind_date": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Bind Date"
+          ]
+        },
+        "bind_time": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Bind Time"
+          ]
+        },
+        "bind_id": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Bind ID"
+          ]
+        },
+        "control_number": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Control Number"
+          ]
+        },
+        "version_number": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Version Number"
+          ]
+        },
+        "buyout_indicator": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Buyout Indicator"
+          ]
+        },
+        "channel_of_origin": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Channel Of Origin"
+          ]
+        },
+        "channel_of_process": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Channel Of Process"
+          ]
+        },
+        "channel_of_bind": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Channel Of Bind"
+          ]
+        },
+        "source_of_quote": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Source Of Quote"
+          ]
+        },
+        "application_of_origin": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Application Of Origin"
+          ]
+        },
+        "address_standardization_status": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Address Standardization"
+          ]
+        },
+        "geocode_status": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Geocode Current Address"
+          ]
+        },
+        "front_end_matched": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Front End Matched"
+          ]
         }
       }
     },
@@ -478,6 +574,24 @@
             "Insured Since",
             "Policyholder Since"
           ]
+        },
+        "policy_status": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "STATUS"
+          ]
+        },
+        "original_year": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Original Year"
+          ]
+        },
+        "times_renewed": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Number Of Times Renewed"
+          ]
         }
       }
     },
@@ -601,6 +715,24 @@
         },
         "years_in_business": {
           "$ref": "#/$defs/FieldValue"
+        },
+        "ownership_type": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Ownership Type"
+          ]
+        },
+        "date_moved_to_current_address": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Date Moved To Current Address"
+          ]
+        },
+        "residence_type": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Primary Residence"
+          ]
         },
         "additional_named_insureds": {
           "type": "array",
@@ -928,7 +1060,10 @@
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "Policy Total Premium",
-            "Total Policy Premium"
+            "Total Policy Premium",
+            "TOTAL CHARGES",
+            "TOTAL FULL TERM PREMIUM",
+            "Total month policy premium"
           ]
         },
         "basic_premium": {
@@ -936,6 +1071,26 @@
           "fideon:aliases": [
             "Basic Premium",
             "Premium At Inception"
+          ]
+        },
+        "annualized_adjusted_premium": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "AAP",
+            "Discounted AAP"
+          ]
+        },
+        "minimum_written_premium": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "MINIMUM WRITTEN",
+            "Minimum Written"
+          ]
+        },
+        "rate_control_number": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Policy Rate Control"
           ]
         },
         "estimated_annual_premium": {
@@ -1209,8 +1364,27 @@
         "amount_due": {
           "$ref": "#/$defs/FieldValue"
         },
+        "account_balance": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Balance"
+          ]
+        },
+        "last_bill_amount": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Last Bill Amount"
+          ]
+        },
         "due_date": {
           "$ref": "#/$defs/FieldValue"
+        },
+        "paperless_billing_enrolled": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "eBill",
+            "ePolicy"
+          ]
         },
         "installments": {
           "type": "array",
@@ -1544,6 +1718,55 @@
               },
               "annual_mileage": {
                 "$ref": "#/$defs/FieldValue"
+              },
+              "usage_class": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Usage Class"
+                ]
+              },
+              "miles_one_way": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Miles One Way"
+                ]
+              },
+              "territory_code": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Terr", "Terr."
+                ]
+              },
+              "rating_tier": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Tier/Group",
+                  "SR Tier",
+                  "Policy tier"
+                ]
+              },
+              "billing_group": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Billing Group"
+                ]
+              },
+              "accessories_schedule": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "description": {
+                      "$ref": "#/$defs/FieldValue"
+                    },
+                    "amount": {
+                      "$ref": "#/$defs/FieldValue"
+                    }
+                  }
+                },
+                "fideon:aliases": [
+                  "Accessories & Non-Standard Equipment Schedule"
+                ]
               },
               "coverages": {
                 "type": "array",
@@ -1995,9 +2218,57 @@
           }
         }
       }
+    },
+    "text_sections": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/TextSection"
+      }
     }
   },
   "$defs": {
+    "TextSection": {
+      "type": "object",
+      "description": "A block of printed text exactly as the document carries it: a prose paragraph, notice, condition or disclaimer, or the page's remaining label/footer text. Nothing the page prints is left out of the gold; structured fields above hold the values, these hold the words.",
+      "properties": {
+        "section_id": {
+          "type": "string"
+        },
+        "section_title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "section_type": {
+          "type": "string",
+          "enum": [
+            "prose",
+            "other"
+          ]
+        },
+        "raw_text": {
+          "type": "string"
+        },
+        "page_range": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "form_number": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "section_id",
+        "raw_text",
+        "page_range"
+      ]
+    },
     "FieldValue": {
       "type": "object",
       "required": [

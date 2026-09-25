@@ -1,0 +1,1309 @@
+{
+  "document": {
+    "source_file_name": {
+      "raw": "nycm_insurance_pumbr_synth_001.pdf",
+      "parsed": "nycm_insurance_pumbr_synth_001.pdf",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "page_count": {
+      "raw": "4",
+      "parsed": 4,
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "transaction_expiration_date": {
+      "raw": "04/01/2028",
+      "parsed": "04/01/2028",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "line_of_business_as_stated": {
+      "raw": "Personal Umbrella policy",
+      "parsed": "Personal Umbrella policy",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "document_title_as_stated": {
+      "raw": "DECLARATIONS - *INSURED COPY*",
+      "parsed": "DECLARATIONS - *INSURED COPY*",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "document_type": {
+      "raw": "DECLARATIONS",
+      "parsed": "Declaration",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "transaction_effective_date": {
+      "raw": "11/02/2027",
+      "parsed": "11/02/2027",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "print_date": {
+      "raw": "11/03/2027",
+      "parsed": "11/03/2027",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    }
+  },
+  "carrier": {
+    "company_name": {
+      "raw": "NYCM Insurance",
+      "parsed": "NYCM Insurance",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "contact": {
+      "website": {
+        "raw": "www.nycm.com",
+        "parsed": "www.nycm.com",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "named_insured": {
+    "primary_name": {
+      "raw": "Montague Ashworth",
+      "parsed": "Montague Ashworth",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "entity_type": {
+      "raw": "Individual",
+      "parsed": "Individual",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "mailing_address": {
+      "line_1": {
+        "raw": "PO BOX 549",
+        "parsed": "PO BOX 549",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "GENEVA",
+        "parsed": "GENEVA",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "14456",
+        "parsed": "14456",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "additional_named_insureds": [
+      {
+        "name": {
+          "raw": "Ambrose Thistlewood",
+          "parsed": "Ambrose Thistlewood",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "entity_type": {
+          "raw": "Individual",
+          "parsed": "Individual",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      }
+    ],
+    "contact": {
+      "email": {
+        "raw": "lavinia.winterbourne@example.com",
+        "parsed": "lavinia.winterbourne@example.com",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "producer": {
+    "agency_name": {
+      "raw": "Meadowbrook INSURANCE AGENCY LLC",
+      "parsed": "Meadowbrook INSURANCE AGENCY LLC",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "address": {
+      "line_1": {
+        "raw": "PO BOX 221",
+        "parsed": "PO BOX 221",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "SKANEATELES",
+        "parsed": "SKANEATELES",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13152",
+        "parsed": "13152",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "contact": {
+      "fax": {
+        "raw": "315-555-0167",
+        "parsed": "315-555-0167",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "phone": {
+        "raw": "315-555-0132",
+        "parsed": "315-555-0132",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "policy": {
+    "policy_number": {
+      "raw": "L350533",
+      "parsed": "L350533",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "policyholder_since_date": {
+      "raw": "04/02/2019",
+      "parsed": "04/02/2019",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "effective_date": {
+      "raw": "04/02/2027",
+      "parsed": "04/02/2027",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "expiration_date": {
+      "raw": "04/01/2028",
+      "parsed": "04/01/2028",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "policy_term_months": {
+      "raw": "12",
+      "parsed": 12,
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    }
+  },
+  "premium": {
+    "total_policy_premium": {
+      "raw": "$661.00",
+      "parsed": 661.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "personal_umbrella": {
+    "limits": {
+      "uninsured_underinsured_motorist_limit": {
+        "raw": "$1,000,000.00",
+        "parsed": 1000000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "text_sections": {},
+  "fideon:absent": [
+    "billing.amount_due",
+    "billing.bill_to_party",
+    "billing.billing_plan",
+    "billing.due_date",
+    "billing.installments[].amount",
+    "billing.installments[].due_date",
+    "billing.installments[].installment_fee",
+    "billing.installments[].installment_number",
+    "billing.payment_frequency",
+    "billing.payment_method",
+    "billing.payment_plan",
+    "carrier.address.city",
+    "carrier.address.country",
+    "carrier.address.county",
+    "carrier.address.county_code",
+    "carrier.address.line_1",
+    "carrier.address.line_2",
+    "carrier.address.postal_code",
+    "carrier.address.state",
+    "carrier.company_structure",
+    "carrier.contact.email",
+    "carrier.contact.fax",
+    "carrier.contact.phone",
+    "carrier.fein",
+    "carrier.group_name",
+    "carrier.is_surplus_lines",
+    "carrier.naic_number",
+    "carrier.state_of_issue",
+    "carrier.surplus_lines_broker_name",
+    "carrier.surplus_lines_license_number",
+    "carrier.writing_company_name",
+    "claim_reporting.claim_reporting_instructions",
+    "claim_reporting.claims_address.city",
+    "claim_reporting.claims_address.country",
+    "claim_reporting.claims_address.county",
+    "claim_reporting.claims_address.county_code",
+    "claim_reporting.claims_address.line_1",
+    "claim_reporting.claims_address.line_2",
+    "claim_reporting.claims_address.postal_code",
+    "claim_reporting.claims_address.state",
+    "claim_reporting.claims_email",
+    "claim_reporting.claims_notice_recipient",
+    "claim_reporting.claims_phone",
+    "deductibles[].amount",
+    "deductibles[].applies_to",
+    "deductibles[].deductible_type",
+    "deductibles[].maximum_amount",
+    "deductibles[].minimum_amount",
+    "deductibles[].notes",
+    "deductibles[].percentage",
+    "deductibles[].percentage_basis",
+    "deductibles[].waiting_period",
+    "document.applicable_coverages[]",
+    "document.batch_number",
+    "document.copy_type",
+    "document.coverage_parts_present[]",
+    "document.issue_date",
+    "document.language",
+    "document.source_carrier_folder",
+    "document.source_system",
+    "document.summary_of_changes",
+    "document.transaction_reason",
+    "document.transaction_type",
+    "document_type_detail.acord_application.acord_form_edition",
+    "document_type_detail.acord_application.acord_form_number",
+    "document_type_detail.acord_application.acord_form_title",
+    "document_type_detail.acord_application.agency.address.city",
+    "document_type_detail.acord_application.agency.address.country",
+    "document_type_detail.acord_application.agency.address.county",
+    "document_type_detail.acord_application.agency.address.line_1",
+    "document_type_detail.acord_application.agency.address.line_2",
+    "document_type_detail.acord_application.agency.address.postal_code",
+    "document_type_detail.acord_application.agency.address.state",
+    "document_type_detail.acord_application.agency.agency_code",
+    "document_type_detail.acord_application.agency.agency_customer_id",
+    "document_type_detail.acord_application.agency.agency_name",
+    "document_type_detail.acord_application.agency.contact_email",
+    "document_type_detail.acord_application.agency.contact_phone",
+    "document_type_detail.acord_application.agency.producer_name",
+    "document_type_detail.acord_application.agency.sub_code",
+    "document_type_detail.acord_application.applicant.applicant_name",
+    "document_type_detail.acord_application.applicant.entity_type",
+    "document_type_detail.acord_application.applicant.fein",
+    "document_type_detail.acord_application.applicant.mailing_address.city",
+    "document_type_detail.acord_application.applicant.mailing_address.country",
+    "document_type_detail.acord_application.applicant.mailing_address.county",
+    "document_type_detail.acord_application.applicant.mailing_address.line_1",
+    "document_type_detail.acord_application.applicant.mailing_address.line_2",
+    "document_type_detail.acord_application.applicant.mailing_address.postal_code",
+    "document_type_detail.acord_application.applicant.mailing_address.state",
+    "document_type_detail.acord_application.applicant.mobile_phone",
+    "document_type_detail.acord_application.applicant.naics_code",
+    "document_type_detail.acord_application.applicant.nature_of_business",
+    "document_type_detail.acord_application.applicant.office_phone",
+    "document_type_detail.acord_application.applicant.sic_code",
+    "document_type_detail.acord_application.applicant.website",
+    "document_type_detail.acord_application.applicant.years_in_business",
+    "document_type_detail.acord_application.attached_acord_101_remarks[].form_reference",
+    "document_type_detail.acord_application.attached_acord_101_remarks[].remark_text",
+    "document_type_detail.acord_application.attached_acord_101_remarks[].section_reference",
+    "document_type_detail.acord_application.carrier.company_name",
+    "document_type_detail.acord_application.carrier.naic_code",
+    "document_type_detail.acord_application.carrier.underwriter_name",
+    "document_type_detail.acord_application.carrier.underwriter_office",
+    "document_type_detail.acord_application.form_date",
+    "document_type_detail.acord_application.fraud_warning_state",
+    "document_type_detail.acord_application.general_information_questions[].answer",
+    "document_type_detail.acord_application.general_information_questions[].explanation",
+    "document_type_detail.acord_application.general_information_questions[].question_number",
+    "document_type_detail.acord_application.general_information_questions[].question_text",
+    "document_type_detail.acord_application.individuals_included_or_excluded[].annual_remuneration",
+    "document_type_detail.acord_application.individuals_included_or_excluded[].class_code",
+    "document_type_detail.acord_application.individuals_included_or_excluded[].date_of_birth",
+    "document_type_detail.acord_application.individuals_included_or_excluded[].included_or_excluded",
+    "document_type_detail.acord_application.individuals_included_or_excluded[].name",
+    "document_type_detail.acord_application.individuals_included_or_excluded[].ownership_percentage",
+    "document_type_detail.acord_application.individuals_included_or_excluded[].title_or_relationship",
+    "document_type_detail.acord_application.locations[].address.city",
+    "document_type_detail.acord_application.locations[].address.country",
+    "document_type_detail.acord_application.locations[].address.county",
+    "document_type_detail.acord_application.locations[].address.line_1",
+    "document_type_detail.acord_application.locations[].address.line_2",
+    "document_type_detail.acord_application.locations[].address.postal_code",
+    "document_type_detail.acord_application.locations[].address.state",
+    "document_type_detail.acord_application.locations[].highest_floor_occupied",
+    "document_type_detail.acord_application.locations[].location_number",
+    "document_type_detail.acord_application.locations[].number_of_employees",
+    "document_type_detail.acord_application.prior_losses[].amount_paid",
+    "document_type_detail.acord_application.prior_losses[].carrier",
+    "document_type_detail.acord_application.prior_losses[].claim_count",
+    "document_type_detail.acord_application.prior_losses[].reserve_amount",
+    "document_type_detail.acord_application.prior_losses[].year",
+    "document_type_detail.acord_application.proposed_policy.audit_frequency",
+    "document_type_detail.acord_application.proposed_policy.billing_plan",
+    "document_type_detail.acord_application.proposed_policy.normal_anniversary_rating_date",
+    "document_type_detail.acord_application.proposed_policy.payment_plan",
+    "document_type_detail.acord_application.proposed_policy.prior_carrier_information[].annual_premium",
+    "document_type_detail.acord_application.proposed_policy.prior_carrier_information[].carrier_name",
+    "document_type_detail.acord_application.proposed_policy.prior_carrier_information[].experience_modification",
+    "document_type_detail.acord_application.proposed_policy.prior_carrier_information[].policy_number",
+    "document_type_detail.acord_application.proposed_policy.prior_carrier_information[].year",
+    "document_type_detail.acord_application.proposed_policy.proposed_effective_date",
+    "document_type_detail.acord_application.proposed_policy.proposed_expiration_date",
+    "document_type_detail.acord_application.rating_information[].annual_remuneration",
+    "document_type_detail.acord_application.rating_information[].class_code",
+    "document_type_detail.acord_application.rating_information[].classification_description",
+    "document_type_detail.acord_application.rating_information[].estimated_annual_premium",
+    "document_type_detail.acord_application.rating_information[].full_time_count",
+    "document_type_detail.acord_application.rating_information[].location_number",
+    "document_type_detail.acord_application.rating_information[].number_of_employees",
+    "document_type_detail.acord_application.rating_information[].part_time_count",
+    "document_type_detail.acord_application.rating_information[].rate",
+    "document_type_detail.acord_application.rating_information[].state",
+    "document_type_detail.acord_application.signatures.applicant_signature_date",
+    "document_type_detail.acord_application.signatures.applicant_signature_present",
+    "document_type_detail.acord_application.signatures.national_producer_number",
+    "document_type_detail.acord_application.signatures.producer_signature_date",
+    "document_type_detail.acord_application.signatures.producer_signature_present",
+    "document_type_detail.application.applicant_address.city",
+    "document_type_detail.application.applicant_address.country",
+    "document_type_detail.application.applicant_address.county",
+    "document_type_detail.application.applicant_address.line_1",
+    "document_type_detail.application.applicant_address.line_2",
+    "document_type_detail.application.applicant_address.postal_code",
+    "document_type_detail.application.applicant_address.state",
+    "document_type_detail.application.applicant_name",
+    "document_type_detail.application.applicant_signature_date",
+    "document_type_detail.application.applicant_signature_present",
+    "document_type_detail.application.application_date",
+    "document_type_detail.application.application_form_number",
+    "document_type_detail.application.application_title",
+    "document_type_detail.application.loss_history[].amount_paid",
+    "document_type_detail.application.loss_history[].date",
+    "document_type_detail.application.loss_history[].description",
+    "document_type_detail.application.prior_insurance[].carrier",
+    "document_type_detail.application.prior_insurance[].expiration_date",
+    "document_type_detail.application.prior_insurance[].policy_number",
+    "document_type_detail.application.prior_insurance[].premium",
+    "document_type_detail.application.producer_signature_present",
+    "document_type_detail.application.requested_effective_date",
+    "document_type_detail.application.requested_limits[].aggregate_limit_amount",
+    "document_type_detail.application.requested_limits[].applies_to",
+    "document_type_detail.application.requested_limits[].coinsurance_percentage",
+    "document_type_detail.application.requested_limits[].coverage_code",
+    "document_type_detail.application.requested_limits[].coverage_description",
+    "document_type_detail.application.requested_limits[].coverage_name",
+    "document_type_detail.application.requested_limits[].deductible_amount",
+    "document_type_detail.application.requested_limits[].deductible_basis",
+    "document_type_detail.application.requested_limits[].deductible_type",
+    "document_type_detail.application.requested_limits[].form_reference",
+    "document_type_detail.application.requested_limits[].is_excluded",
+    "document_type_detail.application.requested_limits[].is_included",
+    "document_type_detail.application.requested_limits[].limit_amount",
+    "document_type_detail.application.requested_limits[].limit_basis",
+    "document_type_detail.application.requested_limits[].notes",
+    "document_type_detail.application.requested_limits[].premium",
+    "document_type_detail.application.requested_limits[].retention_amount",
+    "document_type_detail.application.requested_limits[].sublimit_amount",
+    "document_type_detail.application.requested_limits[].sublimit_basis",
+    "document_type_detail.application.requested_limits[].valuation_basis",
+    "document_type_detail.application.requested_limits[].waiting_period",
+    "document_type_detail.application.underwriting_questions[].answer",
+    "document_type_detail.application.underwriting_questions[].explanation",
+    "document_type_detail.application.underwriting_questions[].question_number",
+    "document_type_detail.application.underwriting_questions[].question_text",
+    "document_type_detail.cancellation.cancellation_effective_date",
+    "document_type_detail.cancellation.cancellation_effective_time",
+    "document_type_detail.cancellation.cancellation_method",
+    "document_type_detail.cancellation.cancellation_reason",
+    "document_type_detail.cancellation.earned_premium",
+    "document_type_detail.cancellation.initiated_by",
+    "document_type_detail.cancellation.mortgagee_or_lienholder_notified",
+    "document_type_detail.cancellation.notice_date",
+    "document_type_detail.cancellation.notice_type",
+    "document_type_detail.cancellation.reinstatement_available",
+    "document_type_detail.cancellation.reinstatement_deadline",
+    "document_type_detail.cancellation.return_premium",
+    "document_type_detail.cancellation.statutory_notice_reference",
+    "document_type_detail.declarations.coverage_summary_present",
+    "document_type_detail.declarations.declaration_page_count",
+    "document_type_detail.declarations.is_office_copy_or_insured_copy",
+    "document_type_detail.declarations.policy_id",
+    "document_type_detail.declarations.policy_marketing_name",
+    "document_type_detail.declarations.prior_policy_id",
+    "document_type_detail.declarations.renewal_of_policy_id",
+    "document_type_detail.declarations.replaces_prior_declaration_dated",
+    "document_type_detail.endorsement.attached_to_policy_number",
+    "document_type_detail.endorsement.endorsement_effective_date",
+    "document_type_detail.endorsement.endorsement_form_number",
+    "document_type_detail.endorsement.endorsement_number",
+    "document_type_detail.endorsement.endorsement_premium",
+    "document_type_detail.endorsement.endorsement_summary_text",
+    "document_type_detail.endorsement.endorsement_title",
+    "document_type_detail.endorsement.modifies_coverage_at_renewal",
+    "document_type_detail.endorsement.retain_with_policy_notice",
+    "document_type_detail.policy_change.additional_or_return_premium",
+    "document_type_detail.policy_change.changes[].change_description",
+    "document_type_detail.policy_change.changes[].changed_from",
+    "document_type_detail.policy_change.changes[].changed_to",
+    "document_type_detail.policy_change.changes[].effective_date",
+    "document_type_detail.policy_change.changes[].field_changed",
+    "document_type_detail.policy_change.changes[].premium_effect",
+    "document_type_detail.policy_change.endorsements_added[].applies_to",
+    "document_type_detail.policy_change.endorsements_added[].deductible_amount",
+    "document_type_detail.policy_change.endorsements_added[].edition_date",
+    "document_type_detail.policy_change.endorsements_added[].form_number",
+    "document_type_detail.policy_change.endorsements_added[].form_title",
+    "document_type_detail.policy_change.endorsements_added[].form_type",
+    "document_type_detail.policy_change.endorsements_added[].is_included",
+    "document_type_detail.policy_change.endorsements_added[].is_mandatory",
+    "document_type_detail.policy_change.endorsements_added[].limit_amount",
+    "document_type_detail.policy_change.endorsements_added[].premium",
+    "document_type_detail.policy_change.endorsements_removed[].applies_to",
+    "document_type_detail.policy_change.endorsements_removed[].deductible_amount",
+    "document_type_detail.policy_change.endorsements_removed[].edition_date",
+    "document_type_detail.policy_change.endorsements_removed[].form_number",
+    "document_type_detail.policy_change.endorsements_removed[].form_title",
+    "document_type_detail.policy_change.endorsements_removed[].form_type",
+    "document_type_detail.policy_change.endorsements_removed[].is_included",
+    "document_type_detail.policy_change.endorsements_removed[].is_mandatory",
+    "document_type_detail.policy_change.endorsements_removed[].limit_amount",
+    "document_type_detail.policy_change.endorsements_removed[].premium",
+    "document_type_detail.policy_change.net_change_amount",
+    "document_type_detail.policy_change.results_in_no_premium_change",
+    "document_type_detail.policy_change.transaction_date",
+    "document_type_detail.policy_change.transaction_effective_date",
+    "document_type_detail.policy_change.transaction_expiration_date",
+    "document_type_detail.policy_change.transaction_reason_description",
+    "document_type_detail.policy_change.transaction_type",
+    "document_type_detail.policy_form.attached_forms[].applies_to",
+    "document_type_detail.policy_form.attached_forms[].deductible_amount",
+    "document_type_detail.policy_form.attached_forms[].edition_date",
+    "document_type_detail.policy_form.attached_forms[].form_number",
+    "document_type_detail.policy_form.attached_forms[].form_title",
+    "document_type_detail.policy_form.attached_forms[].form_type",
+    "document_type_detail.policy_form.attached_forms[].is_included",
+    "document_type_detail.policy_form.attached_forms[].is_mandatory",
+    "document_type_detail.policy_form.attached_forms[].limit_amount",
+    "document_type_detail.policy_form.attached_forms[].premium",
+    "document_type_detail.policy_form.conditions[].condition_name",
+    "document_type_detail.policy_form.conditions[].section_reference",
+    "document_type_detail.policy_form.definitions_present",
+    "document_type_detail.policy_form.exclusions[].exclusion_name",
+    "document_type_detail.policy_form.exclusions[].form_number",
+    "document_type_detail.policy_form.exclusions[].section_reference",
+    "document_type_detail.policy_form.form_edition",
+    "document_type_detail.policy_form.insuring_agreement_text_reference",
+    "document_type_detail.policy_form.sections[].page_end",
+    "document_type_detail.policy_form.sections[].page_start",
+    "document_type_detail.policy_form.sections[].section_label",
+    "document_type_detail.policy_form.sections[].section_title",
+    "document_type_detail.policy_form.table_of_contents_present",
+    "document_type_detail.policy_history.coverage_premium_rows[].coverage_name",
+    "document_type_detail.policy_history.coverage_premium_rows[].deductible",
+    "document_type_detail.policy_history.coverage_premium_rows[].limit",
+    "document_type_detail.policy_history.coverage_premium_rows[].location_reference",
+    "document_type_detail.policy_history.coverage_premium_rows[].premium",
+    "document_type_detail.policy_history.inception_date",
+    "document_type_detail.policy_history.protected_since_date",
+    "document_type_detail.policy_history.term_amount",
+    "document_type_detail.policy_history.term_length",
+    "document_type_detail.policy_history.transactions[].effective_date",
+    "document_type_detail.policy_history.transactions[].expiration_date",
+    "document_type_detail.policy_history.transactions[].net_change_amount",
+    "document_type_detail.policy_history.transactions[].policy_status",
+    "document_type_detail.policy_history.transactions[].term_amount",
+    "document_type_detail.policy_history.transactions[].transaction_date",
+    "document_type_detail.policy_history.transactions[].transaction_effective_date",
+    "document_type_detail.policy_history.transactions[].transaction_reason",
+    "document_type_detail.policy_history.transactions[].transaction_type",
+    "document_type_detail.policy_history.transactions[].written_premium",
+    "document_type_detail.quote_proposal.conditions_to_bind[]",
+    "document_type_detail.quote_proposal.estimated_annual_premium",
+    "document_type_detail.quote_proposal.payment_options[].down_payment",
+    "document_type_detail.quote_proposal.payment_options[].installment_amount",
+    "document_type_detail.quote_proposal.payment_options[].installment_fee",
+    "document_type_detail.quote_proposal.payment_options[].number_of_installments",
+    "document_type_detail.quote_proposal.payment_options[].plan_name",
+    "document_type_detail.quote_proposal.premium_is_subject_to_change_notice",
+    "document_type_detail.quote_proposal.proposal_created_by",
+    "document_type_detail.quote_proposal.proposal_created_by_email",
+    "document_type_detail.quote_proposal.proposal_created_date",
+    "document_type_detail.quote_proposal.proposal_title",
+    "document_type_detail.quote_proposal.proposed_policy_term_end",
+    "document_type_detail.quote_proposal.proposed_policy_term_start",
+    "document_type_detail.quote_proposal.quote_good_through_date",
+    "document_type_detail.quote_proposal.quote_options[].description",
+    "document_type_detail.quote_proposal.quote_options[].is_recommended",
+    "document_type_detail.quote_proposal.quote_options[].option_name",
+    "document_type_detail.quote_proposal.quote_options[].premium_difference",
+    "document_type_detail.quote_proposal.quote_reference_number",
+    "document_type_detail.quote_proposal.quoted_coverages[].coverage_name",
+    "document_type_detail.quote_proposal.quoted_coverages[].deductible_amount",
+    "document_type_detail.quote_proposal.quoted_coverages[].is_optional",
+    "document_type_detail.quote_proposal.quoted_coverages[].is_selected",
+    "document_type_detail.quote_proposal.quoted_coverages[].limit_amount",
+    "document_type_detail.quote_proposal.quoted_coverages[].premium",
+    "document_type_detail.quote_proposal.rating_assumptions[]",
+    "document_type_detail.quote_proposal.underwriter_name",
+    "document_type_detail.renewal_offer.coverage_changes_at_renewal[].change_description",
+    "document_type_detail.renewal_offer.coverage_changes_at_renewal[].coverage_name",
+    "document_type_detail.renewal_offer.coverage_changes_at_renewal[].expiring_value",
+    "document_type_detail.renewal_offer.coverage_changes_at_renewal[].renewal_value",
+    "document_type_detail.renewal_offer.expiring_premium",
+    "document_type_detail.renewal_offer.nonrenewal_indicator",
+    "document_type_detail.renewal_offer.offer_issue_date",
+    "document_type_detail.renewal_offer.payment_due_date",
+    "document_type_detail.renewal_offer.premium_change_amount",
+    "document_type_detail.renewal_offer.premium_change_percentage",
+    "document_type_detail.renewal_offer.reason_for_change",
+    "document_type_detail.renewal_offer.renewal_conditions",
+    "document_type_detail.renewal_offer.renewal_effective_date",
+    "document_type_detail.renewal_offer.renewal_expiration_date",
+    "document_type_detail.renewal_offer.renewal_premium",
+    "forms_and_endorsements[].applies_to",
+    "forms_and_endorsements[].deductible_amount",
+    "forms_and_endorsements[].edition_date",
+    "forms_and_endorsements[].form_group",
+    "forms_and_endorsements[].form_number",
+    "forms_and_endorsements[].form_title",
+    "forms_and_endorsements[].form_type",
+    "forms_and_endorsements[].group_premium",
+    "forms_and_endorsements[].is_included",
+    "forms_and_endorsements[].is_mandatory",
+    "forms_and_endorsements[].limit_amount",
+    "forms_and_endorsements[].premium",
+    "interested_parties[].address.city",
+    "interested_parties[].address.country",
+    "interested_parties[].address.county",
+    "interested_parties[].address.county_code",
+    "interested_parties[].address.line_1",
+    "interested_parties[].address.line_2",
+    "interested_parties[].address.postal_code",
+    "interested_parties[].address.state",
+    "interested_parties[].applies_to",
+    "interested_parties[].clause_type",
+    "interested_parties[].description_of_interest",
+    "interested_parties[].is_payor",
+    "interested_parties[].loan_number",
+    "interested_parties[].name",
+    "interested_parties[].party_type",
+    "interested_parties[].rank",
+    "locations[].address.city",
+    "locations[].address.country",
+    "locations[].address.county",
+    "locations[].address.county_code",
+    "locations[].address.line_1",
+    "locations[].address.line_2",
+    "locations[].address.postal_code",
+    "locations[].address.state",
+    "locations[].alarm_type",
+    "locations[].building_description",
+    "locations[].building_number",
+    "locations[].business_description",
+    "locations[].construction_type",
+    "locations[].coverages[].aggregate_limit_amount",
+    "locations[].coverages[].applies_to",
+    "locations[].coverages[].coinsurance_percentage",
+    "locations[].coverages[].coverage_code",
+    "locations[].coverages[].coverage_description",
+    "locations[].coverages[].coverage_name",
+    "locations[].coverages[].deductible_amount",
+    "locations[].coverages[].deductible_basis",
+    "locations[].coverages[].deductible_type",
+    "locations[].coverages[].form_reference",
+    "locations[].coverages[].is_excluded",
+    "locations[].coverages[].is_included",
+    "locations[].coverages[].limit_amount",
+    "locations[].coverages[].limit_basis",
+    "locations[].coverages[].notes",
+    "locations[].coverages[].premium",
+    "locations[].coverages[].retention_amount",
+    "locations[].coverages[].sublimit_amount",
+    "locations[].coverages[].sublimit_basis",
+    "locations[].coverages[].valuation_basis",
+    "locations[].coverages[].waiting_period",
+    "locations[].interest",
+    "locations[].location_number",
+    "locations[].number_of_stories",
+    "locations[].occupancy_description",
+    "locations[].protection_class",
+    "locations[].sprinklered",
+    "locations[].square_footage",
+    "locations[].territory_code",
+    "locations[].year_built",
+    "loss_history[].claim_number",
+    "loss_history[].description",
+    "loss_history[].loss_date",
+    "loss_history[].paid_amount",
+    "loss_history[].reserved_amount",
+    "loss_history[].status",
+    "named_insured.additional_named_insureds[].address.city",
+    "named_insured.additional_named_insureds[].address.country",
+    "named_insured.additional_named_insureds[].address.county",
+    "named_insured.additional_named_insureds[].address.county_code",
+    "named_insured.additional_named_insureds[].address.line_1",
+    "named_insured.additional_named_insureds[].address.line_2",
+    "named_insured.additional_named_insureds[].address.postal_code",
+    "named_insured.additional_named_insureds[].address.state",
+    "named_insured.additional_named_insureds[].effective_date",
+    "named_insured.additional_named_insureds[].gender",
+    "named_insured.additional_named_insureds[].insured_role",
+    "named_insured.additional_named_insureds[].marital_status",
+    "named_insured.additional_named_insureds[].relationship",
+    "named_insured.business_description",
+    "named_insured.contact.fax",
+    "named_insured.contact.phone",
+    "named_insured.contact.website",
+    "named_insured.doing_business_as",
+    "named_insured.fein",
+    "named_insured.mailing_address.country",
+    "named_insured.mailing_address.county",
+    "named_insured.mailing_address.county_code",
+    "named_insured.mailing_address.line_2",
+    "named_insured.naics_code",
+    "named_insured.physical_address.city",
+    "named_insured.physical_address.country",
+    "named_insured.physical_address.county",
+    "named_insured.physical_address.county_code",
+    "named_insured.physical_address.line_1",
+    "named_insured.physical_address.line_2",
+    "named_insured.physical_address.postal_code",
+    "named_insured.physical_address.state",
+    "named_insured.sic_code",
+    "named_insured.years_in_business",
+    "personal_umbrella.exclusions[].exclusion_name",
+    "personal_umbrella.exclusions[].form_number",
+    "personal_umbrella.exclusions[].premium",
+    "personal_umbrella.household_members[].date_of_birth",
+    "personal_umbrella.household_members[].gender",
+    "personal_umbrella.household_members[].insured_role",
+    "personal_umbrella.household_members[].is_rated",
+    "personal_umbrella.household_members[].is_young_driver",
+    "personal_umbrella.household_members[].marital_status",
+    "personal_umbrella.household_members[].name",
+    "personal_umbrella.household_members[].relationship",
+    "personal_umbrella.limits.personal_injury_limit",
+    "personal_umbrella.limits.personal_umbrella_limit",
+    "personal_umbrella.limits.self_insured_retention",
+    "personal_umbrella.rated_exposures[].count",
+    "personal_umbrella.rated_exposures[].description",
+    "personal_umbrella.rated_exposures[].exposure_type",
+    "personal_umbrella.rated_exposures[].limit",
+    "personal_umbrella.rated_exposures[].premium",
+    "personal_umbrella.residences[].address.city",
+    "personal_umbrella.residences[].address.country",
+    "personal_umbrella.residences[].address.county",
+    "personal_umbrella.residences[].address.county_code",
+    "personal_umbrella.residences[].address.line_1",
+    "personal_umbrella.residences[].address.line_2",
+    "personal_umbrella.residences[].address.postal_code",
+    "personal_umbrella.residences[].address.state",
+    "personal_umbrella.residences[].address.sub_county",
+    "personal_umbrella.residences[].is_rented_to_others",
+    "personal_umbrella.residences[].number_of_families",
+    "personal_umbrella.residences[].premium",
+    "personal_umbrella.residences[].residence_number",
+    "personal_umbrella.residences[].residence_type",
+    "personal_umbrella.residences[].table_code",
+    "personal_umbrella.residences[].territory_code",
+    "personal_umbrella.residences[].year_built",
+    "personal_umbrella.schedule_of_underlying_insurance[].actual_limit",
+    "personal_umbrella.schedule_of_underlying_insurance[].carrier_name",
+    "personal_umbrella.schedule_of_underlying_insurance[].coverage_type",
+    "personal_umbrella.schedule_of_underlying_insurance[].effective_date",
+    "personal_umbrella.schedule_of_underlying_insurance[].expiration_date",
+    "personal_umbrella.schedule_of_underlying_insurance[].following_form_endorsement",
+    "personal_umbrella.schedule_of_underlying_insurance[].policy_number",
+    "personal_umbrella.schedule_of_underlying_insurance[].property_damage_limit",
+    "personal_umbrella.schedule_of_underlying_insurance[].required_minimum_limit",
+    "personal_umbrella.schedule_of_underlying_insurance[].vehicle_count",
+    "policy.account_id",
+    "policy.alternate_policy_identifiers[].identifier_type",
+    "policy.alternate_policy_identifiers[].identifier_value",
+    "policy.anniversary_date",
+    "policy.audit_frequency",
+    "policy.cancellation_date",
+    "policy.cancellation_reason",
+    "policy.certificate_number",
+    "policy.effective_time",
+    "policy.expiration_time",
+    "policy.is_assessable",
+    "policy.is_renewal",
+    "policy.minimum_earned_premium_percentage",
+    "policy.nonrenewal_notice_date",
+    "policy.plan_type",
+    "policy.policy_form_edition",
+    "policy.policy_form_name",
+    "policy.policy_form_number",
+    "policy.policy_type",
+    "policy.prior_policy_number",
+    "policy.program_name",
+    "policy.renewal_of_policy_number",
+    "policy.time_zone",
+    "premium.additional_insured_processing_fee",
+    "premium.additional_premium",
+    "premium.administrative_fee",
+    "premium.basic_premium",
+    "premium.deposit_premium",
+    "premium.discounts_and_credits[].amount",
+    "premium.discounts_and_credits[].applies_to",
+    "premium.discounts_and_credits[].description",
+    "premium.discounts_and_credits[].edition_date",
+    "premium.discounts_and_credits[].form_reference",
+    "premium.discounts_and_credits[].is_applied",
+    "premium.discounts_and_credits[].percentage",
+    "premium.estimated_annual_premium",
+    "premium.exposure_amount",
+    "premium.fire_fee",
+    "premium.forms_and_endorsements_premium",
+    "premium.guaranty_association_surcharge",
+    "premium.inspection_fee",
+    "premium.minimum_premium",
+    "premium.motor_vehicle_law_enforcement_fee",
+    "premium.policy_fee",
+    "premium.premium_by_coverage_part[].coverage_part",
+    "premium.premium_by_coverage_part[].premium",
+    "premium.rate_per_unit",
+    "premium.rating_basis",
+    "premium.return_premium",
+    "premium.service_fee",
+    "premium.stamping_fee",
+    "premium.surcharges[].amount",
+    "premium.surcharges[].applies_to",
+    "premium.surcharges[].description",
+    "premium.surcharges[].edition_date",
+    "premium.surcharges[].form_reference",
+    "premium.surcharges[].percentage",
+    "premium.surplus_lines_tax",
+    "premium.taxes_and_fees[].amount",
+    "premium.taxes_and_fees[].applies_to",
+    "premium.taxes_and_fees[].description",
+    "premium.taxes_and_fees[].is_fully_earned",
+    "producer.address.country",
+    "producer.address.county",
+    "producer.address.county_code",
+    "producer.address.line_2",
+    "producer.commission_percentage",
+    "producer.contact.email",
+    "producer.contact.website",
+    "producer.direct_mail_indicator",
+    "producer.license_number",
+    "producer.paperless_indicator",
+    "producer.producer_code",
+    "producer.producer_contact_name",
+    "producer.territory_code",
+    "signature.authorized_representative_name",
+    "signature.countersignature_date",
+    "signature.countersignature_state",
+    "signature.signature_date",
+    "signature.title",
+    "state_notices[].form_reference",
+    "state_notices[].notice_title",
+    "state_notices[].state",
+    "terrorism.catastrophe_terrorism_premium",
+    "terrorism.certified_acts_limit",
+    "terrorism.disclosure_form_number",
+    "terrorism.federal_share_percentage",
+    "terrorism.program_cap_disclosure",
+    "terrorism.terrorism_disposition",
+    "terrorism.terrorism_exclusion_form_number",
+    "terrorism.terrorism_premium",
+    "terrorism.terrorism_rate",
+    "terrorism.terrorism_rejection_date",
+    "terrorism.terrorism_rejection_indicator",
+    "terrorism.tria_coverage_elected"
+  ],
+  "fideon:unmapped": [
+    {
+      "kind": "cityline",
+      "label": "n CGim Cr 1899 Central Plaza East,",
+      "value": "Watertown NY 13601",
+      "page": 1,
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "kind": "digits",
+      "label": "STABLE ROCK INSURANCE AGENCY LLC",
+      "value": "04533",
+      "page": 1,
+      "page_ref": [
+        1
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "PRIMARY",
+      "value": "468 ALDER BROOK LN",
+      "page": 1,
+      "page_ref": [
+        1,
+        3
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "",
+      "value": "BINGHAMTON, NY 13901",
+      "page": 1,
+      "page_ref": [
+        1
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "1899 Central Plaza East,",
+      "value": "Watertown NY 13601",
+      "page": 2,
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "n CGim Cr 1899 Central Plaza East,",
+      "value": "Watertown NY 13601",
+      "page": 3,
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "PRIMARY",
+      "value": "468 ALDER BROOK LN",
+      "page": 3,
+      "page_ref": [
+        1,
+        3
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Liability Limit",
+      "value": "$1,000,000",
+      "page": 3,
+      "page_ref": [
+        3,
+        4
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Deductible",
+      "value": "$1,000",
+      "page": 3,
+      "page_ref": [
+        3,
+        4
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Automobile Liability",
+      "value": "$300,000",
+      "page": 3,
+      "page_ref": [
+        3
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Uninsured/Underinsured",
+      "value": "$250,000",
+      "page": 3,
+      "page_ref": [
+        3
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Motorist Coverage (SUM)",
+      "value": "$500,000",
+      "page": 3,
+      "page_ref": [
+        3
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "$500,000 Each Occurrence — Bodily Injury",
+      "value": "$100,000",
+      "page": 3,
+      "page_ref": [
+        3
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Personal Liability",
+      "value": "$300,000",
+      "page": 3,
+      "page_ref": [
+        3
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Watercraft",
+      "value": "$300,000",
+      "page": 3,
+      "page_ref": [
+        3
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Recreational Vehicle",
+      "value": "$300,000",
+      "page": 3,
+      "page_ref": [
+        3
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "$300,000 Each Occurrence - Combined Single Limit",
+      "value": "$250,000",
+      "page": 3,
+      "page_ref": [
+        3
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "$250,000 Each Person — Bodily Injury",
+      "value": "$500,000",
+      "page": 3,
+      "page_ref": [
+        3
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "$500,000 Each Occurrence — Bodily Injury",
+      "value": "$100,000",
+      "page": 3,
+      "page_ref": [
+        3
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "n CGim Cr 1899 Central Plaza East,",
+      "value": "Watertown NY 13601",
+      "page": 4,
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "PERSONAL UMBRELLA LIABILITY POLICY",
+      "value": "$324.00",
+      "page": 4,
+      "page_ref": [
+        4
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "ADDRESS",
+      "value": "611 PALMER HILL RD",
+      "page": 4,
+      "page_ref": [
+        4
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "174 BIG MOOSE RD",
+      "value": "ITHACA NY 14850",
+      "page": 4,
+      "page_ref": [
+        4
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "PERSONAL UMBRELLA LIABILITY POLICY - PERMITTED INCIDENTAL OCCUPANCIES",
+      "value": "$7.00",
+      "page": 4,
+      "page_ref": [
+        4
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "UNINSURED/UNDERINSURED MOTORISTS EXCESS",
+      "value": "$330.00",
+      "page": 4,
+      "page_ref": [
+        4
+      ]
+    }
+  ],
+  "fideon:provenance": {
+    "generator": "fideon-synth generic",
+    "source": "NYCM Insurance/personal_umbrella/nycm_insurance_pumbr.pdf",
+    "schema": "personal_umbrella v3.0.0",
+    "render": "scanned_only",
+    "scanner_profile": "high-quality scan, 400 dpi",
+    "values_replaced": 43,
+    "text_recovered_by_ocr": 0,
+    "date_shift_days": 502,
+    "synthetic": true,
+    "note": "Identifying values replaced with invented ones. Fields under fideon:unmapped were changed but could not be matched to a schema field with confidence."
+  }
+}
