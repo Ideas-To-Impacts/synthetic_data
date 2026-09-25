@@ -486,6 +486,20 @@ def test_rules_that_hold_for_any_document(schema):
     # an ISO form number is a form's, never an identifier to replace
     assert generic.ISO_FORM.match("CG20180413") and generic.ISO_FORM.match("CG 20 18 04 13")
     assert not generic.ISO_FORM.match("MSB00001028349")
+    # words OCR ran together come apart only into words the document prints
+    vocab = generic._vocabulary("combined single limit each accident Liability To Others "
+                                "Liability to progressive agent")
+    assert generic._unglue("combinedsinglelimiteachaccident", vocab) == "combined single limit each accident"
+    assert generic._unglue("LiabilityTo Others", vocab) == "Liability To Others"
+    assert generic._unglue("progressiveagent.com", vocab) == "progressiveagent.com"   # an address
+    assert generic._unglue("Progressiveagent", vocab) == "Progressiveagent"           # maybe a name
+    # a policy-wide value the units print differently is dropped
+    gold = {"watercraft": {"physical_damage_coverages": {"personal_effects_limit": generic.fv("$3,000"),
+                                                         "on_water_towing_limit": generic.fv("$1,000")},
+                           "watercraft": [{"personal_effects_limit": generic.fv("$3,000")},
+                                          {"personal_effects_limit": generic.fv("$5,000")}]}}
+    structure.finish(gold, schema)
+    assert list(gold["watercraft"]["physical_damage_coverages"]) == ["on_water_towing_limit"]
     # a form number keeps its state code
     assert structure._form_of(structure.FORM_REF.search("BY-300 NY (11-23)")) == "BY-300 NY"
     # rows of labels and address lines are not prose; a short sentence is
