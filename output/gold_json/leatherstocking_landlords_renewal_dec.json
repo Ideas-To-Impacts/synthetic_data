@@ -121,7 +121,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Property"
     },
     "mail_to": {
       "name": {
@@ -147,7 +148,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "88 Main St"
         },
         "city": {
           "raw": "Old Forge",
@@ -324,7 +326,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "88 Main St"
       },
       "city": {
         "raw": "Old Forge",
@@ -375,7 +378,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Work"
       },
       "fax": {
         "raw": "(315) 369-4415",
@@ -387,7 +391,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Fax"
       }
     }
   },
@@ -404,7 +409,8 @@
         2,
         3
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Policy ID"
     },
     "policy_type": {
       "raw": "Landlords Package",
@@ -428,7 +434,8 @@
       "page_ref": [
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Form"
     },
     "policy_form_name": {
       "raw": "Special Form",
@@ -444,7 +451,7 @@
     },
     "effective_date": {
       "raw": "07/09/2026",
-      "parsed": "2026-07-09",
+      "parsed": "07/09/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -456,7 +463,7 @@
     },
     "expiration_date": {
       "raw": "07/09/2027",
-      "parsed": "2027-07-09",
+      "parsed": "07/09/2027",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -556,7 +563,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Kettle Brook Insurance Agency LLC"
     },
     "entity_type": {
       "raw": "Trust",
@@ -727,7 +735,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Interest"
       },
       "party_type": {
         "raw": "Additional Interest",
@@ -752,7 +761,8 @@
       "page_ref": [
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Total"
     },
     "total_fees_amount": {
       "raw": "$0.00",
@@ -765,7 +775,8 @@
         1,
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Fees"
     },
     "total_policy_premium": {
       "raw": "$2,425.00",
@@ -777,7 +788,8 @@
       "page_ref": [
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Total"
     }
   },
   "forms_and_endorsements": [
@@ -1731,7 +1743,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Higher Limits - Water Damage Coverage"
       },
       "limit_amount": {
         "raw": "$20,000",
@@ -1743,7 +1756,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Higher Limits - Water Damage Coverage"
       }
     },
     {
@@ -2076,7 +2090,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Occupancy"
       },
       "protection_class": {
         "raw": "Semi-Protected",
@@ -2088,7 +2103,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Protection Class"
       },
       "year_built": {
         "raw": "Since January 1960",
@@ -2100,7 +2116,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Construction Year"
       },
       "protective_devices": [
         {
@@ -2114,7 +2131,8 @@
             "page_ref": [
               2
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Device"
           },
           "form_reference": {
             "raw": "ML-216",
@@ -2152,7 +2170,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage A - Residence"
       },
       "coverage_a_dwelling_premium": {
         "raw": "$1,887.00",
@@ -2164,7 +2183,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage A - Residence"
       },
       "coverage_b_other_structures_limit": {
         "raw": "$41,300",
@@ -2176,7 +2196,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage B - Related Private Structures"
       },
       "coverage_b_other_structures_premium": {
         "raw": "$0.00",
@@ -2189,7 +2210,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Fees"
       },
       "coverage_d_loss_of_use_limit": {
         "raw": "$41,300",
@@ -2201,7 +2223,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage B - Related Private Structures"
       },
       "coverage_d_loss_of_use_premium": {
         "raw": "$0.00",
@@ -2214,7 +2237,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Fees"
       },
       "loss_settlement_basis": {
         "raw": "RC",
@@ -2238,7 +2262,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Higher Limits - Water Damage Coverage"
       },
       "renewal_modified_coverages": [
         {
@@ -2252,7 +2277,8 @@
             1,
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Modifies Coverage(s) at Renewal"
         }
       ]
     },
@@ -2267,7 +2293,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage L - OLT - Premises Liability"
       },
       "coverage_e_personal_liability_premium": {
         "raw": "$295.00",
@@ -2279,7 +2306,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage L - OLT - Premises Liability"
       },
       "coverage_f_medical_payments_per_person_limit": {
         "raw": "$5,000",
@@ -2328,7 +2356,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Fees"
       },
       "liability_coverage_type": {
         "raw": "FL-OLT Premises Liability",
@@ -2340,7 +2369,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Liability Coverage"
       }
     },
     "deductibles": {
@@ -2354,7 +2384,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Deductible"
       }
     },
     "rating_characteristics": {
@@ -2368,7 +2399,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Territorial Zone"
       },
       "territorial_subzone": {
         "raw": "Sub-Zone 6",
@@ -2392,7 +2424,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Vandalism"
       },
       "required_rating_information": {
         "raw": "Rating Information: Property 1",
@@ -2576,7 +2609,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Higher Limits - Water Damage Coverage"
         }
       },
       {
@@ -2603,7 +2637,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Higher Limits - Water Damage Coverage"
         },
         "premium": {
           "raw": "$65.00",
@@ -2615,7 +2650,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Higher Limits - Water Damage Coverage"
         },
         "applies_to": {
           "raw": "Property 1",
@@ -2629,7 +2665,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Higher Limits - Water Damage Coverage"
         }
       },
       {
@@ -2720,7 +2757,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Higher Limits - Water Damage Coverage"
         }
       }
     ],
@@ -2784,7 +2822,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Higher Limits - Water Damage Coverage"
         }
       }
     ],
@@ -2899,7 +2938,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Loan Number"
         },
         "location_reference": {
           "raw": "Property 1 - 114 Pike St; Port Jervis NY 12771",
@@ -3019,7 +3059,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Total"
         },
         "deductibles": {
           "all_other_perils_deductible": {
@@ -3032,13 +3073,17 @@
             "page_ref": [
               2
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Deductible"
           }
         }
       }
     ]
   },
   "fideon:absent": [
+    "additional_fields[].label",
+    "additional_fields[].section",
+    "additional_fields[].value",
     "billing.amount_due",
     "billing.amount_enclosed",
     "billing.bank_account_number_masked",
@@ -4010,6 +4055,9 @@
     "premium.taxes_and_fees[].description",
     "premium.taxes_and_fees[].is_fully_earned",
     "premium.total_discount_amount",
+    "printed_lines[].cells[]",
+    "printed_lines[].kind",
+    "printed_lines[].page",
     "producer.address.country",
     "producer.address.county",
     "producer.address.county_code",
@@ -4040,6 +4088,7 @@
     "state_notices[].civil_penalty_amount",
     "state_notices[].contact_phone",
     "state_notices[].contact_website",
+    "state_notices[].copyright_notice",
     "state_notices[].edition_date",
     "state_notices[].form_reference",
     "state_notices[].form_reference_edition",
@@ -4098,6 +4147,7 @@
     "underwriting.consumer_report_disclosures[].reporting_agency_address.line_2",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.postal_code",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.state",
+    "underwriting.consumer_report_disclosures[].reporting_agency_phone",
     "underwriting.consumer_report_disclosures[].reporting_agency_website",
     "underwriting.consumer_report_disclosures[].updated_report_days",
     "underwriting.exceptions[].exception_type",
@@ -4129,6 +4179,236 @@
     "synthetic": true,
     "note": "Scanned synthetic document generated from the reference document: every original value rewritten in place with an invented one; page_ref measured on the rewritten PDF before scanning.",
     "scanner_profile": "high-quality scan, 400 dpi",
-    "page_refs_measured_on": "text-layer twin of leatherstocking_landlords_renewal_dec.pdf before scanning"
-  }
+    "page_refs_measured_on": "text-layer twin of leatherstocking_landlords_renewal_dec.pdf before scanning",
+    "prose": "text_sections, printed_label and printed_lines added by main's prose.text_sections / dfire.engine; scanned pages none read by OCR of the published scan"
+  },
+  "text_sections": {
+    "page1_s1": {
+      "section_id": "page1_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "PO Box 630, 4313 County Highway 11 Cooperstown, NY 13326",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s2": {
+      "section_id": "page1_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "THIS POLICY IS ISSUED ON THE CO-OPERATIVE ASSESSMENT PLAN",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s3": {
+      "section_id": "page1_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "This replaces all previously issued policy declarations, if any. This policy applies only to accidents, occurrences or losses which happen during the policy period shown above.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s4": {
+      "section_id": "page1_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "This policy applies only to those coverages below for which a limit of liability or premium charge is shown. Our limit of liability for each coverage shall not be more than the amount stated for such coverage, subject to all the terms of this policy.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page2_s1": {
+      "section_id": "page2_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Territorial Zone: Orange (Zone 1, Sub-Zone 6) Protection Class: Semi-Protected",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s2": {
+      "section_id": "page2_s2",
+      "section_title": "ML-216 Premises Alarm or Fire Protection System: Property 1",
+      "section_type": "prose",
+      "raw_text": "Device: Fire Alarm and/or Smoke Detectors",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s3": {
+      "section_id": "page2_s3",
+      "section_title": "SM-26 Automatic Increase, RC: Property 1",
+      "section_type": "prose",
+      "raw_text": "Modifies Coverage(s) at Renewal: Coverage A - Residence",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s4": {
+      "section_id": "page2_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Amendatory Endorsement Principal Coverages, FL-80 (7/96) Redefinition of Insured, FL-83 (2/02) Amendment of Policy Conditions, FL-84A (4/94) New York Amendatory Endorsement, FL-90 (11/06) Clarification Endorsement, LCI-J (9/17) By-Laws, FMD-1 (12/94) Important Flood Insurance Notice, PR (3/01) Notice of Privacy Policy, LCIC-TRIA (02/15) Policyholder Disclosure Notice of Terrorism Insurance Coverage, LCI-11 (4/91) Senior Citizen Form, FL-21 05/10 Suit Against Us Amendatory Endorsement, FL-3B 9/00 Causes of Loss, FL-41 (1/92) Additional Insured, FL-342 (9/20) Underground Utility Line Endorsement, FL-345 (12/17) Equipment Breakdown Enhancement Endorsement, FL-72A (5/13) Added Water Damages Coverages, FL-OLT (1/92) Premises Liability Coverage, FL-41L (7/98) Additional Insured, ML-216 (6/99) Protective Device Credit, SM-26 (7/00) Automatic Increase",
+      "page_range": [
+        2
+      ],
+      "form_number": "FL-80 (7/96)"
+    },
+    "page3_s1": {
+      "section_id": "page3_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Hudson Valley Federal Savings Bank ISAOA, ATIMA c/o Loan Servicing",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    }
+  },
+  "printed_lines": [
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "Phone: 607-547-2007 Fax: 607-547-2056"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Mail To:",
+        "Named Insured(s):"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Policy Term Effective Date:",
+        "Policy Term Expiration Date:"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Section I",
+        "COVERAGE LIMIT"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "Coverage D - Additional Living Expense and Loss of Rent"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Section II",
+        "COVERAGE LIMIT"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "Coverage M - OLT - Premises Med Pay - Per Person",
+        "(Per Person)"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "Coverage M - OLT - Premises Med Pay - Per Occurrence",
+        "(Per Occurrence)"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Optional Items",
+        "COVERAGE LIMIT"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "SIGNATURE",
+        "DATE"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "footer",
+      "cells": [
+        "Page 1 of 3"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "Optional Items",
+        "COVERAGE LIMIT"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Property Total"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Coverage Premium:"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "footer",
+      "cells": [
+        "Page 2 of 3"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "MORTGAGEE(S):"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "footer",
+      "cells": [
+        "Page 3 of 3"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Loss Settlement: RC"
+      ]
+    }
+  ]
 }

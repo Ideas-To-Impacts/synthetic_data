@@ -82,7 +82,7 @@
     },
     "mailed_date": {
       "raw": "01/23/2026",
-      "parsed": "2026-01-23",
+      "parsed": "01/23/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -90,7 +90,8 @@
       "page_ref": [
         4
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Date Mailed"
     },
     "barcode_data": {
       "raw": "HODEC02##Insured##IN-619347258##2B8D04F7A1C54E39B7E6F0A9D3C18E52##0",
@@ -143,7 +144,8 @@
         1,
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Company Name"
     },
     "address": {
       "line_1": {
@@ -219,7 +221,8 @@
       "page_ref": [
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Gideon Marchetti"
     },
     "producer_code": {
       "raw": "527104",
@@ -231,7 +234,8 @@
       "page_ref": [
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "7 BIRCH HOLLOW LN"
     },
     "address": {
       "line_1": {
@@ -295,7 +299,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Phone"
       }
     }
   },
@@ -310,7 +315,8 @@
       "page_ref": [
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Policy Number"
     },
     "policy_type": {
       "raw": "HO3",
@@ -363,7 +369,7 @@
     },
     "effective_date": {
       "raw": "03/09/2026",
-      "parsed": "2026-03-09",
+      "parsed": "03/09/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -389,7 +395,7 @@
     },
     "expiration_date": {
       "raw": "03/09/2027",
-      "parsed": "2027-03-09",
+      "parsed": "03/09/2027",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -455,7 +461,8 @@
       "page_ref": [
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Named Insured(s)"
     },
     "entity_type": {
       "raw": "Individual",
@@ -530,7 +537,8 @@
       "page_ref": [
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "To report a claim please call"
     }
   },
   "premium": {
@@ -545,7 +553,8 @@
         2,
         3
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Total Policy Premium"
     },
     "basic_premium": {
       "raw": "$1,017.00",
@@ -557,7 +566,8 @@
       "page_ref": [
         3
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Basic Coverage Premium"
     },
     "forms_and_endorsements_premium": {
       "raw": "$141.00",
@@ -569,7 +579,8 @@
       "page_ref": [
         3
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Optional Coverage Premium"
     }
   },
   "billing": {
@@ -1268,7 +1279,8 @@
             "page_ref": [
               2
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "First"
           },
           "city": {
             "raw": "Poughkeepsie",
@@ -1318,7 +1330,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "First"
         },
         "is_payor": {
           "raw": "Yes",
@@ -1346,7 +1359,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "All Other Perils"
       }
     },
     "section_i_property_coverages": {
@@ -1360,7 +1374,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "A. Dwelling"
       },
       "coverage_b_other_structures_limit": {
         "raw": "$53,600",
@@ -1372,7 +1387,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "B. Other Structures"
       },
       "coverage_c_personal_property_limit": {
         "raw": "$201,000",
@@ -1384,7 +1400,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "C. Personal Property"
       },
       "coverage_d_loss_of_use_limit": {
         "raw": "$53,600",
@@ -1396,7 +1413,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "B. Other Structures"
       },
       "extended_replacement_cost_percentage": {
         "raw": "25% of Coverage A",
@@ -1420,7 +1438,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Water Backup and Sump Discharge or Overflow"
       },
       "loss_assessment_limit": {
         "raw": "$2,000",
@@ -1433,7 +1452,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "D. Loss Of Use"
       },
       "ordinance_or_law_percentage": {
         "raw": "10% of Coverage A",
@@ -1472,7 +1492,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "B. Other Structures"
       },
       "coverage_f_medical_payments_per_person_limit": {
         "raw": "$2,000",
@@ -1485,7 +1506,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "D. Loss Of Use"
       },
       "damage_to_property_of_others_limit": {
         "raw": "$1,000",
@@ -1498,7 +1520,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "All Other Perils"
       }
     },
     "special_limits_of_liability": [
@@ -1525,7 +1548,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "On Premises/Off Premises"
         },
         "limit_group": {
           "raw": "Special Limits of Liability",
@@ -1549,7 +1573,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Additional Replacement Cost"
         }
       },
       {
@@ -1575,7 +1600,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Money, Coins"
         },
         "limit_group": {
           "raw": "Special Limits of Liability",
@@ -1599,7 +1625,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Additional Replacement Cost"
         }
       },
       {
@@ -1625,7 +1652,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "On Premises/Off Premises"
         },
         "limit_group": {
           "raw": "Special Limits of Liability",
@@ -1649,7 +1677,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Additional Replacement Cost"
         }
       },
       {
@@ -1675,7 +1704,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Silverware"
         },
         "limit_group": {
           "raw": "Special Limits of Liability",
@@ -1699,7 +1729,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Additional Replacement Cost"
         }
       },
       {
@@ -1725,7 +1756,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Silverware"
         },
         "limit_group": {
           "raw": "Special Limits of Liability",
@@ -1749,7 +1781,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Additional Replacement Cost"
         }
       },
       {
@@ -1775,7 +1808,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "On Premises/Off Premises"
         },
         "limit_group": {
           "raw": "Special Limits of Liability",
@@ -1799,7 +1833,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Additional Replacement Cost"
         }
       },
       {
@@ -1825,7 +1860,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Tapes, records, discs or other"
         },
         "limit_group": {
           "raw": "Special Limits of Liability",
@@ -1849,7 +1885,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Additional Replacement Cost"
         }
       },
       {
@@ -1875,7 +1912,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Water Backup and Sump Discharge or Overflow"
         },
         "limit_group": {
           "raw": "Special Limits of Liability",
@@ -1899,7 +1937,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Additional Replacement Cost"
         }
       }
     ],
@@ -2030,7 +2069,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Personal Injury"
         }
       },
       {
@@ -2057,7 +2097,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Additional Replacement Cost"
         },
         "limit_percentage": {
           "raw": "25% of Coverage A",
@@ -2107,7 +2148,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Water Backup and Sump Discharge or Overflow"
         },
         "is_included": {
           "raw": "Included*",
@@ -2119,7 +2161,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Additional Replacement Cost"
         }
       },
       {
@@ -2146,7 +2189,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Additional Replacement Cost"
         }
       },
       {
@@ -2173,7 +2217,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "All Other Perils"
         },
         "is_included": {
           "raw": "Included*",
@@ -2185,7 +2230,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Additional Replacement Cost"
         }
       },
       {
@@ -2211,7 +2257,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Water Backup and Sump Discharge or Overflow"
         },
         "is_included": {
           "raw": "Included*",
@@ -2223,7 +2270,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Additional Replacement Cost"
         },
         "coverage_description": {
           "raw": "On Premises/Off Premises",
@@ -2247,7 +2295,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "On Premises/Off Premises"
         }
       },
       {
@@ -2274,7 +2323,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "D. Loss Of Use"
         },
         "premium": {
           "raw": "$3.00",
@@ -2312,7 +2362,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Additional Replacement Cost"
         },
         "limit_percentage": {
           "raw": "10% of Coverage A",
@@ -2374,7 +2425,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Additional Replacement Cost"
         },
         "limit_basis": {
           "raw": "per policy period",
@@ -2413,7 +2465,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Identity Fraud Expense and Resolution Services"
         },
         "premium": {
           "raw": "$25.00",
@@ -2425,7 +2478,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Identity Fraud Expense and Resolution Services"
         },
         "coverage_description": {
           "raw": "CyberScout: ID Management Services",
@@ -2464,7 +2518,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Home Systems Protection"
         },
         "premium": {
           "raw": "$45.00",
@@ -2476,7 +2531,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Home Systems Protection"
         }
       },
       {
@@ -2503,7 +2559,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Service Line Coverage"
         },
         "premium": {
           "raw": "$50.00",
@@ -2515,7 +2572,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Service Line Coverage"
         }
       },
       {
@@ -2542,7 +2600,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Additional Replacement Cost"
         }
       },
       {
@@ -2569,7 +2628,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "All Other Perils"
         },
         "is_included": {
           "raw": "Included*",
@@ -2581,12 +2641,16 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Additional Replacement Cost"
         }
       }
     ]
   },
   "fideon:absent": [
+    "additional_fields[].label",
+    "additional_fields[].section",
+    "additional_fields[].value",
     "billing.amount_due",
     "billing.amount_enclosed",
     "billing.bank_account_number_masked",
@@ -3589,6 +3653,9 @@
     "premium.taxes_and_fees[].is_fully_earned",
     "premium.total_discount_amount",
     "premium.total_fees_amount",
+    "printed_lines[].cells[]",
+    "printed_lines[].kind",
+    "printed_lines[].page",
     "producer.address.country",
     "producer.address.county",
     "producer.address.county_code",
@@ -3621,6 +3688,7 @@
     "state_notices[].civil_penalty_amount",
     "state_notices[].contact_phone",
     "state_notices[].contact_website",
+    "state_notices[].copyright_notice",
     "state_notices[].edition_date",
     "state_notices[].form_reference",
     "state_notices[].form_reference_edition",
@@ -3679,6 +3747,7 @@
     "underwriting.consumer_report_disclosures[].reporting_agency_address.line_2",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.postal_code",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.state",
+    "underwriting.consumer_report_disclosures[].reporting_agency_phone",
     "underwriting.consumer_report_disclosures[].reporting_agency_website",
     "underwriting.consumer_report_disclosures[].updated_report_days",
     "underwriting.exceptions[].exception_type",
@@ -3710,6 +3779,308 @@
     "synthetic": true,
     "note": "Scanned synthetic document generated from the reference document: every original value rewritten in place with an invented one; page_ref measured on the rewritten PDF before scanning.",
     "scanner_profile": "high-quality scan, 400 dpi",
-    "page_refs_measured_on": "text-layer twin of mercury_ho3_renewal.pdf before scanning"
-  }
+    "page_refs_measured_on": "text-layer twin of mercury_ho3_renewal.pdf before scanning",
+    "prose": "text_sections, printed_label and printed_lines added by main's prose.text_sections / dfire.engine; scanned pages none read by OCR of the published scan"
+  },
+  "text_sections": {
+    "page2_s1": {
+      "section_id": "page2_s1",
+      "section_title": "Declarations",
+      "section_type": "prose",
+      "raw_text": "To report a claim please call: (800) 503-3724",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s2": {
+      "section_id": "page2_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "*Standard time at the address of the property location below",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s3": {
+      "section_id": "page2_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "If more than one property is insured under this policy, Section I and Section II coverages of each location may not be added together in the event of a loss.",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page3_s1": {
+      "section_id": "page3_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "* The additional cost for any additional/optional coverage shown as “Included” is contained in the Total Policy Premium amount.",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page4_s1": {
+      "section_id": "page4_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "H0208 (12/2019) Water Back-Up and Sump Discharge or Overflow H0290 (12/2019) Personal Property Replacement Cost Loss Settlement H0420 (12/2019) Additional Replacement Cost Protection - Specified Amount H0455NY (12/2019) Identity Fraud Expense and Resolution Services Coverage H0999NY (12/2019) Special Provisions - New York H0145 (10/2019) Exclusion of Cosmetic Damage to Roof Coverings Caused By Hail H0210NY (03/2021) Service Line Coverage",
+      "page_range": [
+        4
+      ],
+      "form_number": "H0208 (12/2019)"
+    },
+    "page4_s2": {
+      "section_id": "page4_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "H0653NY (12/2019) Home-sharing Host Activities Amendatory Endorsement H0090NY (12/2019) Workers' Compensation Residence Employee Mandatory Coverage",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page4_s3": {
+      "section_id": "page4_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Your Homeowners Insurance expires and coverage ceases at 12:01AM on 03/09/2026. Coverage under this policy will become effective only if you pay the premium and any applicable fees, as indicated on the enclosed Renewal Bill, prior to the due date shown in the Renewal Bill.",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page4_s4": {
+      "section_id": "page4_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "It is your responsibility to select and maintain adequate amounts of insurance on your dwelling and personal property. The coverage limits selected by you will be adjusted annually based on estimated changes in rebuilding and replacement costs, but the company does not guarantee that the coverage limits shown in these declarations will be sufficient to rebuild your dwelling or replace any other covered property. Please contact your agent if you would like to change the coverage limits in your policy.",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page4_s5": {
+      "section_id": "page4_s5",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "The issuance of the policy, including all renewals, is based, in material part, on information you provided on the insurance application. If any information provided on the insurance application has changed, please notify your agent or the company, as the failure to update material information may adversely impact your policy, or the coverage provided by your policy.",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page4_s6": {
+      "section_id": "page4_s6",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Premium must be paid in United States dollars, and in a form acceptable to the company. See the Payment Options page on our website for details.",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    }
+  },
+  "printed_lines": [
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Mailing Address:"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "POLICY INFORMATION"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "Policy Expiration Date*: 03/09/2027 at 12:01 A.M."
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "Year",
+        "Square"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "Paid By:",
+        "Construction"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "Type",
+        "Built",
+        "Footage",
+        "Class"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "MORTGAGEE INFORMATION"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "Mortgagee Name",
+        "City, State, Zip",
+        "Loan Number Billed"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "City, State, ZIP"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "ADDITIONAL INTEREST INFORMATION"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "City, State, ZIP"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Section I Deductibles:"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "Limit of Liability",
+        "Limit of Liability"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "E. Personal Liability"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Each Occurrence"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "F. Medical Payments"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Each Person"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "footer",
+      "cells": [
+        "03/09/2026 12:01 AM ET"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Limit of"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "DISCOUNTS:"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "footer",
+      "cells": [
+        "03/09/2026 12:01 AM ET"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "FORMS AND ENDORSEMENTS:"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "IMPORTANT INFORMATION:"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "row",
+      "cells": [
+        "This declaration supersedes any previous declaration bearing the same policy number for this policy period."
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "row",
+      "cells": [
+        "This declaration provides only a summary of coverage. All coverage is subject to the terms, conditions, and"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "exclusions of the policy contract."
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "footer",
+      "cells": [
+        "03/09/2026 12:01 AM ET"
+      ]
+    }
+  ]
 }

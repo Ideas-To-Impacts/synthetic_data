@@ -23,11 +23,12 @@
         1,
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Transaction Type"
     },
     "issue_date": {
       "raw": "02/26/2027",
-      "parsed": "2027-02-26",
+      "parsed": "02/26/2027",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -36,7 +37,8 @@
         1,
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Issue Date"
     },
     "page_count": {
       "raw": "2",
@@ -77,7 +79,8 @@
         1,
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "AMENDATORY ENDORSEMENT POLLUTION EXCLUSION"
     },
     "not_a_bill_indicator": {
       "raw": "This is not a bill.",
@@ -143,7 +146,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "SPECIAL PROVISIONS - NEW YORK"
         },
         "edition_date": {
           "raw": "07/22",
@@ -156,7 +160,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "SPECIAL PROVISIONS - NEW YORK"
         },
         "form_title": {
           "raw": "SPECIAL PROVISIONS - NEW YORK",
@@ -213,7 +218,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "AMENDATORY ENDORSEMENT - NEW YORK"
         },
         "form_title": {
           "raw": "LIMITED FUNGI, WET OR DRY ROT, OR BACTERIA COVERAGE",
@@ -598,7 +604,8 @@
         5,
         7
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Issued by"
     },
     "company_structure": {
       "raw": "A Stock Corporation",
@@ -774,7 +781,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Agent"
     },
     "address": {
       "line_1": {
@@ -859,11 +867,12 @@
         2,
         5
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Policy Number"
     },
     "effective_date": {
       "raw": "04/05/2027",
-      "parsed": "2027-04-05",
+      "parsed": "04/05/2027",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -875,7 +884,7 @@
     },
     "expiration_date": {
       "raw": "04/05/2028",
-      "parsed": "2028-04-05",
+      "parsed": "04/05/2028",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -1059,7 +1068,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "To Report a Claim"
     }
   },
   "billing": {
@@ -1073,7 +1083,8 @@
       "page_ref": [
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Your Policy Pay Plan is"
     }
   },
   "premium": {
@@ -1101,7 +1112,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Section I - Property"
         },
         "limit_amount": {
           "raw": "$30,000",
@@ -1113,7 +1125,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Section I - Property"
         },
         "premium": {
           "raw": "$241.00",
@@ -1125,7 +1138,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Section I - Property"
         }
       },
       {
@@ -1151,7 +1165,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage D - Loss of Use"
         },
         "premium": {
           "raw": "Included",
@@ -1165,7 +1180,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage D - Loss of Use"
         }
       },
       {
@@ -1179,7 +1195,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Section II - Liability"
         },
         "limit_amount": {
           "raw": "$1,000,000",
@@ -1191,7 +1208,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Section II - Liability"
         },
         "premium": {
           "raw": "$45.00",
@@ -1203,7 +1221,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Section II - Liability"
         }
       },
       {
@@ -1229,7 +1248,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage F - Medical Payments Coverage"
         },
         "premium": {
           "raw": "Included",
@@ -1243,7 +1263,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage D - Loss of Use"
         }
       }
     ]
@@ -1298,7 +1319,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D - Loss of Use"
       }
     },
     {
@@ -1326,7 +1348,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "SPECIAL PROVISIONS - NEW YORK"
       },
       "edition_date": {
         "raw": "07/22",
@@ -1339,7 +1362,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "SPECIAL PROVISIONS - NEW YORK"
       },
       "premium": {
         "raw": "Included",
@@ -1353,7 +1377,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D - Loss of Use"
       }
     },
     {
@@ -1379,7 +1404,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "AMENDATORY ENDORSEMENT - NEW YORK"
       },
       "edition_date": {
         "raw": "05/19",
@@ -1392,7 +1418,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "AMENDATORY ENDORSEMENT - NEW YORK"
       },
       "premium": {
         "raw": "Included",
@@ -1406,7 +1433,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D - Loss of Use"
       }
     },
     {
@@ -1432,7 +1460,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "AMENDATORY ENDORSEMENT POLLUTION EXCLUSION"
       },
       "edition_date": {
         "raw": "06/17",
@@ -1444,7 +1473,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "AMENDATORY ENDORSEMENT POLLUTION EXCLUSION"
       },
       "premium": {
         "raw": "Included",
@@ -1458,7 +1488,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D - Loss of Use"
       }
     },
     {
@@ -1484,7 +1515,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "HOME SYSTEMS PROTECTION"
       },
       "edition_date": {
         "raw": "06/17",
@@ -1496,7 +1528,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "AMENDATORY ENDORSEMENT POLLUTION EXCLUSION"
       },
       "premium": {
         "raw": "$13.00",
@@ -1508,7 +1541,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "HOME SYSTEMS PROTECTION"
       }
     },
     {
@@ -1534,7 +1568,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "HOME-SHARING HOST ACTIVITIES AMENDATORY"
       },
       "edition_date": {
         "raw": "12/18",
@@ -1546,7 +1581,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "HOME-SHARING HOST ACTIVITIES AMENDATORY"
       },
       "premium": {
         "raw": "Included",
@@ -1560,7 +1596,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D - Loss of Use"
       }
     },
     {
@@ -1586,7 +1623,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "IDENTITY MONITORING AND PROTECTION SERVICES"
       },
       "edition_date": {
         "raw": "06/17",
@@ -1598,7 +1636,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "AMENDATORY ENDORSEMENT POLLUTION EXCLUSION"
       },
       "premium": {
         "raw": "$20.00",
@@ -1610,7 +1649,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "IDENTITY MONITORING AND PROTECTION SERVICES"
       }
     },
     {
@@ -1636,7 +1676,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "IDENTITY THEFT RESOLUTION SERVICES COVERAGE"
       },
       "edition_date": {
         "raw": "06/17",
@@ -1648,7 +1689,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "AMENDATORY ENDORSEMENT POLLUTION EXCLUSION"
       },
       "premium": {
         "raw": "Included",
@@ -1662,7 +1704,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D - Loss of Use"
       }
     },
     {
@@ -1706,7 +1749,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "AMENDATORY ENDORSEMENT - NEW YORK"
       },
       "premium": {
         "raw": "Included",
@@ -1720,7 +1764,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D - Loss of Use"
       }
     },
     {
@@ -1772,7 +1817,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D - Loss of Use"
       }
     },
     {
@@ -1798,7 +1844,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "PERSONAL INJURY COVERAGE - NEW YORK"
       },
       "edition_date": {
         "raw": "10/11",
@@ -1810,7 +1857,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "PERSONAL INJURY COVERAGE - NEW YORK"
       },
       "premium": {
         "raw": "Included",
@@ -1824,7 +1872,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D - Loss of Use"
       }
     },
     {
@@ -1850,7 +1899,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "PERSONAL PROPERTY REPLACEMENT COST LOSS"
       },
       "edition_date": {
         "raw": "05/11",
@@ -1862,7 +1912,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "PERSONAL PROPERTY REPLACEMENT COST LOSS"
       },
       "premium": {
         "raw": "Included",
@@ -1876,7 +1927,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D - Loss of Use"
       }
     }
   ],
@@ -2009,7 +2061,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Section I - Property"
       },
       "coverage_c_personal_property_premium": {
         "raw": "$241.00",
@@ -2021,7 +2074,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Section I - Property"
       },
       "coverage_d_loss_of_use_limit": {
         "raw": "$6,000",
@@ -2033,7 +2087,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D - Loss of Use"
       },
       "coverage_d_loss_of_use_premium": {
         "raw": "Included",
@@ -2047,7 +2102,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D - Loss of Use"
       },
       "additional_coverages": [
         {
@@ -2062,7 +2118,8 @@
               5,
               6
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "mycotoxins, spores, scents or by-products"
           },
           "form_reference": {
             "raw": "BH NY 26",
@@ -2090,7 +2147,8 @@
               5,
               6
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "AMENDATORY ENDORSEMENT - NEW YORK"
           },
           "limit_amount": {
             "raw": "$20,000",
@@ -2118,7 +2176,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Section II - Liability"
       },
       "coverage_e_personal_liability_premium": {
         "raw": "$45.00",
@@ -2130,7 +2189,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Section II - Liability"
       },
       "coverage_f_medical_payments_limit": {
         "raw": "$1,000",
@@ -2142,7 +2202,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage F - Medical Payments Coverage"
       },
       "coverage_f_medical_payments_premium": {
         "raw": "Included",
@@ -2156,7 +2217,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D - Loss of Use"
       }
     },
     "deductibles": {
@@ -2170,11 +2232,15 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Property Deductible"
       }
     }
   },
   "fideon:absent": [
+    "additional_fields[].label",
+    "additional_fields[].section",
+    "additional_fields[].value",
     "billing.amount_due",
     "billing.amount_enclosed",
     "billing.bank_account_number_masked",
@@ -3200,6 +3266,9 @@
     "premium.taxes_and_fees[].is_fully_earned",
     "premium.total_discount_amount",
     "premium.total_fees_amount",
+    "printed_lines[].cells[]",
+    "printed_lines[].kind",
+    "printed_lines[].page",
     "producer.address.country",
     "producer.address.county",
     "producer.address.county_code",
@@ -3232,6 +3301,7 @@
     "state_notices[].civil_penalty_amount",
     "state_notices[].contact_phone",
     "state_notices[].contact_website",
+    "state_notices[].copyright_notice",
     "state_notices[].edition_date",
     "state_notices[].form_reference",
     "state_notices[].form_reference_edition",
@@ -3287,6 +3357,7 @@
     "underwriting.consumer_report_disclosures[].reporting_agency_address.line_2",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.postal_code",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.state",
+    "underwriting.consumer_report_disclosures[].reporting_agency_phone",
     "underwriting.consumer_report_disclosures[].reporting_agency_website",
     "underwriting.consumer_report_disclosures[].updated_report_days",
     "underwriting.exceptions[].exception_type",
@@ -3318,6 +3389,726 @@
     "synthetic": true,
     "note": "Scanned synthetic document generated from the reference document: every original value rewritten in place with an invented one; page_ref measured on the rewritten PDF before scanning.",
     "scanner_profile": "high-quality scan, 400 dpi",
-    "page_refs_measured_on": "text-layer twin of plymouth_renters_ho4_renewal_package.pdf before scanning"
-  }
+    "page_refs_measured_on": "text-layer twin of plymouth_renters_ho4_renewal_package.pdf before scanning",
+    "prose": "text_sections, printed_label and printed_lines added by main's prose.text_sections / dfire.engine; scanned pages none read by OCR of the published scan"
+  },
+  "text_sections": {
+    "page1_s1": {
+      "section_id": "page1_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "In case of loss under Section I, we cover only that part of the loss over the deductible stated.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s2": {
+      "section_id": "page1_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "This is not a bill. Please refer to your insurance bill for the correct amount to pay.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page2_s1": {
+      "section_id": "page2_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "BUSINESS LIMITED SECTION I - PROPERTY COVERAGES FOR HOME DAY CARE BUSINESS",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s2": {
+      "section_id": "page2_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "insurance and subsequent amendments and renewals. Credit information may be used to determine either your eligibility for insurance or the premium you will be charged. This information includes collections, foreclosures, bankruptcies, outstanding debt, length of credit history, types of credit in use and the number of new applications for credit. We use a third party in connection with the development of your insurance score. Any information which we, or our agents, may have or may obtain about you or other individuals listed as policyholders on your policy will be treated confidentially. However, this information, as well as other personal or privileged information subsequently collected, may, under certain circumstances, be disclosed without prior authorization to non-affiliated third parties. We may also share such information with affiliated companies for such purposes as claims handling, servicing, underwriting and insurance marketing. You have the right to see personal information collected about you, and you have the right to correct any information which may be wrong. If you are interested in obtaining a description of our information practices, and your rights regarding information we collect, ask your agent, or, if you have been issued a policy, please write us at the address provided with your policy.",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page3_s1": {
+      "section_id": "page3_s1",
+      "section_title": "INDEX",
+      "section_type": "prose",
+      "raw_text": "The following documents are included in this package. Endorsements that are named on your Declarations page form a part of your policy and are subject to all of its provisions. Endorsements listed below are made part of your policy with this transaction. Please refer to these documents for details of their provisions.",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s2": {
+      "section_id": "page3_s2",
+      "section_title": "ENDORSEMENTS",
+      "section_type": "prose",
+      "raw_text": "BH NY 01 07/22 SPECIAL PROVISIONS - NEW YORK BH NY 26 05/19 LIMITED FUNGI, WET OR DRY ROT, OR BACTERIA COVERAGE",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s3": {
+      "section_id": "page3_s3",
+      "section_title": "FOR YOUR INFORMATION",
+      "section_type": "prose",
+      "raw_text": "PRH 400 01/18 IMPORTANT FLOOD INSURANCE NOTICE NYDES-NOTMHO 01/18 IMPORTANT NOTICE TO POLICYHOLDERS SERVING IN ACTIVE MILITARY DUTY NYDES-NOT 07/13 IMPORTANT NOTICE TO SENIOR POLICYHOLDERS PRA 405 03/24 Privacy Policy",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s4": {
+      "section_id": "page3_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "PRA 511A 02/19 Consent to Conduct Business Electronically PRA 408 01/13 Producer Compensation",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s5": {
+      "section_id": "page3_s5",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "PRH NY 416 04/22 IMPORTANT INFORMATION ABOUT THE COST OF YOUR INSURANCE",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page5_s1": {
+      "section_id": "page5_s1",
+      "section_title": "SCHEDULE",
+      "section_type": "prose",
+      "raw_text": "These limits of liability apply to the total of all loss or costs payable under this endorsement, regardless of the number of \"occurrences\", the number of claims made, or the number of locations insured under this endorsement and listed in this Schedule.",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s2": {
+      "section_id": "page5_s2",
+      "section_title": "Coverage \"Fungi\", Wet Or Dry Rot, Or Bacteria",
+      "section_type": "prose",
+      "raw_text": "Information required to complete this Schedule, if not shown above, will be shown in the Declarations.",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s3": {
+      "section_id": "page5_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "as needed to gain access to the \"fungi\",",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s4": {
+      "section_id": "page5_s4",
+      "section_title": "E. Additional Coverages",
+      "section_type": "prose",
+      "raw_text": "b. The coverage described in 15.a. only applies",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s5": {
+      "section_id": "page5_s5",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "period and only if all reasonable means were",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s6": {
+      "section_id": "page5_s6",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Palisades Property and Casualty Insurance Company",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page6_s1": {
+      "section_id": "page6_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "loss payment will not be limited by the terms",
+      "page_range": [
+        6
+      ],
+      "form_number": null
+    },
+    "page6_s2": {
+      "section_id": "page6_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Condition A. Limit Of Liability is replaced by the",
+      "page_range": [
+        6
+      ],
+      "form_number": null
+    },
+    "page6_s3": {
+      "section_id": "page6_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "liability applying to the damaged covered",
+      "page_range": [
+        6
+      ],
+      "form_number": null
+    },
+    "page6_s4": {
+      "section_id": "page6_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Liability shown in the Declarations. This limit is",
+      "page_range": [
+        6
+      ],
+      "form_number": null
+    },
+    "page6_s5": {
+      "section_id": "page6_s5",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "from any one accident or from continuous or",
+      "page_range": [
+        6
+      ],
+      "form_number": null
+    },
+    "page6_s6": {
+      "section_id": "page6_s6",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "leakage of water or the presence or condensation of humidity, moisture or vapor",
+      "page_range": [
+        6
+      ],
+      "form_number": null
+    },
+    "page6_s7": {
+      "section_id": "page6_s7",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "\"insureds\" and is hidden within the walls or ceilings or beneath the floors or above the ceilings of a structure.",
+      "page_range": [
+        6
+      ],
+      "form_number": null
+    },
+    "page6_s8": {
+      "section_id": "page6_s8",
+      "section_title": "14. \"Fungi\", Wet Or Dry Rot, Or Bacteria",
+      "section_type": "prose",
+      "raw_text": "\"Fungi\", Wet Or Dry Rot, Or Bacteria meaning the presence, growth, proliferation, spread or any activity of \"fungi\", wet or dry rot, or bacteria.",
+      "page_range": [
+        6
+      ],
+      "form_number": null
+    },
+    "page6_s9": {
+      "section_id": "page6_s9",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "a. When \"fungi\", wet or dry rot, or bacteria results from fire or lightning; or b. To the extent coverage is provided for in the \"Fungi\", Wet Or Dry Rot, Or Bacteria Additional Coverage under Section I – Property Coverages with respect to loss caused by a Peril Insured Against other than fire or lightning.",
+      "page_range": [
+        6
+      ],
+      "form_number": null
+    },
+    "page6_s10": {
+      "section_id": "page6_s10",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Direct loss by a Peril Insured Against resulting from \"fungi\", wet or dry rot, or bacteria is covered.",
+      "page_range": [
+        6
+      ],
+      "form_number": null
+    },
+    "page7_s1": {
+      "section_id": "page7_s1",
+      "section_title": "– USE OF CONSUMER REPORTS",
+      "section_type": "prose",
+      "raw_text": "In connection with this insurance, we may review your claim history or your credit report or obtain or use a credit-based insurance score based on information contained in that report. An insurance score uses information from your credit report to help predict how often you are likely to file claims and how expensive those claims will be. Typical items from a credit report that could affect a score include, but are not limited to, the following: payment history, number of revolving accounts, number of new accounts, the presence of collection accounts, bankruptcies and foreclosures. The information used to develop the insurance score comes from LexisNexis Risk Solutions Inc., Transunion or Equifax Information Services LLC.",
+      "page_range": [
+        7
+      ],
+      "form_number": null
+    },
+    "page7_s2": {
+      "section_id": "page7_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "If you would like to contact us, please write to us at: Palisades Property and Casualty Insurance Company 581 Main Street, Suite 400,",
+      "page_range": [
+        7
+      ],
+      "form_number": null
+    }
+  },
+  "printed_lines": [
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "Policy Effective Date: 04/05/2027 to 04/05/2028"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Named Insured:"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Insured Property Location:"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "NEWBURGH, NY"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Summary of"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Changes"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Coverage Details"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Total Policy Premium: (including additional charges and discounts)"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "footer",
+      "cells": [
+        "This document and any attached endorsements"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Forms and Endorsements"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "Form Name",
+        "Form Number",
+        "Edition Date"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Important Messages and Details"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "Mailing Address: 86 GRAND ST APT 2, NEWBURGH, NY"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "footer",
+      "cells": [
+        "PRA 600 01/13"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "row",
+      "cells": [
+        "THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY."
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "row",
+      "cells": [
+        "DEFINITIONS",
+        "(3) The cost to tear out and replace any part"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "row",
+      "cells": [
+        "The following definition is added:",
+        "of the building or other covered property"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "row",
+      "cells": [
+        "a. \"Fungi\" means any type or form of fungus,",
+        "(4) The cost of testing of air or property to"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "row",
+      "cells": [
+        "including",
+        "mold",
+        "mildew,",
+        "confirm the absence, presence or level of"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "row",
+      "cells": [
+        "produced or released by fungi.",
+        "whether performed prior to, during or after"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "row",
+      "cells": [
+        "b. Under fungi good or that Section product are, are II, intended this on, or does for are consumption. not contained include in, any a",
+        "removal, replacement. be is a provided reason only to repair, The believe to cost the of restoration that extent such there testing that is there the will or"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "row",
+      "cells": [
+        "The following Additional Coverage is added:",
+        "when such loss or costs are a result of a Peril"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "heading",
+      "cells": [
+        "Insured Against that occurs during the policy"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "heading",
+      "cells": [
+        "used to save and preserve the property from"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "row",
+      "cells": [
+        "the most we will pay for:",
+        "further damage at and after the time the Peril"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "heading",
+      "cells": [
+        "Insured Against occurred."
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "row",
+      "cells": [
+        "coverage is the most we will pay for the total"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "row",
+      "cells": [
+        "(2) The cost to remove \"fungi\", wet or dry rot,"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "heading",
+      "cells": [
+        "endorsement; or"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "row",
+      "cells": [
+        "Includes copyrighted material of ISO, Inc., with its permission"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "SECTION I – CONDITIONS"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "row",
+      "cells": [
+        "d. If there is covered loss or damage to",
+        "Condition Q. Policy Period is replaced by the"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "covered property, not caused, in whole or in"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "Q. Policy Period"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "row",
+      "cells": [
+        "of this Additional Coverage, except to the",
+        "This policy applies to loss or costs which occur"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "row",
+      "cells": [
+        "during the policy period. (This is Condition P. in"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "causes an increase in the loss. Any such"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "row",
+      "cells": [
+        "increase in the loss will be subject to the",
+        "SECTION II – CONDITIONS"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "This coverage does not increase the limit of"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "row",
+      "cells": [
+        "04; D.12. in Form HO 00 06 and E.9. in Form HO",
+        "damages resulting from any one \"occurrence\""
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "row",
+      "cells": [
+        "00 08.)",
+        "will not be more than the Coverage E Limit Of"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "caption",
+      "cells": [
+        "SECTION I – PERILS INSURED AGAINST",
+        "same"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "row",
+      "cells": [
+        "12. Accidental Discharge Or Overflow Of Water",
+        "\"insureds\", claims made or persons injured. All"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "caption",
+      "cells": [
+        "Or Steam",
+        "\"bodily injury\" and \"property damage\" resulting"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "row",
+      "cells": [
+        "Paragraph a.(5) in Forms HO 00 02 and HO 00",
+        "repeated exposure to substantially the same"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "general harmful conditions will be considered to"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "be the result of one \"occurrence\"."
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "row",
+      "cells": [
+        "(5) To a building caused by constant or"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "row",
+      "cells": [
+        "repeated seepage or leakage of water or the",
+        "medical expense payable for \"bodily injury\" to"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "row",
+      "cells": [
+        "one person as the result of one accident will not"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "row",
+      "cells": [
+        "moisture or vapor, over a period of weeks,",
+        "be more than the Coverage F Limit Of Liability"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "months or years unless such seepage or"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "and the resulting damage is unknown to all"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "SECTION I – EXCLUSIONS"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "The following exclusion is added:"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "This exclusion does not apply:"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "footer",
+      "cells": [
+        "Includes copyrighted material of ISO, Inc., with its permission"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "row",
+      "cells": [
+        "or call 844-208-1935"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "Deductible(s)",
+        "Property Deductible: $500"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "x",
+        "A credit report or other investigative report about you may be requested in connection with the application for"
+      ]
+    }
+  ]
 }

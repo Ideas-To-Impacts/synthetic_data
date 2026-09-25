@@ -70,7 +70,7 @@
     },
     "issue_date": {
       "raw": "June 26, 2026",
-      "parsed": "2026-06-26",
+      "parsed": "06/26/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -79,11 +79,12 @@
         3,
         4
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Policy Period"
     },
     "print_date": {
       "raw": "Online Policy Summary as of June 26, 2026",
-      "parsed": "2026-06-26",
+      "parsed": "06/26/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -233,7 +234,8 @@
         5,
         6
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Insurer"
     },
     "writing_company_name": {
       "raw": "TRAVELERS PERSONAL INSURANCE COMPANY",
@@ -247,7 +249,8 @@
         5,
         6
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Insurer"
     },
     "group_name": {
       "raw": "The Travelers Indemnity Company",
@@ -323,7 +326,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Your Policy Number"
         },
         "phone": {
           "raw": "1.315.369.2280",
@@ -337,7 +341,8 @@
             5,
             6
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Your Policy Number"
         }
       }
     ]
@@ -353,7 +358,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Your Account Number"
     }
   },
   "producer": {
@@ -369,7 +375,8 @@
         5,
         6
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "BRENDAN OKAFOR"
     },
     "address": {
       "line_1": {
@@ -384,7 +391,8 @@
           5,
           6
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "MARISOL OKAFOR-REYES"
       },
       "city": {
         "raw": "OLD FORGE",
@@ -457,7 +465,8 @@
           5,
           6
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Your Policy Number"
       },
       "fax": {
         "raw": "(315) 369-2281",
@@ -487,7 +496,8 @@
         5,
         6
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Policy Number"
     },
     "policy_form_number": {
       "raw": "633",
@@ -502,7 +512,8 @@
         5,
         6
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Form"
     },
     "program_name": {
       "raw": "Travelers Protect",
@@ -518,7 +529,7 @@
     },
     "effective_date": {
       "raw": "July 9, 2026",
-      "parsed": "2026-07-09",
+      "parsed": "07/09/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -527,11 +538,12 @@
         1,
         3
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Policy Period"
     },
     "expiration_date": {
       "raw": "July 9, 2027",
-      "parsed": "2027-07-09",
+      "parsed": "07/09/2027",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -603,7 +615,8 @@
         5,
         6
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Policyholder"
     },
     "entity_type": {
       "raw": "Individual",
@@ -630,7 +643,8 @@
             5,
             6
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "72 MAIN ST"
         },
         "entity_type": {
           "raw": "Individual",
@@ -657,7 +671,8 @@
           5,
           6
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Residence Premises"
       },
       "city": {
         "raw": "BETHLEHEM",
@@ -733,7 +748,8 @@
         5,
         6
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Premium"
     },
     "total_discount_amount": {
       "raw": "$547.00",
@@ -745,7 +761,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Savings Reflected in Your Total Premium"
     }
   },
   "billing": {
@@ -763,7 +780,7 @@
     },
     "invoice_date": {
       "raw": "06/26/2026",
-      "parsed": "2026-06-26",
+      "parsed": "06/26/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -772,7 +789,8 @@
         5,
         6
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Date Paid"
     },
     "amount_due": {
       "raw": "$1,248.00",
@@ -786,11 +804,12 @@
         5,
         6
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Premium"
     },
     "due_date": {
       "raw": "Please pay the total due upon receipt",
-      "parsed": "Upon receipt",
+      "parsed": null,
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -888,7 +907,8 @@
             5,
             6
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Premium"
         },
         "period_start": {
           "raw": "07/09/2026",
@@ -928,11 +948,12 @@
             5,
             6
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Insurer"
         },
         "payment_date": {
           "raw": "06/26/2026",
-          "parsed": "2026-06-26",
+          "parsed": "06/26/2026",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -941,7 +962,8 @@
             5,
             6
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Date Paid"
         }
       }
     ]
@@ -1331,7 +1353,8 @@
             5,
             6
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Residence Premises"
         },
         "city": {
           "raw": "BETHLEHEM",
@@ -1389,7 +1412,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Year Built"
       },
       "number_of_families": {
         "raw": "1 Family",
@@ -1401,7 +1425,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "# of Families"
       },
       "number_of_stories": {
         "raw": "2",
@@ -1480,7 +1505,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Square Footage"
       },
       "construction_type": {
         "raw": "Frame",
@@ -1492,7 +1518,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Construction Type"
       },
       "exterior_wall_type": {
         "raw": "Vinyl",
@@ -1504,7 +1531,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Siding Type"
       },
       "basement_type": {
         "raw": "Basement",
@@ -1516,7 +1544,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Foundation Type"
       },
       "basement_finished_percentage": {
         "raw": "00",
@@ -1567,7 +1596,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Roof Material Type"
       }
     },
     "mortgagees": [
@@ -1685,7 +1715,8 @@
             5,
             6
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Loan Number"
         },
         "is_payor": {
           "raw": "Yes",
@@ -1711,7 +1742,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Property Coverage Deductible (All Other Perils)"
       },
       "wind_hail_deductible": {
         "raw": "$5,000",
@@ -1724,7 +1756,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Windstorm or Hail Deductible"
       }
     },
     "section_i_property_coverages": {
@@ -1738,7 +1771,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage A – Dwelling"
       },
       "coverage_b_other_structures_limit": {
         "raw": "$61,200",
@@ -1750,7 +1784,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage B – Other Structures"
       },
       "coverage_c_personal_property_limit": {
         "raw": "$306,000",
@@ -1762,7 +1797,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage C – Personal Property"
       },
       "coverage_d_loss_of_use_limit": {
         "raw": "$122,400",
@@ -1774,7 +1810,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D – Loss of Use"
       },
       "loss_assessment_limit": {
         "raw": "$1,000",
@@ -1787,7 +1824,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Property Coverage Deductible (All Other Perils)"
       },
       "ordinance_or_law_percentage": {
         "raw": "25% of Coverage A - Dwelling Limit",
@@ -1876,7 +1914,8 @@
               2,
               3
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Property Coverage Deductible (All Other Perils)"
           },
           "limit_basis": {
             "raw": "Per Loss",
@@ -1900,7 +1939,8 @@
             "page_ref": [
               2
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Fire Department Service Charge"
           },
           "sublimit_basis": {
             "raw": "Per Tree",
@@ -1962,7 +2002,8 @@
             "page_ref": [
               2
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Fire Department Service Charge"
           },
           "sublimit_basis": {
             "raw": "Per Tree",
@@ -2024,7 +2065,8 @@
             "page_ref": [
               2
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Fire Department Service Charge"
           }
         },
         {
@@ -2051,7 +2093,8 @@
               2,
               3
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Property Coverage Deductible (All Other Perils)"
           }
         },
         {
@@ -2079,7 +2122,8 @@
               2,
               3
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Property Coverage Deductible (All Other Perils)"
           }
         },
         {
@@ -2105,7 +2149,8 @@
             "page_ref": [
               2
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Landlord Furnishings"
           }
         },
         {
@@ -2197,7 +2242,8 @@
               2,
               3
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Windstorm or Hail Deductible"
           }
         }
       ]
@@ -2226,7 +2272,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Property Coverage Deductible (All Other Perils)"
       },
       "damage_to_property_of_others_limit": {
         "raw": "$1,000",
@@ -2239,7 +2286,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Property Coverage Deductible (All Other Perils)"
       },
       "additional_coverages": [
         {
@@ -2266,7 +2314,8 @@
               2,
               3
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Property Coverage Deductible (All Other Perils)"
           }
         },
         {
@@ -2294,7 +2343,8 @@
               2,
               3
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Property Coverage Deductible (All Other Perils)"
           }
         }
       ]
@@ -2437,7 +2487,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Property Coverage Deductible (All Other Perils)"
         },
         "limit_group": {
           "raw": "Personal Property – Special Limits of Liability",
@@ -2488,7 +2539,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Property Coverage Deductible (All Other Perils)"
         },
         "limit_group": {
           "raw": "Personal Property – Special Limits of Liability",
@@ -2997,7 +3049,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Fire Department Service Charge"
         },
         "limit_group": {
           "raw": "Personal Property – Special Limits of Liability",
@@ -3088,7 +3141,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Special Personal Property Coverage"
         },
         "is_included": {
           "raw": "Included*",
@@ -3100,7 +3154,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Special Personal Property Coverage"
         }
       },
       {
@@ -3126,7 +3181,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Personal Injury Coverage"
         },
         "premium": {
           "raw": "$18.00",
@@ -3138,7 +3194,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Personal Injury Coverage"
         }
       },
       {
@@ -3164,7 +3221,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Personal Property Replacement Cost Loss Settlement"
         },
         "is_included": {
           "raw": "Included*",
@@ -3176,7 +3234,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Special Personal Property Coverage"
         }
       },
       {
@@ -3203,7 +3262,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Windstorm or Hail Deductible"
         },
         "is_included": {
           "raw": "Included*",
@@ -3215,7 +3275,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Special Personal Property Coverage"
         }
       },
       {
@@ -3241,7 +3302,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Equipment Breakdown Coverage"
         },
         "limit_amount": {
           "raw": "$50,000",
@@ -3253,7 +3315,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Equipment Breakdown Coverage"
         },
         "premium": {
           "raw": "$38.00",
@@ -3265,7 +3328,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Equipment Breakdown Coverage"
         }
       }
     ],
@@ -3305,7 +3369,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Multi-Policy"
         },
         "discount_type": {
           "raw": "Discount",
@@ -3329,7 +3394,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Multi-Policy"
         },
         "discount_type": {
           "raw": "Discount",
@@ -3377,7 +3443,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Good Payer"
         },
         "discount_type": {
           "raw": "Discount",
@@ -3393,6 +3460,9 @@
     ]
   },
   "fideon:absent": [
+    "additional_fields[].label",
+    "additional_fields[].section",
+    "additional_fields[].value",
     "billing.amount_enclosed",
     "billing.bank_account_number_masked",
     "billing.bank_account_type",
@@ -4366,6 +4436,9 @@
     "premium.taxes_and_fees[].description",
     "premium.taxes_and_fees[].is_fully_earned",
     "premium.total_fees_amount",
+    "printed_lines[].cells[]",
+    "printed_lines[].kind",
+    "printed_lines[].page",
     "producer.address.country",
     "producer.address.county",
     "producer.address.county_code",
@@ -4397,6 +4470,7 @@
     "state_notices[].civil_penalty_amount",
     "state_notices[].contact_phone",
     "state_notices[].contact_website",
+    "state_notices[].copyright_notice",
     "state_notices[].edition_date",
     "state_notices[].form_reference",
     "state_notices[].form_reference_edition",
@@ -4455,6 +4529,7 @@
     "underwriting.consumer_report_disclosures[].reporting_agency_address.line_2",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.postal_code",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.state",
+    "underwriting.consumer_report_disclosures[].reporting_agency_phone",
     "underwriting.consumer_report_disclosures[].reporting_agency_website",
     "underwriting.consumer_report_disclosures[].updated_report_days",
     "underwriting.exceptions[].exception_type",
@@ -4486,6 +4561,379 @@
     "synthetic": true,
     "note": "Scanned synthetic document generated from the reference document: every original value rewritten in place with an invented one; page_ref measured on the rewritten PDF before scanning.",
     "scanner_profile": "high-quality scan, 400 dpi",
-    "page_refs_measured_on": "text-layer twin of travelers_ho3_policy_summary_receipt_invoice.pdf before scanning"
-  }
+    "page_refs_measured_on": "text-layer twin of travelers_ho3_policy_summary_receipt_invoice.pdf before scanning",
+    "prose": "text_sections, printed_label and printed_lines added by main's prose.text_sections / dfire.engine; scanned pages none read by OCR of the published scan"
+  },
+  "text_sections": {
+    "page1_s1": {
+      "section_id": "page1_s1",
+      "section_title": "Mortgagee Name and Address",
+      "section_type": "prose",
+      "raw_text": "1. LEHIGH VALLEY HOME LOANS LLC ISAOA/ATIMA",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s2": {
+      "section_id": "page1_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "a subsidiary or affiliate of The Travelers Indemnity Company One Tower Square, Hartford, CT 06183",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s3": {
+      "section_id": "page1_s3",
+      "section_title": "Discounts",
+      "section_type": "prose",
+      "raw_text": "The following discounts reduced your premium:",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page2_s1": {
+      "section_id": "page2_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Coverage E – Personal Liability - Bodily Injury and Property Damage (each occurrence) $500,000",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s2": {
+      "section_id": "page2_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "In case of loss under the Property Coverage Section, only that part of the loss over the applicable deductible will be paid (up to the coverage limit that applies).",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s3": {
+      "section_id": "page2_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "The Special Limits of Liability do not increase your Coverage C – Personal Property Limit.",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s4": {
+      "section_id": "page2_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "(5% of Coverage A - Dwelling Limit)",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page3_s1": {
+      "section_id": "page3_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "The applicable policy deductible applies unless otherwise noted.",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s2": {
+      "section_id": "page3_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Please review your policy for other Personal Property Special Limits of Liability and Additional Coverages that may apply.",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s3": {
+      "section_id": "page3_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "*Note: The additional cost or premium reduction for any optional coverage or package shown as “Included” is contained in the Total Policy Premium Amount.",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s4": {
+      "section_id": "page3_s4",
+      "section_title": "Information About Your Property",
+      "section_type": "prose",
+      "raw_text": "There are many factors that determine the premium on your policy, some of which are displayed below. If you would like a policy review, please contact your agent or Travelers Representative.",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page4_s1": {
+      "section_id": "page4_s1",
+      "section_title": "Information About Your Property (continued)",
+      "section_type": "prose",
+      "raw_text": "Online Policy Summary as of June 26, 2026",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page6_s1": {
+      "section_id": "page6_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Please cut along the line and mail the lower portion with your payment to TRAVELERS, PO BOX 660307, DALLAS, TX 75266-0307. Thank you.",
+      "page_range": [
+        6
+      ],
+      "form_number": null
+    }
+  },
+  "printed_lines": [
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "Named Insured and Mailing Address",
+        "Your Agency’s Name and Address"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Policy Information"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "For Claim Service"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Your Insurer"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "Coverage F – Medical Payments to Others (each person)"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Deductibles"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Peril Deductible"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "Special is the Limits total limit of Liability for each and loss Additional in that category. Coverages"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Named Insured BRENDAN OKAFOR"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Issued On Date"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Optional Coverages"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Optional Coverages"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "row",
+      "cells": [
+        "The Declarations along with the Optional Coverages, Optional Packages and Required Forms and"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Endorsements listed above form your Homeowners Insurance Policy."
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Please keep these documents for reference."
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "heading",
+      "cells": [
+        "Name and Mailing Address"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "heading",
+      "cells": [
+        "AMOUNT PAID"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "heading",
+      "cells": [
+        "FIRST MORTGAGEE"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "Name and Mailing Address"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "row",
+      "cells": [
+        "Phone: 1.315.369.2280 | Fax: (315) 369-2281"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "Policy Details"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "row",
+      "cells": [
+        "Make checks payable to Travelers Indemnity Company and affiliates"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "AMOUNT ENCLOSED"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "allow for continuation of coverage."
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "Coverage Level: Travelers Protect ®",
+        "Special is the Limits total limit of Liability for each and loss Additional in that category. Coverages"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "Optional Coverages",
+        "Endorsement",
+        "Limit",
+        "Premium"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "row",
+      "cells": [
+        "Year Built: 2019",
+        "Garage Type: None",
+        "Pool: No"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "row",
+      "cells": [
+        "# of Families: 1 Family",
+        "Square Footage: 2860",
+        "Age of Roof: 7"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "row",
+      "cells": [
+        "# of Stories: 2",
+        "Construction Type: Frame",
+        "Roof Material Type: Architectural Shingle"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "row",
+      "cells": [
+        "# of Bathrooms: 03",
+        "Siding Type: Vinyl"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "row",
+      "cells": [
+        "# of Employees: 00",
+        "Foundation Type: Basement"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "row",
+      "cells": [
+        "Garage - Number of Cars: 00",
+        "Finished Basement: 00"
+      ]
+    }
+  ]
 }

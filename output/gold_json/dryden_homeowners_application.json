@@ -140,7 +140,7 @@
     },
     "print_date": {
       "raw": "05/27/2025",
-      "parsed": "2025-05-27",
+      "parsed": "05/27/2025",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -196,7 +196,8 @@
         "page_ref": [
           8
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Document Reference"
       },
       "document_title": {
         "raw": "Pellingham Trask homeowner application",
@@ -208,7 +209,8 @@
         "page_ref": [
           8
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Document Title"
       },
       "document_region": {
         "raw": "Northern Virginia",
@@ -220,7 +222,8 @@
         "page_ref": [
           8
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Document Region"
       },
       "sender_name": {
         "raw": "Dana Kessler",
@@ -234,7 +237,8 @@
           8,
           9
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Name"
       },
       "sender_email": {
         "raw": "dkessler@trilakesagency.example.com",
@@ -248,7 +252,8 @@
           8,
           9
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Email Address"
       },
       "total_pages": {
         "raw": "9",
@@ -286,7 +291,8 @@
         "page_ref": [
           8
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Secondary Security"
       },
       "participants": [
         {
@@ -308,7 +314,8 @@
               8,
               9
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Insured Name"
           },
           "email": {
             "raw": "wpellingham2@example.com",
@@ -359,7 +366,8 @@
               8,
               9
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Agent"
           },
           "email": {
             "raw": "dkessler@trilakesagency.example.com",
@@ -373,7 +381,8 @@
               8,
               9
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Email Address"
           },
           "role": {
             "raw": "Agent",
@@ -1197,7 +1206,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Named Insured and Mailing Address"
     },
     "agency_name": {
       "raw": "Tri-Lakes Insurance Agency, Inc.",
@@ -1278,7 +1288,8 @@
           1,
           7
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Phone"
       }
     },
     "producer_contact_name": {
@@ -1293,7 +1304,8 @@
         8,
         9
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Name"
     },
     "producer_contact_phone": {
       "raw": "(518) 555-0147",
@@ -1306,7 +1318,8 @@
         1,
         7
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Phone"
     },
     "producer_contact_email": {
       "raw": "dkessler@trilakesagency.example.com",
@@ -1320,7 +1333,8 @@
         8,
         9
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Email Address"
     }
   },
   "policy": {
@@ -1342,7 +1356,8 @@
             6,
             7
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Policy Period"
         },
         "identifier_value": {
           "raw": "H602517",
@@ -1360,7 +1375,8 @@
             6,
             7
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "File #"
         }
       }
     ],
@@ -1374,7 +1390,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Cause of Loss Form"
     },
     "policy_form_name": {
       "raw": "Comprehensive Form",
@@ -1391,7 +1408,7 @@
     },
     "effective_date": {
       "raw": "06/01/2025",
-      "parsed": "2025-06-01",
+      "parsed": "06/01/2025",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -1403,11 +1420,12 @@
         8,
         9
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Previous Policy Expiration Date"
     },
     "expiration_date": {
       "raw": "06/01/2026",
-      "parsed": "2026-06-01",
+      "parsed": "06/01/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -1556,7 +1574,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Email"
       },
       "phones": [
         {
@@ -1647,7 +1666,8 @@
       "page_ref": [
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Delivery Preference"
     },
     "individuals": [
       {
@@ -1669,11 +1689,12 @@
             8,
             9
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Insured Name"
         },
         "date_of_birth": {
           "raw": "02/14/1961",
-          "parsed": "1961-02-14",
+          "parsed": "02/14/1961",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -1681,7 +1702,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "DOB"
         },
         "marital_status": {
           "raw": "Married",
@@ -1693,7 +1715,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Marital Status"
         },
         "occupation": {
           "raw": "retired",
@@ -1705,7 +1728,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Occupation"
         }
       },
       {
@@ -1725,11 +1749,12 @@
             6,
             7
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Insured Name"
         },
         "date_of_birth": {
           "raw": "09/30/1963",
-          "parsed": "1963-09-30",
+          "parsed": "09/30/1963",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -1737,7 +1762,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "DOB"
         },
         "marital_status": {
           "raw": "Married",
@@ -1749,7 +1775,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Marital Status"
         },
         "occupation": {
           "raw": "retired",
@@ -1761,7 +1788,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Occupation"
         }
       }
     ]
@@ -1982,7 +2010,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "County"
         }
       },
       "usage_type": {
@@ -1995,7 +2024,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Risk Description"
       },
       "number_of_families": {
         "raw": "1 Family",
@@ -2007,7 +2037,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Families"
       },
       "construction_type": {
         "raw": "Frame",
@@ -2020,7 +2051,8 @@
           1,
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Construction"
       },
       "year_built": {
         "raw": "2022",
@@ -2033,7 +2065,8 @@
           1,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Year Roof Updated"
       },
       "age_of_home": {
         "raw": "3",
@@ -2059,7 +2092,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Fire Protection"
       },
       "heating_type": {
         "raw": "Hot Air Furnace",
@@ -2071,7 +2105,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Primary Heating Type"
       },
       "heating_fuel_type": {
         "raw": "Propane",
@@ -2083,7 +2118,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Fuel Type"
       },
       "has_secondary_heating": {
         "raw": "Yes",
@@ -2132,7 +2168,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Electrical Service"
       },
       "roof_updated_within_20_years": {
         "raw": "Yes",
@@ -2160,7 +2197,8 @@
           1,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Year Roof Updated"
       },
       "roof_type": {
         "raw": "Asphalt/Architectural Shingles",
@@ -2172,7 +2210,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Roof Type"
       },
       "years_owned": {
         "raw": "3",
@@ -2198,7 +2237,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Market Value"
       },
       "is_currently_occupied": {
         "raw": "Yes",
@@ -2731,7 +2771,8 @@
           6,
           7
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Risk Type"
       },
       "territorial_zone": {
         "raw": "1",
@@ -2761,7 +2802,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Fire District"
       },
       "feet_from_hydrant": {
         "raw": "Greater than 1000 Feet",
@@ -2773,7 +2815,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Feet From Hydrant"
       },
       "distance_to_fire_station": {
         "raw": "5 Miles or Less",
@@ -2785,7 +2828,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Miles From Fire Dept"
       }
     },
     "section_i_property_coverages": {
@@ -2812,7 +2856,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage B - Other Structures"
       },
       "coverage_c_personal_property_limit": {
         "raw": "875,000",
@@ -2850,7 +2895,8 @@
         "page_ref": [
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage C"
       },
       "loss_settlement_basis": {
         "raw": "Replacement Cost",
@@ -2862,7 +2908,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Loss Settlement Building"
       },
       "personal_property_loss_settlement_basis": {
         "raw": "Replacement Cost Contents",
@@ -2874,7 +2921,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Loss Settlement Contents"
       },
       "inflation_guard_percentage": {
         "raw": "1.0% per Quarter",
@@ -2923,7 +2971,8 @@
           1,
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage L"
       },
       "coverage_f_medical_payments_per_person_limit": {
         "raw": "5,000",
@@ -2936,7 +2985,8 @@
           1,
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage B - Other Structures"
       },
       "coverage_e_personal_liability_premium": {
         "raw": "26.00",
@@ -2948,7 +2998,8 @@
         "page_ref": [
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage L"
       },
       "coverage_f_medical_payments_premium": {
         "raw": "27.00",
@@ -2960,7 +3011,8 @@
         "page_ref": [
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage M"
       },
       "additional_coverages": [
         {
@@ -3156,7 +3208,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Deductible"
       }
     },
     "optional_endorsement_coverages": [
@@ -4242,7 +4295,8 @@
           "page_ref": [
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Description"
         },
         "limit_amount": {
           "raw": "$80,000",
@@ -4255,7 +4309,8 @@
             3,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Limit"
         },
         "premium": {
           "raw": "$158.00",
@@ -4267,7 +4322,8 @@
           "page_ref": [
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Item Premium"
         },
         "form_reference": {
           "raw": "ML-48",
@@ -4337,7 +4393,8 @@
           "page_ref": [
             6
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "New Home Credit"
         },
         "discount_type": {
           "raw": "Credit",
@@ -4371,7 +4428,8 @@
           "page_ref": [
             6
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Deductible"
         },
         "form_reference": {
           "raw": "Deductible",
@@ -4397,7 +4455,8 @@
           "page_ref": [
             6
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Deductible"
         },
         "discount_type": {
           "raw": "Credit",
@@ -4433,7 +4492,8 @@
           "page_ref": [
             6
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "New Home Credit"
         },
         "discount_type": {
           "raw": "Credit",
@@ -4477,7 +4537,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Risk Description"
         },
         "address": {
           "line_1": {
@@ -4558,7 +4619,8 @@
             "page_ref": [
               1
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "County"
           }
         },
         "usage_type": {
@@ -4576,7 +4638,8 @@
             5,
             6
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Risk Description"
         },
         "premium": {
           "raw": "2,173.00",
@@ -4589,7 +4652,8 @@
             1,
             6
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Total Quoted Premium"
         }
       }
     ]
@@ -4606,7 +4670,8 @@
         "page_ref": [
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "DML-41"
       },
       "form_reference": {
         "raw": "DML-41",
@@ -4695,7 +4760,8 @@
         "page_ref": [
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Interest"
       },
       "location_reference": {
         "raw": "48 Seventh Lake Rd, Inlet, NY 13360",
@@ -4712,7 +4778,8 @@
           5,
           6
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Location # 1"
       },
       "applicable_coverages": [
         {
@@ -4725,7 +4792,8 @@
           "page_ref": [
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Applies to"
         }
       ]
     }
@@ -4741,7 +4809,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Total Quoted Premium"
     },
     "number_of_risks": {
       "raw": "1",
@@ -4771,7 +4840,8 @@
       "page_ref": [
         5
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Coverage A"
     },
     "premium_by_coverage_part": [
       {
@@ -4799,7 +4869,8 @@
           "page_ref": [
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage A"
         },
         "limit_amount": {
           "raw": "1,250,000",
@@ -4824,7 +4895,8 @@
           "page_ref": [
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage A"
         },
         "location_reference": {
           "raw": "1",
@@ -4870,7 +4942,8 @@
             1,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage C"
         },
         "limit_amount": {
           "raw": "875,000",
@@ -4895,7 +4968,8 @@
           "page_ref": [
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage C"
         },
         "location_reference": {
           "raw": "1",
@@ -4953,7 +5027,8 @@
             1,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage L"
         },
         "premium": {
           "raw": "26.00",
@@ -4965,7 +5040,8 @@
           "page_ref": [
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage L"
         },
         "location_reference": {
           "raw": "1",
@@ -5012,7 +5088,8 @@
             5,
             6
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage B - Other Structures"
         },
         "limit_amount": {
           "raw": "5,000",
@@ -5025,7 +5102,8 @@
             1,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage B - Other Structures"
         },
         "premium": {
           "raw": "27.00",
@@ -5037,7 +5115,8 @@
           "page_ref": [
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage M"
         },
         "location_reference": {
           "raw": "1",
@@ -5083,7 +5162,8 @@
           "page_ref": [
             6
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "New Home Credit"
         },
         "form_reference": {
           "raw": "ML-216",
@@ -5119,7 +5199,8 @@
           "page_ref": [
             6
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Deductible"
         },
         "amount": {
           "raw": "-1,354.00",
@@ -5131,7 +5212,8 @@
           "page_ref": [
             6
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Deductible"
         }
       },
       {
@@ -5157,7 +5239,8 @@
           "page_ref": [
             6
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "New Home Credit"
         }
       }
     ]
@@ -5234,7 +5317,8 @@
         "page_ref": [
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "DML-41"
       },
       "applies_to": {
         "raw": "Location # 1",
@@ -5256,7 +5340,8 @@
         "page_ref": [
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage C"
       }
     },
     {
@@ -5305,7 +5390,8 @@
         "page_ref": [
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Item Premium"
       },
       "limit_amount": {
         "raw": "$80,000",
@@ -5318,7 +5404,8 @@
           3,
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Limit"
       }
     },
     {
@@ -5414,7 +5501,8 @@
         "page_ref": [
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage C"
       },
       "details": {
         "raw": "1.0% per Quarter",
@@ -5500,7 +5588,8 @@
         "page_ref": [
           6
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "FMD-1"
       },
       "applies_to": {
         "raw": "Location # 1",
@@ -5522,7 +5611,8 @@
         "page_ref": [
           6
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "FMD-1"
       }
     },
     {
@@ -5571,7 +5661,8 @@
         "page_ref": [
           6
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "FMD-1"
       }
     },
     {
@@ -5619,7 +5710,8 @@
         "page_ref": [
           6
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "FMD-1"
       }
     },
     {
@@ -5667,7 +5759,8 @@
         "page_ref": [
           6
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "FMD-1"
       }
     },
     {
@@ -5715,7 +5808,8 @@
         "page_ref": [
           6
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "FMD-1"
       }
     },
     {
@@ -5763,7 +5857,8 @@
         "page_ref": [
           6
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "FMD-1"
       }
     },
     {
@@ -5811,7 +5906,8 @@
         "page_ref": [
           6
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "New Home Credit"
       },
       "details": {
         "raw": "Smoke Detectors 2% Home Security Camera System with motion detection and insured notification 2% Local Fire Alarm 2% Central Fire & /or Burglar Alarm 10%",
@@ -5849,7 +5945,8 @@
         "page_ref": [
           6
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "DMIC-PP"
       },
       "applies_to": {
         "raw": "Location # 1",
@@ -5871,7 +5968,8 @@
         "page_ref": [
           6
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "FMD-1"
       }
     }
   ],
@@ -5926,7 +6024,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Previous Insurance Carrier"
         }
       },
       {
@@ -5968,7 +6067,8 @@
             8,
             9
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Previous Policy Expiration Date"
         }
       },
       {
@@ -6277,7 +6377,8 @@
             1,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Year Roof Updated"
         }
       },
       {
@@ -7036,11 +7137,12 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Previous Insurance Carrier"
       },
       "expiration_date": {
         "raw": "06/01/2025",
-        "parsed": "2025-06-01",
+        "parsed": "06/01/2025",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -7052,7 +7154,8 @@
           8,
           9
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Previous Policy Expiration Date"
       }
     },
     "prior_cancellation_or_refusal": {
@@ -7244,11 +7347,12 @@
             8,
             9
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Agent"
         },
         "signed_date": {
           "raw": "06/01/2025 02:14PM UTC",
-          "parsed": "2025-06-01T14:14:00Z",
+          "parsed": "06/01/2025",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -7256,7 +7360,8 @@
           "page_ref": [
             7
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Date"
         }
       },
       {
@@ -7292,11 +7397,12 @@
             8,
             9
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Insured Name"
         },
         "signed_date": {
           "raw": "05/28/2025 11:42PM UTC",
-          "parsed": "2025-05-28T23:42:00Z",
+          "parsed": "05/28/2025",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -7304,12 +7410,16 @@
           "page_ref": [
             7
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Warren Pellingham"
         }
       }
     ]
   },
   "fideon:absent": [
+    "additional_fields[].label",
+    "additional_fields[].section",
+    "additional_fields[].value",
     "billing.amount_due",
     "billing.amount_enclosed",
     "billing.bank_account_number_masked",
@@ -8203,6 +8313,9 @@
     "premium.taxes_and_fees[].is_fully_earned",
     "premium.total_discount_amount",
     "premium.total_fees_amount",
+    "printed_lines[].cells[]",
+    "printed_lines[].kind",
+    "printed_lines[].page",
     "producer.address.country",
     "producer.address.county",
     "producer.address.county_code",
@@ -8227,6 +8340,7 @@
     "state_notices[].affiliate_names[]",
     "state_notices[].contact_phone",
     "state_notices[].contact_website",
+    "state_notices[].copyright_notice",
     "state_notices[].edition_date",
     "state_notices[].form_reference",
     "state_notices[].form_reference_edition",
@@ -8276,6 +8390,7 @@
     "underwriting.consumer_report_disclosures[].reporting_agency_address.line_2",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.postal_code",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.state",
+    "underwriting.consumer_report_disclosures[].reporting_agency_phone",
     "underwriting.consumer_report_disclosures[].reporting_agency_website",
     "underwriting.consumer_report_disclosures[].updated_report_days",
     "underwriting.exceptions[].exception_type",
@@ -8300,6 +8415,776 @@
     "synthetic": true,
     "note": "Scanned synthetic document generated from the reference document: every original value rewritten in place with an invented one; page_ref measured on the rewritten PDF before scanning.",
     "scanner_profile": "high-quality scan, 400 dpi",
-    "page_refs_measured_on": "text-layer twin of dryden_homeowners_application.pdf before scanning"
-  }
+    "page_refs_measured_on": "text-layer twin of dryden_homeowners_application.pdf before scanning",
+    "prose": "text_sections, printed_label and printed_lines added by main's prose.text_sections / dfire.engine; scanned pages none read by OCR of the published scan"
+  },
+  "text_sections": {
+    "page1_s1": {
+      "section_id": "page1_s1",
+      "section_title": "Dryden Mutual Insurance Company",
+      "section_type": "prose",
+      "raw_text": "12 Ellis Drive . P.O. Box 635 . Dryden, New York 13053 A New York State Advance Premium Co-Operative Fire Insurance Corporation",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s2": {
+      "section_id": "page1_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "It is agreed that the complete Named Insured for this policy reads as stated above unless indicated otherwise below.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s3": {
+      "section_id": "page1_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Risk Description: Secondary Residence (Used in all 4 seasons) Location: 48 Seventh Lake Rd, Inlet, NY 13360",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s4": {
+      "section_id": "page1_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Protective Devices: Multiple Credits. See Applied Credits Below.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page2_s1": {
+      "section_id": "page2_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Location # 1: 48 Seventh Lake Rd, Inlet, NY 13360",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s2": {
+      "section_id": "page2_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Has any company cancelled, non-renewed or refused insurance (including non-payment of premium)",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s3": {
+      "section_id": "page2_s3",
+      "section_title": "Building Utilities:",
+      "section_type": "prose",
+      "raw_text": "Primary Heating Type: Hot Air Furnace Fuel Type: Propane",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page3_s1": {
+      "section_id": "page3_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Location # 1: 48 Seventh Lake Rd, Inlet, NY 13360 Year Roof Updated: 2022",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s2": {
+      "section_id": "page3_s2",
+      "section_title": "Property Questions",
+      "section_type": "prose",
+      "raw_text": "How many years has the applicant owned this risk? 3 Market Value: $ 1,400,000",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s3": {
+      "section_id": "page3_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Describe Dog # 1: the Golden breed Retriever of each dog - 6 on yr old, premises: friendly, never bitten",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page4_s1": {
+      "section_id": "page4_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Location # 1: 48 Seventh Lake Rd, Inlet, NY 13360",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page5_s1": {
+      "section_id": "page5_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Location # 1: 48 Seventh Lake Rd, Inlet, NY 13360",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s2": {
+      "section_id": "page5_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Name and Address of Person or Organization:",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s3": {
+      "section_id": "page5_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Location of Premises: 48 Seventh Lake Rd, Inlet, NY 13360 Applies to: Coverage A, B, C, L, M, ML-48",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s4": {
+      "section_id": "page5_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Description: 960 sq ft detached garage wood frame",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s5": {
+      "section_id": "page5_s5",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Green Environmental, Safety and Efficiency Improvements Off Premises Coverage",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s6": {
+      "section_id": "page5_s6",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Extended Coverage C - Personal Property",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page6_s1": {
+      "section_id": "page6_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Location # 1: 48 Seventh Lake Rd, Inlet, NY 13360",
+      "page_range": [
+        6
+      ],
+      "form_number": null
+    },
+    "page6_s2": {
+      "section_id": "page6_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Business Property Away from Insured Premise Electronic Equipment Property on Insured Premises Dismounted Camper Bodies on Insured Premises Replacement Of Locks",
+      "page_range": [
+        6
+      ],
+      "form_number": null
+    },
+    "page6_s3": {
+      "section_id": "page6_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Extension of Coverage- Green Environmental, Safety and Efficiency Improvements Prejudgement Interest",
+      "page_range": [
+        6
+      ],
+      "form_number": null
+    },
+    "page6_s4": {
+      "section_id": "page6_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Coverage M- Medical Payments To Others Incidental Liability And Medical Payments Coverages",
+      "page_range": [
+        6
+      ],
+      "form_number": null
+    },
+    "page7_s1": {
+      "section_id": "page7_s1",
+      "section_title": "Loss History",
+      "section_type": "prose",
+      "raw_text": "Any previous property or liability losses, whether or not paid by insurance during the last 5 years, on any owned or",
+      "page_range": [
+        7
+      ],
+      "form_number": null
+    },
+    "page7_s2": {
+      "section_id": "page7_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "For questions regarding this application, please contact Agency Service Representative:",
+      "page_range": [
+        7
+      ],
+      "form_number": null
+    },
+    "page7_s3": {
+      "section_id": "page7_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "A Consumer Report may be requested by the insurer to which the application is assigned. Subsequent consumer reports may be requested in connection with an update or renewal or extension of the insurance for which this application is made. The applicant, upon request, will be informed whether or not a consumer report was requested and if such report was requested, informed of the name and address of the consumer reporting agency that furnished the report. The undersigned hereby applies for Insurance Coverage as set forth in the application and the various attached underwriting schedules and affirms that the statements and representations made herein are to the best of his or her knowledge true.",
+      "page_range": [
+        7
+      ],
+      "form_number": null
+    },
+    "page7_s4": {
+      "section_id": "page7_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Any person who knowingly and with intent to defraud any insurance company or other person files an application for insurance or statement of claim containing any materially false information, or conceals for the purpose of misleading, information concerning any fact material thereto, commits a fraudulent insurance act, which is a crime and shall also be subject to a civil penalty not to exceed five thousand dollars and the stated value of the claim for each such violation.",
+      "page_range": [
+        7
+      ],
+      "form_number": null
+    },
+    "page8_s1": {
+      "section_id": "page8_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Total Document Pages : 9 (7 page(s) attached here)",
+      "page_range": [
+        8
+      ],
+      "form_number": null
+    },
+    "page8_s2": {
+      "section_id": "page8_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0",
+      "page_range": [
+        8
+      ],
+      "form_number": null
+    },
+    "page8_s3": {
+      "section_id": "page8_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "and to do business electronically with Dana Kessler (dkessler@trilakesagency.example.com).",
+      "page_range": [
+        8
+      ],
+      "form_number": null
+    },
+    "page8_s4": {
+      "section_id": "page8_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0",
+      "page_range": [
+        8
+      ],
+      "form_number": null
+    },
+    "page8_s5": {
+      "section_id": "page8_s5",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0",
+      "page_range": [
+        8
+      ],
+      "form_number": null
+    },
+    "page8_s6": {
+      "section_id": "page8_s6",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.117 Safari/537.36",
+      "page_range": [
+        8
+      ],
+      "form_number": null
+    },
+    "page9_s1": {
+      "section_id": "page9_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0",
+      "page_range": [
+        9
+      ],
+      "form_number": null
+    },
+    "page9_s2": {
+      "section_id": "page9_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "of service and to do business electronically with Dana Kessler (dkessler@trilakesagency.example.com).",
+      "page_range": [
+        9
+      ],
+      "form_number": null
+    },
+    "page9_s3": {
+      "section_id": "page9_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0",
+      "page_range": [
+        9
+      ],
+      "form_number": null
+    },
+    "page9_s4": {
+      "section_id": "page9_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0",
+      "page_range": [
+        9
+      ],
+      "form_number": null
+    }
+  },
+  "printed_lines": [
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Agency Information"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Billing Information"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Property Coverages",
+        "Liability Coverages"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "500,000 Each Occurrence"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Each Person"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "Coverage D - Addl. Living Exp and Loss of Rent"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Rating Criteria"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "footer",
+      "cells": [
+        "Page 1"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Mortgagee Information"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Additional Interests"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Application Questions"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "X Yes"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "X Excellent",
+        "Good"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Insured Information:"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Primary Phone:"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Secondary Phone:"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "Woodstove",
+        "Freestanding Space Heater"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Explain Other:"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "footer",
+      "cells": [
+        "Page 2"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "If no, please explain:"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "None",
+        "Above Ground Pool",
+        "Island Property",
+        "Inground Pool"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Pond"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "row",
+      "cells": [
+        "Check any exposures that apply:",
+        "Fenced with Locking Gate",
+        "Diving Board"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "Water Slide",
+        "Pool Alarm"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "X No"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Is there a commercial policy for this exposure?"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "row",
+      "cells": [
+        "4 or more"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "X No"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Please explain history:"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "X No"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "Cats",
+        "Cattle",
+        "Livestock",
+        "Horses",
+        "Snakes"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Explain Other Animals:"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "footer",
+      "cells": [
+        "Page 3"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "What type of system?"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "footer",
+      "cells": [
+        "Page 4"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "heading",
+      "cells": [
+        "Annual Premium Computation and Applicable Policy Forms Requested"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "row",
+      "cells": [
+        "Please see the Forms tab in InsuranceNow for full form description and edition date."
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "heading",
+      "cells": [
+        "Coverage / Form"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "footer",
+      "cells": [
+        "Page 5"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "Annual Premium Computation and Applicable Policy Forms Requested"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "row",
+      "cells": [
+        "Please see the Forms tab in InsuranceNow for full form description and edition date."
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "Coverage / Form"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "footer",
+      "cells": [
+        "Page 6"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "heading",
+      "cells": [
+        "Billing Office Use:"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "caption",
+      "cells": [
+        "Payment Type:",
+        "Amount:"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "footer",
+      "cells": [
+        "Page 7"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "heading",
+      "cells": [
+        "Document Completion Certificate"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "heading",
+      "cells": [
+        "Sender Name"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "heading",
+      "cells": [
+        "Sender Email"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "heading",
+      "cells": [
+        "Participants"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "heading",
+      "cells": [
+        "Document History"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "heading",
+      "cells": [
+        "Timestamp"
+      ]
+    },
+    {
+      "page": 9,
+      "kind": "heading",
+      "cells": [
+        "Document History"
+      ]
+    },
+    {
+      "page": 9,
+      "kind": "heading",
+      "cells": [
+        "Timestamp"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "Total Number of Risks: 1"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "Year of Construction: 2022",
+        "Age of Home: 3"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "Rating Zone: 1",
+        "County: Hamilton"
+      ]
+    }
+  ]
 }

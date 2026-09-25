@@ -14,7 +14,8 @@
         4,
         5
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "your"
     },
     "copy_type": {
       "raw": "*INSURED COPY*",
@@ -45,7 +46,7 @@
     },
     "print_date": {
       "raw": "05/03/2024",
-      "parsed": "2024-05-03",
+      "parsed": "05/03/2024",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -100,11 +101,12 @@
         7,
         9
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Policy Number"
     },
     "transaction_effective_date": {
       "raw": "06/15/2024",
-      "parsed": "2024-06-15",
+      "parsed": "06/15/2024",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -112,11 +114,12 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Type"
     },
     "transaction_expiration_date": {
       "raw": "06/15/2025",
-      "parsed": "2025-06-15",
+      "parsed": "06/15/2025",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -124,7 +127,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Inception"
     },
     "line_of_business_as_stated": {
       "raw": "HOMEOWNER",
@@ -137,7 +141,8 @@
         1,
         4
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Type"
     }
   },
   "carrier": {
@@ -268,7 +273,8 @@
           7,
           9
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "INSURANCE"
       },
       "website": {
         "raw": "www.nycm.com",
@@ -286,7 +292,8 @@
           7,
           9
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "INSURANCE"
       }
     }
   },
@@ -327,7 +334,8 @@
           1,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "27 TAMARACK"
       },
       "state": {
         "raw": "NY",
@@ -357,7 +365,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "27 TAMARACK"
       }
     },
     "producer_code": {
@@ -370,7 +379,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Code"
     },
     "territory": {
       "raw": "3U",
@@ -419,7 +429,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Name"
       },
       "fax": {
         "raw": "845-555-0183",
@@ -431,7 +442,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Code"
       },
       "email": {
         "raw": "service@stonecrestinsbrokers.com",
@@ -443,7 +455,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Territory"
       },
       "website": {
         "raw": "www.stonecrestinsbrokers.com",
@@ -455,7 +468,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Paper Off"
       }
     }
   },
@@ -476,7 +490,8 @@
         7,
         9
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Policy Number"
     },
     "policy_type": {
       "raw": "HOMEOWNER",
@@ -489,11 +504,12 @@
         1,
         4
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Type"
     },
     "original_inception_date": {
       "raw": "06/15/2018",
-      "parsed": "2018-06-15",
+      "parsed": "06/15/2018",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -501,11 +517,12 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Inception"
     },
     "policyholder_since_date": {
       "raw": "06/15/2018",
-      "parsed": "2018-06-15",
+      "parsed": "06/15/2018",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -513,11 +530,12 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Inception"
     },
     "effective_date": {
       "raw": "06/15/2024",
-      "parsed": "2024-06-15",
+      "parsed": "06/15/2024",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -525,11 +543,12 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Type"
     },
     "expiration_date": {
       "raw": "06/15/2025",
-      "parsed": "2025-06-15",
+      "parsed": "06/15/2025",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -537,7 +556,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Inception"
     },
     "effective_time": {
       "raw": "12:01 AM",
@@ -573,7 +593,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Type"
     },
     "policy_term_months": {
       "raw": "12 MONTHS",
@@ -585,7 +606,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Term"
     },
     "is_renewal": {
       "raw": "Yes",
@@ -634,7 +656,8 @@
         3,
         4
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "NYC"
     }
   },
   "named_insured": {
@@ -651,7 +674,8 @@
         3,
         4
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "INSURED"
     },
     "entity_type": {
       "raw": "Individual",
@@ -745,7 +769,8 @@
           1,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "HOPEWELL"
       }
     },
     "individuals": [
@@ -763,7 +788,8 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "INSURED"
         },
         "insured_type": {
           "raw": "PRIMARY INSURED",
@@ -787,7 +813,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Philippa"
         },
         "gender": {
           "raw": "FEMALE",
@@ -799,7 +826,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Philippa"
         }
       },
       {
@@ -837,7 +865,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Philippa"
         },
         "gender": {
           "raw": "MALE",
@@ -849,7 +878,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Anselm"
         }
       }
     ],
@@ -906,7 +936,8 @@
         1,
         3
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "TOTAL"
     },
     "coverage_premium": {
       "raw": "$1,011.00",
@@ -918,7 +949,8 @@
       "page_ref": [
         4
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "NYC"
     },
     "forms_and_endorsements_premium": {
       "raw": "$5.00",
@@ -930,7 +962,8 @@
       "page_ref": [
         4
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "NYC"
     }
   },
   "billing": {
@@ -973,7 +1006,8 @@
           3,
           4
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "NYC"
       },
       "form_title": {
         "raw": "PREMIER PROTECTION POLICY",
@@ -998,7 +1032,8 @@
         "page_ref": [
           4
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "NYC"
       }
     },
     {
@@ -1049,7 +1084,8 @@
           3,
           4
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     {
@@ -1101,7 +1137,8 @@
           3,
           4
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     {
@@ -1116,7 +1153,8 @@
           4,
           7
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "FORM"
       },
       "edition_date": {
         "raw": "1106",
@@ -1154,7 +1192,8 @@
           3,
           4
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     {
@@ -1169,7 +1208,8 @@
           4,
           9
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "FORM"
       },
       "edition_date": {
         "raw": "8/91",
@@ -1182,7 +1222,8 @@
           4,
           9
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "EDITION"
       },
       "form_title": {
         "raw": "IMPORTANT SENIOR CITIZEN INFORMATION",
@@ -1208,7 +1249,8 @@
           3,
           4
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     {
@@ -1236,7 +1278,8 @@
           3,
           4
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "NYC"
       },
       "form_title": {
         "raw": "PROTECTIVE DEVICE CREDITS",
@@ -1261,7 +1304,8 @@
           3,
           4
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     {
@@ -1288,7 +1332,8 @@
           3,
           4
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "NYC"
       },
       "form_title": {
         "raw": "HOMEOWNER QUICK REFERENCE GUIDE",
@@ -1313,7 +1358,8 @@
           3,
           4
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     {
@@ -1339,7 +1385,8 @@
         "page_ref": [
           4
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "NYC"
       },
       "form_title": {
         "raw": "REPLACEMENT OR REPAIR COST PROTECTION - COV.A DWELLING",
@@ -1363,7 +1410,8 @@
         "page_ref": [
           4
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "NYC"
       },
       "details": {
         "raw": "GUARANTEED REPLACEMENT COVERAGE ADJUSTED UNDER XACTWARE APPRAISAL SYSTEM",
@@ -1421,7 +1469,8 @@
         "page_ref": [
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "FORM"
       },
       "edition_date": {
         "raw": "09 08",
@@ -1459,6 +1508,18 @@
           5
         ],
         "flagged": false
+      },
+      "copyright_notice": {
+        "raw": "Copyright, Insurance Services Office Inc., 1999",
+        "parsed": "Copyright, Insurance Services Office Inc., 1999",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          5
+        ],
+        "flagged": false
       }
     },
     {
@@ -1486,7 +1547,8 @@
           4,
           9
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "FORM"
       },
       "edition_date": {
         "raw": "8/91",
@@ -1499,7 +1561,8 @@
           4,
           9
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "EDITION"
       }
     }
   ],
@@ -1561,7 +1624,8 @@
             1,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "HOPEWELL"
         },
         "county": {
           "raw": "DUTCHESS",
@@ -1574,7 +1638,8 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "HOPEWELL JUNCTION"
         },
         "county_code": {
           "raw": "027",
@@ -1586,7 +1651,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "27 TAMARACK"
         },
         "sub_county": {
           "raw": "9",
@@ -1612,7 +1678,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Construction"
       },
       "doublewide_indicator": {
         "raw": "N",
@@ -1637,7 +1704,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Year"
       },
       "number_of_units": {
         "raw": "0",
@@ -1661,7 +1729,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "# of Families"
       },
       "protection_class": {
         "raw": "4Y",
@@ -1712,7 +1781,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Territory"
       },
       "replacement_cost_estimator": {
         "raw": "ADJUSTED UNDER XACTWARE APPRAISAL SYSTEM",
@@ -1883,7 +1953,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Secondary"
       },
       "distance_to_fire_station": {
         "raw": "02",
@@ -1910,7 +1981,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Deductible"
       }
     },
     "section_i_property_coverages": {
@@ -1924,7 +1996,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       },
       "coverage_b_other_structures_limit": {
         "raw": "97,200",
@@ -1960,7 +2033,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       },
       "coverage_a_dwelling_premium": {
         "raw": "$972.00",
@@ -1972,7 +2046,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       },
       "coverage_b_other_structures_premium": {
         "raw": "INCL.",
@@ -1985,7 +2060,8 @@
           3,
           4
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       },
       "coverage_c_personal_property_premium": {
         "raw": "INCL.",
@@ -1998,7 +2074,8 @@
           3,
           4
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       },
       "coverage_d_loss_of_use_premium": {
         "raw": "INCL.",
@@ -2011,7 +2088,8 @@
           3,
           4
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       },
       "inflation_guard_percentage": {
         "raw": "0.00%",
@@ -2023,7 +2101,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Inflation"
       },
       "loss_settlement_basis": {
         "raw": "GUARANTEED REPLACEMENT COVERAGE",
@@ -2049,7 +2128,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       },
       "coverage_e_personal_liability_premium": {
         "raw": "$29.00",
@@ -2061,7 +2141,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       },
       "coverage_f_medical_payments_per_person_limit": {
         "raw": "5,000",
@@ -2073,7 +2154,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       },
       "coverage_f_medical_payments_premium": {
         "raw": "$10.00",
@@ -2085,7 +2167,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     "discounts": [
@@ -2114,7 +2197,8 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "NYC"
         },
         "discount_name": {
           "raw": "AGE OF HOME DISCOUNT",
@@ -2138,7 +2222,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "NYC"
         },
         "discount_type": {
           "raw": "Credit",
@@ -2148,7 +2233,8 @@
             "source": "structural"
           },
           "page_ref": [],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "DUTCHESS"
         },
         "location_reference": {
           "raw": "1",
@@ -2186,7 +2272,8 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "NYC"
         },
         "discount_name": {
           "raw": "ALARM SYSTEM",
@@ -2210,7 +2297,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "NYC"
         },
         "discount_type": {
           "raw": "Credit",
@@ -2220,7 +2308,8 @@
             "source": "structural"
           },
           "page_ref": [],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "DUTCHESS"
         },
         "location_reference": {
           "raw": "1",
@@ -2258,7 +2347,8 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "NYC"
         },
         "discount_name": {
           "raw": "COUPLER",
@@ -2270,7 +2360,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "NYC"
         },
         "amount": {
           "raw": "$534.00",
@@ -2282,7 +2373,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "NYC"
         },
         "discount_type": {
           "raw": "Credit",
@@ -2292,7 +2384,8 @@
             "source": "structural"
           },
           "page_ref": [],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "DUTCHESS"
         },
         "location_reference": {
           "raw": "1",
@@ -2393,7 +2486,8 @@
               1,
               3
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "HOPEWELL"
           }
         },
         "premium": {
@@ -2407,7 +2501,8 @@
             1,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "TOTAL"
         }
       }
     ],
@@ -2490,7 +2585,8 @@
             "page_ref": [
               4
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "POUGHKEEPSIE"
           }
         },
         "status": {
@@ -2503,7 +2599,8 @@
           "page_ref": [
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "MID-HUDSON"
         },
         "loan_number": {
           "raw": "31045872",
@@ -2515,7 +2612,8 @@
           "page_ref": [
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "MID-HUDSON"
         },
         "rank": {
           "raw": "1",
@@ -2619,7 +2717,8 @@
             "page_ref": [
               4
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "DALLAS"
           }
         },
         "status": {
@@ -2632,7 +2731,8 @@
           "page_ref": [
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "MID-HUDSON"
         },
         "rank": {
           "raw": "2",
@@ -2698,7 +2798,8 @@
           "page_ref": [
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "NYC"
         }
       }
     ]
@@ -2728,7 +2829,8 @@
           "page_ref": [
             7
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "and"
         },
         "report_types": [
           {
@@ -2755,12 +2857,16 @@
             4,
             7
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "FORM"
         }
       }
     ]
   },
   "fideon:absent": [
+    "additional_fields[].label",
+    "additional_fields[].section",
+    "additional_fields[].value",
     "billing.amount_due",
     "billing.amount_enclosed",
     "billing.bank_account_number_masked",
@@ -3731,6 +3837,9 @@
     "premium.taxes_and_fees[].is_fully_earned",
     "premium.total_discount_amount",
     "premium.total_fees_amount",
+    "printed_lines[].cells[]",
+    "printed_lines[].kind",
+    "printed_lines[].page",
     "producer.address.country",
     "producer.address.county",
     "producer.address.county_code",
@@ -3805,6 +3914,7 @@
     "underwriting.consumer_report_disclosures[].reporting_agency_address.line_2",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.postal_code",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.state",
+    "underwriting.consumer_report_disclosures[].reporting_agency_phone",
     "underwriting.consumer_report_disclosures[].reporting_agency_website",
     "underwriting.consumer_report_disclosures[].updated_report_days",
     "underwriting.exceptions[].exception_type",
@@ -3836,6 +3946,764 @@
     "synthetic": true,
     "note": "Scanned synthetic document generated from the reference document: every original value rewritten in place with an invented one; page_ref measured on the rewritten PDF before scanning.",
     "scanner_profile": "high-quality scan, 400 dpi",
-    "page_refs_measured_on": "text-layer twin of nycm_renewal_package.pdf before scanning"
-  }
+    "page_refs_measured_on": "text-layer twin of nycm_renewal_package.pdf before scanning",
+    "prose": "text_sections, printed_label and printed_lines added by main's prose.text_sections / dfire.engine; scanned pages [1, 2, 3, 4, 5, 7, 9] read by OCR of the published scan"
+  },
+  "text_sections": {
+    "page1_s1": {
+      "section_id": "page1_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Insurance Provided By New York Central Mutual Fire Insurance Company",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page3_s1": {
+      "section_id": "page3_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "New York Central Mutual Fire Insurance Company 1899 Central Plaza East,EdmestonNY13335-1899",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s2": {
+      "section_id": "page3_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Coverage Information for Location 1 of 1",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page4_s1": {
+      "section_id": "page4_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "New York Central Mutual Fire Insurance Company 1899 Central Plaza East,EdmestonNY13335-1899",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page5_s1": {
+      "section_id": "page5_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "New York Central Mutual Fire Insurance Company 1899 Central Plaza East,Edmeston NY 13335-1899",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s2": {
+      "section_id": "page5_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "any conflict between the policy and this Advisory Notice to Policyholders, THE PROVISIONS OF THE POLICY SHALL PREVAIL.",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s3": {
+      "section_id": "page5_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Your policy does not insure for loss caused directly or indirectly by:",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s4": {
+      "section_id": "page5_s4",
+      "section_title": "Mudslide;",
+      "section_type": "prose",
+      "raw_text": "Caused by or resulting from human or animal forces or any act of nature.",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s5": {
+      "section_id": "page5_s5",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Regardless of any other cause or event contributing concurrently or in any sequence to the loss; and",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s6": {
+      "section_id": "page5_s6",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Whether or not the loss event results in widespread damage or affects a substantial area.",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s7": {
+      "section_id": "page5_s7",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "However, the exclusion of flood does not apply to direct loss by fire or explosion resulting from flood, and the exclusion of mudslide does not apply to direct loss by fire or explosion that ensues but we will pay only for the ensuing loss.",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s8": {
+      "section_id": "page5_s8",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Insurance for flood damage and damage caused by mudslide may be available through a separate flood insurance policy issued in accordance with the National Flood Insurance Program (NFIP). Flood insurance under the NFIP can provide both structure and contents coverage. Your insurance agent or company representative will be able to provide you with information regarding the availability of such flood insurance.",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s9": {
+      "section_id": "page5_s9",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "The NFiP may be contacted by phone at 1-888-379-9531, or visit the website below for more information:",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page7_s1": {
+      "section_id": "page7_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "In connection with this insurance, we previously used a credit report or obtained or used a credit- based insurance score based on information contained in that report. We may obtain or use credit information again, provided, however, that upon renewal such information may only be used to reduce premiums. An insurance score uses information from your credit report to help predict how often you are likely to file claims and how expensive those claims will be. Typical items from a credit",
+      "page_range": [
+        7
+      ],
+      "form_number": null
+    },
+    "page7_s2": {
+      "section_id": "page7_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "of revolving accounts, number of new accounts, the presence of collection accounts, bankruptcies and foreclosures. The information used to develop the insurance score comes from LexisNexis.",
+      "page_range": [
+        7
+      ],
+      "form_number": null
+    },
+    "page7_s3": {
+      "section_id": "page7_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Thank you for choosing New York Central Mutual for your insurance needs.",
+      "page_range": [
+        7
+      ],
+      "form_number": null
+    },
+    "page9_s1": {
+      "section_id": "page9_s1",
+      "section_title": "IMPORTANTSENIORCITIZENINFORMATION",
+      "section_type": "prose",
+      "raw_text": "If you are age 65 or older, you may designate a third-party to whom we shall transmit all important notices concerning your insurance policy.",
+      "page_range": [
+        9
+      ],
+      "form_number": null
+    },
+    "page9_s2": {
+      "section_id": "page9_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "You must complete the bottom portion and return it to New York Central (or your Agent) by certified mail, return receipt requested.",
+      "page_range": [
+        9
+      ],
+      "form_number": null
+    },
+    "page9_s3": {
+      "section_id": "page9_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Should you desire to terminate this agreement please send us a letter by certified mail, return receipt requested, requesting this.",
+      "page_range": [
+        9
+      ],
+      "form_number": null
+    },
+    "page9_s4": {
+      "section_id": "page9_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "The third-party designee agrees to accept and receive copies of all cancellation, nonrenewal, andconditionalrenewalnoticesthataremailedtotheseniorcitizeninsurednamedabove.",
+      "page_range": [
+        9
+      ],
+      "form_number": null
+    },
+    "page9_s5": {
+      "section_id": "page9_s5",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Designationas a third-party shall not constitute acceptance of anyliability onthe third-party for services provided to such senior citizen. The third-party designee may terminate their status as a third-party designee by providing written notice to both the insurer and the senior citizen insured.",
+      "page_range": [
+        9
+      ],
+      "form_number": null
+    }
+  },
+  "printed_lines": [
+    {
+      "page": 1,
+      "kind": "header",
+      "cells": [
+        "y CG im",
+        "New 1899",
+        "Edmeston Fire",
+        "Insurance NY"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Address",
+        "Agency",
+        "Address"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "·Transaction"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "_ Transaction",
+        "Effective"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Date",
+        "AMEST",
+        "_ Transaction",
+        "Expiration"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Protected",
+        "Since",
+        "Date",
+        "AMEST",
+        "_ Tier"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Effective",
+        "Date",
+        "_ Bill Mortgagee"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Expiration",
+        "Date"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Length"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Agency"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Fax"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Summary"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "MARITAL",
+        "GENDER"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Summary"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "ADDRESS"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "HOPEWELLJUNCTION,NY 12533-4417"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "header",
+      "cells": [
+        "y Cm",
+        "New 1899",
+        "Edmeston Fire",
+        "Insurance NY"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "INTENTIONALLY",
+        "LEFT",
+        "BLANK."
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "header",
+      "cells": [
+        "y CG im",
+        "New 1899",
+        "Edmeston Fire",
+        "Insurance NY"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Address"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "County"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "County"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Sub County"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Details"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Doublewide"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "Built",
+        "# of Apartments"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "# Units",
+        "Walls"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "Lead",
+        "Abatement",
+        "Class",
+        "AY - PROTECTED"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "Town/Row",
+        "House",
+        "District"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "Feet",
+        "Hydrant"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "Miles",
+        "Department"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Group"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Basic"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Seasonal"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Details"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "DESCRIPTION",
+        "LIMIT",
+        "AMOUNT"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "OF USE"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "PERSONAL",
+        "PER OCCURRENCE"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "MEDICAL",
+        "PAYMENTS",
+        "TO OTHERS",
+        "PERSON"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Modifications"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "DESCRIPTION",
+        "SAVINGS"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Surcharge"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "NO SURCHARGES",
+        "EXIST",
+        "FOR THIS"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "footer",
+      "cells": [
+        "Page 3 of 4"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "header",
+      "cells": [
+        "y CG im",
+        "New 1899",
+        "Edmeston Fire",
+        "Insurance NY"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "caption",
+      "cells": [
+        "NAME/ADDRESS",
+        "LOAN",
+        "ORDER"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "Detailed"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "DETAILS"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "row",
+      "cells": [
+        "HO7"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "caption",
+      "cells": [
+        "DESCRIPTION",
+        "PERCENTAGE"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "DESCRIPTION"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "header",
+      "cells": [
+        "nN y",
+        "New 1899",
+        "Insurance NY"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "row",
+      "cells": [
+        "No coverage",
+        "is provided",
+        "by this",
+        "nor",
+        "it be construed",
+        "to replace any",
+        "of your"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "caption",
+      "cells": [
+        "review",
+        "coverages",
+        "If there"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "heading",
+      "cells": [
+        "Flood; or"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "heading",
+      "cells": [
+        "is excluded:"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "header",
+      "cells": [
+        "nN y",
+        "New 1899",
+        "Insurance NY"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "row",
+      "cells": [
+        "report that",
+        "could",
+        "a score",
+        "include,",
+        "limited",
+        "following:",
+        "payment",
+        "history, number"
+      ]
+    },
+    {
+      "page": 9,
+      "kind": "header",
+      "cells": [
+        "nN y",
+        "New 1899",
+        "Insurance NY"
+      ]
+    },
+    {
+      "page": 9,
+      "kind": "caption",
+      "cells": [
+        "NOTIFY",
+        "ELECTION"
+      ]
+    },
+    {
+      "page": 9,
+      "kind": "caption",
+      "cells": [
+        "TEAR",
+        "HERE"
+      ]
+    },
+    {
+      "page": 9,
+      "kind": "heading",
+      "cells": [
+        "Policy No."
+      ]
+    },
+    {
+      "page": 9,
+      "kind": "heading",
+      "cells": [
+        "Insured's"
+      ]
+    },
+    {
+      "page": 9,
+      "kind": "heading",
+      "cells": [
+        "Mailing Address"
+      ]
+    },
+    {
+      "page": 9,
+      "kind": "heading",
+      "cells": [
+        "Mailing Address"
+      ]
+    },
+    {
+      "page": 9,
+      "kind": "caption",
+      "cells": [
+        "Insured's",
+        "Signature",
+        "Date"
+      ]
+    },
+    {
+      "page": 9,
+      "kind": "heading",
+      "cells": [
+        "Date"
+      ]
+    }
+  ]
 }

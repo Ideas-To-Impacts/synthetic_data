@@ -12,11 +12,12 @@
         3,
         4
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Plymouth Rock"
     },
     "transaction_effective_date": {
       "raw": "03/15/2025",
-      "parsed": "2025-03-15",
+      "parsed": "03/15/2025",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -25,11 +26,12 @@
         1,
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Date"
     },
     "issue_date": {
       "raw": "03/16/2025",
-      "parsed": "2025-03-16",
+      "parsed": "03/16/2025",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -40,7 +42,8 @@
         3,
         4
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "PRH"
     },
     "page_count": {
       "raw": "3",
@@ -82,8 +85,37 @@
         3,
         4
       ],
-      "flagged": false
-    }
+      "flagged": false,
+      "printed_label": "PRH"
+    },
+    "package_index": [
+      {
+        "form_number": {
+          "raw": "PRA 517",
+          "parsed": "PRA 517",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "edition_date": {
+          "raw": "01/13",
+          "parsed": "01/13",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      }
+    ]
   },
   "carrier": {
     "company_name": {
@@ -187,7 +219,8 @@
       "page_ref": [
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Agent"
     },
     "address": {
       "line_1": {
@@ -275,7 +308,7 @@
     },
     "effective_date": {
       "raw": "03/15/2025",
-      "parsed": "2025-03-15",
+      "parsed": "03/15/2025",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -284,11 +317,12 @@
         1,
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Date"
     },
     "expiration_date": {
       "raw": "03/15/2026",
-      "parsed": "2026-03-15",
+      "parsed": "03/15/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -297,7 +331,8 @@
         1,
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Expiration"
     },
     "policy_term_months": {
       "raw": "12",
@@ -334,7 +369,8 @@
         1,
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Name of Payer"
     },
     "entity_type": {
       "raw": "Individual",
@@ -358,7 +394,8 @@
       "page_ref": [
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Pay Plan"
     },
     "checks_payable_to": {
       "raw": "Plymouth Rock Assurance.",
@@ -385,7 +422,8 @@
             1,
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Name of Payer"
         },
         "payer_address": {
           "line_1": {
@@ -398,7 +436,8 @@
             "page_ref": [
               1
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Address"
           },
           "city": {
             "raw": "CORNWALL",
@@ -448,7 +487,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Payment Type"
         },
         "account_number_masked": {
           "raw": "************4129",
@@ -460,7 +500,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Account Number"
         },
         "payment_status": {
           "raw": "Processed",
@@ -472,11 +513,12 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Payment Status"
         },
         "payment_date": {
           "raw": "03/16/2025",
-          "parsed": "2025-03-16",
+          "parsed": "03/16/2025",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -487,7 +529,8 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "PRH"
         },
         "amount": {
           "raw": "$627.00",
@@ -541,7 +584,8 @@
         1,
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Annual"
     },
     "premium_by_coverage_part": [
       {
@@ -567,7 +611,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage"
         },
         "premium": {
           "raw": "$356.00",
@@ -579,7 +624,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage"
         }
       },
       {
@@ -605,7 +651,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage"
         },
         "premium": {
           "raw": "$79.00",
@@ -617,7 +664,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage"
         }
       },
       {
@@ -643,7 +691,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage"
         },
         "premium": {
           "raw": "$14.00",
@@ -681,7 +730,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage"
         },
         "premium": {
           "raw": "$34.00",
@@ -693,7 +743,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage"
         }
       },
       {
@@ -719,7 +770,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage"
         },
         "premium": {
           "raw": "Included",
@@ -732,7 +784,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage"
         }
       }
     ]
@@ -762,7 +815,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     {
@@ -789,7 +843,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     {
@@ -816,7 +871,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     {
@@ -843,7 +899,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     {
@@ -870,7 +927,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     {
@@ -897,7 +955,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     {
@@ -924,7 +983,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     {
@@ -951,7 +1011,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     {
@@ -978,7 +1039,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     {
@@ -1004,7 +1066,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Unit Owner Coverage A - Special Coverage"
       }
     },
     {
@@ -1030,7 +1093,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Loss Assessment Coverage"
       }
     },
     {
@@ -1057,7 +1121,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     {
@@ -1083,7 +1148,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Unit Owner Rental to Others"
       }
     }
   ],
@@ -1098,7 +1164,8 @@
       "page_ref": [
         3
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Authorized Representative"
     }
   },
   "homeowners": {
@@ -1154,7 +1221,8 @@
             1,
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Newburgh,"
         }
       }
     },
@@ -1169,7 +1237,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       },
       "coverage_a_dwelling_premium": {
         "raw": "$356.00",
@@ -1181,7 +1250,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       },
       "coverage_c_personal_property_limit": {
         "raw": "$25,000",
@@ -1193,7 +1263,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       },
       "coverage_c_personal_property_premium": {
         "raw": "$79.00",
@@ -1205,7 +1276,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       },
       "coverage_d_loss_of_use_limit": {
         "raw": "$10,000",
@@ -1217,7 +1289,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       },
       "coverage_d_loss_of_use_premium": {
         "raw": "$14.00",
@@ -1243,7 +1316,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       },
       "coverage_e_personal_liability_premium": {
         "raw": "$34.00",
@@ -1255,7 +1329,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       },
       "coverage_f_medical_payments_limit": {
         "raw": "$1,000",
@@ -1267,7 +1342,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       },
       "coverage_f_medical_payments_premium": {
         "raw": "Included",
@@ -1280,7 +1356,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     "deductibles": {
@@ -1294,7 +1371,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       },
       "wind_hail_deductible": {
         "raw": "$1,000",
@@ -1306,7 +1384,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     "mortgagees": [
@@ -1364,6 +1443,9 @@
     ]
   },
   "fideon:absent": [
+    "additional_fields[].label",
+    "additional_fields[].section",
+    "additional_fields[].value",
     "billing.amount_due",
     "billing.amount_enclosed",
     "billing.bank_account_number_masked",
@@ -1559,8 +1641,6 @@
     "document.mailed_date",
     "document.not_a_bill_indicator",
     "document.operator_initials",
-    "document.package_index[].edition_date",
-    "document.package_index[].form_number",
     "document.package_index[].form_title",
     "document.package_index[].index_section",
     "document.package_index[].page_reference",
@@ -2398,6 +2478,9 @@
     "premium.taxes_and_fees[].is_fully_earned",
     "premium.total_discount_amount",
     "premium.total_fees_amount",
+    "printed_lines[].cells[]",
+    "printed_lines[].kind",
+    "printed_lines[].page",
     "producer.address.country",
     "producer.address.county",
     "producer.address.county_code",
@@ -2429,6 +2512,7 @@
     "state_notices[].civil_penalty_amount",
     "state_notices[].contact_phone",
     "state_notices[].contact_website",
+    "state_notices[].copyright_notice",
     "state_notices[].edition_date",
     "state_notices[].form_reference",
     "state_notices[].form_reference_edition",
@@ -2487,6 +2571,7 @@
     "underwriting.consumer_report_disclosures[].reporting_agency_address.line_2",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.postal_code",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.state",
+    "underwriting.consumer_report_disclosures[].reporting_agency_phone",
     "underwriting.consumer_report_disclosures[].reporting_agency_website",
     "underwriting.consumer_report_disclosures[].updated_report_days",
     "underwriting.exceptions[].exception_type",
@@ -2518,6 +2603,403 @@
     "synthetic": true,
     "note": "Scanned synthetic document generated from the reference document: every original value rewritten in place with an invented one; page_ref measured on the rewritten PDF before scanning.",
     "scanner_profile": "high-quality scan, 400 dpi",
-    "page_refs_measured_on": "text-layer twin of plymouth_payment_confirmation_eoi_ho6.pdf before scanning"
-  }
+    "page_refs_measured_on": "text-layer twin of plymouth_payment_confirmation_eoi_ho6.pdf before scanning",
+    "prose": "text_sections, printed_label and printed_lines added by main's prose.text_sections / dfire.engine; scanned pages [2, 4] read by OCR of the published scan"
+  },
+  "text_sections": {
+    "page1_s1": {
+      "section_id": "page1_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "I hereby authorize Palisades Property and Casualty Insurance Company to initiate a payment on 03/16/2025 for the amount of $627.00",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page2_s1": {
+      "section_id": "page2_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "This form is not the contract of insurance.It is a memorandum of coverage limited to mortgagee/other interests, provided at their request and applicable to the dwelling or building at the location above.The provisions of the policy will prevail in all respects. This certificate of insurance does not affirmatively or negatively amend,extend,or alter the coverage afforded by the insurance policy. Should the insurance policy be cancelled by the company before the expirationdatethereof,noticewillbegiveninaccordancewiththepolicyprovisions.",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page4_s1": {
+      "section_id": "page4_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Evidence of Insurance (\"Eol\") - The Company states that it has issued to the insured named on this EOl a policy",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page4_s2": {
+      "section_id": "page4_s2",
+      "section_title": "Mortgagee Clause",
+      "section_type": "prose",
+      "raw_text": "(mortgagee includes, trustee, losspayee or other secured party)",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page4_s3": {
+      "section_id": "page4_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "If we deny your claim, that denial will not apply to a valid claim of the mortgagee, if the mortgagee:",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page4_s4": {
+      "section_id": "page4_s4",
+      "section_title": "aware;",
+      "section_type": "prose",
+      "raw_text": "b. Pays any premium due under this policy on demand if you have neglected to pay the premium; and c. Submits a signed, sworn statement of loss within 60 days after receiving notice from us of your failure to do so. Paragraphs F. Appraisal, H. Suit Against Us and J. Loss Payment under Section I -Conditions also apply to the mortgagee.",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page4_s5": {
+      "section_id": "page4_s5",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "If we decide to cancel or not to renew this policy, the mortgagee will be notified at least 10 days before the date cancellationornonrenewaltakeseffect.",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page4_s6": {
+      "section_id": "page4_s6",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "If we pay the mortgagee for any loss and deny payment to you:",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page4_s7": {
+      "section_id": "page4_s7",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "b. At our option, we may pay to the mortgagee the whole principal on the mortgage plus any accrued interest. In this event, we will receive a full assignment and transfer of the mortgage and all securities held as collateral to the mortgage debt.",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page4_s8": {
+      "section_id": "page4_s8",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Subrogation will not impair the right of the mortgagee to recover the full amount of the mortgagee's claim.",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    }
+  },
+  "printed_lines": [
+    {
+      "page": 1,
+      "kind": "header",
+      "cells": [
+        "MoreThan Plymouth JustInsurance. Rock",
+        "Payment Confirmation"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "Policy Number: NYH11487302615 Effective Date: 03/15/2025"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Policy Information"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Policy Number:"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Policy Term:"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Named Insured:"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Payer Information",
+        "Payment Details"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Signature of Account Holder (Optional)"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "footer",
+      "cells": [
+        "PRA51701/13",
+        "Page 1 of 1"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "NY 12524"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "Insured(s)",
+        "PolicyNumber:"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Effective:"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "Transaction",
+        "Effective"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Underwriting"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "be given in accordance",
+        "policy provisions."
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "Please",
+        "make",
+        "all checks",
+        "payable"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "all discounts",
+        "surcharges)"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Details"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Deductible"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "$1 4.00",
+        "Wind",
+        "Deductible"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Data"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "footer",
+      "cells": [
+        "Page 1 of 3"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "More Than Just insurance."
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Coverage Enhancements"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Description"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "footer",
+      "cells": [
+        "Page 2 of 3"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "PlymouthRock"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "caption",
+      "cells": [
+        "which",
+        ") shown.",
+        "A Mortgagee",
+        "review"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "row",
+      "cells": [
+        "a mortgagee",
+        "is named",
+        "policy, any",
+        "payable under",
+        "A will",
+        "be paid to the"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "row",
+      "cells": [
+        "appear.",
+        "If more",
+        "than",
+        "is named,",
+        "order",
+        "of payment",
+        "be the",
+        "same",
+        "order",
+        "of precedence"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "mortgages."
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "row",
+      "cells": [
+        "Notifies",
+        "of any",
+        "change in ownership,",
+        "occupancy",
+        "substantial",
+        "change",
+        "in risk",
+        "of which"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "caption",
+      "cells": [
+        "subrogated",
+        "rights of the",
+        "granted"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "footer",
+      "cells": [
+        "Page 3 of 3"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "Residence Address: 47 Orchard Ridge Ct Unit 3B",
+        "(845) 896-4172"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "CORNWALL, NY 12518",
+        "Payment Date/Time: 03/16/2025"
+      ]
+    }
+  ]
 }

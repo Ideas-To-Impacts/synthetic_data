@@ -21,7 +21,8 @@
         1,
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "POLICY TYPE"
     },
     "transaction_type": {
       "raw": "RENEWAL",
@@ -33,11 +34,12 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "NAMED INSURED(S)"
     },
     "issue_date": {
       "raw": "9/26/2025",
-      "parsed": "2025-09-26",
+      "parsed": "09/26/2025",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -45,11 +47,12 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "TRANSACTION DATE"
     },
     "transaction_effective_date": {
       "raw": "11/14/2025",
-      "parsed": "2025-11-14",
+      "parsed": "11/14/2025",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -57,11 +60,12 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "EFFECTIVE DATE"
     },
     "print_date": {
       "raw": "10/02/2026",
-      "parsed": "2026-10-02",
+      "parsed": "10/02/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -145,7 +149,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "NAIC"
     }
   },
   "producer": {
@@ -159,7 +164,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "PRODUCER SUB-CODE"
     },
     "commission_percentage": {
       "raw": ".20000",
@@ -171,7 +177,8 @@
       "page_ref": [
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "POL COMM"
     }
   },
   "policy": {
@@ -185,7 +192,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "POLICY NUMBER"
     },
     "account_id": {
       "raw": "607281540",
@@ -197,7 +205,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "BILLING ACCOUNT #"
     },
     "alternate_policy_identifiers": [
       {
@@ -223,7 +232,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "CONTRACT #"
         }
       }
     ],
@@ -238,7 +248,8 @@
         1,
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "POLICY TYPE"
     },
     "policy_form_number": {
       "raw": "HO-4",
@@ -278,7 +289,7 @@
     },
     "effective_date": {
       "raw": "11/14/2025",
-      "parsed": "2025-11-14",
+      "parsed": "11/14/2025",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -286,11 +297,12 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "EFFECTIVE DATE"
     },
     "expiration_date": {
       "raw": "11/14/2026",
-      "parsed": "2026-11-14",
+      "parsed": "11/14/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -298,11 +310,12 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "EXPIRATION DATE"
     },
     "original_inception_date": {
       "raw": "11/14/2017",
-      "parsed": "2017-11-14",
+      "parsed": "11/14/2017",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -310,7 +323,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "INCEPTION DATE"
     },
     "policy_term_months": {
       "raw": "12",
@@ -452,11 +466,12 @@
             1,
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Name"
         },
         "date_of_birth": {
           "raw": "3/17/1954",
-          "parsed": "1954-03-17",
+          "parsed": "03/17/1954",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -464,7 +479,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Date of Birth"
         }
       }
     ]
@@ -480,7 +496,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "NET CHANGE AMOUNT"
     },
     "pro_rata_premium_change": {
       "raw": "$163.00",
@@ -492,7 +509,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "NET CHANGE AMOUNT"
     },
     "premium_by_coverage_part": [
       {
@@ -507,7 +525,8 @@
             1,
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "POLICY TYPE"
         },
         "premium": {
           "raw": "$163.00",
@@ -519,7 +538,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "NET CHANGE AMOUNT"
         }
       }
     ]
@@ -654,7 +674,8 @@
             1,
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "LOCATION 1"
         },
         "city": {
           "raw": "Old Forge",
@@ -718,7 +739,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Territory"
       },
       "protection_class": {
         "raw": "9",
@@ -742,7 +764,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Construction Type"
       },
       "number_of_units": {
         "raw": "1",
@@ -767,7 +790,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Residence Type Code"
       },
       "usage_type": {
         "raw": "Primary, (non-seasonal)",
@@ -779,7 +803,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Dwelling Use"
       },
       "visibility": {
         "raw": "No",
@@ -803,7 +828,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Primary Heat Source"
       },
       "thermostat_controlled_central_heat": {
         "raw": "Yes",
@@ -927,7 +953,8 @@
             "page_ref": [
               1
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Smoke Alarm"
           },
           "is_present": {
             "raw": "Yes",
@@ -965,7 +992,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Fire District"
       },
       "distance_to_fire_station": {
         "raw": "1 Mile(s)",
@@ -977,7 +1005,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Distance to Station"
       }
     },
     "deductibles": {
@@ -991,7 +1020,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Personal Property"
       }
     },
     "section_i_property_coverages": {
@@ -1005,7 +1035,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Personal Property"
       },
       "coverage_c_personal_property_premium": {
         "raw": "$168.00",
@@ -1017,7 +1048,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Personal Property"
       },
       "coverage_d_loss_of_use_limit": {
         "raw": "14,500",
@@ -1029,7 +1061,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Loss Of Use (Cov. D)"
       },
       "coverage_d_loss_of_use_premium": {
         "raw": "Included",
@@ -1041,7 +1074,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Loss Of Use (Cov. D)"
       },
       "additional_coverages": [
         {
@@ -1079,7 +1113,8 @@
             "page_ref": [
               1
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Loss Of Use (Cov. D)"
           }
         }
       ]
@@ -1095,7 +1130,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Liability"
       },
       "coverage_e_personal_liability_premium": {
         "raw": "Included",
@@ -1107,7 +1143,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Loss Of Use (Cov. D)"
       },
       "coverage_f_medical_payments_limit": {
         "raw": "1,000",
@@ -1119,7 +1156,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Medical"
       },
       "coverage_f_medical_payments_premium": {
         "raw": "Included",
@@ -1131,7 +1169,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Loss Of Use (Cov. D)"
       }
     },
     "optional_endorsement_coverages": [
@@ -1158,7 +1197,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Personal Property Replacement Cost"
         }
       }
     ],
@@ -1186,7 +1226,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Premises Alarm"
         },
         "discount_type": {
           "raw": "Credit",
@@ -1222,7 +1263,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Multi Policy Credit"
         },
         "discount_type": {
           "raw": "Credit",
@@ -1258,7 +1300,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Loss Free Credit"
         },
         "discount_type": {
           "raw": "Credit",
@@ -1299,7 +1342,8 @@
               1,
               2
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "LOCATION 1"
           },
           "city": {
             "raw": "Old Forge",
@@ -1345,6 +1389,9 @@
     ]
   },
   "fideon:absent": [
+    "additional_fields[].label",
+    "additional_fields[].section",
+    "additional_fields[].value",
     "billing.amount_due",
     "billing.amount_enclosed",
     "billing.bank_account_number_masked",
@@ -2349,6 +2396,9 @@
     "premium.taxes_and_fees[].is_fully_earned",
     "premium.total_discount_amount",
     "premium.total_fees_amount",
+    "printed_lines[].cells[]",
+    "printed_lines[].kind",
+    "printed_lines[].page",
     "producer.address.city",
     "producer.address.country",
     "producer.address.county",
@@ -2386,6 +2436,7 @@
     "state_notices[].civil_penalty_amount",
     "state_notices[].contact_phone",
     "state_notices[].contact_website",
+    "state_notices[].copyright_notice",
     "state_notices[].edition_date",
     "state_notices[].form_reference",
     "state_notices[].form_reference_edition",
@@ -2444,6 +2495,7 @@
     "underwriting.consumer_report_disclosures[].reporting_agency_address.line_2",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.postal_code",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.state",
+    "underwriting.consumer_report_disclosures[].reporting_agency_phone",
     "underwriting.consumer_report_disclosures[].reporting_agency_website",
     "underwriting.consumer_report_disclosures[].updated_report_days",
     "underwriting.exceptions[].exception_type",
@@ -2475,6 +2527,182 @@
     "synthetic": true,
     "note": "Scanned synthetic document generated from the reference document: every original value rewritten in place with an invented one; page_ref measured on the rewritten PDF before scanning.",
     "scanner_profile": "high-quality scan, 400 dpi",
-    "page_refs_measured_on": "text-layer twin of travelers_agency_printout_ho4.pdf before scanning"
-  }
+    "page_refs_measured_on": "text-layer twin of travelers_agency_printout_ho4.pdf before scanning",
+    "prose": "text_sections, printed_label and printed_lines added by main's prose.text_sections / dfire.engine; scanned pages none read by OCR of the published scan"
+  },
+  "text_sections": {
+    "page2_s1": {
+      "section_id": "page2_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    }
+  },
+  "printed_lines": [
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "NAME PRINTED ON DEC PAGES"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "Contact Info 1"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Contact Name"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "Locations 1"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "TENANTS HOMEOWNERS UNDERWRITING (H04)"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Protection Class:",
+        "Thermostat Controlled Central Heat:"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Roof Type:"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Distance to Hydrant:"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Principal Unit-at-Risk:"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Number of Apartments:",
+        "Basement:"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Slab:"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Garage Number of Cars:"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Visibility:"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Limit",
+        "Deductible",
+        "Premium"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Total"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "footer",
+      "cells": [
+        "Locations 1"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "footer",
+      "cells": [
+        "Address",
+        "Legal Description"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "Policy Forms 3"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "Form Number",
+        "Form Name",
+        "Edition Date"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Insured Information"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "Remarks 2"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "TERM AMOUNT: $163.00"
+      ]
+    }
+  ]
 }

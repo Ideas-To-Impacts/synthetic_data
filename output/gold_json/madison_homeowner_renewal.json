@@ -42,7 +42,7 @@
     },
     "issue_date": {
       "raw": "08/28/2026",
-      "parsed": "2026-08-28",
+      "parsed": "08/28/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -51,7 +51,8 @@
         1,
         4
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Margaret A. Holloway"
     },
     "page_count": {
       "raw": "4",
@@ -108,7 +109,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Property"
     },
     "mail_to": {
       "name": {
@@ -203,7 +205,7 @@
   "signature": {
     "signature_date": {
       "raw": "08/28/2026",
-      "parsed": "2026-08-28",
+      "parsed": "08/28/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -212,7 +214,8 @@
         1,
         4
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Margaret A. Holloway"
     },
     "officer_signatures": [
       {
@@ -467,7 +470,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Work"
       }
     }
   },
@@ -485,11 +489,12 @@
         3,
         4
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Policy ID"
     },
     "effective_date": {
       "raw": "10/14/2026",
-      "parsed": "2026-10-14",
+      "parsed": "10/14/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -501,7 +506,7 @@
     },
     "expiration_date": {
       "raw": "10/14/2027",
-      "parsed": "2027-10-14",
+      "parsed": "10/14/2027",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -562,7 +567,7 @@
     },
     "policyholder_since_date": {
       "raw": "10/14/2020",
-      "parsed": "2020-10-14",
+      "parsed": "10/14/2020",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -571,11 +576,12 @@
         1,
         3
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Policyholder Since"
     },
     "original_inception_date": {
       "raw": "10/14/2020",
-      "parsed": "2020-10-14",
+      "parsed": "10/14/2020",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -584,7 +590,8 @@
         1,
         3
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Policyholder Since"
     },
     "is_continuous_renewal": {
       "raw": "Yes",
@@ -650,7 +657,8 @@
       "page_ref": [
         3
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Policy Form"
     },
     "policy_form_name": {
       "raw": "Special Building And Contents Form",
@@ -1041,7 +1049,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Location - Additional Limit"
       },
       "premium": {
         "raw": "$23.00",
@@ -1053,7 +1062,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Location - Additional Limit"
       }
     },
     {
@@ -1107,7 +1117,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage B -- Related Private Structures"
       }
     },
     {
@@ -1162,7 +1173,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Overflow Coverage"
       },
       "premium": {
         "raw": "$64.00",
@@ -1174,7 +1186,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Overflow Coverage"
       }
     },
     {
@@ -1337,7 +1350,8 @@
           1,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Deductible Type"
       },
       "premium": {
         "raw": "$15.00",
@@ -1404,7 +1418,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverages"
       }
     },
     {
@@ -1485,7 +1500,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Endorsement"
       }
     },
     {
@@ -1584,7 +1600,8 @@
       "page_ref": [
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Total"
     },
     "total_fees_amount": {
       "raw": "$0.00",
@@ -1596,7 +1613,8 @@
       "page_ref": [
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Fees"
     },
     "total_policy_premium": {
       "raw": "$2,684.00",
@@ -1608,7 +1626,8 @@
       "page_ref": [
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Total"
     }
   },
   "interested_parties": [
@@ -1633,7 +1652,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Name of Person or Organization"
       },
       "address": {
         "line_1": {
@@ -1751,7 +1771,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Interest"
       },
       "applicable_coverages": [
         {
@@ -1818,7 +1839,8 @@
           1,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Required Rating Information"
       }
     }
   ],
@@ -1910,7 +1932,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Type of Home"
       },
       "year_built": {
         "raw": "1952",
@@ -1922,7 +1945,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Year of Construction"
       },
       "construction_type": {
         "raw": "Frame",
@@ -1934,7 +1958,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Construction Type"
       },
       "protection_class": {
         "raw": "Partially Protected",
@@ -1946,7 +1971,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Fire Protection Class"
       },
       "solid_fuel_burning_device_present": {
         "raw": "Yes",
@@ -1982,7 +2008,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basement Construction"
       },
       "protective_devices": [
         {
@@ -2072,7 +2099,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage A -- Residence"
       },
       "coverage_a_dwelling_premium": {
         "raw": "$2,604.00",
@@ -2084,7 +2112,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage A -- Residence"
       },
       "coverage_b_other_structures_limit": {
         "raw": "$68,400",
@@ -2096,7 +2125,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage B -- Related Private Structures"
       },
       "coverage_b_other_structures_premium": {
         "raw": "Incl.",
@@ -2110,7 +2140,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage B -- Related Private Structures"
       },
       "coverage_c_personal_property_limit": {
         "raw": "$478,800",
@@ -2122,7 +2153,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage C -- Personal Property"
       },
       "coverage_c_personal_property_premium": {
         "raw": "Incl.",
@@ -2136,7 +2168,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage B -- Related Private Structures"
       },
       "coverage_d_loss_of_use_limit": {
         "raw": "$205,200",
@@ -2162,7 +2195,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage B -- Related Private Structures"
       },
       "loss_settlement_basis": {
         "raw": "Replacement Cost",
@@ -2174,7 +2208,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Rating Basis - Residence"
       },
       "personal_property_loss_settlement_basis": {
         "raw": "Replacement Cost (Incl. in Policy Form)",
@@ -2186,7 +2221,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Rating Basis - Personal Property"
       },
       "inflation_guard_percentage": {
         "raw": "3 Percent",
@@ -2210,7 +2246,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Location - Additional Limit"
       },
       "water_backup_and_sump_overflow_limit": {
         "raw": "$10,000",
@@ -2222,7 +2259,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Overflow Coverage"
       }
     },
     "section_ii_liability_coverages": {
@@ -2236,7 +2274,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage L -- Personal Liability"
       },
       "coverage_e_personal_liability_premium": {
         "raw": "$90.00",
@@ -2248,7 +2287,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage L -- Personal Liability"
       },
       "coverage_f_medical_payments_per_person_limit": {
         "raw": "$5,000",
@@ -2260,7 +2300,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage M -- Medical Payments To Others"
       },
       "coverage_f_medical_payments_premium": {
         "raw": "Incl.",
@@ -2274,7 +2315,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage B -- Related Private Structures"
       }
     },
     "deductibles": {
@@ -2289,7 +2331,8 @@
           1,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Deductible"
       },
       "all_other_perils_deductible_type": {
         "raw": "Disappearing Deductible",
@@ -2302,7 +2345,8 @@
           1,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Deductible Type"
       },
       "disappearing_deductible": {
         "raw": "Yes",
@@ -2339,7 +2383,8 @@
           1,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Required Rating Information"
       },
       "policy_tier": {
         "raw": "Gold",
@@ -2351,7 +2396,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Policy Tier"
       }
     },
     "discounts": [
@@ -2378,7 +2424,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Detectors"
         },
         "discount_type": {
           "raw": "Credit",
@@ -2440,7 +2487,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Claim Free Credit"
         },
         "discount_type": {
           "raw": "Credit",
@@ -2476,7 +2524,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Claim Free Credit"
         },
         "discount_type": {
           "raw": "Credit",
@@ -2492,6 +2541,9 @@
     ]
   },
   "fideon:absent": [
+    "additional_fields[].label",
+    "additional_fields[].section",
+    "additional_fields[].value",
     "billing.amount_due",
     "billing.amount_enclosed",
     "billing.bank_account_number_masked",
@@ -3468,6 +3520,9 @@
     "premium.taxes_and_fees[].description",
     "premium.taxes_and_fees[].is_fully_earned",
     "premium.total_discount_amount",
+    "printed_lines[].cells[]",
+    "printed_lines[].kind",
+    "printed_lines[].page",
     "producer.address.country",
     "producer.address.county",
     "producer.address.county_code",
@@ -3495,6 +3550,7 @@
     "state_notices[].civil_penalty_amount",
     "state_notices[].contact_phone",
     "state_notices[].contact_website",
+    "state_notices[].copyright_notice",
     "state_notices[].edition_date",
     "state_notices[].form_reference",
     "state_notices[].form_reference_edition",
@@ -3553,6 +3609,7 @@
     "underwriting.consumer_report_disclosures[].reporting_agency_address.line_2",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.postal_code",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.state",
+    "underwriting.consumer_report_disclosures[].reporting_agency_phone",
     "underwriting.consumer_report_disclosures[].reporting_agency_website",
     "underwriting.consumer_report_disclosures[].updated_report_days",
     "underwriting.exceptions[].exception_type",
@@ -3584,6 +3641,350 @@
     "synthetic": true,
     "note": "Scanned synthetic document generated from the reference document: every original value rewritten in place with an invented one; page_ref measured on the rewritten PDF before scanning.",
     "scanner_profile": "high-quality scan, 400 dpi",
-    "page_refs_measured_on": "text-layer twin of madison_homeowner_renewal.pdf before scanning"
-  }
+    "page_refs_measured_on": "text-layer twin of madison_homeowner_renewal.pdf before scanning",
+    "prose": "text_sections, printed_label and printed_lines added by main's prose.text_sections / dfire.engine; scanned pages none read by OCR of the published scan"
+  },
+  "text_sections": {
+    "page1_s1": {
+      "section_id": "page1_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "POLICY IS ISSUED ON THE CO-OPERATIVE ASSESSMENT PLAN@@@@ DECLARATIONS DOES NOT SUPERSEDE ANY CANCELLATION OR NON-RENEWAL NOTICES This policy: (1) replaces all previously issued policy Declarations, if any. (2) applies only to accidents, occurrences, or losses which happen during the policy period shown. (3) applies only to those coverages shown below for which a limit of liability or premium charge is shown. If *** appears in the coverage limit field, a coverage limit either does not apply or is described on the applicable endorsement form(s). \"Our\" limit of liability for each coverage shall not be more than the amount stated for such coverage, subject to all the terms of this policy.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s2": {
+      "section_id": "page1_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "The Described Location covered by this policy is located at the address below unless otherwise stated.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page2_s1": {
+      "section_id": "page2_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "MM HO 5140 09 19 Additional Insured -- Specified",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s2": {
+      "section_id": "page2_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "MM HO 5346 09 19 Equipment Breakdown Enhancement",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s3": {
+      "section_id": "page2_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "HO 2550 01 06 Loss Assessment Coverage - Described",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s4": {
+      "section_id": "page2_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "HO 2584 01 06 Automatic Adjustment Of Limits - Annual",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s5": {
+      "section_id": "page2_s5",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "HO 2708 07 11 Water Back Up And Sump Discharge Or",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s6": {
+      "section_id": "page2_s6",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "HO 6516 01 06 Protective Devices - Deadbolts and Smoke",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page3_s1": {
+      "section_id": "page3_s1",
+      "section_title": "Required Rating Information: Property 1",
+      "section_type": "prose",
+      "raw_text": "Policy Form: HO 0005 -- Special Building And Contents Form Policy Tier: Gold",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s2": {
+      "section_id": "page3_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Rating Basis - Residence: Replacement Cost Deductible: $1,000",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s3": {
+      "section_id": "page3_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Rating Basis - Personal Property: Replacement Cost (Incl. in Policy Form) Occupancy Type: Primary",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s4": {
+      "section_id": "page3_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Type of Home: 1 Family - Freestanding Year of Construction: 1952",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s5": {
+      "section_id": "page3_s5",
+      "section_title": "Additional Insured Information",
+      "section_type": "prose",
+      "raw_text": "Name of Person or Organization: Seventh Lake Shores Association Address of Person or Organization: 12 Lakeview Ln; Inlet, NY 13360 Interest: Deeded Land Owner",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s6": {
+      "section_id": "page3_s6",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Applicable Coverage(s): Coverage L -- Personal Liability; Coverage M -- Medical Payments To Others Other Coverage(s) As Specified: NA",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s7": {
+      "section_id": "page3_s7",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Basement Construction: Finished or Partially Finished Water Back Up And Sump Discharge Or Overflow Coverage Deductible: The Policy Deductible applies.",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s8": {
+      "section_id": "page3_s8",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "This policy is written on a continuous basis. Each period of one (1) year, ending on the annual anniversary date of this policy, constitutes a separate policy period. 1. The Policy Term on this Declarations began at 12:01 Standard Time at the described location for twelve (12) months from 10/14/2020 and for successive twelve (12) month Policy Terms as stated below. 2. This policy may be continued by payment of the required premium for the next Policy Term. The premium must be paid to \"us\" as specified in \"our\" premium notice. 3. Under the laws of this state, \"we\" may be entitled not to renew this policy under some circumstances. 4. If any of the forms attached to \"your\" policy are revised, \"we\" will furnish \"you\" with a copy of the revised form at renewal time.",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s9": {
+      "section_id": "page3_s9",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "5. If \"we\" adopt any revision of forms or endorsements during the policy period which will broaden coverage under this policy without additional premium the broadened coverage will automatically apply to this policy.",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page4_s1": {
+      "section_id": "page4_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Provisions Required by law to be Stated in this Policy: This company is an Assessment Cooperative Fire Insurance Company having by-laws and special regulations relating to meetings of members, election of directors, rights and obligations of members and liability of members to assessment as printed within the policy jacket.",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    }
+  },
+  "printed_lines": [
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "Phone: 315-687-3211 @@@@@@@@ www.mminsco.com"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Mail To:",
+        "Named Insured(s):"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Policy Term Effective Date:",
+        "Policy Term Expiration Date:"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "10/14/2026, 12:01AM Standard Time",
+        "10/14/2027, 12:01AM Standard Time"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Property Coverages"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "Coverage D -- Additional Living Costs And Loss Of Rent"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Liability Coverages"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Coverage Endorsements"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Policy Subject to the Following Forms and Endorsements:"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "footer",
+      "cells": [
+        "Page 1 of 4"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Coverage Endorsements"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Credits / Debits"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Coverage Premium:"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "footer",
+      "cells": [
+        "Page 2 of 4"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "SUPPLEMENTAL DECLARATIONS AND RATING INFORMATION:"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "footer",
+      "cells": [
+        "Page 3 of 4"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "END OF POLICY DECLARATIONS"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "footer",
+      "cells": [
+        "Page 4 of 4"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "footer",
+      "cells": [
+        "DEC (7/2013)",
+        "Policy Number: MM-2020-1178",
+        "Page 1 of 4"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Solid Fuel Burning Device(s): Yes"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Swimming Pool: No"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "row",
+      "cells": [
+        "@@@@@@@8@@@@@@CONTINUOUS RENEWAL PLAN:@@@@"
+      ]
+    }
+  ]
 }

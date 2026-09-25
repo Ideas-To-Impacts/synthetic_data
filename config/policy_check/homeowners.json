@@ -9,7 +9,7 @@
     "version": "1.4.0",
     "line_of_business_as_supplied": "Homeowners",
     "line_specific_block": "homeowners",
-    "field_count": 1210,
+    "field_count": 1212,
     "corpus_document_count": 10,
     "corpus_carrier_count": 4,
     "aliased_fields": 780,
@@ -130,7 +130,7 @@
             "Transaction Effective Date"
           ],
           "fideon:value_type": "date",
-          "description": "Transaction effective date (Document). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Amended\", \"Amended Date\", \"Amended Declarations Page as of\", \"As of\"."
+          "description": "Transaction effective date (Document). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Amended\", \"Amended Date\", \"Amended Declarations Page as of\", \"As of\"."
         },
         "issue_date": {
           "$ref": "#/$defs/FieldValue",
@@ -140,7 +140,7 @@
             "TRANSACTION DATE"
           ],
           "fideon:value_type": "date",
-          "description": "Issue date (Document). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Issue Date\", \"Issued On Date\", \"TRANSACTION DATE\"."
+          "description": "Issue date (Document). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Issue Date\", \"Issued On Date\", \"TRANSACTION DATE\"."
         },
         "print_date": {
           "$ref": "#/$defs/FieldValue",
@@ -155,7 +155,7 @@
             "PROCESSING DATE"
           ],
           "fideon:value_type": "date",
-          "description": "Print date (Document). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Date Printed\", \"Date Summary Printed\", \"Last Updated\", \"Online Policy Summary as of\"."
+          "description": "Print date (Document). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Date Printed\", \"Date Summary Printed\", \"Last Updated\", \"Online Policy Summary as of\"."
         },
         "page_count": {
           "$ref": "#/$defs/FieldValue",
@@ -249,7 +249,7 @@
             "Transaction Expiration"
           ],
           "fideon:value_type": "date",
-          "description": "Transaction expiration date (Document). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Transaction Expiration\"."
+          "description": "Transaction expiration date (Document). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Transaction Expiration\"."
         },
         "term_sequence": {
           "$ref": "#/$defs/FieldValue",
@@ -265,7 +265,7 @@
             "Date Mailed"
           ],
           "fideon:value_type": "date",
-          "description": "Mailed date (Document). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Date Mailed\"."
+          "description": "Mailed date (Document). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Date Mailed\"."
         },
         "print_time": {
           "$ref": "#/$defs/FieldValue",
@@ -386,7 +386,7 @@
                   "Changes made"
                 ],
                 "fideon:value_type": "date",
-                "description": "Effective date (Document / Changes). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Changes made\"."
+                "description": "Effective date (Document / Changes). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Changes made\"."
               },
               "location_reference": {
                 "$ref": "#/$defs/FieldValue",
@@ -936,7 +936,7 @@
             "received_date": {
               "$ref": "#/$defs/FieldValue",
               "fideon:value_type": "date",
-              "description": "Received date (Carrier / Surplus lines filing). Date; parsed is ISO yyyy-mm-dd."
+              "description": "Received date (Carrier / Surplus lines filing). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats)."
             },
             "document_id": {
               "$ref": "#/$defs/FieldValue",
@@ -1665,7 +1665,7 @@
             "Start Date"
           ],
           "fideon:value_type": "date",
-          "description": "Effective date (Policy). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Both dates\", \"Effective Date\", \"Effective Date Of Policy\", \"Policy Effective\"."
+          "description": "Effective date (Policy). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Both dates\", \"Effective Date\", \"Effective Date Of Policy\", \"Policy Effective\"."
         },
         "expiration_date": {
           "$ref": "#/$defs/FieldValue",
@@ -1681,7 +1681,7 @@
             "to"
           ],
           "fideon:value_type": "date",
-          "description": "Expiration date (Policy). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Expiration Date\", \"Expiry Date\", \"Policy Expiration\", \"Policy Expiration Date\"."
+          "description": "Expiration date (Policy). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Expiration Date\", \"Expiry Date\", \"Policy Expiration\", \"Policy Expiration Date\"."
         },
         "effective_time": {
           "$ref": "#/$defs/FieldValue",
@@ -1711,7 +1711,7 @@
         "anniversary_date": {
           "$ref": "#/$defs/FieldValue",
           "fideon:value_type": "date",
-          "description": "Anniversary date (Policy). Date; parsed is ISO yyyy-mm-dd."
+          "description": "Anniversary date (Policy). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats)."
         },
         "is_renewal": {
           "$ref": "#/$defs/FieldValue",
@@ -1726,7 +1726,7 @@
         "cancellation_date": {
           "$ref": "#/$defs/FieldValue",
           "fideon:value_type": "date",
-          "description": "Cancellation date (Policy). Date; parsed is ISO yyyy-mm-dd."
+          "description": "Cancellation date (Policy). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats)."
         },
         "cancellation_reason": {
           "$ref": "#/$defs/FieldValue",
@@ -1736,7 +1736,7 @@
         "nonrenewal_notice_date": {
           "$ref": "#/$defs/FieldValue",
           "fideon:value_type": "date",
-          "description": "Nonrenewal notice date (Policy). Date; parsed is ISO yyyy-mm-dd."
+          "description": "Nonrenewal notice date (Policy). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats)."
         },
         "audit_frequency": {
           "$ref": "#/$defs/FieldValue",
@@ -1801,7 +1801,7 @@
             "Protected Since Date"
           ],
           "fideon:value_type": "date",
-          "description": "Policyholder since date (Policy). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Continuously Insured Since\", \"Customer Since\", \"Insured Since\", \"Policyholder Since\"."
+          "description": "Policyholder since date (Policy). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Continuously Insured Since\", \"Customer Since\", \"Insured Since\", \"Policyholder Since\"."
         },
         "original_inception_date": {
           "$ref": "#/$defs/FieldValue",
@@ -1810,7 +1810,7 @@
             "Inception Date"
           ],
           "fideon:value_type": "date",
-          "description": "Original inception date (Policy). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"INCEPTION DATE\", \"Inception Date\"."
+          "description": "Original inception date (Policy). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"INCEPTION DATE\", \"Inception Date\"."
         },
         "is_continuous_renewal": {
           "$ref": "#/$defs/FieldValue",
@@ -2263,7 +2263,7 @@
                   "Start Date"
                 ],
                 "fideon:value_type": "date",
-                "description": "Effective date (Named insured / Additional named insureds). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Both dates\", \"Start Date\"."
+                "description": "Effective date (Named insured / Additional named insureds). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Both dates\", \"Start Date\"."
               },
               "address": {
                 "type": "object",
@@ -2375,7 +2375,7 @@
                   "DOB"
                 ],
                 "fideon:value_type": "date",
-                "description": "Date of birth (Named insured / Individuals). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Date of Birth\", \"DOB\"."
+                "description": "Date of birth (Named insured / Individuals). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Date of Birth\", \"DOB\"."
               },
               "marital_status": {
                 "$ref": "#/$defs/FieldValue",
@@ -2547,7 +2547,7 @@
                 "Signature of Senior Citizen Insured"
               ],
               "fideon:value_type": "date",
-              "description": "Insured signature date (Named insured / Third party designee). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Date\", \"Senior Citizen Insured's Signature\", \"Signature\", \"Signature of Insured\"."
+              "description": "Insured signature date (Named insured / Third party designee). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Date\", \"Senior Citizen Insured's Signature\", \"Signature\", \"Signature of Insured\"."
             },
             "designee_signature_date": {
               "$ref": "#/$defs/FieldValue",
@@ -2559,7 +2559,7 @@
                 "Third-Party Designee"
               ],
               "fideon:value_type": "date",
-              "description": "Designee signature date (Named insured / Third party designee). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Acceptance Signature of Third Party Designee\", \"Date\", \"Signature of Third Party \"Designee\"\", \"Signature of Third Party Designee\"."
+              "description": "Designee signature date (Named insured / Third party designee). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Acceptance Signature of Third Party Designee\", \"Date\", \"Signature of Third Party \"Designee\"\", \"Signature of Third Party Designee\"."
             },
             "eligibility_age": {
               "$ref": "#/$defs/FieldValue",
@@ -2679,7 +2679,7 @@
                 "Date of Birth"
               ],
               "fideon:value_type": "date",
-              "description": "Insured date of birth (Named insured / Third party designee). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Date of Birth\"."
+              "description": "Insured date of birth (Named insured / Third party designee). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Date of Birth\"."
             }
           },
           "fideon:aliases": [
@@ -3794,7 +3794,7 @@
         "terrorism_rejection_date": {
           "$ref": "#/$defs/FieldValue",
           "fideon:value_type": "date",
-          "description": "Terrorism rejection date (Terrorism). Date; parsed is ISO yyyy-mm-dd."
+          "description": "Terrorism rejection date (Terrorism). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats)."
         },
         "certified_acts_limit": {
           "$ref": "#/$defs/FieldValue",
@@ -3904,7 +3904,7 @@
             "Please pay the total due upon receipt"
           ],
           "fideon:value_type": "date",
-          "description": "Due date (Billing). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Please pay the total due upon receipt\"."
+          "description": "Due date (Billing). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Please pay the total due upon receipt\"."
         },
         "installments": {
           "type": "array",
@@ -3919,7 +3919,7 @@
               "due_date": {
                 "$ref": "#/$defs/FieldValue",
                 "fideon:value_type": "date",
-                "description": "Due date (Billing / Installments). Date; parsed is ISO yyyy-mm-dd."
+                "description": "Due date (Billing / Installments). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats)."
               },
               "amount": {
                 "$ref": "#/$defs/FieldValue",
@@ -4003,7 +4003,7 @@
             "Mortgage Invoice"
           ],
           "fideon:value_type": "date",
-          "description": "Invoice date (Billing). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Mortgage Invoice\"."
+          "description": "Invoice date (Billing). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Mortgage Invoice\"."
         },
         "amount_enclosed": {
           "$ref": "#/$defs/FieldValue",
@@ -4136,7 +4136,7 @@
                   "to initiate a payment on"
                 ],
                 "fideon:value_type": "date",
-                "description": "Payment date (Billing / Payments). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Date Paid\", \"Payment Date/Time\", \"to initiate a payment on\"."
+                "description": "Payment date (Billing / Payments). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Date Paid\", \"Payment Date/Time\", \"to initiate a payment on\"."
               },
               "amount": {
                 "$ref": "#/$defs/FieldValue",
@@ -4515,7 +4515,7 @@
               "DATE"
             ],
             "fideon:value_type": "date",
-            "description": "Loss date (Loss history). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"DATE\"."
+            "description": "Loss date (Loss history). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"DATE\"."
           },
           "claim_number": {
             "$ref": "#/$defs/FieldValue",
@@ -4846,6 +4846,11 @@
             "$ref": "#/$defs/FieldValue",
             "fideon:value_type": "text",
             "description": "Form reference edition (State notices). Text as printed."
+          },
+          "copyright_notice": {
+            "$ref": "#/$defs/FieldValue",
+            "fideon:value_type": "text",
+            "description": "Copyright notice (State notices). Text as printed."
           }
         }
       },
@@ -5058,7 +5063,7 @@
             "DATE"
           ],
           "fideon:value_type": "date",
-          "description": "Signature date (Signature). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"DATE\"."
+          "description": "Signature date (Signature). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"DATE\"."
         },
         "countersignature_state": {
           "$ref": "#/$defs/FieldValue",
@@ -5076,7 +5081,7 @@
             "Countersignature Date"
           ],
           "fideon:value_type": "date",
-          "description": "Countersignature date (Signature). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Countersignature Date\"."
+          "description": "Countersignature date (Signature). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Countersignature Date\"."
         },
         "officer_signatures": {
           "type": "array",
@@ -5391,7 +5396,7 @@
             "purchase_date": {
               "$ref": "#/$defs/FieldValue",
               "fideon:value_type": "date",
-              "description": "Purchase date (Homeowners / Dwelling). Date; parsed is ISO yyyy-mm-dd."
+              "description": "Purchase date (Homeowners / Dwelling). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats)."
             },
             "swimming_pool": {
               "$ref": "#/$defs/FieldValue",
@@ -5844,7 +5849,7 @@
                 "CERTIFICATE OF OCCUPANCY DATE"
               ],
               "fideon:value_type": "date",
-              "description": "Certificate of occupancy date (Homeowners / Dwelling). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"CERTIFICATE OF OCCUPANCY DATE\"."
+              "description": "Certificate of occupancy date (Homeowners / Dwelling). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"CERTIFICATE OF OCCUPANCY DATE\"."
             },
             "gated_community": {
               "$ref": "#/$defs/FieldValue",
@@ -8141,7 +8146,7 @@
                   "APPR. DATE"
                 ],
                 "fideon:value_type": "date",
-                "description": "Appraisal date (Homeowners / Scheduled personal property). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"APPR. DATE\"."
+                "description": "Appraisal date (Homeowners / Scheduled personal property). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"APPR. DATE\"."
               },
               "premium": {
                 "$ref": "#/$defs/FieldValue",
@@ -10205,7 +10210,7 @@
                   "CERTIFICATE OF OCCUPANCY DATE"
                 ],
                 "fideon:value_type": "date",
-                "description": "Certificate of occupancy date (Homeowners / Scheduled locations). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"CERTIFICATE OF OCCUPANCY DATE\"."
+                "description": "Certificate of occupancy date (Homeowners / Scheduled locations). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"CERTIFICATE OF OCCUPANCY DATE\"."
               },
               "months_occupied_annually": {
                 "$ref": "#/$defs/FieldValue",
@@ -10792,7 +10797,7 @@
                 "Previous Policy Expiration Date"
               ],
               "fideon:value_type": "date",
-              "description": "Expiration date (Underwriting / Prior insurance). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Previous Policy Expiration Date\"."
+              "description": "Expiration date (Underwriting / Prior insurance). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Previous Policy Expiration Date\"."
             },
             "notes": {
               "$ref": "#/$defs/FieldValue",
@@ -10909,7 +10914,7 @@
                   "ORDERED DATE"
                 ],
                 "fideon:value_type": "date",
-                "description": "Ordered date (Underwriting / Insurance scores). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"ORDERED DATE\"."
+                "description": "Ordered date (Underwriting / Insurance scores). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"ORDERED DATE\"."
               },
               "report_vendor": {
                 "$ref": "#/$defs/FieldValue",
@@ -11105,6 +11110,11 @@
                 ],
                 "fideon:value_type": "text",
                 "description": "Form reference (Underwriting / Consumer report disclosures). Text as printed. Printed as e.g. \"FORM\"."
+              },
+              "reporting_agency_phone": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:value_type": "text",
+                "description": "Reporting agency phone (Underwriting / Consumer report disclosures). Text as printed."
               }
             }
           },
@@ -11129,6 +11139,70 @@
         }
       },
       "description": "Section: Underwriting (document root)."
+    },
+    "additional_fields": {
+      "type": "array",
+      "description": "Printed label/value pairs that have no dedicated field above, kept as key and value: the label as the document prints it, the section heading it sits under, and the value as a FieldValue (raw, parsed, page_ref).",
+      "items": {
+        "type": "object",
+        "properties": {
+          "section": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "label": {
+            "type": "string"
+          },
+          "value": {
+            "$ref": "#/$defs/FieldValue"
+          }
+        },
+        "required": [
+          "label",
+          "value"
+        ]
+      }
+    },
+    "text_sections": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/TextSection"
+      }
+    },
+    "printed_lines": {
+      "type": "array",
+      "description": "Printed lines that no keyed field, label or prose section already carries: section headings, column headers, captions, page headers and footers, empty labels. Together with the keyed fields and text_sections, nothing the page prints is missing from the gold.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "integer"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "heading",
+              "caption",
+              "header",
+              "footer",
+              "row"
+            ]
+          },
+          "cells": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "page",
+          "kind",
+          "cells"
+        ]
+      }
     }
   },
   "$defs": {
@@ -11185,6 +11259,48 @@
           "type": "boolean"
         }
       }
+    },
+    "TextSection": {
+      "type": "object",
+      "description": "A block of printed text exactly as the document carries it: a prose paragraph, notice, condition or disclaimer, or the page's remaining label/footer text. Nothing the page prints is left out of the gold; structured fields above hold the values, these hold the words.",
+      "properties": {
+        "section_id": {
+          "type": "string"
+        },
+        "section_title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "section_type": {
+          "type": "string",
+          "enum": [
+            "prose",
+            "other"
+          ]
+        },
+        "raw_text": {
+          "type": "string"
+        },
+        "page_range": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "form_number": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "section_id",
+        "raw_text",
+        "page_range"
+      ]
     }
   }
 }
