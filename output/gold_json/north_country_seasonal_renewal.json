@@ -11,7 +11,8 @@
         1,
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "North Country Insurance Company"
     },
     "document_title_as_stated": {
       "raw": "Seasonal Homeowners Policy Declaration",
@@ -24,7 +25,8 @@
         1,
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "North Country Insurance Company"
     },
     "line_of_business_as_stated": {
       "raw": "Seasonal Homeowners",
@@ -54,7 +56,7 @@
     },
     "print_date": {
       "raw": "03/23/2026",
-      "parsed": "2026-03-23",
+      "parsed": "03/23/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -63,7 +65,8 @@
         1,
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Process Date"
     },
     "page_count": {
       "raw": "Page 1 of 2",
@@ -75,7 +78,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Agent Copy"
     },
     "copy_type": {
       "raw": "Agent Copy",
@@ -210,7 +214,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Agency"
     },
     "agency_name": {
       "raw": "LAKE COUNTRY INSURANCE AGENCY",
@@ -222,7 +227,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Theron Blackwood"
     },
     "address": {
       "line_1": {
@@ -235,7 +241,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Imogen Blackwood"
       },
       "city": {
         "raw": "OLD FORGE",
@@ -286,7 +293,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Phone Number"
       },
       "email": {
         "raw": "office@lakecountryins.com",
@@ -298,7 +306,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Email"
       }
     }
   },
@@ -314,11 +323,12 @@
         1,
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Policy Number"
     },
     "original_inception_date": {
       "raw": "04/22/2026",
-      "parsed": "2026-04-22",
+      "parsed": "04/22/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -327,11 +337,12 @@
         1,
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Effective Date"
     },
     "effective_date": {
       "raw": "04/22/2026",
-      "parsed": "2026-04-22",
+      "parsed": "04/22/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -340,11 +351,12 @@
         1,
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Effective Date"
     },
     "expiration_date": {
       "raw": "04/22/2029",
-      "parsed": "2029-04-22",
+      "parsed": "04/22/2029",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -565,7 +577,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Interest Type"
       },
       "description_of_interest": {
         "raw": "Owner By Deed (ML-41)",
@@ -577,7 +590,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Interest Type"
       },
       "form_reference": {
         "raw": "ML-41",
@@ -602,7 +616,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Name and Address"
       },
       "address": {
         "line_1": {
@@ -665,7 +680,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Assigned To"
       },
       "is_payor": {
         "raw": "No",
@@ -692,7 +708,8 @@
       "page_ref": [
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Total Policy Premium"
     },
     "basic_premium": {
       "raw": "$4,297.00",
@@ -704,7 +721,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Basic Premium"
     },
     "forms_and_endorsements_premium": {
       "raw": "$1,159.00",
@@ -742,7 +760,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Cov A - Dwelling"
         },
         "location_reference": {
           "raw": "Loc 1/Bldg 1",
@@ -755,7 +774,8 @@
             1,
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Cov A - Dwelling"
         },
         "deductible_amount": {
           "raw": "$1000",
@@ -767,7 +787,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Cov A - Dwelling"
         },
         "premium": {
           "raw": "$4,482.00",
@@ -779,7 +800,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Cov A - Dwelling"
         }
       },
       {
@@ -805,7 +827,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Cov B - Other Structures"
         },
         "location_reference": {
           "raw": "Loc 1/Bldg 1",
@@ -818,7 +841,8 @@
             1,
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Cov A - Dwelling"
         },
         "deductible_amount": {
           "raw": "$1000",
@@ -830,7 +854,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Cov A - Dwelling"
         },
         "is_included": {
           "raw": "Included",
@@ -843,7 +868,8 @@
             1,
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Cov B - Other Structures"
         }
       },
       {
@@ -869,7 +895,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Cov C - Personal Property"
         },
         "location_reference": {
           "raw": "Loc 1/Bldg 1",
@@ -882,7 +909,8 @@
             1,
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Cov A - Dwelling"
         },
         "deductible_amount": {
           "raw": "$1000",
@@ -894,7 +922,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Cov A - Dwelling"
         },
         "premium": {
           "raw": "($250.00)",
@@ -906,7 +935,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Cov C - Personal Property"
         }
       },
       {
@@ -932,7 +962,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Cov D - Addl Living Exp/Loss of Rents"
         },
         "location_reference": {
           "raw": "Loc 1/Bldg 1",
@@ -945,7 +976,8 @@
             1,
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Cov A - Dwelling"
         },
         "deductible_amount": {
           "raw": "$1000",
@@ -957,7 +989,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Cov A - Dwelling"
         },
         "is_included": {
           "raw": "Included",
@@ -970,7 +1003,8 @@
             1,
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Cov B - Other Structures"
         }
       },
       {
@@ -996,7 +1030,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Cov L - Personal Liability"
         },
         "premium": {
           "raw": "$38.00",
@@ -1008,7 +1043,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Cov L - Personal Liability"
         }
       },
       {
@@ -1034,7 +1070,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Cov M - Medical Payments"
         },
         "premium": {
           "raw": "$27.00",
@@ -1046,7 +1083,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Cov M - Medical Payments"
         }
       }
     ]
@@ -1100,7 +1138,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov B - Other Structures"
       }
     },
     {
@@ -1152,7 +1191,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov B - Other Structures"
       }
     },
     {
@@ -1203,7 +1243,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov B - Other Structures"
       }
     },
     {
@@ -1255,7 +1296,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov B - Other Structures"
       }
     },
     {
@@ -1306,7 +1348,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov B - Other Structures"
       }
     },
     {
@@ -1458,7 +1501,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov B - Other Structures"
       }
     },
     {
@@ -1560,7 +1604,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov B - Other Structures"
       }
     },
     {
@@ -1611,7 +1656,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov B - Other Structures"
       }
     },
     {
@@ -1662,7 +1708,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov B - Other Structures"
       }
     },
     {
@@ -1714,7 +1761,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov B - Other Structures"
       }
     },
     {
@@ -1765,7 +1813,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov B - Other Structures"
       }
     },
     {
@@ -1816,7 +1865,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov B - Other Structures"
       }
     },
     {
@@ -1869,7 +1919,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov B - Other Structures"
       }
     },
     {
@@ -1921,7 +1972,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov A - Dwelling"
       },
       "is_included": {
         "raw": "Included",
@@ -1934,7 +1986,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov B - Other Structures"
       }
     },
     {
@@ -1985,7 +2038,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov A - Dwelling"
       },
       "limit_amount": {
         "raw": "$10,000",
@@ -2073,7 +2127,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov A - Dwelling"
       },
       "premium": {
         "raw": "$27.00",
@@ -2085,7 +2140,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov M - Medical Payments"
       }
     },
     {
@@ -2136,7 +2192,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov A - Dwelling"
       },
       "is_included": {
         "raw": "Included",
@@ -2149,7 +2206,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov B - Other Structures"
       }
     },
     {
@@ -2201,7 +2259,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov A - Dwelling"
       },
       "premium": {
         "raw": "$575.00",
@@ -2265,7 +2324,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov A - Dwelling"
       },
       "limit_amount": {
         "raw": "$240,000",
@@ -2341,7 +2401,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov A - Dwelling"
       },
       "limit_amount": {
         "raw": "$25,000",
@@ -2417,7 +2478,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov A - Dwelling"
       },
       "premium": {
         "raw": "($285.00)",
@@ -2481,7 +2543,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov A - Dwelling"
       },
       "limit_amount": {
         "raw": "$500",
@@ -2507,7 +2570,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov B - Other Structures"
       }
     },
     {
@@ -2558,7 +2622,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov A - Dwelling"
       },
       "is_included": {
         "raw": "Included",
@@ -2571,7 +2636,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov B - Other Structures"
       }
     }
   ],
@@ -2638,7 +2704,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "County"
         },
         "county_code": {
           "raw": "00043-Herkimer",
@@ -2650,7 +2717,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "County"
         }
       },
       "building_description": {
@@ -2663,7 +2731,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Description"
       },
       "protection_class": {
         "raw": "Semi-Protected",
@@ -2675,7 +2744,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Protection"
       },
       "construction_type": {
         "raw": "Frame",
@@ -2687,7 +2757,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Construction"
       },
       "year_built": {
         "raw": "1980",
@@ -2699,7 +2770,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Year Built"
       },
       "occupancy_type": {
         "raw": "Owner",
@@ -2711,7 +2783,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Occupancy"
       },
       "usage_type": {
         "raw": "Seasonal",
@@ -2724,7 +2797,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Usage"
       },
       "number_of_families": {
         "raw": "1 Family",
@@ -2736,7 +2810,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "# of Families"
       },
       "protective_devices": [
         {
@@ -2800,7 +2875,8 @@
             "page_ref": [
               2
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Fire Alarm"
           },
           "is_present": {
             "raw": "Local",
@@ -2812,7 +2888,8 @@
             "page_ref": [
               2
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Fire Alarm"
           }
         },
         {
@@ -2892,7 +2969,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Deductible"
       }
     },
     "section_i_property_coverages": {
@@ -2906,7 +2984,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov A - Dwelling"
       },
       "coverage_b_other_structures_limit": {
         "raw": "$125,000",
@@ -2918,7 +2997,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov B - Other Structures"
       },
       "coverage_c_personal_property_limit": {
         "raw": "$625,000",
@@ -2930,7 +3010,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov C - Personal Property"
       },
       "coverage_d_loss_of_use_limit": {
         "raw": "$250,000",
@@ -2942,7 +3023,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov D - Addl Living Exp/Loss of Rents"
       },
       "coverage_a_dwelling_premium": {
         "raw": "$4,482.00",
@@ -2954,7 +3036,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov A - Dwelling"
       },
       "coverage_b_other_structures_premium": {
         "raw": "Included",
@@ -2967,7 +3050,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov B - Other Structures"
       },
       "coverage_c_personal_property_premium": {
         "raw": "($250.00)",
@@ -2979,7 +3063,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov C - Personal Property"
       },
       "coverage_d_loss_of_use_premium": {
         "raw": "Included",
@@ -2992,7 +3077,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov B - Other Structures"
       },
       "loss_settlement_basis": {
         "raw": "Replacement Cost",
@@ -3004,7 +3090,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Settlement"
       }
     },
     "section_ii_liability_coverages": {
@@ -3018,7 +3105,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov L - Personal Liability"
       },
       "coverage_e_personal_liability_premium": {
         "raw": "$38.00",
@@ -3030,7 +3118,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov L - Personal Liability"
       },
       "coverage_f_medical_payments_per_person_limit": {
         "raw": "$5,000 Per",
@@ -3066,7 +3155,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Cov M - Medical Payments"
       }
     },
     "discounts": [
@@ -3104,7 +3194,8 @@
             1,
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Cov A - Dwelling"
         },
         "amount": {
           "raw": "($119.00)",
@@ -3116,7 +3207,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Non-Smoker Credit"
         }
       },
       {
@@ -3153,7 +3245,8 @@
             1,
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Cov A - Dwelling"
         },
         "is_applied": {
           "raw": "Included",
@@ -3166,7 +3259,8 @@
             1,
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Cov B - Other Structures"
         }
       },
       {
@@ -3203,7 +3297,8 @@
             1,
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Cov A - Dwelling"
         },
         "is_applied": {
           "raw": "Included",
@@ -3216,7 +3311,8 @@
             1,
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Cov B - Other Structures"
         }
       }
     ],
@@ -3290,6 +3386,9 @@
     ]
   },
   "fideon:absent": [
+    "additional_fields[].label",
+    "additional_fields[].section",
+    "additional_fields[].value",
     "billing.amount_due",
     "billing.amount_enclosed",
     "billing.bank_account_number_masked",
@@ -4278,6 +4377,9 @@
     "premium.taxes_and_fees[].is_fully_earned",
     "premium.total_discount_amount",
     "premium.total_fees_amount",
+    "printed_lines[].cells[]",
+    "printed_lines[].kind",
+    "printed_lines[].page",
     "producer.address.country",
     "producer.address.county",
     "producer.address.county_code",
@@ -4309,6 +4411,7 @@
     "state_notices[].civil_penalty_amount",
     "state_notices[].contact_phone",
     "state_notices[].contact_website",
+    "state_notices[].copyright_notice",
     "state_notices[].edition_date",
     "state_notices[].form_reference",
     "state_notices[].form_reference_edition",
@@ -4367,6 +4470,7 @@
     "underwriting.consumer_report_disclosures[].reporting_agency_address.line_2",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.postal_code",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.state",
+    "underwriting.consumer_report_disclosures[].reporting_agency_phone",
     "underwriting.consumer_report_disclosures[].reporting_agency_website",
     "underwriting.consumer_report_disclosures[].updated_report_days",
     "underwriting.exceptions[].exception_type",
@@ -4398,6 +4502,148 @@
     "synthetic": true,
     "note": "Scanned synthetic document generated from the reference document: every original value rewritten in place with an invented one; page_ref measured on the rewritten PDF before scanning.",
     "scanner_profile": "high-quality scan, 400 dpi",
-    "page_refs_measured_on": "text-layer twin of north_country_seasonal_renewal.pdf before scanning"
-  }
+    "page_refs_measured_on": "text-layer twin of north_country_seasonal_renewal.pdf before scanning",
+    "prose": "text_sections, printed_label and printed_lines added by main's prose.text_sections / dfire.engine; scanned pages none read by OCR of the published scan"
+  },
+  "text_sections": {
+    "page1_s1": {
+      "section_id": "page1_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "This replaces all previously issued policy Declarations, if any. This policy applies only to accidents, occurrences or losses which happen during the policy period shown above. If the policy is written on a continuous basis, each period of one year ending on the annual anniversary date of this policy constitutes a separate policy period. This policy applies only to those coverages below for which a limit of liability or premium charge is shown. Our limit of liability for each coverage shall be not more than the amount stated for such coverage, subject to all the terms of this policy.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    }
+  },
+  "printed_lines": [
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "Expiration Date: 04/22/2029 12:01 A.M."
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Named Insured & Mailing Address:"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Location(s) of Property Insured:"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Policy Coverages:",
+        "Loc #/Bldg #"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Forms/Endorsements:",
+        "Loc #/Bldg #"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "(section continued on page 2)"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "Expiration Date: 04/22/2029 12:01 A.M."
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "Forms/Endorsements: (continued)",
+        "Loc #/Bldg #"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Forms/Endorsements Premium:"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "Limits and deductibles stated above are not in addition to those on specific forms."
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Discounts and Surcharges"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Property Characteristics"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Territory:"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Special Interests"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "Loan #:",
+        "Rank:"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "Policy Number: HS004718",
+        "Inception Date: 04/22/2026",
+        "Expiration Date: 04/22/2029 12:01 A.M."
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "Loan #:",
+        "Rank:",
+        "Payor: No"
+      ]
+    }
+  ]
 }

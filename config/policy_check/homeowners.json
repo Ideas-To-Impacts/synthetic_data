@@ -9,7 +9,7 @@
     "version": "1.4.0",
     "line_of_business_as_supplied": "Homeowners",
     "line_specific_block": "homeowners",
-    "field_count": 1210,
+    "field_count": 1212,
     "corpus_document_count": 10,
     "corpus_carrier_count": 4,
     "aliased_fields": 780,
@@ -130,7 +130,7 @@
             "Transaction Effective Date"
           ],
           "fideon:value_type": "date",
-          "description": "Transaction effective date (Document). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Amended\", \"Amended Date\", \"Amended Declarations Page as of\", \"As of\"."
+          "description": "Transaction effective date (Document). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Amended\", \"Amended Date\", \"Amended Declarations Page as of\", \"As of\"."
         },
         "issue_date": {
           "$ref": "#/$defs/FieldValue",
@@ -140,7 +140,7 @@
             "TRANSACTION DATE"
           ],
           "fideon:value_type": "date",
-          "description": "Issue date (Document). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Issue Date\", \"Issued On Date\", \"TRANSACTION DATE\"."
+          "description": "Issue date (Document). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Issue Date\", \"Issued On Date\", \"TRANSACTION DATE\"."
         },
         "print_date": {
           "$ref": "#/$defs/FieldValue",
@@ -155,7 +155,7 @@
             "PROCESSING DATE"
           ],
           "fideon:value_type": "date",
-          "description": "Print date (Document). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Date Printed\", \"Date Summary Printed\", \"Last Updated\", \"Online Policy Summary as of\"."
+          "description": "Print date (Document). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Date Printed\", \"Date Summary Printed\", \"Last Updated\", \"Online Policy Summary as of\"."
         },
         "page_count": {
           "$ref": "#/$defs/FieldValue",
@@ -249,7 +249,7 @@
             "Transaction Expiration"
           ],
           "fideon:value_type": "date",
-          "description": "Transaction expiration date (Document). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Transaction Expiration\"."
+          "description": "Transaction expiration date (Document). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Transaction Expiration\"."
         },
         "term_sequence": {
           "$ref": "#/$defs/FieldValue",
@@ -265,7 +265,7 @@
             "Date Mailed"
           ],
           "fideon:value_type": "date",
-          "description": "Mailed date (Document). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Date Mailed\"."
+          "description": "Mailed date (Document). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Date Mailed\"."
         },
         "print_time": {
           "$ref": "#/$defs/FieldValue",
@@ -386,7 +386,7 @@
                   "Changes made"
                 ],
                 "fideon:value_type": "date",
-                "description": "Effective date (Document / Changes). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Changes made\"."
+                "description": "Effective date (Document / Changes). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Changes made\"."
               },
               "location_reference": {
                 "$ref": "#/$defs/FieldValue",
@@ -951,7 +951,7 @@
             "received_date": {
               "$ref": "#/$defs/FieldValue",
               "fideon:value_type": "date",
-              "description": "Received date (Carrier / Surplus lines filing). Date; parsed is ISO yyyy-mm-dd."
+              "description": "Received date (Carrier / Surplus lines filing). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats)."
             },
             "document_id": {
               "$ref": "#/$defs/FieldValue",
@@ -1552,7 +1552,7 @@
         "Broker",
         "Producer",
         "Your Agency's Name and Address",
-        "Your Agency\u2019s Name and Address"
+        "Your Agency’s Name and Address"
       ],
       "description": "Section: Producer (document root). Printed as e.g. \"Agency\", \"Agency Address\", \"Agency Information\", \"AGENCY NAME AND ADDRESS\"."
     },
@@ -1680,7 +1680,7 @@
             "Start Date"
           ],
           "fideon:value_type": "date",
-          "description": "Effective date (Policy). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Both dates\", \"Effective Date\", \"Effective Date Of Policy\", \"Policy Effective\"."
+          "description": "Effective date (Policy). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Both dates\", \"Effective Date\", \"Effective Date Of Policy\", \"Policy Effective\"."
         },
         "expiration_date": {
           "$ref": "#/$defs/FieldValue",
@@ -1696,7 +1696,7 @@
             "to"
           ],
           "fideon:value_type": "date",
-          "description": "Expiration date (Policy). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Expiration Date\", \"Expiry Date\", \"Policy Expiration\", \"Policy Expiration Date\"."
+          "description": "Expiration date (Policy). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Expiration Date\", \"Expiry Date\", \"Policy Expiration\", \"Policy Expiration Date\"."
         },
         "effective_time": {
           "$ref": "#/$defs/FieldValue",
@@ -1726,7 +1726,7 @@
         "anniversary_date": {
           "$ref": "#/$defs/FieldValue",
           "fideon:value_type": "date",
-          "description": "Anniversary date (Policy). Date; parsed is ISO yyyy-mm-dd."
+          "description": "Anniversary date (Policy). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats)."
         },
         "is_renewal": {
           "$ref": "#/$defs/FieldValue",
@@ -1741,7 +1741,7 @@
         "cancellation_date": {
           "$ref": "#/$defs/FieldValue",
           "fideon:value_type": "date",
-          "description": "Cancellation date (Policy). Date; parsed is ISO yyyy-mm-dd."
+          "description": "Cancellation date (Policy). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats)."
         },
         "cancellation_reason": {
           "$ref": "#/$defs/FieldValue",
@@ -1751,7 +1751,7 @@
         "nonrenewal_notice_date": {
           "$ref": "#/$defs/FieldValue",
           "fideon:value_type": "date",
-          "description": "Nonrenewal notice date (Policy). Date; parsed is ISO yyyy-mm-dd."
+          "description": "Nonrenewal notice date (Policy). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats)."
         },
         "audit_frequency": {
           "$ref": "#/$defs/FieldValue",
@@ -1816,7 +1816,7 @@
             "Protected Since Date"
           ],
           "fideon:value_type": "date",
-          "description": "Policyholder since date (Policy). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Continuously Insured Since\", \"Customer Since\", \"Insured Since\", \"Policyholder Since\"."
+          "description": "Policyholder since date (Policy). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Continuously Insured Since\", \"Customer Since\", \"Insured Since\", \"Policyholder Since\"."
         },
         "original_inception_date": {
           "$ref": "#/$defs/FieldValue",
@@ -1825,7 +1825,7 @@
             "Inception Date"
           ],
           "fideon:value_type": "date",
-          "description": "Original inception date (Policy). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"INCEPTION DATE\", \"Inception Date\"."
+          "description": "Original inception date (Policy). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"INCEPTION DATE\", \"Inception Date\"."
         },
         "is_continuous_renewal": {
           "$ref": "#/$defs/FieldValue",
@@ -2293,7 +2293,7 @@
                   "Start Date"
                 ],
                 "fideon:value_type": "date",
-                "description": "Effective date (Named insured / Additional named insureds). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Both dates\", \"Start Date\"."
+                "description": "Effective date (Named insured / Additional named insureds). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Both dates\", \"Start Date\"."
               },
               "address": {
                 "type": "object",
@@ -2405,7 +2405,7 @@
                   "DOB"
                 ],
                 "fideon:value_type": "date",
-                "description": "Date of birth (Named insured / Individuals). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Date of Birth\", \"DOB\"."
+                "description": "Date of birth (Named insured / Individuals). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Date of Birth\", \"DOB\"."
               },
               "marital_status": {
                 "$ref": "#/$defs/FieldValue",
@@ -2577,7 +2577,7 @@
                 "Signature of Senior Citizen Insured"
               ],
               "fideon:value_type": "date",
-              "description": "Insured signature date (Named insured / Third party designee). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Date\", \"Senior Citizen Insured's Signature\", \"Signature\", \"Signature of Insured\"."
+              "description": "Insured signature date (Named insured / Third party designee). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Date\", \"Senior Citizen Insured's Signature\", \"Signature\", \"Signature of Insured\"."
             },
             "designee_signature_date": {
               "$ref": "#/$defs/FieldValue",
@@ -2589,7 +2589,7 @@
                 "Third-Party Designee"
               ],
               "fideon:value_type": "date",
-              "description": "Designee signature date (Named insured / Third party designee). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Acceptance Signature of Third Party Designee\", \"Date\", \"Signature of Third Party \"Designee\"\", \"Signature of Third Party Designee\"."
+              "description": "Designee signature date (Named insured / Third party designee). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Acceptance Signature of Third Party Designee\", \"Date\", \"Signature of Third Party \"Designee\"\", \"Signature of Third Party Designee\"."
             },
             "eligibility_age": {
               "$ref": "#/$defs/FieldValue",
@@ -2709,7 +2709,7 @@
                 "Date of Birth"
               ],
               "fideon:value_type": "date",
-              "description": "Insured date of birth (Named insured / Third party designee). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Date of Birth\"."
+              "description": "Insured date of birth (Named insured / Third party designee). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Date of Birth\"."
             }
           },
           "fideon:aliases": [
@@ -3824,7 +3824,7 @@
         "terrorism_rejection_date": {
           "$ref": "#/$defs/FieldValue",
           "fideon:value_type": "date",
-          "description": "Terrorism rejection date (Terrorism). Date; parsed is ISO yyyy-mm-dd."
+          "description": "Terrorism rejection date (Terrorism). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats)."
         },
         "certified_acts_limit": {
           "$ref": "#/$defs/FieldValue",
@@ -3934,7 +3934,7 @@
             "Please pay the total due upon receipt"
           ],
           "fideon:value_type": "date",
-          "description": "Due date (Billing). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Please pay the total due upon receipt\"."
+          "description": "Due date (Billing). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Please pay the total due upon receipt\"."
         },
         "installments": {
           "type": "array",
@@ -3949,7 +3949,7 @@
               "due_date": {
                 "$ref": "#/$defs/FieldValue",
                 "fideon:value_type": "date",
-                "description": "Due date (Billing / Installments). Date; parsed is ISO yyyy-mm-dd."
+                "description": "Due date (Billing / Installments). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats)."
               },
               "amount": {
                 "$ref": "#/$defs/FieldValue",
@@ -4033,7 +4033,7 @@
             "Mortgage Invoice"
           ],
           "fideon:value_type": "date",
-          "description": "Invoice date (Billing). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Mortgage Invoice\"."
+          "description": "Invoice date (Billing). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Mortgage Invoice\"."
         },
         "amount_enclosed": {
           "$ref": "#/$defs/FieldValue",
@@ -4166,7 +4166,7 @@
                   "to initiate a payment on"
                 ],
                 "fideon:value_type": "date",
-                "description": "Payment date (Billing / Payments). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Date Paid\", \"Payment Date/Time\", \"to initiate a payment on\"."
+                "description": "Payment date (Billing / Payments). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Date Paid\", \"Payment Date/Time\", \"to initiate a payment on\"."
               },
               "amount": {
                 "$ref": "#/$defs/FieldValue",
@@ -4459,11 +4459,11 @@
           "copyright_notice": {
             "$ref": "#/$defs/FieldValue",
             "fideon:aliases": [
-              "\u00a9 Chubb.2016. All rights reserved",
-              "\u00a9 Copyright 1985 by"
+              "© Chubb.2016. All rights reserved",
+              "© Copyright 1985 by"
             ],
             "fideon:value_type": "text",
-            "description": "Copyright notice (Forms and endorsements). Text as printed. Printed as e.g. \"\u00a9 Chubb.2016. All rights reserved\", \"\u00a9 Copyright 1985 by\"."
+            "description": "Copyright notice (Forms and endorsements). Text as printed. Printed as e.g. \"© Chubb.2016. All rights reserved\", \"© Copyright 1985 by\"."
           },
           "form_page_count": {
             "$ref": "#/$defs/FieldValue",
@@ -4568,7 +4568,7 @@
               "DATE"
             ],
             "fideon:value_type": "date",
-            "description": "Loss date (Loss history). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"DATE\"."
+            "description": "Loss date (Loss history). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"DATE\"."
           },
           "claim_number": {
             "$ref": "#/$defs/FieldValue",
@@ -4673,7 +4673,7 @@
               "Earthquake Insurance Availability Notice for New Jersey",
               "Flood Insurance Notice for New Jersey",
               "FLOOD/MUDSLIDE EXCLUSION ADVISORY NOTICE TO POLICYHOLDERS - NEW YORK",
-              "FLOOD/MUDSLIDE EXCLUSION ADVISORY NOTICE TO POLICYHOLDERS \u2013 NEW YORK",
+              "FLOOD/MUDSLIDE EXCLUSION ADVISORY NOTICE TO POLICYHOLDERS – NEW YORK",
               "Homeowners Insurance Summary for New Jersey",
               "IMPORTANT FLOOD INSURANCE NOTICE",
               "IMPORTANT NOTICE",
@@ -4689,7 +4689,7 @@
               "U.S. PRIVACY NOTICE"
             ],
             "fideon:value_type": "text",
-            "description": "Notice title (State notices). Text as printed. Printed as e.g. \"Earthquake Insurance Availability Notice for New Jersey\", \"Flood Insurance Notice for New Jersey\", \"FLOOD/MUDSLIDE EXCLUSION ADVISORY NOTICE TO POLICYHOLDERS - NEW YORK\", \"FLOOD/MUDSLIDE EXCLUSION ADVISORY NOTICE TO POLICYHOLDERS \u2013 NEW YORK\"."
+            "description": "Notice title (State notices). Text as printed. Printed as e.g. \"Earthquake Insurance Availability Notice for New Jersey\", \"Flood Insurance Notice for New Jersey\", \"FLOOD/MUDSLIDE EXCLUSION ADVISORY NOTICE TO POLICYHOLDERS - NEW YORK\", \"FLOOD/MUDSLIDE EXCLUSION ADVISORY NOTICE TO POLICYHOLDERS – NEW YORK\"."
           },
           "form_reference": {
             "$ref": "#/$defs/FieldValue",
@@ -4899,6 +4899,11 @@
             "$ref": "#/$defs/FieldValue",
             "fideon:value_type": "text",
             "description": "Form reference edition (State notices). Text as printed."
+          },
+          "copyright_notice": {
+            "$ref": "#/$defs/FieldValue",
+            "fideon:value_type": "text",
+            "description": "Copyright notice (State notices). Text as printed."
           }
         }
       },
@@ -5111,7 +5116,7 @@
             "DATE"
           ],
           "fideon:value_type": "date",
-          "description": "Signature date (Signature). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"DATE\"."
+          "description": "Signature date (Signature). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"DATE\"."
         },
         "countersignature_state": {
           "$ref": "#/$defs/FieldValue",
@@ -5129,7 +5134,7 @@
             "Countersignature Date"
           ],
           "fideon:value_type": "date",
-          "description": "Countersignature date (Signature). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Countersignature Date\"."
+          "description": "Countersignature date (Signature). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Countersignature Date\"."
         },
         "officer_signatures": {
           "type": "array",
@@ -5444,7 +5449,7 @@
             "purchase_date": {
               "$ref": "#/$defs/FieldValue",
               "fideon:value_type": "date",
-              "description": "Purchase date (Homeowners / Dwelling). Date; parsed is ISO yyyy-mm-dd."
+              "description": "Purchase date (Homeowners / Dwelling). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats)."
             },
             "swimming_pool": {
               "$ref": "#/$defs/FieldValue",
@@ -5897,7 +5902,7 @@
                 "CERTIFICATE OF OCCUPANCY DATE"
               ],
               "fideon:value_type": "date",
-              "description": "Certificate of occupancy date (Homeowners / Dwelling). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"CERTIFICATE OF OCCUPANCY DATE\"."
+              "description": "Certificate of occupancy date (Homeowners / Dwelling). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"CERTIFICATE OF OCCUPANCY DATE\"."
             },
             "gated_community": {
               "$ref": "#/$defs/FieldValue",
@@ -6285,7 +6290,7 @@
                 "Cov A",
                 "Cov A - Dwelling",
                 "Cov A -- Dwelling",
-                "Cov A \u2013 Dwelling",
+                "Cov A – Dwelling",
                 "Coverage A",
                 "Coverage A - Dwelling",
                 "Coverage A - Residence",
@@ -6293,8 +6298,8 @@
                 "Coverage A -- Residence",
                 "Coverage A DWELLING",
                 "Coverage A Dwelling",
-                "Coverage A \u2013 Dwelling",
-                "Coverage A \u2013 Residence",
+                "Coverage A – Dwelling",
+                "Coverage A – Residence",
                 "COVERAGE LIMIT",
                 "Deluxe House Coverage",
                 "DWELLING",
@@ -6320,7 +6325,7 @@
                 "Cov B",
                 "Cov B - Other Structures",
                 "Cov B -- Other Structures",
-                "Cov B \u2013 Other Structures",
+                "Cov B – Other Structures",
                 "Coverage B",
                 "Coverage B - Other Structures",
                 "Coverage B - Related Private Structures",
@@ -6329,9 +6334,9 @@
                 "Coverage B -- Related Private Structures",
                 "Coverage B -- Related Private Structures on the Premises",
                 "Coverage B OTHER STRUCTURES",
-                "Coverage B \u2013 Other Structures",
-                "Coverage B \u2013 Related Private Structures",
-                "Coverage B \u2013 Related Private Structures on the Premises",
+                "Coverage B – Other Structures",
+                "Coverage B – Related Private Structures",
+                "Coverage B – Related Private Structures on the Premises",
                 "COVERAGE LIMIT",
                 "Liability Limit",
                 "LIMIT",
@@ -6354,12 +6359,12 @@
                 "Cov C",
                 "Cov C - Personal Property",
                 "Cov C -- Personal Property",
-                "Cov C \u2013 Personal Property",
+                "Cov C – Personal Property",
                 "Coverage C",
                 "Coverage C - Personal Property",
                 "Coverage C -- Personal Property",
                 "Coverage C PERSONAL PROPERTY",
-                "Coverage C \u2013 Personal Property",
+                "Coverage C – Personal Property",
                 "COVERAGE LIMIT",
                 "Deluxe Contents Coverage",
                 "Deluxe or Standard Contents",
@@ -6384,7 +6389,7 @@
                 "Cov D",
                 "Cov D - Addl Living Exp/Loss of Rents",
                 "Cov D -- Addl Living Exp/Loss of Rents",
-                "Cov D \u2013 Addl Living Exp/Loss of Rents",
+                "Cov D – Addl Living Exp/Loss of Rents",
                 "Coverage D",
                 "Coverage D - Additional Living Costs And Loss Of Rent",
                 "Coverage D - Additional Living Expense and Loss of Rent",
@@ -6397,11 +6402,11 @@
                 "Coverage D -- Addl. Living Exp and Loss of Rent",
                 "Coverage D -- Loss of Use",
                 "Coverage D LOSS OF USE",
-                "Coverage D \u2013 Additional Living Costs And Loss Of Rent",
-                "Coverage D \u2013 Additional Living Expense and Loss of Rent",
-                "Coverage D \u2013 Additional Living Expense or Loss of Rent",
-                "Coverage D \u2013 Addl. Living Exp and Loss of Rent",
-                "Coverage D \u2013 Loss of Use",
+                "Coverage D – Additional Living Costs And Loss Of Rent",
+                "Coverage D – Additional Living Expense and Loss of Rent",
+                "Coverage D – Additional Living Expense or Loss of Rent",
+                "Coverage D – Addl. Living Exp and Loss of Rent",
+                "Coverage D – Loss of Use",
                 "COVERAGE LIMIT",
                 "D. Add'l Living Exp. & Loss of Rent",
                 "D. Additional Living Expenses",
@@ -6451,8 +6456,8 @@
                 "Rating Basis - Residence",
                 "Rating Basis -- Dwelling",
                 "Rating Basis -- Residence",
-                "Rating Basis \u2013 Dwelling",
-                "Rating Basis \u2013 Residence",
+                "Rating Basis – Dwelling",
+                "Rating Basis – Residence",
                 "Settlement"
               ],
               "fideon:value_type": "text",
@@ -6465,12 +6470,12 @@
                 "Automatic Adjustment Of Limits",
                 "Automatic Adjustment Of Limits - Annual Increase 3 Percent",
                 "Automatic Adjustment Of Limits -- Annual Increase 3 Percent",
-                "Automatic Adjustment Of Limits \u2013 Annual Increase 3 Percent",
+                "Automatic Adjustment Of Limits – Annual Increase 3 Percent",
                 "Automatic Increase",
                 "Automatic Increase in Insurance",
                 "Automatic Increase in Insurance - 3 Percent",
                 "Automatic Increase in Insurance -- 3 Percent",
-                "Automatic Increase in Insurance \u2013 3 Percent",
+                "Automatic Increase in Insurance – 3 Percent",
                 "Automatic Inflation Protection",
                 "Inflation Guard",
                 "Inflation Protection Coverage",
@@ -6485,24 +6490,24 @@
               "fideon:aliases": [
                 "\"Residence Premises\" - Additional Amount Of Insurance",
                 "\"Residence Premises\" -- Additional Amount Of Insurance",
-                "\"Residence Premises\" \u2013 Additional Amount Of Insurance",
+                "\"Residence Premises\" – Additional Amount Of Insurance",
                 "Homeowner assessments",
                 "Loss Assessment",
                 "Loss Assessment Coverage - Described Location - Additional Limit",
                 "Loss Assessment Coverage - Described Location -- Additional Limit",
-                "Loss Assessment Coverage - Described Location \u2013 Additional Limit",
+                "Loss Assessment Coverage - Described Location – Additional Limit",
                 "Loss Assessment Coverage - Residence Premises",
                 "Loss Assessment Coverage -- Described Location - Additional Limit",
                 "Loss Assessment Coverage -- Described Location -- Additional Limit",
-                "Loss Assessment Coverage -- Described Location \u2013 Additional Limit",
+                "Loss Assessment Coverage -- Described Location – Additional Limit",
                 "Loss Assessment Coverage -- Residence Premises",
-                "Loss Assessment Coverage \u2013 Described Location - Additional Limit",
-                "Loss Assessment Coverage \u2013 Described Location -- Additional Limit",
-                "Loss Assessment Coverage \u2013 Described Location \u2013 Additional Limit",
-                "Loss Assessment Coverage \u2013 Residence Premises"
+                "Loss Assessment Coverage – Described Location - Additional Limit",
+                "Loss Assessment Coverage – Described Location -- Additional Limit",
+                "Loss Assessment Coverage – Described Location – Additional Limit",
+                "Loss Assessment Coverage – Residence Premises"
               ],
               "fideon:value_type": "money",
-              "description": "Loss assessment limit (Homeowners / Section i property coverages). Money amount; parsed is the number (negative for credits), null for Incl./***/N/A. Printed as e.g. \"\"Residence Premises\" - Additional Amount Of Insurance\", \"\"Residence Premises\" -- Additional Amount Of Insurance\", \"\"Residence Premises\" \u2013 Additional Amount Of Insurance\", \"Homeowner assessments\"."
+              "description": "Loss assessment limit (Homeowners / Section i property coverages). Money amount; parsed is the number (negative for credits), null for Incl./***/N/A. Printed as e.g. \"\"Residence Premises\" - Additional Amount Of Insurance\", \"\"Residence Premises\" -- Additional Amount Of Insurance\", \"\"Residence Premises\" – Additional Amount Of Insurance\", \"Homeowner assessments\"."
             },
             "water_backup_and_sump_overflow_limit": {
               "$ref": "#/$defs/FieldValue",
@@ -6511,7 +6516,7 @@
                 "Added Water Damages Coverages",
                 "Higher Limits - Water Damage Coverage",
                 "Higher Limits -- Water Damage Coverage",
-                "Higher Limits \u2013 Water Damage Coverage",
+                "Higher Limits – Water Damage Coverage",
                 "Limited Water Back-up And Sump Discharge Or Overflow Coverage Limit Of Liability",
                 "Water Back Up And Sump Discharge Or Overflow Coverage",
                 "Water Backup and Sump Discharge or Overflow"
@@ -6716,8 +6721,8 @@
                 "Important notice regarding mold remediation expenses",
                 "Property - Additional Coverages",
                 "Property -- Additional Coverages",
-                "Property \u2013 Additional Coverages",
-                "Property \u2013 Additional Coverages (continued)",
+                "Property – Additional Coverages",
+                "Property – Additional Coverages (continued)",
                 "Special Limits and Additional Coverages"
               ],
               "description": "List of additional coverages (Homeowners / Section i property coverages). Printed as e.g. \"Additional Coverages\", \"Additional coverages or conditions\", \"E. Additional Coverages\", \"Extra Coverages\"."
@@ -6788,7 +6793,7 @@
                 "Personal Property Replacement Cost Loss Settlement",
                 "Rating Basis - Personal Property",
                 "Rating Basis -- Personal Property",
-                "Rating Basis \u2013 Personal Property"
+                "Rating Basis – Personal Property"
               ],
               "fideon:value_type": "text",
               "description": "Personal property loss settlement basis (Homeowners / Section i property coverages). Text as printed. Printed as e.g. \"Loss Settlement Contents\", \"Payment basis\", \"Personal Property Replacement Cost\", \"Personal Property Replacement Cost Loss Settlement\"."
@@ -6807,10 +6812,10 @@
                 "Ordinance and Law Coverage",
                 "Ordinance or Law (25% of Coverage A - Dwelling Limit)",
                 "Ordinance or Law (25% of Coverage A -- Dwelling Limit)",
-                "Ordinance or Law (25% of Coverage A \u2013 Dwelling Limit)"
+                "Ordinance or Law (25% of Coverage A – Dwelling Limit)"
               ],
               "fideon:value_type": "money",
-              "description": "Ordinance or law limit (Homeowners / Section i property coverages). Money amount; parsed is the number (negative for credits), null for Incl./***/N/A. Printed as e.g. \"Ordinance and Law Coverage\", \"Ordinance or Law (25% of Coverage A - Dwelling Limit)\", \"Ordinance or Law (25% of Coverage A -- Dwelling Limit)\", \"Ordinance or Law (25% of Coverage A \u2013 Dwelling Limit)\"."
+              "description": "Ordinance or law limit (Homeowners / Section i property coverages). Money amount; parsed is the number (negative for credits), null for Incl./***/N/A. Printed as e.g. \"Ordinance and Law Coverage\", \"Ordinance or Law (25% of Coverage A - Dwelling Limit)\", \"Ordinance or Law (25% of Coverage A -- Dwelling Limit)\", \"Ordinance or Law (25% of Coverage A – Dwelling Limit)\"."
             },
             "inflation_guard_period": {
               "$ref": "#/$defs/FieldValue",
@@ -6904,11 +6909,11 @@
               "fideon:aliases": [
                 "Additional Insurance - Residence Premises",
                 "Additional Insurance -- Residence Premises",
-                "Additional Insurance \u2013 Residence Premises",
-                "Additional Insurance \u2014 Residence Premises"
+                "Additional Insurance – Residence Premises",
+                "Additional Insurance — Residence Premises"
               ],
               "fideon:value_type": "text",
-              "description": "Loss assessment additional insurance applies to (Homeowners / Section i property coverages). Text as printed. Printed as e.g. \"Additional Insurance - Residence Premises\", \"Additional Insurance -- Residence Premises\", \"Additional Insurance \u2013 Residence Premises\", \"Additional Insurance \u2014 Residence Premises\"."
+              "description": "Loss assessment additional insurance applies to (Homeowners / Section i property coverages). Text as printed. Printed as e.g. \"Additional Insurance - Residence Premises\", \"Additional Insurance -- Residence Premises\", \"Additional Insurance – Residence Premises\", \"Additional Insurance — Residence Premises\"."
             },
             "coverage_b_percentage_of_coverage_a": {
               "$ref": "#/$defs/FieldValue",
@@ -7091,40 +7096,40 @@
                 "Cov L",
                 "Cov L - Personal Liability",
                 "Cov L -- Personal Liability",
-                "Cov L \u2013 Personal Liability",
+                "Cov L – Personal Liability",
                 "Coverage E",
                 "Coverage E - Personal Liability",
                 "Coverage E - Personal Liability - Bodily Injury and Property Damage (each occurrence)",
                 "Coverage E - Personal Liability -- Bodily Injury and Property Damage (each occurrence)",
-                "Coverage E - Personal Liability \u2013 Bodily Injury and Property Damage (each occurrence)",
+                "Coverage E - Personal Liability – Bodily Injury and Property Damage (each occurrence)",
                 "Coverage E -- Personal Liability",
                 "Coverage E -- Personal Liability - Bodily Injury and Property Damage (each occurrence)",
                 "Coverage E -- Personal Liability -- Bodily Injury and Property Damage (each occurrence)",
-                "Coverage E -- Personal Liability \u2013 Bodily Injury and Property Damage (each occurrence)",
+                "Coverage E -- Personal Liability – Bodily Injury and Property Damage (each occurrence)",
                 "Coverage E PERSONAL LIABILITY",
-                "Coverage E \u2013 Personal Liability",
-                "Coverage E \u2013 Personal Liability - Bodily Injury and Property Damage (each occurrence)",
-                "Coverage E \u2013 Personal Liability -- Bodily Injury and Property Damage (each occurrence)",
-                "Coverage E \u2013 Personal Liability \u2013 Bodily Injury and Property Damage (each occurrence)",
+                "Coverage E – Personal Liability",
+                "Coverage E – Personal Liability - Bodily Injury and Property Damage (each occurrence)",
+                "Coverage E – Personal Liability -- Bodily Injury and Property Damage (each occurrence)",
+                "Coverage E – Personal Liability – Bodily Injury and Property Damage (each occurrence)",
                 "Coverage L",
                 "Coverage L - OLT - Premises Liability",
                 "Coverage L - OLT -- Premises Liability",
-                "Coverage L - OLT \u2013 Premises Liability",
+                "Coverage L - OLT – Premises Liability",
                 "Coverage L - Personal Liability",
                 "Coverage L - Premises Liability",
                 "Coverage L - Premises Liability Coverage (Each Occurrence)",
                 "Coverage L -- OLT - Premises Liability",
                 "Coverage L -- OLT -- Premises Liability",
-                "Coverage L -- OLT \u2013 Premises Liability",
+                "Coverage L -- OLT – Premises Liability",
                 "Coverage L -- Personal Liability",
                 "Coverage L -- Premises Liability",
                 "Coverage L -- Premises Liability Coverage (Each Occurrence)",
-                "Coverage L \u2013 OLT - Premises Liability",
-                "Coverage L \u2013 OLT -- Premises Liability",
-                "Coverage L \u2013 OLT \u2013 Premises Liability",
-                "Coverage L \u2013 Personal Liability",
-                "Coverage L \u2013 Premises Liability",
-                "Coverage L \u2013 Premises Liability Coverage (Each Occurrence)",
+                "Coverage L – OLT - Premises Liability",
+                "Coverage L – OLT -- Premises Liability",
+                "Coverage L – OLT – Premises Liability",
+                "Coverage L – Personal Liability",
+                "Coverage L – Premises Liability",
+                "Coverage L – Premises Liability Coverage (Each Occurrence)",
                 "COVERAGE LIMIT",
                 "E. Personal Liability",
                 "E: PERSONAL LIABILITY EACH OCCURRENCE",
@@ -7154,16 +7159,16 @@
                 "Cov M",
                 "Cov M - Medical Payments",
                 "Cov M -- Medical Payments",
-                "Cov M \u2013 Medical Payments",
+                "Cov M – Medical Payments",
                 "Coverage F - Medical Payments",
                 "Coverage F - Medical Payments Coverage",
                 "Coverage F - Medical Payments to Others",
                 "Coverage F -- Medical Payments",
                 "Coverage F -- Medical Payments Coverage",
                 "Coverage F -- Medical Payments to Others",
-                "Coverage F \u2013 Medical Payments",
-                "Coverage F \u2013 Medical Payments Coverage",
-                "Coverage F \u2013 Medical Payments to Others",
+                "Coverage F – Medical Payments",
+                "Coverage F – Medical Payments Coverage",
+                "Coverage F – Medical Payments to Others",
                 "COVERAGE LIMIT",
                 "Coverage M",
                 "Coverage M-Medical Payments to Others",
@@ -7180,7 +7185,7 @@
                 "Medical Payments to Others"
               ],
               "fideon:value_type": "money",
-              "description": "Coverage F medical payments limit (Homeowners / Section ii liability coverages). Money amount; parsed is the number (negative for credits), null for Incl./***/N/A. Printed as e.g. \"Cov M\", \"Cov M - Medical Payments\", \"Cov M -- Medical Payments\", \"Cov M \u2013 Medical Payments\"."
+              "description": "Coverage F medical payments limit (Homeowners / Section ii liability coverages). Money amount; parsed is the number (negative for credits), null for Incl./***/N/A. Printed as e.g. \"Cov M\", \"Cov M - Medical Payments\", \"Cov M -- Medical Payments\", \"Cov M – Medical Payments\"."
             },
             "coverage_f_medical_payments_per_person_limit": {
               "$ref": "#/$defs/FieldValue",
@@ -7189,50 +7194,50 @@
                 "Coverage F - Medical Payments to Others (each person)",
                 "Coverage F -- Medical Payments to Others (each person)",
                 "Coverage F MEDICAL PAYMENTS TO OTHERS",
-                "Coverage F \u2013 Medical Payments to Others (each person)",
+                "Coverage F – Medical Payments to Others (each person)",
                 "COVERAGE LIMIT",
                 "Coverage M - Medical Payments - Per Person",
                 "Coverage M - Medical Payments -- Per Person",
                 "Coverage M - Medical Payments To Others",
-                "Coverage M - Medical Payments \u2013 Per Person",
+                "Coverage M - Medical Payments – Per Person",
                 "Coverage M - OLT - Premises Med Pay - Per Person",
                 "Coverage M - OLT - Premises Med Pay -- Per Person",
-                "Coverage M - OLT - Premises Med Pay \u2013 Per Person",
+                "Coverage M - OLT - Premises Med Pay – Per Person",
                 "Coverage M - OLT -- Premises Med Pay - Per Person",
                 "Coverage M - OLT -- Premises Med Pay -- Per Person",
-                "Coverage M - OLT -- Premises Med Pay \u2013 Per Person",
-                "Coverage M - OLT \u2013 Premises Med Pay - Per Person",
-                "Coverage M - OLT \u2013 Premises Med Pay -- Per Person",
-                "Coverage M - OLT \u2013 Premises Med Pay \u2013 Per Person",
+                "Coverage M - OLT -- Premises Med Pay – Per Person",
+                "Coverage M - OLT – Premises Med Pay - Per Person",
+                "Coverage M - OLT – Premises Med Pay -- Per Person",
+                "Coverage M - OLT – Premises Med Pay – Per Person",
                 "Coverage M - Premises Medical Payments (Each Person)",
                 "Coverage M -- Medical Payments - Per Person",
                 "Coverage M -- Medical Payments -- Per Person",
                 "Coverage M -- Medical Payments To Others",
-                "Coverage M -- Medical Payments \u2013 Per Person",
+                "Coverage M -- Medical Payments – Per Person",
                 "Coverage M -- OLT - Premises Med Pay - Per Person",
                 "Coverage M -- OLT - Premises Med Pay -- Per Person",
-                "Coverage M -- OLT - Premises Med Pay \u2013 Per Person",
+                "Coverage M -- OLT - Premises Med Pay – Per Person",
                 "Coverage M -- OLT -- Premises Med Pay - Per Person",
                 "Coverage M -- OLT -- Premises Med Pay -- Per Person",
-                "Coverage M -- OLT -- Premises Med Pay \u2013 Per Person",
-                "Coverage M -- OLT \u2013 Premises Med Pay - Per Person",
-                "Coverage M -- OLT \u2013 Premises Med Pay -- Per Person",
-                "Coverage M -- OLT \u2013 Premises Med Pay \u2013 Per Person",
+                "Coverage M -- OLT -- Premises Med Pay – Per Person",
+                "Coverage M -- OLT – Premises Med Pay - Per Person",
+                "Coverage M -- OLT – Premises Med Pay -- Per Person",
+                "Coverage M -- OLT – Premises Med Pay – Per Person",
                 "Coverage M -- Premises Medical Payments (Each Person)",
-                "Coverage M \u2013 Medical Payments - Per Person",
-                "Coverage M \u2013 Medical Payments -- Per Person",
-                "Coverage M \u2013 Medical Payments To Others",
-                "Coverage M \u2013 Medical Payments \u2013 Per Person",
-                "Coverage M \u2013 OLT - Premises Med Pay - Per Person",
-                "Coverage M \u2013 OLT - Premises Med Pay -- Per Person",
-                "Coverage M \u2013 OLT - Premises Med Pay \u2013 Per Person",
-                "Coverage M \u2013 OLT -- Premises Med Pay - Per Person",
-                "Coverage M \u2013 OLT -- Premises Med Pay -- Per Person",
-                "Coverage M \u2013 OLT -- Premises Med Pay \u2013 Per Person",
-                "Coverage M \u2013 OLT \u2013 Premises Med Pay - Per Person",
-                "Coverage M \u2013 OLT \u2013 Premises Med Pay -- Per Person",
-                "Coverage M \u2013 OLT \u2013 Premises Med Pay \u2013 Per Person",
-                "Coverage M \u2013 Premises Medical Payments (Each Person)",
+                "Coverage M – Medical Payments - Per Person",
+                "Coverage M – Medical Payments -- Per Person",
+                "Coverage M – Medical Payments To Others",
+                "Coverage M – Medical Payments – Per Person",
+                "Coverage M – OLT - Premises Med Pay - Per Person",
+                "Coverage M – OLT - Premises Med Pay -- Per Person",
+                "Coverage M – OLT - Premises Med Pay – Per Person",
+                "Coverage M – OLT -- Premises Med Pay - Per Person",
+                "Coverage M – OLT -- Premises Med Pay -- Per Person",
+                "Coverage M – OLT -- Premises Med Pay – Per Person",
+                "Coverage M – OLT – Premises Med Pay - Per Person",
+                "Coverage M – OLT – Premises Med Pay -- Per Person",
+                "Coverage M – OLT – Premises Med Pay – Per Person",
+                "Coverage M – Premises Medical Payments (Each Person)",
                 "Each Person",
                 "Liability Limit",
                 "LIMIT",
@@ -7255,43 +7260,43 @@
                 "COVERAGE LIMIT",
                 "Coverage M - Medical Payments - Per Occurrence",
                 "Coverage M - Medical Payments -- Per Occurrence",
-                "Coverage M - Medical Payments \u2013 Per Occurrence",
+                "Coverage M - Medical Payments – Per Occurrence",
                 "Coverage M - OLT - Premises Med Pay - Per Occurrence",
                 "Coverage M - OLT - Premises Med Pay -- Per Occurrence",
-                "Coverage M - OLT - Premises Med Pay \u2013 Per Occurrence",
+                "Coverage M - OLT - Premises Med Pay – Per Occurrence",
                 "Coverage M - OLT -- Premises Med Pay - Per Occurrence",
                 "Coverage M - OLT -- Premises Med Pay -- Per Occurrence",
-                "Coverage M - OLT -- Premises Med Pay \u2013 Per Occurrence",
-                "Coverage M - OLT \u2013 Premises Med Pay - Per Occurrence",
-                "Coverage M - OLT \u2013 Premises Med Pay -- Per Occurrence",
-                "Coverage M - OLT \u2013 Premises Med Pay \u2013 Per Occurrence",
+                "Coverage M - OLT -- Premises Med Pay – Per Occurrence",
+                "Coverage M - OLT – Premises Med Pay - Per Occurrence",
+                "Coverage M - OLT – Premises Med Pay -- Per Occurrence",
+                "Coverage M - OLT – Premises Med Pay – Per Occurrence",
                 "Coverage M - Premises Medical Payments (Each Accident)",
                 "Coverage M -- Medical Payments - Per Occurrence",
                 "Coverage M -- Medical Payments -- Per Occurrence",
-                "Coverage M -- Medical Payments \u2013 Per Occurrence",
+                "Coverage M -- Medical Payments – Per Occurrence",
                 "Coverage M -- OLT - Premises Med Pay - Per Occurrence",
                 "Coverage M -- OLT - Premises Med Pay -- Per Occurrence",
-                "Coverage M -- OLT - Premises Med Pay \u2013 Per Occurrence",
+                "Coverage M -- OLT - Premises Med Pay – Per Occurrence",
                 "Coverage M -- OLT -- Premises Med Pay - Per Occurrence",
                 "Coverage M -- OLT -- Premises Med Pay -- Per Occurrence",
-                "Coverage M -- OLT -- Premises Med Pay \u2013 Per Occurrence",
-                "Coverage M -- OLT \u2013 Premises Med Pay - Per Occurrence",
-                "Coverage M -- OLT \u2013 Premises Med Pay -- Per Occurrence",
-                "Coverage M -- OLT \u2013 Premises Med Pay \u2013 Per Occurrence",
+                "Coverage M -- OLT -- Premises Med Pay – Per Occurrence",
+                "Coverage M -- OLT – Premises Med Pay - Per Occurrence",
+                "Coverage M -- OLT – Premises Med Pay -- Per Occurrence",
+                "Coverage M -- OLT – Premises Med Pay – Per Occurrence",
                 "Coverage M -- Premises Medical Payments (Each Accident)",
-                "Coverage M \u2013 Medical Payments - Per Occurrence",
-                "Coverage M \u2013 Medical Payments -- Per Occurrence",
-                "Coverage M \u2013 Medical Payments \u2013 Per Occurrence",
-                "Coverage M \u2013 OLT - Premises Med Pay - Per Occurrence",
-                "Coverage M \u2013 OLT - Premises Med Pay -- Per Occurrence",
-                "Coverage M \u2013 OLT - Premises Med Pay \u2013 Per Occurrence",
-                "Coverage M \u2013 OLT -- Premises Med Pay - Per Occurrence",
-                "Coverage M \u2013 OLT -- Premises Med Pay -- Per Occurrence",
-                "Coverage M \u2013 OLT -- Premises Med Pay \u2013 Per Occurrence",
-                "Coverage M \u2013 OLT \u2013 Premises Med Pay - Per Occurrence",
-                "Coverage M \u2013 OLT \u2013 Premises Med Pay -- Per Occurrence",
-                "Coverage M \u2013 OLT \u2013 Premises Med Pay \u2013 Per Occurrence",
-                "Coverage M \u2013 Premises Medical Payments (Each Accident)",
+                "Coverage M – Medical Payments - Per Occurrence",
+                "Coverage M – Medical Payments -- Per Occurrence",
+                "Coverage M – Medical Payments – Per Occurrence",
+                "Coverage M – OLT - Premises Med Pay - Per Occurrence",
+                "Coverage M – OLT - Premises Med Pay -- Per Occurrence",
+                "Coverage M – OLT - Premises Med Pay – Per Occurrence",
+                "Coverage M – OLT -- Premises Med Pay - Per Occurrence",
+                "Coverage M – OLT -- Premises Med Pay -- Per Occurrence",
+                "Coverage M – OLT -- Premises Med Pay – Per Occurrence",
+                "Coverage M – OLT – Premises Med Pay - Per Occurrence",
+                "Coverage M – OLT – Premises Med Pay -- Per Occurrence",
+                "Coverage M – OLT – Premises Med Pay – Per Occurrence",
+                "Coverage M – Premises Medical Payments (Each Accident)",
                 "Liability Limit",
                 "LIMIT",
                 "LIMIT AMOUNT",
@@ -7476,7 +7481,7 @@
                 "Extra Coverages",
                 "Liability - Additional Coverages",
                 "Liability -- Additional Coverages",
-                "Liability \u2013 Additional Coverages",
+                "Liability – Additional Coverages",
                 "SECTION II - ADDITIONAL COVERAGES"
               ],
               "description": "List of additional coverages (Homeowners / Section ii liability coverages). Printed as e.g. \"Defense coverages\", \"Employer's liability for residence employees\", \"Extra Coverages\", \"Liability - Additional Coverages\"."
@@ -7519,21 +7524,21 @@
             "coverage_e_limit_increase": {
               "$ref": "#/$defs/FieldValue",
               "fideon:aliases": [
-                "The limit of liability shown for Coverage L \u2014 Personal Liability is increased by"
+                "The limit of liability shown for Coverage L — Personal Liability is increased by"
               ],
               "fideon:value_type": "text",
-              "description": "Coverage E limit increase (Homeowners / Section ii liability coverages). Text as printed. Printed as e.g. \"The limit of liability shown for Coverage L \u2014 Personal Liability is increased by\"."
+              "description": "Coverage E limit increase (Homeowners / Section ii liability coverages). Text as printed. Printed as e.g. \"The limit of liability shown for Coverage L — Personal Liability is increased by\"."
             },
             "coverage_f_limit_increase": {
               "$ref": "#/$defs/FieldValue",
               "fideon:aliases": [
                 "The limit of liability shown for Coverage M - Medical Payments to Others is increased by",
                 "The limit of liability shown for Coverage M -- Medical Payments to Others is increased by",
-                "The limit of liability shown for Coverage M \u2013 Medical Payments to Others is increased by",
+                "The limit of liability shown for Coverage M – Medical Payments to Others is increased by",
                 "The limit of liability shown for Coverage M-Medical Payments to Others is increased by"
               ],
               "fideon:value_type": "text",
-              "description": "Coverage F limit increase (Homeowners / Section ii liability coverages). Text as printed. Printed as e.g. \"The limit of liability shown for Coverage M - Medical Payments to Others is increased by\", \"The limit of liability shown for Coverage M -- Medical Payments to Others is increased by\", \"The limit of liability shown for Coverage M \u2013 Medical Payments to Others is increased by\", \"The limit of liability shown for Coverage M-Medical Payments to Others is increased by\"."
+              "description": "Coverage F limit increase (Homeowners / Section ii liability coverages). Text as printed. Printed as e.g. \"The limit of liability shown for Coverage M - Medical Payments to Others is increased by\", \"The limit of liability shown for Coverage M -- Medical Payments to Others is increased by\", \"The limit of liability shown for Coverage M – Medical Payments to Others is increased by\", \"The limit of liability shown for Coverage M-Medical Payments to Others is increased by\"."
             },
             "damage_to_property_of_others_limit_increase": {
               "$ref": "#/$defs/FieldValue",
@@ -7707,9 +7712,9 @@
               "fideon:aliases": [
                 "Animal Exclusion - New York",
                 "Animal Exclusion -- New York",
-                "Animal Exclusion \u2013 New York"
+                "Animal Exclusion – New York"
               ],
-              "description": "List of excluded animal types (Homeowners / Section ii liability coverages). Printed as e.g. \"Animal Exclusion - New York\", \"Animal Exclusion -- New York\", \"Animal Exclusion \u2013 New York\".",
+              "description": "List of excluded animal types (Homeowners / Section ii liability coverages). Printed as e.g. \"Animal Exclusion - New York\", \"Animal Exclusion -- New York\", \"Animal Exclusion – New York\".",
               "fideon:value_type": "text"
             },
             "max_dogs_permitted": {
@@ -7817,38 +7822,38 @@
               "fideon:aliases": [
                 "Coverage M - OLT - Premises Med Pay - Per Occurrence",
                 "Coverage M - OLT - Premises Med Pay -- Per Occurrence",
-                "Coverage M - OLT - Premises Med Pay \u2013 Per Occurrence",
+                "Coverage M - OLT - Premises Med Pay – Per Occurrence",
                 "Coverage M - OLT -- Premises Med Pay - Per Occurrence",
                 "Coverage M - OLT -- Premises Med Pay -- Per Occurrence",
-                "Coverage M - OLT -- Premises Med Pay \u2013 Per Occurrence",
-                "Coverage M - OLT \u2013 Premises Med Pay - Per Occurrence",
-                "Coverage M - OLT \u2013 Premises Med Pay -- Per Occurrence",
-                "Coverage M - OLT \u2013 Premises Med Pay \u2013 Per Occurrence",
+                "Coverage M - OLT -- Premises Med Pay – Per Occurrence",
+                "Coverage M - OLT – Premises Med Pay - Per Occurrence",
+                "Coverage M - OLT – Premises Med Pay -- Per Occurrence",
+                "Coverage M - OLT – Premises Med Pay – Per Occurrence",
                 "Coverage M -- OLT - Premises Med Pay - Per Occurrence",
                 "Coverage M -- OLT - Premises Med Pay -- Per Occurrence",
-                "Coverage M -- OLT - Premises Med Pay \u2013 Per Occurrence",
+                "Coverage M -- OLT - Premises Med Pay – Per Occurrence",
                 "Coverage M -- OLT -- Premises Med Pay - Per Occurrence",
                 "Coverage M -- OLT -- Premises Med Pay -- Per Occurrence",
-                "Coverage M -- OLT -- Premises Med Pay \u2013 Per Occurrence",
-                "Coverage M -- OLT \u2013 Premises Med Pay - Per Occurrence",
-                "Coverage M -- OLT \u2013 Premises Med Pay -- Per Occurrence",
-                "Coverage M -- OLT \u2013 Premises Med Pay \u2013 Per Occurrence",
-                "Coverage M \u2013 OLT - Premises Med Pay - Per Occurrence",
-                "Coverage M \u2013 OLT - Premises Med Pay -- Per Occurrence",
-                "Coverage M \u2013 OLT - Premises Med Pay \u2013 Per Occurrence",
-                "Coverage M \u2013 OLT -- Premises Med Pay - Per Occurrence",
-                "Coverage M \u2013 OLT -- Premises Med Pay -- Per Occurrence",
-                "Coverage M \u2013 OLT -- Premises Med Pay \u2013 Per Occurrence",
-                "Coverage M \u2013 OLT \u2013 Premises Med Pay - Per Occurrence",
-                "Coverage M \u2013 OLT \u2013 Premises Med Pay -- Per Occurrence",
-                "Coverage M \u2013 OLT \u2013 Premises Med Pay \u2013 Per Occurrence",
+                "Coverage M -- OLT -- Premises Med Pay – Per Occurrence",
+                "Coverage M -- OLT – Premises Med Pay - Per Occurrence",
+                "Coverage M -- OLT – Premises Med Pay -- Per Occurrence",
+                "Coverage M -- OLT – Premises Med Pay – Per Occurrence",
+                "Coverage M – OLT - Premises Med Pay - Per Occurrence",
+                "Coverage M – OLT - Premises Med Pay -- Per Occurrence",
+                "Coverage M – OLT - Premises Med Pay – Per Occurrence",
+                "Coverage M – OLT -- Premises Med Pay - Per Occurrence",
+                "Coverage M – OLT -- Premises Med Pay -- Per Occurrence",
+                "Coverage M – OLT -- Premises Med Pay – Per Occurrence",
+                "Coverage M – OLT – Premises Med Pay - Per Occurrence",
+                "Coverage M – OLT – Premises Med Pay -- Per Occurrence",
+                "Coverage M – OLT – Premises Med Pay – Per Occurrence",
                 "INCL.",
                 "Incl.",
                 "Included",
                 "PREMIUM"
               ],
               "fideon:value_type": "money",
-              "description": "Coverage F medical payments per occurrence premium (Homeowners / Section ii liability coverages). Money amount; parsed is the number (negative for credits), null for Incl./***/N/A. Printed as e.g. \"Coverage M - OLT - Premises Med Pay - Per Occurrence\", \"Coverage M - OLT - Premises Med Pay -- Per Occurrence\", \"Coverage M - OLT - Premises Med Pay \u2013 Per Occurrence\", \"Coverage M - OLT -- Premises Med Pay - Per Occurrence\"."
+              "description": "Coverage F medical payments per occurrence premium (Homeowners / Section ii liability coverages). Money amount; parsed is the number (negative for credits), null for Incl./***/N/A. Printed as e.g. \"Coverage M - OLT - Premises Med Pay - Per Occurrence\", \"Coverage M - OLT - Premises Med Pay -- Per Occurrence\", \"Coverage M - OLT - Premises Med Pay – Per Occurrence\", \"Coverage M - OLT -- Premises Med Pay - Per Occurrence\"."
             },
             "residence_employee_hours_threshold": {
               "$ref": "#/$defs/FieldValue",
@@ -8194,7 +8199,7 @@
                   "APPR. DATE"
                 ],
                 "fideon:value_type": "date",
-                "description": "Appraisal date (Homeowners / Scheduled personal property). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"APPR. DATE\"."
+                "description": "Appraisal date (Homeowners / Scheduled personal property). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"APPR. DATE\"."
               },
               "premium": {
                 "$ref": "#/$defs/FieldValue",
@@ -8664,7 +8669,7 @@
                   "1st Mortgagee",
                   "First",
                   "FIRST MORTGAGEE",
-                  "Mortgage Data \u2013 First",
+                  "Mortgage Data – First",
                   "Mortgagee #1",
                   "Mortgagee #2",
                   "Mortgagee #3",
@@ -8672,7 +8677,7 @@
                   "ORDER"
                 ],
                 "fideon:value_type": "text",
-                "description": "Rank (Homeowners / Mortgagees). Text as printed. Printed as e.g. \"1st Mortgagee\", \"First\", \"FIRST MORTGAGEE\", \"Mortgage Data \u2013 First\"."
+                "description": "Rank (Homeowners / Mortgagees). Text as printed. Printed as e.g. \"1st Mortgagee\", \"First\", \"FIRST MORTGAGEE\", \"Mortgage Data – First\"."
               },
               "name": {
                 "$ref": "#/$defs/FieldValue",
@@ -8976,11 +8981,11 @@
           "fideon:aliases": [
             "Limitations on Certain Property",
             "Personal Property - Special Limits of Liability",
-            "Personal Property \u2013 Special Limits of Liability",
+            "Personal Property – Special Limits of Liability",
             "Special limits",
             "Special Limits of Liability"
           ],
-          "description": "List of special limits of liability (Homeowners). Printed as e.g. \"Limitations on Certain Property\", \"Personal Property - Special Limits of Liability\", \"Personal Property \u2013 Special Limits of Liability\", \"Special limits\"."
+          "description": "List of special limits of liability (Homeowners). Printed as e.g. \"Limitations on Certain Property\", \"Personal Property - Special Limits of Liability\", \"Personal Property – Special Limits of Liability\", \"Special limits\"."
         },
         "scheduled_other_structures": {
           "type": "array",
@@ -9413,7 +9418,7 @@
                       "Cov A",
                       "Cov A - Dwelling",
                       "Cov A -- Dwelling",
-                      "Cov A \u2013 Dwelling",
+                      "Cov A – Dwelling",
                       "Coverage A",
                       "Coverage A - Dwelling",
                       "Coverage A - Residence",
@@ -9421,8 +9426,8 @@
                       "Coverage A -- Residence",
                       "Coverage A DWELLING",
                       "Coverage A Dwelling",
-                      "Coverage A \u2013 Dwelling",
-                      "Coverage A \u2013 Residence",
+                      "Coverage A – Dwelling",
+                      "Coverage A – Residence",
                       "COVERAGE LIMIT",
                       "Deluxe House Coverage",
                       "DWELLING",
@@ -9448,7 +9453,7 @@
                       "Cov B",
                       "Cov B - Other Structures",
                       "Cov B -- Other Structures",
-                      "Cov B \u2013 Other Structures",
+                      "Cov B – Other Structures",
                       "Coverage B",
                       "Coverage B - Other Structures",
                       "Coverage B - Related Private Structures",
@@ -9457,9 +9462,9 @@
                       "Coverage B -- Related Private Structures",
                       "Coverage B -- Related Private Structures on the Premises",
                       "Coverage B OTHER STRUCTURES",
-                      "Coverage B \u2013 Other Structures",
-                      "Coverage B \u2013 Related Private Structures",
-                      "Coverage B \u2013 Related Private Structures on the Premises",
+                      "Coverage B – Other Structures",
+                      "Coverage B – Related Private Structures",
+                      "Coverage B – Related Private Structures on the Premises",
                       "COVERAGE LIMIT",
                       "Liability Limit",
                       "LIMIT",
@@ -9482,12 +9487,12 @@
                       "Cov C",
                       "Cov C - Personal Property",
                       "Cov C -- Personal Property",
-                      "Cov C \u2013 Personal Property",
+                      "Cov C – Personal Property",
                       "Coverage C",
                       "Coverage C - Personal Property",
                       "Coverage C -- Personal Property",
                       "Coverage C PERSONAL PROPERTY",
-                      "Coverage C \u2013 Personal Property",
+                      "Coverage C – Personal Property",
                       "COVERAGE LIMIT",
                       "Deluxe Contents Coverage",
                       "Deluxe or Standard Contents",
@@ -9512,7 +9517,7 @@
                       "Cov D",
                       "Cov D - Addl Living Exp/Loss of Rents",
                       "Cov D -- Addl Living Exp/Loss of Rents",
-                      "Cov D \u2013 Addl Living Exp/Loss of Rents",
+                      "Cov D – Addl Living Exp/Loss of Rents",
                       "Coverage D",
                       "Coverage D - Additional Living Costs And Loss Of Rent",
                       "Coverage D - Additional Living Expense and Loss of Rent",
@@ -9525,11 +9530,11 @@
                       "Coverage D -- Addl. Living Exp and Loss of Rent",
                       "Coverage D -- Loss of Use",
                       "Coverage D LOSS OF USE",
-                      "Coverage D \u2013 Additional Living Costs And Loss Of Rent",
-                      "Coverage D \u2013 Additional Living Expense and Loss of Rent",
-                      "Coverage D \u2013 Additional Living Expense or Loss of Rent",
-                      "Coverage D \u2013 Addl. Living Exp and Loss of Rent",
-                      "Coverage D \u2013 Loss of Use",
+                      "Coverage D – Additional Living Costs And Loss Of Rent",
+                      "Coverage D – Additional Living Expense and Loss of Rent",
+                      "Coverage D – Additional Living Expense or Loss of Rent",
+                      "Coverage D – Addl. Living Exp and Loss of Rent",
+                      "Coverage D – Loss of Use",
                       "COVERAGE LIMIT",
                       "D. Add'l Living Exp. & Loss of Rent",
                       "D. Additional Living Expenses",
@@ -9560,8 +9565,8 @@
                       "Rating Basis - Residence",
                       "Rating Basis -- Dwelling",
                       "Rating Basis -- Residence",
-                      "Rating Basis \u2013 Dwelling",
-                      "Rating Basis \u2013 Residence",
+                      "Rating Basis – Dwelling",
+                      "Rating Basis – Residence",
                       "Settlement"
                     ],
                     "fideon:value_type": "text",
@@ -9574,12 +9579,12 @@
                       "Automatic Adjustment Of Limits",
                       "Automatic Adjustment Of Limits - Annual Increase 3 Percent",
                       "Automatic Adjustment Of Limits -- Annual Increase 3 Percent",
-                      "Automatic Adjustment Of Limits \u2013 Annual Increase 3 Percent",
+                      "Automatic Adjustment Of Limits – Annual Increase 3 Percent",
                       "Automatic Increase",
                       "Automatic Increase in Insurance",
                       "Automatic Increase in Insurance - 3 Percent",
                       "Automatic Increase in Insurance -- 3 Percent",
-                      "Automatic Increase in Insurance \u2013 3 Percent",
+                      "Automatic Increase in Insurance – 3 Percent",
                       "Automatic Inflation Protection",
                       "Inflation Guard",
                       "Inflation Protection Coverage",
@@ -9655,7 +9660,7 @@
                       "Personal Property Replacement Cost Loss Settlement",
                       "Rating Basis - Personal Property",
                       "Rating Basis -- Personal Property",
-                      "Rating Basis \u2013 Personal Property"
+                      "Rating Basis – Personal Property"
                     ],
                     "fideon:value_type": "text",
                     "description": "Personal property loss settlement basis (Homeowners / Scheduled locations / Section i property coverages). Text as printed. Printed as e.g. \"Loss Settlement Contents\", \"Payment basis\", \"Personal Property Replacement Cost\", \"Personal Property Replacement Cost Loss Settlement\"."
@@ -9686,40 +9691,40 @@
                       "Cov L",
                       "Cov L - Personal Liability",
                       "Cov L -- Personal Liability",
-                      "Cov L \u2013 Personal Liability",
+                      "Cov L – Personal Liability",
                       "Coverage E",
                       "Coverage E - Personal Liability",
                       "Coverage E - Personal Liability - Bodily Injury and Property Damage (each occurrence)",
                       "Coverage E - Personal Liability -- Bodily Injury and Property Damage (each occurrence)",
-                      "Coverage E - Personal Liability \u2013 Bodily Injury and Property Damage (each occurrence)",
+                      "Coverage E - Personal Liability – Bodily Injury and Property Damage (each occurrence)",
                       "Coverage E -- Personal Liability",
                       "Coverage E -- Personal Liability - Bodily Injury and Property Damage (each occurrence)",
                       "Coverage E -- Personal Liability -- Bodily Injury and Property Damage (each occurrence)",
-                      "Coverage E -- Personal Liability \u2013 Bodily Injury and Property Damage (each occurrence)",
+                      "Coverage E -- Personal Liability – Bodily Injury and Property Damage (each occurrence)",
                       "Coverage E PERSONAL LIABILITY",
-                      "Coverage E \u2013 Personal Liability",
-                      "Coverage E \u2013 Personal Liability - Bodily Injury and Property Damage (each occurrence)",
-                      "Coverage E \u2013 Personal Liability -- Bodily Injury and Property Damage (each occurrence)",
-                      "Coverage E \u2013 Personal Liability \u2013 Bodily Injury and Property Damage (each occurrence)",
+                      "Coverage E – Personal Liability",
+                      "Coverage E – Personal Liability - Bodily Injury and Property Damage (each occurrence)",
+                      "Coverage E – Personal Liability -- Bodily Injury and Property Damage (each occurrence)",
+                      "Coverage E – Personal Liability – Bodily Injury and Property Damage (each occurrence)",
                       "Coverage L",
                       "Coverage L - OLT - Premises Liability",
                       "Coverage L - OLT -- Premises Liability",
-                      "Coverage L - OLT \u2013 Premises Liability",
+                      "Coverage L - OLT – Premises Liability",
                       "Coverage L - Personal Liability",
                       "Coverage L - Premises Liability",
                       "Coverage L - Premises Liability Coverage (Each Occurrence)",
                       "Coverage L -- OLT - Premises Liability",
                       "Coverage L -- OLT -- Premises Liability",
-                      "Coverage L -- OLT \u2013 Premises Liability",
+                      "Coverage L -- OLT – Premises Liability",
                       "Coverage L -- Personal Liability",
                       "Coverage L -- Premises Liability",
                       "Coverage L -- Premises Liability Coverage (Each Occurrence)",
-                      "Coverage L \u2013 OLT - Premises Liability",
-                      "Coverage L \u2013 OLT -- Premises Liability",
-                      "Coverage L \u2013 OLT \u2013 Premises Liability",
-                      "Coverage L \u2013 Personal Liability",
-                      "Coverage L \u2013 Premises Liability",
-                      "Coverage L \u2013 Premises Liability Coverage (Each Occurrence)",
+                      "Coverage L – OLT - Premises Liability",
+                      "Coverage L – OLT -- Premises Liability",
+                      "Coverage L – OLT – Premises Liability",
+                      "Coverage L – Personal Liability",
+                      "Coverage L – Premises Liability",
+                      "Coverage L – Premises Liability Coverage (Each Occurrence)",
                       "COVERAGE LIMIT",
                       "E. Personal Liability",
                       "E: PERSONAL LIABILITY EACH OCCURRENCE",
@@ -9749,16 +9754,16 @@
                       "Cov M",
                       "Cov M - Medical Payments",
                       "Cov M -- Medical Payments",
-                      "Cov M \u2013 Medical Payments",
+                      "Cov M – Medical Payments",
                       "Coverage F - Medical Payments",
                       "Coverage F - Medical Payments Coverage",
                       "Coverage F - Medical Payments to Others",
                       "Coverage F -- Medical Payments",
                       "Coverage F -- Medical Payments Coverage",
                       "Coverage F -- Medical Payments to Others",
-                      "Coverage F \u2013 Medical Payments",
-                      "Coverage F \u2013 Medical Payments Coverage",
-                      "Coverage F \u2013 Medical Payments to Others",
+                      "Coverage F – Medical Payments",
+                      "Coverage F – Medical Payments Coverage",
+                      "Coverage F – Medical Payments to Others",
                       "COVERAGE LIMIT",
                       "Coverage M",
                       "Coverage M-Medical Payments to Others",
@@ -9775,7 +9780,7 @@
                       "Medical Payments to Others"
                     ],
                     "fideon:value_type": "money",
-                    "description": "Coverage F medical payments limit (Homeowners / Scheduled locations / Section ii liability coverages). Money amount; parsed is the number (negative for credits), null for Incl./***/N/A. Printed as e.g. \"Cov M\", \"Cov M - Medical Payments\", \"Cov M -- Medical Payments\", \"Cov M \u2013 Medical Payments\"."
+                    "description": "Coverage F medical payments limit (Homeowners / Scheduled locations / Section ii liability coverages). Money amount; parsed is the number (negative for credits), null for Incl./***/N/A. Printed as e.g. \"Cov M\", \"Cov M - Medical Payments\", \"Cov M -- Medical Payments\", \"Cov M – Medical Payments\"."
                   },
                   "coverage_f_medical_payments_per_person_limit": {
                     "$ref": "#/$defs/FieldValue",
@@ -9784,50 +9789,50 @@
                       "Coverage F - Medical Payments to Others (each person)",
                       "Coverage F -- Medical Payments to Others (each person)",
                       "Coverage F MEDICAL PAYMENTS TO OTHERS",
-                      "Coverage F \u2013 Medical Payments to Others (each person)",
+                      "Coverage F – Medical Payments to Others (each person)",
                       "COVERAGE LIMIT",
                       "Coverage M - Medical Payments - Per Person",
                       "Coverage M - Medical Payments -- Per Person",
                       "Coverage M - Medical Payments To Others",
-                      "Coverage M - Medical Payments \u2013 Per Person",
+                      "Coverage M - Medical Payments – Per Person",
                       "Coverage M - OLT - Premises Med Pay - Per Person",
                       "Coverage M - OLT - Premises Med Pay -- Per Person",
-                      "Coverage M - OLT - Premises Med Pay \u2013 Per Person",
+                      "Coverage M - OLT - Premises Med Pay – Per Person",
                       "Coverage M - OLT -- Premises Med Pay - Per Person",
                       "Coverage M - OLT -- Premises Med Pay -- Per Person",
-                      "Coverage M - OLT -- Premises Med Pay \u2013 Per Person",
-                      "Coverage M - OLT \u2013 Premises Med Pay - Per Person",
-                      "Coverage M - OLT \u2013 Premises Med Pay -- Per Person",
-                      "Coverage M - OLT \u2013 Premises Med Pay \u2013 Per Person",
+                      "Coverage M - OLT -- Premises Med Pay – Per Person",
+                      "Coverage M - OLT – Premises Med Pay - Per Person",
+                      "Coverage M - OLT – Premises Med Pay -- Per Person",
+                      "Coverage M - OLT – Premises Med Pay – Per Person",
                       "Coverage M - Premises Medical Payments (Each Person)",
                       "Coverage M -- Medical Payments - Per Person",
                       "Coverage M -- Medical Payments -- Per Person",
                       "Coverage M -- Medical Payments To Others",
-                      "Coverage M -- Medical Payments \u2013 Per Person",
+                      "Coverage M -- Medical Payments – Per Person",
                       "Coverage M -- OLT - Premises Med Pay - Per Person",
                       "Coverage M -- OLT - Premises Med Pay -- Per Person",
-                      "Coverage M -- OLT - Premises Med Pay \u2013 Per Person",
+                      "Coverage M -- OLT - Premises Med Pay – Per Person",
                       "Coverage M -- OLT -- Premises Med Pay - Per Person",
                       "Coverage M -- OLT -- Premises Med Pay -- Per Person",
-                      "Coverage M -- OLT -- Premises Med Pay \u2013 Per Person",
-                      "Coverage M -- OLT \u2013 Premises Med Pay - Per Person",
-                      "Coverage M -- OLT \u2013 Premises Med Pay -- Per Person",
-                      "Coverage M -- OLT \u2013 Premises Med Pay \u2013 Per Person",
+                      "Coverage M -- OLT -- Premises Med Pay – Per Person",
+                      "Coverage M -- OLT – Premises Med Pay - Per Person",
+                      "Coverage M -- OLT – Premises Med Pay -- Per Person",
+                      "Coverage M -- OLT – Premises Med Pay – Per Person",
                       "Coverage M -- Premises Medical Payments (Each Person)",
-                      "Coverage M \u2013 Medical Payments - Per Person",
-                      "Coverage M \u2013 Medical Payments -- Per Person",
-                      "Coverage M \u2013 Medical Payments To Others",
-                      "Coverage M \u2013 Medical Payments \u2013 Per Person",
-                      "Coverage M \u2013 OLT - Premises Med Pay - Per Person",
-                      "Coverage M \u2013 OLT - Premises Med Pay -- Per Person",
-                      "Coverage M \u2013 OLT - Premises Med Pay \u2013 Per Person",
-                      "Coverage M \u2013 OLT -- Premises Med Pay - Per Person",
-                      "Coverage M \u2013 OLT -- Premises Med Pay -- Per Person",
-                      "Coverage M \u2013 OLT -- Premises Med Pay \u2013 Per Person",
-                      "Coverage M \u2013 OLT \u2013 Premises Med Pay - Per Person",
-                      "Coverage M \u2013 OLT \u2013 Premises Med Pay -- Per Person",
-                      "Coverage M \u2013 OLT \u2013 Premises Med Pay \u2013 Per Person",
-                      "Coverage M \u2013 Premises Medical Payments (Each Person)",
+                      "Coverage M – Medical Payments - Per Person",
+                      "Coverage M – Medical Payments -- Per Person",
+                      "Coverage M – Medical Payments To Others",
+                      "Coverage M – Medical Payments – Per Person",
+                      "Coverage M – OLT - Premises Med Pay - Per Person",
+                      "Coverage M – OLT - Premises Med Pay -- Per Person",
+                      "Coverage M – OLT - Premises Med Pay – Per Person",
+                      "Coverage M – OLT -- Premises Med Pay - Per Person",
+                      "Coverage M – OLT -- Premises Med Pay -- Per Person",
+                      "Coverage M – OLT -- Premises Med Pay – Per Person",
+                      "Coverage M – OLT – Premises Med Pay - Per Person",
+                      "Coverage M – OLT – Premises Med Pay -- Per Person",
+                      "Coverage M – OLT – Premises Med Pay – Per Person",
+                      "Coverage M – Premises Medical Payments (Each Person)",
                       "Each Person",
                       "Liability Limit",
                       "LIMIT",
@@ -9850,43 +9855,43 @@
                       "COVERAGE LIMIT",
                       "Coverage M - Medical Payments - Per Occurrence",
                       "Coverage M - Medical Payments -- Per Occurrence",
-                      "Coverage M - Medical Payments \u2013 Per Occurrence",
+                      "Coverage M - Medical Payments – Per Occurrence",
                       "Coverage M - OLT - Premises Med Pay - Per Occurrence",
                       "Coverage M - OLT - Premises Med Pay -- Per Occurrence",
-                      "Coverage M - OLT - Premises Med Pay \u2013 Per Occurrence",
+                      "Coverage M - OLT - Premises Med Pay – Per Occurrence",
                       "Coverage M - OLT -- Premises Med Pay - Per Occurrence",
                       "Coverage M - OLT -- Premises Med Pay -- Per Occurrence",
-                      "Coverage M - OLT -- Premises Med Pay \u2013 Per Occurrence",
-                      "Coverage M - OLT \u2013 Premises Med Pay - Per Occurrence",
-                      "Coverage M - OLT \u2013 Premises Med Pay -- Per Occurrence",
-                      "Coverage M - OLT \u2013 Premises Med Pay \u2013 Per Occurrence",
+                      "Coverage M - OLT -- Premises Med Pay – Per Occurrence",
+                      "Coverage M - OLT – Premises Med Pay - Per Occurrence",
+                      "Coverage M - OLT – Premises Med Pay -- Per Occurrence",
+                      "Coverage M - OLT – Premises Med Pay – Per Occurrence",
                       "Coverage M - Premises Medical Payments (Each Accident)",
                       "Coverage M -- Medical Payments - Per Occurrence",
                       "Coverage M -- Medical Payments -- Per Occurrence",
-                      "Coverage M -- Medical Payments \u2013 Per Occurrence",
+                      "Coverage M -- Medical Payments – Per Occurrence",
                       "Coverage M -- OLT - Premises Med Pay - Per Occurrence",
                       "Coverage M -- OLT - Premises Med Pay -- Per Occurrence",
-                      "Coverage M -- OLT - Premises Med Pay \u2013 Per Occurrence",
+                      "Coverage M -- OLT - Premises Med Pay – Per Occurrence",
                       "Coverage M -- OLT -- Premises Med Pay - Per Occurrence",
                       "Coverage M -- OLT -- Premises Med Pay -- Per Occurrence",
-                      "Coverage M -- OLT -- Premises Med Pay \u2013 Per Occurrence",
-                      "Coverage M -- OLT \u2013 Premises Med Pay - Per Occurrence",
-                      "Coverage M -- OLT \u2013 Premises Med Pay -- Per Occurrence",
-                      "Coverage M -- OLT \u2013 Premises Med Pay \u2013 Per Occurrence",
+                      "Coverage M -- OLT -- Premises Med Pay – Per Occurrence",
+                      "Coverage M -- OLT – Premises Med Pay - Per Occurrence",
+                      "Coverage M -- OLT – Premises Med Pay -- Per Occurrence",
+                      "Coverage M -- OLT – Premises Med Pay – Per Occurrence",
                       "Coverage M -- Premises Medical Payments (Each Accident)",
-                      "Coverage M \u2013 Medical Payments - Per Occurrence",
-                      "Coverage M \u2013 Medical Payments -- Per Occurrence",
-                      "Coverage M \u2013 Medical Payments \u2013 Per Occurrence",
-                      "Coverage M \u2013 OLT - Premises Med Pay - Per Occurrence",
-                      "Coverage M \u2013 OLT - Premises Med Pay -- Per Occurrence",
-                      "Coverage M \u2013 OLT - Premises Med Pay \u2013 Per Occurrence",
-                      "Coverage M \u2013 OLT -- Premises Med Pay - Per Occurrence",
-                      "Coverage M \u2013 OLT -- Premises Med Pay -- Per Occurrence",
-                      "Coverage M \u2013 OLT -- Premises Med Pay \u2013 Per Occurrence",
-                      "Coverage M \u2013 OLT \u2013 Premises Med Pay - Per Occurrence",
-                      "Coverage M \u2013 OLT \u2013 Premises Med Pay -- Per Occurrence",
-                      "Coverage M \u2013 OLT \u2013 Premises Med Pay \u2013 Per Occurrence",
-                      "Coverage M \u2013 Premises Medical Payments (Each Accident)",
+                      "Coverage M – Medical Payments - Per Occurrence",
+                      "Coverage M – Medical Payments -- Per Occurrence",
+                      "Coverage M – Medical Payments – Per Occurrence",
+                      "Coverage M – OLT - Premises Med Pay - Per Occurrence",
+                      "Coverage M – OLT - Premises Med Pay -- Per Occurrence",
+                      "Coverage M – OLT - Premises Med Pay – Per Occurrence",
+                      "Coverage M – OLT -- Premises Med Pay - Per Occurrence",
+                      "Coverage M – OLT -- Premises Med Pay -- Per Occurrence",
+                      "Coverage M – OLT -- Premises Med Pay – Per Occurrence",
+                      "Coverage M – OLT – Premises Med Pay - Per Occurrence",
+                      "Coverage M – OLT – Premises Med Pay -- Per Occurrence",
+                      "Coverage M – OLT – Premises Med Pay – Per Occurrence",
+                      "Coverage M – Premises Medical Payments (Each Accident)",
                       "Liability Limit",
                       "LIMIT",
                       "LIMIT AMOUNT",
@@ -10258,7 +10263,7 @@
                   "CERTIFICATE OF OCCUPANCY DATE"
                 ],
                 "fideon:value_type": "date",
-                "description": "Certificate of occupancy date (Homeowners / Scheduled locations). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"CERTIFICATE OF OCCUPANCY DATE\"."
+                "description": "Certificate of occupancy date (Homeowners / Scheduled locations). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"CERTIFICATE OF OCCUPANCY DATE\"."
               },
               "months_occupied_annually": {
                 "$ref": "#/$defs/FieldValue",
@@ -10845,7 +10850,7 @@
                 "Previous Policy Expiration Date"
               ],
               "fideon:value_type": "date",
-              "description": "Expiration date (Underwriting / Prior insurance). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"Previous Policy Expiration Date\"."
+              "description": "Expiration date (Underwriting / Prior insurance). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Previous Policy Expiration Date\"."
             },
             "notes": {
               "$ref": "#/$defs/FieldValue",
@@ -10962,7 +10967,7 @@
                   "ORDERED DATE"
                 ],
                 "fideon:value_type": "date",
-                "description": "Ordered date (Underwriting / Insurance scores). Date; parsed is ISO yyyy-mm-dd. Printed as e.g. \"ORDERED DATE\"."
+                "description": "Ordered date (Underwriting / Insurance scores). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"ORDERED DATE\"."
               },
               "report_vendor": {
                 "$ref": "#/$defs/FieldValue",
@@ -11158,6 +11163,11 @@
                 ],
                 "fideon:value_type": "text",
                 "description": "Form reference (Underwriting / Consumer report disclosures). Text as printed. Printed as e.g. \"FORM\"."
+              },
+              "reporting_agency_phone": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:value_type": "text",
+                "description": "Reporting agency phone (Underwriting / Consumer report disclosures). Text as printed."
               }
             }
           },
@@ -11167,7 +11177,7 @@
             "Extraordinary Life Event",
             "Fair Credit Notice",
             "FAIR CREDIT REPORTING ACT NOTICE",
-            "IMPORTANT INFORMATION ABOUT THE COST OF YOUR INSURANCE \u2013 USE OF CONSUMER REPORTS",
+            "IMPORTANT INFORMATION ABOUT THE COST OF YOUR INSURANCE – USE OF CONSUMER REPORTS",
             "Important Messages and Details"
           ],
           "description": "List of consumer report disclosures (Underwriting). Printed as e.g. \"Adverse Action Notice\", \"Adverse Action Notice - Home\", \"Extraordinary Life Event\", \"Fair Credit Notice\"."
@@ -11183,10 +11193,68 @@
       },
       "description": "Section: Underwriting (document root)."
     },
+    "additional_fields": {
+      "type": "array",
+      "description": "Printed label/value pairs that have no dedicated field above, kept as key and value: the label as the document prints it, the section heading it sits under, and the value as a FieldValue (raw, parsed, page_ref).",
+      "items": {
+        "type": "object",
+        "properties": {
+          "section": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "label": {
+            "type": "string"
+          },
+          "value": {
+            "$ref": "#/$defs/FieldValue"
+          }
+        },
+        "required": [
+          "label",
+          "value"
+        ]
+      }
+    },
     "text_sections": {
       "type": "object",
       "additionalProperties": {
         "$ref": "#/$defs/TextSection"
+      }
+    },
+    "printed_lines": {
+      "type": "array",
+      "description": "Printed lines that no keyed field, label or prose section already carries: section headings, column headers, captions, page headers and footers, empty labels. Together with the keyed fields and text_sections, nothing the page prints is missing from the gold.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "integer"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "heading",
+              "caption",
+              "header",
+              "footer",
+              "row"
+            ]
+          },
+          "cells": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "page",
+          "kind",
+          "cells"
+        ]
       }
     }
   },
