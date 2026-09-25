@@ -314,6 +314,11 @@ def test_printed_prose_reaches_the_gold_as_text_sections(tmp_path, schema):
     page.insert_text((60, 440), "deductible.", fontsize=10, fontname="helv")
     page.insert_text((60, 470), "Your coverage begins on 08/26/2026 at 12:01 a.m. at the address shown.",
                      fontsize=10, fontname="helv")
+    for x, y, text in ((60, 520, "- Pay a bill"), (260, 520, "- Update your policy"),
+                       (60, 534, "- Report a claim"), (260, 534, "- Check recalls")):
+        page.insert_text((x, y), text, fontsize=10, fontname="helv")
+    page.insert_text((60, 580), "Watercraft and Equipment Value Total Agreed Amount: $19,000",
+                     fontsize=10, fontname="helv")
     doc.save(str(folder / "prose.pdf"))
     out = tmp_path / "out"
     out.mkdir()
@@ -325,6 +330,10 @@ def test_printed_prose_reaches_the_gold_as_text_sections(tmp_path, schema):
     assert deductibles["page_range"] == [1]
     begins, = [s for s in sections if s["raw_text"].startswith("Your coverage begins on")]
     assert "08/26/2026" not in begins["raw_text"]         # the replaced date, not the original
+    # a list set in two columns is one section; a "Label: value" row is no prose
+    listed, = [s for s in sections if s["section_type"] == "other"]
+    assert listed["raw_text"] == "Pay a bill; Update your policy; Report a claim; Check recalls"
+    assert not any(s["raw_text"].startswith("Watercraft and Equipment Value") for s in sections)
 
 
 def test_facts_a_page_states_in_sentences_and_footers(tmp_path, schema):

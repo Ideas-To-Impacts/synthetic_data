@@ -156,6 +156,18 @@ class Ink:
             bottom += 1
         return (p0 + top) / z, (p0 + bottom + 1) / z
 
+    def next_ink(self, y0, y1, x, limit):
+        """Where the next printed word right of ``x`` begins - the first ink
+        after a blank - or None before ``limit``."""
+        z = self.zoom
+        cols = self.cols(y0, y1)
+        p, stop = int(max(0, x * z)), int(min(len(cols), limit * z))
+        while p < stop and cols[p]:
+            p += 1
+        while p < stop and not cols[p]:
+            p += 1
+        return p / z if p < stop else None
+
     def word_start(self, y0, y1, x, gap):
         """Where the printed word under ``x`` begins: back over ink and over
         blanks narrower than ``gap``."""
@@ -479,6 +491,7 @@ class Replacement:
     room: Optional[float] = None      # x the new text must not run past
     face_known: bool = False          # font taken from a visible text layer
     glued: bool = False               # printed against a label (HIN:327939)
+    follows: bool = False             # more words printed after it on its line
 
 
 def _size_from_ink(text, glyphs):
@@ -570,7 +583,7 @@ def apply(page, replacements: List[Replacement], ink: Ink, matrix=fitz.Identity)
             # comma or a time printed after it is not part of it
             printed = fitz.get_text_length(rep.old, fontname=rep.font, fontsize=size)
             limit = min(rep.room if rep.room is not None else page.rect.width,
-                        x0 + 1.06 * printed + 0.5)
+                        x0 + 1.2 * printed + 0.5)
             left, right = ink.run(*band, x0, max(x0 + 1, r.x1 - (r.x0 - x0)), limit,
                                   gap=0.2 * size, glued=rep.glued)
             right = max(right, min(r.x1, limit))
@@ -582,6 +595,14 @@ def apply(page, replacements: List[Replacement], ink: Ink, matrix=fitz.Identity)
             if not 0.45 < s / (k * h) < 1.6:
                 break
             size, baseline, ok = s, base, True
+        if rep.follows and ok:
+            # the next word's own ink bounds the new value - on a scan the
+            # text layer can sit a few points off the print
+            nxt = ink.next_ink(baseline - 0.7 * size, baseline - 0.05 * size, right,
+                               right + 6 * size)
+            if nxt is not None:
+                bound = nxt - 0.3 * size
+                rep.room = bound if rep.room is None else min(rep.room, bound)
         measured.append([rep, size, baseline, left, right, ok])
 
     # a value whose own line could not be read takes the size the other
@@ -616,6 +637,12 @@ def apply(page, replacements: List[Replacement], ink: Ink, matrix=fitz.Identity)
 
     for rep, size, baseline, cover, left, right in placed:
         page.draw_rect(cover, color=None, fill=WHITE, overlay=True)
+        if rep.old[:1] in "Jjfgpqy":
+            # the hook of a "J" curls back under the baseline, left of where the
+            # ink above it begins: covered by the band alone it leaves a dot
+            page.draw_rect(fitz.Rect(left - 0.35 * size, baseline - 0.05 * size,
+                                     left + 0.5, baseline + 0.3 * size),
+                           color=None, fill=WHITE, overlay=True)
 
     for rep, size, baseline, cover, left, right in placed:
         if not rep.new.strip():

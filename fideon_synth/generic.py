@@ -1125,7 +1125,9 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
                 after = end
                 while after < len(f.cell.text) and f.cell.chars[after] is None:
                     after += 1
-                if after < len(f.cell.text) and f.cell.chars[end - 1] is not None:
+                # (a scan's layer sits a few points off its print: there the
+                # next word's box would cut the cover short of the old ink)
+                if visible and after < len(f.cell.text) and f.cell.chars[end - 1] is not None:
                     gap = f.cell.chars[after].box.x0 - f.cell.chars[end - 1].box.x1
                     room = f.cell.chars[after].box.x0 - max(1.5, 0.8 * gap)
                 reps.append(overlay.Replacement(
@@ -1135,7 +1137,8 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
                     font=overlay.base14(first.font, visible), face_known=visible,
                     glued=f.start > 0 and f.cell.text[f.start - 1] not in " ",
                     color=first.color if visible else 0,
-                    align=_alignment(f, cell_list), room=room))
+                    align=_alignment(f, cell_list), room=room,
+                    follows=bool(f.cell.text[end:].strip(" ,;.-–"))))
             found_all += found
             plans.append((page, reps, ink, matrix))
         signed = _signature_ink(pages)

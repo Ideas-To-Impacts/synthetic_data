@@ -1678,7 +1678,10 @@ class Reader:
             else:
                 item[field] = self._amount(s)
         # words in the limit column beside a figure qualify it; alone they
-        # say how the coverage is valued or how far it reaches
+        # say how the coverage is valued or how far it reaches - words, not a
+        # speck a scan's layer made letters of ("EE")
+        if extra and len(re.sub(r"[^A-Za-z]", "", extra)) < 4 and not re.search(r"\d", extra):
+            extra = ""
         if extra:
             said_extra = said_extra or fv(extra)
             if "limit_amount" in item:

@@ -81,6 +81,10 @@ def read_page(page, dpi=DPI, min_conf=None) -> List[Tuple[str, fitz.Rect, float]
         ys = [p[1] for p in box]
         rect = fitz.Rect(min(xs) * scale, min(ys) * scale, max(xs) * scale, max(ys) * scale)
         if conf >= (MIN_CONFIDENCE if min_conf is None else min_conf) and text.strip():
+            if len(text.split()) <= 5:
+                # the engine reads a registered mark after a name as "?":
+                # "Sign & Glide?", "Propulsion Plus?"
+                text = re.sub(r"(?<=[A-Za-z])\?(?=\s|$)", "®", text)
             lines.append((text, rect, float(conf)))
     return lines
 
