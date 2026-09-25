@@ -560,7 +560,9 @@ def find_values(cell_list):
             while up is not None and id(up) not in names and                     (_looks_like_name(up.text) or _one_word_name(up.text)):
                 chain.append(up)
                 up = _above(up, cell_list)        # a second insured stacked above
-            headed = up is not None and (NAME_LABEL.search(up.text) or GLUED_LABEL.match(up.text))
+            # an agency's block counts as well: "Agency Address" over "IRONVALE"
+            headed = up is not None and (NAME_LABEL.search(up.text) or PRODUCER_LABEL.search(up.text)
+                                         or GLUED_LABEL.match(up.text))
             for k, cell in enumerate(chain):
                 if not headed and not _looks_like_name(cell.text):
                     break
