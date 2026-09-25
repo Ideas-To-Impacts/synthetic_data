@@ -530,7 +530,10 @@ def find_values(cell_list):
     for cell in cell_list:
         if NAME_LABEL.search(cell.text) and len(cell.text) < 45 and len(cell.text.split()) <= 5 \
                 and not re.search(r"\d", cell.text):
-            for cand in (_below(cell, cell_list, max_gap=3.2), ):
+            # the name under its label, or beside it: "Named Insured(s):  Redhaven Properties LLC"
+            right = min((c for c in cell_list if c.row == cell.row and c.rect.x0 > cell.rect.x1),
+                        key=lambda c: c.rect.x0, default=None)
+            for cand in (_below(cell, cell_list, max_gap=3.2), right):
                 if cand is not None and _looks_like_name(cand.text):
                     names[id(cand)] = (cand, cell.text)
     # a list of drivers is one name per line under its label ("Listed
@@ -545,8 +548,10 @@ def find_values(cell_list):
     for cell, label in names.values():
         if any(f.cell is cell for f in found):
             continue
-        kind = "company" if set(w.lower().strip(",") for w in cell.text.split()) & COMPANY_WORDS \
-            else "person"
+        words = {w.lower().strip(",.") for w in cell.text.split()}
+        if words <= COMPANY_WORDS:
+            continue                          # "AGENCY LLC": no name in it
+        kind = "company" if words & COMPANY_WORDS else "person"
         f = Found(kind, cell, 0, len(cell.text))
         f.label = label or ""
         found.append(f)
@@ -661,7 +666,11 @@ class Faker:
 
     def __init__(self, vals: Values, originals=()):
         self.v = vals
+        # never about a whole year: a one-year term's start would land on its
+        # own end, and the synthetic dates would repeat the original ones
         self.days = vals.choice([-1, 1]) * vals.integer(45, 540)
+        while abs(abs(self.days) % 365.25 - 182.6) > 175:
+            self.days = vals.choice([-1, 1]) * vals.integer(45, 540)
         self.memo: Dict[tuple, str] = {}
         # a replacement must not be another original value of this document -
         # the insured's town handed to the agent is still the insured's town
@@ -670,6 +679,7 @@ class Faker:
     def __call__(self, f: Found) -> str:
         if f.blank:
             return ""
+<<<<<<< Updated upstream
         if f.kind in ("id", "digits"):
             # one identifier, one replacement, wherever and however it is
             # printed: "103-194-455" and the ID card's "103194455" alike
@@ -677,6 +687,10 @@ class Faker:
             ident = re.sub(r"\D", "", base) if re.fullmatch(r"[\d\s-]+", base) \
                 else re.sub(r"\s", "", base).lower()
             key = ("ident", ident)
+=======
+        if f.kind in ("id", "digits") and not f.blank and                 (not f.key or re.sub(r"\s", "", f.key) == re.sub(r"\s", "", f.text.lower())):
+            key = ("ident", re.sub(r"\s", "", f.text).lower())
+>>>>>>> Stashed changes
             if key not in self.memo:
                 self.memo[key] = self._id(f.text)
             chars = iter(re.sub(r"[^A-Za-z0-9]", "", self.memo[key]))
@@ -696,6 +710,16 @@ class Faker:
         if f.kind == "date" and f.key and _key(f.text) != f.key:
             return new                       # a garbled copy: print the date cleanly
         return _case_like(new, f.text)
+
+    def avoid(self, dates):
+        """Choose the shift again until no original date lands on another:
+        with April 9 and August 9 both printed, a 122-day shift would make
+        the new April date the original August one."""
+        dates = {d for d in (_date_of(t) for t in dates) if d is not None}
+        for _ in range(60):
+            if not dates or not {d + timedelta(days=self.days) for d in dates} & dates:
+                return
+            self.days = self.v.choice([-1, 1]) * self.v.integer(45, 540)
 
     def _unique(self, make, old):
         for _ in range(50):
@@ -874,7 +898,9 @@ def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text):
         addr = base + (".mailing_address" if base == "named_insured" else ".address")
         cell = f.cell
         for _ in range(5):
-            cell = _below(cell, [x.cell for x in found])
+            # a name's own second line ("... GROUP" / "BROKERAGE INC") sits
+            # between it and its address, so the first step reaches further
+            cell = _below(cell, [x.cell for x in found], max_gap=3.0 if cell is f.cell else 1.8)
             if cell is None:
                 break
             for g in by_cell.get(id(cell), []):
@@ -947,12 +973,17 @@ def _sweep(pages, marks=()):
         for f in found:
             if f.kind in PII and len(f.text) >= 4 and not f.blank:
                 kinds.setdefault(_key(f.text), f.kind)
+    # a long number is found again with a label or prefix run into it:
+    # "Policy Number085121419", "ER78202066"
+    loose = {k for k, kind in kinds.items() if kind in ("id", "digits")
+             and re.fullmatch(r"\d{7,}", k.replace(" ", ""))}
     if not kinds:
         return
     # a name can be run into the word before it ("Prepared forMartin
     # Lindqvist"); a lowercase-to-capital join is a boundary for names only
     glued = r"(?:(?<![A-Za-z0-9])|(?-i:(?<=[a-z])(?=[A-Z]))%s)" % "".join(
         "|(?<=%s)" % re.escape(m) for m in sorted(marks))
+<<<<<<< Updated upstream
     # a name or address set in a text layer with no spaces or with commas for
     # them - "BURKHARDEVANSINC", "ROBERT,A,QUEEN" - is the same value
     loose = {"person", "company", "pobox", "street", "cityline"}
@@ -970,6 +1001,16 @@ def _sweep(pages, marks=()):
     pattern = re.compile("|".join(
         (glued if kinds[k] in ("person", "company") else r"(?<![A-Za-z0-9])")
         + words(k) + r"(?![A-Za-z0-9])"
+=======
+    def shape(k):
+        if k in loose:                    # "23101304" printed "23 10 13 04" too
+            return r"\s?".join(re.escape(c) for c in k.replace(" ", ""))
+        return r"\s+".join(map(re.escape, k.split()))
+    pattern = re.compile("|".join(
+        (glued if kinds[k] in ("person", "company") else r"(?<!\d)" if k in loose
+         else r"(?<![A-Za-z0-9])")
+        + shape(k) + (r"(?!\d)" if k in loose else r"(?![A-Za-z0-9])")
+>>>>>>> Stashed changes
         for k in sorted(kinds, key=len, reverse=True)), re.I)
     garbled, towns = [], []
     for *_, found in pages:
@@ -1012,10 +1053,18 @@ def _sweep(pages, marks=()):
                        for c, s, e in pieces.values()):
                     continue
                 full = _key(m.group(0))
+<<<<<<< Updated upstream
                 if full not in kinds:                  # matched without its spaces, dashes or with commas
                     full = canon.get(re.sub(r"[\s,-]", "", full))
                     if full is None:
                         continue
+=======
+                if full not in kinds:             # a spaced copy of a long number
+                    bare = re.sub(r"\s", "", full)
+                    full = next((k for k in loose if re.sub(r"\s", "", k) == bare), full)
+                if full not in kinds:
+                    continue
+>>>>>>> Stashed changes
                 for n, (cell, s, e) in enumerate(pieces.values()):
                     f = Found(kinds[full], cell, s, e)
                     f.key, f.blank = full, n > 0
@@ -1055,8 +1104,16 @@ def _sweep(pages, marks=()):
             for full, kind in kinds.items():
                 if not full.startswith(head + " "):
                     continue
+                rest = full[len(head) + 1:]
                 below = _below(cell, cell_list)
-                if below is None or taken.get(id(below)) or _key(below.text) != full[len(head) + 1:]:
+                if below is None or _key(below.text) != rest:
+                    # a right-aligned block wraps flush right: "Patriotic
+                    # Insurance Group" over "Brokerage"
+                    r = cell.rect
+                    below = next((c for c in cell_list if c is not cell and _key(c.text) == rest
+                                  and abs(c.rect.x1 - r.x1) < 6 and 0 <= c.rect.y0 - r.y1 < 1.8 * r.height),
+                                 None)
+                if below is None or taken.get(id(below)) or _key(below.text) != rest:
                     continue
                 for n, c in enumerate((cell, below)):
                     f = Found(kind, c, 0, len(c.text))
@@ -1080,6 +1137,143 @@ def _sweep(pages, marks=()):
                 f.label = _label_for(f, cell_list)
                 found.append(f)
                 taken.setdefault(id(cell), []).append((0, len(cell.text)))
+
+
+def _vertical(page, swapped):
+    """Replaced values in text set vertically - a date stamped up the page
+    margin. The layout reads rows of horizontal text, so such a line is
+    rewritten here as a whole: removed, and drawn again in its own direction
+    with every replaced value in it swapped."""
+    lines = []
+    for block in page.get_text("rawdict")["blocks"]:
+        for line in block.get("lines", []):
+            dx, dy = line["dir"]
+            if abs(dx) > 0.2 or not line["spans"]:
+                continue                                  # horizontal: done already
+            text = "".join(c["c"] for s in line["spans"] for c in s["chars"])
+            new = text
+            for old, rep in swapped:
+                new = new.replace(old, rep)
+            if new != text:
+                lines.append((fitz.Rect(line["bbox"]), line["spans"][0], dy, new))
+    if not lines:
+        return
+    for rect, *_ in lines:
+        page.add_redact_annot(rect, fill=False)
+    page.apply_redactions(images=fitz.PDF_REDACT_IMAGE_NONE, graphics=fitz.PDF_REDACT_LINE_ART_NONE)
+    for rect, span, dy, new in lines:
+        page.draw_rect(rect, color=None, fill=(1, 1, 1), overlay=True)
+        c = span.get("color", 0)
+        page.insert_text(fitz.Point(span["origin"]), new, fontname="helv", fontsize=span["size"],
+                         rotate=90 if dy < 0 else 270,
+                         color=((c >> 16 & 255) / 255, (c >> 8 & 255) / 255, (c & 255) / 255))
+
+
+def _mop_up(page, swaps):
+    """The last pass: an original value still in the page's text - a copy
+    the layout never read whole, in text overprinted by another line, or a
+    scan's layer split into pieces - is removed, covered in the paper colour
+    and drawn anew, found by the value itself rather than by layout."""
+    hits = []
+    for old, new in swaps:
+        for r in page.search_for(old):
+            if r.width > 1 and r.height > 1:
+                hits.append((r, new))
+    if not hits:
+        return
+    shade = page.get_pixmap(dpi=overlay.BG_DPI, colorspace=fitz.csRGB, annots=False)
+    fills = [overlay._paper(shade, r) for r, _ in hits]
+    for r, _ in hits:
+        page.add_redact_annot(r, fill=False)
+    page.apply_redactions(images=fitz.PDF_REDACT_IMAGE_NONE, graphics=fitz.PDF_REDACT_LINE_ART_NONE)
+    for (r, new), fill in zip(hits, fills):
+        page.draw_rect(r + (-0.5, -0.5, 0.5, 0.5), color=None, fill=fill, overlay=True)
+        size = max(4.0, r.height * 0.8)
+        width = fitz.get_text_length(new, fontname="helv", fontsize=size) or 1.0
+        origin = fitz.Point(r.x0, r.y1 - 0.2 * r.height)
+        page.insert_text(origin, new, fontname="helv", fontsize=size,
+                         morph=(origin, fitz.Matrix(min(1.0, r.width / width), 1)))
+
+
+def _moves_on_edit(source_pdf, n):
+    """Does removing one word from page ``n`` move the page's other words?
+
+    Some producers write content that MuPDF cannot rewrite faithfully: a
+    redaction there relocates the text instead of deleting it, so an old
+    value would survive, somewhere else. Tried on a throwaway copy."""
+    doc = fitz.open(str(source_pdf))
+    try:
+        page = doc[n]
+        words = page.get_text("words")
+        target = next((w for w in words if re.search(r"\d", w[4])), words[0] if words else None)
+        if target is None:
+            return False
+        page.add_redact_annot(fitz.Rect(target[:4]), fill=False)
+        page.apply_redactions(images=fitz.PDF_REDACT_IMAGE_NONE, graphics=fitz.PDF_REDACT_LINE_ART_NONE)
+        before = {(w[4], round(w[0]), round(w[1])) for w in words if w is not target}
+        after = {(w[4], round(w[0]), round(w[1])) for w in page.get_text("words")}
+        return len(before - after) > max(2, 0.02 * len(before))
+    except Exception:
+        return False
+    finally:
+        doc.close()
+
+
+def _flatten(doc, n):
+    """Replace page ``n`` with its image under an invisible layer of its
+    words, each set at its own place and printed width - a page the
+    generator can then edit as it edits a scan."""
+    page = doc[n]
+    words = page.get_text("words")
+    # each word at its span's own size and baseline: a producer's word boxes
+    # can be taller than its line pitch, and sizes drawn from them overlap
+    spans = [(fitz.Rect(s["bbox"]), s["size"], s["origin"][1])
+             for b in page.get_text("dict")["blocks"] for l in b.get("lines", []) for s in l["spans"]]
+    pix = page.get_pixmap(dpi=300)
+    tmp = fitz.open()
+    new = tmp.new_page(width=page.rect.width, height=page.rect.height)
+    new.insert_image(new.rect, pixmap=pix)
+    for x0, y0, x1, y1, text, *_ in words:
+        mid = fitz.Point((x0 + x1) / 2, (y0 + y1) / 2)
+        span = next((s for s in spans if s[0].contains(mid)), None)
+        size = span[1] if span else max(4.0, (y1 - y0) * 0.8)
+        width = fitz.get_text_length(text, fontname="helv", fontsize=size) or 1.0
+        origin = fitz.Point(x0, span[2] if span else y1 - 0.22 * (y1 - y0))
+        new.insert_text(origin, text, fontname="helv", fontsize=size, render_mode=3,
+                        morph=(origin, fitz.Matrix((x1 - x0) / width, 1)))
+    doc.delete_page(n)
+    doc.insert_pdf(tmp, start_at=n)
+    tmp.close()
+
+
+def _not_values(pages):
+    """Drop what was taken for identifying values but identifies no one.
+
+    * a "name" whose words the document prints in lower case in its running
+      text: "Residence Premises" (on "the residence premises"), a defined
+      term such as "Shareholder Derivative Demand Investigation Costs";
+    * an identifier repeated in the footer of several pages with no number
+      label beside it: the document's form code ("LPL 39500-NY-1116")."""
+    lower, footer = set(), {}
+    for page, ink, matrix, visible, cell_list, found in pages:
+        height = page.rect.height
+        for c in cell_list:
+            lower |= set(re.findall(r"(?<![A-Za-z])[a-z]{4,}(?![A-Za-z])", c.text))
+        for f in found:
+            if f.kind in ("id", "digits") and f.rect is not None and f.rect.y0 > 0.9 * height:
+                footer.setdefault(_key(f.text), set()).add(page.number)
+    for *_, found in pages:
+        keep = []
+        for f in found:
+            words = [w for w in re.findall(r"[A-Za-z]{4,}", f.text) if w.lower() not in COMPANY_WORDS]
+            if f.kind in ("person", "company") and words and \
+                    sum(w.lower() in lower for w in words) * 2 >= len(words) + 1:
+                continue
+            if f.kind in ("id", "digits") and len(footer.get(_key(f.text), ())) >= 2 \
+                    and not ID_LABEL.search(f.label or ""):
+                continue
+            keep.append(f)
+        found[:] = keep
 
 
 def _key(text):
@@ -1111,7 +1305,8 @@ def _drop_carrier(found, cell_list, carrier):
                     break
     drop, heads = set(), []
     for f in found:
-        if f.kind == "company" and marks & set(re.findall(r"[a-z]{4,}", f.text.lower())):
+        words = set(re.findall(r"[a-z]{4,}", f.text.lower()))
+        if f.kind == "company" and marks & words or f.kind == "person" and words and words <= marks:
             drop.add(id(f))
             heads.append(f.cell)
     # the carrier's name printed as plain text heads its address too: the
@@ -1306,13 +1501,21 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
     try:
         doc = fitz.open(str(source_pdf))
         built.pages = len(doc)
+        # a page whose content cannot be edited in place - removing one word
+        # moves the others - is replaced by its image and a text layer
+        flattened = set()
+        for n in range(len(doc)):
+            if _moves_on_edit(source_pdf, n):
+                _flatten(doc, n)
+                flattened.add(n)
         found_all, plans, pages = [], [], []
         recovered = {}
         for page in doc:
             ink = overlay.Ink(page)
             invisible = overlay.invisible_text(page)
             visible = not invisible
-            matrix = fitz.Identity if visible else overlay.calibrate(page, ink)
+            # a flattened page's layer was written in place: nothing to fit
+            matrix = fitz.Identity if visible or page.number in flattened                 else overlay.calibrate(page, ink)
             extra = drop = None
             if recover.is_scanned(page, invisible):
                 # read the scan again: what its OCR layer left out or garbled
@@ -1328,8 +1531,10 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
             cell_list = overlay.cells(page, matrix, ink, extra=extra, drop=drop)
             found = _drop_carrier(find_values(cell_list), cell_list, source_pdf.parent.parent.name)
             pages.append((page, ink, matrix, visible, cell_list, found))
+        _not_values(pages)
         _sweep(pages, _carrier_marks(source_pdf.parent.parent.name))
         faker = Faker(vals, [f.text for *_, found in pages for f in found if f.kind in PII])
+        faker.avoid([f.whole or f.text for *_, found in pages for f in found if f.kind == "date"])
         for *_, found in pages:          # a scan line encodes the others
             for f in found:
                 if f.kind != "scanline":
@@ -1377,11 +1582,17 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
                                    for p, _, _, _, cell_list, found in pages],
                                   schema, index, carrier)
         laid_out = reader.read()
+        personal = {f.text for f in found_all if f.kind in PII or f.kind == "date"}
+        swapped = sorted({f.text: f.new for f in found_all
+                          if f.new and f.new != f.text and not f.blank and f.part is None}.items(),
+                         key=lambda kv: -len(kv[0]))
         for page, reps, ink, matrix in plans:
             overlay.apply(page, reps, ink, matrix)
             if page.number in recovered:
                 recover.write_back(page, recovered[page.number],
-                                   [r.visible_rect for r in reps])
+                                   [r.visible_rect for r in reps], swapped)
+            _vertical(page, swapped)
+            _mop_up(page, [(o, n) for o, n in swapped if len(o) >= 5 and o in personal])
         doc.save(str(digital), garbage=3, deflate=True)
         doc.close()
 

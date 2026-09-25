@@ -647,7 +647,7 @@ def apply(page, replacements: List[Replacement], ink: Ink, matrix=fitz.Identity)
             if line is None:
                 break
             s, base = _size_from_ink(rep.old, fitz.Rect(left, line[0], right, line[1]))
-            if not 0.45 < s / (k * h) < 1.6:
+            if not 0.45 < s / (k * h) < 1.3:          # two tight lines read as one
                 break
             size, baseline, ok = s, base, True
         if rep.old[-1:] in ",;" and ok:
