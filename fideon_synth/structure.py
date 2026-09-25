@@ -693,18 +693,22 @@ class Reader:
         return num
 
     def _footer_form_number(self):
+        # the page's own form number, under whichever name the schema gives it
+        path = "document.form_number"
+        if path not in self.schema.leaves and "document.document_form_number" in self.schema.leaves:
+            path = "document.document_form_number"
         for n, height, cells, _ in self.pages:
             for c in cells:
                 text = c.text.strip()
                 if c.rect is None or c.rect.y0 <= 0.9 * height or text in self.form_numbers:
                     continue
                 if re.fullmatch(r"[A-Z]{2,6}[0-9A-Z]{2,6}-\d{4}", text):
-                    _put(self.gold, "document.form_number", fv(self._fix_form(text), evidence=text))
+                    _put(self.gold, path, fv(self._fix_form(text), evidence=text))
                     return
                 m = FORM_REF.fullmatch(text) or re.fullmatch(
                     r"Form\s+([0-9A-Z-]+(?:\s[A-Z]{2})?)\s*\((\d{2}/\d{2})\)", text)
                 if m:                               # "PL-50776 NY (11-23)", "Form 6489 NY (06/21)"
-                    _put(self.gold, "document.form_number", fv(text))
+                    _put(self.gold, path, fv(text))
                     return
 
     # ── labelled values ─────────────────────────────────────────────────────
@@ -1582,6 +1586,11 @@ class Reader:
                     last = self._coverage(unit, held["name"], {}, "", forms,
                                           fv(held["name"]), None)
                     last_x, last_line = held["x"], line.y
+                if last is None:
+                    # a heading held for the rows under it ("F - Comprehensive"
+                    # over "Actual Cash Value less") with no row begun yet
+                    pending = held
+                    continue
                 for col, field in (("deductible", "deductible_amount"), ("premium", "premium")):
                     s = vals.get(col)
                     if s is None:

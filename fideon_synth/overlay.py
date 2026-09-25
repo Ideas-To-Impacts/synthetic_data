@@ -318,14 +318,17 @@ def layer_chars(page, matrix=fitz.Identity):
 
 
 def cells(page, matrix=fitz.Identity, ink: Optional[Ink] = None,
-          extra=None, drop=None) -> List[Cell]:
+          extra=None, drop=None, stretch=None) -> List[Cell]:
     """Every cell on the page, top to bottom, left to right.
 
     Words and columns are told apart by the blank space printed between
     characters (see :meth:`Ink.blank`); without ``ink`` the text-layer boxes
     are used instead. ``extra`` adds characters read from the page image
     that the layer lacks, and ``drop`` removes the layer's characters inside
-    the given rects (see :mod:`recover`)."""
+    the given rects (see :mod:`recover`). ``stretch`` sets the characters of
+    a line whose layer is squeezed inside its print back across it:
+    ``(band, x0, x1, print_x0, print_x1)`` - where they are removed from the
+    layer (their ``ocr`` box) is unchanged."""
     chars = []
     for block in page.get_text("rawdict")["blocks"]:
         for line in block.get("lines", []):
@@ -345,6 +348,12 @@ def cells(page, matrix=fitz.Identity, ink: Optional[Ink] = None,
                                       span["size"], span.get("color", 0), space,
                                       leader and ch["c"] in FILL))
                     space = False
+    for band, x0, x1, p0, p1 in stretch or []:
+        k = (p1 - p0) / max(x1 - x0, 1e-6)
+        for ch in chars:
+            b = ch.box
+            if band.contains(fitz.Point((b.x0 + b.x1) / 2, (b.y0 + b.y1) / 2)):
+                ch.box = fitz.Rect(p0 + (b.x0 - x0) * k, b.y0, p0 + (b.x1 - x0) * k, b.y1)
     if drop:
         chars = [ch for ch in chars if not any(
             r.contains(fitz.Point((ch.box.x0 + ch.box.x1) / 2, (ch.box.y0 + ch.box.y1) / 2))
