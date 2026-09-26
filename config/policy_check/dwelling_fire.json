@@ -9,7 +9,7 @@
     "version": "1.4.0",
     "line_of_business_as_supplied": "Dwelling Fire",
     "line_specific_block": "dwelling_fire",
-    "field_count": 375,
+    "field_count": 733,
     "corpus_document_count": 8,
     "corpus_carrier_count": 1,
     "aliased_fields": 53,
@@ -73,7 +73,6 @@
             "Amended Declarations Page",
             "Policy Change Endorsement",
             "Application",
-            "Document Title",
             "Policy Declarations"
           ]
         },
@@ -142,7 +141,6 @@
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "Amended Date",
-            "Modifies Coverage(s) at Renewal",
             "Reason(s) for Modification",
             "Transaction Reason Description",
             "Transaction Reason",
@@ -191,7 +189,6 @@
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "Total Pages",
-            "Total Document Pages",
             "Page Count",
             "Number of Pages",
             "Page 1 of"
@@ -203,19 +200,11 @@
             "File Name",
             "Source File",
             "Source File Name",
-            "Document Name",
-            "Document Reference"
+            "Document Name"
           ]
         },
         "source_carrier_folder": {
-          "$ref": "#/$defs/FieldValue",
-          "fideon:aliases": [
-            "Carrier",
-            "Insurance Company",
-            "Insurance Provided By",
-            "Name of Companies",
-            "Company Name"
-          ]
+          "$ref": "#/$defs/FieldValue"
         },
         "language": {
           "$ref": "#/$defs/FieldValue",
@@ -263,7 +252,9 @@
             "Summary of Your Changes",
             "Transaction Reason Description",
             "Description of Change",
-            "Change Description"
+            "Change Description",
+            "It is hereby agreed and understood that the following change was made to your policy",
+            "Following change was made to your policy"
           ]
         },
         "form_run_code": {
@@ -274,6 +265,35 @@
             "Form Code",
             "Run Number"
           ]
+        },
+        "form_number": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Declarations Form Number",
+            "Dec Page Form Number",
+            "Declaration Form Number"
+          ],
+          "description": "The declarations page's own form number and edition, printed in its header or footer: \"LCIC(4/11)\", \"NCIC 07/14\"."
+        },
+        "print_code": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Print Code",
+            "Form Print Code",
+            "Operator Code",
+            "Operator Initials"
+          ],
+          "description": "The operator or print code printed beside the print date: \"D8/I\", \"VC\", \"GL\"."
+        },
+        "print_time": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Print Time",
+            "Printed At",
+            "Time Printed",
+            "Processing Time"
+          ],
+          "description": "The time of day printed with the print date: \"13:14:33\", \"03:28PM\"."
         }
       }
     },
@@ -495,7 +515,10 @@
             "Mutual Company",
             "Stock Company",
             "Company Structure",
-            "Company Type"
+            "Company Type",
+            "Advance Premium Co-Operative Fire Insurance Corporation",
+            "A New York State Advance Premium Co-Operative Fire Insurance Corporation",
+            "Co-Operative Fire Insurance Corporation"
           ]
         }
       },
@@ -704,7 +727,8 @@
         "Agency",
         "Agent",
         "Producer",
-        "Broker"
+        "Broker",
+        "Agency Information"
       ]
     },
     "policy": {
@@ -745,6 +769,16 @@
             "Agency Customer ID",
             "Customer Number"
           ]
+        },
+        "file_number": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "File #",
+            "File Number",
+            "File No",
+            "File No."
+          ],
+          "description": "The carrier's file number printed beside the policy number: \"File #: L653169\"."
         },
         "certificate_number": {
           "$ref": "#/$defs/FieldValue",
@@ -1050,10 +1084,14 @@
             "Total Risks",
             "Number of Risks",
             "Total Locations",
-            "No. of Locations"
+            "No. of Locations",
+            "Property"
           ]
         }
-      }
+      },
+      "fideon:aliases": [
+        "Policy Information"
+      ]
     },
     "named_insured": {
       "type": "object",
@@ -1067,7 +1105,6 @@
             "Insured",
             "Name of Applicant",
             "Applicant",
-            "Name and Address",
             "Named Insured and Address",
             "Named Insured and Mailing Address",
             "Named Insured & Mailing Address",
@@ -1183,9 +1220,6 @@
               "fideon:aliases": [
                 "Physical Address",
                 "Residence Address",
-                "Insured Location",
-                "Address of Property",
-                "Location Address",
                 "Street Address"
               ]
             },
@@ -1249,13 +1283,36 @@
                 "Mobile",
                 "Work",
                 "Primary Phone",
-                "Secondary Phone",
                 "Phone",
                 "Phone Number",
                 "Home Phone",
                 "Business",
                 "Telephone"
               ]
+            },
+            "phone_type": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Phone Type",
+                "Type of Phone",
+                "Primary Phone Type"
+              ],
+              "description": "The box marked beside the primary phone: \"Mobile\", \"Home\", \"Business\", \"Other\"."
+            },
+            "secondary_phone": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Secondary Phone",
+                "Alternate Phone",
+                "Other Phone"
+              ]
+            },
+            "secondary_phone_type": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Secondary Phone Type"
+              ],
+              "description": "The box marked beside the secondary phone: \"Mobile\", \"Home\", \"Business\", \"Other\"."
             },
             "fax": {
               "$ref": "#/$defs/FieldValue",
@@ -1283,10 +1340,18 @@
             }
           }
         },
+        "delivery_preference": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Delivery Preference",
+            "Document Delivery Preference",
+            "Delivery Method"
+          ],
+          "description": "How the insured wants documents delivered (paper, email, ...)."
+        },
         "business_description": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
-            "Type of Business",
             "Nature of Business",
             "Description of Operations",
             "Business Description",
@@ -1501,7 +1566,9 @@
         "Named Insured",
         "Insured",
         "Policyholder",
-        "Applicant Name"
+        "Applicant Name",
+        "Insured Summary",
+        "Insured Information"
       ]
     },
     "locations": {
@@ -1729,6 +1796,28 @@
               "Nature of Interest",
               "Owner or Tenant"
             ]
+          },
+          "location_premium": {
+            "$ref": "#/$defs/FieldValue",
+            "fideon:aliases": [
+              "Location Premium",
+              "Total Location Premium",
+              "Total Annual Premium This Location",
+              "Total Annual Premium for Location #",
+              "Premium including Fire Fee",
+              "Premium"
+            ],
+            "description": "The premium for this location as printed in a location summary or at the foot of the location's own page."
+          },
+          "fire_surcharge": {
+            "$ref": "#/$defs/FieldValue",
+            "fideon:aliases": [
+              "New York State Fire Surcharge",
+              "NYS Fire Surcharge",
+              "Fire Surcharge",
+              "State Fire Surcharge"
+            ],
+            "description": "The state fire surcharge/fee printed for this location."
           },
           "coverages": {
             "type": "array",
@@ -2004,7 +2093,10 @@
       "fideon:aliases": [
         "Insured Property Location",
         "Location of Business",
-        "Locationof Business"
+        "Locationof Business",
+        "Insured Location Summary",
+        "Location Summary",
+        "Location(s) of Property Insured"
       ]
     },
     "interested_parties": {
@@ -2172,7 +2264,14 @@
             ]
           }
         }
-      }
+      },
+      "fideon:aliases": [
+        "Special Interests",
+        "Additional Interests",
+        "Additional Interest",
+        "Additional Insured",
+        "Interested Parties"
+      ]
     },
     "premium": {
       "type": "object",
@@ -2189,7 +2288,8 @@
             "Policy Total",
             "Revised Annual Premium",
             "Total Premium Due",
-            "Annual Premium"
+            "Annual Premium",
+            "Total"
           ]
         },
         "basic_premium": {
@@ -2201,8 +2301,7 @@
             "Base Premium before Deductible",
             "Coverage Premium",
             "Total Basic Premium",
-            "Premium Before Fees",
-            "Property Total"
+            "Premium Before Fees"
           ]
         },
         "estimated_annual_premium": {
@@ -2219,8 +2318,7 @@
           "fideon:aliases": [
             "Deposit Premium",
             "Minimum and Deposit Premium",
-            "Deposit",
-            "Advance Premium"
+            "Deposit"
           ]
         },
         "minimum_premium": {
@@ -2397,6 +2495,15 @@
                   "Percent",
                   "Rate"
                 ]
+              },
+              "is_included": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Included",
+                  "Incl",
+                  "INCL."
+                ],
+                "description": "The surcharge is printed as included rather than as an amount."
               }
             }
           }
@@ -2416,7 +2523,8 @@
                   "Credit Description",
                   "Discount",
                   "Credit or Surcharge for Deductible",
-                  "Deductible Credit"
+                  "Deductible Credit",
+                  "Credit or Surcharge for Coverage A - Deductible"
                 ]
               },
               "amount": {
@@ -2499,8 +2607,7 @@
             "Fire Fee",
             "Fire Surcharge",
             "State Fire Surcharge",
-            "NYS Fire Fee",
-            "Premium including Fire Fee"
+            "NYS Fire Fee"
           ]
         },
         "motor_vehicle_law_enforcement_fee": {
@@ -2632,10 +2739,22 @@
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "Change In Annual Premium",
-            "Premium adjustment for this change",
             "Premium Change",
             "Change in Premium"
           ]
+        },
+        "pro_rata_premium_change": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Premium adjustment for this change",
+            "Pro-Rata Change in Premium",
+            "Pro-Rata Premium",
+            "Pro-rated Premium",
+            "Quoted Pro-rated Premium Amount",
+            "Net Change Amount",
+            "Transaction Premium"
+          ],
+          "description": "The premium charged or returned for this change over the rest of the term (pro rata), as distinct from the change in annual premium: -$299.70 against -$354.00."
         },
         "prior_fire_fee": {
           "$ref": "#/$defs/FieldValue",
@@ -2878,9 +2997,7 @@
             "Bill To Party",
             "Billing Party",
             "Direct Bill To",
-            "Billing Information",
-            "Payor",
-            "Payer"
+            "Billing Information"
           ]
         },
         "amount_due": {
@@ -2904,6 +3021,16 @@
             "Date Due",
             "Pay By"
           ]
+        },
+        "billing_note": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Bill Will Follow",
+            "Your billing invoice will be mailed separately",
+            "All premium changes will be reflected on the next invoice for your policy",
+            "This is not a bill"
+          ],
+          "description": "A printed statement about billing that is not an amount or a date."
         },
         "installments": {
           "type": "array",
@@ -2957,7 +3084,10 @@
             "Pay initial installment"
           ]
         }
-      }
+      },
+      "fideon:aliases": [
+        "Billing Office Use"
+      ]
     },
     "forms_and_endorsements": {
       "type": "array",
@@ -3048,6 +3178,61 @@
               "Charge"
             ]
           },
+          "percentage": {
+            "$ref": "#/$defs/FieldValue",
+            "fideon:aliases": [
+              "Percentage",
+              "PERCENTAGE",
+              "Percent",
+              "Discount Percentage",
+              "Rate"
+            ],
+            "description": "A percentage printed on the form's row: \"1.0% per Quarter\", \"5.00%\", \"3%\"."
+          },
+          "form_details": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "description": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "Description",
+                    "Discount Description",
+                    "DISCOUNT DESCRIPTION"
+                  ]
+                },
+                "amount": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "Amount",
+                    "AMOUNT"
+                  ]
+                },
+                "percentage": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "Percentage",
+                    "PERCENTAGE",
+                    "Percent"
+                  ]
+                }
+              }
+            },
+            "description": "Sub-rows printed under a form, each with its own description, amount or percentage: \"CERTIFIED TERRORISM LOSS PREMIUM $0.00\", \"LOCAL FIRE ALARM 3%\"."
+          },
+          "included_coverages": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/FieldValue"
+            },
+            "fideon:aliases": [
+              "See Attached Form for Complete Enhanced Coverage Description and Limits",
+              "Included Coverages",
+              "Enhanced Coverages"
+            ],
+            "description": "Coverages a package form lists as included: DFL-153P \"Dwelling Package VIP Plus\" - Limited Flood Coverage, Debris Removal, Generator Expense, ..."
+          },
           "is_included": {
             "$ref": "#/$defs/FieldValue",
             "fideon:aliases": [
@@ -3106,7 +3291,14 @@
         "SCHEDULE OF ADDITIONAL ENDORSEMENTS",
         "Service of Suit Endorsement",
         "Vehicle Under Construction Endorsement",
-        "attached at time of issue"
+        "attached at time of issue",
+        "Policy Subject to the Following Forms and Endorsements",
+        "Policy Forms & Optional Coverages",
+        "Detailed Form Information",
+        "Annual Premium Computation and Applicable Policy Forms Requested",
+        "Applicable Policy Forms Requested",
+        "Forms/Endorsements",
+        "Forms and Endorsements"
       ]
     },
     "deductibles": {
@@ -3281,7 +3473,23 @@
             ]
           }
         }
-      }
+      },
+      "fideon:aliases": [
+        "Loss History",
+        "Prior Losses",
+        "Previous Losses",
+        "Loss Information"
+      ]
+    },
+    "loss_history_none_reported": {
+      "$ref": "#/$defs/FieldValue",
+      "fideon:aliases": [
+        "No Losses",
+        "Losses: None",
+        "Any previous property or liability losses",
+        "Any previous property or liability losses, whether or not paid by insurance during the last 5 years"
+      ],
+      "description": "The document states there were no prior losses (an answered \"No\", or \"None\")."
     },
     "state_notices": {
       "type": "array",
@@ -3468,9 +3676,6 @@
             "Our Authorized Representative",
             "Name of Signer",
             "Signature",
-            "Signature of Applicant",
-            "Signature of Named Insured",
-            "Applicant's Signature",
             "Countersigned By"
           ]
         },
@@ -3514,6 +3719,10 @@
             "Date Countersigned",
             "Date of Countersignature"
           ]
+        },
+        "signature_present": {
+          "$ref": "#/$defs/FieldValue",
+          "description": "A signature is drawn in the signature box (the carrier's authorized representative), whether or not a name is printed."
         }
       }
     },
@@ -3581,6 +3790,12 @@
                   "$ref": "#/$defs/FieldValue",
                   "fideon:aliases": [
                     "Country"
+                  ]
+                },
+                "county_code": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "County Code"
                   ]
                 }
               }
@@ -3816,6 +4031,17 @@
                 "Rating Territory Zone"
               ]
             },
+            "rating_subzone": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Sub-Zone",
+                "Subzone",
+                "Sub Zone",
+                "Rating Sub-Zone",
+                "Territorial Subzone"
+              ],
+              "description": "The sub-zone printed inside the zone or territory: \"Orange (Zone 1, Sub-Zone 6)\", \"Zone 1, Sub-Zone 4\"."
+            },
             "renovator_credit": {
               "$ref": "#/$defs/FieldValue",
               "fideon:aliases": [
@@ -3891,14 +4117,22 @@
               "$ref": "#/$defs/FieldValue",
               "fideon:aliases": [
                 "Structure",
-                "Description",
                 "Risk Description",
-                "Type of Building",
                 "Structure Description",
                 "Building Description",
                 "Dwelling Description",
                 "Description of Premises"
               ]
+            },
+            "property_description": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Description",
+                "Property Description",
+                "Residence Description",
+                "Description of Property"
+              ],
+              "description": "What the page says the property is, beside its structure: \"Year Round Home\", \"6 acres of land with a storage shed\", \"PRIMARY BUILDING\"."
             },
             "fire_alarm_type": {
               "$ref": "#/$defs/FieldValue",
@@ -3913,6 +4147,27 @@
                 "Alarm Type",
                 "Fire Alarm Type",
                 "Premises Alarm or Fire Protection System"
+              ]
+            },
+            "burglar_alarm_type": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Burglar Alarm",
+                "Burglar Alarm Type",
+                "Theft Alarm",
+                "Security Alarm",
+                "Intrusion Alarm"
+              ]
+            },
+            "sprinklered": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Sprinklers",
+                "Sprinklered",
+                "Sprinkler System",
+                "Sprinkler",
+                "Automatic Sprinkler System",
+                "Sprinkler Protected"
               ]
             },
             "usage": {
@@ -3945,16 +4200,40 @@
                 "Fuel"
               ]
             },
+            "secondary_heating_present": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Any Other Secondary Heating Source",
+                "Secondary Heating Present"
+              ],
+              "description": "Whether there is a secondary heating source (the Yes/No answer)."
+            },
             "secondary_heating": {
               "$ref": "#/$defs/FieldValue",
               "fideon:aliases": [
                 "Secondary Heating",
                 "Secondary Heating Type",
-                "Any Other Secondary Heating Source",
                 "Secondary Heat",
-                "Secondary Heating Source",
-                "Explain Other"
+                "Secondary Heating Source"
               ]
+            },
+            "secondary_heating_description": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Explain Other",
+                "Secondary Heating Description"
+              ],
+              "description": "The secondary heating explained in words: \"fireplace\"."
+            },
+            "roof_updated_within_20_years": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Has the roof been updated in the last 20 years",
+                "Has the roof been updated",
+                "Roof Updated Within 20 Years",
+                "Roof updated in last 20 years"
+              ],
+              "description": "Whether the roof was updated in the last 20 years (the Yes/No answer); the year is year_roof_updated."
             },
             "year_roof_updated": {
               "$ref": "#/$defs/FieldValue",
@@ -3962,8 +4241,7 @@
                 "Year Roof Updated",
                 "Roof Updated",
                 "Year Roof Replaced",
-                "Roof Update Year",
-                "Has the roof been updated"
+                "Roof Update Year"
               ]
             },
             "year_primary_system_updated": {
@@ -4008,10 +4286,1107 @@
                 "Years Owned",
                 "Years Owned by Applicant",
                 "Length of Ownership",
-                "Ownership Years"
+                "Ownership Years",
+                "How many years has the applicant owned this risk",
+                "How many years has the applicant owned this risk?"
               ]
             }
-          }
+          },
+          "fideon:aliases": [
+            "RATING INFORMATION",
+            "Rating Information",
+            "Rating Criteria",
+            "Property Characteristics",
+            "Location Details",
+            "Building Utilities",
+            "Coverage Information"
+          ]
+        },
+        "dwellings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "location_number": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Location Number",
+                  "Location #",
+                  "Loc. #",
+                  "Loc #",
+                  "Property Number",
+                  "Property #",
+                  "Premises Number"
+                ]
+              },
+              "building_number": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Building Number",
+                  "Bldg #",
+                  "Building #",
+                  "Loc #/Bldg #"
+                ]
+              },
+              "described_location": {
+                "type": "object",
+                "properties": {
+                  "line_1": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "Location",
+                      "Location Address",
+                      "Address of Property",
+                      "Property Address",
+                      "Street",
+                      "Location Description and Address",
+                      "Premises Address",
+                      "Risk Address",
+                      "Location(s) of Property Insured",
+                      "Location Address Information"
+                    ]
+                  },
+                  "line_2": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "Address Line 2",
+                      "Suite",
+                      "Apt",
+                      "Unit"
+                    ]
+                  },
+                  "city": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "City"
+                    ]
+                  },
+                  "state": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "State"
+                    ]
+                  },
+                  "postal_code": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "Zip",
+                      "Zip Code",
+                      "Postal Code"
+                    ]
+                  },
+                  "county": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "County",
+                      "County Name"
+                    ]
+                  },
+                  "country": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "Country"
+                    ]
+                  },
+                  "county_code": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "County Code"
+                    ]
+                  }
+                }
+              },
+              "occupancy_type": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Occupancy",
+                  "Occupied",
+                  "Occupancy Type",
+                  "Risk Description",
+                  "Families",
+                  "# of Families",
+                  "Type of Occupancy",
+                  "Occupancy Description",
+                  "Owner Occupied"
+                ]
+              },
+              "tenant_occupied": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Tenant Occupied",
+                  "Is this property currently rented",
+                  "Rented",
+                  "Tenant",
+                  "Currently Rented",
+                  "Rented to Tenants",
+                  "Occupied by Tenant",
+                  "Tenant Occupancy"
+                ]
+              },
+              "number_of_units": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "# of Units",
+                  "Number of Units",
+                  "Units",
+                  "Families",
+                  "# of Families",
+                  "No. of Families",
+                  "Number of Families"
+                ]
+              },
+              "construction_type": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Construction",
+                  "Construction Type",
+                  "Const Type",
+                  "Type of Construction",
+                  "Building Construction"
+                ]
+              },
+              "year_built": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Year Built",
+                  "Year of Construction",
+                  "Construction Year",
+                  "Year Constructed",
+                  "Original Year Built",
+                  "Yr Built"
+                ]
+              },
+              "number_of_stories": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Number of Stories",
+                  "# of Stories",
+                  "Stories",
+                  "No. of Stories",
+                  "Number of Floors"
+                ]
+              },
+              "square_footage": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Square Footage",
+                  "Sq Ft",
+                  "Square Feet",
+                  "Total Square Footage",
+                  "Living Area",
+                  "Area"
+                ]
+              },
+              "roof_type": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Roof Type",
+                  "Type of Roof",
+                  "Roof Material",
+                  "Roof Covering",
+                  "Roof"
+                ]
+              },
+              "roof_age": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Roof Age",
+                  "Age of Roof",
+                  "Age of Roof (Years)",
+                  "Roof Age Years"
+                ]
+              },
+              "heating_type": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Primary Heating Type",
+                  "Heating Type",
+                  "Type of Heating",
+                  "Primary Heat",
+                  "Heating System",
+                  "Primary Heating",
+                  "Type of Heat"
+                ]
+              },
+              "protection_class": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Protection Class",
+                  "Protection",
+                  "Fire Protection",
+                  "Fire Protection Class",
+                  "Protection Class Code",
+                  "Public Protection Class",
+                  "PPC"
+                ]
+              },
+              "territory_code": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "GL Territory",
+                  "Rating Territory",
+                  "Territory",
+                  "Territory Code",
+                  "Territorial Zone"
+                ]
+              },
+              "replacement_cost_value": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Replacement Cost",
+                  "Replacement Cost Value",
+                  "Estimated Replacement Cost",
+                  "Replacement Value",
+                  "RCV",
+                  "Replacement Cost Estimate"
+                ]
+              },
+              "actual_cash_value": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Actual Cash Value",
+                  "ACV",
+                  "Actual Cash Value of Building",
+                  "ACV Amount"
+                ]
+              },
+              "seasonal_or_vacant": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Seasonal",
+                  "Seasonal or Vacant",
+                  "Vacant",
+                  "Occupied",
+                  "Seasonal Rental",
+                  "Is this a seasonal rental property",
+                  "Unoccupied/Seasonal",
+                  "Vacancy"
+                ]
+              },
+              "occupancy_classification_code": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Classification",
+                  "Occupancy Classification",
+                  "Classification Code",
+                  "Class Code",
+                  "Occupancy Code",
+                  "Occupancy Class Code"
+                ]
+              },
+              "hazardous_conditions_occupancy": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Hazardous Conditions - Occupancy",
+                  "Hazardous Conditions",
+                  "Condition",
+                  "Unoccupancy",
+                  "Hazardous Conditions Occupancy",
+                  "Unoccupied",
+                  "Occupancy Hazard"
+                ]
+              },
+              "solid_fuel_burning_device_present": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Solid Fuel Burning Device(s)",
+                  "Solid Fuel Burning Device",
+                  "Wood Stove",
+                  "Wood Burning Stove",
+                  "Fireplace",
+                  "Solid Fuel Heating Device"
+                ]
+              },
+              "distance_to_hydrant": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Distance to Hydrant",
+                  "Feet From Hydrant",
+                  "Feet to Hydrant",
+                  "Distance to Nearest Hydrant",
+                  "Hydrant Distance",
+                  "Distance From Hydrant",
+                  "Feet to Nearest Hydrant"
+                ]
+              },
+              "rating_type": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Type",
+                  "Rating Type",
+                  "Type of Rating",
+                  "Rating Method"
+                ]
+              },
+              "rating_zone": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Zone",
+                  "Rating Zone",
+                  "Territorial Zone",
+                  "Rating Territory Zone"
+                ]
+              },
+              "rating_subzone": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Sub-Zone",
+                  "Subzone",
+                  "Sub Zone",
+                  "Rating Sub-Zone",
+                  "Territorial Subzone"
+                ],
+                "description": "The sub-zone printed inside the zone or territory: \"Orange (Zone 1, Sub-Zone 6)\", \"Zone 1, Sub-Zone 4\"."
+              },
+              "renovator_credit": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Renovator Credit",
+                  "Renovation Credit",
+                  "Renovator Discount"
+                ]
+              },
+              "fire_district": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Fire District",
+                  "Fire Dept",
+                  "Fire Department",
+                  "Fire District Name",
+                  "Fire Department Name"
+                ]
+              },
+              "miles_to_fire_department": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Miles From Fire Dept",
+                  "Miles to Fire Department",
+                  "Miles to Fire Dept",
+                  "Miles From Fire Department",
+                  "Distance to Fire Department",
+                  "Miles to Fire Station",
+                  "Distance to Fire Station"
+                ]
+              },
+              "feet_to_hydrant": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Feet to Hydrant",
+                  "Feet From Hydrant",
+                  "Feet to Nearest Hydrant",
+                  "Feet to Fire Hydrant",
+                  "Hydrant Distance (Feet)"
+                ]
+              },
+              "units_between_fire_walls": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "# Units between Fire Walls",
+                  "Units Between Fire Walls",
+                  "Number of Units Between Fire Walls"
+                ]
+              },
+              "lead_abatement": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Lead Abatement"
+                ]
+              },
+              "protected_since_date": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Protected Since Date",
+                  "Protected Since",
+                  "Date Protected Since"
+                ]
+              },
+              "special_rating_conditions": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Special Rating Conditions",
+                  "Special Rating",
+                  "Special Conditions",
+                  "Special Rating Condition"
+                ]
+              },
+              "structure_description": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Structure",
+                  "Risk Description",
+                  "Structure Description",
+                  "Building Description",
+                  "Dwelling Description",
+                  "Description of Premises"
+                ]
+              },
+              "property_description": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Description",
+                  "Property Description",
+                  "Residence Description",
+                  "Description of Property"
+                ],
+                "description": "What the page says the property is, beside its structure: \"Year Round Home\", \"6 acres of land with a storage shed\", \"PRIMARY BUILDING\"."
+              },
+              "fire_alarm_type": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Fire Alarm",
+                  "Protective Devices",
+                  "Type of Device",
+                  "Protective Device",
+                  "Device",
+                  "Smoke Alarm",
+                  "Smoke Detectors",
+                  "Alarm Type",
+                  "Fire Alarm Type",
+                  "Premises Alarm or Fire Protection System"
+                ]
+              },
+              "burglar_alarm_type": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Burglar Alarm",
+                  "Burglar Alarm Type",
+                  "Theft Alarm",
+                  "Security Alarm",
+                  "Intrusion Alarm"
+                ]
+              },
+              "sprinklered": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Sprinklers",
+                  "Sprinklered",
+                  "Sprinkler System",
+                  "Sprinkler",
+                  "Automatic Sprinkler System",
+                  "Sprinkler Protected"
+                ]
+              },
+              "usage": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Usage",
+                  "Use",
+                  "Use of Dwelling",
+                  "Dwelling Usage",
+                  "Property Use",
+                  "Occupancy Use"
+                ]
+              },
+              "electrical_service": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Electrical Service",
+                  "Type of Electrical Service",
+                  "Electrical",
+                  "Electric Service",
+                  "Electrical Type"
+                ]
+              },
+              "fuel_type": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Fuel Type",
+                  "Heating Fuel",
+                  "Type of Fuel",
+                  "Fuel"
+                ]
+              },
+              "secondary_heating_present": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Any Other Secondary Heating Source",
+                  "Secondary Heating Present"
+                ],
+                "description": "Whether there is a secondary heating source (the Yes/No answer)."
+              },
+              "secondary_heating": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Secondary Heating",
+                  "Secondary Heating Type",
+                  "Secondary Heat",
+                  "Secondary Heating Source"
+                ]
+              },
+              "secondary_heating_description": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Explain Other",
+                  "Secondary Heating Description"
+                ],
+                "description": "The secondary heating explained in words: \"fireplace\"."
+              },
+              "roof_updated_within_20_years": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Has the roof been updated in the last 20 years",
+                  "Has the roof been updated",
+                  "Roof Updated Within 20 Years",
+                  "Roof updated in last 20 years"
+                ],
+                "description": "Whether the roof was updated in the last 20 years (the Yes/No answer); the year is year_roof_updated."
+              },
+              "year_roof_updated": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Year Roof Updated",
+                  "Roof Updated",
+                  "Year Roof Replaced",
+                  "Roof Update Year"
+                ]
+              },
+              "year_primary_system_updated": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Year Primary System Updated",
+                  "Primary System Updated",
+                  "Year Heating System Updated"
+                ]
+              },
+              "market_value": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Market Value",
+                  "Current Market Value",
+                  "Estimated Market Value",
+                  "Market Value of Property"
+                ]
+              },
+              "purchase_price": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Purchase Price",
+                  "Price Paid",
+                  "Purchase Amount",
+                  "Purchase Cost"
+                ]
+              },
+              "cost_of_improvements": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Cost of Improvements",
+                  "Cost of Improvements Made",
+                  "Improvements Cost",
+                  "Cost of Renovations"
+                ]
+              },
+              "years_owned": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Years Applicant Has Owned the Risk",
+                  "Years Owned",
+                  "Years Owned by Applicant",
+                  "Length of Ownership",
+                  "Ownership Years",
+                  "How many years has the applicant owned this risk",
+                  "How many years has the applicant owned this risk?"
+                ]
+              },
+              "covered_causes_of_loss": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Cause of Loss",
+                  "Causes of Loss",
+                  "Peril Cause of Loss",
+                  "Cause of Loss Form",
+                  "Causes of Loss Form",
+                  "Form",
+                  "Basic Form",
+                  "Special Form",
+                  "Perils Insured",
+                  "Peril"
+                ]
+              },
+              "loss_settlement_basis": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Loss Settlement",
+                  "Loss Settlement Building",
+                  "Settlement",
+                  "Loss Settlement Basis",
+                  "Loss Settlement - Building",
+                  "Settlement Basis",
+                  "Loss Valuation"
+                ]
+              },
+              "loss_settlement_contents": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Loss Settlement Contents",
+                  "Loss Settlement - Contents",
+                  "Contents Loss Settlement",
+                  "Contents Valuation"
+                ]
+              },
+              "vandalism_basis": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Vandalism",
+                  "Vandalism and Malicious Mischief",
+                  "VMM",
+                  "Vandalism Basis",
+                  "Vandalism Coverage",
+                  "V&MM",
+                  "With Vandalism"
+                ]
+              },
+              "inflation_guard_percentage": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Inflation Guard",
+                  "Inflation Guard Percentage",
+                  "Auto Increase in Insurance",
+                  "Automatic Increase",
+                  "Automatic Increase in Insurance",
+                  "SM-26 Automatic Increase",
+                  "Inflation Protection"
+                ],
+                "description": "The automatic increase in the property limits: \"5.00%\", \"1.0% per Quarter\"."
+              },
+              "liability_coverage_form": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Liability Coverage",
+                  "Liability Coverage Form",
+                  "FL-OLT",
+                  "Premises Liability Coverage Part",
+                  "Liability Form",
+                  "Liability Coverage Part"
+                ]
+              },
+              "all_other_perils_deductible": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "All Other Perils Deductible",
+                  "AOP Deductible",
+                  "All Other Perils",
+                  "Deductible",
+                  "Deductible (All Other Perils)",
+                  "All Peril Deductible",
+                  "Standard Deductible"
+                ]
+              },
+              "deductible_credit_amount": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Credit or Surcharge for Coverage A - Deductible",
+                  "Credit or Surcharge for Deductible",
+                  "Deductible Credit"
+                ],
+                "description": "The premium credit (or surcharge) for the chosen deductible at this property: \"-373.00\"."
+              },
+              "total_premium": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Total Annual Premium This Location",
+                  "Total Annual Premium for Location #",
+                  "Total Location Premium",
+                  "TOTAL LOCATION PREMIUM",
+                  "Premium including Fire Fee",
+                  "Location Premium",
+                  "Property Total"
+                ],
+                "description": "The total premium for this property as printed on its own page or schedule."
+              },
+              "fire_surcharge": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "New York State Fire Surcharge",
+                  "NYS Fire Surcharge",
+                  "Fire Surcharge",
+                  "State Fire Surcharge"
+                ]
+              },
+              "mortgagees_none_listed": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "None Listed",
+                  "No Mortgagee",
+                  "No Mortgagees",
+                  "No Mortgagee Listed"
+                ],
+                "description": "The property's mortgagee section says there is none: \"Mortgagee Information: None Listed\"."
+              },
+              "surcharges_none_reported": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "No Surcharges Exist for This Location",
+                  "No Surcharges Exist",
+                  "No Surcharges"
+                ],
+                "description": "The property's surcharge section says there is none: \"*** NO SURCHARGES EXIST FOR THIS LOCATION ***\"."
+              },
+              "coverages": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "coverage_code": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Coverage Code",
+                        "Cov Code",
+                        "Coverage ID",
+                        "Coverage Symbol"
+                      ]
+                    },
+                    "coverage_name": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Coverage",
+                        "Coverage Name",
+                        "Coverages",
+                        "Coverage / Form",
+                        "Property Coverages",
+                        "Liability Coverages",
+                        "Coverage A - Residence",
+                        "Coverage A Residence",
+                        "Coverage A - Dwelling",
+                        "Cov A - Dwelling",
+                        "Coverage A",
+                        "Coverage A RESIDENCE FIRE",
+                        "Coverage B - Related Private Structures",
+                        "Coverage B Other Structures",
+                        "Cov B - Related Private Structures",
+                        "Coverage B - Other Structures",
+                        "Coverage B",
+                        "Coverage C - Personal Property",
+                        "Coverage C Personal Property",
+                        "Cov C - Personal Property",
+                        "Coverage C",
+                        "Coverage C PERSONAL PROPERTY FIRE",
+                        "Coverage D - Additional Living Expense / Loss of Rent",
+                        "Coverage D Addl.Living Exp. and Loss of Rent",
+                        "Cov D - Addl Living Exp/Loss of Rents",
+                        "Coverage D - Additional Living Expense and Loss of Rent",
+                        "Coverage D ADDL LIVING EXP AND LOSS OF RENT FIRE",
+                        "Coverage D",
+                        "Coverage L - Premises Liability",
+                        "Coverage L - OLT - Premises Liability",
+                        "Cov L - Premises Liability",
+                        "Coverage L Premises Liability",
+                        "Coverage L",
+                        "Coverage M - Medical Payments",
+                        "Coverage M - Medical Payments - Per Person",
+                        "Coverage M - Medical Payments - Per Occurrence",
+                        "Cov M - Medical Payments",
+                        "Coverage M - OLT - Premises Med Pay - Per Person",
+                        "Coverage M - OLT - Premises Med Pay - Per Occurrence",
+                        "Coverage M Medical Payments",
+                        "Coverage M",
+                        "Premises Liability",
+                        "Medical Payments"
+                      ]
+                    },
+                    "coverage_description": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Description",
+                        "Coverage Description",
+                        "Coverage Details",
+                        "Details",
+                        "Description of Coverage"
+                      ]
+                    },
+                    "form_reference": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Form",
+                        "Form #",
+                        "Form Number",
+                        "Form Reference",
+                        "Forms"
+                      ]
+                    },
+                    "applies_to": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Applies To",
+                        "Assigned To",
+                        "Applicable To",
+                        "Applicable Coverage",
+                        "Property Covered"
+                      ]
+                    },
+                    "limit_amount": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Limit",
+                        "Limit of Liability",
+                        "Limit Amount",
+                        "Coverage Limit",
+                        "Amount of Insurance",
+                        "Limit of Insurance"
+                      ]
+                    },
+                    "limit_basis": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Limit Basis",
+                        "Each Occurrence",
+                        "Each Person",
+                        "Each Accident",
+                        "Per Occurrence",
+                        "Per Person",
+                        "Per Accident",
+                        "Aggregate Limit",
+                        "Limit Type",
+                        "Occ"
+                      ]
+                    },
+                    "aggregate_limit_amount": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Aggregate Limit",
+                        "Aggregate",
+                        "General Aggregate Limit",
+                        "Annual Aggregate"
+                      ]
+                    },
+                    "sublimit_amount": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Sublimit",
+                        "Sub-Limit",
+                        "Sublimit Amount",
+                        "Sub Limit",
+                        "Limit Per Item"
+                      ]
+                    },
+                    "sublimit_basis": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Sublimit Basis",
+                        "Sublimit Applies To",
+                        "Sublimit Type",
+                        "Sub-Limit Basis"
+                      ]
+                    },
+                    "deductible_amount": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "ITEM IV. DEDUCTIBLE",
+                        "Deductible",
+                        "Deductible Amount",
+                        "Ded",
+                        "Ded Amount"
+                      ]
+                    },
+                    "deductible_type": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Deductible Type",
+                        "Type of Deductible",
+                        "Deductible Form"
+                      ]
+                    },
+                    "deductible_basis": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Deductible Basis",
+                        "Deductible Applies To",
+                        "Basis of Deductible",
+                        "Deductible Applies"
+                      ]
+                    },
+                    "retention_amount": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Retention",
+                        "Self-Insured Retention",
+                        "SIR",
+                        "Retention Amount"
+                      ]
+                    },
+                    "waiting_period": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Waiting Period",
+                        "Waiting Period (Days)",
+                        "Elimination Period",
+                        "Qualifying Period",
+                        "Time Deductible"
+                      ]
+                    },
+                    "coinsurance_percentage": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Coinsurance",
+                        "Coinsurance %",
+                        "Coinsurance Percentage",
+                        "Co-Insurance"
+                      ]
+                    },
+                    "valuation_basis": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Business Personal Property - Replacement Cost",
+                        "Valuation",
+                        "Valuation Basis",
+                        "Loss Settlement",
+                        "Loss Settlement Basis",
+                        "Valuation Method",
+                        "Basis of Valuation",
+                        "Settlement"
+                      ]
+                    },
+                    "premium": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Premium",
+                        "Annual Premium",
+                        "Coverage Premium",
+                        "Premium Amount",
+                        "Charge"
+                      ]
+                    },
+                    "is_included": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Included",
+                        "Incl",
+                        "INCL.",
+                        "Covered",
+                        "Coverage Included",
+                        "Included Coverage"
+                      ]
+                    },
+                    "is_excluded": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Excluded",
+                        "Not Covered",
+                        "Exclusion",
+                        "Rejected",
+                        "Declined"
+                      ]
+                    },
+                    "notes": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Notes",
+                        "Remarks",
+                        "Comments",
+                        "Additional Information",
+                        "Special Conditions"
+                      ]
+                    },
+                    "coverage_section": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Section I",
+                        "Section II",
+                        "Optional Items",
+                        "Property Coverages",
+                        "Liability Coverages",
+                        "Coverage Section"
+                      ],
+                      "description": "The schedule section the row is printed under."
+                    },
+                    "extended_coverage_premium": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "EC",
+                        "Extended Coverage",
+                        "EC Premium"
+                      ],
+                      "description": "The Extended Coverage (EC) premium printed under this coverage: \"EC - Residence $152.00\"."
+                    },
+                    "vmm_premium": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "VMM",
+                        "Vandalism and Malicious Mischief",
+                        "V&MM",
+                        "VMM Premium"
+                      ],
+                      "description": "The Vandalism and Malicious Mischief premium printed under this coverage: \"VMM - Residence $197.00\"."
+                    },
+                    "covered_causes_of_loss": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Form",
+                        "Cause of Loss Form",
+                        "Causes of Loss Form",
+                        "Basic Form",
+                        "Special Form"
+                      ]
+                    },
+                    "construction_type": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Construction",
+                        "Construction Type"
+                      ]
+                    },
+                    "protection_class": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Protection",
+                        "Protection Class",
+                        "Fire Protection"
+                      ]
+                    },
+                    "rating_zone": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Zone",
+                        "Territorial Zone",
+                        "Rating Zone"
+                      ]
+                    },
+                    "occupancy_type": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Occupancy",
+                        "Occupancy Type"
+                      ]
+                    },
+                    "occupancy_classification": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Classification",
+                        "Occupancy Classification"
+                      ]
+                    },
+                    "territory_code": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Territory Code",
+                        "Territory",
+                        "Rating Territory"
+                      ]
+                    },
+                    "hazardous_condition": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Condition",
+                        "Hazardous Condition"
+                      ]
+                    },
+                    "deductible_notes": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Disclaimer",
+                        "Deductible Disclaimer",
+                        "Deductible Conditions"
+                      ]
+                    }
+                  }
+                },
+                "description": "One entry per coverage row printed for this property: name, limit and basis, deductible, premium, included or excluded, and the rating details printed for that coverage."
+              }
+            }
+          },
+          "fideon:aliases": [
+            "Insured Location Information"
+          ],
+          "description": "One entry per insured property (Location #, Property #, Loc/Bldg) with its own rating details, coverage rows and premium. dwelling, property_coverages, liability_coverages and deductibles hold the policy-wide values (the single property when there is one)."
         },
         "property_coverages": {
           "type": "object",
@@ -4151,6 +5526,47 @@
                 "V&MM",
                 "With Vandalism"
               ]
+            },
+            "inflation_guard_percentage": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Inflation Guard",
+                "Inflation Guard Percentage",
+                "Auto Increase in Insurance",
+                "Automatic Increase",
+                "Automatic Increase in Insurance",
+                "SM-26 Automatic Increase",
+                "Inflation Protection"
+              ],
+              "description": "The automatic increase in the property limits: \"5.00%\", \"1.0% per Quarter\"."
+            },
+            "inflation_guard_basis": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Inflation Guard Basis",
+                "Automatic Increase Basis"
+              ],
+              "description": "The valuation the automatic increase follows: \"ACV\", \"RC\" (\"SM-26 Automatic Increase, RC\")."
+            },
+            "inflation_guard_period": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Inflation Guard Period",
+                "Increase Frequency"
+              ],
+              "description": "How often the increase applies: \"per Quarter\", \"Annual\"."
+            },
+            "inflation_guard_applies_to": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/FieldValue"
+              },
+              "fideon:aliases": [
+                "Modifies Coverage(s) at Renewal",
+                "Inflation Guard Applies To",
+                "Automatic Increase Applies To"
+              ],
+              "description": "The coverages the automatic increase modifies at renewal, one entry each."
             }
           }
         },
@@ -4268,6 +5684,18 @@
                 "Coverage L Premises Liability"
               ]
             },
+            "premises_liability_aggregate_limit": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Aggregate Limit",
+                "Aggregate",
+                "Premises Liability Aggregate",
+                "Premises Liability Aggregate Limit",
+                "Annual Aggregate",
+                "Liability Aggregate"
+              ],
+              "description": "The premises liability aggregate: \"$3,000,000 Aggregate Limit\"."
+            },
             "liability_coverage_form": {
               "$ref": "#/$defs/FieldValue",
               "fideon:aliases": [
@@ -4362,10 +5790,7 @@
                 "fideon:aliases": [
                   "Description",
                   "Coverage Description",
-                  "Details",
-                  "Type of Business",
-                  "Type of Building",
-                  "Type of Device"
+                  "Details"
                 ]
               },
               "form_reference": {
@@ -4386,7 +5811,8 @@
                   "Assigned To",
                   "Applicable To",
                   "Applicable Coverage",
-                  "Property Covered"
+                  "Property Covered",
+                  "Modifies Coverage(s) at Renewal"
                 ]
               },
               "limit_amount": {
@@ -4548,6 +5974,70 @@
                   "Details",
                   "Protective Devices"
                 ]
+              },
+              "percentage": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Percentage",
+                  "Percent",
+                  "Credit %",
+                  "Discount Percentage"
+                ],
+                "description": "A percentage the endorsement prints: an alarm credit \"3%\", an increase \"5.00%\"."
+              },
+              "business_type": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Type of Business",
+                  "Business Type",
+                  "Incidental Business"
+                ],
+                "description": "FL-16 Incidental Business Activities: \"Short Term Rentals\"."
+              },
+              "protective_device_type": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Type of Device",
+                  "Device",
+                  "Protective Device",
+                  "Protective Devices"
+                ],
+                "description": "ML-216 Protective Devices / Premises Alarm: \"Hardwired Smoke Alarm\"."
+              },
+              "hazardous_condition": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Condition",
+                  "Hazardous Condition"
+                ],
+                "description": "Hazardous Conditions - Occupancy: \"Unoccupancy\", \"Vacancy\", \"Seasonal Occupancy\"."
+              },
+              "structure_type": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Type of Building",
+                  "Structure Type"
+                ],
+                "description": "ML-56 Related Private Structure Exclusion: the excluded structure, \"Garage/Shed\"."
+              },
+              "structure_dimensions": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Dimensions"
+                ]
+              },
+              "structure_color": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Color",
+                  "Colour"
+                ]
+              },
+              "structure_location": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Location"
+                ]
               }
             }
           }
@@ -4690,7 +6180,13 @@
                 ]
               }
             }
-          }
+          },
+          "fideon:aliases": [
+            "MORTGAGEE(S)",
+            "Mortgagee(s)",
+            "Mortgagee Information",
+            "Mortgagees"
+          ]
         }
       }
     },
@@ -4778,6 +6274,1055 @@
           "value"
         ]
       }
+    },
+    "document_type_detail": {
+      "type": "object",
+      "properties": {
+        "policy_change": {
+          "type": "object",
+          "properties": {
+            "transaction_type": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "TRANS TYPE",
+                "Transaction Type"
+              ]
+            },
+            "transaction_date": {
+              "$ref": "#/$defs/FieldValue"
+            },
+            "transaction_effective_date": {
+              "$ref": "#/$defs/FieldValue"
+            },
+            "transaction_expiration_date": {
+              "$ref": "#/$defs/FieldValue"
+            },
+            "transaction_reason_description": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Transaction Reason Description",
+                "Reason for Change"
+              ]
+            },
+            "net_change_amount": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Premium Change",
+                "Premium change",
+                "Change In Annual Premium"
+              ]
+            },
+            "additional_or_return_premium": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Premium adjustment for this change",
+                "Return Premium",
+                "Additional Premium"
+              ]
+            },
+            "results_in_no_premium_change": {
+              "$ref": "#/$defs/FieldValue"
+            },
+            "changes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "change_description": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "has been removed from your policy",
+                      "has been added to your policy",
+                      "It is hereby agreed and understood that the following change was made to your policy"
+                    ]
+                  },
+                  "field_changed": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "changed_from": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "changed_to": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "effective_date": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "Both dates",
+                      "Start Date"
+                    ]
+                  },
+                  "premium_effect": {
+                    "$ref": "#/$defs/FieldValue"
+                  }
+                }
+              }
+            },
+            "endorsements_added": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "form_number": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "edition_date": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "form_title": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "form_type": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "applies_to": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "limit_amount": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "deductible_amount": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "premium": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "is_included": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "is_mandatory": {
+                    "$ref": "#/$defs/FieldValue"
+                  }
+                }
+              }
+            },
+            "endorsements_removed": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "form_number": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "edition_date": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "form_title": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "form_type": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "applies_to": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "limit_amount": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "deductible_amount": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "premium": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "is_included": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "is_mandatory": {
+                    "$ref": "#/$defs/FieldValue"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "application": {
+          "type": "object",
+          "properties": {
+            "application_title": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Application"
+              ]
+            },
+            "application_date": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Application Date"
+              ]
+            },
+            "requested_effective_date": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Requested Effective Date"
+              ]
+            },
+            "applicant_name": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Applicant",
+                "Name of Applicant"
+              ]
+            },
+            "applicant_signature_present": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Signature of Applicant",
+                "Applicant's Signature",
+                "Signature of Named Insured",
+                "Applicant"
+              ]
+            },
+            "applicant_signature_date": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Date"
+              ],
+              "description": "As printed, with an e-signature's time and zone: \"05/31/2026 08:04AM US/Eastern\"."
+            },
+            "producer_signature_present": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Agent",
+                "Producer",
+                "Producer's Signature",
+                "Agent's Signature"
+              ]
+            },
+            "producer_signature_date": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Date"
+              ]
+            },
+            "prior_policy_cancellation_request": {
+              "type": "object",
+              "properties": {
+                "acord_form_number": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "ACORD 35"
+                  ]
+                },
+                "acord_form_edition": {
+                  "$ref": "#/$defs/FieldValue",
+                  "description": "\"2017/05\" in \"ACORD 35 (2017/05)\"."
+                },
+                "form_date": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "DATE (MM/DD/YYYY)"
+                  ]
+                },
+                "producer": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "PRODUCER"
+                      ]
+                    },
+                    "address": {
+                      "type": "object",
+                      "properties": {
+                        "line_1": {
+                          "$ref": "#/$defs/FieldValue",
+                          "fideon:aliases": [
+                            "PRODUCER"
+                          ]
+                        },
+                        "line_2": {
+                          "$ref": "#/$defs/FieldValue",
+                          "fideon:aliases": [
+                            "Address Line 2",
+                            "Suite",
+                            "Apt",
+                            "Unit"
+                          ]
+                        },
+                        "city": {
+                          "$ref": "#/$defs/FieldValue",
+                          "fideon:aliases": [
+                            "City"
+                          ]
+                        },
+                        "state": {
+                          "$ref": "#/$defs/FieldValue",
+                          "fideon:aliases": [
+                            "State"
+                          ]
+                        },
+                        "postal_code": {
+                          "$ref": "#/$defs/FieldValue",
+                          "fideon:aliases": [
+                            "Zip",
+                            "Zip Code",
+                            "Postal Code"
+                          ]
+                        },
+                        "county": {
+                          "$ref": "#/$defs/FieldValue",
+                          "fideon:aliases": [
+                            "County",
+                            "County Name"
+                          ]
+                        },
+                        "country": {
+                          "$ref": "#/$defs/FieldValue",
+                          "fideon:aliases": [
+                            "Country"
+                          ]
+                        },
+                        "county_code": {
+                          "$ref": "#/$defs/FieldValue",
+                          "fideon:aliases": [
+                            "County Code"
+                          ]
+                        }
+                      }
+                    },
+                    "phone": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "PHONE (A/C, No, Ext)",
+                        "PHONE"
+                      ]
+                    },
+                    "code": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "CODE"
+                      ]
+                    },
+                    "sub_code": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "SUB CODE"
+                      ]
+                    },
+                    "agency_customer_id": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "AGENCY CUSTOMER ID"
+                      ]
+                    }
+                  }
+                },
+                "company": {
+                  "type": "object",
+                  "properties": {
+                    "company_name": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "COMPANY NAME AND ADDRESS",
+                        "COMPANY"
+                      ]
+                    },
+                    "address": {
+                      "type": "object",
+                      "properties": {
+                        "line_1": {
+                          "$ref": "#/$defs/FieldValue",
+                          "fideon:aliases": [
+                            "COMPANY NAME AND ADDRESS"
+                          ]
+                        },
+                        "line_2": {
+                          "$ref": "#/$defs/FieldValue",
+                          "fideon:aliases": [
+                            "Address Line 2",
+                            "Suite",
+                            "Apt",
+                            "Unit"
+                          ]
+                        },
+                        "city": {
+                          "$ref": "#/$defs/FieldValue",
+                          "fideon:aliases": [
+                            "City"
+                          ]
+                        },
+                        "state": {
+                          "$ref": "#/$defs/FieldValue",
+                          "fideon:aliases": [
+                            "State"
+                          ]
+                        },
+                        "postal_code": {
+                          "$ref": "#/$defs/FieldValue",
+                          "fideon:aliases": [
+                            "Zip",
+                            "Zip Code",
+                            "Postal Code"
+                          ]
+                        },
+                        "county": {
+                          "$ref": "#/$defs/FieldValue",
+                          "fideon:aliases": [
+                            "County",
+                            "County Name"
+                          ]
+                        },
+                        "country": {
+                          "$ref": "#/$defs/FieldValue",
+                          "fideon:aliases": [
+                            "Country"
+                          ]
+                        },
+                        "county_code": {
+                          "$ref": "#/$defs/FieldValue",
+                          "fideon:aliases": [
+                            "County Code"
+                          ]
+                        }
+                      }
+                    },
+                    "naic_code": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "NAIC CODE"
+                      ]
+                    }
+                  }
+                },
+                "insured": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "INSURED NAME AND ADDRESS",
+                        "NAME AND ADDRESS"
+                      ]
+                    },
+                    "address": {
+                      "type": "object",
+                      "properties": {
+                        "line_1": {
+                          "$ref": "#/$defs/FieldValue",
+                          "fideon:aliases": [
+                            "INSURED NAME AND ADDRESS",
+                            "NAME AND ADDRESS"
+                          ]
+                        },
+                        "line_2": {
+                          "$ref": "#/$defs/FieldValue",
+                          "fideon:aliases": [
+                            "Address Line 2",
+                            "Suite",
+                            "Apt",
+                            "Unit"
+                          ]
+                        },
+                        "city": {
+                          "$ref": "#/$defs/FieldValue",
+                          "fideon:aliases": [
+                            "City"
+                          ]
+                        },
+                        "state": {
+                          "$ref": "#/$defs/FieldValue",
+                          "fideon:aliases": [
+                            "State"
+                          ]
+                        },
+                        "postal_code": {
+                          "$ref": "#/$defs/FieldValue",
+                          "fideon:aliases": [
+                            "Zip",
+                            "Zip Code",
+                            "Postal Code"
+                          ]
+                        },
+                        "county": {
+                          "$ref": "#/$defs/FieldValue",
+                          "fideon:aliases": [
+                            "County",
+                            "County Name"
+                          ]
+                        },
+                        "country": {
+                          "$ref": "#/$defs/FieldValue",
+                          "fideon:aliases": [
+                            "Country"
+                          ]
+                        },
+                        "county_code": {
+                          "$ref": "#/$defs/FieldValue",
+                          "fideon:aliases": [
+                            "County Code"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                "policy_type": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "POLICY TYPE"
+                  ]
+                },
+                "policy_number": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "POLICY NUMBER"
+                  ]
+                },
+                "effective_date": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "EFFECTIVE DATE"
+                  ]
+                },
+                "expiration_date": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "EXPIRATION DATE"
+                  ]
+                },
+                "policy_term": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "POLICY TERM"
+                  ]
+                },
+                "request_type": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "CANCELLATION REQUEST",
+                    "POLICY RELEASE"
+                  ],
+                  "description": "Which box is marked: \"Cancellation Request\" (policy attached) or \"Policy Release\"."
+                },
+                "cancellation_date": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "CANCELLATION DATE",
+                    "EFFECTIVE DATE AND HOUR OF CANCELLATION"
+                  ]
+                },
+                "cancellation_time": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "TIME"
+                  ],
+                  "description": "\"12:01\" with its marked AM/PM."
+                },
+                "reason_for_cancellation": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "REASON FOR CANCELLATION",
+                    "NOT TAKEN",
+                    "REQUESTED BY INSURED",
+                    "REWRITTEN",
+                    "OTHER (Identify)"
+                  ]
+                },
+                "reason_other_description": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "OTHER (Identify)"
+                  ],
+                  "description": "\"Insured deceased\"."
+                },
+                "rewritten_company": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "COMPANY"
+                  ]
+                },
+                "rewritten_policy_number": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "POLICY NUMBER"
+                  ]
+                },
+                "rewritten_effective_date": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "EFFECTIVE DATE"
+                  ]
+                },
+                "method_of_cancellation": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "METHOD OF CANCELLATION",
+                    "FLAT",
+                    "SHORT RATE",
+                    "PRO RATA"
+                  ]
+                },
+                "full_term_premium": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "FULL TERM PREMIUM"
+                  ]
+                },
+                "unearned_factor": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "UNEARNED FACTOR"
+                  ]
+                },
+                "return_premium": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "RETURN PREMIUM"
+                  ]
+                },
+                "premium_calculation_subject_to_audit": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "PREMIUM CALCULATION SUBJECT TO AUDIT"
+                  ]
+                },
+                "remarks": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "REMARKS"
+                  ]
+                },
+                "named_insured_signature_present": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "SIGNATURE OF NAMED INSURED"
+                  ]
+                },
+                "named_insured_signature_date": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "DATE"
+                  ]
+                },
+                "witness_name": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "WITNESS"
+                  ]
+                },
+                "witness_date": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "DATE"
+                  ]
+                },
+                "authorized_signature_present": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "AUTHORIZED SIGNATURE"
+                  ]
+                },
+                "authorized_signer_capacity": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "LIENHOLDER",
+                    "MORTGAGEE",
+                    "LOSS PAYEE",
+                    "LENDER'S LOSS PAYABLE"
+                  ],
+                  "description": "The box marked beside the authorized signature: Lienholder, Mortgagee, Loss Payee or Lender's Loss Payable."
+                },
+                "authorized_signature_title": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "TITLE"
+                  ]
+                },
+                "authorized_signature_date": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "DATE"
+                  ]
+                },
+                "producer_signature_present": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "PRODUCER'S SIGNATURE"
+                  ]
+                },
+                "producer_signature_date": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "DATE"
+                  ]
+                },
+                "distribution": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "fideon:aliases": [
+                    "REQUEST / RELEASE DISTRIBUTION"
+                  ],
+                  "description": "The marked recipients: Insured, Company, Mortgagee, ..."
+                },
+                "print_code": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "Printed by"
+                  ],
+                  "description": "The form's own print line, \"Printed by GAL on May 29, 2026 at 03:28PM\": GAL."
+                },
+                "print_date": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "Print Date"
+                  ]
+                },
+                "print_time": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "Print Time"
+                  ]
+                }
+              },
+              "fideon:aliases": [
+                "CANCELLATION REQUEST / POLICY RELEASE",
+                "Cancellation Request / Policy Release",
+                "ACORD 35",
+                "CANCELLED POLICY INFORMATION"
+              ],
+              "description": "An ACORD 35 Cancellation Request / Policy Release attached to the application. It cancels a prior policy on the insured property, which can be someone else's: here the previous owner's homeowners policy with another carrier (\"Insured deceased\"). Its insured, policy number, dates and NAIC belong to that policy, never to this one."
+            },
+            "flood_selection_rejection": {
+              "type": "object",
+              "properties": {
+                "acord_form_number": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "ACORD 60"
+                  ]
+                },
+                "acord_form_edition": {
+                  "$ref": "#/$defs/FieldValue",
+                  "description": "\"2010/04\" in \"ACORD 60 (2010/04)\"."
+                },
+                "form_date": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "DATE (MM/DD/YYYY)"
+                  ]
+                },
+                "agency_customer_id": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "AGENCY CUSTOMER ID"
+                  ]
+                },
+                "agency_name": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "AGENCY"
+                  ]
+                },
+                "carrier_name": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "CARRIER"
+                  ]
+                },
+                "naic_code": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "NAIC CODE"
+                  ]
+                },
+                "policy_number": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "POLICY NUMBER"
+                  ]
+                },
+                "effective_date": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "EFFECTIVE DATE"
+                  ]
+                },
+                "applicant_name": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "APPLICANT / NAMED INSURED(S)"
+                  ]
+                },
+                "property_address": {
+                  "type": "object",
+                  "properties": {
+                    "line_1": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Address of Property"
+                      ]
+                    },
+                    "line_2": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Address Line 2",
+                        "Suite",
+                        "Apt",
+                        "Unit"
+                      ]
+                    },
+                    "city": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "City"
+                      ]
+                    },
+                    "state": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "State"
+                      ]
+                    },
+                    "postal_code": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Zip",
+                        "Zip Code",
+                        "Postal Code"
+                      ]
+                    },
+                    "county": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "County",
+                        "County Name"
+                      ]
+                    },
+                    "country": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Country"
+                      ]
+                    },
+                    "county_code": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "County Code"
+                      ]
+                    }
+                  }
+                },
+                "selections": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "coverage_type": {
+                        "$ref": "#/$defs/FieldValue",
+                        "fideon:aliases": [
+                          "TYPE OF COVERAGE"
+                        ]
+                      },
+                      "accepted": {
+                        "$ref": "#/$defs/FieldValue",
+                        "fideon:aliases": [
+                          "ACCEPT"
+                        ]
+                      },
+                      "rejected": {
+                        "$ref": "#/$defs/FieldValue",
+                        "fideon:aliases": [
+                          "REJECT"
+                        ]
+                      }
+                    }
+                  },
+                  "fideon:aliases": [
+                    "SELECTION / REJECTION OF FLOOD INSURANCE COVERAGE"
+                  ],
+                  "description": "One entry per coverage printed with Accept/Reject boxes: NFIP Building Coverage, NFIP Contents / Personal Property, Excess Building Coverage, Excess Contents / Personal Property, Alternative Market Primary Building Coverage, Alternative Market Primary Contents Coverage, Alternative Market Loss of Income or Additional Living Expense."
+                },
+                "applicant_signature_present": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "Applicant's Signature"
+                  ]
+                },
+                "applicant_signature_date": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "Date"
+                  ]
+                },
+                "producer_signature_present": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "Producer"
+                  ]
+                },
+                "producer_signature_date": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "Date"
+                  ]
+                },
+                "print_code": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "Printed by"
+                  ],
+                  "description": "The form's own print line, \"Printed by GAL on May 29, 2026 at 03:35PM\": GAL."
+                },
+                "print_date": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "Print Date"
+                  ]
+                },
+                "print_time": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "Print Time"
+                  ]
+                }
+              },
+              "fideon:aliases": [
+                "FLOOD INSURANCE SELECTION / REJECTION",
+                "Flood Insurance Selection / Rejection",
+                "ACORD 60"
+              ],
+              "description": "An ACORD 60 Flood Insurance Selection / Rejection attached to the application: the applicant's accept or reject choice for each flood coverage, signed."
+            },
+            "esignature_certificate": {
+              "type": "object",
+              "properties": {
+                "provider": {
+                  "$ref": "#/$defs/FieldValue",
+                  "description": "The e-signature service named on the certificate: \"Intellistack\"."
+                },
+                "certificate_title": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "Document Completion Certificate"
+                  ]
+                },
+                "envelope_id": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "Document Reference"
+                  ]
+                },
+                "document_title": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "Document Title"
+                  ]
+                },
+                "document_region": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "Document Region"
+                  ]
+                },
+                "sender_name": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "Sender Name"
+                  ]
+                },
+                "sender_email": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "Sender Email"
+                  ]
+                },
+                "total_document_pages": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "Total Document Pages"
+                  ],
+                  "description": "The pages of the signed envelope, not of this PDF."
+                },
+                "secondary_security": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "Secondary Security"
+                  ]
+                },
+                "participants": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "$ref": "#/$defs/FieldValue",
+                        "fideon:aliases": [
+                          "Participant",
+                          "Name"
+                        ]
+                      },
+                      "email": {
+                        "$ref": "#/$defs/FieldValue",
+                        "fideon:aliases": [
+                          "Email"
+                        ]
+                      }
+                    }
+                  },
+                  "fideon:aliases": [
+                    "Participants"
+                  ]
+                },
+                "history": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "timestamp": {
+                        "$ref": "#/$defs/FieldValue",
+                        "fideon:aliases": [
+                          "Timestamp"
+                        ],
+                        "description": "As printed, with its zone: \"05/31/2026 08:04AM US/Eastern\"."
+                      },
+                      "description": {
+                        "$ref": "#/$defs/FieldValue",
+                        "fideon:aliases": [
+                          "Description"
+                        ],
+                        "description": "\"Signed by\", \"Document viewed by\", \"Email sent to\", ..."
+                      },
+                      "actor_name": {
+                        "$ref": "#/$defs/FieldValue"
+                      },
+                      "actor_email": {
+                        "$ref": "#/$defs/FieldValue"
+                      },
+                      "ip_address": {
+                        "$ref": "#/$defs/FieldValue",
+                        "fideon:aliases": [
+                          "IP Address"
+                        ]
+                      },
+                      "user_agent": {
+                        "$ref": "#/$defs/FieldValue",
+                        "fideon:aliases": [
+                          "User Agent",
+                          "Browser"
+                        ]
+                      }
+                    }
+                  },
+                  "fideon:aliases": [
+                    "Document History"
+                  ],
+                  "description": "One entry per event in the document history: when, what, who, and the IP address and browser recorded."
+                }
+              },
+              "fideon:aliases": [
+                "Document Completion Certificate"
+              ],
+              "description": "An e-signature completion certificate appended to the application: the envelope's identity, sender, participants and signing history. Its title and page count describe the signed envelope, not this document."
+            }
+          },
+          "description": "An application for this policy and the forms attached to it."
+        }
+      },
+      "description": "Details only one kind of document carries: a policy change (endorsement) or an application and its attachments."
     },
     "printed_lines": {
       "type": "array",
@@ -4912,7 +7457,7 @@
     }
   },
   "fideon:local_extensions": {
-    "note": "Added by hand in this repository so every printed section of the dwelling_fire source documents has a home in the canonical schema. Port these into scripts/canonical_schema_extensions.py before regenerating, or a regeneration will drop them. text_sections now holds prose paragraphs only; every labelled value is a keyed field or an additional_fields entry.",
+    "note": "Added by hand in this repository so every printed section of the dwelling_fire source documents has a home in the canonical schema. Port these into scripts/canonical_schema_extensions.py before regenerating, or a regeneration will drop them. text_sections now holds prose paragraphs only; every labelled value is a keyed field or an additional_fields entry. Extended again on 2026-09-25 from an audit of all 20 dwelling_fire source PDFs (5 carriers): a per-property list with its own coverages (dwelling_fire.dwellings), the fields listed below, section headings, and aliases moved off fields they sent values to wrongly (alias_changes).",
     "added": [
       "dwelling_fire.dwelling.rating_type",
       "dwelling_fire.dwelling.rating_zone",
@@ -4966,8 +7511,245 @@
       "underwriting_questions[].question/answer/details",
       "text_sections{}",
       "additional_fields[].section/label/value",
-      "printed_lines[].page/kind/cells"
+      "printed_lines[].page/kind/cells",
+      "document.form_number",
+      "document.print_code",
+      "document.print_time",
+      "policy.file_number",
+      "locations[].location_premium",
+      "locations[].fire_surcharge",
+      "premium.pro_rata_premium_change",
+      "billing.billing_note",
+      "forms_and_endorsements[].percentage",
+      "forms_and_endorsements[].form_details[]",
+      "forms_and_endorsements[].included_coverages[]",
+      "loss_history_none_reported",
+      "signature.signature_present",
+      "dwelling_fire.dwelling.described_location.county_code",
+      "dwelling_fire.dwelling.property_description",
+      "dwelling_fire.dwelling.burglar_alarm_type",
+      "dwelling_fire.dwelling.sprinklered",
+      "dwelling_fire.property_coverages.inflation_guard_percentage",
+      "dwelling_fire.property_coverages.inflation_guard_basis",
+      "dwelling_fire.property_coverages.inflation_guard_period",
+      "dwelling_fire.property_coverages.inflation_guard_applies_to[]",
+      "dwelling_fire.liability_coverages.premises_liability_aggregate_limit",
+      "dwelling_fire.optional_endorsement_coverages[].percentage",
+      "dwelling_fire.optional_endorsement_coverages[].business_type",
+      "dwelling_fire.optional_endorsement_coverages[].protective_device_type",
+      "dwelling_fire.optional_endorsement_coverages[].hazardous_condition",
+      "dwelling_fire.optional_endorsement_coverages[].structure_type",
+      "dwelling_fire.optional_endorsement_coverages[].structure_dimensions",
+      "dwelling_fire.optional_endorsement_coverages[].structure_color",
+      "dwelling_fire.optional_endorsement_coverages[].structure_location",
+      "dwelling_fire.dwellings[].coverages[].coverage_section",
+      "dwelling_fire.dwellings[].coverages[].extended_coverage_premium",
+      "dwelling_fire.dwellings[].coverages[].vmm_premium",
+      "dwelling_fire.dwellings[].coverages[].covered_causes_of_loss",
+      "dwelling_fire.dwellings[].coverages[].construction_type",
+      "dwelling_fire.dwellings[].coverages[].protection_class",
+      "dwelling_fire.dwellings[].coverages[].rating_zone",
+      "dwelling_fire.dwellings[].coverages[].occupancy_type",
+      "dwelling_fire.dwellings[].coverages[].occupancy_classification",
+      "dwelling_fire.dwellings[].coverages[].territory_code",
+      "dwelling_fire.dwellings[].coverages[].hazardous_condition",
+      "dwelling_fire.dwellings[].coverages[].deductible_notes",
+      "dwelling_fire.dwellings[]",
+      "dwelling_fire.dwellings[].location_number",
+      "dwelling_fire.dwellings[].building_number",
+      "dwelling_fire.dwellings[].described_location",
+      "dwelling_fire.dwellings[].occupancy_type",
+      "dwelling_fire.dwellings[].tenant_occupied",
+      "dwelling_fire.dwellings[].number_of_units",
+      "dwelling_fire.dwellings[].construction_type",
+      "dwelling_fire.dwellings[].year_built",
+      "dwelling_fire.dwellings[].number_of_stories",
+      "dwelling_fire.dwellings[].square_footage",
+      "dwelling_fire.dwellings[].roof_type",
+      "dwelling_fire.dwellings[].roof_age",
+      "dwelling_fire.dwellings[].heating_type",
+      "dwelling_fire.dwellings[].protection_class",
+      "dwelling_fire.dwellings[].territory_code",
+      "dwelling_fire.dwellings[].replacement_cost_value",
+      "dwelling_fire.dwellings[].actual_cash_value",
+      "dwelling_fire.dwellings[].seasonal_or_vacant",
+      "dwelling_fire.dwellings[].occupancy_classification_code",
+      "dwelling_fire.dwellings[].hazardous_conditions_occupancy",
+      "dwelling_fire.dwellings[].solid_fuel_burning_device_present",
+      "dwelling_fire.dwellings[].distance_to_hydrant",
+      "dwelling_fire.dwellings[].rating_type",
+      "dwelling_fire.dwellings[].rating_zone",
+      "dwelling_fire.dwellings[].renovator_credit",
+      "dwelling_fire.dwellings[].fire_district",
+      "dwelling_fire.dwellings[].miles_to_fire_department",
+      "dwelling_fire.dwellings[].feet_to_hydrant",
+      "dwelling_fire.dwellings[].units_between_fire_walls",
+      "dwelling_fire.dwellings[].lead_abatement",
+      "dwelling_fire.dwellings[].protected_since_date",
+      "dwelling_fire.dwellings[].special_rating_conditions",
+      "dwelling_fire.dwellings[].structure_description",
+      "dwelling_fire.dwellings[].property_description",
+      "dwelling_fire.dwellings[].fire_alarm_type",
+      "dwelling_fire.dwellings[].burglar_alarm_type",
+      "dwelling_fire.dwellings[].sprinklered",
+      "dwelling_fire.dwellings[].usage",
+      "dwelling_fire.dwellings[].electrical_service",
+      "dwelling_fire.dwellings[].fuel_type",
+      "dwelling_fire.dwellings[].secondary_heating",
+      "dwelling_fire.dwellings[].year_roof_updated",
+      "dwelling_fire.dwellings[].year_primary_system_updated",
+      "dwelling_fire.dwellings[].market_value",
+      "dwelling_fire.dwellings[].purchase_price",
+      "dwelling_fire.dwellings[].cost_of_improvements",
+      "dwelling_fire.dwellings[].years_owned",
+      "dwelling_fire.dwellings[].covered_causes_of_loss",
+      "dwelling_fire.dwellings[].loss_settlement_basis",
+      "dwelling_fire.dwellings[].loss_settlement_contents",
+      "dwelling_fire.dwellings[].vandalism_basis",
+      "dwelling_fire.dwellings[].inflation_guard_percentage",
+      "dwelling_fire.dwellings[].liability_coverage_form",
+      "dwelling_fire.dwellings[].all_other_perils_deductible",
+      "dwelling_fire.dwellings[].deductible_credit_amount",
+      "dwelling_fire.dwellings[].total_premium",
+      "dwelling_fire.dwellings[].fire_surcharge",
+      "document_type_detail",
+      "document_type_detail.policy_change.transaction_type",
+      "document_type_detail.policy_change.transaction_date",
+      "document_type_detail.policy_change.transaction_effective_date",
+      "document_type_detail.policy_change.transaction_expiration_date",
+      "document_type_detail.policy_change.transaction_reason_description",
+      "document_type_detail.policy_change.net_change_amount",
+      "document_type_detail.policy_change.additional_or_return_premium",
+      "document_type_detail.policy_change.results_in_no_premium_change",
+      "document_type_detail.policy_change.changes",
+      "document_type_detail.policy_change.endorsements_added",
+      "document_type_detail.policy_change.endorsements_removed",
+      "document_type_detail.application.application_title",
+      "document_type_detail.application.application_date",
+      "document_type_detail.application.requested_effective_date",
+      "document_type_detail.application.applicant_name",
+      "document_type_detail.application.applicant_signature_present",
+      "document_type_detail.application.applicant_signature_date",
+      "document_type_detail.application.producer_signature_present",
+      "document_type_detail.application.producer_signature_date",
+      "document_type_detail.application.prior_policy_cancellation_request",
+      "dwelling_fire.dwelling.rating_subzone",
+      "dwelling_fire.dwelling.secondary_heating_present",
+      "dwelling_fire.dwelling.secondary_heating_description",
+      "dwelling_fire.dwelling.roof_updated_within_20_years",
+      "dwelling_fire.dwellings[].rating_subzone",
+      "dwelling_fire.dwellings[].secondary_heating_present",
+      "dwelling_fire.dwellings[].secondary_heating_description",
+      "dwelling_fire.dwellings[].roof_updated_within_20_years",
+      "dwelling_fire.dwellings[].mortgagees_none_listed",
+      "dwelling_fire.dwellings[].surcharges_none_reported",
+      "premium.surcharges[].is_included",
+      "named_insured.contact.phone_type",
+      "named_insured.contact.secondary_phone",
+      "named_insured.contact.secondary_phone_type",
+      "named_insured.delivery_preference",
+      "document_type_detail.application.prior_policy_cancellation_request.witness_date",
+      "document_type_detail.application.prior_policy_cancellation_request.authorized_signer_capacity",
+      "document_type_detail.application.prior_policy_cancellation_request.authorized_signature_title",
+      "document_type_detail.application.prior_policy_cancellation_request.authorized_signature_date",
+      "document_type_detail.application.prior_policy_cancellation_request.print_code",
+      "document_type_detail.application.prior_policy_cancellation_request.print_date",
+      "document_type_detail.application.prior_policy_cancellation_request.print_time",
+      "document_type_detail.application.flood_selection_rejection.acord_form_number",
+      "document_type_detail.application.flood_selection_rejection.acord_form_edition",
+      "document_type_detail.application.flood_selection_rejection.form_date",
+      "document_type_detail.application.flood_selection_rejection.agency_customer_id",
+      "document_type_detail.application.flood_selection_rejection.agency_name",
+      "document_type_detail.application.flood_selection_rejection.carrier_name",
+      "document_type_detail.application.flood_selection_rejection.naic_code",
+      "document_type_detail.application.flood_selection_rejection.policy_number",
+      "document_type_detail.application.flood_selection_rejection.effective_date",
+      "document_type_detail.application.flood_selection_rejection.applicant_name",
+      "document_type_detail.application.flood_selection_rejection.property_address.line_1",
+      "document_type_detail.application.flood_selection_rejection.property_address.line_2",
+      "document_type_detail.application.flood_selection_rejection.property_address.city",
+      "document_type_detail.application.flood_selection_rejection.property_address.state",
+      "document_type_detail.application.flood_selection_rejection.property_address.postal_code",
+      "document_type_detail.application.flood_selection_rejection.property_address.county",
+      "document_type_detail.application.flood_selection_rejection.property_address.country",
+      "document_type_detail.application.flood_selection_rejection.property_address.county_code",
+      "document_type_detail.application.flood_selection_rejection.selections[].coverage_type",
+      "document_type_detail.application.flood_selection_rejection.selections[].accepted",
+      "document_type_detail.application.flood_selection_rejection.selections[].rejected",
+      "document_type_detail.application.flood_selection_rejection.applicant_signature_present",
+      "document_type_detail.application.flood_selection_rejection.applicant_signature_date",
+      "document_type_detail.application.flood_selection_rejection.producer_signature_present",
+      "document_type_detail.application.flood_selection_rejection.producer_signature_date",
+      "document_type_detail.application.flood_selection_rejection.print_code",
+      "document_type_detail.application.flood_selection_rejection.print_date",
+      "document_type_detail.application.flood_selection_rejection.print_time",
+      "document_type_detail.application.esignature_certificate.provider",
+      "document_type_detail.application.esignature_certificate.certificate_title",
+      "document_type_detail.application.esignature_certificate.envelope_id",
+      "document_type_detail.application.esignature_certificate.document_title",
+      "document_type_detail.application.esignature_certificate.document_region",
+      "document_type_detail.application.esignature_certificate.sender_name",
+      "document_type_detail.application.esignature_certificate.sender_email",
+      "document_type_detail.application.esignature_certificate.total_document_pages",
+      "document_type_detail.application.esignature_certificate.secondary_security",
+      "document_type_detail.application.esignature_certificate.participants[].name",
+      "document_type_detail.application.esignature_certificate.participants[].email",
+      "document_type_detail.application.esignature_certificate.history[].timestamp",
+      "document_type_detail.application.esignature_certificate.history[].description",
+      "document_type_detail.application.esignature_certificate.history[].actor_name",
+      "document_type_detail.application.esignature_certificate.history[].actor_email",
+      "document_type_detail.application.esignature_certificate.history[].ip_address",
+      "document_type_detail.application.esignature_certificate.history[].user_agent"
     ],
-    "aliases": "fideon:aliases completed for every field from the labels printed in the 20 dwelling_fire source PDFs plus industry synonyms."
+    "aliases": "fideon:aliases completed for every field from the labels printed in the 20 dwelling_fire source PDFs plus industry synonyms.",
+    "alias_changes": [
+      "document.summary_of_changes: added 'It is hereby agreed and understood that the following change was made to your policy', 'Following change was made to your policy'",
+      "document.transaction_reason: removed 'Modifies Coverage(s) at Renewal' (now on dwelling_fire.property_coverages.inflation_guard_applies_to)",
+      "document.source_file_name: removed 'Document Reference'",
+      "carrier.company_structure: added 'Advance Premium Co-Operative Fire Insurance Corporation', 'A New York State Advance Premium Co-Operative Fire Insurance Corporation', 'Co-Operative Fire Insurance Corporation'",
+      "named_insured: added 'Insured Summary', 'Insured Information'",
+      "named_insured.physical_address.line_1: removed 'Insured Location', 'Address of Property', 'Location Address' (now on dwelling_fire.dwelling.described_location.line_1 (Address of Property, Location Address))",
+      "named_insured.business_description: removed 'Type of Business' (now on dwelling_fire.optional_endorsement_coverages[].business_type)",
+      "locations: added 'Insured Location Summary', 'Location Summary', 'Location(s) of Property Insured'",
+      "premium.total_policy_premium: added 'Total'",
+      "premium.fire_fee: removed 'Premium including Fire Fee' (now on locations[].location_premium, dwelling_fire.dwellings[].total_premium)",
+      "premium.change_in_annual_premium: removed 'Premium adjustment for this change' (now on premium.pro_rata_premium_change)",
+      "premium.deposit_premium: removed 'Advance Premium'",
+      "premium.discounts_and_credits[].description: added 'Credit or Surcharge for Coverage A - Deductible'",
+      "forms_and_endorsements: added 'Policy Subject to the Following Forms and Endorsements', 'Policy Forms & Optional Coverages', 'Detailed Form Information', 'Annual Premium Computation and Applicable Policy Forms Requested', 'Applicable Policy Forms Requested', 'Forms/Endorsements', 'Forms and Endorsements'",
+      "loss_history: added 'Loss History', 'Prior Losses', 'Previous Losses', 'Loss Information'",
+      "signature.authorized_representative_name: removed 'Signature of Applicant', 'Signature of Named Insured', \"Applicant's Signature\" (now on document_type_detail.application.applicant_signature_present)",
+      "interested_parties: added 'Special Interests', 'Additional Interests', 'Additional Interest', 'Additional Insured', 'Interested Parties'",
+      "dwelling_fire.mortgagees: added 'MORTGAGEE(S)', 'Mortgagee(s)', 'Mortgagee Information', 'Mortgagees'",
+      "dwelling_fire.dwelling: added 'RATING INFORMATION', 'Rating Information', 'Rating Criteria', 'Property Characteristics', 'Location Details', 'Building Utilities', 'Coverage Information'",
+      "dwelling_fire.dwelling.years_owned: added 'How many years has the applicant owned this risk', 'How many years has the applicant owned this risk?'",
+      "dwelling_fire.dwelling.structure_description: removed 'Description' (now on dwelling_fire.dwelling.property_description)",
+      "dwelling_fire.dwelling.structure_description: removed 'Type of Building' (now on dwelling_fire.optional_endorsement_coverages[].structure_type)",
+      "dwelling_fire.optional_endorsement_coverages[].coverage_description: removed 'Type of Business', 'Type of Building', 'Type of Device' (now on business_type, structure_type, protective_device_type)",
+      "dwelling_fire.optional_endorsement_coverages[].applies_to: added 'Modifies Coverage(s) at Renewal'",
+      "document_type_detail.policy_change.transaction_reason_description: added 'Transaction Reason Description', 'Reason for Change'",
+      "document_type_detail.policy_change.changes[].change_description: added 'It is hereby agreed and understood that the following change was made to your policy'",
+      "document_type_detail.policy_change.net_change_amount: added 'Change In Annual Premium'",
+      "document_type_detail.policy_change.additional_or_return_premium: added 'Premium adjustment for this change', 'Return Premium', 'Additional Premium'",
+      "document.source_carrier_folder: removed 'Carrier', 'Insurance Company', 'Insurance Provided By', 'Name of Companies', 'Company Name' (the source folder is not printed; these carrier labels belong to carrier.company_name, which has them all)",
+      "named_insured.primary_name: removed 'Name and Address' (printed over mortgagees, special interests and the ACORD 35 distribution, never over the named insured)",
+      "billing.bill_to_party: removed 'Payor', 'Payer' (printed on a special interest (\"Payor: No\"); interested_parties[].is_payor has them)",
+      "premium.basic_premium: removed 'Property Total' (a property's own total, printed beside \"Coverage Premium\" with a different value ($1,327 vs $1,325); dwelling_fire.dwellings[].total_premium has it)",
+      "document.document_title_as_stated: removed 'Document Title' (printed only on the e-signature certificate, naming the signed envelope)",
+      "document.page_count: removed 'Total Document Pages' (printed only on the e-signature certificate (12, while the PDF has 14 pages))",
+      "policy: added 'Policy Information' (section heading)",
+      "producer: added 'Agency Information' (section heading)",
+      "billing: added 'Billing Office Use' (section heading)",
+      "document_type_detail.application.prior_policy_cancellation_request: added 'CANCELLED POLICY INFORMATION' (section heading on ACORD 35)",
+      "policy.total_number_of_risks: added 'Property' (Leatherstocking prints \"Property: 1 of 1\")",
+      "dwelling_fire.dwelling.secondary_heating: removed 'Any Other Secondary Heating Source' (now on dwelling_fire.dwelling.secondary_heating_present)",
+      "dwelling_fire.dwelling.secondary_heating: removed 'Explain Other' (now on dwelling_fire.dwelling.secondary_heating_description)",
+      "dwelling_fire.dwelling.year_roof_updated: removed 'Has the roof been updated' (now on dwelling_fire.dwelling.roof_updated_within_20_years)",
+      "dwelling_fire.dwellings[].secondary_heating: removed 'Any Other Secondary Heating Source' (now on dwelling_fire.dwellings[].secondary_heating_present)",
+      "dwelling_fire.dwellings[].secondary_heating: removed 'Explain Other' (now on dwelling_fire.dwellings[].secondary_heating_description)",
+      "dwelling_fire.dwellings[].year_roof_updated: removed 'Has the roof been updated' (now on dwelling_fire.dwellings[].roof_updated_within_20_years)",
+      "named_insured.contact.phone: removed 'Secondary Phone' (now on named_insured.contact.secondary_phone)",
+      "document_type_detail.application.prior_policy_cancellation_request: description corrected (the cancelled policy can belong to someone other than the applicant)"
+    ]
   }
 }
