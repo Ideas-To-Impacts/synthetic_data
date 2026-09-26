@@ -8,8 +8,8 @@ Conditions, plus the LCIC-DX canine exclusion block.  The source prints a Proper
 two dollars above its own Coverage Premium / Total; the synthetic schedule ties.  No
 mortgagee, terrorism, billing, loss history or state notice is printed.
 
-GAPS (printed but no canonical leaf): the "Property: 1 of 1" counter, the Mail To block (repeats the
-producer) and the SIGNATURE / DATE box.
+GAPS (printed but no canonical leaf): the Mail To block (repeats the producer) and the SIGNATURE
+box's date (not printed; the signature is keyed).
 """
 
 from . import _leatherstocking as L
@@ -17,9 +17,8 @@ from ..engine import fv
 
 SOURCE = L.ROOT + "leatherstocking_cooperative_insurance_company_dfire_dec.pdf"
 
-GAPS = ["Property: 1 of 1 (property counter)",
-        "Mail To block (repeats the producer name and address)",
-        "SIGNATURE / DATE box (signature image only; no printed name or date)"]
+GAPS = ["Mail To block (repeats the producer name and address)",
+        "SIGNATURE / DATE box: no printed name or date (the signature image is keyed)"]
 
 STATIC = list(L.STATIC)
 IGNORE_PAIRS = list(L.IGNORE_PAIRS)

@@ -14,9 +14,8 @@ fragment are restored.
 
 GAPS (printed but no canonical leaf): "Miles From Fire Dept", "Fire District",
 "Renovator Credit", "Type: Standard", "Special Rating Conditions",
-"Loss Settlement Contents", "Inland Marine Premium $0.00", the mortgagee line
-("None Listed"), the "Your billing invoice will be mailed separately" and
-"go paperless" notices, "Coverage / Form" descriptions of the enhanced
+"Loss Settlement Contents", "Inland Marine Premium $0.00", the "go paperless"
+notice, "Coverage / Form" descriptions of the enhanced
 DFL-153P coverage list beyond their names.
 """
 
@@ -29,7 +28,7 @@ SOURCE = "DMIC/dwelling_fire/DFIRE-SLP_redacted.pdf"
 
 GAPS = ["Miles From Fire Dept", "Fire District", "Renovator Credit", "Type: Standard",
         "Special Rating Conditions", "Loss Settlement Contents", "Inland Marine Premium (0.00)",
-        "Mortgagee: None Listed", "Billing invoice / paperless notices"]
+        "Paperless notice"]
 
 CAUSES = [("FL-3", "Special", "Special Perils"), ("FL-2", "Broad", "Broad Perils")]
 DESCS = ["Main House", "Garage With Apartment", "Carriage House", "Rear Cottage", "Guest House",
@@ -332,6 +331,38 @@ def _loc_gold(d, loc, prop):
     }
 
 
+def _dwelling_gold(d, loc, prop):
+    """dwelling_fire.dwellings[] entry: the location as its own coverage page (limits,
+    rating criteria, mortgagee) and premium computation print it."""
+    return {
+        "location_number": fv(str(loc["i"]), loc["i"], evidence="Location Number:"),
+        "described_location": dict(prop),
+        "property_description": fv(loc["desc"]),
+        "occupancy_type": fv(loc["fam_dw"]),
+        "number_of_units": fv(loc["fam"][0], int(loc["fam"][0]), evidence=loc["fam"]),
+        "construction_type": fv(loc["constr"]),
+        "year_built": fv(loc["year"]),
+        "protection_class": fv(d["protect"]),
+        "rating_type": fv("Standard"),
+        "rating_zone": fv(loc["zone"], evidence="Rating Zone:"),
+        "renovator_credit": fv("No"),
+        "fire_district": fv(d["prop_city"]),
+        "feet_to_hydrant": fv(d["hydrant"]),
+        "miles_to_fire_department": fv(d["miles"]),
+        "fire_alarm_type": fv("Smoke Detectors 2%"),
+        "special_rating_conditions": fv("None"),
+        "covered_causes_of_loss": fv(d["cause"]),
+        "loss_settlement_basis": fv(d["settle"]),
+        "loss_settlement_contents": fv("Replacement Cost Contents"),
+        "all_other_perils_deductible": _mn(d["ded_s"]),
+        "deductible_credit_amount": _mn(loc["dc_n"]),
+        "total_premium": _mn(loc["total_n"]),
+        "fire_surcharge": money(d["fire_n"], evidence="New York State Fire Surcharge"),
+        "mortgagees_none_listed": fv("None Listed"),
+        "coverages": _loc_gold(d, loc, prop)["coverages"],
+    }
+
+
 def _forms(d, loc):
     out = []
     prem = {"fl10": loc["fl10_n"], "zero": "0.00", "fl42": d["fl42_n"], "fl52a": d["fl52a_n"],
@@ -345,6 +376,16 @@ def _forms(d, loc):
             row["edition_date"] = fv(ed)
         if key:
             row["premium"] = _mn(prem[key])
+        # the line printed under the form's row
+        if key == "fl10":
+            row["percentage"] = fv("1.0% per Quarter")
+        elif key == "ml":
+            row["percentage"] = fv("2%", evidence="Smoke Detectors 2%")
+        elif key == "dfl":
+            # the long "Extension of Coverage" entry wraps onto a second printed line
+            row["included_coverages"] = [
+                fv(t, evidence="Extension of Coverage- Green Environmental, Safety and Efficiency"
+                   if t.startswith("Extension") else None) for t in ENHANCED]
         out.append(row)
     return out
 
@@ -418,7 +459,8 @@ def gold(d):
         },
         "named_insured": named,
         "locations": locs,
-        "billing": {"bill_to_party": fv("Insured")},
+        "billing": {"bill_to_party": fv("Insured"),
+                    "billing_note": fv("Your billing invoice will be mailed separately.")},
         "additional_fields": [
             extra("Limit", "%s Each Occurrence" % d["l_n"], section="Annual Premium Computation",
                   evidence=d["l_n"]),
@@ -468,13 +510,17 @@ def gold(d):
                 "covered_causes_of_loss": fv(d["cause"]),
                 "loss_settlement_basis": fv(d["settle"]),
                 "loss_settlement_contents": fv("Replacement Cost Contents"),
+                "inflation_guard_percentage": fv("1.0%", evidence="1.0% per Quarter"),
+                "inflation_guard_period": fv("per Quarter"),
             },
             "liability_coverages": {
                 "coverage_l_premises_liability_limit": _mn(d["l_n"]),
+                "premises_liability_aggregate_limit": _mn(d["g_n"]),
                 "coverage_m_medical_payments_per_person_limit": _mn(d["mp_n"]),
                 "coverage_m_medical_payments_per_occurrence_limit": _mn(d["ma_n"]),
             },
             "deductibles": {"all_other_perils_deductible": _mn(d["ded_s"])},
             "optional_endorsement_coverages": optional,
+            "dwellings": [_dwelling_gold(d, loc, prop) for loc in d["locs"]],
         },
     }

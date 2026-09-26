@@ -152,6 +152,19 @@
         "flagged": false
       }
     ],
+    "form_number": {
+      "raw": "LCIC(4/11)",
+      "parsed": "LCIC(4/11)",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
     "source_file_name": {
       "raw": "3-DFIRE_redacted_001.pdf",
       "parsed": "3-DFIRE_redacted_001.pdf",
@@ -593,6 +606,19 @@
         2
       ],
       "flagged": false
+    },
+    "total_number_of_risks": {
+      "raw": "1 of 1",
+      "parsed": 1,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false,
+      "printed_label": "Property"
     }
   },
   "named_insured": {
@@ -1024,7 +1050,20 @@
           "printed_label": "Fees"
         }
       }
-    ]
+    ],
+    "policy_fee": {
+      "raw": "$11.86",
+      "parsed": 11.86,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false,
+      "printed_label": "Fees"
+    }
   },
   "forms_and_endorsements": [
     {
@@ -1823,7 +1862,59 @@
         ],
         "flagged": false,
         "printed_label": "Coverage A - Residence"
-      }
+      },
+      "inflation_guard_basis": {
+        "raw": "ACV",
+        "parsed": "ACV",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false,
+        "printed_label": "Loss Settlement"
+      },
+      "inflation_guard_applies_to": [
+        {
+          "raw": "Coverage A - Residence",
+          "parsed": "Coverage A - Residence",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        {
+          "raw": "Coverage D - Additional Living Expense / Loss of Rent",
+          "parsed": "Coverage D - Additional Living Expense / Loss of Rent",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        {
+          "raw": "Coverage B - Related Private Structures",
+          "parsed": "Coverage B - Related Private Structures",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      ]
     },
     "liability_coverages": {
       "coverage_l_premises_liability_limit": {
@@ -2010,7 +2101,456 @@
           "flagged": false
         }
       }
+    ],
+    "dwellings": [
+      {
+        "location_number": {
+          "raw": "1",
+          "parsed": 1,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "described_location": {
+          "line_1": {
+            "raw": "446 Union St",
+            "parsed": "446 Union St",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "city": {
+            "raw": "Kingston",
+            "parsed": "Kingston",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "state": {
+            "raw": "NY",
+            "parsed": "NY",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "postal_code": {
+            "raw": "12401",
+            "parsed": "12401",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "county": {
+            "raw": "Ulster County",
+            "parsed": "Ulster",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          }
+        },
+        "coverages": [
+          {
+            "coverage_section": {
+              "raw": "Section I",
+              "parsed": "Section I",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "coverage_name": {
+              "raw": "Coverage A - Residence",
+              "parsed": "Coverage A - Residence",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$514,800",
+              "parsed": 514800.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false,
+              "printed_label": "Coverage A - Residence"
+            },
+            "premium": {
+              "raw": "$947.00",
+              "parsed": 947.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false,
+              "printed_label": "Coverage A - Residence"
+            },
+            "deductible_amount": {
+              "raw": "$2,500.00",
+              "parsed": 2500.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false,
+              "printed_label": "Deductible"
+            },
+            "valuation_basis": {
+              "raw": "ACV",
+              "parsed": "ACV",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false,
+              "printed_label": "Loss Settlement"
+            },
+            "applies_to": {
+              "raw": "Property 1",
+              "parsed": "Property 1",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false,
+              "printed_label": "Hazardous Conditions - Occupancy"
+            }
+          },
+          {
+            "coverage_section": {
+              "raw": "Section II",
+              "parsed": "Section II",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "coverage_name": {
+              "raw": "Coverage L - Premises Liability",
+              "parsed": "Coverage L - Premises Liability",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$300,000",
+              "parsed": 300000.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false,
+              "printed_label": "Coverage L - Premises Liability"
+            },
+            "premium": {
+              "raw": "$70.00",
+              "parsed": 70.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false,
+              "printed_label": "Coverage L - Premises Liability"
+            },
+            "limit_basis": {
+              "raw": "Each Occurrence",
+              "parsed": "Each Occurrence",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false,
+              "printed_label": "Coverage L - Premises Liability"
+            },
+            "applies_to": {
+              "raw": "Property 1",
+              "parsed": "Property 1",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false,
+              "printed_label": "Hazardous Conditions - Occupancy"
+            }
+          },
+          {
+            "coverage_section": {
+              "raw": "Section II",
+              "parsed": "Section II",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "coverage_name": {
+              "raw": "ML-59 - Lead Exclusion",
+              "parsed": "ML-59 - Lead Exclusion",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "***",
+              "parsed": null,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "-$20.00",
+              "parsed": -20.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "Yes",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "structural"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "form_reference": {
+              "raw": "ML-59",
+              "parsed": "ML-59",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "applies_to": {
+              "raw": "Property 1",
+              "parsed": "Property 1",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false,
+              "printed_label": "Hazardous Conditions - Occupancy"
+            }
+          },
+          {
+            "coverage_section": {
+              "raw": "Optional Items",
+              "parsed": "Optional Items",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "coverage_name": {
+              "raw": "Hazardous Conditions - Occupancy",
+              "parsed": "Hazardous Conditions - Occupancy",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "***",
+              "parsed": null,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$378.00",
+              "parsed": 378.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false,
+              "printed_label": "Hazardous Conditions - Occupancy"
+            },
+            "is_included": {
+              "raw": "Yes",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "structural"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "applies_to": {
+              "raw": "Property 1",
+              "parsed": "Property 1",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false,
+              "printed_label": "Hazardous Conditions - Occupancy"
+            }
+          }
+        ],
+        "total_premium": {
+          "raw": "$1,375.00",
+          "parsed": 1375.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false,
+          "printed_label": "Coverage Premium"
+        }
+      }
     ]
+  },
+  "signature": {
+    "signature_present": {
+      "raw": "Yes",
+      "parsed": "Yes",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
   },
   "text_sections": {
     "page1_s1": {
@@ -2192,9 +2732,11 @@
     "billing.installments[].due_date",
     "billing.installments[].installment_fee",
     "billing.installments[].installment_number",
+    "billing.payment_coupon_scan_line",
     "billing.payment_frequency",
     "billing.payment_method",
     "billing.payment_plan",
+    "billing.phone",
     "carrier.address.country",
     "carrier.address.county",
     "carrier.address.county_code",
@@ -2227,7 +2769,6 @@
     "deductibles[].waiting_period",
     "document.batch_number",
     "document.copy_type",
-    "document.form_number",
     "document.form_run_code",
     "document.issue_date",
     "document.language",
@@ -2235,12 +2776,116 @@
     "document.print_date",
     "document.print_time",
     "document.source_system",
+    "document.source_url",
     "document.summary_of_changes",
     "document.transaction_reason",
+    "document_type_detail.acord_application.acord_form_edition",
+    "document_type_detail.acord_application.acord_form_number",
+    "document_type_detail.acord_application.acord_form_title",
+    "document_type_detail.acord_application.agency.address.city",
+    "document_type_detail.acord_application.agency.address.country",
+    "document_type_detail.acord_application.agency.address.county",
+    "document_type_detail.acord_application.agency.address.line_1",
+    "document_type_detail.acord_application.agency.address.line_2",
+    "document_type_detail.acord_application.agency.address.postal_code",
+    "document_type_detail.acord_application.agency.address.state",
+    "document_type_detail.acord_application.agency.agency_code",
+    "document_type_detail.acord_application.agency.agency_customer_id",
+    "document_type_detail.acord_application.agency.agency_name",
+    "document_type_detail.acord_application.agency.contact_email",
+    "document_type_detail.acord_application.agency.contact_phone",
+    "document_type_detail.acord_application.agency.producer_name",
+    "document_type_detail.acord_application.agency.sub_code",
+    "document_type_detail.acord_application.applicant.applicant_name",
+    "document_type_detail.acord_application.applicant.entity_type",
+    "document_type_detail.acord_application.applicant.fein",
+    "document_type_detail.acord_application.applicant.mailing_address.city",
+    "document_type_detail.acord_application.applicant.mailing_address.country",
+    "document_type_detail.acord_application.applicant.mailing_address.county",
+    "document_type_detail.acord_application.applicant.mailing_address.line_1",
+    "document_type_detail.acord_application.applicant.mailing_address.line_2",
+    "document_type_detail.acord_application.applicant.mailing_address.postal_code",
+    "document_type_detail.acord_application.applicant.mailing_address.state",
+    "document_type_detail.acord_application.applicant.mobile_phone",
+    "document_type_detail.acord_application.applicant.naics_code",
+    "document_type_detail.acord_application.applicant.nature_of_business",
+    "document_type_detail.acord_application.applicant.office_phone",
+    "document_type_detail.acord_application.applicant.sic_code",
+    "document_type_detail.acord_application.applicant.website",
+    "document_type_detail.acord_application.applicant.years_in_business",
+    "document_type_detail.acord_application.attached_acord_101_remarks[].form_reference",
+    "document_type_detail.acord_application.attached_acord_101_remarks[].remark_text",
+    "document_type_detail.acord_application.attached_acord_101_remarks[].section_reference",
+    "document_type_detail.acord_application.carrier.company_name",
+    "document_type_detail.acord_application.carrier.naic_code",
+    "document_type_detail.acord_application.carrier.underwriter_name",
+    "document_type_detail.acord_application.carrier.underwriter_office",
+    "document_type_detail.acord_application.form_date",
+    "document_type_detail.acord_application.fraud_warning_state",
+    "document_type_detail.acord_application.general_information_questions[].answer",
+    "document_type_detail.acord_application.general_information_questions[].explanation",
+    "document_type_detail.acord_application.general_information_questions[].question_number",
+    "document_type_detail.acord_application.general_information_questions[].question_text",
+    "document_type_detail.acord_application.individuals_included_or_excluded[].annual_remuneration",
+    "document_type_detail.acord_application.individuals_included_or_excluded[].class_code",
+    "document_type_detail.acord_application.individuals_included_or_excluded[].date_of_birth",
+    "document_type_detail.acord_application.individuals_included_or_excluded[].included_or_excluded",
+    "document_type_detail.acord_application.individuals_included_or_excluded[].name",
+    "document_type_detail.acord_application.individuals_included_or_excluded[].ownership_percentage",
+    "document_type_detail.acord_application.individuals_included_or_excluded[].title_or_relationship",
+    "document_type_detail.acord_application.locations[].address.city",
+    "document_type_detail.acord_application.locations[].address.country",
+    "document_type_detail.acord_application.locations[].address.county",
+    "document_type_detail.acord_application.locations[].address.line_1",
+    "document_type_detail.acord_application.locations[].address.line_2",
+    "document_type_detail.acord_application.locations[].address.postal_code",
+    "document_type_detail.acord_application.locations[].address.state",
+    "document_type_detail.acord_application.locations[].highest_floor_occupied",
+    "document_type_detail.acord_application.locations[].location_number",
+    "document_type_detail.acord_application.locations[].number_of_employees",
+    "document_type_detail.acord_application.prior_losses[].amount_paid",
+    "document_type_detail.acord_application.prior_losses[].carrier",
+    "document_type_detail.acord_application.prior_losses[].claim_count",
+    "document_type_detail.acord_application.prior_losses[].reserve_amount",
+    "document_type_detail.acord_application.prior_losses[].year",
+    "document_type_detail.acord_application.proposed_policy.audit_frequency",
+    "document_type_detail.acord_application.proposed_policy.billing_plan",
+    "document_type_detail.acord_application.proposed_policy.normal_anniversary_rating_date",
+    "document_type_detail.acord_application.proposed_policy.payment_plan",
+    "document_type_detail.acord_application.proposed_policy.prior_carrier_information[].annual_premium",
+    "document_type_detail.acord_application.proposed_policy.prior_carrier_information[].carrier_name",
+    "document_type_detail.acord_application.proposed_policy.prior_carrier_information[].experience_modification",
+    "document_type_detail.acord_application.proposed_policy.prior_carrier_information[].policy_number",
+    "document_type_detail.acord_application.proposed_policy.prior_carrier_information[].year",
+    "document_type_detail.acord_application.proposed_policy.proposed_effective_date",
+    "document_type_detail.acord_application.proposed_policy.proposed_expiration_date",
+    "document_type_detail.acord_application.rating_information[].annual_remuneration",
+    "document_type_detail.acord_application.rating_information[].class_code",
+    "document_type_detail.acord_application.rating_information[].classification_description",
+    "document_type_detail.acord_application.rating_information[].estimated_annual_premium",
+    "document_type_detail.acord_application.rating_information[].full_time_count",
+    "document_type_detail.acord_application.rating_information[].location_number",
+    "document_type_detail.acord_application.rating_information[].number_of_employees",
+    "document_type_detail.acord_application.rating_information[].part_time_count",
+    "document_type_detail.acord_application.rating_information[].rate",
+    "document_type_detail.acord_application.rating_information[].state",
+    "document_type_detail.acord_application.signatures.applicant_signature_date",
+    "document_type_detail.acord_application.signatures.applicant_signature_present",
+    "document_type_detail.acord_application.signatures.national_producer_number",
+    "document_type_detail.acord_application.signatures.producer_signature_date",
+    "document_type_detail.acord_application.signatures.producer_signature_present",
+    "document_type_detail.application.applicant_address.city",
+    "document_type_detail.application.applicant_address.country",
+    "document_type_detail.application.applicant_address.county",
+    "document_type_detail.application.applicant_address.line_1",
+    "document_type_detail.application.applicant_address.line_2",
+    "document_type_detail.application.applicant_address.postal_code",
+    "document_type_detail.application.applicant_address.state",
     "document_type_detail.application.applicant_name",
     "document_type_detail.application.applicant_signature_date",
     "document_type_detail.application.applicant_signature_present",
     "document_type_detail.application.application_date",
+    "document_type_detail.application.application_form_number",
     "document_type_detail.application.application_title",
     "document_type_detail.application.esignature_certificate.certificate_title",
     "document_type_detail.application.esignature_certificate.document_region",
@@ -2287,6 +2932,13 @@
     "document_type_detail.application.flood_selection_rejection.selections[].accepted",
     "document_type_detail.application.flood_selection_rejection.selections[].coverage_type",
     "document_type_detail.application.flood_selection_rejection.selections[].rejected",
+    "document_type_detail.application.loss_history[].amount_paid",
+    "document_type_detail.application.loss_history[].date",
+    "document_type_detail.application.loss_history[].description",
+    "document_type_detail.application.prior_insurance[].carrier",
+    "document_type_detail.application.prior_insurance[].expiration_date",
+    "document_type_detail.application.prior_insurance[].policy_number",
+    "document_type_detail.application.prior_insurance[].premium",
     "document_type_detail.application.prior_policy_cancellation_request.acord_form_edition",
     "document_type_detail.application.prior_policy_cancellation_request.acord_form_number",
     "document_type_detail.application.prior_policy_cancellation_request.authorized_signature_date",
@@ -2358,6 +3010,61 @@
     "document_type_detail.application.producer_signature_date",
     "document_type_detail.application.producer_signature_present",
     "document_type_detail.application.requested_effective_date",
+    "document_type_detail.application.requested_limits[].aggregate_limit_amount",
+    "document_type_detail.application.requested_limits[].applies_to",
+    "document_type_detail.application.requested_limits[].coinsurance_percentage",
+    "document_type_detail.application.requested_limits[].coverage_code",
+    "document_type_detail.application.requested_limits[].coverage_description",
+    "document_type_detail.application.requested_limits[].coverage_name",
+    "document_type_detail.application.requested_limits[].deductible_amount",
+    "document_type_detail.application.requested_limits[].deductible_basis",
+    "document_type_detail.application.requested_limits[].deductible_type",
+    "document_type_detail.application.requested_limits[].form_reference",
+    "document_type_detail.application.requested_limits[].is_excluded",
+    "document_type_detail.application.requested_limits[].is_included",
+    "document_type_detail.application.requested_limits[].limit_amount",
+    "document_type_detail.application.requested_limits[].limit_basis",
+    "document_type_detail.application.requested_limits[].notes",
+    "document_type_detail.application.requested_limits[].premium",
+    "document_type_detail.application.requested_limits[].retention_amount",
+    "document_type_detail.application.requested_limits[].sublimit_amount",
+    "document_type_detail.application.requested_limits[].sublimit_basis",
+    "document_type_detail.application.requested_limits[].valuation_basis",
+    "document_type_detail.application.requested_limits[].waiting_period",
+    "document_type_detail.application.underwriting_questions[].answer",
+    "document_type_detail.application.underwriting_questions[].explanation",
+    "document_type_detail.application.underwriting_questions[].question_number",
+    "document_type_detail.application.underwriting_questions[].question_text",
+    "document_type_detail.cancellation.cancellation_effective_date",
+    "document_type_detail.cancellation.cancellation_effective_time",
+    "document_type_detail.cancellation.cancellation_method",
+    "document_type_detail.cancellation.cancellation_reason",
+    "document_type_detail.cancellation.earned_premium",
+    "document_type_detail.cancellation.initiated_by",
+    "document_type_detail.cancellation.mortgagee_or_lienholder_notified",
+    "document_type_detail.cancellation.notice_date",
+    "document_type_detail.cancellation.notice_type",
+    "document_type_detail.cancellation.reinstatement_available",
+    "document_type_detail.cancellation.reinstatement_deadline",
+    "document_type_detail.cancellation.return_premium",
+    "document_type_detail.cancellation.statutory_notice_reference",
+    "document_type_detail.declarations.coverage_summary_present",
+    "document_type_detail.declarations.declaration_page_count",
+    "document_type_detail.declarations.is_office_copy_or_insured_copy",
+    "document_type_detail.declarations.policy_id",
+    "document_type_detail.declarations.policy_marketing_name",
+    "document_type_detail.declarations.prior_policy_id",
+    "document_type_detail.declarations.renewal_of_policy_id",
+    "document_type_detail.declarations.replaces_prior_declaration_dated",
+    "document_type_detail.endorsement.attached_to_policy_number",
+    "document_type_detail.endorsement.endorsement_effective_date",
+    "document_type_detail.endorsement.endorsement_form_number",
+    "document_type_detail.endorsement.endorsement_number",
+    "document_type_detail.endorsement.endorsement_premium",
+    "document_type_detail.endorsement.endorsement_summary_text",
+    "document_type_detail.endorsement.endorsement_title",
+    "document_type_detail.endorsement.modifies_coverage_at_renewal",
+    "document_type_detail.endorsement.retain_with_policy_notice",
     "document_type_detail.policy_change.additional_or_return_premium",
     "document_type_detail.policy_change.changes[].change_description",
     "document_type_detail.policy_change.changes[].changed_from",
@@ -2392,6 +3099,92 @@
     "document_type_detail.policy_change.transaction_expiration_date",
     "document_type_detail.policy_change.transaction_reason_description",
     "document_type_detail.policy_change.transaction_type",
+    "document_type_detail.policy_form.attached_forms[].applies_to",
+    "document_type_detail.policy_form.attached_forms[].deductible_amount",
+    "document_type_detail.policy_form.attached_forms[].edition_date",
+    "document_type_detail.policy_form.attached_forms[].form_number",
+    "document_type_detail.policy_form.attached_forms[].form_title",
+    "document_type_detail.policy_form.attached_forms[].form_type",
+    "document_type_detail.policy_form.attached_forms[].is_included",
+    "document_type_detail.policy_form.attached_forms[].is_mandatory",
+    "document_type_detail.policy_form.attached_forms[].limit_amount",
+    "document_type_detail.policy_form.attached_forms[].premium",
+    "document_type_detail.policy_form.conditions[].condition_name",
+    "document_type_detail.policy_form.conditions[].section_reference",
+    "document_type_detail.policy_form.definitions_present",
+    "document_type_detail.policy_form.exclusions[].exclusion_name",
+    "document_type_detail.policy_form.exclusions[].form_number",
+    "document_type_detail.policy_form.exclusions[].section_reference",
+    "document_type_detail.policy_form.form_edition",
+    "document_type_detail.policy_form.insuring_agreement_text_reference",
+    "document_type_detail.policy_form.sections[].page_end",
+    "document_type_detail.policy_form.sections[].page_start",
+    "document_type_detail.policy_form.sections[].section_label",
+    "document_type_detail.policy_form.sections[].section_title",
+    "document_type_detail.policy_form.table_of_contents_present",
+    "document_type_detail.policy_history.coverage_premium_rows[].coverage_name",
+    "document_type_detail.policy_history.coverage_premium_rows[].deductible",
+    "document_type_detail.policy_history.coverage_premium_rows[].limit",
+    "document_type_detail.policy_history.coverage_premium_rows[].location_reference",
+    "document_type_detail.policy_history.coverage_premium_rows[].premium",
+    "document_type_detail.policy_history.inception_date",
+    "document_type_detail.policy_history.protected_since_date",
+    "document_type_detail.policy_history.term_amount",
+    "document_type_detail.policy_history.term_length",
+    "document_type_detail.policy_history.transactions[].effective_date",
+    "document_type_detail.policy_history.transactions[].expiration_date",
+    "document_type_detail.policy_history.transactions[].net_change_amount",
+    "document_type_detail.policy_history.transactions[].policy_status",
+    "document_type_detail.policy_history.transactions[].term_amount",
+    "document_type_detail.policy_history.transactions[].transaction_date",
+    "document_type_detail.policy_history.transactions[].transaction_effective_date",
+    "document_type_detail.policy_history.transactions[].transaction_reason",
+    "document_type_detail.policy_history.transactions[].transaction_type",
+    "document_type_detail.policy_history.transactions[].written_premium",
+    "document_type_detail.quote_proposal.conditions_to_bind[]",
+    "document_type_detail.quote_proposal.estimated_annual_premium",
+    "document_type_detail.quote_proposal.payment_options[].down_payment",
+    "document_type_detail.quote_proposal.payment_options[].installment_amount",
+    "document_type_detail.quote_proposal.payment_options[].installment_fee",
+    "document_type_detail.quote_proposal.payment_options[].number_of_installments",
+    "document_type_detail.quote_proposal.payment_options[].plan_name",
+    "document_type_detail.quote_proposal.premium_is_subject_to_change_notice",
+    "document_type_detail.quote_proposal.proposal_created_by",
+    "document_type_detail.quote_proposal.proposal_created_by_email",
+    "document_type_detail.quote_proposal.proposal_created_date",
+    "document_type_detail.quote_proposal.proposal_title",
+    "document_type_detail.quote_proposal.proposed_policy_term_end",
+    "document_type_detail.quote_proposal.proposed_policy_term_start",
+    "document_type_detail.quote_proposal.quote_good_through_date",
+    "document_type_detail.quote_proposal.quote_options[].description",
+    "document_type_detail.quote_proposal.quote_options[].is_recommended",
+    "document_type_detail.quote_proposal.quote_options[].option_name",
+    "document_type_detail.quote_proposal.quote_options[].premium_difference",
+    "document_type_detail.quote_proposal.quote_reference_number",
+    "document_type_detail.quote_proposal.quoted_coverages[].coverage_name",
+    "document_type_detail.quote_proposal.quoted_coverages[].deductible_amount",
+    "document_type_detail.quote_proposal.quoted_coverages[].is_optional",
+    "document_type_detail.quote_proposal.quoted_coverages[].is_selected",
+    "document_type_detail.quote_proposal.quoted_coverages[].limit_amount",
+    "document_type_detail.quote_proposal.quoted_coverages[].premium",
+    "document_type_detail.quote_proposal.rating_assumptions[]",
+    "document_type_detail.quote_proposal.underwriter_name",
+    "document_type_detail.renewal_offer.coverage_changes_at_renewal[].change_description",
+    "document_type_detail.renewal_offer.coverage_changes_at_renewal[].coverage_name",
+    "document_type_detail.renewal_offer.coverage_changes_at_renewal[].expiring_value",
+    "document_type_detail.renewal_offer.coverage_changes_at_renewal[].renewal_value",
+    "document_type_detail.renewal_offer.expiring_policy_expiration_date",
+    "document_type_detail.renewal_offer.expiring_premium",
+    "document_type_detail.renewal_offer.nonrenewal_indicator",
+    "document_type_detail.renewal_offer.offer_issue_date",
+    "document_type_detail.renewal_offer.payment_due_date",
+    "document_type_detail.renewal_offer.premium_change_amount",
+    "document_type_detail.renewal_offer.premium_change_percentage",
+    "document_type_detail.renewal_offer.reason_for_change",
+    "document_type_detail.renewal_offer.renewal_conditions",
+    "document_type_detail.renewal_offer.renewal_effective_date",
+    "document_type_detail.renewal_offer.renewal_expiration_date",
+    "document_type_detail.renewal_offer.renewal_premium",
     "dwelling_fire.deductibles.theft_deductible",
     "dwelling_fire.deductibles.wind_hail_deductible",
     "dwelling_fire.dwelling.actual_cash_value",
@@ -2444,48 +3237,33 @@
     "dwelling_fire.dwellings[].construction_type",
     "dwelling_fire.dwellings[].cost_of_improvements",
     "dwelling_fire.dwellings[].coverages[].aggregate_limit_amount",
-    "dwelling_fire.dwellings[].coverages[].applies_to",
     "dwelling_fire.dwellings[].coverages[].coinsurance_percentage",
     "dwelling_fire.dwellings[].coverages[].construction_type",
     "dwelling_fire.dwellings[].coverages[].coverage_code",
     "dwelling_fire.dwellings[].coverages[].coverage_description",
-    "dwelling_fire.dwellings[].coverages[].coverage_name",
-    "dwelling_fire.dwellings[].coverages[].coverage_section",
     "dwelling_fire.dwellings[].coverages[].covered_causes_of_loss",
-    "dwelling_fire.dwellings[].coverages[].deductible_amount",
     "dwelling_fire.dwellings[].coverages[].deductible_basis",
     "dwelling_fire.dwellings[].coverages[].deductible_notes",
     "dwelling_fire.dwellings[].coverages[].deductible_type",
     "dwelling_fire.dwellings[].coverages[].extended_coverage_premium",
-    "dwelling_fire.dwellings[].coverages[].form_reference",
     "dwelling_fire.dwellings[].coverages[].hazardous_condition",
     "dwelling_fire.dwellings[].coverages[].is_excluded",
-    "dwelling_fire.dwellings[].coverages[].is_included",
-    "dwelling_fire.dwellings[].coverages[].limit_amount",
-    "dwelling_fire.dwellings[].coverages[].limit_basis",
     "dwelling_fire.dwellings[].coverages[].notes",
     "dwelling_fire.dwellings[].coverages[].occupancy_classification",
     "dwelling_fire.dwellings[].coverages[].occupancy_type",
-    "dwelling_fire.dwellings[].coverages[].premium",
     "dwelling_fire.dwellings[].coverages[].protection_class",
     "dwelling_fire.dwellings[].coverages[].rating_zone",
     "dwelling_fire.dwellings[].coverages[].retention_amount",
     "dwelling_fire.dwellings[].coverages[].sublimit_amount",
     "dwelling_fire.dwellings[].coverages[].sublimit_basis",
     "dwelling_fire.dwellings[].coverages[].territory_code",
-    "dwelling_fire.dwellings[].coverages[].valuation_basis",
     "dwelling_fire.dwellings[].coverages[].vmm_premium",
     "dwelling_fire.dwellings[].coverages[].waiting_period",
     "dwelling_fire.dwellings[].covered_causes_of_loss",
     "dwelling_fire.dwellings[].deductible_credit_amount",
-    "dwelling_fire.dwellings[].described_location.city",
     "dwelling_fire.dwellings[].described_location.country",
-    "dwelling_fire.dwellings[].described_location.county",
     "dwelling_fire.dwellings[].described_location.county_code",
-    "dwelling_fire.dwellings[].described_location.line_1",
     "dwelling_fire.dwellings[].described_location.line_2",
-    "dwelling_fire.dwellings[].described_location.postal_code",
-    "dwelling_fire.dwellings[].described_location.state",
     "dwelling_fire.dwellings[].distance_to_hydrant",
     "dwelling_fire.dwellings[].electrical_service",
     "dwelling_fire.dwellings[].feet_to_hydrant",
@@ -2498,7 +3276,6 @@
     "dwelling_fire.dwellings[].inflation_guard_percentage",
     "dwelling_fire.dwellings[].lead_abatement",
     "dwelling_fire.dwellings[].liability_coverage_form",
-    "dwelling_fire.dwellings[].location_number",
     "dwelling_fire.dwellings[].loss_settlement_basis",
     "dwelling_fire.dwellings[].loss_settlement_contents",
     "dwelling_fire.dwellings[].market_value",
@@ -2532,7 +3309,6 @@
     "dwelling_fire.dwellings[].surcharges_none_reported",
     "dwelling_fire.dwellings[].tenant_occupied",
     "dwelling_fire.dwellings[].territory_code",
-    "dwelling_fire.dwellings[].total_premium",
     "dwelling_fire.dwellings[].units_between_fire_walls",
     "dwelling_fire.dwellings[].usage",
     "dwelling_fire.dwellings[].vandalism_basis",
@@ -2591,8 +3367,6 @@
     "dwelling_fire.property_coverages.coverage_c_personal_property_limit",
     "dwelling_fire.property_coverages.coverage_d_fair_rental_value_limit",
     "dwelling_fire.property_coverages.coverage_e_additional_living_expense_limit",
-    "dwelling_fire.property_coverages.inflation_guard_applies_to[]",
-    "dwelling_fire.property_coverages.inflation_guard_basis",
     "dwelling_fire.property_coverages.inflation_guard_percentage",
     "dwelling_fire.property_coverages.inflation_guard_period",
     "dwelling_fire.property_coverages.loss_settlement_contents",
@@ -2721,14 +3495,15 @@
     "policy.is_assessable",
     "policy.minimum_earned_premium_percentage",
     "policy.nonrenewal_notice_date",
+    "policy.policy_period_location_basis",
     "policy.policyholder_since_date",
     "policy.previous_carrier_name",
     "policy.previous_policy_expiration_date",
     "policy.prior_policy_number",
+    "policy.product_code",
     "policy.program_name",
     "policy.renewal_of_policy_number",
     "policy.term_sequence",
-    "policy.total_number_of_risks",
     "premium.additional_insured_processing_fee",
     "premium.additional_premium",
     "premium.administrative_fee",
@@ -2751,7 +3526,6 @@
     "premium.inspection_fee",
     "premium.minimum_premium",
     "premium.motor_vehicle_law_enforcement_fee",
-    "premium.policy_fee",
     "premium.premium_adjustment_type",
     "premium.prior_annual_premium",
     "premium.prior_fire_fee",
@@ -2791,7 +3565,6 @@
     "signature.countersignature_date",
     "signature.countersignature_state",
     "signature.signature_date",
-    "signature.signature_present",
     "signature.title",
     "state_notices[].form_reference",
     "state_notices[].notice_title",

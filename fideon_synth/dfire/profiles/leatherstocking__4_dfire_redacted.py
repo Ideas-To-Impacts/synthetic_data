@@ -16,18 +16,17 @@ overlays are the same string on page 1 ("Ilion, NY 13357"); they are told
 apart by position (insured, Mail To, Agency, property).  "RBF" on the agency
 line is a producer code, printed here after the agency name.
 
-GAPS (printed but no canonical leaf): the
-"Property: 1 of 1" counter; the blank SIGNATURE / DATE box; the "Mail To"
+GAPS (printed but no canonical leaf): the SIGNATURE box's date (not printed); the "Mail To"
 block (repeats the producer); the blank fourth sheet.
 """
 
-from ..engine import extra, fv, money
+from ..engine import fv, money
 from . import _lcic_common as L
 
 SOURCE = "Leatherstocking Cooperative Insurance Company/dwelling_fire/4-DFIRE_redacted.pdf"
 
-GAPS = ["Property: 1 of 1 (property counter)",
-        "SIGNATURE / DATE box (blank)", "Mail To block (repeats the producer address)"]
+GAPS = ["SIGNATURE / DATE box: no date printed (the signature is keyed)",
+        "Mail To block (repeats the producer address)"]
 
 IGNORE_PAIRS = [
     r"^Phone: 607-547-2007 Fax: 607-547-2056$",   # carrier letterhead; keyed as carrier.contact phone/fax
@@ -153,13 +152,8 @@ def gold(d):
         dwelling_extra={"structure_description": fv(d["bldg"]), "fire_alarm_type": fv(d["alarm"])},
         location_extra={"alarm_type": fv(d["alarm"]), "business_description": fv(d["biz"])},
         optional_extra={
-            "fl16": {"deductible_amount": money(d["ded_s"]), "coverage_description": fv(d["biz"])},
-            "ml56": {"coverage_description": fv(d["bldg"])},
+            "fl16": {"deductible_amount": money(d["ded_s"]), "business_type": fv(d["biz"])},
+            "ml56": {"structure_type": fv(d["bldg"]), "structure_dimensions": fv("No answer provided"),
+                     "structure_color": fv(d["color"]), "structure_location": fv(d["ml56_loc"])},
         })
-    sec = "ML-56 - Related Private Structure Exclusion"
-    g["additional_fields"] = [
-        extra("Dimensions", "No answer provided", section=sec),
-        extra("Color", d["color"], section=sec),
-        extra("Location", d["ml56_loc"], section=sec),
-    ]
     return g

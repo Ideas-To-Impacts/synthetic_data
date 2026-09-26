@@ -158,6 +158,45 @@ def mortgagee(m):
     return out
 
 
+def property_fields(gold, prop, schedule, total, fees, settle, modifies):
+    """What every Leatherstocking declaration prints about its one property.
+
+    ``schedule`` lists (section, coverage) in printed order, the coverage being the
+    gold's own entry for that row.  They become ``dwelling_fire.dwellings[0]``: each
+    row under the section it is printed in ("Section I", "Section II", "Optional
+    Items"); an "EC - " / "VMM - " row is printed right under the coverage it rates,
+    so it rides on that coverage as its EC / VMM premium.  ``total`` is the printed
+    Property Total, ``fees`` the Fees line, ``modifies`` the SM-26 "Modifies
+    Coverage(s) at Renewal" list.  Also keyed: the "Property: 1 of 1" counter, the
+    page's own form number and the signature box (a signature image, no printed date).
+    """
+    rows = []
+    for section, cov in schedule:
+        prefix, _, rest = cov["coverage_name"]["raw"].partition(" - ")
+        if prefix in ("EC", "VMM"):
+            parent = [r for r in rows if r["coverage_name"]["raw"].endswith(" - " + rest)][-1]
+            key = "extended_coverage_premium" if prefix == "EC" else "vmm_premium"
+            parent[key] = copy.deepcopy(cov["premium"])
+            continue
+        row = {"coverage_section": fv(section)}
+        row.update(copy.deepcopy(cov))
+        row["applies_to"] = fv("Property 1")
+        rows.append(row)
+    gold["dwelling_fire"]["dwellings"] = [{
+        "location_number": fv("1", 1, evidence="Property 1"),
+        "described_location": copy.deepcopy(prop),
+        "coverages": rows,
+        "total_premium": money(total),
+    }]
+    gold["policy"]["total_number_of_risks"] = fv("1 of 1", 1)
+    gold["premium"]["policy_fee"] = money(fees)
+    gold["document"]["form_number"] = fv("LCIC(4/11)")
+    gold["signature"] = {"signature_present": derived("Yes", "SIGNATURE")}
+    cov = gold["dwelling_fire"]["property_coverages"]
+    cov["inflation_guard_basis"] = fv(settle, evidence="Automatic Increase, %s" % settle)
+    cov["inflation_guard_applies_to"] = [fv(n) for n in modifies.split(", ")]
+
+
 def build_gold(d, S):
     """The canonical gold shared by every source; S holds what differs per source.
 
@@ -311,6 +350,14 @@ def build_gold(d, S):
         m = mortgagee(S["mortgagee"])
         gold["dwelling_fire"]["mortgagees"] = [m]
         gold["interested_parties"] = [copy.deepcopy(m)]
+
+    # Section I holds the property coverages and their EC / VMM rows, Section II the rest
+    schedule = [("Section I" if (r["leaf"] and r["leaf"][0] == "property")
+                 or r["name"].startswith(("EC - ", "VMM - ")) else "Section II", c)
+                for r, c in zip(rows, coverages)]
+    schedule += [("Optional Items", o) for o in opt_cov[:len(optional)]]
+    sm26 = next(n for n in S.get("notes", []) if n.get("form") == "SM-26")
+    property_fields(gold, prop, schedule, total, "$0.00", d["settle"], sm26["notes"][len(MODIFIES):])
     gold.update(S.get("extra", {}))
     return gold
 

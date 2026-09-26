@@ -6,8 +6,8 @@ Two-page Landlords Package declaration, renewal transaction (the following term 
 lender line.  Redacted copy: overlays upsized, property / mortgagee lines tidied.
 Shared logic lives in _leatherstocking_src.make_llp.
 
-GAPS (printed but no canonical leaf): the "Property: 1 of 1" counter, the Mail To block (repeats the
-producer) and the SIGNATURE / DATE box.
+GAPS (printed but no canonical leaf): the Mail To block (repeats the producer) and the SIGNATURE
+box's date (not printed; the signature is keyed).
 """
 
 from . import _leatherstocking as L

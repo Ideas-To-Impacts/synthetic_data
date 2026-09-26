@@ -7,8 +7,8 @@ device credit, a mortgagee (escrow billed) and the TRIA disclosure form.  Redact
 the overlays are upsized and the property / mortgagee lines put on one line each.
 Shared logic lives in _leatherstocking_src.make_llp.
 
-GAPS (printed but no canonical leaf): the "Property: 1 of 1" counter, the Mail To block (repeats the
-producer) and the SIGNATURE / DATE box.
+GAPS (printed but no canonical leaf): the Mail To block (repeats the producer) and the SIGNATURE
+box's date (not printed; the signature is keyed).
 """
 
 from . import _leatherstocking as L

@@ -7,10 +7,11 @@ agency block is scrambled, so this profile also tidies those artefacts (upsizes
 overlays, puts the agency address on consecutive lines, restores the
 "CO-OPERATIVE" plan line).
 
-GAPS (printed but no canonical leaf): "Zone: All Other" rating zone.
+GAPS (printed but no canonical leaf): the SIGNATURE box's date (not printed; the signature is keyed).
 """
 
 from ..engine import addr, amt, derived, date_fv, fv, logo, money
+from . import _leatherstocking as L
 
 SOURCE = "Leatherstocking Cooperative Insurance Company/dwelling_fire/1- DFIRE_redacted.pdf"
 
@@ -165,8 +166,10 @@ def gold(d):
 
     coverages = ["Coverage A - Residence", "Coverage L - Premises Liability",
                  "ML-59 - Lead Exclusion", "Hazardous Conditions - Occupancy"]
+    modifies = ("Coverage A - Residence, Coverage D - Additional Living Expense / Loss of Rent, "
+                "Coverage B - Related Private Structures")
 
-    return {
+    gold = {
         "document": {
             "document_type": fv("DECLARATION", "Declaration"),
             "document_title_as_stated": fv("DECLARATION, Dwelling Fire"),
@@ -248,6 +251,7 @@ def gold(d):
                 "construction_type": fv(d["constr"]),
                 "protection_class": fv(d["protect"]),
                 "territory_code": fv(d["territory"]),
+                "rating_zone": fv("All Other"),
                 "hazardous_conditions_occupancy": fv(d["condition"]),
             },
             "property_coverages": {
@@ -266,8 +270,12 @@ def gold(d):
                  "premium": amt(d["haz"]), "is_included": derived("Yes", "Hazardous Conditions - Occupancy")},
                 {"coverage_name": fv("SM-26 Automatic Increase, %s" % d["settle"]),
                  "form_reference": fv("SM-26"),
-                 "notes": fv("Modifies Coverage(s) at Renewal: Coverage A - Residence, Coverage D - Additional "
-                             "Living Expense / Loss of Rent, Coverage B - Related Private Structures")},
+                 "notes": fv("Modifies Coverage(s) at Renewal: " + modifies)},
             ],
         },
     }
+    rated, optional = gold["locations"][0]["coverages"], gold["dwelling_fire"]["optional_endorsement_coverages"]
+    schedule = [("Section I", rated[0]), ("Section II", rated[1]), ("Section II", optional[0]),
+                ("Optional Items", optional[1])]
+    L.property_fields(gold, prop, schedule, amt(d["total"])["raw"], "$0.00", d["settle"], modifies)
+    return gold

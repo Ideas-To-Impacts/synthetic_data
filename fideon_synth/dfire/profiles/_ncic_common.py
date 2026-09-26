@@ -3,6 +3,7 @@ Shared pieces for the two North Country Insurance Company "Fire Policy
 Declaration" profiles (policy_1 and policy_2). Not a profile itself (no SOURCE).
 """
 
+import copy
 import re
 
 from .. import engine
@@ -200,6 +201,7 @@ def base_gold(d, forms, loc_cov, deductible_rows, kind):
             "issue_date": date_fv(proc),
             "copy_type": fv("Agent Copy"),
             "page_count": fv("2", 2, evidence="Page 1 of 2"),
+            "form_number": fv("NCIC 07/14"),
         },
         "carrier": {
             "company_name": fv("North Country Insurance Company"),
@@ -263,7 +265,10 @@ def base_gold(d, forms, loc_cov, deductible_rows, kind):
                 "territory_code": fv(d["zone"]),
                 "year_built": fv(d["year"]),
                 "structure_description": fv(d["structure"]),
+                "property_description": fv(d["descr"]),
                 "fire_alarm_type": fv(d["fire_alarm"]),
+                "burglar_alarm_type": fv(d["burglar"]),
+                "sprinklered": fv(d["sprink"]),
                 "usage": fv(d["usage"]),
                 "number_of_units": fv(d["families"][0], int(d["families"][0]), evidence=d["families"]),
             },
@@ -272,6 +277,18 @@ def base_gold(d, forms, loc_cov, deductible_rows, kind):
             "deductibles": {"all_other_perils_deductible": money(d["ded_p2"])},
         },
     }
+    # "Loc 1/Bldg 1": the one building, with its row of the Policy Coverages table
+    gold["dwelling_fire"]["dwellings"] = [{
+        "location_number": fv("1", 1, evidence="Location 1:"),
+        "building_number": fv("1", 1, evidence="Loc 1/Bldg 1"),
+        "described_location": dict(prop),
+        "structure_description": fv(d["structure"]),
+        "property_description": fv(d["descr"]),
+        "fire_alarm_type": fv(d["fire_alarm"]),
+        "burglar_alarm_type": fv(d["burglar"]),
+        "sprinklered": fv(d["sprink"]),
+        "coverages": copy.deepcopy(loc_cov),
+    }]
     if d["usage"] == "Seasonal" or "Seasonal" in d["occ"]:
         gold["dwelling_fire"]["dwelling"]["seasonal_or_vacant"] = \
             fv(d["occ"]) if "Seasonal" in d["occ"] else fv("Seasonal")

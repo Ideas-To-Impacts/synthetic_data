@@ -31,14 +31,12 @@ from ..engine import addr, amt, derived, date_fv, extra, fv, money
 SOURCE = "Dryden Mutual/dwelling_fire/dryden_mutual_dfire_app.pdf"
 
 GAPS = [
-    "Location 2's dwelling details (heating, fuel, roof, electrical, market value, years owned, Y/N answers, "
-    "water exposure) and its rating criteria beyond locations[]: dwelling_fire.dwelling and "
-    "underwriting_questions[] carry location 1 only",
+    "Location 2's water exposure and the Y/N answers without a dwelling leaf: underwriting_questions[] "
+    "carries location 1's, so location 2's stay in additional_fields",
     "Purchase Price / Cost of Improvements: printed as a bare '$' with a blank value (nothing to state)",
     "Insured occupation, second applicant's marital status: blank on the form",
-    "Application file number 'File #' is stated only as an alternate identifier (no policy number is printed)",
     "Agency Service Representative name/phone/e-mail vs the agency phone: a single producer contact",
-    "ACORD 35 / ACORD 60 / e-signature certificate / Reg 194 prose: captured by text_sections, no other leaf",
+    "Reg 194 prose: captured by text_sections, no other leaf",
 ]
 
 CARRIER_ADDR = "12 Ellis Drive"
@@ -548,6 +546,9 @@ def _questions(d):
     return q
 
 
+# the ACORD 35 / 60 date box prints its caption in the same cell; the date is keyed as form_date
+FURNITURE = [r"^\d\d/\d\d/\d{4} DATE \(MM/DD/YYYY\)$"]
+
 IGNORE_PAIRS = [
     r"^Secondary Phone: Mobile Home Business Other$",       # unchecked phone-type options, no number printed
     r"^Check any exposures that apply: .*Diving Board$",     # unchecked exposure options (every box is empty)
@@ -557,98 +558,204 @@ IGNORE_PAIRS = [
 
 
 def _additional(d):
-    """Printed 'Label: value' pairs with no dedicated leaf: location 2's rating criteria and answers
-    (dwelling_fire.dwelling holds location 1 only) and the ACORD 35 / certificate header fields."""
-    x = d["L"][1]
+    """Printed 'Label: value' pairs with no dedicated leaf: location 2's answers that
+    underwriting_questions[] (location 1's) cannot hold apart, its water exposure, and the
+    Reg 194 company line."""
     out = []
 
     def add(section, label, value, evidence=None):
         out.append(extra(label, value, section=section, evidence=evidence))
 
-    sec = "Location 2 - Rating Criteria"
-    add(sec, "Risk Description", x["risk"])
-    add(sec, "Type", "Standard", "Type:")
-    add(sec, "Cause of Loss Form", x["col_full"])
-    add(sec, "Deductible", x["ded_s"])
-    add(sec, "Families", x["families"])
-    add(sec, "Loss Settlement Building", x["settle"][0])
-    add(sec, "Loss Settlement Contents", x["settle"][1])
-    add(sec, "Construction", x["constr"])
-    add(sec, "Year of Construction", str(x["year"]))
-    add(sec, "Rating Zone", str(x["zone"]), "Rating Zone:")
-    add(sec, "County", x["county"])
-    add(sec, "Fire District", x["fire"])
-    add(sec, "Fire Protection", x["prot"])
-    add(sec, "Feet From Hydrant", x["hydrant"])
-    add(sec, "Miles From Fire Dept", x["miles"])
-    add(sec, "Protective Devices", "Smoke Detectors 2%")
-    add(sec, "Special Rating Conditions", "None")
-    add(sec, "Renovator Credit", x["renov"], "Renovator Credit:")
-    sec = "Location 2 - Building Utilities"
-    add(sec, "Primary Heating Type", x["heating"])
-    add(sec, "Fuel Type", x["fuel"])
-    add(sec, "Year Primary System Updated", str(x["sysyear"]))
-    add(sec, "Electrical Service", x["electric"])
-    add(sec, "Year Roof Updated", str(x["roofyear"]))
-    add(sec, "Roof Type", x["roof"])
-    sec = "Location 2 - Property Questions"
-    add(sec, "How many years has the applicant owned this risk?", str(x["owned"]),
-        "How many years has the applicant owned this risk?")
-    add(sec, "Market Value", "$ " + x["market_s"])
-    add(sec, "Any Water Exposures?", x["water"])
+    add("Location 2 - Property Questions", "Any Water Exposures?", d["L"][1]["water"])
     a7 = d["yn"][7]
-    for text, ans in zip(Q3, a7):
-        add("Location 2 - Property and Liability Questions", text, derived(ans, text))
+    for k, (text, ans) in enumerate(zip(Q3, a7)):
+        if k not in Q3_KEYED:
+            add("Location 2 - Property and Liability Questions", text, derived(ans, text))
     add("Regulation 194 Disclosure", "Name of Companies", fv("Dryden %s" % d["ag_head"], evidence="Dryden"))
     for i, loc in enumerate(d["L"], 1):
         add("Location %d - Coverages" % i, "Aggregate Limit", loc["lag_s"])
-    sec = "ACORD 35 Cancellation Request"
-    add(sec, "DATE (MM/DD/YYYY)", "05/18/2026")
-    add(sec, "PHONE (A/C, No, Ext)", "(315)357-5901")
-    for line in ("Stable Rock Insurance Agency LLC", "159 NY-28", "Inlet, NY 13360"):
-        add(sec, "PRODUCER", line)
-    for line in ("New York Central Mutual Fire Insurance Company", "1899 Central Plaza E", "Edmeston, NY 13335"):
-        add(sec, "COMPANY NAME AND ADDRESS", line)
-    for label in ("INSURED NAME AND ADDRESS", "NAME AND ADDRESS"):
-        for line in ("Carol B Mitchell", "221 State Route 28", "Raquette Lake, NY 13436-1903"):
-            add(sec, label, line)
-    add(sec, "POLICY TYPE", "Homeowners: Personal")
-    add(sec, "POLICY NUMBER", "4803762")
-    add(sec, "CANCELLATION DATE", "06/01/2026")
-    add(sec, "TIME", "12:01")
-    add(sec, "EFFECTIVE DATE", "04/09/2026")
-    add(sec, "EXPIRATION DATE", "04/09/2027")
-    add(sec, "OTHER (Identify)", "Insured deceased")
-    add(sec, "SIGNATURE OF NAMED INSURED", fv("05/31/2026 08:04AM US/Eastern", evidence="08:04AM US/Eastern"))
-    add("ACORD 60 Flood Selection / Rejection", "DATE (MM/DD/YYYY)", d["fp"])
-    add("ACORD 60 Flood Selection / Rejection", "EFFECTIVE DATE", d["eff2"])
-    hist = "E-Signature Certificate - Document History"
-    for stamp, label in ((d["fp"] + " 03:31PM", "Sender downloaded document."),
-                         (d["fp"] + " 03:36PM", "Sender downloaded document."),
-                         (d["fp"] + " 03:37PM", "Document sent by"),
-                         (d["fp"] + " 03:37PM", "Email sent to"),
-                         (d["fp1"] + " 12:31PM", "Email sent to"),
-                         (d["s1"] + " 08:00AM", "Document viewed by"),
-                         (d["s1"] + " 08:04AM", "Signed by"),
-                         (d["s1"] + " 08:04AM", "Email sent to"),
-                         (d["eff"] + " 09:04AM", "Document viewed by"),
-                         (d["eff"] + " 09:05AM", "Signed by"),
-                         (d["eff"] + " 09:05AM", "Document copy sent to")):
-        add(hist, label, stamp)
-    sec = "ACORD 35 Cancellation Request"
-    add(sec, "CODE", "08014")
-    add(sec, "NAIC CODE", "14834")
-    add(sec, "AGENCY CUSTOMER ID", "00004315")
-    add("ACORD 60 Flood Selection / Rejection", "AGENCY CUSTOMER ID", d["cust_id2"])
-    sec = "E-Signature Certificate"
-    add(sec, "Document Reference", d["doc_uuid"])
-    add(sec, "Document Title", "Landlord Application/Cancellation Form")
-    add(sec, "Document Region", "Northern Virginia")
-    add(sec, "Sender Name", "No Name")
-    add(sec, "Sender Email", d["svc_email"])
-    add(sec, "Total Document Pages", "12")
-    add(sec, "Secondary Security", "Not Required")
     return out
+
+
+# Q3 answers that are keyed on the dwelling: secondary heating, roof updated, rented, seasonal
+Q3_KEYED = (1, 2, 3, 5)
+STAMP = "%m/%d/%Y %I:%M%p US/Eastern"      # e-signature time stamps
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
+FLOOD = ["NFIP Building Coverage", "NFIP Contents / Personal Property", "Excess Building Coverage",
+         "Excess Contents / Personal Property", "Alternative Market Primary Building Coverage",
+         "Alternative Market Primary Contents Coverage",
+         "Alternative Market Loss of Income or Additional Living Expense"]
+REMARKS = ("New York Only: If you do not keep your auto insurance in force during the entire registration "
+           "period, your motor vehicle registration will be suspended. If your vehicle is still uninsured "
+           "after 90 days, your driver's license will be suspended. To avoid these penalties, you must "
+           "surrender your registration certificate and plates before your insurance expires. By law, we "
+           "must report the termination of auto insurance coverage to the Department of Motor Vehicles.")
+
+
+def _dwelling_answers(d, i):
+    """Location ``i``'s keyed Yes/No answers (page 3 for location 1, page 7 for location 2)."""
+    a = d["yn"][3 if i == 1 else 7]
+    out = {
+        "secondary_heating_present": derived(a[1], Q3[1]),
+        "roof_updated_within_20_years": derived(a[2], Q3[2]),
+        "tenant_occupied": derived(a[3], Q3[3]),
+        "seasonal_or_vacant": derived(a[5], Q3[5]),
+    }
+    if a[1] == "Yes":       # only a "Yes" prints the type and the explanation lines
+        out.update(secondary_heating=fv("Other"), secondary_heating_description=fv(d["explain"]))
+    return out
+
+
+def _dwellings(d):
+    """dwelling_fire.dwellings[]: each location as its pages print it - coverages, rating
+    criteria, building utilities, property answers and the premium computation."""
+    out = []
+    for i, x in enumerate(d["L"], 1):
+        covs = [dict({"coverage_section": fv("Property Coverages" if k < 4 else "Liability Coverages")}, **c)
+                for k, c in enumerate(_loc_gold(d, i)["coverages"])]
+        entry = {
+            "location_number": fv(str(i), i, evidence="Location Number:"),
+            "described_location": addr(x["street"], x["city"], "NY", x["zip9"], x["county"]),
+            "structure_description": fv(x["risk"]),
+            "occupancy_type": fv(x["families"]),
+            "number_of_units": fv(x["families"][0], evidence=x["families"]),
+            "construction_type": fv(x["constr"]),
+            "year_built": fv(str(x["year"])),
+            "protection_class": fv(x["prot"]),
+            "rating_type": fv("Standard", evidence="Type:"),
+            "rating_zone": fv(str(x["zone"]), evidence="Rating Zone:"),
+            "renovator_credit": fv(x["renov"], evidence="Renovator Credit:"),
+            "fire_district": fv(x["fire"]),
+            "feet_to_hydrant": fv(x["hydrant"]),
+            "miles_to_fire_department": fv(x["miles"]),
+            "special_rating_conditions": fv("None"),
+            "fire_alarm_type": fv("Smoke Detectors 2%"),
+            "covered_causes_of_loss": fv(x["col_full"]),
+            "loss_settlement_basis": fv(x["settle"][0]),
+            "loss_settlement_contents": fv(x["settle"][1]),
+            "all_other_perils_deductible": money(x["ded_s"]),
+            "heating_type": fv(x["heating"]),
+            "fuel_type": fv(x["fuel"]),
+            "year_primary_system_updated": fv(str(x["sysyear"])),
+            "electrical_service": fv(x["electric"]),
+            "year_roof_updated": fv(str(x["roofyear"])),
+            "roof_type": fv(x["roof"]),
+            "years_owned": fv(str(x["owned"])),
+            "market_value": money("$ " + x["market_s"]),
+            "deductible_credit_amount": money(x["dedc_s"]),
+            "total_premium": money(x["total_s"]),
+            "fire_surcharge": money("0.00", evidence="New York State Fire Surcharge"),
+            "coverages": covs,
+        }
+        entry.update(_dwelling_answers(d, i))
+        out.append(entry)
+    return out
+
+
+def _application(d):
+    """document_type_detail.application: the signatures, the ACORD 35 cancelling the prior
+    owner's policy (page 11, printed as in the source), the ACORD 60 flood rejection and the
+    e-signature completion certificate."""
+    L1 = d["L"][0]
+    acord35 = {
+        "acord_form_number": fv("ACORD 35"), "acord_form_edition": fv("2017/05"),
+        "form_date": date_fv("05/18/2026"),
+        "producer": {"name": fv("Stable Rock Insurance Agency LLC"),
+                     "address": addr("159 NY-28", "Inlet", "NY", "13360"),
+                     "phone": fv("(315)357-5901"), "code": fv("08014"),
+                     "agency_customer_id": fv("00004315")},
+        "company": {"company_name": fv("New York Central Mutual Fire Insurance Company"),
+                    "address": addr("1899 Central Plaza E", "Edmeston", "NY", "13335"),
+                    "naic_code": fv("14834")},
+        "insured": {"name": fv("Carol B Mitchell"),
+                    "address": addr("221 State Route 28", "Raquette Lake", "NY", "13436-1903")},
+        "policy_type": fv("Homeowners: Personal"),
+        "policy_number": fv("4803762"),
+        "effective_date": date_fv("04/09/2026"),
+        "expiration_date": date_fv("04/09/2027"),
+        "request_type": fv("POLICY RELEASE"),
+        "cancellation_date": date_fv("06/01/2026"),
+        "cancellation_time": fv("12:01", "12:01 AM"),
+        "reason_for_cancellation": fv("OTHER"),
+        "reason_other_description": fv("Insured deceased"),
+        "method_of_cancellation": fv("PRO RATA"),
+        "remarks": fv(REMARKS, evidence="New York Only: If you do not keep your auto insurance in force"),
+        "named_insured_signature_present": derived("Yes", "SIGNATURE OF NAMED INSURED"),
+        "named_insured_signature_date": date_fv("05/31/2026 08:04AM US/Eastern", STAMP),
+        "producer_signature_present": derived("Yes", "PRODUCER'S SIGNATURE"),
+        "distribution": [fv("INSURED")],
+        "print_code": fv("GAL", evidence="Printed by GAL"),
+        "print_date": date_fv("May 29, 2026", "%B %d, %Y"),
+        "print_time": fv("03:28PM"),
+    }
+    acord60 = {
+        "acord_form_number": fv("ACORD 60"), "acord_form_edition": fv("2010/04"),
+        "form_date": date_fv(d["fp"]),
+        "agency_customer_id": fv(d["cust_id2"]),
+        "agency_name": fv(d["agency"]),
+        "carrier_name": fv("Dryden Mutual"),
+        "effective_date": date_fv(d["eff2"], "%m/%d/%y"),
+        "applicant_name": fv(d["n1"]),
+        "property_address": addr(L1["street"], L1["city"], "NY", L1["zip"]),
+        "selections": [{"coverage_type": fv(t), "rejected": derived("Yes", t)} for t in FLOOD],
+        "applicant_signature_present": derived("Yes", "Applicant's Signature"),
+        "applicant_signature_date": date_fv(d["s1_ts"], STAMP),
+        "producer_signature_present": derived("Yes", "Producer"),
+        "producer_signature_date": date_fv(d["s2_ts"], STAMP),
+        "print_code": fv("GAL", evidence="Printed by GAL"),
+        "print_date": date_fv(d["fp_long"], "%B %d, %Y"),
+        "print_time": fv("03:35PM"),
+    }
+    ins = (d["n1"], d["ins_email"])
+    rep = (d["rep"], d["rep_email"])
+    svc = ("No Name", d["svc_email"])
+    agreed = "has agreed to terms of service and to do business electronically"
+    history = []
+    for day, time, what, who, ip, ua in (
+            (d["fp"], "03:31PM", "Sender downloaded document.", None, None, None),
+            (d["fp"], "03:36PM", "Sender downloaded document.", None, None, None),
+            (d["fp"], "03:37PM", "Document sent by", svc, None, None),
+            (d["fp"], "03:37PM", "Email sent to", ins, None, None),
+            (d["fp"], "03:37PM", "Email sent to", svc, None, None),
+            (d["fp1"], "12:31PM", "Email sent to", ins, None, None),
+            (d["s1"], "08:00AM", "Document viewed by", ins, d["ip1"], UA),
+            (d["s1"], "08:04AM", agreed, ins, d["ip1"], UA),
+            (d["s1"], "08:04AM", "Signed by", ins, d["ip1"], UA),
+            (d["s1"], "08:04AM", "Email sent to", rep, None, None),
+            (d["eff"], "09:04AM", "Document viewed by", rep, d["ip2"], UA + " Edg/148.0.0.0"),
+            (d["eff"], "09:05AM", agreed, rep, d["ip2"], UA + " Edg/148.0.0.0"),
+            (d["eff"], "09:05AM", "Signed by", rep, d["ip2"], UA + " Edg/148.0.0.0"),
+            (d["eff"], "09:05AM", "Document copy sent to", ins, None, None),
+            (d["eff"], "09:05AM", "Document copy sent to", rep, None, None),
+            (d["eff"], "09:05AM", "Document copy sent to", svc, None, None)):
+        event = {"timestamp": fv("%s %s US/Eastern" % (day, time), evidence="%s %s" % (day, time)),
+                 "description": fv(what, evidence="has agreed to terms of" if what == agreed else None)}
+        if who:
+            event.update(actor_name=fv(who[0]), actor_email=fv(who[1]))
+        if ip:
+            event.update(ip_address=fv(ip), user_agent=fv(ua))
+        history.append(event)
+    certificate = {
+        "certificate_title": fv("Document Completion Certificate"),
+        "envelope_id": fv(d["doc_uuid"]),
+        "document_title": fv("Landlord Application/Cancellation Form"),
+        "document_region": fv("Northern Virginia"),
+        "sender_name": fv("No Name"),
+        "sender_email": fv(d["svc_email"]),
+        "total_document_pages": fv("12", 12),
+        "secondary_security": fv("Not Required"),
+        "participants": [{"name": fv(n), "email": fv(e)} for n, e in (ins, rep)],
+        "history": history,
+    }
+    return {
+        "applicant_signature_present": derived("Yes", "Applicant:"),
+        "applicant_signature_date": date_fv(d["s1_ts"], STAMP),
+        "producer_signature_present": derived("Yes", "Agent:"),
+        "producer_signature_date": date_fv(d["s2_ts"], STAMP),
+        "prior_policy_cancellation_request": acord35,
+        "flood_selection_rejection": acord60,
+        "esignature_certificate": certificate,
+    }
 
 
 def _gold(d):
@@ -673,6 +780,13 @@ def _gold(d):
                 f["premium"] = mo(x[key + "_s"])
             else:
                 f["is_included"] = derived("Yes", "Incl")
+            # the line printed under the form's row
+            if fn == "FL-10":
+                f["percentage"] = fv("1.0% per Quarter")
+            elif fn == "ML-216":
+                f["percentage"] = fv("2%", evidence="Smoke Detectors 2%")
+            elif fn == "DFL-153P":
+                f["included_coverages"] = [fv(item) for item in DFL_ITEMS]
             forms.append(f)
         credits.append({"description": fv("Premises Alarm"), "amount": mo(x["alarm_s"]),
                         "form_reference": fv("ML-216"), "applies_to": dict(where),
@@ -706,12 +820,12 @@ def _gold(d):
         "fire_alarm_type": fv("Smoke Detectors 2%"),
         "electrical_service": fv(L1["electric"]),
         "fuel_type": fv(L1["fuel"]),
-        "secondary_heating": fv(d["explain"]),
         "year_roof_updated": fv(str(L1["roofyear"])),
         "year_primary_system_updated": fv(str(L1["sysyear"])),
         "market_value": mo("$ " + L1["market_s"]),
         "years_owned": fv(str(L1["owned"])),
     }
+    dwelling.update(_dwelling_answers(d, 1))
     optional = [{"coverage_name": fv(item), "form_reference": derived("DFL-153P", "DFL-153P"),
                  "is_included": derived("Yes", item)} for item in DFL_ITEMS]
     optional += [
@@ -725,7 +839,7 @@ def _gold(d):
          "is_included": derived("Yes", "Premises Alarm")},
     ]
 
-    return {
+    gold = {
         "document": {
             "document_type": fv("Application"),
             "document_title_as_stated": fv("Standard Landlords Package Policy"),
@@ -733,6 +847,7 @@ def _gold(d):
             "transaction_type": fv("New Business"),
             "transaction_effective_date": date_fv(d["eff"]),
             "print_date": date_fv(d["fp_long"], "%B %d, %Y"),
+            "source_system": fv("InsuranceNow"),
             "coverage_parts_present": [fv("Property Coverages"), fv("Liability Coverages")],
             "applicable_coverages": [fv("Coverage A – Residence"), fv("Coverage B – Other Structures"),
                                      fv("Coverage C – Personal Property"),
@@ -754,6 +869,7 @@ def _gold(d):
             "contact": {"phone": fv(d["ag_phone"]), "email": fv(d["rep_email"])},
         },
         "policy": {
+            "file_number": fv(d["file_no"], evidence="File #:"),
             "alternate_policy_identifiers": [
                 {"identifier_type": fv("File #", evidence="File #:"), "identifier_value": fv(d["file_no"])},
                 {"identifier_type": derived("Other Dryden Mutual policy", "Please provide Policy Number(s):"),
@@ -786,6 +902,7 @@ def _gold(d):
         },
         "underwriting_questions": _questions(d),
         "additional_fields": _additional(d),
+        "document_type_detail": {"application": _application(d)},
         "locations": [_loc_gold(d, 1), _loc_gold(d, 2)],
         "premium": {
             "total_policy_premium": mo("$" + d["total_all_s"]),
@@ -826,14 +943,21 @@ def _gold(d):
                 "loss_settlement_basis": fv(L1["settle"][0]),
                 "loss_settlement_contents": fv(L1["settle"][1]),
                 "covered_causes_of_loss": fv(L1["col"][0]),
+                "inflation_guard_percentage": fv("1.0%", evidence="1.0% per Quarter"),
+                "inflation_guard_period": fv("per Quarter"),
             },
             "liability_coverages": {
                 "liability_coverage_form": fv("Premises Liability Coverage"),
                 "coverage_l_premises_liability_limit": mo(L1["lo_s"]),
+                "premises_liability_aggregate_limit": mo(L1["lag_s"]),
                 "coverage_m_medical_payments_per_person_limit": mo(L1["mp_s"]),
                 "coverage_m_medical_payments_per_occurrence_limit": mo(L1["ma_s"]),
             },
             "deductibles": {"all_other_perils_deductible": mo(L1["ded_s"])},
             "optional_endorsement_coverages": optional,
+            "dwellings": _dwellings(d),
         },
     }
+    if d["yn"][9][0] == "No":
+        gold["loss_history_none_reported"] = derived("Yes", "Any previous property or liability losses")
+    return gold

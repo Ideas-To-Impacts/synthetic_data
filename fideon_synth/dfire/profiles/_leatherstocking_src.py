@@ -11,6 +11,7 @@ pair.  Not a profile itself (no SOURCE).
 
 from __future__ import annotations
 
+import re
 from types import SimpleNamespace
 
 from . import _leatherstocking as L
@@ -182,9 +183,8 @@ def make_dfire(s):
         }
         return L.build_gold(d, S)
 
-    gaps = ["Property: 1 of 1 (property counter)",
-            "Mail To block (repeats the producer name and address)",
-            "SIGNATURE / DATE box (signature image only; no printed name or date)"]
+    gaps = ["Mail To block (repeats the producer name and address)",
+            "SIGNATURE / DATE box: no printed name or date (the signature image is keyed)"]
     return SimpleNamespace(draw=draw, REPLACE=replace, gold=gold, audit=audit, GAPS=gaps,
                            STATIC=list(L.STATIC), IGNORE_PAIRS=list(L.IGNORE_PAIRS),
                            FURNITURE=list(L.FURNITURE))
@@ -301,6 +301,7 @@ def make_llp(s):
              "desc": "ESCROW BILLED"}
         if s["loan"]:
             m["loan"] = d["loan"]
+        zone, sub_zone = re.search(r"\((Zone \d+), (Sub-Zone \d+)\)", d["territory"]).groups()
         S = {
             "lob": "Landlords Package", "transaction": "Renewal", "rows": r, "optional": o,
             "form_name": "FL-1 Basic Form", "forms_text": LLP_FORMS,
@@ -308,7 +309,8 @@ def make_llp(s):
                        "notes": L.MODIFIES + "Coverage A - Residence"}],
             "dwelling": {"year_built": fv("Since January 1960"),
                          "tenant_occupied": derived("Yes", "Landlords Package"),
-                         "fire_alarm_type": fv("Fire Alarm and/or Smoke Detectors")},
+                         "fire_alarm_type": fv("Fire Alarm and/or Smoke Detectors"),
+                         "rating_zone": fv(zone), "rating_subzone": fv(sub_zone)},
             "property_extra": {"vandalism_basis": fv("With Vandalism")},
             "liability_extra": {"liability_coverage_form": fv("FL-OLT Premises Liability")},
             "location": {"year_built": fv("Since January 1960"),
@@ -320,9 +322,8 @@ def make_llp(s):
         }
         return L.build_gold(d, S)
 
-    gaps = ["Property: 1 of 1 (property counter)",
-            "Mail To block (repeats the producer name and address)",
-            "SIGNATURE / DATE box (signature image only; no printed name or date)"]
+    gaps = ["Mail To block (repeats the producer name and address)",
+            "SIGNATURE / DATE box: no printed name or date (the signature image is keyed)"]
     return SimpleNamespace(draw=draw, REPLACE=replace, gold=gold, audit=audit, GAPS=gaps,
                            STATIC=list(L.STATIC), IGNORE_PAIRS=list(L.IGNORE_PAIRS),
                            FURNITURE=list(L.FURNITURE))

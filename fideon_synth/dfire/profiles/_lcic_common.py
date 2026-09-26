@@ -16,6 +16,7 @@ from __future__ import annotations
 
 from ...fields import yes_no
 from ..engine import addr, date_fv, derived, fv, logo, money
+from ._leatherstocking import property_fields
 
 DISCLAIMER = ("The Deductible reflected applies to all property coverages unless "
               "otherwise stipulated within the policy language.")
@@ -67,6 +68,10 @@ NAMES = {
 }
 BASE = ("a", "b", "c", "d", "l", "mp", "mo")          # coverages proper
 LIMIT_BASIS = {"l": "Each Occurrence", "mp": "Per Person", "mo": "Per Occurrence"}
+# the schedule section each row is printed under; every other row is an Optional Item
+SECTION = dict([(k, "Section I") for k in ("a", "eca", "vmma", "b", "ecb", "vmmb", "c", "ecc",
+                                           "vmmc", "d", "ecd", "vmmd")]
+               + [(k, "Section II") for k in ("l", "mp", "mo", "ml59")])
 # optional/endorsement rows: (form reference, coverage code) as printed in the name
 OPT_META = {
     "eca": (None, "EC"), "ecb": (None, "EC"), "ecc": (None, "EC"), "ecd": (None, "EC"),
@@ -420,4 +425,9 @@ def build_gold(d, *, forms, form_name, sm26, has_classif=True, has_condition=Fal
         party = _mortgagee(d, mortgagee_clause)
         gold["dwelling_fire"]["mortgagees"] = [party()]
         gold["interested_parties"] = [party()]
+
+    entry = dict(zip([k for k in rows if k in BASE], coverages))
+    entry.update(zip([k for k in rows if k not in BASE], optional))
+    schedule = [(SECTION.get(k, "Optional Items"), entry[k]) for k in rows]
+    property_fields(gold, prop, schedule, d["pt_s"], d["fees_s"], d["settle"], sm26)
     return gold

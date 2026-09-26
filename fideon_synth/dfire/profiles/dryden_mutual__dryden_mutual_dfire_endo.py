@@ -96,7 +96,7 @@ def gold(d):
          "summary_of_changes": fv(CHANGE)})
     g["premium"].update(X.summary_premium(d, d["rev_usd"]))
     g["premium"].update({
-        "return_premium": money(d["adj_usd"]),
+        "pro_rata_premium_change": money(d["adj_usd"]),
         "fire_fee": fv("N/A"),
         "prior_annual_premium": money(d["prior_usd"]),
         "change_in_annual_premium": money(d["chg_usd"]),
