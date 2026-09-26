@@ -711,6 +711,10 @@ class Reader:
         """The form a document is printed on: the form number in its page
         footers - the one most pages carry, not an insert's own ("PL-50957"
         on a two-page summary before four pages of "PL-50776 NY")."""
+        # under whichever name the schema gives it
+        path = "document.form_number"
+        if path not in self.schema.leaves and "document.document_form_number" in self.schema.leaves:
+            path = "document.document_form_number"
         seen = {}                                   # value -> pages, in page order
         for n, height, cells, _ in self.pages:
             for c in cells:
@@ -727,7 +731,7 @@ class Reader:
                 seen.setdefault(value["raw"], [value, set()])[1].add(n)
         if seen:
             value, _ = max(seen.values(), key=lambda v: len(v[1]))   # first of the most printed
-            _put(self.gold, "document.form_number", value)
+            _put(self.gold, path, value)
 
     # ── labelled values ─────────────────────────────────────────────────────
 
@@ -924,7 +928,7 @@ class Reader:
                     self._current().setdefault("year", derived(year.group(0), year.group(0),
                                                                int(year.group(0))))
             return
-        path = self.index.get(label)
+        path = self.index.get(label) or self.index.get(label.replace(" ", ""))
         if path and not NOT_TEXT.search(path.rsplit(".", 1)[-1]):
             _put(self.gold, path, self._plain(path, value))
             return
@@ -1548,6 +1552,8 @@ class Reader:
                     # Collision.") says the rows are included, not in its own words
                     included_clean = name.endswith(":")
                     continue
+                if included and re.match(r"(?:and|or|&)\b", name):
+                    continue                       # "and Collision": the heading's own rest
                 if included and name_x is not None and x0 > name_x + 2:
                     item = {"coverage_name": fv(name),
                             "is_included": yes_no(True, included if included_clean else name)}
@@ -1655,6 +1661,11 @@ class Reader:
                     last = self._coverage(unit, held["name"], {}, "", forms,
                                           fv(held["name"]), None)
                     last_x, last_line = held["x"], line.y
+                if last is None:
+                    # a heading held for the rows under it ("F - Comprehensive"
+                    # over "Actual Cash Value less") with no row begun yet
+                    pending = held
+                    continue
                 for col, field in (("deductible", "deductible_amount"), ("premium", "premium")):
                     s = vals.get(col)
                     if s is None:

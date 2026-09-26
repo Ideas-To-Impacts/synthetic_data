@@ -122,7 +122,7 @@
     },
     "print_date": {
       "raw": "01/15/2026",
-      "parsed": "2026-01-15",
+      "parsed": "01/15/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -296,7 +296,8 @@
         1,
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Harold Brennick & Simone Achterberg"
     },
     "agency_name": {
       "raw": "Ausable Valley Insurance Agency",
@@ -394,7 +395,8 @@
         4,
         5
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Policy #"
     },
     "alternate_policy_identifiers": [
       {
@@ -428,13 +430,14 @@
             4,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "File #"
         }
       }
     ],
     "effective_date": {
       "raw": "01/15/2026",
-      "parsed": "2026-01-15",
+      "parsed": "01/15/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -450,7 +453,7 @@
     },
     "expiration_date": {
       "raw": "01/15/2027",
-      "parsed": "2027-01-15",
+      "parsed": "01/15/2027",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -531,7 +534,8 @@
       "page_ref": [
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Cause of Loss Form"
     },
     "policy_form_name": {
       "raw": "Comprehensive Form",
@@ -669,7 +673,8 @@
           3,
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "DML-41"
       },
       "form_reference": {
         "raw": "DML-41",
@@ -764,7 +769,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Interest"
       },
       "location_reference": {
         "raw": "412 Spruce Hill Rd, Lake Placid, NY 12946-3108",
@@ -779,7 +785,8 @@
           3,
           4
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Location"
       },
       "applicable_coverages": [
         {
@@ -792,7 +799,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Applies to"
         }
       ]
     }
@@ -828,7 +836,8 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Fire District"
         },
         "state": {
           "raw": "NY",
@@ -870,7 +879,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "County"
         }
       },
       "usage_type": {
@@ -886,7 +896,8 @@
           3,
           4
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Risk Description"
       },
       "number_of_families": {
         "raw": "1 Family",
@@ -898,7 +909,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Families"
       },
       "construction_type": {
         "raw": "Frame",
@@ -910,7 +922,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Construction"
       },
       "year_built": {
         "raw": "2025",
@@ -922,7 +935,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Year of Construction"
       },
       "age_of_home": {
         "raw": "0",
@@ -949,7 +963,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Fire Protection"
       },
       "protective_devices": [
         {
@@ -1020,7 +1035,8 @@
           4,
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Risk Type"
       },
       "territorial_zone": {
         "raw": "1",
@@ -1051,7 +1067,8 @@
           3,
           4
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Fire District"
       },
       "feet_from_hydrant": {
         "raw": "Greater than 1000 Feet",
@@ -1063,7 +1080,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Feet From Hydrant"
       },
       "distance_to_fire_station": {
         "raw": "5 Miles or Less",
@@ -1075,7 +1093,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Miles From Fire Dept"
       }
     },
     "section_i_property_coverages": {
@@ -1102,7 +1121,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage B - Other Structures"
       },
       "coverage_c_personal_property_limit": {
         "raw": "1,680,000",
@@ -1114,7 +1134,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage C - Personal Property"
       },
       "coverage_d_loss_of_use_limit": {
         "raw": "480,000",
@@ -1138,7 +1159,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Loss Settlement Building"
       },
       "personal_property_loss_settlement_basis": {
         "raw": "Replacement Cost Contents",
@@ -1150,7 +1172,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Loss Settlement Contents"
       },
       "inflation_guard_percentage": {
         "raw": "1.0% per Quarter",
@@ -1212,7 +1235,8 @@
           2,
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage B - Other Structures"
       },
       "coverage_e_personal_liability_premium": {
         "raw": "26.00",
@@ -1224,7 +1248,8 @@
         "page_ref": [
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage L"
       },
       "coverage_f_medical_payments_premium": {
         "raw": "27.00",
@@ -1236,7 +1261,8 @@
         "page_ref": [
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage M"
       },
       "additional_coverages": [
         {
@@ -1437,7 +1463,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Deductible"
       }
     },
     "optional_endorsement_coverages": [
@@ -2250,7 +2277,8 @@
           "page_ref": [
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Deductible"
         },
         "amount": {
           "raw": "-2,660.00",
@@ -2262,7 +2290,8 @@
           "page_ref": [
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Deductible"
         },
         "discount_type": {
           "raw": "Credit",
@@ -2298,7 +2327,8 @@
           "page_ref": [
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "New Home Credit"
         },
         "discount_type": {
           "raw": "Credit",
@@ -2343,7 +2373,8 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Risk Description"
         },
         "address": {
           "line_1": {
@@ -2374,7 +2405,8 @@
               3,
               4
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Fire District"
           },
           "state": {
             "raw": "NY",
@@ -2416,7 +2448,8 @@
             "page_ref": [
               2
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "County"
           }
         },
         "usage_type": {
@@ -2430,7 +2463,8 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Risk Description"
         },
         "property_premium": {
           "raw": "4,120.00",
@@ -2444,7 +2478,8 @@
             2,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Total Annual Premium This Location"
         },
         "inland_marine_premium": {
           "raw": "0.00",
@@ -2457,7 +2492,8 @@
             1,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Inland Marine Premium"
         },
         "premium": {
           "raw": "4,120.00",
@@ -2471,7 +2507,8 @@
             2,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Total Annual Premium This Location"
         }
       }
     ]
@@ -2489,7 +2526,8 @@
         2,
         5
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Total Annual Premium This Location"
     },
     "basic_premium": {
       "raw": "8,060.00",
@@ -2501,7 +2539,8 @@
       "page_ref": [
         5
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Coverage A"
     },
     "number_of_risks": {
       "raw": "1",
@@ -2539,7 +2578,8 @@
           "page_ref": [
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage A"
         },
         "limit_amount": {
           "raw": "2,400,000",
@@ -2564,7 +2604,8 @@
           "page_ref": [
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage A"
         },
         "location_reference": {
           "raw": "1",
@@ -2632,7 +2673,8 @@
           "page_ref": [
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage L"
         },
         "location_reference": {
           "raw": "1",
@@ -2677,7 +2719,8 @@
             4,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage B - Other Structures"
         },
         "limit_amount": {
           "raw": "5,000",
@@ -2690,7 +2733,8 @@
             2,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage B - Other Structures"
         },
         "premium": {
           "raw": "27.00",
@@ -2702,7 +2746,8 @@
           "page_ref": [
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage M"
         },
         "location_reference": {
           "raw": "1",
@@ -2774,7 +2819,8 @@
           "page_ref": [
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Deductible"
         },
         "amount": {
           "raw": "-2,660.00",
@@ -2786,7 +2832,8 @@
           "page_ref": [
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Deductible"
         }
       },
       {
@@ -2812,7 +2859,8 @@
           "page_ref": [
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "New Home Credit"
         }
       }
     ]
@@ -2841,7 +2889,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "FMD-1"
       },
       "form_group": {
         "raw": "Policy Forms & Optional Coverages",
@@ -2882,7 +2931,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "FMD-1"
       }
     },
     {
@@ -3194,7 +3244,8 @@
           3,
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "DML-41"
       },
       "form_group": {
         "raw": "Policy Forms & Optional Coverages",
@@ -3235,7 +3286,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "DML-41"
       },
       "premium": {
         "raw": "0.00",
@@ -3248,7 +3300,8 @@
           1,
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Inland Marine Premium"
       }
     },
     {
@@ -3557,7 +3610,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Protective Devices"
       }
     },
     {
@@ -3639,7 +3693,8 @@
           1,
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Inland Marine Premium"
       },
       "details": {
         "raw": "1.0% per Quarter",
@@ -3769,7 +3824,8 @@
         "page_ref": [
           4
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "DMIC-PP"
       },
       "form_group": {
         "raw": "Policy Forms & Optional Coverages",
@@ -3803,6 +3859,9 @@
     }
   ],
   "fideon:absent": [
+    "additional_fields[].label",
+    "additional_fields[].section",
+    "additional_fields[].value",
     "billing.amount_due",
     "billing.amount_enclosed",
     "billing.bank_account_number_masked",
@@ -4769,6 +4828,9 @@
     "premium.taxes_and_fees[].is_fully_earned",
     "premium.total_discount_amount",
     "premium.total_fees_amount",
+    "printed_lines[].cells[]",
+    "printed_lines[].kind",
+    "printed_lines[].page",
     "producer.address.country",
     "producer.address.county",
     "producer.address.county_code",
@@ -4801,6 +4863,7 @@
     "state_notices[].civil_penalty_amount",
     "state_notices[].contact_phone",
     "state_notices[].contact_website",
+    "state_notices[].copyright_notice",
     "state_notices[].edition_date",
     "state_notices[].form_reference",
     "state_notices[].form_reference_edition",
@@ -4859,6 +4922,7 @@
     "underwriting.consumer_report_disclosures[].reporting_agency_address.line_2",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.postal_code",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.state",
+    "underwriting.consumer_report_disclosures[].reporting_agency_phone",
     "underwriting.consumer_report_disclosures[].reporting_agency_website",
     "underwriting.consumer_report_disclosures[].updated_report_days",
     "underwriting.exceptions[].exception_type",
@@ -4890,6 +4954,375 @@
     "synthetic": true,
     "note": "Scanned synthetic document generated from the reference document: every original value rewritten in place with an invented one; page_ref measured on the rewritten PDF before scanning.",
     "scanner_profile": "high-quality scan, 400 dpi",
-    "page_refs_measured_on": "text-layer twin of dryden_new_business_declarations.pdf before scanning"
-  }
+    "page_refs_measured_on": "text-layer twin of dryden_new_business_declarations.pdf before scanning",
+    "prose": "text_sections, printed_label and printed_lines added by main's prose.text_sections / dfire.engine; scanned pages none read by OCR of the published scan"
+  },
+  "text_sections": {
+    "page1_s1": {
+      "section_id": "page1_s1",
+      "section_title": "Dryden Mutual Insurance Company",
+      "section_type": "prose",
+      "raw_text": "12 Ellis Drive . P.O. Box 635 . Dryden, New York 13053 A New York State Advance Premium Co-Operative Fire Insurance Corporation",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s2": {
+      "section_id": "page1_s2",
+      "section_title": "Declarations Page",
+      "section_type": "prose",
+      "raw_text": "Policy Issued on the Co-Operative Plan Non- Assessable Policy",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s3": {
+      "section_id": "page1_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "It is agreed that the complete Named Insured for this policy reads as stated above unless indicated otherwise below.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s4": {
+      "section_id": "page1_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Your billing invoice will be mailed separately. Please remember that when deciding on your insurance needs, your independent agent is your best source for information. Thank you for choosing Dryden Mutual Insurance Company for help in protecting your assets.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page2_s1": {
+      "section_id": "page2_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Location: 412 Spruce Hill Rd, Lake Placid, NY 12946-3108",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page3_s1": {
+      "section_id": "page3_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Risk Description: Secondary Residence Used in all 4 seasons Location: 412 Spruce Hill Rd, Lake Placid, NY 12946-3108 The following is a list and description of the policy forms and endorsements that apply to the property at the above listed location. Some optional endorsements may state a specific amount of insurance. Our limit of liability is not to exceed that amount shown in this schedule and each shall be subject to the terms and conditions of the specific endorsement.",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s2": {
+      "section_id": "page3_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Name and Address of Person or Organization:",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s3": {
+      "section_id": "page3_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Location of Premises: 412 Spruce Hill Rd, Lake Placid, NY 12946-3108 Applies to: Coverage A, B, C, L, M",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s4": {
+      "section_id": "page3_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Extended Coverage C - Personal Property Money, Bank Notes, Bullion",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s5": {
+      "section_id": "page3_s5",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Dismounted Camper Bodies on Insured Premises",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page4_s1": {
+      "section_id": "page4_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Risk Description: Secondary Residence Used in all 4 seasons Location: 412 Spruce Hill Rd, Lake Placid, NY 12946-3108",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page4_s2": {
+      "section_id": "page4_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Coverage M- Medical Payments To Others Incidental Liability And Medical Payments Coverages",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    }
+  },
+  "printed_lines": [
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Policy Period"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Named Insured and Mailing Address",
+        "Agency Information"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Billing Information"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Insured Location Summary"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Premium including Fire Fee"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "You can access your policy, Pay online or Go Paperless"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Visit www.drydenmutual.com and click \"My Policy/Pay My Bill\""
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "footer",
+      "cells": [
+        "Page 1"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "Coverage Declaration for Location # 1"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Named Insured and Mailing Address"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Agency Information"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Policy Period"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "Property Coverages",
+        "Liability Coverages"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Each Occurrence"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Each Person"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "Coverage D - Addl. Living Exp and Loss of Rent"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Rating Criteria"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Mortgagee Information"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "None Listed"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "footer",
+      "cells": [
+        "Page 2"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "row",
+      "cells": [
+        "Supplemental Policy Declarations for Location # 1"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Edition Date"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "footer",
+      "cells": [
+        "Page 3"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "row",
+      "cells": [
+        "Supplemental Policy Declarations for Location # 1"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "Edition Date"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "footer",
+      "cells": [
+        "Page 4"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "row",
+      "cells": [
+        "Annual Premium Computation for Location # 1"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "heading",
+      "cells": [
+        "Annual Premium Computation"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "heading",
+      "cells": [
+        "Coverage / Form"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "footer",
+      "cells": [
+        "Page 5"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "Loc. #",
+        "Location Description and Address",
+        "Premium including Fire Fee"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "Location Number: 1"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "Year of Construction: 2025",
+        "Age of Home: 0"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "Rating Zone: 1",
+        "County: Essex"
+      ]
+    }
+  ]
 }

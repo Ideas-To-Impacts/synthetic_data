@@ -41,6 +41,8 @@ fideon-synth --source "Data\original data\Progressive\auto\progressive_autob.pdf
 
 Sources are read as `<Carrier>/<lob>/<file>.pdf`: the folder name picks the
 schema (`_fallback` if there is none), the carrier folder is the carrier.
+The schemas are looked up in a folder named `policy_check` (the document
+type), so `config/policy_check` must keep that name.
 
 For each document it:
 
@@ -56,10 +58,12 @@ For each document it:
    scan line is replaced with the new policy number inside it. Amounts stay
    as printed - a scaled total never equals the sum of its rounded scaled
    parts. The carrier's own name and address stay;
-4. whites out the printed value and draws the new one at the size, baseline
-   and face (serif or sans) measured from the page - condensed when it is
-   longer than the old one, so it never runs into the words after it - then
-   rescans;
+4. covers the printed value in the paper colour around it (grey on a grey
+   panel) and draws the new one at the size, baseline and face (serif or
+   sans) measured from the page - bounded by where the next word's ink
+   begins, and condensed when it is longer than the old one, so it never
+   runs into the words after it - then rescans. Form numbers, ISO forms
+   ("CG 20 18 04 13") included, keep their numbers;
 5. matches each value's printed label to the schema's field names and
    aliases for the gold. Values it changed but could not place confidently go
    to `fideon:unmapped` with their label and pages - the gold never guesses.
@@ -68,14 +72,24 @@ For each document it:
 Printed paragraphs no field holds - a deductible condition, a navigation
 restriction, a renewal notice, a disclaimer - go to the gold's
 `text_sections`, one per paragraph, titled by the heading over it, in the
-replaced wording. A scanned page's prose is read by OCR from the finished
-image rather than copied from the scan's text layer, which is often garbled.
+replaced wording; a bulleted list is one section of its items. A scanned
+page's prose is read by OCR from the finished image rather than copied from
+the scan's text layer, which is often garbled. Words OCR ran together
+("combinedsinglelimiteachaccident") are set apart again - only into words the
+same document prints on its own; names, web addresses and figures are left
+as printed.
 
-A document fails only if an original identifying value survives, or the gold
-claims a value that is not on the page. Known limits: a value the OCR misread
-is not recognised and stays as printed; table rows are replaced but not
-labelled. An original date or identifier left anywhere - even inside a longer
-run of digits - fails the document.
+Facts a page states in its own words rather than beside a label are read too:
+forms named in page footers, web addresses, renewal-offer dates ("This renewal
+offer is for the policy period A through B"), a change "removed from your
+policy", where and when a period ends, a print code, a coupon's scan line. A
+policy-wide value the units print differently is left out rather than taken
+from one of them.
+
+A document fails if an original identifying value or date survives anywhere -
+in the PDF, even inside a longer run of digits, or in the gold itself,
+labels included - or if the gold claims a value that is not on the page.
+Known limit: a value the OCR misread is not recognised and stays as printed.
 `FIDEON_KEEP_DIGITAL=1` keeps the pre-scan render for inspection.
 
 **Scanned sources are read again with OCR.** A scan's own text layer often
@@ -274,7 +288,7 @@ set FIDEON_CANONICAL_SCHEMA=E:\SML\SLM L1\config\canonical_schema
 ```
 
 ```bash
-python -m pytest        # 37 tests
+python -m pytest        # 56 tests
 ```
 
 ---

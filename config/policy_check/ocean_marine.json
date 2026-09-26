@@ -9,10 +9,10 @@
     "version": "3.0.0",
     "line_of_business_as_supplied": "Watercraft",
     "line_specific_block": "watercraft",
-    "field_count": 760,
+    "field_count": 767,
     "corpus_document_count": 4,
     "corpus_carrier_count": null,
-    "aliased_fields": 166,
+    "aliased_fields": 213,
     "filed_under_lob": "ocean_marine",
     "extensions_applied": "scripts/canonical_schema_extensions.py"
   },
@@ -129,7 +129,8 @@
             "Print Date",
             "Printed On",
             "Process Date",
-            "PROCESSING DATE"
+            "PROCESSING DATE",
+            "Printed Date"
           ]
         },
         "print_time": {
@@ -212,14 +213,19 @@
           "fideon:aliases": [
             "Underwritten by",
             "Your Insurer",
-            "Insurer"
+            "Insurer",
+            "Policy Issued By"
           ]
         },
         "group_name": {
           "$ref": "#/$defs/FieldValue"
         },
         "naic_number": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "NAIC #",
+            "NAIC"
+          ]
         },
         "fein": {
           "$ref": "#/$defs/FieldValue"
@@ -314,7 +320,10 @@
       "type": "object",
       "properties": {
         "agency_name": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Agent Information"
+          ]
         },
         "producer_code": {
           "$ref": "#/$defs/FieldValue",
@@ -322,11 +331,15 @@
             "Agency Code",
             "Agent",
             "Agency ID",
-            "Agency Number"
+            "Agency Number",
+            "Agent ID"
           ]
         },
         "producer_contact_name": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Insurance Agent's Printed Name"
+          ]
         },
         "address": {
           "type": "object",
@@ -459,7 +472,8 @@
         "policy_type": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
-            "Policy Type"
+            "Policy Type",
+            "Type of Policy"
           ]
         },
         "effective_date": {
@@ -471,7 +485,9 @@
             "Policy Effective Date",
             "Policy Period From",
             "Policy Term Effective Date",
-            "Start Date"
+            "Start Date",
+            "Policy Term",
+            "Eff. Date"
           ]
         },
         "expiration_date": {
@@ -586,7 +602,9 @@
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "Insured Name",
-            "Named Insured"
+            "Named Insured",
+            "Insured's Name",
+            "Client Name"
           ]
         },
         "doing_business_as": {
@@ -1076,7 +1094,10 @@
             "Policy Total Premium",
             "Total Policy Premium",
             "Total 12 month policy premium",
-            "Total Premium for this Policy"
+            "Total Premium for this Policy",
+            "Total Full Term Premium",
+            "Total Policy Cost",
+            "Total Charges"
           ]
         },
         "paid_in_full_premium": {
@@ -1103,7 +1124,11 @@
           "$ref": "#/$defs/FieldValue"
         },
         "minimum_premium": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Minimum Written Premium",
+            "Minimum Written"
+          ]
         },
         "return_premium": {
           "$ref": "#/$defs/FieldValue"
@@ -1281,7 +1306,11 @@
           ]
         },
         "stamping_fee": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Stamp Fee",
+            "Stamp"
+          ]
         },
         "policy_fee": {
           "$ref": "#/$defs/FieldValue"
@@ -1531,7 +1560,8 @@
             "Billing Phone",
             "Call us at",
             "By calling",
-            "Automatic Payments"
+            "Automatic Payments",
+            "For payment questions call"
           ]
         },
         "payment_coupon_scan_line": {

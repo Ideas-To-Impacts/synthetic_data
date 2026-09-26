@@ -1,0 +1,4475 @@
+{
+  "document": {
+    "source_file_name": {
+      "raw": "travelers_autop_renewal_2_synth_001.pdf",
+      "parsed": "travelers_autop_renewal_2_synth_001.pdf",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "page_count": {
+      "raw": "50",
+      "parsed": 50,
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "issue_date": {
+      "raw": "July 24, 2025",
+      "parsed": "07/24/2025",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3,
+        19
+      ],
+      "flagged": false
+    },
+    "line_of_business_as_stated": {
+      "raw": "Personal Auto policy",
+      "parsed": "Personal Auto policy",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "document_title_as_stated": {
+      "raw": "AUTOMOBILE POLICY CONTINUATION DECLARATIONS",
+      "parsed": "AUTOMOBILE POLICY CONTINUATION DECLARATIONS",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        17
+      ],
+      "flagged": false
+    },
+    "document_type": {
+      "raw": "DECLARATIONS",
+      "parsed": "Declaration",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        11,
+        13,
+        17,
+        20,
+        21,
+        29,
+        34,
+        37,
+        39,
+        44,
+        49
+      ],
+      "flagged": false
+    },
+    "summary_of_changes": {
+      "raw": "for",
+      "parsed": "for",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3,
+        4,
+        5,
+        6,
+        8,
+        10,
+        11,
+        12,
+        13,
+        15,
+        17,
+        18,
+        20,
+        21,
+        23,
+        24,
+        25,
+        29,
+        30,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "flagged": false
+    },
+    "document_form_number": {
+      "raw": "PL-19507 (01-25)",
+      "parsed": "PL-19507 (01-25)",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        12
+      ],
+      "flagged": false
+    },
+    "print_date": {
+      "raw": "07/24/25",
+      "parsed": "07/24/2025",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        3,
+        5,
+        11,
+        13,
+        15,
+        17,
+        19,
+        20,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31,
+        33,
+        35,
+        37,
+        39,
+        41,
+        43,
+        45,
+        47,
+        49
+      ],
+      "flagged": false
+    }
+  },
+  "carrier": {
+    "company_name": {
+      "raw": "Travelers",
+      "parsed": "Travelers",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        3,
+        4,
+        7,
+        10,
+        12,
+        13,
+        17,
+        19,
+        20,
+        21,
+        23,
+        25,
+        29,
+        30,
+        31,
+        33,
+        34,
+        39,
+        44,
+        45,
+        46,
+        49
+      ],
+      "flagged": false
+    },
+    "contact": {
+      "website": {
+        "raw": "mytravelers.com",
+        "parsed": "mytravelers.com",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          33
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "producer": {
+    "agency_name": {
+      "raw": "NORTHFIELD INS AGENCY",
+      "parsed": "NORTHFIELD INS AGENCY",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3,
+        17
+      ],
+      "flagged": false
+    },
+    "address": {
+      "city": {
+        "raw": "SARANAC LAKE",
+        "parsed": "SARANAC LAKE",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3,
+          7,
+          9,
+          13,
+          17,
+          19,
+          31,
+          44
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          5,
+          6,
+          7,
+          9,
+          13,
+          17,
+          19,
+          21,
+          25,
+          30,
+          31,
+          44
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "12983",
+        "parsed": "12983",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          7,
+          9,
+          13,
+          17,
+          31
+        ],
+        "flagged": false
+      }
+    },
+    "contact": {
+      "phone": {
+        "raw": "518-555-0156",
+        "parsed": "518-555-0156",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          8,
+          10,
+          17,
+          21,
+          31,
+          33,
+          44
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "named_insured": {
+    "primary_name": {
+      "raw": "Cornelius Ashworth",
+      "parsed": "Cornelius Ashworth",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3,
+        17,
+        19,
+        21,
+        44
+      ],
+      "flagged": false
+    },
+    "entity_type": {
+      "raw": "Individual",
+      "parsed": "Individual",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        3,
+        17,
+        19,
+        21,
+        44
+      ],
+      "flagged": false
+    },
+    "additional_named_insureds": [
+      {
+        "name": {
+          "raw": "Bartholomew Barrowclough",
+          "parsed": "Bartholomew Barrowclough",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            17,
+            19,
+            21,
+            44
+          ],
+          "flagged": false
+        },
+        "entity_type": {
+          "raw": "Individual",
+          "parsed": "Individual",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            17,
+            19,
+            21,
+            44
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "name": {
+          "raw": "Henrietta Quillfeather",
+          "parsed": "Henrietta Quillfeather",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            30
+          ],
+          "flagged": false
+        },
+        "entity_type": {
+          "raw": "Individual",
+          "parsed": "Individual",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            30
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "name": {
+          "raw": "Lavinia Blackwood",
+          "parsed": "Lavinia Blackwood",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            30
+          ],
+          "flagged": false
+        },
+        "entity_type": {
+          "raw": "Individual",
+          "parsed": "Individual",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            30
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "name": {
+          "raw": "Ottoline Thistlewood",
+          "parsed": "Ottoline Thistlewood",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            30
+          ],
+          "flagged": false
+        },
+        "entity_type": {
+          "raw": "Individual",
+          "parsed": "Individual",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            30
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "name": {
+          "raw": "Silas Pemberton",
+          "parsed": "Silas Pemberton",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            48
+          ],
+          "flagged": false
+        },
+        "entity_type": {
+          "raw": "Individual",
+          "parsed": "Individual",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            48
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "policy": {
+    "policy_number": {
+      "raw": "698587568 233 4",
+      "parsed": "698587568 233 4",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3,
+        4,
+        44
+      ],
+      "flagged": false
+    },
+    "effective_date": {
+      "raw": "08/27/2025",
+      "parsed": "08/27/2025",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3,
+        7,
+        9
+      ],
+      "flagged": false
+    },
+    "expiration_date": {
+      "raw": "02/24/2026",
+      "parsed": "02/24/2026",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3
+      ],
+      "flagged": false
+    },
+    "prior_policy_number": {
+      "raw": "EAGLEBAYNY392750006",
+      "parsed": "EAGLEBAYNY392750006",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3,
+        7,
+        9,
+        17
+      ],
+      "flagged": false
+    },
+    "account_id": {
+      "raw": "928339827",
+      "parsed": "928339827",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        17,
+        33
+      ],
+      "flagged": false
+    },
+    "product_code": {
+      "raw": "AT1",
+      "parsed": "AT1",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        20
+      ],
+      "flagged": false
+    },
+    "policy_term_months": {
+      "raw": "5",
+      "parsed": 5,
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    }
+  },
+  "billing": {
+    "billing_phone": {
+      "raw": "518.555.0101",
+      "parsed": "518.555.0101",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3
+      ],
+      "flagged": false
+    },
+    "returned_payment_fee": {
+      "raw": "$20.00",
+      "parsed": 20.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        33
+      ],
+      "flagged": false
+    }
+  },
+  "auto": {
+    "liability_coverages": {
+      "bodily_injury_per_person_limit": {
+        "raw": "$300,000",
+        "parsed": 300000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          15,
+          47,
+          48,
+          49
+        ],
+        "flagged": false
+      }
+    },
+    "physical_damage_coverages": {
+      "rental_reimbursement_limit": {
+        "raw": "$15",
+        "parsed": 15.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          18,
+          19
+        ],
+        "flagged": false
+      }
+    },
+    "no_fault_benefits": {
+      "optional_basic_economic_loss_limit": {
+        "raw": "$ 25,000",
+        "parsed": 25000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          21,
+          47,
+          48
+        ],
+        "flagged": false
+      },
+      "other_necessary_expenses_per_day": {
+        "raw": "(per day)",
+        "parsed": "(per day)",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          21
+        ],
+        "flagged": false
+      }
+    },
+    "attached_trailer_or_coupler": {
+      "bodily_injury_limit": {
+        "raw": "$25,000",
+        "parsed": 25000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          18,
+          47,
+          48,
+          49
+        ],
+        "flagged": false
+      }
+    },
+    "vehicles": [
+      {
+        "vin": {
+          "raw": "YS7FD38Y345022709",
+          "parsed": "YS7FD38Y345022709",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            7,
+            17
+          ],
+          "flagged": false
+        },
+        "coverages": [
+          {
+            "coverage_name": {
+              "raw": "Insurance",
+              "parsed": "Insurance",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                15,
+                17,
+                20,
+                21,
+                23,
+                24,
+                25,
+                29,
+                30,
+                31,
+                33,
+                34,
+                37,
+                39,
+                40,
+                41,
+                42,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "1",
+              "parsed": 1.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4,
+                5,
+                11,
+                12,
+                13,
+                15,
+                17,
+                19,
+                21,
+                23,
+                25,
+                27,
+                29,
+                31,
+                33,
+                34,
+                35,
+                37,
+                38,
+                39,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                49
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$250,000",
+              "parsed": 250000.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                17,
+                47,
+                48
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "Yes",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "structural"
+              },
+              "page_ref": [
+                17,
+                18,
+                21
+              ],
+              "flagged": false
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "premium": {
+    "total_policy_premium": {
+      "raw": "$934.00",
+      "parsed": 934.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        17
+      ],
+      "flagged": false
+    },
+    "subtotal_premium": {
+      "raw": "$211",
+      "parsed": 211.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        18
+      ],
+      "flagged": false
+    },
+    "motor_vehicle_law_enforcement_fee": {
+      "raw": "$15",
+      "parsed": 15.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        18,
+        19
+      ],
+      "flagged": false
+    }
+  },
+  "forms_and_endorsements": [
+    {
+      "form_number": {
+        "raw": "PL-19507",
+        "parsed": "PL-19507",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          12
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "01-25",
+        "parsed": "01-25",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          12
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "PL-19631",
+        "parsed": "PL-19631",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          44
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "05-25",
+        "parsed": "05-25",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          15,
+          44
+        ],
+        "flagged": false
+      }
+    }
+  ],
+  "claim_reporting": {
+    "claims_phone": {
+      "raw": "315.555.0183",
+      "parsed": "315.555.0183",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3,
+        4
+      ],
+      "flagged": false
+    }
+  },
+  "fideon:absent": [
+    "auto.accident_forgiveness_status",
+    "auto.additional_coverages[].aggregate_limit_amount",
+    "auto.additional_coverages[].applies_to",
+    "auto.additional_coverages[].coinsurance_percentage",
+    "auto.additional_coverages[].coverage_code",
+    "auto.additional_coverages[].coverage_description",
+    "auto.additional_coverages[].coverage_name",
+    "auto.additional_coverages[].deductible_amount",
+    "auto.additional_coverages[].deductible_basis",
+    "auto.additional_coverages[].deductible_type",
+    "auto.additional_coverages[].form_reference",
+    "auto.additional_coverages[].is_excluded",
+    "auto.additional_coverages[].is_included",
+    "auto.additional_coverages[].limit_amount",
+    "auto.additional_coverages[].limit_basis",
+    "auto.additional_coverages[].notes",
+    "auto.additional_coverages[].premium",
+    "auto.additional_coverages[].retention_amount",
+    "auto.additional_coverages[].sublimit_amount",
+    "auto.additional_coverages[].sublimit_basis",
+    "auto.additional_coverages[].valuation_basis",
+    "auto.additional_coverages[].waiting_period",
+    "auto.attached_trailer_or_coupler.collision_deductible",
+    "auto.attached_trailer_or_coupler.coupler_combination_indicator",
+    "auto.attached_trailer_or_coupler.full_glass_coverage",
+    "auto.attached_trailer_or_coupler.other_than_collision_deductible",
+    "auto.attached_trailer_or_coupler.property_damage_limit",
+    "auto.attached_trailer_or_coupler.trailer_description",
+    "auto.coverage_packages[].form_reference",
+    "auto.coverage_packages[].included_coverages[]",
+    "auto.coverage_packages[].package_name",
+    "auto.coverage_packages[].premium",
+    "auto.discounts[].amount",
+    "auto.discounts[].applies_to",
+    "auto.discounts[].discount_name",
+    "auto.discounts[].percentage",
+    "auto.drivers[].accident_prevention_course_date",
+    "auto.drivers[].age",
+    "auto.drivers[].assigned_vehicle_number",
+    "auto.drivers[].business_on_premises_indicator",
+    "auto.drivers[].change_status",
+    "auto.drivers[].date_licensed",
+    "auto.drivers[].date_of_birth",
+    "auto.drivers[].driver_class_description",
+    "auto.drivers[].driver_discounts[]",
+    "auto.drivers[].driver_number",
+    "auto.drivers[].driver_status",
+    "auto.drivers[].education_level",
+    "auto.drivers[].employment_status",
+    "auto.drivers[].excluded_driver",
+    "auto.drivers[].gender",
+    "auto.drivers[].is_named_insured",
+    "auto.drivers[].license_number",
+    "auto.drivers[].license_state",
+    "auto.drivers[].license_status",
+    "auto.drivers[].marital_status",
+    "auto.drivers[].name",
+    "auto.drivers[].non_rated_explanation",
+    "auto.drivers[].occupation",
+    "auto.drivers[].operator_type",
+    "auto.drivers[].relationship_to_insured",
+    "auto.drivers[].ssn",
+    "auto.drivers[].violations_and_accidents[].applies_to",
+    "auto.drivers[].violations_and_accidents[].date",
+    "auto.drivers[].violations_and_accidents[].description",
+    "auto.drivers[].violations_and_accidents[].dispute_indicator",
+    "auto.drivers[].violations_and_accidents[].occurrence_count",
+    "auto.drivers[].violations_and_accidents[].points",
+    "auto.drivers[].violations_and_accidents[].report_source",
+    "auto.drivers[].years_driving_experience",
+    "auto.household.household_members[].date_of_birth",
+    "auto.household.household_members[].is_excluded",
+    "auto.household.household_members[].is_rated_operator",
+    "auto.household.household_members[].name",
+    "auto.household.household_members[].relationship",
+    "auto.household.multi_car_indicator",
+    "auto.household.number_of_vehicles_in_household",
+    "auto.household.residence_ownership",
+    "auto.household.residence_type",
+    "auto.household.unlicensed_household_members_under_19_count",
+    "auto.id_cards[].agent_code",
+    "auto.id_cards[].card_type",
+    "auto.id_cards[].company_name",
+    "auto.id_cards[].effective_date",
+    "auto.id_cards[].expiration_date",
+    "auto.id_cards[].form_number",
+    "auto.id_cards[].insurer_code",
+    "auto.id_cards[].policy_number",
+    "auto.id_cards[].registrant_address.city",
+    "auto.id_cards[].registrant_address.country",
+    "auto.id_cards[].registrant_address.county",
+    "auto.id_cards[].registrant_address.line_1",
+    "auto.id_cards[].registrant_address.line_2",
+    "auto.id_cards[].registrant_address.postal_code",
+    "auto.id_cards[].registrant_address.state",
+    "auto.id_cards[].registrant_name",
+    "auto.id_cards[].vehicle_make",
+    "auto.id_cards[].vehicle_year",
+    "auto.id_cards[].vin",
+    "auto.liability_coverages.bodily_injury_per_accident_limit",
+    "auto.liability_coverages.bodily_injury_split_limits",
+    "auto.liability_coverages.combined_single_limit",
+    "auto.liability_coverages.medical_payments_limit",
+    "auto.liability_coverages.no_fault_benefits_description",
+    "auto.liability_coverages.personal_injury_protection_limit",
+    "auto.liability_coverages.personal_injury_protection_options[]",
+    "auto.liability_coverages.property_damage_limit",
+    "auto.liability_coverages.statutory_uninsured_motorist_included",
+    "auto.liability_coverages.sum_out_of_state_extension",
+    "auto.liability_coverages.supplemental_spousal_liability",
+    "auto.liability_coverages.supplemental_spousal_liability_percentage",
+    "auto.liability_coverages.supplemental_spousal_liability_premium",
+    "auto.liability_coverages.supplementary_uninsured_underinsured_limit",
+    "auto.liability_coverages.supplementary_uninsured_underinsured_per_accident_limit",
+    "auto.liability_coverages.supplementary_uninsured_underinsured_per_person_limit",
+    "auto.liability_coverages.underinsured_motorist_bodily_injury_limit",
+    "auto.liability_coverages.uninsured_motorist_bodily_injury_limit",
+    "auto.liability_coverages.uninsured_motorist_bodily_injury_per_accident_limit",
+    "auto.liability_coverages.uninsured_motorist_bodily_injury_per_person_limit",
+    "auto.liability_coverages.uninsured_motorist_deductible",
+    "auto.liability_coverages.uninsured_motorist_property_damage_limit",
+    "auto.loyalty_rewards[].reward_name",
+    "auto.no_fault_benefits.additional_death_benefits",
+    "auto.no_fault_benefits.additional_monthly_work_loss",
+    "auto.no_fault_benefits.additional_other_expenses_benefit_period",
+    "auto.no_fault_benefits.additional_other_necessary_expenses",
+    "auto.no_fault_benefits.additional_pip_limit",
+    "auto.no_fault_benefits.additional_work_loss_benefit_period",
+    "auto.no_fault_benefits.aggregate_death_benefits",
+    "auto.no_fault_benefits.aggregate_no_fault_benefits_available",
+    "auto.no_fault_benefits.aggregate_other_necessary_expenses",
+    "auto.no_fault_benefits.aggregate_work_loss",
+    "auto.no_fault_benefits.applies_to_named_insured_only",
+    "auto.no_fault_benefits.covered_persons[]",
+    "auto.no_fault_benefits.death_benefit",
+    "auto.no_fault_benefits.funeral_benefit",
+    "auto.no_fault_benefits.is_applicable",
+    "auto.no_fault_benefits.mandatory_pedestrian_pip_limit",
+    "auto.no_fault_benefits.mandatory_pip_limit",
+    "auto.no_fault_benefits.maximum_monthly_work_loss",
+    "auto.no_fault_benefits.no_fault_deductible",
+    "auto.no_fault_benefits.no_fault_state",
+    "auto.no_fault_benefits.other_expenses_benefit_period",
+    "auto.no_fault_benefits.out_of_state_pip_limit",
+    "auto.no_fault_benefits.tort_threshold_type",
+    "auto.no_fault_benefits.work_loss_benefit_period",
+    "auto.physical_damage_coverages.audio_visual_equipment_limit",
+    "auto.physical_damage_coverages.collision_deductible",
+    "auto.physical_damage_coverages.collision_premium",
+    "auto.physical_damage_coverages.comprehensive_deductible",
+    "auto.physical_damage_coverages.comprehensive_premium",
+    "auto.physical_damage_coverages.custom_equipment_limit",
+    "auto.physical_damage_coverages.excess_equipment_limit",
+    "auto.physical_damage_coverages.excess_sound_equipment_limit",
+    "auto.physical_damage_coverages.extended_non_owned_indicator",
+    "auto.physical_damage_coverages.full_glass_coverage",
+    "auto.physical_damage_coverages.full_glass_deductible",
+    "auto.physical_damage_coverages.gap_coverage",
+    "auto.physical_damage_coverages.guaranteed_value_indicator",
+    "auto.physical_damage_coverages.media_equipment_limit",
+    "auto.physical_damage_coverages.new_car_replacement_indicator",
+    "auto.physical_damage_coverages.oem_parts_indicator",
+    "auto.physical_damage_coverages.personal_articles_coverage_limit",
+    "auto.physical_damage_coverages.pet_injury_coverage_limit",
+    "auto.physical_damage_coverages.rental_reimbursement_daily_maximum",
+    "auto.physical_damage_coverages.rental_reimbursement_maximum_days",
+    "auto.physical_damage_coverages.rental_vehicle_coverage_premium_charge_indicator",
+    "auto.physical_damage_coverages.roadside_assistance_limit",
+    "auto.physical_damage_coverages.roadside_towing_distance_limit",
+    "auto.physical_damage_coverages.spare_parts_limit",
+    "auto.physical_damage_coverages.substitute_transportation_daily_limit",
+    "auto.physical_damage_coverages.substitute_transportation_limit",
+    "auto.physical_damage_coverages.substitute_transportation_maximum_limit",
+    "auto.physical_damage_coverages.towing_and_labor_limit",
+    "auto.physical_damage_coverages.transportation_expenses_daily_limit",
+    "auto.physical_damage_coverages.transportation_expenses_limit",
+    "auto.physical_damage_coverages.transportation_expenses_maximum_limit",
+    "auto.physical_damage_coverages.trip_interruption_limit",
+    "auto.physical_damage_coverages.valuation_basis",
+    "auto.travel_package.package_name",
+    "auto.travel_package.roadside_assistance_limit",
+    "auto.travel_package.towing_and_labor_limit",
+    "auto.travel_package.transportation_expenses_limit",
+    "auto.travel_package.trip_interruption_limit",
+    "auto.vehicles[].actual_cash_value",
+    "auto.vehicles[].annual_mileage",
+    "auto.vehicles[].applicable_coverage_codes[]",
+    "auto.vehicles[].body_type",
+    "auto.vehicles[].change_status",
+    "auto.vehicles[].class_code",
+    "auto.vehicles[].class_code_components.gender_class",
+    "auto.vehicles[].class_code_components.marital_status_class",
+    "auto.vehicles[].class_code_components.operator_age_class",
+    "auto.vehicles[].class_code_components.operator_status_class",
+    "auto.vehicles[].class_code_components.safe_driver_class",
+    "auto.vehicles[].class_code_components.vehicle_use_class",
+    "auto.vehicles[].class_code_components.years_licensed_class",
+    "auto.vehicles[].cost_new",
+    "auto.vehicles[].coverage_rating_symbols[].coverage_type",
+    "auto.vehicles[].coverage_rating_symbols[].symbol",
+    "auto.vehicles[].coverages[].aggregate_limit_amount",
+    "auto.vehicles[].coverages[].applies_to",
+    "auto.vehicles[].coverages[].coinsurance_percentage",
+    "auto.vehicles[].coverages[].coverage_code",
+    "auto.vehicles[].coverages[].coverage_description",
+    "auto.vehicles[].coverages[].deductible_amount",
+    "auto.vehicles[].coverages[].deductible_basis",
+    "auto.vehicles[].coverages[].deductible_type",
+    "auto.vehicles[].coverages[].form_reference",
+    "auto.vehicles[].coverages[].is_excluded",
+    "auto.vehicles[].coverages[].limit_basis",
+    "auto.vehicles[].coverages[].notes",
+    "auto.vehicles[].coverages[].retention_amount",
+    "auto.vehicles[].coverages[].sublimit_amount",
+    "auto.vehicles[].coverages[].sublimit_basis",
+    "auto.vehicles[].coverages[].valuation_basis",
+    "auto.vehicles[].coverages[].waiting_period",
+    "auto.vehicles[].days_per_week_driven",
+    "auto.vehicles[].engine_displacement",
+    "auto.vehicles[].exception_driver_name",
+    "auto.vehicles[].garaging_address.city",
+    "auto.vehicles[].garaging_address.country",
+    "auto.vehicles[].garaging_address.county",
+    "auto.vehicles[].garaging_address.line_1",
+    "auto.vehicles[].garaging_address.line_2",
+    "auto.vehicles[].garaging_address.postal_code",
+    "auto.vehicles[].garaging_address.state",
+    "auto.vehicles[].garaging_territory",
+    "auto.vehicles[].garaging_type",
+    "auto.vehicles[].joint_ownership_indicator",
+    "auto.vehicles[].license_plate_number",
+    "auto.vehicles[].lienholder.address.city",
+    "auto.vehicles[].lienholder.address.country",
+    "auto.vehicles[].lienholder.address.county",
+    "auto.vehicles[].lienholder.address.line_1",
+    "auto.vehicles[].lienholder.address.line_2",
+    "auto.vehicles[].lienholder.address.postal_code",
+    "auto.vehicles[].lienholder.address.state",
+    "auto.vehicles[].lienholder.applies_to",
+    "auto.vehicles[].lienholder.clause_type",
+    "auto.vehicles[].lienholder.description_of_interest",
+    "auto.vehicles[].lienholder.form_reference",
+    "auto.vehicles[].lienholder.loan_number",
+    "auto.vehicles[].lienholder.name",
+    "auto.vehicles[].lienholder.party_type",
+    "auto.vehicles[].lienholder.rank",
+    "auto.vehicles[].lienholder.status",
+    "auto.vehicles[].low_speed_vehicle_indicator",
+    "auto.vehicles[].make",
+    "auto.vehicles[].miles_per_day",
+    "auto.vehicles[].model",
+    "auto.vehicles[].motor_vehicle_law_enforcement_fee",
+    "auto.vehicles[].new_or_used_indicator",
+    "auto.vehicles[].odometer_reading",
+    "auto.vehicles[].optional_coverages_premium",
+    "auto.vehicles[].premium",
+    "auto.vehicles[].principal_driver_name",
+    "auto.vehicles[].purchase_date",
+    "auto.vehicles[].rated_driver_name",
+    "auto.vehicles[].rating_band",
+    "auto.vehicles[].rating_tier",
+    "auto.vehicles[].registered_to_name",
+    "auto.vehicles[].stated_amount",
+    "auto.vehicles[].symbol_or_class_code",
+    "auto.vehicles[].total_discount_amount",
+    "auto.vehicles[].total_loss_settlement_basis",
+    "auto.vehicles[].unit_description",
+    "auto.vehicles[].vehicle_category",
+    "auto.vehicles[].vehicle_number",
+    "auto.vehicles[].vehicle_use",
+    "auto.vehicles[].year",
+    "billing.amount_due",
+    "billing.bill_plan_options[].late_charge",
+    "billing.bill_plan_options[].monthly_installment_fee",
+    "billing.bill_plan_options[].pay_in_full_fee",
+    "billing.bill_plan_options[].payment_method",
+    "billing.bill_status",
+    "billing.bill_to_party",
+    "billing.billing_plan",
+    "billing.due_date",
+    "billing.installment_fee",
+    "billing.installment_plan_total_cost",
+    "billing.installments[].amount",
+    "billing.installments[].due_date",
+    "billing.installments[].installment_fee",
+    "billing.installments[].installment_number",
+    "billing.late_charge",
+    "billing.paperless_delivery_indicator",
+    "billing.pay_in_full_savings_amount",
+    "billing.payment_frequency",
+    "billing.payment_method",
+    "billing.payment_plan",
+    "billing.preferred_due_day",
+    "billing.remittance_address.city",
+    "billing.remittance_address.country",
+    "billing.remittance_address.county",
+    "billing.remittance_address.line_1",
+    "billing.remittance_address.line_2",
+    "billing.remittance_address.postal_code",
+    "billing.remittance_address.state",
+    "billing.remittance_payable_to",
+    "billing.scan_line",
+    "carrier.address.city",
+    "carrier.address.country",
+    "carrier.address.county",
+    "carrier.address.county_code",
+    "carrier.address.line_1",
+    "carrier.address.line_2",
+    "carrier.address.postal_code",
+    "carrier.address.state",
+    "carrier.company_structure",
+    "carrier.contact.email",
+    "carrier.contact.fax",
+    "carrier.contact.phone",
+    "carrier.fein",
+    "carrier.group_name",
+    "carrier.is_surplus_lines",
+    "carrier.naic_number",
+    "carrier.ny_dmv_insurer_code",
+    "carrier.state_of_issue",
+    "carrier.surplus_lines_broker_name",
+    "carrier.surplus_lines_license_number",
+    "carrier.writing_company_name",
+    "claim_reporting.claim_reporting_instructions",
+    "claim_reporting.claims_address.city",
+    "claim_reporting.claims_address.country",
+    "claim_reporting.claims_address.county",
+    "claim_reporting.claims_address.county_code",
+    "claim_reporting.claims_address.line_1",
+    "claim_reporting.claims_address.line_2",
+    "claim_reporting.claims_address.postal_code",
+    "claim_reporting.claims_address.state",
+    "claim_reporting.claims_email",
+    "claim_reporting.claims_notice_recipient",
+    "claim_reporting.roadside_assistance_phone",
+    "deductibles[].amount",
+    "deductibles[].applies_to",
+    "deductibles[].deductible_type",
+    "deductibles[].maximum_amount",
+    "deductibles[].minimum_amount",
+    "deductibles[].notes",
+    "deductibles[].percentage",
+    "deductibles[].percentage_basis",
+    "deductibles[].waiting_period",
+    "document.additional_information",
+    "document.applicable_coverages[]",
+    "document.batch_number",
+    "document.copy_type",
+    "document.coverage_parts_present[]",
+    "document.delivery_method",
+    "document.disclaimer",
+    "document.download_tracking_number",
+    "document.language",
+    "document.print_time",
+    "document.remarks",
+    "document.source_carrier_folder",
+    "document.source_system",
+    "document.transaction_date",
+    "document.transaction_effective_date",
+    "document.transaction_expiration_date",
+    "document.transaction_number",
+    "document.transaction_reason",
+    "document.transaction_type",
+    "forms_and_endorsements[].applies_to",
+    "forms_and_endorsements[].deductible_amount",
+    "forms_and_endorsements[].form_group",
+    "forms_and_endorsements[].form_title",
+    "forms_and_endorsements[].form_type",
+    "forms_and_endorsements[].group_premium",
+    "forms_and_endorsements[].is_included",
+    "forms_and_endorsements[].is_mandatory",
+    "forms_and_endorsements[].limit_amount",
+    "forms_and_endorsements[].premium",
+    "interested_parties[].address.city",
+    "interested_parties[].address.country",
+    "interested_parties[].address.county",
+    "interested_parties[].address.county_code",
+    "interested_parties[].address.line_1",
+    "interested_parties[].address.line_2",
+    "interested_parties[].address.postal_code",
+    "interested_parties[].address.state",
+    "interested_parties[].applies_to",
+    "interested_parties[].clause_type",
+    "interested_parties[].description_of_interest",
+    "interested_parties[].is_payor",
+    "interested_parties[].loan_number",
+    "interested_parties[].name",
+    "interested_parties[].party_type",
+    "interested_parties[].rank",
+    "interested_parties[].status",
+    "locations[].address.city",
+    "locations[].address.country",
+    "locations[].address.county",
+    "locations[].address.county_code",
+    "locations[].address.line_1",
+    "locations[].address.line_2",
+    "locations[].address.postal_code",
+    "locations[].address.state",
+    "locations[].alarm_type",
+    "locations[].building_description",
+    "locations[].building_number",
+    "locations[].business_description",
+    "locations[].construction_type",
+    "locations[].coverages[].aggregate_limit_amount",
+    "locations[].coverages[].applies_to",
+    "locations[].coverages[].coinsurance_percentage",
+    "locations[].coverages[].coverage_code",
+    "locations[].coverages[].coverage_description",
+    "locations[].coverages[].coverage_name",
+    "locations[].coverages[].deductible_amount",
+    "locations[].coverages[].deductible_basis",
+    "locations[].coverages[].deductible_type",
+    "locations[].coverages[].form_reference",
+    "locations[].coverages[].is_excluded",
+    "locations[].coverages[].is_included",
+    "locations[].coverages[].limit_amount",
+    "locations[].coverages[].limit_basis",
+    "locations[].coverages[].notes",
+    "locations[].coverages[].premium",
+    "locations[].coverages[].retention_amount",
+    "locations[].coverages[].sublimit_amount",
+    "locations[].coverages[].sublimit_basis",
+    "locations[].coverages[].valuation_basis",
+    "locations[].coverages[].waiting_period",
+    "locations[].interest",
+    "locations[].legal_description",
+    "locations[].location_number",
+    "locations[].number_of_stories",
+    "locations[].occupancy_description",
+    "locations[].protection_class",
+    "locations[].sprinklered",
+    "locations[].square_footage",
+    "locations[].territory_code",
+    "locations[].year_built",
+    "loss_history[].category",
+    "loss_history[].claim_number",
+    "loss_history[].description",
+    "loss_history[].dispute_indicator",
+    "loss_history[].loss_date",
+    "loss_history[].loss_from",
+    "loss_history[].occurrence_count",
+    "loss_history[].paid_amount",
+    "loss_history[].points",
+    "loss_history[].reserved_amount",
+    "loss_history[].status",
+    "named_insured.additional_named_insureds[].address.city",
+    "named_insured.additional_named_insureds[].address.country",
+    "named_insured.additional_named_insureds[].address.county",
+    "named_insured.additional_named_insureds[].address.county_code",
+    "named_insured.additional_named_insureds[].address.line_1",
+    "named_insured.additional_named_insureds[].address.line_2",
+    "named_insured.additional_named_insureds[].address.postal_code",
+    "named_insured.additional_named_insureds[].address.state",
+    "named_insured.additional_named_insureds[].date_of_birth",
+    "named_insured.additional_named_insureds[].effective_date",
+    "named_insured.additional_named_insureds[].gender",
+    "named_insured.additional_named_insureds[].marital_status",
+    "named_insured.additional_named_insureds[].occupation",
+    "named_insured.additional_named_insureds[].relationship",
+    "named_insured.business_description",
+    "named_insured.contact.email",
+    "named_insured.contact.fax",
+    "named_insured.contact.phone",
+    "named_insured.contact.website",
+    "named_insured.contacts[].contact_name",
+    "named_insured.contacts[].contact_type",
+    "named_insured.contacts[].contact_value",
+    "named_insured.date_of_birth",
+    "named_insured.doing_business_as",
+    "named_insured.fein",
+    "named_insured.gender",
+    "named_insured.insurance_score.coded_score",
+    "named_insured.insurance_score.ordered_date",
+    "named_insured.insurance_score.report_type",
+    "named_insured.insurance_score.report_vendor",
+    "named_insured.mailing_address.city",
+    "named_insured.mailing_address.country",
+    "named_insured.mailing_address.county",
+    "named_insured.mailing_address.county_code",
+    "named_insured.mailing_address.line_1",
+    "named_insured.mailing_address.line_2",
+    "named_insured.mailing_address.postal_code",
+    "named_insured.mailing_address.state",
+    "named_insured.marital_status",
+    "named_insured.naics_code",
+    "named_insured.occupation",
+    "named_insured.physical_address.city",
+    "named_insured.physical_address.country",
+    "named_insured.physical_address.county",
+    "named_insured.physical_address.county_code",
+    "named_insured.physical_address.line_1",
+    "named_insured.physical_address.line_2",
+    "named_insured.physical_address.postal_code",
+    "named_insured.physical_address.state",
+    "named_insured.sic_code",
+    "named_insured.third_party_designee.address.city",
+    "named_insured.third_party_designee.address.country",
+    "named_insured.third_party_designee.address.county",
+    "named_insured.third_party_designee.address.line_1",
+    "named_insured.third_party_designee.address.line_2",
+    "named_insured.third_party_designee.address.postal_code",
+    "named_insured.third_party_designee.address.state",
+    "named_insured.third_party_designee.designation_type",
+    "named_insured.third_party_designee.name",
+    "named_insured.third_party_designee.status",
+    "named_insured.years_in_business",
+    "policy.account_type",
+    "policy.alternate_policy_identifiers[].identifier_type",
+    "policy.alternate_policy_identifiers[].identifier_value",
+    "policy.anniversary_date",
+    "policy.audit_frequency",
+    "policy.cancellation_date",
+    "policy.cancellation_reason",
+    "policy.certificate_number",
+    "policy.effective_time",
+    "policy.expiration_time",
+    "policy.final_market_type",
+    "policy.is_assessable",
+    "policy.is_renewal",
+    "policy.minimum_earned_premium_percentage",
+    "policy.nonrenewal_notice_date",
+    "policy.original_inception_date",
+    "policy.plan_type",
+    "policy.policy_form_edition",
+    "policy.policy_form_name",
+    "policy.policy_form_number",
+    "policy.policy_type",
+    "policy.policyholder_since_date",
+    "policy.program_name",
+    "policy.purchase_date",
+    "policy.purchase_time",
+    "policy.quote_number",
+    "policy.rating_tier",
+    "policy.renewal_of_policy_number",
+    "policy.state_of_issue",
+    "policy.time_zone",
+    "policy.underwriting_exceptions[].exception_type",
+    "policy.underwriting_exceptions[].level",
+    "policy.underwriting_exceptions[].original_value",
+    "policy.underwriting_exceptions[].overridden_value",
+    "premium.additional_insured_processing_fee",
+    "premium.additional_premium",
+    "premium.administrative_fee",
+    "premium.basic_premium",
+    "premium.deposit_premium",
+    "premium.discounts_and_credits[].amount",
+    "premium.discounts_and_credits[].applies_to",
+    "premium.discounts_and_credits[].description",
+    "premium.discounts_and_credits[].edition_date",
+    "premium.discounts_and_credits[].form_reference",
+    "premium.discounts_and_credits[].is_applied",
+    "premium.discounts_and_credits[].percentage",
+    "premium.estimated_annual_premium",
+    "premium.exposure_amount",
+    "premium.fire_fee",
+    "premium.forms_and_endorsements_premium",
+    "premium.guaranty_association_surcharge",
+    "premium.inspection_fee",
+    "premium.minimum_premium",
+    "premium.paid_in_full_total_premium",
+    "premium.policy_fee",
+    "premium.premium_by_coverage_part[].coverage_part",
+    "premium.premium_by_coverage_part[].premium",
+    "premium.prorated_premium_amount",
+    "premium.rate_per_unit",
+    "premium.rating_basis",
+    "premium.return_premium",
+    "premium.service_fee",
+    "premium.stamping_fee",
+    "premium.surcharges[].amount",
+    "premium.surcharges[].applies_to",
+    "premium.surcharges[].description",
+    "premium.surcharges[].edition_date",
+    "premium.surcharges[].form_reference",
+    "premium.surcharges[].percentage",
+    "premium.surplus_lines_tax",
+    "premium.taxes_and_fees[].amount",
+    "premium.taxes_and_fees[].applies_to",
+    "premium.taxes_and_fees[].description",
+    "premium.taxes_and_fees[].is_fully_earned",
+    "premium.total_discount_savings_amount",
+    "premium.total_surcharge_amount",
+    "premium.transaction_premium_change_amount",
+    "producer.address.country",
+    "producer.address.county",
+    "producer.address.county_code",
+    "producer.address.line_1",
+    "producer.address.line_2",
+    "producer.commission_percentage",
+    "producer.contact.email",
+    "producer.contact.fax",
+    "producer.contact.website",
+    "producer.license_number",
+    "producer.producer_code",
+    "producer.producer_contact_name",
+    "producer.territory",
+    "signature.authorized_representative_name",
+    "signature.countersignature_date",
+    "signature.countersignature_state",
+    "signature.designee_signature",
+    "signature.named_insured_printed_name",
+    "signature.named_insured_signature",
+    "signature.officer_signatories[].name",
+    "signature.officer_signatories[].title",
+    "signature.signature_date",
+    "signature.title",
+    "state_notices[].form_reference",
+    "state_notices[].notice_title",
+    "state_notices[].state",
+    "terrorism.catastrophe_terrorism_premium",
+    "terrorism.certified_acts_limit",
+    "terrorism.disclosure_form_number",
+    "terrorism.federal_share_percentage",
+    "terrorism.program_cap_disclosure",
+    "terrorism.terrorism_disposition",
+    "terrorism.terrorism_exclusion_form_number",
+    "terrorism.terrorism_premium",
+    "terrorism.terrorism_rate",
+    "terrorism.terrorism_rejection_date",
+    "terrorism.terrorism_rejection_indicator",
+    "terrorism.tria_coverage_elected"
+  ],
+  "fideon:unmapped": [
+    {
+      "kind": "cityline",
+      "label": "ROBERT A JR QUEEN &KATHERINEHUMPPHREOY BOX 25E2",
+      "value": "GLENS FALLS NY 12801",
+      "page": 1,
+      "page_ref": [
+        3,
+        7,
+        9,
+        17
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "STABLE ROCK INS AGENCY",
+      "value": "462 ELDERBERRY LN",
+      "page": 3,
+      "page_ref": [
+        1,
+        3,
+        17
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "Policy questions orchanges",
+      "value": "845.555.0193",
+      "page": 3,
+      "page_ref": [
+        3
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "",
+      "value": "PL-29646R",
+      "page": 3,
+      "page_ref": [
+        3
+      ]
+    },
+    {
+      "kind": "digits",
+      "label": "",
+      "value": "1131626106248",
+      "page": 4,
+      "page_ref": [
+        4
+      ]
+    },
+    {
+      "kind": "digits",
+      "label": "",
+      "value": "428881294 527 8",
+      "page": 4,
+      "page_ref": [
+        4,
+        21
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "",
+      "value": "PL-52925",
+      "page": 5,
+      "page_ref": [
+        5,
+        6
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "",
+      "value": "PL-52925",
+      "page": 6,
+      "page_ref": [
+        5,
+        6
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "",
+      "value": "00065F8711AHE",
+      "page": 7,
+      "page_ref": [
+        1,
+        3,
+        5,
+        7,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31,
+        33,
+        35,
+        37,
+        39,
+        41,
+        43,
+        45,
+        49
+      ]
+    },
+    {
+      "kind": "digits",
+      "label": "Policy Number:",
+      "value": "6985875682334",
+      "page": 7,
+      "page_ref": [
+        7,
+        20
+      ]
+    },
+    {
+      "kind": "digits",
+      "label": "Policy Number:",
+      "value": "6985875682334",
+      "page": 7,
+      "page_ref": [
+        7,
+        20
+      ]
+    },
+    {
+      "kind": "date",
+      "label": "ExpirationDate",
+      "value": "08/27/2026",
+      "page": 7,
+      "page_ref": [
+        7,
+        9
+      ]
+    },
+    {
+      "kind": "date",
+      "label": "TRAVELERSPROPERTYCASUALTYCOMPANYOF AMERICA 09/26/2026 TRAVELERSPROPERTYCASUALTYCOMPANYOF AMERICA 09/26/2026",
+      "value": "08/27/2026",
+      "page": 7,
+      "page_ref": [
+        7,
+        9
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "HUMPHREY,KATHERINE",
+      "value": "2J2BA1H43BL643485",
+      "page": 7,
+      "page_ref": [
+        7,
+        17
+      ]
+    },
+    {
+      "kind": "pobox",
+      "label": "HUMPHREY,KATHERINE",
+      "value": "PO BOX 534",
+      "page": 7,
+      "page_ref": [
+        3,
+        7,
+        9,
+        17
+      ]
+    },
+    {
+      "kind": "pobox",
+      "label": "VehicleIdentificationNumber",
+      "value": "PO BOX 534",
+      "page": 7,
+      "page_ref": [
+        3,
+        7,
+        9,
+        17
+      ]
+    },
+    {
+      "kind": "digits",
+      "label": "Policy Number:",
+      "value": "698587568233 4",
+      "page": 7,
+      "page_ref": [
+        7,
+        9
+      ]
+    },
+    {
+      "kind": "digits",
+      "label": "Policy Number:",
+      "value": "698587568233 4",
+      "page": 7,
+      "page_ref": [
+        7,
+        9
+      ]
+    },
+    {
+      "kind": "date",
+      "label": "Expiration，Date:",
+      "value": "08/27/2026",
+      "page": 7,
+      "page_ref": [
+        7,
+        9
+      ]
+    },
+    {
+      "kind": "date",
+      "label": "ExpirationDate:",
+      "value": "08/27/2026",
+      "page": 7,
+      "page_ref": [
+        7,
+        9
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "HUMPHREY,KATHERINE",
+      "value": "2J2BA1H43BL643485",
+      "page": 7,
+      "page_ref": [
+        7,
+        17
+      ]
+    },
+    {
+      "kind": "pobox",
+      "label": "HUMPHREY,KATHERINE",
+      "value": "PO BOX 534",
+      "page": 7,
+      "page_ref": [
+        3,
+        7,
+        9,
+        17
+      ]
+    },
+    {
+      "kind": "pobox",
+      "label": "VehicleIdentificationNumber",
+      "value": "PO BOX 534",
+      "page": 7,
+      "page_ref": [
+        3,
+        7,
+        9,
+        17
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "￥CallTravelersimmediatelytoreporttheaccidentorclaimat",
+      "value": "716-555-0141",
+      "page": 8,
+      "page_ref": [
+        8,
+        10
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "￥CallTravelersimmediatelytoreporttheaccidentorclaimat",
+      "value": "716-555-0141",
+      "page": 8,
+      "page_ref": [
+        8,
+        10
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "TOGETROADSIDEASSISTANCECALLTOLLFREE1-",
+      "value": "716-555-0141",
+      "page": 8,
+      "page_ref": [
+        8,
+        10
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "TOGETROADSIDEASSISTANCECALLTOLLFREE1-",
+      "value": "716-555-0141",
+      "page": 8,
+      "page_ref": [
+        8,
+        10
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "We will payup to",
+      "value": "$250",
+      "page": 8,
+      "page_ref": [
+        10,
+        17,
+        40,
+        47,
+        48
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "We will pay up to",
+      "value": "$250",
+      "page": 8,
+      "page_ref": [
+        10,
+        17,
+        40,
+        47,
+        48
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "￥CallTravelersimmediatelytoreporttheaccidentorclaimat",
+      "value": "716-555-0141",
+      "page": 8,
+      "page_ref": [
+        8,
+        10
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "￥Call Travelersimmediatelytoreporttheaccidentorclaimat",
+      "value": "716-555-0141",
+      "page": 8,
+      "page_ref": [
+        8,
+        10
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "TOGETROADSIDEASSISTANCECALLTOLLFREE1-",
+      "value": "716-555-0141",
+      "page": 8,
+      "page_ref": [
+        8,
+        10
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "TOGETROADSIDEASSISTANCECALLTOLLFREE1-",
+      "value": "716-555-0141",
+      "page": 8,
+      "page_ref": [
+        8,
+        10
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "We will pay up to",
+      "value": "$250",
+      "page": 8,
+      "page_ref": [
+        10,
+        17,
+        40,
+        47,
+        48
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "We will pay up to",
+      "value": "$250",
+      "page": 8,
+      "page_ref": [
+        10,
+        17,
+        40,
+        47,
+        48
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "",
+      "value": "00091F3171AHE322641",
+      "page": 9,
+      "page_ref": [
+        9,
+        47
+      ]
+    },
+    {
+      "kind": "digits",
+      "label": "Policy Number:",
+      "value": "698587568233 4",
+      "page": 9,
+      "page_ref": [
+        7,
+        9
+      ]
+    },
+    {
+      "kind": "date",
+      "label": "ExpirationDate:",
+      "value": "08/27/2026",
+      "page": 9,
+      "page_ref": [
+        7,
+        9
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "HUMPHREY,KATHERINE",
+      "value": "5C5HJTFG4LL284910",
+      "page": 9,
+      "page_ref": [
+        9
+      ]
+    },
+    {
+      "kind": "digits",
+      "label": "Policy Number:",
+      "value": "698587568233 4",
+      "page": 9,
+      "page_ref": [
+        7,
+        9
+      ]
+    },
+    {
+      "kind": "date",
+      "label": "ExpirationDate",
+      "value": "08/27/2026",
+      "page": 9,
+      "page_ref": [
+        7,
+        9
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "HUMPHREY,KATHERINE",
+      "value": "5C5HJTFG4LL284910",
+      "page": 9,
+      "page_ref": [
+        9
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "￥CallTravelersimmediatelytoreport theaccident orclaimat",
+      "value": "716-555-0141",
+      "page": 10,
+      "page_ref": [
+        8,
+        10
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "TOGETROADSIDEASSISTANCECALLTOLLFREE1-",
+      "value": "716-555-0141",
+      "page": 10,
+      "page_ref": [
+        8,
+        10
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "We will pay up to",
+      "value": "$250",
+      "page": 10,
+      "page_ref": [
+        10,
+        17,
+        40,
+        47,
+        48
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "￥Call Travelers immediately to report the accident or claim at",
+      "value": "716-555-0141",
+      "page": 10,
+      "page_ref": [
+        8,
+        10
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "TOGETROADSIDEASSISTANCECALLTOLLFREE1-",
+      "value": "716-555-0141",
+      "page": 10,
+      "page_ref": [
+        8,
+        10
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "We will pay up to",
+      "value": "$250",
+      "page": 10,
+      "page_ref": [
+        10,
+        17,
+        40,
+        47,
+        48
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "shared vehicle by a shared vehicle driver.",
+      "value": "Adelaide Larkspur",
+      "page": 12,
+      "page_ref": [
+        12,
+        15,
+        35
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "PO Box 2906",
+      "value": "Saranac Lake, NY 12983",
+      "page": 13,
+      "page_ref": [
+        7,
+        9,
+        13,
+        31
+      ]
+    },
+    {
+      "kind": "pobox",
+      "label": "Travelers",
+      "value": "PO Box 592",
+      "page": 13,
+      "page_ref": [
+        7,
+        9,
+        13,
+        31,
+        44
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Insured's bodily injury policy coverage limit:",
+      "value": "$100,000",
+      "page": 15,
+      "page_ref": [
+        15,
+        17,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Insured's bodily injury damage claim paid to spouse:",
+      "value": "$75,000",
+      "page": 15,
+      "page_ref": [
+        15,
+        48
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "maximum of",
+      "value": "$100,000",
+      "page": 15,
+      "page_ref": [
+        15,
+        17,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "per person:",
+      "value": "$225,000",
+      "page": 15,
+      "page_ref": [
+        15,
+        47
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "",
+      "value": "PL-45838",
+      "page": 15,
+      "page_ref": [
+        15
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "Insured's bodily injury policy coverage limit available to",
+      "value": "adelaide larkspur",
+      "page": 15,
+      "page_ref": [
+        12,
+        15,
+        35
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "STABLE ROCK INS AGENCY",
+      "value": "462 ELDERBERRY LN",
+      "page": 17,
+      "page_ref": [
+        1,
+        3,
+        17
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "159 NY 28",
+      "value": "SARANAC LAKE NY 12983",
+      "page": 17,
+      "page_ref": [
+        3,
+        17
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "For Claim Service Call",
+      "value": "4-293-CLAIM86",
+      "page": 17,
+      "page_ref": [
+        3,
+        17
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "JEEP WRANGLER U",
+      "value": "2J2BA1H43BL643485",
+      "page": 17,
+      "page_ref": [
+        7,
+        17
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "1J4BA5H10BL587070",
+      "value": "8C3HITFG8LL406222",
+      "page": 17,
+      "page_ref": [
+        17
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "each person",
+      "value": "$500,000",
+      "page": 17,
+      "page_ref": [
+        17,
+        47
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "Endorsement",
+      "value": "A75463",
+      "page": 17,
+      "page_ref": [
+        17,
+        20
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Actual",
+      "value": "$500",
+      "page": 17,
+      "page_ref": [
+        17,
+        18,
+        39,
+        41,
+        42,
+        43,
+        47
+      ]
+    },
+    {
+      "kind": "pobox",
+      "label": "Marguerite Everly",
+      "value": "PO BOX 534",
+      "page": 17,
+      "page_ref": [
+        3,
+        7,
+        9,
+        17
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Actual Cash Value less - - 81",
+      "value": "$500",
+      "page": 18,
+      "page_ref": [
+        17,
+        18,
+        39,
+        41,
+        42,
+        43,
+        47
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "per day/",
+      "value": "$450",
+      "page": 18,
+      "page_ref": [
+        18
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Injury Protection",
+      "value": "$50,000",
+      "page": 18,
+      "page_ref": [
+        18,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "See Endorsement",
+      "value": "A98420",
+      "page": 18,
+      "page_ref": [
+        18,
+        20
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Injury Protection",
+      "value": "$50,000",
+      "page": 18,
+      "page_ref": [
+        18,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "See Endorsement",
+      "value": "A44677",
+      "page": 18,
+      "page_ref": [
+        18,
+        20
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "See Endorsement",
+      "value": "A59242",
+      "page": 18,
+      "page_ref": [
+        18,
+        20
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "",
+      "value": "$248",
+      "page": 18,
+      "page_ref": [
+        18
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "",
+      "value": "$460",
+      "page": 18,
+      "page_ref": [
+        18
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Mandatory New York Law Enforcement Fee $15",
+      "value": "$5.00",
+      "page": 18,
+      "page_ref": [
+        18,
+        19
+      ]
+    },
+    {
+      "kind": "digits",
+      "label": "Policy Number:",
+      "value": "929993812 707",
+      "page": 19,
+      "page_ref": [
+        19
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Discounts Included in Your Premium",
+      "value": "$15.00",
+      "page": 19,
+      "page_ref": [
+        19
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "",
+      "value": "$30.00",
+      "page": 19,
+      "page_ref": [
+        19
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "",
+      "value": "$40.00",
+      "page": 19,
+      "page_ref": [
+        19
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "",
+      "value": "$174.00",
+      "page": 19,
+      "page_ref": [
+        19
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "$174.00 Multiple Cars",
+      "value": "$5.00",
+      "page": 19,
+      "page_ref": [
+        18,
+        19
+      ]
+    },
+    {
+      "kind": "zip",
+      "label": "CT",
+      "value": "04921",
+      "page": 19,
+      "page_ref": [
+        19,
+        20
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "Continued on next page",
+      "value": "PL-55827-97",
+      "page": 19,
+      "page_ref": [
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "",
+      "value": "WALDEMAR RAVENSDALE",
+      "page": 19,
+      "page_ref": [
+        19
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "Policy Endorsements",
+      "value": "A75463",
+      "page": 20,
+      "page_ref": [
+        17,
+        20
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "A31045 Supplementary Uninsured/Underinsured Motorists Endorsement New York",
+      "value": "A44677",
+      "page": 20,
+      "page_ref": [
+        18,
+        20
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "44033 Rental Vehicle Coverage Endorsement - New York",
+      "value": "A59242",
+      "page": 20,
+      "page_ref": [
+        18,
+        20
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "A31450 Roadside Assistance Coverage - New York",
+      "value": "A98420",
+      "page": 20,
+      "page_ref": [
+        18,
+        20
+      ]
+    },
+    {
+      "kind": "digits",
+      "label": "www.travelers.com/discounts. Once at the website, type in your policy number",
+      "value": "6985875682334",
+      "page": 20,
+      "page_ref": [
+        7,
+        20
+      ]
+    },
+    {
+      "kind": "zip",
+      "label": "from Marketing at One Tower Square, 2GSA, Hartford, Connecticut",
+      "value": "04921",
+      "page": 20,
+      "page_ref": [
+        19,
+        20
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Available",
+      "value": "$125,000",
+      "page": 21,
+      "page_ref": [
+        21,
+        48
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "like",
+      "value": "Utica, NY 13501",
+      "page": 21,
+      "page_ref": [
+        21,
+        25
+      ]
+    },
+    {
+      "kind": "digits",
+      "label": "Marguerite Everly & Marguerite Prentice",
+      "value": "428881294 527 8",
+      "page": 21,
+      "page_ref": [
+        4,
+        21
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "",
+      "value": "PL-79545",
+      "page": 23,
+      "page_ref": [
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "",
+      "value": "PL-79545",
+      "page": 24,
+      "page_ref": [
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "",
+      "value": "PL-79545",
+      "page": 25,
+      "page_ref": [
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "please write to: Travelers, One Tower Square,",
+      "value": "Utica, NY 13501",
+      "page": 25,
+      "page_ref": [
+        21,
+        25
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "",
+      "value": "PL-73640",
+      "page": 27,
+      "page_ref": [
+        27
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "5 If your policy provides Physical Damage coverage, a",
+      "value": "$200",
+      "page": 29,
+      "page_ref": [
+        29,
+        48
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "You may purchase a deductible option other than the",
+      "value": "$200",
+      "page": 29,
+      "page_ref": [
+        29,
+        48
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "",
+      "value": "PL-6568",
+      "page": 29,
+      "page_ref": [
+        29
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "Vehicles approved courses available to the general",
+      "value": "497 Sawkill Rd",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "New York, NY",
+      "value": "(315) 555-0138",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "American Association of Retired Persons (AARP)",
+      "value": "Rome, NY 13440",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "zip",
+      "label": "Syracuse,",
+      "value": "79268-6002",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "7803 3rd Ave., 33rd Floor. NY",
+      "value": "(716) 555-0195",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "New York, NY 10017-2024",
+      "value": "(607) 555-0136",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "AAA Driver Improvement Program",
+      "value": "982 Sawkill Rd",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "AAA Driver Improvement Program",
+      "value": "2458 Susquehanna Terrace",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "1415 Kellum Place",
+      "value": "Kingston, NY 12401",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "Staten Island, NY",
+      "value": "(716) 555-0187",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "I Drive Safely",
+      "value": "6343 Cobbler Hill Rd",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "Reduction Course, Inc.",
+      "value": "860 Cranberry Bog Rd",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "2455 Central Park Avenue",
+      "value": "Geneva, NY 14456",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "304 Park Ave. So., 11th Floor",
+      "value": "Watertown, NY 13601",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "Yonkers, NY 10710",
+      "value": "(518) 555-0125",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "New Yok, NY 10010",
+      "value": "(607) 555-0195",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "New York Safety Program, Inc.",
+      "value": "6854 Elderberry Ln",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "433 Broadway, Suite 202",
+      "value": "Owego, NY 13827",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "8302 Fifth Avenue, 2nd Floor",
+      "value": "Glens Falls, NY 12801",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "Saratoga Springs, NY 12866",
+      "value": "(716) 555-0115",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "Brooklyn, NY 11209-4511",
+      "value": "(845) 555-0178",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "Empire Safety Council, Inc.",
+      "value": "278 Cobbler Hill Rd",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "USA Training Company, Inc.",
+      "value": "86 Windfall Rd",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "176 Terry Road",
+      "value": "Little Falls, NY 13365",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "99 Washington Avenue, Suite 400",
+      "value": "Old Forge, NY 13420",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "Smithtown, NY 11787-5106",
+      "value": "(716) 555-0107",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "Albany, NY 11210",
+      "value": "(716) 555-0124",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "American Safety, Inc.",
+      "value": "609 Elderberry Ln",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "American Safety Council, Inc.",
+      "value": "7377 Mill Pond Way",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "115 E. 57 Street, 11th Floor",
+      "value": "Elmira, NY 14901",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "3415 State Route 11",
+      "value": "Clayton, NY 13624",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "New York, NY 10022",
+      "value": "(716) 555-0194",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "Malone, NY 12953",
+      "value": "(845) 555-0194",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "American Safety Council, Inc.",
+      "value": "7377 Mill Pond Way",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "Malone, NY",
+      "value": "(518) 555-0185",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "New York, NY",
+      "value": "(607) 555-0195",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "I Drive Safely",
+      "value": "4517 Bramble Hollow Rd",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "1767 Central Park Ave. Suite 149",
+      "value": "Geneva, NY 14456",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "USA Training Company, Inc.",
+      "value": "809 Bramble Hollow Rd",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "Yonkers, NY 10710",
+      "value": "(716) 555-0178",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "295 Greenwich Street, Suite 350",
+      "value": "Cobleskill, NY 12043",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "New York, NY 10007",
+      "value": "(518) 555-0182",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "Telephone Number",
+      "value": "PL-5961",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "3415 State Route 11",
+      "value": "Clayton, NY 13624",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "697 Amsterdam Avenue",
+      "value": "Rome, NY",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "304Park Ave. So., 11th Floor",
+      "value": "Rome, NY",
+      "page": 30,
+      "page_ref": [
+        30
+      ]
+    },
+    {
+      "kind": "pobox",
+      "label": "TransUnion National Disclosure Center",
+      "value": "P.O. Box 655",
+      "page": 31,
+      "page_ref": [
+        31
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "P.O. Box 1000",
+      "value": "Ithaca, NY 14850",
+      "page": 31,
+      "page_ref": [
+        31
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "Chester, PA 19022",
+      "value": "315-555-0157",
+      "page": 31,
+      "page_ref": [
+        31
+      ]
+    },
+    {
+      "kind": "pobox",
+      "label": "Travelers Insurance Score Resource Center",
+      "value": "PO Box 592",
+      "page": 31,
+      "page_ref": [
+        7,
+        9,
+        13,
+        31,
+        44
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "PO Box 2906",
+      "value": "Saranac Lake, NY 12983",
+      "page": 31,
+      "page_ref": [
+        7,
+        9,
+        13,
+        31
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "Hartford, CT 06104",
+      "value": "845-555-0158",
+      "page": 31,
+      "page_ref": [
+        31
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "",
+      "value": "PL-12768",
+      "page": 31,
+      "page_ref": [
+        31
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "",
+      "value": "Rutherford Brackenridge",
+      "page": 31,
+      "page_ref": [
+        31
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "email. Other charges that may apply include a",
+      "value": "$10.00",
+      "page": 33,
+      "page_ref": [
+        33
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Late Charge:",
+      "value": "$10.00",
+      "page": 33,
+      "page_ref": [
+        33
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Recurring Credit Card (RCC)",
+      "value": "$ 4.00",
+      "page": 33,
+      "page_ref": [
+        33
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Late Charge:",
+      "value": "$10.00",
+      "page": 33,
+      "page_ref": [
+        33
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "/ Email S",
+      "value": "$ 6.00",
+      "page": 33,
+      "page_ref": []
+    },
+    {
+      "kind": "money",
+      "label": "Late Charge:",
+      "value": "$10.00",
+      "page": 33,
+      "page_ref": [
+        33
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "",
+      "value": "PL-28908",
+      "page": 33,
+      "page_ref": [
+        33
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "3. PLEASURE USE means there is no business use, but it may include driving to and from work or school less than",
+      "value": "7 hemlock ridge rd",
+      "page": 34,
+      "page_ref": [
+        34
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "or more, but less than",
+      "value": "20 durant rd",
+      "page": 34,
+      "page_ref": [
+        34
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "4. WORK LESS THAN 15 MILES means no business use, but includes driving to or from work or school 3 or more, but less than",
+      "value": "14 poplar point",
+      "page": 34,
+      "page_ref": [
+        34
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "one way if such usage is more than 2 days per week or more than 2 weeks per 5 week period; or",
+      "value": "91 hillcrest terrace",
+      "page": 34,
+      "page_ref": [
+        34
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "5. WORK MORE THAN 15 MILES means no business use, but includes driving to or from work or school",
+      "value": "91 hillcrest terrace",
+      "page": 34,
+      "page_ref": [
+        34
+      ]
+    },
+    {
+      "kind": "street",
+      "label": "over",
+      "value": "447 mill pond way",
+      "page": 34,
+      "page_ref": [
+        34
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "",
+      "value": "PL-84304",
+      "page": 34,
+      "page_ref": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "",
+      "value": "PL-84304",
+      "page": 35,
+      "page_ref": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "Operator",
+      "value": "Adelaide Larkspur",
+      "page": 35,
+      "page_ref": [
+        12,
+        15,
+        35
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "Not Principal Operator",
+      "value": "Harrowgate",
+      "page": 35,
+      "page_ref": [
+        35,
+        36
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "",
+      "value": "PL-84304",
+      "page": 36,
+      "page_ref": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "Not Principal Operator",
+      "value": "Harrowgate",
+      "page": 36,
+      "page_ref": [
+        35,
+        36
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "",
+      "value": "PL-84304",
+      "page": 37,
+      "page_ref": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "kind": "date",
+      "label": "Section 1.C.(2) shall not apply to a policy which was originally written prior to",
+      "value": "July 13, 1994",
+      "page": 38,
+      "page_ref": [
+        38
+      ]
+    },
+    {
+      "kind": "date",
+      "label": "conviction occurred on or after",
+      "value": "July 16, 1994",
+      "page": 38,
+      "page_ref": [
+        38
+      ]
+    },
+    {
+      "kind": "date",
+      "label": "renewal is effective on or after",
+      "value": "July 16, 1994",
+      "page": 38,
+      "page_ref": [
+        38
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "own in excess of",
+      "value": "$2,000",
+      "page": 38,
+      "page_ref": [
+        38
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "",
+      "value": "PL-84304",
+      "page": 38,
+      "page_ref": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "amount is less than",
+      "value": "$500",
+      "page": 39,
+      "page_ref": [
+        17,
+        18,
+        39,
+        41,
+        42,
+        43,
+        47
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "",
+      "value": "PL-84304",
+      "page": 39,
+      "page_ref": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "",
+      "value": "PL-84304",
+      "page": 40,
+      "page_ref": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "a",
+      "value": "$750",
+      "page": 40,
+      "page_ref": [
+        40,
+        41,
+        43
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "of",
+      "value": "$250",
+      "page": 40,
+      "page_ref": [
+        10,
+        17,
+        40,
+        47,
+        48
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "convicted of any alcohol or drug related driving offense (even if it is a traffic infraction as opposed to a crime) must pay a",
+      "value": "$750",
+      "page": 40,
+      "page_ref": [
+        40,
+        41,
+        43
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "and thesuspensionorrevocationofyourdriver's licensebyDMV.You alsowill bechargeda",
+      "value": "$750",
+      "page": 40,
+      "page_ref": [
+        40,
+        41,
+        43
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "DRApayable inthreeannualpaymentsof",
+      "value": "$250",
+      "page": 40,
+      "page_ref": [
+        10,
+        17,
+        40,
+        47,
+        48
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "violationswillhavehisorherCDLrevokedforatleast10yearsandathirdviolationwillcauseapermanent,lifetimerevocation.",
+      "value": "PL-84304",
+      "page": 40,
+      "page_ref": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "must pay a civil penalty of",
+      "value": "$500",
+      "page": 41,
+      "page_ref": [
+        17,
+        18,
+        39,
+        41,
+        42,
+        43,
+        47
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "a \"first offender\" and who refuses to take a chemical test may have his or her driver's license revoked for at least one year (18 months for a CDL) and",
+      "value": "$550",
+      "page": 41,
+      "page_ref": [
+        41
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "driving offense or for certain other offenses, then you will be required to pay a civil penalty of",
+      "value": "$750",
+      "page": 41,
+      "page_ref": [
+        40,
+        41,
+        43
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "will have to enroll in an approved drinking driver program (\"DDP\"), pay the required fees, and meet other eligibility requirements. DMV charges a",
+      "value": "$75",
+      "page": 41,
+      "page_ref": [
+        15,
+        41,
+        48
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "administration fee upon DDP enrollment, and the DDP charges an additional course fee of up to",
+      "value": "$225",
+      "page": 41,
+      "page_ref": [
+        15,
+        41,
+        47
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "refusal, you may be convicted of aggravated unlicensed operation of a motor vehicle (\"AUO\") in the second degree, subject to a fine of",
+      "value": "$500",
+      "page": 41,
+      "page_ref": [
+        17,
+        18,
+        39,
+        41,
+        42,
+        43,
+        47
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "to",
+      "value": "$1,000",
+      "page": 41,
+      "page_ref": [
+        41
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "",
+      "value": "PL-84304",
+      "page": 41,
+      "page_ref": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Minimum",
+      "value": "$500",
+      "page": 42,
+      "page_ref": [
+        17,
+        18,
+        39,
+        41,
+        42,
+        43,
+        47
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "",
+      "value": "PL-84304",
+      "page": 42,
+      "page_ref": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Minimum",
+      "value": "$300",
+      "page": 43,
+      "page_ref": [
+        15,
+        43,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Maximum",
+      "value": "$500",
+      "page": 43,
+      "page_ref": [
+        17,
+        18,
+        39,
+        41,
+        42,
+        43,
+        47
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Minimum",
+      "value": "$500",
+      "page": 43,
+      "page_ref": [
+        17,
+        18,
+        39,
+        41,
+        42,
+        43,
+        47
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Maximum",
+      "value": "$750",
+      "page": 43,
+      "page_ref": [
+        40,
+        41,
+        43
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Minimum",
+      "value": "$750",
+      "page": 43,
+      "page_ref": [
+        40,
+        41,
+        43
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "FINE ONLY‘",
+      "value": "$125",
+      "page": 43,
+      "page_ref": [
+        21,
+        43,
+        48
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "and",
+      "value": "$100",
+      "page": 43,
+      "page_ref": [
+        15,
+        17,
+        43,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "suspension",
+      "value": "$125",
+      "page": 43,
+      "page_ref": [
+        21,
+        43,
+        48
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "and",
+      "value": "$100",
+      "page": 43,
+      "page_ref": [
+        15,
+        17,
+        43,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Chemical Test",
+      "value": "$500",
+      "page": 43,
+      "page_ref": [
+        17,
+        18,
+        39,
+        41,
+        42,
+        43,
+        47
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "",
+      "value": "$750",
+      "page": 43,
+      "page_ref": [
+        40,
+        41,
+        43
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "CTR-under Zero",
+      "value": "$300",
+      "page": 43,
+      "page_ref": [
+        15,
+        43,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "and",
+      "value": "$50",
+      "page": 43,
+      "page_ref": [
+        18,
+        43,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "CTR-Second or",
+      "value": "$750",
+      "page": 43,
+      "page_ref": [
+        40,
+        41,
+        43
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "and",
+      "value": "$50",
+      "page": 43,
+      "page_ref": [
+        18,
+        43,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "1 Conviction fine only. Does not include any mandatory conviction surchage, crime victims assistance fee or",
+      "value": "$750",
+      "page": 43,
+      "page_ref": [
+        40,
+        41,
+        43
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "",
+      "value": "PL-84304",
+      "page": 43,
+      "page_ref": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "kind": "email",
+      "label": "form in one of the following ways:",
+      "value": "octavia.ellingham@example.com",
+      "page": 44,
+      "page_ref": [
+        44
+      ]
+    },
+    {
+      "kind": "phone",
+      "label": "Fax to 1-",
+      "value": "845-555-0173",
+      "page": 44,
+      "page_ref": [
+        44
+      ]
+    },
+    {
+      "kind": "pobox",
+      "label": "Write to us at: Travelers Business Center,",
+      "value": "PO BOX 592",
+      "page": 44,
+      "page_ref": [
+        7,
+        9,
+        13,
+        31,
+        44
+      ]
+    },
+    {
+      "kind": "cityline",
+      "label": "Write to us at: Travelers Business Center, PO BOX 2906,",
+      "value": "Saranac Lake, NY",
+      "page": 44,
+      "page_ref": [
+        7,
+        9,
+        13,
+        31,
+        44
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "Oo. within the state of New York; and",
+      "value": "PL-80653",
+      "page": 45,
+      "page_ref": [
+        45,
+        46
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "",
+      "value": "PL-80653",
+      "page": 46,
+      "page_ref": [
+        45,
+        46
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "from the negligent owner or operator of the other motor vehicle and",
+      "value": "$225,000",
+      "page": 47,
+      "page_ref": [
+        15,
+        47
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "per person and",
+      "value": "$50,000",
+      "page": 47,
+      "page_ref": [
+        18,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Coverage can pay up to",
+      "value": "$50,000",
+      "page": 47,
+      "page_ref": [
+        18,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "for each person who dies, with",
+      "value": "$100,000",
+      "page": 47,
+      "page_ref": [
+        15,
+        17,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Coverage can pay up to",
+      "value": "$50,000",
+      "page": 47,
+      "page_ref": [
+        18,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "for each person who dies, with",
+      "value": "$100,000",
+      "page": 47,
+      "page_ref": [
+        15,
+        17,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "injured, with",
+      "value": "$50,000",
+      "page": 47,
+      "page_ref": [
+        18,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Insured's Liability Limit",
+      "value": "$500,000",
+      "page": 47,
+      "page_ref": [
+        17,
+        47
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "from the negligent owner or operator of the other motor vehicle and",
+      "value": "$225,000",
+      "page": 47,
+      "page_ref": [
+        15,
+        47
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "minus $25,000) under the SUM coverage, for a total recovery of $250,000.",
+      "value": "PL-212581-20",
+      "page": 47,
+      "page_ref": [
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "id",
+      "label": "",
+      "value": "00091F3171AHE322641",
+      "page": 47,
+      "page_ref": [
+        9,
+        47
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "SUPPLEMENTARYUNINSURED/UNDERINSUREDMOTORISTSCOVERAGE",
+      "value": "Larkspur",
+      "page": 47,
+      "page_ref": [
+        12,
+        15,
+        35,
+        47
+      ]
+    },
+    {
+      "kind": "person",
+      "label": "(1) Coverage. While statutory Uninsured Motorists coverage is only available at the limits described below, Supplemen-",
+      "value": "larkspur",
+      "page": 47,
+      "page_ref": [
+        12,
+        15,
+        35,
+        47
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Insured's Bodily Injury Damages",
+      "value": "$100,000",
+      "page": 48,
+      "page_ref": [
+        15,
+        17,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "your liability and SUM limits were both",
+      "value": "$50,000",
+      "page": 48,
+      "page_ref": [
+        18,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Insured's Bodily Injury Damages",
+      "value": "$ 60,000",
+      "page": 48,
+      "page_ref": [
+        48
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Insured's Liability Limit",
+      "value": "$100,000",
+      "page": 48,
+      "page_ref": [
+        15,
+        17,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Insured's SUM Limit",
+      "value": "$100,000",
+      "page": 48,
+      "page_ref": [
+        15,
+        17,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Other Motor Vehicle Liability Limit",
+      "value": "$ 50,000",
+      "page": 48,
+      "page_ref": [
+        21,
+        48
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Result: You as the insured will recover",
+      "value": "$50,000",
+      "page": 48,
+      "page_ref": [
+        18,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Result:",
+      "value": "$10,000",
+      "page": 48,
+      "page_ref": [
+        17,
+        48
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Insured's Bodily Injury Damages",
+      "value": "$150,000",
+      "page": 48,
+      "page_ref": [
+        48
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Insured's Liability Limit",
+      "value": "$100,000",
+      "page": 48,
+      "page_ref": [
+        15,
+        17,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Insured SUM Limit",
+      "value": "$100,000",
+      "page": 48,
+      "page_ref": [
+        15,
+        17,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "then your total recovery would be",
+      "value": "$75,000",
+      "page": 48,
+      "page_ref": [
+        15,
+        48
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "from the negligent owner or operator of the other motor vehicle and",
+      "value": "$50,000",
+      "page": 48,
+      "page_ref": [
+        18,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "from the negligent owner or operator and would then receive",
+      "value": "$75,000",
+      "page": 48,
+      "page_ref": [
+        15,
+        48
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "your own insurer. Had you purchased liability and SUM limits of",
+      "value": "$150,000",
+      "page": 48,
+      "page_ref": [
+        48
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "be",
+      "value": "$125,000",
+      "page": 48,
+      "page_ref": [
+        21,
+        48
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Insured’s Combined Single Liability (CSL) Limit",
+      "value": "$ 75,000",
+      "page": 48,
+      "page_ref": [
+        48
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Insured’s CSL SUM Limit",
+      "value": "$ 75,000",
+      "page": 48,
+      "page_ref": [
+        48
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "Result: Since the other motor vehicle was uninsured, the full",
+      "value": "$75,000",
+      "page": 48,
+      "page_ref": [
+        15,
+        48
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "per person and",
+      "value": "$50,000",
+      "page": 48,
+      "page_ref": [
+        18,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "injured and killed, the mandatory UM limits of $25,000 per person and $50,000 per accident for injured persons and",
+      "value": "$50,000",
+      "page": 48,
+      "page_ref": [
+        18,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "per person and",
+      "value": "$100,000",
+      "page": 48,
+      "page_ref": [
+        15,
+        17,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "and the second passenger's estate recovers the full",
+      "value": "$50,000",
+      "page": 48,
+      "page_ref": [
+        18,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "and your damages amounted to",
+      "value": "$200,000",
+      "page": 48,
+      "page_ref": [
+        48
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "persons would be covered under the SUM coverage as the total damages (",
+      "value": "$200,000",
+      "page": 48,
+      "page_ref": [
+        48
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "If your CSL and CSL SUM limit were each $300,000 and your damages amounted to $200,000, then all insured",
+      "value": "$50,000",
+      "page": 48,
+      "page_ref": [
+        18,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "persons would be covered under the SUM coverage as the total damages ($200,000 + $25,000 + $50,000 =",
+      "value": "$275,000",
+      "page": 48,
+      "page_ref": [
+        48
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "per person and",
+      "value": "$50,000",
+      "page": 49,
+      "page_ref": [
+        18,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "per person/",
+      "value": "$50,000",
+      "page": 49,
+      "page_ref": [
+        18,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "$25,000 per person/$50,000 per accident",
+      "value": "$50,000",
+      "page": 49,
+      "page_ref": [
+        18,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "per person/",
+      "value": "$100,000",
+      "page": 49,
+      "page_ref": [
+        15,
+        17,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "kind": "money",
+      "label": "$50,000 per person/$100,000 per accident",
+      "value": "$100,000",
+      "page": 49,
+      "page_ref": [
+        15,
+        17,
+        47,
+        48,
+        49
+      ]
+    }
+  ],
+  "fideon:provenance": {
+    "generator": "fideon-synth generic",
+    "source": "Travelers/personal_auto/travelers_autop_renewal_2.pdf",
+    "schema": "personal_auto v1.4.0",
+    "render": "scanned_only",
+    "scanner_profile": "high-quality scan, 400 dpi",
+    "values_replaced": 258,
+    "text_recovered_by_ocr": 567,
+    "date_shift_days": -395,
+    "synthetic": true,
+    "note": "Identifying values replaced with invented ones. Fields under fideon:unmapped were changed but could not be matched to a schema field with confidence."
+  }
+}

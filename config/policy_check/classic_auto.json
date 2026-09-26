@@ -3,16 +3,16 @@
   "title": "Classic Auto policy",
   "fideon:doc_type": "policy_check",
   "fideon:lob": "classic_auto",
-  "fideon:note": "Generated from the supplied classic_auto.schema.json v3.0.0 by scripts/build_canonical_policy_schemas.py. Do not hand-edit; edit the source and regenerate. Extended by scripts/canonical_schema_extensions.py with fields the supplied skeleton did not carry; re-run it after any regeneration.",
+  "fideon:note": "Generated from the supplied classic_auto.schema.json v3.0.0 by scripts/build_canonical_policy_schemas.py. Do not hand-edit; edit the source and regenerate. Extended by scripts/canonical_schema_extensions.py with fields the supplied skeleton did not carry; re-run it after any regeneration. Fields carried over from ocean_marine 2026-09-25 (text_sections and printed facts every line of business prints): text_sections, document.print_time, document.print_code, document.source_url, policy.product_code, policy.policy_period_location_basis, billing.billing_note, billing.payment_coupon_scan_line, billing.phone, document_type_detail.renewal_offer.expiring_policy_expiration_date.",
   "fideon:source": {
     "schema_id": "fideon.canonical.classic_auto",
     "version": "3.0.0",
     "line_of_business_as_supplied": "Classic Auto",
     "line_specific_block": "classic_auto",
-    "field_count": 683,
+    "field_count": 692,
     "corpus_document_count": 4,
     "corpus_carrier_count": null,
-    "aliased_fields": 84,
+    "aliased_fields": 123,
     "extensions_applied": "scripts/canonical_schema_extensions.py"
   },
   "fideon:mandatory_fields": [
@@ -104,7 +104,8 @@
             "Print Date",
             "Printed On",
             "Process Date",
-            "PROCESSING DATE"
+            "PROCESSING DATE",
+            "Printed Date"
           ]
         },
         "page_count": {
@@ -147,6 +148,30 @@
             "Summary of Changes",
             "Summary of Your Changes"
           ]
+        },
+        "print_time": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Print Time",
+            "Printed At",
+            "Time Printed",
+            "Printed"
+          ]
+        },
+        "print_code": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Print Code",
+            "Form Print Code"
+          ]
+        },
+        "source_url": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "URL",
+            "Link",
+            "Source URL"
+          ]
         }
       }
     },
@@ -157,13 +182,20 @@
           "$ref": "#/$defs/FieldValue"
         },
         "writing_company_name": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Policy Issued By"
+          ]
         },
         "group_name": {
           "$ref": "#/$defs/FieldValue"
         },
         "naic_number": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "NAIC #",
+            "NAIC"
+          ]
         },
         "fein": {
           "$ref": "#/$defs/FieldValue"
@@ -253,17 +285,24 @@
       "type": "object",
       "properties": {
         "agency_name": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Agent Information"
+          ]
         },
         "producer_code": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "Agency Code",
-            "Agent"
+            "Agent",
+            "Agent ID"
           ]
         },
         "producer_contact_name": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Insurance Agent's Printed Name"
+          ]
         },
         "address": {
           "type": "object",
@@ -386,7 +425,10 @@
           "$ref": "#/$defs/FieldValue"
         },
         "policy_type": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Type of Policy"
+          ]
         },
         "effective_date": {
           "$ref": "#/$defs/FieldValue",
@@ -397,7 +439,9 @@
             "Policy Effective Date",
             "Policy Period From",
             "Policy Term Effective Date",
-            "Start Date"
+            "Start Date",
+            "Policy Term",
+            "Eff. Date"
           ]
         },
         "expiration_date": {
@@ -417,7 +461,10 @@
           "$ref": "#/$defs/FieldValue"
         },
         "policy_term_months": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Term"
+          ]
         },
         "anniversary_date": {
           "$ref": "#/$defs/FieldValue"
@@ -477,6 +524,21 @@
             "Insured Since",
             "Policyholder Since"
           ]
+        },
+        "product_code": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Product Code",
+            "Use product code"
+          ]
+        },
+        "policy_period_location_basis": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "At the residence premises",
+            "At the address of the named insured",
+            "Policy period location basis"
+          ]
         }
       }
     },
@@ -487,7 +549,9 @@
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "Insured Name",
-            "Named Insured"
+            "Named Insured",
+            "Insured's Name",
+            "Client Name"
           ]
         },
         "doing_business_as": {
@@ -932,7 +996,10 @@
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "Policy Total Premium",
-            "Total Policy Premium"
+            "Total Policy Premium",
+            "Total Full Term Premium",
+            "Total Policy Cost",
+            "Total Charges"
           ]
         },
         "basic_premium": {
@@ -949,7 +1016,11 @@
           "$ref": "#/$defs/FieldValue"
         },
         "minimum_premium": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Minimum Written Premium",
+            "Minimum Written"
+          ]
         },
         "return_premium": {
           "$ref": "#/$defs/FieldValue"
@@ -1102,7 +1173,11 @@
           ]
         },
         "stamping_fee": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Stamp Fee",
+            "Stamp"
+          ]
         },
         "policy_fee": {
           "$ref": "#/$defs/FieldValue"
@@ -1242,6 +1317,30 @@
           },
           "fideon:aliases": [
             "Pay initial installment"
+          ]
+        },
+        "billing_note": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "This is not a bill"
+          ]
+        },
+        "payment_coupon_scan_line": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Scan Line",
+            "Payment Coupon Scan Line"
+          ]
+        },
+        "phone": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "For Billing Questions",
+            "Billing Phone",
+            "Call us at",
+            "By calling",
+            "Automatic Payments",
+            "For payment questions call"
           ]
         }
       }
@@ -1979,6 +2078,14 @@
                   }
                 }
               }
+            },
+            "expiring_policy_expiration_date": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Current policy period ends",
+                "Your current policy will expire on",
+                "Current policy expires"
+              ]
             }
           }
         },
@@ -3180,6 +3287,12 @@
           }
         }
       }
+    },
+    "text_sections": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/TextSection"
+      }
     }
   },
   "$defs": {
@@ -3236,6 +3349,48 @@
           "type": "boolean"
         }
       }
+    },
+    "TextSection": {
+      "type": "object",
+      "description": "A block of printed text exactly as the document carries it: a prose paragraph, notice, condition or disclaimer, or the page's remaining label/footer text. Nothing the page prints is left out of the gold; structured fields above hold the values, these hold the words.",
+      "properties": {
+        "section_id": {
+          "type": "string"
+        },
+        "section_title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "section_type": {
+          "type": "string",
+          "enum": [
+            "prose",
+            "other"
+          ]
+        },
+        "raw_text": {
+          "type": "string"
+        },
+        "page_range": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "form_number": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "section_id",
+        "raw_text",
+        "page_range"
+      ]
     }
   }
 }

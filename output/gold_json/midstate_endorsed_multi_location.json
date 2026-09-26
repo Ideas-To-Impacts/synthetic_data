@@ -80,7 +80,8 @@
         8,
         9
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "PAW"
     },
     "document_control_code": {
       "raw": "13 07 22 39",
@@ -100,11 +101,12 @@
         8,
         9
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Midstate Mutual Insurance Company"
     },
     "issue_date": {
       "raw": "FEB 12,2026",
-      "parsed": "2026-02-12",
+      "parsed": "02/12/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -147,7 +149,7 @@
       {
         "effective_date": {
           "raw": "02/10/2026",
-          "parsed": "2026-02-10",
+          "parsed": "02/10/2026",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -226,7 +228,7 @@
       {
         "effective_date": {
           "raw": "02/10/2026",
-          "parsed": "2026-02-10",
+          "parsed": "02/10/2026",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -305,7 +307,7 @@
       {
         "effective_date": {
           "raw": "02/10/2026",
-          "parsed": "2026-02-10",
+          "parsed": "02/10/2026",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -382,7 +384,7 @@
       {
         "effective_date": {
           "raw": "02/10/2026",
-          "parsed": "2026-02-10",
+          "parsed": "02/10/2026",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -459,7 +461,7 @@
       {
         "effective_date": {
           "raw": "02/10/2026",
-          "parsed": "2026-02-10",
+          "parsed": "02/10/2026",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -538,7 +540,7 @@
       {
         "effective_date": {
           "raw": "02/10/2026",
-          "parsed": "2026-02-10",
+          "parsed": "02/10/2026",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -617,7 +619,7 @@
       {
         "effective_date": {
           "raw": "02/10/2026",
-          "parsed": "2026-02-10",
+          "parsed": "02/10/2026",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -694,7 +696,7 @@
       {
         "effective_date": {
           "raw": "02/10/2026",
-          "parsed": "2026-02-10",
+          "parsed": "02/10/2026",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -771,7 +773,7 @@
       {
         "effective_date": {
           "raw": "02/10/2026",
-          "parsed": "2026-02-10",
+          "parsed": "02/10/2026",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -850,7 +852,7 @@
       {
         "effective_date": {
           "raw": "02/10/2026",
-          "parsed": "2026-02-10",
+          "parsed": "02/10/2026",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -929,7 +931,7 @@
       {
         "effective_date": {
           "raw": "02/10/2026",
-          "parsed": "2026-02-10",
+          "parsed": "02/10/2026",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -1006,7 +1008,7 @@
       {
         "effective_date": {
           "raw": "02/10/2026",
-          "parsed": "2026-02-10",
+          "parsed": "02/10/2026",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -1083,7 +1085,7 @@
       {
         "effective_date": {
           "raw": "02/10/2026",
-          "parsed": "2026-02-10",
+          "parsed": "02/10/2026",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -1162,7 +1164,7 @@
       {
         "effective_date": {
           "raw": "02/10/2026",
-          "parsed": "2026-02-10",
+          "parsed": "02/10/2026",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -1239,7 +1241,7 @@
       {
         "effective_date": {
           "raw": "02/10/2026",
-          "parsed": "2026-02-10",
+          "parsed": "02/10/2026",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -1316,7 +1318,7 @@
     ],
     "transaction_effective_date": {
       "raw": "02/10/2026",
-      "parsed": "2026-02-10",
+      "parsed": "02/10/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -1488,7 +1490,8 @@
         8,
         9
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Nathaniel Pryce"
     },
     "address": {
       "line_1": {
@@ -1611,7 +1614,8 @@
           8,
           9
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Agent Phone"
       },
       "fax": {
         "raw": "(315) 555-0127",
@@ -1631,7 +1635,8 @@
           8,
           9
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Fax"
       }
     }
   },
@@ -1654,7 +1659,8 @@
         8,
         9
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Policy ID"
     },
     "program_name": {
       "raw": "Home Provider",
@@ -1678,7 +1684,7 @@
     },
     "effective_date": {
       "raw": "JUL 22, 2025",
-      "parsed": "2025-07-22",
+      "parsed": "07/22/2025",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -1698,7 +1704,7 @@
     },
     "expiration_date": {
       "raw": "JUL 22, 2026",
-      "parsed": "2026-07-22",
+      "parsed": "07/22/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -1837,7 +1843,8 @@
           8,
           9
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Fire District"
       },
       "state": {
         "raw": "NY",
@@ -1900,7 +1907,8 @@
             8,
             9
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Nathaniel Pryce"
         },
         "entity_type": {
           "raw": "Individual",
@@ -1918,7 +1926,7 @@
   "signature": {
     "countersignature_date": {
       "raw": "FEB 12,2026",
-      "parsed": "2026-02-12",
+      "parsed": "02/12/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -2042,7 +2050,8 @@
             8,
             9
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Fire District"
         },
         "state": {
           "raw": "NY",
@@ -2162,7 +2171,8 @@
             8,
             9
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Fire District"
         },
         "state": {
           "raw": "NY",
@@ -2280,7 +2290,8 @@
             8,
             9
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Fire District"
         },
         "state": {
           "raw": "NY",
@@ -2398,7 +2409,8 @@
             8,
             9
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Fire District"
         },
         "state": {
           "raw": "NY",
@@ -2511,7 +2523,8 @@
             8,
             9
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Fire District"
         },
         "state": {
           "raw": "NY",
@@ -2566,7 +2579,8 @@
           7,
           8
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "| E. Farm Pers. Property - Scheduled"
       },
       "number_of_families": {
         "raw": "1",
@@ -2599,7 +2613,8 @@
           7,
           8
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Protection"
       },
       "solid_fuel_burning_device_present": {
         "raw": "Yes",
@@ -2713,7 +2728,8 @@
           8,
           9
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Fire District"
       }
     },
     "section_i_property_coverages": {
@@ -2727,7 +2743,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "| A. Residence"
       },
       "coverage_b_other_structures_limit": {
         "raw": "43,600",
@@ -2751,7 +2768,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "| C. Personal Property"
       },
       "coverage_d_loss_of_use_limit": {
         "raw": "87,200",
@@ -2824,7 +2842,8 @@
             5,
             6
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "For Location"
         }
       ]
     },
@@ -2853,7 +2872,8 @@
           4,
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "| M. Medical Payments"
       },
       "coverage_f_limit_increase": {
         "raw": "$1,000",
@@ -2882,7 +2902,8 @@
           7,
           8
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Deductible"
       },
       "additional_coverages": [
         {
@@ -3122,7 +3143,8 @@
                 8,
                 9
               ],
-              "flagged": false
+              "flagged": false,
+              "printed_label": "Fire District"
             },
             "county": {
               "raw": "Hamilt",
@@ -3270,7 +3292,8 @@
                 8,
                 9
               ],
-              "flagged": false
+              "flagged": false,
+              "printed_label": "Fire District"
             },
             "county": {
               "raw": "Hamilt",
@@ -3417,7 +3440,8 @@
                 8,
                 9
               ],
-              "flagged": false
+              "flagged": false,
+              "printed_label": "Fire District"
             },
             "county": {
               "raw": "Hamilt",
@@ -3557,7 +3581,8 @@
           7,
           8
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Deductible"
       }
     },
     "discounts": [
@@ -3608,7 +3633,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "| FED"
         }
       },
       {
@@ -3658,7 +3684,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "| RHC"
         }
       },
       {
@@ -3899,7 +3926,8 @@
           "page_ref": [
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "a. Money"
         },
         "increased_limit": {
           "raw": "$0",
@@ -3927,7 +3955,8 @@
           "page_ref": [
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "a. Money"
         },
         "premium": {
           "raw": "$0",
@@ -4206,7 +4235,8 @@
           "page_ref": [
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "d. Guns"
         },
         "increased_limit": {
           "raw": "$0",
@@ -4234,7 +4264,8 @@
           "page_ref": [
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "d. Guns"
         },
         "premium": {
           "raw": "$0",
@@ -4505,7 +4536,8 @@
             4,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "| M. Medical Payments"
         },
         "increased_limit": {
           "raw": "$0",
@@ -4534,7 +4566,8 @@
             4,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "| M. Medical Payments"
         },
         "premium": {
           "raw": "$0",
@@ -4698,7 +4731,8 @@
           "page_ref": [
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "d. Guns"
         },
         "increased_limit": {
           "raw": "$0",
@@ -4726,7 +4760,8 @@
           "page_ref": [
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "d. Guns"
         },
         "premium": {
           "raw": "$0",
@@ -4995,7 +5030,8 @@
             4,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "| M. Medical Payments"
         },
         "increased_limit": {
           "raw": "$0",
@@ -5024,7 +5060,8 @@
             4,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "| M. Medical Payments"
         },
         "premium": {
           "raw": "$0",
@@ -5309,7 +5346,8 @@
           "page_ref": [
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "1 Garage"
         },
         "deductible_amount": {
           "raw": "$500",
@@ -5324,7 +5362,8 @@
             7,
             8
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Deductible"
         },
         "premium": {
           "raw": "$126",
@@ -5380,7 +5419,8 @@
           "page_ref": [
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Location"
         }
       }
     ],
@@ -5424,7 +5464,8 @@
             5,
             6
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "For Location"
         },
         "premium": {
           "raw": "$138",
@@ -5559,7 +5600,8 @@
             5,
             6
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "For Location"
         },
         "premium": {
           "raw": "$0",
@@ -5804,7 +5846,8 @@
             7,
             8
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Deductible"
         },
         "premium": {
           "raw": "$80",
@@ -5856,7 +5899,8 @@
           "page_ref": [
             7
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Home Cyber Protection"
         },
         "deductible_amount": {
           "raw": "$500",
@@ -5871,7 +5915,8 @@
             7,
             8
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Deductible"
         },
         "premium": {
           "raw": "$38",
@@ -5951,7 +5996,8 @@
               8,
               9
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Fire District"
           },
           "state": {
             "raw": "NY",
@@ -6005,7 +6051,8 @@
             "page_ref": [
               7
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "A. Residence"
           },
           "coverage_b_other_structures_limit": {
             "raw": "$0",
@@ -6070,7 +6117,8 @@
               7,
               8
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Deductible"
           }
         },
         "protection_class": {
@@ -6085,7 +6133,8 @@
             7,
             8
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Protection"
         },
         "feet_from_hydrant": {
           "raw": "1001ft to hydrant",
@@ -6124,7 +6173,8 @@
             7,
             8
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Construction"
         },
         "number_of_families": {
           "raw": "1",
@@ -6163,7 +6213,8 @@
             8,
             9
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Fire District"
         },
         "usage_type": {
           "raw": "Seasonal",
@@ -6422,7 +6473,8 @@
               8,
               9
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Fire District"
           },
           "state": {
             "raw": "NY",
@@ -6476,7 +6528,8 @@
             "page_ref": [
               8
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "A. Residence"
           },
           "coverage_b_other_structures_limit": {
             "raw": "$0",
@@ -6541,7 +6594,8 @@
               7,
               8
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Deductible"
           }
         },
         "protection_class": {
@@ -6556,7 +6610,8 @@
             7,
             8
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Protection"
         },
         "feet_from_hydrant": {
           "raw": "1001ft to hydrant",
@@ -6595,7 +6650,8 @@
             7,
             8
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Construction"
         },
         "number_of_families": {
           "raw": "1",
@@ -6634,7 +6690,8 @@
             8,
             9
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Fire District"
         },
         "usage_type": {
           "raw": "Seasonal",
@@ -6893,7 +6950,8 @@
               8,
               9
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Fire District"
           },
           "state": {
             "raw": "NY",
@@ -6947,7 +7005,8 @@
             "page_ref": [
               8
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "A. Residence"
           },
           "coverage_b_other_structures_limit": {
             "raw": "$0",
@@ -7012,7 +7071,8 @@
               7,
               8
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Deductible"
           }
         },
         "protection_class": {
@@ -7027,7 +7087,8 @@
             7,
             8
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Protection"
         },
         "feet_from_hydrant": {
           "raw": "1001ft to hydrant",
@@ -7066,7 +7127,8 @@
             7,
             8
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Construction"
         },
         "number_of_families": {
           "raw": "1",
@@ -7105,7 +7167,8 @@
             8,
             9
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Fire District"
         },
         "usage_type": {
           "raw": "Seasonal",
@@ -8334,7 +8397,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "| ML-MMIC-PPLE"
       }
     },
     {
@@ -8387,7 +8451,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "| FED"
       }
     },
     {
@@ -8440,7 +8505,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "| SFBU"
       }
     },
     {
@@ -8493,7 +8559,8 @@
         "page_ref": [
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "| RHC"
       }
     },
     {
@@ -8602,7 +8669,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "| ML-MMIC-PPLE"
       }
     },
     {
@@ -8656,7 +8724,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "| ML-MMIC-PPLE"
       }
     },
     {
@@ -8791,7 +8860,8 @@
           5,
           6
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "For Location"
       }
     },
     {
@@ -8903,7 +8973,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "| ML-MMIC-PPLE"
       }
     },
     {
@@ -8956,7 +9027,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "| ML-MMIC-PPLE"
       }
     },
     {
@@ -9010,7 +9082,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "| ML-MMIC-PPLE"
       },
       "applies_to": {
         "raw": "1) 518 Silver Birch Road",
@@ -9024,7 +9097,8 @@
           5,
           6
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "For Location"
       }
     },
     {
@@ -9090,7 +9164,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "| ML-MMIC-PPLE"
       }
     },
     {
@@ -9367,7 +9442,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "| SFBU"
         },
         "form_reference": {
           "raw": "SFBU",
@@ -9386,6 +9462,9 @@
     ]
   },
   "fideon:absent": [
+    "additional_fields[].label",
+    "additional_fields[].section",
+    "additional_fields[].value",
     "billing.amount_due",
     "billing.amount_enclosed",
     "billing.bank_account_number_masked",
@@ -10310,6 +10389,9 @@
     "premium.taxes_and_fees[].is_fully_earned",
     "premium.total_discount_amount",
     "premium.total_fees_amount",
+    "printed_lines[].cells[]",
+    "printed_lines[].kind",
+    "printed_lines[].page",
     "producer.address.country",
     "producer.address.county",
     "producer.address.county_code",
@@ -10338,6 +10420,7 @@
     "state_notices[].civil_penalty_amount",
     "state_notices[].contact_phone",
     "state_notices[].contact_website",
+    "state_notices[].copyright_notice",
     "state_notices[].edition_date",
     "state_notices[].form_reference",
     "state_notices[].form_reference_edition",
@@ -10396,6 +10479,7 @@
     "underwriting.consumer_report_disclosures[].reporting_agency_address.line_2",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.postal_code",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.state",
+    "underwriting.consumer_report_disclosures[].reporting_agency_phone",
     "underwriting.consumer_report_disclosures[].reporting_agency_website",
     "underwriting.consumer_report_disclosures[].updated_report_days",
     "underwriting.exceptions[].exception_type",
@@ -10427,6 +10511,947 @@
     "synthetic": true,
     "note": "Scanned synthetic document generated from the reference document: every original value rewritten in place with an invented one; page_ref measured on the rewritten PDF before scanning.",
     "scanner_profile": "high-quality scan, 400 dpi",
-    "page_refs_measured_on": "text-layer twin of midstate_endorsed_multi_location.pdf before scanning"
-  }
+    "page_refs_measured_on": "text-layer twin of midstate_endorsed_multi_location.pdf before scanning",
+    "prose": "text_sections, printed_label and printed_lines added by main's prose.text_sections / dfire.engine; scanned pages none read by OCR of the published scan"
+  },
+  "text_sections": {
+    "page1_s1": {
+      "section_id": "page1_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Changes made to your policy are as follows:",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s2": {
+      "section_id": "page1_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Location 4 - Renov Heat Added 2026 (*) Location 4 - Renov Roof Added 2026 (*) Location 4 - HEAT_YN Changed from No to Yes Location 4 - ROOF_YN Changed from No to Yes Location 3 - Renov Heat Added 2026 (*) Location 3 - Renov Roof Added 2026 (*) Location 3 - HEAT_YN Changed from No to Yes Location 3 - ROOF_YN Changed from No to Yes Location 2 - Renov Heat Added 2026 (*) Location 2 - Renov Roof Added 2026 (*) Location 2 - HEAT_YN Changed from No to Yes Location 2 - ROOF_YN Changed from No to Yes Location 1 - Renov Roof Changed from 1998 to 2026 Location 1 - PLUMBING_YN Changed from Yes to No Location 1 - ELECTRIC_YN Changed from Yes to No",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s3": {
+      "section_id": "page1_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Please retain this endorsement notice with your policy. (* - See Declarations for Detail) OFFICE COPY",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page2_s1": {
+      "section_id": "page2_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "This replaces all previously issued policy Declarations, if any. This policy applies only to accidents, occurrences or losses which happen during the policy period shown above. If the policy is written on a continous basis, each period of one year ending on the annual anniversary date of this policy constitutes a separate policy period. This policy applies only to those coverages below for which a limit of liability or premium charge is shown. Our limit of liability for each coverage shall be not more than the amount stated for such coverage, subject to all the terms of this policy.",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s2": {
+      "section_id": "page2_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "The Described Location(s) covered by this policy is located at the above address, unless otherwise stated.",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s3": {
+      "section_id": "page2_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "1) 518 Silver Birch Road, Long Lake, Hamilton, Raquette Lake, NY 13436 2) 522 Silver Birch Road (Rental cottage 1), Long Lake, Hamilton, Raquette Lake, NY 13436 3) 526 Silver Birch Road (Rental cottage 2), Long Lake, Hamilton, Raquette Lake, NY 13436 4) 530 Silver Birch Road (Rental cottage), Long Lake, Hamilton, Raquette Lake, NY 13436",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page5_s1": {
+      "section_id": "page5_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "The limit of liability shown for Coverage M-Medical Payments to Others is increased by $1,000. The limit of liability shown for Damage To Property Of Others is increased by $500.",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s2": {
+      "section_id": "page5_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Location: 518 Silver Birch Road, Raquette Lake Hamilton NY 13436",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s3": {
+      "section_id": "page5_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "For Location: 1) 518 Silver Birch Road",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page6_s1": {
+      "section_id": "page6_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Coverage L - Personal Liability and Coverage M - Medical Payments to Others Applies",
+      "page_range": [
+        6
+      ],
+      "form_number": null
+    },
+    "page6_s2": {
+      "section_id": "page6_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "We pay up to $5,000 per occurrence.",
+      "page_range": [
+        6
+      ],
+      "form_number": null
+    },
+    "page6_s3": {
+      "section_id": "page6_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Location: 522 Silver Birch Road (Rental cottage 1), Long Lake, Hamilton, Raquette Lake, NY 13436 Location: 526 Silver Birch Road (Rental cottage 2), Long Lake, Hamilton, Raquette Lake, NY 13436 Location: 530 Silver Birch Road (Rental cottage), Long Lake, Hamilton, Raquette Lake, NY 13436",
+      "page_range": [
+        6
+      ],
+      "form_number": null
+    },
+    "page6_s4": {
+      "section_id": "page6_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "For Location 1) 518 Silver Birch Road",
+      "page_range": [
+        6
+      ],
+      "form_number": null
+    }
+  },
+  "printed_lines": [
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "EFF - 02/10/2026"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "PAGE 1 OF 0"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Named Insured and Address"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Inlet, NY"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "===================================== ENDORSEMENTS SUMMARY ======================================"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "EFF - 02/10/2026"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "PAGE 1 OF 8"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Named Insured and Address"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Inlet, NY"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "| Property Coverages",
+        "| Liability Limit |"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Unless Otherwise Specified"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "| Rating Information:"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "| D. Add'l Living Exp. & Loss of Rent | $"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "| F. Farm Barns, Bldgs, & Structures"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "per Person"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "|Subject to the Following Forms & Endorsements: (insert no., edition date, title)"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "row",
+      "cells": [
+        "EFF - 02/10/2026"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "row",
+      "cells": [
+        "PAGE 2 OF 8"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Named Insured and Address"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Inlet, NY"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "row",
+      "cells": [
+        "|Subject to the Following Forms & Endorsements: (insert no., edition date, title)"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "row",
+      "cells": [
+        "(07/10) Secondary/Seasonal Homeowners Coverage Limitation Endorsem |"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "row",
+      "cells": [
+        "|Subsequent payments will be due each year on the anni-",
+        "PREMIUM AT INCEPTION |$ 3,196.00|"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "row",
+      "cells": [
+        "|versary date based on the rates in effect at that time.",
+        "NYS FIRE INSURANCE FEE |$"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "row",
+      "cells": [
+        "Loc Mortgagee or Secured Party:",
+        "City",
+        "St Zip",
+        "Loan #",
+        "Interest"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "row",
+      "cells": [
+        "NY 13357"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "Countersignature Date",
+        "Our Authorized Representative"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "row",
+      "cells": [
+        "EFF - 02/10/2026"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "row",
+      "cells": [
+        "PAGE 3 OF 8"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "Named Insured and Address"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "Inlet, NY"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "=================================== SUPPLEMENTAL DECLARATIONS ==================================="
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "Edition Title"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "and Replacement Cost Provision)"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "Edition Title"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "Edition Title"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "Edition Title"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "Edition Title"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "Edition Title"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "Edition Title"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "Edition Title"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "caption",
+      "cells": [
+        "Base",
+        "Total"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "b. Securities"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "c. Jewelry"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "e. Watercraft"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "f. Trailer"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "g. Silverware"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "row",
+      "cells": [
+        "EFF - 02/10/2026"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "row",
+      "cells": [
+        "PAGE 4 OF 8"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "heading",
+      "cells": [
+        "Named Insured and Address"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "heading",
+      "cells": [
+        "Inlet, NY"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "heading",
+      "cells": [
+        "=================================== SUPPLEMENTAL DECLARATIONS ==================================="
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "heading",
+      "cells": [
+        "Form # ML-MMIC-PPLE continued"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "heading",
+      "cells": [
+        "j. Electronic"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "heading",
+      "cells": [
+        "c. Appliances"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "heading",
+      "cells": [
+        "Edition Title"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "heading",
+      "cells": [
+        "Edition Title"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "heading",
+      "cells": [
+        "No Identification of Structure"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "heading",
+      "cells": [
+        "Edition Title"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "row",
+      "cells": [
+        "EFF - 02/10/2026"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "row",
+      "cells": [
+        "PAGE 5 OF 8"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "Named Insured and Address"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "Inlet, NY"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "=================================== SUPPLEMENTAL DECLARATIONS ==================================="
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "Edition Title"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "erage Only"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "caption",
+      "cells": [
+        "City",
+        "County St Zip",
+        "No Fam"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "Edition Title"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "Edition Title"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "Edition Title"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "Edition Title"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "row",
+      "cells": [
+        "EFF - 02/10/2026"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "row",
+      "cells": [
+        "PAGE 6 OF 8"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "heading",
+      "cells": [
+        "Named Insured and Address"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "heading",
+      "cells": [
+        "Inlet, NY"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "heading",
+      "cells": [
+        "=================================== SUPPLEMENTAL DECLARATIONS ==================================="
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "heading",
+      "cells": [
+        "Edition Title"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "heading",
+      "cells": [
+        "Edition Title"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "heading",
+      "cells": [
+        "Edition Title"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "heading",
+      "cells": [
+        "Annual Aggregate Limit"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "heading",
+      "cells": [
+        "Edition Title"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "heading",
+      "cells": [
+        "Liability Limit"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "heading",
+      "cells": [
+        "Unless Otherwise Specified"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "heading",
+      "cells": [
+        "Rating Information:"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "heading",
+      "cells": [
+        "D. Add'l Living Exp. & Loss of Rent"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "heading",
+      "cells": [
+        "Applicable Forms"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "heading",
+      "cells": [
+        "Edition Title"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "row",
+      "cells": [
+        "EFF - 02/10/2026"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "row",
+      "cells": [
+        "PAGE 7 OF 8"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "heading",
+      "cells": [
+        "Named Insured and Address"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "heading",
+      "cells": [
+        "Inlet, NY"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "heading",
+      "cells": [
+        "=================================== SUPPLEMENTAL DECLARATIONS ==================================="
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "heading",
+      "cells": [
+        "Edition Title"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "heading",
+      "cells": [
+        "Liability Limit"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "heading",
+      "cells": [
+        "Unless Otherwise Specified"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "heading",
+      "cells": [
+        "Rating Information:"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "heading",
+      "cells": [
+        "D. Add'l Living Exp. & Loss of Rent"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "heading",
+      "cells": [
+        "Applicable Forms"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "heading",
+      "cells": [
+        "Edition Title"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "heading",
+      "cells": [
+        "Edition Title"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "heading",
+      "cells": [
+        "Liability Limit"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "heading",
+      "cells": [
+        "Unless Otherwise Specified"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "heading",
+      "cells": [
+        "Rating Information:"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "heading",
+      "cells": [
+        "D. Add'l Living Exp. & Loss of Rent"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "heading",
+      "cells": [
+        "Applicable Forms"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "heading",
+      "cells": [
+        "Edition Title"
+      ]
+    },
+    {
+      "page": 9,
+      "kind": "row",
+      "cells": [
+        "EFF - 02/10/2026"
+      ]
+    },
+    {
+      "page": 9,
+      "kind": "row",
+      "cells": [
+        "PAGE 8 OF 8"
+      ]
+    },
+    {
+      "page": 9,
+      "kind": "heading",
+      "cells": [
+        "Named Insured and Address"
+      ]
+    },
+    {
+      "page": 9,
+      "kind": "heading",
+      "cells": [
+        "Inlet, NY"
+      ]
+    },
+    {
+      "page": 9,
+      "kind": "heading",
+      "cells": [
+        "=================================== SUPPLEMENTAL DECLARATIONS ==================================="
+      ]
+    },
+    {
+      "page": 9,
+      "kind": "row",
+      "cells": [
+        "Form # ML-561S continued"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "| F. Farm Barns, Bldgs, & Structures",
+        "| $",
+        "N/A",
+        "| No. of Families: 1",
+        "|"
+      ]
+    }
+  ]
 }

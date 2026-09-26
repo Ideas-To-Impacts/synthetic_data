@@ -23,11 +23,12 @@
         1,
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Transaction Type"
     },
     "issue_date": {
       "raw": "10/14/2025",
-      "parsed": "2025-10-14",
+      "parsed": "10/14/2025",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -36,7 +37,8 @@
         1,
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Issue Date"
     },
     "page_count": {
       "raw": "2",
@@ -99,11 +101,12 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Transaction Reason"
     },
     "transaction_effective_date": {
       "raw": "04/05/2025",
-      "parsed": "2025-04-05",
+      "parsed": "04/05/2025",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -137,7 +140,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Issued by"
     },
     "company_structure": {
       "raw": "A Stock Corporation",
@@ -239,7 +243,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Agent"
     },
     "address": {
       "line_1": {
@@ -319,11 +324,12 @@
         1,
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Policy Number"
     },
     "effective_date": {
       "raw": "04/05/2025",
-      "parsed": "2025-04-05",
+      "parsed": "04/05/2025",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -335,7 +341,7 @@
     },
     "expiration_date": {
       "raw": "04/05/2026",
-      "parsed": "2026-04-05",
+      "parsed": "04/05/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -401,7 +407,8 @@
       "page_ref": [
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "HOMEOWNERS 4 - CONTENTS BROAD FORM"
     },
     "policy_form_edition": {
       "raw": "02/20",
@@ -413,7 +420,8 @@
       "page_ref": [
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "HOMEOWNERS 4 - CONTENTS BROAD FORM"
     }
   },
   "named_insured": {
@@ -505,7 +513,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "To Report a Claim"
     }
   },
   "billing": {
@@ -519,7 +528,8 @@
       "page_ref": [
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Your Policy Pay Plan is"
     }
   },
   "premium": {
@@ -547,7 +557,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Section I - Property"
         },
         "limit_amount": {
           "raw": "$30,000",
@@ -559,7 +570,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Section I - Property"
         },
         "premium": {
           "raw": "$188.00",
@@ -571,7 +583,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Section I - Property"
         }
       },
       {
@@ -597,7 +610,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage D - Loss of Use"
         },
         "premium": {
           "raw": "Included",
@@ -610,7 +624,8 @@
             1,
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage D - Loss of Use"
         }
       },
       {
@@ -624,7 +639,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Section II - Liability"
         },
         "limit_amount": {
           "raw": "$1,000,000",
@@ -636,7 +652,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Section II - Liability"
         },
         "premium": {
           "raw": "$47.00",
@@ -648,7 +665,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Section II - Liability"
         }
       },
       {
@@ -674,7 +692,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage F - Medical Payments Coverage"
         },
         "premium": {
           "raw": "Included",
@@ -687,7 +706,8 @@
             1,
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage D - Loss of Use"
         }
       }
     ],
@@ -701,7 +721,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Total return premium"
     }
   },
   "forms_and_endorsements": [
@@ -728,7 +749,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "HOMEOWNERS 4 - CONTENTS BROAD FORM"
       },
       "edition_date": {
         "raw": "02/20",
@@ -740,7 +762,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "HOMEOWNERS 4 - CONTENTS BROAD FORM"
       },
       "premium": {
         "raw": "Included",
@@ -753,7 +776,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D - Loss of Use"
       }
     },
     {
@@ -779,7 +803,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "SPECIAL PROVISIONS - NEW YORK"
       },
       "edition_date": {
         "raw": "07/22",
@@ -791,7 +816,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "SPECIAL PROVISIONS - NEW YORK"
       },
       "premium": {
         "raw": "Included",
@@ -804,7 +830,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D - Loss of Use"
       }
     },
     {
@@ -855,7 +882,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D - Loss of Use"
       }
     },
     {
@@ -906,7 +934,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D - Loss of Use"
       }
     },
     {
@@ -932,7 +961,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "HOME SYSTEMS PROTECTION"
       },
       "edition_date": {
         "raw": "06/17",
@@ -956,7 +986,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "HOME SYSTEMS PROTECTION"
       }
     },
     {
@@ -982,7 +1013,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "HOME-SHARING HOST ACTIVITIES AMENDATORY"
       },
       "edition_date": {
         "raw": "12/18",
@@ -994,7 +1026,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "HOME-SHARING HOST ACTIVITIES AMENDATORY"
       },
       "premium": {
         "raw": "Included",
@@ -1007,7 +1040,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D - Loss of Use"
       }
     },
     {
@@ -1033,7 +1067,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "IDENTITY MONITORING AND PROTECTION SERVICES"
       },
       "edition_date": {
         "raw": "06/17",
@@ -1057,7 +1092,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "IDENTITY MONITORING AND PROTECTION SERVICES"
       }
     },
     {
@@ -1083,7 +1119,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "IDENTITY THEFT RESOLUTION SERVICES COVERAGE"
       },
       "edition_date": {
         "raw": "06/17",
@@ -1108,7 +1145,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D - Loss of Use"
       }
     },
     {
@@ -1159,7 +1197,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D - Loss of Use"
       }
     },
     {
@@ -1210,7 +1249,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D - Loss of Use"
       }
     },
     {
@@ -1236,7 +1276,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "PERSONAL INJURY COVERAGE - NEW YORK"
       },
       "edition_date": {
         "raw": "10/11",
@@ -1248,7 +1289,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "PERSONAL INJURY COVERAGE - NEW YORK"
       },
       "premium": {
         "raw": "Included",
@@ -1261,7 +1303,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D - Loss of Use"
       }
     },
     {
@@ -1287,7 +1330,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "PERSONAL PROPERTY REPLACEMENT COST LOSS"
       },
       "edition_date": {
         "raw": "05/11",
@@ -1299,7 +1343,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "PERSONAL PROPERTY REPLACEMENT COST LOSS"
       },
       "premium": {
         "raw": "Included",
@@ -1312,7 +1357,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D - Loss of Use"
       }
     }
   ],
@@ -1402,7 +1448,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Section I - Property"
       },
       "coverage_c_personal_property_premium": {
         "raw": "$188.00",
@@ -1414,7 +1461,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Section I - Property"
       },
       "coverage_d_loss_of_use_limit": {
         "raw": "$6,000",
@@ -1426,7 +1474,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D - Loss of Use"
       },
       "coverage_d_loss_of_use_premium": {
         "raw": "Included",
@@ -1439,7 +1488,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D - Loss of Use"
       }
     },
     "section_ii_liability_coverages": {
@@ -1453,7 +1503,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Section II - Liability"
       },
       "coverage_e_personal_liability_premium": {
         "raw": "$47.00",
@@ -1465,7 +1516,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Section II - Liability"
       },
       "coverage_f_medical_payments_limit": {
         "raw": "$1,000",
@@ -1477,7 +1529,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage F - Medical Payments Coverage"
       },
       "coverage_f_medical_payments_premium": {
         "raw": "Included",
@@ -1490,7 +1543,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D - Loss of Use"
       }
     },
     "deductibles": {
@@ -1504,11 +1558,15 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Property Deductible"
       }
     }
   },
   "fideon:absent": [
+    "additional_fields[].label",
+    "additional_fields[].section",
+    "additional_fields[].value",
     "billing.amount_due",
     "billing.amount_enclosed",
     "billing.bank_account_number_masked",
@@ -2546,6 +2604,9 @@
     "premium.taxes_and_fees[].is_fully_earned",
     "premium.total_discount_amount",
     "premium.total_fees_amount",
+    "printed_lines[].cells[]",
+    "printed_lines[].kind",
+    "printed_lines[].page",
     "producer.address.country",
     "producer.address.county",
     "producer.address.county_code",
@@ -2578,6 +2639,7 @@
     "state_notices[].civil_penalty_amount",
     "state_notices[].contact_phone",
     "state_notices[].contact_website",
+    "state_notices[].copyright_notice",
     "state_notices[].edition_date",
     "state_notices[].form_reference",
     "state_notices[].form_reference_edition",
@@ -2635,6 +2697,7 @@
     "underwriting.consumer_report_disclosures[].reporting_agency_address.line_2",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.postal_code",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.state",
+    "underwriting.consumer_report_disclosures[].reporting_agency_phone",
     "underwriting.consumer_report_disclosures[].reporting_agency_website",
     "underwriting.consumer_report_disclosures[].updated_report_days",
     "underwriting.exceptions[].exception_type",
@@ -2666,6 +2729,196 @@
     "synthetic": true,
     "note": "Scanned synthetic document generated from the reference document: every original value rewritten in place with an invented one; page_ref measured on the rewritten PDF before scanning.",
     "scanner_profile": "high-quality scan, 400 dpi",
-    "page_refs_measured_on": "text-layer twin of plymouth_renters_ho4_endorsement.pdf before scanning"
-  }
+    "page_refs_measured_on": "text-layer twin of plymouth_renters_ho4_endorsement.pdf before scanning",
+    "prose": "text_sections, printed_label and printed_lines added by main's prose.text_sections / dfire.engine; scanned pages none read by OCR of the published scan"
+  },
+  "text_sections": {
+    "page1_s1": {
+      "section_id": "page1_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Total return premium: $22.00 Remember, you can manage your policy online by visiting plymouthrock.com/mypolicy. Please review this document carefully to verify the information listed is accurate.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s2": {
+      "section_id": "page1_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Please review this document carefully to verify the information listed is accurate.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s3": {
+      "section_id": "page1_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "In case of loss under Section I, we cover only that part of the loss over the deductible stated.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s4": {
+      "section_id": "page1_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "This is not a bill. Please refer to your insurance bill for the correct amount to pay.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page2_s1": {
+      "section_id": "page2_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "BUSINESS LIMITED SECTION I - PROPERTY COVERAGES FOR HOME DAY CARE BUSINESS",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s2": {
+      "section_id": "page2_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "insurance and subsequent amendments and renewals. Credit information may be used to determine either your eligibility for insurance or the premium you will be charged. This information includes collections, foreclosures, bankruptcies, outstanding debt, length of credit history, types of credit in use and the number of new applications for credit. We use a third party in connection with the development of your insurance score. Any information which we, or our agents, may have or may obtain about you or other individuals listed as policyholders on your policy will be treated confidentially. However, this information, as well as other personal or privileged information subsequently collected, may, under certain circumstances, be disclosed without prior authorization to non-affiliated third parties. We may also share such information with affiliated companies for such purposes as claims handling, servicing, underwriting and insurance marketing. You have the right to see personal information collected about you, and you have the right to correct any information which may be wrong. If you are interested in obtaining a description of our information practices, and your rights regarding information we collect, ask your agent, or, if you have been issued a policy, please write us at the address provided with your policy.",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    }
+  },
+  "printed_lines": [
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "Policy Effective Date: 04/05/2025 to 04/05/2026"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Transaction Effective"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Named Insured:"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Insured Property Location:"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "NEWBURGH, NY"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Summary of"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Changes"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Coverage Details"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Total Policy Premium: (including additional charges and discounts)"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "footer",
+      "cells": [
+        "This document and any attached endorsements"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Forms and Endorsements"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "Form Name",
+        "Form Number",
+        "Edition Date"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Important Messages and Details"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "Mailing Address: 86 GRAND ST APT 2, NEWBURGH, NY"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Coverage",
+        "Limit",
+        "Premium"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "Deductible(s)",
+        "Property Deductible: $500"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "x",
+        "A credit report or other investigative report about you may be requested in connection with the application for"
+      ]
+    }
+  ]
 }

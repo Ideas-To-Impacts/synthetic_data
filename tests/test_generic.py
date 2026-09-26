@@ -509,6 +509,62 @@ def test_rules_that_hold_for_any_document(schema):
     assert line("Enclosed are your policy documents.").prose()
 
 
+def test_a_date_shift_never_lands_one_original_date_on_another():
+    faker = generic.Faker(Values(5))
+    faker.days = 122                                   # April 9 -> August 9
+    faker.avoid(["April 9, 2026", "August 9, 2026"])
+    assert faker.days != 122
+
+
+def test_copies_the_layout_hides_are_replaced_too(tmp_path, schema):
+    # a policy number printed spaced in a header, a date stamped up the margin,
+    # an agency name wrapped onto "AGENCY LLC", and a heading the document
+    # also uses in lower case - which is no one's name
+    folder = tmp_path / "data" / "Markel American Insurance Company" / "ocean_marine"
+    folder.mkdir(parents=True)
+    doc = fitz.open()
+    page = doc.new_page(width=612, height=792)
+    for x, y, size, text in LINES + [
+            (40, 330, 10, "Account Number: 7382910455"), (400, 40, 9, "73 82 91 04 55"),
+            (300, 260, 10, "Stable Rock Insurance"), (300, 272, 10, "AGENCY LLC"),
+            (300, 284, 10, "12 Mill Rd"), (300, 296, 10, "Utica, NY 13501"),
+            (40, 360, 10, "Residence Premises"),
+            (40, 380, 10, "Coverage applies on the residence premises only.")]:
+        page.insert_text((x, y), text, fontsize=size, fontname="helv")
+    page.insert_text((590, 300), "08/26/2026", fontsize=7, fontname="helv", rotate=90)
+    doc.save(str(folder / "hidden.pdf"))
+    out = tmp_path / "out"
+    out.mkdir()
+    built = generic.synthesize(folder / "hidden.pdf", out / "h.pdf", out / "h.json", schema, Values("t"))
+    assert built.ok, built.problems
+    gold = built.gold.read_text("utf-8")
+    assert "Residence Premises" not in json.loads(gold)["named_insured"]["primary_name"]["raw"]
+
+
+def test_an_address_block_is_read_by_its_shape(tmp_path, schema):
+    # a street with no street-type word, one-word names stacked in a block a
+    # glued label heads, and a subheading between the names and the address
+    folder = tmp_path / "data" / "Markel American Insurance Company" / "ocean_marine"
+    folder.mkdir(parents=True)
+    doc = fitz.open()
+    page = doc.new_page(width=612, height=792)
+    for x, y, size, text in LINES[:4] + [
+            (40, 150, 10, "Named InsuredWINSLOW"), (40, 162, 10, "TERESA UNDERHILL"),
+            (40, 174, 10, "MEDINA"), (40, 186, 10, "2646 SUMMIT"), (40, 198, 10, "CORTLAND, NY 13045")]:
+        page.insert_text((x, y), text, fontsize=size, fontname="helv")
+    doc.save(str(folder / "block.pdf"))
+    out = tmp_path / "out"
+    out.mkdir()
+    built = generic.synthesize(folder / "block.pdf", out / "b.pdf", out / "b.json", schema, Values("t"))
+    assert built.ok, built.problems              # no original name or street left
+    gold = json.loads(built.gold.read_text("utf-8"))
+    insured = gold["named_insured"]
+    assert insured["mailing_address"]["line_1"]["raw"] != "2646 SUMMIT"
+    names = [insured["primary_name"]["raw"]] + [a["name"]["raw"] for a in insured.get("additional_named_insureds", [])]
+    assert not {"WINSLOW", "TERESA UNDERHILL", "MEDINA"} & set(names)
+    assert len(names) == 3
+
+
 def test_a_model_number_ends_the_make():
     from fideon_synth import structure
     unit = {"unit_description": generic.fv("2015 Correct Craft/Nautique 200 Sport Nautique")}
@@ -529,6 +585,9 @@ def test_labels_match_schema_fields(schema):
     assert match("TOTAL ANNUAL PREMIUM:", "money") == "premium.total_policy_premium"
     # a label that names a field of the wrong kind is not a match
     assert match("Policy Number:", "money") is None
+    # a text layer that lost the spaces between the words
+    assert match("PolicyEffectiveDate", "date") == "policy.effective_date"
+    assert match("TOTAL ANNUALPREMIUM:", "money") == "premium.total_policy_premium"
 
 
 def test_parsed_dates_must_be_month_day_year(schema):

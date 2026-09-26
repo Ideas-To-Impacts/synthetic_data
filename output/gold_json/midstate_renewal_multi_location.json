@@ -41,7 +41,8 @@
         5,
         9
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "YOUR"
     },
     "page_count": {
       "raw": "8",
@@ -97,11 +98,12 @@
         8,
         9
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Midstate"
     },
     "issue_date": {
       "raw": "SEP 16,2025",
-      "parsed": "2025-09-16",
+      "parsed": "09/16/2025",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -256,7 +258,8 @@
           7,
           8
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Home"
       }
     },
     "state_of_issue": {
@@ -348,7 +351,8 @@
           7,
           8
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Raquette"
       },
       "state": {
         "raw": "NY",
@@ -388,7 +392,8 @@
           8,
           9
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Raquette"
       }
     },
     "contact": {
@@ -409,7 +414,8 @@
           7,
           8
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Agent Phone"
       },
       "fax": {
         "raw": "(315) 555-0168",
@@ -428,7 +434,8 @@
           7,
           8
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Fax"
       }
     },
     "producer_code": {
@@ -463,7 +470,8 @@
         8,
         9
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Policy ID"
     },
     "program_name": {
       "raw": "Home Provider",
@@ -486,7 +494,7 @@
     },
     "effective_date": {
       "raw": "OCT 15, 2025",
-      "parsed": "2025-10-15",
+      "parsed": "10/15/2025",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -501,11 +509,12 @@
         7,
         8
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "From"
     },
     "expiration_date": {
       "raw": "OCT 15, 2026",
-      "parsed": "2026-10-15",
+      "parsed": "10/15/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -588,7 +597,8 @@
         8,
         9
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Policy ID"
     },
     "is_renewal": {
       "raw": "Yes",
@@ -691,7 +701,8 @@
           8,
           9
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "District"
       },
       "state": {
         "raw": "NY",
@@ -731,7 +742,8 @@
           8,
           9
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Raquette"
       }
     },
     "additional_named_insureds": [
@@ -772,7 +784,7 @@
   "signature": {
     "countersignature_date": {
       "raw": "SEP 16,2025",
-      "parsed": "2025-09-16",
+      "parsed": "09/16/2025",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -895,7 +907,8 @@
             8,
             9
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "District"
         },
         "state": {
           "raw": "NY",
@@ -935,7 +948,8 @@
             8,
             9
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Raquette"
         }
       }
     },
@@ -1015,7 +1029,8 @@
             8,
             9
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "District"
         },
         "state": {
           "raw": "NY",
@@ -1055,7 +1070,8 @@
             8,
             9
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Raquette"
         }
       }
     },
@@ -1134,7 +1150,8 @@
             8,
             9
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "District"
         },
         "state": {
           "raw": "NY",
@@ -1174,7 +1191,8 @@
             8,
             9
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Raquette"
         }
       }
     },
@@ -1252,7 +1270,8 @@
             8,
             9
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "District"
         },
         "state": {
           "raw": "NY",
@@ -1292,7 +1311,8 @@
             8,
             9
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Raquette"
         }
       }
     }
@@ -1365,7 +1385,8 @@
             8,
             9
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "District"
         },
         "state": {
           "raw": "NY",
@@ -1405,7 +1426,8 @@
             8,
             9
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Raquette"
         }
       },
       "construction_type": {
@@ -1420,7 +1442,8 @@
           6,
           7
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Construction"
       },
       "number_of_families": {
         "raw": "1",
@@ -1451,7 +1474,8 @@
           6,
           7
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Protection"
       },
       "solid_fuel_burning_device_present": {
         "raw": "Yes",
@@ -1507,7 +1531,8 @@
           8,
           9
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "District"
       }
     },
     "section_i_property_coverages": {
@@ -1618,7 +1643,8 @@
             4,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Location"
         }
       ]
     },
@@ -1661,7 +1687,8 @@
           4,
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "The"
       },
       "damage_to_property_of_others_limit_increase": {
         "raw": "$500",
@@ -1676,7 +1703,8 @@
           6,
           7
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Deductible"
       },
       "additional_coverages": [
         {
@@ -1777,7 +1805,8 @@
               7,
               8
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Basic"
           },
           "premium": {
             "raw": "$154",
@@ -1834,7 +1863,8 @@
               7,
               8
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Basic"
           },
           "premium": {
             "raw": "$366",
@@ -1913,7 +1943,8 @@
                 8,
                 9
               ],
-              "flagged": false
+              "flagged": false,
+              "printed_label": "District"
             },
             "county": {
               "raw": "Hamilt",
@@ -1965,7 +1996,8 @@
                 8,
                 9
               ],
-              "flagged": false
+              "flagged": false,
+              "printed_label": "Raquette"
             }
           },
           "number_of_families": {
@@ -2061,7 +2093,8 @@
                 8,
                 9
               ],
-              "flagged": false
+              "flagged": false,
+              "printed_label": "District"
             },
             "county": {
               "raw": "Hamilt",
@@ -2113,7 +2146,8 @@
                 8,
                 9
               ],
-              "flagged": false
+              "flagged": false,
+              "printed_label": "Raquette"
             }
           },
           "number_of_families": {
@@ -2207,7 +2241,8 @@
                 8,
                 9
               ],
-              "flagged": false
+              "flagged": false,
+              "printed_label": "District"
             },
             "county": {
               "raw": "Hamilt",
@@ -2259,7 +2294,8 @@
                 8,
                 9
               ],
-              "flagged": false
+              "flagged": false,
+              "printed_label": "Raquette"
             }
           },
           "number_of_families": {
@@ -2345,7 +2381,8 @@
           6,
           7
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Deductible"
       }
     },
     "discounts": [
@@ -2371,7 +2408,8 @@
             "source": "structural"
           },
           "page_ref": [],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "FED"
         },
         "form_reference": {
           "raw": "FED",
@@ -2396,7 +2434,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "FED"
         }
       },
       {
@@ -2421,7 +2460,8 @@
             "source": "structural"
           },
           "page_ref": [],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "RHC"
         },
         "form_reference": {
           "raw": "RHC",
@@ -2446,7 +2486,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "RHC"
         }
       },
       {
@@ -2471,7 +2512,8 @@
             "source": "structural"
           },
           "page_ref": [],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "FED"
         },
         "form_reference": {
           "raw": "CF",
@@ -2597,7 +2639,8 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Form"
         }
       },
       {
@@ -2641,7 +2684,8 @@
             4,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "The"
         },
         "increased_limit": {
           "raw": "$0",
@@ -2670,7 +2714,8 @@
             4,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "The"
         },
         "premium": {
           "raw": "$0",
@@ -2699,7 +2744,8 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Form"
         }
       },
       {
@@ -2743,7 +2789,8 @@
             4,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "The"
         },
         "increased_limit": {
           "raw": "$0",
@@ -2772,7 +2819,8 @@
             4,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "The"
         },
         "premium": {
           "raw": "$0",
@@ -2801,7 +2849,8 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Form"
         }
       },
       {
@@ -2898,7 +2947,8 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Form"
         }
       },
       {
@@ -2939,7 +2989,8 @@
             4,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "The"
         },
         "increased_limit": {
           "raw": "$0",
@@ -2968,7 +3019,8 @@
             4,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "The"
         },
         "premium": {
           "raw": "$0",
@@ -2997,7 +3049,8 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Form"
         }
       },
       {
@@ -3038,7 +3091,8 @@
             4,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "The"
         },
         "increased_limit": {
           "raw": "$0",
@@ -3067,7 +3121,8 @@
             4,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "The"
         },
         "premium": {
           "raw": "$0",
@@ -3096,7 +3151,8 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Form"
         }
       },
       {
@@ -3192,7 +3248,8 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Form"
         }
       },
       {
@@ -3286,7 +3343,8 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Form"
         }
       },
       {
@@ -3380,7 +3438,8 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Form"
         }
       },
       {
@@ -3420,7 +3479,8 @@
             4,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "The"
         },
         "increased_limit": {
           "raw": "$0",
@@ -3449,7 +3509,8 @@
             4,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "The"
         },
         "premium": {
           "raw": "$0",
@@ -3478,7 +3539,8 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Form"
         }
       },
       {
@@ -3572,7 +3634,8 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Form"
         }
       },
       {
@@ -3672,7 +3735,8 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Form"
         }
       },
       {
@@ -3716,7 +3780,8 @@
             4,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "The"
         },
         "increased_limit": {
           "raw": "$0",
@@ -3745,7 +3810,8 @@
             4,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "The"
         },
         "premium": {
           "raw": "$0",
@@ -3774,7 +3840,8 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Form"
         }
       },
       {
@@ -3818,7 +3885,8 @@
             4,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "The"
         },
         "increased_limit": {
           "raw": "$0",
@@ -3847,7 +3915,8 @@
             4,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "The"
         },
         "premium": {
           "raw": "$0",
@@ -3876,7 +3945,8 @@
             3,
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Form"
         }
       }
     ],
@@ -3936,7 +4006,8 @@
             6,
             7
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Deductible"
         },
         "premium": {
           "raw": "$118",
@@ -3979,7 +4050,8 @@
             7,
             8
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Basic"
         },
         "location_reference": {
           "raw": "468 Beaver Brook Road, Raquette Lake Hamilton NY 13436",
@@ -3991,7 +4063,8 @@
           "page_ref": [
             4
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Location"
         }
       }
     ],
@@ -4035,7 +4108,8 @@
             4,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Location"
         },
         "premium": {
           "raw": "$121",
@@ -4168,7 +4242,8 @@
             4,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Location"
         },
         "premium": {
           "raw": "$0",
@@ -4231,7 +4306,8 @@
             4,
             5
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "The"
         },
         "limit_basis": {
           "raw": "per occurence",
@@ -4409,7 +4485,8 @@
             6,
             7
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Deductible"
         },
         "premium": {
           "raw": "$80",
@@ -4461,7 +4538,8 @@
           "page_ref": [
             6
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Home"
         },
         "deductible_amount": {
           "raw": "$500",
@@ -4476,7 +4554,8 @@
             6,
             7
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Deductible"
         },
         "premium": {
           "raw": "$38",
@@ -4556,7 +4635,8 @@
               8,
               9
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "District"
           },
           "state": {
             "raw": "NY",
@@ -4596,7 +4676,8 @@
               8,
               9
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Raquette"
           }
         },
         "section_i_property_coverages": {
@@ -4672,7 +4753,8 @@
               6,
               7
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Deductible"
           }
         },
         "protection_class": {
@@ -4687,7 +4769,8 @@
             6,
             7
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Protection"
         },
         "feet_from_hydrant": {
           "raw": "1001ft to hydrant",
@@ -4726,7 +4809,8 @@
             6,
             7
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Construction"
         },
         "number_of_families": {
           "raw": "1",
@@ -4763,7 +4847,8 @@
             8,
             9
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "District"
         },
         "usage_type": {
           "raw": "Seasonal",
@@ -4812,7 +4897,8 @@
                 7,
                 8
               ],
-              "flagged": false
+              "flagged": false,
+              "printed_label": "Basic"
             },
             "form_title": {
               "raw": "Causes of Loss Section-Coverages A,B,C and D (Causes of Loss an",
@@ -4862,7 +4948,8 @@
                 7,
                 8
               ],
-              "flagged": false
+              "flagged": false,
+              "printed_label": "Basic"
             },
             "form_title": {
               "raw": "Added Perils For Refrigerated Food Products",
@@ -4957,7 +5044,8 @@
               8,
               9
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "District"
           },
           "state": {
             "raw": "NY",
@@ -4997,7 +5085,8 @@
               8,
               9
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Raquette"
           }
         },
         "section_i_property_coverages": {
@@ -5073,7 +5162,8 @@
               6,
               7
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Deductible"
           }
         },
         "protection_class": {
@@ -5088,7 +5178,8 @@
             6,
             7
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Protection"
         },
         "feet_from_hydrant": {
           "raw": "1001ft to hydrant",
@@ -5127,7 +5218,8 @@
             6,
             7
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Construction"
         },
         "number_of_families": {
           "raw": "1",
@@ -5164,7 +5256,8 @@
             8,
             9
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "District"
         },
         "usage_type": {
           "raw": "Seasonal",
@@ -5213,7 +5306,8 @@
                 7,
                 8
               ],
-              "flagged": false
+              "flagged": false,
+              "printed_label": "Basic"
             },
             "form_title": {
               "raw": "Causes of Loss Section-Coverages A,B,C and D (Causes of Loss an",
@@ -5263,7 +5357,8 @@
                 7,
                 8
               ],
-              "flagged": false
+              "flagged": false,
+              "printed_label": "Basic"
             },
             "form_title": {
               "raw": "Added Perils For Refrigerated Food Products",
@@ -5358,7 +5453,8 @@
               8,
               9
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "District"
           },
           "state": {
             "raw": "NY",
@@ -5398,7 +5494,8 @@
               8,
               9
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Raquette"
           }
         },
         "section_i_property_coverages": {
@@ -5474,7 +5571,8 @@
               6,
               7
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Deductible"
           }
         },
         "protection_class": {
@@ -5489,7 +5587,8 @@
             6,
             7
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Protection"
         },
         "feet_from_hydrant": {
           "raw": "1001ft to hydrant",
@@ -5528,7 +5627,8 @@
             6,
             7
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Construction"
         },
         "number_of_families": {
           "raw": "1",
@@ -5565,7 +5665,8 @@
             8,
             9
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "District"
         },
         "usage_type": {
           "raw": "Seasonal",
@@ -5614,7 +5715,8 @@
                 7,
                 8
               ],
-              "flagged": false
+              "flagged": false,
+              "printed_label": "Basic"
             },
             "form_title": {
               "raw": "Causes of Loss Section-Coverages A,B,C and D (Causes of Loss an",
@@ -5664,7 +5766,8 @@
                 7,
                 8
               ],
-              "flagged": false
+              "flagged": false,
+              "printed_label": "Basic"
             },
             "form_title": {
               "raw": "Added Perils For Refrigerated Food Products",
@@ -5712,7 +5815,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       },
       "edition_date": {
         "raw": "06/99",
@@ -5731,7 +5835,8 @@
           7,
           8
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       },
       "form_group": {
         "raw": "Basic Forms",
@@ -5756,7 +5861,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       }
     },
     {
@@ -5770,7 +5876,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       },
       "edition_date": {
         "raw": "01/87",
@@ -5783,7 +5890,8 @@
           1,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       },
       "form_group": {
         "raw": "Basic Forms",
@@ -5808,7 +5916,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       }
     },
     {
@@ -5822,7 +5931,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       },
       "edition_date": {
         "raw": "02/00",
@@ -5834,7 +5944,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       },
       "form_group": {
         "raw": "Basic Forms",
@@ -5859,7 +5970,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       }
     },
     {
@@ -5910,7 +6022,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       }
     },
     {
@@ -5943,7 +6056,8 @@
           7,
           8
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       },
       "form_group": {
         "raw": "Basic Forms",
@@ -5968,7 +6082,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       }
     },
     {
@@ -6019,7 +6134,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       }
     },
     {
@@ -6052,7 +6168,8 @@
           7,
           8
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       },
       "form_group": {
         "raw": "Basic Forms",
@@ -6077,7 +6194,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       }
     },
     {
@@ -6128,7 +6246,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       }
     },
     {
@@ -6179,7 +6298,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       }
     },
     {
@@ -6212,7 +6332,8 @@
           7,
           8
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       },
       "form_group": {
         "raw": "Basic Forms",
@@ -6237,7 +6358,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       }
     },
     {
@@ -6288,7 +6410,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       }
     },
     {
@@ -6321,7 +6444,8 @@
           7,
           8
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       },
       "form_group": {
         "raw": "Basic Forms",
@@ -6346,7 +6470,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       }
     },
     {
@@ -6397,7 +6522,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       }
     },
     {
@@ -6430,7 +6556,8 @@
           7,
           8
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       },
       "form_group": {
         "raw": "Basic Forms",
@@ -6455,7 +6582,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       }
     },
     {
@@ -6506,7 +6634,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       }
     },
     {
@@ -6539,7 +6668,8 @@
           7,
           8
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       },
       "form_group": {
         "raw": "Basic Forms",
@@ -6564,7 +6694,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       }
     },
     {
@@ -6598,7 +6729,8 @@
           7,
           8
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       },
       "form_title": {
         "raw": "Causes of Loss Section-Coverages A,B,C and D (Causes of Lo",
@@ -6650,7 +6782,8 @@
           1,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       },
       "form_title": {
         "raw": "Liability Coverage Section",
@@ -6729,7 +6862,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "ML-MMIC-PPLE"
       }
     },
     {
@@ -6757,7 +6891,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "FED"
       },
       "form_title": {
         "raw": "Fire Extinguisher Discount",
@@ -6782,7 +6917,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "FED"
       }
     },
     {
@@ -6810,7 +6946,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "FED"
       },
       "form_title": {
         "raw": "Solid Fuel Burning Unit Surcharge",
@@ -6835,7 +6972,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "SFBU"
       }
     },
     {
@@ -6863,7 +7001,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "FED"
       },
       "form_title": {
         "raw": "Renovated Home Credit",
@@ -6888,7 +7027,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "RHC"
       }
     },
     {
@@ -6916,7 +7056,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "FED"
       },
       "form_title": {
         "raw": "Claims Free Discount",
@@ -6958,7 +7099,8 @@
           3,
           4
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Form"
       },
       "edition_date": {
         "raw": "07/17",
@@ -6971,7 +7113,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "ML-MMIC-PPLE"
       },
       "form_title": {
         "raw": "Personal Property and Liability Enhancement",
@@ -6997,7 +7140,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "ML-MMIC-PPLE"
       }
     },
     {
@@ -7050,7 +7194,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "ML-MMIC-PPLE"
       }
     },
     {
@@ -7083,7 +7228,8 @@
           7,
           8
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       },
       "form_title": {
         "raw": "Related Private Structures",
@@ -7144,7 +7290,8 @@
           7,
           8
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       },
       "form_title": {
         "raw": "Personal Property Replacement Cost",
@@ -7183,7 +7330,8 @@
           4,
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Location"
       }
     },
     {
@@ -7216,7 +7364,8 @@
           7,
           8
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       },
       "form_title": {
         "raw": "Additional Residential Premises-Rented To Others - Liabili",
@@ -7293,7 +7442,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "ML-MMIC-PPLE"
       }
     },
     {
@@ -7345,7 +7495,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "ML-MMIC-PPLE"
       }
     },
     {
@@ -7399,7 +7550,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "ML-MMIC-PPLE"
       },
       "applies_to": {
         "raw": "1) 468 Beaver Brook Road",
@@ -7413,7 +7565,8 @@
           4,
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Location"
       }
     },
     {
@@ -7450,7 +7603,8 @@
           7,
           8
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       },
       "form_title": {
         "raw": "Added Perils For Refrigerated Food Products",
@@ -7479,7 +7633,8 @@
           1,
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "ML-MMIC-PPLE"
       }
     },
     {
@@ -7513,7 +7668,8 @@
           7,
           8
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Basic"
       },
       "form_title": {
         "raw": "Incidental Business Pursuits -Including Products Liability",
@@ -7660,7 +7816,8 @@
           7,
           8
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Form"
       },
       "edition_date": {
         "raw": "02/87",
@@ -7716,7 +7873,8 @@
         1,
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Basic"
     },
     "fire_fee": {
       "raw": ".00",
@@ -7755,7 +7913,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "SFBU"
         },
         "form_reference": {
           "raw": "SFBU",
@@ -7774,6 +7933,9 @@
     ]
   },
   "fideon:absent": [
+    "additional_fields[].label",
+    "additional_fields[].section",
+    "additional_fields[].value",
     "billing.amount_due",
     "billing.amount_enclosed",
     "billing.bank_account_number_masked",
@@ -8720,6 +8882,9 @@
     "premium.taxes_and_fees[].is_fully_earned",
     "premium.total_discount_amount",
     "premium.total_fees_amount",
+    "printed_lines[].cells[]",
+    "printed_lines[].kind",
+    "printed_lines[].page",
     "producer.address.country",
     "producer.address.county",
     "producer.address.county_code",
@@ -8747,6 +8912,7 @@
     "state_notices[].civil_penalty_amount",
     "state_notices[].contact_phone",
     "state_notices[].contact_website",
+    "state_notices[].copyright_notice",
     "state_notices[].edition_date",
     "state_notices[].form_reference",
     "state_notices[].form_reference_edition",
@@ -8805,6 +8971,7 @@
     "underwriting.consumer_report_disclosures[].reporting_agency_address.line_2",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.postal_code",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.state",
+    "underwriting.consumer_report_disclosures[].reporting_agency_phone",
     "underwriting.consumer_report_disclosures[].reporting_agency_website",
     "underwriting.consumer_report_disclosures[].updated_report_days",
     "underwriting.exceptions[].exception_type",
@@ -8836,6 +9003,920 @@
     "synthetic": true,
     "note": "Scanned synthetic document generated from the reference document: every original value rewritten in place with an invented one; page_ref measured on the rewritten PDF before scanning.",
     "scanner_profile": "high-quality scan, 400 dpi",
-    "page_refs_measured_on": "text-layer twin of midstate_renewal_multi_location.pdf before scanning"
-  }
+    "page_refs_measured_on": "text-layer twin of midstate_renewal_multi_location.pdf before scanning",
+    "prose": "text_sections, printed_label and printed_lines added by main's prose.text_sections / dfire.engine; scanned pages [1, 2, 3, 4, 5, 6, 7, 8] read by OCR of the published scan"
+  },
+  "text_sections": {
+    "page1_s1": {
+      "section_id": "page1_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "POLICY PERIOD From: OCT 15, 2025 To: 0CT 15,2026 12:01 am Standard Time PAGE 1 OF8",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s2": {
+      "section_id": "page1_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "This replaces all previously issued policy Declarations, if any.This policy applies only to accidents, occurrences or",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s3": {
+      "section_id": "page1_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "of one year ending on the annual anniversary date of this policy constitutes a separate policy period.This policy applies only to those coverages below for which a limit of liability or premium charge is shown. Our limit of liability for each coverage shall be not more than the amount stated for such coverage, subject to all the terms of this policy.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s4": {
+      "section_id": "page1_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "The Described Location(s)covered by this policy is located at the above address,unless otherwise stated.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s5": {
+      "section_id": "page1_s5",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "1) 468 Beaver Brook Road, Long Lake， Hamilton, Raquette Lake， NY 13436 2) 4683Beaver Brook Road(Rental cottage 1)，Long Lake, Hamilton, Raquette Lake, NY 13436",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page2_s1": {
+      "section_id": "page2_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "POLICY PERIODFrom: OCT 15, 2025 To: 0CT 15,2026 12:01 am Standard Time PAGE 2OF8",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page3_s1": {
+      "section_id": "page3_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "POLICY PERIOD From: OCT 15, 2025 To: 0CT 15,2026 12:01 am Standard Time PAGE3OF8",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page4_s1": {
+      "section_id": "page4_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "POLICY PERIODFrom: OCT 15, 2025 To: 0CT 15,2026 12:01 am Standard Time PAGE 4 OF8",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page5_s1": {
+      "section_id": "page5_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "POLICY PERIODFrom: OCT 15, 2025 To: 0CT 15,2026 12:01 am Standard Time PAGE5OF8",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s2": {
+      "section_id": "page5_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "We pay up to $5,0o0 per occurrence.",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s3": {
+      "section_id": "page5_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Location: 468 Beaver Brook Road (Rental cottage 1)， Long Lake, Hamilton, Raquette Lake, NY 13436 Location: 468 Beaver Brook Road (Rental cottage 2)， Long Lake, Hamilton, Raquette Lake, NY 13436 Location: 468 Beaver Brook Road (Rental cottage 3)， Long Lake, Hamilton, Raquette Lake, NY 13436",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s4": {
+      "section_id": "page5_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "For Location 1） 468 Beaver Brook Road",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s5": {
+      "section_id": "page5_s5",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "We pay no more than $l,000 per occurence.",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page6_s1": {
+      "section_id": "page6_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "POLICY PERIOD From: OCT 15, 2025 To: 0CT 15,2026 12:01 am Standard Time PAGE 6 OF8",
+      "page_range": [
+        6
+      ],
+      "form_number": null
+    },
+    "page6_s2": {
+      "section_id": "page6_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "For Location 2） 468 Beaver Brook Road (Rental cottage 1)， Raquette Lake， NY, 13436",
+      "page_range": [
+        6
+      ],
+      "form_number": null
+    },
+    "page7_s1": {
+      "section_id": "page7_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "POLICY PERIODFrom: OCT 15, 2025 To: 0CT 15,2026 12:01 am Standard Time PAGE 7OF8",
+      "page_range": [
+        7
+      ],
+      "form_number": null
+    },
+    "page7_s2": {
+      "section_id": "page7_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "For Location 3） 468 Beaver Brook Road (Rental cottage 2)， Raquette Lake， NY， 13436",
+      "page_range": [
+        7
+      ],
+      "form_number": null
+    },
+    "page8_s1": {
+      "section_id": "page8_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "POLICY PERIODFrom: OCT 15, 2025 To: 0CT 15,2026 12:01 am Standard Time PAGE 8OF8",
+      "page_range": [
+        8
+      ],
+      "form_number": null
+    }
+  },
+  "printed_lines": [
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "430, Auburn,"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "10O F"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Named",
+        "Insured",
+        "and Address"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "losses",
+        "happen",
+        "during",
+        "written",
+        "continous",
+        "basis,"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Residence",
+        "Specified"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Rating",
+        "Information:"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "Add'l",
+        "Living",
+        "Exp.",
+        "hydrant-2"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Farm",
+        "Scheduled"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Farm",
+        "Barns,",
+        "Bldgs,",
+        "Families:"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Fh"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Following",
+        "Endorsements:",
+        "(insert",
+        "edition",
+        "title)"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "430, Auburn,"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "2 OF"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "Named",
+        "Insured",
+        "and Address"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "Following",
+        "Endorsements:",
+        "(insert",
+        "edition",
+        "title)"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "ML-5615S"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "Subsequent",
+        "will",
+        "INCEPTION"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "based",
+        "rates",
+        "effect",
+        "that",
+        "FEE"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "Mortgagee",
+        "Secured",
+        "Party:",
+        "City",
+        "Zip",
+        "Loan",
+        "Interest"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "None"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "footer",
+      "cells": [
+        "Countersignature",
+        "Authorized",
+        "Representative"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "row",
+      "cells": [
+        "430, Auburn,"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "row",
+      "cells": [
+        "3 OF"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "Named",
+        "Insured",
+        "and Address"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "Edition",
+        "Title"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "Provision)"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "Edition",
+        "Title"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "row",
+      "cells": [
+        "S68"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "Edition",
+        "Title"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "Edition",
+        "Title"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "Edition",
+        "Title"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "Edition",
+        "Title"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "Edition",
+        "Title"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "Edition",
+        "Title"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "Base",
+        "Increased",
+        "Total"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "row",
+      "cells": [
+        "430, Auburn,"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "caption",
+      "cells": [
+        "Named",
+        "Insured",
+        "and Address"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "continued"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "increased"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "increased"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "caption",
+      "cells": [
+        "Edition",
+        "Title"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "caption",
+      "cells": [
+        "Edition",
+        "Title"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "heading",
+      "cells": [
+        "Identification"
+      ]
+    },
+    {
+      "page": 4,
+      "kind": "caption",
+      "cells": [
+        "Edition",
+        "Title"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "row",
+      "cells": [
+        "430, Auburn,"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "row",
+      "cells": [
+        "5 OF"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "caption",
+      "cells": [
+        "Named",
+        "Insured",
+        "and Address"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "caption",
+      "cells": [
+        "Edition",
+        "Title"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "caption",
+      "cells": [
+        "City",
+        "County",
+        "Zip",
+        "Fam"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "caption",
+      "cells": [
+        "Edition",
+        "Title"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "caption",
+      "cells": [
+        "Edition",
+        "Title"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "caption",
+      "cells": [
+        "Edition",
+        "Title"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "caption",
+      "cells": [
+        "Edition",
+        "Title"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "row",
+      "cells": [
+        "430, Auburn,"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "caption",
+      "cells": [
+        "Named",
+        "Insured",
+        "and Address"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "caption",
+      "cells": [
+        "Edition",
+        "Title"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "caption",
+      "cells": [
+        "Edition",
+        "Title"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "caption",
+      "cells": [
+        "Edition",
+        "Title"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "Aggregate"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "caption",
+      "cells": [
+        "Edition",
+        "Title"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "caption",
+      "cells": [
+        "Residence",
+        "Specified"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "caption",
+      "cells": [
+        "Rating",
+        "Information:"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "row",
+      "cells": [
+        "Add'l",
+        "Living",
+        "Exp.",
+        "S10)",
+        "hydrant-3mi"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "Families:"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "heading",
+      "cells": [
+        "Applicable"
+      ]
+    },
+    {
+      "page": 6,
+      "kind": "caption",
+      "cells": [
+        "Edition",
+        "Title"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "row",
+      "cells": [
+        "430, Auburn,"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "caption",
+      "cells": [
+        "Named",
+        "Insured",
+        "and Address"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "caption",
+      "cells": [
+        "Edition",
+        "Title"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "caption",
+      "cells": [
+        "Residence",
+        "Specified"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "caption",
+      "cells": [
+        "Rating",
+        "Information:"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "row",
+      "cells": [
+        "Add'l",
+        "Living",
+        "Exp.",
+        "hydrant-3mi"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "heading",
+      "cells": [
+        "Families:"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "heading",
+      "cells": [
+        "Applicable"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "caption",
+      "cells": [
+        "Edition",
+        "Title"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "caption",
+      "cells": [
+        "Edition",
+        "Title"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "caption",
+      "cells": [
+        "Residence",
+        "Specified"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "caption",
+      "cells": [
+        "Rating",
+        "Information:"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "row",
+      "cells": [
+        "S10)"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "row",
+      "cells": [
+        "Add'l",
+        "Living",
+        "Exp.",
+        "S10)",
+        "hydrant-3mi"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "heading",
+      "cells": [
+        "Families:"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "heading",
+      "cells": [
+        "Applicable"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "caption",
+      "cells": [
+        "Edition",
+        "Title"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "row",
+      "cells": [
+        "430, Auburn,"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "row",
+      "cells": [
+        "8 OF"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "Named",
+        "Insured",
+        "and Address"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "heading",
+      "cells": [
+        "continued"
+      ]
+    },
+    {
+      "page": 9,
+      "kind": "heading",
+      "cells": [
+        "Ma Lakefront in"
+      ]
+    },
+    {
+      "page": 9,
+      "kind": "row",
+      "cells": [
+        "Raquette",
+        "Lake,",
+        "NY",
+        "13436",
+        "In",
+        "let,",
+        "NY",
+        "13360"
+      ]
+    }
+  ]
 }

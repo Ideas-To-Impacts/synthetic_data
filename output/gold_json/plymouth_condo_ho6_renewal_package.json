@@ -25,7 +25,8 @@
         7,
         11
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "POLICY"
     },
     "transaction_type": {
       "raw": "Renewal",
@@ -38,11 +39,12 @@
         1,
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Type"
     },
     "issue_date": {
       "raw": "02/03/2025",
-      "parsed": "2025-02-03",
+      "parsed": "02/03/2025",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -51,7 +53,8 @@
         1,
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Date"
     },
     "page_count": {
       "raw": "7",
@@ -91,7 +94,8 @@
         1,
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "AMENDATORY"
     },
     "not_a_bill_indicator": {
       "raw": "This is not a bill.",
@@ -131,7 +135,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Forms"
         },
         "form_number": {
           "raw": "BH NY 01",
@@ -144,7 +149,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "SPECIAL"
         },
         "edition_date": {
           "raw": "07/22",
@@ -157,7 +163,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "SPECIAL"
         },
         "form_title": {
           "raw": "SPECIAL PROVISIONS - NEW YORK",
@@ -186,7 +193,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Forms"
         },
         "form_number": {
           "raw": "HO 04 46",
@@ -213,7 +221,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "INFLATION"
         },
         "form_title": {
           "raw": "INFLATION GUARD",
@@ -243,7 +252,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Forms"
         },
         "form_number": {
           "raw": "BH NY 28",
@@ -272,7 +282,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "AMENDATORY"
         },
         "form_title": {
           "raw": "LIMITED FUNGI, WET OR DRY ROT, OR BACTERIA COVERAGE",
@@ -302,7 +313,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Forms"
         },
         "form_number": {
           "raw": "HO 04 35",
@@ -329,7 +341,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "PERSONAL"
         },
         "form_title": {
           "raw": "SUPPLEMENTAL LOSS ASSESSMENT COVERAGE",
@@ -359,7 +372,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Forms"
         },
         "form_number": {
           "raw": "BH 24 93",
@@ -385,7 +399,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "WORKERS'"
         },
         "form_title": {
           "raw": "WORKERS' COMPENSATION",
@@ -437,7 +452,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "WORKERS'"
         },
         "form_title": {
           "raw": "IMPORTANT FLOOD INSURANCE NOTICE",
@@ -488,7 +504,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "WORKERS'"
         },
         "form_title": {
           "raw": "IMPORTANT NOTICE TO POLICYHOLDERS SERVING IN ACTIVE MILITARY DUTY",
@@ -538,7 +555,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "NYDES-NOT"
         },
         "form_title": {
           "raw": "IMPORTANT NOTICE TO SENIOR POLICYHOLDERS",
@@ -588,7 +606,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "PRA"
         },
         "form_title": {
           "raw": "Privacy Policy",
@@ -600,7 +619,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "PRA"
         }
       },
       {
@@ -638,7 +658,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "PRA"
         },
         "form_title": {
           "raw": "Consent to Conduct Business Electronically",
@@ -688,7 +709,8 @@
           "page_ref": [
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "PRA"
         },
         "form_title": {
           "raw": "Producer Compensation",
@@ -740,7 +762,8 @@
             3,
             13
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "PRH"
         },
         "form_title": {
           "raw": "IMPORTANT INFORMATION ABOUT THE COST OF YOUR INSURANCE",
@@ -770,7 +793,8 @@
         1,
         13
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "by"
     },
     "company_structure": {
       "raw": "A Stock Corporation",
@@ -809,7 +833,8 @@
           1,
           13
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "assurance."
       },
       "state": {
         "raw": "NJ",
@@ -879,7 +904,8 @@
               1,
               13
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "assurance."
           },
           "state": {
             "raw": "NJ",
@@ -946,7 +972,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Agent"
     },
     "address": {
       "line_1": {
@@ -1001,7 +1028,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Saugerties,"
       }
     },
     "contact": {
@@ -1034,11 +1062,12 @@
         7,
         11
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Policy"
     },
     "effective_date": {
       "raw": "03/10/2025",
-      "parsed": "2025-03-10",
+      "parsed": "03/10/2025",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -1046,11 +1075,12 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Policy"
     },
     "expiration_date": {
       "raw": "03/10/2026",
-      "parsed": "2026-03-10",
+      "parsed": "03/10/2026",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -1126,7 +1156,8 @@
       "page_ref": [
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "HOMEOWNERS"
     },
     "policy_form_edition": {
       "raw": "02/20",
@@ -1138,7 +1169,8 @@
       "page_ref": [
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "HOMEOWNERS"
     }
   },
   "named_insured": {
@@ -1232,7 +1264,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "To Report a Claim"
     }
   },
   "billing": {
@@ -1246,7 +1279,8 @@
       "page_ref": [
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "is"
     }
   },
   "premium": {
@@ -1260,7 +1294,8 @@
       "page_ref": [
         1
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Total"
     },
     "premium_by_coverage_part": [
       {
@@ -1286,7 +1321,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Section"
         },
         "premium": {
           "raw": "$358.00",
@@ -1298,7 +1334,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Section"
         }
       },
       {
@@ -1324,7 +1361,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage C"
         },
         "premium": {
           "raw": "$77.00",
@@ -1336,7 +1374,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage C"
         }
       },
       {
@@ -1362,7 +1401,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage D"
         },
         "premium": {
           "raw": "$14.00",
@@ -1374,7 +1414,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage D"
         }
       },
       {
@@ -1400,7 +1441,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Section"
         },
         "premium": {
           "raw": "$34.00",
@@ -1412,7 +1454,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Section"
         }
       },
       {
@@ -1438,7 +1481,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Deductible"
         },
         "premium": {
           "raw": "Included",
@@ -1452,7 +1496,8 @@
             2,
             3
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Coverage"
         }
       }
     ],
@@ -1480,7 +1525,8 @@
           "page_ref": [
             2
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "Paper Handling"
         }
       }
     ],
@@ -1494,7 +1540,8 @@
       "page_ref": [
         2
       ],
-      "flagged": false
+      "flagged": false,
+      "printed_label": "Paper Handling"
     }
   },
   "forms_and_endorsements": [
@@ -1521,7 +1568,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "HOMEOWNERS"
       },
       "edition_date": {
         "raw": "02/20",
@@ -1533,7 +1581,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "HOMEOWNERS"
       },
       "premium": {
         "raw": "Included",
@@ -1547,7 +1596,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     {
@@ -1575,7 +1625,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "SPECIAL"
       },
       "edition_date": {
         "raw": "07/22",
@@ -1588,7 +1639,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "SPECIAL"
       },
       "premium": {
         "raw": "Included",
@@ -1602,7 +1654,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     {
@@ -1641,7 +1694,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "AMENDATORY"
       },
       "premium": {
         "raw": "Included",
@@ -1655,7 +1709,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     {
@@ -1693,7 +1748,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "AMENDATORY"
       },
       "premium": {
         "raw": "Included",
@@ -1707,7 +1763,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     {
@@ -1745,7 +1802,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "HOME-SHARING"
       },
       "premium": {
         "raw": "Included",
@@ -1759,7 +1817,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     {
@@ -1797,7 +1856,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "AMENDATORY"
       },
       "premium": {
         "raw": "Included",
@@ -1811,7 +1871,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     {
@@ -1854,7 +1915,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "INFLATION"
       },
       "premium": {
         "raw": "Included",
@@ -1867,6 +1929,19 @@
           1,
           2,
           3
+        ],
+        "flagged": false,
+        "printed_label": "Coverage"
+      },
+      "copyright_notice": {
+        "raw": "Copyright, Insurance Services Office, Inc., 1999",
+        "parsed": "Copyright, Insurance Services Office, Inc., 1999",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          5
         ],
         "flagged": false
       }
@@ -1913,7 +1988,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "AMENDATORY"
       },
       "premium": {
         "raw": "Included",
@@ -1927,7 +2003,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     {
@@ -1965,7 +2042,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "NO SECTION"
       },
       "premium": {
         "raw": "Included",
@@ -1979,7 +2057,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     {
@@ -2018,7 +2097,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "PERSONAL"
       },
       "premium": {
         "raw": "Included",
@@ -2032,7 +2112,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     {
@@ -2075,7 +2156,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "PERSONAL"
       },
       "premium": {
         "raw": "$29.00",
@@ -2086,6 +2168,19 @@
         },
         "page_ref": [
           2
+        ],
+        "flagged": false,
+        "printed_label": "SUPPLEMENTAL"
+      },
+      "copyright_notice": {
+        "raw": "© Insurance Services Office, Inc., 2010",
+        "parsed": "© Insurance Services Office, Inc., 2010",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          11
         ],
         "flagged": false
       }
@@ -2113,7 +2208,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "UNIT-OWNERS"
       },
       "edition_date": {
         "raw": "10/11",
@@ -2125,7 +2221,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "UNIT-OWNERS"
       },
       "premium": {
         "raw": "$91.00",
@@ -2137,7 +2234,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "UNIT-OWNERS"
       }
     },
     {
@@ -2175,7 +2273,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "NO SECTION"
       },
       "premium": {
         "raw": "$32.00",
@@ -2187,7 +2286,8 @@
         "page_ref": [
           2
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "UNIT-OWNERS"
       }
     },
     {
@@ -2228,7 +2328,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "WORKERS'"
       },
       "premium": {
         "raw": "Included",
@@ -2242,7 +2343,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     }
   ],
@@ -2358,7 +2460,8 @@
           "page_ref": [
             1
           ],
-          "flagged": false
+          "flagged": false,
+          "printed_label": "POUGHKEEPSIE,"
         }
       }
     },
@@ -2389,7 +2492,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Section"
       },
       "coverage_a_dwelling_premium": {
         "raw": "$358.00",
@@ -2401,7 +2505,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Section"
       },
       "coverage_c_personal_property_limit": {
         "raw": "$24,000",
@@ -2413,7 +2518,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage C"
       },
       "coverage_c_personal_property_premium": {
         "raw": "$77.00",
@@ -2425,7 +2531,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage C"
       },
       "coverage_d_loss_of_use_limit": {
         "raw": "$9,600",
@@ -2437,7 +2544,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D"
       },
       "coverage_d_loss_of_use_premium": {
         "raw": "$14.00",
@@ -2449,7 +2557,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage D"
       },
       "inflation_guard_percentage": {
         "raw": "10%",
@@ -2473,7 +2582,8 @@
         "page_ref": [
           5
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "be increased"
       },
       "inflation_guard_basis": {
         "raw": "Applied pro rata during the policy year",
@@ -2610,7 +2720,8 @@
               8,
               9
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "AMENDATORY"
           },
           "limit_amount": {
             "raw": "$20,000",
@@ -2622,7 +2733,8 @@
             "page_ref": [
               7
             ],
-            "flagged": false
+            "flagged": false,
+            "printed_label": "Section"
           }
         }
       ]
@@ -2638,7 +2750,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Section"
       },
       "coverage_e_personal_liability_premium": {
         "raw": "$34.00",
@@ -2650,7 +2763,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Section"
       },
       "coverage_f_medical_payments_limit": {
         "raw": "$1,000",
@@ -2662,7 +2776,8 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Deductible"
       },
       "coverage_f_medical_payments_premium": {
         "raw": "Included",
@@ -2676,7 +2791,8 @@
           2,
           3
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Coverage"
       }
     },
     "deductibles": {
@@ -2690,11 +2806,15 @@
         "page_ref": [
           1
         ],
-        "flagged": false
+        "flagged": false,
+        "printed_label": "Deductible"
       }
     }
   },
   "fideon:absent": [
+    "additional_fields[].label",
+    "additional_fields[].section",
+    "additional_fields[].value",
     "billing.amount_due",
     "billing.amount_enclosed",
     "billing.bank_account_number_masked",
@@ -2912,7 +3032,6 @@
     "document.transaction_reason",
     "forms_and_endorsements[].applies_to",
     "forms_and_endorsements[].applies_to_locations[]",
-    "forms_and_endorsements[].copyright_notice",
     "forms_and_endorsements[].deductible_amount",
     "forms_and_endorsements[].details",
     "forms_and_endorsements[].form_group",
@@ -3709,6 +3828,9 @@
     "premium.taxes_and_fees[].is_fully_earned",
     "premium.total_discount_amount",
     "premium.total_fees_amount",
+    "printed_lines[].cells[]",
+    "printed_lines[].kind",
+    "printed_lines[].page",
     "producer.address.country",
     "producer.address.county",
     "producer.address.county_code",
@@ -3741,6 +3863,7 @@
     "state_notices[].civil_penalty_amount",
     "state_notices[].contact_phone",
     "state_notices[].contact_website",
+    "state_notices[].copyright_notice",
     "state_notices[].edition_date",
     "state_notices[].form_reference",
     "state_notices[].form_reference_edition",
@@ -3796,6 +3919,7 @@
     "underwriting.consumer_report_disclosures[].reporting_agency_address.line_2",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.postal_code",
     "underwriting.consumer_report_disclosures[].reporting_agency_address.state",
+    "underwriting.consumer_report_disclosures[].reporting_agency_phone",
     "underwriting.consumer_report_disclosures[].reporting_agency_website",
     "underwriting.consumer_report_disclosures[].updated_report_days",
     "underwriting.exceptions[].exception_type",
@@ -3827,6 +3951,1228 @@
     "synthetic": true,
     "note": "Scanned synthetic document generated from the reference document: every original value rewritten in place with an invented one; page_ref measured on the rewritten PDF before scanning.",
     "scanner_profile": "high-quality scan, 400 dpi",
-    "page_refs_measured_on": "text-layer twin of plymouth_condo_ho6_renewal_package.pdf before scanning"
-  }
+    "page_refs_measured_on": "text-layer twin of plymouth_condo_ho6_renewal_package.pdf before scanning",
+    "prose": "text_sections, printed_label and printed_lines added by main's prose.text_sections / dfire.engine; scanned pages [1, 2, 3, 5, 7, 8, 9, 11, 13] read by OCR of the published scan"
+  },
+  "text_sections": {
+    "page1_s1": {
+      "section_id": "page1_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Plymouth Rock< 581 Main Street, Suite 400, Issued by: Palisades Property and Casualty Insurance Company",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s2": {
+      "section_id": "page1_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Summary of Company. We appreciate your business. Changes To continue your coverage without interruption, we must receive your renewal payment by12:01 am on the due date reflected on your Renewal Invoice. Remember, you may submit your payment online at any time by visiting plymouthrock.com/mypolicy.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s3": {
+      "section_id": "page1_s3",
+      "section_title": "Deductible(s) Property Deductible: $1,000",
+      "section_type": "prose",
+      "raw_text": "In case of loss under Section I, we cover only that part of the loss over the deductible stated.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s4": {
+      "section_id": "page1_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "This is not a bill. Please refer to your insurance bill for the correct amount to pay.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page2_s1": {
+      "section_id": "page2_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "insurance and subsequent amendments and renewals. Credit information may be used to determine either your eligibility for insurance or the premium you will be charged. This information includes collections, new applications for credit. We use a third party in connection with the development of your insurance score. Any information which we, or our agents, may have or may obtain about you or other individuals listed as or privileged information subsequently collected, may, under certain circumstances, be disclosed without prior authorization to non-affiliated third parties. We may also share such information with affiliated companies for such purposes as claims handling, servicing, underwriting and insurance marketing. You have the right to see personal information collected about you, and you have the right to correct any information which may be",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s2": {
+      "section_id": "page2_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "information we collect, ask your agent, or, if you have been issued a policy, please write us at the address provided with your policy.",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s3": {
+      "section_id": "page2_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Mailing AddreSs: 27 CARDINAL WAY, WAPPINGERS FALLS, NY 12590",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page3_s1": {
+      "section_id": "page3_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "part of your policy and are subject to all of its provisions. Endorsements listed below are made part of your policy with this",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s2": {
+      "section_id": "page3_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "PRA 511A 02/19 Consent to Conduct Business Electronically PRA40801/13ProducerCompensation",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page5_s1": {
+      "section_id": "page5_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "*Entry may be left blank if shown elsewhere in thispolicy for this coverage. The limits of liability for Coverages A,B, C and D will be increased annuallyby thepercentage amount that is:",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s2": {
+      "section_id": "page5_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "1. Shown in the Schedule above; and 2. Applied pro rata during the policy year.",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page7_s1": {
+      "section_id": "page7_s1",
+      "section_title": "SCHEDULE",
+      "section_type": "prose",
+      "raw_text": "These limits of liability apply to the total of all loss or costs payable under this endorsement, regardless of the number of \"occurrences\", the number of claims-made, or the number of locations insured under this endorsement and listed in this Schedule.",
+      "page_range": [
+        7
+      ],
+      "form_number": null
+    },
+    "page7_s2": {
+      "section_id": "page7_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Coverage \"Fungi\", Wet Or Dry Rot, Or Bacteria Information required to complete this Schedule, if not shown above,will be shown in the Declarations.",
+      "page_range": [
+        7
+      ],
+      "form_number": null
+    },
+    "page7_s3": {
+      "section_id": "page7_s3",
+      "section_title": "DEFINITIONS",
+      "section_type": "prose",
+      "raw_text": "(3) The cost to tear out and replace any",
+      "page_range": [
+        7
+      ],
+      "form_number": null
+    },
+    "page7_s4": {
+      "section_id": "page7_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "of \"fungi\"， wet or dry rot, or bacteria,",
+      "page_range": [
+        7
+      ],
+      "form_number": null
+    },
+    "page7_s5": {
+      "section_id": "page7_s5",
+      "section_title": "The followingAdditional Coverage is added:",
+      "section_type": "prose",
+      "raw_text": "b. The coverage described in 15.a. only",
+      "page_range": [
+        7
+      ],
+      "form_number": null
+    },
+    "page7_s6": {
+      "section_id": "page7_s6",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "by \"fungi\", wet or dry rot, or bacteria;",
+      "page_range": [
+        7
+      ],
+      "form_number": null
+    },
+    "page7_s7": {
+      "section_id": "page7_s7",
+      "section_title": "(2) The cost to remove \"fungi\",wet or dry",
+      "section_type": "prose",
+      "raw_text": "rot, or bacteria from property covered under SectionI-Property Coverages;",
+      "page_range": [
+        7
+      ],
+      "form_number": null
+    },
+    "page9_s1": {
+      "section_id": "page9_s1",
+      "section_title": "SECTIONII-CONDITIONS",
+      "section_type": "prose",
+      "raw_text": "Condition A. Limit Of Liability is replaced by the following:",
+      "page_range": [
+        9
+      ],
+      "form_number": null
+    },
+    "page9_s2": {
+      "section_id": "page9_s2",
+      "section_title": "A.Limit Of Liability",
+      "section_type": "prose",
+      "raw_text": "Our totalliability under Coverage E for all damages resulting from any one\"occurrence\"",
+      "page_range": [
+        9
+      ],
+      "form_number": null
+    },
+    "page9_s3": {
+      "section_id": "page9_s3",
+      "section_title": "damages resulting from any one\"occurrence\"",
+      "section_type": "prose",
+      "raw_text": "will not be more than the Coverage E Limit Of Liability shown in the Declarations.This limit is the same regardless of the numberof \"insureds\", claims made or persons injured. All \"bodily injury\" and \"property damage\" resulting from any one accident or from continuous or repeatedexposuretosubstantiallythesame",
+      "page_range": [
+        9
+      ],
+      "form_number": null
+    },
+    "page9_s4": {
+      "section_id": "page9_s4",
+      "section_title": "repeatedexposuretosubstantiallythesame",
+      "section_type": "prose",
+      "raw_text": "general harmful conditions will be considered to be the result of one\"occurrence\".",
+      "page_range": [
+        9
+      ],
+      "form_number": null
+    },
+    "page9_s5": {
+      "section_id": "page9_s5",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Our total liability under Coverage F for all medical expense payable for \"bodily injury\" to one person as the result of one accident will not be more than the Coverage F Limit Of Liability shown in the Declarations.",
+      "page_range": [
+        9
+      ],
+      "form_number": null
+    },
+    "page9_s6": {
+      "section_id": "page9_s6",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "All other provisions of the policy apply.",
+      "page_range": [
+        9
+      ],
+      "form_number": null
+    },
+    "page11_s1": {
+      "section_id": "page11_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Information required to complete this Schedule, if not shown above, will be shown in the Declarations.",
+      "page_range": [
+        11
+      ],
+      "form_number": null
+    },
+    "page11_s2": {
+      "section_id": "page11_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "C.7.inForm HO 00 04 and D.7.in Form HO",
+      "page_range": [
+        11
+      ],
+      "form_number": null
+    },
+    "page11_s3": {
+      "section_id": "page11_s3",
+      "section_title": "Assessment; or",
+      "section_type": "prose",
+      "raw_text": "c.Both Section I and Section Il.",
+      "page_range": [
+        11
+      ],
+      "form_number": null
+    },
+    "page11_s4": {
+      "section_id": "page11_s4",
+      "section_title": "2.Additional Locations",
+      "section_type": "prose",
+      "raw_text": "We will pay, up to the Limit Of Liability shown in B.intheSchedule,yourshareofcoveredloss",
+      "page_range": [
+        11
+      ],
+      "form_number": null
+    },
+    "page11_s5": {
+      "section_id": "page11_s5",
+      "section_title": "SectionIl-AdditionalCoverage D.Loss",
+      "section_type": "prose",
+      "raw_text": "Assessment of the policy, arising out of the unit or premises listed in B. in the Schedule above. This is the most we will pay for one or more assessments arising outof a singleloss covered under:",
+      "page_range": [
+        11
+      ],
+      "form_number": null
+    },
+    "page11_s6": {
+      "section_id": "page11_s6",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Palisades Property and Casualty Insurance Company",
+      "page_range": [
+        11
+      ],
+      "form_number": null
+    },
+    "page13_s1": {
+      "section_id": "page13_s1",
+      "section_title": "-USE OF CONSUMERREPORTS",
+      "section_type": "prose",
+      "raw_text": "In connection with this insurance, we may review your claim history or your credit report or obtain or use a credit-based insurance score based on information contained in that report. An insurance score uses information from your credit report to help predict how often you are likely to file claims and how",
+      "page_range": [
+        13
+      ],
+      "form_number": null
+    },
+    "page13_s2": {
+      "section_id": "page13_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "are not limited to, the following: payment history, number of revolving accounts, number of new accounts, the presence of collection accounts, bankruptcies and foreclosures. The information used to develop the insurance score comes from LexisNexis Risk Solutions Inc., Transunion or Equifax Information Services LLC.",
+      "page_range": [
+        13
+      ],
+      "form_number": null
+    },
+    "page13_s3": {
+      "section_id": "page13_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "If you would like to contact us,pleasewrite to us at: Palisades Property and Casualty Insurance Company 581 Main Street, Suite 400,",
+      "page_range": [
+        13
+      ],
+      "form_number": null
+    }
+  },
+  "printed_lines": [
+    {
+      "page": 1,
+      "kind": "header",
+      "cells": [
+        "More Than Just Insurance."
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "row",
+      "cells": [
+        "NJ 07095"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Transaction"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Effective"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Named"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Summaryof"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "Ch anges",
+        "reflected without",
+        "interruption, on",
+        "Renewal we"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Discount(s)"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "heading",
+      "cells": [
+        "Details"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "caption",
+      "cells": [
+        "(including",
+        "charges",
+        "discounts)"
+      ]
+    },
+    {
+      "page": 1,
+      "kind": "footer",
+      "cells": [
+        "andanyattachedendorsements"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "header",
+      "cells": [
+        "Policy Number:",
+        "Transaction"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "Name",
+        "Edition"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Charges"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "ImportantMessages and",
+        "Details"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Acredit"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "outstanding",
+        "debt,",
+        "length of credit",
+        "history, types of credit",
+        "in use"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "caption",
+      "cells": [
+        "policy will",
+        "be treated",
+        "confidentially.",
+        "However,"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "row",
+      "cells": [
+        "wrong.",
+        "interested",
+        "in obtaining",
+        "a description",
+        "of our",
+        "practices,",
+        "rights regarding"
+      ]
+    },
+    {
+      "page": 2,
+      "kind": "heading",
+      "cells": [
+        "Pay Plan"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "heading",
+      "cells": [
+        "INDEX"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "documents",
+        "package.",
+        "named"
+      ]
+    },
+    {
+      "page": 3,
+      "kind": "caption",
+      "cells": [
+        "transaction.",
+        "to these",
+        "documents",
+        "for details",
+        "of their"
+      ]
+    },
+    {
+      "page": 5,
+      "kind": "caption",
+      "cells": [
+        "READ",
+        "IT CAREFULLY."
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "caption",
+      "cells": [
+        "READ",
+        "IT CAREFULLY."
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "heading",
+      "cells": [
+        "building"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "caption",
+      "cells": [
+        "needed",
+        "gain access"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "caption",
+      "cells": [
+        "means",
+        "type or",
+        "of fungus,"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "row",
+      "cells": [
+        "including mycotoxins, produced",
+        "or mold released spores, or",
+        "scents by mildew, fungi. or",
+        "by-products and",
+        "_ any",
+        "(4 · The confirm of",
+        "\"fungi\", cost the of wet absence, testing or",
+        "dry of presence air rot, or or property bacteria, or",
+        "level to"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "caption",
+      "cells": [
+        "Il, this",
+        "does",
+        "whether",
+        "performed",
+        "prior to,"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "caption",
+      "cells": [
+        "fungi that",
+        "after",
+        "removal,",
+        "repair,",
+        "restoration"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "caption",
+      "cells": [
+        "good or",
+        "product intended",
+        "for consumption.",
+        "testing"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "caption",
+      "cells": [
+        "only to",
+        "extent"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "caption",
+      "cells": [
+        "there",
+        "reason",
+        "to believe",
+        "there"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "heading",
+      "cells": [
+        "following Additional"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "caption",
+      "cells": [
+        "applies",
+        "when"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "caption",
+      "cells": [
+        "Peril",
+        "Against",
+        "occurs"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "caption",
+      "cells": [
+        "period and",
+        "reasonable"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "caption",
+      "cells": [
+        "means",
+        "were",
+        "to save",
+        "preserve"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "row",
+      "cells": [
+        "(1) The",
+        "further",
+        "after"
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "caption",
+      "cells": [
+        "caused",
+        "the time",
+        "Peril",
+        "Against occurred."
+      ]
+    },
+    {
+      "page": 7,
+      "kind": "footer",
+      "cells": [
+        "copyrighted",
+        "material",
+        "of ISO, Inc., with",
+        "its permission"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "header",
+      "cells": [
+        "Paragraph",
+        "3.j.(3) is replaced"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "row",
+      "cells": [
+        "(3) Smog, rust",
+        "corrosion;"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "row",
+      "cells": [
+        "17 32:"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "row",
+      "cells": [
+        "(1) Number",
+        "Paragraph",
+        "2.c.(5) is replaced"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "row",
+      "cells": [
+        "(2) Number",
+        "(5) Constant leakage",
+        "of or water repeated or",
+        "seepage presence",
+        "or or"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "there",
+        "condensation",
+        "humidity,",
+        "moisture"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "caused,",
+        "in whole",
+        "vapor,",
+        "period",
+        "of weeks,",
+        "months"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "years",
+        "unless",
+        "seepage"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "be limited",
+        "terms",
+        "leakage",
+        "water"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "except",
+        "condensation",
+        "humidity,",
+        "moisture"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "extent",
+        "vapor"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "causes",
+        "Any such",
+        "unknown",
+        "is hidden"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "within",
+        "walls",
+        "ceilings",
+        "beneath"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "terms",
+        "of this",
+        "floors",
+        "ceilings"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "does",
+        "structure."
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "applying",
+        "damaged",
+        "Paragraph"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "(c) Smog, rust",
+        "corrosion;"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "heading",
+      "cells": [
+        "EXCLUSIONS"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "PERILS",
+        "AGAINST"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "row",
+      "cells": [
+        "05 24:"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "row",
+      "cells": [
+        "Paragraph",
+        "2.d.",
+        "meaning"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "Constant",
+        "seepage",
+        "leakage of",
+        "growth, proliferation,",
+        "spread"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "water",
+        "condensation",
+        "activity of \"fungi\", wet"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "humidity,",
+        "moisture",
+        "vapor,",
+        "period of"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "row",
+      "cells": [
+        "weeks, seepage",
+        "months or",
+        "leakage or",
+        "years of water unless or",
+        "such the",
+        "does"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "condensation",
+        "of humidity,",
+        "When"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "moisture",
+        "vapor",
+        "results",
+        "fire",
+        "lightning;"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "is unknown",
+        "is hidden",
+        "extent",
+        "is provided"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "within",
+        "walls",
+        "ceilings or",
+        "beneath"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "floors",
+        "ceilings of a structure."
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "row",
+      "cells": [
+        "Paragraph",
+        "2.j.(3) is replaced",
+        "respect",
+        "to loss"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "row",
+      "cells": [
+        "(3) Smog, rust",
+        "corrosion;",
+        "caused than",
+        "fire by or a lightning. Peril",
+        "Against other"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "row",
+      "cells": [
+        "17 31:"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "Direct",
+        "by a",
+        "Peril",
+        "Against"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "row",
+      "cells": [
+        "Paragraph",
+        "3.d."
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "Constant",
+        "seepage",
+        "leakage of"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "water",
+        "condensation",
+        "Q. Policy",
+        "Period"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "humidity,",
+        "moisture",
+        "vapor,",
+        "period of"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "row",
+      "cells": [
+        "weeks, leakage months of water or or years the",
+        "presence unless",
+        "such or",
+        "seepage",
+        "Period"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "row",
+      "cells": [
+        "condensation",
+        "of humidity,",
+        "moisture",
+        "vapor",
+        "policy applies to loss"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "resulting damage is unknown",
+        "policy period."
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "is hidden",
+        "within",
+        "walls",
+        "P. in Form"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "caption",
+      "cells": [
+        "ceilings or",
+        "beneath",
+        "floors"
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "heading",
+      "cells": [
+        "ceilings of a structure."
+      ]
+    },
+    {
+      "page": 8,
+      "kind": "footer",
+      "cells": [
+        "copyrighted",
+        "material",
+        "of ISO, Inc., with",
+        "its permission"
+      ]
+    },
+    {
+      "page": 9,
+      "kind": "footer",
+      "cells": [
+        "copyrighted",
+        "material",
+        "of ISO, Inc., with",
+        "its permission"
+      ]
+    },
+    {
+      "page": 11,
+      "kind": "caption",
+      "cells": [
+        "READ",
+        "IT CAREFULLY."
+      ]
+    },
+    {
+      "page": 11,
+      "kind": "caption",
+      "cells": [
+        "\"Residence",
+        "Of Insurance:"
+      ]
+    },
+    {
+      "page": 11,
+      "kind": "heading",
+      "cells": [
+        "of Unit"
+      ]
+    },
+    {
+      "page": 11,
+      "kind": "row",
+      "cells": [
+        "Residence",
+        "E.7."
+      ]
+    },
+    {
+      "page": 11,
+      "kind": "heading",
+      "cells": [
+        "single loss"
+      ]
+    },
+    {
+      "page": 11,
+      "kind": "row",
+      "cells": [
+        "E.7.",
+        "does"
+      ]
+    },
+    {
+      "page": 11,
+      "kind": "heading",
+      "cells": [
+        "of this"
+      ]
+    },
+    {
+      "page": 11,
+      "kind": "heading",
+      "cells": [
+        "of covered"
+      ]
+    },
+    {
+      "page": 11,
+      "kind": "row",
+      "cells": [
+        "E.7."
+      ]
+    },
+    {
+      "page": 11,
+      "kind": "heading",
+      "cells": [
+        "single loss"
+      ]
+    },
+    {
+      "page": 13,
+      "kind": "row",
+      "cells": [
+        "expensive",
+        "those",
+        "be. Typical items",
+        "report that",
+        "could",
+        "affect",
+        "but"
+      ]
+    },
+    {
+      "page": 13,
+      "kind": "row",
+      "cells": [
+        "NJ 07095"
+      ]
+    }
+  ]
 }

@@ -88,7 +88,7 @@ MONTHS = ["January", "February", "March", "April", "May", "June", "July",
 
 _B = r"(?<![A-Za-z0-9])"
 #: street-type words: part of a street line, never of a city name
-_SUFFIX = (r"(?i:St|Street|Rd|Road|Ave|Avenue|Way|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Blvd|"
+_SUFFIX = (r"(?i:St|Street|Rd|Road|Ave|Av|Avenue|Way|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Blvd|"
            r"Hwy|Highway|Route|Rte|Pkwy|Ter|Terrace|Cir|Circle|Trl|Trail|Suite|Ste|Floor|Fl)")
 _E = r"(?![A-Za-z0-9])"
 PATTERNS = [   # (kind, regex) - earlier kinds win overlaps
@@ -99,12 +99,16 @@ PATTERNS = [   # (kind, regex) - earlier kinds win overlaps
     ("cityline", re.compile(
         r"(?<![A-Za-z])((?:(?!%s\b)[A-Z][A-Za-z.']+\s){0,2}(?!%s\b)[A-Z][A-Za-z.']+),?\s+([A-Z]{2})\s+(\d{5})(?:-\d{4})?(?!\d)"
         % (_SUFFIX, _SUFFIX))),
+    # a ZIP printed apart from its town: "Garaging ZIP Code: 12543-1157",
+    # or a state and ZIP on a line of their own, under a town ("NY 13331-1714")
+    ("zip", re.compile(r"(?<![\w$.,/-])\d{5}-\d{4}(?![\w-])")),
+    ("zip", re.compile(r"(?<=\b[A-Z]{2} )\d{5}(?![\w-])")),
     ("street", re.compile(
         r"(?<![\w/$.,-])\d{1,6}\s+(?:(?:(?-i:%s|US|SR|CR)|State\s+Route|County\s+Road|Route|Rte|Hwy)"
         r"[- ]\d{1,4}\b(?![-/])|"
-        r"(?!\d)(?:[A-Za-z0-9.']+\s){0,3}(?:St|Street|Rd|Road|Ave|Avenue|Way|"
+        r"(?!\d)(?:[A-Za-z0-9.']+\s){0,3}(?:St|Street|Rd|Road|Ave|Av|Avenue|Way|"
         r"Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Blvd|Hwy|Highway|Route|Rte|Pkwy|Ter|Terrace|"
-        r"Cir|Circle|Trl|Trail|Pt|Point|Cove|Loop|Run|Pike|Path|Row|Sq)\b\.?)"
+        r"Cir|Circle|Trl|Trail|Pt|Point|Cove|Loop|Run|Pike|Path|Row|Sq)\b(?![-/]\d)\.?)"
         r"(?:\s+(?:UNIT|APT|SUITE|STE|#)\s*[\w-]+)?" % "|".join(sorted(STATES)), re.I)),
     ("date", re.compile(r"(?<![\d/])\d{1,2}/\d{1,2}/(?:\d{4}|\d{2})(?![\d/])")),
     ("date", re.compile(r"(?<![\d-])\d{4}-\d{2}-\d{2}(?![\d-])")),
@@ -112,7 +116,12 @@ PATTERNS = [   # (kind, regex) - earlier kinds win overlaps
     ("date", re.compile(r"\b(?:%s)\.? \d{1,2}, \d{4}\b" % "|".join(MONTHS + [m[:3] for m in MONTHS] + ["Sept"]))),
     ("money", re.compile(r"\$\s?\d{1,3}(?:,\d{3})*(?:\.\d{2})?(?!\d|,\d)")),
     ("id", re.compile(_B + r"(?=[A-Z0-9-]*\d)(?=[A-Z0-9-]*[A-Z])[A-Z0-9][A-Z0-9-]{5,}" + _E)),
-    ("digits", re.compile(r"(?<![\w$,./-])\d{5,}(?:\s-\s\d{3,}|(?:\s\d{1,4}){1,2}(?=\s*$))?"
+    # a short code in two groups - "PRODUCER CODE: 28-0071" - kept only
+    # when a label says it is an identifier, like any bare run of digits
+    ("digits", re.compile(r"(?<![\w$,./-])\d{2,4}-\d{3,6}(?![\w,./-])")),
+    # a run of digits; a dash printed against it after a label is not part
+    # of it ("PACKAGE POLICY NUMBER -803986891")
+    ("digits", re.compile(r"(?:(?<![\w$,./-])|(?<=\s-))\d{5,}(?:\s-\s\d{3,}|(?:\s\d{1,4}){1,2}(?=\s*$))?"
                           r"(?![\w,./-])")),
 ]
 FORM_NUMBER = re.compile(r"^[A-Z]{2,6}\d{2,5}-\d{4}$")     # forms keep their numbers
@@ -133,6 +142,10 @@ LABELLED_NAME = re.compile(r"\b(insured)\s*:?\s*([A-Z][A-Za-z.'-]*(?:\s+[A-Z][A-
 #: a ZIP+4 after a state that is not one - an address a redaction scrambled
 SCRAMBLED_ZIP = re.compile(r",[^,]*?\b([A-Z]{2,5})\s+(\d{5}-\d{4})\s*$")
 INSURED_LABEL = re.compile(r"\b(insured|insureds|client|clients|applicant|owner)\b", re.I)
+#: a name label immediately followed by a colon, mid-line in a cell that also
+#: holds other fields ("POLICY NUMBER: ... NAMED INSURED: Cordelia Whitlock")
+INLINE_NAME_LABEL = re.compile(
+    r"\b(?:named\s+insureds?|insureds?|applicant|owner|agent|producer|agency)\s*:\s*", re.I)
 NOT_A_NAME = re.compile(r"\b(page|policy|coverage|date|premium|limit|number|total|"
                         r"address|description|declarations|location|endorsement|"
                         r"information|type|plan|form|effective|expiration|period|amount|"
@@ -143,7 +156,33 @@ NOT_A_NAME = re.compile(r"\b(page|policy|coverage|date|premium|limit|number|tota
 INSURER_NAME = re.compile(r"\b(?:insurance|indemnity|assurance|casualty)\s+(?:company|co\.?|"
                           r"corporation|corp\.?)(?:\s|$)|\bunderwriters\b", re.I)
 PII = {"email", "phone", "fein", "pobox", "cityline", "street", "id", "digits",
-       "person", "company", "scanline"}
+       "person", "company", "scanline", "zip", "place", "county", "gluedcity"}
+#: a town, state and ZIP read off a scan as one word: "EAGLEBAYNY133310252"
+GLUED_CITY = re.compile(r"([A-Z]{4,})([A-Z]{2})(\d{5}(?:\d{4})?)")
+#: a label naming a person printed beside it: "Name:", "Driver Name", "NAMED INSURED:"
+NAME_BESIDE = re.compile(r"^(?:(?:driver|insured|named insured|co-insured|operator|applicant|"
+                         r"owner|registrant)\s+)?names?(?:\s*\(s\))?\s*:?$|"
+                         r"^(?:named\s*)?insureds?(?:\s*\(s\))?\s*:?$", re.I)
+#: a table column of names: "DRIVER NAME", "Name(s)", "Drivers"
+NAME_COLUMN = re.compile(r"^(?:driver|operator|insured)?\s*names?(?:\s*\(s\))?$|"
+                         r"^(?:drivers?|operators?)(?:\s*\(s\))?$", re.I)
+#: what a driver or household row prints beside a name: "32 Male Single",
+#: "Gender: Male" - nothing but age, gender and marital status ("combined
+#: single limit" is not one)
+DEMOGRAPHIC = re.compile(r"(?i)\b(?:male|female|married|single|divorced|widowed|separated)\b")
+DEMOGRAPHIC_WORDS = {"male", "female", "married", "single", "divorced", "widowed", "separated",
+                     "age", "gender", "sex", "marital", "status", "m", "f"}
+
+
+def _demographic(text):
+    words = re.findall(r"[A-Za-z]+|\d+", text)
+    return bool(words) and len(words) <= 6 and bool(DEMOGRAPHIC.search(text)) \
+        and all(w.isdigit() and len(w) <= 3 or w.lower() in DEMOGRAPHIC_WORDS for w in words)
+#: a town or county printed as its own labelled value: "City  EAGLE BAY"
+PLACE_LABEL = re.compile(r"(?i)^(?:city|town|county(?:\s+name)?)\s*:?$")
+COUNTIES = ["Otsego", "Chenango", "Delaware", "Schoharie", "Madison", "Oneida", "Tompkins",
+            "Cortland", "Broome", "Tioga", "Chemung", "Steuben", "Jefferson", "Essex",
+            "Warren", "Ulster", "Ontario", "Yates", "Lewis", "Hamilton", "Fulton"]
 #: a machine-read line - a payment coupon's scan line, a MICR line: only
 #: groups of digits, many of them. It encodes the policy number, the amount
 #: and the due date, so it is replaced whole
@@ -199,13 +238,21 @@ SYNONYMS = {
 }
 KIND_FITS = {
     "date": re.compile(r"date"),
-    "money": re.compile(r"premium|amount|limit|fee|deductible|value|surcharge|tax|discounts|savings|cost"),
+    # an amount can be a no-fault benefit too: "Maximum Monthly Work Loss: $2,000",
+    # "Death Benefit: $2,000", "Other Necessary Expenses per Day: $25"
+    "money": re.compile(r"premium|amount|limit|fee|deductible|value|surcharge|tax|discounts|savings|cost|"
+                        r"work_loss|benefit|expenses|available"),
     "id": re.compile(r"number|code|_id|fein"), "digits": re.compile(r"number|code|_id|fein"),
     "fein": re.compile(r"fein"), "phone": re.compile(r"phone|fax"),
     "email": re.compile(r"email"),
-    # a person's name belongs in a name field, not in whatever field's label
-    # happens to sit above it ("RATING STATE: NY" over a policyholder)
-    "person": re.compile(r"name|insured|representative|designee|agent|holder|contact|driver|operator"),
+    # a name belongs in a name field, not in whatever field's label happens to
+    # sit above it ("RATING STATE: NY" over a policyholder); an address only
+    # ever fills an address ("MARITAL STATUS HAS BEEN CHANGED ... FOR Juno Keswick")
+    "person": re.compile(r"name|insured|representative|designee|agent|holder|contact|driver|operator|signator"),
+    "company": re.compile(r"name|agency|company|carrier|insurer|lienholder|payee|party|designee"),
+    "street": re.compile(r"line_|address|street"), "pobox": re.compile(r"line_|address"),
+    "cityline": re.compile(r"city|address"), "place": re.compile(r"city|town|address"),
+    "county": re.compile(r"county"), "zip": re.compile(r"postal|zip"),
 }
 
 
@@ -248,7 +295,17 @@ def label_index(schema):
         if key in schema.merged["properties"]:
             visit(schema.merged["properties"][key], key)
     index.update(SYNONYMS)
-    return {k: v for k, v in index.items() if k and v in schema.leaves}
+    # a schema that keeps the first inception apart from the current term
+    # takes "Inception Date" there, not to the policyholder's tenure
+    if "policy.original_inception_date" in schema.leaves:
+        index["inception date"] = "policy.original_inception_date"
+    index = {k: v for k, v in index.items() if k and v in schema.leaves}
+    # a text layer that drops the spaces between words ("PolicyEffectiveDate")
+    # still names the same field
+    for k, v in list(index.items()):
+        if " " in k and len(k) >= 10:
+            index.setdefault(k.replace(" ", ""), v)
+    return index
 
 
 def match_label(label, kind, index):
@@ -258,8 +315,9 @@ def match_label(label, kind, index):
         return None
     fits = KIND_FITS.get(kind)
     ok = (lambda p: fits.search(p.rsplit(".", 1)[-1])) if fits else (lambda p: True)
-    if label in index and ok(index[label]):
-        return index[label]
+    for whole in (label, label.replace(" ", "")):   # "Named StormPercentage Deductible"
+        if whole in index and ok(index[whole]):
+            return index[whole]
     padded = " %s " % label
     best = None
     for phrase, path in index.items():
@@ -286,6 +344,9 @@ class Found:
         self.no_zip = False       # a known town printed here without its ZIP
         self.whole = None         # the whole value, when this is one line of it
         self.part = None          # 0 = its first line, 1 = the line it ends on
+        self.whole_head_words = None  # a two-line company name: words on line 1
+        self.name_part = None     # 0/1 = the first/last name alone of the person in ``key``
+        self.city_only = False    # the town alone of the city line in ``key``
         self.split = None         # "month": the first line holds the month alone
         self.aside = False        # a name replaced but not the policy's insured or agent
 
@@ -345,6 +406,35 @@ def _wrapped_dates(cell_list, found):
     return out
 
 
+#: a street with no street-type word: "9581 Millbrook", "2646 SUMMIT"
+BARE_STREET = re.compile(r"\d{1,6}\s+[A-Za-z][A-Za-z.'-]*(?:\s+[A-Za-z0-9][A-Za-z0-9.'#-]*){0,4}")
+#: a name label with the first name run into it: "Named InsuredWINSLOW"
+GLUED_LABEL = re.compile(r"((?:named\s+)?insureds?(?:\(s\))?:?)\s*([A-Z][A-Za-z'-]+)$", re.I)
+
+
+def _one_word_name(text):
+    """A single capitalised word that can be a name in an address block."""
+    t = text.strip()
+    return bool(re.fullmatch(r"[A-Z][A-Za-z'-]{2,}", t)) and not NOT_A_NAME.search(t)         and not NAME_LABEL.search(t) and t.lower() not in COMPANY_WORDS
+
+
+def _bare_streets(cell_list, found):
+    """A street known by where it stands, not by its words: a line that opens
+    with a house number, set over a "City, ST ZIP" line in its column."""
+    out = []
+    for f in found:
+        if f.kind != "cityline" or f.start != 0:
+            continue
+        up = _above(f.cell, cell_list)
+        if up is None or any(g.cell is up for g in found + out) or ":" in up.text:
+            continue
+        text = up.text.strip()
+        if BARE_STREET.fullmatch(text) and abs(up.rect.x0 - f.cell.rect.x0) < 6                 and not NOT_A_NAME.search(text):
+            s = len(up.text) - len(up.text.lstrip())
+            out.append(Found("street", up, s, s + len(text)))
+    return out
+
+
 def _detect(cell_list):
     found = []
     for cell in cell_list:
@@ -364,10 +454,14 @@ def _detect(cell_list):
                 if kind == "id" and (FORM_NUMBER.match(text) or ISO_FORM.match(text)
                                      or len(re.sub(r"\D", "", text)) < 3):
                     continue
+                if kind == "id" and GLUED_CITY.fullmatch(text) and GLUED_CITY.fullmatch(text).group(2) in STATES:
+                    kind = "gluedcity"            # "EAGLEBAYNY133310252": a town line read without spaces
                 if kind in ("id", "digits") and EDITION.match(cell.text[e:]):
                     continue                      # a form number and its edition
                 if kind == "cityline" and m.group(2) not in STATES:
                     continue
+                if kind == "zip" and "-" not in text and cell.text[max(0, s - 3):s - 1] not in STATES:
+                    continue                      # five digits after two capitals that are no state
                 found.append(Found(kind, cell, s, e))
                 taken.append((s, e))
         # an all-digit number set in groups - "255-0072123586-16", "255 -
@@ -439,6 +533,21 @@ def _left(cell, cell_list):
     return best
 
 
+def _at_top(cell, cell_list):
+    """Is ``cell`` at or near the very top of its page - a masthead - with
+    nothing above it but another masthead-shaped line?"""
+    up = cell
+    for _ in range(2):
+        above = _above(up, cell_list, max_gap=3.5, x_tol=60)
+        if above is None:
+            return True
+        if not re.search(r"insurance|agency|brokers?|\bins\b|^a\s+(stock|mutual)\b",
+                         above.text, re.I):
+            return False
+        up = above
+    return _above(up, cell_list, max_gap=3.5, x_tol=60) is None
+
+
 def _looks_like_name(text):
     words = text.split()
     if not 2 <= len(words) <= 5 or ":" in text or NOT_A_NAME.search(text):
@@ -506,6 +615,7 @@ def find_values(cell_list):
     """Everything on a page worth replacing, labelled where a label exists."""
     found = _detect(cell_list)
     found += _wrapped_dates(cell_list, found)
+    found += _bare_streets(cell_list, found)
     for f in found:
         before = [g.end for g in found if g.cell is f.cell and g.end <= f.start]
         f.after = max(before, default=0)
@@ -523,16 +633,56 @@ def find_values(cell_list):
     names = {}
     for f in found:
         if f.kind in ("street", "pobox") and f.start == 0:
-            up = _above(f.cell, cell_list)
-            while up is not None and _looks_like_name(up.text) and id(up) not in names:
-                names[id(up)] = (up, None)
+            # the names stacked over an address; a one-word line ("MEDINA")
+            # counts only in a block a name label heads, where it can be
+            # nothing else
+            chain, up = [], _above(f.cell, cell_list)
+            while up is not None and id(up) not in names and                     (_looks_like_name(up.text) or _one_word_name(up.text)):
+                chain.append(up)
                 up = _above(up, cell_list)        # a second insured stacked above
+            # an agency's block counts as well: "Agency Address" over "IRONVALE"
+            headed = up is not None and (NAME_LABEL.search(up.text) or PRODUCER_LABEL.search(up.text)
+                                         or GLUED_LABEL.match(up.text))
+            for k, cell in enumerate(chain):
+                # a surname alone right over the street, in upper and lower case,
+                # heads an ID card's block ("Vance" over "122 PROSPECT AVE")
+                lone = k == 0 and _lone_name(cell.text) and not cell.text.strip().isupper()
+                if not headed and not _looks_like_name(cell.text) and not lone:
+                    break
+                names[id(cell)] = (cell, None)
+            glued = GLUED_LABEL.match(up.text) if headed and chain else None
+            if glued and _one_word_name(glued.group(2)) and not any(g.cell is up for g in found):
+                g = Found("person", up, glued.start(2), glued.end(2))   # "Named InsuredWINSLOW"
+                g.label = glued.group(1)
+                found.append(g)
     for cell in cell_list:
         if NAME_LABEL.search(cell.text) and len(cell.text) < 45 and len(cell.text.split()) <= 5 \
                 and not re.search(r"\d", cell.text):
-            for cand in (_below(cell, cell_list, max_gap=3.2), ):
+            # the name under its label, or beside it: "Named Insured(s):  Redhaven Properties LLC"
+            # - beside it only after a colon: "Named Insured  |  Primary Residence"
+            # without one is two column headings, not a label and its value
+            right = min((c for c in cell_list if c.row == cell.row and c.rect.x0 > cell.rect.x1),
+                        key=lambda c: c.rect.x0, default=None) if cell.text.rstrip().endswith(":") else None
+            for cand in (_below(cell, cell_list, max_gap=3.2), right):
                 if cand is not None and _looks_like_name(cand.text):
                     names[id(cand)] = (cand, cell.text)
+            cand = _below(cell, cell_list, max_gap=3.2)
+            for _ in range(4):                    # a second name stacked under the first
+                cand = _below(cand, cell_list) if cand is not None else None
+                if cand is None or not _looks_like_name(cand.text):
+                    break
+                names.setdefault(id(cand), (cand, cell.text))
+        # "Name:  Juno Prentice", "Named Insured  VANTAGE CONTRACTING"
+        left = _left(cell, cell_list)
+        if left is not None and NAME_BESIDE.match(_plain(left.text)) and _looks_like_name(cell.text):
+            names.setdefault(id(cell), (cell, left.text))
+        # a column of names under its heading: "DRIVER NAME" over "MEGHAN", "PETER"
+        if NAME_COLUMN.match(_plain(cell.text)):
+            cand = _below(cell, cell_list, max_gap=3.2)
+            while cand is not None and id(cand) not in names and (
+                    _looks_like_name(cand.text) or _lone_name(cand.text)):
+                names[id(cand)] = (cand, cell.text)
+                cand = _below(cand, cell_list, max_gap=2.5)
     # a list of drivers is one name per line under its label ("Listed
     # Drivers:"): every name in it, not only the first
     for cell in cell_list:
@@ -542,14 +692,80 @@ def find_values(cell_list):
             while cand is not None and _looks_like_name(cand.text) and id(cand) not in names:
                 names[id(cand)] = (cand, cell.text)
                 cand = _below(cand, cell_list)
-    for cell, label in names.values():
-        if any(f.cell is cell for f in found):
+    # a driver or household row: a name with gender or marital status beside it
+    for cell in cell_list:
+        if id(cell) in names or not _looks_like_name(cell.text):
             continue
-        kind = "company" if set(w.lower().strip(",") for w in cell.text.split()) & COMPANY_WORDS \
-            else "person"
+        r = cell.rect
+        for other in cell_list:
+            o = other.rect
+            if other is cell or o.x0 < r.x1 or abs((o.y0 + o.y1) - (r.y0 + r.y1)) > 3.2 * r.height:
+                continue
+            if _demographic(other.text):
+                names[id(cell)] = (cell, "")
+                break
+    # a name that runs onto the cell below it ("STABLE ROCK INSURANCE" /
+    # "AGENCY LLC", both stacked above the same address) is one name, and
+    # must be replaced once: two independent fakes for the same original
+    # leaves the second an unmatched, mismatched fragment
+    continuations = {}          # id(head cell) -> tail cell
+    consumed = set()            # id(tail cell), not a name of its own
+    for cell, _label in names.values():
+        below = _below(cell, cell_list, max_gap=1.6, x_tol=6)
+        if below is not None and id(below) in names \
+                and set(w.lower().strip(",") for w in below.text.split()) <= COMPANY_WORDS:
+            continuations[id(cell)] = below
+            consumed.add(id(below))
+    for cell, label in names.values():
+        if any(f.cell is cell for f in found) or id(cell) in consumed:
+            continue
+        words = {w.lower().strip(",.") for w in cell.text.split()}
+        if words <= COMPANY_WORDS:
+            continue                          # "AGENCY LLC": no name in it
+        spans = _name_spans(cell.text)
+        if len(spans) > 1:
+            # two people printed together ("Juno Prentice & Hazel Vance") are two names
+            for s, e in spans:
+                part = {w.lower().strip(",.") for w in cell.text[s:e].split()}
+                f = Found("company" if part & COMPANY_WORDS else "person", cell, s, e)
+                f.label = label or ""
+                found.append(f)
+            continue
+        kind = "company" if words & COMPANY_WORDS else "person"
         f = Found(kind, cell, 0, len(cell.text))
         f.label = label or ""
         found.append(f)
+        cont = continuations.get(id(cell))
+        if kind == "company" and cont is not None:
+            whole = cell.text + " " + cont.text
+            f.whole, f.key, f.part = whole, _key(whole), 0
+            g = Found("company", cont, 0, len(cont.text))
+            g.whole, g.key, g.part, g.label = whole, _key(whole), 1, ""
+            g.whole_head_words = len(cell.text.split())
+            found.append(g)
+
+    # a name printed on the same line as its label, sharing a cell with other
+    # fields ("POLICY NUMBER: CYC237253-10 NAMED INSURED: Cordelia Whitlock") -
+    # the whole-cell checks above reject this cell outright for its digits and
+    # length, so the label and name are pulled from within its text instead;
+    # the cell may already hold an unrelated match (the policy number itself)
+    for cell in cell_list:
+        if any(f.cell is cell and f.kind in ("person", "company") for f in found):
+            continue
+        for m in INLINE_NAME_LABEL.finditer(cell.text):
+            tail = cell.text[m.end():]
+            end = len(tail)
+            for stop in NAME_LABEL.finditer(tail):
+                end = min(end, stop.start())
+            candidate = tail[:end].strip(" :-")
+            if _looks_like_name(candidate):
+                start = m.end() + (len(tail[:end]) - len(tail[:end].lstrip(" :-")))
+                kind = "company" if set(w.lower().strip(",") for w in candidate.split()) \
+                    & COMPANY_WORDS else "person"
+                f = Found(kind, cell, start, start + len(candidate.strip()))
+                f.label = m.group(0)
+                found.append(f)
+                break
     # an agency printed with its agency code: "BURKHARD EVANS INC - #909255",
     # the code wrapped under it ("... BROKERAGE INC -" / "#913886"), or set in
     # the next column ("GRANITE ROW  |  - #495001")
@@ -615,7 +831,12 @@ def find_values(cell_list):
             f.role = "producer"
         elif INSURED_LABEL.search(context or ""):
             f.role = "insured"
-        elif f.kind == "company" and re.search(r"insurance|agency|brokers?|\bins\b", f.text, re.I):
+        elif f.kind == "company" and re.search(r"insurance|agency|brokers?|\bins\b", f.text, re.I) \
+                and not _at_top(f.cell, cell_list):
+            # the carrier's own masthead - printed first on the page, with
+            # nothing above it (or only another masthead line, "A Stock
+            # Insurance Company") - is not a producer just because it says
+            # "Insurance Company"; a real, unlabelled agency name sits lower
             f.role = "producer"
     # a mailing block with no label over it - an envelope window - holds the
     # policyholder: people, above an address, when no label named anyone else
@@ -626,7 +847,122 @@ def find_values(cell_list):
     if block and not any(f.role for f in block):
         for f in block:
             f.role = "insured"
+    extra = _address_block(found, cell_list)
+    for g in extra:
+        g.label = _label_for(g, cell_list)
+    found += extra
+    # a town or county printed as a labelled value: "City  EAGLE BAY"
+    for cell in cell_list:
+        left = _left(cell, cell_list)
+        text = cell.text.strip()
+        if left is None or not PLACE_LABEL.match(left.text.strip()) \
+                or any(f.cell is cell for f in found) \
+                or not re.fullmatch(r"[A-Za-z][A-Za-z.' -]{1,40}", text):
+            continue
+        s = len(cell.text) - len(cell.text.lstrip())
+        f = Found("county" if "county" in left.text.lower() else "place", cell, s, s + len(text))
+        f.label = left.text
+        found.append(f)
     return found
+
+
+def _plain(text):
+    """A heading as words: underlined print ("D__R_I_V_E_R__N_A_M_E_") read plain."""
+    text = text.strip()
+    if re.fullmatch(r"(?:[A-Za-z]_+)+[A-Za-z]?_*", text.replace(" ", "")):
+        text = text.replace("_", "")
+    return " ".join(text.split())
+
+
+def _lone_name(text):
+    """A single capitalised word that can only be a name: a surname heading
+    an ID card's address, a first name in a column of driver names."""
+    text = text.strip()
+    return bool(re.fullmatch(r"[A-Z][A-Za-z'-]{2,}", text)) and not NOT_A_NAME.search(text) \
+        and not NAME_LABEL.search(text) and text.lower() not in COMPANY_WORDS \
+        and text.upper() not in STATES and text.lower() not in (
+            "none", "yes", "no", "named", "name", "names", "driver", "drivers", "married",
+            "single", "male", "female", "divorced", "widowed", "separated", "principal",
+            "occasional", "excluded", "included", "incl", "rated", "status", "file", "insured")
+
+
+def _name_spans(text):
+    """Where the names in a cell are: two people printed together ("Juno
+    Prentice & Hazel Vance") are two names, each replaced on its own."""
+    s = len(text) - len(text.lstrip())
+    e = len(text.rstrip())
+    parts = list(re.finditer(r"\s+(?:&|and)\s+", text[s:e]))
+    if len(parts) == 1:
+        a, b = text[s:s + parts[0].start()], text[s + parts[0].end():e]
+        if len(a.split()) >= 2 and len(b.split()) >= 2 and not (
+                set(w.lower().strip(",") for w in (a + " " + b).split()) & COMPANY_WORDS):
+            return [(s, s + parts[0].start()), (s + parts[0].end(), e)]
+    return [(s, e)]
+
+
+#: a street line whose type word is missing or unknown: "9599 STATION"
+UNTYPED_STREET = re.compile(r"[1-9]\d{0,5}\s+[A-Za-z][A-Za-z .'#-]*")   # not "05 SAAB 9-3 ARC"
+#: a town line in an address block: one to three capitalised words
+TOWN_LINE = re.compile(r"[A-Z][A-Za-z.'-]*(?:\s+[A-Z][A-Za-z.'-]*){0,2}")
+
+
+def _address_block(found, cell_list):
+    """The lines of a name-and-address block its shapes do not give away: a
+    street with no street-type word, the town set on a line of its own, the
+    second line of a name. They are read as address only once a line of the
+    block is known to be one - a street, a PO box, a town-and-ZIP."""
+    out = []
+    held = {id(f.cell) for f in found}
+    kinds = ("street", "pobox", "cityline", "zip", "place")
+    for f in [g for g in found if g.kind in ("person", "company")]:
+        cell, address, pending = f.cell, False, []
+        # the end of the name set in the next column: "NORTHVALE BUILDERS  CISA"
+        r = f.cell.rect
+        right = min((c for c in cell_list if c.row == f.cell.row and c.rect.x0 > r.x1
+                     and c.rect.x0 - r.x1 < 8 * r.height), key=lambda c: c.rect.x0, default=None)
+        if right is not None and id(right) not in held and _lone_name(right.text) \
+                and right.text.strip().isupper() == f.text.isupper():
+            s = len(right.text) - len(right.text.lstrip())
+            pending.append(Found("place", right, s, s + len(right.text.strip())))
+        for _ in range(6):
+            cell = _below(cell, cell_list, max_gap=2.6)   # a block set with open leading
+            if cell is None:
+                break
+            text = cell.text.strip()
+            mine = [g for g in found + out if g.cell is cell]
+            if mine:
+                if any(g.kind in kinds for g in mine):
+                    address = True
+                    out += pending
+                    pending = []
+                continue
+            # a line whose ZIP or town is set in the next column is an address line
+            beside = any(g.cell.row == cell.row and g.kind in kinds for g in found)
+            if ":" in text or NAME_LABEL.search(text) or PRODUCER_LABEL.search(text) \
+                    or len(text.split()) > 4:
+                break
+            if len(re.sub(r"[^A-Za-z0-9]", "", text)) <= 3:
+                continue                          # a stray fragment of the print
+            s = len(cell.text) - len(cell.text.lstrip())
+            if UNTYPED_STREET.fullmatch(text) and id(cell) not in held:
+                out += pending + [Found("street", cell, s, s + len(text))]
+                pending, address = [], True
+            elif TOWN_LINE.fullmatch(text) and not NOT_A_NAME.search(text) \
+                    and text.upper() not in STATES and id(cell) not in held:
+                g = Found("place", cell, s, s + len(text))
+                if address or beside:
+                    out += pending + [g]
+                    pending, address = [], True
+                else:
+                    pending.append(g)
+            else:
+                break
+    seen, unique = set(), []
+    for g in out:
+        if id(g.cell) not in seen:
+            seen.add(id(g.cell))
+            unique.append(g)
+    return unique
 
 
 # ── replacements ────────────────────────────────────────────────────────────
@@ -661,7 +997,11 @@ class Faker:
 
     def __init__(self, vals: Values, originals=()):
         self.v = vals
+        # never about a whole year: a one-year term's start would land on its
+        # own end, and the synthetic dates would repeat the original ones
         self.days = vals.choice([-1, 1]) * vals.integer(45, 540)
+        while abs(abs(self.days) % 365.25 - 182.6) > 175:
+            self.days = vals.choice([-1, 1]) * vals.integer(45, 540)
         self.memo: Dict[tuple, str] = {}
         # a replacement must not be another original value of this document -
         # the insured's town handed to the agent is still the insured's town
@@ -670,6 +1010,18 @@ class Faker:
     def __call__(self, f: Found) -> str:
         if f.blank:
             return ""
+        if f.name_part is not None:          # "MEGHAN" in a driver column: the new first name
+            key = ("person", f.key)
+            if key not in self.memo:
+                self.memo[key] = self._person(f.key)
+            words = self.memo[key].split()
+            return _case_like(words[0] if f.name_part == 0 else words[-1], f.text)
+        if f.city_only:                      # "EAGLE BAY" alone: the new town, no state or ZIP
+            key = ("cityline", f.key)
+            if key not in self.memo:
+                self.memo[key] = self._cityline(f.key)
+            m = PATTERNS[4][1].search(self.memo[key])
+            return _case_like(m.group(1) if m else self.memo[key], f.text)
         if f.kind in ("id", "digits"):
             # one identifier, one replacement, wherever and however it is
             # printed: "103-194-455" and the ID card's "103194455" alike
@@ -688,14 +1040,33 @@ class Faker:
         if f.part is not None and f.split == "month":   # "August" / "26, 2027"
             month, _, rest = new.partition(" ")
             return month if f.part == 0 else rest
-        if f.part is not None:               # one line of a wrapped date
+        if f.part is not None and f.kind == "date":   # one line of a wrapped date
             head, _, year = new.rpartition(" ")
             return head.rstrip(",") if f.part == 0 else year
+        if f.part is not None and f.kind == "company":  # one line of a two-line name
+            # the new name keeps as many words on each line as the original
+            # had there, so a shorter or longer replacement still wraps where
+            # the source did rather than at wherever its own company words end
+            words = new.split()
+            head_len = f.whole_head_words if f.part == 1 else len(f.text.split())
+            if f.part == 0:
+                return " ".join(words[:head_len]) or new
+            return " ".join(words[head_len:]) or new
         if f.no_zip:
             new = re.sub(r"\s+\d{5}(?:-\d{4})?$", "", new)
         if f.kind == "date" and f.key and _key(f.text) != f.key:
             return new                       # a garbled copy: print the date cleanly
         return _case_like(new, f.text)
+
+    def avoid(self, dates):
+        """Choose the shift again until no original date lands on another:
+        with April 9 and August 9 both printed, a 122-day shift would make
+        the new April date the original August one."""
+        dates = {d for d in (_date_of(t) for t in dates) if d is not None}
+        for _ in range(60):
+            if not dates or not {d + timedelta(days=self.days) for d in dates} & dates:
+                return
+            self.days = self.v.choice([-1, 1]) * self.v.integer(45, 540)
 
     def _unique(self, make, old):
         for _ in range(50):
@@ -708,7 +1079,13 @@ class Faker:
     # identity
     def _person(self, old):
         words = old.split()
+        if len(words) == 1:                  # a first name alone, or a surname alone
+            given = {g.lower() for g in GIVEN}
+            pool = GIVEN if old.strip().lower() in given else SURNAME
+            return self._unique(lambda: self.v.choice(pool), old)
         def make():
+            if len(words) == 1:               # "MEDINA": one word for one word
+                return self.v.choice(SURNAME)
             parts = [self.v.choice(GIVEN), self.v.choice(SURNAME)]
             if len(words) >= 3 and len(words[1].strip(".")) == 1:
                 parts.insert(1, self.v.choice("ABCDEFGHJKLMNPRSTW") + ".")
@@ -741,6 +1118,23 @@ class Faker:
             city, zip_ = self.v.choice(TOWNS)
             return "%s%s NY %s" % (city, "," if comma else "", zip_)
         return self._unique(make, old)
+
+    def _gluedcity(self, old):
+        m = GLUED_CITY.fullmatch(old)
+        def make():
+            city, zip_ = self.v.choice(TOWNS)
+            plus = "".join(str(self.v.integer(0, 9)) for _ in range(len(m.group(3)) - 5))
+            return re.sub(r"\W", "", city).upper() + "NY" + zip_ + plus
+        return self._unique(make, old)
+
+    def _zip(self, old):
+        return self._unique(lambda: _reshape_digits(old, self.v), old)
+
+    def _place(self, old):
+        return self._unique(lambda: self.v.choice(TOWNS)[0], old)
+
+    def _county(self, old):
+        return self._unique(lambda: self.v.choice(COUNTIES), old)
 
     # contact
     def _phone(self, old):
@@ -829,7 +1223,7 @@ def _field(kind, raw):
     return fv(raw)
 
 
-def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text):
+def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text, cells=None):
     gold = {"document": {"source_file_name": derived(pdf_name),
                          "page_count": derived(str(pages), NO_EVIDENCE, pages)}}
     on_page = pageref.on_page(pageref._norm(carrier), page_text)
@@ -842,7 +1236,8 @@ def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text):
         by_cell.setdefault(id(f.cell), []).append(f)
     # the first name printed in a block is its primary one: a policy's
     # second insured sits under the first
-    ordered = sorted((f for f in found if f.kind in ("person", "company") and f.role),
+    ordered = sorted((f for f in found if f.kind in ("person", "company") and f.role
+                      and f.part != 1),
                      key=lambda f: (f.cell.page, f.rect.y0, f.rect.x0))
     for f in ordered:
         base = "named_insured" if f.role == "insured" else "producer"
@@ -867,15 +1262,28 @@ def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text):
                              "page": f.cell.page + 1})
             continue
         placed.add(name_path)
-        _set(gold, name_path, fv(f.new))
+        whole_new = f.new
+        if f.part == 0:
+            # a two-line company name: the gold states it whole, as it reads,
+            # not only the fragment printed on this particular line
+            tail = next((g.new for g in found if g.kind == f.kind and g.part == 1
+                        and g.key == f.key), None)
+            if tail:
+                whole_new = f.new + " " + tail
+        _set(gold, name_path, fv(whole_new))
         if base == "named_insured":
             gold["named_insured"]["entity_type"] = derived(
                 "Individual" if f.kind == "person" else "Organization", f.new)
         addr = base + (".mailing_address" if base == "named_insured" else ".address")
         cell = f.cell
-        for _ in range(5):
-            cell = _below(cell, [x.cell for x in found])
-            if cell is None:
+        # down the lines of the name's own page - a cell at the same place on
+        # another page is no part of this block - stepping past a short label
+        # set in the block ("Residence Premises") and a name's own second line
+        # ("BROKERAGE INC"), and stopping at a sentence
+        pool = (cells or {}).get(f.cell.page) or [x.cell for x in found if x.cell.page == f.cell.page]
+        for _ in range(8):
+            cell = _below(cell, pool, max_gap=3.0 if cell is f.cell else 1.8)
+            if cell is None or (len(cell.text.split()) > 6 and id(cell) not in by_cell):
                 break
             for g in by_cell.get(id(cell), []):
                 if g.kind in ("email", "phone") and not g.blank:
@@ -892,6 +1300,12 @@ def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text):
                         _set(gold, addr + ".state", fv(m.group(2)))
                         _set(gold, addr + ".postal_code", fv(m.group(3)))
                         placed.add(id(g))
+                elif g.kind == "place" and not g.city_only:
+                    _set(gold, addr + ".city", fv(g.new))
+                    placed.add(id(g))
+                elif g.kind == "zip":
+                    _set(gold, addr + ".postal_code", fv(g.new))
+                    placed.add(id(g))
 
     for f in found:
         if f.blank or id(f) in placed or f.kind in ("person", "company") and f.role:
@@ -907,6 +1321,12 @@ def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text):
                 _get(gold, path)["raw"] == f.new
                 or _get(gold, path).get("parsed") == _field(f.kind, f.new).get("parsed")):
             continue                                  # same value printed again
+        elif f.kind in ("person", "company") and _key(f.new) in (
+                _key((_get(gold, "producer.agency_name") or {}).get("raw") or ""),
+                _key((_get(gold, "named_insured.primary_name") or {}).get("raw") or "")):
+            continue                  # this party's name, printed again in a
+                                       # different case with no label a field
+                                       # can be matched to
         else:
             unmapped.append({"kind": f.kind, "label": f.label.strip(), "value": f.new,
                              "page": f.cell.page + 1})
@@ -945,8 +1365,19 @@ def _sweep(pages, marks=()):
     kinds = {}
     for *_, found in pages:
         for f in found:
-            if f.kind in PII and len(f.text) >= 4 and not f.blank:
-                kinds.setdefault(_key(f.text), f.kind)
+            if f.kind in PII and not f.blank:
+                if f.part is not None:
+                    # one line of a name that continues onto the next cell -
+                    # the fragment alone ("AGENCY LLC") is not a value to
+                    # sweep for on its own; the whole name is
+                    if f.part == 0 and f.whole and len(f.whole) >= 4:
+                        kinds.setdefault(_key(f.whole), f.kind)
+                elif len(f.text) >= 4:
+                    kinds.setdefault(_key(f.text), f.kind)
+    # a long number is found again with a label or prefix run into it:
+    # "Policy Number085121419", "ER78202066"
+    long_digits = {k for k, kind in kinds.items() if kind in ("id", "digits")
+                   and re.fullmatch(r"\d{7,}", k.replace(" ", ""))}
     if not kinds:
         return
     # a name can be run into the word before it ("Prepared forMartin
@@ -955,10 +1386,14 @@ def _sweep(pages, marks=()):
         "|(?<=%s)" % re.escape(m) for m in sorted(marks))
     # a name or address set in a text layer with no spaces or with commas for
     # them - "BURKHARDEVANSINC", "ROBERT,A,QUEEN" - is the same value
+    # and a name run into the word after it ("Elena VaseyMarried Male Driver")
+    glued_end = r"(?:(?![A-Za-z0-9])|(?-i:(?<=[a-z])(?=[A-Z])))"
     loose = {"person", "company", "pobox", "street", "cityline"}
     canon = {re.sub(r"[\s,-]", "", k): k for k in sorted(kinds, key=len)}
 
     def words(k):
+        if k in long_digits:              # "23101304" printed "23 10 13 04" too
+            return r"\s?".join(re.escape(c) for c in k.replace(" ", ""))
         # an all-digit identifier printed with or without its dashes:
         # "103-194-455" on the declarations is "103194455" on the ID card
         groups = re.split(r"[\s-]+", k)
@@ -968,9 +1403,22 @@ def _sweep(pages, marks=()):
         sep = r"[\s,]*" if kinds[k] in loose and len(k.split()) >= 2 and len(k) >= 8 else r"\s+"
         return sep.join(map(re.escape, k.split()))
     pattern = re.compile("|".join(
-        (glued if kinds[k] in ("person", "company") else r"(?<![A-Za-z0-9])")
-        + words(k) + r"(?![A-Za-z0-9])"
+        (glued if kinds[k] in ("person", "company") else r"(?<!\d)" if k in long_digits
+         else r"(?<![A-Za-z0-9])")
+        + words(k) + (r"(?!\d)" if k in long_digits
+                     else glued_end if kinds[k] in ("person", "company")
+                     else r"(?![A-Za-z0-9])")
         for k in sorted(kinds, key=len, reverse=True)), re.I)
+    # a first or last name printed alone in a cell ("MEGHAN" in a driver
+    # column) is that person's: it takes the same new first or last name
+    parts = {}
+    for k, kind in kinds.items():
+        words = k.split()
+        if kind == "person" and len(words) >= 2 and "&" not in words:
+            for n, w in ((0, words[0]), (1, words[-1])):
+                if len(w) >= 3 and w.isalpha() and w.upper() not in STATES:
+                    parts.setdefault(w, (k, n))
+    cities = {}
     garbled, towns = [], []
     for *_, found in pages:
         for f in found:
@@ -984,6 +1432,7 @@ def _sweep(pages, marks=()):
                 if m:
                     towns.append((_key(f.text), re.compile(
                         r"(?<![A-Za-z])%s,\s*%s(?!\s*\d)(?![A-Za-z])" % (re.escape(m.group(1)), m.group(2)))))
+                    cities.setdefault(_key(m.group(1)), _key(f.text))
     for page, ink, matrix, visible, cell_list, found in pages:
         taken = {}
         for f in found:
@@ -1047,6 +1496,23 @@ def _sweep(pages, marks=()):
                     f.label = _label_for(f, cell_list)
                     found.append(f)
                     spans.append((s, e))
+            # a known first/last name, or a known town, as the whole cell:
+            # "MEGHAN" under DRIVER NAME, "EAGLE BAY" beside "City"
+            alone = _key(cell.text)
+            if spans or not alone or re.search(r"\d", alone):
+                continue
+            s = len(cell.text) - len(cell.text.lstrip())
+            if alone in parts:
+                f = Found("person", cell, s, s + len(cell.text.strip()))
+                f.key, f.name_part = parts[alone]
+            elif alone in cities:
+                f = Found("cityline", cell, s, s + len(cell.text.strip()))
+                f.key, f.city_only = cities[alone], True
+            else:
+                continue
+            f.label = _label_for(f, cell_list)
+            found.append(f)
+            spans.append((f.start, f.end))
         # and a value wrapped onto the next line of a narrow column
         for cell in cell_list:
             head = _key(cell.text)
@@ -1055,8 +1521,16 @@ def _sweep(pages, marks=()):
             for full, kind in kinds.items():
                 if not full.startswith(head + " "):
                     continue
+                rest = full[len(head) + 1:]
                 below = _below(cell, cell_list)
-                if below is None or taken.get(id(below)) or _key(below.text) != full[len(head) + 1:]:
+                if below is None or _key(below.text) != rest:
+                    # a right-aligned block wraps flush right: "Patriotic
+                    # Insurance Group" over "Brokerage"
+                    r = cell.rect
+                    below = next((c for c in cell_list if c is not cell and _key(c.text) == rest
+                                  and abs(c.rect.x1 - r.x1) < 6 and 0 <= c.rect.y0 - r.y1 < 1.8 * r.height),
+                                 None)
+                if below is None or taken.get(id(below)) or _key(below.text) != rest:
                     continue
                 for n, c in enumerate((cell, below)):
                     f = Found(kind, c, 0, len(c.text))
@@ -1082,6 +1556,143 @@ def _sweep(pages, marks=()):
                 taken.setdefault(id(cell), []).append((0, len(cell.text)))
 
 
+def _vertical(page, swapped):
+    """Replaced values in text set vertically - a date stamped up the page
+    margin. The layout reads rows of horizontal text, so such a line is
+    rewritten here as a whole: removed, and drawn again in its own direction
+    with every replaced value in it swapped."""
+    lines = []
+    for block in page.get_text("rawdict")["blocks"]:
+        for line in block.get("lines", []):
+            dx, dy = line["dir"]
+            if abs(dx) > 0.2 or not line["spans"]:
+                continue                                  # horizontal: done already
+            text = "".join(c["c"] for s in line["spans"] for c in s["chars"])
+            new = text
+            for old, rep in swapped:
+                new = new.replace(old, rep)
+            if new != text:
+                lines.append((fitz.Rect(line["bbox"]), line["spans"][0], dy, new))
+    if not lines:
+        return
+    for rect, *_ in lines:
+        page.add_redact_annot(rect, fill=False)
+    page.apply_redactions(images=fitz.PDF_REDACT_IMAGE_NONE, graphics=fitz.PDF_REDACT_LINE_ART_NONE)
+    for rect, span, dy, new in lines:
+        page.draw_rect(rect, color=None, fill=(1, 1, 1), overlay=True)
+        c = span.get("color", 0)
+        page.insert_text(fitz.Point(span["origin"]), new, fontname="helv", fontsize=span["size"],
+                         rotate=90 if dy < 0 else 270,
+                         color=((c >> 16 & 255) / 255, (c >> 8 & 255) / 255, (c & 255) / 255))
+
+
+def _mop_up(page, swaps):
+    """The last pass: an original value still in the page's text - a copy
+    the layout never read whole, in text overprinted by another line, or a
+    scan's layer split into pieces - is removed, covered in the paper colour
+    and drawn anew, found by the value itself rather than by layout."""
+    hits = []
+    for old, new in swaps:
+        for r in page.search_for(old):
+            if r.width > 1 and r.height > 1:
+                hits.append((r, new))
+    if not hits:
+        return
+    shade = page.get_pixmap(dpi=overlay.BG_DPI, colorspace=fitz.csRGB, annots=False)
+    fills = [overlay._paper(shade, r) for r, _ in hits]
+    for r, _ in hits:
+        page.add_redact_annot(r, fill=False)
+    page.apply_redactions(images=fitz.PDF_REDACT_IMAGE_NONE, graphics=fitz.PDF_REDACT_LINE_ART_NONE)
+    for (r, new), fill in zip(hits, fills):
+        page.draw_rect(r + (-0.5, -0.5, 0.5, 0.5), color=None, fill=fill, overlay=True)
+        size = max(4.0, r.height * 0.8)
+        width = fitz.get_text_length(new, fontname="helv", fontsize=size) or 1.0
+        origin = fitz.Point(r.x0, r.y1 - 0.2 * r.height)
+        page.insert_text(origin, new, fontname="helv", fontsize=size,
+                         morph=(origin, fitz.Matrix(min(1.0, r.width / width), 1)))
+
+
+def _moves_on_edit(source_pdf, n):
+    """Does removing one word from page ``n`` move the page's other words?
+
+    Some producers write content that MuPDF cannot rewrite faithfully: a
+    redaction there relocates the text instead of deleting it, so an old
+    value would survive, somewhere else. Tried on a throwaway copy."""
+    doc = fitz.open(str(source_pdf))
+    try:
+        page = doc[n]
+        words = page.get_text("words")
+        target = next((w for w in words if re.search(r"\d", w[4])), words[0] if words else None)
+        if target is None:
+            return False
+        page.add_redact_annot(fitz.Rect(target[:4]), fill=False)
+        page.apply_redactions(images=fitz.PDF_REDACT_IMAGE_NONE, graphics=fitz.PDF_REDACT_LINE_ART_NONE)
+        before = {(w[4], round(w[0]), round(w[1])) for w in words if w is not target}
+        after = {(w[4], round(w[0]), round(w[1])) for w in page.get_text("words")}
+        return len(before - after) > max(2, 0.02 * len(before))
+    except Exception:
+        return False
+    finally:
+        doc.close()
+
+
+def _flatten(doc, n):
+    """Replace page ``n`` with its image under an invisible layer of its
+    words, each set at its own place and printed width - a page the
+    generator can then edit as it edits a scan."""
+    page = doc[n]
+    words = page.get_text("words")
+    # each word at its span's own size and baseline: a producer's word boxes
+    # can be taller than its line pitch, and sizes drawn from them overlap
+    spans = [(fitz.Rect(s["bbox"]), s["size"], s["origin"][1])
+             for b in page.get_text("dict")["blocks"] for l in b.get("lines", []) for s in l["spans"]]
+    pix = page.get_pixmap(dpi=300)
+    tmp = fitz.open()
+    new = tmp.new_page(width=page.rect.width, height=page.rect.height)
+    new.insert_image(new.rect, pixmap=pix)
+    for x0, y0, x1, y1, text, *_ in words:
+        mid = fitz.Point((x0 + x1) / 2, (y0 + y1) / 2)
+        span = next((s for s in spans if s[0].contains(mid)), None)
+        size = span[1] if span else max(4.0, (y1 - y0) * 0.8)
+        width = fitz.get_text_length(text, fontname="helv", fontsize=size) or 1.0
+        origin = fitz.Point(x0, span[2] if span else y1 - 0.22 * (y1 - y0))
+        new.insert_text(origin, text, fontname="helv", fontsize=size, render_mode=3,
+                        morph=(origin, fitz.Matrix((x1 - x0) / width, 1)))
+    doc.delete_page(n)
+    doc.insert_pdf(tmp, start_at=n)
+    tmp.close()
+
+
+def _not_values(pages):
+    """Drop what was taken for identifying values but identifies no one.
+
+    * a "name" whose words the document prints in lower case in its running
+      text: "Residence Premises" (on "the residence premises"), a defined
+      term such as "Shareholder Derivative Demand Investigation Costs";
+    * an identifier repeated in the footer of several pages with no number
+      label beside it: the document's form code ("LPL 39500-NY-1116")."""
+    lower, footer = set(), {}
+    for page, ink, matrix, visible, cell_list, found in pages:
+        height = page.rect.height
+        for c in cell_list:
+            lower |= set(re.findall(r"(?<![A-Za-z])[a-z]{4,}(?![A-Za-z])", c.text))
+        for f in found:
+            if f.kind in ("id", "digits") and f.rect is not None and f.rect.y0 > 0.9 * height:
+                footer.setdefault(_key(f.text), set()).add(page.number)
+    for *_, found in pages:
+        keep = []
+        for f in found:
+            words = [w for w in re.findall(r"[A-Za-z]{4,}", f.text) if w.lower() not in COMPANY_WORDS]
+            if f.kind in ("person", "company") and words and \
+                    sum(w.lower() in lower for w in words) * 2 >= len(words) + 1:
+                continue
+            if f.kind in ("id", "digits") and len(footer.get(_key(f.text), ())) >= 2 \
+                    and not ID_LABEL.search(f.label or ""):
+                continue
+            keep.append(f)
+        found[:] = keep
+
+
 def _key(text):
     return " ".join(text.lower().split())
 
@@ -1093,7 +1704,9 @@ def _carrier_marks(carrier):
                "underwriters", "surplus", "cooperative", "national", "american",
                "general", "services", "insurers", "indemnity", "specialty", "fire",
                "property", "preferred", "corp", "corporation", "inc", "llc", "first"}
-    return {w for w in re.findall(r"[a-z]{4,}", carrier.lower()) if w not in generic}
+    marks = {w for w in re.findall(r"[a-z]{4,}", carrier.lower()) if w not in generic}
+    # and a carrier known by its initials: "CNA", "NCIC", "DMIC"
+    return marks | {w.lower() for w in re.findall(r"\b[A-Z]{3,5}\b", carrier)}
 
 
 def _drop_carrier(found, cell_list, carrier):
@@ -1111,7 +1724,10 @@ def _drop_carrier(found, cell_list, carrier):
                     break
     drop, heads = set(), []
     for f in found:
-        if f.kind == "company" and marks & set(re.findall(r"[a-z]{4,}", f.text.lower())):
+        words = set(re.findall(r"[a-z]{3,}", f.text.lower()))
+        first = (re.findall(r"[a-z]{3,}", f.text.lower()) or [""])[0]
+        if f.kind == "company" and marks & words or f.kind == "person" and words and words <= marks \
+                or f.kind in ("person", "company") and first in marks:   # "CNA Granite Row"
             drop.add(id(f))
             heads.append(f.cell)
     # the carrier's name printed as plain text heads its address too: the
@@ -1120,7 +1736,7 @@ def _drop_carrier(found, cell_list, carrier):
     for cell in cell_list:
         words = cell.text.split()
         if 0 < len(words) <= 6 and not any(g.cell is cell for g in found) and (
-                marks & set(re.findall(r"[a-z]{4,}", cell.text.lower()))
+                marks & set(re.findall(r"[a-z]{3,}", cell.text.lower()))
                 or INSURER_NAME.search(cell.text)):
             heads.append(cell)
     for head in heads:
@@ -1128,10 +1744,10 @@ def _drop_carrier(found, cell_list, carrier):
         for _ in range(3):                  # and the address printed under it
             cell = _below(cell, cell_list)
             if cell is None or NAME_LABEL.search(cell.text) or _looks_like_name(cell.text) \
-                    and not (marks & set(re.findall(r"[a-z]{4,}", cell.text.lower()))):
+                    and not (marks & set(re.findall(r"[a-z]{3,}", cell.text.lower()))):
                 break                       # another party's block begins
             for g in found:
-                if g.cell is cell and g.kind in ("street", "pobox", "cityline"):
+                if g.cell is cell and g.kind in ("street", "pobox", "cityline", "zip", "place"):
                     drop.add(id(g))
     return [f for f in found if id(f) not in drop]
 
@@ -1143,6 +1759,18 @@ def _layer_line(layer, r):
     row = [ch for ch in layer
            if band.contains(fitz.Point((ch.box.x0 + ch.box.x1) / 2, (ch.box.y0 + ch.box.y1) / 2))]
     return "".join(ch.c for ch in sorted(row, key=lambda ch: ch.box.x0))
+
+
+def _layer_span(layer, r):
+    """``(x0, x1, n)`` of the text layer's characters set across a line's
+    box - ``n`` its letters and digits - or None when the layer has nothing there."""
+    band = fitz.Rect(r.x0 - 0.5 * r.height, r.y0, r.x1 + 0.5 * r.height, r.y1)
+    inside = [ch for ch in layer
+              if band.contains(fitz.Point((ch.box.x0 + ch.box.x1) / 2, (ch.box.y0 + ch.box.y1) / 2))]
+    if not inside:
+        return None
+    return (min(ch.box.x0 for ch in inside), max(ch.box.x1 for ch in inside),
+            sum(ch.c.isalnum() for ch in inside))
 
 
 def _layer_word(layer, r):
@@ -1297,6 +1925,123 @@ def _alignment(f, cell_list):
     return "right" if rights > lefts else "left"
 
 
+def _turn_of(page):
+    """The quarter turn that sets a page's print upright - 90 when most of
+    its text runs up the sheet, -90 when down - or 0."""
+    across = up = down = 0
+    for block in page.get_text("rawdict")["blocks"]:
+        for line in block.get("lines", []):
+            n = sum(len(span["chars"]) for span in line["spans"])
+            dx, dy = line["dir"]
+            if abs(dx) >= 0.7:
+                across += n
+            elif dy <= -0.7:
+                up += n
+            elif dy >= 0.7:
+                down += n
+    if up + down < 20 or up + down < 1.5 * across:
+        return 0
+    return 90 if up >= down else -90
+
+
+def _ocr_yield(lines):
+    return sum(len(re.sub(r"\W", "", text)) for text, _, conf in lines if conf >= 0.8)
+
+
+def _scan_turn(page, upright_lines):
+    """The quarter turn a scanned page needs, read from its image: a sideways
+    card's OCR layer is reversed text the engine reads twice over, and the
+    engine reads a quarter turn of it better still."""
+    layer = len(re.sub(r"\W", "", page.get_text()))
+    base = _ocr_yield(upright_lines)
+    if not layer or base < 1.6 * layer:
+        return 0
+    best, turn = base, 0
+    for t in (90, -90):
+        got = _ocr_yield(recover.read_page(page, turn=t))
+        if got >= 1.25 * base and got > best:
+            best, turn = got, t
+    return turn
+
+
+def _upright(doc, dpi=300, read=None):
+    """Pages printed sideways - an envelope sheet, ID cards set up the page -
+    are read as a scan of themselves turned upright: the generator reads,
+    replaces and draws in lines across the page. Returns ``{index: turn}``
+    for the finished scan to be turned back. ``read`` collects the upright
+    OCR of scanned pages, for the page to be read only once."""
+    turned = {}
+    for i in range(len(doc)):
+        page = doc[i]
+        turn = _turn_of(page)
+        if not turn and read is not None and recover.is_scanned(page, overlay.invisible_text(page)):
+            read[i] = recover.read_page(page)
+            turn = _scan_turn(page, read[i])
+            if turn:
+                del read[i]
+        if not turn:
+            continue
+        pix = doc[i].get_pixmap(matrix=fitz.Matrix(dpi / 72, dpi / 72).prerotate(turn))
+        page = doc.new_page(pno=i, width=pix.width * 72 / dpi, height=pix.height * 72 / dpi)
+        page.insert_image(page.rect, pixmap=pix)
+        doc.delete_page(i + 1)
+        turned[i] = turn
+    return turned
+
+
+def _turn_back(pdf, turned):
+    """Set the finished scan's upright pages back as the source printed them."""
+    if not turned:
+        return
+    doc = fitz.open(str(pdf))
+    for i, turn in turned.items():
+        doc[i].set_rotation(turn % 360)
+    doc.saveIncr()
+    doc.close()
+
+
+def _second_look(page, found):
+    """Read a scanned page again once its replacements are drawn, and cover
+    any original identifying value still legible where the print shows it.
+
+    A scan's text layer can be set apart from its print - narrower, or out of
+    order - and a value found in the layer is then covered where the layer
+    puts it, not where it is printed. The OCR engine sees the print."""
+    olds = {}
+    for f in found:
+        if f.kind in PII and f.new and f.new != f.text and not f.blank and f.part is None                 and f.name_part is None and not f.city_only:
+            key = re.sub(r"[^a-z0-9]", "", f.text.lower())
+            if len(key) >= 6 and re.search(r"\d", key):     # an identifier, a ZIP, a street number
+                olds.setdefault(key, f)
+    if not olds:
+        return []
+    reps, ink = [], None
+    for text, rect, conf in recover.read_page(page):
+        mine, where = recover._key(text)
+        chars = recover._chars_of(text, rect)
+        for key, f in olds.items():
+            i = mine.find(key)
+            if i < 0:
+                continue
+            a, b = where[i], where[i + len(key) - 1] + 1
+            span = fitz.Rect(chars[a][1])
+            for _, box in chars[a:b]:
+                span |= box
+            # the engine's line box is spread by glyph widths, not measured:
+            # start the cover where the printed word begins, a little left at most
+            ink = ink or overlay.Ink(page)
+            h = span.height
+            start = ink.word_start(span.y0 + 0.2 * h, span.y1 - 0.2 * h, span.x0 + 1, gap=0.3 * h)
+            span.x0 = max(min(start, span.x0), span.x0 - 0.25 * span.width)
+            reps.append(overlay.Replacement(
+                page=page.number, old=text[a:b], new=f.new, visible_rect=span, ocr_rect=span,
+                font="helv", face_known=False, glued=a > 0 and not text[a - 1].isspace(),
+                color=0, align="left", room=None))
+    if reps:
+        overlay.apply(page, reps, ink or overlay.Ink(page), fitz.Identity)
+    return reps
+
+
 def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
     """One synthetic document and its gold from one source PDF."""
     source_pdf = Path(source_pdf)
@@ -1306,30 +2051,45 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
     try:
         doc = fitz.open(str(source_pdf))
         built.pages = len(doc)
+        # a page whose content cannot be edited in place - removing one word
+        # moves the others - is replaced by its image and a text layer
+        flattened = set()
+        for n in range(len(doc)):
+            if _moves_on_edit(source_pdf, n):
+                _flatten(doc, n)
+                flattened.add(n)
+        read = {}
+        turned = _upright(doc, read=read)
         found_all, plans, pages = [], [], []
-        recovered = {}
+        recovered, scanned = {}, set()
         for page in doc:
             ink = overlay.Ink(page)
             invisible = overlay.invisible_text(page)
             visible = not invisible
-            matrix = fitz.Identity if visible else overlay.calibrate(page, ink)
+            # a flattened page's layer was written in place: nothing to fit
+            matrix = fitz.Identity if visible or page.number in flattened                 else overlay.calibrate(page, ink)
             extra = drop = None
+            stretched = []
             if recover.is_scanned(page, invisible):
+                scanned.add(page.number)
                 # read the scan again: what its OCR layer left out or garbled
                 layer = overlay.layer_chars(page, matrix)
                 runs, drop = recover.reconcile(
-                    recover.read_page(page),
+                    read.pop(page.number, None) or recover.read_page(page),
                     lambda r, layer=layer: _layer_line(layer, r),
-                    lambda r, layer=layer: _layer_word(layer, r))
+                    lambda r, layer=layer: _layer_word(layer, r),
+                    lambda r, layer=layer: _layer_span(layer, r), stretched)
                 if runs:
                     recovered[page.number] = runs
                     extra = recover.as_chars(runs, matrix)
                     visible = False                # draw as on a scan
-            cell_list = overlay.cells(page, matrix, ink, extra=extra, drop=drop)
+            cell_list = overlay.cells(page, matrix, ink, extra=extra, drop=drop, stretch=stretched)
             found = _drop_carrier(find_values(cell_list), cell_list, source_pdf.parent.parent.name)
             pages.append((page, ink, matrix, visible, cell_list, found))
+        _not_values(pages)
         _sweep(pages, _carrier_marks(source_pdf.parent.parent.name))
         faker = Faker(vals, [f.text for *_, found in pages for f in found if f.kind in PII])
+        faker.avoid([f.whole or f.text for *_, found in pages for f in found if f.kind == "date"])
         for *_, found in pages:          # a scan line encodes the others
             for f in found:
                 if f.kind != "scanline":
@@ -1377,11 +2137,20 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
                                    for p, _, _, _, cell_list, found in pages],
                                   schema, index, carrier)
         laid_out = reader.read()
+        every = [f for *_, found in pages for f in found]
+        personal = {f.text for f in found_all if f.kind in PII or f.kind == "date"}
+        swapped = sorted({f.text: f.new for f in found_all
+                          if f.new and f.new != f.text and not f.blank and f.part is None}.items(),
+                         key=lambda kv: -len(kv[0]))
         for page, reps, ink, matrix in plans:
             overlay.apply(page, reps, ink, matrix)
+            if page.number in scanned:
+                reps += _second_look(page, every)
             if page.number in recovered:
                 recover.write_back(page, recovered[page.number],
-                                   [r.visible_rect for r in reps])
+                                   [r.visible_rect for r in reps], swapped)
+            _vertical(page, swapped)
+            _mop_up(page, [(o, n) for o, n in swapped if len(o) >= 5 and o in personal])
         doc.save(str(digital), garbage=3, deflate=True)
         doc.close()
 
@@ -1405,8 +2174,10 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
 
         title = schema.merged.get("title", "")
         gold, unmapped = build_gold([f for f in found_all if id(f) not in reader.consumed
-                                     and f.part is None and f.kind != "scanline"],
-                                    index, carrier, title, built.pdf.name, built.pages, whole)
+                                     and (f.part is None or f.kind == "company")
+                                     and f.kind != "scanline"],
+                                    index, carrier, title, built.pdf.name, built.pages, whole,
+                                    {cl[0].page: cl for *_, cl, _ in pages if cl})   # the document is closed by now
         structure.finish(structure.merge(gold, laid_out), schema)
         vocab = _vocabulary(whole)
         for _, fld in _walk_fields(gold):
@@ -1428,7 +2199,9 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
         # ("(Vantage 1)" with "Vantage" stored elsewhere). It is set aside,
         # listed, rather than asserted. A replaced value is never set aside:
         # its absence from the page is a real failure
-        new_values = {f.new for f in found_all if f.new}
+        # only values that were changed: an amount is kept as printed, and a
+        # line of garbled text holding "$300,000" is still garbled text
+        new_values = {f.new for f in found_all if f.new and f.new != f.text}
         unverified = [(p, raw) for p, raw in misses if raw not in new_values
                       and not any(v in str(raw) for v in new_values if len(v) > 3)
                       and _drop_path(gold, p)]
@@ -1466,6 +2239,7 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
         if built.pdf.stat().st_size > SHARE_LIMIT:
             # too large to share: the same scan, stored compactly
             stats = scan_pdf(digital, built.pdf, HIGH_QUALITY_COMPACT, seed=seed)
+        _turn_back(built.pdf, turned)
         built.profile = stats["profile"]
         strip_evidence(gold)
         gold["fideon:absent"] = schema.absent_from(pageref.stated_paths(gold))

@@ -339,11 +339,24 @@ def _untangle(row):
     for ch in row:
         if ch.line is not None and ch.c not in FILL:
             groups.setdefault(ch.line, []).append(ch)
+    height = float(np.median([ch.box.height for ch in row]))
+    # a layer line can hold two columns far apart ("Lake Forest, IL 60045 ...
+    # NY 13360" in a scan's layer): each run of it between wide gaps is its
+    # own span, so it overlaps nothing it merely spans across
+    pieces = []
+    for g in groups.values():
+        g = sorted(g, key=lambda c: c.box.x0)
+        run = [g[0]]
+        for a, b in zip(g, g[1:]):
+            if b.box.x0 - a.box.x1 > 1.5 * height:
+                pieces.append(run)
+                run = []
+            run.append(b)
+        pieces.append(run)
     spans = [(min(c.box.x0 for c in g), max(c.box.x1 for c in g), g)
-             for g in groups.values() if len(g) >= 2]
+             for g in pieces if len(g) >= 2]
     if len(spans) < 2:
         return [row]
-    height = float(np.median([ch.box.height for ch in row]))
     overlap = lambda a, b: min(a[1], b[1]) - max(a[0], b[0]) > max(2.0, 0.5 * height)
     if not any(overlap(a, b) for i, a in enumerate(spans) for b in spans[i + 1:]):
         return [row]
@@ -361,14 +374,17 @@ def _untangle(row):
 
 
 def cells(page, matrix=fitz.Identity, ink: Optional[Ink] = None,
-          extra=None, drop=None) -> List[Cell]:
+          extra=None, drop=None, stretch=None) -> List[Cell]:
     """Every cell on the page, top to bottom, left to right.
 
     Words and columns are told apart by the blank space printed between
     characters (see :meth:`Ink.blank`); without ``ink`` the text-layer boxes
     are used instead. ``extra`` adds characters read from the page image
     that the layer lacks, and ``drop`` removes the layer's characters inside
-    the given rects (see :mod:`recover`)."""
+    the given rects (see :mod:`recover`). ``stretch`` sets the characters of
+    a line whose layer is squeezed inside its print back across it:
+    ``(band, x0, x1, print_x0, print_x1)`` - where they are removed from the
+    layer (their ``ocr`` box) is unchanged."""
     chars = []
     for b_no, block in enumerate(page.get_text("rawdict")["blocks"]):
         for l_no, line in enumerate(block.get("lines", [])):
@@ -388,6 +404,12 @@ def cells(page, matrix=fitz.Identity, ink: Optional[Ink] = None,
                                       span["size"], span.get("color", 0), space,
                                       leader and ch["c"] in FILL, (b_no, l_no)))
                     space = False
+    for band, x0, x1, p0, p1 in stretch or []:
+        k = (p1 - p0) / max(x1 - x0, 1e-6)
+        for ch in chars:
+            b = ch.box
+            if band.contains(fitz.Point((b.x0 + b.x1) / 2, (b.y0 + b.y1) / 2)):
+                ch.box = fitz.Rect(p0 + (b.x0 - x0) * k, b.y0, p0 + (b.x1 - x0) * k, b.y1)
     if drop:
         chars = [ch for ch in chars if not any(
             r.contains(fitz.Point((ch.box.x0 + ch.box.x1) / 2, (ch.box.y0 + ch.box.y1) / 2))
@@ -647,7 +669,7 @@ def apply(page, replacements: List[Replacement], ink: Ink, matrix=fitz.Identity)
             if line is None:
                 break
             s, base = _size_from_ink(rep.old, fitz.Rect(left, line[0], right, line[1]))
-            if not 0.45 < s / (k * h) < 1.6:
+            if not 0.45 < s / (k * h) < 1.3:          # two tight lines read as one
                 break
             size, baseline, ok = s, base, True
         if rep.old[-1:] in ",;" and ok:
