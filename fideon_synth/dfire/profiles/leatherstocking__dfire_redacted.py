@@ -7,8 +7,8 @@ and property overlays are tiny; this profile upsizes them, restores the agency b
 (name / code / street / city), the property line, the plan sentence and the mortgagee
 lines.  Shared logic lives in _leatherstocking_src.make_dfire (same layout as R-DFIRE).
 
-GAPS (printed but no canonical leaf): the "Property: 1 of 1" counter, the Mail To block (repeats the
-producer) and the SIGNATURE / DATE box.
+GAPS (printed but no canonical leaf): the Mail To block (repeats the producer) and the SIGNATURE
+box's date (not printed; the signature is keyed).
 """
 
 from . import _leatherstocking as L

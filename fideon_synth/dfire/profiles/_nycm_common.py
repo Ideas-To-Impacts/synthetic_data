@@ -8,6 +8,7 @@ the gold mapping live here. Each profile module owns only its own REPLACE list.
 This module has no SOURCE, so the engine's profile loader skips it.
 """
 
+import copy
 from datetime import timedelta
 from pathlib import Path
 
@@ -285,6 +286,12 @@ def gold(d):
     for number, edition, title in FORMS:
         row = {"form_number": fv(number), "edition_date": fv(edition), "form_title": fv(title),
                "premium": money(d["total_s"]) if number == "FL-1" else money("INCL.")}
+        # the sub-table printed under the form's row
+        if number == "ML-216":
+            row["form_details"] = [{"description": fv(d["alarm"]),
+                                    "percentage": fv(d["pct_s"], float(d["alarm_pct"]))}]
+        elif number == "NYCM FL 268":
+            row["form_details"] = [{"percentage": fv(d["ig_s"], float(d["ig"]))}]
         forms.append(row)
 
     dwelling = {
@@ -363,6 +370,7 @@ def gold(d):
             "protection_class": fv(d["protect"]),
             "territory_code": fv(d["territory"]),
             "alarm_type": fv(d["alarm"]),
+            "location_premium": amt(d["total"]),
             "coverages": [
                 {"coverage_name": fv("Coverage A RESIDENCE FIRE"), "limit_amount": money(d["cov_a_s"]),
                  "premium": amt(d["prem_a"])},
@@ -400,14 +408,24 @@ def gold(d):
                 "coverage_a_dwelling_limit": money(d["cov_a_s"]),
                 "coverage_c_personal_property_limit": money(d["cov_c_s"]),
                 "coverage_e_additional_living_expense_limit": money(d["cov_d_s"]),
+                "inflation_guard_percentage": fv(d["ig_s"], float(d["ig"])),
             },
             "deductibles": {"all_other_perils_deductible": money(d["ded_s"])},
             "optional_endorsement_coverages": [inflation],
         },
     }
+    # "Coverage Information for Location 1 of 1": the one location's own page
+    g["dwelling_fire"]["dwellings"] = [{
+        "location_number": fv("1", 1, evidence="Location 1 of 1"),
+        "described_location": dict(prop),
+        "property_description": fv("PRIMARY BUILDING"),
+        "coverages": copy.deepcopy(g["locations"][0]["coverages"]),
+        "surcharges_none_reported": fv("*** NO SURCHARGES EXIST FOR THIS LOCATION ***"),
+        "total_premium": amt(d["total"]),
+    }]
     if renewal:
         g["policy"]["is_renewal"] = derived("Yes", d["txn_label"])
-        g["billing"] = {"billing_plan": fv("BILL WILL FOLLOW")}
+        g["billing"] = {"billing_note": fv("BILL WILL FOLLOW")}
     return g
 
 

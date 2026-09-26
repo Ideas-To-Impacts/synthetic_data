@@ -379,6 +379,13 @@ def forms_gold(d, i):
         elif pk:
             f["premium"] = money(d["l%d_%s_s" % (i, pk)] if pk in ("fl10", "dfl", "alarm")
                                  else d[pk + "_s"])
+        # the line printed under the form's row
+        if pk == "fl10":
+            f["percentage"] = fv(d["fl10_txt"])
+        elif pk == "alarm":
+            f["percentage"] = fv("%d%%" % d["dev_pct"], evidence=d["dev"])
+        elif pk == "dfl":
+            f["included_coverages"] = [fv(name, evidence=ev) for name, ev in VIP_ITEMS]
         out.append(f)
     return out
 
@@ -424,8 +431,57 @@ def location_gold(d, i):
     }
 
 
+PROPERTY_CODES = ("Coverage A", "Coverage B", "Coverage C", "Coverage D")
+
+
+def dwellings_gold(d):
+    """dwelling_fire.dwellings[]: each location as its own pages print it - the
+    coverage page (limits under Property Coverages / Liability Coverages, rating
+    criteria, mortgagee), the premium computation and the location's total."""
+    out = []
+    for i in (1, 2):
+        p = "l%d_" % i
+        loc = location_gold(d, i)
+        covs = []
+        for c in loc["coverages"]:
+            section = "Property Coverages" if c.get("coverage_code", {}).get("raw") in PROPERTY_CODES \
+                else "Liability Coverages"
+            covs.append(dict({"coverage_section": fv(section)}, **c))
+        entry = {
+            "location_number": fv(str(i), i, evidence="Location Number:"),
+            "described_location": loc["address"],
+            "property_description": fv(d[p + "desc"]),
+            "occupancy_type": fv(d[p + "risk"]),
+            "number_of_units": fv(d[p + "fam"], d[p + "fam_n"]),
+            "construction_type": fv(d[p + "constr"]),
+            "year_built": fv(d[p + "year"]),
+            "protection_class": fv(d["prot"]),
+            "rating_type": fv(d["rating_type"]),
+            "rating_zone": fv(d["zone"], evidence="Rating Zone:"),
+            "renovator_credit": fv(d["renovator"]),
+            "fire_district": fv(d["pr_city"]),
+            "feet_to_hydrant": fv(d["hydrant"]),
+            "miles_to_fire_department": fv(d["miles"]),
+            "fire_alarm_type": fv(d["dev"]),
+            "special_rating_conditions": fv(d["special"]),
+            "covered_causes_of_loss": fv(d["comp_line"]),
+            "loss_settlement_basis": fv(d["settle"]),
+            "loss_settlement_contents": fv("Replacement Cost Contents"),
+            "all_other_perils_deductible": money(d["ded_s"]),
+            "deductible_credit_amount": money(d[p + "dcr_s"]),
+            "total_premium": money(d[p + "total_s"]),
+            "fire_surcharge": money("0.00", evidence="New York State Fire Surcharge"),
+            "coverages": covs,
+        }
+        if not d[p + "mort"]:
+            entry["mortgagees_none_listed"] = fv("None Listed")
+        out.append(entry)
+    return out
+
+
 def dwelling_fire_gold(d):
-    """dwelling_fire.* describes Location 1 (the main dwelling); both are under locations[]."""
+    """dwelling_fire.* describes Location 1 (the main dwelling); both are under locations[]
+    and dwellings[]."""
     address = addr(d["pr_street"], d["pr_city"], "NY", d["pr_zip"])
     address["county"] = fv(d["pr_county"])
     loc1 = derived("Location 1", "Supplemental Policy Declarations for Location #")
@@ -474,14 +530,18 @@ def dwelling_fire_gold(d):
             "covered_causes_of_loss": fv(d["comp_line"]),
             "loss_settlement_basis": fv(d["settle"]),
             "loss_settlement_contents": fv("Replacement Cost Contents"),
+            "inflation_guard_percentage": fv("%s%%" % d["fl10_pct"], evidence=d["fl10_txt"]),
+            "inflation_guard_period": fv("per Quarter"),
         },
         "liability_coverages": {
             "coverage_l_premises_liability_limit": money(d["occ_s"]),
+            "premises_liability_aggregate_limit": money(d["agg_s"]),
             "coverage_m_medical_payments_per_person_limit": money(d["medp_s"]),
             "coverage_m_medical_payments_per_occurrence_limit": money(d["meda_s"]),
         },
         "deductibles": {"all_other_perils_deductible": money(d["ded_s"])},
         "optional_endorsement_coverages": opt,
+        "dwellings": dwellings_gold(d),
     }
     if mort:
         out["mortgagees"] = mort
@@ -515,6 +575,7 @@ def common_gold(d):
         },
         "policy": {
             "policy_number": fv(d["policy_no"]),
+            "file_number": fv(d["file_no"]),
             "alternate_policy_identifiers": [{"identifier_type": fv("File #"),
                                               "identifier_value": fv(d["file_no"])}],
             "policy_form_name": fv("Standard Landlords Package Policy"),
@@ -541,6 +602,7 @@ def common_gold(d):
             "billing_plan": fv(d["bill_plan"]),
             "bill_to_party": derived(d["bill_to"], d["bill_plan"]),
             "payment_frequency": fv(d["bill_freq"]),
+            "billing_note": fv("Your billing invoice will be mailed separately."),
         },
         "premium": {
             "fire_fee": fv("0.00", 0.0, evidence="New York State Fire Surcharge"),

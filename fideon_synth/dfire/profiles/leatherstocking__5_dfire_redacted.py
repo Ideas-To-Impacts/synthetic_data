@@ -10,8 +10,7 @@ and the property's city overlays are the same string, told apart by position.
 The agency's trailing "RBF" line is a producer code, printed here after the
 agency name.
 
-GAPS (printed but no canonical leaf): the
-"Property: 1 of 1" counter; the blank SIGNATURE / DATE box; the "Mail To"
+GAPS (printed but no canonical leaf): the SIGNATURE box's date (not printed); the "Mail To"
 block (repeats the producer).
 """
 
@@ -19,8 +18,8 @@ from . import _lcic_common as L
 
 SOURCE = "Leatherstocking Cooperative Insurance Company/dwelling_fire/5- DFIRE_redacted.pdf"
 
-GAPS = ["Property: 1 of 1 (property counter)",
-        "SIGNATURE / DATE box (blank)", "Mail To block (repeats the producer address)"]
+GAPS = ["SIGNATURE / DATE box: no date printed (the signature is keyed)",
+        "Mail To block (repeats the producer address)"]
 
 IGNORE_PAIRS = [
     r"^Phone: 607-547-2007 Fax: 607-547-2056$",   # carrier letterhead; keyed as carrier.contact phone/fax

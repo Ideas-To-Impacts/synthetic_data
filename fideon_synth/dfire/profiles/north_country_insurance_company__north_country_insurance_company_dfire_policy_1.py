@@ -199,7 +199,8 @@ def gold(d):
     if d["seasonal"]:
         g["premium"]["surcharges"] = [{"description": fv("Unoccupied/Seasonal Surcharge"),
                                        "applies_to": fv("Loc 1/Bldg 1"),
-                                       "amount": money("Included")}]
+                                       "amount": money("Included"),
+                                       "is_included": derived("Yes", "Included")}]
     g["premium"]["discounts_and_credits"] = [{"description": fv("Deductible Credit"),
                                               "applies_to": fv("Loc 1/Bldg 1"),
                                               "amount": money("Included"),

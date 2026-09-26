@@ -200,12 +200,15 @@ def gold(d):
     }
     g["interested_parties"] = [
         {"name": fv("%s %s %s" % (d["n1"], d["n2"], d["trust"]), evidence=d["trust"]),
-         "description_of_interest": fv("Deeded owner"), "applies_to": fv("Policy"),
+         "party_type": fv("Deeded owner"), "applies_to": fv("Policy"),
          "is_payor": fv("No"), "address": _party_addr(d, d["ins_zip"])},
         {"name": fv("%s %s" % (d["n1"], d["n2"]), evidence=d["n1"]),
-         "description_of_interest": fv("Addl Insured (Fiduciaries)"), "applies_to": fv("Loc 1/Bldg 1"),
+         "party_type": fv("Addl Insured (Fiduciaries)"), "applies_to": fv("Loc 1/Bldg 1"),
          "is_payor": fv("No"), "address": _party_addr(d, d["ins_zip4"])},
     ]
+    # the perils line printed under the FL-1R row
+    fl1r = next(f for f in g["forms_and_endorsements"] if f["form_number"]["raw"] == "FL-1R")
+    fl1r["form_details"] = [{"description": fv("Fire, EC & VMM")}]
     df = g["dwelling_fire"]
     df["property_coverages"].update({
         "coverage_a_dwelling_limit": money("$0"),
