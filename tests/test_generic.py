@@ -565,6 +565,49 @@ def test_an_address_block_is_read_by_its_shape(tmp_path, schema):
     assert len(names) == 3
 
 
+def test_a_value_wrapped_in_its_column_is_on_the_page(tmp_path):
+    import fitz
+    from fideon_synth import pageref
+    doc = fitz.open()
+    page = doc.new_page()
+    for x, y, text in [(40, 110, "Marguerite Blackwood"), (320, 110, "Thornfield INSURANCE GROUP"),
+                       (40, 125, "PO BOX 315"), (320, 125, "BROKERAGE"), (395, 125, "INC")]:
+        page.insert_text((x, y), text, fontsize=9)
+    doc.save(str(tmp_path / "p.pdf"))
+    gold = {"producer": {"agency_name": generic.fv("Thornfield INSURANCE GROUP BROKERAGE INC")}}
+    resolved, misses = pageref.attach(gold, tmp_path / "p.pdf")
+    assert misses == [] and gold["producer"]["agency_name"]["page_ref"] == [1]
+
+
+def test_a_persons_name_is_found_wherever_it_is_printed():
+    def names(text):
+        doc = fitz.open()
+        page = doc.new_page()
+        page.insert_text((40, 100), text, fontsize=10)
+        cells = overlay.cells(page, fitz.Identity, overlay.Ink(page))
+        return [f.text for f in generic.find_values(cells) if f.kind == "person"]
+    assert "Delphine Halloway" in names("Patriotic Insurance Group Brokerage Inc Delphine Halloway")
+    assert "Barb Winslow" in names("Name:Barb Winslow")
+    assert "C. Brad Moncrief" in names("C. Brad Moncrief")
+    # a place or a business that opens with a first name is not a person
+    assert names("150 Lawrence Pt Rd") == [] and names("Jordan Valley Mutual") == []
+
+
+def test_several_labels_on_one_line_are_each_read():
+    from fideon_synth import structure
+
+    class Labels:
+        _is_label = staticmethod(lambda text: text.lower() in (
+            "flood zone", "basement", "elevator", "policy period", "agent information"))
+    pairs = structure.Reader._pairs(Labels(), "Flood Zone: A   Basement: N   Elevator: N")
+    assert pairs == [("Flood Zone", "A"), ("Basement", "N"), ("Elevator", "N")]
+    # two columns run together: the label is only the words that name a field
+    pairs = structure.Reader._pairs(Labels(), "Policy Period: 07/24/2026 - 07/24/2027 at 12:01am "
+                                              "(LST) Agent Information: Stable Rock Agency LLC")
+    assert pairs[-1] == ("Agent Information", "Stable Rock Agency LLC")
+    assert pairs[0][0] == "Policy Period"
+
+
 def test_a_model_number_ends_the_make():
     from fideon_synth import structure
     unit = {"unit_description": generic.fv("2015 Correct Craft/Nautique 200 Sport Nautique")}

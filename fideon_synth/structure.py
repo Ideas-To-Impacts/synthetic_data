@@ -884,13 +884,22 @@ class Reader:
                 self.fee = fv(f.new, as_number(f.new))
 
         # plain text beside its label: "TERM: 12 Months", or "Year:" | "1999"
+        pairs = self._pairs(cell.text)
+        if len(pairs) > 1:
+            # several on one line: "Flood Zone: A  Basement: N  Elevator: N";
+            # an amount or date among them keeps to its own rules
+            held = [f.text for f in found]
+            for label, value in pairs:
+                if value and not any(h in value for h in held):
+                    self._place(cell, cell, label, value, wrap=False)
+            return
         if self.found_in.get(id(cell)):
             return
         whole = self.index.get(self.norm(cell.text))
         if whole == "document.copy_type":          # "Insured Copy" names itself
             _put(self.gold, whole, fv(cell.text.strip()))
             return
-        m = re.match(r"^\s*([A-Za-z][A-Za-z /&#().'-]{1,40}?)\s*:\s*(\S.*)$", cell.text)
+        m = re.match(r"^\s*([A-Za-z#][A-Za-z /&#().'-]{1,40}?)\s*:\s*(\S.*)$", cell.text)   # "# of Floors: 3"
         vcell = cell
         if m and ":" not in m.group(2):
             label, value = m.group(1), m.group(2).strip()
@@ -909,11 +918,38 @@ class Reader:
             label, value, vcell = cell.text, nxt.text.strip(), nxt
         else:
             return
-        value = self._continued(vcell, value)
+        self._place(cell, vcell, label, value)
+
+    def _pairs(self, text):
+        """(label, value) of each label the schema knows in a line that holds
+        more than one: the label is the longest run of words before a colon
+        that names a field, its value runs to the next such label."""
+        heads = []
+        for m in re.finditer(r":", text):
+            before = text[:m.start()]
+            for n in range(6, 0, -1):
+                w = re.search(r"(\S+(?:\s+\S+){%d})\s*$" % (n - 1), before)
+                if w and re.match(r"[A-Za-z#]", w.group(1)) and self._is_label(w.group(1)):
+                    heads.append((w.start(1), m.end(), w.group(1)))
+                    break
+        out = []
+        for i, (start, end, label) in enumerate(heads):
+            stop = heads[i + 1][0] if i + 1 < len(heads) else len(text)
+            out.append((label, text[end:stop].strip(" ,;|")))
+        return out
+
+    def _place(self, cell, vcell, label, value, wrap=True):
+        """Put a printed value where its label says, in the gold or the unit."""
+        if wrap:
+            value = self._continued(vcell, value)
         if not value or len(value.split()) > 15:
             return
         label = self.norm(label)
-        rels = [r for r in self.unit_index.get(label, []) if not NOT_TEXT.search(r.rsplit(".", 1)[-1])]
+        # a code told in words is printed as it stands: "Territory Code: 19 -
+        # All Others", "Classification: Dwelling - 1 Family"
+        described = bool(re.search(r"[A-Za-z]{3,}", value))
+        text_ok = lambda key: not NOT_TEXT.search(key) or described and re.search(r"code$", key)
+        rels = [r for r in self.unit_index.get(label, []) if text_ok(r.rsplit(".", 1)[-1])]
         if rels and self._repeated_on_row(cell, label):
             return
         if rels:
@@ -929,7 +965,7 @@ class Reader:
                                                                int(year.group(0))))
             return
         path = self.index.get(label) or self.index.get(label.replace(" ", ""))
-        if path and not NOT_TEXT.search(path.rsplit(".", 1)[-1]):
+        if path and text_ok(path.rsplit(".", 1)[-1]):
             _put(self.gold, path, self._plain(path, value))
             return
         # a label of a unit's motor or trailer with no context: "Engine Type"

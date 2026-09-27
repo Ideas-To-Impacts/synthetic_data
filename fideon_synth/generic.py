@@ -43,13 +43,13 @@ import fitz
 
 from . import overlay, pageref, prose, recover, structure
 from .corpus import Built, Report
-from .fields import DATE_FORMAT, NO_EVIDENCE, as_number, derived, fv, strip_evidence
+from .fields import DATE_FORMAT, NO_EVIDENCE, as_date, as_number, derived, fv, strip_evidence
 from .scan import HIGH_QUALITY_COMPACT, by_key as scan_by_key, scan_pdf
 
 #: a scan larger than this is stored compactly: GitHub's recommended largest file
 SHARE_LIMIT = 50 * 1024 * 1024
 from .schema import CanonicalSchema, available
-from .values import GIVEN, STREET_NAME, SURNAME, Values
+from .values import COMMON_GIVEN, GIVEN, STREET_NAME, SURNAME, Values
 
 # ── corpora ─────────────────────────────────────────────────────────────────
 
@@ -145,13 +145,16 @@ INSURED_LABEL = re.compile(r"\b(insured|insureds|client|clients|applicant|owner)
 #: a name label immediately followed by a colon, mid-line in a cell that also
 #: holds other fields ("POLICY NUMBER: ... NAMED INSURED: Cordelia Whitlock")
 INLINE_NAME_LABEL = re.compile(
-    r"\b(?:named\s+insureds?|insureds?|applicant|owner|agent|producer|agency)\s*:\s*", re.I)
+    r"\b(?:named\s+insureds?|insureds?|applicant|owner|"
+    r"(?:agent|producer|agency)(?:\s+(?:information|name))?)\s*:\s*", re.I)   # "Agent Information: ..."
 NOT_A_NAME = re.compile(r"\b(page|policy|coverage|date|premium|limit|number|total|"
                         r"address|description|declarations|location|endorsement|"
                         r"information|type|plan|form|effective|expiration|period|amount|"
                         r"paid|loss|losses|claim|violation|operator|vehicle|owner|original|"
                         r"discount|discounts|free|renewal|online|payment|summary|"
-                        r"watercraft)\b", re.I)
+                        r"watercraft|territory|code|county|zone|class|classification|district|"
+                        r"protection|construction|occupancy|edition|rating|status|"
+                        r"state|city|zip|phone|country)\b", re.I)
 #: a line that names an insurer rather than a policyholder or an agency
 INSURER_NAME = re.compile(r"\b(?:insurance|indemnity|assurance|casualty)\s+(?:company|co\.?|"
                           r"corporation|corp\.?)(?:\s|$)|\bunderwriters\b", re.I)
@@ -242,13 +245,16 @@ KIND_FITS = {
     # "Death Benefit: $2,000", "Other Necessary Expenses per Day: $25"
     "money": re.compile(r"premium|amount|limit|fee|deductible|value|surcharge|tax|discounts|savings|cost|"
                         r"work_loss|benefit|expenses|available"),
-    "id": re.compile(r"number|code|_id|fein"), "digits": re.compile(r"number|code|_id|fein"),
+    "id": re.compile(r"number|code|_id|fein|reference"), "digits": re.compile(r"number|code|_id|fein|reference"),
     "fein": re.compile(r"fein"), "phone": re.compile(r"phone|fax"),
     "email": re.compile(r"email"),
     # a name belongs in a name field, not in whatever field's label happens to
     # sit above it ("RATING STATE: NY" over a policyholder); an address only
     # ever fills an address ("MARITAL STATUS HAS BEEN CHANGED ... FOR Juno Keswick")
-    "person": re.compile(r"name|insured|representative|designee|agent|holder|contact|driver|operator|signator"),
+    # - but a person never names an agency or a company ("Agent Information"
+    # over a producer's contact)
+    "person": re.compile(r"^(?!.*(?:agency|company|carrier|insurer|group)_)"
+                         r".*(?:name|insured|representative|designee|agent|holder|contact|driver|operator|signator)"),
     "company": re.compile(r"name|agency|company|carrier|insurer|lienholder|payee|party|designee"),
     "street": re.compile(r"line_|address|street"), "pobox": re.compile(r"line_|address"),
     "cityline": re.compile(r"city|address"), "place": re.compile(r"city|town|address"),
@@ -410,6 +416,30 @@ def _wrapped_dates(cell_list, found):
 BARE_STREET = re.compile(r"\d{1,6}\s+[A-Za-z][A-Za-z.'-]*(?:\s+[A-Za-z0-9][A-Za-z0-9.'#-]*){0,4}")
 #: a name label with the first name run into it: "Named InsuredWINSLOW"
 GLUED_LABEL = re.compile(r"((?:named\s+)?insureds?(?:\(s\))?:?)\s*([A-Z][A-Za-z'-]+)$", re.I)
+
+
+#: the top of a first page, where an insurer prints its own address and numbers
+LETTERHEAD = 90
+
+
+#: a first name and a surname, the first maybe after an initial ("C. Brad
+#: Moncrief") and the surname after a middle initial ("Juno K. Prentice")
+PERSON_ANYWHERE = re.compile(
+    r"(?<![A-Za-z])(?P<name>(?:[A-Z]\.\s?)?(?P<first>[A-Z][a-z]+|[A-Z]{2,})\s+(?:[A-Z]\.?\s+)?"
+    r"(?P<last>[A-Z][a-z]+(?:[-'][A-Z][a-z]+)?|[A-Z]{2,}(?:[-'][A-Z]+)?))(?![A-Za-z])")
+GIVEN_ANY = COMMON_GIVEN | {g.lower() for g in GIVEN}
+#: words that follow a first name in a place or a business, not a surname
+NOT_A_SURNAME = {"street", "st", "road", "rd", "avenue", "ave", "lane", "ln", "drive", "dr", "court",
+                 "ct", "way", "place", "blvd", "boulevard", "lake", "valley", "hill", "hills", "creek",
+                 "river", "park", "center", "centre", "plaza", "church", "school", "university",
+                 "college", "hospital", "county", "city", "town", "village", "insurance", "mutual",
+                 "trust", "farm", "farms", "estates", "manor", "heights", "point", "pt", "island", "bay"}
+
+
+def _name_part(text):
+    """A name without what trails it on its line: a dash, or an agency code
+    in brackets ("Stable Rock Insurance Agency LLC (86)")."""
+    return re.sub(r"(?:\s*(?:\(\d{1,6}\)|[-–,;]))+\s*$", "", text)
 
 
 def _one_word_name(text):
@@ -656,15 +686,18 @@ def find_values(cell_list):
                 g.label = glued.group(1)
                 found.append(g)
     for cell in cell_list:
-        if NAME_LABEL.search(cell.text) and len(cell.text) < 45 and len(cell.text.split()) <= 5 \
-                and not re.search(r"\d", cell.text):
+        # (an agency's heading too: "Agency:" - not in NAME_LABEL, for a
+        # company named "... Insurance Agency LLC" is a name, not a label)
+        if (NAME_LABEL.search(cell.text) or PRODUCER_LABEL.search(cell.text)) and len(cell.text) < 45 \
+                and len(cell.text.split()) <= 5 and not re.search(r"\d", cell.text):
             # the name under its label, or beside it: "Named Insured(s):  Redhaven Properties LLC"
             # - beside it only after a colon: "Named Insured  |  Primary Residence"
             # without one is two column headings, not a label and its value
             right = min((c for c in cell_list if c.row == cell.row and c.rect.x0 > cell.rect.x1),
                         key=lambda c: c.rect.x0, default=None) if cell.text.rstrip().endswith(":") else None
             for cand in (_below(cell, cell_list, max_gap=3.2), right):
-                if cand is not None and _looks_like_name(cand.text):
+                # a name that runs on into a dash: "Rob Bowen Patriotic Insurance Group -"
+                if cand is not None and _looks_like_name(_name_part(cand.text)):
                     names[id(cand)] = (cand, cell.text)
             cand = _below(cell, cell_list, max_gap=3.2)
             for _ in range(4):                    # a second name stacked under the first
@@ -732,7 +765,7 @@ def find_values(cell_list):
                 found.append(f)
             continue
         kind = "company" if words & COMPANY_WORDS else "person"
-        f = Found(kind, cell, 0, len(cell.text))
+        f = Found(kind, cell, 0, len(_name_part(cell.text)))
         f.label = label or ""
         found.append(f)
         cont = continuations.get(id(cell))
@@ -857,12 +890,37 @@ def find_values(cell_list):
         text = cell.text.strip()
         if left is None or not PLACE_LABEL.match(left.text.strip()) \
                 or any(f.cell is cell for f in found) \
-                or not re.fullmatch(r"[A-Za-z][A-Za-z.' -]{1,40}", text):
+                or not re.fullmatch(r"[A-Za-z][A-Za-z.' -]{1,40}", text) \
+                or NOT_A_NAME.search(text):           # the next heading: "City  State  Zip"
             continue
         s = len(cell.text) - len(cell.text.lstrip())
         f = Found("county" if "county" in left.text.lower() else "place", cell, s, s + len(text))
         f.label = left.text
         found.append(f)
+    # a person's name wherever it is printed - run into its label ("Name:Barb
+    # Winslow"), set on one line with an agency ("... Brokerage Inc Delphine
+    # Halloway"), or standing alone under an agency's block ("Rob Bowen"): a
+    # first name people have, then a surname
+    for cell in cell_list:
+        if re.search(r"https?:|www\.|@", cell.text):
+            continue
+        pos = 0
+        while True:
+            m = PERSON_ANYWHERE.search(cell.text, pos)
+            if m is None:
+                break
+            first, last = m.group("first"), m.group("last")
+            if first.lower() not in GIVEN_ANY or last.lower() in NOT_A_SURNAME \
+                    or NOT_A_NAME.search(last) or last.lower() in COMPANY_WORDS:
+                pos = m.end("first")          # "Inc Delphine Halloway": try again from "Delphine"
+                continue
+            pos = m.end("name")
+            s, e = m.start("name"), m.end("name")
+            if any(f.cell is cell and f.start < e and s < f.end for f in found):
+                continue
+            f = Found("person", cell, s, e)
+            f.label = _label_for(f, cell_list)
+            found.append(f)
     return found
 
 
@@ -1241,7 +1299,9 @@ def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text, cel
                      key=lambda f: (f.cell.page, f.rect.y0, f.rect.x0))
     for f in ordered:
         base = "named_insured" if f.role == "insured" else "producer"
-        name_path = base + (".primary_name" if base == "named_insured" else ".agency_name")
+        # an agent's block names the agency; a person in it is the agent
+        name_path = base + (".primary_name" if base == "named_insured" else
+                            ".producer_contact_name" if f.kind == "person" else ".agency_name")
         if name_path in placed:
             # a second name under its own label: "CLIENTS" is a contact
             path = match_label(_norm_label(f.label), f.kind, index)
@@ -1288,8 +1348,11 @@ def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text, cel
             for g in by_cell.get(id(cell), []):
                 if g.kind in ("email", "phone") and not g.blank:
                     # printed under the mailing address: this party's contact
-                    _set(gold, base + ".contact." + g.kind, fv(g.new))
+                    # ("Fax: (315) 555-0122" is its fax, not its phone)
+                    key = "fax" if g.kind == "phone" and re.search(r"(?i)(?<![a-z])fax", g.label or "") else g.kind
+                    _set(gold, base + ".contact." + key, fv(g.new))
                     placed.add(id(g))
+                    placed.add(base + ".contact." + key)
                 elif g.kind in ("street", "pobox"):
                     _set(gold, addr + ".line_1", fv(g.new)); g.label = g.label or "(address)"
                     placed.add(id(g))
@@ -1314,6 +1377,35 @@ def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text, cel
         path = match_label(label, f.kind, index)
         if f.kind in ("phone", "email") and PRODUCER_LABEL.search(f.label):
             path = "producer.contact." + f.kind
+        elif f.kind == "phone" and f.cell.page == 0 and f.rect.y1 < LETTERHEAD                 and not (PRODUCER_LABEL.search(f.label) or INSURED_LABEL.search(f.label)):
+            # the letterhead's "Phone: ... Fax: ..." is the insurer's
+            path = "carrier.contact." + ("fax" if re.search(r"(?i)(?<![a-z])fax", f.label) else "phone")
+        if path == "policy.effective_date" and path in placed and f.kind == "date" \
+                and "policy.expiration_date" not in placed:
+            # the second date of a period printed beside one label: "Policy
+            # Period:  07/24/2026  07/24/2027" - the later one is its end
+            start = as_date((_get(gold, path) or {}).get("parsed") or "")
+            end = as_date(_field(f.kind, f.new).get("parsed") or "")
+            if start and end and end > start:
+                path = "policy.expiration_date"
+        if path is None and f.kind in ("street", "pobox", "cityline") and                 (INSURED_LABEL.search(f.label) or PRODUCER_LABEL.search(f.label)):
+            # the address of a party whose name line is blank (redacted) or
+            # was not read: under "Named Insured(s):" it is the insured's
+            base = "named_insured.mailing_address" if INSURED_LABEL.search(f.label)                 else "producer.address"
+            m = PATTERNS[4][1].search(f.new) if f.kind == "cityline" else None
+            if m:
+                for key, value in zip(("city", "state", "postal_code"), m.groups()[:3]):
+                    if base + "." + key not in placed:
+                        _set(gold, base + "." + key, fv(value))
+                        placed.add(base + "." + key)
+                continue
+            if f.kind != "cityline":
+                path = base + ".line_1"
+        if path is None and PRODUCER_LABEL.search(f.label):
+            # an agent's block under any heading that says so: "Agency
+            # Information", "Your Agent", "Producer"
+            path = {"company": "producer.agency_name",
+                    "person": "producer.producer_contact_name"}.get(f.kind)
         if path and path not in placed:
             _set(gold, path, _field(f.kind, f.new))
             placed.add(path)
@@ -2207,7 +2299,17 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
                       and _drop_path(gold, p)]
         misses = [m for m in misses if m not in unverified]
         if unverified:
-            gold["fideon:unverified"] = [{"path": p, "value": raw} for p, raw in unverified]
+            # set aside as copied - in the replaced wording, never the original
+            olds = sorted({(f.key or f.text): f.new for f in found_all
+                           if f.new and f.new != f.text and not f.blank and len(f.key or f.text) >= 4}.items(),
+                          key=lambda kv: -len(kv[0]))
+            def replaced(raw):
+                raw = str(raw)
+                for old, new in olds:
+                    raw = re.sub(r"(?<![A-Za-z0-9])%s(?![A-Za-z0-9])" % re.escape(old),
+                                 lambda m, new=new: new, raw, flags=re.I)
+                return raw
+            gold["fideon:unverified"] = [{"path": p, "value": replaced(raw)} for p, raw in unverified]
         built.problems += ["gold says %s = %r is printed, but it is not on any page"
                            % (p, raw) for p, raw in misses]
         # a label is copied off the source page, and can itself be a value

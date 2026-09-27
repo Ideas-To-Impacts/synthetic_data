@@ -43,6 +43,38 @@ def page_texts(pdf_path):
     return texts
 
 
+def column_texts(pdf_path):
+    """Per page, the text of each column read down it: lines that start at
+    the same place, top to bottom. A value wrapped onto the next line of its
+    column ("Thornfield INSURANCE GROUP" | "BROKERAGE INC") is whole here,
+    where the page's own text order can put the other column in between."""
+    import fitz
+    fitz.TOOLS.mupdf_display_errors(False)
+    doc = fitz.open(str(pdf_path))
+    out = []
+    for page in doc:
+        pieces = sorted(((list(l["bbox"]), " ".join(s["text"] for s in l["spans"]))
+                         for b in page.get_text("dict")["blocks"] for l in b.get("lines", [])),
+                        key=lambda bt: (round(bt[0][1]), bt[0][0]))
+        lines = []                       # pieces printed apart along one row
+        for box, text in pieces:
+            last = lines[-1] if lines else None
+            if last and abs(last[0][1] - box[1]) <= 2 and 0 <= box[0] - last[0][2] < 25:
+                last[0][2], last[1] = box[2], last[1] + " " + text
+            else:
+                lines.append([box, text])
+        columns = []
+        for box, text in lines:
+            col = next((c for c in columns if abs(c[0] - box[0]) <= 3), None)
+            if col is None:
+                columns.append([box[0], [text]])
+            else:
+                col[1].append(text)
+        out.append(" | ".join(_norm(" ".join(c[1])) for c in columns))
+    doc.close()
+    return out
+
+
 def attach(doc, pdf_path):
     """Fill every ``page_ref`` from the rendered PDF.
 
@@ -56,6 +88,7 @@ def attach(doc, pdf_path):
     they never claimed to be printed anywhere.
     """
     texts = page_texts(pdf_path)
+    columns = None
     resolved, misses = 0, []
 
     for path, field in walk_indexed(doc):
@@ -72,6 +105,10 @@ def attach(doc, pdf_path):
             # same characters in the same order are the same printed text
             field["page_ref"] = [i + 1 for i, text in enumerate(texts)
                                  if squeezed in re.sub(r"\s+", "", text)]
+        if not field["page_ref"] and " " in needle:
+            # wrapped onto the next line of its column
+            columns = columns if columns is not None else column_texts(pdf_path)
+            field["page_ref"] = [i + 1 for i, text in enumerate(columns) if on_page(needle, text)]
         if field["page_ref"]:
             resolved += 1
         elif evidence is not None:

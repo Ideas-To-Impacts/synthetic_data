@@ -36,6 +36,38 @@ GIVEN = [
     "Georgiana", "Peregrine", "Wilhelmina", "Octavia", "Bartholomew", "Lavinia",
 ]
 
+#: first names people commonly have, to recognise a person's name wherever it
+#: is printed - without the ones that are ordinary words as well ("May",
+#: "Grant", "Chase", "Will", "Rose", "Frank", "Mark", "Bill", "Joy")
+COMMON_GIVEN = set("""
+aaron abigail adam adrian aidan alan albert alex alexander alexandra alexis alice alicia allison amanda amber
+amy andrea andrew angela angelica anita ann anna anne annette anthony antonio arthur ashley audrey austin
+barbara barb barry becky benjamin bernard beth bethany betty beverly bob bobby bonnie brad bradley brandon
+brenda brendan brian brianna brittany bruce bryan caitlin caleb calvin cameron carl carla carlos carmen carol
+caroline carolyn casey catherine cathy charlene charles charlotte chelsea cheryl chris christian christina
+christine christopher cindy claire clara claudia clifford clinton colin connie corey courtney craig crystal
+curtis cynthia dale damian dan dana daniel danielle darlene darren dave david dawn debbie deborah debra dennis
+derek diana diane donald donna doris dorothy douglas dustin dylan edith eduardo edward eileen elaine eleanor
+elena elizabeth ellen emily emma eric erica erik erin ethan eugene evan evelyn felicia fernando florence
+francis gabriel gabrielle gail gary gavin george gerald geraldine gina glen glenda glenn gloria gordon greg
+gregory gwendolyn hannah harold harry heather heidi helen henry howard ian irene isaac isabel jacob jacqueline
+jaime jake james jamie jane janet janice jared jason jasmine jean jeanne jeff jeffrey jenna jennifer jeremy
+jerome jerry jesse jessica jill joan joanne joel john johnny jonathan joseph josephine joshua joyce juan judith
+judy julia julian julie justin karen karl kate katherine kathleen kathryn kathy katie keith kelly kenneth kevin
+kimberly kristen kristin kyle larry laura lauren lawrence leah leonard leslie linda lindsay lisa lois loretta
+lori louis louise lucas lucy luis lydia lynn madeline malcolm marcia marcus margaret maria marian marie marilyn
+marion marjorie marlene martha martin marvin mary matthew maureen maxine megan melanie melinda melissa melvin
+michael michele michelle miguel mildred molly monica nancy natalie nathan nathaniel nicholas nicole norma
+norman olivia pamela patricia patrick paul paula peggy peter philip phillip phyllis priscilla rachel ralph
+randall randy raymond rebecca regina renee rhonda ricardo richard rita robert roberta robin rodney roger
+ronald rosemary roy russell ruth ryan samantha samuel sandra sara sarah scott sean shannon sharon shawn sheila
+shelby sherry shirley sophia stacy stanley stephanie stephen steve steven susan suzanne sylvia tamara tammy
+tanya teresa terri theresa thomas timothy tina todd tonya tracy travis tyler valerie vanessa vera veronica
+vicki victor victoria vincent virginia walter wanda wayne wendy wesley william willie yolanda zachary
+rob tom jim jon joe ken ron sam ben tim pete mike matt nick liz jen jenny kim tony vince greg
+""".split())
+
+
 SURNAME = [
     "Brackenridge", "Pettigrew", "Vantassel", "Danforth", "Marchbanks",
     "Calloway", "Underhill", "Fernsby", "Hollingsworth", "Ashworth",
