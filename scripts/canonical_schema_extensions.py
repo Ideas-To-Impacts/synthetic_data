@@ -5370,6 +5370,14 @@ VERBATIM_PROPERTIES = {'additional_fields': {'type': 'array',
 VERBATIM_PROPERTIES['document_type_detail'] = json.loads(
     (SCHEMA.parent / "ocean_marine.json").read_text("utf-8"))["properties"]["document_type_detail"]
 
+# what slm_l1_additions.py writes into every line, kept identical here so the
+# two scripts agree on homeowners.json
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from slm_l1_additions import COVERAGE_SECTION, COVERAGES, TEXT_SECTIONS  # noqa: E402
+
+VERBATIM_PROPERTIES['text_sections'] = TEXT_SECTIONS
+VERBATIM_PROPERTIES['coverages'] = COVERAGES
+
 VERBATIM_DEFS = {'TextSection': {'type': 'object',
                  'description': 'A block of printed text exactly as the document carries it: a prose '
                                 "paragraph, notice, condition or disclaimer, or the page's remaining "
@@ -5381,7 +5389,8 @@ VERBATIM_DEFS = {'TextSection': {'type': 'object',
                                 'raw_text': {'type': 'string'},
                                 'page_range': {'type': 'array', 'items': {'type': 'integer'}},
                                 'form_number': {'type': ['string', 'null']}},
-                 'required': ['section_id', 'raw_text', 'page_range']}}
+                 'required': ['section_id', 'raw_text', 'page_range']},
+                 'CoverageSection': COVERAGE_SECTION}
 
 # ── 4. value types and descriptions ─────────────────────────────────────────
 SCOPE_NOTES = {

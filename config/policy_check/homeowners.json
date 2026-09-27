@@ -3,19 +3,25 @@
   "title": "Homeowners policy",
   "fideon:doc_type": "policy_check",
   "fideon:lob": "homeowners",
-  "fideon:note": "Generated from the supplied homeowners.schema.json v1.4.0 by scripts/build_canonical_policy_schemas.py. Do not hand-edit; edit the source and regenerate. Extended by scripts/canonical_schema_extensions.py with fields the supplied skeleton did not carry; re-run it after any regeneration. Fields carried over from ocean_marine 2026-09-25 (text_sections and printed facts every line of business prints): text_sections, document.print_code, document.source_url, policy.product_code, policy.policy_period_location_basis, billing.billing_note, billing.payment_coupon_scan_line, billing.phone.",
+  "fideon:note": "Generated from the supplied homeowners.schema.json v1.4.0 by scripts/build_canonical_policy_schemas.py. Do not hand-edit; edit the source and regenerate. Extended by scripts/canonical_schema_extensions.py with fields the supplied skeleton did not carry; re-run it after any regeneration. Fields carried over from ocean_marine 2026-09-25 (text_sections and printed facts every line of business prints): text_sections, document.print_code, document.source_url, policy.product_code, policy.policy_period_location_basis, billing.billing_note, billing.payment_coupon_scan_line, billing.phone. Fields carried over from SLM L1 2026-09-27 by scripts/slm_l1_additions.py: additional_fields, address full, policy tier/rating state/quote/original inception/cancellation method/renewal offer/term as printed, named insured contact name/occupation/marital status, document endorsement number/delivery preference/e-signature certificate, signature presence, coverages and the math audit rule; re-run it after any regeneration.",
   "fideon:source": {
     "schema_id": "fideon.canonical.homeowners",
     "version": "1.4.0",
     "line_of_business_as_supplied": "Homeowners",
     "line_specific_block": "homeowners",
-    "field_count": 1512,
+    "field_count": 1551,
     "corpus_document_count": 10,
     "corpus_carrier_count": 4,
-    "aliased_fields": 828,
+    "aliased_fields": 830,
     "field_count_as_supplied": 380,
     "extensions_applied": "scripts/canonical_schema_extensions.py",
     "gap_analysis_extensions": "2026-09-24: 409 fields added from a 69-PDF / 11-carrier homeowners gap analysis; misplaced aliases moved (Inception Date, Mail To, Amended Date, Modifies Coverage(s) at Renewal, Authorized Representative, Applicable Coverage(s)). Applied directly to this file: the generator scripts named in fideon:note are not in this repo. Second pass (same day, stricter re-review of every page): +212 fields, section/list/column-header aliases, form-embedded thresholds (claim, appraisal, liberalization, watercraft/vehicle, vacancy), per-building copies of dwelling and coverage detail in scheduled_locations[]; underwriting.consumer_report_disclosure became consumer_report_disclosures[]. Third pass: +19 fields; scheduled_locations[] blocks inherit the aliases of their top-level twins; hyphen/en-dash/double-dash variants of coverage labels; column headers (LIMIT, PREMIUM, Limit of Liability) sit on every field they span; a few labels (Appraisal, Policy period, Secured Party Coverage, Payment basis) deliberately name two sibling fields because one printed clause carries both values. Fourth pass: final residual labels; every mix of hyphen/en dash/double hyphen in coverage labels; fields previously covered only by a heading now carry their own label. Fifth pass (independent, value-first review of every page): 33 fields added; wrong aliases fixed (Premium At Inception is the total policy premium; Mortgagee Clause, Who is providing this notice?, Watercraft, PAGE, Special Limits of Liability re-homed). Refinement: merged duplicate fields (homeowners.dwelling.distance_to_fire_station -> homeowners.rating_characteristics.distance_to_fire_station; homeowners.dwelling.distance_to_hydrant -> homeowners.rating_characteristics.feet_from_hydrant; homeowners.dwelling.vacancy_threshold_days -> homeowners.dwelling.vacancy_thresholds[].days; homeowners.dwelling.number_of_weeks_rented -> homeowners.seasonal_rental[].number_of_weeks_rented; homeowners.scheduled_locations[].number_of_weeks_rented -> homeowners.seasonal_rental[].number_of_weeks_rented); every field annotated with fideon:value_type and a generated description."
+  },
+  "fideon:verification": {
+    "source_documents": 69,
+    "source_carriers": 11,
+    "verified_against_documents": true,
+    "note": "fields reviewed against these documents; see fideon:source.gap_analysis_extensions"
   },
   "fideon:mandatory_fields": [
     "carrier",
@@ -25,6 +31,9 @@
   "fideon:audit_rules": {
     "date_ordering": [
       "policy.effective_date <= policy.expiration_date"
+    ],
+    "math": [
+      "sum(coverages[*].premium) \u2248 premium.total_policy_premium \u00b1 0.01"
     ]
   },
   "fideon:parsed_formats": {
@@ -366,6 +375,12 @@
                   "$ref": "#/$defs/FieldValue",
                   "fideon:value_type": "text",
                   "description": "County code (Document / Mail to / Address). Text as printed."
+                },
+                "full": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole.",
+                  "fideon:value_type": "text",
+                  "description": "Full (Document / Mail to / Address). Text as printed."
                 }
               },
               "description": "Section: Address (Document / Mail to)."
@@ -715,6 +730,18 @@
           ],
           "fideon:value_type": "text",
           "description": "Source URL (Document). Text as printed. Printed as e.g. \"URL\", \"Link\", \"Source URL\"."
+        },
+        "endorsement_number": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 11 of the 22 lines. Which endorsement THIS document is. `forms_and_endorsements[]` lists the forms attached to the policy; this names the change the page represents.",
+          "fideon:value_type": "text",
+          "description": "Endorsement number (Document). Text as printed."
+        },
+        "delivery_preference": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 4 of the 22 lines. Paper or electronic. A notice sent the way the policyholder did not choose is a compliance failure.",
+          "fideon:value_type": "text",
+          "description": "Delivery preference (Document). Text as printed."
         }
       },
       "description": "Section: Document (document root)."
@@ -806,6 +833,12 @@
               "$ref": "#/$defs/FieldValue",
               "fideon:value_type": "text",
               "description": "County code (Carrier / Address). Text as printed."
+            },
+            "full": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole.",
+              "fideon:value_type": "text",
+              "description": "Full (Carrier / Address). Text as printed."
             }
           },
           "fideon:aliases": [
@@ -940,6 +973,12 @@
               "$ref": "#/$defs/FieldValue",
               "fideon:value_type": "text",
               "description": "County code (Carrier / Surplus lines broker address). Text as printed."
+            },
+            "full": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole.",
+              "fideon:value_type": "text",
+              "description": "Full (Carrier / Surplus lines broker address). Text as printed."
             }
           },
           "fideon:aliases": [
@@ -1024,6 +1063,12 @@
                   "$ref": "#/$defs/FieldValue",
                   "fideon:value_type": "text",
                   "description": "County code (Carrier / Program administrator / Address). Text as printed."
+                },
+                "full": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole.",
+                  "fideon:value_type": "text",
+                  "description": "Full (Carrier / Program administrator / Address). Text as printed."
                 }
               },
               "fideon:aliases": [
@@ -1147,6 +1192,12 @@
                     "$ref": "#/$defs/FieldValue",
                     "fideon:value_type": "text",
                     "description": "County code (Carrier / Additional contacts / Address). Text as printed."
+                  },
+                  "full": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole.",
+                    "fideon:value_type": "text",
+                    "description": "Full (Carrier / Additional contacts / Address). Text as printed."
                   }
                 },
                 "fideon:aliases": [
@@ -1433,6 +1484,12 @@
               "$ref": "#/$defs/FieldValue",
               "fideon:value_type": "text",
               "description": "County code (Producer / Address). Text as printed."
+            },
+            "full": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole.",
+              "fideon:value_type": "text",
+              "description": "Full (Producer / Address). Text as printed."
             }
           },
           "fideon:aliases": [
@@ -1736,6 +1793,12 @@
           "fideon:value_type": "integer",
           "description": "Policy term months (Policy). Whole number (count, days, years...); parsed is the number. Printed as e.g. \"Term Length\", \"Term\"."
         },
+        "policy_term_as_printed": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "The policy term EXACTLY as the page states it, whichever form that takes. Carriers print two: a duration (`Policy Term: 12 Months`) and a date range (`Policy Term: 02/29/2024 to 02/28/2025`). `policy_term_months` counts months, so a carrier printing the range had its date pair written into a numeric field. Keeping both means `policy_term_months` stays a number and the printed form survives as the audit trail.",
+          "fideon:value_type": "text",
+          "description": "Policy term as printed (Policy). Text as printed."
+        },
         "anniversary_date": {
           "$ref": "#/$defs/FieldValue",
           "fideon:value_type": "date",
@@ -1760,6 +1823,12 @@
           "$ref": "#/$defs/FieldValue",
           "fideon:value_type": "text",
           "description": "Cancellation reason (Policy). Text as printed."
+        },
+        "cancellation_method": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 8 of the 22 lines. HOW a policy was cancelled -- flat, pro-rata, short rate. `cancellation_date` and `cancellation_reason` exist; the method is what decides the refund.",
+          "fideon:value_type": "text",
+          "description": "Cancellation method (Policy). Text as printed."
         },
         "nonrenewal_notice_date": {
           "$ref": "#/$defs/FieldValue",
@@ -2026,6 +2095,33 @@
           ],
           "fideon:value_type": "text",
           "description": "Policy period location basis (Policy). Text as printed. Printed as e.g. \"At the residence premises\", \"At the address of the named insured\", \"Policy period location basis\"."
+        },
+        "policy_tier": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 8 of the 22 lines. NYCM prints `Tier: 9`. A rating tier moves the premium and had no slot, so it travelled in `additional_fields` flagged as unverified.",
+          "fideon:value_type": "text",
+          "description": "Policy tier (Policy). Text as printed."
+        },
+        "rating_state": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Rating State"
+          ],
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 9 of the 22 lines. The state whose rates apply -- not always where the policy was issued (`carrier.state_of_issue`), nor where the risk sits.",
+          "fideon:value_type": "text",
+          "description": "Rating state (Policy). Text as printed. Printed as e.g. \"Rating State\"."
+        },
+        "quote_number": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 4 of the 22 lines. The quote this policy was issued from. NYCM prints `QUOTE #: Q31829763` on every page.",
+          "fideon:value_type": "text",
+          "description": "Quote number (Policy). Text as printed."
+        },
+        "renewal_offer": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 12 of the 22 lines. Whether the carrier is offering renewal, and on what terms. A compliance fact on any non-renewal.",
+          "fideon:value_type": "text",
+          "description": "Renewal offer (Policy). Text as printed."
         }
       },
       "fideon:aliases": [
@@ -2119,6 +2215,12 @@
               "$ref": "#/$defs/FieldValue",
               "fideon:value_type": "text",
               "description": "County code (Named insured / Mailing address). Text as printed."
+            },
+            "full": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole.",
+              "fideon:value_type": "text",
+              "description": "Full (Named insured / Mailing address). Text as printed."
             }
           },
           "fideon:aliases": [
@@ -2173,6 +2275,12 @@
               "$ref": "#/$defs/FieldValue",
               "fideon:value_type": "text",
               "description": "County code (Named insured / Physical address). Text as printed."
+            },
+            "full": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole.",
+              "fideon:value_type": "text",
+              "description": "Full (Named insured / Physical address). Text as printed."
             }
           },
           "description": "Section: Physical address (Named insured)."
@@ -2258,6 +2366,12 @@
             }
           },
           "description": "Section: Contact (Named insured)."
+        },
+        "contact_name": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 12 of the 22 lines. `named_insured.contact` models phone, fax, email and website and carries no name, so the PERSON to contact had nowhere to go.",
+          "fideon:value_type": "text",
+          "description": "Contact name (Named insured). Text as printed."
         },
         "business_description": {
           "$ref": "#/$defs/FieldValue",
@@ -2355,6 +2469,12 @@
                     "$ref": "#/$defs/FieldValue",
                     "fideon:value_type": "text",
                     "description": "County code (Named insured / Additional named insureds / Address). Text as printed."
+                  },
+                  "full": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole.",
+                    "fideon:value_type": "text",
+                    "description": "Full (Named insured / Additional named insureds / Address). Text as printed."
                   }
                 },
                 "description": "Section: Address (Named insured / Additional named insureds)."
@@ -2560,6 +2680,12 @@
                   "$ref": "#/$defs/FieldValue",
                   "fideon:value_type": "text",
                   "description": "County code (Named insured / Third party designee / Address). Text as printed."
+                },
+                "full": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole.",
+                  "fideon:value_type": "text",
+                  "description": "Full (Named insured / Third party designee / Address). Text as printed."
                 }
               },
               "fideon:aliases": [
@@ -2684,6 +2810,12 @@
                       "$ref": "#/$defs/FieldValue",
                       "fideon:value_type": "text",
                       "description": "County code (Named insured / Third party designee / Return instructions / Address). Text as printed."
+                    },
+                    "full": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole.",
+                      "fideon:value_type": "text",
+                      "description": "Full (Named insured / Third party designee / Return instructions / Address). Text as printed."
                     }
                   },
                   "description": "Section: Address (Named insured / Third party designee / Return instructions)."
@@ -2785,6 +2917,18 @@
             "\"Insured\""
           ],
           "description": "Section: Insured definition age limits (Named insured). Printed as e.g. \"\"Insured\"\"."
+        },
+        "occupation": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 4 of the 22 lines. A personal-lines rating factor.",
+          "fideon:value_type": "text",
+          "description": "Occupation (Named insured). Text as printed."
+        },
+        "marital_status": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 5 of the 22 lines. A personal-lines rating factor.",
+          "fideon:value_type": "text",
+          "description": "Marital status (Named insured). Text as printed."
         }
       },
       "fideon:aliases": [
@@ -2875,6 +3019,12 @@
                 ],
                 "fideon:value_type": "text",
                 "description": "Sub county (Locations / Address). Text as printed. Printed as e.g. \"SUB COUNTY\", \"Sub County\"."
+              },
+              "full": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole.",
+                "fideon:value_type": "text",
+                "description": "Full (Locations / Address). Text as printed."
               }
             },
             "description": "Section: Address (Locations)."
@@ -3173,6 +3323,12 @@
                 "$ref": "#/$defs/FieldValue",
                 "fideon:value_type": "text",
                 "description": "County code (Interested parties / Address). Text as printed."
+              },
+              "full": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole.",
+                "fideon:value_type": "text",
+                "description": "Full (Interested parties / Address). Text as printed."
               }
             },
             "fideon:aliases": [
@@ -3315,6 +3471,12 @@
                 "$ref": "#/$defs/FieldValue",
                 "fideon:value_type": "text",
                 "description": "County code (Interested parties / Mailing address). Text as printed."
+              },
+              "full": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole.",
+                "fideon:value_type": "text",
+                "description": "Full (Interested parties / Mailing address). Text as printed."
               }
             },
             "description": "Section: Mailing address (Interested parties)."
@@ -4046,6 +4208,12 @@
               "$ref": "#/$defs/FieldValue",
               "fideon:value_type": "text",
               "description": "County code (Billing / Remittance address). Text as printed."
+            },
+            "full": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole.",
+              "fideon:value_type": "text",
+              "description": "Full (Billing / Remittance address). Text as printed."
             }
           },
           "fideon:aliases": [
@@ -4157,6 +4325,12 @@
                     "$ref": "#/$defs/FieldValue",
                     "fideon:value_type": "text",
                     "description": "County code (Billing / Payments / Payer address). Text as printed."
+                  },
+                  "full": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole.",
+                    "fideon:value_type": "text",
+                    "description": "Full (Billing / Payments / Payer address). Text as printed."
                   }
                 },
                 "description": "Section: Payer address (Billing / Payments)."
@@ -4844,6 +5018,12 @@
                     "$ref": "#/$defs/FieldValue",
                     "fideon:value_type": "text",
                     "description": "County code (State notices / Regulator contact / Address). Text as printed."
+                  },
+                  "full": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole.",
+                    "fideon:value_type": "text",
+                    "description": "Full (State notices / Regulator contact / Address). Text as printed."
                   }
                 },
                 "description": "Section: Address (State notices / Regulator contact)."
@@ -5025,6 +5205,12 @@
               "$ref": "#/$defs/FieldValue",
               "fideon:value_type": "text",
               "description": "County code (Claim reporting / Claims address). Text as printed."
+            },
+            "full": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole.",
+              "fideon:value_type": "text",
+              "description": "Full (Claim reporting / Claims address). Text as printed."
             }
           },
           "description": "Section: Claims address (Claim reporting)."
@@ -5244,6 +5430,12 @@
           ],
           "fideon:value_type": "yes_no",
           "description": "Is signed (Signature). Yes/No indicator; parsed is \"Yes\" or \"No\" (never a JSON boolean). Printed as e.g. \"SIGNATURE\"."
+        },
+        "has_signature": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Whether the declarations page carries a signature at all. The `signature` block models the signature's CONTENTS -- representative name, title, dates -- and has no key for its presence. An unsigned declarations page is a compliance question, so `false` is a finding rather than an absence.",
+          "fideon:value_type": "yes_no",
+          "description": "Has signature (Signature). Yes/No indicator; parsed is \"Yes\" or \"No\" (never a JSON boolean)."
         }
       },
       "description": "Section: Signature (document root)."
@@ -5330,6 +5522,12 @@
                   ],
                   "fideon:value_type": "text",
                   "description": "Sub county (Homeowners / Dwelling / Described location). Text as printed. Printed as e.g. \"SUB COUNTY\", \"Sub County\"."
+                },
+                "full": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole.",
+                  "fideon:value_type": "text",
+                  "description": "Full (Homeowners / Dwelling / Described location). Text as printed."
                 }
               },
               "fideon:aliases": [
@@ -7685,6 +7883,12 @@
                         "$ref": "#/$defs/FieldValue",
                         "fideon:value_type": "text",
                         "description": "County code (Homeowners / Section ii liability coverages / Covered exposures / Address). Text as printed."
+                      },
+                      "full": {
+                        "$ref": "#/$defs/FieldValue",
+                        "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole.",
+                        "fideon:value_type": "text",
+                        "description": "Full (Homeowners / Section ii liability coverages / Covered exposures / Address). Text as printed."
                       }
                     },
                     "description": "Section: Address (Homeowners / Section ii liability coverages / Covered exposures)."
@@ -8792,6 +8996,12 @@
                     "$ref": "#/$defs/FieldValue",
                     "fideon:value_type": "text",
                     "description": "County code (Homeowners / Mortgagees / Address). Text as printed."
+                  },
+                  "full": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole.",
+                    "fideon:value_type": "text",
+                    "description": "Full (Homeowners / Mortgagees / Address). Text as printed."
                   }
                 },
                 "description": "Section: Address (Homeowners / Mortgagees)."
@@ -9268,6 +9478,12 @@
                     ],
                     "fideon:value_type": "text",
                     "description": "Sub county (Homeowners / Scheduled locations / Address). Text as printed. Printed as e.g. \"SUB COUNTY\", \"Sub County\"."
+                  },
+                  "full": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole.",
+                    "fideon:value_type": "text",
+                    "description": "Full (Homeowners / Scheduled locations / Address). Text as printed."
                   }
                 },
                 "fideon:aliases": [
@@ -11178,6 +11394,12 @@
                     "$ref": "#/$defs/FieldValue",
                     "fideon:value_type": "text",
                     "description": "County code (Underwriting / Consumer report disclosures / Reporting agency address). Text as printed."
+                  },
+                  "full": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole.",
+                    "fideon:value_type": "text",
+                    "description": "Full (Underwriting / Consumer report disclosures / Reporting agency address). Text as printed."
                   }
                 },
                 "fideon:aliases": [
@@ -11770,6 +11992,10 @@
                 },
                 "country": {
                   "$ref": "#/$defs/FieldValue"
+                },
+                "full": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
                 }
               }
             },
@@ -12108,6 +12334,10 @@
                     },
                     "country": {
                       "$ref": "#/$defs/FieldValue"
+                    },
+                    "full": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
                     }
                   }
                 },
@@ -12183,6 +12413,10 @@
                     },
                     "country": {
                       "$ref": "#/$defs/FieldValue"
+                    },
+                    "full": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
                     }
                   },
                   "fideon:aliases": [
@@ -12301,6 +12535,10 @@
                       },
                       "country": {
                         "$ref": "#/$defs/FieldValue"
+                      },
+                      "full": {
+                        "$ref": "#/$defs/FieldValue",
+                        "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
                       }
                     }
                   },
@@ -12604,11 +12842,26 @@
         }
       }
     },
+    "coverages": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/CoverageSection"
+      },
+      "fideon:aliases": [
+        "Coverage",
+        "Coverages",
+        "Coverage Part",
+        "Schedule of Coverages",
+        "Limits of Insurance"
+      ]
+    },
     "text_sections": {
       "type": "object",
       "additionalProperties": {
         "$ref": "#/$defs/TextSection"
-      }
+      },
+      "fideon:fsm_exclude": true,
+      "description": "Raw text blocks for SLM/LLM-based policy comparison \u2014 populated by the text extraction path, not the VLM FSM. These are what the Comparison API reads."
     },
     "printed_lines": {
       "type": "array",
@@ -12740,6 +12993,44 @@
         "raw_text",
         "page_range"
       ]
+    },
+    "CoverageSection": {
+      "type": "object",
+      "properties": {
+        "coverage_type": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "coverage_name": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "covered_auto_symbols": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "limit": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "aggregate_limit": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "deductible": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "retention": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "sublimit": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "premium": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "endorsement_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/FieldValue"
+          }
+        }
+      }
     }
   }
 }
