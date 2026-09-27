@@ -56,6 +56,24 @@ def engine():
             except Exception:                    # not installed
                 return None
             gpu = os.environ.get("FIDEON_OCR_GPU", "").lower()
+            # FIDEON_OCR_THREADS caps the threads each engine starts: many
+            # workers side by side, each with a thread per core in every
+            # model, run a machine out of threads ("Resource temporarily
+            # unavailable")
+            options = {}
+            threads = os.environ.get("FIDEON_OCR_THREADS", "").strip()
+            if threads.isdigit() and int(threads) > 0:
+                options = {"intra_op_num_threads": int(threads), "inter_op_num_threads": 1}
+                try:
+                    import cv2
+                    cv2.setNumThreads(int(threads))
+                except Exception:
+                    pass
+            try:
+                import onnxruntime
+                onnxruntime.set_default_logger_severity(3)   # errors only: not a warning per model
+            except Exception:
+                pass
             if gpu == "cuda":
                 # CUDA and cuDNN installed from pip (onnxruntime-gpu[cuda,cudnn])
                 # are found only once loaded: without this the engine quietly
@@ -67,14 +85,14 @@ def engine():
                     pass
             if gpu in ("cuda", "dml"):
                 try:
-                    _engine = RapidOCR(**{"%s_use_%s" % (part, gpu): True
-                                          for part in ("det", "cls", "rec")})
+                    _engine = RapidOCR(**options, **{"%s_use_%s" % (part, gpu): True
+                                                     for part in ("det", "cls", "rec")})
                 except Exception:
                     _engine = None
             if _engine is None:
                 gpu = ""
                 try:
-                    _engine = RapidOCR()
+                    _engine = RapidOCR(**options)
                 except Exception:                # no model
                     _engine = None
             if _engine is not None:

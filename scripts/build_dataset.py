@@ -161,6 +161,10 @@ def main(argv=None):
     lobs = args.lob or PERSONAL
     # set before the workers start, so every one of them shares it
     os.environ.setdefault("FIDEON_OCR_CACHE", args.ocr_cache or str(out / ".ocr_cache"))
+    # the workers are the parallelism: each keeps to one thread, or 30 of them
+    # with a thread per core in every library run a machine out of threads
+    for var in ("FIDEON_OCR_THREADS", "OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS"):
+        os.environ.setdefault(var, "1")
 
     found = sources(args.data, lobs)
     # the personal lines are one document type (the policy_check schemas):
