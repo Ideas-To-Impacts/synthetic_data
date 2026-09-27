@@ -78,7 +78,9 @@ def sources(data, lobs):
     import fitz
     fitz.TOOLS.mupdf_display_errors(False)
     out = defaultdict(list)
-    for pdf in sorted(Path(data).rglob("*.pdf")):
+    # in one order on every machine: Windows sorts paths without regard to case,
+    # Linux with it, and the split must not depend on where it is made
+    for pdf in sorted(Path(data).rglob("*.pdf"), key=lambda p: p.as_posix()):
         if pdf.parent.name not in lobs:
             continue
         try:
