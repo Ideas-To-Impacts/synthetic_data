@@ -1,0 +1,2971 @@
+{
+  "document": {
+    "document_type": {
+      "raw": "DECLARATIONS",
+      "parsed": "Declarations",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "document_title_as_stated": {
+      "raw": "DECLARATIONS",
+      "parsed": "DECLARATIONS",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "copy_type": {
+      "raw": "INSURED COPY",
+      "parsed": "INSURED COPY",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "print_date": {
+      "raw": "06/19/2026",
+      "parsed": "06/19/2026",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "print_time": {
+      "raw": "08:33:45",
+      "parsed": "08:33:45",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "transaction_type": {
+      "raw": "ENDORSEMENT",
+      "parsed": "ENDORSEMENT",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        4
+      ],
+      "flagged": false
+    },
+    "transaction_effective_date": {
+      "raw": "06/18/2026",
+      "parsed": "06/18/2026",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "transaction_expiration_date": {
+      "raw": "11/16/2026",
+      "parsed": "11/16/2026",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "transaction_reason": {
+      "raw": "AUTOMATICALLY MODIFIED CUSTOMER INFORMATION",
+      "parsed": "AUTOMATICALLY MODIFIED CUSTOMER INFORMATION",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "batch_number": {
+      "raw": "U9/L",
+      "parsed": "U9/L",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "source_file_name": {
+      "raw": "nycm_insurance_pumbr_endo.pdf",
+      "parsed": "nycm_insurance_pumbr_endo.pdf",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "page_count": {
+      "raw": "4",
+      "parsed": 4,
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    }
+  },
+  "carrier": {
+    "company_name": {
+      "raw": "New York Central Mutual Fire Insurance Company",
+      "parsed": "New York Central Mutual Fire Insurance Company",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "contact": {
+      "phone": {
+        "raw": "800-234-6926",
+        "parsed": "800-234-6926",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "website": {
+        "raw": "www.nycm.com",
+        "parsed": "www.nycm.com",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "flagged": false
+      }
+    },
+    "address": {
+      "line_1": {
+        "raw": "1899 Central Plaza East",
+        "parsed": "1899 Central Plaza East",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Edmeston",
+        "parsed": "Edmeston",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13335-1899",
+        "parsed": "13335-1899",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "producer": {
+    "agency_name": {
+      "raw": "STABLE ROCK INSURANCE AGENCY LLC",
+      "parsed": "STABLE ROCK INSURANCE AGENCY LLC",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "producer_code": {
+      "raw": "08014",
+      "parsed": "08014",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "territory_code": {
+      "raw": "3R",
+      "parsed": "3R",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "paperless_indicator": {
+      "raw": "YES",
+      "parsed": "Yes",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "direct_mail_indicator": {
+      "raw": "YES",
+      "parsed": "Yes",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "contact": {
+      "phone": {
+        "raw": "315-357-5901",
+        "parsed": "315-357-5901",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "fax": {
+        "raw": "315-357-5126",
+        "parsed": "315-357-5126",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "email": {
+        "raw": "agency@patrioticinsurancegroup.com",
+        "parsed": "agency@patrioticinsurancegroup.com",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "website": {
+        "raw": "https://patrioticinsurancegroup.com",
+        "parsed": "https://patrioticinsurancegroup.com",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "address": {
+      "line_1": {
+        "raw": "PO BOX 329",
+        "parsed": "PO BOX 329",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "INLET",
+        "parsed": "INLET",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13360-0329",
+        "parsed": "13360-0329",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "named_insured": {
+    "primary_name": {
+      "raw": "Ambrose Rowntree",
+      "parsed": "Ambrose Rowntree",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "entity_type": {
+      "raw": "Individual",
+      "parsed": "Individual",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "marital_status": {
+      "raw": "MARRIED",
+      "parsed": "MARRIED",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "mailing_address": {
+      "line_1": {
+        "raw": "PO BOX 332",
+        "parsed": "PO BOX 332",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "EAGLE BAY",
+        "parsed": "EAGLE BAY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13331-0332",
+        "parsed": "13331-0332",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "additional_named_insureds": [
+      {
+        "name": {
+          "raw": "Bertram Prentice",
+          "parsed": "Bertram Prentice",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "insured_role": {
+          "raw": "NAMED INSURED",
+          "parsed": "NAMED INSURED",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "marital_status": {
+          "raw": "MARRIED",
+          "parsed": "MARRIED",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "gender": {
+          "raw": "FEMALE",
+          "parsed": "FEMALE",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "policy": {
+    "policy_number": {
+      "raw": "L120310",
+      "parsed": "L120310",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "policy_type": {
+      "raw": "UMBRELLA",
+      "parsed": "UMBRELLA",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "original_inception_date": {
+      "raw": "11/16/2017",
+      "parsed": "11/16/2017",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "policyholder_since_date": {
+      "raw": "11/16/2017",
+      "parsed": "11/16/2017",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "effective_date": {
+      "raw": "11/16/2025",
+      "parsed": "11/16/2025",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "effective_time": {
+      "raw": "12:01 AM",
+      "parsed": "12:01 AM",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "expiration_date": {
+      "raw": "11/16/2026",
+      "parsed": "11/16/2026",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "expiration_time": {
+      "raw": "12:01 AM",
+      "parsed": "12:01 AM",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "time_zone": {
+      "raw": "EST",
+      "parsed": "EST",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "policy_term_as_printed": {
+      "raw": "12 MONTHS",
+      "parsed": "12 MONTHS",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "policy_term_months": {
+      "raw": "12 MONTHS",
+      "parsed": 12,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "policy_form_number": {
+      "raw": "DL 98 01",
+      "parsed": "DL 98 01",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "policy_form_edition": {
+      "raw": "06 98",
+      "parsed": "06 98",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        4
+      ],
+      "flagged": false
+    },
+    "policy_form_name": {
+      "raw": "PERSONAL UMBRELLA LIABILITY POLICY",
+      "parsed": "PERSONAL UMBRELLA LIABILITY POLICY",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "is_renewal": {
+      "raw": "ENDORSEMENT",
+      "parsed": "No",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1,
+        4
+      ],
+      "flagged": false
+    }
+  },
+  "premium": {
+    "total_policy_premium": {
+      "raw": "$661.00",
+      "parsed": 661.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "billing": {},
+  "forms_and_endorsements": [
+    {
+      "form_number": {
+        "raw": "DL 98 01",
+        "parsed": "DL 98 01",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "06 98",
+        "parsed": "06 98",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "PERSONAL UMBRELLA LIABILITY POLICY",
+        "parsed": "PERSONAL UMBRELLA LIABILITY POLICY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "$324.00",
+        "parsed": 324.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "DL 98 12",
+        "parsed": "DL 98 12",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "06 98",
+        "parsed": "06 98",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "PERSONAL UMBRELLA LIABILITY POLICY - AUTOMOBILE LIABILITY",
+        "parsed": "PERSONAL UMBRELLA LIABILITY POLICY - AUTOMOBILE LIABILITY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "INCL.",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "DL 98 35",
+        "parsed": "DL 98 35",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "06 98",
+        "parsed": "06 98",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "PERSONAL UMBRELLA LIABILITY POLICY EXCLUSION - LEAD LIABILITY",
+        "parsed": "PERSONAL UMBRELLA LIABILITY POLICY EXCLUSION - LEAD LIABILITY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "INCL.",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "NYC 98 89",
+        "parsed": "NYC 98 89",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "08 13",
+        "parsed": "08 13",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "PERSONAL UMBRELLA LIABILITY POLICY AMENDMENT OF POLICY PROVISIONS",
+        "parsed": "PERSONAL UMBRELLA LIABILITY POLICY AMENDMENT OF POLICY PROVISIONS",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "INCL.",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "NYC 211",
+        "parsed": "NYC 211",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "(08/91)",
+        "parsed": "(08/91)",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "IMPORTANT SENIOR CITIZEN INFORMATION",
+        "parsed": "IMPORTANT SENIOR CITIZEN INFORMATION",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "INCL.",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "NYC DL 891",
+        "parsed": "NYC DL 891",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "03 10",
+        "parsed": "03 10",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "LEAD LIABILITY DISCLOSURE NOTICE",
+        "parsed": "LEAD LIABILITY DISCLOSURE NOTICE",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "INCL.",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "NYCM DL 273",
+        "parsed": "NYCM DL 273",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "07 10",
+        "parsed": "07 10",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "PERSONAL UMBRELLA LIABILITY POLICY AMENDMENT OF POLICY PROVISIONS",
+        "parsed": "PERSONAL UMBRELLA LIABILITY POLICY AMENDMENT OF POLICY PROVISIONS",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "INCL.",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "NYC-UL-204",
+        "parsed": "NYC-UL-204",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "(11/01)",
+        "parsed": "(11/01)",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "PERSONAL UMBRELLA LIABILITY POLICY - PERMITTED INCIDENTAL OCCUPANCIES",
+        "parsed": "PERSONAL UMBRELLA LIABILITY POLICY - PERMITTED INCIDENTAL OCCUPANCIES",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "$7.00",
+        "parsed": 7.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "NYC-UL-206",
+        "parsed": "NYC-UL-206",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "09 22",
+        "parsed": "09 22",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "UNINSURED/UNDERINSURED MOTORISTS EXCESS",
+        "parsed": "UNINSURED/UNDERINSURED MOTORISTS EXCESS",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "$330.00",
+        "parsed": 330.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "NYC-UL-207",
+        "parsed": "NYC-UL-207",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "(11/01)",
+        "parsed": "(11/01)",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "YOUR PERSONAL UMBRELLA POLICY QUICK REFERENCE",
+        "parsed": "YOUR PERSONAL UMBRELLA POLICY QUICK REFERENCE",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "INCL.",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "NYC UL 208",
+        "parsed": "NYC UL 208",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "08 17",
+        "parsed": "08 17",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "TRANSPORTATION NETWORK COMPANY SERVICES",
+        "parsed": "TRANSPORTATION NETWORK COMPANY SERVICES",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "INCL.",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "NYC UL 209",
+        "parsed": "NYC UL 209",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "09 22",
+        "parsed": "09 22",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "PEER-TO-PEER CAR SHARING PROGRAM EXCLUSION ENDORSEMENT PERSONAL UMBRELLA LIABILITY POLICY",
+        "parsed": "PEER-TO-PEER CAR SHARING PROGRAM EXCLUSION ENDORSEMENT PERSONAL UMBRELLA LIABILITY POLICY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "INCL.",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "NYC DN 283",
+        "parsed": "NYC DN 283",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "08 17",
+        "parsed": "08 17",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "ADVISORY NOTICE TO POLICYHOLDERS",
+        "parsed": "ADVISORY NOTICE TO POLICYHOLDERS",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "INCL.",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "NYC DN 293",
+        "parsed": "NYC DN 293",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "09 22",
+        "parsed": "09 22",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "NOTICE TO POLICYHOLDERS",
+        "parsed": "NOTICE TO POLICYHOLDERS",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "INCL.",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "NYC DN 294",
+        "parsed": "NYC DN 294",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "09 22",
+        "parsed": "09 22",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "ADVISORY NOTICE TO POLICYHOLDERS EXCLUSION PEER-TO-PEER CAR SHARING PROGRAM",
+        "parsed": "ADVISORY NOTICE TO POLICYHOLDERS EXCLUSION PEER-TO-PEER CAR SHARING PROGRAM",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "INCL.",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "NYCM PN",
+        "parsed": "NYCM PN",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "03 25",
+        "parsed": "03 25",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "PRIVACY NOTICE",
+        "parsed": "PRIVACY NOTICE",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "INCL.",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    }
+  ],
+  "coverages": [
+    {
+      "coverage_name": {
+        "raw": "PERSONAL UMBRELLA LIABILITY POLICY",
+        "parsed": "PERSONAL UMBRELLA LIABILITY POLICY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "limit": {
+        "raw": "$1,000,000",
+        "parsed": 1000000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "deductible": {
+        "raw": "$1,000",
+        "parsed": 1000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "$324.00",
+        "parsed": 324.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "coverage_name": {
+        "raw": "PERMITTED INCIDENTAL OCCUPANCIES",
+        "parsed": "PERMITTED INCIDENTAL OCCUPANCIES",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "coverage_type": {
+        "raw": "CONTRACTOR AND JEWELRY AND FABRIC WORK",
+        "parsed": "CONTRACTOR AND JEWELRY AND FABRIC WORK",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "$7.00",
+        "parsed": 7.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "endorsement_refs": [
+        {
+          "raw": "NYC-UL-204",
+          "parsed": "NYC-UL-204",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        }
+      ]
+    },
+    {
+      "coverage_name": {
+        "raw": "EXCESS UNINSURED/UNDERINSURED MOTORIST LIMIT",
+        "parsed": "EXCESS UNINSURED/UNDERINSURED MOTORIST LIMIT",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "limit": {
+        "raw": "$1,000,000.00",
+        "parsed": 1000000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "$330.00",
+        "parsed": 330.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "endorsement_refs": [
+        {
+          "raw": "NYC-UL-206",
+          "parsed": "NYC-UL-206",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        }
+      ]
+    }
+  ],
+  "personal_umbrella": {
+    "limits": {
+      "personal_umbrella_limit": {
+        "raw": "$1,000,000",
+        "parsed": 1000000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "self_insured_retention": {
+        "raw": "$1,000",
+        "parsed": 1000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
+        ],
+        "flagged": false
+      }
+    },
+    "household_members": [
+      {
+        "name": {
+          "raw": "Ambrose Rowntree",
+          "parsed": "Ambrose Rowntree",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "insured_role": {
+          "raw": "PRIMARY INSURED",
+          "parsed": "PRIMARY INSURED",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "marital_status": {
+          "raw": "MARRIED",
+          "parsed": "MARRIED",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "gender": {
+          "raw": "MALE",
+          "parsed": "MALE",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "name": {
+          "raw": "Bertram Prentice",
+          "parsed": "Bertram Prentice",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "insured_role": {
+          "raw": "NAMED INSURED",
+          "parsed": "NAMED INSURED",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "marital_status": {
+          "raw": "MARRIED",
+          "parsed": "MARRIED",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "gender": {
+          "raw": "FEMALE",
+          "parsed": "FEMALE",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      }
+    ],
+    "rated_exposures": [
+      {
+        "description": {
+          "raw": "AUTO - 2",
+          "parsed": "AUTO - 2",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "exposure_type": {
+          "raw": "AUTO",
+          "parsed": "AUTO",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "count": {
+          "raw": "AUTO - 2",
+          "parsed": 2,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "RENTAL - 2",
+          "parsed": "RENTAL - 2",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "exposure_type": {
+          "raw": "RENTAL",
+          "parsed": "RENTAL",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "count": {
+          "raw": "RENTAL - 2",
+          "parsed": 2,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "RESIDENCS - 3",
+          "parsed": "RESIDENCS - 3",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "exposure_type": {
+          "raw": "RESIDENCS",
+          "parsed": "RESIDENCS",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "count": {
+          "raw": "RESIDENCS - 3",
+          "parsed": 3,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "UTVS - 1",
+          "parsed": "UTVS - 1",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "exposure_type": {
+          "raw": "UTVS",
+          "parsed": "UTVS",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "count": {
+          "raw": "UTVS - 1",
+          "parsed": 1,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        }
+      }
+    ],
+    "residences": [
+      {
+        "address": {
+          "line_1": {
+            "raw": "168 BIG MOOSE RD",
+            "parsed": "168 BIG MOOSE RD",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3
+            ],
+            "flagged": false
+          },
+          "city": {
+            "raw": "EAGLE BAY",
+            "parsed": "EAGLE BAY",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "state": {
+            "raw": "NY",
+            "parsed": "NY",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "postal_code": {
+            "raw": "13331-1804",
+            "parsed": "13331-1804",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "county_code": {
+            "raw": "043",
+            "parsed": "043",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3
+            ],
+            "flagged": false
+          },
+          "county": {
+            "raw": "HERKIMER",
+            "parsed": "HERKIMER",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3
+            ],
+            "flagged": false
+          },
+          "sub_county": {
+            "raw": "9",
+            "parsed": "9",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "flagged": false
+          }
+        },
+        "territory_code": {
+          "raw": "CNY",
+          "parsed": "CNY",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "table_code": {
+          "raw": "1",
+          "parsed": "1",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "residence_number": {
+          "raw": "1",
+          "parsed": 1,
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "residence_type": {
+          "raw": "PRIMARY",
+          "parsed": "PRIMARY",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            3
+          ],
+          "flagged": false
+        },
+        "premium": {
+          "raw": "$661.00",
+          "parsed": 661.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "residence_type": {
+          "raw": "RENTAL",
+          "parsed": "RENTAL",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "address": {
+          "line_1": {
+            "raw": "174 BIG MOOSE RD",
+            "parsed": "174 BIG MOOSE RD",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              4
+            ],
+            "flagged": false
+          },
+          "city": {
+            "raw": "EAGLE BAY",
+            "parsed": "EAGLE BAY",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "state": {
+            "raw": "NY",
+            "parsed": "NY",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "postal_code": {
+            "raw": "13331-1804",
+            "parsed": "13331-1804",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3,
+              4
+            ],
+            "flagged": false
+          }
+        },
+        "number_of_families": {
+          "raw": "1",
+          "parsed": 1,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "year_built": {
+          "raw": "1925",
+          "parsed": 1925,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        }
+      }
+    ],
+    "schedule_of_underlying_insurance": [
+      {
+        "coverage_type": {
+          "raw": "HOMEOWNER",
+          "parsed": "HOMEOWNER",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        },
+        "policy_number": {
+          "raw": "4251856",
+          "parsed": "4251856",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        },
+        "carrier_name": {
+          "raw": "NEW YORK CENTRAL MUTUAL FIRE INSURANCE COMPANY",
+          "parsed": "NEW YORK CENTRAL MUTUAL FIRE INSURANCE COMPANY",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "actual_limit": {
+          "raw": "1000000",
+          "parsed": "1000000",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_type": {
+          "raw": "RENTAL",
+          "parsed": "RENTAL",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "policy_number": {
+          "raw": "6142903",
+          "parsed": "6142903",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        },
+        "carrier_name": {
+          "raw": "NEW YORK CENTRAL MUTUAL FIRE INSURANCE COMPANY",
+          "parsed": "NEW YORK CENTRAL MUTUAL FIRE INSURANCE COMPANY",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "actual_limit": {
+          "raw": "500000",
+          "parsed": "500000",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_type": {
+          "raw": "RENTAL",
+          "parsed": "RENTAL",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "policy_number": {
+          "raw": "6165177",
+          "parsed": "6165177",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        },
+        "carrier_name": {
+          "raw": "NEW YORK CENTRAL MUTUAL FIRE INSURANCE COMPANY",
+          "parsed": "NEW YORK CENTRAL MUTUAL FIRE INSURANCE COMPANY",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "actual_limit": {
+          "raw": "1000000",
+          "parsed": "1000000",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_type": {
+          "raw": "HOMEOWNER",
+          "parsed": "HOMEOWNER",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        },
+        "policy_number": {
+          "raw": "CAB 00015328 02",
+          "parsed": "CAB 00015328 02",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        },
+        "carrier_name": {
+          "raw": "LLOYDS OF LONDON",
+          "parsed": "LLOYDS OF LONDON",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        },
+        "actual_limit": {
+          "raw": "1000000",
+          "parsed": "1000000",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_type": {
+          "raw": "AUTOMOBILE",
+          "parsed": "AUTOMOBILE",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "policy_number": {
+          "raw": "80245570",
+          "parsed": "80245570",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        },
+        "carrier_name": {
+          "raw": "NEW YORK CENTRAL MUTUAL FIRE INSURANCE COMPANY",
+          "parsed": "NEW YORK CENTRAL MUTUAL FIRE INSURANCE COMPANY",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "actual_limit": {
+          "raw": "1000000/1000000",
+          "parsed": "1000000/1000000",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        },
+        "property_damage_limit": {
+          "raw": "1000000",
+          "parsed": "1000000",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        },
+        "vehicle_count": {
+          "raw": "2",
+          "parsed": 2,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_type": {
+          "raw": "Automobile Liability Supplementary Uninsured/Underinsured Motorist Coverage (SUM)",
+          "parsed": "Automobile Liability Supplementary Uninsured/Underinsured Motorist Coverage (SUM)",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "required_minimum_limit": {
+          "raw": "$300,000 Each Occurrence - Combined Single Limit",
+          "parsed": "$300,000 Each Occurrence - Combined Single Limit",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_type": {
+          "raw": "Personal Liability",
+          "parsed": "Personal Liability",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "required_minimum_limit": {
+          "raw": "$300,000 Each Occurrence",
+          "parsed": "$300,000 Each Occurrence",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_type": {
+          "raw": "Watercraft",
+          "parsed": "Watercraft",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "required_minimum_limit": {
+          "raw": "$300,000 Each Occurrence",
+          "parsed": "$300,000 Each Occurrence",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_type": {
+          "raw": "Recreational Vehicle",
+          "parsed": "Recreational Vehicle",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "required_minimum_limit": {
+          "raw": "$300,000 Each Occurrence - Combined Single Limit",
+          "parsed": "$300,000 Each Occurrence - Combined Single Limit",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        }
+      }
+    ],
+    "exclusions": [
+      {
+        "exclusion_name": {
+          "raw": "PERSONAL UMBRELLA LIABILITY POLICY EXCLUSION - LEAD LIABILITY",
+          "parsed": "PERSONAL UMBRELLA LIABILITY POLICY EXCLUSION - LEAD LIABILITY",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        },
+        "form_number": {
+          "raw": "DL 98 35",
+          "parsed": "DL 98 35",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        },
+        "premium": {
+          "raw": "INCL.",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "exclusion_name": {
+          "raw": "PEER-TO-PEER CAR SHARING PROGRAM EXCLUSION ENDORSEMENT PERSONAL UMBRELLA LIABILITY POLICY",
+          "parsed": "PEER-TO-PEER CAR SHARING PROGRAM EXCLUSION ENDORSEMENT PERSONAL UMBRELLA LIABILITY POLICY",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        },
+        "form_number": {
+          "raw": "NYC UL 209",
+          "parsed": "NYC UL 209",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        },
+        "premium": {
+          "raw": "INCL.",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "document_type_detail": {
+    "policy_change": {
+      "transaction_type": {
+        "raw": "ENDORSEMENT",
+        "parsed": "ENDORSEMENT",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          4
+        ],
+        "flagged": false
+      },
+      "transaction_effective_date": {
+        "raw": "06/18/2026",
+        "parsed": "06/18/2026",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "transaction_expiration_date": {
+        "raw": "11/16/2026",
+        "parsed": "11/16/2026",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "transaction_reason_description": {
+        "raw": "AUTOMATICALLY MODIFIED CUSTOMER INFORMATION",
+        "parsed": "AUTOMATICALLY MODIFIED CUSTOMER INFORMATION",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "results_in_no_premium_change": {
+        "raw": "THESE CHANGES HAVE RESULTED IN NO CHANGE IN PREMIUM.",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "text_sections": {
+    "page1_s1": {
+      "section_id": "page1_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "New York Central Mutual Fire Insurance Company",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s2": {
+      "section_id": "page1_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "THESE CHANGES HAVE RESULTED IN NO CHANGE IN PREMIUM.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s3": {
+      "section_id": "page1_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Insurance Provided By New York Central Mutual Fire Insurance Company",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page2_s1": {
+      "section_id": "page2_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "New York Central Mutual Fire Insurance Company",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page3_s1": {
+      "section_id": "page3_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "New York Central Mutual Fire Insurance Company",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s2": {
+      "section_id": "page3_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "REQUIRED MINIMUM UNDERLYING LIMITS OF INSURANCE MUST BE MAINTAINED BY AN INSURED FOR ANY OF THE TYPES OF LIABILITY COVERAGES SHOWN BELOW:",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s3": {
+      "section_id": "page3_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "$100,000 Each Occurrence – Property Damage",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s4": {
+      "section_id": "page3_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "$250,000 Each Person – Bodily Injury $500,000 Each Occurrence – Bodily Injury $100,000 Each Occurrence – Property Damage",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page4_s1": {
+      "section_id": "page4_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "New York Central Mutual Fire Insurance Company",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page4_s2": {
+      "section_id": "page4_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "CONTRACTOR AND JEWELRY AND FABRIC WORK",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    }
+  },
+  "fideon:provenance": {
+    "source": "NYCM Insurance/personal_umbrella/nycm_insurance_pumbr_endo.pdf",
+    "schema": "personal_umbrella v3.0.0",
+    "synthetic": false,
+    "gold": "reviewed and completed by Claude against the printed pages",
+    "reviewed": "2026-09-28"
+  }
+}

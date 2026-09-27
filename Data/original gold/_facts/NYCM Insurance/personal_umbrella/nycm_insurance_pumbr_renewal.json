@@ -1,0 +1,427 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "DECLARATIONS",
+   "parsed": "Declarations"
+  },
+  "document_title_as_stated": "DECLARATIONS",
+  "copy_type": "INSURED COPY",
+  "print_date": "07/07/2025",
+  "print_time": "09:30:27",
+  "transaction_type": "RENEWAL",
+  "transaction_effective_date": "08/14/2025",
+  "transaction_expiration_date": "08/14/2026",
+  "transaction_reason": null,
+  "batch_number": "U9/K"
+ },
+ "carrier": {
+  "company_name": "New York Central Mutual Fire Insurance Company",
+  "contact": {
+   "phone": "800-234-6926",
+   "website": "www.nycm.com"
+  },
+  "address": {
+   "line_1": "1899 Central Plaza East",
+   "city": "Edmeston",
+   "state": "NY",
+   "postal_code": "13335-1899"
+  }
+ },
+ "producer": {
+  "agency_name": "PATRIOTIC INSURANCE GROUP BROKERAGE INC",
+  "producer_code": "05827",
+  "territory_code": "3R",
+  "paperless_indicator": {
+   "raw": "YES",
+   "parsed": "Yes"
+  },
+  "direct_mail_indicator": {
+   "raw": "YES",
+   "parsed": "Yes"
+  },
+  "contact": {
+   "phone": "845-610-5700",
+   "fax": "845-610-5705",
+   "email": "agency@patrioticinsurancegroup.com",
+   "website": "https://patrioticinsurancegroup.com"
+  },
+  "address": {
+   "line_1": "159 ROUTE 28",
+   "line_2": "PO BOX 329",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360-0329"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Marguerite Norcross",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "marital_status": "MARRIED",
+  "mailing_address": {
+   "line_1": "3331 ROUTE 207",
+   "city": "GOSHEN",
+   "state": "NY",
+   "postal_code": "10924-5003"
+  },
+  "additional_named_insureds": [
+   {
+    "name": "Clemence Sutcliffe",
+    "insured_role": "INSURED",
+    "marital_status": "SINGLE",
+    "gender": "FEMALE"
+   },
+   {
+    "name": "Marguerite Halloway",
+    "insured_role": "INSURED",
+    "marital_status": "MARRIED",
+    "gender": "MALE"
+   },
+   {
+    "name": "Marguerite Sutcliffe",
+    "insured_role": "INSURED",
+    "marital_status": "SINGLE",
+    "gender": "MALE"
+   },
+   {
+    "name": "Clemence Radcliffe",
+    "insured_role": "INSURED",
+    "marital_status": "SINGLE",
+    "gender": "MALE"
+   }
+  ]
+ },
+ "policy": {
+  "policy_number": "L129710",
+  "policy_type": "UMBRELLA",
+  "original_inception_date": "08/14/2019",
+  "policyholder_since_date": "08/14/2019",
+  "effective_date": "08/14/2025",
+  "effective_time": "12:01 AM",
+  "expiration_date": "08/14/2026",
+  "expiration_time": "12:01 AM",
+  "time_zone": "EST",
+  "policy_term_as_printed": "12 MONTHS",
+  "policy_term_months": {
+   "raw": "12 MONTHS",
+   "parsed": 12
+  },
+  "policy_form_number": "DL 98 01",
+  "policy_form_edition": "06 98",
+  "policy_form_name": "PERSONAL UMBRELLA LIABILITY POLICY",
+  "is_renewal": {
+   "raw": "RENEWAL",
+   "source": "structural",
+   "parsed": "Yes"
+  }
+ },
+ "premium": {
+  "total_policy_premium": "$536.00"
+ },
+ "billing": {
+  "billing_note": "BILL WILL FOLLOW"
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "DL 98 01",
+   "edition_date": "06 98",
+   "form_title": "PERSONAL UMBRELLA LIABILITY POLICY",
+   "premium": "$536.00"
+  },
+  {
+   "form_number": "DL 98 12",
+   "edition_date": "06 98",
+   "form_title": "PERSONAL UMBRELLA LIABILITY POLICY - AUTOMOBILE LIABILITY",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "DL 98 35",
+   "edition_date": "06 98",
+   "form_title": "PERSONAL UMBRELLA LIABILITY POLICY EXCLUSION - LEAD LIABILITY",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYC 98 89",
+   "edition_date": "08 13",
+   "form_title": "PERSONAL UMBRELLA LIABILITY POLICY AMENDMENT OF POLICY PROVISIONS",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYC 211",
+   "edition_date": "(08/91)",
+   "form_title": "IMPORTANT SENIOR CITIZEN INFORMATION",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYC DL 891",
+   "edition_date": "03 10",
+   "form_title": "LEAD LIABILITY DISCLOSURE NOTICE",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYCM DL 273",
+   "edition_date": "07 10",
+   "form_title": "PERSONAL UMBRELLA LIABILITY POLICY AMENDMENT OF POLICY PROVISIONS",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYC-UL-207",
+   "edition_date": "(11/01)",
+   "form_title": "YOUR PERSONAL UMBRELLA POLICY QUICK REFERENCE",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYC UL 208",
+   "edition_date": "08 17",
+   "form_title": "TRANSPORTATION NETWORK COMPANY SERVICES",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYC UL 209",
+   "edition_date": "09 22",
+   "form_title": "PEER-TO-PEER CAR SHARING PROGRAM EXCLUSION ENDORSEMENT PERSONAL UMBRELLA LIABILITY POLICY",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYC DN 283",
+   "edition_date": "08 17",
+   "form_title": "ADVISORY NOTICE TO POLICYHOLDERS",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYC DN 293",
+   "edition_date": "09 22",
+   "form_title": "NOTICE TO POLICYHOLDERS",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYC DN 294",
+   "edition_date": "09 22",
+   "form_title": "ADVISORY NOTICE TO POLICYHOLDERS EXCLUSION PEER-TO-PEER CAR SHARING PROGRAM",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  }
+ ],
+ "coverages": [
+  {
+   "coverage_name": "PERSONAL UMBRELLA LIABILITY POLICY",
+   "limit": "$1,000,000",
+   "deductible": "$1,000",
+   "premium": "$536.00"
+  }
+ ],
+ "personal_umbrella": {
+  "limits": {
+   "personal_umbrella_limit": "$1,000,000",
+   "self_insured_retention": "$1,000"
+  },
+  "household_members": [
+   {
+    "name": "Marguerite Norcross",
+    "insured_role": "PRIMARY INSURED",
+    "marital_status": "MARRIED",
+    "gender": "MALE"
+   },
+   {
+    "name": "Clemence Sutcliffe",
+    "insured_role": "INSURED",
+    "marital_status": "SINGLE",
+    "gender": "FEMALE"
+   },
+   {
+    "name": "Marguerite Halloway",
+    "insured_role": "INSURED",
+    "marital_status": "MARRIED",
+    "gender": "MALE"
+   },
+   {
+    "name": "Marguerite Sutcliffe",
+    "insured_role": "INSURED",
+    "marital_status": "SINGLE",
+    "gender": "MALE"
+   },
+   {
+    "name": "Clemence Radcliffe",
+    "insured_role": "INSURED",
+    "marital_status": "SINGLE",
+    "gender": "MALE"
+   }
+  ],
+  "rated_exposures": [
+   {
+    "description": "AUTO - 2",
+    "exposure_type": "AUTO",
+    "count": {
+     "raw": "AUTO - 2",
+     "parsed": 2
+    }
+   },
+   {
+    "description": "RENTAL - 1",
+    "exposure_type": "RENTAL",
+    "count": {
+     "raw": "RENTAL - 1",
+     "parsed": 1
+    }
+   },
+   {
+    "description": "RESIDENCS - 1",
+    "exposure_type": "RESIDENCS",
+    "count": {
+     "raw": "RESIDENCS - 1",
+     "parsed": 1
+    }
+   },
+   {
+    "description": "UNDAGEIPO - 1",
+    "exposure_type": "UNDAGEIPO",
+    "count": {
+     "raw": "UNDAGEIPO - 1",
+     "parsed": 1
+    }
+   }
+  ],
+  "residences": [
+   {
+    "address": {
+     "line_1": "3331 ROUTE 207",
+     "city": "GOSHEN",
+     "state": "NY",
+     "postal_code": "10924-5003",
+     "county_code": "071",
+     "county": "ORANGE",
+     "sub_county": "9"
+    },
+    "territory_code": "LHV",
+    "table_code": "2",
+    "residence_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "residence_type": "PRIMARY",
+    "premium": "$536.00"
+   },
+   {
+    "residence_type": "RENTAL",
+    "address": {
+     "line_1": "1 GOOD TIME CT",
+     "city": "GOSHEN",
+     "state": "NY",
+     "postal_code": "10924"
+    },
+    "number_of_families": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "year_built": {
+     "raw": "1960",
+     "parsed": 1960
+    }
+   }
+  ],
+  "schedule_of_underlying_insurance": [
+   {
+    "coverage_type": "AUTOMOBILE",
+    "policy_number": "80170927",
+    "carrier_name": "NEW YORK CENTRAL MUTUAL FIRE INSURANCE COMPANY",
+    "actual_limit": "250000/500000",
+    "property_damage_limit": "100000",
+    "vehicle_count": {
+     "raw": "2",
+     "parsed": 2
+    }
+   },
+   {
+    "coverage_type": "HOMEOWNER",
+    "policy_number": "4761081",
+    "carrier_name": "NEW YORK CENTRAL MUTUAL FIRE INSURANCE COMPANY",
+    "actual_limit": "300000"
+   },
+   {
+    "coverage_type": "RENTAL",
+    "policy_number": "10-2019-9470",
+    "carrier_name": "LEATHERSTOCKING COOP INS CO",
+    "actual_limit": "1000000"
+   },
+   {
+    "coverage_type": "Automobile Liability Supplementary Uninsured/Underinsured Motorist Coverage (SUM)",
+    "required_minimum_limit": "$300,000 Each Occurrence - Combined Single Limit"
+   },
+   {
+    "coverage_type": "Personal Liability",
+    "required_minimum_limit": "$300,000 Each Occurrence"
+   },
+   {
+    "coverage_type": "Watercraft",
+    "required_minimum_limit": "$300,000 Each Occurrence"
+   },
+   {
+    "coverage_type": "Recreational Vehicle",
+    "required_minimum_limit": "$300,000 Each Occurrence - Combined Single Limit"
+   }
+  ],
+  "exclusions": [
+   {
+    "exclusion_name": "PERSONAL UMBRELLA LIABILITY POLICY EXCLUSION - LEAD LIABILITY",
+    "form_number": "DL 98 35",
+    "premium": {
+     "raw": "INCL.",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "exclusion_name": "PEER-TO-PEER CAR SHARING PROGRAM EXCLUSION ENDORSEMENT PERSONAL UMBRELLA LIABILITY POLICY",
+    "form_number": "NYC UL 209",
+    "premium": {
+     "raw": "INCL.",
+     "parsed": "Yes"
+    }
+   }
+  ]
+ },
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_effective_date": "08/14/2025",
+   "renewal_expiration_date": "08/14/2026",
+   "renewal_premium": "$536.00"
+  }
+ }
+}

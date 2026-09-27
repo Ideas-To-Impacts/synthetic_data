@@ -1,0 +1,269 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "Personal Umbrella Declarations Page",
+   "parsed": "Declarations"
+  },
+  "document_title_as_stated": "Personal Umbrella Declarations Page",
+  "issue_date": "08/02/2021",
+  "print_code": "PU 00 01 02 20",
+  "transaction_type": "Endorsement",
+  "transaction_reason": "Amendment",
+  "transaction_effective_date": "07/15/2021"
+ },
+ "carrier": {
+  "company_name": "Palisades Property and Casualty Insurance Company",
+  "address": {
+   "line_1": "2820 Summit",
+   "line_2": "Suite 400",
+   "city": "Medina",
+   "state": "NJ",
+   "postal_code": "14103"
+  }
+ },
+ "claim_reporting": {
+  "claims_phone": "844-208-1933"
+ },
+ "producer": {
+  "agency_name": "IRONVALE",
+  "producer_code": "7001894",
+  "contact": {
+   "phone": "845-610-5700"
+  },
+  "address": {
+   "line_1": "78 Brookside Av 132B",
+   "city": "Liberty",
+   "state": "NY",
+   "postal_code": "12754"
+  }
+ },
+ "named_insured": {
+  "primary_name": "MARCUS QUIMBY",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "additional_named_insureds": [
+   {
+    "name": "MANJA YIRKA"
+   }
+  ],
+  "mailing_address": {
+   "line_1": "18 FAYARVK EY",
+   "city": "LBCCEM",
+   "state": "QN",
+   "postal_code": "67577"
+  }
+ },
+ "policy": {
+  "policy_number": "NYU32744110148",
+  "effective_date": "10/15/2020",
+  "expiration_date": "10/15/2021",
+  "effective_time": "12:01 am",
+  "expiration_time": "12:01 am",
+  "time_zone": "Eastern Standard Time",
+  "policy_form_number": "DL 98 01",
+  "policy_form_edition": "02/15",
+  "policy_form_name": "PERSONAL UMBRELLA LIABILITY POLICY"
+ },
+ "premium": {
+  "total_policy_premium": "$268.00",
+  "return_premium": "$28.00"
+ },
+ "billing": {
+  "payment_plan": "EFT 12 Payment Plan",
+  "billing_note": "This is not a bill. Please refer to your insurance bill for the correct amount to pay."
+ },
+ "forms_and_endorsements": [
+  {
+   "form_title": "PERSONAL UMBRELLA LIABILITY POLICY",
+   "form_number": "DL 98 01",
+   "edition_date": "02/15",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_title": "PERSONAL UMBRELLA LIABILITY POLICY AMENDMENT OF POLICY PROVISIONS - NEW YORK",
+   "form_number": "PU NY 01",
+   "edition_date": "02/20",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_title": "PERSONAL UMBRELLA HOME-SHARING HOST ACTIVITIES AMENDATORY ENDORSEMENT",
+   "form_number": "DL 99 53",
+   "edition_date": "03/18",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_title": "PERSONAL UMBRELLA LIABILITY SUBLIMIT LIMITATION ENDORSEMENT",
+   "form_number": "PU 00 03",
+   "edition_date": "11/19",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_title": "PERSONAL UMBRELLA LIABILITY TNC EXCLUSION ENDORSEMENT",
+   "form_number": "PU 00 08",
+   "edition_date": "02/20",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  }
+ ],
+ "coverages": [
+  {
+   "coverage_name": "Liability Per Occurrence*",
+   "limit": {
+    "raw": "$1,000,000/$250",
+    "parsed": "$1,000,000"
+   },
+   "deductible": {
+    "raw": "$1,000,000/$250",
+    "parsed": "$250"
+   },
+   "premium": "$268"
+  }
+ ],
+ "document_type_detail": {
+  "policy_change": {
+   "transaction_type": "Endorsement",
+   "transaction_reason_description": "Amendment",
+   "transaction_effective_date": "07/15/2021",
+   "additional_or_return_premium": {
+    "raw": "Total return premium: $28.00",
+    "parsed": -28.0
+   }
+  }
+ },
+ "personal_umbrella": {
+  "limits": {
+   "personal_umbrella_limit": {
+    "raw": "$1,000,000/$250",
+    "parsed": 1000000.0
+   },
+   "self_insured_retention": {
+    "raw": "$1,000,000/$250",
+    "parsed": 250.0
+   }
+  },
+  "rated_exposures": [
+   {
+    "exposure_type": "Operators",
+    "description": "Total licensed and with learners permits",
+    "count": {
+     "raw": "02",
+     "parsed": 2
+    }
+   },
+   {
+    "exposure_type": "Vehicles",
+    "description": "PPAs, Motor Homes, or Trailers",
+    "count": {
+     "raw": "02",
+     "parsed": 2
+    }
+   },
+   {
+    "exposure_type": "Miscellaneous Vehicles",
+    "description": "ATVs, Dune Buggies, Golf Carts, Mopeds, Motorcycles, Snowmobiles",
+    "count": {
+     "raw": "00",
+     "parsed": 0
+    }
+   },
+   {
+    "exposure_type": "Owner Occupied Properties",
+    "description": "Primary, Secondary, Seasonal",
+    "count": {
+     "raw": "01",
+     "parsed": 1
+    }
+   },
+   {
+    "exposure_type": "Rental Properties",
+    "description": "Total number of rental units",
+    "count": {
+     "raw": "00",
+     "parsed": 0
+    }
+   },
+   {
+    "exposure_type": "Additional Property Exposures",
+    "description": "Business Pursuits, Incidental Farming, etc.",
+    "count": {
+     "raw": "00",
+     "parsed": 0
+    }
+   },
+   {
+    "exposure_type": "Watercrafts",
+    "description": "Sailboat, Powerboat, Jet Ski, Sea Doo",
+    "count": {
+     "raw": "00",
+     "parsed": 0
+    }
+   }
+  ],
+  "residences": [
+   {
+    "address": {
+     "line_1": "8189 CHESTNUT",
+     "city": "ILION",
+     "state": "NY",
+     "postal_code": "13357"
+    }
+   }
+  ],
+  "schedule_of_underlying_insurance": [
+   {
+    "coverage_type": "Frvzxjck Srpg",
+    "carrier_name": "PRAC",
+    "policy_number": "NYAQ8165755034"
+   },
+   {
+    "coverage_type": "Frvzxjck Srpg",
+    "carrier_name": "PRAC",
+    "policy_number": "NYAQ8165755034"
+   },
+   {
+    "coverage_type": "Homeowners",
+    "carrier_name": "PRAC"
+   },
+   {
+    "coverage_type": "Personal or Premises Liability",
+    "required_minimum_limit": "$300,000"
+   },
+   {
+    "coverage_type": "Auto Liability and Recreational Vehicle Liability",
+    "required_minimum_limit": "$250,000/$500,000/$100,000 or $300,000 CSL"
+   },
+   {
+    "coverage_type": "Uninsured/Underinsured Motorists Liability*",
+    "required_minimum_limit": "$250,000/$500,000/$100,000 or $300,000 CSL"
+   },
+   {
+    "coverage_type": "Watercraft Liability",
+    "required_minimum_limit": "$250,000/$500,000/$100,000 or $300,000 CSL"
+   },
+   {
+    "coverage_type": "Personal Injury",
+    "required_minimum_limit": "$300,000"
+   },
+   {
+    "coverage_type": "Business Pursuits/Incidental Occupancies*",
+    "required_minimum_limit": "$300,000"
+   }
+  ]
+ }
+}

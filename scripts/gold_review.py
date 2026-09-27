@@ -106,11 +106,13 @@ def wrap(value, texts, stats):
             "page_ref": pages, "flagged": False}
 
 
-def build(node, texts, stats):
+def build(node, texts, stats, key=None):
     if isinstance(node, dict) and "raw" not in node:
-        return {k: build(v, texts, stats) for k, v in node.items() if v not in (None, "", [], {})}
+        return {k: build(v, texts, stats, k) for k, v in node.items() if v not in (None, "", [], {})}
     if isinstance(node, list):
-        return [build(v, texts, stats) for v in node]
+        return [build(v, texts, stats, key) for v in node]
+    if key in ("label", "section") and isinstance(node, str):
+        return node                             # additional_fields[] names its value in plain text
     return wrap(node, texts, stats)
 
 

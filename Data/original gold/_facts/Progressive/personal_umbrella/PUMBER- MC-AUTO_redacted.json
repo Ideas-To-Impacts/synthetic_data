@@ -1,0 +1,392 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "Motorcycle Insurance Coverage Summary",
+   "parsed": "Declarations"
+  },
+  "document_title_as_stated": "Motorcycle Insurance Coverage Summary",
+  "line_of_business_as_stated": "Motorcycle",
+  "issue_date": "April 9, 2026",
+  "print_code": "Form 6489 NY (07/07)"
+ },
+ "carrier": {
+  "company_name": "Progressive Northwestern Ins Co",
+  "contact": {
+   "phone": "1-800-PROGRESSIVE",
+   "website": "progressive.com"
+  }
+ },
+ "claim_reporting": {
+  "claims_phone": "1-800-PROGRESSIVE"
+ },
+ "named_insured": {
+  "primary_name": "WILLIAM DE CARVALHO",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "marital_status": "Single",
+  "mailing_address": {
+   "line_1": "6199 FRANKLIN",
+   "city": "CANTON",
+   "state": "NY",
+   "postal_code": "13617"
+  }
+ },
+ "policy": {
+  "policy_number": "20262602",
+  "effective_date": "August 9, 2025",
+  "expiration_date": "August 9, 2026",
+  "effective_time": "12:01 a.m.",
+  "expiration_time": "12:01 a.m.",
+  "policy_term_as_printed": "12 month",
+  "policy_term_months": {
+   "raw": "12 month",
+   "parsed": 12
+  },
+  "policy_form_number": "5979 NY",
+  "policy_form_edition": "10/17",
+  "policy_tier": "Ultra Preferred A"
+ },
+ "premium": {
+  "total_policy_premium": "$92",
+  "discounts_and_credits": [
+   {
+    "description": "Paid in Full",
+    "amount": "$5",
+    "applies_to": {
+     "raw": "1984 YAMAHA RZ350",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Paid in Full",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Home Owner",
+    "amount": "$12",
+    "applies_to": {
+     "raw": "1984 YAMAHA RZ350",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Home Owner",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Vehicle",
+    "amount": "$6",
+    "applies_to": {
+     "raw": "1984 YAMAHA RZ350",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Multi-Vehicle",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Paid in Full",
+    "amount": "$6",
+    "applies_to": {
+     "raw": "2003 YAMAHA FZS10",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Paid in Full",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Home Owner",
+    "amount": "$16",
+    "applies_to": {
+     "raw": "2003 YAMAHA FZS10",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Home Owner",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Vehicle",
+    "amount": "$10",
+    "applies_to": {
+     "raw": "2003 YAMAHA FZS10",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Multi-Vehicle",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   }
+  ]
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "5979 NY",
+   "edition_date": "10/17",
+   "form_type": {
+    "raw": "Policy",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "A135 NY",
+   "edition_date": "11/13",
+   "form_type": {
+    "raw": "Endorsement",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "6489 NY",
+   "edition_date": "07/07"
+  }
+ ],
+ "coverages": [
+  {
+   "coverage_name": "Bodily Injury Liability",
+   "coverage_type": {
+    "raw": "1984 YAMAHA RZ350",
+    "source": "structural"
+   },
+   "limit": "$250,000 each person/$500,000 each accident",
+   "premium": "$20"
+  },
+  {
+   "coverage_name": "Property Damage Liability",
+   "coverage_type": {
+    "raw": "1984 YAMAHA RZ350",
+    "source": "structural"
+   },
+   "limit": "$100,000 each accident",
+   "premium": {
+    "raw": "9",
+    "parsed": 9.0
+   }
+  },
+  {
+   "coverage_name": "Mandatory Pedestrian Personal Injury Protection",
+   "coverage_type": {
+    "raw": "1984 YAMAHA RZ350",
+    "source": "structural"
+   },
+   "limit": "$50,000 each person",
+   "deductible": "$0",
+   "premium": {
+    "raw": "2",
+    "parsed": 2.0
+   }
+  },
+  {
+   "coverage_name": "Aggregate Pedestrian No-Fault Benefits",
+   "coverage_type": {
+    "raw": "1984 YAMAHA RZ350",
+    "source": "structural"
+   },
+   "limit": "$50,000"
+  },
+  {
+   "coverage_name": "Death Benefit",
+   "coverage_type": {
+    "raw": "1984 YAMAHA RZ350",
+    "source": "structural"
+   },
+   "limit": "$2,000"
+  },
+  {
+   "coverage_name": "Maximum Monthly Work Loss",
+   "coverage_type": {
+    "raw": "1984 YAMAHA RZ350",
+    "source": "structural"
+   },
+   "limit": "$2,000"
+  },
+  {
+   "coverage_name": "Other Reasonable & Necessary Expenses (per day)",
+   "coverage_type": {
+    "raw": "1984 YAMAHA RZ350",
+    "source": "structural"
+   },
+   "limit": "$25"
+  },
+  {
+   "coverage_name": "Mandatory Uninsured Motorist",
+   "coverage_type": {
+    "raw": "1984 YAMAHA RZ350",
+    "source": "structural"
+   },
+   "limit": "$25,000 each person/$50,000 each accident",
+   "premium": {
+    "raw": "7",
+    "parsed": 7.0
+   }
+  },
+  {
+   "coverage_name": "Bodily Injury Liability",
+   "coverage_type": {
+    "raw": "2003 YAMAHA FZS10",
+    "source": "structural"
+   },
+   "limit": "$250,000 each person/$500,000 each accident",
+   "premium": "$27"
+  },
+  {
+   "coverage_name": "Property Damage Liability",
+   "coverage_type": {
+    "raw": "2003 YAMAHA FZS10",
+    "source": "structural"
+   },
+   "limit": "$100,000 each accident",
+   "premium": {
+    "raw": "16",
+    "parsed": 16.0
+   }
+  },
+  {
+   "coverage_name": "Mandatory Pedestrian Personal Injury Protection",
+   "coverage_type": {
+    "raw": "2003 YAMAHA FZS10",
+    "source": "structural"
+   },
+   "limit": "$50,000 each person",
+   "deductible": "$0",
+   "premium": {
+    "raw": "2",
+    "parsed": 2.0
+   }
+  },
+  {
+   "coverage_name": "Aggregate Pedestrian No-Fault Benefits",
+   "coverage_type": {
+    "raw": "2003 YAMAHA FZS10",
+    "source": "structural"
+   },
+   "limit": "$50,000"
+  },
+  {
+   "coverage_name": "Death Benefit",
+   "coverage_type": {
+    "raw": "2003 YAMAHA FZS10",
+    "source": "structural"
+   },
+   "limit": "$2,000"
+  },
+  {
+   "coverage_name": "Maximum Monthly Work Loss",
+   "coverage_type": {
+    "raw": "2003 YAMAHA FZS10",
+    "source": "structural"
+   },
+   "limit": "$2,000"
+  },
+  {
+   "coverage_name": "Other Reasonable & Necessary Expenses (per day)",
+   "coverage_type": {
+    "raw": "2003 YAMAHA FZS10",
+    "source": "structural"
+   },
+   "limit": "$25"
+  },
+  {
+   "coverage_name": "Mandatory Uninsured Motorist",
+   "coverage_type": {
+    "raw": "2003 YAMAHA FZS10",
+    "source": "structural"
+   },
+   "limit": "$25,000 each person/$50,000 each accident",
+   "premium": {
+    "raw": "9",
+    "parsed": 9.0
+   }
+  }
+ ],
+ "personal_umbrella": {
+  "household_members": [
+   {
+    "name": "William De Carvalho",
+    "gender": "Male",
+    "marital_status": "Single",
+    "insured_role": "Named insured"
+   }
+  ],
+  "rated_exposures": [
+   {
+    "exposure_type": {
+     "raw": "Motorcycle",
+     "source": "structural"
+    },
+    "description": "1984 YAMAHA RZ350",
+    "count": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "premium": "$38"
+   },
+   {
+    "exposure_type": {
+     "raw": "Motorcycle",
+     "source": "structural"
+    },
+    "description": "2003 YAMAHA FZS10",
+    "count": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "premium": "$54"
+   }
+  ]
+ },
+ "additional_fields": [
+  {
+   "section": "1984 YAMAHA RZ350",
+   "label": "VIN",
+   "value": "JYA48H008EA001144"
+  },
+  {
+   "section": "1984 YAMAHA RZ350",
+   "label": "Engine displacement",
+   "value": "347 cc's"
+  },
+  {
+   "section": "1984 YAMAHA RZ350",
+   "label": "Garaging Zip Code",
+   "value": "10916"
+  },
+  {
+   "section": "2003 YAMAHA FZS10",
+   "label": "VIN",
+   "value": "JYARN07E63A007328"
+  },
+  {
+   "section": "2003 YAMAHA FZS10",
+   "label": "Engine displacement",
+   "value": "998 cc's"
+  },
+  {
+   "section": "2003 YAMAHA FZS10",
+   "label": "Garaging Zip Code",
+   "value": "10916"
+  },
+  {
+   "section": "Drivers and household residents",
+   "label": "Age",
+   "value": {
+    "raw": "66",
+    "parsed": 66
+   }
+  }
+ ]
+}

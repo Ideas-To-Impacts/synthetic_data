@@ -1,0 +1,444 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "DECLARATIONS",
+   "parsed": "Declarations"
+  },
+  "document_title_as_stated": "DECLARATIONS",
+  "copy_type": "INSURED COPY",
+  "print_date": "06/19/2026",
+  "print_time": "08:33:45",
+  "transaction_type": "ENDORSEMENT",
+  "transaction_effective_date": "06/18/2026",
+  "transaction_expiration_date": "11/16/2026",
+  "transaction_reason": "AUTOMATICALLY MODIFIED CUSTOMER INFORMATION",
+  "batch_number": "U9/L"
+ },
+ "carrier": {
+  "company_name": "New York Central Mutual Fire Insurance Company",
+  "contact": {
+   "phone": "800-234-6926",
+   "website": "www.nycm.com"
+  },
+  "address": {
+   "line_1": "1899 Central Plaza East",
+   "city": "Edmeston",
+   "state": "NY",
+   "postal_code": "13335-1899"
+  }
+ },
+ "producer": {
+  "agency_name": "STABLE ROCK INSURANCE AGENCY LLC",
+  "producer_code": "08014",
+  "territory_code": "3R",
+  "paperless_indicator": {
+   "raw": "YES",
+   "parsed": "Yes"
+  },
+  "direct_mail_indicator": {
+   "raw": "YES",
+   "parsed": "Yes"
+  },
+  "contact": {
+   "phone": "315-357-5901",
+   "fax": "315-357-5126",
+   "email": "agency@patrioticinsurancegroup.com",
+   "website": "https://patrioticinsurancegroup.com"
+  },
+  "address": {
+   "line_1": "PO BOX 329",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360-0329"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Ambrose Rowntree",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "marital_status": "MARRIED",
+  "mailing_address": {
+   "line_1": "PO BOX 332",
+   "city": "EAGLE BAY",
+   "state": "NY",
+   "postal_code": "13331-0332"
+  },
+  "additional_named_insureds": [
+   {
+    "name": "Bertram Prentice",
+    "insured_role": "NAMED INSURED",
+    "marital_status": "MARRIED",
+    "gender": "FEMALE"
+   }
+  ]
+ },
+ "policy": {
+  "policy_number": "L120310",
+  "policy_type": "UMBRELLA",
+  "original_inception_date": "11/16/2017",
+  "policyholder_since_date": "11/16/2017",
+  "effective_date": "11/16/2025",
+  "effective_time": "12:01 AM",
+  "expiration_date": "11/16/2026",
+  "expiration_time": "12:01 AM",
+  "time_zone": "EST",
+  "policy_term_as_printed": "12 MONTHS",
+  "policy_term_months": {
+   "raw": "12 MONTHS",
+   "parsed": 12
+  },
+  "policy_form_number": "DL 98 01",
+  "policy_form_edition": "06 98",
+  "policy_form_name": "PERSONAL UMBRELLA LIABILITY POLICY",
+  "is_renewal": {
+   "raw": "ENDORSEMENT",
+   "source": "structural",
+   "parsed": "No"
+  }
+ },
+ "premium": {
+  "total_policy_premium": "$661.00"
+ },
+ "billing": {
+  "billing_note": null
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "DL 98 01",
+   "edition_date": "06 98",
+   "form_title": "PERSONAL UMBRELLA LIABILITY POLICY",
+   "premium": "$324.00"
+  },
+  {
+   "form_number": "DL 98 12",
+   "edition_date": "06 98",
+   "form_title": "PERSONAL UMBRELLA LIABILITY POLICY - AUTOMOBILE LIABILITY",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "DL 98 35",
+   "edition_date": "06 98",
+   "form_title": "PERSONAL UMBRELLA LIABILITY POLICY EXCLUSION - LEAD LIABILITY",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYC 98 89",
+   "edition_date": "08 13",
+   "form_title": "PERSONAL UMBRELLA LIABILITY POLICY AMENDMENT OF POLICY PROVISIONS",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYC 211",
+   "edition_date": "(08/91)",
+   "form_title": "IMPORTANT SENIOR CITIZEN INFORMATION",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYC DL 891",
+   "edition_date": "03 10",
+   "form_title": "LEAD LIABILITY DISCLOSURE NOTICE",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYCM DL 273",
+   "edition_date": "07 10",
+   "form_title": "PERSONAL UMBRELLA LIABILITY POLICY AMENDMENT OF POLICY PROVISIONS",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYC-UL-204",
+   "edition_date": "(11/01)",
+   "form_title": "PERSONAL UMBRELLA LIABILITY POLICY - PERMITTED INCIDENTAL OCCUPANCIES",
+   "premium": "$7.00"
+  },
+  {
+   "form_number": "NYC-UL-206",
+   "edition_date": "09 22",
+   "form_title": "UNINSURED/UNDERINSURED MOTORISTS EXCESS",
+   "premium": "$330.00"
+  },
+  {
+   "form_number": "NYC-UL-207",
+   "edition_date": "(11/01)",
+   "form_title": "YOUR PERSONAL UMBRELLA POLICY QUICK REFERENCE",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYC UL 208",
+   "edition_date": "08 17",
+   "form_title": "TRANSPORTATION NETWORK COMPANY SERVICES",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYC UL 209",
+   "edition_date": "09 22",
+   "form_title": "PEER-TO-PEER CAR SHARING PROGRAM EXCLUSION ENDORSEMENT PERSONAL UMBRELLA LIABILITY POLICY",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYC DN 283",
+   "edition_date": "08 17",
+   "form_title": "ADVISORY NOTICE TO POLICYHOLDERS",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYC DN 293",
+   "edition_date": "09 22",
+   "form_title": "NOTICE TO POLICYHOLDERS",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYC DN 294",
+   "edition_date": "09 22",
+   "form_title": "ADVISORY NOTICE TO POLICYHOLDERS EXCLUSION PEER-TO-PEER CAR SHARING PROGRAM",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYCM PN",
+   "edition_date": "03 25",
+   "form_title": "PRIVACY NOTICE",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  }
+ ],
+ "coverages": [
+  {
+   "coverage_name": "PERSONAL UMBRELLA LIABILITY POLICY",
+   "limit": "$1,000,000",
+   "deductible": "$1,000",
+   "premium": "$324.00"
+  },
+  {
+   "coverage_name": "PERMITTED INCIDENTAL OCCUPANCIES",
+   "coverage_type": "CONTRACTOR AND JEWELRY AND FABRIC WORK",
+   "premium": "$7.00",
+   "endorsement_refs": [
+    "NYC-UL-204"
+   ]
+  },
+  {
+   "coverage_name": "EXCESS UNINSURED/UNDERINSURED MOTORIST LIMIT",
+   "limit": "$1,000,000.00",
+   "premium": "$330.00",
+   "endorsement_refs": [
+    "NYC-UL-206"
+   ]
+  }
+ ],
+ "personal_umbrella": {
+  "limits": {
+   "personal_umbrella_limit": "$1,000,000",
+   "self_insured_retention": "$1,000"
+  },
+  "household_members": [
+   {
+    "name": "Ambrose Rowntree",
+    "insured_role": "PRIMARY INSURED",
+    "marital_status": "MARRIED",
+    "gender": "MALE"
+   },
+   {
+    "name": "Bertram Prentice",
+    "insured_role": "NAMED INSURED",
+    "marital_status": "MARRIED",
+    "gender": "FEMALE"
+   }
+  ],
+  "rated_exposures": [
+   {
+    "description": "AUTO - 2",
+    "exposure_type": "AUTO",
+    "count": {
+     "raw": "AUTO - 2",
+     "parsed": 2
+    }
+   },
+   {
+    "description": "RENTAL - 2",
+    "exposure_type": "RENTAL",
+    "count": {
+     "raw": "RENTAL - 2",
+     "parsed": 2
+    }
+   },
+   {
+    "description": "RESIDENCS - 3",
+    "exposure_type": "RESIDENCS",
+    "count": {
+     "raw": "RESIDENCS - 3",
+     "parsed": 3
+    }
+   },
+   {
+    "description": "UTVS - 1",
+    "exposure_type": "UTVS",
+    "count": {
+     "raw": "UTVS - 1",
+     "parsed": 1
+    }
+   }
+  ],
+  "residences": [
+   {
+    "address": {
+     "line_1": "168 BIG MOOSE RD",
+     "city": "EAGLE BAY",
+     "state": "NY",
+     "postal_code": "13331-1804",
+     "county_code": "043",
+     "county": "HERKIMER",
+     "sub_county": "9"
+    },
+    "territory_code": "CNY",
+    "table_code": "1",
+    "residence_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "residence_type": "PRIMARY",
+    "premium": "$661.00"
+   },
+   {
+    "residence_type": "RENTAL",
+    "address": {
+     "line_1": "174 BIG MOOSE RD",
+     "city": "EAGLE BAY",
+     "state": "NY",
+     "postal_code": "13331-1804"
+    },
+    "number_of_families": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "year_built": {
+     "raw": "1925",
+     "parsed": 1925
+    }
+   }
+  ],
+  "schedule_of_underlying_insurance": [
+   {
+    "coverage_type": "HOMEOWNER",
+    "policy_number": "4251856",
+    "carrier_name": "NEW YORK CENTRAL MUTUAL FIRE INSURANCE COMPANY",
+    "actual_limit": "1000000"
+   },
+   {
+    "coverage_type": "RENTAL",
+    "policy_number": "6142903",
+    "carrier_name": "NEW YORK CENTRAL MUTUAL FIRE INSURANCE COMPANY",
+    "actual_limit": "500000"
+   },
+   {
+    "coverage_type": "RENTAL",
+    "policy_number": "6165177",
+    "carrier_name": "NEW YORK CENTRAL MUTUAL FIRE INSURANCE COMPANY",
+    "actual_limit": "1000000"
+   },
+   {
+    "coverage_type": "HOMEOWNER",
+    "policy_number": "CAB 00015328 02",
+    "carrier_name": "LLOYDS OF LONDON",
+    "actual_limit": "1000000"
+   },
+   {
+    "coverage_type": "AUTOMOBILE",
+    "policy_number": "80245570",
+    "carrier_name": "NEW YORK CENTRAL MUTUAL FIRE INSURANCE COMPANY",
+    "actual_limit": "1000000/1000000",
+    "property_damage_limit": "1000000",
+    "vehicle_count": {
+     "raw": "2",
+     "parsed": 2
+    }
+   },
+   {
+    "coverage_type": "Automobile Liability Supplementary Uninsured/Underinsured Motorist Coverage (SUM)",
+    "required_minimum_limit": "$300,000 Each Occurrence - Combined Single Limit"
+   },
+   {
+    "coverage_type": "Personal Liability",
+    "required_minimum_limit": "$300,000 Each Occurrence"
+   },
+   {
+    "coverage_type": "Watercraft",
+    "required_minimum_limit": "$300,000 Each Occurrence"
+   },
+   {
+    "coverage_type": "Recreational Vehicle",
+    "required_minimum_limit": "$300,000 Each Occurrence - Combined Single Limit"
+   }
+  ],
+  "exclusions": [
+   {
+    "exclusion_name": "PERSONAL UMBRELLA LIABILITY POLICY EXCLUSION - LEAD LIABILITY",
+    "form_number": "DL 98 35",
+    "premium": {
+     "raw": "INCL.",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "exclusion_name": "PEER-TO-PEER CAR SHARING PROGRAM EXCLUSION ENDORSEMENT PERSONAL UMBRELLA LIABILITY POLICY",
+    "form_number": "NYC UL 209",
+    "premium": {
+     "raw": "INCL.",
+     "parsed": "Yes"
+    }
+   }
+  ]
+ },
+ "document_type_detail": {
+  "policy_change": {
+   "transaction_type": "ENDORSEMENT",
+   "transaction_effective_date": "06/18/2026",
+   "transaction_expiration_date": "11/16/2026",
+   "transaction_reason_description": "AUTOMATICALLY MODIFIED CUSTOMER INFORMATION",
+   "results_in_no_premium_change": {
+    "raw": "THESE CHANGES HAVE RESULTED IN NO CHANGE IN PREMIUM.",
+    "parsed": "Yes"
+   }
+  }
+ }
+}

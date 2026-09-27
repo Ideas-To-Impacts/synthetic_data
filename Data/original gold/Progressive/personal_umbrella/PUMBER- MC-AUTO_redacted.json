@@ -1,0 +1,1894 @@
+{
+  "document": {
+    "document_type": {
+      "raw": "Motorcycle Insurance Coverage Summary",
+      "parsed": "Declarations",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        2
+      ],
+      "flagged": false
+    },
+    "document_title_as_stated": {
+      "raw": "Motorcycle Insurance Coverage Summary",
+      "parsed": "Motorcycle Insurance Coverage Summary",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        2
+      ],
+      "flagged": false
+    },
+    "line_of_business_as_stated": {
+      "raw": "Motorcycle",
+      "parsed": "Motorcycle",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "issue_date": {
+      "raw": "April 9, 2026",
+      "parsed": "04/09/2026",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "print_code": {
+      "raw": "Form 6489 NY (07/07)",
+      "parsed": "Form 6489 NY (07/07)",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "source_file_name": {
+      "raw": "PUMBER- MC-AUTO_redacted.pdf",
+      "parsed": "PUMBER- MC-AUTO_redacted.pdf",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "page_count": {
+      "raw": "2",
+      "parsed": 2,
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    }
+  },
+  "carrier": {
+    "company_name": {
+      "raw": "Progressive Northwestern Ins Co",
+      "parsed": "Progressive Northwestern Ins Co",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "contact": {
+      "phone": {
+        "raw": "1-800-PROGRESSIVE",
+        "parsed": "1-800-PROGRESSIVE",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "website": {
+        "raw": "progressive.com",
+        "parsed": "progressive.com",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "claim_reporting": {
+    "claims_phone": {
+      "raw": "1-800-PROGRESSIVE",
+      "parsed": "1-800-PROGRESSIVE",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "named_insured": {
+    "primary_name": {
+      "raw": "WILLIAM DE CARVALHO",
+      "parsed": "WILLIAM DE CARVALHO",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "entity_type": {
+      "raw": "Individual",
+      "parsed": "Individual",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "marital_status": {
+      "raw": "Single",
+      "parsed": "Single",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "mailing_address": {
+      "line_1": {
+        "raw": "6199 FRANKLIN",
+        "parsed": "6199 FRANKLIN",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "CANTON",
+        "parsed": "CANTON",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13617",
+        "parsed": "13617",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "policy": {
+    "policy_number": {
+      "raw": "20262602",
+      "parsed": "20262602",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "effective_date": {
+      "raw": "August 9, 2025",
+      "parsed": "08/09/2025",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "expiration_date": {
+      "raw": "August 9, 2026",
+      "parsed": "08/09/2026",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "effective_time": {
+      "raw": "12:01 a.m.",
+      "parsed": "12:01 a.m.",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "expiration_time": {
+      "raw": "12:01 a.m.",
+      "parsed": "12:01 a.m.",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "policy_term_as_printed": {
+      "raw": "12 month",
+      "parsed": "12 month",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "policy_term_months": {
+      "raw": "12 month",
+      "parsed": 12,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "policy_form_number": {
+      "raw": "5979 NY",
+      "parsed": "5979 NY",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "policy_form_edition": {
+      "raw": "10/17",
+      "parsed": "10/17",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "policy_tier": {
+      "raw": "Ultra Preferred A",
+      "parsed": "Ultra Preferred A",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        2
+      ],
+      "flagged": false
+    }
+  },
+  "premium": {
+    "total_policy_premium": {
+      "raw": "$92",
+      "parsed": 92.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        2
+      ],
+      "flagged": false
+    },
+    "discounts_and_credits": [
+      {
+        "description": {
+          "raw": "Paid in Full",
+          "parsed": "Paid in Full",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$5",
+          "parsed": 5.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "1984 YAMAHA RZ350",
+          "parsed": "1984 YAMAHA RZ350",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Paid in Full",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "Home Owner",
+          "parsed": "Home Owner",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$12",
+          "parsed": 12.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "1984 YAMAHA RZ350",
+          "parsed": "1984 YAMAHA RZ350",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Home Owner",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "Multi-Vehicle",
+          "parsed": "Multi-Vehicle",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$6",
+          "parsed": 6.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "1984 YAMAHA RZ350",
+          "parsed": "1984 YAMAHA RZ350",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Multi-Vehicle",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "Paid in Full",
+          "parsed": "Paid in Full",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$6",
+          "parsed": 6.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2003 YAMAHA FZS10",
+          "parsed": "2003 YAMAHA FZS10",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Paid in Full",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "Home Owner",
+          "parsed": "Home Owner",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$16",
+          "parsed": 16.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2003 YAMAHA FZS10",
+          "parsed": "2003 YAMAHA FZS10",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Home Owner",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "Multi-Vehicle",
+          "parsed": "Multi-Vehicle",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$10",
+          "parsed": 10.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2003 YAMAHA FZS10",
+          "parsed": "2003 YAMAHA FZS10",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Multi-Vehicle",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "forms_and_endorsements": [
+    {
+      "form_number": {
+        "raw": "5979 NY",
+        "parsed": "5979 NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "10/17",
+        "parsed": "10/17",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Policy",
+        "parsed": "Policy",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "A135 NY",
+        "parsed": "A135 NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "11/13",
+        "parsed": "11/13",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Endorsement",
+        "parsed": "Endorsement",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "6489 NY",
+        "parsed": "6489 NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "07/07",
+        "parsed": "07/07",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    }
+  ],
+  "coverages": [
+    {
+      "coverage_name": {
+        "raw": "Bodily Injury Liability",
+        "parsed": "Bodily Injury Liability",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "coverage_type": {
+        "raw": "1984 YAMAHA RZ350",
+        "parsed": "1984 YAMAHA RZ350",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "limit": {
+        "raw": "$250,000 each person/$500,000 each accident",
+        "parsed": "$250,000 each person/$500,000 each accident",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "$20",
+        "parsed": 20.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "coverage_name": {
+        "raw": "Property Damage Liability",
+        "parsed": "Property Damage Liability",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "coverage_type": {
+        "raw": "1984 YAMAHA RZ350",
+        "parsed": "1984 YAMAHA RZ350",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "limit": {
+        "raw": "$100,000 each accident",
+        "parsed": "$100,000 each accident",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "9",
+        "parsed": 9.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "coverage_name": {
+        "raw": "Mandatory Pedestrian Personal Injury Protection",
+        "parsed": "Mandatory Pedestrian Personal Injury Protection",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "coverage_type": {
+        "raw": "1984 YAMAHA RZ350",
+        "parsed": "1984 YAMAHA RZ350",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "limit": {
+        "raw": "$50,000 each person",
+        "parsed": "$50,000 each person",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "deductible": {
+        "raw": "$0",
+        "parsed": 0.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "2",
+        "parsed": 2.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "coverage_name": {
+        "raw": "Aggregate Pedestrian No-Fault Benefits",
+        "parsed": "Aggregate Pedestrian No-Fault Benefits",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "coverage_type": {
+        "raw": "1984 YAMAHA RZ350",
+        "parsed": "1984 YAMAHA RZ350",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "limit": {
+        "raw": "$50,000",
+        "parsed": 50000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "coverage_name": {
+        "raw": "Death Benefit",
+        "parsed": "Death Benefit",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "coverage_type": {
+        "raw": "1984 YAMAHA RZ350",
+        "parsed": "1984 YAMAHA RZ350",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "limit": {
+        "raw": "$2,000",
+        "parsed": 2000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "coverage_name": {
+        "raw": "Maximum Monthly Work Loss",
+        "parsed": "Maximum Monthly Work Loss",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "coverage_type": {
+        "raw": "1984 YAMAHA RZ350",
+        "parsed": "1984 YAMAHA RZ350",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "limit": {
+        "raw": "$2,000",
+        "parsed": 2000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "coverage_name": {
+        "raw": "Other Reasonable & Necessary Expenses (per day)",
+        "parsed": "Other Reasonable & Necessary Expenses (per day)",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "coverage_type": {
+        "raw": "1984 YAMAHA RZ350",
+        "parsed": "1984 YAMAHA RZ350",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "limit": {
+        "raw": "$25",
+        "parsed": 25.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "coverage_name": {
+        "raw": "Mandatory Uninsured Motorist",
+        "parsed": "Mandatory Uninsured Motorist",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "coverage_type": {
+        "raw": "1984 YAMAHA RZ350",
+        "parsed": "1984 YAMAHA RZ350",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "limit": {
+        "raw": "$25,000 each person/$50,000 each accident",
+        "parsed": "$25,000 each person/$50,000 each accident",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "7",
+        "parsed": 7.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "coverage_name": {
+        "raw": "Bodily Injury Liability",
+        "parsed": "Bodily Injury Liability",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "coverage_type": {
+        "raw": "2003 YAMAHA FZS10",
+        "parsed": "2003 YAMAHA FZS10",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "limit": {
+        "raw": "$250,000 each person/$500,000 each accident",
+        "parsed": "$250,000 each person/$500,000 each accident",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "$27",
+        "parsed": 27.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "coverage_name": {
+        "raw": "Property Damage Liability",
+        "parsed": "Property Damage Liability",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "coverage_type": {
+        "raw": "2003 YAMAHA FZS10",
+        "parsed": "2003 YAMAHA FZS10",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "limit": {
+        "raw": "$100,000 each accident",
+        "parsed": "$100,000 each accident",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "16",
+        "parsed": 16.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "coverage_name": {
+        "raw": "Mandatory Pedestrian Personal Injury Protection",
+        "parsed": "Mandatory Pedestrian Personal Injury Protection",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "coverage_type": {
+        "raw": "2003 YAMAHA FZS10",
+        "parsed": "2003 YAMAHA FZS10",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "limit": {
+        "raw": "$50,000 each person",
+        "parsed": "$50,000 each person",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "deductible": {
+        "raw": "$0",
+        "parsed": 0.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "2",
+        "parsed": 2.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "coverage_name": {
+        "raw": "Aggregate Pedestrian No-Fault Benefits",
+        "parsed": "Aggregate Pedestrian No-Fault Benefits",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "coverage_type": {
+        "raw": "2003 YAMAHA FZS10",
+        "parsed": "2003 YAMAHA FZS10",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "limit": {
+        "raw": "$50,000",
+        "parsed": 50000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "coverage_name": {
+        "raw": "Death Benefit",
+        "parsed": "Death Benefit",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "coverage_type": {
+        "raw": "2003 YAMAHA FZS10",
+        "parsed": "2003 YAMAHA FZS10",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "limit": {
+        "raw": "$2,000",
+        "parsed": 2000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "coverage_name": {
+        "raw": "Maximum Monthly Work Loss",
+        "parsed": "Maximum Monthly Work Loss",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "coverage_type": {
+        "raw": "2003 YAMAHA FZS10",
+        "parsed": "2003 YAMAHA FZS10",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "limit": {
+        "raw": "$2,000",
+        "parsed": 2000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "coverage_name": {
+        "raw": "Other Reasonable & Necessary Expenses (per day)",
+        "parsed": "Other Reasonable & Necessary Expenses (per day)",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "coverage_type": {
+        "raw": "2003 YAMAHA FZS10",
+        "parsed": "2003 YAMAHA FZS10",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "limit": {
+        "raw": "$25",
+        "parsed": 25.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "coverage_name": {
+        "raw": "Mandatory Uninsured Motorist",
+        "parsed": "Mandatory Uninsured Motorist",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "coverage_type": {
+        "raw": "2003 YAMAHA FZS10",
+        "parsed": "2003 YAMAHA FZS10",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "limit": {
+        "raw": "$25,000 each person/$50,000 each accident",
+        "parsed": "$25,000 each person/$50,000 each accident",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "9",
+        "parsed": 9.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    }
+  ],
+  "personal_umbrella": {
+    "household_members": [
+      {
+        "name": {
+          "raw": "William De Carvalho",
+          "parsed": "William De Carvalho",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "gender": {
+          "raw": "Male",
+          "parsed": "Male",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "marital_status": {
+          "raw": "Single",
+          "parsed": "Single",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "insured_role": {
+          "raw": "Named insured",
+          "parsed": "Named insured",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      }
+    ],
+    "rated_exposures": [
+      {
+        "exposure_type": {
+          "raw": "Motorcycle",
+          "parsed": "Motorcycle",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "description": {
+          "raw": "1984 YAMAHA RZ350",
+          "parsed": "1984 YAMAHA RZ350",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "count": {
+          "raw": "1",
+          "parsed": 1,
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "premium": {
+          "raw": "$38",
+          "parsed": 38.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "exposure_type": {
+          "raw": "Motorcycle",
+          "parsed": "Motorcycle",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "description": {
+          "raw": "2003 YAMAHA FZS10",
+          "parsed": "2003 YAMAHA FZS10",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "count": {
+          "raw": "1",
+          "parsed": 1,
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "premium": {
+          "raw": "$54",
+          "parsed": 54.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "additional_fields": [
+    {
+      "section": "1984 YAMAHA RZ350",
+      "label": "VIN",
+      "value": {
+        "raw": "JYA48H008EA001144",
+        "parsed": "JYA48H008EA001144",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "1984 YAMAHA RZ350",
+      "label": "Engine displacement",
+      "value": {
+        "raw": "347 cc's",
+        "parsed": "347 cc's",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "1984 YAMAHA RZ350",
+      "label": "Garaging Zip Code",
+      "value": {
+        "raw": "10916",
+        "parsed": "10916",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "2003 YAMAHA FZS10",
+      "label": "VIN",
+      "value": {
+        "raw": "JYARN07E63A007328",
+        "parsed": "JYARN07E63A007328",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "2003 YAMAHA FZS10",
+      "label": "Engine displacement",
+      "value": {
+        "raw": "998 cc's",
+        "parsed": "998 cc's",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "2003 YAMAHA FZS10",
+      "label": "Garaging Zip Code",
+      "value": {
+        "raw": "10916",
+        "parsed": "10916",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Drivers and household residents",
+      "label": "Age",
+      "value": {
+        "raw": "66",
+        "parsed": 66,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  ],
+  "text_sections": {
+    "page1_s1": {
+      "section_id": "page1_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "policy information or check status of a claim.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s2": {
+      "section_id": "page1_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Your coverage began on August 9, 2025 at 12:01 a.m. This policy expires on August 9, 2026 at 12:01 a.m. This coverage summary replaces your prior one. Your insurance policy and any policy endorsements contain a full explanation of your coverage. The policy limits shown for a vehicle may not be combined with the limits for the same coverage on another vehicle . The policy contract is form 5979 NY (10/17) . The contract is modified by form A135 NY (11/13).",
+      "page_range": [
+        1
+      ],
+      "form_number": "A135 NY (11/13)"
+    },
+    "page2_s1": {
+      "section_id": "page2_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Please review the Rating Information provided in the Required Information Notice, Form 4746, included with your initial Motorcycle Insurance Coverage Summary (Declarations Page) or latest renewal declarations page, for a description of discounts which may be available if you qualify.",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s2": {
+      "section_id": "page2_s2",
+      "section_title": "Premium surcharges",
+      "section_type": "prose",
+      "raw_text": "This policy is not surcharged. Surcharges may be applied in the future as outlined in the Rating Information provided in the Required Information Notice, Form 4746, included with your initial Motorcycle Insurance Coverage Summary (Declarations Page) or latest renewal declarations page.",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s3": {
+      "section_id": "page2_s3",
+      "section_title": "Policy tier",
+      "section_type": "prose",
+      "raw_text": "This policy has been assigned to the Ultra Preferred A tier.",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    }
+  },
+  "fideon:provenance": {
+    "source": "Progressive/personal_umbrella/PUMBER- MC-AUTO_redacted.pdf",
+    "schema": "personal_umbrella v3.0.0",
+    "synthetic": false,
+    "gold": "reviewed and completed by Claude against the printed pages",
+    "reviewed": "2026-09-28"
+  }
+}

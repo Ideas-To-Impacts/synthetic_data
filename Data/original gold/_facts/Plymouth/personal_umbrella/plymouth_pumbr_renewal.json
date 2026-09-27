@@ -1,0 +1,333 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "Personal Umbrella Declarations Page",
+   "parsed": "Declarations"
+  },
+  "document_title_as_stated": "Personal Umbrella Declarations Page",
+  "issue_date": "08/05/2026",
+  "print_code": "PU 00 01 02 20",
+  "transaction_type": "Renewal"
+ },
+ "carrier": {
+  "company_name": "Palisades Property and Casualty Insurance Company",
+  "address": {
+   "line_1": "581 Main Street",
+   "line_2": "Suite 400",
+   "city": "Woodbridge",
+   "state": "NJ",
+   "postal_code": "07095"
+  }
+ },
+ "claim_reporting": {
+  "claims_phone": "844-208-1933"
+ },
+ "producer": {
+  "agency_name": "STABLE ROCK INSURANCE AGENCY, LLC",
+  "producer_code": "7001894",
+  "contact": {
+   "phone": "845-610-5700"
+  },
+  "address": {
+   "line_1": "159 NY 28",
+   "city": "Inlet",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Errol Granger",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "mailing_address": {
+   "line_1": "122 PROSPECT AVE",
+   "city": "MIDDLETOWN",
+   "state": "NY",
+   "postal_code": "10940"
+  }
+ },
+ "policy": {
+  "policy_number": "NYU00003004040",
+  "effective_date": "09/09/2026",
+  "expiration_date": "09/09/2027",
+  "effective_time": "12:01 am",
+  "expiration_time": "12:01 am",
+  "time_zone": "Eastern Standard Time",
+  "is_renewal": {
+   "raw": "Renewal",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "policy_form_number": "DL 98 01",
+  "policy_form_edition": "02/15",
+  "policy_form_name": "PERSONAL UMBRELLA LIABILITY POLICY"
+ },
+ "premium": {
+  "total_policy_premium": "$384.00"
+ },
+ "billing": {
+  "payment_plan": "Paper 1 Payment Plan",
+  "billing_note": "This is not a bill. Please refer to your insurance bill for the correct amount to pay."
+ },
+ "forms_and_endorsements": [
+  {
+   "form_title": "PERSONAL UMBRELLA LIABILITY POLICY",
+   "form_number": "DL 98 01",
+   "edition_date": "02/15",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_title": "PERSONAL UMBRELLA LIABILITY POLICY AMENDMENT OF POLICY PROVISIONS - NEW YORK",
+   "form_number": "PU NY 01",
+   "edition_date": "02/20",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_title": "PERSONAL UMBRELLA HOME-SHARING HOST ACTIVITIES AMENDATORY ENDORSEMENT",
+   "form_number": "DL 99 53",
+   "edition_date": "03/18",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_title": "PERSONAL UMBRELLA LIABILITY SUBLIMIT LIMITATION ENDORSEMENT",
+   "form_number": "PU 00 03",
+   "edition_date": "11/19",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_title": "PERSONAL UMBRELLA LIABILITY TNC EXCLUSION ENDORSEMENT",
+   "form_number": "PU 00 08",
+   "edition_date": "02/20",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "PRA 408",
+   "edition_date": "01/13",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   },
+   "form_title": "Producer Compensation"
+  },
+  {
+   "form_number": "PRA 511A",
+   "edition_date": "02/19",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   },
+   "form_title": "Consent to Conduct Business Electronically"
+  },
+  {
+   "form_number": "PRA 405",
+   "edition_date": "03/24",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   },
+   "form_title": "Privacy Policy"
+  },
+  {
+   "form_number": "PU 00 06",
+   "edition_date": "11/19",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   },
+   "form_title": "IMPORTANT NOTICE TO SENIOR POLICYHOLDERS"
+  },
+  {
+   "form_number": "PU 00 07",
+   "edition_date": "11/19",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   },
+   "form_title": "IMPORTANT NOTICE TO POLICYHOLDERS SERVING IN ACTIVE MILITARY DUTY"
+  },
+  {
+   "form_number": "PRA 600",
+   "edition_date": "01/13",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "PRA MA 730",
+   "edition_date": "03 26",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   },
+   "form_title": "POLICY RENEWAL IMPORTANT NOTICE"
+  }
+ ],
+ "coverages": [
+  {
+   "coverage_name": "Liability Per Occurrence",
+   "limit": {
+    "raw": "$1,000,000/$250",
+    "parsed": "$1,000,000"
+   },
+   "deductible": {
+    "raw": "$1,000,000/$250",
+    "parsed": "$250"
+   },
+   "premium": "$384"
+  }
+ ],
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_effective_date": "09/09/2026",
+   "renewal_expiration_date": "09/09/2027",
+   "renewal_premium": "$384.00",
+   "renewal_conditions": "To continue your coverage without interruption, we must receive your renewal payment by 12:01 am on the due date reflected on your Renewal Invoice."
+  }
+ },
+ "personal_umbrella": {
+  "limits": {
+   "personal_umbrella_limit": {
+    "raw": "$1,000,000/$250",
+    "parsed": 1000000.0
+   },
+   "self_insured_retention": {
+    "raw": "$1,000,000/$250",
+    "parsed": 250.0
+   }
+  },
+  "rated_exposures": [
+   {
+    "exposure_type": "Operators",
+    "description": "Total licensed and with learners permits",
+    "count": {
+     "raw": "02",
+     "parsed": 2
+    }
+   },
+   {
+    "exposure_type": "Vehicles",
+    "description": "PPAs, Motor Homes, or Trailers",
+    "count": {
+     "raw": "02",
+     "parsed": 2
+    }
+   },
+   {
+    "exposure_type": "Miscellaneous Vehicles",
+    "description": "ATVs, Dune Buggies, Golf Carts, Mopeds, Motorcycles, Snowmobiles",
+    "count": {
+     "raw": "00",
+     "parsed": 0
+    }
+   },
+   {
+    "exposure_type": "Owner Occupied Properties",
+    "description": "Primary, Secondary, Seasonal",
+    "count": {
+     "raw": "01",
+     "parsed": 1
+    }
+   },
+   {
+    "exposure_type": "Rental Properties",
+    "description": "Total number of rental units",
+    "count": {
+     "raw": "00",
+     "parsed": 0
+    }
+   },
+   {
+    "exposure_type": "Additional Property Exposures",
+    "description": "Business Pursuits, Incidental Farming, etc.",
+    "count": {
+     "raw": "00",
+     "parsed": 0
+    }
+   },
+   {
+    "exposure_type": "Watercrafts",
+    "description": "Sailboat, Powerboat, Jet Ski, Sea Doo",
+    "count": {
+     "raw": "00",
+     "parsed": 0
+    }
+   }
+  ],
+  "residences": [
+   {
+    "address": {
+     "line_1": "122 PROSPECT AVE",
+     "city": "MIDDLETOWN",
+     "state": "NY",
+     "postal_code": "10940"
+    }
+   }
+  ],
+  "schedule_of_underlying_insurance": [
+   {
+    "coverage_type": "Personal Auto",
+    "carrier_name": "PRAC",
+    "policy_number": "NYA00002117497"
+   },
+   {
+    "coverage_type": "Personal Auto",
+    "carrier_name": "GEICO",
+    "policy_number": "4169-97-59-29"
+   },
+   {
+    "coverage_type": "Homeowners",
+    "carrier_name": "PRAC",
+    "policy_number": "NYH00002076080"
+   },
+   {
+    "coverage_type": "Personal or Premises Liability",
+    "required_minimum_limit": "$300,000"
+   },
+   {
+    "coverage_type": "Auto Liability and Recreational Vehicle Liability",
+    "required_minimum_limit": "$250,000/$500,000/$100,000 or $300,000 CSL"
+   },
+   {
+    "coverage_type": "Uninsured/Underinsured Motorists Liability*",
+    "required_minimum_limit": "$250,000/$500,000/$100,000 or $300,000 CSL"
+   },
+   {
+    "coverage_type": "Watercraft Liability",
+    "required_minimum_limit": "$250,000/$500,000/$100,000 or $300,000 CSL"
+   },
+   {
+    "coverage_type": "Personal Injury",
+    "required_minimum_limit": "$300,000"
+   },
+   {
+    "coverage_type": "Business Pursuits/Incidental Occupancies*",
+    "required_minimum_limit": "$300,000"
+   }
+  ]
+ },
+ "additional_fields": [
+  {
+   "section": "POLICY RENEWAL IMPORTANT NOTICE",
+   "label": "Cancel payment by",
+   "value": "09/04/2026"
+  }
+ ]
+}
