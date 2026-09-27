@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Build a train / test / validation set of synthetic documents.
+Build a train / validation / test set of synthetic documents.
 
 Every source PDF of the chosen lines of business gets ``--per-source``
 synthetic twins (a scanned PDF and its gold JSON each), and all the twins of
@@ -8,6 +8,10 @@ one source go to the same split - a layout the model is tested on is one it
 never trained on. Within each line the sources are dealt out carrier by
 carrier, so every split sees every carrier it can, and a line with three
 sources or more has at least one in each split.
+
+The shares follow how many documents of the type the build makes (see BANDS):
+under 200, 70/18/12 (pilot); 200 to 999, 75/15/10 (growing); 1,000 and up,
+80/10/10 (target state) - 192 personal-line sources x 10 is 1,920, so 80/10/10.
 
     python scripts/build_dataset.py --out "Data/synthetic data"
     python scripts/build_dataset.py --out "Data/synthetic data" --per-source 10 --workers 10
@@ -46,9 +50,25 @@ sys.path.insert(0, str(ROOT))
 
 PERSONAL = ["personal_auto", "homeowners", "dwelling_fire", "flood", "personal_umbrella",
             "motorcycle", "recreational_vehicle", "ocean_marine", "classic_auto"]
-SPLITS = (("Train", 0.7), ("Test", 0.2), ("Val", 0.1))
+SPLITS = ("Train", "Val", "Test")
+#: the share of each split by how many documents of one document type the set
+#: holds - the fine-tuning corpus build's bands (its constants.py:128, from
+#: finetuning-architecture-v1.md:578). Below 200 a tenth is under 20
+#: documents, too few to measure on, so validation and test get more and the
+#: numbers are directional; from 1,000 a tenth is 100 documents or more,
+#: enough on its own, and training gets the rest.
+BANDS = ((200, "pilot", {"Train": 0.70, "Val": 0.18, "Test": 0.12}),
+         (1000, "growing", {"Train": 0.75, "Val": 0.15, "Test": 0.10}),
+         (None, "target state", {"Train": 0.80, "Val": 0.10, "Test": 0.10}))
 FIELDS = ["split", "lob", "carrier", "source", "sample", "pdf", "gold", "pages", "fields",
           "ok", "seconds", "problems"]
+
+
+def band(documents):
+    """(stage, {split: share}) for a document type with this many documents."""
+    for below, stage, shares in BANDS:
+        if below is None or documents < below:
+            return stage, shares
 
 
 def sources(data, lobs):
@@ -67,13 +87,14 @@ def sources(data, lobs):
     return out
 
 
-def split_sources(pdfs):
-    """{split: [pdf]}: 70/20/10 of the sources, carriers dealt out evenly."""
+def split_sources(pdfs, shares):
+    """{split: [pdf]}: the sources shared out as ``shares`` says, carriers
+    dealt out evenly."""
     n = len(pdfs)
-    want = {name: round(n * share) for name, share in SPLITS}
+    want = {name: round(n * shares[name]) for name in SPLITS}
     want["Train"] = n - want["Test"] - want["Val"]
     if n >= 3:                                   # every split gets a source
-        for name in ("Test", "Val"):
+        for name in ("Val", "Test"):
             if want[name] == 0:
                 want[name], want["Train"] = 1, want["Train"] - 1
     by_carrier = defaultdict(list)
@@ -85,10 +106,10 @@ def split_sources(pdfs):
         for q in queues:
             if q:
                 order.append(q.pop(0))
-    out = {name: [] for name, _ in SPLITS}
+    out = {name: [] for name in SPLITS}
     for i, pdf in enumerate(order):
         # the split furthest behind its share of the sources dealt so far
-        name = max((s for s, _ in SPLITS if len(out[s]) < want[s]),
+        name = max((s for s in SPLITS if len(out[s]) < want[s]),
                    key=lambda s: want[s] * (i + 1) / n - len(out[s]))
         out[name].append(pdf)
     return out
@@ -138,23 +159,37 @@ def main(argv=None):
     os.environ.setdefault("FIDEON_OCR_CACHE", args.ocr_cache or str(out / ".ocr_cache"))
 
     found = sources(args.data, lobs)
+    # the personal lines are one document type (the policy_check schemas):
+    # its band is set by all the documents this build makes of it
+    documents = sum(len(v) for v in found.values()) * args.per_source
+    stage, shares = band(documents)
     plan_file = out / "splits.json"
-    if plan_file.exists():                        # the same split on every resumed run
-        plan = json.loads(plan_file.read_text("utf-8"))
-    else:
-        plan = {lob: {s: [str(p.relative_to(ROOT / "Data" / "original data")) for p in v]
-                      for s, v in split_sources(found[lob]).items()} for lob in lobs if found[lob]}
+    plan = json.loads(plan_file.read_text("utf-8")) if plan_file.exists() else None
+    made = any((out / s / "pdfs").glob("*__synth_*.pdf") for s in SPLITS)
+    if plan is not None and plan.get("shares") != shares:
+        if made:
+            sys.exit("%s was split %s; this build would be split %s (%d documents, %s). Finish "
+                     "it with the same --per-source and sources, or empty %s to start over."
+                     % (plan_file, plan.get("shares"), shares, documents, stage, out))
+        plan = None                               # nothing made yet: split again
+    if plan is None:
+        plan = {"documents": documents, "stage": stage, "shares": shares,
+                "lines": {lob: {s: [str(p.relative_to(ROOT / "Data" / "original data")) for p in v]
+                                for s, v in split_sources(found[lob], shares).items()}
+                          for lob in lobs if found[lob]}}
         out.mkdir(parents=True, exist_ok=True)
         plan_file.write_text(json.dumps(plan, indent=1), "utf-8")
-    for split, _ in SPLITS:
+    for split in SPLITS:
         (out / split / "pdfs").mkdir(parents=True, exist_ok=True)
         (out / split / "gold json").mkdir(parents=True, exist_ok=True)
 
-    print("%-22s %6s %6s %6s   documents x%d" % ("line", "train", "test", "val", args.per_source))
+    print("%d documents of one type: %s, Train / Val / Test %s" % (
+        documents, stage, " / ".join("%.0f" % (100 * shares[s]) for s in SPLITS)))
+    print("%-22s %6s %6s %6s   sources (documents = x%d)" % ("line", "train", "val", "test", args.per_source))
     tasks = []
-    for lob, splits in plan.items():
-        print("%-22s %6d %6d %6d" % (lob, *(len(splits[s]) for s, _ in SPLITS)))
-        for split, _ in SPLITS:
+    for lob, splits in plan["lines"].items():
+        print("%-22s %6d %6d %6d" % (lob, *(len(splits[s]) for s in SPLITS)))
+        for split in SPLITS:
             for rel in splits[split]:
                 for k in range(1, args.per_source + 1):
                     tasks.append((split, lob, ROOT / "Data" / "original data" / rel, k, out))

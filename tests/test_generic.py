@@ -565,6 +565,20 @@ def test_an_address_block_is_read_by_its_shape(tmp_path, schema):
     assert len(names) == 3
 
 
+def test_a_schema_label_is_not_a_name():
+    assert not generic._looks_like_name("Buyout Indicator")
+    assert not generic._looks_like_name("Primary Residence")
+    assert generic._looks_like_name("Delphine Halloway")
+
+
+def test_the_split_follows_how_many_documents_a_type_has():
+    sys.path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parent.parent / "scripts"))
+    import build_dataset as b
+    assert b.band(199) == ("pilot", {"Train": 0.70, "Val": 0.18, "Test": 0.12})
+    assert b.band(200)[0] == b.band(999)[0] == "growing"
+    assert b.band(1000) == b.band(1920) == ("target state", {"Train": 0.80, "Val": 0.10, "Test": 0.10})
+
+
 def test_the_ocr_cache_reads_the_same_as_the_engine(tmp_path, monkeypatch):
     from fideon_synth import recover
     if recover.engine() is None:

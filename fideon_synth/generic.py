@@ -154,7 +154,10 @@ NOT_A_NAME = re.compile(r"\b(page|policy|coverage|date|premium|limit|number|tota
                         r"discount|discounts|free|renewal|online|payment|summary|"
                         r"watercraft|territory|code|county|zone|class|classification|district|"
                         r"protection|construction|occupancy|edition|rating|status|"
-                        r"state|city|zip|phone|country)\b", re.I)
+                        r"state|city|zip|phone|country|"
+                        # a vehicle or driver schedule's headings: "Name | Usage | Symbol"
+                        r"usage|use|year|make|model|symbol|mileage|gender|sex|relationship|"
+                        r"factor|garaging|vin|points|licen[cs]e)\b", re.I)
 #: a line that names an insurer rather than a policyholder or an agency
 INSURER_NAME = re.compile(r"\b(?:insurance|indemnity|assurance|casualty)\s+(?:company|co\.?|"
                           r"corporation|corp\.?)(?:\s|$)|\bunderwriters\b", re.I)
@@ -578,10 +581,44 @@ def _at_top(cell, cell_list):
     return _above(up, cell_list, max_gap=3.5, x_tol=60) is None
 
 
+_LABELS = None
+
+
+def _schema_label(text):
+    """Is ``text`` word for word a label the schemas know - a field's name or
+    a printed alias ("Buyout Indicator", "Source Of Quote")? Such a line is
+    a heading, however much it looks like somebody's name."""
+    global _LABELS
+    if _LABELS is None:
+        _LABELS = set()
+        folder = Path(__file__).resolve().parent.parent / "config" / "policy_check"
+
+        def walk(node):
+            if isinstance(node, dict):
+                for k, v in node.items():
+                    if k == "fideon:aliases" and isinstance(v, list):
+                        _LABELS.update(_norm_label(a) for a in v if isinstance(a, str))
+                    elif not k.startswith(("$", "fideon:")):
+                        _LABELS.add(_norm_label(k.replace("_", " ")))
+                    walk(v)
+            elif isinstance(node, list):
+                for v in node:
+                    walk(v)
+        for f in folder.glob("*.json") if folder.is_dir() else []:
+            try:
+                walk(json.loads(f.read_text("utf-8")).get("properties", {}))
+            except (OSError, ValueError):
+                pass
+        _LABELS = {l for l in _LABELS if " " in l}      # a phrase, never a lone word
+    return _norm_label(text) in _LABELS
+
+
 def _looks_like_name(text):
     words = text.split()
     if not 2 <= len(words) <= 5 or ":" in text or NOT_A_NAME.search(text):
         return False
+    if _schema_label(text):
+        return False                      # a heading the schemas know: "Buyout Indicator"
     if NAME_LABEL.search(text) or re.search(r"\bnamed\b|\(s\)", text, re.I):
         return False                      # a label: "NAMED INSURED(S)", "Your Agent"
     if re.search(r"\b(for|to|the|in|on|by|with|if|is|are|be|this|that|your|our|from|at)\b",
