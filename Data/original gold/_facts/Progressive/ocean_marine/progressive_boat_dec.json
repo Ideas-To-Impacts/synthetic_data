@@ -1,0 +1,315 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "This is your Declarations Page",
+   "parsed": "Declaration"
+  },
+  "document_title_as_stated": "Boat Insurance Coverage Summary",
+  "issue_date": "July 2, 2026",
+  "print_code": "Form 6489 NY (06/21)",
+  "line_of_business_as_stated": "Boat Insurance"
+ },
+ "carrier": {
+  "company_name": {
+   "raw": "Progressive",
+   "source": "structural"
+  },
+  "writing_company_name": "Progressive Northern Insurance Co",
+  "contact": {
+   "website": "progressiveagent.com"
+  }
+ },
+ "claim_reporting": {
+  "claims_phone": "1-800-274-4499"
+ },
+ "producer": {
+  "agency_name": "PATRIOTIC INS GROUP",
+  "contact": {
+   "phone": "1-315-357-5901"
+  },
+  "address": {
+   "line_1": "159 NY-28",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Marguerite Everly",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "mailing_address": {
+   "line_1": "PO BOX 252",
+   "city": "EAGLE BAY",
+   "state": "NY",
+   "postal_code": "13331"
+  },
+  "additional_named_insureds": [
+   {
+    "name": "Marguerite Prentice",
+    "relationship": "Named insured",
+    "entity_type": {
+     "raw": "Individual",
+     "source": "structural"
+    }
+   }
+  ]
+ },
+ "policy": {
+  "policy_number": "876380454",
+  "policy_term_as_printed": "Jul 1, 2026 - Jul 1, 2027",
+  "effective_date": "July 1, 2026",
+  "effective_time": "12:01 a.m.",
+  "expiration_date": "July 1, 2027",
+  "expiration_time": "12:01 a.m.",
+  "policy_form_number": "2749 NY",
+  "policy_form_edition": "06/21",
+  "policy_term_months": {
+   "raw": "12",
+   "source": "structural",
+   "parsed": 12
+  }
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "6489 NY",
+   "edition_date": "06/21"
+  }
+ ],
+ "premium": {
+  "total_policy_premium": "$376",
+  "discounts_and_credits": [
+   {
+    "description": "Home Owner, Multi-Policy, Paid in Full and Prior Insurance",
+    "applies_to": "876380454"
+   },
+   {
+    "description": "Original Owner",
+    "applies_to": "2025 Starcraft 191 SVX OB Series"
+   }
+  ]
+ },
+ "watercraft": {
+  "watercraft": [
+   {
+    "unit_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "unit_description": "2025 Starcraft 191 SVX OB Series",
+    "year": {
+     "raw": "2025",
+     "parsed": 2025
+    },
+    "make": "Starcraft",
+    "model": "191 SVX OB Series",
+    "hull_identification_number": "STR97528H425",
+    "total_horsepower": {
+     "raw": "150",
+     "parsed": 150
+    },
+    "propulsion_type": "Outboard",
+    "number_of_motors": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "purchase_price": "$58,000",
+    "total_loss_settlement_basis": "Total Loss Replacement/Purchase Price",
+    "premium": "$376",
+    "motors": [
+     {
+      "motor_number": {
+       "raw": "1",
+       "source": "structural",
+       "parsed": 1
+      },
+      "motor_type": {
+       "raw": "Outboard",
+       "source": "structural"
+      },
+      "year": {
+       "raw": "2026",
+       "parsed": 2026
+      },
+      "make": "Yamaha",
+      "horsepower": {
+       "raw": "150",
+       "parsed": 150
+      }
+     }
+    ],
+    "trailer": {
+     "year": {
+      "raw": "2025",
+      "parsed": 2025
+     },
+     "make": "Trailmaster Trailers"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury and Property Damage Liability",
+      "limit_basis": "combined single limit each accident",
+      "limit_amount": "$500,000 combined single limit each accident",
+      "premium": "$48",
+      "notes": "Includes Fuel Spill Liability"
+     },
+     {
+      "coverage_name": "Uninsured Boater",
+      "limit_basis": "combined single limit each accident",
+      "limit_amount": "$500,000 combined single limit each accident",
+      "premium": {
+       "raw": "13",
+       "parsed": 13.0
+      }
+     },
+     {
+      "coverage_name": "Medical Payments",
+      "limit_basis": "each person",
+      "limit_amount": "$5,000 each person",
+      "premium": {
+       "raw": "3",
+       "parsed": 3.0
+      }
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "deductible_amount": "$500",
+      "premium": {
+       "raw": "161",
+       "parsed": 161.0
+      },
+      "valuation_basis": "Total Loss Replacement/Purchase Price"
+     },
+     {
+      "coverage_name": "Collision",
+      "deductible_amount": "$500",
+      "premium": {
+       "raw": "81",
+       "parsed": 81.0
+      },
+      "valuation_basis": "Total Loss Replacement/Purchase Price"
+     },
+     {
+      "coverage_name": "Disappearing Deductible",
+      "is_included": {
+       "raw": "Included with Comprehensive and Collision",
+       "source": "structural",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Wreckage Removal",
+      "is_included": {
+       "raw": "Included with Comprehensive and Collision",
+       "source": "structural",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Marine Electronics",
+      "is_included": {
+       "raw": "Included with Comprehensive and Collision",
+       "source": "structural",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Trailer",
+      "is_included": {
+       "raw": "Included with Comprehensive and Collision",
+       "source": "structural",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Sign & Glide®",
+      "premium": {
+       "raw": "30",
+       "parsed": 30.0
+      }
+     },
+     {
+      "coverage_name": "Coastal Navigation",
+      "limit_amount": "75 Nautical Miles",
+      "is_included": {
+       "raw": "included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Propulsion Plus®",
+      "deductible_amount": "$250",
+      "premium": {
+       "raw": "40",
+       "parsed": 40.0
+      }
+     },
+     {
+      "coverage_name": "Roadside Assistance",
+      "is_included": {
+       "raw": "included",
+       "parsed": "Yes"
+      }
+     }
+    ]
+   }
+  ],
+  "operators": [
+   {
+    "name": "Marguerite Everly",
+    "age": {
+     "raw": "72",
+     "parsed": 72
+    },
+    "gender": "Male",
+    "marital_status": "Married",
+    "relationship_to_insured": "Named insured"
+   },
+   {
+    "name": "Marguerite Prentice",
+    "age": {
+     "raw": "63",
+     "parsed": 63
+    },
+    "gender": "Female",
+    "marital_status": "Married",
+    "relationship_to_insured": "Named insured"
+   }
+  ],
+  "navigation_and_use": {
+   "navigational_territory": "75 Nautical Miles"
+  },
+  "liability_coverages": {
+   "combined_single_limit_each_accident": "$500,000",
+   "fuel_spill_liability_included": {
+    "raw": "Includes Fuel Spill Liability",
+    "source": "structural",
+    "parsed": "Yes"
+   },
+   "uninsured_boater_limit": "$500,000",
+   "medical_payments_each_person_limit": "$5,000"
+  },
+  "physical_damage_coverages": {
+   "comprehensive_deductible": "$500",
+   "collision_deductible": "$500",
+   "total_loss_replacement_indicator": {
+    "raw": "Total Loss Replacement/Purchase Price",
+    "source": "structural",
+    "parsed": "Yes"
+   },
+   "purchase_price_settlement_indicator": {
+    "raw": "Purchase Price $58,000",
+    "source": "structural",
+    "parsed": "Yes"
+   },
+   "boat_trailer_included": {
+    "raw": "Trailer",
+    "source": "structural",
+    "parsed": "Yes"
+   }
+  }
+ }
+}

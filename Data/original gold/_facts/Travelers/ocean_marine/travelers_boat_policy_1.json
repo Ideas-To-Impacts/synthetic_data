@@ -1,0 +1,518 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "Boat Policy Change Declarations",
+   "parsed": "Policy Change Declaration"
+  },
+  "document_title_as_stated": "Boat Policy Change Declarations",
+  "issue_date": "August 4, 2026",
+  "copy_type": "Insured Copy",
+  "print_code": "PL-50776 NY (11-23)",
+  "batch_number": "577/0DQD25",
+  "transaction_type": {
+   "raw": "Policy Change",
+   "source": "structural"
+  },
+  "transaction_effective_date": "August 4, 2026"
+ },
+ "carrier": {
+  "company_name": "TRAVCO INSURANCE COMPANY",
+  "group_name": "The Travelers Indemnity Company",
+  "address": {
+   "line_1": "One Tower Square",
+   "city": "Hartford",
+   "state": "CT",
+   "postal_code": "06183"
+  }
+ },
+ "claim_reporting": {
+  "claims_phone": "1.800.252.4633"
+ },
+ "producer": {
+  "agency_name": "STABLE ROCK INS AGENCY",
+  "contact": {
+   "phone": "1.845.610.5700",
+   "fax": "(845) 610-5705"
+  },
+  "address": {
+   "line_1": "159 NY 28",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "MICHAEL T MAURER",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "contact": {
+   "email": "customer000@example.com"
+  },
+  "mailing_address": {
+   "line_1": "1180 GREAT PLAIN AVE UNIT 104",
+   "city": "NEEDHAM",
+   "state": "MA",
+   "postal_code": "02492-2233"
+  }
+ },
+ "policy": {
+  "policy_number": "618474905 830 2",
+  "account_id": "618474905",
+  "product_code": "BY2",
+  "effective_date": "February 27, 2026",
+  "effective_time": "12:01 A.M.",
+  "expiration_date": "February 27, 2027",
+  "expiration_time": "12:01 A.M.",
+  "time_zone": "STANDARD TIME",
+  "policy_period_location_basis": "at the residence premises"
+ },
+ "premium": {
+  "total_policy_premium": "$857.00",
+  "discounts_and_credits": [
+   {
+    "description": "Loss Free",
+    "is_applied": {
+     "raw": "Applied",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Vessel",
+    "is_applied": {
+     "raw": "Applied",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Paid in Full",
+    "is_applied": {
+     "raw": "Applied",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   }
+  ]
+ },
+ "billing": {
+  "phone": "1.800.842.5075",
+  "billing_note": "This is not a bill. You will be billed separately for this transaction."
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "BY-T01 CW",
+   "edition_date": "11-23",
+   "form_title": "Policy Quick Reference"
+  },
+  {
+   "form_number": "BY-100 CW",
+   "edition_date": "11-23",
+   "form_title": "Boat Policy"
+  },
+  {
+   "form_number": "BY-S01 CW",
+   "edition_date": "05-20",
+   "form_title": "Signature Page"
+  },
+  {
+   "form_number": "BY-300 NY",
+   "edition_date": "11-23",
+   "form_title": "Amendatory Endorsement - New York"
+  },
+  {
+   "form_number": "BY-403 CW",
+   "edition_date": "11-23",
+   "form_title": "Agreed Value Loss Settlement - Hull"
+  },
+  {
+   "form_number": "BY-404 CW",
+   "edition_date": "11-23",
+   "form_title": "Agreed Value Loss Settlement - Machinery"
+  },
+  {
+   "form_number": "BY-436 CW",
+   "edition_date": "11-23",
+   "form_title": "Drive System Protect Plus Coverage"
+  },
+  {
+   "form_number": "BY-421 CW",
+   "edition_date": "11-23",
+   "form_title": "New Boat Replacement Coverage"
+  },
+  {
+   "form_number": "PL-50776 NY",
+   "edition_date": "11-23"
+  },
+  {
+   "form_number": "PL-50957",
+   "edition_date": "05-21"
+  }
+ ],
+ "document_type_detail": {
+  "policy_change": {
+   "transaction_effective_date": "August 4, 2026",
+   "net_change_amount": {
+    "raw": "$109.00",
+    "parsed": -109.0
+   },
+   "transaction_reason_description": "This change decreases the premium by $109.00 for the remainder of the policy period.",
+   "changes": [
+    {
+     "change_description": "Removed Watercraft and associated coverages"
+    },
+    {
+     "change_description": "Removed On-Water Towing Limit"
+    },
+    {
+     "change_description": "Removed On-Land Towing Limit"
+    },
+    {
+     "change_description": "Removed Personal Property Coverage and Fishing Equipment Limit"
+    },
+    {
+     "change_description": "Removed Actual Cash Value Loss Settlement - Hull"
+    },
+    {
+     "change_description": "Removed Actual Cash Value Loss Settlement - Machinery"
+    },
+    {
+     "change_description": "Removed Outboard Motor"
+    },
+    {
+     "change_description": "Removed Trailer"
+    },
+    {
+     "change_description": "Removed Trailer Deductible"
+    },
+    {
+     "change_description": "Removed Electronic Navigation and Communication Equipment Deductible"
+    },
+    {
+     "change_description": "Removed Physical Damage Deductible"
+    },
+    {
+     "change_description": "Removed Personal Property Deductible"
+    },
+    {
+     "change_description": "Removed Multi Owner"
+    }
+   ]
+  }
+ },
+ "watercraft": {
+  "watercraft": [
+   {
+    "unit_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "unit_description": "2025 COBALT R4 BOWRIDER",
+    "year": {
+     "raw": "2025",
+     "parsed": 2025
+    },
+    "make": "COBALT",
+    "model": "R4 BOWRIDER",
+    "hull_identification_number": "FGER4449C525",
+    "length": "24 FEET",
+    "number_of_motors": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "propulsion_type": "Inboard/Outdrive",
+    "total_horsepower": {
+     "raw": "300 HP",
+     "parsed": 300
+    },
+    "agreed_value": "$196,245",
+    "total_loss_settlement_basis": {
+     "raw": "Agreed Value Loss Settlement - Hull",
+     "source": "structural"
+    },
+    "moorage_season": {
+     "raw": "Summer",
+     "source": "structural"
+    },
+    "moorage_or_storage_address": {
+     "postal_code": "13420"
+    },
+    "personal_effects_limit": "$3,000",
+    "trailer": {
+     "year": {
+      "raw": "2025",
+      "parsed": 2025
+     },
+     "make": "VENTURE",
+     "physical_damage_deductible": "$100"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Watercraft and Auxiliary Equipment Coverage",
+      "limit_amount": "$196,245",
+      "deductible_amount": "$2,500",
+      "premium": "$359.00"
+     },
+     {
+      "coverage_name": "Hurricane/Tsunami Haul Out Expense Reimbursement",
+      "limit_amount": "$1,000",
+      "aggregate_limit_amount": "$2,000",
+      "notes": "50% of incurred cost"
+     },
+     {
+      "coverage_name": "Trailer Deductible",
+      "deductible_amount": "$100"
+     },
+     {
+      "coverage_name": "Electronic Navigation and Communication Equipment Deductible",
+      "deductible_amount": "$2,500"
+     },
+     {
+      "coverage_name": "Personal Property Coverage",
+      "limit_amount": "$3,000",
+      "deductible_amount": "$250",
+      "is_included": {
+       "raw": "Included*",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Commercial Towing and Assistance Coverage - Services while afloat",
+      "limit_amount": "$1,000",
+      "is_included": {
+       "raw": "Included*",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Commercial Towing and Assistance Coverage - Services while on land",
+      "limit_amount": "$500",
+      "is_included": {
+       "raw": "Included*",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Liability (Protection and Indemnity) Coverage",
+      "limit_basis": "each occurrence",
+      "limit_amount": "$500,000",
+      "premium": "$149.00"
+     },
+     {
+      "coverage_name": "Uninsured Boater Coverage",
+      "limit_basis": "each occurrence",
+      "limit_amount": "$500,000",
+      "is_included": {
+       "raw": "Included*",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Medical Payments Coverage",
+      "limit_basis": "each person/ each occurrence",
+      "limit_amount": "$25,000",
+      "premium": "$21.00"
+     },
+     {
+      "coverage_name": "Accidental Fuel Spill Liability Coverage",
+      "limit_basis": "each occurrence",
+      "limit_amount": "$1,076,000",
+      "is_included": {
+       "raw": "Included*",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Agreed Value Loss Settlement - Hull",
+      "is_included": {
+       "raw": "Included*",
+       "parsed": "Yes"
+      },
+      "form_reference": "BY-403 CW (11-23)"
+     },
+     {
+      "coverage_name": "Agreed Value Loss Settlement - Machinery",
+      "is_included": {
+       "raw": "Included*",
+       "parsed": "Yes"
+      },
+      "form_reference": "BY-404 CW (11-23)"
+     },
+     {
+      "coverage_name": "Drive System Protect Plus Coverage",
+      "premium": "$33.00",
+      "form_reference": "BY-436 CW (11-23)"
+     },
+     {
+      "coverage_name": "New Boat Replacement Coverage",
+      "premium": "$54.00",
+      "form_reference": "BY-421 CW (11-23)"
+     }
+    ]
+   },
+   {
+    "unit_number": {
+     "raw": "2",
+     "source": "structural",
+     "parsed": 2
+    },
+    "unit_description": "2023 YAMAHA FX1800B-YA",
+    "year": {
+     "raw": "2023",
+     "parsed": 2023
+    },
+    "make": "YAMAHA",
+    "model": "FX1800B-YA",
+    "hull_identification_number": "YAMA2948F323",
+    "length": "12 FEET",
+    "number_of_motors": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "propulsion_type": "Other",
+    "total_horsepower": {
+     "raw": "180 HP",
+     "parsed": 180
+    },
+    "agreed_value": "$19,000",
+    "moorage_season": {
+     "raw": "Summer",
+     "source": "structural"
+    },
+    "moorage_or_storage_address": {
+     "postal_code": "13420"
+    },
+    "personal_effects_limit": "$5,000",
+    "coverages": [
+     {
+      "coverage_name": "Watercraft and Auxiliary Equipment Coverage",
+      "limit_amount": "$19,000",
+      "deductible_amount": "$500",
+      "premium": "$97.00"
+     },
+     {
+      "coverage_name": "Hurricane/Tsunami Haul Out Expense Reimbursement",
+      "limit_amount": "$1,000",
+      "aggregate_limit_amount": "$2,000",
+      "notes": "50% of incurred cost"
+     },
+     {
+      "coverage_name": "Trailer Deductible",
+      "deductible_amount": "$100"
+     },
+     {
+      "coverage_name": "Electronic Navigation and Communication Equipment Deductible",
+      "deductible_amount": "$500"
+     },
+     {
+      "coverage_name": "Personal Property Coverage",
+      "limit_amount": "$5,000",
+      "deductible_amount": "$250",
+      "premium": "$16.00"
+     },
+     {
+      "coverage_name": "Commercial Towing and Assistance Coverage - Services while afloat",
+      "limit_amount": "$1,000",
+      "is_included": {
+       "raw": "Included*",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Commercial Towing and Assistance Coverage - Services while on land",
+      "limit_amount": "$500",
+      "is_included": {
+       "raw": "Included*",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Liability (Protection and Indemnity) Coverage",
+      "limit_basis": "each occurrence",
+      "limit_amount": "$500,000",
+      "premium": "$107.00"
+     },
+     {
+      "coverage_name": "Uninsured Boater Coverage",
+      "limit_basis": "each occurrence",
+      "limit_amount": "$500,000",
+      "is_included": {
+       "raw": "Included*",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Medical Payments Coverage",
+      "limit_basis": "each person/ each occurrence",
+      "limit_amount": "$25,000",
+      "premium": "$21.00"
+     },
+     {
+      "coverage_name": "Accidental Fuel Spill Liability Coverage",
+      "limit_basis": "each occurrence",
+      "limit_amount": "$1,076,000",
+      "is_included": {
+       "raw": "Included*",
+       "parsed": "Yes"
+      }
+     }
+    ]
+   }
+  ],
+  "operators": [
+   {
+    "name": "MICHAEL T MAURER",
+    "years_of_experience": {
+     "raw": "5",
+     "parsed": 5
+    },
+    "license_type": "Licensed",
+    "association_membership": "No Membership",
+    "no_violations_reported": {
+     "raw": "None",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   }
+  ],
+  "navigation_and_use": {
+   "navigational_territory": "Inland and coastal waters of the 48 contiguous United States and Canada.",
+   "seasonal_restrictions": [
+    {
+     "area": "Florida",
+     "start": {
+      "raw": "June 15th",
+      "source": "structural"
+     },
+     "end": {
+      "raw": "November 1st",
+      "source": "structural"
+     }
+    }
+   ]
+  },
+  "liability_coverages": {
+   "bodily_injury_and_property_damage_limit": "$500,000",
+   "uninsured_boater_limit": "$500,000",
+   "medical_payments_each_person_limit": "$25,000",
+   "oil_pollution_liability_limit": "$1,076,000",
+   "fuel_spill_liability_included": {
+    "raw": "Accidental Fuel Spill Liability Coverage",
+    "source": "structural",
+    "parsed": "Yes"
+   }
+  },
+  "physical_damage_coverages": {
+   "on_water_towing_limit": "$1,000",
+   "hurricane_haul_out_limit": "$1,000",
+   "boat_trailer_included": {
+    "raw": "Trailer",
+    "source": "structural",
+    "parsed": "Yes"
+   }
+  }
+ }
+}

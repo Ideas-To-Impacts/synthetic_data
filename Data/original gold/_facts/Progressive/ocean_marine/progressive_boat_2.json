@@ -1,0 +1,423 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "This is your revised Renewal Declarations Page",
+   "parsed": "Renewal Declaration"
+  },
+  "document_title_as_stated": "Boat Insurance Coverage Summary",
+  "issue_date": "April 10, 2026",
+  "print_code": "Form 6489 NY (06/21)",
+  "line_of_business_as_stated": "Boat Insurance",
+  "transaction_type": {
+   "raw": "Policy Change",
+   "source": "structural"
+  },
+  "transaction_effective_date": "April 16, 2026",
+  "summary_of_changes": "The Automatic Card Payments (ACP) discount has been removed from your policy."
+ },
+ "carrier": {
+  "company_name": {
+   "raw": "Progressive",
+   "source": "structural"
+  },
+  "writing_company_name": "Progressive Northern Insurance Co",
+  "contact": {
+   "website": "progressiveagent.com"
+  }
+ },
+ "claim_reporting": {
+  "claims_phone": "1-800-274-4499"
+ },
+ "producer": {
+  "agency_name": "PATRIOTIC INS GROUP",
+  "contact": {
+   "phone": "1-315-357-5901"
+  },
+  "address": {
+   "line_1": "159 NY-28",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Marcus Jarrow",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "mailing_address": {
+   "line_1": "PO BOX 895",
+   "city": "OLD FORGE",
+   "state": "NY",
+   "postal_code": "13420"
+  },
+  "additional_named_insureds": [
+   {
+    "name": "Ambrose Sutcliffe",
+    "relationship": "Named insured",
+    "entity_type": {
+     "raw": "Individual",
+     "source": "structural"
+    }
+   }
+  ]
+ },
+ "policy": {
+  "policy_number": "948358511",
+  "policy_term_as_printed": "Apr 16, 2026 - Apr 16, 2027",
+  "effective_date": "April 16, 2026",
+  "effective_time": "12:01 a.m.",
+  "expiration_date": "April 16, 2027",
+  "expiration_time": "12:01 a.m.",
+  "policy_form_number": "2749 NY",
+  "policy_form_edition": "06/21",
+  "is_renewal": {
+   "raw": "Yes",
+   "source": "structural"
+  },
+  "policy_term_months": {
+   "raw": "12",
+   "source": "structural",
+   "parsed": 12
+  }
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "6489 NY",
+   "edition_date": "06/21"
+  }
+ ],
+ "premium": {
+  "total_policy_premium": "$447",
+  "discounts_and_credits": [
+   {
+    "description": "Discount if paid in full",
+    "amount": {
+     "raw": "-50",
+     "parsed": -50.0
+    }
+   },
+   {
+    "description": "Claim Free Renewal, Home Owner, Multi-Policy, Multi-Vehicle and Paid in Full",
+    "applies_to": "948358511"
+   }
+  ]
+ },
+ "billing": {
+  "payment_options": [
+   {
+    "plan_name": "Total 12 month policy premium if paid in full",
+    "total_cost": "$447"
+   }
+  ]
+ },
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_effective_date": "April 16, 2026",
+   "renewal_expiration_date": "April 16, 2027",
+   "renewal_premium": "$447",
+   "premium_change_amount": "$4.00"
+  },
+  "policy_change": {
+   "transaction_effective_date": "April 16, 2026",
+   "net_change_amount": "$4.00",
+   "changes": [
+    {
+     "change_description": "The Automatic Card Payments (ACP) discount has been removed from your policy.",
+     "effective_date": "April 16, 2026",
+     "premium_effect": "$4.00"
+    }
+   ]
+  }
+ },
+ "watercraft": {
+  "watercraft": [
+   {
+    "unit_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "unit_description": "2008 Lowe 1652 Roughneck",
+    "year": {
+     "raw": "2008",
+     "parsed": 2008
+    },
+    "make": "Lowe",
+    "model": "1652 Roughneck",
+    "hull_identification_number": "LWCJ0136B808",
+    "registration_number": "NY000001",
+    "total_horsepower": {
+     "raw": "40",
+     "parsed": 40
+    },
+    "propulsion_type": "Outboard",
+    "number_of_motors": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "premium": "$47",
+    "motors": [
+     {
+      "motor_number": {
+       "raw": "1",
+       "source": "structural",
+       "parsed": 1
+      },
+      "motor_type": {
+       "raw": "Outboard",
+       "source": "structural"
+      },
+      "year": {
+       "raw": "2008",
+       "parsed": 2008
+      },
+      "make": "Honda",
+      "horsepower": {
+       "raw": "40",
+       "parsed": 40
+      }
+     }
+    ],
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury and Property Damage Liability",
+      "limit_basis": "combined single limit each accident",
+      "limit_amount": "$500,000 combined single limit each accident",
+      "premium": "$10",
+      "notes": "Includes Fuel Spill Liability"
+     },
+     {
+      "coverage_name": "Uninsured Boater",
+      "limit_basis": "combined single limit each accident",
+      "limit_amount": "$500,000 combined single limit each accident",
+      "premium": {
+       "raw": "6",
+       "parsed": 6.0
+      }
+     },
+     {
+      "coverage_name": "Medical Payments",
+      "limit_basis": "each person",
+      "limit_amount": "$5,000 each person",
+      "premium": {
+       "raw": "1",
+       "parsed": 1.0
+      }
+     },
+     {
+      "coverage_name": "Sign & Glide®",
+      "premium": {
+       "raw": "30",
+       "parsed": 30.0
+      }
+     },
+     {
+      "coverage_name": "Coastal Navigation",
+      "limit_amount": "75 Nautical Miles",
+      "is_included": {
+       "raw": "included",
+       "parsed": "Yes"
+      }
+     }
+    ]
+   },
+   {
+    "unit_number": {
+     "raw": "2",
+     "source": "structural",
+     "parsed": 2
+    },
+    "unit_description": "2015 Correct Craft/Nautique 200 Sport Nautique",
+    "year": {
+     "raw": "2015",
+     "parsed": 2015
+    },
+    "make": "Correct Craft/Nautique",
+    "model": "200 Sport Nautique",
+    "hull_identification_number": "CTC52018I415",
+    "total_horsepower": {
+     "raw": "343",
+     "parsed": 343
+    },
+    "propulsion_type": "Inboard",
+    "number_of_motors": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "agreed_value": "$52,000",
+    "total_loss_settlement_basis": "Agreed Value",
+    "premium": "$400",
+    "personal_effects_limit": "$1,000",
+    "trailer": {
+     "year": {
+      "raw": "2015",
+      "parsed": 2015
+     },
+     "make": "Ram-Lin"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury and Property Damage Liability",
+      "limit_basis": "combined single limit each accident",
+      "limit_amount": "$500,000 combined single limit each accident",
+      "premium": "$56",
+      "notes": "Includes Fuel Spill Liability"
+     },
+     {
+      "coverage_name": "Uninsured Boater",
+      "limit_basis": "combined single limit each accident",
+      "limit_amount": "$500,000 combined single limit each accident",
+      "premium": {
+       "raw": "16",
+       "parsed": 16.0
+      }
+     },
+     {
+      "coverage_name": "Medical Payments",
+      "limit_basis": "each person",
+      "limit_amount": "$5,000 each person",
+      "premium": {
+       "raw": "4",
+       "parsed": 4.0
+      }
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "limit_amount": "Agreed Value $52,000",
+      "deductible_amount": "$0",
+      "premium": {
+       "raw": "179",
+       "parsed": 179.0
+      },
+      "valuation_basis": "Agreed Value"
+     },
+     {
+      "coverage_name": "Collision",
+      "limit_amount": "Agreed Value $52,000",
+      "deductible_amount": "$0",
+      "premium": {
+       "raw": "109",
+       "parsed": 109.0
+      },
+      "valuation_basis": "Agreed Value"
+     },
+     {
+      "coverage_name": "Disappearing Deductible",
+      "is_included": {
+       "raw": "Included with Comprehensive and Collision",
+       "source": "structural",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Wreckage Removal",
+      "is_included": {
+       "raw": "Included with Comprehensive and Collision",
+       "source": "structural",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Marine Electronics",
+      "is_included": {
+       "raw": "Included with Comprehensive and Collision",
+       "source": "structural",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Trailer",
+      "is_included": {
+       "raw": "Included with Comprehensive and Collision",
+       "source": "structural",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Sign & Glide®",
+      "premium": {
+       "raw": "30",
+       "parsed": 30.0
+      }
+     },
+     {
+      "coverage_name": "Coastal Navigation",
+      "limit_amount": "75 Nautical Miles",
+      "is_included": {
+       "raw": "included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Replacement Cost Personal Effects",
+      "limit_amount": "$1,000",
+      "deductible_amount": "$250",
+      "premium": {
+       "raw": "6",
+       "parsed": 6.0
+      }
+     },
+     {
+      "coverage_name": "Roadside Assistance",
+      "is_included": {
+       "raw": "included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "w/Trailer Trip Interruption - $10 Annually",
+      "limit_basis": "each occurrence",
+      "limit_amount": "$500 each occurrence"
+     }
+    ]
+   }
+  ],
+  "operators": [
+   {
+    "name": "Marcus Jarrow",
+    "age": {
+     "raw": "64",
+     "parsed": 64
+    },
+    "gender": "Male",
+    "marital_status": "Married",
+    "relationship_to_insured": "Named insured"
+   },
+   {
+    "name": "Ambrose Sutcliffe",
+    "age": {
+     "raw": "59",
+     "parsed": 59
+    },
+    "gender": "Female",
+    "marital_status": "Married",
+    "relationship_to_insured": "Named insured"
+   }
+  ],
+  "navigation_and_use": {
+   "navigational_territory": "75 Nautical Miles"
+  },
+  "liability_coverages": {
+   "combined_single_limit_each_accident": "$500,000",
+   "fuel_spill_liability_included": {
+    "raw": "Includes Fuel Spill Liability",
+    "source": "structural",
+    "parsed": "Yes"
+   },
+   "uninsured_boater_limit": "$500,000",
+   "medical_payments_each_person_limit": "$5,000"
+  },
+  "physical_damage_coverages": {
+   "comprehensive_deductible": "$0",
+   "collision_deductible": "$0",
+   "personal_effects_limit": "$1,000",
+   "boat_trailer_included": {
+    "raw": "Trailer",
+    "source": "structural",
+    "parsed": "Yes"
+   }
+  }
+ }
+}

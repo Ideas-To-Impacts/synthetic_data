@@ -1,0 +1,255 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "POLICY HISTORY",
+   "source": "structural",
+   "parsed": "Policy History"
+  },
+  "document_title_as_stated": "POLICY HISTORY",
+  "source_system": "AL3 Viewer - HawkSoft",
+  "print_date": "9/18/26",
+  "print_time": "2:39 PM",
+  "transaction_effective_date": "5/18/2026",
+  "issue_date": "5/18/2026"
+ },
+ "carrier": {
+  "company_name": "Markel American Insurance"
+ },
+ "producer": {
+  "producer_code": "00005414"
+ },
+ "named_insured": {
+  "primary_name": "Wolfram Ventures LLC",
+  "entity_type": {
+   "raw": "Organization",
+   "source": "structural"
+  },
+  "contact_name": "Noelle Ellery",
+  "fein": "87-2200775",
+  "contact": {
+   "phone": "502-555-0209",
+   "email": "customer209@example.com"
+  },
+  "mailing_address": {
+   "line_1": "14504 Clearlake PL",
+   "city": "Louisville",
+   "state": "KY",
+   "postal_code": "40245"
+  }
+ },
+ "policy": {
+  "policy_number": "MSB00001001974",
+  "policy_type": "Watercraft (Small Boat)",
+  "effective_date": "7/18/2026",
+  "expiration_date": "7/18/2027",
+  "policy_term_months": {
+   "raw": "12 Months",
+   "parsed": 12
+  },
+  "policyholder_since_date": "7/18/2024"
+ },
+ "premium": {
+  "total_policy_premium": "$381.00"
+ },
+ "billing": {
+  "payment_plan": "Annual"
+ },
+ "watercraft": {
+  "watercraft": [
+   {
+    "unit_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "1999",
+     "parsed": 1999
+    },
+    "make": "Manitou",
+    "hull_identification_number": "T1165897F999",
+    "premium": "$222.00",
+    "moorage_or_storage_address": {
+     "line_1": "12 Cove Way",
+     "city": "Long Lake",
+     "state": "NY",
+     "postal_code": "12847"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Hull",
+      "limit_amount": "8,100",
+      "deductible_amount": "250",
+      "premium": "$141.00"
+     },
+     {
+      "coverage_name": "Boat Trailer",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Personal Property",
+      "limit_amount": "1,000",
+      "deductible_amount": "250",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "P&I (Liability)",
+      "limit_amount": "500,000",
+      "premium": "$81.00"
+     },
+     {
+      "coverage_name": "Dinghy",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Med",
+      "limit_amount": "1,000",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Uninsured Boaters",
+      "limit_amount": "500,000",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Towing",
+      "limit_amount": "500",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Oil Pollution Liability",
+      "limit_amount": "1,076,000",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     }
+    ]
+   },
+   {
+    "unit_number": {
+     "raw": "2",
+     "source": "structural",
+     "parsed": 2
+    },
+    "year": {
+     "raw": "1988",
+     "parsed": 1988
+    },
+    "make": "Grumman",
+    "hull_identification_number": "GBM397581687",
+    "premium": "$159.00",
+    "moorage_or_storage_address": {
+     "line_1": "12 Cove Way",
+     "city": "Long Lake",
+     "state": "NY",
+     "postal_code": "12847"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Hull",
+      "limit_amount": "1,700",
+      "deductible_amount": "250",
+      "premium": "$64.00"
+     },
+     {
+      "coverage_name": "Boat Trailer",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Personal Property",
+      "limit_amount": "1,000",
+      "deductible_amount": "250",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "P&I (Liability)",
+      "limit_amount": "500,000",
+      "premium": "$95.00"
+     },
+     {
+      "coverage_name": "Dinghy",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Med",
+      "limit_amount": "1,000",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Uninsured Boaters",
+      "limit_amount": "500,000",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Towing",
+      "limit_amount": "500",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Oil Pollution Liability",
+      "limit_amount": "1,076,000",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     }
+    ]
+   }
+  ],
+  "liability_coverages": {
+   "bodily_injury_and_property_damage_limit": "500,000",
+   "medical_payments_each_person_limit": "1,000",
+   "uninsured_boater_limit": "500,000",
+   "oil_pollution_liability_limit": "1,076,000"
+  },
+  "physical_damage_coverages": {
+   "boat_trailer_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   },
+   "dinghy_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   },
+   "personal_effects_limit": "1,000",
+   "on_water_towing_limit": "500"
+  }
+ }
+}

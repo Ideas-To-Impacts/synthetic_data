@@ -1,0 +1,209 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "WATERCRAFT DECLARATIONS PAGE",
+   "parsed": "Declaration"
+  },
+  "document_title_as_stated": "WATERCRAFT DECLARATIONS PAGE",
+  "transaction_type": "Rewrite",
+  "transaction_effective_date": "08/26/2026",
+  "print_code": "MAM5000-0318",
+  "print_date": "7/29/2026"
+ },
+ "carrier": {
+  "company_name": "MARKEL AMERICAN INSURANCE COMPANY",
+  "address": {
+   "city": "GLEN ALLEN",
+   "state": {
+    "raw": "VIRGINIA",
+    "parsed": "VA"
+   }
+  }
+ },
+ "producer": {
+  "agency_name": "Patriotic Insurance Group",
+  "producer_code": "10513 - 692308",
+  "contact": {
+   "phone": "845-610-5700"
+  },
+  "address": {
+   "line_1": "PO Box 329",
+   "city": "Inlet",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Delphine Calloway",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "mailing_address": {
+   "line_1": "506 WASHINGTON RD.",
+   "city": "Lake Forest",
+   "state": "IL",
+   "postal_code": "60045"
+  }
+ },
+ "policy": {
+  "policy_number": "MSB00001028349",
+  "effective_date": "08/26/2026",
+  "expiration_date": "08/26/2027",
+  "effective_time": "12:01 A.M.",
+  "expiration_time": "12:01 A.M.",
+  "time_zone": "Standard Time",
+  "policy_period_location_basis": "at Your Mailing Address"
+ },
+ "premium": {
+  "total_policy_premium": "$535.00",
+  "forms_and_endorsements_premium": "$0.00",
+  "minimum_premium": "$100.00",
+  "taxes_and_fees": [
+   {
+    "description": "Policy Taxes/Fees",
+    "amount": "$0.00"
+   }
+  ]
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "MAM5001-0407",
+   "form_title": "The Markel Boat Policy"
+  },
+  {
+   "form_number": "MAM5011-0410",
+   "form_title": "Diminishing Deductibles Endorsement"
+  },
+  {
+   "form_number": "MAM5047-0407",
+   "form_title": "New York Amendatory Endorsement"
+  },
+  {
+   "form_number": "MAM5055-0417",
+   "form_title": "General Amendatory Endorsement"
+  },
+  {
+   "form_number": "MAM5058-0413",
+   "form_title": "Windstorm Extra Expense Endorsement"
+  },
+  {
+   "form_number": "MAM5190-0417",
+   "form_title": "Mechanical Breakdown Coverage Endorsement"
+  },
+  {
+   "form_number": "MAM5191-0417",
+   "form_title": "Ice and Freezing Coverage Endorsement"
+  },
+  {
+   "form_number": "MAM5192-0417",
+   "form_title": "Consequential Damage Coverage Endorsement"
+  },
+  {
+   "form_number": "MIL1214-0917",
+   "form_title": "Trade or Economic Sanctions Endorsement"
+  },
+  {
+   "form_number": "MAM5066-0221",
+   "form_title": "Classic Boat Endorsement"
+  }
+ ],
+ "signature": {
+  "signature_present": {
+   "raw": "Yes",
+   "source": "structural"
+  },
+  "signature_date": "2026-07-28",
+  "signature_location": "Inlet, NY"
+ },
+ "watercraft": {
+  "watercraft": [
+   {
+    "unit_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "unit_description": "1914 FAY & BOWEN FANTAIL LAUNCH",
+    "year": {
+     "raw": "1914",
+     "parsed": 1914
+    },
+    "make": "FAY & BOWEN",
+    "model": "FANTAIL LAUNCH",
+    "hull_identification_number": "327939",
+    "agreed_value": "$60,000",
+    "premium": "$535.00",
+    "total_loss_settlement_basis": "Agreed Value",
+    "moorage_or_storage_address": {
+     "full": "Inlet, NY 13360"
+    },
+    "personal_effects_limit": "$3,000",
+    "coverages": [
+     {
+      "coverage_name": "Watercraft & Equipment, Agreed Value",
+      "limit_amount": "$60,000",
+      "deductible_amount": "$1,800",
+      "premium": "$410",
+      "valuation_basis": "Agreed Value"
+     },
+     {
+      "coverage_name": "Watercraft Liability",
+      "limit_amount": "$300,000",
+      "deductible_amount": "$0",
+      "premium": "$71"
+     },
+     {
+      "coverage_name": "Medical Payments",
+      "limit_amount": "$10,000",
+      "deductible_amount": "$0",
+      "premium": "$18"
+     },
+     {
+      "coverage_name": "Personal Effects",
+      "limit_amount": "$3,000",
+      "deductible_amount": "$250",
+      "premium": "$30"
+     },
+     {
+      "coverage_name": "Oil Pollution Liability",
+      "limit_amount": "$1,076,000",
+      "is_included": {
+       "raw": "incl.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Emergency Towing and Assist",
+      "limit_amount": "$1,000",
+      "deductible_amount": "$0",
+      "premium": "$6"
+     },
+     {
+      "coverage_name": "Uninsured Watercraft",
+      "limit_amount": "$300,000",
+      "deductible_amount": "$0",
+      "is_included": {
+       "raw": "incl.",
+       "parsed": "Yes"
+      }
+     }
+    ]
+   }
+  ],
+  "navigation_and_use": {
+   "navigational_territory": "Navigation is extended to no more than 25 miles offshore."
+  },
+  "liability_coverages": {
+   "bodily_injury_and_property_damage_limit": "$300,000",
+   "medical_payments_each_person_limit": "$10,000",
+   "oil_pollution_liability_limit": "$1,076,000",
+   "uninsured_boater_limit": "$300,000"
+  },
+  "physical_damage_coverages": {
+   "diminishing_deductible_amount": "$0",
+   "personal_effects_limit": "$3,000",
+   "emergency_service_limit": "$1,000"
+  }
+ }
+}

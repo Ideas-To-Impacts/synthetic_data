@@ -1,0 +1,1597 @@
+{
+  "document": {
+    "document_type": {
+      "raw": "This is your Declarations Page",
+      "parsed": "Declaration",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "document_title_as_stated": {
+      "raw": "Boat Insurance Coverage Summary",
+      "parsed": "Boat Insurance Coverage Summary",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "issue_date": {
+      "raw": "July 2, 2026",
+      "parsed": "07/02/2026",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "print_code": {
+      "raw": "Form 6489 NY (06/21)",
+      "parsed": "Form 6489 NY (06/21)",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "line_of_business_as_stated": {
+      "raw": "Boat Insurance",
+      "parsed": "Boat Insurance",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "source_file_name": {
+      "raw": "progressive_boat_dec.pdf",
+      "parsed": "progressive_boat_dec.pdf",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "page_count": {
+      "raw": "2",
+      "parsed": 2,
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    }
+  },
+  "carrier": {
+    "company_name": {
+      "raw": "Progressive",
+      "parsed": "Progressive",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "writing_company_name": {
+      "raw": "Progressive Northern Insurance Co",
+      "parsed": "Progressive Northern Insurance Co",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "contact": {
+      "website": {
+        "raw": "progressiveagent.com",
+        "parsed": "progressiveagent.com",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "claim_reporting": {
+    "claims_phone": {
+      "raw": "1-800-274-4499",
+      "parsed": "1-800-274-4499",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "producer": {
+    "agency_name": {
+      "raw": "PATRIOTIC INS GROUP",
+      "parsed": "PATRIOTIC INS GROUP",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "contact": {
+      "phone": {
+        "raw": "1-315-357-5901",
+        "parsed": "1-315-357-5901",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "address": {
+      "line_1": {
+        "raw": "159 NY-28",
+        "parsed": "159 NY-28",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "INLET",
+        "parsed": "INLET",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13360",
+        "parsed": "13360",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "named_insured": {
+    "primary_name": {
+      "raw": "Marguerite Everly",
+      "parsed": "Marguerite Everly",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "entity_type": {
+      "raw": "Individual",
+      "parsed": "Individual",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "mailing_address": {
+      "line_1": {
+        "raw": "PO BOX 252",
+        "parsed": "PO BOX 252",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "EAGLE BAY",
+        "parsed": "EAGLE BAY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13331",
+        "parsed": "13331",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "additional_named_insureds": [
+      {
+        "name": {
+          "raw": "Marguerite Prentice",
+          "parsed": "Marguerite Prentice",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "relationship": {
+          "raw": "Named insured",
+          "parsed": "Named insured",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "entity_type": {
+          "raw": "Individual",
+          "parsed": "Individual",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "policy": {
+    "policy_number": {
+      "raw": "876380454",
+      "parsed": "876380454",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "policy_term_as_printed": {
+      "raw": "Jul 1, 2026 - Jul 1, 2027",
+      "parsed": "Jul 1, 2026 - Jul 1, 2027",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "effective_date": {
+      "raw": "July 1, 2026",
+      "parsed": "07/01/2026",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "effective_time": {
+      "raw": "12:01 a.m.",
+      "parsed": "12:01 a.m.",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "expiration_date": {
+      "raw": "July 1, 2027",
+      "parsed": "07/01/2027",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "expiration_time": {
+      "raw": "12:01 a.m.",
+      "parsed": "12:01 a.m.",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "policy_form_number": {
+      "raw": "2749 NY",
+      "parsed": "2749 NY",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "policy_form_edition": {
+      "raw": "06/21",
+      "parsed": "06/21",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "policy_term_months": {
+      "raw": "12",
+      "parsed": 12,
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "forms_and_endorsements": [
+    {
+      "form_number": {
+        "raw": "6489 NY",
+        "parsed": "6489 NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "06/21",
+        "parsed": "06/21",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    }
+  ],
+  "premium": {
+    "total_policy_premium": {
+      "raw": "$376",
+      "parsed": 376.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "discounts_and_credits": [
+      {
+        "description": {
+          "raw": "Home Owner, Multi-Policy, Paid in Full and Prior Insurance",
+          "parsed": "Home Owner, Multi-Policy, Paid in Full and Prior Insurance",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "876380454",
+          "parsed": "876380454",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "Original Owner",
+          "parsed": "Original Owner",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2025 Starcraft 191 SVX OB Series",
+          "parsed": "2025 Starcraft 191 SVX OB Series",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "watercraft": {
+    "watercraft": [
+      {
+        "unit_number": {
+          "raw": "1",
+          "parsed": 1,
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "unit_description": {
+          "raw": "2025 Starcraft 191 SVX OB Series",
+          "parsed": "2025 Starcraft 191 SVX OB Series",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "year": {
+          "raw": "2025",
+          "parsed": 2025,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "make": {
+          "raw": "Starcraft",
+          "parsed": "Starcraft",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "model": {
+          "raw": "191 SVX OB Series",
+          "parsed": "191 SVX OB Series",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "hull_identification_number": {
+          "raw": "STR97528H425",
+          "parsed": "STR97528H425",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "total_horsepower": {
+          "raw": "150",
+          "parsed": 150,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "propulsion_type": {
+          "raw": "Outboard",
+          "parsed": "Outboard",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "number_of_motors": {
+          "raw": "1",
+          "parsed": 1,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "purchase_price": {
+          "raw": "$58,000",
+          "parsed": 58000.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "total_loss_settlement_basis": {
+          "raw": "Total Loss Replacement/Purchase Price",
+          "parsed": "Total Loss Replacement/Purchase Price",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "premium": {
+          "raw": "$376",
+          "parsed": 376.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "motors": [
+          {
+            "motor_number": {
+              "raw": "1",
+              "parsed": 1,
+              "confidence": {
+                "score": 1.0,
+                "source": "structural"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "motor_type": {
+              "raw": "Outboard",
+              "parsed": "Outboard",
+              "confidence": {
+                "score": 1.0,
+                "source": "structural"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "year": {
+              "raw": "2026",
+              "parsed": 2026,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "make": {
+              "raw": "Yamaha",
+              "parsed": "Yamaha",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "horsepower": {
+              "raw": "150",
+              "parsed": 150,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          }
+        ],
+        "trailer": {
+          "year": {
+            "raw": "2025",
+            "parsed": 2025,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              2
+            ],
+            "flagged": false
+          },
+          "make": {
+            "raw": "Trailmaster Trailers",
+            "parsed": "Trailmaster Trailers",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              2
+            ],
+            "flagged": false
+          }
+        },
+        "coverages": [
+          {
+            "coverage_name": {
+              "raw": "Bodily Injury and Property Damage Liability",
+              "parsed": "Bodily Injury and Property Damage Liability",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_basis": {
+              "raw": "combined single limit each accident",
+              "parsed": "combined single limit each accident",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$500,000 combined single limit each accident",
+              "parsed": "$500,000 combined single limit each accident",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$48",
+              "parsed": 48.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "notes": {
+              "raw": "Includes Fuel Spill Liability",
+              "parsed": "Includes Fuel Spill Liability",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Uninsured Boater",
+              "parsed": "Uninsured Boater",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_basis": {
+              "raw": "combined single limit each accident",
+              "parsed": "combined single limit each accident",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$500,000 combined single limit each accident",
+              "parsed": "$500,000 combined single limit each accident",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "13",
+              "parsed": 13.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Medical Payments",
+              "parsed": "Medical Payments",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "limit_basis": {
+              "raw": "each person",
+              "parsed": "each person",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$5,000 each person",
+              "parsed": "$5,000 each person",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "3",
+              "parsed": 3.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Comprehensive",
+              "parsed": "Comprehensive",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "deductible_amount": {
+              "raw": "$500",
+              "parsed": 500.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "161",
+              "parsed": 161.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "valuation_basis": {
+              "raw": "Total Loss Replacement/Purchase Price",
+              "parsed": "Total Loss Replacement/Purchase Price",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Collision",
+              "parsed": "Collision",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "deductible_amount": {
+              "raw": "$500",
+              "parsed": 500.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "81",
+              "parsed": 81.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "valuation_basis": {
+              "raw": "Total Loss Replacement/Purchase Price",
+              "parsed": "Total Loss Replacement/Purchase Price",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Disappearing Deductible",
+              "parsed": "Disappearing Deductible",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "Included with Comprehensive and Collision",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "structural"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Wreckage Removal",
+              "parsed": "Wreckage Removal",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "Included with Comprehensive and Collision",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "structural"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Marine Electronics",
+              "parsed": "Marine Electronics",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "Included with Comprehensive and Collision",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "structural"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Trailer",
+              "parsed": "Trailer",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "Included with Comprehensive and Collision",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "structural"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Sign & Glide®",
+              "parsed": "Sign & Glide®",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "30",
+              "parsed": 30.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Coastal Navigation",
+              "parsed": "Coastal Navigation",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "75 Nautical Miles",
+              "parsed": "75 Nautical Miles",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "included",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Propulsion Plus®",
+              "parsed": "Propulsion Plus®",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "deductible_amount": {
+              "raw": "$250",
+              "parsed": 250.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "40",
+              "parsed": 40.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Roadside Assistance",
+              "parsed": "Roadside Assistance",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "included",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          }
+        ]
+      }
+    ],
+    "operators": [
+      {
+        "name": {
+          "raw": "Marguerite Everly",
+          "parsed": "Marguerite Everly",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "age": {
+          "raw": "72",
+          "parsed": 72,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "gender": {
+          "raw": "Male",
+          "parsed": "Male",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "marital_status": {
+          "raw": "Married",
+          "parsed": "Married",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "relationship_to_insured": {
+          "raw": "Named insured",
+          "parsed": "Named insured",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "name": {
+          "raw": "Marguerite Prentice",
+          "parsed": "Marguerite Prentice",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "age": {
+          "raw": "63",
+          "parsed": 63,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "gender": {
+          "raw": "Female",
+          "parsed": "Female",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "marital_status": {
+          "raw": "Married",
+          "parsed": "Married",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "relationship_to_insured": {
+          "raw": "Named insured",
+          "parsed": "Named insured",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      }
+    ],
+    "navigation_and_use": {
+      "navigational_territory": {
+        "raw": "75 Nautical Miles",
+        "parsed": "75 Nautical Miles",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    },
+    "liability_coverages": {
+      "combined_single_limit_each_accident": {
+        "raw": "$500,000",
+        "parsed": 500000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "fuel_spill_liability_included": {
+        "raw": "Includes Fuel Spill Liability",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "uninsured_boater_limit": {
+        "raw": "$500,000",
+        "parsed": 500000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "medical_payments_each_person_limit": {
+        "raw": "$5,000",
+        "parsed": 5000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      }
+    },
+    "physical_damage_coverages": {
+      "comprehensive_deductible": {
+        "raw": "$500",
+        "parsed": 500.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "collision_deductible": {
+        "raw": "$500",
+        "parsed": 500.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "total_loss_replacement_indicator": {
+        "raw": "Total Loss Replacement/Purchase Price",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "purchase_price_settlement_indicator": {
+        "raw": "Purchase Price $58,000",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "boat_trailer_included": {
+        "raw": "Trailer",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "text_sections": {
+    "page1_s1": {
+      "section_id": "page1_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Contact your agent for personalized service.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s2": {
+      "section_id": "page1_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Make payments,check billing activity,update policy information or check status of a claim.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s3": {
+      "section_id": "page1_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "To report a claim.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s4": {
+      "section_id": "page1_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Your insurance policy and any policy endorsements contain a full explanation of your coverage. The policy limits shown for a watercraft may not be combined with the limits for the same coverage on another watercraft. The policy contract is form 2749 NY (06/21).",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page2_s1": {
+      "section_id": "page2_s1",
+      "section_title": "Important information regarding Coastal Navigation restrictions",
+      "section_type": "prose",
+      "raw_text": "A coastal navigation limit applies to this policy. Unless you pay a premium for Coastal Navigation Limit coverage, you are not covered for losses that occur more than 75 nautical miles from the coast of the United States or Canada or for losses that occur in any territory or territorial waters of any country other than the United States or Canada.",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s2": {
+      "section_id": "page2_s2",
+      "section_title": "Important information on the watercraft value",
+      "section_type": "prose",
+      "raw_text": "The watercraft dollar amount that is listed on the declarations page is the amount that you indicated includes the watercraft, motor(s), trailer (if you selected coverage for your trailer), permanently attached equipment and portable boating equipment.",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s3": {
+      "section_id": "page2_s3",
+      "section_title": "Deductibles",
+      "section_type": "prose",
+      "raw_text": "All physical damage losses, regardless of loss settlement option and whether partial or total, are subject to the applicable deductible.",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    }
+  },
+  "fideon:provenance": {
+    "source": "Progressive/ocean_marine/progressive_boat_dec.pdf",
+    "schema": "ocean_marine v3.0.0",
+    "synthetic": false,
+    "gold": "reviewed and completed by Claude against the printed pages",
+    "reviewed": "2026-09-28"
+  }
+}
