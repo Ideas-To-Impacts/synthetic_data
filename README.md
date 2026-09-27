@@ -39,6 +39,14 @@ fideon-synth --source "Data\original data\Markel American Insurance Company" --s
 fideon-synth --source "Data\original data\Progressive\auto\progressive_autob.pdf" --schema-dir config\policy_check --out output --count 3
 ```
 
+On Linux (RunPod) a run started from a terminal always moves itself into a
+detached tmux session, so it keeps going when the SSH connection or the laptop
+closes - `fideon-synth` and `scripts/build_dataset.py` both do this. It prints
+the session name; `tmux attach -t <name>` watches it (Ctrl+B, D to leave
+again), and everything it prints is also in `logs/<name>-<time>.log`. Install
+tmux once with `apt-get install -y tmux`; set `FIDEON_NO_TMUX=1` to run in the
+foreground on purpose. Windows runs in the foreground as before.
+
 Sources are read as `<Carrier>/<lob>/<file>.pdf`: the folder name picks the
 schema (`_fallback` if there is none), the carrier folder is the carrier.
 The schemas are looked up in a folder named `policy_check` (the document

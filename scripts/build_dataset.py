@@ -153,6 +153,10 @@ def main(argv=None):
     parser.add_argument("--ocr-cache", default=None,
                         help="where OCR readings are kept for all workers (default: <out>/.ocr_cache)")
     args = parser.parse_args(argv)
+    if argv is None:                     # from a terminal: a closed session must not end it
+        from fideon_synth import tmux
+        tmux.ensure([sys.executable, str(Path(__file__).resolve())] + sys.argv[1:],
+                    "build-dataset")
     out = Path(args.out)
     lobs = args.lob or PERSONAL
     # set before the workers start, so every one of them shares it

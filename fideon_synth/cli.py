@@ -67,6 +67,10 @@ def main(argv=None):
     if args.list:
         return _catalogue(args.schema_dir)
 
+    if argv is None:                     # from a terminal: a closed session must not end it
+        from . import tmux
+        tmux.ensure([sys.executable, "-m", "fideon_synth.cli"] + sys.argv[1:], "fideon-synth")
+
     if args.lob == "dwelling_fire":
         return _dwelling_fire(args)
 
