@@ -53,6 +53,15 @@ def engine():
             except Exception:                    # not installed
                 return None
             gpu = os.environ.get("FIDEON_OCR_GPU", "").lower()
+            if gpu == "cuda":
+                # CUDA and cuDNN installed from pip (onnxruntime-gpu[cuda,cudnn])
+                # are found only once loaded: without this the engine quietly
+                # falls back to the CPU
+                try:
+                    import onnxruntime
+                    getattr(onnxruntime, "preload_dlls", lambda: None)()
+                except Exception:
+                    pass
             if gpu in ("cuda", "dml"):
                 try:
                     _engine = RapidOCR(**{"%s_use_%s" % (part, gpu): True
