@@ -3,18 +3,24 @@
   "title": "Ocean Marine / Watercraft policy",
   "fideon:doc_type": "policy_check",
   "fideon:lob": "ocean_marine",
-  "fideon:note": "Generated from the supplied Watercraft schema v3.0.0 by scripts/build_canonical_policy_schemas.py, filed under `ocean_marine`. config/lob_registry.yaml decides that boats, watercraft and yachts ARE this line and that a second code would be another name for it. The previous hand-written file pointed five different sections at one 21-field `Item` definition, so it asserted that an operator and a form each have a hull material and a top speed. Do not hand-edit; edit the source and regenerate. Extended by scripts/canonical_schema_extensions.py with fields the supplied skeleton did not carry; re-run it after any regeneration. Hand-extended 2026-09-24 with fields and aliases seen in the Markel watercraft declarations and HawkSoft policy-history PDFs (scripts/ is not in this repo); carry these over if the file is regenerated. Hand-extended again 2026-09-24 with registration_number, operator years_of_experience/license_type/association_membership, premium paid_in_full_premium/total_discounts and billing remittance_address/phone, seen in the Progressive and Travelers boat PDFs; carry these over too. Hand-extended a third time 2026-09-24 after checking all six ocean_marine PDFs: billing payable_to/payment_options, navigation seasonal_restrictions, loss_history_none_reported, operators no_violations_reported, moorage_season, contact phone_type, document source_url/print_time, and aliases for labels those PDFs print; carry these over too. Aliases added 2026-09-24 for every remaining heading and label the six ocean_marine PDFs print. Aliases and the renewal_offer expiring_policy_expiration_date field added 2026-09-24 after auditing the six ocean_marine samples against their gold; \"Clients\" moved from contact.contact_name to additional_named_insureds; carry these over too. Fields watercraft[].personal_effects_limit, policy.policy_period_location_basis, document.print_code and billing.payment_coupon_scan_line added 2026-09-24, the last printed items of the six ocean_marine PDFs without a field; carry these over too. text_sections (with $defs.TextSection, as in dwelling_fire.json), policy.product_code and billing.billing_note added 2026-09-24 so the printed prose and the last unkeyed values of the six ocean_marine PDFs have a home; carry these over too.",
+  "fideon:note": "Generated from the supplied Watercraft schema v3.0.0 by scripts/build_canonical_policy_schemas.py, filed under `ocean_marine`. config/lob_registry.yaml decides that boats, watercraft and yachts ARE this line and that a second code would be another name for it. The previous hand-written file pointed five different sections at one 21-field `Item` definition, so it asserted that an operator and a form each have a hull material and a top speed. Do not hand-edit; edit the source and regenerate. Extended by scripts/canonical_schema_extensions.py with fields the supplied skeleton did not carry; re-run it after any regeneration. Hand-extended 2026-09-24 with fields and aliases seen in the Markel watercraft declarations and HawkSoft policy-history PDFs (scripts/ is not in this repo); carry these over if the file is regenerated. Hand-extended again 2026-09-24 with registration_number, operator years_of_experience/license_type/association_membership, premium paid_in_full_premium/total_discounts and billing remittance_address/phone, seen in the Progressive and Travelers boat PDFs; carry these over too. Hand-extended a third time 2026-09-24 after checking all six ocean_marine PDFs: billing payable_to/payment_options, navigation seasonal_restrictions, loss_history_none_reported, operators no_violations_reported, moorage_season, contact phone_type, document source_url/print_time, and aliases for labels those PDFs print; carry these over too. Aliases added 2026-09-24 for every remaining heading and label the six ocean_marine PDFs print. Aliases and the renewal_offer expiring_policy_expiration_date field added 2026-09-24 after auditing the six ocean_marine samples against their gold; \"Clients\" moved from contact.contact_name to additional_named_insureds; carry these over too. Fields watercraft[].personal_effects_limit, policy.policy_period_location_basis, document.print_code and billing.payment_coupon_scan_line added 2026-09-24, the last printed items of the six ocean_marine PDFs without a field; carry these over too. text_sections (with $defs.TextSection, as in dwelling_fire.json), policy.product_code and billing.billing_note added 2026-09-24 so the printed prose and the last unkeyed values of the six ocean_marine PDFs have a home; carry these over too. Fields carried over from SLM L1 2026-09-27 by scripts/slm_l1_additions.py: additional_fields, address full, policy tier/rating state/quote/original inception/cancellation method/renewal offer/term as printed, named insured contact name/occupation/marital status, document endorsement number/delivery preference/e-signature certificate, signature presence, coverages and the math audit rule; re-run it after any regeneration.",
   "fideon:source": {
     "schema_id": "fideon.canonical.watercraft",
     "version": "3.0.0",
     "line_of_business_as_supplied": "Watercraft",
     "line_specific_block": "watercraft",
-    "field_count": 767,
+    "field_count": 822,
     "corpus_document_count": 4,
     "corpus_carrier_count": null,
     "aliased_fields": 213,
     "filed_under_lob": "ocean_marine",
     "extensions_applied": "scripts/canonical_schema_extensions.py"
+  },
+  "fideon:verification": {
+    "source_documents": 6,
+    "source_carriers": 3,
+    "verified_against_documents": false,
+    "note": "source documents exist here, but no field-by-field review of them is recorded"
   },
   "fideon:mandatory_fields": [
     "carrier",
@@ -24,6 +30,9 @@
   "fideon:audit_rules": {
     "date_ordering": [
       "policy.effective_date <= policy.expiration_date"
+    ],
+    "math": [
+      "sum(coverages[*].premium) \u2248 premium.total_policy_premium \u00b1 0.01"
     ]
   },
   "fideon:parsed_formats": {
@@ -199,6 +208,126 @@
             "Print Code",
             "Form Print Code"
           ]
+        },
+        "endorsement_number": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 11 of the 22 lines. Which endorsement THIS document is. `forms_and_endorsements[]` lists the forms attached to the policy; this names the change the page represents."
+        },
+        "delivery_preference": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 4 of the 22 lines. Paper or electronic. A notice sent the way the policyholder did not choose is a compliance failure."
+        },
+        "esignature_certificate": {
+          "type": "object",
+          "properties": {
+            "document_reference": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Document Reference"
+              ]
+            },
+            "document_title": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Document Title"
+              ]
+            },
+            "document_region": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Document Region"
+              ]
+            },
+            "sender_name": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Sender Name"
+              ]
+            },
+            "sender_email": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Sender Email"
+              ]
+            },
+            "total_pages": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Total Document Pages"
+              ]
+            },
+            "secondary_security": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Secondary Security"
+              ]
+            },
+            "participants": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "email": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "role": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "signed_datetime": {
+                    "$ref": "#/$defs/FieldValue"
+                  }
+                }
+              },
+              "fideon:aliases": [
+                "Participants"
+              ]
+            },
+            "history": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "timestamp": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "Timestamp"
+                    ]
+                  },
+                  "event_description": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "Description"
+                    ]
+                  },
+                  "ip_address": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "user_agent": {
+                    "$ref": "#/$defs/FieldValue"
+                  }
+                }
+              },
+              "fideon:aliases": [
+                "Document History"
+              ]
+            },
+            "attached_page_count": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "page(s) attached here"
+              ]
+            },
+            "provider": {
+              "$ref": "#/$defs/FieldValue"
+            }
+          },
+          "fideon:aliases": [
+            "Document Completion Certificate"
+          ],
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 5 of the 22 lines. The e-signature certificate -- the evidence the document was signed. Same shape as homeowners."
         }
       }
     },
@@ -256,6 +385,10 @@
             },
             "county_code": {
               "$ref": "#/$defs/FieldValue"
+            },
+            "full": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
             }
           }
         },
@@ -367,6 +500,10 @@
             },
             "county_code": {
               "$ref": "#/$defs/FieldValue"
+            },
+            "full": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
             }
           }
         },
@@ -519,8 +656,19 @@
             "Policy Term"
           ]
         },
+        "policy_term_as_printed": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "The policy term EXACTLY as the page states it, whichever form that takes. Carriers print two: a duration (`Policy Term: 12 Months`) and a date range (`Policy Term: 02/29/2024 to 02/28/2025`). `policy_term_months` counts months, so a carrier printing the range had its date pair written into a numeric field. Keeping both means `policy_term_months` stays a number and the printed form survives as the audit trail."
+        },
         "anniversary_date": {
           "$ref": "#/$defs/FieldValue"
+        },
+        "original_inception_date": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Original Inception Date"
+          ],
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 13 of the 22 lines. The date the policy FIRST incepted, which a renewal states beside its own term -- North Country prints `Inception Date`. Distinct from `effective_date` and from `anniversary_date`."
         },
         "is_renewal": {
           "$ref": "#/$defs/FieldValue"
@@ -533,6 +681,10 @@
         },
         "cancellation_reason": {
           "$ref": "#/$defs/FieldValue"
+        },
+        "cancellation_method": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 8 of the 22 lines. HOW a policy was cancelled -- flat, pro-rata, short rate. `cancellation_date` and `cancellation_reason` exist; the method is what decides the refund."
         },
         "nonrenewal_notice_date": {
           "$ref": "#/$defs/FieldValue"
@@ -592,6 +744,32 @@
             "Product Code",
             "Use product code"
           ]
+        },
+        "policy_tier": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Policy Tier",
+            "Tier"
+          ],
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 8 of the 22 lines. NYCM prints `Tier: 9`. A rating tier moves the premium and had no slot, so it travelled in `additional_fields` flagged as unverified."
+        },
+        "rating_state": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Rating State"
+          ],
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 9 of the 22 lines. The state whose rates apply -- not always where the policy was issued (`carrier.state_of_issue`), nor where the risk sits."
+        },
+        "quote_number": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "QUOTE #"
+          ],
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 4 of the 22 lines. The quote this policy was issued from. NYCM prints `QUOTE #: Q31829763` on every page."
+        },
+        "renewal_offer": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 12 of the 22 lines. Whether the carrier is offering renewal, and on what terms. A compliance fact on any non-renewal."
         }
       }
     },
@@ -647,6 +825,10 @@
             },
             "county_code": {
               "$ref": "#/$defs/FieldValue"
+            },
+            "full": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
             }
           },
           "fideon:aliases": [
@@ -681,6 +863,10 @@
             },
             "county_code": {
               "$ref": "#/$defs/FieldValue"
+            },
+            "full": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
             }
           }
         },
@@ -725,6 +911,10 @@
               ]
             }
           }
+        },
+        "contact_name": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 12 of the 22 lines. `named_insured.contact` models phone, fax, email and website and carries no name, so the PERSON to contact had nowhere to go."
         },
         "business_description": {
           "$ref": "#/$defs/FieldValue",
@@ -790,6 +980,10 @@
                   },
                   "county_code": {
                     "$ref": "#/$defs/FieldValue"
+                  },
+                  "full": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
                   }
                 }
               }
@@ -799,6 +993,20 @@
             "Clients",
             "Client"
           ]
+        },
+        "occupation": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Occupation"
+          ],
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 4 of the 22 lines. A personal-lines rating factor."
+        },
+        "marital_status": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Marital Status"
+          ],
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 5 of the 22 lines. A personal-lines rating factor."
         }
       },
       "fideon:aliases": [
@@ -852,6 +1060,10 @@
                 "fideon:aliases": [
                   "County Code"
                 ]
+              },
+              "full": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
               }
             }
           },
@@ -1049,6 +1261,10 @@
               },
               "county_code": {
                 "$ref": "#/$defs/FieldValue"
+              },
+              "full": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
               }
             }
           },
@@ -1479,6 +1695,10 @@
             },
             "postal_code": {
               "$ref": "#/$defs/FieldValue"
+            },
+            "full": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
             }
           },
           "fideon:aliases": [
@@ -1800,6 +2020,10 @@
             },
             "county_code": {
               "$ref": "#/$defs/FieldValue"
+            },
+            "full": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
             }
           }
         }
@@ -1844,6 +2068,10 @@
           "fideon:aliases": [
             "Countersignature Date"
           ]
+        },
+        "has_signature": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Whether the declarations page carries a signature at all. The `signature` block models the signature's CONTENTS -- representative name, title, dates -- and has no key for its presence. An unsigned declarations page is a compliance question, so `false` is a finding rather than an absence."
         }
       }
     },
@@ -2048,6 +2276,10 @@
                   },
                   "country": {
                     "$ref": "#/$defs/FieldValue"
+                  },
+                  "full": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
                   }
                 },
                 "fideon:aliases": [
@@ -2193,6 +2425,10 @@
                       },
                       "country": {
                         "$ref": "#/$defs/FieldValue"
+                      },
+                      "full": {
+                        "$ref": "#/$defs/FieldValue",
+                        "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
                       }
                     }
                   },
@@ -3131,6 +3367,10 @@
                 },
                 "country": {
                   "$ref": "#/$defs/FieldValue"
+                },
+                "full": {
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
                 }
               }
             },
@@ -3469,6 +3709,10 @@
                     },
                     "country": {
                       "$ref": "#/$defs/FieldValue"
+                    },
+                    "full": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
                     }
                   }
                 },
@@ -3544,6 +3788,10 @@
                     },
                     "country": {
                       "$ref": "#/$defs/FieldValue"
+                    },
+                    "full": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
                     }
                   },
                   "fideon:aliases": [
@@ -3662,6 +3910,10 @@
                       },
                       "country": {
                         "$ref": "#/$defs/FieldValue"
+                      },
+                      "full": {
+                        "$ref": "#/$defs/FieldValue",
+                        "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
                       }
                     }
                   },
@@ -3965,10 +4217,50 @@
         }
       }
     },
+    "coverages": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/CoverageSection"
+      },
+      "fideon:aliases": [
+        "Coverage",
+        "Coverages",
+        "Coverage Part",
+        "Schedule of Coverages",
+        "Limits of Insurance"
+      ]
+    },
     "text_sections": {
       "type": "object",
       "additionalProperties": {
         "$ref": "#/$defs/TextSection"
+      },
+      "fideon:fsm_exclude": true,
+      "description": "Raw text blocks for SLM/LLM-based policy comparison \u2014 populated by the text extraction path, not the VLM FSM. These are what the Comparison API reads."
+    },
+    "additional_fields": {
+      "type": "array",
+      "description": "Printed label/value pairs that have no dedicated field above, kept as key and value: the label as the document prints it, the section heading it sits under, and the value as a FieldValue (raw, parsed, page_ref).",
+      "items": {
+        "type": "object",
+        "properties": {
+          "section": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "label": {
+            "type": "string"
+          },
+          "value": {
+            "$ref": "#/$defs/FieldValue"
+          }
+        },
+        "required": [
+          "label",
+          "value"
+        ]
       }
     }
   },
@@ -4068,6 +4360,44 @@
         "raw_text",
         "page_range"
       ]
+    },
+    "CoverageSection": {
+      "type": "object",
+      "properties": {
+        "coverage_type": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "coverage_name": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "covered_auto_symbols": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "limit": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "aggregate_limit": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "deductible": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "retention": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "sublimit": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "premium": {
+          "$ref": "#/$defs/FieldValue"
+        },
+        "endorsement_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/FieldValue"
+          }
+        }
+      }
     }
   }
 }
