@@ -39,6 +39,7 @@ import argparse
 import csv
 import json
 import os
+import re
 import sys
 import time
 from collections import defaultdict
@@ -116,12 +117,21 @@ def split_sources(pdfs, shares):
     return out
 
 
+def doc_name(lob, pdf, k, shared):
+    """<lob>__<source>__synth_NNN - and the carrier as well where two carriers'
+    sources of the line share a file name (HOME_redacted.pdf from Chubb, Madison
+    Mutual and MILLENNIAL): their documents must never write the same files."""
+    if (lob, pdf.stem) in shared:
+        carrier = re.sub(r"[^A-Za-z0-9]+", "_", pdf.parent.parent.name).strip("_")
+        return "%s__%s__%s__synth_%03d" % (lob, pdf.stem, carrier, k)
+    return "%s__%s__synth_%03d" % (lob, pdf.stem, k)
+
+
 def make(task):
-    split, lob, pdf, k, out = task
+    split, lob, pdf, k, out, name = task
     from fideon_synth import generic
     from fideon_synth.schema import CanonicalSchema
     from fideon_synth.values import Values
-    name = "%s__%s__synth_%03d" % (lob, pdf.stem, k)
     pdf_out = Path(out) / split / "pdfs" / (name + ".pdf")
     gold_out = Path(out) / split / "gold json" / (name + ".json")
     row = {"split": split, "lob": lob, "carrier": pdf.parent.parent.name,
@@ -197,12 +207,19 @@ def main(argv=None):
         documents, stage, " / ".join("%.0f" % (100 * shares[s]) for s in SPLITS)))
     print("%-22s %6s %6s %6s   sources (documents = x%d)" % ("line", "train", "val", "test", args.per_source))
     tasks = []
+    # a file name two carriers' sources of one line share
+    stems = defaultdict(set)
+    for lob, splits in plan["lines"].items():
+        for rel in (r for s in SPLITS for r in splits[s]):
+            stems[(lob, Path(rel).stem)].add(rel)
+    shared = {key for key, rels in stems.items() if len(rels) > 1}
     for lob, splits in plan["lines"].items():
         print("%-22s %6d %6d %6d" % (lob, *(len(splits[s]) for s in SPLITS)))
         for split in SPLITS:
             for rel in splits[split]:
+                pdf = ROOT / "Data" / "original data" / rel
                 for k in range(1, args.per_source + 1):
-                    tasks.append((split, lob, ROOT / "Data" / "original data" / rel, k, out))
+                    tasks.append((split, lob, pdf, k, out, doc_name(lob, pdf, k, shared)))
     # every source's first variant before any second: the OCR of a source's
     # unedited pages is then cached for its other variants; and the longest
     # sources first within each round, so no worker is left with one at the end
@@ -273,8 +290,7 @@ def main(argv=None):
 
 def describe(task):
     """The manifest row of a task, before it is made."""
-    split, lob, pdf, k, out = task
-    name = "%s__%s__synth_%03d" % (lob, pdf.stem, k)
+    split, lob, pdf, k, out, name = task
     return {"split": split, "lob": lob, "carrier": pdf.parent.parent.name,
             "source": str(pdf.relative_to(ROOT / "Data" / "original data")), "sample": k,
             "pdf": str(Path(split) / "pdfs" / (name + ".pdf")),

@@ -59,7 +59,10 @@ def main(argv=None):
     last = {}
     for r in rows:
         last[r["pdf"]] = r
-    rows = list(last.values())
+    # a document whose files were deleted is gone - unless it never had any
+    # (a crash), which is still worth seeing
+    rows = [r for r in last.values() if (out / r["pdf"]).exists() or r["ok"] != "True"
+            and not (out / r["gold"]).exists() and "Error" in r["problems"]]
 
     splits = Counter(r["split"] for r in rows)
     print("%d documents: %s" % (len(rows), ", ".join("%s %d" % kv for kv in sorted(splits.items()))))

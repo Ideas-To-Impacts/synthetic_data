@@ -59,7 +59,10 @@ def column_texts(pdf_path):
         lines = []                       # pieces printed apart along one row
         for box, text in pieces:
             last = lines[-1] if lines else None
-            if last and abs(last[0][1] - box[1]) <= 2 and 0 <= box[0] - last[0][2] < 25:
+            # words set wide apart still make one line: "BROKERAGE    INC"
+            # (up to three and a half line heights, as a justified print spaces them)
+            if last and abs(last[0][1] - box[1]) <= 2 and \
+                    0 <= box[0] - last[0][2] < max(25, 3.5 * (box[3] - box[1])):
                 last[0][2], last[1] = box[2], last[1] + " " + text
             else:
                 lines.append([box, text])
