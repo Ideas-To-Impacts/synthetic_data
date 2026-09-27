@@ -166,10 +166,14 @@ def main(argv=None):
     parser.add_argument("--originals", action="store_true",
                         help="also each source itself, scanned, with its own gold (<lob>__<source>__original), "
                              "in the same split as its synthetic twins")
+    parser.add_argument("--originals-only", action="store_true",
+                        help="make only the originals (the split and its band stay those of the full build "
+                             "with --per-source synthetic twins), e.g. where the twins were made elsewhere")
     parser.add_argument("--workers", type=int, default=10)
     parser.add_argument("--ocr-cache", default=None,
                         help="where OCR readings are kept for all workers (default: <out>/.ocr_cache)")
     args = parser.parse_args(argv)
+    args.originals = args.originals or args.originals_only
     if argv is None:                     # from a terminal: a closed session must not end it
         from fideon_synth import tmux
         tmux.ensure([sys.executable, str(Path(__file__).resolve())] + sys.argv[1:],
@@ -224,7 +228,8 @@ def main(argv=None):
             for rel in splits[split]:
                 pdf = ROOT / "Data" / "original data" / rel
                 # sample 0 is the source itself, in the split of its twins
-                for k in range(0 if args.originals else 1, args.per_source + 1):
+                for k in range(0 if args.originals else 1,
+                               1 if args.originals_only else args.per_source + 1):
                     tasks.append((split, lob, pdf, k, out, doc_name(lob, pdf, k, shared)))
     # every source's first variant before any second: the OCR of a source's
     # unedited pages is then cached for its other variants; and the longest
