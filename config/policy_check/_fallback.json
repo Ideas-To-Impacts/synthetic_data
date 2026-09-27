@@ -7,8 +7,8 @@
   "fideon:source": {
     "schema_id": "fideon.canonical.policy_core",
     "version": "1.4.0",
-    "field_count": 294,
-    "aliased_fields": 42,
+    "field_count": 326,
+    "aliased_fields": 110,
     "field_count_as_supplied": 264,
     "extensions_applied": "scripts/canonical_schema_extensions.py"
   },
@@ -101,7 +101,8 @@
             "Print Date",
             "Printed On",
             "Process Date",
-            "PROCESSING DATE"
+            "PROCESSING DATE",
+            "Printed Date"
           ]
         },
         "page_count": {
@@ -178,13 +179,21 @@
           "$ref": "#/$defs/FieldValue"
         },
         "writing_company_name": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Policy Issued By",
+            "Nombre"
+          ]
         },
         "group_name": {
           "$ref": "#/$defs/FieldValue"
         },
         "naic_number": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "NAIC #",
+            "NAIC"
+          ]
         },
         "fein": {
           "$ref": "#/$defs/FieldValue"
@@ -193,7 +202,11 @@
           "type": "object",
           "properties": {
             "line_1": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Dirección",
+                "Direccion"
+              ]
             },
             "line_2": {
               "$ref": "#/$defs/FieldValue"
@@ -226,7 +239,11 @@
               "fideon:aliases": [
                 "Home",
                 "Mobile",
-                "Work"
+                "Work",
+                "Atención al cliente",
+                "Customer Service",
+                "Teléfono",
+                "Telephone Number"
               ]
             },
             "fax": {
@@ -274,17 +291,24 @@
       "type": "object",
       "properties": {
         "agency_name": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Agent Information"
+          ]
         },
         "producer_code": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "Agency Code",
-            "Agent"
+            "Agent",
+            "Agent ID"
           ]
         },
         "producer_contact_name": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Insurance Agent's Printed Name"
+          ]
         },
         "address": {
           "type": "object",
@@ -359,7 +383,11 @@
       "type": "object",
       "properties": {
         "policy_number": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Póliza N°",
+            "Poliza No"
+          ]
         },
         "prior_policy_number": {
           "$ref": "#/$defs/FieldValue",
@@ -371,7 +399,8 @@
         "account_id": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
-            "Account ID"
+            "Account ID",
+            "ID"
           ]
         },
         "certificate_number": {
@@ -407,7 +436,10 @@
           "$ref": "#/$defs/FieldValue"
         },
         "policy_type": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Type of Policy"
+          ]
         },
         "effective_date": {
           "$ref": "#/$defs/FieldValue",
@@ -418,7 +450,13 @@
             "Policy Effective Date",
             "Policy Period From",
             "Policy Term Effective Date",
-            "Start Date"
+            "Start Date",
+            "Policy Term",
+            "Effective From",
+            "Date of Issue",
+            "Fecha de entrada en vigencia",
+            "Fecha de vigencia desde",
+            "Effective Date of Coverage"
           ]
         },
         "expiration_date": {
@@ -428,7 +466,8 @@
             "Expiry Date",
             "Policy Expiration Date",
             "Policy Period To",
-            "Policy Term Expiration Date"
+            "Policy Term Expiration Date",
+            "Hasta"
           ]
         },
         "effective_time": {
@@ -438,7 +477,10 @@
           "$ref": "#/$defs/FieldValue"
         },
         "policy_term_months": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Term"
+          ]
         },
         "anniversary_date": {
           "$ref": "#/$defs/FieldValue"
@@ -523,7 +565,15 @@
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "Insured Name",
-            "Named Insured"
+            "Named Insured",
+            "Insured's Name",
+            "Client Name",
+            "Policyholder",
+            "Insured",
+            "Group",
+            "Covering employees of",
+            "Exclusively for Employees of",
+            "Cubre a los empleados de"
           ]
         },
         "doing_business_as": {
@@ -689,6 +739,12 @@
               }
             }
           }
+        },
+        "business_established_date": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Business Entity was established"
+          ]
         }
       },
       "fideon:aliases": [
@@ -963,7 +1019,10 @@
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "Policy Total Premium",
-            "Total Policy Premium"
+            "Total Policy Premium",
+            "Total Full Term Premium",
+            "Total Policy Cost",
+            "Total Charges"
           ]
         },
         "basic_premium": {
@@ -980,7 +1039,11 @@
           "$ref": "#/$defs/FieldValue"
         },
         "minimum_premium": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Minimum Written Premium",
+            "Minimum Written"
+          ]
         },
         "return_premium": {
           "$ref": "#/$defs/FieldValue"
@@ -1128,7 +1191,11 @@
           ]
         },
         "stamping_fee": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Stamp Fee",
+            "Stamp"
+          ]
         },
         "policy_fee": {
           "$ref": "#/$defs/FieldValue"
@@ -1218,7 +1285,8 @@
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "Pay Plan",
-            "Your Policy Pay Plan is"
+            "Your Policy Pay Plan is",
+            "Plan"
           ]
         },
         "payment_method": {
@@ -1235,7 +1303,8 @@
           "fideon:aliases": [
             "Monthly (Pre-authorized checking)",
             "Quarterly",
-            "Semi-annual"
+            "Semi-annual",
+            "Billing Cycle"
           ]
         },
         "bill_to_party": {
@@ -1290,7 +1359,8 @@
             "Billing Phone",
             "Call us at",
             "By calling",
-            "Automatic Payments"
+            "Automatic Payments",
+            "For payment questions call"
           ]
         }
       }
@@ -1466,7 +1536,10 @@
           ]
         },
         "claims_email": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Print and send completed form to"
+          ]
         },
         "claims_address": {
           "type": "object",
@@ -1496,6 +1569,12 @@
               "$ref": "#/$defs/FieldValue"
             }
           }
+        },
+        "claim_forms_url": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Download claim forms at"
+          ]
         }
       }
     },
@@ -1535,6 +1614,156 @@
       "type": "object",
       "additionalProperties": {
         "$ref": "#/$defs/TextSection"
+      }
+    },
+    "benefits": {
+      "type": "object",
+      "properties": {
+        "benefit_level": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Benefit Level"
+          ]
+        },
+        "dbl_benefit_level": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "DBL Benefit Level"
+          ]
+        },
+        "dbl_rate": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "DBL Rate"
+          ]
+        },
+        "pfl_rate": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "PFL Rate"
+          ]
+        },
+        "male_rate": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Male Rate"
+          ]
+        },
+        "female_rate": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Female Rate"
+          ]
+        },
+        "payroll_rate": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Payroll Rate"
+          ]
+        },
+        "current_employee_count": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Current Employee Count"
+          ]
+        },
+        "eligible_employees": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Eligibility",
+            "II. Eligibility"
+          ]
+        },
+        "covered_classes": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Class(es) of Employees Covered",
+            "Clase(s) de Empleados Cubiertos",
+            "Coverage Includes Voluntary Coverage"
+          ]
+        },
+        "benefit_duration": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Maximum Duration",
+            "Benefit Duration"
+          ]
+        },
+        "waiting_period": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Waiting Period",
+            "Elimination Period"
+          ]
+        },
+        "proprietors": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Proprietors"
+          ]
+        },
+        "rider_effective_date": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "This rider is effective"
+          ]
+        }
+      }
+    },
+    "life": {
+      "type": "object",
+      "properties": {
+        "insured_age": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Insurance Age",
+            "Issue Age"
+          ]
+        },
+        "insured_sex": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Sex"
+          ]
+        },
+        "face_amount": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Initial Face Amount",
+            "Face Amount"
+          ]
+        },
+        "premium_class": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Premium Class"
+          ]
+        },
+        "life_insurance_amount": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Life Insurance"
+          ]
+        },
+        "terminal_illness_percentage": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Terminal Illness Percentage"
+          ]
+        },
+        "maximum_benefit_amount": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Maximum Benefit Amount"
+          ]
+        },
+        "guaranteed_interest_rate": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Payment Options Guaranteed Interest Rate",
+            "Guaranteed Interest Rate"
+          ]
+        }
       }
     }
   },

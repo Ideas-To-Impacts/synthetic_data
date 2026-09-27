@@ -4533,7 +4533,8 @@
         "Service of Suit Endorsement",
         "Subject to the Following Forms & Endorsements",
         "Subject to the following forms and endorsements",
-        "Vehicle Under Construction Endorsement"
+        "Vehicle Under Construction Endorsement",
+        "Forms"
       ],
       "description": "List of forms and endorsements (document root). Printed as e.g. \"attached at time of issue\", \"Coverage Endorsements\", \"Coverage Enhancements\", \"Detailed Form Information\"."
     },
@@ -8087,10 +8088,11 @@
             "fire_district": {
               "$ref": "#/$defs/FieldValue",
               "fideon:aliases": [
+                "District",
                 "Fire District"
               ],
               "fideon:value_type": "text",
-              "description": "Fire district (Homeowners / Rating characteristics). Text as printed. Printed as e.g. \"Fire District\"."
+              "description": "Fire district (Homeowners / Rating characteristics). Text as printed. Printed as e.g. \"District\", \"Fire District\"."
             },
             "feet_from_hydrant": {
               "$ref": "#/$defs/FieldValue",

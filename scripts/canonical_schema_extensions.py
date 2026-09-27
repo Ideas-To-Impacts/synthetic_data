@@ -5317,7 +5317,10 @@ SHARED_ALIASES.update({
      'Device, Forgery And Counterfeit Money', 'Forgery and Counterfeit Money'],
  'homeowners.scheduled_locations': ['Location 1, Building 1', 'Location 1, Building 2'],
  'policy.effective_date': ['PolicyEffectiveDate'],
- 'homeowners.deductibles.named_storm_deductible_percentage': ['Named StormPercentage Deductible']})
+ 'homeowners.deductibles.named_storm_deductible_percentage': ['Named StormPercentage Deductible'],
+ 'homeowners.rating_characteristics.fire_district': ['District'],
+ 'forms_and_endorsements': ['Forms'],
+ 'claim_reporting.claims_phone': ['To Report a Claim', 'Report a Claim']})
 for _path, _labels in SHARED_ALIASES.items():
     ALIASES[_path] = ALIASES.get(_path, []) + [a for a in _labels if a not in ALIASES.get(_path, [])]
 
