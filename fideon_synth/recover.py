@@ -41,16 +41,29 @@ _tried = False
 
 def engine():
     """The OCR engine, loaded once; None when it is not installed or
-    FIDEON_NO_OCR is set."""
+    FIDEON_NO_OCR is set. FIDEON_OCR_GPU=cuda (onnxruntime-gpu, NVIDIA) or
+    FIDEON_OCR_GPU=dml (onnxruntime-directml, any Windows GPU) runs it on
+    the graphics card; without it, or when the card cannot be used, the CPU."""
     global _engine, _tried
     if not _tried:
         _tried = True
         if not os.environ.get("FIDEON_NO_OCR"):
             try:
                 from rapidocr_onnxruntime import RapidOCR
-                _engine = RapidOCR()
-            except Exception:                    # not installed, or no model
-                _engine = None
+            except Exception:                    # not installed
+                return None
+            gpu = os.environ.get("FIDEON_OCR_GPU", "").lower()
+            if gpu in ("cuda", "dml"):
+                try:
+                    _engine = RapidOCR(**{"%s_use_%s" % (part, gpu): True
+                                          for part in ("det", "cls", "rec")})
+                except Exception:
+                    _engine = None
+            if _engine is None:
+                try:
+                    _engine = RapidOCR()
+                except Exception:                # no model
+                    _engine = None
     return _engine
 
 
