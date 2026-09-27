@@ -135,7 +135,7 @@ def make(task):
     pdf_out = Path(out) / split / "pdfs" / (name + ".pdf")
     gold_out = Path(out) / split / "gold json" / (name + ".json")
     row = {"split": split, "lob": lob, "carrier": pdf.parent.parent.name,
-           "source": str(pdf.relative_to(ROOT / "Data" / "original data")), "sample": k,
+           "source": pdf.relative_to(ROOT / "Data" / "original data").as_posix(), "sample": k,
            "pdf": str(pdf_out.relative_to(out)), "gold": str(gold_out.relative_to(out))}
     if pdf_out.exists() and gold_out.exists() or \
             (Path(out) / "Flagged" / split / "pdfs" / (name + ".pdf")).exists():
@@ -292,7 +292,7 @@ def describe(task):
     """The manifest row of a task, before it is made."""
     split, lob, pdf, k, out, name = task
     return {"split": split, "lob": lob, "carrier": pdf.parent.parent.name,
-            "source": str(pdf.relative_to(ROOT / "Data" / "original data")), "sample": k,
+            "source": pdf.relative_to(ROOT / "Data" / "original data").as_posix(), "sample": k,
             "pdf": str(Path(split) / "pdfs" / (name + ".pdf")),
             "gold": str(Path(split) / "gold json" / (name + ".json"))}
 

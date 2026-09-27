@@ -586,6 +586,21 @@ def test_the_end_of_a_wrapped_line_is_not_a_name(tmp_path):
     assert not [f for f in generic.find_values(cells) if f.text == "Reporting"]
 
 
+def test_a_po_box_is_never_one_the_document_prints():
+    from fideon_synth.values import Values
+    for i in range(300):
+        assert generic.Faker(Values("%d:p" % i), ["PO Box 592"])._pobox("PO Box 177") != "PO Box 592"
+
+
+def test_a_column_heading_is_not_a_county(tmp_path):
+    doc = fitz.open()
+    page = doc.new_page()
+    for x, text in [(40, "City"), (120, "County"), (200, "St"), (240, "Zip")]:
+        page.insert_text((x, 100), text, fontsize=9)
+    cells = overlay.cells(page, fitz.Identity, overlay.Ink(page))
+    assert not [f for f in generic.find_values(cells) if f.kind in ("county", "place")]
+
+
 def test_a_schema_label_is_not_a_name():
     assert not generic._looks_like_name("Buyout Indicator")
     assert not generic._looks_like_name("Primary Residence")

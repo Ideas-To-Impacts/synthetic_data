@@ -943,7 +943,8 @@ def find_values(cell_list):
         if left is None or not PLACE_LABEL.match(left.text.strip()) \
                 or any(f.cell is cell for f in found) \
                 or not re.fullmatch(r"[A-Za-z][A-Za-z.' -]{1,40}", text) \
-                or NOT_A_NAME.search(text):           # the next heading: "City  State  Zip"
+                or NOT_A_NAME.search(text) \
+                or len(re.sub(r"[^A-Za-z]", "", text)) < 3:  # the next heading: "City  State  Zip", "County | St | Zip"
             continue
         s = len(cell.text) - len(cell.text.lstrip())
         f = Found("county" if "county" in left.text.lower() else "place", cell, s, s + len(text))
@@ -1224,8 +1225,9 @@ class Faker:
         return self._unique(make, old)
 
     def _pobox(self, old):
+        # never the box it replaces, nor another box this document prints
         m = re.match(r"(.*?)(\d+)$", old)
-        return m.group(1) + str(self.v.integer(12, 990))
+        return self._unique(lambda: m.group(1) + str(self.v.integer(12, 990)), old)
 
     def _cityline(self, old):
         comma = "," in old
