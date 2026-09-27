@@ -37,6 +37,9 @@ DPI = 200
 MIN_CONFIDENCE = 0.85
 _engine = None
 _tried = False
+#: which engine read a cached page - another engine, version or device never
+#: reuses its readings
+_engine_id = "none"
 
 
 def engine():
@@ -44,7 +47,7 @@ def engine():
     FIDEON_NO_OCR is set. FIDEON_OCR_GPU=cuda (onnxruntime-gpu, NVIDIA) or
     FIDEON_OCR_GPU=dml (onnxruntime-directml, any Windows GPU) runs it on
     the graphics card; without it, or when the card cannot be used, the CPU."""
-    global _engine, _tried
+    global _engine, _tried, _engine_id
     if not _tried:
         _tried = True
         if not os.environ.get("FIDEON_NO_OCR"):
@@ -69,10 +72,17 @@ def engine():
                 except Exception:
                     _engine = None
             if _engine is None:
+                gpu = ""
                 try:
                     _engine = RapidOCR()
                 except Exception:                # no model
                     _engine = None
+            if _engine is not None:
+                try:
+                    from importlib.metadata import version
+                    _engine_id = "rapidocr-%s-%s" % (version("rapidocr-onnxruntime"), gpu or "cpu")
+                except Exception:
+                    _engine_id = "rapidocr-%s" % (gpu or "cpu")
     return _engine
 
 
@@ -97,7 +107,8 @@ def _ocr(ocr, img, key):
     of a source are the same image in every variant."""
     import hashlib
     import pickle
-    digest = hashlib.sha1(img.tobytes()).hexdigest() + "%dx%d" % img.shape[:2] + key.replace("|", "_")
+    digest = hashlib.sha1((_engine_id + key).encode() + img.tobytes()).hexdigest() \
+        + "%dx%d" % img.shape[:2] + key.replace("|", "_")
     if digest in _memo:
         return _memo[digest]
     folder = os.environ.get("FIDEON_OCR_CACHE")
