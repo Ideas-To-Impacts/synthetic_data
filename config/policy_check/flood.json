@@ -12,7 +12,7 @@
     "field_count": 686,
     "corpus_document_count": 5,
     "corpus_carrier_count": 2,
-    "aliased_fields": 151,
+    "aliased_fields": 153,
     "field_count_as_supplied": 341,
     "extensions_applied": "scripts/canonical_schema_extensions.py"
   },
@@ -1378,7 +1378,8 @@
             "Call us at",
             "By calling",
             "Automatic Payments",
-            "For payment questions call"
+            "For payment questions call",
+            "Phone Number"
           ]
         }
       }
@@ -1683,7 +1684,11 @@
                   "$ref": "#/$defs/FieldValue"
                 },
                 "city": {
-                  "$ref": "#/$defs/FieldValue"
+                  "$ref": "#/$defs/FieldValue",
+                  "fideon:aliases": [
+                    "City State Zip",
+                    "City, State, Zip"
+                  ]
                 },
                 "state": {
                   "$ref": "#/$defs/FieldValue"
@@ -1983,7 +1988,10 @@
                 "$ref": "#/$defs/FieldValue"
               }
             }
-          }
+          },
+          "fideon:aliases": [
+            "Named Mortgagee Hereon"
+          ]
         },
         "waiting_period_days": {
           "$ref": "#/$defs/FieldValue"

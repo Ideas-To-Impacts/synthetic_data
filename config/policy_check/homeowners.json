@@ -9,10 +9,10 @@
     "version": "1.4.0",
     "line_of_business_as_supplied": "Homeowners",
     "line_specific_block": "homeowners",
-    "field_count": 1511,
+    "field_count": 1512,
     "corpus_document_count": 10,
     "corpus_carrier_count": 4,
-    "aliased_fields": 827,
+    "aliased_fields": 828,
     "field_count_as_supplied": 380,
     "extensions_applied": "scripts/canonical_schema_extensions.py",
     "gap_analysis_extensions": "2026-09-24: 409 fields added from a 69-PDF / 11-carrier homeowners gap analysis; misplaced aliases moved (Inception Date, Mail To, Amended Date, Modifies Coverage(s) at Renewal, Authorized Representative, Applicable Coverage(s)). Applied directly to this file: the generator scripts named in fideon:note are not in this repo. Second pass (same day, stricter re-review of every page): +212 fields, section/list/column-header aliases, form-embedded thresholds (claim, appraisal, liberalization, watercraft/vehicle, vacancy), per-building copies of dwelling and coverage detail in scheduled_locations[]; underwriting.consumer_report_disclosure became consumer_report_disclosures[]. Third pass: +19 fields; scheduled_locations[] blocks inherit the aliases of their top-level twins; hyphen/en-dash/double-dash variants of coverage labels; column headers (LIMIT, PREMIUM, Limit of Liability) sit on every field they span; a few labels (Appraisal, Policy period, Secured Party Coverage, Payment basis) deliberately name two sibling fields because one printed clause carries both values. Fourth pass: final residual labels; every mix of hyphen/en dash/double hyphen in coverage labels; fields previously covered only by a heading now carry their own label. Fifth pass (independent, value-first review of every page): 33 fields added; wrong aliases fixed (Premium At Inception is the total policy premium; Mortgagee Clause, Who is providing this notice?, Watercraft, PAGE, Special Limits of Liability re-homed). Refinement: merged duplicate fields (homeowners.dwelling.distance_to_fire_station -> homeowners.rating_characteristics.distance_to_fire_station; homeowners.dwelling.distance_to_hydrant -> homeowners.rating_characteristics.feet_from_hydrant; homeowners.dwelling.vacancy_threshold_days -> homeowners.dwelling.vacancy_thresholds[].days; homeowners.dwelling.number_of_weeks_rented -> homeowners.seasonal_rental[].number_of_weeks_rented; homeowners.scheduled_locations[].number_of_weeks_rented -> homeowners.seasonal_rental[].number_of_weeks_rented); every field annotated with fideon:value_type and a generated description."
@@ -1688,7 +1688,8 @@
             "Policy Period From",
             "Policy Term",
             "Policy Term Effective Date",
-            "Start Date"
+            "Start Date",
+            "PolicyEffectiveDate"
           ],
           "fideon:value_type": "date",
           "description": "Effective date (Policy). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Both dates\", \"Effective Date\", \"Effective Date Of Policy\", \"Policy Effective\"."
@@ -7101,6 +7102,16 @@
               ],
               "fideon:value_type": "text",
               "description": "Coverage C self storage minimum (Homeowners / Section i property coverages). Text as printed. Printed as e.g. \"b. Self-storage Facilities\", \"Self-storage Facilities\"."
+            },
+            "credit_card_forgery_counterfeit_money_limit": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Credit Card, Electronic Fund Transfer Card or Access Device, Forgery and Counterfeit Money",
+                "Device, Forgery And Counterfeit Money",
+                "Forgery and Counterfeit Money"
+              ],
+              "fideon:value_type": "money",
+              "description": "Credit card forgery counterfeit money limit (Homeowners / Section i property coverages). Money amount; parsed is the number (negative for credits), null for Incl./***/N/A. Printed as e.g. \"Credit Card, Electronic Fund Transfer Card or Access Device, Forgery and Counterfeit Money\", \"Device, Forgery And Counterfeit Money\", \"Forgery and Counterfeit Money\"."
             }
           },
           "fideon:aliases": [
@@ -8000,10 +8011,11 @@
               "$ref": "#/$defs/FieldValue",
               "fideon:aliases": [
                 "Named Storm Deductible",
-                "Named Storm Percentage Deductible"
+                "Named Storm Percentage Deductible",
+                "Named StormPercentage Deductible"
               ],
               "fideon:value_type": "percentage",
-              "description": "Named storm deductible percentage (Homeowners / Deductibles). Percentage; parsed is the number (10% -> 10). Printed as e.g. \"Named Storm Deductible\", \"Named Storm Percentage Deductible\"."
+              "description": "Named storm deductible percentage (Homeowners / Deductibles). Percentage; parsed is the number (10% -> 10). Printed as e.g. \"Named Storm Deductible\", \"Named Storm Percentage Deductible\", \"Named StormPercentage Deductible\"."
             },
             "water_backup_deductible": {
               "$ref": "#/$defs/FieldValue",
@@ -10491,7 +10503,9 @@
             "LOCATION DESCRIPTION",
             "Location Summary",
             "Rating Information",
-            "Supplemental Policy Declarations for Location #"
+            "Supplemental Policy Declarations for Location #",
+            "Location 1, Building 1",
+            "Location 1, Building 2"
           ],
           "description": "List of scheduled locations (Homeowners). Printed as e.g. \"ADDITIONAL LOCATION DETAILS\", \"Coverage Declaration for Location #\", \"Coverage Information for Location\", \"Coverages\"."
         },

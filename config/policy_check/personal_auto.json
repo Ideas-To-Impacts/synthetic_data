@@ -3473,7 +3473,8 @@
             "collision_premium": {
               "$ref": "#/$defs/FieldValue",
               "fideon:aliases": [
-                "Collision Loss"
+                "Collision Loss",
+                "Collision"
               ]
             },
             "valuation_basis": {
@@ -3784,7 +3785,8 @@
             "Discounts Included in Your Premium",
             "Policy Discounts/Credits, Surcharges, Other",
             "VEHICLE DISCOUNTS",
-            "Your policy discounts"
+            "Your policy discounts",
+            "Companion Package"
           ]
         },
         "household": {

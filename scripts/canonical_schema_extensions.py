@@ -783,7 +783,8 @@ ADDED = [('document.document_form_number', 'field'),
  ('underwriting.consumer_report_disclosures[].updated_report_days', 'field'),
  ('underwriting.consumer_report_disclosures[].form_reference', 'field'),
  ('underwriting.consumer_report_disclosures[].reporting_agency_phone', 'field'),
- ('underwriting.prior_losses_last_5_years', 'field')]
+ ('underwriting.prior_losses_last_5_years', 'field'),
+ ('homeowners.section_i_property_coverages.credit_card_forgery_counterfeit_money_limit', 'field')]
 
 # ── 2. merged duplicates (removed field -> kept field) ──────────────────────
 MERGES = {
@@ -5308,6 +5309,15 @@ SHARED_ALIASES = {'carrier.writing_company_name': ['Policy Issued By'],
  'premium.stamping_fee': ['Stamp Fee', 'Stamp'],
  'carrier.naic_number': ['NAIC #'],
  'billing.phone': ['For payment questions call']}
+# the rest of the personal-lines review: a coverage the forms print as its own
+# row, a location heading, and labels whose text layer lost a space
+SHARED_ALIASES.update({
+ 'homeowners.section_i_property_coverages.credit_card_forgery_counterfeit_money_limit': [
+     'Credit Card, Electronic Fund Transfer Card or Access Device, Forgery and Counterfeit Money',
+     'Device, Forgery And Counterfeit Money', 'Forgery and Counterfeit Money'],
+ 'homeowners.scheduled_locations': ['Location 1, Building 1', 'Location 1, Building 2'],
+ 'policy.effective_date': ['PolicyEffectiveDate'],
+ 'homeowners.deductibles.named_storm_deductible_percentage': ['Named StormPercentage Deductible']})
 for _path, _labels in SHARED_ALIASES.items():
     ALIASES[_path] = ALIASES.get(_path, []) + [a for a in _labels if a not in ALIASES.get(_path, [])]
 

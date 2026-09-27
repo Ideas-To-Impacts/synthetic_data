@@ -9,10 +9,10 @@
     "version": "1.4.0",
     "line_of_business_as_supplied": "Recreational Vehicle",
     "line_specific_block": "recreational_vehicle",
-    "field_count": 905,
+    "field_count": 906,
     "corpus_document_count": 3,
     "corpus_carrier_count": 1,
-    "aliased_fields": 280,
+    "aliased_fields": 282,
     "field_count_as_supplied": 403,
     "extensions_applied": "scripts/canonical_schema_extensions.py"
   },
@@ -186,6 +186,12 @@
             "URL",
             "Link",
             "Source URL"
+          ]
+        },
+        "as_of_date": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Display Policy as of"
           ]
         }
       }
@@ -552,7 +558,10 @@
           }
         },
         "program_name": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "AUTO - SPECIAL"
+          ]
         },
         "policy_form_name": {
           "$ref": "#/$defs/FieldValue"
@@ -2243,7 +2252,9 @@
               "NOTICE TO SENIOR CITIZENS",
               "PENNSYLVANIA NOTICE",
               "Privacy Disclosure Notice",
-              "State Notice"
+              "State Notice",
+              "For Nevada Residents Only",
+              "For California Residents Only"
             ]
           },
           "form_reference": {
