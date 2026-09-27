@@ -42,7 +42,8 @@ import os
 import sys
 import time
 from collections import defaultdict
-from multiprocessing import Pool
+from concurrent.futures import ProcessPoolExecutor, as_completed
+from concurrent.futures.process import BrokenProcessPool
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -126,8 +127,9 @@ def make(task):
     row = {"split": split, "lob": lob, "carrier": pdf.parent.parent.name,
            "source": str(pdf.relative_to(ROOT / "Data" / "original data")), "sample": k,
            "pdf": str(pdf_out.relative_to(out)), "gold": str(gold_out.relative_to(out))}
-    if pdf_out.exists() and gold_out.exists():
-        return None                               # made on an earlier run
+    if pdf_out.exists() and gold_out.exists() or \
+            (Path(out) / "Flagged" / split / "pdfs" / (name + ".pdf")).exists():
+        return None                               # made on an earlier run (or set aside, flagged)
     t = time.time()
     try:
         schema = CanonicalSchema.load(generic._lob_for(pdf, str(ROOT / "config" / "policy_check")),
@@ -217,13 +219,14 @@ def main(argv=None):
     new = not manifest.exists()
     done = failed = 0
     start = time.time()
-    with open(manifest, "a", newline="", encoding="utf-8") as fh, Pool(args.workers) as pool:
+    tries = defaultdict(int)          # task -> how many times a worker died with it in flight
+    with open(manifest, "a", newline="", encoding="utf-8") as fh:
         writer = csv.DictWriter(fh, fieldnames=FIELDS)
         if new:
             writer.writeheader()
-        for row in pool.imap_unordered(make, tasks):
-            if row is None:
-                continue
+
+        def record(row):
+            nonlocal done, failed
             writer.writerow(row)
             fh.flush()
             done += 1
@@ -232,8 +235,56 @@ def main(argv=None):
                 print("%5d made, %d with problems, %.0f min | %s %s" % (
                     done, failed, (time.time() - start) / 60,
                     "ok  " if row["ok"] else "PROBLEM", row["pdf"]), flush=True)
+
+        pending = list(tasks)
+        while pending:
+            # a worker that dies (out of memory, a crash in a library) breaks
+            # the pool: start fresh workers for what is left, instead of
+            # waiting for ever on the document it held
+            with ProcessPoolExecutor(args.workers) as pool:
+                futures = {pool.submit(make, t): t for t in pending}
+                broken = []
+                for fut in as_completed(futures):
+                    try:
+                        row = fut.result()
+                    except BrokenProcessPool:
+                        broken.append(futures[fut])
+                        continue
+                    if row is not None:
+                        record(row)
+            if not broken:
+                break
+            print("  a worker died - starting the workers again for %d documents" % len(broken), flush=True)
+            pending = []
+            for t in broken:
+                if made_already(t):
+                    continue
+                tries[t[:4]] += 1
+                if tries[t[:4]] >= 3:                     # it takes a worker down every time
+                    row = describe(t)
+                    row.update(pages=0, fields=0, ok=False, seconds=0,
+                               problems="a worker died making this document three times")
+                    record(row)
+                else:
+                    pending.append(t)
     print("DONE: %d made this run, %d with problems" % (done, failed))
     return 0
+
+
+def describe(task):
+    """The manifest row of a task, before it is made."""
+    split, lob, pdf, k, out = task
+    name = "%s__%s__synth_%03d" % (lob, pdf.stem, k)
+    return {"split": split, "lob": lob, "carrier": pdf.parent.parent.name,
+            "source": str(pdf.relative_to(ROOT / "Data" / "original data")), "sample": k,
+            "pdf": str(Path(split) / "pdfs" / (name + ".pdf")),
+            "gold": str(Path(split) / "gold json" / (name + ".json"))}
+
+
+def made_already(task):
+    row, out = describe(task), task[4]
+    return (Path(out) / row["pdf"]).exists() and (Path(out) / row["gold"]).exists() \
+        or (Path(out) / "Flagged" / row["pdf"]).exists()
 
 
 if __name__ == "__main__":
