@@ -1,0 +1,249 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "POLICY VIEW",
+   "source": "structural",
+   "parsed": "Policy View"
+  },
+  "document_title_as_stated": "POLICY VIEW",
+  "application_date": "03/11/2019",
+  "application_time": "10:07",
+  "bind_date": "03/16/2019",
+  "bind_time": "00:01",
+  "bind_id": "SNYURH0B",
+  "control_number": "077182487138399",
+  "version_number": "17",
+  "buyout_indicator": "NO",
+  "channel_of_origin": "ALLIANCE AGENCY",
+  "channel_of_process": "ALLIANCE AGENCY",
+  "channel_of_bind": "ALLIANCE AGENCY",
+  "source_of_quote": "ALLIANCE EASY QUOTE",
+  "application_of_origin": "ALLIANCE UI",
+  "front_end_matched": "YES",
+  "geocode_status": "NONE"
+ },
+ "carrier": {
+  "company_name": {
+   "raw": "Allstate",
+   "source": "structural"
+  }
+ },
+ "producer": {
+  "agency_name": "HBE GROUP INC",
+  "producer_code": "A264653",
+  "producer_contact_name": "A264653"
+ },
+ "named_insured": {
+  "primary_name": "Ambrose Pellier",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "residence_type": "HOME",
+  "ownership_type": "OWNS",
+  "marital_status": "MARRIED AND LIVES WITH SPOUSE",
+  "contact": {
+   "phone": "(315) 555-0216"
+  },
+  "mailing_address": {
+   "line_1": "3818 STATE ROUTE 28",
+   "line_2": "PO BX 202",
+   "city": "OLD FORGE",
+   "state": "NY",
+   "postal_code": "13420 - 7846"
+  }
+ },
+ "policy": {
+  "policy_number": "978359119",
+  "rating_state": "NY",
+  "program_name": "AUTO - SPECIAL",
+  "product_code": "AUTO SPEC",
+  "policy_term_as_printed": "03/16/2025 - 03/16/2026",
+  "effective_date": "03/16/2025",
+  "expiration_date": "03/16/2026",
+  "original_year": "2019",
+  "times_renewed": {
+   "raw": "6",
+   "parsed": 6
+  },
+  "policy_status": "ACTIVE",
+  "policy_tier": "4866 01",
+  "is_renewal": {
+   "raw": "Yes",
+   "source": "structural"
+  }
+ },
+ "billing": {
+  "payment_plan": "MONTHLY",
+  "payment_method": "DIRECT MAIL",
+  "paperless_billing_enrolled": {
+   "raw": "NOT ENROLLED",
+   "parsed": "No"
+  },
+  "account_balance": "$0.00",
+  "last_bill_amount": "$33.48",
+  "amount_due": "$0.00",
+  "due_date": "03/16/2025"
+ },
+ "premium": {
+  "total_policy_premium": "$307.86",
+  "annualized_adjusted_premium": "$307.86",
+  "rate_control_number": "979",
+  "discounts_and_credits": [
+   {
+    "description": "Anti-Lock Brake",
+    "applies_to": "2019 HARLEY DAV FLHTK",
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "FullPay",
+    "applies_to": "2019 HARLEY DAV FLHTK",
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Good Rider",
+    "applies_to": "2019 HARLEY DAV FLHTK",
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Home Ownership",
+    "applies_to": "2019 HARLEY DAV FLHTK",
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   }
+  ]
+ },
+ "document_type_detail": {
+  "renewal_offer": {
+   "expiring_premium": "$340.75",
+   "renewal_premium": "$342.09",
+   "premium_change_amount": "$1.34",
+   "premium_change_percentage": "+0.39%",
+   "renewal_effective_date": "03/16/2025"
+  }
+ },
+ "motorcycle": {
+  "units": [
+   {
+    "unit_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "2019",
+     "parsed": 2019
+    },
+    "make": "HARLEY DAV",
+    "model": "FLHTK",
+    "vin": "1HD1KEF18KB668131",
+    "garaging_address": {
+     "postal_code": "13420"
+    },
+    "premium": "$307.86",
+    "annual_mileage": {
+     "raw": "2,000",
+     "parsed": 2000
+    },
+    "usage_class": "Pleasure",
+    "billing_group": "00",
+    "rating_tier": "0001",
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury",
+      "limit_amount": "50/100",
+      "premium": "$34.78"
+     },
+     {
+      "coverage_name": "Property Damage",
+      "limit_amount": "50",
+      "premium": "$25.86"
+     },
+     {
+      "coverage_name": "Supplementary Uninsured / Underinsured Motorist",
+      "limit_amount": "50/100",
+      "premium": "$35.17"
+     },
+     {
+      "coverage_name": "Personal Injury Protection Coverage",
+      "limit_amount": "VA09",
+      "premium": "$1.95"
+     },
+     {
+      "coverage_name": "Collision",
+      "deductible_amount": "500",
+      "premium": "$161.69"
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "deductible_amount": "500",
+      "premium": "$21.00"
+     },
+     {
+      "coverage_name": "Roadside Coverage(Occ)",
+      "limit_amount": "50",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Guest Liability",
+      "limit_amount": "50/100",
+      "premium": "$27.41"
+     },
+     {
+      "coverage_name": "Optional Equipment",
+      "limit_amount": "1000"
+     }
+    ]
+   }
+  ],
+  "operators": [
+   {
+    "name": "Ambrose Pellier",
+    "relationship_to_insured": "SAME",
+    "marital_status": "MARRIED AND LIVES WITH SPOUSE",
+    "gender": "MALE",
+    "date_of_birth": {
+     "raw": "02/XX/1960",
+     "parsed": null
+    },
+    "driver_status": "DRIVER"
+   }
+  ],
+  "liability_coverages": {
+   "bodily_injury_per_person_limit": "50",
+   "bodily_injury_per_accident_limit": "100",
+   "property_damage_limit": "50",
+   "guest_passenger_liability_limit": "50/100",
+   "supplementary_uninsured_underinsured_limit": "50/100"
+  },
+  "physical_damage_coverages": {
+   "collision_deductible": "500",
+   "comprehensive_deductible": "500",
+   "roadside_assistance": "50",
+   "custom_parts_and_equipment_limit": "1000"
+  },
+  "additional_coverages": [
+   {
+    "coverage_name": "Supplemental Spousal liability",
+    "is_included": {
+     "raw": "Included",
+     "parsed": "Yes"
+    }
+   }
+  ]
+ }
+}

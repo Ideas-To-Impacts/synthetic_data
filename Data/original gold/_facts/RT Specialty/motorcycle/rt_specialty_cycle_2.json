@@ -1,0 +1,398 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "DECLARATIONS PAGE",
+   "parsed": "Declaration"
+  },
+  "document_title_as_stated": "DECLARATIONS PAGE",
+  "print_date": "09/25/2024",
+  "print_code": "A1000D0711",
+  "source_url": "www.asppolicyservice.com"
+ },
+ "carrier": {
+  "company_name": "American Reliable Insurance Company",
+  "address": {
+   "line_1": "8667 E Hartford Dr Suite 225",
+   "city": "Scottsdale",
+   "state": "AZ",
+   "postal_code": "85255-6566"
+  }
+ },
+ "producer": {
+  "agency_name": "PATRIOTIC INSURANCE GROUP",
+  "producer_code": "9550-0823",
+  "address": {
+   "line_1": "159 ROUTE 28",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360"
+  },
+  "contact": {
+   "phone": "(845) 610-5700"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Cordelia Whitlock",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "mailing_address": {
+   "line_1": "PO Box 244",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "policy": {
+  "policy_number": "CYC237253-09",
+  "policy_type": "NY - MOTORCYCLE",
+  "effective_date": "07/23/2024",
+  "effective_time": "12:01 A.M.",
+  "expiration_date": "07/23/2025",
+  "expiration_time": "12:01 A.M.",
+  "time_zone": "Standard Time"
+ },
+ "premium": {
+  "total_policy_premium": "$711.00",
+  "minimum_written_premium": "$75.00",
+  "discounts_and_credits": [
+   {
+    "description": "Homeowner Discount",
+    "applies_to": {
+     "raw": "DRI 1/UNIT 1, DRI 2/UNIT 2",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "X",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi Unit Discount",
+    "applies_to": {
+     "raw": "DRI 1/UNIT 1, DRI 2/UNIT 2",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "X",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Renewal Discount",
+    "applies_to": {
+     "raw": "DRI 1/UNIT 1, DRI 2/UNIT 2",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "X",
+     "parsed": "Yes"
+    }
+   }
+  ]
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "A1000P0902R1202"
+  },
+  {
+   "form_number": "A1000E0902R1202"
+  },
+  {
+   "form_number": "A1079E0905"
+  },
+  {
+   "form_number": "A1019M1003-FS20"
+  },
+  {
+   "form_number": "NIP0115"
+  },
+  {
+   "form_number": "M8094G1119"
+  },
+  {
+   "form_number": "A1004E0902"
+  },
+  {
+   "form_number": "A1003G1205"
+  },
+  {
+   "form_number": "A1045E0403"
+  },
+  {
+   "form_number": "A1048E1007"
+  },
+  {
+   "form_number": "A1046E0403"
+  },
+  {
+   "form_number": "A1119E1007"
+  },
+  {
+   "form_number": "A1118E1007"
+  },
+  {
+   "form_number": "A1003E0902R1202"
+  },
+  {
+   "form_number": "A1055G0618"
+  },
+  {
+   "form_number": "GAA1012"
+  }
+ ],
+ "motorcycle": {
+  "units": [
+   {
+    "unit_number": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "2009",
+     "parsed": 2009
+    },
+    "make": "HARLEY-DAVIDSON",
+    "model": "FLHX STREET GLIDE",
+    "vin": "1HD1KB41X9Y656037",
+    "engine_displacement_cc": {
+     "raw": "1584",
+     "parsed": 1584
+    },
+    "territory_code": "1",
+    "premium": "$287.00",
+    "garaging_address": {
+     "full": "436 STATE ROUTE 28 INLET, NY 13360"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury",
+      "limit_basis": "Each Person / Each Accident",
+      "limit_amount": "$100,000 / $300,000",
+      "premium": "$19"
+     },
+     {
+      "coverage_name": "Wrongful Death",
+      "limit_basis": "Each Person / Each Accident",
+      "limit_amount": "$50,000/$100,000",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Property Damage",
+      "limit_basis": "Each Accident",
+      "limit_amount": "$100,000",
+      "premium": "$10"
+     },
+     {
+      "coverage_name": "Passenger Liability",
+      "limit_basis": "Each Person / Each Accident",
+      "limit_amount": "$100,000 / $300,000",
+      "premium": "$25"
+     },
+     {
+      "coverage_name": "Medical Payments",
+      "limit_basis": "Each Person / Less Deductible",
+      "limit_amount": "$5,000 / $50",
+      "premium": "$43"
+     },
+     {
+      "coverage_name": "Pedestrian PIP",
+      "limit_basis": "Each Person",
+      "limit_amount": "$50,000",
+      "premium": "$2"
+     },
+     {
+      "coverage_name": "Optional Basic Econ Loss",
+      "limit_basis": "Each Person",
+      "limit_amount": "$25,000",
+      "premium": "$2"
+     },
+     {
+      "coverage_name": "Uninsured Motorist",
+      "limit_basis": "Each Person / Each Accident",
+      "limit_amount": "$25,000 / $50,000",
+      "premium": "$18"
+     },
+     {
+      "coverage_name": "Supple UM/UIM",
+      "limit_basis": "Each Person / Each Accident",
+      "limit_amount": "$100,000 / $300,000",
+      "premium": "$25"
+     },
+     {
+      "coverage_name": "Collision",
+      "limit_basis": "Less Deductible",
+      "deductible_amount": "$250",
+      "premium": "$108"
+     },
+     {
+      "coverage_name": "Other Than Collision",
+      "limit_basis": "Less Deductible",
+      "deductible_amount": "$250",
+      "premium": "$25"
+     },
+     {
+      "coverage_name": "Accessories",
+      "limit_amount": "$3,000",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Safety Clothing & Towing",
+      "premium": "$10"
+     }
+    ],
+    "accessories_schedule": [
+     {
+      "description": "Trailer",
+      "amount": "$3,000.00"
+     }
+    ]
+   },
+   {
+    "unit_number": {
+     "raw": "2",
+     "parsed": 2
+    },
+    "year": {
+     "raw": "2022",
+     "parsed": 2022
+    },
+    "make": "HARLEY-DAVIDSON",
+    "model": "FLRT FREEWHEELER",
+    "vin": "1HD1KEF13NB663228",
+    "engine_displacement_cc": {
+     "raw": "1868",
+     "parsed": 1868
+    },
+    "territory_code": "1",
+    "premium": "$424.00",
+    "garaging_address": {
+     "full": "436 STATE ROUTE 28 INLET, NY 13360"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury",
+      "limit_basis": "Each Person / Each Accident",
+      "limit_amount": "$100,000 / $300,000",
+      "premium": "$38"
+     },
+     {
+      "coverage_name": "Wrongful Death",
+      "limit_basis": "Each Person / Each Accident",
+      "limit_amount": "$50,000/$100,000",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Property Damage",
+      "limit_basis": "Each Accident",
+      "limit_amount": "$100,000",
+      "premium": "$18"
+     },
+     {
+      "coverage_name": "Passenger Liability",
+      "limit_basis": "Each Person / Each Accident",
+      "limit_amount": "$100,000 / $300,000",
+      "premium": "$25"
+     },
+     {
+      "coverage_name": "Medical Payments",
+      "limit_basis": "Each Person / Less Deductible",
+      "limit_amount": "$5,000 / $50",
+      "premium": "$46"
+     },
+     {
+      "coverage_name": "Pedestrian PIP",
+      "limit_basis": "Each Person",
+      "limit_amount": "$50,000",
+      "premium": "$2"
+     },
+     {
+      "coverage_name": "Optional Basic Econ Loss",
+      "limit_basis": "Each Person",
+      "limit_amount": "$25,000",
+      "premium": "$2"
+     },
+     {
+      "coverage_name": "Uninsured Motorist",
+      "limit_basis": "Each Person / Each Accident",
+      "limit_amount": "$25,000 / $50,000",
+      "premium": "$22"
+     },
+     {
+      "coverage_name": "Supple UM/UIM",
+      "limit_basis": "Each Person / Each Accident",
+      "limit_amount": "$100,000 / $300,000",
+      "premium": "$31"
+     },
+     {
+      "coverage_name": "Collision",
+      "limit_basis": "Less Deductible",
+      "deductible_amount": "$250",
+      "premium": "$188"
+     },
+     {
+      "coverage_name": "Other Than Collision",
+      "limit_basis": "Less Deductible",
+      "deductible_amount": "$250",
+      "premium": "$42"
+     },
+     {
+      "coverage_name": "Accessories",
+      "limit_amount": "$3,000",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Safety Clothing & Towing",
+      "premium": "$10"
+     }
+    ]
+   }
+  ],
+  "operators": [
+   {
+    "driver_number": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "name": "Cordelia Whitlock",
+    "date_of_birth": "08/24/1973",
+    "driver_discounts": [
+     "Homeowner Discount",
+     "Multi Unit Discount",
+     "Renewal Discount"
+    ]
+   }
+  ],
+  "liability_coverages": {
+   "bodily_injury_per_person_limit": "$100,000",
+   "bodily_injury_per_accident_limit": "$300,000",
+   "property_damage_limit": "$100,000",
+   "guest_passenger_liability_limit": "$100,000 / $300,000",
+   "medical_payments_limit": "$5,000",
+   "uninsured_motorist_limit": "$25,000 / $50,000",
+   "supplementary_uninsured_underinsured_limit": "$100,000 / $300,000"
+  },
+  "no_fault_benefits": {
+   "mandatory_pedestrian_pip_limit": "$50,000",
+   "optional_basic_economic_loss_limit": "$25,000"
+  },
+  "physical_damage_coverages": {
+   "collision_deductible": "$250",
+   "comprehensive_deductible": "$250",
+   "custom_parts_and_equipment_limit": "$3,000"
+  }
+ }
+}

@@ -1,0 +1,246 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "This is your Declarations Page",
+   "parsed": "Declaration"
+  },
+  "document_title_as_stated": "Motorcycle Insurance Coverage Summary",
+  "issue_date": "September 2, 2025",
+  "print_code": "Form 6489 NY (07/07)",
+  "line_of_business_as_stated": "Motorcycle Insurance"
+ },
+ "carrier": {
+  "company_name": {
+   "raw": "Progressive",
+   "source": "structural"
+  },
+  "writing_company_name": "Progressive Northwestern Ins Co",
+  "contact": {
+   "website": "progressiveagent.com"
+  }
+ },
+ "claim_reporting": {
+  "claims_phone": "1-800-274-4499"
+ },
+ "producer": {
+  "agency_name": "PATRIOTIC INS GROUP",
+  "contact": {
+   "phone": "1-315-357-5901"
+  },
+  "address": {
+   "line_1": "159 NY-28",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Ambrose Pellier",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "mailing_address": {
+   "line_1": "PO BOX 202",
+   "city": "OLD FORGE",
+   "state": "NY",
+   "postal_code": "13420"
+  }
+ },
+ "policy": {
+  "policy_number": "862180906",
+  "policy_term_as_printed": "Aug 26, 2025 - Aug 26, 2026",
+  "effective_date": "August 26, 2025",
+  "effective_time": "12:01 a.m.",
+  "expiration_date": "August 26, 2026",
+  "expiration_time": "12:01 a.m.",
+  "policy_form_number": "5979 NY",
+  "policy_form_edition": "10/17",
+  "policy_tier": "Standard C",
+  "policy_term_months": {
+   "raw": "12",
+   "source": "structural",
+   "parsed": 12
+  }
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "A135 NY",
+   "edition_date": "11/13"
+  }
+ ],
+ "premium": {
+  "total_policy_premium": "$405",
+  "discounts_and_credits": [
+   {
+    "description": "Anti-Lock Brakes",
+    "amount": "$34",
+    "applies_to": "2019 HARLEY-DAVIDSON FLHTK ULTRA LIMITED"
+   },
+   {
+    "description": "Paid in Full",
+    "amount": "$56",
+    "applies_to": "2019 HARLEY-DAVIDSON FLHTK ULTRA LIMITED"
+   },
+   {
+    "description": "Multi-Policy",
+    "amount": "$22",
+    "applies_to": "2019 HARLEY-DAVIDSON FLHTK ULTRA LIMITED"
+   },
+   {
+    "description": "Home Owner",
+    "amount": "$120",
+    "applies_to": "2019 HARLEY-DAVIDSON FLHTK ULTRA LIMITED"
+   },
+   {
+    "description": "Transfer",
+    "amount": "$88",
+    "applies_to": "2019 HARLEY-DAVIDSON FLHTK ULTRA LIMITED"
+   }
+  ]
+ },
+ "motorcycle": {
+  "units": [
+   {
+    "unit_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "2019",
+     "parsed": 2019
+    },
+    "make": "HARLEY-DAVIDSON",
+    "model": "FLHTK ULTRA LIMITED",
+    "vin": "1HD1KEF18KB668131",
+    "engine_displacement_cc": {
+     "raw": "1868",
+     "parsed": 1868
+    },
+    "garaging_address": {
+     "postal_code": "13420"
+    },
+    "premium": "$405",
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury Liability",
+      "limit_basis": {
+       "raw": "each person/each accident",
+       "source": "structural"
+      },
+      "limit_amount": "$250,000 each person/$500,000 each accident",
+      "premium": "$70",
+      "notes": "Including Supplemental Spousal Liability"
+     },
+     {
+      "coverage_name": "Property Damage Liability",
+      "limit_basis": {
+       "raw": "each accident",
+       "source": "structural"
+      },
+      "limit_amount": "$100,000 each accident",
+      "premium": {
+       "raw": "39",
+       "parsed": 39.0
+      }
+     },
+     {
+      "coverage_name": "Mandatory Pedestrian Personal Injury Protection",
+      "limit_basis": {
+       "raw": "each person",
+       "source": "structural"
+      },
+      "limit_amount": "$50,000 each person",
+      "deductible_amount": "$0",
+      "premium": {
+       "raw": "1",
+       "parsed": 1.0
+      }
+     },
+     {
+      "coverage_name": "Aggregate Pedestrian No-Fault Benefits",
+      "limit_amount": "$50,000"
+     },
+     {
+      "coverage_name": "Supplementary Uninsured/Underinsured Motorist",
+      "limit_basis": {
+       "raw": "each person/each accident",
+       "source": "structural"
+      },
+      "limit_amount": "$250,000 each person/$500,000 each accident",
+      "premium": {
+       "raw": "56",
+       "parsed": 56.0
+      }
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "deductible_amount": "$500",
+      "premium": {
+       "raw": "40",
+       "parsed": 40.0
+      },
+      "valuation_basis": "Actual Cash Value at time of loss"
+     },
+     {
+      "coverage_name": "Collision",
+      "deductible_amount": "$500",
+      "premium": {
+       "raw": "189",
+       "parsed": 189.0
+      },
+      "valuation_basis": "Actual Cash Value at time of loss"
+     },
+     {
+      "coverage_name": "Accessory Coverage",
+      "limit_amount": "$3,000",
+      "is_included": {
+       "raw": "included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Roadside Assistance",
+      "premium": {
+       "raw": "10",
+       "parsed": 10.0
+      }
+     }
+    ]
+   }
+  ],
+  "operators": [
+   {
+    "name": "Ambrose Pellier",
+    "age": {
+     "raw": "65",
+     "parsed": 65
+    },
+    "gender": "Male",
+    "marital_status": "Married",
+    "relationship_to_insured": "Named insured"
+   }
+  ],
+  "liability_coverages": {
+   "bodily_injury_per_person_limit": "$250,000",
+   "bodily_injury_per_accident_limit": "$500,000",
+   "property_damage_limit": "$100,000",
+   "supplementary_uninsured_underinsured_limit": "$250,000 each person/$500,000 each accident"
+  },
+  "no_fault_benefits": {
+   "mandatory_pedestrian_pip_limit": "$50,000",
+   "no_fault_deductible": "$0",
+   "aggregate_no_fault_benefits_available": "$50,000",
+   "death_benefit": "$2,000",
+   "maximum_monthly_work_loss": "$2,000",
+   "other_necessary_expenses_per_day": "$25"
+  },
+  "physical_damage_coverages": {
+   "collision_deductible": "$500",
+   "comprehensive_deductible": "$500",
+   "custom_parts_and_equipment_limit": "$3,000",
+   "total_loss_settlement_basis": "Actual Cash Value"
+  }
+ }
+}
