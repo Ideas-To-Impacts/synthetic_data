@@ -62,7 +62,7 @@ SPLITS = ("Train", "Val", "Test")
 BANDS = ((200, "pilot", {"Train": 0.70, "Val": 0.18, "Test": 0.12}),
          (1000, "growing", {"Train": 0.75, "Val": 0.15, "Test": 0.10}),
          (None, "target state", {"Train": 0.80, "Val": 0.10, "Test": 0.10}))
-FIELDS = ["split", "lob", "carrier", "source", "sample", "pdf", "gold", "pages", "fields",
+FIELDS = ["split", "lob", "carrier", "source", "sample", "kind", "pdf", "gold", "pages", "fields",
           "ok", "seconds", "problems"]
 
 
@@ -121,10 +121,11 @@ def doc_name(lob, pdf, k, shared):
     """<lob>__<source>__synth_NNN - and the carrier as well where two carriers'
     sources of the line share a file name (HOME_redacted.pdf from Chubb, Madison
     Mutual and MILLENNIAL): their documents must never write the same files."""
+    tail = "original" if k == 0 else "synth_%03d" % k       # sample 0: the source itself
     if (lob, pdf.stem) in shared:
         carrier = re.sub(r"[^A-Za-z0-9]+", "_", pdf.parent.parent.name).strip("_")
-        return "%s__%s__%s__synth_%03d" % (lob, pdf.stem, carrier, k)
-    return "%s__%s__synth_%03d" % (lob, pdf.stem, k)
+        return "%s__%s__%s__%s" % (lob, pdf.stem, carrier, tail)
+    return "%s__%s__%s" % (lob, pdf.stem, tail)
 
 
 def make(task):
@@ -136,6 +137,7 @@ def make(task):
     gold_out = Path(out) / split / "gold json" / (name + ".json")
     row = {"split": split, "lob": lob, "carrier": pdf.parent.parent.name,
            "source": pdf.relative_to(ROOT / "Data" / "original data").as_posix(), "sample": k,
+           "kind": "original" if k == 0 else "synthetic",
            "pdf": str(pdf_out.relative_to(out)), "gold": str(gold_out.relative_to(out))}
     if pdf_out.exists() and gold_out.exists() or \
             (Path(out) / "Flagged" / split / "pdfs" / (name + ".pdf")).exists():
@@ -145,7 +147,7 @@ def make(task):
         schema = CanonicalSchema.load(generic._lob_for(pdf, str(ROOT / "config" / "policy_check")),
                                       str(ROOT / "config" / "policy_check"))
         built = generic.synthesize(pdf, pdf_out, gold_out, schema,
-                                   Values("%d:%s" % (k, row["source"])), seed=k)
+                                   Values("%d:%s" % (k, row["source"])), seed=k, keep=k == 0)
         row.update(pages=built.pages, fields=built.fields, ok=built.ok,
                    problems=" | ".join(built.problems))
     except Exception as exc:                      # one bad source must not stop the run
@@ -161,6 +163,9 @@ def main(argv=None):
     parser.add_argument("--lob", action="append", default=None,
                         help="line of business; repeatable (default: the 9 personal lines)")
     parser.add_argument("--per-source", type=int, default=10)
+    parser.add_argument("--originals", action="store_true",
+                        help="also each source itself, scanned, with its own gold (<lob>__<source>__original), "
+                             "in the same split as its synthetic twins")
     parser.add_argument("--workers", type=int, default=10)
     parser.add_argument("--ocr-cache", default=None,
                         help="where OCR readings are kept for all workers (default: <out>/.ocr_cache)")
@@ -181,7 +186,7 @@ def main(argv=None):
     found = sources(args.data, lobs)
     # the personal lines are one document type (the policy_check schemas):
     # its band is set by all the documents this build makes of it
-    documents = sum(len(v) for v in found.values()) * args.per_source
+    documents = sum(len(v) for v in found.values()) * (args.per_source + args.originals)
     stage, shares = band(documents)
     plan_file = out / "splits.json"
     plan = json.loads(plan_file.read_text("utf-8")) if plan_file.exists() else None
@@ -218,7 +223,8 @@ def main(argv=None):
         for split in SPLITS:
             for rel in splits[split]:
                 pdf = ROOT / "Data" / "original data" / rel
-                for k in range(1, args.per_source + 1):
+                # sample 0 is the source itself, in the split of its twins
+                for k in range(0 if args.originals else 1, args.per_source + 1):
                     tasks.append((split, lob, pdf, k, out, doc_name(lob, pdf, k, shared)))
     # every source's first variant before any second: the OCR of a source's
     # unedited pages is then cached for its other variants; and the longest
@@ -234,6 +240,17 @@ def main(argv=None):
 
     manifest = out / "manifest.csv"
     new = not manifest.exists()
+    if not new:
+        # a manifest from before the "kind" column: every row in it is synthetic
+        with open(manifest, encoding="utf-8") as fh:
+            old = list(csv.DictReader(fh))
+        if old and "kind" not in old[0]:
+            with open(manifest, "w", newline="", encoding="utf-8") as fh:
+                w = csv.DictWriter(fh, fieldnames=FIELDS, extrasaction="ignore")
+                w.writeheader()
+                for r in old:
+                    r.setdefault("kind", "synthetic")
+                    w.writerow(r)
     done = failed = 0
     start = time.time()
     tries = defaultdict(int)          # task -> how many times a worker died with it in flight
@@ -292,6 +309,7 @@ def describe(task):
     """The manifest row of a task, before it is made."""
     split, lob, pdf, k, out, name = task
     return {"split": split, "lob": lob, "carrier": pdf.parent.parent.name,
+            "kind": "original" if k == 0 else "synthetic",
             "source": pdf.relative_to(ROOT / "Data" / "original data").as_posix(), "sample": k,
             "pdf": str(Path(split) / "pdfs" / (name + ".pdf")),
             "gold": str(Path(split) / "gold json" / (name + ".json"))}

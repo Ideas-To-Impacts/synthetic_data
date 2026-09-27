@@ -2216,8 +2216,22 @@ def _second_look(page, found, source_read=None):
     return reps
 
 
-def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
-    """One synthetic document and its gold from one source PDF."""
+class _Keep:
+    """A Faker that changes nothing: every value stays as printed, no date
+    moves - for a source's own gold."""
+    days = 0
+
+    def __call__(self, f):
+        return f.text
+
+    def avoid(self, dates):
+        pass
+
+
+def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0, keep=False):
+    """One synthetic document and its gold from one source PDF - or, with
+    ``keep``, the source itself (scanned the same way) and its own gold, every
+    value as printed: nothing replaced, nothing to leak."""
     source_pdf = Path(source_pdf)
     built = Built(key=Path(out_pdf).stem, pdf=Path(out_pdf), gold=Path(out_gold),
                   pages=0, fields=0)
@@ -2263,7 +2277,8 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
             pages.append((page, ink, matrix, visible, cell_list, found))
         _not_values(pages)
         _sweep(pages, _carrier_marks(source_pdf.parent.parent.name))
-        faker = Faker(vals, [f.text for *_, found in pages for f in found if f.kind in PII])
+        faker = _Keep() if keep else \
+            Faker(vals, [f.text for *_, found in pages for f in found if f.kind in PII])
         faker.avoid([f.whole or f.text for *_, found in pages for f in found if f.kind == "date"])
         for *_, found in pages:          # a scan line encodes the others
             for f in found:
@@ -2438,8 +2453,11 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
             "values_replaced": sum(1 for f in found_all if f.new != f.text),
             "text_recovered_by_ocr": sum(len(r) for r in recovered.values()),
             "date_shift_days": faker.days,
-            "synthetic": True,
-            "note": "Identifying values replaced with invented ones. Fields under "
+            "synthetic": not keep,
+            "note": "The source document itself, every value as printed, and its gold. "
+                    "Fields under fideon:unmapped were read but could not be matched to "
+                    "a schema field with confidence." if keep else
+                    "Identifying values replaced with invented ones. Fields under "
                     "fideon:unmapped were changed but could not be matched to a "
                     "schema field with confidence.",
         }

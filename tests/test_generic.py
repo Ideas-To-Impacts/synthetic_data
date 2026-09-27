@@ -105,6 +105,21 @@ def test_synthesize_replaces_and_labels(tmp_path, schema, scanned):
     assert eff != date(2026, 8, 26)
 
 
+def test_keep_gives_the_source_its_own_gold(tmp_path, schema):
+    # the source itself, scanned: every value as printed, nothing replaced
+    source = _source(tmp_path, "boat.pdf")
+    out = tmp_path / "out"
+    out.mkdir()
+    built = generic.synthesize(source, out / "o.pdf", out / "o.json", schema, Values("t"), keep=True)
+    assert built.ok, built.problems
+    gold = json.loads(built.gold.read_text("utf-8"))
+    assert gold["policy"]["policy_number"]["raw"] == "MSB00001028349"
+    assert gold["named_insured"]["primary_name"]["raw"] == "Delphine Calloway"
+    assert gold["policy"]["effective_date"]["parsed"] == "08/26/2026"
+    assert gold["fideon:provenance"]["synthetic"] is False
+    assert gold["fideon:provenance"]["values_replaced"] == 0
+
+
 def test_same_value_gets_same_replacement_everywhere(tmp_path, schema):
     # the policy number in the footer carries no label; it must still change,
     # and to the same new number as the labelled one

@@ -66,6 +66,11 @@ def main(argv=None):
 
     splits = Counter(r["split"] for r in rows)
     print("%d documents: %s" % (len(rows), ", ".join("%s %d" % kv for kv in sorted(splits.items()))))
+    kinds = Counter((r.get("kind") or "synthetic", r["split"]) for r in rows)
+    if any(k == "original" for k, _ in kinds):
+        for kind in ("synthetic", "original"):
+            print("  %-10s %s" % (kind, ", ".join("%s %d" % (s, kinds[(kind, s)])
+                                                 for s in sorted(splits) if kinds[(kind, s)])))
     by_lob = defaultdict(Counter)
     for r in rows:
         by_lob[r["lob"]][r["split"]] += 1
