@@ -439,6 +439,21 @@ NOT_A_SURNAME = {"street", "st", "road", "rd", "avenue", "ave", "lane", "ln", "d
                  "trust", "farm", "farms", "estates", "manor", "heights", "point", "pt", "island", "bay"}
 
 
+def _place_words(text):
+    """The words and ZIP codes of a place: "Old Forge, NY 13420" gives
+    {"old", "forge", "13420"}; a state and short words are left out."""
+    words = {w.lower() for w in re.findall(r"[A-Za-z]{4,}", text or "")}
+    return words | set(re.findall(r"\b\d{5}\b", text or ""))
+
+
+def _wrapped(cell, cell_list):
+    """Is ``cell`` the end of the line above it, wrapped: "c/o Central Loan
+    Administration and" over "Reporting"? A word there finishes a phrase; it
+    is nobody's name."""
+    up = _above(cell, cell_list)
+    return up is not None and bool(re.search(r"(?i)(?:\b(?:and|of|the|for|to|c/o)|[&,])\s*$", up.text))
+
+
 def _name_part(text):
     """A name without what trails it on its line: a dash, or an agency code
     in brackets ("Stable Rock Insurance Agency LLC (86)")."""
@@ -704,7 +719,7 @@ def find_values(cell_list):
             # counts only in a block a name label heads, where it can be
             # nothing else
             chain, up = [], _above(f.cell, cell_list)
-            while up is not None and id(up) not in names and                     (_looks_like_name(up.text) or _one_word_name(up.text)):
+            while up is not None and id(up) not in names and                     (_looks_like_name(up.text) or _one_word_name(up.text) and not _wrapped(up, cell_list)):
                 chain.append(up)
                 up = _above(up, cell_list)        # a second insured stacked above
             # an agency's block counts as well: "Agency Address" over "IRONVALE"
@@ -1101,6 +1116,10 @@ class Faker:
         # a replacement must not be another original value of this document -
         # the insured's town handed to the agent is still the insured's town
         self.used = {_key(o) for o in originals}
+        # and a place made up for it must not repeat a word or a ZIP the
+        # document prints as its own: "Old Forge, NY 13420" where the garaging
+        # ZIP is 13420, a town Herkimer where the county is HERKIMER
+        self.place_words = {w for o in originals for w in _place_words(o)}
 
     def __call__(self, f: Found) -> str:
         if f.blank:
@@ -1163,10 +1182,11 @@ class Faker:
                 return
             self.days = self.v.choice([-1, 1]) * self.v.integer(45, 540)
 
-    def _unique(self, make, old):
+    def _unique(self, make, old, place=False):
         for _ in range(50):
             new = make()
-            if _key(new) != _key(old) and _key(new) not in self.used:
+            if _key(new) != _key(old) and _key(new) not in self.used \
+                    and not (place and _place_words(new) & self.place_words):
                 self.used.add(_key(new))
                 return new
         return new
@@ -1212,7 +1232,7 @@ class Faker:
         def make():
             city, zip_ = self.v.choice(TOWNS)
             return "%s%s NY %s" % (city, "," if comma else "", zip_)
-        return self._unique(make, old)
+        return self._unique(make, old, place=True)
 
     def _gluedcity(self, old):
         m = GLUED_CITY.fullmatch(old)
@@ -1220,16 +1240,16 @@ class Faker:
             city, zip_ = self.v.choice(TOWNS)
             plus = "".join(str(self.v.integer(0, 9)) for _ in range(len(m.group(3)) - 5))
             return re.sub(r"\W", "", city).upper() + "NY" + zip_ + plus
-        return self._unique(make, old)
+        return self._unique(make, old, place=True)
 
     def _zip(self, old):
-        return self._unique(lambda: _reshape_digits(old, self.v), old)
+        return self._unique(lambda: _reshape_digits(old, self.v), old, place=True)
 
     def _place(self, old):
-        return self._unique(lambda: self.v.choice(TOWNS)[0], old)
+        return self._unique(lambda: self.v.choice(TOWNS)[0], old, place=True)
 
     def _county(self, old):
-        return self._unique(lambda: self.v.choice(COUNTIES), old)
+        return self._unique(lambda: self.v.choice(COUNTIES), old, place=True)
 
     # contact
     def _phone(self, old):
@@ -2430,7 +2450,10 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
             gold["fideon:incomplete"] = [e.split("'")[1] if "'" in e else e for e in missing]
         # and nothing the gold carries may be an original value either
         written = json.dumps(gold, indent=2, ensure_ascii=False)
-        flat = pageref._norm(written)
+        # the fields the document leaves out are schema names, not its text:
+        # "claim_reporting.claims_address" says nothing about a "Reporting"
+        flat = pageref._norm(json.dumps({k: v for k, v in gold.items() if k != "fideon:absent"},
+                                        ensure_ascii=False))
         built.problems += ["source value %r is in the gold" % old for old, _ in swaps
                            if len(old) >= 4 and pageref.on_page(pageref._norm(old), flat)]
         built.gold.write_text(written, encoding="utf-8")

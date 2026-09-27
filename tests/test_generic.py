@@ -565,6 +565,27 @@ def test_an_address_block_is_read_by_its_shape(tmp_path, schema):
     assert len(names) == 3
 
 
+def test_a_made_up_place_never_repeats_one_the_document_prints():
+    # the garaging ZIP is 13420 and the county HERKIMER: no replacement town
+    # may be Old Forge 13420 or Herkimer
+    from fideon_synth.values import Values
+    for i in range(200):
+        faker = generic.Faker(Values("%d:t" % i), ["13420", "HERKIMER"])
+        new = faker._cityline("Utica, NY 13501")
+        assert not generic._place_words(new) & {"13420", "herkimer"}, new
+        assert "herkimer" not in faker._place("Utica").lower()
+
+
+def test_the_end_of_a_wrapped_line_is_not_a_name(tmp_path):
+    doc = fitz.open()
+    page = doc.new_page()
+    for y, text in [(100, "c/o Central Loan Administration and"), (112, "Reporting"),
+                    (124, "PO Box 202028"), (136, "Florence, SC 29502")]:
+        page.insert_text((66, y), text, fontsize=9)
+    cells = overlay.cells(page, fitz.Identity, overlay.Ink(page))
+    assert not [f for f in generic.find_values(cells) if f.text == "Reporting"]
+
+
 def test_a_schema_label_is_not_a_name():
     assert not generic._looks_like_name("Buyout Indicator")
     assert not generic._looks_like_name("Primary Residence")
