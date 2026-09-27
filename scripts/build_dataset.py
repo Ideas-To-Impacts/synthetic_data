@@ -10,7 +10,12 @@ carrier, so every split sees every carrier it can, and a line with three
 sources or more has at least one in each split.
 
     python scripts/build_dataset.py --out "Data/synthetic data"
-    python scripts/build_dataset.py --out "Data/synthetic data" --per-source 10 --workers 8
+    python scripts/build_dataset.py --out "Data/synthetic data" --per-source 10 --workers 10
+
+OCR is the slow part. Its readings are cached (<out>/.ocr_cache, shared by all
+workers), and every source's first variant is made before any second, so the
+unedited pages of a source are read once for all its variants. Set
+FIDEON_OCR_GPU=cuda to run the OCR on an NVIDIA card (onnxruntime-gpu).
 
 Output, under --out:
 
@@ -123,10 +128,14 @@ def main(argv=None):
     parser.add_argument("--lob", action="append", default=None,
                         help="line of business; repeatable (default: the 9 personal lines)")
     parser.add_argument("--per-source", type=int, default=10)
-    parser.add_argument("--workers", type=int, default=8)
+    parser.add_argument("--workers", type=int, default=10)
+    parser.add_argument("--ocr-cache", default=None,
+                        help="where OCR readings are kept for all workers (default: <out>/.ocr_cache)")
     args = parser.parse_args(argv)
     out = Path(args.out)
     lobs = args.lob or PERSONAL
+    # set before the workers start, so every one of them shares it
+    os.environ.setdefault("FIDEON_OCR_CACHE", args.ocr_cache or str(out / ".ocr_cache"))
 
     found = sources(args.data, lobs)
     plan_file = out / "splits.json"
@@ -149,14 +158,16 @@ def main(argv=None):
             for rel in splits[split]:
                 for k in range(1, args.per_source + 1):
                     tasks.append((split, lob, ROOT / "Data" / "original data" / rel, k, out))
-    # the longest sources first, so no worker is left with one at the end
+    # every source's first variant before any second: the OCR of a source's
+    # unedited pages is then cached for its other variants; and the longest
+    # sources first within each round, so no worker is left with one at the end
     import fitz
     pages = {}
     for t in tasks:
         if t[2] not in pages:
             with fitz.open(str(t[2])) as d:
                 pages[t[2]] = len(d)
-    tasks.sort(key=lambda t: -pages[t[2]])
+    tasks.sort(key=lambda t: (t[3], -pages[t[2]]))
     print("%d documents to make, %d pages" % (len(tasks), sum(pages[t[2]] for t in tasks)))
 
     manifest = out / "manifest.csv"

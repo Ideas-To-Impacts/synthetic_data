@@ -2092,13 +2092,17 @@ def _turn_back(pdf, turned):
     doc.close()
 
 
-def _second_look(page, found):
+def _second_look(page, found, source_read=None):
     """Read a scanned page again once its replacements are drawn, and cover
     any original identifying value still legible where the print shows it.
 
     A scan's text layer can be set apart from its print - narrower, or out of
     order - and a value found in the layer is then covered where the layer
-    puts it, not where it is printed. The OCR engine sees the print."""
+    puts it, not where it is printed. The OCR engine sees the print.
+
+    ``source_read`` is the page as read before anything was drawn: an
+    original can only still be printed where it was printed then, so only
+    those lines are read again - and none when the print held none."""
     olds = {}
     for f in found:
         if f.kind in PII and f.new and f.new != f.text and not f.blank and f.part is None                 and f.name_part is None and not f.city_only:
@@ -2107,8 +2111,27 @@ def _second_look(page, found):
                 olds.setdefault(key, f)
     if not olds:
         return []
+    if source_read is None:
+        lines = recover.read_page(page)
+    else:
+        # the lines that printed an original, a little wider and taller
+        # than the engine's box, read again where they stand
+        bands = []
+        for text, rect, _ in source_read:
+            mine = recover._key(text)[0]
+            if any(key in mine for key in olds):
+                band = fitz.Rect(rect.x0 - 12, rect.y0 - 4, rect.x1 + 12, rect.y1 + 4) & page.rect
+                for i, b in enumerate(bands):
+                    if b.intersects(band):
+                        bands[i] = b | band
+                        break
+                else:
+                    bands.append(band)
+        if not bands:
+            return []
+        lines = recover.read_bands(page, bands)
     reps, ink = [], None
-    for text, rect, conf in recover.read_page(page):
+    for text, rect, conf in lines:
         mine, where = recover._key(text)
         chars = recover._chars_of(text, rect)
         for key, f in olds.items():
@@ -2153,7 +2176,7 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
         read = {}
         turned = _upright(doc, read=read)
         found_all, plans, pages = [], [], []
-        recovered, scanned = {}, set()
+        recovered, scanned, source_read = {}, set(), {}
         for page in doc:
             ink = overlay.Ink(page)
             invisible = overlay.invisible_text(page)
@@ -2166,8 +2189,9 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
                 scanned.add(page.number)
                 # read the scan again: what its OCR layer left out or garbled
                 layer = overlay.layer_chars(page, matrix)
+                source_read[page.number] = read.pop(page.number, None) or recover.read_page(page)
                 runs, drop = recover.reconcile(
-                    read.pop(page.number, None) or recover.read_page(page),
+                    source_read[page.number],
                     lambda r, layer=layer: _layer_line(layer, r),
                     lambda r, layer=layer: _layer_word(layer, r),
                     lambda r, layer=layer: _layer_span(layer, r), stretched)
@@ -2237,7 +2261,7 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0):
         for page, reps, ink, matrix in plans:
             overlay.apply(page, reps, ink, matrix)
             if page.number in scanned:
-                reps += _second_look(page, every)
+                reps += _second_look(page, every, source_read.get(page.number))
             if page.number in recovered:
                 recover.write_back(page, recovered[page.number],
                                    [r.visible_rect for r in reps], swapped)

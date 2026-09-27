@@ -565,6 +565,27 @@ def test_an_address_block_is_read_by_its_shape(tmp_path, schema):
     assert len(names) == 3
 
 
+def test_the_ocr_cache_reads_the_same_as_the_engine(tmp_path, monkeypatch):
+    from fideon_synth import recover
+    if recover.engine() is None:
+        pytest.skip("no OCR engine")
+    page = fitz.open(str(_scanned(tmp_path / "scan.pdf", tmp_path)))[0]
+    fresh = recover.read_page(page)
+    monkeypatch.setenv("FIDEON_OCR_CACHE", str(tmp_path / "cache"))
+    recover._memo.clear()
+    first = recover.read_page(page)                       # read, and written to disk
+    recover._memo.clear()                                 # another process: from disk only
+    again = recover.read_page(page)
+    key = lambda lines: [(t, tuple(round(v, 2) for v in r), round(c, 4)) for t, r, c in lines]
+    assert key(fresh) == key(first) == key(again) and fresh
+    assert any((tmp_path / "cache").rglob("*.pkl"))
+    # a few strips read in one pass come back where they stand on the page
+    strips = [fitz.Rect(30, 90, 300, 120), fitz.Rect(30, 230, 300, 250)]
+    lines = recover.read_bands(page, strips)
+    assert any("MSB" in t for t, _, _ in lines) and any("FEIN" in t for t, _, _ in lines)
+    assert all(any(s.intersects(r) for s in strips) for _, r, _ in lines)
+
+
 def test_a_value_wrapped_in_its_column_is_on_the_page(tmp_path):
     import fitz
     from fideon_synth import pageref

@@ -78,16 +78,103 @@ def is_scanned(page, invisible) -> bool:
     return any(fitz.Rect(i["bbox"]).get_area() > 0.5 * area for i in page.get_image_info())
 
 
-def read_page(page, dpi=DPI, min_conf=None, turn=0) -> List[Tuple[str, fitz.Rect, float]]:
+_memo = {}
+
+
+def _ocr(ocr, img, key):
+    """The engine's reading of an image - the same pixels are read once. What
+    it read is kept in memory, and on disk under FIDEON_OCR_CACHE, where every
+    process making variants of the same source finds it: the unedited pages
+    of a source are the same image in every variant."""
+    import hashlib
+    import pickle
+    digest = hashlib.sha1(img.tobytes()).hexdigest() + "%dx%d" % img.shape[:2] + key.replace("|", "_")
+    if digest in _memo:
+        return _memo[digest]
+    folder = os.environ.get("FIDEON_OCR_CACHE")
+    path = os.path.join(folder, digest[:2], digest + ".pkl") if folder else None
+    if path and os.path.exists(path):
+        try:
+            with open(path, "rb") as fh:
+                result = pickle.load(fh)
+        except Exception:
+            result = None
+        else:
+            _memo[digest] = result
+            return result
+    raw, _ = ocr(img)
+    result = [([list(map(float, p)) for p in box], text, float(conf)) for box, text, conf in raw or []]
+    if len(_memo) > 256:
+        _memo.clear()
+    _memo[digest] = result
+    if path:
+        try:
+            os.makedirs(os.path.dirname(path), exist_ok=True)
+            tmp = "%s.%d.tmp" % (path, os.getpid())
+            with open(tmp, "wb") as fh:
+                pickle.dump(result, fh)
+            os.replace(tmp, path)
+        except OSError:
+            pass
+    return result
+
+
+def read_bands(page, bands, dpi=DPI, min_conf=None) -> List[Tuple[str, fitz.Rect, float]]:
+    """``read_page`` for a few strips of a page only, in one pass of the
+    engine: the strips are set one under another, white between them, and
+    every line read is put back where its strip stands on the page."""
+    ocr = engine()
+    if ocr is None or not bands:
+        return []
+    scale, gap = dpi / 72.0, 24
+    pieces = [page.get_pixmap(dpi=dpi, clip=b) for b in bands]
+    width = max(p.width for p in pieces)
+    height = sum(p.height for p in pieces) + gap * (len(pieces) + 1)
+    sheet = np.full((height, width, 3), 255, np.uint8)
+    tops, y = [], gap
+    for p in pieces:
+        img = np.frombuffer(p.samples, np.uint8).reshape(p.height, p.width, p.n)[:, :, :3]
+        sheet[y:y + p.height, :p.width] = img
+        tops.append(y)
+        y += p.height + gap
+    lines = []
+    for box, text, conf in _ocr(ocr, sheet, "|%d|bands" % dpi):
+        xs = [q[0] for q in box]
+        ys = [q[1] for q in box]
+        mid = (min(ys) + max(ys)) / 2
+        k = max((i for i, t in enumerate(tops) if t <= mid), default=0)
+        b = bands[k]
+        rect = fitz.Rect(b.x0 + min(xs) / scale, b.y0 + (min(ys) - tops[k]) / scale,
+                         b.x0 + max(xs) / scale, b.y0 + (max(ys) - tops[k]) / scale)
+        if conf >= (MIN_CONFIDENCE if min_conf is None else min_conf) and text.strip():
+            lines.append((text, rect, float(conf)))
+    return lines
+
+
+def read_page(page, dpi=DPI, min_conf=None, turn=0, clip=None) -> List[Tuple[str, fitz.Rect, float]]:
     """(text, rect in page points, confidence) for every line the engine reads
     at ``min_conf`` or better (default :data:`MIN_CONFIDENCE`). With ``turn``
-    the page is read a quarter turn round; its rects are then of that image."""
+    the page is read a quarter turn round; its rects are then of that image.
+    With ``clip`` only that part of the page is read."""
     ocr = engine()
     if ocr is None:
         return []
+    if clip is not None and not turn:
+        pix = page.get_pixmap(dpi=dpi, clip=clip)
+        img = np.frombuffer(pix.samples, np.uint8).reshape(pix.height, pix.width, pix.n)[:, :, :3]
+        scale = 72.0 / dpi
+        lines = []
+        for box, text, conf in _ocr(ocr, np.ascontiguousarray(img), "|%d|0" % dpi):
+            xs = [p[0] for p in box]
+            ys = [p[1] for p in box]
+            rect = fitz.Rect(clip.x0 + min(xs) * scale, clip.y0 + min(ys) * scale,
+                             clip.x0 + max(xs) * scale, clip.y0 + max(ys) * scale)
+            if conf >= (MIN_CONFIDENCE if min_conf is None else min_conf) and text.strip():
+                lines.append((text, rect, float(conf)))
+        return lines
     pix = page.get_pixmap(matrix=fitz.Matrix(dpi / 72, dpi / 72).prerotate(turn)) if turn         else page.get_pixmap(dpi=dpi)
     img = np.frombuffer(pix.samples, np.uint8).reshape(pix.height, pix.width, pix.n)[:, :, :3]
-    result, _ = ocr(np.ascontiguousarray(img))
+    result = _ocr(ocr, np.ascontiguousarray(img), "|%d|%d" % (dpi, turn))
     scale = 72.0 / dpi
     lines = []
     for box, text, conf in result or []:
