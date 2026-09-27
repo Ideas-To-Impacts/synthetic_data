@@ -1688,8 +1688,7 @@
             "Policy Period From",
             "Policy Term",
             "Policy Term Effective Date",
-            "Start Date",
-            "Eff. Date"
+            "Start Date"
           ],
           "fideon:value_type": "date",
           "description": "Effective date (Policy). Date; parsed is MM/DD/YYYY (see fideon:parsed_formats). Printed as e.g. \"Both dates\", \"Effective Date\", \"Effective Date Of Policy\", \"Policy Effective\"."
