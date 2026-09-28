@@ -1,0 +1,364 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "Classic Automobile Renewal Policy Declarations",
+   "parsed": "Renewal Declarations"
+  },
+  "document_title_as_stated": "Classic Automobile Renewal Policy Declarations",
+  "issue_date": "11/08/2025",
+  "print_code": "AC DEC 03 25",
+  "print_date": "11/08/2025",
+  "print_time": "12:01:29PM",
+  "transaction_type": {
+   "raw": "Renewal",
+   "source": "structural"
+  }
+ },
+ "carrier": {
+  "company_name": "Essentia Insurance Company",
+  "company_structure": "(A Stock Company)",
+  "address": {
+   "line_1": "PO Box 13008",
+   "city": "Milwaukee",
+   "state": "WI",
+   "postal_code": "53213-0008"
+  },
+  "writing_company_name": "Hagerty Insurance Agency, LLC."
+ },
+ "claim_reporting": {
+  "claims_phone": "800-922-4050"
+ },
+ "producer": {
+  "agency_name": "Patriotic Insurance Group",
+  "contact": {
+   "phone": "(845) 610-5700"
+  },
+  "address": {
+   "line_1": "PO Box 329",
+   "city": "Inlet",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Ida Rowntree",
+  "mailing_address": {
+   "line_1": "P.O. Box 381",
+   "city": "Eagle Bay",
+   "state": "NY",
+   "postal_code": "13331-0381"
+  },
+  "additional_named_insureds": []
+ },
+ "policy": {
+  "policy_number": "6P76419",
+  "rating_state": "NY",
+  "effective_date": "01/11/2026",
+  "expiration_date": "01/11/2027",
+  "effective_time": "12:01 a.m.",
+  "expiration_time": "12:01 a.m.",
+  "time_zone": "standard time",
+  "is_renewal": {
+   "raw": "Renewal",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "account_id": "3734896"
+ },
+ "premium": {
+  "total_policy_premium": "$ 435.00",
+  "motor_vehicle_law_enforcement_fee": "$ 10.00",
+  "discounts_and_credits": [
+   {
+    "description": "Paid in Full Discount",
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   }
+  ]
+ },
+ "forms_and_endorsements": [
+  {
+   "form_title": "Classic Automobile Policy",
+   "form_number": "AC 00 01 04 07"
+  },
+  {
+   "form_title": "Signature Page for Essentia Insurance Company",
+   "form_number": "IL 901 02 24"
+  },
+  {
+   "form_title": "State Endorsement - NY",
+   "form_number": "AC 001 NY 06 21"
+  },
+  {
+   "form_title": "Guaranteed Value Endorsement",
+   "form_number": "AC 15 09 04 10"
+  },
+  {
+   "form_title": "Personal Injury Protection Coverage - NY",
+   "form_number": "PP 05 87 07 18"
+  },
+  {
+   "form_title": "Additional PIP Coverage - NY",
+   "form_number": "PP 05 88 07 18"
+  },
+  {
+   "form_title": "Optional Basic Economic Loss (OBEL) - NY",
+   "form_number": "PP 05 93 11 91"
+  },
+  {
+   "form_title": "Split Liability Limits - NY",
+   "form_number": "AC 03 09 04 07"
+  },
+  {
+   "form_title": "Supplementary UM/SUM Coverage - NY",
+   "form_number": "PP 04 09 07 18"
+  },
+  {
+   "form_title": "Auto Show Medical Reimbursement",
+   "form_number": "AC 00 04 04 07"
+  },
+  {
+   "form_title": "Enthusiast Essentials Endorsement - NY",
+   "form_number": "AC 01 90 NY 03 16"
+  },
+  {
+   "form_title": "Rental Vehicle Coverage Endorsement - NY",
+   "form_number": "AC 300 NY 10 18"
+  },
+  {
+   "form_title": "Traveling Collector Endorsement - NY",
+   "form_number": "AC 113 NY 06 18"
+  },
+  {
+   "form_title": "Trade Or Economic Sanctions",
+   "form_number": "MIL 1214 09 17"
+  },
+  {
+   "form_number": "AC N 004 NY 10 23",
+   "form_title": "Supplemental Spousal Liability Insurance Notice - NY",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "AC N 88 01 19",
+   "form_title": "Premium Discount Information - NY",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "AC N 405 NY 08 22",
+   "form_title": "Impt Ntc: Transport Network Co Services - NY",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "AC N 002 NY 04 19",
+   "form_title": "Rental Vehicle Coverage Notice to Policyholders",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "AC N 65 02 13",
+   "form_title": "Blood Alcohol Content Notice - NY",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "IL N 150 NY 08 25",
+   "form_title": "Motor Vehicle Accident Prevention Course Discount - New York",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "AC N 300 NY 08 18",
+   "form_title": "Rating Information - NY",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "MPIL 1007 01 20",
+   "form_title": "Privacy Policy",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "HAG N 01 01 24",
+   "form_title": "Privacy Policy (Hagerty)",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  }
+ ],
+ "auto": {
+  "drivers": [
+   {
+    "driver_number": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "name": "Ida Rowntree",
+    "date_of_birth": "Nov 29, 1973",
+    "excluded_driver": {
+     "raw": "None",
+     "source": "structural",
+     "parsed": "No"
+    }
+   }
+  ],
+  "vehicles": [
+   {
+    "vehicle_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "1994",
+     "parsed": 1994
+    },
+    "make": "JEEP",
+    "model": "WRANGLER S",
+    "body_type": "2DR SPORT UTILITY VEHICLE",
+    "vin": "1J4FY49S0RP445190",
+    "stated_amount": "$ 10,000",
+    "total_loss_settlement_basis": {
+     "raw": "Guaranteed Value",
+     "source": "structural"
+    },
+    "vehicle_category": "Truck/Jeep/SUV",
+    "garaging_type": "Private Garage/Barn/Pole Building",
+    "garaging_territory": "06",
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury Liability",
+      "limit_amount": "$100,000 Each Person/$300,000 Each Accident (Supplemental Spousal Liability Included)",
+      "premium": "$ 44.00"
+     },
+     {
+      "coverage_name": "Property Damage Liability",
+      "limit_amount": "$100,000 Each Accident",
+      "premium": "$ 40.00"
+     },
+     {
+      "coverage_name": "Supplementary Uninsured/Underinsured Motorists",
+      "limit_amount": "SUM $100,000 Per Person/$300,000 Per Accident (Basic UM Included)",
+      "premium": "$ 25.00"
+     },
+     {
+      "coverage_name": "Personal Injury Protection",
+      "limit_amount": "$50K BEL $0 ded: Med;Wrk $2K mo/3yrs;Other $25 day/1yr;Death $2K Addl.",
+      "premium": "$ 29.00"
+     },
+     {
+      "coverage_name": "Added Personal Injury Protection Benefits",
+      "limit_amount": "$25K Extend Econ Loss: Med; Wrk Loss $500 mo/3yrs; Other Exp $25 day/1yr",
+      "premium": "$ 19.00"
+     },
+     {
+      "coverage_name": "Optional Basic Economic Loss",
+      "limit_amount": "$25,000 Each Person/Each Accident",
+      "premium": "$ 19.00"
+     },
+     {
+      "coverage_name": "Total No-Fault Benefits Available**",
+      "limit_amount": "$100,000",
+      "is_included": {
+       "raw": "INCL",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Medical Payments",
+      "limit_amount": "$5,000 Each Person/Each Accident",
+      "premium": "$ 2.00"
+     },
+     {
+      "coverage_name": "Other Than Collision",
+      "deductible_amount": "($250 Ded.)",
+      "premium": "$100.00",
+      "notes": "($0 Ded. Glass)"
+     },
+     {
+      "coverage_name": "Collision",
+      "deductible_amount": "($250 Ded.)",
+      "premium": "$104.00"
+     },
+     {
+      "coverage_name": "Spare Parts",
+      "limit_amount": "$1,500 Total Limit",
+      "deductible_amount": "($0 ded)",
+      "premium": "$3.00"
+     },
+     {
+      "coverage_name": "Traveling Collector Endorsement",
+      "notes": "See Endorsement",
+      "premium": {
+       "raw": "25.00",
+       "parsed": 25.0
+      }
+     },
+     {
+      "coverage_name": "Rental Vehicle Coverage",
+      "notes": "See Endorsement",
+      "premium": {
+       "raw": "15.00",
+       "parsed": 15.0
+      }
+     }
+    ],
+    "change_status": "Modified"
+   }
+  ],
+  "additional_coverages": []
+ },
+ "interested_parties": [],
+ "additional_fields": [
+  {
+   "section": "Additional Interests",
+   "label": "Additional Interests",
+   "value": "None"
+  },
+  {
+   "section": "Additional Information",
+   "label": "Maximum Monthly Work Loss",
+   "value": "$2,500"
+  },
+  {
+   "section": "Additional Information",
+   "label": "Other Necessary Expenses per Day",
+   "value": "$50"
+  },
+  {
+   "section": "Additional Information",
+   "label": "Death Benefit",
+   "value": "$2,000"
+  }
+ ],
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_effective_date": "01/11/2026",
+   "renewal_expiration_date": "01/11/2027",
+   "renewal_premium": "$ 435.00",
+   "offer_issue_date": "11/08/2025"
+  }
+ }
+}

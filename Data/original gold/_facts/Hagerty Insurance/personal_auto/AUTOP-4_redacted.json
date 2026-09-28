@@ -1,0 +1,750 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "Classic Automobile Renewal Policy Declarations",
+   "parsed": "Renewal Declarations"
+  },
+  "document_title_as_stated": "Classic Automobile Renewal Policy Declarations",
+  "issue_date": "05/27/2026",
+  "print_code": "AC DEC 03 25",
+  "print_date": "05/27/2026",
+  "print_time": "7:07:31PM",
+  "transaction_type": {
+   "raw": "Renewal",
+   "source": "structural"
+  }
+ },
+ "carrier": {
+  "company_name": "Essentia Insurance Company",
+  "company_structure": "(A Harbor Point )",
+  "address": {
+   "line_1": "PO Box 9802",
+   "city": "Kingston",
+   "state": "WI",
+   "postal_code": "12401-6985"
+  },
+  "writing_company_name": "Hagerty Insurance Agency, LLC."
+ },
+ "claim_reporting": {
+  "claims_phone": "800-922-4050"
+ },
+ "producer": {
+  "agency_name": "Stable Rock Insurance Agency LLC",
+  "contact": {
+   "phone": "(226) 783-0236"
+  },
+  "address": {
+   "line_1": "PO Box 592",
+   "city": "Inlet",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Keith Merritt",
+  "mailing_address": {
+   "line_1": "P.O. Box 6237",
+   "city": "Cortland",
+   "state": "NY",
+   "postal_code": "13045-1733"
+  },
+  "additional_named_insureds": [
+   {
+    "name": "Katherine J Humphrey"
+   }
+  ]
+ },
+ "policy": {
+  "policy_number": "9S63795",
+  "rating_state": "NY",
+  "effective_date": "07/30/2026",
+  "expiration_date": "07/30/2027",
+  "effective_time": "12:01 a.m.",
+  "expiration_time": "12:01 a.m.",
+  "time_zone": "standard time",
+  "is_renewal": {
+   "raw": "Renewal",
+   "source": "structural",
+   "parsed": "Yes"
+  }
+ },
+ "premium": {
+  "total_policy_premium": "$ 2,289.00",
+  "motor_vehicle_law_enforcement_fee": "$ 50.00",
+  "discounts_and_credits": [
+   {
+    "description": "Paid in Full Discount",
+    "is_applied": {
+     "raw": "APPLIED",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Vehicle Discount",
+    "is_applied": {
+     "raw": "APPLIED",
+     "parsed": "Yes"
+    }
+   }
+  ]
+ },
+ "forms_and_endorsements": [
+  {
+   "form_title": "Classic Automobile Policy - New York",
+   "form_number": "AC 900 NY 07 23"
+  },
+  {
+   "form_title": "Signature Page for Essentia Insurance Company",
+   "form_number": "IL 901 02 24"
+  },
+  {
+   "form_title": "State Endorsement - NY",
+   "form_number": "AC 001 NY 06 21"
+  },
+  {
+   "form_title": "Mandatory Personal Injury Protection Endorsement (New York)",
+   "form_number": "AC 004 NY 07 23"
+  },
+  {
+   "form_title": "Additional Personal Injury Protection Endorsement (New York)",
+   "form_number": "AC 005 NY 07 23"
+  },
+  {
+   "form_title": "Optional Basic Economic Loss Coverage Endorsement (New York)",
+   "form_number": "AC 011 NY 07 23"
+  },
+  {
+   "form_title": "Supplementary Uninsured/Underinsured Motorists Endorsement - New York",
+   "form_number": "AC 003 NY 07 23"
+  },
+  {
+   "form_number": "AC N 004 NY 10 23",
+   "form_title": "Supplemental Spousal Liability Insurance Notice - NY",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "AC N 500 11 22",
+   "form_title": "Important Notice Regarding Your Collector Vehicle Insurance",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "AC N 88 07 23",
+   "form_title": "Premium Discount Information - NY",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "AC N 405 NY 08 22",
+   "form_title": "Impt Ntc: Transport Network Co Services - NY",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "AC N 502 NY 12 19",
+   "form_title": "Notice of Removal of Rental Vehicle Coverage",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "AC N 65 02 13",
+   "form_title": "Blood Alcohol Content Notice - NY",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "IL N 150 NY 08 25",
+   "form_title": "Motor Vehicle Accident Prevention Course Discount - New York",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "AC N 01 01 NY 12 15",
+   "form_title": "Third Party Notification of Policy Termination-NY",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "AC N 300 NY 07 23",
+   "form_title": "Rating Information - New York",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  }
+ ],
+ "auto": {
+  "drivers": [
+   {
+    "driver_number": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "name": "Keith Merritt",
+    "date_of_birth": "Dec 26, 1953",
+    "excluded_driver": {
+     "raw": "None",
+     "source": "structural",
+     "parsed": "No"
+    }
+   },
+   {
+    "driver_number": {
+     "raw": "2",
+     "parsed": 2
+    },
+    "name": "Katherine J Humphrey",
+    "date_of_birth": {
+     "raw": "On File",
+     "parsed": null
+    },
+    "excluded_driver": {
+     "raw": "None",
+     "source": "structural",
+     "parsed": "No"
+    }
+   }
+  ],
+  "vehicles": [
+   {
+    "vehicle_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "1989",
+     "parsed": 1989
+    },
+    "make": "LAND ROVER",
+    "model": "DEFENDER 110",
+    "body_type": "4DR WAGON 4X4",
+    "vin": "AAPV0120470409401",
+    "stated_amount": "$45,000",
+    "total_loss_settlement_basis": {
+     "raw": "Guaranteed Value",
+     "source": "structural"
+    },
+    "vehicle_category": "Truck/Jeep/SUV",
+    "garaging_type": "Private Garage/Barn/Pole Building",
+    "garaging_territory": "06",
+    "coverages": [
+     {
+      "coverage_name": "Liab BI",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Liab PD",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Supp UM/UIM",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "PIP",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Added PIP",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "OBEL",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Med Payments",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Other Than Collision",
+      "deductible_amount": "$1000",
+      "premium": "$372",
+      "notes": "($0 Ded Glass)"
+     },
+     {
+      "coverage_name": "Collision",
+      "deductible_amount": "$1000",
+      "premium": "$365"
+     }
+    ],
+    "motor_vehicle_law_enforcement_fee": "$10.00"
+   },
+   {
+    "vehicle_number": {
+     "raw": "2",
+     "source": "structural",
+     "parsed": 2
+    },
+    "year": {
+     "raw": "1986",
+     "parsed": 1986
+    },
+    "make": "FORD",
+    "model": "F-150 1/2 TON",
+    "body_type": "2DR PICKUP",
+    "vin": "1FTCF15N0GNA94481",
+    "stated_amount": "$18,000",
+    "total_loss_settlement_basis": {
+     "raw": "Guaranteed Value",
+     "source": "structural"
+    },
+    "vehicle_category": "Truck/Jeep/SUV",
+    "garaging_type": "Driveway",
+    "garaging_territory": "06",
+    "coverages": [
+     {
+      "coverage_name": "Liab BI",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Liab PD",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Supp UM/UIM",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "PIP",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Added PIP",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "OBEL",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Med Payments",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Other Than Collision",
+      "deductible_amount": "$50",
+      "premium": "$215",
+      "notes": "($0 Ded Glass)"
+     },
+     {
+      "coverage_name": "Collision",
+      "deductible_amount": "$100",
+      "premium": "$100"
+     }
+    ],
+    "motor_vehicle_law_enforcement_fee": "$10.00"
+   },
+   {
+    "vehicle_number": {
+     "raw": "3",
+     "source": "structural",
+     "parsed": 3
+    },
+    "year": {
+     "raw": "1997",
+     "parsed": 1997
+    },
+    "make": "JAGUAR",
+    "model": "XK8",
+    "body_type": "2DR CONVERTIBLE",
+    "vin": "SAJGX2749VC013447",
+    "stated_amount": "$20,000",
+    "total_loss_settlement_basis": {
+     "raw": "Guaranteed Value",
+     "source": "structural"
+    },
+    "vehicle_category": "Auto",
+    "garaging_type": "Private Garage/Barn/Pole Building",
+    "garaging_territory": "06",
+    "coverages": [
+     {
+      "coverage_name": "Liab BI",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Liab PD",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Supp UM/UIM",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "PIP",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Added PIP",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "OBEL",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Med Payments",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Other Than Collision",
+      "deductible_amount": "$50",
+      "premium": "$188",
+      "notes": "($0 Ded Glass)"
+     },
+     {
+      "coverage_name": "Collision",
+      "deductible_amount": "$100",
+      "premium": "$194"
+     }
+    ],
+    "motor_vehicle_law_enforcement_fee": "$10.00"
+   },
+   {
+    "vehicle_number": {
+     "raw": "4",
+     "source": "structural",
+     "parsed": 4
+    },
+    "year": {
+     "raw": "1952",
+     "parsed": 1952
+    },
+    "make": "GMC",
+    "model": "SERIES 100-22 1/2 TON",
+    "body_type": "2DR STAKE",
+    "vin": "10122P29657",
+    "stated_amount": "$20,000",
+    "total_loss_settlement_basis": {
+     "raw": "Guaranteed Value",
+     "source": "structural"
+    },
+    "vehicle_category": "Truck/Jeep/SUV",
+    "garaging_type": "Private Garage/Barn/Pole Building",
+    "garaging_territory": "06",
+    "coverages": [
+     {
+      "coverage_name": "Liab BI",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Liab PD",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Supp UM/UIM",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "PIP",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Added PIP",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "OBEL",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Med Payments",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Other Than Collision",
+      "deductible_amount": "$50",
+      "premium": "$57",
+      "notes": "($0 Ded Glass)"
+     },
+     {
+      "coverage_name": "Collision",
+      "deductible_amount": "$100",
+      "premium": "$48"
+     }
+    ],
+    "motor_vehicle_law_enforcement_fee": "$10.00"
+   },
+   {
+    "vehicle_number": {
+     "raw": "5",
+     "source": "structural",
+     "parsed": 5
+    },
+    "year": {
+     "raw": "1960",
+     "parsed": 1960
+    },
+    "make": "CHEVORLET",
+    "model": "C60 2 TON",
+    "vin": "0C653F112005",
+    "stated_amount": "$30,000",
+    "total_loss_settlement_basis": {
+     "raw": "Guaranteed Value",
+     "source": "structural"
+    },
+    "vehicle_category": "Semi",
+    "garaging_type": "Private Garage/Barn/Pole Building",
+    "garaging_territory": "06",
+    "coverages": [
+     {
+      "coverage_name": "Liab BI",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Liab PD",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Supp UM/UIM",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "PIP",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Added PIP",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "OBEL",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Med Payments",
+      "is_included": {
+       "raw": "X",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Other Than Collision",
+      "deductible_amount": "$50",
+      "premium": "$90",
+      "notes": "($0 Ded Glass)"
+     },
+     {
+      "coverage_name": "Collision",
+      "deductible_amount": "$100",
+      "premium": "$76"
+     }
+    ],
+    "motor_vehicle_law_enforcement_fee": "$10.00"
+   }
+  ],
+  "additional_coverages": [
+   {
+    "coverage_name": "Bodily Injury Liability",
+    "limit_amount": "$250,000 Each Person/$500,000 Each Accident (Supplemental Spousal Liability - Included)",
+    "premium": "$ 88.00"
+   },
+   {
+    "coverage_name": "Property Damage Liability",
+    "limit_amount": "$100,000 Each Accident",
+    "premium": "$ 72.00"
+   },
+   {
+    "coverage_name": "Supplementary Uninsured/Underinsured Motorists",
+    "limit_amount": "SUM $250,000 Each Person/$500,000 Each Accident (Statutory UM Included)*",
+    "premium": "$ 58.00"
+   },
+   {
+    "coverage_name": "Personal Injury Protection",
+    "limit_amount": "$50K BEL $0 ded: Med;Wrk $2K mo/3yrs;Other $25 day/1yr;Death $2K Addl.",
+    "premium": "$ 52.00"
+   },
+   {
+    "coverage_name": "Added Personal Injury Protection Benefits",
+    "limit_amount": "$50K Extend Econ Loss: Med; Wrk Loss $1K mo/3yrs; Other Exp $25 day/1yr",
+    "premium": "$ 174.00"
+   },
+   {
+    "coverage_name": "Optional Basic Economic Loss",
+    "limit_amount": "$25,000 Each Person/Each Accident",
+    "premium": "$ 87.00"
+   },
+   {
+    "coverage_name": "Total No-Fault Benefits Available**",
+    "limit_amount": "$125,000",
+    "is_included": {
+     "raw": "INCL",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Medical Payments",
+    "limit_amount": "$1,000 Each Person/Each Accident",
+    "premium": "$ 3.00"
+   },
+   {
+    "coverage_name": "Other Than Collision",
+    "premium": "$ 922.00"
+   },
+   {
+    "coverage_name": "Collision",
+    "premium": "$ 783.00"
+   },
+   {
+    "coverage_name": "Spare Parts",
+    "limit_amount": "$750 Total Limit",
+    "deductible_amount": "($0 ded)",
+    "is_included": {
+     "raw": "Included",
+     "parsed": "Yes"
+    }
+   }
+  ]
+ },
+ "interested_parties": [],
+ "additional_fields": [
+  {
+   "section": "Additional Interests",
+   "label": "Additional Interests",
+   "value": "None"
+  },
+  {
+   "section": "Additional Information",
+   "label": "Maximum Monthly Work Loss",
+   "value": "$3,000"
+  },
+  {
+   "section": "Additional Information",
+   "label": "Other Necessary Expenses per Day",
+   "value": "$50"
+  },
+  {
+   "section": "Additional Information",
+   "label": "Death Benefit",
+   "value": "$2,000"
+  }
+ ],
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_effective_date": "07/30/2026",
+   "renewal_expiration_date": "07/30/2027",
+   "renewal_premium": "$ 2,289.00",
+   "offer_issue_date": "05/27/2026"
+  }
+ }
+}

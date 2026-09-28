@@ -1,0 +1,767 @@
+{
+  "document": {
+    "document_type": {
+      "raw": "AL3 Viewer - HawkSoft",
+      "parsed": "Policy History",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "source_system": {
+      "raw": "AL3 Viewer - HawkSoft",
+      "parsed": "AL3 Viewer - HawkSoft",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "print_date": {
+      "raw": "9/18/26",
+      "parsed": "09/18/2026",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "print_time": {
+      "raw": "4:13 PM",
+      "parsed": "4:13 PM",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "transaction_effective_date": {
+      "raw": "6/10/2019",
+      "parsed": "06/10/2019",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "source_file_name": {
+      "raw": "mapfre_insurance_company_autop.pdf",
+      "parsed": "mapfre_insurance_company_autop.pdf",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "page_count": {
+      "raw": "1",
+      "parsed": 1,
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "carrier": {
+    "company_name": {
+      "raw": "MAPFRE Insurance Company",
+      "parsed": "MAPFRE Insurance Company",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "producer": {
+    "producer_code": {
+      "raw": "49997447",
+      "parsed": "49997447",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "named_insured": {
+    "primary_name": {
+      "raw": "Juno Prentice & Hazel Vance",
+      "parsed": "Juno Prentice & Hazel Vance",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "entity_type": {
+      "raw": "Individual",
+      "parsed": "Individual",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "mailing_address": {
+      "line_1": {
+        "raw": "57 Sunrise Hill Rd",
+        "parsed": "57 Sunrise Hill Rd",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Fishkill",
+        "parsed": "Fishkill",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "12524 241",
+        "parsed": "12524 241",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "gender": {
+      "raw": "Female",
+      "parsed": "Female",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "marital_status": {
+      "raw": "Married",
+      "parsed": "Married",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "date_of_birth": {
+      "raw": "1/27/1976",
+      "parsed": "01/27/1976",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "occupation": {
+      "raw": "Other",
+      "parsed": "Other",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "contact": {
+      "phone": {
+        "raw": "718-555-0207",
+        "parsed": "718-555-0207",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "email": {
+        "raw": "customer207@example.com",
+        "parsed": "customer207@example.com",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "additional_named_insureds": [
+      {
+        "name": {
+          "raw": "Hazel Vance",
+          "parsed": "Hazel Vance",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "gender": {
+          "raw": "Male",
+          "parsed": "Male",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "marital_status": {
+          "raw": "Married",
+          "parsed": "Married",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "date_of_birth": {
+          "raw": "2/6/1975",
+          "parsed": "02/06/1975",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "occupation": {
+          "raw": "Other",
+          "parsed": "Other",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "policy": {
+    "policy_number": {
+      "raw": "NYPA001318300",
+      "parsed": "NYPA001318300",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "policy_type": {
+      "raw": "Private Passenger Automobile",
+      "parsed": "Private Passenger Automobile",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "effective_date": {
+      "raw": "6/10/2019",
+      "parsed": "06/10/2019",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "expiration_date": {
+      "raw": "12/10/2019",
+      "parsed": "12/10/2019",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "policy_term_as_printed": {
+      "raw": "6 Months",
+      "parsed": "6 Months",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "policy_term_months": {
+      "raw": "6 Months",
+      "parsed": 6,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "original_inception_date": {
+      "raw": "6/10/2016",
+      "parsed": "06/10/2016",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "premium": {
+    "total_policy_premium": {
+      "raw": "$289.00",
+      "parsed": 289.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "locations": [
+    {
+      "location_number": {
+        "raw": "1",
+        "parsed": 1,
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "address": {
+        "line_1": {
+          "raw": "57 Sunrise Hill Rd",
+          "parsed": "57 Sunrise Hill Rd",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "city": {
+          "raw": "Fishkill",
+          "parsed": "Fishkill",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "state": {
+          "raw": "NY",
+          "parsed": "NY",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "postal_code": {
+          "raw": "12524 241",
+          "parsed": "12524 241",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      }
+    }
+  ],
+  "document_type_detail": {
+    "policy_history": {
+      "term_amount": {
+        "raw": "$289.00",
+        "parsed": 289.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "term_length": {
+        "raw": "6 Months",
+        "parsed": "6 Months",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "inception_date": {
+        "raw": "6/10/2016",
+        "parsed": "06/10/2016",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "transactions": [
+        {
+          "transaction_date": {
+            "raw": "6/10/2019",
+            "parsed": "06/10/2019",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "transaction_effective_date": {
+            "raw": "6/10/2019",
+            "parsed": "06/10/2019",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "effective_date": {
+            "raw": "6/10/2019",
+            "parsed": "06/10/2019",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "expiration_date": {
+            "raw": "12/10/2019",
+            "parsed": "12/10/2019",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "term_amount": {
+            "raw": "$289.00",
+            "parsed": 289.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          }
+        }
+      ]
+    }
+  },
+  "auto": {
+    "drivers": [
+      {
+        "name": {
+          "raw": "Juno Prentice",
+          "parsed": "Juno Prentice",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "gender": {
+          "raw": "Female",
+          "parsed": "Female",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "marital_status": {
+          "raw": "Married",
+          "parsed": "Married",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "date_of_birth": {
+          "raw": "1/27/1976",
+          "parsed": "01/27/1976",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "occupation": {
+          "raw": "Other",
+          "parsed": "Other",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "is_named_insured": {
+          "raw": "Insured Information",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "name": {
+          "raw": "Hazel Vance",
+          "parsed": "Hazel Vance",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "gender": {
+          "raw": "Male",
+          "parsed": "Male",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "marital_status": {
+          "raw": "Married",
+          "parsed": "Married",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "date_of_birth": {
+          "raw": "2/6/1975",
+          "parsed": "02/06/1975",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "occupation": {
+          "raw": "Other",
+          "parsed": "Other",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "is_named_insured": {
+          "raw": "Co-Insured Information",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "text_sections": {
+    "page1_s1": {
+      "section_id": "page1_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    }
+  },
+  "fideon:provenance": {
+    "source": "MAPFRE Insurance Company/personal_auto/mapfre_insurance_company_autop.pdf",
+    "schema": "personal_auto v1.4.0",
+    "synthetic": false,
+    "gold": "reviewed and completed by Claude against the printed pages",
+    "reviewed": "2026-09-28"
+  }
+}

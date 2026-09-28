@@ -1,0 +1,279 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "Classic Automobile Renewal Policy Declarations",
+   "parsed": "Renewal Declarations"
+  },
+  "document_title_as_stated": "Classic Automobile Renewal Policy Declarations",
+  "issue_date": "05/17/2026",
+  "print_code": "AC DEC 03 25",
+  "print_date": "05/17/2026",
+  "print_time": "10:15:29PM",
+  "transaction_type": {
+   "raw": "Renewal",
+   "source": "structural"
+  }
+ },
+ "carrier": {
+  "company_name": "Essentia Insurance Company",
+  "company_structure": "(A Harbor Point )",
+  "address": {
+   "line_1": "PO Box 9802",
+   "city": "Kingston",
+   "state": "WI",
+   "postal_code": "12401-6985"
+  },
+  "writing_company_name": "Hagerty Insurance Agency, LLC."
+ },
+ "claim_reporting": {
+  "claims_phone": "800-922-4050"
+ },
+ "producer": {
+  "agency_name": "Stable Rock Insurance Agency LLC",
+  "contact": {
+   "phone": "(226) 783-0236"
+  },
+  "address": {
+   "line_1": "PO Box 592",
+   "city": "Inlet",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Frances Ingersoll",
+  "mailing_address": {
+   "line_1": "645 Station Road",
+   "city": "Medina",
+   "state": "NY",
+   "postal_code": "14103-4802"
+  },
+  "additional_named_insureds": [
+   {
+    "name": "Daniel T Riggall"
+   }
+  ]
+ },
+ "policy": {
+  "policy_number": "7G52262",
+  "rating_state": "NY",
+  "effective_date": "07/20/2026",
+  "expiration_date": "07/20/2027",
+  "effective_time": "12:01 a.m.",
+  "expiration_time": "12:01 a.m.",
+  "time_zone": "standard time",
+  "is_renewal": {
+   "raw": "Renewal",
+   "source": "structural",
+   "parsed": "Yes"
+  }
+ },
+ "premium": {
+  "total_policy_premium": "$ 125.00",
+  "motor_vehicle_law_enforcement_fee": null,
+  "discounts_and_credits": [
+   {
+    "description": "Paid in Full Discount",
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   }
+  ]
+ },
+ "forms_and_endorsements": [
+  {
+   "form_title": "Classic Automobile Policy - New York",
+   "form_number": "AC 900 NY 07 23"
+  },
+  {
+   "form_title": "Signature Page for Essentia Insurance Company",
+   "form_number": "IL 901 02 24"
+  },
+  {
+   "form_title": "State Endorsement - NY",
+   "form_number": "AC 001 NY 06 21"
+  },
+  {
+   "form_title": "Vehicle Under Construction Endorsement",
+   "form_number": "AC 116 11 22"
+  },
+  {
+   "form_number": "AC N 500 11 22",
+   "form_title": "Important Notice Regarding Your Collector Vehicle Insurance",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "AC N 88 07 23",
+   "form_title": "Premium Discount Information - NY",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "AC N 405 NY 08 22",
+   "form_title": "Impt Ntc: Transport Network Co Services - NY",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "AC N 65 02 13",
+   "form_title": "Blood Alcohol Content Notice - NY",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "IL N 150 NY 08 25",
+   "form_title": "Motor Vehicle Accident Prevention Course Discount - New York",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "AC N 01 01 NY 12 15",
+   "form_title": "Third Party Notification of Policy Termination-NY",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "AC N 300 NY 07 23",
+   "form_title": "Rating Information - New York",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  }
+ ],
+ "auto": {
+  "drivers": [
+   {
+    "driver_number": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "name": "Frances Ingersoll",
+    "date_of_birth": "Jun 30, 1962",
+    "excluded_driver": {
+     "raw": "None",
+     "source": "structural",
+     "parsed": "No"
+    }
+   },
+   {
+    "driver_number": {
+     "raw": "2",
+     "parsed": 2
+    },
+    "name": "Daniel T Riggall",
+    "date_of_birth": {
+     "raw": "On File",
+     "parsed": null
+    },
+    "excluded_driver": {
+     "raw": "None",
+     "source": "structural",
+     "parsed": "No"
+    }
+   }
+  ],
+  "vehicles": [
+   {
+    "vehicle_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "1966",
+     "parsed": 1966
+    },
+    "make": "PLYMOUTH",
+    "model": "BARRACUDA",
+    "body_type": "2DR FASTBACK",
+    "vin": "BP29D62683576",
+    "stated_amount": "$ 10,000",
+    "total_loss_settlement_basis": {
+     "raw": "Guaranteed Value",
+     "source": "structural"
+    },
+    "vehicle_category": "Auto",
+    "garaging_type": "Private Garage/Barn/Pole Building",
+    "garaging_territory": "06",
+    "coverages": [
+     {
+      "coverage_name": "Total No-Fault Benefits Available**",
+      "limit_amount": "$0",
+      "is_included": {
+       "raw": "INCL",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Other Than Collision",
+      "deductible_amount": "($50 Ded.)",
+      "premium": "$102.00",
+      "notes": "($0 Ded. Glass)"
+     },
+     {
+      "coverage_name": "Vehicle Under Construction Endorsement",
+      "premium": "$ 20.00"
+     },
+     {
+      "coverage_name": "Spare Parts",
+      "limit_amount": "$1,500 Total Limit",
+      "deductible_amount": "($0 ded)",
+      "premium": "$3.00"
+     }
+    ]
+   }
+  ],
+  "additional_coverages": []
+ },
+ "interested_parties": [],
+ "additional_fields": [
+  {
+   "section": "Additional Interests",
+   "label": "Additional Interests",
+   "value": "None"
+  },
+  {
+   "section": "Additional Information",
+   "label": "Maximum Monthly Work Loss",
+   "value": "$0"
+  },
+  {
+   "section": "Additional Information",
+   "label": "Other Necessary Expenses per Day",
+   "value": "$0"
+  },
+  {
+   "section": "Additional Information",
+   "label": "Death Benefit",
+   "value": "$0"
+  },
+  {
+   "section": "Additional Information",
+   "label": "NOTICE TO SENIOR CITIZENS",
+   "value": "You may designate a third party to receive copies of cancellation, lapse, and nonrenewal notices."
+  }
+ ],
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_effective_date": "07/20/2026",
+   "renewal_expiration_date": "07/20/2027",
+   "renewal_premium": "$ 125.00",
+   "offer_issue_date": "05/17/2026"
+  }
+ }
+}

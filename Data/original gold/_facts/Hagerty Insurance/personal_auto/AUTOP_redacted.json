@@ -1,0 +1,296 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "Classic Automobile Endorsement Policy Declarations",
+   "parsed": "Policy Change Declaration"
+  },
+  "document_title_as_stated": "Classic Automobile Endorsement Policy Declarations",
+  "issue_date": "04/06/2021",
+  "print_code": "AC DEC 04 07",
+  "print_date": "04/06/2021",
+  "print_time": "4:46:53PM",
+  "transaction_type": {
+   "raw": "Endorsement",
+   "source": "structural"
+  },
+  "transaction_effective_date": "04/01/2021"
+ },
+ "carrier": {
+  "company_name": "Essentia Insurance Company",
+  "company_structure": "(A Harbor Point )",
+  "address": {
+   "line_1": "PO Box 159",
+   "city": "Medina",
+   "state": "WI",
+   "postal_code": "14103-5668"
+  },
+  "writing_company_name": "Hagerty Insurance Agency, LLC."
+ },
+ "claim_reporting": {
+  "claims_phone": "800-922-4050"
+ },
+ "producer": {
+  "agency_name": "JCCD Corp",
+  "contact": {
+   "phone": "(226) 783-0236"
+  },
+  "address": {
+   "line_1": "1992 Harbor 132b",
+   "city": "Chester",
+   "state": "NY",
+   "postal_code": "10918"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Carl Danforth",
+  "mailing_address": {
+   "line_1": "755 Lincoln",
+   "city": "Cortland",
+   "state": "NY",
+   "postal_code": "13045-4231"
+  },
+  "additional_named_insureds": []
+ },
+ "policy": {
+  "policy_number": "0N29520",
+  "rating_state": "NY",
+  "effective_date": "09/15/2020",
+  "expiration_date": "09/15/2021",
+  "effective_time": "12:01 a.m.",
+  "expiration_time": "12:01 a.m.",
+  "time_zone": "standard time",
+  "is_renewal": {
+   "raw": "Endorsement",
+   "source": "structural",
+   "parsed": "No"
+  }
+ },
+ "premium": {
+  "total_policy_premium": "$ 571",
+  "motor_vehicle_law_enforcement_fee": "$ 10"
+ },
+ "forms_and_endorsements": [
+  {
+   "form_title": "Classic Automobile Policy",
+   "form_number": "AC 00 01 04 07"
+  },
+  {
+   "form_title": "Signature Page for Essentia Insurance Company",
+   "form_number": "IL 901 05 19"
+  },
+  {
+   "form_title": "State Endorsement - NY",
+   "form_number": "AC 001 NY 10 18"
+  },
+  {
+   "form_title": "Guaranteed Value Endorsement",
+   "form_number": "AC 15 09 04 10"
+  },
+  {
+   "form_title": "Personal Injury Protection Coverage - NY",
+   "form_number": "PP 05 87 07 18"
+  },
+  {
+   "form_title": "Split Liability Limits - NY",
+   "form_number": "AC 03 09 04 07"
+  },
+  {
+   "form_title": "Supplementary UM/UIM Coverage - NY",
+   "form_number": "PP 04 09 07 18"
+  },
+  {
+   "form_title": "Auto Show Medical Reimbursement",
+   "form_number": "AC 00 04 04 07"
+  },
+  {
+   "form_title": "Enthusiast Essentials Endorsement - NY",
+   "form_number": "AC 01 90 NY 03 16"
+  },
+  {
+   "form_number": "AC N 89 07 14",
+   "form_title": "Premium Surcharge Notice - NY",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "AC N 64 04 07",
+   "form_title": "Supplemental Spousal Liability Cov. Notice - NY",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "AC N 60 08 17",
+   "form_title": "Motor Vehicle Accident Prevention Course Discount",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  }
+ ],
+ "auto": {
+  "drivers": [
+   {
+    "driver_number": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "name": "Carl Danforth",
+    "date_of_birth": "Dec 07, 1979",
+    "excluded_driver": {
+     "raw": "None",
+     "source": "structural",
+     "parsed": "No"
+    }
+   },
+   {
+    "driver_number": {
+     "raw": "2",
+     "parsed": 2
+    },
+    "name": "Christine P Otero",
+    "date_of_birth": {
+     "raw": "On File",
+     "parsed": null
+    },
+    "excluded_driver": {
+     "raw": "None",
+     "source": "structural",
+     "parsed": "No"
+    }
+   }
+  ],
+  "vehicles": [
+   {
+    "vehicle_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "1998",
+     "parsed": 1998
+    },
+    "make": "CHEVROLET",
+    "model": "S10 1/2 TON",
+    "body_type": "2DR PICKUP",
+    "vin": "1GCCS144XW8238751",
+    "stated_amount": "$ 10,000",
+    "total_loss_settlement_basis": {
+     "raw": "Guaranteed Value",
+     "source": "structural"
+    },
+    "vehicle_category": "Truck/Jeep/SUV",
+    "garaging_type": "Private Garage/Barn/Pole Building",
+    "garaging_territory": "05",
+    "coverages": [
+     {
+      "coverage_name": "A: Bodily Injury Liability",
+      "limit_amount": "$250,000 Per Person/$500,000 Per Accident (incl. Supplemental Spousal BI)",
+      "premium": "$ 57"
+     },
+     {
+      "coverage_name": "A: Property Damage Liability",
+      "limit_amount": "$100,000 Per Accident",
+      "premium": "$ 47"
+     },
+     {
+      "coverage_name": "Supplementary Uninsured/Underinsured Motorists",
+      "limit_amount": "SUM $250,000 Per Person/$500,000 Per Accident (Basic UM Included)*",
+      "premium": "$ 22"
+     },
+     {
+      "coverage_name": "Personal Injury Protection Benefits",
+      "limit_amount": "$50K BEL $0 ded: Med;Wrk $2K mo/3yrs;Other $25 day/1yr;Death $2K Addl.",
+      "premium": "$ 39"
+     },
+     {
+      "coverage_name": "Added PIP",
+      "is_excluded": {
+       "raw": "No Coverage",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Optional Basic Economic Loss",
+      "is_excluded": {
+       "raw": "No Coverage",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "B: Medical Payments",
+      "limit_amount": "$1,000 Per Person Per Accident",
+      "premium": "$ 6"
+     },
+     {
+      "coverage_name": "Total No-Fault Benefits Available**",
+      "limit_amount": "$50,000",
+      "is_included": {
+       "raw": "INCL",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Other Than Collision",
+      "deductible_amount": "($500 Ded.)",
+      "premium": "$191",
+      "notes": "($0 Ded. Glass)"
+     },
+     {
+      "coverage_name": "Collision",
+      "deductible_amount": "($500 Ded.)",
+      "premium": "$181"
+     },
+     {
+      "coverage_name": "Spare Parts",
+      "limit_amount": "$1,500 Total Limit",
+      "deductible_amount": "($0 ded)",
+      "premium": "$3"
+     },
+     {
+      "coverage_name": "Rental Vehicle Coverage",
+      "notes": "See Endorsement",
+      "premium": {
+       "raw": "15",
+       "parsed": 15.0
+      }
+     }
+    ]
+   }
+  ],
+  "additional_coverages": []
+ },
+ "interested_parties": [],
+ "additional_fields": [
+  {
+   "section": "Additional Interests",
+   "label": "Additional Interests",
+   "value": "None"
+  },
+  {
+   "section": "Additional Information",
+   "label": "Maximum Monthly Work Loss",
+   "value": "$2,000"
+  },
+  {
+   "section": "Additional Information",
+   "label": "Other Necessary Expenses per Day",
+   "value": "$25"
+  },
+  {
+   "section": "Additional Information",
+   "label": "Death Benefit",
+   "value": "$2,000"
+  }
+ ],
+ "document_type_detail": {
+  "endorsement": {
+   "endorsement_effective_date": "04/01/2021",
+   "attached_to_policy_number": "0N29520"
+  }
+ }
+}

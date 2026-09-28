@@ -1,0 +1,4113 @@
+{
+  "document": {
+    "document_type": {
+      "raw": "Classic Automobile Renewal Policy Declarations",
+      "parsed": "Renewal Declarations",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "document_title_as_stated": {
+      "raw": "Classic Automobile Renewal Policy Declarations",
+      "parsed": "Classic Automobile Renewal Policy Declarations",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "issue_date": {
+      "raw": "05/27/2026",
+      "parsed": "05/27/2026",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "print_code": {
+      "raw": "AC DEC 03 25",
+      "parsed": "AC DEC 03 25",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "print_date": {
+      "raw": "05/27/2026",
+      "parsed": "05/27/2026",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "print_time": {
+      "raw": "7:07:31PM",
+      "parsed": "7:07:31PM",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "transaction_type": {
+      "raw": "Renewal",
+      "parsed": "Renewal",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1,
+        4
+      ],
+      "flagged": false
+    },
+    "source_file_name": {
+      "raw": "hagerty_insurance_autop_4.pdf",
+      "parsed": "hagerty_insurance_autop_4.pdf",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "page_count": {
+      "raw": "4",
+      "parsed": 4,
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    }
+  },
+  "carrier": {
+    "company_name": {
+      "raw": "Essentia Insurance Company",
+      "parsed": "Essentia Insurance Company",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        4
+      ],
+      "flagged": false
+    },
+    "company_structure": {
+      "raw": "(A Stock Company)",
+      "parsed": "(A Stock Company)",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "address": {
+      "line_1": {
+        "raw": "PO Box 13008",
+        "parsed": "PO Box 13008",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Milwaukee",
+        "parsed": "Milwaukee",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "WI",
+        "parsed": "WI",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "53213-0008",
+        "parsed": "53213-0008",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "writing_company_name": {
+      "raw": "Hagerty Insurance Agency, LLC.",
+      "parsed": "Hagerty Insurance Agency, LLC.",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "claim_reporting": {
+    "claims_phone": {
+      "raw": "800-922-4050",
+      "parsed": "800-922-4050",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "producer": {
+    "agency_name": {
+      "raw": "Stable Rock Insurance Agency LLC",
+      "parsed": "Stable Rock Insurance Agency LLC",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "contact": {
+      "phone": {
+        "raw": "(845) 610-5700",
+        "parsed": "(845) 610-5700",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "address": {
+      "line_1": {
+        "raw": "PO Box 329",
+        "parsed": "PO Box 329",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Inlet",
+        "parsed": "Inlet",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          4
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13360",
+        "parsed": "13360",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "named_insured": {
+    "primary_name": {
+      "raw": "Marguerite Everly",
+      "parsed": "Marguerite Everly",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "mailing_address": {
+      "line_1": {
+        "raw": "P.O. Box 252",
+        "parsed": "P.O. Box 252",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Eagle Bay",
+        "parsed": "Eagle Bay",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          4
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13331-0252",
+        "parsed": "13331-0252",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "additional_named_insureds": [
+      {
+        "name": {
+          "raw": "Marguerite Prentice",
+          "parsed": "Marguerite Prentice",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "policy": {
+    "policy_number": {
+      "raw": "6P13814",
+      "parsed": "6P13814",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "rating_state": {
+      "raw": "NY",
+      "parsed": "NY",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        4
+      ],
+      "flagged": false
+    },
+    "effective_date": {
+      "raw": "07/30/2026",
+      "parsed": "07/30/2026",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "expiration_date": {
+      "raw": "07/30/2027",
+      "parsed": "07/30/2027",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "effective_time": {
+      "raw": "12:01 a.m.",
+      "parsed": "12:01 a.m.",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "expiration_time": {
+      "raw": "12:01 a.m.",
+      "parsed": "12:01 a.m.",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "time_zone": {
+      "raw": "standard time",
+      "parsed": "standard time",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "is_renewal": {
+      "raw": "Renewal",
+      "parsed": "Yes",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1,
+        4
+      ],
+      "flagged": false
+    },
+    "account_id": {
+      "raw": "3478715",
+      "parsed": "3478715",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    }
+  },
+  "premium": {
+    "total_policy_premium": {
+      "raw": "$ 2,289.00",
+      "parsed": 2289.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "motor_vehicle_law_enforcement_fee": {
+      "raw": "$ 50.00",
+      "parsed": 50.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "discounts_and_credits": [
+      {
+        "description": {
+          "raw": "Paid in Full Discount",
+          "parsed": "Paid in Full Discount",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "APPLIED",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "Multi-Vehicle Discount",
+          "parsed": "Multi-Vehicle Discount",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "APPLIED",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "forms_and_endorsements": [
+    {
+      "form_title": {
+        "raw": "Classic Automobile Policy - New York",
+        "parsed": "Classic Automobile Policy - New York",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_number": {
+        "raw": "AC 900 NY 07 23",
+        "parsed": "AC 900 NY 07 23",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_title": {
+        "raw": "Signature Page for Essentia Insurance Company",
+        "parsed": "Signature Page for Essentia Insurance Company",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_number": {
+        "raw": "IL 901 02 24",
+        "parsed": "IL 901 02 24",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_title": {
+        "raw": "State Endorsement - NY",
+        "parsed": "State Endorsement - NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_number": {
+        "raw": "AC 001 NY 06 21",
+        "parsed": "AC 001 NY 06 21",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_title": {
+        "raw": "Mandatory Personal Injury Protection Endorsement (New York)",
+        "parsed": "Mandatory Personal Injury Protection Endorsement (New York)",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_number": {
+        "raw": "AC 004 NY 07 23",
+        "parsed": "AC 004 NY 07 23",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_title": {
+        "raw": "Additional Personal Injury Protection Endorsement (New York)",
+        "parsed": "Additional Personal Injury Protection Endorsement (New York)",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_number": {
+        "raw": "AC 005 NY 07 23",
+        "parsed": "AC 005 NY 07 23",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_title": {
+        "raw": "Optional Basic Economic Loss Coverage Endorsement (New York)",
+        "parsed": "Optional Basic Economic Loss Coverage Endorsement (New York)",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_number": {
+        "raw": "AC 011 NY 07 23",
+        "parsed": "AC 011 NY 07 23",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_title": {
+        "raw": "Supplementary Uninsured/Underinsured Motorists Endorsement - New York",
+        "parsed": "Supplementary Uninsured/Underinsured Motorists Endorsement - New York",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_number": {
+        "raw": "AC 003 NY 07 23",
+        "parsed": "AC 003 NY 07 23",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "AC N 004 NY 10 23",
+        "parsed": "AC N 004 NY 10 23",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Supplemental Spousal Liability Insurance Notice - NY",
+        "parsed": "Supplemental Spousal Liability Insurance Notice - NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Notice",
+        "parsed": "Notice",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "AC N 500 11 22",
+        "parsed": "AC N 500 11 22",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Important Notice Regarding Your Collector Vehicle Insurance",
+        "parsed": "Important Notice Regarding Your Collector Vehicle Insurance",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Notice",
+        "parsed": "Notice",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "AC N 88 07 23",
+        "parsed": "AC N 88 07 23",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Premium Discount Information - NY",
+        "parsed": "Premium Discount Information - NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Notice",
+        "parsed": "Notice",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "AC N 405 NY 08 22",
+        "parsed": "AC N 405 NY 08 22",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Impt Ntc: Transport Network Co Services - NY",
+        "parsed": "Impt Ntc: Transport Network Co Services - NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Notice",
+        "parsed": "Notice",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "AC N 502 NY 12 19",
+        "parsed": "AC N 502 NY 12 19",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Notice of Removal of Rental Vehicle Coverage",
+        "parsed": "Notice of Removal of Rental Vehicle Coverage",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Notice",
+        "parsed": "Notice",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "AC N 65 02 13",
+        "parsed": "AC N 65 02 13",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Blood Alcohol Content Notice - NY",
+        "parsed": "Blood Alcohol Content Notice - NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Notice",
+        "parsed": "Notice",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "IL N 150 NY 08 25",
+        "parsed": "IL N 150 NY 08 25",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Motor Vehicle Accident Prevention Course Discount - New York",
+        "parsed": "Motor Vehicle Accident Prevention Course Discount - New York",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Notice",
+        "parsed": "Notice",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "AC N 01 01 NY 12 15",
+        "parsed": "AC N 01 01 NY 12 15",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Third Party Notification of Policy Termination-NY",
+        "parsed": "Third Party Notification of Policy Termination-NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Notice",
+        "parsed": "Notice",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "AC N 300 NY 07 23",
+        "parsed": "AC N 300 NY 07 23",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Rating Information - New York",
+        "parsed": "Rating Information - New York",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Notice",
+        "parsed": "Notice",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    }
+  ],
+  "auto": {
+    "drivers": [
+      {
+        "driver_number": {
+          "raw": "1",
+          "parsed": 1,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "name": {
+          "raw": "Marguerite Everly",
+          "parsed": "Marguerite Everly",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "date_of_birth": {
+          "raw": "Dec 26, 1953",
+          "parsed": "12/26/1953",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "excluded_driver": {
+          "raw": "None",
+          "parsed": "No",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            4
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "driver_number": {
+          "raw": "2",
+          "parsed": 2,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "name": {
+          "raw": "Marguerite Prentice",
+          "parsed": "Marguerite Prentice",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "date_of_birth": {
+          "raw": "On File",
+          "parsed": null,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "excluded_driver": {
+          "raw": "None",
+          "parsed": "No",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            4
+          ],
+          "flagged": false
+        }
+      }
+    ],
+    "vehicles": [
+      {
+        "vehicle_number": {
+          "raw": "1",
+          "parsed": 1,
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "year": {
+          "raw": "1989",
+          "parsed": 1989,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "make": {
+          "raw": "LAND ROVER",
+          "parsed": "LAND ROVER",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "model": {
+          "raw": "DEFENDER 110",
+          "parsed": "DEFENDER 110",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "body_type": {
+          "raw": "4DR WAGON 4X4",
+          "parsed": "4DR WAGON 4X4",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "vin": {
+          "raw": "AAPV0120470409401",
+          "parsed": "AAPV0120470409401",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "stated_amount": {
+          "raw": "$45,000",
+          "parsed": 45000.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "total_loss_settlement_basis": {
+          "raw": "Guaranteed Value",
+          "parsed": "Guaranteed Value",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "vehicle_category": {
+          "raw": "Truck/Jeep/SUV",
+          "parsed": "Truck/Jeep/SUV",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "garaging_type": {
+          "raw": "Private Garage/Barn/Pole Building",
+          "parsed": "Private Garage/Barn/Pole Building",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "garaging_territory": {
+          "raw": "06",
+          "parsed": "06",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "coverages": [
+          {
+            "coverage_name": {
+              "raw": "Liab BI",
+              "parsed": "Liab BI",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Liab PD",
+              "parsed": "Liab PD",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Supp UM/UIM",
+              "parsed": "Supp UM/UIM",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "PIP",
+              "parsed": "PIP",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Added PIP",
+              "parsed": "Added PIP",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "OBEL",
+              "parsed": "OBEL",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Med Payments",
+              "parsed": "Med Payments",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Other Than Collision",
+              "parsed": "Other Than Collision",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "deductible_amount": {
+              "raw": "$1000",
+              "parsed": 1000.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$372",
+              "parsed": 372.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            },
+            "notes": {
+              "raw": "($0 Ded Glass)",
+              "parsed": "($0 Ded Glass)",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Collision",
+              "parsed": "Collision",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "deductible_amount": {
+              "raw": "$1000",
+              "parsed": 1000.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$365",
+              "parsed": 365.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            }
+          }
+        ],
+        "motor_vehicle_law_enforcement_fee": {
+          "raw": "$10.00",
+          "parsed": 10.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "vehicle_number": {
+          "raw": "2",
+          "parsed": 2,
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "year": {
+          "raw": "1986",
+          "parsed": 1986,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "make": {
+          "raw": "FORD",
+          "parsed": "FORD",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            3
+          ],
+          "flagged": false
+        },
+        "model": {
+          "raw": "F-150 1/2 TON",
+          "parsed": "F-150 1/2 TON",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "body_type": {
+          "raw": "2DR PICKUP",
+          "parsed": "2DR PICKUP",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "vin": {
+          "raw": "1FTCF15N0GNA94481",
+          "parsed": "1FTCF15N0GNA94481",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "stated_amount": {
+          "raw": "$18,000",
+          "parsed": 18000.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "total_loss_settlement_basis": {
+          "raw": "Guaranteed Value",
+          "parsed": "Guaranteed Value",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "vehicle_category": {
+          "raw": "Truck/Jeep/SUV",
+          "parsed": "Truck/Jeep/SUV",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "garaging_type": {
+          "raw": "Driveway",
+          "parsed": "Driveway",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "garaging_territory": {
+          "raw": "06",
+          "parsed": "06",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "coverages": [
+          {
+            "coverage_name": {
+              "raw": "Liab BI",
+              "parsed": "Liab BI",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Liab PD",
+              "parsed": "Liab PD",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Supp UM/UIM",
+              "parsed": "Supp UM/UIM",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "PIP",
+              "parsed": "PIP",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Added PIP",
+              "parsed": "Added PIP",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "OBEL",
+              "parsed": "OBEL",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Med Payments",
+              "parsed": "Med Payments",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Other Than Collision",
+              "parsed": "Other Than Collision",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "deductible_amount": {
+              "raw": "$50",
+              "parsed": 50.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$215",
+              "parsed": 215.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            },
+            "notes": {
+              "raw": "($0 Ded Glass)",
+              "parsed": "($0 Ded Glass)",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Collision",
+              "parsed": "Collision",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "deductible_amount": {
+              "raw": "$100",
+              "parsed": 100.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$100",
+              "parsed": 100.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          }
+        ],
+        "motor_vehicle_law_enforcement_fee": {
+          "raw": "$10.00",
+          "parsed": 10.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "vehicle_number": {
+          "raw": "3",
+          "parsed": 3,
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "year": {
+          "raw": "1997",
+          "parsed": 1997,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "make": {
+          "raw": "JAGUAR",
+          "parsed": "JAGUAR",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "model": {
+          "raw": "XK8",
+          "parsed": "XK8",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "body_type": {
+          "raw": "2DR CONVERTIBLE",
+          "parsed": "2DR CONVERTIBLE",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "vin": {
+          "raw": "SAJGX2749VC013447",
+          "parsed": "SAJGX2749VC013447",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "stated_amount": {
+          "raw": "$20,000",
+          "parsed": 20000.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "total_loss_settlement_basis": {
+          "raw": "Guaranteed Value",
+          "parsed": "Guaranteed Value",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "vehicle_category": {
+          "raw": "Auto",
+          "parsed": "Auto",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "garaging_type": {
+          "raw": "Private Garage/Barn/Pole Building",
+          "parsed": "Private Garage/Barn/Pole Building",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "garaging_territory": {
+          "raw": "06",
+          "parsed": "06",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "coverages": [
+          {
+            "coverage_name": {
+              "raw": "Liab BI",
+              "parsed": "Liab BI",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Liab PD",
+              "parsed": "Liab PD",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Supp UM/UIM",
+              "parsed": "Supp UM/UIM",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "PIP",
+              "parsed": "PIP",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Added PIP",
+              "parsed": "Added PIP",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "OBEL",
+              "parsed": "OBEL",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Med Payments",
+              "parsed": "Med Payments",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Other Than Collision",
+              "parsed": "Other Than Collision",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "deductible_amount": {
+              "raw": "$50",
+              "parsed": 50.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$188",
+              "parsed": 188.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            },
+            "notes": {
+              "raw": "($0 Ded Glass)",
+              "parsed": "($0 Ded Glass)",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Collision",
+              "parsed": "Collision",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "deductible_amount": {
+              "raw": "$100",
+              "parsed": 100.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$194",
+              "parsed": 194.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            }
+          }
+        ],
+        "motor_vehicle_law_enforcement_fee": {
+          "raw": "$10.00",
+          "parsed": 10.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "vehicle_number": {
+          "raw": "4",
+          "parsed": 4,
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "year": {
+          "raw": "1952",
+          "parsed": 1952,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "make": {
+          "raw": "GMC",
+          "parsed": "GMC",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "model": {
+          "raw": "SERIES 100-22 1/2 TON",
+          "parsed": "SERIES 100-22 1/2 TON",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "body_type": {
+          "raw": "2DR STAKE",
+          "parsed": "2DR STAKE",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "vin": {
+          "raw": "10122P29657",
+          "parsed": "10122P29657",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "stated_amount": {
+          "raw": "$20,000",
+          "parsed": 20000.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "total_loss_settlement_basis": {
+          "raw": "Guaranteed Value",
+          "parsed": "Guaranteed Value",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "vehicle_category": {
+          "raw": "Truck/Jeep/SUV",
+          "parsed": "Truck/Jeep/SUV",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "garaging_type": {
+          "raw": "Private Garage/Barn/Pole Building",
+          "parsed": "Private Garage/Barn/Pole Building",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "garaging_territory": {
+          "raw": "06",
+          "parsed": "06",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "coverages": [
+          {
+            "coverage_name": {
+              "raw": "Liab BI",
+              "parsed": "Liab BI",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Liab PD",
+              "parsed": "Liab PD",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Supp UM/UIM",
+              "parsed": "Supp UM/UIM",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "PIP",
+              "parsed": "PIP",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Added PIP",
+              "parsed": "Added PIP",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "OBEL",
+              "parsed": "OBEL",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Med Payments",
+              "parsed": "Med Payments",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Other Than Collision",
+              "parsed": "Other Than Collision",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "deductible_amount": {
+              "raw": "$50",
+              "parsed": 50.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$57",
+              "parsed": 57.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            },
+            "notes": {
+              "raw": "($0 Ded Glass)",
+              "parsed": "($0 Ded Glass)",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Collision",
+              "parsed": "Collision",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "deductible_amount": {
+              "raw": "$100",
+              "parsed": 100.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$48",
+              "parsed": 48.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            }
+          }
+        ],
+        "motor_vehicle_law_enforcement_fee": {
+          "raw": "$10.00",
+          "parsed": 10.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "vehicle_number": {
+          "raw": "5",
+          "parsed": 5,
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "year": {
+          "raw": "1960",
+          "parsed": 1960,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        },
+        "make": {
+          "raw": "CHEVORLET",
+          "parsed": "CHEVORLET",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        },
+        "model": {
+          "raw": "C60 2 TON",
+          "parsed": "C60 2 TON",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        },
+        "vin": {
+          "raw": "0C653F112005",
+          "parsed": "0C653F112005",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        },
+        "stated_amount": {
+          "raw": "$30,000",
+          "parsed": 30000.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        },
+        "total_loss_settlement_basis": {
+          "raw": "Guaranteed Value",
+          "parsed": "Guaranteed Value",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "vehicle_category": {
+          "raw": "Semi",
+          "parsed": "Semi",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        },
+        "garaging_type": {
+          "raw": "Private Garage/Barn/Pole Building",
+          "parsed": "Private Garage/Barn/Pole Building",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "garaging_territory": {
+          "raw": "06",
+          "parsed": "06",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "coverages": [
+          {
+            "coverage_name": {
+              "raw": "Liab BI",
+              "parsed": "Liab BI",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Liab PD",
+              "parsed": "Liab PD",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Supp UM/UIM",
+              "parsed": "Supp UM/UIM",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "PIP",
+              "parsed": "PIP",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Added PIP",
+              "parsed": "Added PIP",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "OBEL",
+              "parsed": "OBEL",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Med Payments",
+              "parsed": "Med Payments",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "X",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Other Than Collision",
+              "parsed": "Other Than Collision",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "deductible_amount": {
+              "raw": "$50",
+              "parsed": 50.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$90",
+              "parsed": 90.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                4
+              ],
+              "flagged": false
+            },
+            "notes": {
+              "raw": "($0 Ded Glass)",
+              "parsed": "($0 Ded Glass)",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Collision",
+              "parsed": "Collision",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "deductible_amount": {
+              "raw": "$100",
+              "parsed": 100.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$76",
+              "parsed": 76.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                4
+              ],
+              "flagged": false
+            }
+          }
+        ],
+        "motor_vehicle_law_enforcement_fee": {
+          "raw": "$10.00",
+          "parsed": 10.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        }
+      }
+    ],
+    "additional_coverages": [
+      {
+        "coverage_name": {
+          "raw": "Bodily Injury Liability",
+          "parsed": "Bodily Injury Liability",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            4
+          ],
+          "flagged": false
+        },
+        "limit_amount": {
+          "raw": "$250,000 Each Person/$500,000 Each Accident (Supplemental Spousal Liability - Included)",
+          "parsed": "$250,000 Each Person/$500,000 Each Accident (Supplemental Spousal Liability - Included)",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "premium": {
+          "raw": "$ 88.00",
+          "parsed": 88.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_name": {
+          "raw": "Property Damage Liability",
+          "parsed": "Property Damage Liability",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "limit_amount": {
+          "raw": "$100,000 Each Accident",
+          "parsed": "$100,000 Each Accident",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "premium": {
+          "raw": "$ 72.00",
+          "parsed": 72.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_name": {
+          "raw": "Supplementary Uninsured/Underinsured Motorists",
+          "parsed": "Supplementary Uninsured/Underinsured Motorists",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            4
+          ],
+          "flagged": false
+        },
+        "limit_amount": {
+          "raw": "SUM $250,000 Each Person/$500,000 Each Accident (Statutory UM Included)*",
+          "parsed": "SUM $250,000 Each Person/$500,000 Each Accident (Statutory UM Included)*",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "premium": {
+          "raw": "$ 58.00",
+          "parsed": 58.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_name": {
+          "raw": "Personal Injury Protection",
+          "parsed": "Personal Injury Protection",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            4
+          ],
+          "flagged": false
+        },
+        "limit_amount": {
+          "raw": "$50K BEL $0 ded: Med;Wrk $2K mo/3yrs;Other $25 day/1yr;Death $2K Addl.",
+          "parsed": "$50K BEL $0 ded: Med;Wrk $2K mo/3yrs;Other $25 day/1yr;Death $2K Addl.",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "premium": {
+          "raw": "$ 52.00",
+          "parsed": 52.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_name": {
+          "raw": "Added Personal Injury Protection Benefits",
+          "parsed": "Added Personal Injury Protection Benefits",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "limit_amount": {
+          "raw": "$50K Extend Econ Loss: Med; Wrk Loss $1K mo/3yrs; Other Exp $25 day/1yr",
+          "parsed": "$50K Extend Econ Loss: Med; Wrk Loss $1K mo/3yrs; Other Exp $25 day/1yr",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "premium": {
+          "raw": "$ 174.00",
+          "parsed": 174.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_name": {
+          "raw": "Optional Basic Economic Loss",
+          "parsed": "Optional Basic Economic Loss",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            4
+          ],
+          "flagged": false
+        },
+        "limit_amount": {
+          "raw": "$25,000 Each Person/Each Accident",
+          "parsed": "$25,000 Each Person/Each Accident",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "premium": {
+          "raw": "$ 87.00",
+          "parsed": 87.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_name": {
+          "raw": "Total No-Fault Benefits Available**",
+          "parsed": "Total No-Fault Benefits Available**",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "limit_amount": {
+          "raw": "$125,000",
+          "parsed": 125000.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "is_included": {
+          "raw": "INCL",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            4
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_name": {
+          "raw": "Medical Payments",
+          "parsed": "Medical Payments",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "limit_amount": {
+          "raw": "$1,000 Each Person/Each Accident",
+          "parsed": "$1,000 Each Person/Each Accident",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "premium": {
+          "raw": "$ 3.00",
+          "parsed": 3.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_name": {
+          "raw": "Other Than Collision",
+          "parsed": "Other Than Collision",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "premium": {
+          "raw": "$ 922.00",
+          "parsed": 922.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_name": {
+          "raw": "Collision",
+          "parsed": "Collision",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "premium": {
+          "raw": "$ 783.00",
+          "parsed": 783.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_name": {
+          "raw": "Spare Parts",
+          "parsed": "Spare Parts",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "limit_amount": {
+          "raw": "$750 Total Limit",
+          "parsed": "$750 Total Limit",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "deductible_amount": {
+          "raw": "($0 ded)",
+          "parsed": "($0 ded)",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "is_included": {
+          "raw": "Included",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            4
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "additional_fields": [
+    {
+      "section": "Additional Interests",
+      "label": "Additional Interests",
+      "value": {
+        "raw": "None",
+        "parsed": "None",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Additional Information",
+      "label": "Maximum Monthly Work Loss",
+      "value": {
+        "raw": "$3,000",
+        "parsed": 3000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Additional Information",
+      "label": "Other Necessary Expenses per Day",
+      "value": {
+        "raw": "$50",
+        "parsed": 50.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3,
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Additional Information",
+      "label": "Death Benefit",
+      "value": {
+        "raw": "$2,000",
+        "parsed": 2000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    }
+  ],
+  "document_type_detail": {
+    "renewal_offer": {
+      "renewal_effective_date": {
+        "raw": "07/30/2026",
+        "parsed": "07/30/2026",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "renewal_expiration_date": {
+        "raw": "07/30/2027",
+        "parsed": "07/30/2027",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "renewal_premium": {
+        "raw": "$ 2,289.00",
+        "parsed": 2289.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "offer_issue_date": {
+        "raw": "05/27/2026",
+        "parsed": "05/27/2026",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "text_sections": {
+    "page1_s1": {
+      "section_id": "page1_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Policy Term: Effective 07/30/2026 to Expiration 07/30/2027 at 12:01 a.m. standard time Agent:",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s2": {
+      "section_id": "page1_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Person/$500,000 Each Accident (Statutory UM Included)* *",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s3": {
+      "section_id": "page1_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "$1K mo/3yrs; Other Exp $25 day/1yr Optional Basic Economic Loss: $25,000 Each Person/Each Accident",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page3_s1": {
+      "section_id": "page3_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "The coverages listed above are afforded if indicated by an “X” and/or where a premium is shown below:",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page4_s1": {
+      "section_id": "page4_s1",
+      "section_title": "Motor Vehicle Law Enforcement Fee: $10.00 Additional Information:",
+      "section_type": "prose",
+      "raw_text": "*Supplementary Uninsured/Underinsured Motorists - The maximum amount payable under SUM coverage shall be the policy's SUM limits reduced and thus offset by motor vehicle bodily injury liability insurance policy or bond payments received from, or on behalf of, any negligent party involved in the accident, as specified in the SUM endorsement.",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page4_s2": {
+      "section_id": "page4_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "NOTICE TO SENIOR CITIZENS: You may designate a third party to receive copies of cancellation, lapse, and nonrenewal notices. If this is something you would like to do, please send Hagerty written notification by certified mail, and make sure your notification includes a signed acceptance from your third party designee (Note - these stipulations are required by state law).",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page4_s3": {
+      "section_id": "page4_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Forms and Endorsements Made Part of This Policy at time of Issue:",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page4_s4": {
+      "section_id": "page4_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Supplementary Uninsured/Underinsured Motorists Endorsement - New York* AC 003 NY 07 23",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page4_s5": {
+      "section_id": "page4_s5",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "AC N 004 NY 10 23 Supplemental Spousal Liability Insurance Notice - NY* AC N 500 11 22 Important Notice Regarding Your Collector Vehicle Insurance* AC N 88 07 23 Premium Discount Information - NY* AC N 405 NY 08 22 Impt Ntc: Transport Network Co Services - NY* AC N 502 NY 12 19 Notice of Removal of Rental Vehicle Coverage* AC N 65 02 13 Blood Alcohol Content Notice - NY* IL N 150 NY 08 25 Motor Vehicle Accident Prevention Course Discount - New York* AC N 01 01 NY 12 15 Third Party Notification of Policy Termination-NY* AC N 300 NY 07 23 Rating Information - New York*",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    }
+  },
+  "fideon:provenance": {
+    "source": "Hagerty Insurance/personal_auto/hagerty_insurance_autop_4.pdf",
+    "schema": "personal_auto v1.4.0",
+    "synthetic": false,
+    "gold": "reviewed and completed by Claude against the printed pages",
+    "reviewed": "2026-09-28"
+  }
+}

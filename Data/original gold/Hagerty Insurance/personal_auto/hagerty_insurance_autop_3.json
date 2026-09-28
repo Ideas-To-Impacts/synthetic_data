@@ -1,0 +1,1517 @@
+{
+  "document": {
+    "document_type": {
+      "raw": "Classic Automobile Renewal Policy Declarations",
+      "parsed": "Renewal Declarations",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "document_title_as_stated": {
+      "raw": "Classic Automobile Renewal Policy Declarations",
+      "parsed": "Classic Automobile Renewal Policy Declarations",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "issue_date": {
+      "raw": "05/17/2026",
+      "parsed": "05/17/2026",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "print_code": {
+      "raw": "AC DEC 03 25",
+      "parsed": "AC DEC 03 25",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "print_date": {
+      "raw": "05/17/2026",
+      "parsed": "05/17/2026",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "print_time": {
+      "raw": "10:15:29PM",
+      "parsed": "10:15:29PM",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "transaction_type": {
+      "raw": "Renewal",
+      "parsed": "Renewal",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "source_file_name": {
+      "raw": "hagerty_insurance_autop_3.pdf",
+      "parsed": "hagerty_insurance_autop_3.pdf",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "page_count": {
+      "raw": "2",
+      "parsed": 2,
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    }
+  },
+  "carrier": {
+    "company_name": {
+      "raw": "Essentia Insurance Company",
+      "parsed": "Essentia Insurance Company",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "company_structure": {
+      "raw": "(A Stock Company)",
+      "parsed": "(A Stock Company)",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "address": {
+      "line_1": {
+        "raw": "PO Box 13008",
+        "parsed": "PO Box 13008",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Milwaukee",
+        "parsed": "Milwaukee",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "WI",
+        "parsed": "WI",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "53213-0008",
+        "parsed": "53213-0008",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "writing_company_name": {
+      "raw": "Hagerty Insurance Agency, LLC.",
+      "parsed": "Hagerty Insurance Agency, LLC.",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "claim_reporting": {
+    "claims_phone": {
+      "raw": "800-922-4050",
+      "parsed": "800-922-4050",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "producer": {
+    "agency_name": {
+      "raw": "Stable Rock Insurance Agency LLC",
+      "parsed": "Stable Rock Insurance Agency LLC",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "contact": {
+      "phone": {
+        "raw": "(845) 610-5700",
+        "parsed": "(845) 610-5700",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "address": {
+      "line_1": {
+        "raw": "PO Box 329",
+        "parsed": "PO Box 329",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Inlet",
+        "parsed": "Inlet",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13360",
+        "parsed": "13360",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "named_insured": {
+    "primary_name": {
+      "raw": "Marguerite Whitlock",
+      "parsed": "Marguerite Whitlock",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "mailing_address": {
+      "line_1": {
+        "raw": "3681 Joslin Rd.",
+        "parsed": "3681 Joslin Rd.",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Boonville",
+        "parsed": "Boonville",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13309-5309",
+        "parsed": "13309-5309",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "additional_named_insureds": [
+      {
+        "name": {
+          "raw": "Daniel T Riggall",
+          "parsed": "Daniel T Riggall",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "policy": {
+    "policy_number": {
+      "raw": "3R77205",
+      "parsed": "3R77205",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "rating_state": {
+      "raw": "NY",
+      "parsed": "NY",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "effective_date": {
+      "raw": "07/20/2026",
+      "parsed": "07/20/2026",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "expiration_date": {
+      "raw": "07/20/2027",
+      "parsed": "07/20/2027",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "effective_time": {
+      "raw": "12:01 a.m.",
+      "parsed": "12:01 a.m.",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "expiration_time": {
+      "raw": "12:01 a.m.",
+      "parsed": "12:01 a.m.",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "time_zone": {
+      "raw": "standard time",
+      "parsed": "standard time",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "is_renewal": {
+      "raw": "Renewal",
+      "parsed": "Yes",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "account_id": {
+      "raw": "5184170",
+      "parsed": "5184170",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    }
+  },
+  "premium": {
+    "total_policy_premium": {
+      "raw": "$ 125.00",
+      "parsed": 125.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "discounts_and_credits": [
+      {
+        "description": {
+          "raw": "Paid in Full Discount",
+          "parsed": "Paid in Full Discount",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Applied",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "forms_and_endorsements": [
+    {
+      "form_title": {
+        "raw": "Classic Automobile Policy - New York",
+        "parsed": "Classic Automobile Policy - New York",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "form_number": {
+        "raw": "AC 900 NY 07 23",
+        "parsed": "AC 900 NY 07 23",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_title": {
+        "raw": "Signature Page for Essentia Insurance Company",
+        "parsed": "Signature Page for Essentia Insurance Company",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "form_number": {
+        "raw": "IL 901 02 24",
+        "parsed": "IL 901 02 24",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_title": {
+        "raw": "State Endorsement - NY",
+        "parsed": "State Endorsement - NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "form_number": {
+        "raw": "AC 001 NY 06 21",
+        "parsed": "AC 001 NY 06 21",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_title": {
+        "raw": "Vehicle Under Construction Endorsement",
+        "parsed": "Vehicle Under Construction Endorsement",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "form_number": {
+        "raw": "AC 116 11 22",
+        "parsed": "AC 116 11 22",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "AC N 500 11 22",
+        "parsed": "AC N 500 11 22",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Important Notice Regarding Your Collector Vehicle Insurance",
+        "parsed": "Important Notice Regarding Your Collector Vehicle Insurance",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Notice",
+        "parsed": "Notice",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "AC N 88 07 23",
+        "parsed": "AC N 88 07 23",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Premium Discount Information - NY",
+        "parsed": "Premium Discount Information - NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Notice",
+        "parsed": "Notice",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "AC N 405 NY 08 22",
+        "parsed": "AC N 405 NY 08 22",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Impt Ntc: Transport Network Co Services - NY",
+        "parsed": "Impt Ntc: Transport Network Co Services - NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Notice",
+        "parsed": "Notice",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "AC N 65 02 13",
+        "parsed": "AC N 65 02 13",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Blood Alcohol Content Notice - NY",
+        "parsed": "Blood Alcohol Content Notice - NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Notice",
+        "parsed": "Notice",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "IL N 150 NY 08 25",
+        "parsed": "IL N 150 NY 08 25",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Motor Vehicle Accident Prevention Course Discount - New York",
+        "parsed": "Motor Vehicle Accident Prevention Course Discount - New York",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Notice",
+        "parsed": "Notice",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "AC N 01 01 NY 12 15",
+        "parsed": "AC N 01 01 NY 12 15",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Third Party Notification of Policy Termination-NY",
+        "parsed": "Third Party Notification of Policy Termination-NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Notice",
+        "parsed": "Notice",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "AC N 300 NY 07 23",
+        "parsed": "AC N 300 NY 07 23",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Rating Information - New York",
+        "parsed": "Rating Information - New York",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Notice",
+        "parsed": "Notice",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    }
+  ],
+  "auto": {
+    "drivers": [
+      {
+        "driver_number": {
+          "raw": "1",
+          "parsed": 1,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "name": {
+          "raw": "Marguerite Whitlock",
+          "parsed": "Marguerite Whitlock",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "date_of_birth": {
+          "raw": "Jun 30, 1962",
+          "parsed": "06/30/1962",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "excluded_driver": {
+          "raw": "None",
+          "parsed": "No",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "driver_number": {
+          "raw": "2",
+          "parsed": 2,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "name": {
+          "raw": "Daniel T Riggall",
+          "parsed": "Daniel T Riggall",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "date_of_birth": {
+          "raw": "On File",
+          "parsed": null,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "excluded_driver": {
+          "raw": "None",
+          "parsed": "No",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        }
+      }
+    ],
+    "vehicles": [
+      {
+        "vehicle_number": {
+          "raw": "1",
+          "parsed": 1,
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "year": {
+          "raw": "1966",
+          "parsed": 1966,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "make": {
+          "raw": "PLYMOUTH",
+          "parsed": "PLYMOUTH",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "model": {
+          "raw": "BARRACUDA",
+          "parsed": "BARRACUDA",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "body_type": {
+          "raw": "2DR FASTBACK",
+          "parsed": "2DR FASTBACK",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "vin": {
+          "raw": "BP29D62683576",
+          "parsed": "BP29D62683576",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "stated_amount": {
+          "raw": "$ 10,000",
+          "parsed": 10000.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "total_loss_settlement_basis": {
+          "raw": "Guaranteed Value",
+          "parsed": "Guaranteed Value",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "vehicle_category": {
+          "raw": "Auto",
+          "parsed": "Auto",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "garaging_type": {
+          "raw": "Private Garage/Barn/Pole Building",
+          "parsed": "Private Garage/Barn/Pole Building",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "garaging_territory": {
+          "raw": "06",
+          "parsed": "06",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "coverages": [
+          {
+            "coverage_name": {
+              "raw": "Total No-Fault Benefits Available**",
+              "parsed": "Total No-Fault Benefits Available**",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$0",
+              "parsed": 0.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "INCL",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Other Than Collision",
+              "parsed": "Other Than Collision",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "deductible_amount": {
+              "raw": "($50 Ded.)",
+              "parsed": "($50 Ded.)",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$102.00",
+              "parsed": 102.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "notes": {
+              "raw": "($0 Ded. Glass)",
+              "parsed": "($0 Ded. Glass)",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Vehicle Under Construction Endorsement",
+              "parsed": "Vehicle Under Construction Endorsement",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$ 20.00",
+              "parsed": 20.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Spare Parts",
+              "parsed": "Spare Parts",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$1,500 Total Limit",
+              "parsed": "$1,500 Total Limit",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "deductible_amount": {
+              "raw": "($0 ded)",
+              "parsed": "($0 ded)",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$3.00",
+              "parsed": 3.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "additional_fields": [
+    {
+      "section": "Additional Interests",
+      "label": "Additional Interests",
+      "value": {
+        "raw": "None",
+        "parsed": "None",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Additional Information",
+      "label": "Maximum Monthly Work Loss",
+      "value": {
+        "raw": "$0",
+        "parsed": 0.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Additional Information",
+      "label": "Other Necessary Expenses per Day",
+      "value": {
+        "raw": "$0",
+        "parsed": 0.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Additional Information",
+      "label": "Death Benefit",
+      "value": {
+        "raw": "$0",
+        "parsed": 0.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Additional Information",
+      "label": "NOTICE TO SENIOR CITIZENS",
+      "value": {
+        "raw": "You may designate a third party to receive copies of cancellation, lapse, and nonrenewal notices.",
+        "parsed": "You may designate a third party to receive copies of cancellation, lapse, and nonrenewal notices.",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  ],
+  "document_type_detail": {
+    "renewal_offer": {
+      "renewal_effective_date": {
+        "raw": "07/20/2026",
+        "parsed": "07/20/2026",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "renewal_expiration_date": {
+        "raw": "07/20/2027",
+        "parsed": "07/20/2027",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "renewal_premium": {
+        "raw": "$ 125.00",
+        "parsed": 125.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "offer_issue_date": {
+        "raw": "05/17/2026",
+        "parsed": "05/17/2026",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "text_sections": {
+    "page1_s1": {
+      "section_id": "page1_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Policy Term: Effective 07/20/2026 to Expiration 07/20/2027 at 12:01 a.m. standard time Agent:",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s2": {
+      "section_id": "page1_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Coverage is provided where a premium is shown for the coverage or \"INCL\" is displayed. NA: Coverage does not apply",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s3": {
+      "section_id": "page1_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "NOTICE TO SENIOR CITIZENS: You may designate a third party to receive copies of cancellation, lapse, and nonrenewal notices. If this is something you would like to do, please send Hagerty written notification by certified mail, and make sure your notification includes a signed acceptance from your third party designee (Note - these stipulations are required by state law).",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page2_s1": {
+      "section_id": "page2_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Forms and Endorsements Made Part of This Policy at time of Issue:",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s2": {
+      "section_id": "page2_s2",
+      "section_title": "Other Important Notices and Enclosures:",
+      "section_type": "prose",
+      "raw_text": "AC N 500 11 22 Important Notice Regarding Your Collector Vehicle Insurance* AC N 88 07 23 Premium Discount Information - NY* AC N 405 NY 08 22 Impt Ntc: Transport Network Co Services - NY* AC N 65 02 13 Blood Alcohol Content Notice - NY* IL N 150 NY 08 25 Motor Vehicle Accident Prevention Course Discount - New York* AC N 01 01 NY 12 15 Third Party Notification of Policy Termination-NY* AC N 300 NY 07 23 Rating Information - New York*",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    }
+  },
+  "fideon:provenance": {
+    "source": "Hagerty Insurance/personal_auto/hagerty_insurance_autop_3.pdf",
+    "schema": "personal_auto v1.4.0",
+    "synthetic": false,
+    "gold": "reviewed and completed by Claude against the printed pages",
+    "reviewed": "2026-09-28"
+  }
+}

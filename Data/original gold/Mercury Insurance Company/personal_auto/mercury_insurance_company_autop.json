@@ -1,0 +1,2970 @@
+{
+  "document": {
+    "document_type": {
+      "raw": "Auto Insurance Policy Declarations",
+      "parsed": "Declarations",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "document_title_as_stated": {
+      "raw": "Auto Insurance Policy Declarations",
+      "parsed": "Auto Insurance Policy Declarations",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "issue_date": {
+      "raw": "Date Mailed: 01/18/2022",
+      "parsed": "01/18/2022",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "print_code": {
+      "raw": "U-176 NY 10/2019",
+      "parsed": "U-176 NY 10/2019",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3
+      ],
+      "flagged": false
+    },
+    "source_file_name": {
+      "raw": "mercury_insurance_company_autop.pdf",
+      "parsed": "mercury_insurance_company_autop.pdf",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "page_count": {
+      "raw": "3",
+      "parsed": 3,
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1,
+        2,
+        3
+      ],
+      "flagged": false
+    }
+  },
+  "carrier": {
+    "company_name": {
+      "raw": "Mercury Casualty Company",
+      "parsed": "Mercury Casualty Company",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "group_name": {
+      "raw": "MERCURY INSURANCE",
+      "parsed": "MERCURY INSURANCE",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "address": {
+      "line_1": {
+        "raw": "P.O. Box 31476",
+        "parsed": "P.O. Box 31476",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Tampa",
+        "parsed": "Tampa",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "FL",
+        "parsed": "FL",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "33631-3476",
+        "parsed": "33631-3476",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "claim_reporting": {
+    "claims_phone": {
+      "raw": "(800) 503-3724",
+      "parsed": "(800) 503-3724",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "producer": {
+    "agency_name": {
+      "raw": "Glenmara Group Corp",
+      "parsed": "Glenmara Group Corp",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "contact": {
+      "phone": {
+        "raw": "(845) 610-5700",
+        "parsed": "(845) 610-5700",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "address": {
+      "line_1": {
+        "raw": "78 BROOKSIDE AVE STE 132B",
+        "parsed": "78 BROOKSIDE AVE STE 132B",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "CHESTER",
+        "parsed": "CHESTER",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "10918",
+        "parsed": "10918",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "named_insured": {
+    "primary_name": {
+      "raw": "Tobias Vasey",
+      "parsed": "Tobias Vasey",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "entity_type": {
+      "raw": "Individual",
+      "parsed": "Individual",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "additional_named_insureds": [
+      {
+        "name": {
+          "raw": "Ida Ashby",
+          "parsed": "Ida Ashby",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      }
+    ],
+    "mailing_address": {
+      "line_1": {
+        "raw": "411 Rakov Rd",
+        "parsed": "411 Rakov Rd",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Maybrook",
+        "parsed": "Maybrook",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "12543-1157",
+        "parsed": "12543-1157",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "policy": {
+    "policy_number": {
+      "raw": "NYAP0000038449",
+      "parsed": "NYAP0000038449",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "program_name": {
+      "raw": "Program 2.0",
+      "parsed": "Program 2.0",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "effective_date": {
+      "raw": "01/17/2022",
+      "parsed": "01/17/2022",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "effective_time": {
+      "raw": "12:01 AM",
+      "parsed": "12:01 AM",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "expiration_date": {
+      "raw": "07/17/2022",
+      "parsed": "07/17/2022",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "expiration_time": {
+      "raw": "12:01 AM",
+      "parsed": "12:01 AM",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "time_zone": {
+      "raw": "Standard time at the address of the Named Insured",
+      "parsed": "Standard time at the address of the Named Insured",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "policy_term_months": {
+      "raw": "Total 6 Month Policy Premium",
+      "parsed": 6,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3
+      ],
+      "flagged": false
+    },
+    "policy_form_number": {
+      "raw": "U-10 NY P1",
+      "parsed": "U-10 NY P1",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3
+      ],
+      "flagged": false
+    },
+    "policy_form_name": {
+      "raw": "New York Auto Policy",
+      "parsed": "New York Auto Policy",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3
+      ],
+      "flagged": false
+    },
+    "policy_form_edition": {
+      "raw": "09/2017",
+      "parsed": "09/2017",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3
+      ],
+      "flagged": false
+    }
+  },
+  "premium": {
+    "total_policy_premium": {
+      "raw": "$2,267.00",
+      "parsed": 2267.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3
+      ],
+      "flagged": false
+    },
+    "basic_premium": {
+      "raw": "$2,257.00",
+      "parsed": 2257.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3
+      ],
+      "flagged": false
+    },
+    "motor_vehicle_law_enforcement_fee": {
+      "raw": "$10.00",
+      "parsed": 10.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3
+      ],
+      "flagged": false
+    }
+  },
+  "forms_and_endorsements": [
+    {
+      "form_number": {
+        "raw": "U-10 NY P1",
+        "parsed": "U-10 NY P1",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "New York Auto Policy",
+        "parsed": "New York Auto Policy",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "09/2017",
+        "parsed": "09/2017",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      }
+    }
+  ],
+  "auto": {
+    "drivers": [
+      {
+        "driver_number": {
+          "raw": "1",
+          "parsed": 1,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "name": {
+          "raw": "Tobias Vasey",
+          "parsed": "Tobias Vasey",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "license_status": {
+          "raw": "Valid",
+          "parsed": "Valid",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "date_of_birth": {
+          "raw": "02/08/1984",
+          "parsed": "02/08/1984",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "gender": {
+          "raw": "Female",
+          "parsed": "Female",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "marital_status": {
+          "raw": "Married",
+          "parsed": "Married",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "relationship_to_insured": {
+          "raw": "Insured",
+          "parsed": "Insured",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "driver_number": {
+          "raw": "2",
+          "parsed": 2,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "name": {
+          "raw": "Ida Ashby",
+          "parsed": "Ida Ashby",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "license_status": {
+          "raw": "Valid",
+          "parsed": "Valid",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "date_of_birth": {
+          "raw": "03/10/1981",
+          "parsed": "03/10/1981",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "gender": {
+          "raw": "Male",
+          "parsed": "Male",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "marital_status": {
+          "raw": "Married",
+          "parsed": "Married",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "relationship_to_insured": {
+          "raw": "Spouse",
+          "parsed": "Spouse",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      }
+    ],
+    "household": {},
+    "vehicles": [
+      {
+        "unit_description": {
+          "raw": "2014 FORD ESCAPE TITANIUM",
+          "parsed": "2014 FORD ESCAPE TITANIUM",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "year": {
+          "raw": "2014",
+          "parsed": 2014,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "make": {
+          "raw": "FORD",
+          "parsed": "FORD",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "model": {
+          "raw": "ESCAPE TITANIUM",
+          "parsed": "ESCAPE TITANIUM",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "vin": {
+          "raw": "1FMCU9JX3EUA49559",
+          "parsed": "1FMCU9JX3EUA49559",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "vehicle_use": {
+          "raw": "Pleasure",
+          "parsed": "Pleasure",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "premium": {
+          "raw": "$995.00",
+          "parsed": 995.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "total_discount_amount": {
+          "raw": "$247.32",
+          "parsed": 247.32,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "total_loss_settlement_basis": {
+          "raw": "Actual Cash Value",
+          "parsed": "Actual Cash Value",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "coverages": [
+          {
+            "coverage_name": {
+              "raw": "Bodily Injury Liability",
+              "parsed": "Bodily Injury Liability",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$100,000 each Person/$300,000 each Accident",
+              "parsed": "$100,000 each Person/$300,000 each Accident",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$437.00",
+              "parsed": 437.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Property Damage Liability",
+              "parsed": "Property Damage Liability",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$50,000 each Accident; Including Supplemental Spousal Liability Coverage",
+              "parsed": "$50,000 each Accident; Including Supplemental Spousal Liability Coverage",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Supplementary Uninsured/Underinsured Motorist (SUM)",
+              "parsed": "Supplementary Uninsured/Underinsured Motorist (SUM)",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$50,000 each Person/$100,000 each Accident and Out-of-State Extension",
+              "parsed": "$50,000 each Person/$100,000 each Accident and Out-of-State Extension",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$24.00",
+              "parsed": 24.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Mandatory Personal Injury Protection (PIP)",
+              "parsed": "Mandatory Personal Injury Protection (PIP)",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$50,000 each Person",
+              "parsed": "$50,000 each Person",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "deductible_amount": {
+              "raw": "$200",
+              "parsed": 200.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$139.00",
+              "parsed": 139.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Additional Personal Injury Protection (APIP)",
+              "parsed": "Additional Personal Injury Protection (APIP)",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$50,000 and Out-of-State Extension",
+              "parsed": "$50,000 and Out-of-State Extension",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$15.00",
+              "parsed": 15.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Aggregate No-Fault Coverage",
+              "parsed": "Aggregate No-Fault Coverage",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$100,000 each Person",
+              "parsed": "$100,000 each Person",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "Included",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Monthly Work Loss",
+              "parsed": "Monthly Work Loss",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$4,000 each Person",
+              "parsed": "$4,000 each Person",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "Included",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Other Expenses",
+              "parsed": "Other Expenses",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$50 per Day",
+              "parsed": "$50 per Day",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "Included",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Death Benefits",
+              "parsed": "Death Benefits",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$2,000 each Person",
+              "parsed": "$2,000 each Person",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "Included",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Comprehensive",
+              "parsed": "Comprehensive",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "Actual Cash Value",
+              "parsed": "Actual Cash Value",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "deductible_amount": {
+              "raw": "$1,000",
+              "parsed": 1000.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "notes": {
+              "raw": "with $0 Full Glass Deductible",
+              "parsed": "with $0 Full Glass Deductible",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$84.00",
+              "parsed": 84.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Collision",
+              "parsed": "Collision",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "Actual Cash Value",
+              "parsed": "Actual Cash Value",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "deductible_amount": {
+              "raw": "$1,000",
+              "parsed": 1000.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$260.00",
+              "parsed": 260.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Rental",
+              "parsed": "Rental",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$30 each day/Maximum 45 days",
+              "parsed": "$30 each day/Maximum 45 days",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$22.00",
+              "parsed": 22.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Roadside Assistance",
+              "parsed": "Roadside Assistance",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$500 per Occurrence",
+              "parsed": "$500 per Occurrence",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$14.00",
+              "parsed": 14.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          }
+        ],
+        "garaging_territory": {
+          "raw": "Garaging ZIP Code: 12543-1157",
+          "parsed": "12543-1157",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "unit_description": {
+          "raw": "2021 MITSUBISHI OUTLANDER SPORT",
+          "parsed": "2021 MITSUBISHI OUTLANDER SPORT",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "year": {
+          "raw": "2021",
+          "parsed": 2021,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "make": {
+          "raw": "MITSUBISHI",
+          "parsed": "MITSUBISHI",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "model": {
+          "raw": "OUTLANDER SPORT",
+          "parsed": "OUTLANDER SPORT",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "vin": {
+          "raw": "JA4ARUAU3MU007150",
+          "parsed": "JA4ARUAU3MU007150",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "vehicle_use": {
+          "raw": "Pleasure",
+          "parsed": "Pleasure",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "premium": {
+          "raw": "$1,262.00",
+          "parsed": 1262.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "total_discount_amount": {
+          "raw": "$353.92",
+          "parsed": 353.92,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "total_loss_settlement_basis": {
+          "raw": "Actual Cash Value",
+          "parsed": "Actual Cash Value",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "coverages": [
+          {
+            "coverage_name": {
+              "raw": "Bodily Injury Liability",
+              "parsed": "Bodily Injury Liability",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$100,000 each Person/$300,000 each Accident",
+              "parsed": "$100,000 each Person/$300,000 each Accident",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$496.00",
+              "parsed": 496.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Property Damage Liability",
+              "parsed": "Property Damage Liability",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$50,000 each Accident; Including Supplemental Spousal Liability Coverage",
+              "parsed": "$50,000 each Accident; Including Supplemental Spousal Liability Coverage",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Supplementary Uninsured/Underinsured Motorist (SUM)",
+              "parsed": "Supplementary Uninsured/Underinsured Motorist (SUM)",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$50,000 each Person/$100,000 each Accident and Out-of-State Extension",
+              "parsed": "$50,000 each Person/$100,000 each Accident and Out-of-State Extension",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$24.00",
+              "parsed": 24.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Mandatory Personal Injury Protection (PIP)",
+              "parsed": "Mandatory Personal Injury Protection (PIP)",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$50,000 each Person",
+              "parsed": "$50,000 each Person",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "deductible_amount": {
+              "raw": "$200",
+              "parsed": 200.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$170.00",
+              "parsed": 170.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Additional Personal Injury Protection (APIP)",
+              "parsed": "Additional Personal Injury Protection (APIP)",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$50,000 and Out-of-State Extension",
+              "parsed": "$50,000 and Out-of-State Extension",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$14.00",
+              "parsed": 14.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Aggregate No-Fault Coverage",
+              "parsed": "Aggregate No-Fault Coverage",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$100,000 each Person",
+              "parsed": "$100,000 each Person",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "Included",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Monthly Work Loss",
+              "parsed": "Monthly Work Loss",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$4,000 each Person",
+              "parsed": "$4,000 each Person",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "Included",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Other Expenses",
+              "parsed": "Other Expenses",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$50 per Day",
+              "parsed": "$50 per Day",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "Included",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Death Benefits",
+              "parsed": "Death Benefits",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$2,000 each Person",
+              "parsed": "$2,000 each Person",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "Included",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Comprehensive",
+              "parsed": "Comprehensive",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "Actual Cash Value",
+              "parsed": "Actual Cash Value",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "deductible_amount": {
+              "raw": "$1,000",
+              "parsed": 1000.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "notes": {
+              "raw": "with $0 Full Glass Deductible",
+              "parsed": "with $0 Full Glass Deductible",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$110.00",
+              "parsed": 110.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Collision",
+              "parsed": "Collision",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "Actual Cash Value",
+              "parsed": "Actual Cash Value",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "deductible_amount": {
+              "raw": "$1,000",
+              "parsed": 1000.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$412.00",
+              "parsed": 412.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Rental",
+              "parsed": "Rental",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$30 each day/Maximum 45 days",
+              "parsed": "$30 each day/Maximum 45 days",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$22.00",
+              "parsed": 22.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Roadside Assistance",
+              "parsed": "Roadside Assistance",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$500 per Occurrence",
+              "parsed": "$500 per Occurrence",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$14.00",
+              "parsed": 14.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          }
+        ],
+        "garaging_territory": {
+          "raw": "Garaging ZIP Code: 12543-1157",
+          "parsed": "12543-1157",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      }
+    ],
+    "discounts": [
+      {
+        "discount_name": {
+          "raw": "Anti-Lock Brake",
+          "parsed": "Anti-Lock Brake",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$55.76",
+          "parsed": 55.76,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2021 MITSUBISHI OUTLANDER SPORT",
+          "parsed": "2021 MITSUBISHI OUTLANDER SPORT",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "Anti-Theft",
+          "parsed": "Anti-Theft",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$5.52",
+          "parsed": 5.52,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2021 MITSUBISHI OUTLANDER SPORT",
+          "parsed": "2021 MITSUBISHI OUTLANDER SPORT",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "Continuous Insurance",
+          "parsed": "Continuous Insurance",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$41.77",
+          "parsed": 41.77,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2021 MITSUBISHI OUTLANDER SPORT",
+          "parsed": "2021 MITSUBISHI OUTLANDER SPORT",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "Daytime Running Lamps",
+          "parsed": "Daytime Running Lamps",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$32.44",
+          "parsed": 32.44,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2021 MITSUBISHI OUTLANDER SPORT",
+          "parsed": "2021 MITSUBISHI OUTLANDER SPORT",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "Multi-Policy",
+          "parsed": "Multi-Policy",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$170.23",
+          "parsed": 170.23,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2021 MITSUBISHI OUTLANDER SPORT",
+          "parsed": "2021 MITSUBISHI OUTLANDER SPORT",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "Passive Restraint",
+          "parsed": "Passive Restraint",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$10.73",
+          "parsed": 10.73,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2021 MITSUBISHI OUTLANDER SPORT",
+          "parsed": "2021 MITSUBISHI OUTLANDER SPORT",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "eSignature",
+          "parsed": "eSignature",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$37.47",
+          "parsed": 37.47,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2021 MITSUBISHI OUTLANDER SPORT",
+          "parsed": "2021 MITSUBISHI OUTLANDER SPORT",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "Anti-Lock Brake",
+          "parsed": "Anti-Lock Brake",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$43.03",
+          "parsed": 43.03,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2014 FORD ESCAPE TITANIUM",
+          "parsed": "2014 FORD ESCAPE TITANIUM",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "Anti-Theft",
+          "parsed": "Anti-Theft",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$4.17",
+          "parsed": 4.17,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2014 FORD ESCAPE TITANIUM",
+          "parsed": "2014 FORD ESCAPE TITANIUM",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "Continuous Insurance",
+          "parsed": "Continuous Insurance",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$31.34",
+          "parsed": 31.34,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2014 FORD ESCAPE TITANIUM",
+          "parsed": "2014 FORD ESCAPE TITANIUM",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "Multi-Policy",
+          "parsed": "Multi-Policy",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$130.43",
+          "parsed": 130.43,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2014 FORD ESCAPE TITANIUM",
+          "parsed": "2014 FORD ESCAPE TITANIUM",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "Passive Restraint",
+          "parsed": "Passive Restraint",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$9.10",
+          "parsed": 9.1,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2014 FORD ESCAPE TITANIUM",
+          "parsed": "2014 FORD ESCAPE TITANIUM",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "eSignature",
+          "parsed": "eSignature",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$29.25",
+          "parsed": 29.25,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2014 FORD ESCAPE TITANIUM",
+          "parsed": "2014 FORD ESCAPE TITANIUM",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "Total Discounts",
+          "parsed": "Total Discounts",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$601.24",
+          "parsed": 601.24,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      }
+    ],
+    "liability_coverages": {
+      "bodily_injury_per_person_limit": {
+        "raw": "$100,000 each Person",
+        "parsed": 100000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "bodily_injury_per_accident_limit": {
+        "raw": "$300,000 each Accident",
+        "parsed": 300000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "property_damage_limit": {
+        "raw": "$50,000 each Accident",
+        "parsed": 50000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "supplemental_spousal_liability": {
+        "raw": "Including Supplemental Spousal Liability Coverage",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "supplementary_uninsured_underinsured_per_person_limit": {
+        "raw": "$50,000 each Person",
+        "parsed": 50000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "supplementary_uninsured_underinsured_per_accident_limit": {
+        "raw": "$100,000 each Accident",
+        "parsed": 100000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "sum_out_of_state_extension": {
+        "raw": "Out-of-State Extension",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    "no_fault_benefits": {
+      "mandatory_pip_limit": {
+        "raw": "$50,000 each Person",
+        "parsed": 50000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "no_fault_deductible": {
+        "raw": "$200",
+        "parsed": 200.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "additional_pip_limit": {
+        "raw": "$50,000",
+        "parsed": 50000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "aggregate_no_fault_benefits_available": {
+        "raw": "$100,000",
+        "parsed": 100000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "maximum_monthly_work_loss": {
+        "raw": "$4,000",
+        "parsed": 4000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "other_necessary_expenses_per_day": {
+        "raw": "$50",
+        "parsed": 50.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "death_benefit": {
+        "raw": "$2,000",
+        "parsed": 2000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    "physical_damage_coverages": {
+      "comprehensive_deductible": {
+        "raw": "$1,000",
+        "parsed": 1000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "collision_deductible": {
+        "raw": "$1,000",
+        "parsed": 1000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "full_glass_deductible": {
+        "raw": "$0",
+        "parsed": 0.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "valuation_basis": {
+        "raw": "Actual Cash Value",
+        "parsed": "Actual Cash Value",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "rental_reimbursement_daily_maximum": {
+        "raw": "$30",
+        "parsed": 30.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "rental_reimbursement_maximum_days": {
+        "raw": "45 days",
+        "parsed": 45,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "roadside_assistance_limit": {
+        "raw": "$500 per Occurrence",
+        "parsed": "$500 per Occurrence",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "additional_fields": [
+    {
+      "section": "Important Information",
+      "label": "Time of purchase",
+      "value": {
+        "raw": "This policy was purchased at 08:35 AM on 01/17/2022.",
+        "parsed": "This policy was purchased at 08:35 AM on 01/17/2022.",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Rating Information",
+      "label": "Tier Code",
+      "value": {
+        "raw": "35",
+        "parsed": "35",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Rating Information",
+      "label": "Final Market",
+      "value": {
+        "raw": "PR",
+        "parsed": "PR",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Surcharges",
+      "label": "Surcharges",
+      "value": {
+        "raw": "This policy is not surcharged.",
+        "parsed": "This policy is not surcharged.",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Additional Household Members (List Only)",
+      "label": "Name(s)",
+      "value": {
+        "raw": "None",
+        "parsed": "None",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  ],
+  "text_sections": {
+    "page1_s1": {
+      "section_id": "page1_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "This policy was purchased at 08:35 AM on 01/17/2022. This policy will not apply to any loss that occurs prior to the date and time of purchase.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s2": {
+      "section_id": "page1_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "This declaration provides only a summary of coverage. All coverage is subject to the terms, conditions, and exclusions of the policy contract.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s3": {
+      "section_id": "page1_s3",
+      "section_title": "SupplementaryUninsured/Underinsured Motorist(SuM)",
+      "section_type": "prose",
+      "raw_text": "The maximum amount payable under SUM coverage shall be the policy's SUM limits reduced and thus offset by motor",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s4": {
+      "section_id": "page1_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "accident, as specified in the SUM endorsement.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page2_s1": {
+      "section_id": "page2_s1",
+      "section_title": "Surcharges",
+      "section_type": "prose",
+      "raw_text": "Required Information Notice, Form NY-1, included with your new business and annual renewal mailings.",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s2": {
+      "section_id": "page2_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Garaging ZIP Code:12543-1157,Primary Use of the Vehicle:Pleasure",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page3_s1": {
+      "section_id": "page3_s1",
+      "section_title": "NewYorkMotorVehicleLawEnforcementFee",
+      "section_type": "prose",
+      "raw_text": "New York Motor Vehicle Law Enforcement Fee is used to fund activities relating to the detection, prosecution, or reduction of auto thefts.",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s2": {
+      "section_id": "page3_s2",
+      "section_title": "Policy Contract and Endorsements",
+      "section_type": "prose",
+      "raw_text": "Your insurance policy and any endorsement(s) contain a full explanation of your coverage. The policy contract is form U-10 NY P1 New York Auto Policy (09/2017). The contract is modified by endorsement(s):",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    }
+  },
+  "fideon:provenance": {
+    "source": "Mercury Insurance Company/personal_auto/mercury_insurance_company_autop.pdf",
+    "schema": "personal_auto v1.4.0",
+    "synthetic": false,
+    "gold": "reviewed and completed by Claude against the printed pages",
+    "reviewed": "2026-09-28"
+  }
+}

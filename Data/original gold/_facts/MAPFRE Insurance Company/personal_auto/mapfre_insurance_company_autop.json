@@ -1,0 +1,122 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "AL3 Viewer - HawkSoft",
+   "parsed": "Policy History"
+  },
+  "source_system": "AL3 Viewer - HawkSoft",
+  "print_date": "9/18/26",
+  "print_time": "4:13 PM",
+  "transaction_effective_date": "6/10/2019"
+ },
+ "carrier": {
+  "company_name": "MAPFRE Insurance Company"
+ },
+ "producer": {
+  "producer_code": "49997447"
+ },
+ "named_insured": {
+  "primary_name": "Juno Prentice & Hazel Vance",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "mailing_address": {
+   "line_1": "57 Sunrise Hill Rd",
+   "city": "Fishkill",
+   "state": "NY",
+   "postal_code": "12524 241"
+  },
+  "gender": "Female",
+  "marital_status": "Married",
+  "date_of_birth": "1/27/1976",
+  "occupation": "Other",
+  "contact": {
+   "phone": "718-555-0207",
+   "email": "customer207@example.com"
+  },
+  "additional_named_insureds": [
+   {
+    "name": "Hazel Vance",
+    "gender": "Male",
+    "marital_status": "Married",
+    "date_of_birth": "2/6/1975",
+    "occupation": "Other"
+   }
+  ]
+ },
+ "policy": {
+  "policy_number": "NYPA001318300",
+  "policy_type": "Private Passenger Automobile",
+  "effective_date": "6/10/2019",
+  "expiration_date": "12/10/2019",
+  "policy_term_as_printed": "6 Months",
+  "policy_term_months": {
+   "raw": "6 Months",
+   "parsed": 6
+  },
+  "original_inception_date": "6/10/2016"
+ },
+ "premium": {
+  "total_policy_premium": "$289.00"
+ },
+ "locations": [
+  {
+   "location_number": {
+    "raw": "1",
+    "source": "structural",
+    "parsed": 1
+   },
+   "address": {
+    "line_1": "57 Sunrise Hill Rd",
+    "city": "Fishkill",
+    "state": "NY",
+    "postal_code": "12524 241"
+   }
+  }
+ ],
+ "document_type_detail": {
+  "policy_history": {
+   "term_amount": "$289.00",
+   "term_length": "6 Months",
+   "inception_date": "6/10/2016",
+   "transactions": [
+    {
+     "transaction_date": "6/10/2019",
+     "transaction_effective_date": "6/10/2019",
+     "effective_date": "6/10/2019",
+     "expiration_date": "12/10/2019",
+     "term_amount": "$289.00"
+    }
+   ]
+  }
+ },
+ "auto": {
+  "drivers": [
+   {
+    "name": "Juno Prentice",
+    "gender": "Female",
+    "marital_status": "Married",
+    "date_of_birth": "1/27/1976",
+    "occupation": "Other",
+    "is_named_insured": {
+     "raw": "Insured Information",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "name": "Hazel Vance",
+    "gender": "Male",
+    "marital_status": "Married",
+    "date_of_birth": "2/6/1975",
+    "occupation": "Other",
+    "is_named_insured": {
+     "raw": "Co-Insured Information",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   }
+  ]
+ }
+}
