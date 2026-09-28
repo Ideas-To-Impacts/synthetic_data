@@ -1,0 +1,2379 @@
+{
+  "document": {
+    "document_type": {
+      "raw": "DECLARATIONS, Homeowner Policy",
+      "parsed": "Declarations",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "document_title_as_stated": {
+      "raw": "DECLARATIONS, Homeowner Policy",
+      "parsed": "DECLARATIONS, Homeowner Policy",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "line_of_business_as_stated": {
+      "raw": "Homeowner Policy",
+      "parsed": "Homeowner Policy",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "print_code": {
+      "raw": "DEC (7/2013)",
+      "parsed": "DEC (7/2013)",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3
+      ],
+      "flagged": false
+    },
+    "transaction_type": {
+      "raw": "Renewal",
+      "parsed": "Renewal",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3
+      ],
+      "flagged": false
+    },
+    "issue_date": {
+      "raw": "01/23/2024",
+      "parsed": "01/23/2024",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        3
+      ],
+      "flagged": false
+    },
+    "source_file_name": {
+      "raw": "HOME-8_redacted.pdf",
+      "parsed": "HOME-8_redacted.pdf",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "page_count": {
+      "raw": "4",
+      "parsed": 4,
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1,
+        2,
+        3
+      ],
+      "flagged": false
+    }
+  },
+  "carrier": {
+    "company_name": {
+      "raw": "Madison Mutual Insurance Company",
+      "parsed": "Madison Mutual Insurance Company",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "contact": {
+      "phone": {
+        "raw": "315-687-3211",
+        "parsed": "315-687-3211",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "website": {
+        "raw": "www.mminsco.com",
+        "parsed": "www.mminsco.com",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      }
+    },
+    "address": {
+      "line_1": {
+        "raw": "1256 State Route 5",
+        "parsed": "1256 State Route 5",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "line_2": {
+        "raw": "PO Box 357",
+        "parsed": "PO Box 357",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Chittenango",
+        "parsed": "Chittenango",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13037-0357",
+        "parsed": "13037-0357",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      }
+    }
+  },
+  "producer": {
+    "agency_name": {
+      "raw": "Patriotic Insurance Group Brokerage Inc",
+      "parsed": "Patriotic Insurance Group Brokerage Inc",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "producer_code": {
+      "raw": "(86)",
+      "parsed": "86",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "address": {
+      "city": {
+        "raw": "Ilion",
+        "parsed": "Ilion",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13357-5943",
+        "parsed": "13357-5943",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "line_1": {
+        "raw": "2251 Station",
+        "parsed": "2251 Station",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "line_2": {
+        "raw": "PO Box 592",
+        "parsed": "PO Box 592",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "named_insured": {
+    "primary_name": {
+      "raw": "Keith Merritt",
+      "parsed": "Keith Merritt",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "additional_named_insureds": [
+      {
+        "name": {
+          "raw": "Betsy J Hicks",
+          "parsed": "Betsy J Hicks",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      }
+    ],
+    "mailing_address": {
+      "city": {
+        "raw": "Canton",
+        "parsed": "Canton",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "FL",
+        "parsed": "FL",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13617-3994",
+        "parsed": "13617-3994",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "line_1": {
+        "raw": "9042 Station",
+        "parsed": "9042 Station",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "policy": {
+    "policy_number": {
+      "raw": "61227880",
+      "parsed": "61227880",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3
+      ],
+      "flagged": false
+    },
+    "effective_date": {
+      "raw": "03/03/2024",
+      "parsed": "03/03/2024",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "expiration_date": {
+      "raw": "03/03/2025",
+      "parsed": "03/03/2025",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "effective_time": {
+      "raw": "12:01AM",
+      "parsed": "12:01AM",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "expiration_time": {
+      "raw": "12:01AM",
+      "parsed": "12:01AM",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "time_zone": {
+      "raw": "Standard Time",
+      "parsed": "Standard Time",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        3
+      ],
+      "flagged": false
+    },
+    "policyholder_since_date": {
+      "raw": "03/03/2016",
+      "parsed": "03/03/2016",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        3
+      ],
+      "flagged": false
+    },
+    "is_renewal": {
+      "raw": "Renewal",
+      "parsed": "Yes",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1,
+        2,
+        3
+      ],
+      "flagged": false
+    }
+  },
+  "premium": {
+    "total_policy_premium": {
+      "raw": "$797.00",
+      "parsed": 797.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        2
+      ],
+      "flagged": false
+    },
+    "basic_premium": {
+      "raw": "$797.00",
+      "parsed": 797.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        2
+      ],
+      "flagged": false
+    },
+    "taxes_and_fees": [
+      {
+        "description": {
+          "raw": "Fees",
+          "parsed": "Fees",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$0.00",
+          "parsed": 0.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "forms_and_endorsements": [
+    {
+      "form_number": {
+        "raw": "HO 0002",
+        "parsed": "HO 0002",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "09 08",
+        "parsed": "09 08",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "HO 0831",
+        "parsed": "HO 0831",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "01 15",
+        "parsed": "01 15",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "HO 0931",
+        "parsed": "HO 0931",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "01 06",
+        "parsed": "01 06",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "HO 1123",
+        "parsed": "HO 1123",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "01 06",
+        "parsed": "01 06",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "HO 1125",
+        "parsed": "HO 1125",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "01 06",
+        "parsed": "01 06",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "HO 1142",
+        "parsed": "HO 1142",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "01 15",
+        "parsed": "01 15",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "HO 1300",
+        "parsed": "HO 1300",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "01 15",
+        "parsed": "01 15",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "HO 1347",
+        "parsed": "HO 1347",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "09 14",
+        "parsed": "09 14",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "HO 2530",
+        "parsed": "HO 2530",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "01 06",
+        "parsed": "01 06",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "HO 2584",
+        "parsed": "HO 2584",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "01 06",
+        "parsed": "01 06",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "HO 4851",
+        "parsed": "HO 4851",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "01 06",
+        "parsed": "01 06",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "HO 4855",
+        "parsed": "HO 4855",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "01 06",
+        "parsed": "01 06",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "HO 6581",
+        "parsed": "HO 6581",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "01 06",
+        "parsed": "01 06",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "MM FLOOD NOTICE",
+        "parsed": "MM FLOOD NOTICE",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "09 19",
+        "parsed": "09 19",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "MM HO 5050",
+        "parsed": "MM HO 5050",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "09 19",
+        "parsed": "09 19",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "MM HO 5210",
+        "parsed": "MM HO 5210",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "09 19",
+        "parsed": "09 19",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "MM MH 5011",
+        "parsed": "MM MH 5011",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "09 19",
+        "parsed": "09 19",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "MM PBT 5001",
+        "parsed": "MM PBT 5001",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "09 19",
+        "parsed": "09 19",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "MM SFP 5000",
+        "parsed": "MM SFP 5000",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "09 19",
+        "parsed": "09 19",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    }
+  ],
+  "homeowners": {
+    "scheduled_locations": [
+      {
+        "location_number": {
+          "raw": "1",
+          "parsed": 1,
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "location_reference": {
+          "raw": "Property: 1 of 1",
+          "parsed": "Property: 1 of 1",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "applicable_forms": [
+          {
+            "form_title": {
+              "raw": "Coverage A -- Residence",
+              "parsed": "Coverage A -- Residence",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$223,000",
+              "parsed": 223000.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$843.00",
+              "parsed": 843.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "form_title": {
+              "raw": "Coverage B -- Related Private Structures",
+              "parsed": "Coverage B -- Related Private Structures",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$22,300",
+              "parsed": 22300.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "Incl.",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "form_title": {
+              "raw": "Coverage C -- Personal Property",
+              "parsed": "Coverage C -- Personal Property",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$156,100",
+              "parsed": 156100.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "Incl.",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "form_title": {
+              "raw": "Coverage D -- Additional Living Costs And Loss Of Rent",
+              "parsed": "Coverage D -- Additional Living Costs And Loss Of Rent",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$66,900",
+              "parsed": 66900.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "Incl.",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "form_title": {
+              "raw": "Coverage L -- Personal Liability",
+              "parsed": "Coverage L -- Personal Liability",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$500,000",
+              "parsed": 500000.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$53.00",
+              "parsed": 53.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "form_title": {
+              "raw": "Coverage M -- Medical Payments To Others",
+              "parsed": "Coverage M -- Medical Payments To Others",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$5,000",
+              "parsed": 5000.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "Incl.",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "form_title": {
+              "raw": "MM HO 5050 09 19 Secondary Homeowner Coverage Limitation Endorsement",
+              "parsed": "MM HO 5050 09 19 Secondary Homeowner Coverage Limitation Endorsement",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "-$50.",
+              "parsed": -50.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "form_number": {
+              "raw": "MM HO 5050",
+              "parsed": "MM HO 5050",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "edition_date": {
+              "raw": "09 19",
+              "parsed": "09 19",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "form_title": {
+              "raw": "90 QW 2682 01 06 Incidental Property Coverages - Higher redit Card, Electronic Fund Transfer Card Or Access Device, Forgery And Counterfeit Money",
+              "parsed": "90 QW 2682 01 06 Incidental Property Coverages - Higher redit Card, Electronic Fund Transfer Card Or Access Device, Forgery And Counterfeit Money",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$5.",
+              "parsed": 5.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "form_title": {
+              "raw": "34 MT 8481 01 06 Automatic Adjustment Of Limits - Annual 3 Percent",
+              "parsed": "34 MT 8481 01 06 Automatic Adjustment Of Limits - Annual 3 Percent",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "Incl.",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "form_title": {
+              "raw": "HO 4855 01 06 Replacement Cost Loss Settlement Terms - Personal Property",
+              "parsed": "HO 4855 01 06 Replacement Cost Loss Settlement Terms - Personal Property",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "Incl.",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "form_number": {
+              "raw": "HO 4855",
+              "parsed": "HO 4855",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "edition_date": {
+              "raw": "01 06",
+              "parsed": "01 06",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "form_title": {
+              "raw": "Claim Free Credit",
+              "parsed": "Claim Free Credit",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "-$27.00",
+              "parsed": -27.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "form_title": {
+              "raw": "Renewal Credit",
+              "parsed": "Renewal Credit",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "-$27.00",
+              "parsed": -27.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          }
+        ],
+        "section_i_property_coverages": {
+          "coverage_a_dwelling_limit": {
+            "raw": "$223,000",
+            "parsed": 223000.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "coverage_a_dwelling_premium": {
+            "raw": "$843.00",
+            "parsed": 843.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "coverage_b_other_structures_limit": {
+            "raw": "$22,300",
+            "parsed": 22300.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "coverage_b_other_structures_premium": {
+            "raw": "Incl.",
+            "parsed": null,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2
+            ],
+            "flagged": false
+          },
+          "coverage_c_personal_property_limit": {
+            "raw": "$156,100",
+            "parsed": 156100.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "coverage_c_personal_property_premium": {
+            "raw": "Incl.",
+            "parsed": null,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2
+            ],
+            "flagged": false
+          },
+          "coverage_d_loss_of_use_limit": {
+            "raw": "$66,900",
+            "parsed": 66900.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "coverage_d_loss_of_use_premium": {
+            "raw": "Incl.",
+            "parsed": null,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2
+            ],
+            "flagged": false
+          },
+          "loss_settlement_basis": {
+            "raw": "Replacement Cost",
+            "parsed": "Replacement Cost",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              2
+            ],
+            "flagged": false
+          },
+          "personal_property_loss_settlement_basis": {
+            "raw": "Replacement Cost",
+            "parsed": "Replacement Cost",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              2
+            ],
+            "flagged": false
+          }
+        },
+        "section_ii_liability_coverages": {
+          "coverage_e_personal_liability_limit": {
+            "raw": "$500,000",
+            "parsed": 500000.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "coverage_f_medical_payments_limit": {
+            "raw": "$5,000",
+            "parsed": 5000.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          }
+        },
+        "notes": {
+          "raw": "709 Riverside - Medina, NY 14103 - Hamilton County",
+          "parsed": "709 Riverside - Medina, NY 14103 - Hamilton County",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "construction_type": {
+          "raw": "Frame",
+          "parsed": "Frame",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "protection_class": {
+          "raw": "Partially Protected",
+          "parsed": "Partially Protected",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "deductible_type": {
+          "raw": "Flat Deductible",
+          "parsed": "Flat Deductible",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "year_built": {
+          "raw": "1965",
+          "parsed": 1965,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "deductibles": {
+          "all_other_perils_deductible": {
+            "raw": "$500",
+            "parsed": 500.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2
+            ],
+            "flagged": false
+          }
+        },
+        "solid_fuel_burning_device_present": {
+          "raw": "No",
+          "parsed": "No",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "swimming_pool": {
+          "raw": "No",
+          "parsed": "No",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "policy_form_number": {
+          "raw": "HO 0002 -- Broad Form",
+          "parsed": "HO 0002 -- Broad Form",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "occupancy_type": {
+          "raw": "Secondary",
+          "parsed": "Secondary",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "dwelling_type": {
+          "raw": "1 Family - Freestanding",
+          "parsed": "1 Family - Freestanding",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "program_name": {
+          "raw": "Silver",
+          "parsed": "Silver",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      }
+    ],
+    "section_i_property_coverages": {
+      "coverage_a_dwelling_limit": {
+        "raw": "$223,000",
+        "parsed": 223000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "coverage_a_dwelling_premium": {
+        "raw": "$843.00",
+        "parsed": 843.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "coverage_b_other_structures_limit": {
+        "raw": "$22,300",
+        "parsed": 22300.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "coverage_b_other_structures_premium": {
+        "raw": "Incl.",
+        "parsed": null,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "coverage_c_personal_property_limit": {
+        "raw": "$156,100",
+        "parsed": 156100.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "coverage_c_personal_property_premium": {
+        "raw": "Incl.",
+        "parsed": null,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "coverage_d_loss_of_use_limit": {
+        "raw": "$66,900",
+        "parsed": 66900.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "coverage_d_loss_of_use_premium": {
+        "raw": "Incl.",
+        "parsed": null,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "loss_settlement_basis": {
+        "raw": "Replacement Cost",
+        "parsed": "Replacement Cost",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "personal_property_loss_settlement_basis": {
+        "raw": "Replacement Cost",
+        "parsed": "Replacement Cost",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    },
+    "section_ii_liability_coverages": {
+      "coverage_e_personal_liability_limit": {
+        "raw": "$500,000",
+        "parsed": 500000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "coverage_e_personal_liability_premium": {
+        "raw": "$53.00",
+        "parsed": 53.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "coverage_f_medical_payments_limit": {
+        "raw": "$5,000",
+        "parsed": 5000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "optional_endorsement_coverages": [
+      {
+        "coverage_name": {
+          "raw": "MM HO 5050 09 19 Secondary Homeowner Coverage Limitation Endorsement",
+          "parsed": "MM HO 5050 09 19 Secondary Homeowner Coverage Limitation Endorsement",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "premium": {
+          "raw": "-$50.",
+          "parsed": -50.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "Property 1",
+          "parsed": "Property 1",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_name": {
+          "raw": "90 QW 2682 01 06 Incidental Property Coverages - Higher redit Card, Electronic Fund Transfer Card Or Access Device, Forgery And Counterfeit Money",
+          "parsed": "90 QW 2682 01 06 Incidental Property Coverages - Higher redit Card, Electronic Fund Transfer Card Or Access Device, Forgery And Counterfeit Money",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "premium": {
+          "raw": "$5.",
+          "parsed": 5.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "Property 1",
+          "parsed": "Property 1",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_name": {
+          "raw": "34 MT 8481 01 06 Automatic Adjustment Of Limits - Annual 3 Percent",
+          "parsed": "34 MT 8481 01 06 Automatic Adjustment Of Limits - Annual 3 Percent",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "is_included": {
+          "raw": "Incl.",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "Property 1",
+          "parsed": "Property 1",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_name": {
+          "raw": "HO 4855 01 06 Replacement Cost Loss Settlement Terms - Personal Property",
+          "parsed": "HO 4855 01 06 Replacement Cost Loss Settlement Terms - Personal Property",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "is_included": {
+          "raw": "Incl.",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "Property 1",
+          "parsed": "Property 1",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        }
+      }
+    ],
+    "discounts": [
+      {
+        "discount_name": {
+          "raw": "Claim Free Credit",
+          "parsed": "Claim Free Credit",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "-$27.00",
+          "parsed": -27.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "location_reference": {
+          "raw": "Property 1",
+          "parsed": "Property 1",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "discount_type": {
+          "raw": "Credit",
+          "parsed": "Credit",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "Renewal Credit",
+          "parsed": "Renewal Credit",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "-$27.00",
+          "parsed": -27.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "location_reference": {
+          "raw": "Property 1",
+          "parsed": "Property 1",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "discount_type": {
+          "raw": "Credit",
+          "parsed": "Credit",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "signature": {
+    "authorized_representative_name": {
+      "raw": "JOHN C. OWENS, JR.",
+      "parsed": "JOHN C. OWENS, JR.",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "title": {
+      "raw": "PRESIDENT & CEO",
+      "parsed": "PRESIDENT & CEO",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "signature_date": {
+      "raw": "01/23/2024",
+      "parsed": "01/23/2024",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        3
+      ],
+      "flagged": false
+    }
+  },
+  "additional_fields": [
+    {
+      "section": "Device, Forgery And Counterfeit Money (Property 1)",
+      "label": "Amount of Increase",
+      "value": {
+        "raw": "$1,000",
+        "parsed": 1000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Device, Forgery And Counterfeit Money (Property 1)",
+      "label": "Total Limit",
+      "value": {
+        "raw": "The Total Limit for this Incidental Property Coverage is the Amount of Increase shown plus the amount provided",
+        "parsed": "The Total Limit for this Incidental Property Coverage is the Amount of Increase shown plus the amount provided",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Device, Forgery And Counterfeit Money (Property 1)",
+      "label": "under Incidental Property Coverages in the Policy Form.",
+      "value": {
+        "raw": "(heading)",
+        "parsed": "(heading)",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Mail To",
+      "label": "Mail To",
+      "value": {
+        "raw": "Patriotic Insurance Group Brokerage Inc (86) 2251 Station PO Box 592 Ilion, NY 13357-5943",
+        "parsed": "Patriotic Insurance Group Brokerage Inc (86) 2251 Station PO Box 592 Ilion, NY 13357-5943",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      }
+    }
+  ],
+  "document_type_detail": {
+    "renewal_offer": {
+      "renewal_effective_date": {
+        "raw": "03/03/2024",
+        "parsed": "03/03/2024",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "renewal_expiration_date": {
+        "raw": "03/03/2025",
+        "parsed": "03/03/2025",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "renewal_premium": {
+        "raw": "$797.00",
+        "parsed": 797.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "fideon:provenance": {
+    "source": "Madison Mutual/homeowners/HOME-8_redacted.pdf",
+    "schema": "homeowners v1.4.0",
+    "synthetic": false,
+    "gold": "reviewed and completed by Claude against the printed pages",
+    "reviewed": "2026-09-28"
+  }
+}

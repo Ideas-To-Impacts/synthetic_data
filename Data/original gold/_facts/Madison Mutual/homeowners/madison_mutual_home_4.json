@@ -1,0 +1,539 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "DECLARATIONS, Homeowner Policy",
+   "parsed": "Declarations"
+  },
+  "document_title_as_stated": "DECLARATIONS, Homeowner Policy",
+  "line_of_business_as_stated": "Homeowner Policy",
+  "print_code": "DEC (7/2013)",
+  "transaction_type": "Renewal",
+  "issue_date": "07/31/2025"
+ },
+ "carrier": {
+  "company_name": "Madison Mutual Insurance Company",
+  "contact": {
+   "phone": "315-687-3211",
+   "website": "www.mminsco.com"
+  },
+  "address": {
+   "line_1": "1256 State Route 5",
+   "line_2": "PO Box 357",
+   "city": "Chittenango",
+   "state": "NY",
+   "postal_code": "13037-0357"
+  }
+ },
+ "producer": {
+  "agency_name": "Patriotic Insurance Group Brokerage Inc",
+  "producer_code": {
+   "raw": "(86)",
+   "parsed": "86"
+  },
+  "contact": {
+   "phone": "(845) 610-5700"
+  },
+  "address": {
+   "city": "Inlet",
+   "state": "NY",
+   "postal_code": "13360-0329",
+   "line_1": "159 Main St",
+   "line_2": "PO Box 329"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Corwin Sutcliffe",
+  "additional_named_insureds": [
+   {
+    "name": "Cheryl A McCarley"
+   }
+  ],
+  "mailing_address": {
+   "city": "Old Forge",
+   "state": "NY",
+   "postal_code": "13420-4117",
+   "line_1": "125 Old Beckers Road"
+  }
+ },
+ "policy": {
+  "policy_number": "MM-2021-2467",
+  "effective_date": "09/09/2025",
+  "expiration_date": "09/09/2026",
+  "effective_time": "12:01AM",
+  "expiration_time": "12:01AM",
+  "time_zone": "Standard Time",
+  "policyholder_since_date": "09/09/2021",
+  "is_renewal": {
+   "raw": "Renewal",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "is_assessable": {
+   "raw": "THIS POLICY IS ISSUED ON THE CO-OPERATIVE ASSESSMENT PLAN",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "plan_type": "THIS POLICY IS ISSUED ON THE CO-OPERATIVE ASSESSMENT PLAN"
+ },
+ "premium": {
+  "total_policy_premium": "$2,643.00",
+  "basic_premium": "$2,643.00",
+  "taxes_and_fees": [
+   {
+    "description": "Fees",
+    "amount": "$0.00"
+   }
+  ]
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "HO 0005",
+   "edition_date": "09 08"
+  },
+  {
+   "form_number": "HO 0831",
+   "edition_date": "01 15"
+  },
+  {
+   "form_number": "HO 0931",
+   "edition_date": "01 06"
+  },
+  {
+   "form_number": "HO 1123",
+   "edition_date": "01 06"
+  },
+  {
+   "form_number": "HO 1125",
+   "edition_date": "01 06"
+  },
+  {
+   "form_number": "HO 1145",
+   "edition_date": "01 15"
+  },
+  {
+   "form_number": "HO 1300",
+   "edition_date": "01 15"
+  },
+  {
+   "form_number": "HO 1347",
+   "edition_date": "09 14"
+  },
+  {
+   "form_number": "HO 2550",
+   "edition_date": "01 06"
+  },
+  {
+   "form_number": "HO 2584",
+   "edition_date": "01 06"
+  },
+  {
+   "form_number": "HO 2708",
+   "edition_date": "07 11"
+  },
+  {
+   "form_number": "HO 4851",
+   "edition_date": "01 06"
+  },
+  {
+   "form_number": "HO 6516",
+   "edition_date": "01 06"
+  },
+  {
+   "form_number": "HO 6581",
+   "edition_date": "01 06"
+  },
+  {
+   "form_number": "MM FLOOD NOTICE",
+   "edition_date": "09 19"
+  },
+  {
+   "form_number": "MM HO 5039",
+   "edition_date": "09 19"
+  },
+  {
+   "form_number": "MM HO 5140",
+   "edition_date": "09 19"
+  },
+  {
+   "form_number": "MM HO 5210",
+   "edition_date": "09 19"
+  },
+  {
+   "form_number": "MM HO 5346",
+   "edition_date": "09 19"
+  },
+  {
+   "form_number": "MM MH 5011",
+   "edition_date": "09 19"
+  },
+  {
+   "form_number": "MM PBT 5001",
+   "edition_date": "09 19"
+  },
+  {
+   "form_number": "MM SFP 5000",
+   "edition_date": "09 19"
+  }
+ ],
+ "homeowners": {
+  "scheduled_locations": [
+   {
+    "location_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "description": null,
+    "location_reference": {
+     "raw": "Property: 1 of 1",
+     "source": "structural"
+    },
+    "applicable_forms": [
+     {
+      "form_title": "Coverage A -- Residence",
+      "limit_amount": "$689,000",
+      "premium": "$2,573.00"
+     },
+     {
+      "form_title": "Coverage B -- Related Private Structures",
+      "limit_amount": "$68,900",
+      "is_included": {
+       "raw": "Incl.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "form_title": "Coverage C -- Personal Property",
+      "limit_amount": "$482,300",
+      "is_included": {
+       "raw": "Incl.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "form_title": "Coverage D -- Additional Living Costs And Loss Of Rent",
+      "limit_amount": "$206,700",
+      "is_included": {
+       "raw": "Incl.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "form_title": "Coverage L -- Personal Liability",
+      "limit_amount": "$1,000,000",
+      "premium": "$92.00"
+     },
+     {
+      "form_title": "Coverage M -- Medical Payments To Others",
+      "limit_amount": "$5,000",
+      "is_included": {
+       "raw": "Incl.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "form_title": "MM HO 5039 09 19 Disappearing Deductible",
+      "premium": "$15.00",
+      "form_number": "MM HO 5039",
+      "edition_date": "09 19"
+     },
+     {
+      "form_title": "MM HO 5140 09 19 Additional Insured -- Specified Coverages",
+      "premium": "$36.00",
+      "form_number": "MM HO 5140",
+      "edition_date": "09 19"
+     },
+     {
+      "form_title": "MM HO 5346 09 19 Equipment Breakdown Enhancement Endorsement",
+      "premium": "$18.00",
+      "form_number": "MM HO 5346",
+      "edition_date": "09 19"
+     },
+     {
+      "form_title": "HO 2550 01 06 Loss Assessment Coverage - Described Location - Additional Limit",
+      "limit_amount": "$48,500",
+      "premium": "$22.00",
+      "form_number": "HO 2550",
+      "edition_date": "01 06"
+     },
+     {
+      "form_title": "HO 2584 01 06 Automatic Adjustment Of Limits - Annual Increase 3 Percent",
+      "is_included": {
+       "raw": "Incl.",
+       "parsed": "Yes"
+      },
+      "form_number": "HO 2584",
+      "edition_date": "01 06"
+     },
+     {
+      "form_title": "HO 2708 07 11 Water Back Up And Sump Discharge Or Overflow Coverage",
+      "limit_amount": "$5,000",
+      "premium": "$50.00",
+      "form_number": "HO 2708",
+      "edition_date": "07 11"
+     },
+     {
+      "form_title": "HO 6516 01 06 Protective Devices - Deadbolts and Smoke Detectors",
+      "premium": "-$51.00",
+      "form_number": "HO 6516",
+      "edition_date": "01 06"
+     },
+     {
+      "form_title": "Claim Free Credit",
+      "premium": "-$56.00"
+     },
+     {
+      "form_title": "Renewal Credit",
+      "premium": "-$56.00"
+     }
+    ],
+    "section_i_property_coverages": {
+     "coverage_a_dwelling_limit": "$689,000",
+     "coverage_a_dwelling_premium": "$2,573.00",
+     "coverage_b_other_structures_limit": "$68,900",
+     "coverage_b_other_structures_premium": {
+      "raw": "Incl.",
+      "parsed": null
+     },
+     "coverage_c_personal_property_limit": "$482,300",
+     "coverage_c_personal_property_premium": {
+      "raw": "Incl.",
+      "parsed": null
+     },
+     "coverage_d_loss_of_use_limit": "$206,700",
+     "coverage_d_loss_of_use_premium": {
+      "raw": "Incl.",
+      "parsed": null
+     },
+     "loss_settlement_basis": "Replacement Cost",
+     "personal_property_loss_settlement_basis": "Replacement Cost (Incl. in Policy Form)"
+    },
+    "section_ii_liability_coverages": {
+     "coverage_e_personal_liability_limit": "$1,000,000",
+     "coverage_f_medical_payments_limit": "$5,000"
+    },
+    "notes": "125 Old Beckers Road - Old Forge NY 13420-4117 - Herkimer County",
+    "construction_type": "Frame",
+    "protection_class": "Partially Protected",
+    "deductible_type": "Disappearing Deductible",
+    "year_built": {
+     "raw": "1938",
+     "parsed": 1938
+    },
+    "deductibles": {
+     "all_other_perils_deductible": "$1,000"
+    },
+    "solid_fuel_burning_device_present": {
+     "raw": "Yes",
+     "parsed": "Yes"
+    },
+    "swimming_pool": {
+     "raw": "No",
+     "parsed": "No"
+    },
+    "policy_form_number": "HO 0005 -- Special Building And Contents Form",
+    "occupancy_type": "Primary",
+    "dwelling_type": "1 Family - Freestanding",
+    "program_name": "Gold"
+   }
+  ],
+  "section_i_property_coverages": {
+   "coverage_a_dwelling_limit": "$689,000",
+   "coverage_a_dwelling_premium": "$2,573.00",
+   "coverage_b_other_structures_limit": "$68,900",
+   "coverage_b_other_structures_premium": {
+    "raw": "Incl.",
+    "parsed": null
+   },
+   "coverage_c_personal_property_limit": "$482,300",
+   "coverage_c_personal_property_premium": {
+    "raw": "Incl.",
+    "parsed": null
+   },
+   "coverage_d_loss_of_use_limit": "$206,700",
+   "coverage_d_loss_of_use_premium": {
+    "raw": "Incl.",
+    "parsed": null
+   },
+   "loss_settlement_basis": "Replacement Cost",
+   "personal_property_loss_settlement_basis": "Replacement Cost (Incl. in Policy Form)"
+  },
+  "section_ii_liability_coverages": {
+   "coverage_e_personal_liability_limit": "$1,000,000",
+   "coverage_e_personal_liability_premium": "$92.00",
+   "coverage_f_medical_payments_limit": "$5,000"
+  },
+  "optional_endorsement_coverages": [
+   {
+    "coverage_name": "MM HO 5039 09 19 Disappearing Deductible",
+    "premium": "$15.00",
+    "applies_to": {
+     "raw": "Property 1",
+     "source": "structural"
+    }
+   },
+   {
+    "coverage_name": "MM HO 5140 09 19 Additional Insured -- Specified Coverages",
+    "premium": "$36.00",
+    "applies_to": {
+     "raw": "Property 1",
+     "source": "structural"
+    }
+   },
+   {
+    "coverage_name": "MM HO 5346 09 19 Equipment Breakdown Enhancement Endorsement",
+    "premium": "$18.00",
+    "applies_to": {
+     "raw": "Property 1",
+     "source": "structural"
+    }
+   },
+   {
+    "coverage_name": "HO 2550 01 06 Loss Assessment Coverage - Described Location - Additional Limit",
+    "limit_amount": "$48,500",
+    "premium": "$22.00",
+    "applies_to": {
+     "raw": "Property 1",
+     "source": "structural"
+    }
+   },
+   {
+    "coverage_name": "HO 2584 01 06 Automatic Adjustment Of Limits - Annual Increase 3 Percent",
+    "is_included": {
+     "raw": "Incl.",
+     "parsed": "Yes"
+    },
+    "applies_to": {
+     "raw": "Property 1",
+     "source": "structural"
+    }
+   },
+   {
+    "coverage_name": "HO 2708 07 11 Water Back Up And Sump Discharge Or Overflow Coverage",
+    "limit_amount": "$5,000",
+    "premium": "$50.00",
+    "applies_to": {
+     "raw": "Property 1",
+     "source": "structural"
+    }
+   }
+  ],
+  "discounts": [
+   {
+    "discount_name": "HO 6516 01 06 Protective Devices - Deadbolts and Smoke Detectors",
+    "amount": "-$51.00",
+    "location_reference": {
+     "raw": "Property 1",
+     "source": "structural"
+    },
+    "discount_type": {
+     "raw": "Credit",
+     "source": "structural"
+    }
+   },
+   {
+    "discount_name": "Claim Free Credit",
+    "amount": "-$56.00",
+    "location_reference": {
+     "raw": "Property 1",
+     "source": "structural"
+    },
+    "discount_type": {
+     "raw": "Credit",
+     "source": "structural"
+    }
+   },
+   {
+    "discount_name": "Renewal Credit",
+    "amount": "-$56.00",
+    "location_reference": {
+     "raw": "Property 1",
+     "source": "structural"
+    },
+    "discount_type": {
+     "raw": "Credit",
+     "source": "structural"
+    }
+   }
+  ],
+  "mortgagees": []
+ },
+ "signature": {
+  "authorized_representative_name": "JOHN C. OWENS, JR.",
+  "title": "PRESIDENT & CEO",
+  "signature_date": "07/31/2025"
+ },
+ "interested_parties": [
+  {
+   "name": "Holiday Shores Estates HOA",
+   "party_type": {
+    "raw": "ADDITIONAL INTEREST",
+    "source": "structural"
+   },
+   "description_of_interest": "Deeded Land Owner",
+   "address": {
+    "city": "Old Forge",
+    "state": "NY",
+    "postal_code": "13420",
+    "line_1": "PO Box 727"
+   }
+  }
+ ],
+ "additional_fields": [
+  {
+   "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
+   "label": "Additional Insured Information",
+   "value": {
+    "raw": "(heading)",
+    "source": "structural"
+   }
+  },
+  {
+   "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
+   "label": "Name of Person or Organization",
+   "value": "Holiday Shores Estates HOA"
+  },
+  {
+   "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
+   "label": "Address of Person or Organization",
+   "value": "108 Holiday Dr; Old Forge, NY 13420"
+  },
+  {
+   "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
+   "label": "Interest",
+   "value": "Deeded Land Owner"
+  },
+  {
+   "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
+   "label": "Applicable Coverage(s)",
+   "value": "Coverage L -- Personal Liability; Coverage M -- Medical Payments To Others"
+  },
+  {
+   "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
+   "label": "Other Coverage(s) As Specified",
+   "value": "NA"
+  },
+  {
+   "section": "HO 2708 07 11 Water Back Up And Sump Discharge Or Overflow Coverage (Property 1)",
+   "label": "Basement Construction",
+   "value": "Finished or Partially Finished"
+  },
+  {
+   "section": "HO 2708 07 11 Water Back Up And Sump Discharge Or Overflow Coverage (Property 1)",
+   "label": "Water Back Up And Sump Discharge Or Overflow Coverage Deductible",
+   "value": "The Policy Deductible applies."
+  },
+  {
+   "section": "Mail To",
+   "label": "Mail To",
+   "value": "Patriotic Insurance Group Brokerage Inc (86) 159 Main St PO Box 329 Inlet, NY 13360-0329"
+  }
+ ],
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_effective_date": "09/09/2025",
+   "renewal_expiration_date": "09/09/2026",
+   "renewal_premium": "$2,643.00"
+  }
+ }
+}

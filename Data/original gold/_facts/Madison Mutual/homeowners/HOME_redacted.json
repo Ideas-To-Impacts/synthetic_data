@@ -1,0 +1,394 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "DECLARATIONS, Seasonal Package Policy",
+   "parsed": "Declarations"
+  },
+  "document_title_as_stated": "DECLARATIONS, Seasonal Package Policy",
+  "line_of_business_as_stated": "Seasonal Package Policy",
+  "print_code": "DEC (7/2013)",
+  "transaction_type": "Renewal",
+  "issue_date": "10/07/2025"
+ },
+ "carrier": {
+  "company_name": "Madison Mutual Insurance Company",
+  "contact": {
+   "phone": "315-687-3211",
+   "website": "www.mminsco.com"
+  },
+  "address": {
+   "line_1": "1256 State Route 5",
+   "line_2": "PO Box 357",
+   "city": "Chittenango",
+   "state": "NY",
+   "postal_code": "13037-0357"
+  }
+ },
+ "producer": {
+  "agency_name": "Patriotic Insurance Group Brokerage Inc",
+  "producer_code": {
+   "raw": "(86)",
+   "parsed": "86"
+  },
+  "address": {
+   "city": "Ilion",
+   "state": "NY",
+   "postal_code": "13357-5943",
+   "line_1": "2251 Station",
+   "line_2": "PO Box 592"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Martin Ellery",
+  "additional_named_insureds": [
+   {
+    "name": "Karen Welch"
+   }
+  ],
+  "mailing_address": {
+   "city": "Warwick",
+   "state": "NY",
+   "postal_code": "10990-7782",
+   "line_1": "113",
+   "line_2": "3831 Chestnut"
+  }
+ },
+ "policy": {
+  "policy_number": "MM-6562-9667",
+  "effective_date": "11/28/2025",
+  "expiration_date": "11/28/2026",
+  "effective_time": "12:01AM",
+  "expiration_time": "12:01AM",
+  "time_zone": "Standard Time",
+  "policyholder_since_date": "11/28/2022",
+  "is_renewal": {
+   "raw": "Renewal",
+   "source": "structural",
+   "parsed": "Yes"
+  }
+ },
+ "premium": {
+  "total_policy_premium": "$735.00",
+  "basic_premium": "$735.00",
+  "taxes_and_fees": [
+   {
+    "description": "Fees",
+    "amount": "$0.00"
+   }
+  ]
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "FL-59",
+   "edition_date": "6/97"
+  },
+  {
+   "form_number": "FMD-1",
+   "edition_date": "8/08"
+  },
+  {
+   "form_number": "MM FL-10",
+   "edition_date": "7/22"
+  },
+  {
+   "form_number": "MM FL-2",
+   "edition_date": "7/22"
+  },
+  {
+   "form_number": "MM FL-20",
+   "edition_date": "7/22"
+  },
+  {
+   "form_number": "MM FL-39",
+   "edition_date": "7/22"
+  },
+  {
+   "form_number": "MM FL-426",
+   "edition_date": "7/22"
+  },
+  {
+   "form_number": "MM FL-52B",
+   "edition_date": "7/22"
+  },
+  {
+   "form_number": "MM FL-OLT",
+   "edition_date": "7/22"
+  },
+  {
+   "form_number": "MM FL-VBE",
+   "edition_date": "7/22"
+  },
+  {
+   "form_number": "MM SFP",
+   "edition_date": "7/22"
+  }
+ ],
+ "homeowners": {
+  "scheduled_locations": [
+   {
+    "location_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "description": null,
+    "location_reference": {
+     "raw": "Property: 1 of 1",
+     "source": "structural"
+    },
+    "applicable_forms": [
+     {
+      "form_title": "Coverage A - Residence",
+      "limit_amount": "$202,000",
+      "premium": "$741.00"
+     },
+     {
+      "form_title": "Coverage B - Related Private Structures on the Premises",
+      "limit_amount": "$20,200",
+      "is_included": {
+       "raw": "Incl.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "form_title": "Coverage C - Personal Property",
+      "limit_amount": "$60,600",
+      "is_included": {
+       "raw": "Incl.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "form_title": "Coverage D - Additional Living Expense or Loss of Rent",
+      "limit_amount": "$20,200",
+      "is_included": {
+       "raw": "Incl.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "form_title": "Coverage L - Premises Liability Coverage (Each Occurrence)",
+      "limit_amount": "$300,000",
+      "is_included": {
+       "raw": "Incl.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "form_title": "Coverage M - Premises Medical Payments (Each Person)",
+      "limit_amount": "$5,000",
+      "is_included": {
+       "raw": "Incl.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "form_title": "Coverage M - Premises Medical Payments (Each Accident)",
+      "limit_amount": "$50,000",
+      "is_included": {
+       "raw": "Incl.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "form_title": "MM FL-OLT (7/22) Premises Liability Coverage",
+      "premium": "$26.00",
+      "form_number": "MM FL-OLT",
+      "edition_date": "7/22"
+     },
+     {
+      "form_title": "MM FL-10 (7/22) Automatic Increase in Insurance - 3 Percent",
+      "is_included": {
+       "raw": "Incl.",
+       "parsed": "Yes"
+      },
+      "form_number": "MM FL-10",
+      "edition_date": "7/22"
+     },
+     {
+      "form_title": "MM FL-39 (7/22) Disappearing Deductible",
+      "premium": "$15.00",
+      "form_number": "MM FL-39",
+      "edition_date": "7/22"
+     },
+     {
+      "form_title": "Claim Free Credit",
+      "premium": "-$16.00"
+     },
+     {
+      "form_title": "Premium Adjustment",
+      "premium": "-$15.00"
+     },
+     {
+      "form_title": "Renewal Credit",
+      "premium": "-$16.00"
+     }
+    ],
+    "section_i_property_coverages": {
+     "coverage_a_dwelling_limit": "$202,000",
+     "coverage_a_dwelling_premium": "$741.00",
+     "coverage_b_other_structures_limit": "$20,200",
+     "coverage_b_other_structures_premium": {
+      "raw": "Incl.",
+      "parsed": null
+     },
+     "coverage_c_personal_property_limit": "$60,600",
+     "coverage_c_personal_property_premium": {
+      "raw": "Incl.",
+      "parsed": null
+     },
+     "coverage_d_loss_of_use_limit": "$20,200",
+     "coverage_d_loss_of_use_premium": {
+      "raw": "Incl.",
+      "parsed": null
+     },
+     "loss_settlement_basis": "Replacement Cost"
+    },
+    "section_ii_liability_coverages": {
+     "coverage_e_personal_liability_limit": "$300,000",
+     "coverage_f_medical_payments_per_person_limit": "$5,000",
+     "coverage_f_medical_payments_per_occurrence_limit": "$50,000"
+    },
+    "notes": "4099 Harbor - Medina, NY 14103 - Herkimer County",
+    "causes_of_loss_form": "MM FL-2 Broad Form",
+    "construction_type": "Frame",
+    "protection_class": "Protected",
+    "deductible_type": "Disappearing Deductible",
+    "year_built": {
+     "raw": "1949",
+     "parsed": 1949
+    },
+    "deductibles": {
+     "all_other_perils_deductible": "$500"
+    },
+    "solid_fuel_burning_device_present": {
+     "raw": "Yes",
+     "parsed": "Yes"
+    },
+    "swimming_pool": {
+     "raw": "No",
+     "parsed": "No"
+    },
+    "acreage": "Under 10 Acres"
+   }
+  ],
+  "section_i_property_coverages": {
+   "coverage_a_dwelling_limit": "$202,000",
+   "coverage_a_dwelling_premium": "$741.00",
+   "coverage_b_other_structures_limit": "$20,200",
+   "coverage_b_other_structures_premium": {
+    "raw": "Incl.",
+    "parsed": null
+   },
+   "coverage_c_personal_property_limit": "$60,600",
+   "coverage_c_personal_property_premium": {
+    "raw": "Incl.",
+    "parsed": null
+   },
+   "coverage_d_loss_of_use_limit": "$20,200",
+   "coverage_d_loss_of_use_premium": {
+    "raw": "Incl.",
+    "parsed": null
+   },
+   "loss_settlement_basis": "Replacement Cost"
+  },
+  "section_ii_liability_coverages": {
+   "coverage_e_personal_liability_limit": "$300,000",
+   "coverage_f_medical_payments_per_person_limit": "$5,000",
+   "coverage_f_medical_payments_per_occurrence_limit": "$50,000"
+  },
+  "optional_endorsement_coverages": [
+   {
+    "coverage_name": "MM FL-OLT (7/22) Premises Liability Coverage",
+    "premium": "$26.00",
+    "applies_to": {
+     "raw": "Property 1",
+     "source": "structural"
+    }
+   },
+   {
+    "coverage_name": "MM FL-10 (7/22) Automatic Increase in Insurance - 3 Percent",
+    "is_included": {
+     "raw": "Incl.",
+     "parsed": "Yes"
+    },
+    "applies_to": {
+     "raw": "Property 1",
+     "source": "structural"
+    }
+   },
+   {
+    "coverage_name": "MM FL-39 (7/22) Disappearing Deductible",
+    "premium": "$15.00",
+    "applies_to": {
+     "raw": "Property 1",
+     "source": "structural"
+    }
+   }
+  ],
+  "discounts": [
+   {
+    "discount_name": "Claim Free Credit",
+    "amount": "-$16.00",
+    "location_reference": {
+     "raw": "Property 1",
+     "source": "structural"
+    },
+    "discount_type": {
+     "raw": "Credit",
+     "source": "structural"
+    }
+   },
+   {
+    "discount_name": "Premium Adjustment",
+    "amount": "-$15.00",
+    "location_reference": {
+     "raw": "Property 1",
+     "source": "structural"
+    },
+    "discount_type": {
+     "raw": "Credit",
+     "source": "structural"
+    }
+   },
+   {
+    "discount_name": "Renewal Credit",
+    "amount": "-$16.00",
+    "location_reference": {
+     "raw": "Property 1",
+     "source": "structural"
+    },
+    "discount_type": {
+     "raw": "Credit",
+     "source": "structural"
+    }
+   }
+  ],
+  "mortgagees": []
+ },
+ "signature": {
+  "authorized_representative_name": "JOHN C. OWENS, JR.",
+  "title": "PRESIDENT & CEO",
+  "signature_date": "10/07/2025"
+ },
+ "interested_parties": [],
+ "additional_fields": [
+  {
+   "section": "Premium Adjustment (Property 1)",
+   "label": "Reason for Premium Adjustment",
+   "value": "Deadbolt Credit"
+  },
+  {
+   "section": "Mail To",
+   "label": "Mail To",
+   "value": "Patriotic Insurance Group Brokerage Inc (86) 2251 Station PO Box 592 Ilion, NY 13357-5943"
+  }
+ ],
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_effective_date": "11/28/2025",
+   "renewal_expiration_date": "11/28/2026",
+   "renewal_premium": "$735.00"
+  }
+ }
+}

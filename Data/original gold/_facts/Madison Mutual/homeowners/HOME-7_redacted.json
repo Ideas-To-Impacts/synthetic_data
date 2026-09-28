@@ -1,0 +1,502 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "DECLARATIONS, Homeowner Policy Amended Date: 07/03/2024",
+   "parsed": "Declarations"
+  },
+  "document_title_as_stated": "DECLARATIONS, Homeowner Policy Amended Date: 07/03/2024",
+  "line_of_business_as_stated": "Homeowner Policy Amended Date: 07/03/2024",
+  "print_code": "DEC (7/2013)",
+  "transaction_type": "Amended Declaration",
+  "issue_date": "07/03/2024"
+ },
+ "carrier": {
+  "company_name": "Madison Mutual Insurance Company",
+  "contact": {
+   "phone": "315-687-3211",
+   "website": "www.mminsco.com"
+  },
+  "address": {
+   "line_1": "1256 State Route 5",
+   "line_2": "PO Box 357",
+   "city": "Chittenango",
+   "state": "NY",
+   "postal_code": "13037-0357"
+  }
+ },
+ "producer": {
+  "agency_name": "Patriotic Insurance Group Brokerage Inc",
+  "producer_code": {
+   "raw": "(86)",
+   "parsed": "86"
+  },
+  "address": {
+   "city": "Ilion",
+   "state": "NY",
+   "postal_code": "13357-5943",
+   "line_1": "2251 Station",
+   "line_2": "PO Box 592"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Keith Merritt",
+  "additional_named_insureds": [
+   {
+    "name": "Betsy J Hicks"
+   }
+  ],
+  "mailing_address": {
+   "city": "Canton",
+   "state": "FL",
+   "postal_code": "13617-3994",
+   "line_1": "9042 Station"
+  }
+ },
+ "policy": {
+  "policy_number": "61227880",
+  "effective_date": "03/03/2024",
+  "expiration_date": "03/03/2025",
+  "effective_time": "12:01AM",
+  "expiration_time": "12:01AM",
+  "time_zone": "Standard Time",
+  "policyholder_since_date": "03/03/2016",
+  "is_renewal": {
+   "raw": "Amended Declaration",
+   "source": "structural",
+   "parsed": "No"
+  }
+ },
+ "premium": {
+  "total_policy_premium": "$826.00",
+  "basic_premium": "$826.00",
+  "taxes_and_fees": [
+   {
+    "description": "Fees",
+    "amount": "$0.00"
+   }
+  ]
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "HO 0002",
+   "edition_date": "09 08"
+  },
+  {
+   "form_number": "HO 0831",
+   "edition_date": "01 15"
+  },
+  {
+   "form_number": "HO 0931",
+   "edition_date": "01 06"
+  },
+  {
+   "form_number": "HO 1123",
+   "edition_date": "01 06"
+  },
+  {
+   "form_number": "HO 1125",
+   "edition_date": "01 06"
+  },
+  {
+   "form_number": "HO 1142",
+   "edition_date": "01 15"
+  },
+  {
+   "form_number": "HO 1300",
+   "edition_date": "01 15"
+  },
+  {
+   "form_number": "HO 1347",
+   "edition_date": "09 14"
+  },
+  {
+   "form_number": "HO 2530",
+   "edition_date": "01 06"
+  },
+  {
+   "form_number": "HO 2584",
+   "edition_date": "01 06"
+  },
+  {
+   "form_number": "HO 4851",
+   "edition_date": "01 06"
+  },
+  {
+   "form_number": "HO 4855",
+   "edition_date": "01 06"
+  },
+  {
+   "form_number": "HO 6581",
+   "edition_date": "01 06"
+  },
+  {
+   "form_number": "MM FLOOD NOTICE",
+   "edition_date": "09 19"
+  },
+  {
+   "form_number": "MM HO 5050",
+   "edition_date": "09 19"
+  },
+  {
+   "form_number": "MM HO 5140",
+   "edition_date": "09 19"
+  },
+  {
+   "form_number": "MM HO 5210",
+   "edition_date": "09 19"
+  },
+  {
+   "form_number": "MM MH 5011",
+   "edition_date": "09 19"
+  },
+  {
+   "form_number": "MM PBT 5001",
+   "edition_date": "09 19"
+  },
+  {
+   "form_number": "MM SFP 5000",
+   "edition_date": "09 19"
+  }
+ ],
+ "homeowners": {
+  "scheduled_locations": [
+   {
+    "location_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "description": null,
+    "location_reference": {
+     "raw": "Property: 1 of 1",
+     "source": "structural"
+    },
+    "applicable_forms": [
+     {
+      "form_title": "Coverage A -- Residence",
+      "limit_amount": "$223,000",
+      "premium": "$843.00"
+     },
+     {
+      "form_title": "Coverage B -- Related Private Structures",
+      "limit_amount": "$22,300",
+      "is_included": {
+       "raw": "Incl.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "form_title": "Coverage C -- Personal Property",
+      "limit_amount": "$156,100",
+      "is_included": {
+       "raw": "Incl.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "form_title": "Coverage D -- Additional Living Costs And Loss Of Rent",
+      "limit_amount": "$66,900",
+      "is_included": {
+       "raw": "Incl.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "form_title": "Coverage L -- Personal Liability",
+      "limit_amount": "$500,000",
+      "premium": "$53.00"
+     },
+     {
+      "form_title": "Coverage M -- Medical Payments To Others",
+      "limit_amount": "$5,000",
+      "is_included": {
+       "raw": "Incl.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "form_title": "MM HO 5050 09 19 Secondary Homeowner Coverage Limitation Endorsement",
+      "premium": "-$50.00",
+      "form_number": "MM HO 5050",
+      "edition_date": "09 19"
+     },
+     {
+      "form_title": "MM HO 5140 09 19 Additional Insured -- Specified Coverages",
+      "premium": {
+       "raw": "$31.",
+       "parsed": 31.0
+      },
+      "form_number": "MM HO 5140",
+      "edition_date": "09 19"
+     },
+     {
+      "form_title": "90 QW 2682 01 06 Incidental Property Coverages - Higher redit Card, Electronic Fund Transfer Card Or Access Device, Forgery And Counterfeit Money",
+      "premium": {
+       "raw": "$5.",
+       "parsed": 5.0
+      }
+     },
+     {
+      "form_title": "34 MT 8481 01 06 Automatic Adjustment Of Limits - Annual 3 Percent",
+      "is_included": {
+       "raw": "Incl.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "form_title": "HO 4855 01 06 Replacement Cost Loss Settlement Terms - Personal Property",
+      "is_included": {
+       "raw": "Incl.",
+       "parsed": "Yes"
+      },
+      "form_number": "HO 4855",
+      "edition_date": "01 06"
+     },
+     {
+      "form_title": "Claim Free Credit",
+      "premium": "-$28.00"
+     },
+     {
+      "form_title": "Renewal Credit",
+      "premium": "-$28.00"
+     }
+    ],
+    "section_i_property_coverages": {
+     "coverage_a_dwelling_limit": "$223,000",
+     "coverage_a_dwelling_premium": "$843.00",
+     "coverage_b_other_structures_limit": "$22,300",
+     "coverage_b_other_structures_premium": {
+      "raw": "Incl.",
+      "parsed": null
+     },
+     "coverage_c_personal_property_limit": "$156,100",
+     "coverage_c_personal_property_premium": {
+      "raw": "Incl.",
+      "parsed": null
+     },
+     "coverage_d_loss_of_use_limit": "$66,900",
+     "coverage_d_loss_of_use_premium": {
+      "raw": "Incl.",
+      "parsed": null
+     },
+     "loss_settlement_basis": "Replacement Cost",
+     "personal_property_loss_settlement_basis": "Replacement Cost"
+    },
+    "section_ii_liability_coverages": {
+     "coverage_e_personal_liability_limit": "$500,000",
+     "coverage_f_medical_payments_limit": "$5,000"
+    },
+    "notes": "709 Riverside - Medina, NY 14103 - Hamilton County",
+    "construction_type": "Frame",
+    "protection_class": "Partially Protected",
+    "deductible_type": "Flat Deductible",
+    "year_built": {
+     "raw": "1965",
+     "parsed": 1965
+    },
+    "deductibles": {
+     "all_other_perils_deductible": "$500"
+    },
+    "solid_fuel_burning_device_present": {
+     "raw": "No",
+     "parsed": "No"
+    },
+    "swimming_pool": {
+     "raw": "No",
+     "parsed": "No"
+    },
+    "policy_form_number": "HO 0002 -- Broad Form",
+    "occupancy_type": "Secondary",
+    "dwelling_type": "1 Family - Freestanding",
+    "program_name": "Silver"
+   }
+  ],
+  "section_i_property_coverages": {
+   "coverage_a_dwelling_limit": "$223,000",
+   "coverage_a_dwelling_premium": "$843.00",
+   "coverage_b_other_structures_limit": "$22,300",
+   "coverage_b_other_structures_premium": {
+    "raw": "Incl.",
+    "parsed": null
+   },
+   "coverage_c_personal_property_limit": "$156,100",
+   "coverage_c_personal_property_premium": {
+    "raw": "Incl.",
+    "parsed": null
+   },
+   "coverage_d_loss_of_use_limit": "$66,900",
+   "coverage_d_loss_of_use_premium": {
+    "raw": "Incl.",
+    "parsed": null
+   },
+   "loss_settlement_basis": "Replacement Cost",
+   "personal_property_loss_settlement_basis": "Replacement Cost"
+  },
+  "section_ii_liability_coverages": {
+   "coverage_e_personal_liability_limit": "$500,000",
+   "coverage_e_personal_liability_premium": "$53.00",
+   "coverage_f_medical_payments_limit": "$5,000"
+  },
+  "optional_endorsement_coverages": [
+   {
+    "coverage_name": "MM HO 5050 09 19 Secondary Homeowner Coverage Limitation Endorsement",
+    "premium": "-$50.00",
+    "applies_to": {
+     "raw": "Property 1",
+     "source": "structural"
+    }
+   },
+   {
+    "coverage_name": "MM HO 5140 09 19 Additional Insured -- Specified Coverages",
+    "premium": {
+     "raw": "$31.",
+     "parsed": 31.0
+    },
+    "applies_to": {
+     "raw": "Property 1",
+     "source": "structural"
+    }
+   },
+   {
+    "coverage_name": "90 QW 2682 01 06 Incidental Property Coverages - Higher redit Card, Electronic Fund Transfer Card Or Access Device, Forgery And Counterfeit Money",
+    "premium": {
+     "raw": "$5.",
+     "parsed": 5.0
+    },
+    "applies_to": {
+     "raw": "Property 1",
+     "source": "structural"
+    }
+   },
+   {
+    "coverage_name": "34 MT 8481 01 06 Automatic Adjustment Of Limits - Annual 3 Percent",
+    "is_included": {
+     "raw": "Incl.",
+     "parsed": "Yes"
+    },
+    "applies_to": {
+     "raw": "Property 1",
+     "source": "structural"
+    }
+   },
+   {
+    "coverage_name": "HO 4855 01 06 Replacement Cost Loss Settlement Terms - Personal Property",
+    "is_included": {
+     "raw": "Incl.",
+     "parsed": "Yes"
+    },
+    "applies_to": {
+     "raw": "Property 1",
+     "source": "structural"
+    }
+   }
+  ],
+  "discounts": [
+   {
+    "discount_name": "Claim Free Credit",
+    "amount": "-$28.00",
+    "location_reference": {
+     "raw": "Property 1",
+     "source": "structural"
+    },
+    "discount_type": {
+     "raw": "Credit",
+     "source": "structural"
+    }
+   },
+   {
+    "discount_name": "Renewal Credit",
+    "amount": "-$28.00",
+    "location_reference": {
+     "raw": "Property 1",
+     "source": "structural"
+    },
+    "discount_type": {
+     "raw": "Credit",
+     "source": "structural"
+    }
+   }
+  ],
+  "mortgagees": []
+ },
+ "signature": {
+  "authorized_representative_name": "JOHN C. OWENS, JR.",
+  "title": "PRESIDENT & CEO",
+  "signature_date": "07/03/2024"
+ },
+ "interested_parties": [],
+ "additional_fields": [
+  {
+   "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
+   "label": "Additional Insured Liberty",
+   "value": {
+    "raw": "(heading)",
+    "source": "structural"
+   }
+  },
+  {
+   "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
+   "label": "Name of Person or Organization",
+   "value": "CEDARLINE MOTORWORKS"
+  },
+  {
+   "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
+   "label": "Address of Person or Organization",
+   "value": "9042 Station ; Warwick, FL 10990"
+  },
+  {
+   "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
+   "label": "Lysmvaug",
+   "value": "Rqfr Snbek"
+  },
+  {
+   "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
+   "label": "Applicable Coverage(s)",
+   "value": "Coverage A -- Residence; Coverage B -- Related Private Structures; Coverage C -- Personal Property;"
+  },
+  {
+   "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
+   "label": "Coverage L -- Personal Liability; Coverage M -- Medical Payments To Others",
+   "value": {
+    "raw": "(heading)",
+    "source": "structural"
+   }
+  },
+  {
+   "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
+   "label": "Other Coverage(s) As Specified",
+   "value": "No answer provided"
+  },
+  {
+   "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
+   "label": "HO 2530 01 06 Incidental Property Coverages - Higher Limits - Credit Card, Electronic Fund Transfer Card Or Access",
+   "value": {
+    "raw": "(heading)",
+    "source": "structural"
+   }
+  },
+  {
+   "section": "Device, Forgery And Counterfeit Money (Property 1)",
+   "label": "Amount of Increase",
+   "value": "$1,000"
+  },
+  {
+   "section": "Device, Forgery And Counterfeit Money (Property 1)",
+   "label": "Total Limit",
+   "value": "The Total Limit for this Incidental Property Coverage is the Amount of Increase shown plus the amount provided"
+  },
+  {
+   "section": "Device, Forgery And Counterfeit Money (Property 1)",
+   "label": "under Incidental Property Coverages in the Policy Form.",
+   "value": {
+    "raw": "(heading)",
+    "source": "structural"
+   }
+  },
+  {
+   "section": "Mail To",
+   "label": "Mail To",
+   "value": "Patriotic Insurance Group Brokerage Inc (86) 2251 Station PO Box 592 Ilion, NY 13357-5943"
+  }
+ ]
+}

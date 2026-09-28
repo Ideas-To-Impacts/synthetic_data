@@ -1,0 +1,396 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "DECLARATIONS, Seasonal Package Policy",
+   "parsed": "Declarations"
+  },
+  "document_title_as_stated": "DECLARATIONS, Seasonal Package Policy",
+  "line_of_business_as_stated": "Seasonal Package Policy",
+  "print_code": "DEC (7/2013)",
+  "transaction_type": "Renewal",
+  "issue_date": "09/04/2026"
+ },
+ "carrier": {
+  "company_name": "Madison Mutual Insurance Company",
+  "contact": {
+   "phone": "315-687-3211",
+   "website": "www.mminsco.com"
+  },
+  "address": {
+   "line_1": "1256 State Route 5",
+   "line_2": "PO Box 357",
+   "city": "Chittenango",
+   "state": "NY",
+   "postal_code": "13037-0357"
+  }
+ },
+ "producer": {
+  "agency_name": "Stable Rock Insurance Agency LLC (86)",
+  "contact": {
+   "phone": "(845) 610-5700"
+  },
+  "address": {
+   "city": "Inlet",
+   "state": "NY",
+   "postal_code": "13360",
+   "line_1": "159 NY-28",
+   "line_2": "PO Box 329"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Brightwater Contracting Trust",
+  "additional_named_insureds": [],
+  "mailing_address": {
+   "city": "Old Forge",
+   "state": "NY",
+   "postal_code": "13420-4221",
+   "line_1": "150 Lawrence Point Rd"
+  }
+ },
+ "policy": {
+  "policy_number": "100002502",
+  "effective_date": "10/14/2026",
+  "expiration_date": "10/14/2027",
+  "effective_time": "12:01AM",
+  "expiration_time": "12:01AM",
+  "time_zone": "Standard Time",
+  "policyholder_since_date": "10/14/2004",
+  "is_renewal": {
+   "raw": "Renewal",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "is_assessable": {
+   "raw": "THIS POLICY IS ISSUED ON THE CO-OPERATIVE ASSESSMENT PLAN",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "plan_type": "THIS POLICY IS ISSUED ON THE CO-OPERATIVE ASSESSMENT PLAN"
+ },
+ "premium": {
+  "total_policy_premium": "$1,959.00",
+  "basic_premium": "$1,959.00",
+  "taxes_and_fees": [
+   {
+    "description": "Fees",
+    "amount": "$0.00"
+   }
+  ]
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "FL-59",
+   "edition_date": "6/97"
+  },
+  {
+   "form_number": "FMD-1",
+   "edition_date": "8/08"
+  },
+  {
+   "form_number": "MM FL-10",
+   "edition_date": "7/22"
+  },
+  {
+   "form_number": "MM FL-2",
+   "edition_date": "7/22"
+  },
+  {
+   "form_number": "MM FL-20",
+   "edition_date": "7/22"
+  },
+  {
+   "form_number": "MM FL-426",
+   "edition_date": "7/22"
+  },
+  {
+   "form_number": "MM FL-52B",
+   "edition_date": "7/22"
+  },
+  {
+   "form_number": "MM FL-OLT",
+   "edition_date": "7/22"
+  },
+  {
+   "form_number": "MM FL-VBE",
+   "edition_date": "7/22"
+  },
+  {
+   "form_number": "MM SFP",
+   "edition_date": "7/22"
+  }
+ ],
+ "homeowners": {
+  "scheduled_locations": [
+   {
+    "location_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "description": null,
+    "location_reference": {
+     "raw": "Property: 1 of 1",
+     "source": "structural"
+    },
+    "applicable_forms": [
+     {
+      "form_title": "Coverage A - Residence",
+      "limit_amount": "$361,000",
+      "premium": "$1,359.00"
+     },
+     {
+      "form_title": "Coverage B - Related Private Structures on the Premises",
+      "limit_amount": "$36,100",
+      "is_included": {
+       "raw": "Incl.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "form_title": "Coverage C - Personal Property",
+      "limit_amount": "$108,300",
+      "is_included": {
+       "raw": "Incl.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "form_title": "Coverage D - Additional Living Expense or Loss of Rent",
+      "limit_amount": "$36,100",
+      "is_included": {
+       "raw": "Incl.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "form_title": "Coverage L - Premises Liability Coverage (Each Occurrence)",
+      "limit_amount": "$500,000",
+      "is_included": {
+       "raw": "Incl.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "form_title": "Coverage M - Premises Medical Payments (Each Person)",
+      "limit_amount": "$5,000",
+      "is_included": {
+       "raw": "Incl.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "form_title": "Coverage M - Premises Medical Payments (Each Accident)",
+      "limit_amount": "$50,000",
+      "is_included": {
+       "raw": "Incl.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "form_title": "MM FL-OLT (7/22) Premises Liability Coverage",
+      "premium": "$70.00",
+      "form_number": "MM FL-OLT",
+      "edition_date": "7/22"
+     },
+     {
+      "form_title": "MM FL-10 (7/22) Automatic Increase in Insurance - 3 Percent",
+      "is_included": {
+       "raw": "Incl.",
+       "parsed": "Yes"
+      },
+      "form_number": "MM FL-10",
+      "edition_date": "7/22"
+     },
+     {
+      "form_title": "Claim Free Credit",
+      "premium": "-$41.00"
+     },
+     {
+      "form_title": "Renewal Credit",
+      "premium": "-$41.00"
+     },
+     {
+      "form_title": "Seasonal Rentals Surcharge",
+      "premium": "$612.00"
+     }
+    ],
+    "section_i_property_coverages": {
+     "coverage_a_dwelling_limit": "$361,000",
+     "coverage_a_dwelling_premium": "$1,359.00",
+     "coverage_b_other_structures_limit": "$36,100",
+     "coverage_b_other_structures_premium": {
+      "raw": "Incl.",
+      "parsed": null
+     },
+     "coverage_c_personal_property_limit": "$108,300",
+     "coverage_c_personal_property_premium": {
+      "raw": "Incl.",
+      "parsed": null
+     },
+     "coverage_d_loss_of_use_limit": "$36,100",
+     "coverage_d_loss_of_use_premium": {
+      "raw": "Incl.",
+      "parsed": null
+     },
+     "loss_settlement_basis": "Replacement Cost"
+    },
+    "section_ii_liability_coverages": {
+     "coverage_e_personal_liability_limit": "$500,000",
+     "coverage_f_medical_payments_per_person_limit": "$5,000",
+     "coverage_f_medical_payments_per_occurrence_limit": "$50,000"
+    },
+    "notes": "152 Lawrence Point Rd - Old Forge NY 13420 - Herkimer County",
+    "causes_of_loss_form": "MM FL-2 Broad Form",
+    "construction_type": "Frame",
+    "protection_class": "Partially Protected",
+    "deductible_type": "Flat Deductible",
+    "year_built": {
+     "raw": "1960",
+     "parsed": 1960
+    },
+    "deductibles": {
+     "all_other_perils_deductible": "$1,000"
+    },
+    "solid_fuel_burning_device_present": {
+     "raw": "Yes",
+     "parsed": "Yes"
+    },
+    "swimming_pool": {
+     "raw": "Yes",
+     "parsed": "Yes"
+    },
+    "acreage": "Under 10 Acres"
+   }
+  ],
+  "section_i_property_coverages": {
+   "coverage_a_dwelling_limit": "$361,000",
+   "coverage_a_dwelling_premium": "$1,359.00",
+   "coverage_b_other_structures_limit": "$36,100",
+   "coverage_b_other_structures_premium": {
+    "raw": "Incl.",
+    "parsed": null
+   },
+   "coverage_c_personal_property_limit": "$108,300",
+   "coverage_c_personal_property_premium": {
+    "raw": "Incl.",
+    "parsed": null
+   },
+   "coverage_d_loss_of_use_limit": "$36,100",
+   "coverage_d_loss_of_use_premium": {
+    "raw": "Incl.",
+    "parsed": null
+   },
+   "loss_settlement_basis": "Replacement Cost"
+  },
+  "section_ii_liability_coverages": {
+   "coverage_e_personal_liability_limit": "$500,000",
+   "coverage_f_medical_payments_per_person_limit": "$5,000",
+   "coverage_f_medical_payments_per_occurrence_limit": "$50,000"
+  },
+  "optional_endorsement_coverages": [
+   {
+    "coverage_name": "MM FL-OLT (7/22) Premises Liability Coverage",
+    "premium": "$70.00",
+    "applies_to": {
+     "raw": "Property 1",
+     "source": "structural"
+    }
+   },
+   {
+    "coverage_name": "MM FL-10 (7/22) Automatic Increase in Insurance - 3 Percent",
+    "is_included": {
+     "raw": "Incl.",
+     "parsed": "Yes"
+    },
+    "applies_to": {
+     "raw": "Property 1",
+     "source": "structural"
+    }
+   }
+  ],
+  "discounts": [
+   {
+    "discount_name": "Claim Free Credit",
+    "amount": "-$41.00",
+    "location_reference": {
+     "raw": "Property 1",
+     "source": "structural"
+    },
+    "discount_type": {
+     "raw": "Credit",
+     "source": "structural"
+    }
+   },
+   {
+    "discount_name": "Renewal Credit",
+    "amount": "-$41.00",
+    "location_reference": {
+     "raw": "Property 1",
+     "source": "structural"
+    },
+    "discount_type": {
+     "raw": "Credit",
+     "source": "structural"
+    }
+   },
+   {
+    "discount_name": "Seasonal Rentals Surcharge",
+    "amount": "$612.00",
+    "location_reference": {
+     "raw": "Property 1",
+     "source": "structural"
+    },
+    "discount_type": {
+     "raw": "Surcharge",
+     "source": "structural"
+    }
+   }
+  ],
+  "mortgagees": [],
+  "seasonal_rental": [
+   {
+    "location_reference": {
+     "raw": "Property 1",
+     "source": "structural"
+    },
+    "number_of_weeks_rented": "9-12 Weeks",
+    "waterfront_property": {
+     "raw": "Yes",
+     "parsed": "Yes"
+    },
+    "watercraft_offered_with_rental": {
+     "raw": "No",
+     "parsed": "No"
+    },
+    "trampoline_on_premises": {
+     "raw": "No",
+     "parsed": "No"
+    },
+    "recreational_vehicles_offered_with_rental": {
+     "raw": "No",
+     "parsed": "No"
+    }
+   }
+  ]
+ },
+ "signature": {
+  "authorized_representative_name": "JOHN C. OWENS, JR.",
+  "title": "PRESIDENT & CEO",
+  "signature_date": "09/04/2026"
+ },
+ "interested_parties": [],
+ "additional_fields": [
+  {
+   "section": "Mail To",
+   "label": "Mail To",
+   "value": "Stable Rock Insurance Agency LLC (86) 159 NY-28 PO Box 329 Inlet, NY 13360"
+  }
+ ],
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_effective_date": "10/14/2026",
+   "renewal_expiration_date": "10/14/2027",
+   "renewal_premium": "$1,959.00"
+  }
+ }
+}
