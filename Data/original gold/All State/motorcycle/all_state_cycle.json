@@ -1629,6 +1629,41 @@
       }
     ]
   },
+  "additional_fields": [
+    {
+      "section": "Policy",
+      "label": "Your Choice Package",
+      "value": {
+        "raw": "GOLD PACKAGE",
+        "parsed": "GOLD PACKAGE",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Policy",
+      "label": "Agent Of Record",
+      "value": {
+        "raw": "HBE GROUP INC (02 64653)",
+        "parsed": "HBE GROUP INC (02 64653)",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      }
+    }
+  ],
   "fideon:provenance": {
     "source": "All State/motorcycle/all_state_cycle.pdf",
     "schema": "motorcycle v1.4.0",

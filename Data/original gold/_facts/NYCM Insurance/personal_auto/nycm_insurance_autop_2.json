@@ -309,6 +309,12 @@
      "party_type": {
       "raw": "LOSS PAYEE",
       "source": "structural"
+     },
+     "address": {
+      "line_1": "PO BOX 30203",
+      "city": "COLLEGE STATION",
+      "state": "TX",
+      "postal_code": "77842"
      }
     }
    }
@@ -545,11 +551,6 @@
    "section": "Insurance Score Information",
    "label": "Marcus Sutcliffe 09-16-2005",
    "value": "Z"
-  },
-  {
-   "section": "Loss payee",
-   "label": "Address",
-   "value": "PO BOX 30203 COLLEGE STATION TX 77842"
   },
   {
    "section": "Remarks",

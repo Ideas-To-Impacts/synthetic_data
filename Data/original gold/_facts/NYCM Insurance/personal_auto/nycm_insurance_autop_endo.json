@@ -312,6 +312,12 @@
      "party_type": {
       "raw": "LOSS PAYEE",
       "source": "structural"
+     },
+     "address": {
+      "line_1": "1916 BLACK RIVER BLVD",
+      "city": "ROME",
+      "state": "NY",
+      "postal_code": "13440"
      }
     }
    }
@@ -527,11 +533,6 @@
    "section": "Insurance Score Information",
    "label": "Juno Keswick 06-21-2024",
    "value": "NCF FF"
-  },
-  {
-   "section": "Loss payee",
-   "label": "Address",
-   "value": "1916 BLACK RIVER BLVD ROME NY 13440"
   },
   {
    "section": "Remarks",

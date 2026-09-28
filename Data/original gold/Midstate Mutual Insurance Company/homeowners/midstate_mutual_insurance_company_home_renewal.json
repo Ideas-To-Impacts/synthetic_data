@@ -2345,6 +2345,95 @@
             ],
             "flagged": false
           }
+        },
+        "address": {
+          "line_1": {
+            "raw": "179 Cohasset Point Road",
+            "parsed": "179 Cohasset Point Road",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "municipality": {
+            "raw": "Webb",
+            "parsed": "Webb",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "county": {
+            "raw": "Herkimer",
+            "parsed": "Herkimer",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "city": {
+            "raw": "Old Forge",
+            "parsed": "Old Forge",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "flagged": false
+          },
+          "state": {
+            "raw": "NY",
+            "parsed": "NY",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "flagged": false
+          },
+          "postal_code": {
+            "raw": "13420",
+            "parsed": "13420",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "flagged": false
+          }
         }
       }
     ],

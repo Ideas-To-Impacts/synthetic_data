@@ -2737,6 +2737,115 @@
             ],
             "flagged": false
           }
+        },
+        "address": {
+          "line_1": {
+            "raw": "291 Poplar Point Road",
+            "parsed": "291 Poplar Point Road",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "flagged": false
+          },
+          "municipality": {
+            "raw": "Long Lake",
+            "parsed": "Long Lake",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              5
+            ],
+            "flagged": false
+          },
+          "county": {
+            "raw": "Hamilton",
+            "parsed": "Hamilton",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              4,
+              5
+            ],
+            "flagged": false
+          },
+          "city": {
+            "raw": "Raquette Lake",
+            "parsed": "Raquette Lake",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "flagged": false
+          },
+          "state": {
+            "raw": "NY",
+            "parsed": "NY",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "flagged": false
+          },
+          "postal_code": {
+            "raw": "13436",
+            "parsed": "13436",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "flagged": false
+          }
         }
       },
       {
@@ -3069,7 +3178,108 @@
               "flagged": false
             }
           }
-        ]
+        ],
+        "address": {
+          "line_1": {
+            "raw": "291 Poplar Point Road (Rental cottage 1)",
+            "parsed": "291 Poplar Point Road (Rental cottage 1)",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "municipality": {
+            "raw": "Long Lake",
+            "parsed": "Long Lake",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              5
+            ],
+            "flagged": false
+          },
+          "county": {
+            "raw": "Hamilton",
+            "parsed": "Hamilton",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              4,
+              5
+            ],
+            "flagged": false
+          },
+          "city": {
+            "raw": "Raquette Lake",
+            "parsed": "Raquette Lake",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "flagged": false
+          },
+          "state": {
+            "raw": "NY",
+            "parsed": "NY",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "flagged": false
+          },
+          "postal_code": {
+            "raw": "13436",
+            "parsed": "13436",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "flagged": false
+          }
+        }
       },
       {
         "location_number": {
@@ -3401,7 +3611,109 @@
               "flagged": false
             }
           }
-        ]
+        ],
+        "address": {
+          "line_1": {
+            "raw": "291 Poplar Point Road (Rental cottage 2)",
+            "parsed": "291 Poplar Point Road (Rental cottage 2)",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              7
+            ],
+            "flagged": false
+          },
+          "municipality": {
+            "raw": "Long Lake",
+            "parsed": "Long Lake",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              5
+            ],
+            "flagged": false
+          },
+          "county": {
+            "raw": "Hamilton",
+            "parsed": "Hamilton",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              4,
+              5
+            ],
+            "flagged": false
+          },
+          "city": {
+            "raw": "Raquette Lake",
+            "parsed": "Raquette Lake",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "flagged": false
+          },
+          "state": {
+            "raw": "NY",
+            "parsed": "NY",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "flagged": false
+          },
+          "postal_code": {
+            "raw": "13436",
+            "parsed": "13436",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "flagged": false
+          }
+        }
       },
       {
         "location_number": {
@@ -3733,7 +4045,109 @@
               "flagged": false
             }
           }
-        ]
+        ],
+        "address": {
+          "line_1": {
+            "raw": "291 Poplar Point Road (Rental cottage 3(",
+            "parsed": "291 Poplar Point Road (Rental cottage 3(",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              7
+            ],
+            "flagged": false
+          },
+          "municipality": {
+            "raw": "Long Lake",
+            "parsed": "Long Lake",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              5
+            ],
+            "flagged": false
+          },
+          "county": {
+            "raw": "Hamilton",
+            "parsed": "Hamilton",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              4,
+              5
+            ],
+            "flagged": false
+          },
+          "city": {
+            "raw": "Raquette Lake",
+            "parsed": "Raquette Lake",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "flagged": false
+          },
+          "state": {
+            "raw": "NY",
+            "parsed": "NY",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "flagged": false
+          },
+          "postal_code": {
+            "raw": "13436",
+            "parsed": "13436",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "flagged": false
+          }
+        }
       }
     ],
     "section_i_property_coverages": {

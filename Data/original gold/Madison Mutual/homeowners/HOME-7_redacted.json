@@ -262,6 +262,20 @@
         ],
         "flagged": false
       }
+    },
+    "contact": {
+      "phone": {
+        "raw": "(226) 783-0236",
+        "parsed": "(226) 783-0236",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
     }
   },
   "named_insured": {
@@ -502,7 +516,31 @@
           "flagged": false
         }
       }
-    ]
+    ],
+    "annual_premium_change": {
+      "raw": "$29.00",
+      "parsed": 29.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        2
+      ],
+      "flagged": false
+    },
+    "pro_rata_premium_change": {
+      "raw": "$19.30",
+      "parsed": 19.3,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        2
+      ],
+      "flagged": false
+    }
   },
   "forms_and_endorsements": [
     {
@@ -2469,6 +2507,87 @@
       "flagged": false
     }
   },
+  "interested_parties": [
+    {
+      "name": {
+        "raw": "CEDARLINE MOTORWORKS",
+        "parsed": "CEDARLINE MOTORWORKS",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "party_type": {
+        "raw": "Additional Interest",
+        "parsed": "Additional Interest",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "address": {
+        "line_1": {
+          "raw": "9042 Station",
+          "parsed": "9042 Station",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            3
+          ],
+          "flagged": false
+        },
+        "city": {
+          "raw": "Warwick",
+          "parsed": "Warwick",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "state": {
+          "raw": "FL",
+          "parsed": "FL",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "postal_code": {
+          "raw": "10990",
+          "parsed": "10990",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        }
+      }
+    }
+  ],
   "additional_fields": [
     {
       "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
@@ -2651,6 +2770,51 @@
       }
     }
   ],
+  "document_type_detail": {
+    "policy_change": {
+      "transaction_date": {
+        "raw": "07/03/2024",
+        "parsed": "07/03/2024",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          4
+        ],
+        "flagged": false
+      },
+      "transaction_reason_description": {
+        "raw": "Amended Policy; Added MM HO 5140 09 19 Additional Insured -- Specified Coverages for LLC",
+        "parsed": "Amended Policy; Added MM HO 5140 09 19 Additional Insured -- Specified Coverages for LLC",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "changes": [
+        {
+          "change_description": {
+            "raw": "Amended Policy; Added MM HO 5140 09 19 Additional Insured -- Specified Coverages for LLC",
+            "parsed": "Amended Policy; Added MM HO 5140 09 19 Additional Insured -- Specified Coverages for LLC",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3
+            ],
+            "flagged": false
+          }
+        }
+      ]
+    }
+  },
   "text_sections": {
     "page1_s1": {
       "section_id": "page1_s1",

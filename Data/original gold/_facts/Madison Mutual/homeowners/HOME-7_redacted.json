@@ -32,6 +32,9 @@
    "postal_code": "13357-5943",
    "line_1": "2251 Station",
    "line_2": "PO Box 592"
+  },
+  "contact": {
+   "phone": "(226) 783-0236"
   }
  },
  "named_insured": {
@@ -70,7 +73,9 @@
     "description": "Fees",
     "amount": "$0.00"
    }
-  ]
+  ],
+  "annual_premium_change": "$29.00",
+  "pro_rata_premium_change": "$19.30"
  },
  "forms_and_endorsements": [
   {
@@ -427,7 +432,21 @@
   "title": "PRESIDENT & CEO",
   "signature_date": "07/03/2024"
  },
- "interested_parties": [],
+ "interested_parties": [
+  {
+   "name": "CEDARLINE MOTORWORKS",
+   "party_type": {
+    "raw": "Additional Interest",
+    "source": "structural"
+   },
+   "address": {
+    "line_1": "9042 Station",
+    "city": "Warwick",
+    "state": "FL",
+    "postal_code": "10990"
+   }
+  }
+ ],
  "additional_fields": [
   {
    "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
@@ -501,5 +520,16 @@
    "label": "Mail To",
    "value": "Patriotic Insurance Group Brokerage Inc (86) 2251 Station PO Box 592 Ilion, NY 13357-5943"
   }
- ]
+ ],
+ "document_type_detail": {
+  "policy_change": {
+   "transaction_date": "07/03/2024",
+   "transaction_reason_description": "Amended Policy; Added MM HO 5140 09 19 Additional Insured -- Specified Coverages for LLC",
+   "changes": [
+    {
+     "change_description": "Amended Policy; Added MM HO 5140 09 19 Additional Insured -- Specified Coverages for LLC"
+    }
+   ]
+  }
+ }
 }

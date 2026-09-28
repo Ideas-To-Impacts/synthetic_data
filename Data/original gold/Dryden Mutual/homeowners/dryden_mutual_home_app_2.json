@@ -593,16 +593,6 @@
     ]
   },
   "policy": {
-    "policy_number": {
-      "raw": "HPP00177450-01",
-      "parsed": "HPP00177450-01",
-      "confidence": {
-        "score": 1.0,
-        "source": "deterministic"
-      },
-      "page_ref": [],
-      "flagged": false
-    },
     "effective_date": {
       "raw": "12/01/2025",
       "parsed": "12/01/2025",
@@ -799,8 +789,8 @@
         "flagged": false
       },
       "description_of_interest": {
-        "raw": "Owner By Deed",
-        "parsed": "Owner By Deed",
+        "raw": "deeded owner",
+        "parsed": "deeded owner",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"

@@ -262,6 +262,20 @@
         ],
         "flagged": false
       }
+    },
+    "contact": {
+      "phone": {
+        "raw": "(226) 783-0236",
+        "parsed": "(226) 783-0236",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
     }
   },
   "named_insured": {
@@ -333,15 +347,13 @@
         "flagged": false
       },
       "line_1": {
-        "raw": "113",
-        "parsed": "113",
+        "raw": "3831 Chestnut 113",
+        "parsed": "3831 Chestnut 113",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
         },
-        "page_ref": [
-          1
-        ],
+        "page_ref": [],
         "flagged": false
       },
       "line_2": {

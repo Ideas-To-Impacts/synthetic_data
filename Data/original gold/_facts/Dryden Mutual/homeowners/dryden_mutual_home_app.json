@@ -787,6 +787,17 @@
    {
     "question": "Secondary/Seasonal Home: What type of system?",
     "answer": "a smart thermostat, simply safe security with motion, fire CO2 water sensor, burglar, cameras monitoring notifies homeowner if no response goes to 911"
+   },
+   {
+    "question": "Is this primary residence of the insured?",
+    "answer": {
+     "raw": "X No",
+     "parsed": "No"
+    }
+   },
+   {
+    "question": "Are there other structures on premises considered to be related private structures? Describe:",
+    "answer": "boat house 1040 sq ft built 2020 total value $250,000"
    }
   ]
  },

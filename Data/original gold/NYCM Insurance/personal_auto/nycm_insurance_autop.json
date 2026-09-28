@@ -1831,6 +1831,59 @@
               2
             ],
             "flagged": false
+          },
+          "address": {
+            "line_1": {
+              "raw": "1916 BLACK RIVER BLVD",
+              "parsed": "1916 BLACK RIVER BLVD",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "city": {
+              "raw": "ROME",
+              "parsed": "ROME",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "state": {
+              "raw": "NY",
+              "parsed": "NY",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "flagged": false
+            },
+            "postal_code": {
+              "raw": "13440",
+              "parsed": "13440",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
           }
         }
       }
@@ -2767,22 +2820,6 @@
           "source": "deterministic"
         },
         "page_ref": [],
-        "flagged": false
-      }
-    },
-    {
-      "section": "Loss payee",
-      "label": "Address",
-      "value": {
-        "raw": "1916 BLACK RIVER BLVD ROME NY 13440",
-        "parsed": "1916 BLACK RIVER BLVD ROME NY 13440",
-        "confidence": {
-          "score": 1.0,
-          "source": "deterministic"
-        },
-        "page_ref": [
-          2
-        ],
         "flagged": false
       }
     },

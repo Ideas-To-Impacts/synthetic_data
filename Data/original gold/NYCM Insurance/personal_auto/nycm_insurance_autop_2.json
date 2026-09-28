@@ -1763,6 +1763,56 @@
               2
             ],
             "flagged": false
+          },
+          "address": {
+            "line_1": {
+              "raw": "PO BOX 30203",
+              "parsed": "PO BOX 30203",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "city": {
+              "raw": "COLLEGE STATION",
+              "parsed": "COLLEGE STATION",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "state": {
+              "raw": "TX",
+              "parsed": "TX",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "postal_code": {
+              "raw": "77842",
+              "parsed": "77842",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
           }
         }
       }
@@ -2732,22 +2782,6 @@
         },
         "page_ref": [
           1
-        ],
-        "flagged": false
-      }
-    },
-    {
-      "section": "Loss payee",
-      "label": "Address",
-      "value": {
-        "raw": "PO BOX 30203 COLLEGE STATION TX 77842",
-        "parsed": "PO BOX 30203 COLLEGE STATION TX 77842",
-        "confidence": {
-          "score": 1.0,
-          "source": "deterministic"
-        },
-        "page_ref": [
-          2
         ],
         "flagged": false
       }

@@ -379,23 +379,27 @@
         "flagged": false
       },
       "party_type": {
-        "raw": "Contracted Agency",
-        "parsed": "Contracted Agency",
+        "raw": "Granite Row Works",
+        "parsed": "Granite Row Works",
         "confidence": {
           "score": 1.0,
           "source": "structural"
         },
-        "page_ref": [],
+        "page_ref": [
+          3
+        ],
         "flagged": false
       },
       "description_of_interest": {
-        "raw": "Contracted Agency: #495001",
-        "parsed": "Contracted Agency: #495001",
+        "raw": "- #495001",
+        "parsed": "- #495001",
         "confidence": {
           "score": 1.0,
-          "source": "structural"
+          "source": "deterministic"
         },
-        "page_ref": [],
+        "page_ref": [
+          3
+        ],
         "flagged": false
       },
       "address": {

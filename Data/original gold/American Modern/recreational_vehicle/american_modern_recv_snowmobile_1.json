@@ -163,6 +163,28 @@
         47
       ],
       "flagged": false
+    },
+    "contact": {
+      "phone": {
+        "raw": "1-800-543-2644",
+        "parsed": "1-800-543-2644",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          9,
+          11,
+          13,
+          33,
+          35,
+          37,
+          47,
+          49
+        ],
+        "flagged": false
+      }
     }
   },
   "claim_reporting": {

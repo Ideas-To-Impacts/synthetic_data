@@ -3840,6 +3840,56 @@
           ],
           "flagged": false
         }
+      },
+      {
+        "question": {
+          "raw": "Is this primary residence of the insured?",
+          "parsed": "Is this primary residence of the insured?",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "answer": {
+          "raw": "X No",
+          "parsed": "No",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "question": {
+          "raw": "Are there other structures on premises considered to be related private structures? Describe:",
+          "parsed": "Are there other structures on premises considered to be related private structures? Describe:",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "answer": {
+          "raw": "boat house 1040 sq ft built 2020 total value $250,000",
+          "parsed": "boat house 1040 sq ft built 2020 total value $250,000",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        }
       }
     ]
   },
