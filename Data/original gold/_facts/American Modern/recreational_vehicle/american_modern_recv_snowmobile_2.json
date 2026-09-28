@@ -1,0 +1,473 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "POLICY DECLARATIONS",
+   "parsed": "Declarations"
+  },
+  "document_title_as_stated": "POLICY DECLARATIONS",
+  "line_of_business_as_stated": "Motorsports",
+  "transaction_type": "Renewal",
+  "print_code": "MS-CW-D-0001 (08-17)",
+  "issue_date": "December 12, 2024"
+ },
+ "carrier": {
+  "company_name": "American Modern Home Insurance Company",
+  "group_name": "American Modern Insurance Group"
+ },
+ "claim_reporting": {
+  "claims_phone": "1-800-375-2075"
+ },
+ "producer": {
+  "agency_name": "PATRIOTIC INSURANCE GROUP BROKERAGE INC",
+  "producer_code": "#913886",
+  "contact": {
+   "phone": "(845) 610-5700"
+  },
+  "address": {
+   "line_1": "159 NY-28",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Casper Norcross",
+  "mailing_address": {
+   "line_1": "PO BOX 1185",
+   "city": "OLD FORGE",
+   "state": "NY",
+   "postal_code": "13420"
+  }
+ },
+ "interested_parties": [
+  {
+   "name": "RSG SPECIALTY LLC",
+   "party_type": {
+    "raw": "Contracted Agency",
+    "source": "structural"
+   },
+   "loan_number": null,
+   "description_of_interest": {
+    "raw": "Contracted Agency: #495001",
+    "source": "structural"
+   },
+   "address": {
+    "line_1": "6450 TRANSIT RD.",
+    "city": "DEPEW",
+    "state": "NY",
+    "postal_code": "14043"
+   }
+  }
+ ],
+ "policy": {
+  "policy_number": "103-194-455",
+  "policy_type": "Motorsports",
+  "effective_date": "01/31/2025",
+  "expiration_date": "01/31/2026",
+  "effective_time": "12:01 A.M.",
+  "time_zone": "Standard Time",
+  "is_renewal": {
+   "raw": "Renewal",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "policy_form_number": "VS031",
+  "policy_form_edition": "03-20",
+  "policy_form_name": "Snowmobile Policy - New York"
+ },
+ "premium": {
+  "total_policy_premium": "$460.00",
+  "minimum_premium": "$50.00",
+  "discounts_and_credits": [
+   {
+    "description": "Multi-Vehicle Discount",
+    "amount": "$8.00",
+    "applies_to": {
+     "raw": "Vehicle #1",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Multi-Vehicle Discount",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Vehicle Discount",
+    "amount": "$56.00",
+    "applies_to": {
+     "raw": "Vehicle #2",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Multi-Vehicle Discount",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   }
+  ],
+  "premium_by_coverage_part": [
+   {
+    "coverage_part": "Policy Coverages",
+    "premium": "$226.00"
+   },
+   {
+    "coverage_part": "Vehicle #1",
+    "premium": "$0.00"
+   },
+   {
+    "coverage_part": "Vehicle #2",
+    "premium": "$234.00"
+   }
+  ],
+  "taxes_and_fees": [
+   {
+    "description": "Tax and Fees",
+    "amount": "$0.00"
+   }
+  ]
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "VS031",
+   "edition_date": "03-20",
+   "form_title": "Snowmobile Policy - New York",
+   "applies_to": {
+    "raw": "Policy Level Forms (Forms that apply to all Vehicles)",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "IL-CW-G-0001",
+   "edition_date": "01-15",
+   "form_title": "Signature Endorsement",
+   "applies_to": {
+    "raw": "Policy Level Forms (Forms that apply to all Vehicles)",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "VSW31",
+   "edition_date": "03-20",
+   "form_title": "Snowmobile Policy Supplementary Uninsured/Underinsured Motorist Endorsement - New York",
+   "applies_to": {
+    "raw": "Policy Level Forms (Forms that apply to all Vehicles)",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "VSH00",
+   "edition_date": "06-01",
+   "form_title": "Snowmobile Policy Helmet Collision Coverage Endorsement - New York",
+   "applies_to": {
+    "raw": "Policy Level Forms (Forms that apply to all Vehicles)",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "VSA31",
+   "edition_date": "03-20",
+   "form_title": "Snowmobile Policy Amendment of Policy Provisions - New York",
+   "applies_to": {
+    "raw": "Policy Level Forms (Forms that apply to all Vehicles)",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "SM-NY-U-0001",
+   "edition_date": "03-20",
+   "form_title": "Explanation and Offer of Additional Coverage: Selection/Rejection of Supplementary Uninsured/Underinsured Motorists Coverage (New York)",
+   "applies_to": {
+    "raw": "Policy Level Forms (Forms that apply to all Vehicles)",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "PEF00",
+   "edition_date": "03-09",
+   "form_title": "Policy Execution Endorsement",
+   "applies_to": {
+    "raw": "Policy Level Forms (Forms that apply to all Vehicles)",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "VST31",
+   "edition_date": "03-20",
+   "form_title": "Snowmobile Policy Travel Loss Coverage Endorsement - New York",
+   "applies_to": {
+    "raw": "Policy Level Forms (Forms that apply to all Vehicles)",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "MS-CW-I-0001",
+   "edition_date": "11-19",
+   "form_title": "Towing and Emergency Expense Card",
+   "applies_to": {
+    "raw": "Forms that apply to vehicle #2: 2015, POLARIS, ADVENTURE AX/YS, SN1DAPPS0FC521569",
+    "source": "structural"
+   }
+  }
+ ],
+ "recreational_vehicle": {
+  "units": [
+   {
+    "unit_number": {
+     "raw": "Vehicle #1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "2004",
+     "parsed": 2004
+    },
+    "make": "SKI-DOO",
+    "model": "LEGEND 380 FAN",
+    "vin_or_hull_id": "2BPS291664V000680",
+    "horsepower_or_cc": "377",
+    "storage_type": "Locked Garage/Building/Barn",
+    "is_modified": {
+     "raw": "No",
+     "parsed": "No"
+    },
+    "registered_for_street_use": {
+     "raw": "No",
+     "parsed": "No"
+    },
+    "storage_address": {
+     "full": "UNKNOWN, PRINCIPALLY USED IN NY 13420"
+    },
+    "registration_address": {
+     "full": "UNKNOWN, PRINCIPALLY USED IN NY 13420"
+    },
+    "rating_symbol": "M44",
+    "territory_code": "1",
+    "premium": "$0.00",
+    "coverages": [
+     {
+      "coverage_name": "Comprehensive",
+      "premium": "$0.00",
+      "notes": "This unit does not contain Comprehensive coverage."
+     },
+     {
+      "coverage_name": "Collision",
+      "premium": "$0.00",
+      "notes": "This unit does not contain Collision coverage."
+     }
+    ]
+   },
+   {
+    "unit_number": {
+     "raw": "Vehicle #2",
+     "source": "structural",
+     "parsed": 2
+    },
+    "year": {
+     "raw": "2015",
+     "parsed": 2015
+    },
+    "make": "POLARIS",
+    "model": "ADVENTURE AX/YS",
+    "vin_or_hull_id": "SN1DAPPS0FC521569",
+    "horsepower_or_cc": "600",
+    "storage_type": "Locked Garage/Building/Barn",
+    "is_modified": {
+     "raw": "No",
+     "parsed": "No"
+    },
+    "registered_for_street_use": {
+     "raw": "No",
+     "parsed": "No"
+    },
+    "storage_address": {
+     "full": "UNKNOWN, PRINCIPALLY USED IN NY 13420"
+    },
+    "registration_address": {
+     "full": "UNKNOWN, PRINCIPALLY USED IN NY 13420"
+    },
+    "rating_symbol": "M44",
+    "territory_code": "1",
+    "premium": "$234.00",
+    "coverages": [
+     {
+      "coverage_name": "Comprehensive",
+      "premium": "$97.00",
+      "deductible_amount": "500",
+      "valuation_basis": "Actual Cash Value"
+     },
+     {
+      "coverage_name": "Collision",
+      "premium": "$137.00",
+      "deductible_amount": "500",
+      "valuation_basis": "Actual Cash Value"
+     },
+     {
+      "coverage_name": "Safety Apparel",
+      "limit_amount": "1,000",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Towing and Emergency Expense",
+      "limit_amount": "100",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     }
+    ]
+   }
+  ],
+  "operators": [
+   {
+    "name": "Casper Norcross"
+   },
+   {
+    "name": "NIKOLIAI OREKHOV"
+   },
+   {
+    "name": "Maeve Ellery"
+   }
+  ],
+  "additional_coverages": [
+   {
+    "coverage_name": "Liability - Bodily Injury and Property Damage",
+    "premium": "$180.00"
+   },
+   {
+    "coverage_name": "Bodily injury",
+    "limit_amount": "100,000 Per person",
+    "limit_basis": {
+     "raw": "Per person",
+     "source": "structural"
+    }
+   },
+   {
+    "coverage_name": "Bodily injury",
+    "limit_amount": "300,000 Each accident",
+    "limit_basis": {
+     "raw": "Each accident",
+     "source": "structural"
+    }
+   },
+   {
+    "coverage_name": "Property damage",
+    "limit_amount": "50,000 Each accident",
+    "limit_basis": {
+     "raw": "Each accident",
+     "source": "structural"
+    }
+   },
+   {
+    "coverage_name": "Passenger Liability",
+    "is_included": {
+     "raw": "Included",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Wrongful Death",
+    "limit_amount": "50,000 Per person/100,000 Each accident",
+    "is_included": {
+     "raw": "Included",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Supplementary Uninsured / Underinsured Motorist",
+    "limit_amount": "100,000 Per person/300,000 Each accident",
+    "premium": "$46.00"
+   },
+   {
+    "coverage_name": "Helmet Collision Coverage",
+    "is_included": {
+     "raw": "Included",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Helmet",
+    "limit_amount": "400 Per Helmet"
+   },
+   {
+    "coverage_name": "Helmet",
+    "limit_amount": "800 Per occurrence"
+   },
+   {
+    "coverage_name": "Travel Loss",
+    "is_included": {
+     "raw": "Included",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Trip Interruption",
+    "limit_amount": "300 Per occurrence/600 Per Policy Period",
+    "is_included": {
+     "raw": "Included",
+     "parsed": "Yes"
+    }
+   }
+  ],
+  "liability_coverages": {
+   "bodily_injury_per_person_limit": {
+    "raw": "100,000 Per person",
+    "parsed": 100000.0
+   },
+   "bodily_injury_per_accident_limit": {
+    "raw": "300,000 Each accident",
+    "parsed": 300000.0
+   },
+   "property_damage_limit": {
+    "raw": "50,000 Each accident",
+    "parsed": 50000.0
+   },
+   "passenger_liability_limit": {
+    "raw": "Included",
+    "parsed": "Yes"
+   },
+   "wrongful_death_benefit": "50,000 Per person/100,000 Each accident",
+   "supplementary_uninsured_underinsured_limit": "100,000 Per person/300,000 Each accident"
+  },
+  "physical_damage_coverages": {
+   "helmet_collision_per_helmet_limit": {
+    "raw": "400 Per Helmet",
+    "parsed": 400.0
+   },
+   "helmet_collision_per_occurrence_limit": {
+    "raw": "800 Per occurrence",
+    "parsed": 800.0
+   },
+   "travel_loss_per_occurrence_limit": {
+    "raw": "300 Per occurrence",
+    "parsed": 300.0
+   },
+   "travel_loss_per_policy_limit": {
+    "raw": "600 Per Policy",
+    "parsed": 600.0
+   },
+   "trip_interruption": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  }
+ },
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_effective_date": "01/31/2025",
+   "renewal_expiration_date": "01/31/2026",
+   "renewal_premium": "$460.00",
+   "offer_issue_date": "December 12, 2024"
+  }
+ },
+ "additional_fields": [
+  {
+   "section": "Cover letter",
+   "label": "Form",
+   "value": "IL-CW-CL-0018 10-15"
+  }
+ ]
+}

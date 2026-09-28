@@ -1,0 +1,657 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "RENEWAL DECLARATIONS",
+   "parsed": "Renewal Declarations"
+  },
+  "document_title_as_stated": "MOTOR HOME RENEWAL DECLARATIONS",
+  "line_of_business_as_stated": "MOTOR HOME",
+  "copy_type": "INSURED COPY",
+  "print_code": "Form 085997 10/15",
+  "issue_date": "July 31, 2024",
+  "transaction_type": "RENEWAL",
+  "transaction_effective_date": "09/19/2024"
+ },
+ "carrier": {
+  "company_name": "FOREMOST INSURANCE COMPANY",
+  "group_name": "An RK Insurer",
+  "address": {
+   "line_1": "P.O. Box 2450",
+   "city": "Grand Rapids",
+   "state": "Michigan",
+   "postal_code": "49501"
+  },
+  "contact": {
+   "website": "Foremost.com"
+  }
+ },
+ "claim_reporting": {
+  "claims_phone": "1-800-527-3907"
+ },
+ "producer": {
+  "agency_name": "BURKHARD EVANS INC",
+  "producer_code": "37 - 3001 - 144",
+  "contact": {
+   "phone": "(315) 357-5901"
+  },
+  "address": {
+   "line_1": "PO BOX 329",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360-0329"
+  }
+ },
+ "named_insured": {
+  "primary_name": "ROBERT A QUEEN JR",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "mailing_address": {
+   "line_1": "PO BOX 252",
+   "city": "EAGLE BAY",
+   "state": "NY",
+   "postal_code": "13331-0252"
+  }
+ },
+ "interested_parties": [
+  {
+   "name": "ROBERT A QUEEN",
+   "party_type": {
+    "raw": "Additional Insured",
+    "source": "structural"
+   },
+   "applies_to": "UNIT #1",
+   "address": {
+    "line_1": "PO BOX 252",
+    "city": "EAGLE BAY",
+    "state": "NY",
+    "postal_code": "13331-0252"
+   }
+  }
+ ],
+ "policy": {
+  "policy_number": "255-0072123586-16",
+  "product_code": "255",
+  "effective_date": "09/19/24",
+  "expiration_date": "09/19/25",
+  "effective_time": "12:01 A.M.",
+  "expiration_time": "12:01 A.M.",
+  "time_zone": "Standard Time",
+  "is_renewal": {
+   "raw": "RENEWAL",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "policy_type": "MOTOR HOME",
+  "policy_form_number": "5484",
+  "policy_form_edition": "01/05",
+  "policy_form_name": "MOTORHOME POLICY",
+  "minimum_earned_premium_percentage": null
+ },
+ "premium": {
+  "total_policy_premium": "$ 1,552.00",
+  "minimum_premium": "$ 100.00",
+  "motor_vehicle_law_enforcement_fee": "$ 10.00",
+  "discounts_and_credits": [
+   {
+    "description": "ACCIDENT PREVENTION COURSE DISCOUNT",
+    "amount": "$ 0.00",
+    "applies_to": "UNIT #1"
+   },
+   {
+    "description": "ANTI-THEFT DEVICE DISCOUNT",
+    "amount": "$ 0.00",
+    "applies_to": "UNIT #1"
+   },
+   {
+    "description": "SAFETY FEATURES DISCOUNT",
+    "amount": "$ 0.00",
+    "applies_to": "UNIT #1"
+   },
+   {
+    "description": "ANTI-LOCK BRAKING SYSTEM DISCOUNT",
+    "amount": "$ 0.00",
+    "applies_to": "UNIT #1"
+   },
+   {
+    "description": "DAYTIME RUNNING LIGHTS DISCOUNT",
+    "amount": "$ 0.00",
+    "applies_to": "UNIT #1"
+   },
+   {
+    "description": "MULTI-POLICY DISCOUNT",
+    "amount": "$ 0.00",
+    "applies_to": "UNIT #1"
+   }
+  ],
+  "surcharges": [
+   {
+    "description": "DRIVER EXPERIENCE SURCHARGE",
+    "amount": "$ 0.00",
+    "applies_to": "UNIT #1"
+   }
+  ]
+ },
+ "billing": {
+  "amount_due": "$ 401.50",
+  "due_date": "SEP 19, 2024",
+  "billing_phone": null,
+  "phone": "1-800-532-4221",
+  "payment_plan": {
+   "raw": "THIS IS YOUR FIRST OF FOUR PAYMENTS.",
+   "parsed": "4-PAY"
+  },
+  "payment_coupon_scan_line": "0072123586167 01014255000020240731 00000000 00000000 00155200 00040150 6",
+  "installments": [
+   {
+    "installment_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "due_date": "SEP 19, 2024",
+    "amount": "$ 401.50",
+    "installment_fee": "$ 6.00"
+   },
+   {
+    "installment_number": {
+     "raw": "2",
+     "source": "structural",
+     "parsed": 2
+    },
+    "due_date": "12/03/24",
+    "amount": "$391.50",
+    "installment_fee": "$ 6.00"
+   },
+   {
+    "installment_number": {
+     "raw": "3",
+     "source": "structural",
+     "parsed": 3
+    },
+    "due_date": "03/03/25",
+    "amount": "$391.50",
+    "installment_fee": "$ 6.00"
+   },
+   {
+    "installment_number": {
+     "raw": "4",
+     "source": "structural",
+     "parsed": 4
+    },
+    "due_date": "06/01/25",
+    "amount": "$391.50",
+    "installment_fee": "$ 6.00"
+   }
+  ],
+  "billing_note": "OR, TO PAY IN FULL, PAY $ 1,552.00"
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "PP1383",
+   "edition_date": "01/20",
+   "form_title": "SUPPLEMENTAL SPOUSAL LIABILITY BODILY INJURY",
+   "premium": "$ 4.00"
+  },
+  {
+   "form_number": "PP0409",
+   "edition_date": "07/18",
+   "form_title": "SUPPLEMENTARY UNINSURED/UNDERINSURED MOTORISTS BODILY INJURY",
+   "premium": "$ 58.00"
+  },
+  {
+   "form_number": "PP0587",
+   "edition_date": "07/18",
+   "form_title": "MANDATORY PERSONAL INJURY PROTECTION",
+   "premium": "$ 41.00"
+  },
+  {
+   "form_number": "PP0588",
+   "edition_date": "07/18",
+   "form_title": "ADDITIONAL PERSONAL INJURY PROTECTION",
+   "premium": "$ 13.00"
+  },
+  {
+   "form_number": "6552",
+   "edition_date": "02/08",
+   "form_title": "PERSONAL PROPERTY",
+   "premium": "$ 15.00"
+  },
+  {
+   "form_number": "2694",
+   "edition_date": "12/07",
+   "form_title": "VACATION LIABILITY",
+   "premium": "$ 15.00"
+  },
+  {
+   "form_number": "2707",
+   "edition_date": "06/94",
+   "form_title": "EMERGENCY EXPENSE",
+   "premium": "$ 3.00"
+  },
+  {
+   "form_number": "8644",
+   "edition_date": "06/94",
+   "form_title": "TOWING AND ROADSIDE ASSISTANCE",
+   "premium": "$ 36.00"
+  },
+  {
+   "form_number": "2033",
+   "edition_date": "07/18",
+   "form_title": "RENTAL VEHICLE COVERAGE",
+   "is_included": {
+    "raw": "INCLUDED",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "2108",
+   "edition_date": "03/23",
+   "form_title": "AMENDMENT OF POLICY PROVISIONS NY",
+   "is_included": {
+    "raw": "INCLUDED",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "5484",
+   "edition_date": "01/05",
+   "form_title": "MOTORHOME POLICY",
+   "is_included": {
+    "raw": "INCLUDED",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "5958",
+   "edition_date": "01/06",
+   "form_title": "ADDITIONAL INSURED -",
+   "is_included": {
+    "raw": "INCLUDED",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "004611",
+   "form_title": "DELIVERY OF CANCELLATION/NON-RENEWAL",
+   "form_type": {
+    "raw": "SPECIAL INFORMATIONAL FORMS",
+    "source": "structural"
+   },
+   "edition_date": "10/14"
+  },
+  {
+   "form_number": "732529",
+   "form_title": "IMP NOTICE/RENTAL VEHICLE REIMBURSEMENT COVG",
+   "form_type": {
+    "raw": "SPECIAL INFORMATIONAL FORMS",
+    "source": "structural"
+   },
+   "edition_date": "10/10"
+  },
+  {
+   "form_number": "732792",
+   "form_title": "POLICY AMOUNT STATED ON DECLARATION",
+   "form_type": {
+    "raw": "SPECIAL INFORMATIONAL FORMS",
+    "source": "structural"
+   },
+   "edition_date": "07/19"
+  },
+  {
+   "form_number": "733173",
+   "form_title": "NY ADVISORY-RE TRANSPORTATION NETWORK SERVICES",
+   "form_type": {
+    "raw": "SPECIAL INFORMATIONAL FORMS",
+    "source": "structural"
+   },
+   "edition_date": "03/24"
+  },
+  {
+   "form_number": "734369",
+   "form_title": "IMPORTANT NOTICE",
+   "form_type": {
+    "raw": "SPECIAL INFORMATIONAL FORMS",
+    "source": "structural"
+   },
+   "edition_date": "07/12"
+  },
+  {
+   "form_number": "737432",
+   "form_title": "THIRD PARTY DESIGNEE FORM",
+   "form_type": {
+    "raw": "SPECIAL INFORMATIONAL FORMS",
+    "source": "structural"
+   },
+   "edition_date": "07/02"
+  },
+  {
+   "form_number": "737484",
+   "form_title": "IMP NOTICE/ACC PREV COURSES",
+   "form_type": {
+    "raw": "SPECIAL INFORMATIONAL FORMS",
+    "source": "structural"
+   },
+   "edition_date": "05/18"
+  },
+  {
+   "form_number": "738203",
+   "form_title": "NEW YORK SUM IMPORTANT NOTICE",
+   "form_type": {
+    "raw": "SPECIAL INFORMATIONAL FORMS",
+    "source": "structural"
+   },
+   "edition_date": "01/18"
+  },
+  {
+   "form_number": "740062",
+   "form_title": "PRIVACY NOTICE",
+   "form_type": {
+    "raw": "SPECIAL INFORMATIONAL FORMS",
+    "source": "structural"
+   },
+   "edition_date": "10/22"
+  },
+  {
+   "form_number": "740249",
+   "form_title": "NY SUPPLEMENTAL SPOUSAL LIABILITY COVERAGE NOTICE",
+   "form_type": {
+    "raw": "SPECIAL INFORMATIONAL FORMS",
+    "source": "structural"
+   },
+   "edition_date": "03/23"
+  },
+  {
+   "form_number": "740431",
+   "form_title": "NEW YORK ID CARD",
+   "form_type": {
+    "raw": "SPECIAL INFORMATIONAL FORMS",
+    "source": "structural"
+   },
+   "edition_date": "02/08"
+  },
+  {
+   "form_number": "746055",
+   "form_title": "DISCLOSURE - USE OF CREDIT INFORMATION AT RENEWAL",
+   "form_type": {
+    "raw": "SPECIAL INFORMATIONAL FORMS",
+    "source": "structural"
+   },
+   "edition_date": "03/22"
+  },
+  {
+   "form_number": "746387",
+   "form_title": "ATTENTION",
+   "form_type": {
+    "raw": "SPECIAL INFORMATIONAL FORMS",
+    "source": "structural"
+   }
+  }
+ ],
+ "state_notices": [
+  {
+   "state": {
+    "raw": "NY",
+    "source": "structural"
+   },
+   "notice_title": "THE MAXIMUM AMOUNT PAYABLE UNDER SUPPLEMENTARY UNINSURED/UNDERINSURED MOTORISTS (SUM) COVERAGE"
+  }
+ ],
+ "recreational_vehicle": {
+  "units": [
+   {
+    "unit_number": {
+     "raw": "UNIT #1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "unit_type": "MOTOR HOME",
+    "year": {
+     "raw": "2021",
+     "parsed": 2021
+    },
+    "length": "38",
+    "vin_or_hull_id": "4UZADVFC6LCMG4296",
+    "make": "RENEGADE CUSTOM COACHES",
+    "model": "VALENCIA SERIES",
+    "actual_cash_value": "$194,900",
+    "storage_address": {
+     "line_1": "21 UNCAS RD",
+     "city": "INLET",
+     "state": "NY",
+     "postal_code": "13360",
+     "county": "HAMILTON"
+    },
+    "territory_code": "003",
+    "premium": "$ 1,552.00",
+    "coverages": [
+     {
+      "coverage_name": "BODILY INJURY LIABILITY",
+      "limit_amount": "$100,000 EACH PERSON/ $300,000 EACH ACCIDENT",
+      "premium": "$ 70.00",
+      "coverage_description": "PART A - LIABILITY COVERAGE"
+     },
+     {
+      "coverage_name": "SUPPLEMENTAL SPOUSAL LIABILITY BODILY INJURY",
+      "form_reference": "PP1383-01/20",
+      "premium": "$ 4.00"
+     },
+     {
+      "coverage_name": "PROPERTY DAMAGE LIABILITY",
+      "limit_amount": "$100,000 EACH ACCIDENT",
+      "premium": "$ 62.00"
+     },
+     {
+      "coverage_name": "MEDICAL PAYMENTS",
+      "limit_amount": "$5,000 EACH PERSON",
+      "premium": "$ 3.00",
+      "coverage_description": "PART B - MEDICAL PAYMENTS COVERAGE"
+     },
+     {
+      "coverage_name": "SUPPLEMENTARY UNINSURED/UNDERINSURED MOTORISTS BODILY INJURY",
+      "limit_amount": "$100,000 EACH PERSON/ $300,000 EACH ACCIDENT",
+      "form_reference": "PP0409-07/18",
+      "premium": "$ 58.00"
+     },
+     {
+      "coverage_name": "OTHER THAN COLLISION",
+      "limit_amount": "ACTUAL CASH VALUE UP TO $194,900",
+      "deductible_amount": "$1,000",
+      "premium": "$ 380.00",
+      "coverage_description": "PART D - COVERAGE FOR DAMAGE TO YOUR AUTO",
+      "notes": "THIS DEDUCTIBLE MAY DIMINISH 25% PER CLAIM-FREE RENEWAL"
+     },
+     {
+      "coverage_name": "COLLISION",
+      "limit_amount": "ACTUAL CASH VALUE UP TO $194,900",
+      "deductible_amount": "$1,000",
+      "premium": "$ 842.00",
+      "notes": "THIS DEDUCTIBLE MAY DIMINISH 25% PER CLAIM-FREE RENEWAL"
+     },
+     {
+      "coverage_name": "MANDATORY PERSONAL INJURY PROTECTION",
+      "limit_amount": "$50,000 LIMIT BASIC ECONOMIC LOSS",
+      "deductible_amount": "$0",
+      "form_reference": "PP0587-07/18",
+      "premium": "$ 41.00"
+     },
+     {
+      "coverage_name": "OPTIONAL BASIC ECONOMIC LOSS",
+      "limit_amount": "$0",
+      "premium": "$ 0.00"
+     },
+     {
+      "coverage_name": "ADDITIONAL PERSONAL INJURY PROTECTION",
+      "limit_amount": "$50,000 ADDITIONAL COMBINED LIMIT",
+      "form_reference": "PP0588-07/18",
+      "premium": "$ 13.00"
+     },
+     {
+      "coverage_name": "PERSONAL PROPERTY",
+      "limit_amount": "$1,000",
+      "deductible_amount": "$1,000",
+      "form_reference": "6552-02/08",
+      "premium": "$ 15.00"
+     },
+     {
+      "coverage_name": "VACATION LIABILITY",
+      "limit_amount": "$50,000",
+      "form_reference": "2694-12/07",
+      "premium": "$ 15.00"
+     },
+     {
+      "coverage_name": "EMERGENCY EXPENSE",
+      "limit_amount": "$500",
+      "form_reference": "2707-06/94",
+      "premium": "$ 3.00"
+     },
+     {
+      "coverage_name": "TOWING AND ROADSIDE ASSISTANCE",
+      "limit_amount": "$250 EACH DISABLEMENT",
+      "form_reference": "8644-06/94",
+      "premium": "$ 36.00"
+     },
+     {
+      "coverage_name": "RENTAL VEHICLE COVERAGE",
+      "form_reference": "2033-07/18",
+      "is_included": {
+       "raw": "INCLUDED",
+       "parsed": "Yes"
+      }
+     }
+    ]
+   }
+  ],
+  "operators": [
+   {
+    "driver_number": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "name": "ROBERT A QUEEN JR",
+    "license_number": "*******96",
+    "license_state": "NY",
+    "date_of_birth": {
+     "raw": "**/**/1953",
+     "parsed": null
+    },
+    "marital_status": {
+     "raw": "M",
+     "parsed": "Married"
+    }
+   },
+   {
+    "driver_number": {
+     "raw": "2",
+     "parsed": 2
+    },
+    "name": "KATHERINE J HUMPHREY",
+    "license_number": "*******14",
+    "license_state": "NY",
+    "date_of_birth": {
+     "raw": "**/**/1962",
+     "parsed": null
+    },
+    "marital_status": {
+     "raw": "M",
+     "parsed": "Married"
+    }
+   }
+  ],
+  "liability_coverages": {
+   "bodily_injury_per_person_limit": {
+    "raw": "$100,000 EACH PERSON",
+    "parsed": 100000.0
+   },
+   "bodily_injury_per_accident_limit": {
+    "raw": "$300,000 EACH ACCIDENT",
+    "parsed": 300000.0
+   },
+   "property_damage_limit": {
+    "raw": "$100,000 EACH ACCIDENT",
+    "parsed": 100000.0
+   },
+   "medical_payments_limit": {
+    "raw": "$5,000 EACH PERSON",
+    "parsed": 5000.0
+   },
+   "supplementary_uninsured_underinsured_limit": "$100,000 EACH PERSON/ $300,000 EACH ACCIDENT",
+   "supplemental_spousal_liability_premium": "$ 4.00",
+   "vacation_liability_limit": null
+  },
+  "no_fault_benefits": {
+   "mandatory_pip_limit": {
+    "raw": "$50,000 LIMIT BASIC ECONOMIC LOSS",
+    "parsed": 50000.0
+   },
+   "no_fault_deductible": "$0",
+   "optional_basic_economic_loss_limit": "$0",
+   "additional_pip_limit": {
+    "raw": "$50,000 ADDITIONAL COMBINED LIMIT",
+    "parsed": 50000.0
+   },
+   "aggregate_no_fault_benefits_available": "$100,000",
+   "maximum_monthly_work_loss": "$3,000",
+   "death_benefit": "$2,000",
+   "other_necessary_expenses_per_day": "$50"
+  },
+  "physical_damage_coverages": {
+   "comprehensive_deductible": "$1,000",
+   "collision_deductible": "$1,000",
+   "diminishing_deductible": {
+    "raw": "THIS DEDUCTIBLE MAY DIMINISH 25% PER CLAIM-FREE RENEWAL",
+    "parsed": "Yes"
+   },
+   "diminishing_deductible_percentage": {
+    "raw": "25%",
+    "parsed": "25%"
+   },
+   "personal_effects_limit": "$1,000",
+   "vacation_liability_limit": "$50,000",
+   "emergency_expense_limit": "$500",
+   "towing_and_emergency_expense_limit": "$250 EACH DISABLEMENT",
+   "total_loss_settlement_basis": "ACTUAL CASH VALUE",
+   "rental_vehicle_coverage": {
+    "raw": "INCLUDED",
+    "parsed": "Yes"
+   },
+   "roadside_assistance": {
+    "raw": "TOWING AND ROADSIDE ASSISTANCE",
+    "parsed": "Yes"
+   }
+  }
+ },
+ "additional_fields": [
+  {
+   "section": "ADDITIONAL FEE INFORMATION",
+   "label": "1-PAY",
+   "value": "$0.00"
+  },
+  {
+   "section": "ADDITIONAL FEE INFORMATION",
+   "label": "2-PAY",
+   "value": "$6.00"
+  },
+  {
+   "section": "ADDITIONAL FEE INFORMATION",
+   "label": "4-PAY",
+   "value": "$6.00"
+  },
+  {
+   "section": "ADDITIONAL FEE INFORMATION",
+   "label": "10-PAY",
+   "value": "$6.00"
+  },
+  {
+   "section": "ADDITIONAL FEE INFORMATION",
+   "label": "12-PAY",
+   "value": "$2.00"
+  },
+  {
+   "section": "ADDITIONAL FEE INFORMATION",
+   "label": "PROCESSED",
+   "value": "July 31, 2024"
+  }
+ ]
+}
