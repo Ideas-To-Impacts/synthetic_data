@@ -1,0 +1,856 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "Application",
+   "parsed": "Application"
+  },
+  "document_title_as_stated": "Application",
+  "line_of_business_as_stated": "Homeowners Policy",
+  "print_code": "GL 11/19/2025",
+  "transaction_type": {
+   "raw": "New Business",
+   "source": "structural"
+  },
+  "print_date": "11/19/2025"
+ },
+ "carrier": {
+  "company_name": "Dryden Mutual Insurance Company",
+  "company_structure": "A New York State Advance Premium Co-Operative Fire Insurance Corporation",
+  "address": {
+   "line_1": "12 Ellis Drive",
+   "line_2": "P.O. Box 635",
+   "city": "Dryden",
+   "state": "New York",
+   "postal_code": "13053"
+  }
+ },
+ "producer": {
+  "agency_name": "Patriotic Insurance Group Brokerage",
+  "producer_code": "760",
+  "contact": {
+   "phone": "(845) 610-5700"
+  },
+  "address": {
+   "line_1": "159 NY-28",
+   "city": "Inlet",
+   "state": "NY",
+   "postal_code": "13360"
+  },
+  "producer_contact_name": "Noelle Delaney",
+  "producer_contact_phone": "(315) 357-5901",
+  "producer_contact_email": "georgia@patrioticinsurancegroup.com"
+ },
+ "named_insured": {
+  "primary_name": "Rosalind Ingram & Delphine Whitlock",
+  "mailing_address": {
+   "line_1": "5340 Sombrero",
+   "city": "Bow Mar",
+   "state": "CO",
+   "postal_code": "80123-1416"
+  },
+  "contact": {
+   "phones": [
+    {
+     "number": "(303) 555-1871",
+     "phone_type": {
+      "raw": "X Mobile",
+      "parsed": "Mobile"
+     },
+     "is_primary": {
+      "raw": "Primary Phone",
+      "source": "structural",
+      "parsed": "Yes"
+     }
+    }
+   ],
+   "email": "krisfraser@comcast.com"
+  },
+  "individuals": [
+   {
+    "name": "Rosalind Ingram",
+    "date_of_birth": "01/19/1971",
+    "marital_status": "Married",
+    "occupation": "physican"
+   },
+   {
+    "name": "Delphine Whitlock",
+    "date_of_birth": "11/10/1969",
+    "marital_status": "Married",
+    "occupation": "teacher"
+   }
+  ]
+ },
+ "policy": {
+  "policy_number": "HPP00177450-01",
+  "effective_date": "12/01/2025",
+  "expiration_date": "12/01/2026",
+  "effective_time": "12:01am",
+  "time_zone": "Standard Time",
+  "alternate_policy_identifiers": [
+   {
+    "identifier_type": {
+     "raw": "File #",
+     "source": "structural"
+    },
+    "identifier_value": "H614298"
+   }
+  ]
+ },
+ "premium": {
+  "total_policy_premium": {
+   "raw": "$5,154.00",
+   "parsed": 5154.0
+  },
+  "number_of_risks": {
+   "raw": "1",
+   "source": "structural",
+   "parsed": 1
+  },
+  "estimated_annual_premium": {
+   "raw": "$5,154.00",
+   "parsed": 5154.0
+  }
+ },
+ "billing": {
+  "billing_plan": "Insured Credit Card",
+  "payment_frequency": "Annual"
+ },
+ "interested_parties": [
+  {
+   "name": "East Hill Road LLC",
+   "party_type": {
+    "raw": "Additional Insured",
+    "source": "structural"
+   },
+   "form_reference": "DML-41",
+   "description_of_interest": "Owner By Deed",
+   "address": {
+    "line_1": "5340 Sombrero",
+    "city": "Bow Mar",
+    "state": "CO",
+    "postal_code": "80123-1416"
+   },
+   "location_reference": "16 Leslie Gay Rd, Keene, NY 12942-1728",
+   "applicable_coverages": [
+    "Coverage A",
+    "B",
+    "C",
+    "L",
+    "M"
+   ]
+  }
+ ],
+ "homeowners": {
+  "dwelling": {
+   "described_location": {
+    "line_1": "16 Leslie Gay Rd",
+    "city": "Keene",
+    "state": "NY",
+    "postal_code": "12942-1728",
+    "county": "Essex"
+   },
+   "construction_type": "Frame",
+   "year_built": {
+    "raw": "2025",
+    "parsed": 2025
+   },
+   "age_of_home": {
+    "raw": "0",
+    "parsed": 0
+   },
+   "number_of_families": {
+    "raw": "1 Family",
+    "parsed": 1
+   },
+   "protection_class": "Semi-Protected",
+   "building_description": "Secondary Residence",
+   "usage_type": "Used in all 4 seasons",
+   "protective_devices": [
+    {
+     "device_description": "Smoke Detectors 2%",
+     "credit_percentage": {
+      "raw": "Smoke Detectors 2%",
+      "parsed": "2%"
+     },
+     "form_reference": "ML-216"
+    }
+   ],
+   "heating_type": "Electric Baseboard",
+   "heating_fuel_type": "Electric",
+   "has_secondary_heating": {
+    "raw": "X No",
+    "parsed": "No"
+   },
+   "electrical_service_type": "Circuit Breakers",
+   "roof_updated_within_20_years": {
+    "raw": "X Yes",
+    "parsed": "Yes"
+   },
+   "roof_year_installed": {
+    "raw": "2025",
+    "parsed": 2025
+   },
+   "roof_type": "Other",
+   "roof_type_explanation": "Standing Seam - Metal",
+   "years_owned": {
+    "raw": "1",
+    "parsed": 1
+   },
+   "purchase_price": "$ 100,000",
+   "cost_of_improvements": "$ 3,400,000",
+   "market_value": "$ 3,000,000",
+   "is_currently_occupied": {
+    "raw": "X Yes",
+    "parsed": "Yes"
+   },
+   "usage_explanation": "Year round second home",
+   "has_related_private_structures": {
+    "raw": "X No",
+    "parsed": "No"
+   },
+   "water_exposures": [
+    "None"
+   ],
+   "business_on_premises": {
+    "raw": "X No",
+    "parsed": "No"
+   },
+   "dogs_on_premises": {
+    "raw": "X Yes",
+    "parsed": "Yes"
+   },
+   "dogs_count": {
+    "raw": "X 1",
+    "parsed": 1
+   },
+   "dogs": [
+    {
+     "dog_number": {
+      "raw": "Dog # 1",
+      "parsed": 1
+     },
+     "breed": "Other Breed or Mix Not Listed",
+     "description": "7yr old black lab - very friendly"
+    }
+   ],
+   "dogs_bite_history_any": {
+    "raw": "X No",
+    "parsed": "No"
+   },
+   "has_other_animals": {
+    "raw": "X No",
+    "parsed": "No"
+   },
+   "is_rented_to_others": {
+    "raw": "X No",
+    "parsed": "No"
+   },
+   "occupied_by_others": {
+    "raw": "X No",
+    "parsed": "No"
+   },
+   "has_monitoring_system": {
+    "raw": "X Yes",
+    "parsed": "Yes"
+   },
+   "pipes_winterized": {
+    "raw": "X No",
+    "parsed": "No"
+   },
+   "caretaker": {
+    "has_caretaker": {
+     "raw": "X Yes",
+     "parsed": "Yes"
+    },
+    "name": "Karen Fraser"
+   },
+   "accessible_year_round": {
+    "raw": "X Yes",
+    "parsed": "Yes"
+   }
+  },
+  "scheduled_locations": [
+   {
+    "location_number": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "description": "Secondary Residence",
+    "construction_type": "Frame",
+    "year_built": {
+     "raw": "2025",
+     "parsed": 2025
+    },
+    "number_of_families": {
+     "raw": "1 Family",
+     "parsed": 1
+    },
+    "protection_class": "Semi-Protected",
+    "territorial_zone": "1",
+    "fire_district": "Keene FD",
+    "feet_from_hydrant": "Greater than 1000 Feet",
+    "distance_to_fire_station": "5 Miles or Less",
+    "causes_of_loss_form": "ML-5 (Comprehensive Form)",
+    "premium": {
+     "raw": "$5,154.00",
+     "parsed": 5154.0
+    },
+    "usage_type": "Used in all 4 seasons",
+    "deductibles": {
+     "all_other_perils_deductible": "$ 2,500"
+    },
+    "section_i_property_coverages": {
+     "coverage_a_dwelling_limit": {
+      "raw": "$ 3,100,000",
+      "parsed": 3100000.0
+     },
+     "coverage_b_other_structures_limit": {
+      "raw": "$ 310,000",
+      "parsed": 310000.0
+     },
+     "coverage_c_personal_property_limit": {
+      "raw": "$ 2,170,000",
+      "parsed": 2170000.0
+     },
+     "coverage_d_loss_of_use_limit": {
+      "raw": "$ 620,000",
+      "parsed": 620000.0
+     }
+    }
+   }
+  ],
+  "rating_characteristics": {
+   "risk_type": "Homeowners",
+   "territorial_zone": "1",
+   "fire_district": "Keene FD",
+   "feet_from_hydrant": "Greater than 1000 Feet",
+   "distance_to_fire_station": "5 Miles or Less"
+  },
+  "deductibles": {
+   "all_other_perils_deductible": "$ 2,500"
+  },
+  "section_i_property_coverages": {
+   "coverage_a_dwelling_limit": {
+    "raw": "$ 3,100,000",
+    "parsed": 3100000.0
+   },
+   "coverage_b_other_structures_limit": {
+    "raw": "$ 310,000",
+    "parsed": 310000.0
+   },
+   "coverage_c_personal_property_limit": {
+    "raw": "$ 2,170,000",
+    "parsed": 2170000.0
+   },
+   "coverage_d_loss_of_use_limit": {
+    "raw": "$ 620,000",
+    "parsed": 620000.0
+   },
+   "coverage_a_dwelling_premium": {
+    "raw": "$ 10,409.00",
+    "parsed": 10409.0
+   },
+   "loss_settlement_basis": "Replacement Cost",
+   "personal_property_loss_settlement_basis": "Replacement Cost Contents",
+   "inflation_guard_percentage": {
+    "raw": "1.0% per Quarter",
+    "parsed": "1.0%"
+   },
+   "inflation_guard_period": {
+    "raw": "1.0% per Quarter",
+    "parsed": "per Quarter"
+   },
+   "coverage_c_personal_property_premium": {
+    "raw": "$ 0.00",
+    "parsed": 0.0
+   }
+  },
+  "section_ii_liability_coverages": {
+   "coverage_e_personal_liability_limit": {
+    "raw": "$ 500,000",
+    "parsed": 500000.0
+   },
+   "coverage_e_personal_liability_premium": {
+    "raw": "$ 26.00",
+    "parsed": 26.0
+   },
+   "coverage_f_medical_payments_limit": {
+    "raw": "$ 5,000",
+    "parsed": 5000.0
+   },
+   "coverage_f_medical_payments_premium": {
+    "raw": "$ 27.00",
+    "parsed": 27.0
+   }
+  },
+  "discounts": [
+   {
+    "discount_name": "Premises Alarm",
+    "form_reference": "ML-216",
+    "amount": {
+     "raw": "$ -208.00",
+     "parsed": -208.0
+    }
+   },
+   {
+    "discount_name": "Credit or Surcharge for Coverage A - Deductible",
+    "amount": {
+     "raw": "$ -3,435.00",
+     "parsed": -3435.0
+    }
+   },
+   {
+    "discount_name": "New Home Credit",
+    "amount": {
+     "raw": "$ -2,186.00",
+     "parsed": -2186.0
+    }
+   }
+  ],
+  "optional_endorsement_coverages": [
+   {
+    "coverage_name": "Earth Movement Damages",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Disaster ALE",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Generator Expense",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Disaster Debris Removal",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Trees Plants Shrubs And Lawns",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Refrigerated Food Products",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Pet Boarding",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Added Water Damages",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Functional Replacement Computer Coverage",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Extended Coverage C - Personal Property",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Money, Bank Notes, Bullion",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Securities, Commercial Paper",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Jewelry",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Gun and Gun Accessories",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Watercraft Including Trailer",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Silverware",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Motorized Vehicles",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Grave Markers",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Business Property Away from Insured Premises",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Electronic Equipment",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Business Property on Insured Premises",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Dismounted Camper Bodies on Insured Premises",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Replacement of Locks",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Landlords Property",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Damage By Domestic Animals",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Contingent Compliance With Building Codes",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Prejudgement Interest",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Personal Injury Liability",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Coverage M- Medical Payments To Others",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Incidental Liability And Medical Payments Coverages",
+    "form_reference": "DML-1525",
+    "is_included": {
+     "raw": "VIP",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   }
+  ]
+ },
+ "underwriting": {
+  "prior_insurance": {
+   "carrier_name": "Other",
+   "expiration_date": "12/01/2025",
+   "notes": "Home just built - prior policy was a builders risk policy with US Assure"
+  },
+  "prior_cancellation_or_refusal": {
+   "raw": "X No",
+   "parsed": "No"
+  },
+  "other_policies_with_carrier": {
+   "raw": "X No",
+   "parsed": "No"
+  },
+  "prior_underwriting_approval": {
+   "raw": "X No",
+   "parsed": "No"
+  },
+  "agency_visual_inspection": {
+   "raw": "X Yes",
+   "parsed": "Yes"
+  },
+  "overall_risk_condition": "Excellent",
+  "prior_losses_last_5_years": {
+   "raw": "X No",
+   "parsed": "No"
+  },
+  "application_questions": [
+   {
+    "question": "Secondary/Seasonal Home: What type of system?",
+    "answer": "insured is in the process of installing cameras/central alarm system. A certificate will be forwarded as soon as it has been installed"
+   }
+  ]
+ },
+ "signature": {
+  "party_signatures": [
+   {
+    "name": "Noelle Delaney",
+    "role": "Agent",
+    "signed_date": "11/19/2025"
+   },
+   {
+    "name": "Rosalind Ingram",
+    "role": "Applicant",
+    "signed_date": "11/19/2025"
+   }
+  ]
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "ML-24A",
+   "form_title": "Residence Loss Settlement",
+   "premium": {
+    "raw": "$ 3.00",
+    "parsed": 3.0
+   }
+  },
+  {
+   "form_number": "DML-41",
+   "form_title": "Additional Insured",
+   "premium": {
+    "raw": "$ 0.00",
+    "parsed": 0.0
+   }
+  },
+  {
+   "form_number": "ML-52A",
+   "form_title": "Trampoline Exclusion",
+   "premium": {
+    "raw": "$ -2.00",
+    "parsed": -2.0
+   }
+  },
+  {
+   "form_number": "ML-243",
+   "form_title": "Inflation Guard",
+   "premium": {
+    "raw": "$ 0.00",
+    "parsed": 0.0
+   },
+   "details": "1.0% per Quarter"
+  },
+  {
+   "form_number": "DML-1525",
+   "form_title": "VIP Homeowners (ML5)",
+   "premium": {
+    "raw": "$ 520.00",
+    "parsed": 520.0
+   }
+  },
+  {
+   "form_number": "FMD-1",
+   "form_title": "Flood Disclosure Notice",
+   "is_included": {
+    "raw": "Incl",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-5",
+   "form_title": "Causes of Loss Section-Coverages A, B, C, and D (Comprehensive Form)",
+   "is_included": {
+    "raw": "Incl",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-9",
+   "form_title": "Premises Liability Coverage",
+   "is_included": {
+    "raw": "Incl",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-20",
+   "form_title": "Insuring Agreement",
+   "is_included": {
+    "raw": "Incl",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-83",
+   "form_title": "Amendment of Policy Conditions",
+   "is_included": {
+    "raw": "Incl",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-84",
+   "form_title": "New York Amendatory End.",
+   "is_included": {
+    "raw": "Incl",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-216",
+   "form_title": "Premises Alarm",
+   "premium": {
+    "raw": "$ -208.00",
+    "parsed": -208.0
+   }
+  },
+  {
+   "form_number": "DMIC-PP",
+   "form_title": "Privacy Notice",
+   "is_included": {
+    "raw": "Incl",
+    "parsed": "Yes"
+   }
+  }
+ ],
+ "document_type_detail": {
+  "acord_application": {
+   "signatures": {
+    "applicant_signature_date": "11/19/2025",
+    "applicant_signature_present": {
+     "raw": "signed",
+     "source": "structural",
+     "parsed": "Yes"
+    },
+    "producer_signature_date": "11/19/2025",
+    "producer_signature_present": {
+     "raw": "signed",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,258 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "EN-45 (4/14) CHANGE ENDORSEMENT",
+   "parsed": "Policy Change Declaration"
+  },
+  "document_title_as_stated": "Your Elite Homeowners Policy In Plain Language",
+  "transaction_type": "Anniversary Update",
+  "transaction_effective_date": "9/23/2024",
+  "document_form_number": "EN-45",
+  "document_form_edition": "4/14",
+  "print_date": "8/8/2024",
+  "print_time": "9:51 AM",
+  "print_routing_code": "REN",
+  "copy_type": "Insured Image"
+ },
+ "carrier": {
+  "company_name": "Erie and Niagara Insurance Association",
+  "address": {
+   "line_1": "8800 Sheridan Drive",
+   "line_2": "Box 9062",
+   "city": "Williamsville",
+   "state": "New York",
+   "postal_code": "14231-9062"
+  }
+ },
+ "producer": {
+  "agency_name": "Brinckerhoff & Neuville, Inc.",
+  "producer_code": {
+   "raw": "# 0366",
+   "parsed": "0366"
+  },
+  "contact": {
+   "phone": "(845) 896-4700"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Bertram Pellier & Malcolm Marsh",
+  "mailing_address": {
+   "line_1": "16 Amandas Way",
+   "city": "Lagrangeville",
+   "state": "NY",
+   "postal_code": "12540"
+  }
+ },
+ "policy": {
+  "policy_number": "HO 0102050",
+  "effective_date": "9/23/2024",
+  "expiration_date": "9/23/2025",
+  "program_name": "Elite Homeowners"
+ },
+ "premium": {
+  "basic_premium": "$2,745",
+  "total_policy_premium": "$2,979.00"
+ },
+ "billing": {
+  "billing_note": "THIS IS NOT A BILL ********* Any premium charge will be reflected in your next bill"
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "ENFDE",
+   "edition_date": "01/09"
+  },
+  {
+   "form_number": "ENIA-ML20",
+   "edition_date": "2/18"
+  },
+  {
+   "form_number": "EN-PJ",
+   "edition_date": "2/13"
+  },
+  {
+   "form_number": "FMD1",
+   "edition_date": "8/08"
+  },
+  {
+   "form_number": "ML430",
+   "edition_date": "6/99"
+  },
+  {
+   "form_number": "ML430B",
+   "edition_date": "1/91"
+  },
+  {
+   "form_number": "ML5",
+   "edition_date": "6/99"
+  },
+  {
+   "form_number": "ML78",
+   "edition_date": "8/03"
+  },
+  {
+   "form_number": "ML9",
+   "edition_date": "1/87"
+  },
+  {
+   "form_number": "ENIA-AIP-HO",
+   "edition_date": "11/09",
+   "form_title": "Automatic Inflation Protection"
+  },
+  {
+   "form_number": "ENIA-HO-ELPLUS",
+   "edition_date": "9/16",
+   "form_title": "Homeowner's Elite Plus Coverage",
+   "premium": "$70.00"
+  },
+  {
+   "form_number": "ML19",
+   "edition_date": "10/06",
+   "form_title": "Policy Endorsement"
+  },
+  {
+   "form_number": "ML216",
+   "edition_date": "1/87",
+   "form_title": "Premises Alarm"
+  },
+  {
+   "form_number": "ML342",
+   "edition_date": "7/14",
+   "form_title": "Underground Utility Line Endorsement",
+   "premium": "$60.00"
+  },
+  {
+   "form_number": "ML346BG",
+   "edition_date": "9/13",
+   "form_title": "Equipment Breakdown Enhancement Endorsement",
+   "premium": "$26.00"
+  },
+  {
+   "form_number": "ML72A",
+   "edition_date": "05/13",
+   "form_title": "Added Water Damages Coverage",
+   "premium": "$78.00"
+  },
+  {
+   "form_number": "ML84",
+   "edition_date": "8/07",
+   "form_title": "New York Amendatory Endorsement"
+  },
+  {
+   "form_number": "NYSTAT1",
+   "edition_date": "11/08",
+   "form_title": "NY Statutory Endorsement"
+  }
+ ],
+ "homeowners": {
+  "dwelling": {
+   "described_location": {
+    "line_1": "16 Amandas Way",
+    "city": "Lagrangeville",
+    "state": "NY",
+    "postal_code": "12540",
+    "county": "Dutchess County"
+   },
+   "protection_class": "Semi-Protected",
+   "number_of_families": {
+    "raw": "1",
+    "parsed": 1
+   },
+   "construction_type": "Frame",
+   "occupancy_type": "Elite Primary"
+  },
+  "rating_characteristics": {
+   "distance_to_fire_station": "Less Than 5",
+   "classification_description": "Rating Basis - Dwelling: RC"
+  },
+  "deductibles": {
+   "all_other_perils_deductible": "$1,000"
+  },
+  "section_i_property_coverages": {
+   "coverage_a_dwelling_limit": "$ 1,082,000",
+   "coverage_b_other_structures_limit": "$ 108,200",
+   "coverage_c_personal_property_limit": "$ 757,400",
+   "coverage_d_loss_of_use_limit": "$ 216,400",
+   "loss_settlement_basis": "RC",
+   "inflation_guard_percentage": {
+    "raw": "4 percent",
+    "parsed": "4%"
+   },
+   "inflation_guard_applies_to": [
+    "A",
+    "D"
+   ],
+   "inflation_guard_period": "each twelve (12) month period"
+  },
+  "section_ii_liability_coverages": {
+   "coverage_e_personal_liability_limit": "$ 1,000,000",
+   "coverage_f_medical_payments_limit": "$ 5,000"
+  },
+  "optional_endorsement_coverages": [
+   {
+    "coverage_name": "Homeowner's Elite Plus Coverage",
+    "form_reference": "ENIA-HO-ELPLUS",
+    "premium": "$70.00"
+   },
+   {
+    "coverage_name": "Underground Utility Line Coverage",
+    "form_reference": "ML-342",
+    "premium": "$60.00",
+    "limit_amount": "$10,000",
+    "deductible_amount": "$500"
+   },
+   {
+    "coverage_name": "Equipment Breakdown Enhancement Endorsement",
+    "form_reference": "ML-346BG",
+    "premium": "$26.00",
+    "limit_amount": "$100,000",
+    "deductible_amount": "$500"
+   },
+   {
+    "coverage_name": "Added Water Damages Coverage",
+    "form_reference": "ML-72A",
+    "premium": "$78.00",
+    "limit_amount": "$10,000"
+   }
+  ],
+  "mortgagees": [
+   {
+    "name": "Wells Fargo Bank, NA #936",
+    "clause_type": "Its Successors and/or Assigns",
+    "loan_number": "0527519813",
+    "party_type": {
+     "raw": "Mortgagee(s) or Secured Party",
+     "source": "structural"
+    },
+    "address": {
+     "line_1": "PO Box 100515",
+     "city": "Florence",
+     "state": "SC",
+     "postal_code": "29502-0515"
+    }
+   }
+  ]
+ },
+ "document_type_detail": {
+  "policy_change": {
+   "transaction_effective_date": "9/23/2024",
+   "transaction_reason_description": "Anniversary Update",
+   "changes": [
+    {
+     "change_description": "Anniversary Update"
+    }
+   ]
+  }
+ },
+ "additional_fields": [
+  {
+   "section": "Premium",
+   "label": "New Annual Premium",
+   "value": "$2,979.00"
+  },
+  {
+   "section": "Billing",
+   "label": "Subsequent payments",
+   "value": "Subsequent payments will be due each year based on rates in effect at that time."
+  }
+ ]
+}
