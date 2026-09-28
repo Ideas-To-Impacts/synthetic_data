@@ -1,0 +1,4034 @@
+{
+  "document": {
+    "document_type": {
+      "raw": "POLICY VIEW",
+      "parsed": "Policy View",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "document_title_as_stated": {
+      "raw": "POLICY VIEW",
+      "parsed": "POLICY VIEW",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "source_system": {
+      "raw": "Allstate agent portal",
+      "parsed": "Allstate agent portal",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "source_file_name": {
+      "raw": "all_state_recv_snowmobile_3.pdf",
+      "parsed": "all_state_recv_snowmobile_3.pdf",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "page_count": {
+      "raw": "3",
+      "parsed": 3,
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1,
+        2,
+        3
+      ],
+      "flagged": false
+    }
+  },
+  "carrier": {
+    "company_name": {
+      "raw": "Allstate",
+      "parsed": "Allstate",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "producer": {
+    "agency_name": {
+      "raw": "HBE GROUP INC",
+      "parsed": "HBE GROUP INC",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        3
+      ],
+      "flagged": false
+    },
+    "producer_code": {
+      "raw": "A264653",
+      "parsed": "A264653",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "producer_contact_name": {
+      "raw": "SNYURH0A",
+      "parsed": "SNYURH0A",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        3
+      ],
+      "flagged": false
+    }
+  },
+  "named_insured": {
+    "primary_name": {
+      "raw": "Delphine Fairbank",
+      "parsed": "Delphine Fairbank",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "mailing_address": {
+      "line_1": {
+        "raw": "PO BOX 2",
+        "parsed": "PO BOX 2",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "OLD FORGE",
+        "parsed": "OLD FORGE",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13420 - 0002",
+        "parsed": "13420 - 0002",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "contact": {
+      "phone": {
+        "raw": "(315) 555-0218",
+        "parsed": "(315) 555-0218",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "additional_named_insureds": [
+      {
+        "name": {
+          "raw": "Tobias Wexford",
+          "parsed": "Tobias Wexford",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "policy": {
+    "policy_number": {
+      "raw": "983071322",
+      "parsed": "983071322",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "policy_type": {
+      "raw": "AUTO - SPECIAL",
+      "parsed": "AUTO - SPECIAL",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "program_name": {
+      "raw": "AUTO SPEC",
+      "parsed": "AUTO SPEC",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "rating_state": {
+      "raw": "NY",
+      "parsed": "NY",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        3
+      ],
+      "flagged": false
+    },
+    "effective_date": {
+      "raw": "12/12/2024",
+      "parsed": "12/12/2024",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "expiration_date": {
+      "raw": "12/12/2025",
+      "parsed": "12/12/2025",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "policy_term_as_printed": {
+      "raw": "12/12/2024 - 12/12/2025",
+      "parsed": "12/12/2024 - 12/12/2025",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "premium": {
+    "total_policy_premium": {
+      "raw": "$982.11",
+      "parsed": 982.11,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "discounts_and_credits": [
+      {
+        "description": {
+          "raw": "FullPay",
+          "parsed": "FullPay",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2003 POLARIS SUPER SPORT",
+          "parsed": "2003 POLARIS SUPER SPORT",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Applied",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "Good Rider",
+          "parsed": "Good Rider",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2003 POLARIS SUPER SPORT",
+          "parsed": "2003 POLARIS SUPER SPORT",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Applied",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "Home Ownership",
+          "parsed": "Home Ownership",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2003 POLARIS SUPER SPORT",
+          "parsed": "2003 POLARIS SUPER SPORT",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Applied",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "Multi-Vehicle",
+          "parsed": "Multi-Vehicle",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2003 POLARIS SUPER SPORT",
+          "parsed": "2003 POLARIS SUPER SPORT",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Applied",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "FullPay",
+          "parsed": "FullPay",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2003 POLARIS 500 CLASSIC",
+          "parsed": "2003 POLARIS 500 CLASSIC",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Applied",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "Good Rider",
+          "parsed": "Good Rider",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2003 POLARIS 500 CLASSIC",
+          "parsed": "2003 POLARIS 500 CLASSIC",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Applied",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "Home Ownership",
+          "parsed": "Home Ownership",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2003 POLARIS 500 CLASSIC",
+          "parsed": "2003 POLARIS 500 CLASSIC",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Applied",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "Multi-Vehicle",
+          "parsed": "Multi-Vehicle",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2003 POLARIS 500 CLASSIC",
+          "parsed": "2003 POLARIS 500 CLASSIC",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Applied",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "FullPay",
+          "parsed": "FullPay",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2013 POLARIS 600 RUSH",
+          "parsed": "2013 POLARIS 600 RUSH",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Applied",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "Good Rider",
+          "parsed": "Good Rider",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2013 POLARIS 600 RUSH",
+          "parsed": "2013 POLARIS 600 RUSH",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Applied",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "Home Ownership",
+          "parsed": "Home Ownership",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2013 POLARIS 600 RUSH",
+          "parsed": "2013 POLARIS 600 RUSH",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Applied",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "Multi-Vehicle",
+          "parsed": "Multi-Vehicle",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2013 POLARIS 600 RUSH",
+          "parsed": "2013 POLARIS 600 RUSH",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Applied",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "FullPay",
+          "parsed": "FullPay",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2016 POLARIS RUSH 800",
+          "parsed": "2016 POLARIS RUSH 800",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Applied",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "Good Rider",
+          "parsed": "Good Rider",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2016 POLARIS RUSH 800",
+          "parsed": "2016 POLARIS RUSH 800",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Applied",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "Home Ownership",
+          "parsed": "Home Ownership",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2016 POLARIS RUSH 800",
+          "parsed": "2016 POLARIS RUSH 800",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Applied",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "Multi-Vehicle",
+          "parsed": "Multi-Vehicle",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "2016 POLARIS RUSH 800",
+          "parsed": "2016 POLARIS RUSH 800",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Applied",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "billing": {
+    "payment_plan": {
+      "raw": "MONTHLY",
+      "parsed": "MONTHLY",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "payment_method": {
+      "raw": "DIRECT MAIL",
+      "parsed": "DIRECT MAIL",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "amount_due": {
+      "raw": "$0.00",
+      "parsed": 0.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "due_date": {
+      "raw": "12/12/2024",
+      "parsed": "12/12/2024",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "recreational_vehicle": {
+    "units": [
+      {
+        "unit_number": {
+          "raw": "1",
+          "parsed": 1,
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "year": {
+          "raw": "2003",
+          "parsed": 2003,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "make": {
+          "raw": "POLARIS",
+          "parsed": "POLARIS",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "model": {
+          "raw": "SUPER SPORT",
+          "parsed": "SUPER SPORT",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "vin_or_hull_id": {
+          "raw": "SN1NP5AS33C308116",
+          "parsed": "SN1NP5AS33C308116",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "storage_address": {
+          "postal_code": {
+            "raw": "13420",
+            "parsed": "13420",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          }
+        },
+        "coverages": [
+          {
+            "coverage_name": {
+              "raw": "Bodily Injury",
+              "parsed": "Bodily Injury",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "250/500",
+              "parsed": "250/500",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$17.47",
+              "parsed": 17.47,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Property Damage",
+              "parsed": "Property Damage",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "100",
+              "parsed": "100",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$10.53",
+              "parsed": 10.53,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Supplementary Uninsured / Underinsured Motorist",
+              "parsed": "Supplementary Uninsured / Underinsured Motorist",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "250/500",
+              "parsed": "250/500",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$7.06",
+              "parsed": 7.06,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Medical Payments",
+              "parsed": "Medical Payments",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "5000",
+              "parsed": "5000",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$12.83",
+              "parsed": 12.83,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Comprehensive",
+              "parsed": "Comprehensive",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "500",
+              "parsed": "500",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$6.42",
+              "parsed": 6.42,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Guest Liability",
+              "parsed": "Guest Liability",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "250/500",
+              "parsed": "250/500",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$12.46",
+              "parsed": 12.46,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Optional Equipment",
+              "parsed": "Optional Equipment",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "1000",
+              "parsed": "1000",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          }
+        ],
+        "annual_miles": {
+          "raw": "1,000",
+          "parsed": 1000,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "usage_description": {
+          "raw": "Pleasure",
+          "parsed": "Pleasure",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "driver_assignments": [
+          {
+            "driver_reference": {
+              "raw": "Delphine Fairbank",
+              "parsed": "Delphine Fairbank",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "usage_percentage": {
+              "raw": "48",
+              "parsed": "48",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "driver_reference": {
+              "raw": "Tobias Wexford",
+              "parsed": "Tobias Wexford",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "usage_percentage": {
+              "raw": "49",
+              "parsed": "49",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "driver_reference": {
+              "raw": "Ambrose Mowbray",
+              "parsed": "Ambrose Mowbray",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "usage_percentage": {
+              "raw": "51 Rated",
+              "parsed": "51 Rated",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          }
+        ],
+        "premium": {
+          "raw": "$66.77",
+          "parsed": 66.77,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "unit_number": {
+          "raw": "2",
+          "parsed": 2,
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "year": {
+          "raw": "2003",
+          "parsed": 2003,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "make": {
+          "raw": "POLARIS",
+          "parsed": "POLARIS",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "model": {
+          "raw": "500 CLASSIC",
+          "parsed": "500 CLASSIC",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "vin_or_hull_id": {
+          "raw": "SN1ND5BS33C316949",
+          "parsed": "SN1ND5BS33C316949",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "storage_address": {
+          "postal_code": {
+            "raw": "13420",
+            "parsed": "13420",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          }
+        },
+        "coverages": [
+          {
+            "coverage_name": {
+              "raw": "Bodily Injury",
+              "parsed": "Bodily Injury",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "250/500",
+              "parsed": "250/500",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$13.09",
+              "parsed": 13.09,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Property Damage",
+              "parsed": "Property Damage",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "100",
+              "parsed": "100",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$7.21",
+              "parsed": 7.21,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Supplementary Uninsured / Underinsured Motorist",
+              "parsed": "Supplementary Uninsured / Underinsured Motorist",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "250/500",
+              "parsed": "250/500",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$6.05",
+              "parsed": 6.05,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Medical Payments",
+              "parsed": "Medical Payments",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "5000",
+              "parsed": "5000",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$9.24",
+              "parsed": 9.24,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Comprehensive",
+              "parsed": "Comprehensive",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "500",
+              "parsed": "500",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$5.36",
+              "parsed": 5.36,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Guest Liability",
+              "parsed": "Guest Liability",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "250/500",
+              "parsed": "250/500",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$9.05",
+              "parsed": 9.05,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Optional Equipment",
+              "parsed": "Optional Equipment",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "1000",
+              "parsed": "1000",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          }
+        ],
+        "annual_miles": {
+          "raw": "1,000",
+          "parsed": 1000,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "usage_description": {
+          "raw": "Pleasure",
+          "parsed": "Pleasure",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "driver_assignments": [
+          {
+            "driver_reference": {
+              "raw": "Delphine Fairbank",
+              "parsed": "Delphine Fairbank",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "usage_percentage": {
+              "raw": "1",
+              "parsed": "1",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "driver_reference": {
+              "raw": "Tobias Wexford",
+              "parsed": "Tobias Wexford",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "usage_percentage": {
+              "raw": "50",
+              "parsed": "50",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "driver_reference": {
+              "raw": "Casper Wexford",
+              "parsed": "Casper Wexford",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "usage_percentage": {
+              "raw": "51 Rated",
+              "parsed": "51 Rated",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          }
+        ],
+        "premium": {
+          "raw": "$50.00",
+          "parsed": 50.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "unit_number": {
+          "raw": "3",
+          "parsed": 3,
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "year": {
+          "raw": "2013",
+          "parsed": 2013,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "make": {
+          "raw": "POLARIS",
+          "parsed": "POLARIS",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "model": {
+          "raw": "600 RUSH",
+          "parsed": "600 RUSH",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "vin_or_hull_id": {
+          "raw": "SN1BP6GS5DC765978",
+          "parsed": "SN1BP6GS5DC765978",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "storage_address": {
+          "postal_code": {
+            "raw": "13420",
+            "parsed": "13420",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          }
+        },
+        "coverages": [
+          {
+            "coverage_name": {
+              "raw": "Bodily Injury",
+              "parsed": "Bodily Injury",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "250/500",
+              "parsed": "250/500",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$25.54",
+              "parsed": 25.54,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Property Damage",
+              "parsed": "Property Damage",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "100",
+              "parsed": "100",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$14.03",
+              "parsed": 14.03,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Supplementary Uninsured / Underinsured Motorist",
+              "parsed": "Supplementary Uninsured / Underinsured Motorist",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "250/500",
+              "parsed": "250/500",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$11.09",
+              "parsed": 11.09,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Medical Payments",
+              "parsed": "Medical Payments",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "5000",
+              "parsed": "5000",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$19.98",
+              "parsed": 19.98,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Collision",
+              "parsed": "Collision",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "500",
+              "parsed": "500",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$33.93",
+              "parsed": 33.93,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Comprehensive",
+              "parsed": "Comprehensive",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "500",
+              "parsed": "500",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$9.23",
+              "parsed": 9.23,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Guest Liability",
+              "parsed": "Guest Liability",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "250/500",
+              "parsed": "250/500",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$19.21",
+              "parsed": 19.21,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Optional Equipment",
+              "parsed": "Optional Equipment",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "1000",
+              "parsed": "1000",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          }
+        ],
+        "annual_miles": {
+          "raw": "1,000",
+          "parsed": 1000,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "usage_description": {
+          "raw": "Pleasure",
+          "parsed": "Pleasure",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "driver_assignments": [
+          {
+            "driver_reference": {
+              "raw": "Delphine Fairbank",
+              "parsed": "Delphine Fairbank",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "usage_percentage": {
+              "raw": "49",
+              "parsed": "49",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "driver_reference": {
+              "raw": "Verity Ellery",
+              "parsed": "Verity Ellery",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "usage_percentage": {
+              "raw": "51 Rated",
+              "parsed": "51 Rated",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "driver_reference": {
+              "raw": "Ambrose Mowbray",
+              "parsed": "Ambrose Mowbray",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "usage_percentage": {
+              "raw": "49",
+              "parsed": "49",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          }
+        ],
+        "premium": {
+          "raw": "$133.01",
+          "parsed": 133.01,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "unit_number": {
+          "raw": "4",
+          "parsed": 4,
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "year": {
+          "raw": "2016",
+          "parsed": 2016,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "make": {
+          "raw": "POLARIS",
+          "parsed": "POLARIS",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "model": {
+          "raw": "RUSH 800",
+          "parsed": "RUSH 800",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "vin_or_hull_id": {
+          "raw": "SN1DP8PS0GC162641",
+          "parsed": "SN1DP8PS0GC162641",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "storage_address": {
+          "postal_code": {
+            "raw": "13420",
+            "parsed": "13420",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          }
+        },
+        "coverages": [
+          {
+            "coverage_name": {
+              "raw": "Bodily Injury",
+              "parsed": "Bodily Injury",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "250/500",
+              "parsed": "250/500",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$37.37",
+              "parsed": 37.37,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Property Damage",
+              "parsed": "Property Damage",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "100",
+              "parsed": "100",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$20.50",
+              "parsed": 20.5,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Supplementary Uninsured / Underinsured Motorist",
+              "parsed": "Supplementary Uninsured / Underinsured Motorist",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "250/500",
+              "parsed": "250/500",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$19.37",
+              "parsed": 19.37,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Medical Payments",
+              "parsed": "Medical Payments",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "5000",
+              "parsed": "5000",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$39.78",
+              "parsed": 39.78,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Collision",
+              "parsed": "Collision",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "500",
+              "parsed": "500",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$84.56",
+              "parsed": 84.56,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Comprehensive",
+              "parsed": "Comprehensive",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "500",
+              "parsed": "500",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$9.95",
+              "parsed": 9.95,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Guest Liability",
+              "parsed": "Guest Liability",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "250/500",
+              "parsed": "250/500",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$22.28",
+              "parsed": 22.28,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Optional Equipment",
+              "parsed": "Optional Equipment",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "1000",
+              "parsed": "1000",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          }
+        ],
+        "annual_miles": {
+          "raw": "1,000",
+          "parsed": 1000,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "usage_description": {
+          "raw": "Pleasure",
+          "parsed": "Pleasure",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "driver_assignments": [
+          {
+            "driver_reference": {
+              "raw": "Delphine Fairbank",
+              "parsed": "Delphine Fairbank",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "usage_percentage": {
+              "raw": "99 Rated",
+              "parsed": "99 Rated",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "driver_reference": {
+              "raw": "Tobias Wexford",
+              "parsed": "Tobias Wexford",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "usage_percentage": {
+              "raw": "1",
+              "parsed": "1",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          }
+        ]
+      }
+    ],
+    "operators": [
+      {
+        "name": {
+          "raw": "Delphine Fairbank",
+          "parsed": "Delphine Fairbank",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "driver_status": {
+          "raw": "DRIVER",
+          "parsed": "DRIVER",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "relationship_to_insured": {
+          "raw": "SAME",
+          "parsed": "SAME",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "marital_status": {
+          "raw": "MARRIED AND LIVES WITH SPOUSE",
+          "parsed": "MARRIED AND LIVES WITH SPOUSE",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "gender": {
+          "raw": "MALE",
+          "parsed": "MALE",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "date_of_birth": {
+          "raw": "09/XX/1956",
+          "parsed": null,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "name": {
+          "raw": "Tobias Wexford",
+          "parsed": "Tobias Wexford",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "driver_status": {
+          "raw": "DRIVER",
+          "parsed": "DRIVER",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "relationship_to_insured": {
+          "raw": "SPOUSE",
+          "parsed": "SPOUSE",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "marital_status": {
+          "raw": "MARRIED AND LIVES WITH SPOUSE",
+          "parsed": "MARRIED AND LIVES WITH SPOUSE",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "gender": {
+          "raw": "FEMALE",
+          "parsed": "FEMALE",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "date_of_birth": {
+          "raw": "05/XX/1956",
+          "parsed": null,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "name": {
+          "raw": "Verity Ellery",
+          "parsed": "Verity Ellery",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "driver_status": {
+          "raw": "DRIVER",
+          "parsed": "DRIVER",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "relationship_to_insured": {
+          "raw": "CHILD",
+          "parsed": "CHILD",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "marital_status": {
+          "raw": "SINGLE (NEVER MARRIED)",
+          "parsed": "SINGLE (NEVER MARRIED)",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "gender": {
+          "raw": "MALE",
+          "parsed": "MALE",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "date_of_birth": {
+          "raw": "11/XX/1984",
+          "parsed": null,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "name": {
+          "raw": "Casper Wexford",
+          "parsed": "Casper Wexford",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "driver_status": {
+          "raw": "DRIVER",
+          "parsed": "DRIVER",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "relationship_to_insured": {
+          "raw": "CHILD",
+          "parsed": "CHILD",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "marital_status": {
+          "raw": "SINGLE (NEVER MARRIED)",
+          "parsed": "SINGLE (NEVER MARRIED)",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "gender": {
+          "raw": "MALE",
+          "parsed": "MALE",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "date_of_birth": {
+          "raw": "07/XX/1989",
+          "parsed": null,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            3
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "name": {
+          "raw": "Ambrose Mowbray",
+          "parsed": "Ambrose Mowbray",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "driver_status": {
+          "raw": "DRIVER",
+          "parsed": "DRIVER",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "relationship_to_insured": {
+          "raw": "CHILD",
+          "parsed": "CHILD",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "marital_status": {
+          "raw": "SINGLE (NEVER MARRIED)",
+          "parsed": "SINGLE (NEVER MARRIED)",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "gender": {
+          "raw": "FEMALE",
+          "parsed": "FEMALE",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "date_of_birth": {
+          "raw": "10/XX/1982",
+          "parsed": null,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            3
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "document_type_detail": {
+    "policy_history": {
+      "transactions": [
+        {
+          "transaction_type": {
+            "raw": "Renewal",
+            "parsed": "Renewal",
+            "confidence": {
+              "score": 1.0,
+              "source": "structural"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "transaction_effective_date": {
+            "raw": "12/12/2023",
+            "parsed": "12/12/2023",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "written_premium": {
+            "raw": "$1,112.33",
+            "parsed": 1112.33,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          }
+        },
+        {
+          "transaction_type": {
+            "raw": "Renewal",
+            "parsed": "Renewal",
+            "confidence": {
+              "score": 1.0,
+              "source": "structural"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "transaction_effective_date": {
+            "raw": "12/12/2024",
+            "parsed": "12/12/2024",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "written_premium": {
+            "raw": "$1,188.00",
+            "parsed": 1188.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          }
+        }
+      ]
+    }
+  },
+  "additional_fields": [
+    {
+      "section": "Policy View",
+      "label": "STATUS",
+      "value": {
+        "raw": "ACTIVE",
+        "parsed": "ACTIVE",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Policy View",
+      "label": "Original Year",
+      "value": {
+        "raw": "2022",
+        "parsed": 2022,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Policy View",
+      "label": "Number Of Times Renewed",
+      "value": {
+        "raw": "2",
+        "parsed": 2,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Policy View",
+      "label": "Premium Change",
+      "value": {
+        "raw": "$75.67 (+6.80%)",
+        "parsed": "$75.67 (+6.80%)",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Policy View",
+      "label": "AAP",
+      "value": {
+        "raw": "$982.11",
+        "parsed": 982.11,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Policy View",
+      "label": "Discounted AAP",
+      "value": {
+        "raw": "$982.11",
+        "parsed": 982.11,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Policy View",
+      "label": "Balance",
+      "value": {
+        "raw": "($88.07)",
+        "parsed": -88.07,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Policy View",
+      "label": "Last Bill Amount",
+      "value": {
+        "raw": "$103.00",
+        "parsed": 103.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Policy View",
+      "label": "Allstate eBill",
+      "value": {
+        "raw": "NOT ENROLLED",
+        "parsed": "NOT ENROLLED",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Policy View",
+      "label": "Allstate ePolicy",
+      "value": {
+        "raw": "NOT ENROLLED",
+        "parsed": "NOT ENROLLED",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Policy View",
+      "label": "Agent Of Record",
+      "value": {
+        "raw": "HBE GROUP INC (02 64653)",
+        "parsed": "HBE GROUP INC (02 64653)",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Contact Information",
+      "label": "Current Address",
+      "value": {
+        "raw": "257 FLETCHER RD, OLD FORGE, NY 13420 - 7851",
+        "parsed": "257 FLETCHER RD, OLD FORGE, NY 13420 - 7851",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Contact Information",
+      "label": "Primary Residence",
+      "value": {
+        "raw": "HOME",
+        "parsed": "HOME",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Contact Information",
+      "label": "Ownership Type",
+      "value": {
+        "raw": "OWNS",
+        "parsed": "OWNS",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Contact Information",
+      "label": "Date Moved To Current Address",
+      "value": {
+        "raw": "12/2017",
+        "parsed": "12/2017",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Contact Information",
+      "label": "Front End Matched",
+      "value": {
+        "raw": "YES",
+        "parsed": "YES",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Coverage",
+      "label": "Tier/Group",
+      "value": {
+        "raw": "4866 01",
+        "parsed": "4866 01",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Coverage",
+      "label": "SR Tier",
+      "value": {
+        "raw": "0001",
+        "parsed": "0001",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Coverage",
+      "label": "Billing Group",
+      "value": {
+        "raw": "00",
+        "parsed": "00",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Policy Details",
+      "label": "Application Date",
+      "value": {
+        "raw": "12/06/2022",
+        "parsed": "12/06/2022",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Policy Details",
+      "label": "Application Time",
+      "value": {
+        "raw": "14:43",
+        "parsed": "14:43",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Policy Details",
+      "label": "Bind Date",
+      "value": {
+        "raw": "12/12/2022",
+        "parsed": "12/12/2022",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Policy Details",
+      "label": "Bind Time",
+      "value": {
+        "raw": "00:01",
+        "parsed": "00:01",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Policy Details",
+      "label": "Bind ID",
+      "value": {
+        "raw": "SNYURH0A",
+        "parsed": "SNYURH0A",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Policy Details",
+      "label": "Control Number",
+      "value": {
+        "raw": "077220049977159",
+        "parsed": "077220049977159",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Policy Details",
+      "label": "Policy Rate Control",
+      "value": {
+        "raw": "979",
+        "parsed": "979",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Policy Details",
+      "label": "Version Number",
+      "value": {
+        "raw": "7",
+        "parsed": "7",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Policy Details",
+      "label": "Buyout Indicator",
+      "value": {
+        "raw": "NO",
+        "parsed": "NO",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Policy Details",
+      "label": "Channel Of Origin",
+      "value": {
+        "raw": "ALLIANCE AGENCY",
+        "parsed": "ALLIANCE AGENCY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Policy Details",
+      "label": "Source Of Quote",
+      "value": {
+        "raw": "FULL QUOTE",
+        "parsed": "FULL QUOTE",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Policy Details",
+      "label": "Application Of Origin",
+      "value": {
+        "raw": "RELATIONSHIP PLATFORM",
+        "parsed": "RELATIONSHIP PLATFORM",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Surcharges Applied",
+      "label": "Surcharges Applied",
+      "value": {
+        "raw": "None",
+        "parsed": "None",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Vehicle Information",
+      "label": "2003 POLARIS SUPER SPORT",
+      "value": {
+        "raw": "SN1NP5AS33C308116",
+        "parsed": "SN1NP5AS33C308116",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Vehicle Information",
+      "label": "2003 POLARIS 500 CLASSIC",
+      "value": {
+        "raw": "SN1ND5BS33C316949",
+        "parsed": "SN1ND5BS33C316949",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Vehicle Information",
+      "label": "2013 POLARIS 600 RUSH",
+      "value": {
+        "raw": "SN1BP6GS5DC765978",
+        "parsed": "SN1BP6GS5DC765978",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Vehicle Information",
+      "label": "2016 POLARIS RUSH 800",
+      "value": {
+        "raw": "SN1DP8PS0GC162641",
+        "parsed": "SN1DP8PS0GC162641",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Vehicle Information",
+      "label": "2002 POLARIS TRAIL TOURIN",
+      "value": {
+        "raw": "4XAST5BS62B220074",
+        "parsed": "4XAST5BS62B220074",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Vehicle Information",
+      "label": "2022 POLARIS INDY VR1",
+      "value": {
+        "raw": "SN1TKV6R9NC815505",
+        "parsed": "SN1TKV6R9NC815505",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Vehicle Information",
+      "label": "2022 POLARIS 650 INDY",
+      "value": {
+        "raw": "SN1TKP6R7NC227596",
+        "parsed": "SN1TKP6R7NC227596",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  ],
+  "text_sections": {
+    "page2_s1": {
+      "section_id": "page2_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Good Rider Applied Applied Applied Applied Home Ownership Applied Applied Applied Applied Multi-Vehicle Applied Applied Applied Applied",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s2": {
+      "section_id": "page2_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Usage Class Pleasure Pleasure Pleasure Pleasure Miles One Way",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    }
+  },
+  "fideon:provenance": {
+    "source": "All State/recreational_vehicle/all_state_recv_snowmobile_3.pdf",
+    "schema": "recreational_vehicle v1.4.0",
+    "synthetic": false,
+    "gold": "reviewed and completed by Claude against the printed pages",
+    "reviewed": "2026-09-28"
+  }
+}

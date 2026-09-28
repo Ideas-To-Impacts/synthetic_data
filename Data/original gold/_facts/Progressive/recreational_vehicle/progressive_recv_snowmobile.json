@@ -1,0 +1,491 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "This is your Renewal Declarations Page",
+   "parsed": "Renewal Declarations"
+  },
+  "document_title_as_stated": "Snowmobile Insurance Coverage Summary",
+  "line_of_business_as_stated": "Snowmobile",
+  "issue_date": "August 28, 2026",
+  "print_code": "Form 6489 NY (07/07)"
+ },
+ "carrier": {
+  "company_name": "Progressive Northwestern Ins Co"
+ },
+ "claim_reporting": {
+  "claims_phone": "1-800-274-4499"
+ },
+ "producer": {
+  "agency_name": "PATRIOTIC INS GROUP",
+  "contact": {
+   "phone": "1-315-357-5901",
+   "website": "progressiveagent.com"
+  },
+  "address": {
+   "line_1": "159 NY-28",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "FRANKLIN J NIET",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "mailing_address": {
+   "line_1": "PO BOX 14",
+   "city": "THENDARA",
+   "state": "NY",
+   "postal_code": "13472"
+  },
+  "additional_named_insureds": [
+   {
+    "name": "NANCY A NIET"
+   }
+  ]
+ },
+ "policy": {
+  "policy_number": "987932488",
+  "effective_date": "October 12, 2026",
+  "expiration_date": "October 12, 2027",
+  "effective_time": "12:01 a.m.",
+  "expiration_time": "12:01 a.m.",
+  "policy_term_as_printed": "Oct 12, 2026 - Oct 12, 2027",
+  "policy_term_months": {
+   "raw": "12 month",
+   "parsed": 12
+  },
+  "is_renewal": {
+   "raw": "Renewal",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "policy_form_number": "5979 NY",
+  "policy_form_edition": "10/17",
+  "policyholder_since_date": "October 12, 2024"
+ },
+ "premium": {
+  "total_policy_premium": "$200",
+  "discounts_and_credits": [
+   {
+    "description": "Multi-Policy",
+    "amount": "$3",
+    "applies_to": {
+     "raw": "2016 POLARIS SWITCHBACK 600",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Multi-Policy",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Home Owner",
+    "amount": "$31",
+    "applies_to": {
+     "raw": "2016 POLARIS SWITCHBACK 600",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Home Owner",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Snowmobile",
+    "amount": "$20",
+    "applies_to": {
+     "raw": "2016 POLARIS SWITCHBACK 600",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Multi-Snowmobile",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Transfer",
+    "amount": "$22",
+    "applies_to": {
+     "raw": "2016 POLARIS SWITCHBACK 600",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Transfer",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Policy",
+    "amount": "$5",
+    "applies_to": {
+     "raw": "2015 POLARIS SWITCHBACK 600",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Multi-Policy",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Claim Free Renewal",
+    "amount": "$2",
+    "applies_to": {
+     "raw": "2015 POLARIS SWITCHBACK 600",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Claim Free Renewal",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Home Owner",
+    "amount": "$26",
+    "applies_to": {
+     "raw": "2015 POLARIS SWITCHBACK 600",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Home Owner",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Snowmobile",
+    "amount": "$17",
+    "applies_to": {
+     "raw": "2015 POLARIS SWITCHBACK 600",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Multi-Snowmobile",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Transfer",
+    "amount": "$19",
+    "applies_to": {
+     "raw": "2015 POLARIS SWITCHBACK 600",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Transfer",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Discount if paid in full",
+    "amount": {
+     "raw": "-24",
+     "parsed": -24.0
+    },
+    "is_applied": {
+     "raw": "Discount if paid in full",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   }
+  ],
+  "surcharges": []
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "5979 NY",
+   "edition_date": "10/17",
+   "form_type": {
+    "raw": "Policy contract",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "Z385 NY",
+   "edition_date": "12/07",
+   "form_type": {
+    "raw": "Endorsement",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "6489 NY",
+   "edition_date": "07/07"
+  }
+ ],
+ "recreational_vehicle": {
+  "units": [
+   {
+    "unit_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "2016",
+     "parsed": 2016
+    },
+    "make": "POLARIS",
+    "model": "SWITCHBACK 600",
+    "vin_or_hull_id": "SN1DA6PS7GC158267",
+    "storage_address": {
+     "postal_code": "13472"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury Liability",
+      "limit_amount": "$250,000 each person/$500,000 each accident",
+      "premium": "$24"
+     },
+     {
+      "coverage_name": "Property Damage Liability",
+      "limit_amount": "$100,000 each accident",
+      "premium": {
+       "raw": "14",
+       "parsed": 14.0
+      }
+     },
+     {
+      "coverage_name": "Mandatory Uninsured Motorist",
+      "limit_amount": "$25,000 each person/$50,000 each accident",
+      "premium": {
+       "raw": "2",
+       "parsed": 2.0
+      }
+     },
+     {
+      "coverage_name": "Medical Payments",
+      "limit_amount": "$1,000 each person",
+      "premium": {
+       "raw": "7",
+       "parsed": 7.0
+      }
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "limit_amount": "Actual Cash Value at time of loss",
+      "deductible_amount": "$250",
+      "premium": {
+       "raw": "14",
+       "parsed": 14.0
+      }
+     },
+     {
+      "coverage_name": "Collision",
+      "limit_amount": "Actual Cash Value at time of loss",
+      "deductible_amount": "$250",
+      "premium": {
+       "raw": "49",
+       "parsed": 49.0
+      }
+     },
+     {
+      "coverage_name": "Accessory Coverage",
+      "limit_amount": "$3,000",
+      "is_included": {
+       "raw": "included",
+       "parsed": "Yes"
+      }
+     }
+    ],
+    "horsepower_or_cc": "600 cc's",
+    "premium": "$110"
+   },
+   {
+    "unit_number": {
+     "raw": "2",
+     "source": "structural",
+     "parsed": 2
+    },
+    "year": {
+     "raw": "2015",
+     "parsed": 2015
+    },
+    "make": "POLARIS",
+    "model": "SWITCHBACK 600",
+    "vin_or_hull_id": "SN1DA6PS1FC536324",
+    "storage_address": {
+     "postal_code": "13472"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury Liability",
+      "limit_amount": "$250,000 each person/$500,000 each accident",
+      "premium": "$22"
+     },
+     {
+      "coverage_name": "Property Damage Liability",
+      "limit_amount": "$100,000 each accident",
+      "premium": {
+       "raw": "13",
+       "parsed": 13.0
+      }
+     },
+     {
+      "coverage_name": "Mandatory Uninsured Motorist",
+      "limit_amount": "$25,000 each person/$50,000 each accident",
+      "premium": {
+       "raw": "2",
+       "parsed": 2.0
+      }
+     },
+     {
+      "coverage_name": "Medical Payments",
+      "limit_amount": "$1,000 each person",
+      "premium": {
+       "raw": "7",
+       "parsed": 7.0
+      }
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "limit_amount": "Actual Cash Value at time of loss",
+      "deductible_amount": "$250",
+      "premium": {
+       "raw": "10",
+       "parsed": 10.0
+      }
+     },
+     {
+      "coverage_name": "Collision",
+      "limit_amount": "Actual Cash Value at time of loss",
+      "deductible_amount": "$250",
+      "premium": {
+       "raw": "36",
+       "parsed": 36.0
+      }
+     },
+     {
+      "coverage_name": "Accessory Coverage",
+      "limit_amount": "$3,000",
+      "is_included": {
+       "raw": "included",
+       "parsed": "Yes"
+      }
+     }
+    ],
+    "horsepower_or_cc": "600 cc's",
+    "premium": "$90"
+   }
+  ],
+  "operators": [
+   {
+    "name": "Franklin J Niet",
+    "age": {
+     "raw": "75",
+     "parsed": 75
+    },
+    "gender": "Male",
+    "marital_status": "Married",
+    "relationship_to_insured": "Named insured"
+   },
+   {
+    "name": "Nancy A Niet",
+    "age": {
+     "raw": "76",
+     "parsed": 76
+    },
+    "gender": "Female",
+    "marital_status": "Married",
+    "relationship_to_insured": "Named insured"
+   }
+  ]
+ },
+ "additional_fields": [
+  {
+   "section": "Outline of coverage",
+   "label": "Total 12 month policy premium if paid in full",
+   "value": "$176"
+  },
+  {
+   "section": "Choose a Payment Option",
+   "label": "PAY IN FULL Total Cost",
+   "value": "$176.00"
+  },
+  {
+   "section": "Choose a Payment Option",
+   "label": "PAY IN INSTALLMENTS Total Cost",
+   "value": "$220.00"
+  },
+  {
+   "section": "Payment Coupon",
+   "label": "Pay initial installment",
+   "value": "$55.00"
+  }
+ ],
+ "billing": {
+  "due_date": "October 12, 2026",
+  "amount_due": "$176.00",
+  "payment_plan": {
+   "raw": "Pay in Full or Pay in Installments",
+   "source": "structural"
+  },
+  "payment_coupon_scan_line": "030898793248831169 0005500 0020500 5000830 7653797 002010122600",
+  "installments": [
+   {
+    "installment_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "due_date": "Oct 12, 2026",
+    "amount": "$55.00",
+    "installment_fee": "$5.00"
+   },
+   {
+    "installment_number": {
+     "raw": "2",
+     "source": "structural",
+     "parsed": 2
+    },
+    "due_date": "Nov 12, 2026",
+    "amount": "$55.00",
+    "installment_fee": "$5.00"
+   },
+   {
+    "installment_number": {
+     "raw": "3",
+     "source": "structural",
+     "parsed": 3
+    },
+    "due_date": "Dec 12, 2026",
+    "amount": "$55.00",
+    "installment_fee": "$5.00"
+   },
+   {
+    "installment_number": {
+     "raw": "4",
+     "source": "structural",
+     "parsed": 4
+    },
+    "due_date": "Jan 12, 2027",
+    "amount": "$55.00",
+    "installment_fee": "$5.00"
+   }
+  ]
+ },
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_effective_date": "October 12, 2026",
+   "renewal_expiration_date": "October 12, 2027",
+   "renewal_premium": "$200.00",
+   "expiring_policy_expiration_date": "10/12/2026",
+   "offer_issue_date": "August 28, 2026",
+   "payment_due_date": "October 12, 2026",
+   "premium_change_amount": {
+    "raw": "$12",
+    "parsed": -12.0
+   }
+  }
+ }
+}

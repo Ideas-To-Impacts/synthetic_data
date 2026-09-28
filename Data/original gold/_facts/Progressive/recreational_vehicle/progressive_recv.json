@@ -1,0 +1,489 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "This is your Renewal Declarations Page",
+   "parsed": "Renewal Declarations"
+  },
+  "document_title_as_stated": "Motor Home Insurance Coverage Summary",
+  "line_of_business_as_stated": "Motor Home",
+  "issue_date": "April 28, 2026",
+  "print_code": "Form 6489 NY (02/10)"
+ },
+ "carrier": {
+  "company_name": "Progressive Northwestern Ins Co"
+ },
+ "claim_reporting": {
+  "claims_phone": "1-800-274-4499"
+ },
+ "producer": {
+  "agency_name": "PATRIOTIC INS GROUP",
+  "contact": {
+   "phone": "1-315-357-5901",
+   "website": "progressiveagent.com"
+  },
+  "address": {
+   "line_1": "159 NY-28",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "FRANKLIN J NIET",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "mailing_address": {
+   "line_1": "PO BOX 14",
+   "city": "THENDARA",
+   "state": "NY",
+   "postal_code": "13472"
+  },
+  "additional_named_insureds": [
+   {
+    "name": "NANCY A NIET"
+   }
+  ]
+ },
+ "policy": {
+  "policy_number": "982422761",
+  "effective_date": "June 12, 2026",
+  "expiration_date": "June 12, 2027",
+  "effective_time": "12:01 a.m.",
+  "expiration_time": "12:01 a.m.",
+  "policy_term_as_printed": "Jun 12, 2026 - Jun 12, 2027",
+  "policy_term_months": {
+   "raw": "12 month",
+   "parsed": 12
+  },
+  "is_renewal": {
+   "raw": "Renewal",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "policy_form_number": "9638 NY",
+  "policy_form_edition": "10/17",
+  "policy_tier": "Ultra Preferred A",
+  "policyholder_since_date": "June 12, 2024"
+ },
+ "premium": {
+  "total_policy_premium": "$915",
+  "discounts_and_credits": [
+   {
+    "description": "Anti-Lock Brakes",
+    "amount": "$21",
+    "applies_to": {
+     "raw": "2016 WINNEBAGO VIEW",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Anti-Lock Brakes",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Daytime Running Lamps",
+    "amount": "$12",
+    "applies_to": {
+     "raw": "2016 WINNEBAGO VIEW",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Daytime Running Lamps",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Policy",
+    "amount": "$46",
+    "applies_to": {
+     "raw": "2016 WINNEBAGO VIEW",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Multi-Policy",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Accident Prevention Course",
+    "amount": "$45",
+    "applies_to": {
+     "raw": "2016 WINNEBAGO VIEW",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Accident Prevention Course",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Claim Free Renewal",
+    "amount": "$10",
+    "applies_to": {
+     "raw": "2016 WINNEBAGO VIEW",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Claim Free Renewal",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Home Owner",
+    "amount": "$46",
+    "applies_to": {
+     "raw": "2016 WINNEBAGO VIEW",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Home Owner",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Prompt Payment",
+    "amount": "$10",
+    "applies_to": {
+     "raw": "2016 WINNEBAGO VIEW",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Prompt Payment",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Discount if paid in full",
+    "amount": {
+     "raw": "-35",
+     "parsed": -35.0
+    },
+    "is_applied": {
+     "raw": "Discount if paid in full",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   }
+  ],
+  "surcharges": [],
+  "motor_vehicle_law_enforcement_fee": {
+   "raw": "10",
+   "parsed": 10.0
+  }
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "9638 NY",
+   "edition_date": "10/17",
+   "form_type": {
+    "raw": "Policy contract",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "9869 NY",
+   "edition_date": "12/12",
+   "form_type": {
+    "raw": "Endorsement",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "Z734",
+   "edition_date": "01/09",
+   "form_type": {
+    "raw": "Endorsement",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "6489 NY",
+   "edition_date": "02/10"
+  }
+ ],
+ "recreational_vehicle": {
+  "units": [
+   {
+    "unit_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "2016",
+     "parsed": 2016
+    },
+    "make": "WINNEBAGO",
+    "model": "VIEW",
+    "vin_or_hull_id": "WDAPF4CC4G9637556",
+    "storage_address": {
+     "postal_code": "13472"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury and Property Damage Liability",
+      "limit_amount": "$500,000 combined single limit each accident",
+      "premium": "$101"
+     },
+     {
+      "coverage_name": "Mandatory Personal Injury Protection",
+      "limit_amount": "$50,000 each person",
+      "deductible_amount": "$0",
+      "premium": {
+       "raw": "15",
+       "parsed": 15.0
+      }
+     },
+     {
+      "coverage_name": "Additional Personal Injury Protection",
+      "limit_amount": "Out-of-state Guest Occupancy Only",
+      "premium": {
+       "raw": "7",
+       "parsed": 7.0
+      }
+     },
+     {
+      "coverage_name": "Optional Basic Economic Loss",
+      "limit_amount": "$25,000 each person",
+      "premium": {
+       "raw": "6",
+       "parsed": 6.0
+      }
+     },
+     {
+      "coverage_name": "Aggregate No-Fault Benefits Available",
+      "limit_amount": "$75,000"
+     },
+     {
+      "coverage_name": "Death Benefit",
+      "limit_amount": "$2,000"
+     },
+     {
+      "coverage_name": "Maximum Monthly Work Loss",
+      "limit_amount": "$2,000"
+     },
+     {
+      "coverage_name": "Other Reasonable & Necessary Expenses (per day)",
+      "limit_amount": "$25"
+     },
+     {
+      "coverage_name": "Supplementary Uninsured/Underinsured Motorist",
+      "limit_amount": "$500,000 combined single limit each accident",
+      "premium": {
+       "raw": "67",
+       "parsed": 67.0
+      }
+     },
+     {
+      "coverage_name": "Medical Payments",
+      "limit_amount": "$10,000 each person",
+      "premium": {
+       "raw": "2",
+       "parsed": 2.0
+      }
+     },
+     {
+      "coverage_name": "Comprehensive With Full Glass",
+      "limit_amount": "Agreed Value $78,200",
+      "deductible_amount": "$200/$0 glass",
+      "premium": {
+       "raw": "382",
+       "parsed": 382.0
+      }
+     },
+     {
+      "coverage_name": "Collision",
+      "limit_amount": "Agreed Value $78,200",
+      "deductible_amount": "$500",
+      "premium": {
+       "raw": "287",
+       "parsed": 287.0
+      }
+     },
+     {
+      "coverage_name": "Mexico Coverage",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Fire Department Service",
+      "limit_amount": "$1,000",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Emergency Expense",
+      "limit_amount": "$750",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Replacement Cost Personal Effects",
+      "limit_amount": "$2,000",
+      "deductible_amount": "$100",
+      "premium": {
+       "raw": "7",
+       "parsed": 7.0
+      }
+     },
+     {
+      "coverage_name": "Vacation Liability",
+      "limit_amount": "$500,000",
+      "premium": {
+       "raw": "11",
+       "parsed": 11.0
+      }
+     },
+     {
+      "coverage_name": "Roadside Assistance",
+      "premium": {
+       "raw": "20",
+       "parsed": 20.0
+      }
+     }
+    ],
+    "premium": "$905",
+    "agreed_value": "$78,200"
+   }
+  ],
+  "operators": [
+   {
+    "name": "Franklin J Niet",
+    "age": {
+     "raw": "74",
+     "parsed": 74
+    },
+    "gender": "Male",
+    "marital_status": "Married",
+    "relationship_to_insured": "Named insured"
+   },
+   {
+    "name": "Nancy A Niet",
+    "age": {
+     "raw": "75",
+     "parsed": 75
+    },
+    "gender": "Female",
+    "marital_status": "Married",
+    "relationship_to_insured": "Named insured"
+   }
+  ],
+  "additional_coverages": [
+   {
+    "coverage_name": "Trailer (used with motorhome and included with Comprehensive and Collision coverage)",
+    "limit_amount": "The Lesser Of Actual Cash Value Less Deductible or $2,500",
+    "is_included": {
+     "raw": "included",
+     "parsed": "Yes"
+    }
+   }
+  ]
+ },
+ "additional_fields": [
+  {
+   "section": "Outline of coverage",
+   "label": "Total 12 month policy premium if paid in full",
+   "value": "$880"
+  },
+  {
+   "section": "Choose a Payment Option",
+   "label": "PAY IN FULL Total Cost",
+   "value": "$880.00"
+  },
+  {
+   "section": "Choose a Payment Option",
+   "label": "PAY IN INSTALLMENTS Total Cost",
+   "value": "$935.00"
+  },
+  {
+   "section": "Payment Coupon",
+   "label": "Pay initial installment",
+   "value": "$241.25"
+  }
+ ],
+ "state_notices": [
+  {
+   "notice_title": "SEE ENCLOSURE FOR SUPPLEMENTAL SPOUSAL LIABILITY INSURANCE NOTICE",
+   "state": {
+    "raw": "NY",
+    "source": "structural"
+   }
+  }
+ ],
+ "billing": {
+  "due_date": "June 12, 2026",
+  "amount_due": "$880.00",
+  "payment_plan": {
+   "raw": "Pay in Full or Pay in Installments",
+   "source": "structural"
+  },
+  "payment_coupon_scan_line": "030898242276131167 0024125 0092000 5000712 7134712 002006122606",
+  "installments": [
+   {
+    "installment_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "due_date": "Jun 12, 2026",
+    "amount": "$241.25",
+    "installment_fee": "$5.00"
+   },
+   {
+    "installment_number": {
+     "raw": "2",
+     "source": "structural",
+     "parsed": 2
+    },
+    "due_date": "Jul 12, 2026",
+    "amount": "$231.25",
+    "installment_fee": "$5.00"
+   },
+   {
+    "installment_number": {
+     "raw": "3",
+     "source": "structural",
+     "parsed": 3
+    },
+    "due_date": "Aug 12, 2026",
+    "amount": "$231.25",
+    "installment_fee": "$5.00"
+   },
+   {
+    "installment_number": {
+     "raw": "4",
+     "source": "structural",
+     "parsed": 4
+    },
+    "due_date": "Sep 12, 2026",
+    "amount": "$231.25",
+    "installment_fee": "$5.00"
+   }
+  ]
+ },
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_effective_date": "June 12, 2026",
+   "renewal_expiration_date": "June 12, 2027",
+   "renewal_premium": "$915.00",
+   "expiring_policy_expiration_date": "06/12/2026",
+   "offer_issue_date": "April 28, 2026",
+   "payment_due_date": "June 12, 2026"
+  }
+ }
+}

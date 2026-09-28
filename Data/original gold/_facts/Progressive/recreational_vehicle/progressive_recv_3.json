@@ -1,0 +1,383 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "This is your Renewal Declarations Page",
+   "parsed": "Renewal Declarations"
+  },
+  "document_title_as_stated": "Motorcycle Insurance Coverage Summary",
+  "line_of_business_as_stated": "Motorcycle",
+  "issue_date": "February 17, 2026",
+  "print_code": "Form 6489 NY (07/07)"
+ },
+ "carrier": {
+  "company_name": "Progressive Northwestern Ins Co"
+ },
+ "claim_reporting": {
+  "claims_phone": "1-800-274-4499"
+ },
+ "producer": {
+  "agency_name": "PATRIOTIC INS GROUP",
+  "contact": {
+   "phone": "1-315-357-5901",
+   "website": "progressiveagent.com"
+  },
+  "address": {
+   "line_1": "159 NY-28",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "KORIE HELMER",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "mailing_address": {
+   "line_1": "PO BOX 803",
+   "city": "OLD FORGE",
+   "state": "NY",
+   "postal_code": "13420"
+  },
+  "additional_named_insureds": [
+   {
+    "name": "KRISTIN HELMER"
+   }
+  ]
+ },
+ "policy": {
+  "policy_number": "947850760",
+  "effective_date": "April 1, 2026",
+  "expiration_date": "April 1, 2027",
+  "effective_time": "12:01 a.m.",
+  "expiration_time": "12:01 a.m.",
+  "policy_term_as_printed": "Apr 1, 2026 - Apr 1, 2027",
+  "policy_term_months": {
+   "raw": "12 month",
+   "parsed": 12
+  },
+  "is_renewal": {
+   "raw": "Renewal",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "policy_form_number": "5979 NY",
+  "policy_form_edition": "10/17",
+  "policy_tier": "Ultra Preferred D",
+  "policyholder_since_date": "April 1, 2021"
+ },
+ "premium": {
+  "total_policy_premium": "$125",
+  "discounts_and_credits": [
+   {
+    "description": "Multi-Policy",
+    "amount": "$6",
+    "applies_to": {
+     "raw": "2019 CUB CADET CHALLENGER 750",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Multi-Policy",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Claim Free Renewal",
+    "amount": "$1",
+    "applies_to": {
+     "raw": "2019 CUB CADET CHALLENGER 750",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Claim Free Renewal",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Home Owner",
+    "amount": "$37",
+    "applies_to": {
+     "raw": "2019 CUB CADET CHALLENGER 750",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Home Owner",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Discount if paid in full",
+    "amount": {
+     "raw": "-15",
+     "parsed": -15.0
+    },
+    "is_applied": {
+     "raw": "Discount if paid in full",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   }
+  ],
+  "surcharges": []
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "5979 NY",
+   "edition_date": "10/17",
+   "form_type": {
+    "raw": "Policy contract",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "Z385 NY",
+   "edition_date": "12/07",
+   "form_type": {
+    "raw": "Endorsement",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "A135 NY",
+   "edition_date": "11/13",
+   "form_type": {
+    "raw": "Endorsement",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "6489 NY",
+   "edition_date": "07/07"
+  }
+ ],
+ "recreational_vehicle": {
+  "units": [
+   {
+    "unit_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "2019",
+     "parsed": 2019
+    },
+    "make": "CUB CADET",
+    "model": "CHALLENGER 750",
+    "vin_or_hull_id": "LWGMDWZ49KA000607",
+    "storage_address": {
+     "postal_code": "13420"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury Liability",
+      "limit_amount": "$100,000 each person/$300,000 each accident",
+      "premium": "$25"
+     },
+     {
+      "coverage_name": "Property Damage Liability",
+      "limit_amount": "$50,000 each accident",
+      "premium": {
+       "raw": "15",
+       "parsed": 15.0
+      }
+     },
+     {
+      "coverage_name": "Mandatory Pedestrian Personal Injury Protection",
+      "limit_amount": "$50,000 each person",
+      "deductible_amount": "$0",
+      "premium": {
+       "raw": "2",
+       "parsed": 2.0
+      }
+     },
+     {
+      "coverage_name": "Optional Basic Economic Loss",
+      "limit_amount": "$25,000 each person",
+      "premium": {
+       "raw": "7",
+       "parsed": 7.0
+      }
+     },
+     {
+      "coverage_name": "Aggregate Pedestrian No-Fault Benefits",
+      "limit_amount": "$75,000"
+     },
+     {
+      "coverage_name": "Death Benefit",
+      "limit_amount": "$2,000"
+     },
+     {
+      "coverage_name": "Maximum Monthly Work Loss",
+      "limit_amount": "$2,000"
+     },
+     {
+      "coverage_name": "Other Reasonable & Necessary Expenses (per day)",
+      "limit_amount": "$25"
+     },
+     {
+      "coverage_name": "Supplementary Uninsured/Underinsured Motorist",
+      "limit_amount": "$100,000 each person/$300,000 each accident",
+      "premium": {
+       "raw": "3",
+       "parsed": 3.0
+      }
+     },
+     {
+      "coverage_name": "Medical Payments",
+      "limit_amount": "$1,000 each person",
+      "premium": {
+       "raw": "2",
+       "parsed": 2.0
+      }
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "limit_amount": "Actual Cash Value at time of loss",
+      "deductible_amount": "$250",
+      "premium": {
+       "raw": "24",
+       "parsed": 24.0
+      }
+     },
+     {
+      "coverage_name": "Collision",
+      "limit_amount": "Actual Cash Value at time of loss",
+      "deductible_amount": "$250",
+      "premium": {
+       "raw": "47",
+       "parsed": 47.0
+      }
+     },
+     {
+      "coverage_name": "Accessory Coverage",
+      "limit_amount": "$3,000",
+      "is_included": {
+       "raw": "included",
+       "parsed": "Yes"
+      }
+     }
+    ],
+    "horsepower_or_cc": "750 cc's"
+   }
+  ],
+  "operators": [
+   {
+    "name": "Korie Helmer",
+    "age": {
+     "raw": "48",
+     "parsed": 48
+    },
+    "gender": "Male",
+    "marital_status": "Married",
+    "relationship_to_insured": "Named insured"
+   },
+   {
+    "name": "Kristin Helmer",
+    "age": {
+     "raw": "44",
+     "parsed": 44
+    },
+    "gender": "Female",
+    "marital_status": "Married",
+    "relationship_to_insured": "Named insured"
+   }
+  ]
+ },
+ "additional_fields": [
+  {
+   "section": "Outline of coverage",
+   "label": "Total 12 month policy premium if paid in full",
+   "value": "$110"
+  },
+  {
+   "section": "Choose a Payment Option",
+   "label": "PAY IN FULL Total Cost",
+   "value": "$110.00"
+  },
+  {
+   "section": "Choose a Payment Option",
+   "label": "PAY IN INSTALLMENTS Total Cost",
+   "value": "$145.00"
+  },
+  {
+   "section": "Payment Coupon",
+   "label": "Pay initial installment",
+   "value": "$36.25"
+  }
+ ],
+ "state_notices": [
+  {
+   "notice_title": "SEE ENCLOSURE FOR SUPPLEMENTAL SPOUSAL LIABILITY INSURANCE NOTICE",
+   "state": {
+    "raw": "NY",
+    "source": "structural"
+   }
+  }
+ ],
+ "billing": {
+  "due_date": "April 1, 2026",
+  "amount_due": "$110.00",
+  "payment_plan": {
+   "raw": "Pay in Full or Pay in Installments",
+   "source": "structural"
+  },
+  "payment_coupon_scan_line": "030894785076031163 0003625 0013000 5000644 4232488 005004012604",
+  "installments": [
+   {
+    "installment_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "due_date": "Apr 1, 2026",
+    "amount": "$36.25",
+    "installment_fee": "$5.00"
+   },
+   {
+    "installment_number": {
+     "raw": "2",
+     "source": "structural",
+     "parsed": 2
+    },
+    "due_date": "May 1, 2026",
+    "amount": "$36.25",
+    "installment_fee": "$5.00"
+   },
+   {
+    "installment_number": {
+     "raw": "3",
+     "source": "structural",
+     "parsed": 3
+    },
+    "due_date": "Jun 1, 2026",
+    "amount": "$36.25",
+    "installment_fee": "$5.00"
+   },
+   {
+    "installment_number": {
+     "raw": "4",
+     "source": "structural",
+     "parsed": 4
+    },
+    "due_date": "Jul 1, 2026",
+    "amount": "$36.25",
+    "installment_fee": "$5.00"
+   }
+  ]
+ },
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_effective_date": "April 1, 2026",
+   "renewal_expiration_date": "April 1, 2027",
+   "renewal_premium": "$125.00",
+   "expiring_policy_expiration_date": "04/01/2026",
+   "offer_issue_date": "February 17, 2026",
+   "payment_due_date": "April 1, 2026"
+  }
+ }
+}

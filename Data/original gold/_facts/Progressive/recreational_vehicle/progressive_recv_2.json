@@ -1,0 +1,335 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "This is your Renewal Declarations Page",
+   "parsed": "Renewal Declarations"
+  },
+  "document_title_as_stated": "Travel Trailer Insurance Coverage Summary",
+  "line_of_business_as_stated": "Travel Trailer",
+  "issue_date": "April 30, 2026",
+  "print_code": "Form 6489 NY (02/10)"
+ },
+ "carrier": {
+  "company_name": "Progressive Northwestern Ins Co"
+ },
+ "claim_reporting": {
+  "claims_phone": "1-800-274-4499"
+ },
+ "producer": {
+  "agency_name": "PATRIOTIC INS GROUP",
+  "contact": {
+   "phone": "1-315-357-5901",
+   "website": "progressiveagent.com"
+  },
+  "address": {
+   "line_1": "159 NY-28",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "KORIE K HELMER",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "mailing_address": {
+   "line_1": "PO BOX 803",
+   "city": "OLD FORGE",
+   "state": "NY",
+   "postal_code": "13420"
+  },
+  "additional_named_insureds": [
+   {
+    "name": "KRISTIN R HELMER"
+   }
+  ]
+ },
+ "policy": {
+  "policy_number": "998711960",
+  "effective_date": "June 14, 2026",
+  "expiration_date": "June 14, 2027",
+  "effective_time": "12:01 a.m.",
+  "expiration_time": "12:01 a.m.",
+  "policy_term_as_printed": "Jun 14, 2026 - Jun 14, 2027",
+  "policy_term_months": {
+   "raw": "12 month",
+   "parsed": 12
+  },
+  "is_renewal": {
+   "raw": "Renewal",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "policy_form_number": "3651 NY",
+  "policy_form_edition": "08/12",
+  "policyholder_since_date": "June 14, 2025"
+ },
+ "premium": {
+  "total_policy_premium": "$305",
+  "discounts_and_credits": [
+   {
+    "description": "Claim Free Renewal",
+    "applies_to": {
+     "raw": "Policy 998711960",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Claim Free Renewal",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Home Owner",
+    "applies_to": {
+     "raw": "Policy 998711960",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Home Owner",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Policy",
+    "applies_to": {
+     "raw": "Policy 998711960",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Multi-Policy",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Prompt Payment",
+    "applies_to": {
+     "raw": "Policy 998711960",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Prompt Payment",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Discount if paid in full",
+    "amount": {
+     "raw": "-11",
+     "parsed": -11.0
+    },
+    "is_applied": {
+     "raw": "Discount if paid in full",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   }
+  ],
+  "surcharges": []
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "3651 NY",
+   "edition_date": "08/12",
+   "form_type": {
+    "raw": "Policy contract",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "9869 NY",
+   "edition_date": "12/12",
+   "form_type": {
+    "raw": "Endorsement",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "6489 NY",
+   "edition_date": "02/10"
+  }
+ ],
+ "recreational_vehicle": {
+  "units": [
+   {
+    "unit_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "2017",
+     "parsed": 2017
+    },
+    "make": "KEYSTONE",
+    "model": "RV HIDEOUT LUXURY",
+    "vin_or_hull_id": "4YDT38B25H7202155",
+    "storage_address": {
+     "postal_code": "13317"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Comprehensive With Full Glass",
+      "limit_amount": "The Lesser Of Actual Cash Value at time of loss Less Deductible or $24,600",
+      "deductible_amount": "$200/$0 glass",
+      "premium": "$283"
+     },
+     {
+      "coverage_name": "Mexico Coverage",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Fire Department Service",
+      "limit_amount": "$1,000",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Emergency Expense",
+      "limit_amount": "$750",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Replacement Cost Personal Effects",
+      "limit_amount": "$2,000",
+      "deductible_amount": "$100",
+      "premium": {
+       "raw": "14",
+       "parsed": 14.0
+      }
+     },
+     {
+      "coverage_name": "Vacation Liability",
+      "limit_amount": "$300,000",
+      "premium": {
+       "raw": "8",
+       "parsed": 8.0
+      }
+     }
+    ]
+   }
+  ],
+  "operators": [
+   {
+    "name": "Korie K Helmer",
+    "age": {
+     "raw": "48",
+     "parsed": 48
+    },
+    "gender": "Male",
+    "marital_status": "Married",
+    "relationship_to_insured": "Named insured"
+   },
+   {
+    "name": "Kristin R Helmer",
+    "age": {
+     "raw": "44",
+     "parsed": 44
+    },
+    "gender": "Female",
+    "marital_status": "Married",
+    "relationship_to_insured": "Named insured"
+   }
+  ]
+ },
+ "additional_fields": [
+  {
+   "section": "Outline of coverage",
+   "label": "Total 12 month policy premium if paid in full",
+   "value": "$294"
+  },
+  {
+   "section": "Choose a Payment Option",
+   "label": "PAY IN FULL Total Cost",
+   "value": "$294.00"
+  },
+  {
+   "section": "Choose a Payment Option",
+   "label": "PAY IN INSTALLMENTS Total Cost",
+   "value": "$325.00"
+  },
+  {
+   "section": "Payment Coupon",
+   "label": "Pay initial installment",
+   "value": "$81.25"
+  }
+ ],
+ "billing": {
+  "due_date": "June 14, 2026",
+  "amount_due": "$294.00",
+  "payment_plan": {
+   "raw": "Pay in Full or Pay in Installments",
+   "source": "structural"
+  },
+  "payment_coupon_scan_line": "030899871196031161 0008125 0031000 5000714 9454551 001006142606",
+  "installments": [
+   {
+    "installment_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "due_date": "Jun 14, 2026",
+    "amount": "$81.25",
+    "installment_fee": "$5.00"
+   },
+   {
+    "installment_number": {
+     "raw": "2",
+     "source": "structural",
+     "parsed": 2
+    },
+    "due_date": "Jul 14, 2026",
+    "amount": "$81.25",
+    "installment_fee": "$5.00"
+   },
+   {
+    "installment_number": {
+     "raw": "3",
+     "source": "structural",
+     "parsed": 3
+    },
+    "due_date": "Aug 14, 2026",
+    "amount": "$81.25",
+    "installment_fee": "$5.00"
+   },
+   {
+    "installment_number": {
+     "raw": "4",
+     "source": "structural",
+     "parsed": 4
+    },
+    "due_date": "Sep 14, 2026",
+    "amount": "$81.25",
+    "installment_fee": "$5.00"
+   }
+  ]
+ },
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_effective_date": "June 14, 2026",
+   "renewal_expiration_date": "June 14, 2027",
+   "renewal_premium": "$305.00",
+   "expiring_policy_expiration_date": "06/14/2026",
+   "offer_issue_date": "April 30, 2026",
+   "payment_due_date": "June 14, 2026",
+   "premium_change_amount": {
+    "raw": "$3",
+    "parsed": -3.0
+   }
+  }
+ }
+}

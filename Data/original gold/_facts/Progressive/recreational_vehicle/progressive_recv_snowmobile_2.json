@@ -1,0 +1,469 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "This is your Declarations Page",
+   "parsed": "Declarations"
+  },
+  "document_title_as_stated": "Snowmobile Insurance Coverage Summary",
+  "line_of_business_as_stated": "Snowmobile",
+  "issue_date": "August 27, 2025",
+  "print_code": "Form 6489 NY (07/07)"
+ },
+ "carrier": {
+  "company_name": "Progressive Northwestern Ins Co"
+ },
+ "claim_reporting": {
+  "claims_phone": "1-800-274-4499"
+ },
+ "producer": {
+  "agency_name": "PATRIOTIC INS GROUP",
+  "contact": {
+   "phone": "1-315-357-5901",
+   "website": "progressiveagent.com"
+  },
+  "address": {
+   "line_1": "159 NY-28",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Ambrose Pellier",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "mailing_address": {
+   "line_1": "PO BOX 202",
+   "city": "OLD FORGE",
+   "state": "NY",
+   "postal_code": "13420"
+  },
+  "additional_named_insureds": [
+   {
+    "name": "CAROL A RIOUX"
+   }
+  ]
+ },
+ "policy": {
+  "policy_number": "862181124",
+  "effective_date": "August 26, 2025",
+  "expiration_date": "August 26, 2026",
+  "effective_time": "12:01 a.m.",
+  "expiration_time": "12:01 a.m.",
+  "policy_term_as_printed": "Aug 26, 2025 - Aug 26, 2026",
+  "policy_term_months": {
+   "raw": "12 month",
+   "parsed": 12
+  },
+  "is_renewal": {
+   "raw": "Declarations",
+   "source": "structural",
+   "parsed": "No"
+  },
+  "policy_form_number": "5979 NY",
+  "policy_form_edition": "10/17"
+ },
+ "premium": {
+  "total_policy_premium": "$350",
+  "discounts_and_credits": [
+   {
+    "description": "Paid in Full",
+    "amount": "$8",
+    "applies_to": {
+     "raw": "2011 SKI-DOO MX Z RENEGADE X",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Paid in Full",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Policy",
+    "amount": "$3",
+    "applies_to": {
+     "raw": "2011 SKI-DOO MX Z RENEGADE X",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Multi-Policy",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Home Owner",
+    "amount": "$18",
+    "applies_to": {
+     "raw": "2011 SKI-DOO MX Z RENEGADE X",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Home Owner",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Snowmobile",
+    "amount": "$25",
+    "applies_to": {
+     "raw": "2011 SKI-DOO MX Z RENEGADE X",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Multi-Snowmobile",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Transfer",
+    "amount": "$14",
+    "applies_to": {
+     "raw": "2011 SKI-DOO MX Z RENEGADE X",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Transfer",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Paid in Full",
+    "amount": "$6",
+    "applies_to": {
+     "raw": "2011 SKI-DOO MX Z 600",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Paid in Full",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Policy",
+    "amount": "$2",
+    "applies_to": {
+     "raw": "2011 SKI-DOO MX Z 600",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Multi-Policy",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Home Owner",
+    "amount": "$13",
+    "applies_to": {
+     "raw": "2011 SKI-DOO MX Z 600",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Home Owner",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Snowmobile",
+    "amount": "$16",
+    "applies_to": {
+     "raw": "2011 SKI-DOO MX Z 600",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Multi-Snowmobile",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Transfer",
+    "amount": "$9",
+    "applies_to": {
+     "raw": "2011 SKI-DOO MX Z 600",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Transfer",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Paid in Full",
+    "amount": "$33",
+    "applies_to": {
+     "raw": "2022 SKI-DOO MX Z X-RS MODELS",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Paid in Full",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Policy",
+    "amount": "$14",
+    "applies_to": {
+     "raw": "2022 SKI-DOO MX Z X-RS MODELS",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Multi-Policy",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Home Owner",
+    "amount": "$74",
+    "applies_to": {
+     "raw": "2022 SKI-DOO MX Z X-RS MODELS",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Home Owner",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Snowmobile",
+    "amount": "$96",
+    "applies_to": {
+     "raw": "2022 SKI-DOO MX Z X-RS MODELS",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Multi-Snowmobile",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Transfer",
+    "amount": "$55",
+    "applies_to": {
+     "raw": "2022 SKI-DOO MX Z X-RS MODELS",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Transfer",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   }
+  ],
+  "surcharges": []
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "5979 NY",
+   "edition_date": "10/17",
+   "form_type": {
+    "raw": "Policy contract",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "Z385 NY",
+   "edition_date": "12/07",
+   "form_type": {
+    "raw": "Endorsement",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "6489 NY",
+   "edition_date": "07/07"
+  }
+ ],
+ "recreational_vehicle": {
+  "units": [
+   {
+    "unit_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "2011",
+     "parsed": 2011
+    },
+    "make": "SKI-DOO",
+    "model": "MX Z RENEGADE X",
+    "vin_or_hull_id": "2BPSMMBBOBBV00003",
+    "storage_address": {
+     "postal_code": "13420"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury Liability",
+      "limit_amount": "$250,000 each person/$500,000 each accident",
+      "premium": "$39"
+     },
+     {
+      "coverage_name": "Property Damage Liability",
+      "limit_amount": "$100,000 each accident",
+      "premium": {
+       "raw": "22",
+       "parsed": 22.0
+      }
+     },
+     {
+      "coverage_name": "Mandatory Uninsured Motorist",
+      "limit_amount": "$25,000 each person/$50,000 each accident",
+      "premium": {
+       "raw": "3",
+       "parsed": 3.0
+      }
+     }
+    ],
+    "horsepower_or_cc": "1170 cc's",
+    "premium": "$64"
+   },
+   {
+    "unit_number": {
+     "raw": "2",
+     "source": "structural",
+     "parsed": 2
+    },
+    "year": {
+     "raw": "2011",
+     "parsed": 2011
+    },
+    "make": "SKI-DOO",
+    "model": "MX Z 600",
+    "vin_or_hull_id": "2BPSUSBA2BV000015",
+    "storage_address": {
+     "postal_code": "13420"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury Liability",
+      "limit_amount": "$250,000 each person/$500,000 each accident",
+      "premium": "$25"
+     },
+     {
+      "coverage_name": "Property Damage Liability",
+      "limit_amount": "$100,000 each accident",
+      "premium": {
+       "raw": "14",
+       "parsed": 14.0
+      }
+     },
+     {
+      "coverage_name": "Mandatory Uninsured Motorist",
+      "limit_amount": "$25,000 each person/$50,000 each accident",
+      "premium": {
+       "raw": "2",
+       "parsed": 2.0
+      }
+     }
+    ],
+    "horsepower_or_cc": "570 cc's",
+    "premium": "$41"
+   },
+   {
+    "unit_number": {
+     "raw": "3",
+     "source": "structural",
+     "parsed": 3
+    },
+    "year": {
+     "raw": "2022",
+     "parsed": 2022
+    },
+    "make": "SKI-DOO",
+    "model": "MX Z X-RS MODELS",
+    "vin_or_hull_id": "2BPSDBNR8NV00011",
+    "storage_address": {
+     "postal_code": "13420"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury Liability",
+      "limit_amount": "$250,000 each person/$500,000 each accident",
+      "premium": "$47"
+     },
+     {
+      "coverage_name": "Property Damage Liability",
+      "limit_amount": "$100,000 each accident",
+      "premium": {
+       "raw": "28",
+       "parsed": 28.0
+      }
+     },
+     {
+      "coverage_name": "Mandatory Uninsured Motorist",
+      "limit_amount": "$25,000 each person/$50,000 each accident",
+      "premium": {
+       "raw": "5",
+       "parsed": 5.0
+      }
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "limit_amount": "Actual Cash Value at time of loss",
+      "deductible_amount": "$500",
+      "premium": {
+       "raw": "41",
+       "parsed": 41.0
+      }
+     },
+     {
+      "coverage_name": "Collision",
+      "limit_amount": "Actual Cash Value at time of loss",
+      "deductible_amount": "$500",
+      "premium": {
+       "raw": "124",
+       "parsed": 124.0
+      }
+     },
+     {
+      "coverage_name": "Accessory Coverage",
+      "limit_amount": "$3,000",
+      "is_included": {
+       "raw": "included",
+       "parsed": "Yes"
+      }
+     }
+    ],
+    "horsepower_or_cc": "899 cc's",
+    "premium": "$245"
+   }
+  ],
+  "operators": [
+   {
+    "name": "Ambrose Pellier",
+    "age": {
+     "raw": "65",
+     "parsed": 65
+    },
+    "gender": "Male",
+    "marital_status": "Married",
+    "relationship_to_insured": "Named insured"
+   },
+   {
+    "name": "Carol A Rioux",
+    "age": {
+     "raw": "65",
+     "parsed": 65
+    },
+    "gender": "Female",
+    "marital_status": "Married",
+    "relationship_to_insured": "Named insured"
+   }
+  ]
+ }
+}

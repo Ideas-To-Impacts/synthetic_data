@@ -1,0 +1,648 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "POLICY VIEW",
+   "parsed": "Policy View"
+  },
+  "document_title_as_stated": "POLICY VIEW",
+  "source_system": {
+   "raw": "Allstate agent portal",
+   "source": "structural"
+  }
+ },
+ "carrier": {
+  "company_name": {
+   "raw": "Allstate",
+   "source": "structural"
+  }
+ },
+ "producer": {
+  "agency_name": "HBE GROUP INC",
+  "producer_code": "064653",
+  "producer_contact_name": "SNYURH0A"
+ },
+ "named_insured": {
+  "primary_name": "Clemence Everly & Rosalind Ellery",
+  "mailing_address": {
+   "line_1": "4198 LORENZO FARMS RD",
+   "city": "CAZENOVIA",
+   "state": "NY",
+   "postal_code": "13035 - 9341"
+  },
+  "contact": {
+   "phone": "(315) 555-0223",
+   "email": "clemence.everly@example.com"
+  },
+  "additional_named_insureds": []
+ },
+ "policy": {
+  "policy_number": "943663390",
+  "policy_type": "AUTO - SPECIAL",
+  "program_name": "AUTO SPEC",
+  "rating_state": "NY",
+  "effective_date": "11/24/2024",
+  "expiration_date": "11/24/2025",
+  "policy_term_as_printed": "11/24/2024 - 11/24/2025"
+ },
+ "premium": {
+  "total_policy_premium": "$400.77",
+  "discounts_and_credits": [
+   {
+    "description": "Allstate Easy Pay Plan",
+    "applies_to": {
+     "raw": "2006 SKI-DOO MX Z X 600",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "FullPay",
+    "applies_to": {
+     "raw": "2006 SKI-DOO MX Z X 600",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Good Rider",
+    "applies_to": {
+     "raw": "2006 SKI-DOO MX Z X 600",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Vehicle",
+    "applies_to": {
+     "raw": "2006 SKI-DOO MX Z X 600",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multiple Policy",
+    "applies_to": {
+     "raw": "2006 SKI-DOO MX Z X 600",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Allstate Easy Pay Plan",
+    "applies_to": {
+     "raw": "2018 SKI-DOO MXZ X 600",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "FullPay",
+    "applies_to": {
+     "raw": "2018 SKI-DOO MXZ X 600",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Good Rider",
+    "applies_to": {
+     "raw": "2018 SKI-DOO MXZ X 600",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Vehicle",
+    "applies_to": {
+     "raw": "2018 SKI-DOO MXZ X 600",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multiple Policy",
+    "applies_to": {
+     "raw": "2018 SKI-DOO MXZ X 600",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Allstate Easy Pay Plan",
+    "applies_to": {
+     "raw": "2018 BOMBARDIER RENEGADE",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "FullPay",
+    "applies_to": {
+     "raw": "2018 BOMBARDIER RENEGADE",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Good Rider",
+    "applies_to": {
+     "raw": "2018 BOMBARDIER RENEGADE",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Vehicle",
+    "applies_to": {
+     "raw": "2018 BOMBARDIER RENEGADE",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multiple Policy",
+    "applies_to": {
+     "raw": "2018 BOMBARDIER RENEGADE",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   }
+  ]
+ },
+ "billing": {
+  "payment_plan": "NO PLAN",
+  "payment_method": "EZP",
+  "amount_due": "$0.00",
+  "due_date": "11/24/2024"
+ },
+ "recreational_vehicle": {
+  "units": [
+   {
+    "unit_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "2006",
+     "parsed": 2006
+    },
+    "make": "SKI-DOO",
+    "model": "MX Z X 600",
+    "vin_or_hull_id": "2BPSBL6D46V000135",
+    "storage_address": {
+     "postal_code": "13035"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury",
+      "limit_amount": "100/300",
+      "premium": "$12.74"
+     },
+     {
+      "coverage_name": "Property Damage",
+      "limit_amount": "100",
+      "premium": "$9.04"
+     },
+     {
+      "coverage_name": "Supplementary Uninsured / Underinsured Motorist",
+      "limit_amount": "100/300",
+      "premium": "$5.24"
+     },
+     {
+      "coverage_name": "Collision",
+      "limit_amount": "500",
+      "premium": "$24.36"
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "limit_amount": "500",
+      "premium": "$4.44"
+     },
+     {
+      "coverage_name": "Guest Liability",
+      "limit_amount": "100/300",
+      "premium": "$8.44"
+     },
+     {
+      "coverage_name": "Optional Equipment",
+      "limit_amount": "1000"
+     }
+    ],
+    "annual_miles": {
+     "raw": "1,000",
+     "parsed": 1000
+    },
+    "usage_description": "Pleasure",
+    "driver_assignments": [
+     {
+      "driver_reference": "Clemence Everly",
+      "usage_percentage": "60 Rated"
+     },
+     {
+      "driver_reference": "Rosalind Ellery",
+      "usage_percentage": "40"
+     }
+    ],
+    "premium": "$64.26"
+   },
+   {
+    "unit_number": {
+     "raw": "2",
+     "source": "structural",
+     "parsed": 2
+    },
+    "year": {
+     "raw": "2018",
+     "parsed": 2018
+    },
+    "make": "SKI-DOO",
+    "model": "MXZ X 600",
+    "vin_or_hull_id": "2BPSUVJA4JV000017",
+    "storage_address": {
+     "postal_code": "13035"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury",
+      "limit_amount": "100/300",
+      "premium": "$20.36"
+     },
+     {
+      "coverage_name": "Property Damage",
+      "limit_amount": "100",
+      "premium": "$13.15"
+     },
+     {
+      "coverage_name": "Supplementary Uninsured / Underinsured Motorist",
+      "limit_amount": "100/300",
+      "premium": "$9.88"
+     },
+     {
+      "coverage_name": "Collision",
+      "limit_amount": "500",
+      "premium": "$55.68"
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "limit_amount": "500",
+      "premium": "$6.37"
+     },
+     {
+      "coverage_name": "Guest Liability",
+      "limit_amount": "100/300",
+      "premium": "$14.45"
+     },
+     {
+      "coverage_name": "Optional Equipment",
+      "limit_amount": "1000"
+     }
+    ],
+    "annual_miles": {
+     "raw": "1,000",
+     "parsed": 1000
+    },
+    "usage_description": "Pleasure",
+    "driver_assignments": [
+     {
+      "driver_reference": "Clemence Everly",
+      "usage_percentage": "40"
+     },
+     {
+      "driver_reference": "Rosalind Ellery",
+      "usage_percentage": "60 Rated"
+     }
+    ],
+    "premium": "$119.89"
+   },
+   {
+    "unit_number": {
+     "raw": "3",
+     "source": "structural",
+     "parsed": 3
+    },
+    "year": {
+     "raw": "2018",
+     "parsed": 2018
+    },
+    "make": "BOMBARDIER",
+    "model": "RENEGADE",
+    "vin_or_hull_id": "2BPSUWJA7JV000003",
+    "storage_address": {
+     "postal_code": "13035"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury",
+      "limit_amount": "100/300",
+      "premium": "$36.97"
+     },
+     {
+      "coverage_name": "Property Damage",
+      "limit_amount": "100",
+      "premium": "$23.87"
+     },
+     {
+      "coverage_name": "Supplementary Uninsured / Underinsured Motorist",
+      "limit_amount": "100/300",
+      "premium": "$16.68"
+     },
+     {
+      "coverage_name": "Collision",
+      "limit_amount": "500",
+      "premium": "$101.24"
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "limit_amount": "500",
+      "premium": "$11.58"
+     },
+     {
+      "coverage_name": "Guest Liability",
+      "limit_amount": "100/300",
+      "premium": "$26.28"
+     },
+     {
+      "coverage_name": "Optional Equipment",
+      "limit_amount": "1000"
+     }
+    ],
+    "annual_miles": {
+     "raw": "1,000",
+     "parsed": 1000
+    },
+    "usage_description": "Pleasure",
+    "driver_assignments": [
+     {
+      "driver_reference": "Clemence Everly",
+      "usage_percentage": "55 Primary"
+     },
+     {
+      "driver_reference": "Rosalind Ellery",
+      "usage_percentage": "45"
+     }
+    ],
+    "premium": "$216.62"
+   }
+  ],
+  "operators": [
+   {
+    "name": "Clemence Everly",
+    "driver_status": "DRIVER",
+    "relationship_to_insured": "SAME",
+    "marital_status": "MARRIED AND LIVES WITH SPOUSE",
+    "gender": "MALE",
+    "date_of_birth": {
+     "raw": "12/XX/1957",
+     "parsed": null
+    }
+   },
+   {
+    "name": "Rosalind Ellery",
+    "driver_status": "DRIVER",
+    "relationship_to_insured": "SPOUSE",
+    "marital_status": "MARRIED AND LIVES WITH SPOUSE",
+    "gender": "FEMALE",
+    "date_of_birth": {
+     "raw": "02/XX/1961",
+     "parsed": null
+    }
+   }
+  ]
+ },
+ "document_type_detail": {
+  "policy_history": {
+   "transactions": [
+    {
+     "transaction_type": {
+      "raw": "Renewal",
+      "source": "structural"
+     },
+     "transaction_effective_date": "11/24/2023",
+     "written_premium": "$302.41"
+    },
+    {
+     "transaction_type": {
+      "raw": "Renewal",
+      "source": "structural"
+     },
+     "transaction_effective_date": "11/24/2024",
+     "written_premium": "$445.30"
+    }
+   ]
+  }
+ },
+ "additional_fields": [
+  {
+   "section": "Policy View",
+   "label": "STATUS",
+   "value": "ACTIVE"
+  },
+  {
+   "section": "Policy View",
+   "label": "Original Year",
+   "value": {
+    "raw": "2015",
+    "parsed": 2015
+   }
+  },
+  {
+   "section": "Policy View",
+   "label": "Number Of Times Renewed",
+   "value": {
+    "raw": "9",
+    "parsed": 9
+   }
+  },
+  {
+   "section": "Policy View",
+   "label": "Premium Change",
+   "value": "$142.89 (+47.25%)"
+  },
+  {
+   "section": "Policy View",
+   "label": "AAP",
+   "value": "$400.77"
+  },
+  {
+   "section": "Policy View",
+   "label": "Discounted AAP",
+   "value": "$400.77"
+  },
+  {
+   "section": "Policy View",
+   "label": "Balance",
+   "value": "$0.00"
+  },
+  {
+   "section": "Policy View",
+   "label": "Last Bill Amount",
+   "value": "$400.77"
+  },
+  {
+   "section": "Policy View",
+   "label": "Allstate eBill",
+   "value": "NOT ENROLLED"
+  },
+  {
+   "section": "Policy View",
+   "label": "Allstate ePolicy",
+   "value": "NOT ENROLLED"
+  },
+  {
+   "section": "Policy View",
+   "label": "Agent Of Record",
+   "value": "JOHN DERMODY (41 64605)"
+  },
+  {
+   "section": "Contact Information",
+   "label": "Current Address",
+   "value": "SAME AS MAILING ADDRESS"
+  },
+  {
+   "section": "Contact Information",
+   "label": "Primary Residence",
+   "value": "HOME"
+  },
+  {
+   "section": "Contact Information",
+   "label": "Ownership Type",
+   "value": "OWNS"
+  },
+  {
+   "section": "Contact Information",
+   "label": "Date Moved To Current Address",
+   "value": "11/2010"
+  },
+  {
+   "section": "Contact Information",
+   "label": "Front End Matched",
+   "value": "YES"
+  },
+  {
+   "section": "Contact Information",
+   "label": "Requested Agent",
+   "value": "HBE GROUP INC (02 64653)"
+  },
+  {
+   "section": "Coverage",
+   "label": "Tier/Group",
+   "value": "4866 01"
+  },
+  {
+   "section": "Coverage",
+   "label": "SR Tier",
+   "value": "0001"
+  },
+  {
+   "section": "Coverage",
+   "label": "Billing Group",
+   "value": "00"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Application Date",
+   "value": "11/23/2015"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Application Time",
+   "value": "16:54"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Bind Date",
+   "value": "11/24/2015"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Bind Time",
+   "value": "00:01"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Bind ID",
+   "value": "SNY28818"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Policy Rate Control",
+   "value": "982"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Version Number",
+   "value": "24"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Buyout Indicator",
+   "value": "YES"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Channel Of Origin",
+   "value": "ALLIANCE AGENCY"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Source Of Quote",
+   "value": "ALLIANCE EASY QUOTE"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Application Of Origin",
+   "value": "ALLIANCE UI"
+  },
+  {
+   "section": "Surcharges Applied",
+   "label": "Surcharges Applied",
+   "value": "None"
+  }
+ ]
+}

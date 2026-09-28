@@ -1,0 +1,344 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "This is your Declarations Page",
+   "parsed": "Declarations"
+  },
+  "document_title_as_stated": "Snowmobile Insurance Coverage Summary",
+  "line_of_business_as_stated": "Snowmobile",
+  "issue_date": "December 9, 2025",
+  "print_code": "Form 6489 NY (07/07)"
+ },
+ "carrier": {
+  "company_name": "Progressive Northwestern Ins Co"
+ },
+ "claim_reporting": {
+  "claims_phone": "1-800-274-4499"
+ },
+ "producer": {
+  "agency_name": "PATRIOTIC INS GROUP",
+  "contact": {
+   "phone": "1-315-357-5901",
+   "website": "progressiveagent.com"
+  },
+  "address": {
+   "line_1": "159 NY-28",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Bertram Quilley",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "mailing_address": {
+   "line_1": "3014 STATE ROUTE 52",
+   "city": "PINE BUSH",
+   "state": "NY",
+   "postal_code": "12566"
+  },
+  "additional_named_insureds": [
+   {
+    "name": "Ida Brandt"
+   }
+  ]
+ },
+ "policy": {
+  "policy_number": "866692912",
+  "effective_date": "December 8, 2025",
+  "expiration_date": "December 8, 2026",
+  "effective_time": "12:01 a.m.",
+  "expiration_time": "12:01 a.m.",
+  "policy_term_as_printed": "Dec 8, 2025 - Dec 8, 2026",
+  "policy_term_months": {
+   "raw": "12 month",
+   "parsed": 12
+  },
+  "is_renewal": {
+   "raw": "Declarations",
+   "source": "structural",
+   "parsed": "No"
+  },
+  "policy_form_number": "5979 NY",
+  "policy_form_edition": "10/17"
+ },
+ "premium": {
+  "total_policy_premium": "$436",
+  "discounts_and_credits": [
+   {
+    "description": "Paid in Full",
+    "amount": "$36",
+    "applies_to": {
+     "raw": "2019 ARCTIC CAT ZR8000 SERIES",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Paid in Full",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Policy",
+    "amount": "$13",
+    "applies_to": {
+     "raw": "2019 ARCTIC CAT ZR8000 SERIES",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Multi-Policy",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Home Owner",
+    "amount": "$78",
+    "applies_to": {
+     "raw": "2019 ARCTIC CAT ZR8000 SERIES",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Home Owner",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Snowmobile",
+    "amount": "$50",
+    "applies_to": {
+     "raw": "2019 ARCTIC CAT ZR8000 SERIES",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Multi-Snowmobile",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Paid in Full",
+    "amount": "$23",
+    "applies_to": {
+     "raw": "2019 ARCTIC CAT ZR6000 SERIES",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Paid in Full",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Policy",
+    "amount": "$8",
+    "applies_to": {
+     "raw": "2019 ARCTIC CAT ZR6000 SERIES",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Multi-Policy",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Home Owner",
+    "amount": "$51",
+    "applies_to": {
+     "raw": "2019 ARCTIC CAT ZR6000 SERIES",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Home Owner",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Snowmobile",
+    "amount": "$33",
+    "applies_to": {
+     "raw": "2019 ARCTIC CAT ZR6000 SERIES",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Multi-Snowmobile",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   }
+  ],
+  "surcharges": []
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "5979 NY",
+   "edition_date": "10/17",
+   "form_type": {
+    "raw": "Policy contract",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "Z385 NY",
+   "edition_date": "12/07",
+   "form_type": {
+    "raw": "Endorsement",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "6489 NY",
+   "edition_date": "07/07"
+  }
+ ],
+ "recreational_vehicle": {
+  "units": [
+   {
+    "unit_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "2019",
+     "parsed": 2019
+    },
+    "make": "ARCTIC CAT",
+    "model": "ZR8000 SERIES",
+    "vin_or_hull_id": "4UF19SNW8KT101803",
+    "storage_address": {
+     "postal_code": "12566"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury & Property Damage Liability",
+      "limit_amount": "$500,000 combined single limit each accident",
+      "premium": "$173"
+     },
+     {
+      "coverage_name": "Mandatory Uninsured Motorist",
+      "limit_amount": "$25,000 each person/$50,000 each accident",
+      "premium": {
+       "raw": "8",
+       "parsed": 8.0
+      }
+     },
+     {
+      "coverage_name": "Medical Payments",
+      "limit_amount": "$1,000 each person",
+      "premium": {
+       "raw": "21",
+       "parsed": 21.0
+      }
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "limit_amount": "Actual Cash Value at time of loss",
+      "deductible_amount": "$500",
+      "premium": {
+       "raw": "63",
+       "parsed": 63.0
+      }
+     },
+     {
+      "coverage_name": "Accessory Coverage",
+      "limit_amount": "$3,000",
+      "is_included": {
+       "raw": "included",
+       "parsed": "Yes"
+      }
+     }
+    ],
+    "horsepower_or_cc": "800 cc's",
+    "premium": "$265"
+   },
+   {
+    "unit_number": {
+     "raw": "2",
+     "source": "structural",
+     "parsed": 2
+    },
+    "year": {
+     "raw": "2019",
+     "parsed": 2019
+    },
+    "make": "ARCTIC CAT",
+    "model": "ZR6000 SERIES",
+    "vin_or_hull_id": "4UF19SNW5KT114847",
+    "storage_address": {
+     "postal_code": "12566"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury & Property Damage Liability",
+      "limit_amount": "$500,000 combined single limit each accident",
+      "premium": "$111"
+     },
+     {
+      "coverage_name": "Mandatory Uninsured Motorist",
+      "limit_amount": "$25,000 each person/$50,000 each accident",
+      "premium": {
+       "raw": "5",
+       "parsed": 5.0
+      }
+     },
+     {
+      "coverage_name": "Medical Payments",
+      "limit_amount": "$1,000 each person",
+      "premium": {
+       "raw": "14",
+       "parsed": 14.0
+      }
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "limit_amount": "Actual Cash Value at time of loss",
+      "deductible_amount": "$500",
+      "premium": {
+       "raw": "41",
+       "parsed": 41.0
+      }
+     },
+     {
+      "coverage_name": "Accessory Coverage",
+      "limit_amount": "$3,000",
+      "is_included": {
+       "raw": "included",
+       "parsed": "Yes"
+      }
+     }
+    ],
+    "horsepower_or_cc": "600 cc's",
+    "premium": "$171"
+   }
+  ],
+  "operators": [
+   {
+    "name": "Bertram Quilley",
+    "age": {
+     "raw": "70",
+     "parsed": 70
+    },
+    "gender": "Male",
+    "marital_status": "Married",
+    "relationship_to_insured": "Named insured"
+   },
+   {
+    "name": "Ida Brandt",
+    "age": {
+     "raw": "70",
+     "parsed": 70
+    },
+    "gender": "Female",
+    "marital_status": "Married",
+    "relationship_to_insured": "Named insured"
+   }
+  ]
+ }
+}

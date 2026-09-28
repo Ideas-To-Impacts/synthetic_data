@@ -1,0 +1,499 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "POLICY VIEW",
+   "parsed": "Policy View"
+  },
+  "document_title_as_stated": "POLICY VIEW",
+  "source_system": {
+   "raw": "Allstate agent portal",
+   "source": "structural"
+  }
+ },
+ "carrier": {
+  "company_name": {
+   "raw": "Allstate",
+   "source": "structural"
+  }
+ },
+ "producer": {
+  "agency_name": "HBE GROUP INC",
+  "producer_code": "064653",
+  "producer_contact_name": "SNYURH0A"
+ },
+ "named_insured": {
+  "primary_name": "Dorian Rowntree",
+  "mailing_address": {
+   "line_1": "123 GREAT POND ROAD",
+   "city": "SIMSBURY",
+   "state": "CT",
+   "postal_code": "06070 - 1525"
+  },
+  "contact": {
+   "phone": "(860) 555-0225"
+  },
+  "additional_named_insureds": []
+ },
+ "policy": {
+  "policy_number": "933712824",
+  "policy_type": "AUTO - SPECIAL",
+  "program_name": "AUTO SPEC",
+  "rating_state": "NY",
+  "effective_date": "01/14/2025",
+  "expiration_date": "01/14/2026",
+  "policy_term_as_printed": "01/14/2025 - 01/14/2026"
+ },
+ "premium": {
+  "total_policy_premium": "$391.77",
+  "discounts_and_credits": [
+   {
+    "description": "FullPay",
+    "applies_to": {
+     "raw": "2006 SKI-DOO GTX 800",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Good Rider",
+    "applies_to": {
+     "raw": "2006 SKI-DOO GTX 800",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Home Ownership",
+    "applies_to": {
+     "raw": "2006 SKI-DOO GTX 800",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Vehicle",
+    "applies_to": {
+     "raw": "2006 SKI-DOO GTX 800",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "FullPay",
+    "applies_to": {
+     "raw": "2011 SKI-DOO GRAND TOURIN",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Good Rider",
+    "applies_to": {
+     "raw": "2011 SKI-DOO GRAND TOURIN",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Home Ownership",
+    "applies_to": {
+     "raw": "2011 SKI-DOO GRAND TOURIN",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Vehicle",
+    "applies_to": {
+     "raw": "2011 SKI-DOO GRAND TOURIN",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   }
+  ]
+ },
+ "billing": {
+  "payment_plan": "MONTHLY",
+  "payment_method": "DIRECT MAIL",
+  "amount_due": "$0.00",
+  "due_date": "01/14/2025"
+ },
+ "recreational_vehicle": {
+  "units": [
+   {
+    "unit_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "2006",
+     "parsed": 2006
+    },
+    "make": "SKI-DOO",
+    "model": "GTX 800",
+    "vin_or_hull_id": "2BPSEH6B66V000060",
+    "storage_address": {
+     "postal_code": "12108"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury",
+      "limit_amount": "250/500",
+      "premium": "$59.01"
+     },
+     {
+      "coverage_name": "Property Damage",
+      "limit_amount": "100",
+      "premium": "$32.37"
+     },
+     {
+      "coverage_name": "Supplementary Uninsured / Underinsured Motorist",
+      "limit_amount": "250/500",
+      "premium": "$26.97"
+     },
+     {
+      "coverage_name": "Medical Payments",
+      "limit_amount": "1000",
+      "premium": "$23.92"
+     },
+     {
+      "coverage_name": "Collision",
+      "limit_amount": "500",
+      "premium": "$84.38"
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "limit_amount": "500",
+      "premium": "$17.87"
+     },
+     {
+      "coverage_name": "Guest Liability",
+      "limit_amount": "250/500",
+      "premium": "$38.44"
+     },
+     {
+      "coverage_name": "Optional Equipment",
+      "limit_amount": "1000"
+     }
+    ],
+    "annual_miles": {
+     "raw": "1,000",
+     "parsed": 1000
+    },
+    "usage_description": "Pleasure",
+    "driver_assignments": [
+     {
+      "driver_reference": "Dorian Rowntree",
+      "usage_percentage": "100 Rated"
+     }
+    ],
+    "premium": "$282.96",
+    "territory_code": "0005",
+    "unit_type": "Off Road Vehicle",
+    "rating_symbol": "S/S",
+    "rated_driver": "EDWARD Dorian Rowntree",
+    "class_code": "5620100300",
+    "merit_points": {
+     "raw": "0",
+     "parsed": 0
+    }
+   },
+   {
+    "unit_number": {
+     "raw": "2",
+     "source": "structural",
+     "parsed": 2
+    },
+    "year": {
+     "raw": "2011",
+     "parsed": 2011
+    },
+    "make": "SKI-DOO",
+    "model": "GRAND TOURIN",
+    "vin_or_hull_id": "2BPSESBA2BV000349",
+    "storage_address": {
+     "postal_code": "12108"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury",
+      "limit_amount": "250/500",
+      "premium": "$22.21"
+     },
+     {
+      "coverage_name": "Property Damage",
+      "limit_amount": "100",
+      "premium": "$13.38"
+     },
+     {
+      "coverage_name": "Supplementary Uninsured / Underinsured Motorist",
+      "limit_amount": "250/500",
+      "premium": "$10.49"
+     },
+     {
+      "coverage_name": "Medical Payments",
+      "limit_amount": "1000",
+      "premium": "$9.04"
+     },
+     {
+      "coverage_name": "Collision",
+      "limit_amount": "500",
+      "premium": "$31.78"
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "limit_amount": "500",
+      "premium": "$7.43"
+     },
+     {
+      "coverage_name": "Guest Liability",
+      "limit_amount": "250/500",
+      "premium": "$14.48"
+     },
+     {
+      "coverage_name": "Optional Equipment",
+      "limit_amount": "1000"
+     }
+    ],
+    "annual_miles": {
+     "raw": "1,000",
+     "parsed": 1000
+    },
+    "usage_description": "Pleasure",
+    "driver_assignments": [
+     {
+      "driver_reference": "Dorian Rowntree",
+      "usage_percentage": "99"
+     }
+    ],
+    "premium": "$108.81",
+    "territory_code": "0005",
+    "unit_type": "Off Road Vehicle",
+    "rating_symbol": "S",
+    "class_code": "5620100300",
+    "merit_points": {
+     "raw": "0",
+     "parsed": 0
+    }
+   }
+  ],
+  "operators": [
+   {
+    "name": "Dorian Rowntree",
+    "driver_status": "DRIVER",
+    "relationship_to_insured": "SAME",
+    "marital_status": "MARRIED AND LIVES WITH SPOUSE",
+    "gender": "MALE",
+    "date_of_birth": {
+     "raw": "06/XX/1968",
+     "parsed": null
+    }
+   }
+  ]
+ },
+ "document_type_detail": {
+  "policy_history": {
+   "transactions": [
+    {
+     "transaction_type": {
+      "raw": "Renewal",
+      "source": "structural"
+     },
+     "transaction_effective_date": "01/14/2024",
+     "written_premium": "$390.56"
+    },
+    {
+     "transaction_type": {
+      "raw": "Renewal",
+      "source": "structural"
+     },
+     "transaction_effective_date": "01/14/2025",
+     "written_premium": "$435.30"
+    }
+   ]
+  }
+ },
+ "additional_fields": [
+  {
+   "section": "Policy View",
+   "label": "STATUS",
+   "value": "ACTIVE"
+  },
+  {
+   "section": "Policy View",
+   "label": "Original Year",
+   "value": {
+    "raw": "2012",
+    "parsed": 2012
+   }
+  },
+  {
+   "section": "Policy View",
+   "label": "Number Of Times Renewed",
+   "value": {
+    "raw": "13",
+    "parsed": 13
+   }
+  },
+  {
+   "section": "Policy View",
+   "label": "Premium Change",
+   "value": "$44.74 (+11.46%)"
+  },
+  {
+   "section": "Policy View",
+   "label": "AAP",
+   "value": "$391.77"
+  },
+  {
+   "section": "Policy View",
+   "label": "Discounted AAP",
+   "value": "$391.77"
+  },
+  {
+   "section": "Policy View",
+   "label": "Balance",
+   "value": "$0.00"
+  },
+  {
+   "section": "Policy View",
+   "label": "Last Bill Amount",
+   "value": "$41.22"
+  },
+  {
+   "section": "Policy View",
+   "label": "Allstate eBill",
+   "value": "ENROLLED"
+  },
+  {
+   "section": "Policy View",
+   "label": "Allstate ePolicy",
+   "value": "NOT ENROLLED"
+  },
+  {
+   "section": "Policy View",
+   "label": "Agent Of Record",
+   "value": "HBE GROUP INC (02 64653)"
+  },
+  {
+   "section": "Contact Information",
+   "label": "Current Address",
+   "value": "2604 ROUTE 8, LAKE PLEASANT, NY 12108"
+  },
+  {
+   "section": "Contact Information",
+   "label": "Primary Residence",
+   "value": "HOME"
+  },
+  {
+   "section": "Contact Information",
+   "label": "Ownership Type",
+   "value": "OWNS"
+  },
+  {
+   "section": "Contact Information",
+   "label": "Date Moved To Current Address",
+   "value": "01/2009"
+  },
+  {
+   "section": "Contact Information",
+   "label": "Front End Matched",
+   "value": "YES"
+  },
+  {
+   "section": "Coverage",
+   "label": "Tier/Group",
+   "value": "4866 02"
+  },
+  {
+   "section": "Coverage",
+   "label": "SR Tier",
+   "value": "0004"
+  },
+  {
+   "section": "Coverage",
+   "label": "Billing Group",
+   "value": "00"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Application Date",
+   "value": "01/17/2012"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Application Time",
+   "value": "15:59"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Bind Date",
+   "value": "01/14/2012"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Bind Time",
+   "value": "00:01"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Bind ID",
+   "value": "A264653"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Policy Rate Control",
+   "value": "979"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Version Number",
+   "value": "26"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Buyout Indicator",
+   "value": "NO"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Channel Of Origin",
+   "value": "ALLIANCE AGENCY"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Source Of Quote",
+   "value": "ALLIANCE NEW BUSINESS"
+  },
+  {
+   "section": "Surcharges Applied",
+   "label": "Surcharges Applied",
+   "value": "None"
+  }
+ ]
+}

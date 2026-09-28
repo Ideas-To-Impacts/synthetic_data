@@ -1,0 +1,489 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "POLICY VIEW",
+   "parsed": "Policy View"
+  },
+  "document_title_as_stated": "POLICY VIEW",
+  "source_system": {
+   "raw": "Allstate agent portal",
+   "source": "structural"
+  }
+ },
+ "carrier": {
+  "company_name": {
+   "raw": "Allstate",
+   "source": "structural"
+  }
+ },
+ "producer": {
+  "agency_name": "HBE GROUP INC",
+  "producer_code": "064653",
+  "producer_contact_name": "SNYURH0A"
+ },
+ "named_insured": {
+  "primary_name": "Ambrose Pellier & Orson Vasey",
+  "mailing_address": {
+   "line_1": "PO BX 202",
+   "line_2": "3818 STATE ROUTE 28",
+   "city": "OLD FORGE",
+   "state": "NY",
+   "postal_code": "13420 - 7846"
+  },
+  "contact": {
+   "phone": "(315) 555-0216"
+  },
+  "additional_named_insureds": []
+ },
+ "policy": {
+  "policy_number": "978311512",
+  "policy_type": "AUTO - SPECIAL",
+  "program_name": "AUTO SPEC",
+  "rating_state": "NY",
+  "effective_date": "12/08/2024",
+  "expiration_date": "12/08/2025",
+  "policy_term_as_printed": "12/08/2024 - 12/08/2025"
+ },
+ "premium": {
+  "total_policy_premium": "$334.20",
+  "discounts_and_credits": [
+   {
+    "description": "FullPay",
+    "applies_to": {
+     "raw": "2011 SKI-DOO RENEGADE X",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Good Rider",
+    "applies_to": {
+     "raw": "2011 SKI-DOO RENEGADE X",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Home Ownership",
+    "applies_to": {
+     "raw": "2011 SKI-DOO RENEGADE X",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Vehicle",
+    "applies_to": {
+     "raw": "2011 SKI-DOO RENEGADE X",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "FullPay",
+    "applies_to": {
+     "raw": "2011 SKI-DOO MXZ",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Good Rider",
+    "applies_to": {
+     "raw": "2011 SKI-DOO MXZ",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Home Ownership",
+    "applies_to": {
+     "raw": "2011 SKI-DOO MXZ",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Vehicle",
+    "applies_to": {
+     "raw": "2011 SKI-DOO MXZ",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   }
+  ]
+ },
+ "billing": {
+  "payment_plan": "MONTHLY",
+  "payment_method": "DIRECT MAIL",
+  "amount_due": "$0.00",
+  "due_date": "12/08/2024"
+ },
+ "recreational_vehicle": {
+  "units": [
+   {
+    "unit_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "2011",
+     "parsed": 2011
+    },
+    "make": "SKI-DOO",
+    "model": "RENEGADE X",
+    "vin_or_hull_id": "2BPSMMBB0BBV00003",
+    "storage_address": {
+     "postal_code": "13420"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury",
+      "limit_amount": "100/300",
+      "premium": "$43.63"
+     },
+     {
+      "coverage_name": "Property Damage",
+      "limit_amount": "100",
+      "premium": "$28.15"
+     },
+     {
+      "coverage_name": "Supplementary Uninsured / Underinsured Motorist",
+      "limit_amount": "100/300",
+      "premium": "$17.35"
+     },
+     {
+      "coverage_name": "Collision",
+      "limit_amount": "500",
+      "premium": "$83.36"
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "limit_amount": "500",
+      "premium": "$13.74"
+     },
+     {
+      "coverage_name": "Guest Liability",
+      "limit_amount": "100/300",
+      "premium": "$28.85"
+     },
+     {
+      "coverage_name": "Optional Equipment",
+      "limit_amount": "1000"
+     }
+    ],
+    "annual_miles": {
+     "raw": "1,000",
+     "parsed": 1000
+    },
+    "usage_description": "Pleasure",
+    "driver_assignments": [
+     {
+      "driver_reference": "Ambrose Pellier",
+      "usage_percentage": "100 Rated"
+     }
+    ],
+    "premium": "$215.08"
+   },
+   {
+    "unit_number": {
+     "raw": "2",
+     "source": "structural",
+     "parsed": 2
+    },
+    "year": {
+     "raw": "2011",
+     "parsed": 2011
+    },
+    "make": "SKI-DOO",
+    "model": "MXZ",
+    "vin_or_hull_id": "2BPSUSBA2BV000015",
+    "storage_address": {
+     "postal_code": "13420"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury",
+      "limit_amount": "100/300",
+      "premium": "$24.02"
+     },
+     {
+      "coverage_name": "Property Damage",
+      "limit_amount": "100",
+      "premium": "$15.52"
+     },
+     {
+      "coverage_name": "Supplementary Uninsured / Underinsured Motorist",
+      "limit_amount": "100/300",
+      "premium": "$10.28"
+     },
+     {
+      "coverage_name": "Collision",
+      "limit_amount": "500",
+      "premium": "$45.85"
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "limit_amount": "500",
+      "premium": "$7.57"
+     },
+     {
+      "coverage_name": "Guest Liability",
+      "limit_amount": "100/300",
+      "premium": "$15.88"
+     },
+     {
+      "coverage_name": "Optional Equipment",
+      "limit_amount": "1000"
+     }
+    ],
+    "annual_miles": {
+     "raw": "1,000",
+     "parsed": 1000
+    },
+    "usage_description": "Pleasure",
+    "driver_assignments": [
+     {
+      "driver_reference": "Orson Vasey",
+      "usage_percentage": "100 Rated"
+     }
+    ],
+    "premium": "$119.12"
+   }
+  ],
+  "operators": [
+   {
+    "name": "Ambrose Pellier",
+    "driver_status": "DRIVER",
+    "relationship_to_insured": "SAME",
+    "marital_status": "MARRIED AND LIVES WITH SPOUSE",
+    "gender": "MALE",
+    "date_of_birth": {
+     "raw": "02/XX/1960",
+     "parsed": null
+    }
+   },
+   {
+    "name": "Orson Vasey",
+    "driver_status": "DRIVER",
+    "relationship_to_insured": "SPOUSE",
+    "marital_status": "MARRIED AND LIVES WITH SPOUSE",
+    "gender": "FEMALE",
+    "date_of_birth": {
+     "raw": "04/XX/1960",
+     "parsed": null
+    }
+   }
+  ]
+ },
+ "document_type_detail": {
+  "policy_history": {
+   "transactions": [
+    {
+     "transaction_type": {
+      "raw": "Renewal",
+      "source": "structural"
+     },
+     "transaction_effective_date": "12/08/2023",
+     "written_premium": "$334.20"
+    },
+    {
+     "transaction_type": {
+      "raw": "Renewal",
+      "source": "structural"
+     },
+     "transaction_effective_date": "12/08/2024",
+     "written_premium": "$371.33"
+    }
+   ]
+  }
+ },
+ "additional_fields": [
+  {
+   "section": "Policy View",
+   "label": "STATUS",
+   "value": "ACTIVE"
+  },
+  {
+   "section": "Policy View",
+   "label": "Original Year",
+   "value": {
+    "raw": "2018",
+    "parsed": 2018
+   }
+  },
+  {
+   "section": "Policy View",
+   "label": "Number Of Times Renewed",
+   "value": {
+    "raw": "6",
+    "parsed": 6
+   }
+  },
+  {
+   "section": "Policy View",
+   "label": "Premium Change",
+   "value": "$37.13 (+11.11%)"
+  },
+  {
+   "section": "Policy View",
+   "label": "AAP",
+   "value": "$334.20"
+  },
+  {
+   "section": "Policy View",
+   "label": "Discounted AAP",
+   "value": "$334.20"
+  },
+  {
+   "section": "Policy View",
+   "label": "Balance",
+   "value": "$0.00"
+  },
+  {
+   "section": "Policy View",
+   "label": "Last Bill Amount",
+   "value": "$34.99"
+  },
+  {
+   "section": "Policy View",
+   "label": "Allstate eBill",
+   "value": "NOT ENROLLED"
+  },
+  {
+   "section": "Policy View",
+   "label": "Allstate ePolicy",
+   "value": "NOT ENROLLED"
+  },
+  {
+   "section": "Policy View",
+   "label": "Agent Of Record",
+   "value": "HBE GROUP INC (02 64653)"
+  },
+  {
+   "section": "Contact Information",
+   "label": "Current Address",
+   "value": "SAME AS MAILING ADDRESS"
+  },
+  {
+   "section": "Contact Information",
+   "label": "Primary Residence",
+   "value": "HOME"
+  },
+  {
+   "section": "Contact Information",
+   "label": "Ownership Type",
+   "value": "OWNS"
+  },
+  {
+   "section": "Contact Information",
+   "label": "Date Moved To Current Address",
+   "value": "11/2013"
+  },
+  {
+   "section": "Contact Information",
+   "label": "Front End Matched",
+   "value": "YES"
+  },
+  {
+   "section": "Coverage",
+   "label": "Tier/Group",
+   "value": "4866 01"
+  },
+  {
+   "section": "Coverage",
+   "label": "SR Tier",
+   "value": "0001"
+  },
+  {
+   "section": "Coverage",
+   "label": "Billing Group",
+   "value": "00"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Application Date",
+   "value": "11/28/2018"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Application Time",
+   "value": "11:26"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Bind Date",
+   "value": "12/08/2018"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Bind Time",
+   "value": "00:01"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Bind ID",
+   "value": "SNYURH0B"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Policy Rate Control",
+   "value": "982"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Version Number",
+   "value": "13"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Buyout Indicator",
+   "value": "NO"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Channel Of Origin",
+   "value": "ALLIANCE AGENCY"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Source Of Quote",
+   "value": "ALLIANCE EASY QUOTE"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Application Of Origin",
+   "value": "ALLIANCE UI"
+  },
+  {
+   "section": "Surcharges Applied",
+   "label": "Surcharges Applied",
+   "value": "None"
+  }
+ ]
+}

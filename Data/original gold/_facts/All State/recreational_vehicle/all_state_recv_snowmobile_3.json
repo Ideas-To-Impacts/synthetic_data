@@ -1,0 +1,820 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "POLICY VIEW",
+   "parsed": "Policy View"
+  },
+  "document_title_as_stated": "POLICY VIEW",
+  "source_system": {
+   "raw": "Allstate agent portal",
+   "source": "structural"
+  }
+ },
+ "carrier": {
+  "company_name": {
+   "raw": "Allstate",
+   "source": "structural"
+  }
+ },
+ "producer": {
+  "agency_name": "HBE GROUP INC",
+  "producer_code": "A264653",
+  "producer_contact_name": "SNYURH0A"
+ },
+ "named_insured": {
+  "primary_name": "Delphine Fairbank",
+  "mailing_address": {
+   "line_1": "PO BOX 2",
+   "city": "OLD FORGE",
+   "state": "NY",
+   "postal_code": "13420 - 0002"
+  },
+  "contact": {
+   "phone": "(315) 555-0218"
+  },
+  "additional_named_insureds": [
+   {
+    "name": "Tobias Wexford"
+   }
+  ]
+ },
+ "policy": {
+  "policy_number": "983071322",
+  "policy_type": "AUTO - SPECIAL",
+  "program_name": "AUTO SPEC",
+  "rating_state": "NY",
+  "effective_date": "12/12/2024",
+  "expiration_date": "12/12/2025",
+  "policy_term_as_printed": "12/12/2024 - 12/12/2025"
+ },
+ "premium": {
+  "total_policy_premium": "$982.11",
+  "discounts_and_credits": [
+   {
+    "description": "FullPay",
+    "applies_to": {
+     "raw": "2003 POLARIS SUPER SPORT",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Good Rider",
+    "applies_to": {
+     "raw": "2003 POLARIS SUPER SPORT",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Home Ownership",
+    "applies_to": {
+     "raw": "2003 POLARIS SUPER SPORT",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Vehicle",
+    "applies_to": {
+     "raw": "2003 POLARIS SUPER SPORT",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "FullPay",
+    "applies_to": {
+     "raw": "2003 POLARIS 500 CLASSIC",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Good Rider",
+    "applies_to": {
+     "raw": "2003 POLARIS 500 CLASSIC",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Home Ownership",
+    "applies_to": {
+     "raw": "2003 POLARIS 500 CLASSIC",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Vehicle",
+    "applies_to": {
+     "raw": "2003 POLARIS 500 CLASSIC",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "FullPay",
+    "applies_to": {
+     "raw": "2013 POLARIS 600 RUSH",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Good Rider",
+    "applies_to": {
+     "raw": "2013 POLARIS 600 RUSH",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Home Ownership",
+    "applies_to": {
+     "raw": "2013 POLARIS 600 RUSH",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Vehicle",
+    "applies_to": {
+     "raw": "2013 POLARIS 600 RUSH",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "FullPay",
+    "applies_to": {
+     "raw": "2016 POLARIS RUSH 800",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Good Rider",
+    "applies_to": {
+     "raw": "2016 POLARIS RUSH 800",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Home Ownership",
+    "applies_to": {
+     "raw": "2016 POLARIS RUSH 800",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Vehicle",
+    "applies_to": {
+     "raw": "2016 POLARIS RUSH 800",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Applied",
+     "parsed": "Yes"
+    }
+   }
+  ]
+ },
+ "billing": {
+  "payment_plan": "MONTHLY",
+  "payment_method": "DIRECT MAIL",
+  "amount_due": "$0.00",
+  "due_date": "12/12/2024"
+ },
+ "recreational_vehicle": {
+  "units": [
+   {
+    "unit_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "2003",
+     "parsed": 2003
+    },
+    "make": "POLARIS",
+    "model": "SUPER SPORT",
+    "vin_or_hull_id": "SN1NP5AS33C308116",
+    "storage_address": {
+     "postal_code": "13420"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury",
+      "limit_amount": "250/500",
+      "premium": "$17.47"
+     },
+     {
+      "coverage_name": "Property Damage",
+      "limit_amount": "100",
+      "premium": "$10.53"
+     },
+     {
+      "coverage_name": "Supplementary Uninsured / Underinsured Motorist",
+      "limit_amount": "250/500",
+      "premium": "$7.06"
+     },
+     {
+      "coverage_name": "Medical Payments",
+      "limit_amount": "5000",
+      "premium": "$12.83"
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "limit_amount": "500",
+      "premium": "$6.42"
+     },
+     {
+      "coverage_name": "Guest Liability",
+      "limit_amount": "250/500",
+      "premium": "$12.46"
+     },
+     {
+      "coverage_name": "Optional Equipment",
+      "limit_amount": "1000"
+     }
+    ],
+    "annual_miles": {
+     "raw": "1,000",
+     "parsed": 1000
+    },
+    "usage_description": "Pleasure",
+    "driver_assignments": [
+     {
+      "driver_reference": "Delphine Fairbank",
+      "usage_percentage": "48"
+     },
+     {
+      "driver_reference": "Tobias Wexford",
+      "usage_percentage": "49"
+     },
+     {
+      "driver_reference": "Ambrose Mowbray",
+      "usage_percentage": "51 Rated"
+     }
+    ],
+    "premium": "$66.77"
+   },
+   {
+    "unit_number": {
+     "raw": "2",
+     "source": "structural",
+     "parsed": 2
+    },
+    "year": {
+     "raw": "2003",
+     "parsed": 2003
+    },
+    "make": "POLARIS",
+    "model": "500 CLASSIC",
+    "vin_or_hull_id": "SN1ND5BS33C316949",
+    "storage_address": {
+     "postal_code": "13420"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury",
+      "limit_amount": "250/500",
+      "premium": "$13.09"
+     },
+     {
+      "coverage_name": "Property Damage",
+      "limit_amount": "100",
+      "premium": "$7.21"
+     },
+     {
+      "coverage_name": "Supplementary Uninsured / Underinsured Motorist",
+      "limit_amount": "250/500",
+      "premium": "$6.05"
+     },
+     {
+      "coverage_name": "Medical Payments",
+      "limit_amount": "5000",
+      "premium": "$9.24"
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "limit_amount": "500",
+      "premium": "$5.36"
+     },
+     {
+      "coverage_name": "Guest Liability",
+      "limit_amount": "250/500",
+      "premium": "$9.05"
+     },
+     {
+      "coverage_name": "Optional Equipment",
+      "limit_amount": "1000"
+     }
+    ],
+    "annual_miles": {
+     "raw": "1,000",
+     "parsed": 1000
+    },
+    "usage_description": "Pleasure",
+    "driver_assignments": [
+     {
+      "driver_reference": "Delphine Fairbank",
+      "usage_percentage": "1"
+     },
+     {
+      "driver_reference": "Tobias Wexford",
+      "usage_percentage": "50"
+     },
+     {
+      "driver_reference": "Casper Wexford",
+      "usage_percentage": "51 Rated"
+     }
+    ],
+    "premium": "$50.00"
+   },
+   {
+    "unit_number": {
+     "raw": "3",
+     "source": "structural",
+     "parsed": 3
+    },
+    "year": {
+     "raw": "2013",
+     "parsed": 2013
+    },
+    "make": "POLARIS",
+    "model": "600 RUSH",
+    "vin_or_hull_id": "SN1BP6GS5DC765978",
+    "storage_address": {
+     "postal_code": "13420"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury",
+      "limit_amount": "250/500",
+      "premium": "$25.54"
+     },
+     {
+      "coverage_name": "Property Damage",
+      "limit_amount": "100",
+      "premium": "$14.03"
+     },
+     {
+      "coverage_name": "Supplementary Uninsured / Underinsured Motorist",
+      "limit_amount": "250/500",
+      "premium": "$11.09"
+     },
+     {
+      "coverage_name": "Medical Payments",
+      "limit_amount": "5000",
+      "premium": "$19.98"
+     },
+     {
+      "coverage_name": "Collision",
+      "limit_amount": "500",
+      "premium": "$33.93"
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "limit_amount": "500",
+      "premium": "$9.23"
+     },
+     {
+      "coverage_name": "Guest Liability",
+      "limit_amount": "250/500",
+      "premium": "$19.21"
+     },
+     {
+      "coverage_name": "Optional Equipment",
+      "limit_amount": "1000"
+     }
+    ],
+    "annual_miles": {
+     "raw": "1,000",
+     "parsed": 1000
+    },
+    "usage_description": "Pleasure",
+    "driver_assignments": [
+     {
+      "driver_reference": "Delphine Fairbank",
+      "usage_percentage": "49"
+     },
+     {
+      "driver_reference": "Verity Ellery",
+      "usage_percentage": "51 Rated"
+     },
+     {
+      "driver_reference": "Ambrose Mowbray",
+      "usage_percentage": "49"
+     }
+    ],
+    "premium": "$133.01"
+   },
+   {
+    "unit_number": {
+     "raw": "4",
+     "source": "structural",
+     "parsed": 4
+    },
+    "year": {
+     "raw": "2016",
+     "parsed": 2016
+    },
+    "make": "POLARIS",
+    "model": "RUSH 800",
+    "vin_or_hull_id": "SN1DP8PS0GC162641",
+    "storage_address": {
+     "postal_code": "13420"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury",
+      "limit_amount": "250/500",
+      "premium": "$37.37"
+     },
+     {
+      "coverage_name": "Property Damage",
+      "limit_amount": "100",
+      "premium": "$20.50"
+     },
+     {
+      "coverage_name": "Supplementary Uninsured / Underinsured Motorist",
+      "limit_amount": "250/500",
+      "premium": "$19.37"
+     },
+     {
+      "coverage_name": "Medical Payments",
+      "limit_amount": "5000",
+      "premium": "$39.78"
+     },
+     {
+      "coverage_name": "Collision",
+      "limit_amount": "500",
+      "premium": "$84.56"
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "limit_amount": "500",
+      "premium": "$9.95"
+     },
+     {
+      "coverage_name": "Guest Liability",
+      "limit_amount": "250/500",
+      "premium": "$22.28"
+     },
+     {
+      "coverage_name": "Optional Equipment",
+      "limit_amount": "1000"
+     }
+    ],
+    "annual_miles": {
+     "raw": "1,000",
+     "parsed": 1000
+    },
+    "usage_description": "Pleasure",
+    "driver_assignments": [
+     {
+      "driver_reference": "Delphine Fairbank",
+      "usage_percentage": "99 Rated"
+     },
+     {
+      "driver_reference": "Tobias Wexford",
+      "usage_percentage": "1"
+     }
+    ]
+   }
+  ],
+  "operators": [
+   {
+    "name": "Delphine Fairbank",
+    "driver_status": "DRIVER",
+    "relationship_to_insured": "SAME",
+    "marital_status": "MARRIED AND LIVES WITH SPOUSE",
+    "gender": "MALE",
+    "date_of_birth": {
+     "raw": "09/XX/1956",
+     "parsed": null
+    }
+   },
+   {
+    "name": "Tobias Wexford",
+    "driver_status": "DRIVER",
+    "relationship_to_insured": "SPOUSE",
+    "marital_status": "MARRIED AND LIVES WITH SPOUSE",
+    "gender": "FEMALE",
+    "date_of_birth": {
+     "raw": "05/XX/1956",
+     "parsed": null
+    }
+   },
+   {
+    "name": "Verity Ellery",
+    "driver_status": "DRIVER",
+    "relationship_to_insured": "CHILD",
+    "marital_status": "SINGLE (NEVER MARRIED)",
+    "gender": "MALE",
+    "date_of_birth": {
+     "raw": "11/XX/1984",
+     "parsed": null
+    }
+   },
+   {
+    "name": "Casper Wexford",
+    "driver_status": "DRIVER",
+    "relationship_to_insured": "CHILD",
+    "marital_status": "SINGLE (NEVER MARRIED)",
+    "gender": "MALE",
+    "date_of_birth": {
+     "raw": "07/XX/1989",
+     "parsed": null
+    }
+   },
+   {
+    "name": "Ambrose Mowbray",
+    "driver_status": "DRIVER",
+    "relationship_to_insured": "CHILD",
+    "marital_status": "SINGLE (NEVER MARRIED)",
+    "gender": "FEMALE",
+    "date_of_birth": {
+     "raw": "10/XX/1982",
+     "parsed": null
+    }
+   }
+  ]
+ },
+ "document_type_detail": {
+  "policy_history": {
+   "transactions": [
+    {
+     "transaction_type": {
+      "raw": "Renewal",
+      "source": "structural"
+     },
+     "transaction_effective_date": "12/12/2023",
+     "written_premium": "$1,112.33"
+    },
+    {
+     "transaction_type": {
+      "raw": "Renewal",
+      "source": "structural"
+     },
+     "transaction_effective_date": "12/12/2024",
+     "written_premium": "$1,188.00"
+    }
+   ]
+  }
+ },
+ "additional_fields": [
+  {
+   "section": "Policy View",
+   "label": "STATUS",
+   "value": "ACTIVE"
+  },
+  {
+   "section": "Policy View",
+   "label": "Original Year",
+   "value": {
+    "raw": "2022",
+    "parsed": 2022
+   }
+  },
+  {
+   "section": "Policy View",
+   "label": "Number Of Times Renewed",
+   "value": {
+    "raw": "2",
+    "parsed": 2
+   }
+  },
+  {
+   "section": "Policy View",
+   "label": "Premium Change",
+   "value": "$75.67 (+6.80%)"
+  },
+  {
+   "section": "Policy View",
+   "label": "AAP",
+   "value": "$982.11"
+  },
+  {
+   "section": "Policy View",
+   "label": "Discounted AAP",
+   "value": "$982.11"
+  },
+  {
+   "section": "Policy View",
+   "label": "Balance",
+   "value": "($88.07)"
+  },
+  {
+   "section": "Policy View",
+   "label": "Last Bill Amount",
+   "value": "$103.00"
+  },
+  {
+   "section": "Policy View",
+   "label": "Allstate eBill",
+   "value": "NOT ENROLLED"
+  },
+  {
+   "section": "Policy View",
+   "label": "Allstate ePolicy",
+   "value": "NOT ENROLLED"
+  },
+  {
+   "section": "Policy View",
+   "label": "Agent Of Record",
+   "value": "HBE GROUP INC (02 64653)"
+  },
+  {
+   "section": "Contact Information",
+   "label": "Current Address",
+   "value": "257 FLETCHER RD, OLD FORGE, NY 13420 - 7851"
+  },
+  {
+   "section": "Contact Information",
+   "label": "Primary Residence",
+   "value": "HOME"
+  },
+  {
+   "section": "Contact Information",
+   "label": "Ownership Type",
+   "value": "OWNS"
+  },
+  {
+   "section": "Contact Information",
+   "label": "Date Moved To Current Address",
+   "value": "12/2017"
+  },
+  {
+   "section": "Contact Information",
+   "label": "Front End Matched",
+   "value": "YES"
+  },
+  {
+   "section": "Coverage",
+   "label": "Tier/Group",
+   "value": "4866 01"
+  },
+  {
+   "section": "Coverage",
+   "label": "SR Tier",
+   "value": "0001"
+  },
+  {
+   "section": "Coverage",
+   "label": "Billing Group",
+   "value": "00"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Application Date",
+   "value": "12/06/2022"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Application Time",
+   "value": "14:43"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Bind Date",
+   "value": "12/12/2022"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Bind Time",
+   "value": "00:01"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Bind ID",
+   "value": "SNYURH0A"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Control Number",
+   "value": "077220049977159"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Policy Rate Control",
+   "value": "979"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Version Number",
+   "value": "7"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Buyout Indicator",
+   "value": "NO"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Channel Of Origin",
+   "value": "ALLIANCE AGENCY"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Source Of Quote",
+   "value": "FULL QUOTE"
+  },
+  {
+   "section": "Policy Details",
+   "label": "Application Of Origin",
+   "value": "RELATIONSHIP PLATFORM"
+  },
+  {
+   "section": "Surcharges Applied",
+   "label": "Surcharges Applied",
+   "value": "None"
+  },
+  {
+   "section": "Vehicle Information",
+   "label": "2003 POLARIS SUPER SPORT",
+   "value": "SN1NP5AS33C308116"
+  },
+  {
+   "section": "Vehicle Information",
+   "label": "2003 POLARIS 500 CLASSIC",
+   "value": "SN1ND5BS33C316949"
+  },
+  {
+   "section": "Vehicle Information",
+   "label": "2013 POLARIS 600 RUSH",
+   "value": "SN1BP6GS5DC765978"
+  },
+  {
+   "section": "Vehicle Information",
+   "label": "2016 POLARIS RUSH 800",
+   "value": "SN1DP8PS0GC162641"
+  },
+  {
+   "section": "Vehicle Information",
+   "label": "2002 POLARIS TRAIL TOURIN",
+   "value": "4XAST5BS62B220074"
+  },
+  {
+   "section": "Vehicle Information",
+   "label": "2022 POLARIS INDY VR1",
+   "value": "SN1TKV6R9NC815505"
+  },
+  {
+   "section": "Vehicle Information",
+   "label": "2022 POLARIS 650 INDY",
+   "value": "SN1TKP6R7NC227596"
+  }
+ ]
+}

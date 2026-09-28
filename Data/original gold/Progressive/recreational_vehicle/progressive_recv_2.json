@@ -1,0 +1,1930 @@
+{
+  "document": {
+    "document_type": {
+      "raw": "This is your Renewal Declarations Page",
+      "parsed": "Renewal Declarations",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "document_title_as_stated": {
+      "raw": "Travel Trailer Insurance Coverage Summary",
+      "parsed": "Travel Trailer Insurance Coverage Summary",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "line_of_business_as_stated": {
+      "raw": "Travel Trailer",
+      "parsed": "Travel Trailer",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        3
+      ],
+      "flagged": false
+    },
+    "issue_date": {
+      "raw": "April 30, 2026",
+      "parsed": "04/30/2026",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        3
+      ],
+      "flagged": false
+    },
+    "print_code": {
+      "raw": "Form 6489 NY (02/10)",
+      "parsed": "Form 6489 NY (02/10)",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "source_file_name": {
+      "raw": "progressive_recv_2.pdf",
+      "parsed": "progressive_recv_2.pdf",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "page_count": {
+      "raw": "5",
+      "parsed": 5,
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1,
+        3,
+        4
+      ],
+      "flagged": false
+    }
+  },
+  "carrier": {
+    "company_name": {
+      "raw": "Progressive Northwestern Ins Co",
+      "parsed": "Progressive Northwestern Ins Co",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        3
+      ],
+      "flagged": false
+    }
+  },
+  "claim_reporting": {
+    "claims_phone": {
+      "raw": "1-800-274-4499",
+      "parsed": "1-800-274-4499",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "producer": {
+    "agency_name": {
+      "raw": "PATRIOTIC INS GROUP",
+      "parsed": "PATRIOTIC INS GROUP",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        3
+      ],
+      "flagged": false
+    },
+    "contact": {
+      "phone": {
+        "raw": "1-315-357-5901",
+        "parsed": "1-315-357-5901",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      },
+      "website": {
+        "raw": "progressiveagent.com",
+        "parsed": "progressiveagent.com",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3,
+          4
+        ],
+        "flagged": false
+      }
+    },
+    "address": {
+      "line_1": {
+        "raw": "159 NY-28",
+        "parsed": "159 NY-28",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "INLET",
+        "parsed": "INLET",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13360",
+        "parsed": "13360",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "named_insured": {
+    "primary_name": {
+      "raw": "KORIE K HELMER",
+      "parsed": "KORIE K HELMER",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "flagged": false
+    },
+    "entity_type": {
+      "raw": "Individual",
+      "parsed": "Individual",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "mailing_address": {
+      "line_1": {
+        "raw": "PO BOX 803",
+        "parsed": "PO BOX 803",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "OLD FORGE",
+        "parsed": "OLD FORGE",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13420",
+        "parsed": "13420",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    "additional_named_insureds": [
+      {
+        "name": {
+          "raw": "KRISTIN R HELMER",
+          "parsed": "KRISTIN R HELMER",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "policy": {
+    "policy_number": {
+      "raw": "998711960",
+      "parsed": "998711960",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "flagged": false
+    },
+    "effective_date": {
+      "raw": "June 14, 2026",
+      "parsed": "06/14/2026",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        3
+      ],
+      "flagged": false
+    },
+    "expiration_date": {
+      "raw": "June 14, 2027",
+      "parsed": "06/14/2027",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        3
+      ],
+      "flagged": false
+    },
+    "effective_time": {
+      "raw": "12:01 a.m.",
+      "parsed": "12:01 a.m.",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "expiration_time": {
+      "raw": "12:01 a.m.",
+      "parsed": "12:01 a.m.",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "policy_term_as_printed": {
+      "raw": "Jun 14, 2026 - Jun 14, 2027",
+      "parsed": "Jun 14, 2026 - Jun 14, 2027",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        3
+      ],
+      "flagged": false
+    },
+    "policy_term_months": {
+      "raw": "12 month",
+      "parsed": 12,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "is_renewal": {
+      "raw": "Renewal",
+      "parsed": "Yes",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "policy_form_number": {
+      "raw": "3651 NY",
+      "parsed": "3651 NY",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "policy_form_edition": {
+      "raw": "08/12",
+      "parsed": "08/12",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "policyholder_since_date": {
+      "raw": "June 14, 2025",
+      "parsed": "06/14/2025",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3
+      ],
+      "flagged": false
+    }
+  },
+  "premium": {
+    "total_policy_premium": {
+      "raw": "$305",
+      "parsed": 305.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        3
+      ],
+      "flagged": false
+    },
+    "discounts_and_credits": [
+      {
+        "description": {
+          "raw": "Claim Free Renewal",
+          "parsed": "Claim Free Renewal",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "Policy 998711960",
+          "parsed": "Policy 998711960",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Claim Free Renewal",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "Home Owner",
+          "parsed": "Home Owner",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            5
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "Policy 998711960",
+          "parsed": "Policy 998711960",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Home Owner",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            2,
+            5
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "Multi-Policy",
+          "parsed": "Multi-Policy",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            5
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "Policy 998711960",
+          "parsed": "Policy 998711960",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Multi-Policy",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            2,
+            5
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "Prompt Payment",
+          "parsed": "Prompt Payment",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "applies_to": {
+          "raw": "Policy 998711960",
+          "parsed": "Policy 998711960",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Prompt Payment",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "description": {
+          "raw": "Discount if paid in full",
+          "parsed": "Discount if paid in full",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "-11",
+          "parsed": -11.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Discount if paid in full",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "forms_and_endorsements": [
+    {
+      "form_number": {
+        "raw": "3651 NY",
+        "parsed": "3651 NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "08/12",
+        "parsed": "08/12",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Policy contract",
+        "parsed": "Policy contract",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1,
+          5
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "9869 NY",
+        "parsed": "9869 NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "12/12",
+        "parsed": "12/12",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Endorsement",
+        "parsed": "Endorsement",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "6489 NY",
+        "parsed": "6489 NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "02/10",
+        "parsed": "02/10",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    }
+  ],
+  "recreational_vehicle": {
+    "units": [
+      {
+        "unit_number": {
+          "raw": "1",
+          "parsed": 1,
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "flagged": false
+        },
+        "year": {
+          "raw": "2017",
+          "parsed": 2017,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "make": {
+          "raw": "KEYSTONE",
+          "parsed": "KEYSTONE",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "model": {
+          "raw": "RV HIDEOUT LUXURY",
+          "parsed": "RV HIDEOUT LUXURY",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "vin_or_hull_id": {
+          "raw": "4YDT38B25H7202155",
+          "parsed": "4YDT38B25H7202155",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "storage_address": {
+          "postal_code": {
+            "raw": "13317",
+            "parsed": "13317",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          }
+        },
+        "coverages": [
+          {
+            "coverage_name": {
+              "raw": "Comprehensive With Full Glass",
+              "parsed": "Comprehensive With Full Glass",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "The Lesser Of Actual Cash Value at time of loss Less Deductible or $24,600",
+              "parsed": "The Lesser Of Actual Cash Value at time of loss Less Deductible or $24,600",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "deductible_amount": {
+              "raw": "$200/$0 glass",
+              "parsed": "$200/$0 glass",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$283",
+              "parsed": 283.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Mexico Coverage",
+              "parsed": "Mexico Coverage",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "Included",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Fire Department Service",
+              "parsed": "Fire Department Service",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                5
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$1,000",
+              "parsed": 1000.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "Included",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Emergency Expense",
+              "parsed": "Emergency Expense",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$750",
+              "parsed": 750.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "Included",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                4
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Replacement Cost Personal Effects",
+              "parsed": "Replacement Cost Personal Effects",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$2,000",
+              "parsed": 2000.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "deductible_amount": {
+              "raw": "$100",
+              "parsed": 100.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "14",
+              "parsed": 14.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Vacation Liability",
+              "parsed": "Vacation Liability",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "$300,000",
+              "parsed": 300000.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "8",
+              "parsed": 8.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "flagged": false
+            }
+          }
+        ]
+      }
+    ],
+    "operators": [
+      {
+        "name": {
+          "raw": "Korie K Helmer",
+          "parsed": "Korie K Helmer",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "flagged": false
+        },
+        "age": {
+          "raw": "48",
+          "parsed": 48,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "gender": {
+          "raw": "Male",
+          "parsed": "Male",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "marital_status": {
+          "raw": "Married",
+          "parsed": "Married",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "relationship_to_insured": {
+          "raw": "Named insured",
+          "parsed": "Named insured",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "name": {
+          "raw": "Kristin R Helmer",
+          "parsed": "Kristin R Helmer",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "flagged": false
+        },
+        "age": {
+          "raw": "44",
+          "parsed": 44,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "gender": {
+          "raw": "Female",
+          "parsed": "Female",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "marital_status": {
+          "raw": "Married",
+          "parsed": "Married",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "relationship_to_insured": {
+          "raw": "Named insured",
+          "parsed": "Named insured",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "additional_fields": [
+    {
+      "section": "Outline of coverage",
+      "label": "Total 12 month policy premium if paid in full",
+      "value": {
+        "raw": "$294",
+        "parsed": 294.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Choose a Payment Option",
+      "label": "PAY IN FULL Total Cost",
+      "value": {
+        "raw": "$294.00",
+        "parsed": 294.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Choose a Payment Option",
+      "label": "PAY IN INSTALLMENTS Total Cost",
+      "value": {
+        "raw": "$325.00",
+        "parsed": 325.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Payment Coupon",
+      "label": "Pay initial installment",
+      "value": {
+        "raw": "$81.25",
+        "parsed": 81.25,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
+        ],
+        "flagged": false
+      }
+    }
+  ],
+  "billing": {
+    "due_date": {
+      "raw": "June 14, 2026",
+      "parsed": "06/14/2026",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        3
+      ],
+      "flagged": false
+    },
+    "amount_due": {
+      "raw": "$294.00",
+      "parsed": 294.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3
+      ],
+      "flagged": false
+    },
+    "payment_plan": {
+      "raw": "Pay in Full or Pay in Installments",
+      "parsed": "Pay in Full or Pay in Installments",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "payment_coupon_scan_line": {
+      "raw": "030899871196031161 0008125 0031000 5000714 9454551 001006142606",
+      "parsed": "030899871196031161 0008125 0031000 5000714 9454551 001006142606",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3
+      ],
+      "flagged": false
+    },
+    "installments": [
+      {
+        "installment_number": {
+          "raw": "1",
+          "parsed": 1,
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "flagged": false
+        },
+        "due_date": {
+          "raw": "Jun 14, 2026",
+          "parsed": "06/14/2026",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$81.25",
+          "parsed": 81.25,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "installment_fee": {
+          "raw": "$5.00",
+          "parsed": 5.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "installment_number": {
+          "raw": "2",
+          "parsed": 2,
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "flagged": false
+        },
+        "due_date": {
+          "raw": "Jul 14, 2026",
+          "parsed": "07/14/2026",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$81.25",
+          "parsed": 81.25,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "installment_fee": {
+          "raw": "$5.00",
+          "parsed": 5.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "installment_number": {
+          "raw": "3",
+          "parsed": 3,
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "flagged": false
+        },
+        "due_date": {
+          "raw": "Aug 14, 2026",
+          "parsed": "08/14/2026",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$81.25",
+          "parsed": 81.25,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "installment_fee": {
+          "raw": "$5.00",
+          "parsed": 5.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "installment_number": {
+          "raw": "4",
+          "parsed": 4,
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "flagged": false
+        },
+        "due_date": {
+          "raw": "Sep 14, 2026",
+          "parsed": "09/14/2026",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$81.25",
+          "parsed": 81.25,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "installment_fee": {
+          "raw": "$5.00",
+          "parsed": 5.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "document_type_detail": {
+    "renewal_offer": {
+      "renewal_effective_date": {
+        "raw": "June 14, 2026",
+        "parsed": "06/14/2026",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      },
+      "renewal_expiration_date": {
+        "raw": "June 14, 2027",
+        "parsed": "06/14/2027",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      },
+      "renewal_premium": {
+        "raw": "$305.00",
+        "parsed": 305.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "expiring_policy_expiration_date": {
+        "raw": "06/14/2026",
+        "parsed": "06/14/2026",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "offer_issue_date": {
+        "raw": "April 30, 2026",
+        "parsed": "04/30/2026",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      },
+      "payment_due_date": {
+        "raw": "June 14, 2026",
+        "parsed": "06/14/2026",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      },
+      "premium_change_amount": {
+        "raw": "$3",
+        "parsed": -3.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "text_sections": {
+    "page1_s1": {
+      "section_id": "page1_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Contact your agent for personalized service.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s2": {
+      "section_id": "page1_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "To report a claim.",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page1_s3": {
+      "section_id": "page1_s3",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "The coverages, limits and policy period shown apply only if you pay for this policy to renew. Your coverage begins on June 14, 2026 at 12:01 a.m. This policy expires on June 14, 2027 at 12:01 a.m. Your insurance policy and any policy endorsements contain a full explanation of your coverage. The policy limits shown for a vehicle may not be combined with the limits for the same coverage on another vehicle. The policy contract is form 3651 NY (08/12). The contract is modified by form 9869 NY (12/12).",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page2_s1": {
+      "section_id": "page2_s1",
+      "section_title": "Deductibles",
+      "section_type": "prose",
+      "raw_text": "All recreational vehicle physical damage losses, regardless of loss settlement option and whether partial or total, are subject to the applicable deductible.",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page3_s1": {
+      "section_id": "page3_s1",
+      "section_title": "PATRIOTIC INS GROUP",
+      "section_type": "prose",
+      "raw_text": "Contact your agent for personalized service.",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s2": {
+      "section_id": "page3_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Your Travel Trailer Policy is Ready for Renewal - With a New Lower Rate!",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s3": {
+      "section_id": "page3_s3",
+      "section_title": "Rate!",
+      "section_type": "prose",
+      "raw_text": "Thanks for being a Progressive customer since June 14, 2025; renew your policy today. Plus, your rate went down by $3!* Enclosed are your policy documents. Your current policy period ends June 14, 2026 at 12:01 a.m. This renewal offer is for the policy period June 14, 2026 through June 14, 2027. Your 12-month policy premium excluding billing fees and payment option discounts is $305.00.",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s4": {
+      "section_id": "page3_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Please see your payment schedule.",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s5": {
+      "section_id": "page3_s5",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "OR try Automatic Payments! Installment payments without the work–we’ll process your payment for you and you could save! Get started at progressiveagent.com or call us at 1-800-876-5581. Please see your payment schedule. If you've scheduled a payment, it is not reflected in the amount due.",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page3_s6": {
+      "section_id": "page3_s6",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Please allow five to seven days for processing. Write your policy number on your check. Make check payable to Progressive Northwestern Ins Co.",
+      "page_range": [
+        3
+      ],
+      "form_number": null
+    },
+    "page4_s1": {
+      "section_id": "page4_s1",
+      "section_title": "You can renew:",
+      "section_type": "prose",
+      "raw_text": "online at progressiveagent.com or on the Progressive App, by calling 1-800-876-5581, or",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page4_s2": {
+      "section_id": "page4_s2",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "by mailing your payment with this coupon.",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page4_s3": {
+      "section_id": "page4_s3",
+      "section_title": "Renewal Payment Schedule",
+      "section_type": "prose",
+      "raw_text": "Here's a more detailed review of your payments.",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page4_s4": {
+      "section_id": "page4_s4",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "**An installment fee of $5.00 per installment is included. You may avoid installment fees by paying in full except for the current amount due.",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page4_s5": {
+      "section_id": "page4_s5",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Please make sure the value of your RV(s) reflect the current value, including all permanently attached equipment.",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page4_s6": {
+      "section_id": "page4_s6",
+      "section_title": "Your online connection.",
+      "section_type": "prose",
+      "raw_text": "Get secure, convenient access to your policy online, anytime. Just log in at progressiveagent.com to:",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page4_s7": {
+      "section_id": "page4_s7",
+      "section_title": "Get secure, convenient access to your policy online, anytime. Just log in at progressiveagent.com to:",
+      "section_type": "other",
+      "raw_text": "Pay a bill; Update your policy; Review your driving history; Check vehicle recalls; Report and track claims; Learn about new discounts",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page4_s8": {
+      "section_id": "page4_s8",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "*This savings amount represents full-term savings and is based on a current review of your policy. If there are changes to your policy, this savings amount may change.",
+      "page_range": [
+        4
+      ],
+      "form_number": null
+    },
+    "page5_s1": {
+      "section_id": "page5_s1",
+      "section_title": "Add even more savings to your policy!",
+      "section_type": "prose",
+      "raw_text": "If you have more than one policy with us, you can save with Multi-Policy Discount! Give us a call to make sure you're getting all the savings you deserve.",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s2": {
+      "section_id": "page5_s2",
+      "section_title": "Your specialized RV policy",
+      "section_type": "prose",
+      "raw_text": "Your RV insurance policy from Progressive provides you with unique coverages designed to protect your entire RV experience. Please contact us to review your coverages and make sure you have what you need!",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s3": {
+      "section_id": "page5_s3",
+      "section_title": null,
+      "section_type": "other",
+      "raw_text": "We provide home owner-like coverage with personal liability protection.; We reimburse you for lodging expense if you cannot live in your vehicle as a result of a loss.; We provide comprehensive and collision protection when you travel to Mexico, if you purchase a sep a rate Mexican",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s4": {
+      "section_id": "page5_s4",
+      "section_title": null,
+      "section_type": "other",
+      "raw_text": "We provide Fire Department Service coverage.",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    },
+    "page5_s5": {
+      "section_id": "page5_s5",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "Your policy provides you with 24 hour claims and Customer Service Support and specialized claims handling. See your policy contract and declarations page for a complete description of your coverages.",
+      "page_range": [
+        5
+      ],
+      "form_number": null
+    }
+  },
+  "fideon:provenance": {
+    "source": "Progressive/recreational_vehicle/progressive_recv_2.pdf",
+    "schema": "recreational_vehicle v1.4.0",
+    "synthetic": false,
+    "gold": "reviewed and completed by Claude against the printed pages",
+    "reviewed": "2026-09-28"
+  }
+}

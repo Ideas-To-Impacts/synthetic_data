@@ -1,0 +1,238 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "This is your Declarations Page",
+   "parsed": "Declarations"
+  },
+  "document_title_as_stated": "Travel Trailer Insurance Coverage Summary",
+  "line_of_business_as_stated": "Travel Trailer",
+  "issue_date": "May 28, 2026",
+  "print_code": "Form 6489 NY (02/10)"
+ },
+ "carrier": {
+  "company_name": "Progressive Northwestern Ins Co"
+ },
+ "claim_reporting": {
+  "claims_phone": "1-800-274-4499"
+ },
+ "producer": {
+  "agency_name": "PATRIOTIC INS GROUP",
+  "contact": {
+   "phone": "1-315-357-5901",
+   "website": "progressiveagent.com"
+  },
+  "address": {
+   "line_1": "159 NY-28",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Delphine Fairbank",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "mailing_address": {
+   "line_1": "PO BOX 2",
+   "city": "OLD FORGE",
+   "state": "NY",
+   "postal_code": "13420"
+  },
+  "additional_named_insureds": [
+   {
+    "name": "Tobias Wexford"
+   }
+  ]
+ },
+ "policy": {
+  "policy_number": "874728499",
+  "effective_date": "May 27, 2026",
+  "expiration_date": "May 27, 2027",
+  "effective_time": "12:01 a.m.",
+  "expiration_time": "12:01 a.m.",
+  "policy_term_as_printed": "May 27, 2026 - May 27, 2027",
+  "policy_term_months": {
+   "raw": "12 month",
+   "parsed": 12
+  },
+  "is_renewal": {
+   "raw": "Declarations",
+   "source": "structural",
+   "parsed": "No"
+  },
+  "policy_form_number": "3651 NY",
+  "policy_form_edition": "08/12"
+ },
+ "premium": {
+  "total_policy_premium": "$258",
+  "discounts_and_credits": [
+   {
+    "description": "Home Owner",
+    "applies_to": {
+     "raw": "Policy 874728499",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Home Owner",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Multi-Policy",
+    "applies_to": {
+     "raw": "Policy 874728499",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Multi-Policy",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Paid in Full",
+    "applies_to": {
+     "raw": "Policy 874728499",
+     "source": "structural"
+    },
+    "is_applied": {
+     "raw": "Paid in Full",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   }
+  ],
+  "surcharges": []
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "3651 NY",
+   "edition_date": "08/12",
+   "form_type": {
+    "raw": "Policy contract",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "9869 NY",
+   "edition_date": "12/12",
+   "form_type": {
+    "raw": "Endorsement",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "Z734",
+   "edition_date": "01/09",
+   "form_type": {
+    "raw": "Endorsement",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "6489 NY",
+   "edition_date": "02/10"
+  }
+ ],
+ "recreational_vehicle": {
+  "units": [
+   {
+    "unit_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "2020",
+     "parsed": 2020
+    },
+    "make": "R-POD",
+    "model": "192",
+    "vin_or_hull_id": "4X4TRPU1XLB024078",
+    "storage_address": {
+     "postal_code": "13420"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Comprehensive With Full Glass",
+      "limit_amount": "The Lesser Of Actual Cash Value at time of loss Less Deductible or $16,000",
+      "deductible_amount": "$200/$0 glass",
+      "premium": "$160"
+     },
+     {
+      "coverage_name": "Collision",
+      "limit_amount": "The Lesser Of Actual Cash Value at time of loss Less Deductible or $16,000",
+      "deductible_amount": "$500",
+      "premium": {
+       "raw": "57",
+       "parsed": 57.0
+      }
+     },
+     {
+      "coverage_name": "Mexico Coverage",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Fire Department Service",
+      "limit_amount": "$1,000",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Emergency Expense",
+      "limit_amount": "$750",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Vacation Liability",
+      "limit_amount": "$500,000",
+      "premium": {
+       "raw": "9",
+       "parsed": 9.0
+      }
+     },
+     {
+      "coverage_name": "Roadside Assistance",
+      "premium": {
+       "raw": "32",
+       "parsed": 32.0
+      }
+     }
+    ]
+   }
+  ],
+  "operators": [
+   {
+    "name": "Delphine Fairbank",
+    "age": {
+     "raw": "69",
+     "parsed": 69
+    },
+    "gender": "Male",
+    "marital_status": "Married",
+    "relationship_to_insured": "Named insured"
+   },
+   {
+    "name": "Tobias Wexford",
+    "age": {
+     "raw": "70",
+     "parsed": 70
+    },
+    "gender": "Female",
+    "marital_status": "Married",
+    "relationship_to_insured": "Named insured"
+   }
+  ]
+ }
+}
