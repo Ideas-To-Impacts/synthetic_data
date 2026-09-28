@@ -1,0 +1,2841 @@
+{
+  "document": {
+    "document_type": {
+      "raw": "NYCM AUTOMOBILE ENDORSEMENT SUMMARY",
+      "parsed": "Policy Change Summary",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "document_title_as_stated": {
+      "raw": "NYCM AUTOMOBILE ENDORSEMENT SUMMARY",
+      "parsed": "NYCM AUTOMOBILE ENDORSEMENT SUMMARY",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "print_date": {
+      "raw": "05-29-2024",
+      "parsed": "05/29/2024",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3
+      ],
+      "flagged": false
+    },
+    "print_code": {
+      "raw": "NYC 79A 01/2017",
+      "parsed": "NYC 79A 01/2017",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3
+      ],
+      "flagged": false
+    },
+    "transaction_effective_date": {
+      "raw": "05-22-2024",
+      "parsed": "05/22/2024",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3
+      ],
+      "flagged": false
+    },
+    "transaction_type": {
+      "raw": "Endorsement",
+      "parsed": "Endorsement",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "source_file_name": {
+      "raw": "nycm_insurance_autop_2.pdf",
+      "parsed": "nycm_insurance_autop_2.pdf",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "page_count": {
+      "raw": "3",
+      "parsed": 3,
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1,
+        2,
+        3
+      ],
+      "flagged": false
+    }
+  },
+  "carrier": {
+    "company_name": {
+      "raw": "New York Central Mutual Fire Insurance Company",
+      "parsed": "New York Central Mutual Fire Insurance Company",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "contact": {
+      "phone": {
+        "raw": "800-234-6926",
+        "parsed": "800-234-6926",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "website": {
+        "raw": "www.nycm.com",
+        "parsed": "www.nycm.com",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "address": {
+      "line_1": {
+        "raw": "1899 Central Plaza East",
+        "parsed": "1899 Central Plaza East",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Edmeston",
+        "parsed": "Edmeston",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13335-1899",
+        "parsed": "13335-1899",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "producer": {
+    "agency_name": {
+      "raw": "PATRIOTIC INSURANCE GROUP BROKERAGE INC",
+      "parsed": "PATRIOTIC INSURANCE GROUP BROKERAGE INC",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "producer_code": {
+      "raw": "08014",
+      "parsed": "08014",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "territory": {
+      "raw": "3R",
+      "parsed": "3R",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "contact": {
+      "phone": {
+        "raw": "315-357-5901",
+        "parsed": "315-357-5901",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "fax": {
+        "raw": "315-357-5126",
+        "parsed": "315-357-5126",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "email": {
+        "raw": "beservice@patrioticinsurancegroup.com",
+        "parsed": "beservice@patrioticinsurancegroup.com",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "address": {
+      "line_1": {
+        "raw": "159 ROUTE 28",
+        "parsed": "159 ROUTE 28",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "line_2": {
+        "raw": "PO BOX 329",
+        "parsed": "PO BOX 329",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "INLET",
+        "parsed": "INLET",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13360-0329",
+        "parsed": "13360-0329",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "named_insured": {
+    "primary_name": {
+      "raw": "Marcus Sutcliffe",
+      "parsed": "Marcus Sutcliffe",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3
+      ],
+      "flagged": false
+    },
+    "entity_type": {
+      "raw": "Individual",
+      "parsed": "Individual",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "mailing_address": {
+      "line_1": {
+        "raw": "PO BOX 685",
+        "parsed": "PO BOX 685",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "INLET",
+        "parsed": "INLET",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13360-0685",
+        "parsed": "13360-0685",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "contact": {
+      "phone": {
+        "raw": "315-555-0061",
+        "parsed": "315-555-0061",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "email": {
+        "raw": "customer006@example.com",
+        "parsed": "customer006@example.com",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "contacts": [
+      {
+        "contact_type": {
+          "raw": "C",
+          "parsed": "C",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "contact_value": {
+          "raw": "315-555-0062",
+          "parsed": "315-555-0062",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "policy": {
+    "policy_number": {
+      "raw": "7596489",
+      "parsed": "7596489",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3
+      ],
+      "flagged": false
+    },
+    "quote_number": {
+      "raw": "Q25761374",
+      "parsed": "Q25761374",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3
+      ],
+      "flagged": false
+    },
+    "effective_date": {
+      "raw": "08-03-2023",
+      "parsed": "08/03/2023",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "expiration_date": {
+      "raw": "08-03-2024",
+      "parsed": "08/03/2024",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "effective_time": {
+      "raw": "12:01 AM",
+      "parsed": "12:01 AM",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "time_zone": {
+      "raw": "STANDARD TIME AT INSURED ADDRESS",
+      "parsed": "STANDARD TIME AT INSURED ADDRESS",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "premium": {
+    "estimated_annual_premium": {
+      "raw": "1741.00",
+      "parsed": 1741.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "prorated_premium_amount": {
+      "raw": "-119.00",
+      "parsed": -119.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "document_type_detail": {
+    "policy_change": {
+      "transaction_effective_date": {
+        "raw": "05-22-2024",
+        "parsed": "05/22/2024",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "net_change_amount": {
+        "raw": "-119.00",
+        "parsed": -119.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "changes": [
+        {
+          "change_description": {
+            "raw": "REMOVED VEHICLE WITH VIN 4T3BK3BB0EU098551.",
+            "parsed": "REMOVED VEHICLE WITH VIN 4T3BK3BB0EU098551.",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3
+            ],
+            "flagged": false
+          }
+        }
+      ]
+    }
+  },
+  "auto": {
+    "vehicles": [
+      {
+        "vehicle_number": {
+          "raw": "1",
+          "parsed": 1,
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "year": {
+          "raw": "2024",
+          "parsed": 2024,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "make": {
+          "raw": "MAZDA",
+          "parsed": "MAZDA",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "model": {
+          "raw": "CX-50 2.5",
+          "parsed": "CX-50 2.5",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "vin": {
+          "raw": "7MMVABXYXRN188164",
+          "parsed": "7MMVABXYXRN188164",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "garaging_territory": {
+          "raw": "167",
+          "parsed": "167",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "class_code": {
+          "raw": "50NMSP10",
+          "parsed": "50NMSP10",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "rated_driver_name": {
+          "raw": "Marcus Sutcliffe",
+          "parsed": "Marcus Sutcliffe",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "premium": {
+          "raw": "$1,731.00",
+          "parsed": 1731.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "coverages": [
+          {
+            "coverage_name": {
+              "raw": "BODILY INJURY",
+              "parsed": "BODILY INJURY",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "250,000/ 500,000",
+              "parsed": "250,000/ 500,000",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "PROPERTY DAMAGE",
+              "parsed": "PROPERTY DAMAGE",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "250,000",
+              "parsed": "250,000",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "PIP DEDUCTIBLE",
+              "parsed": "PIP DEDUCTIBLE",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "FULL",
+              "parsed": "FULL",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "INCREASED PIP",
+              "parsed": "INCREASED PIP",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "50,000",
+              "parsed": "50,000",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "BROADENED ADDITIONAL PIP",
+              "parsed": "BROADENED ADDITIONAL PIP",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "NO",
+              "parsed": "NO",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "NO",
+              "parsed": "No",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "OUT OF STATE PIP",
+              "parsed": "OUT OF STATE PIP",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "50,000",
+              "parsed": "50,000",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "OBEL",
+              "parsed": "OBEL",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "25,000",
+              "parsed": "25,000",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "DEATH BENEFIT",
+              "parsed": "DEATH BENEFIT",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "NO",
+              "parsed": "NO",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "NO",
+              "parsed": "No",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "MEDICAL PAYMENTS",
+              "parsed": "MEDICAL PAYMENTS",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "5,000",
+              "parsed": "5,000",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "SUPP SPOUSAL LIAB",
+              "parsed": "SUPP SPOUSAL LIAB",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "YES",
+              "parsed": "YES",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "YES",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "STAT/SUM",
+              "parsed": "STAT/SUM",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "250,000/ 500,000",
+              "parsed": "250,000/ 500,000",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "OTHER THAN COLL",
+              "parsed": "OTHER THAN COLL",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "250",
+              "parsed": "250",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "COLLISION",
+              "parsed": "COLLISION",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "500",
+              "parsed": "500",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "FULL GLASS",
+              "parsed": "FULL GLASS",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "YES",
+              "parsed": "YES",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "YES",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "ROADSIDE ASSISTANCE",
+              "parsed": "ROADSIDE ASSISTANCE",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "NONE",
+              "parsed": "NONE",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "TRANSPORTATION EXP",
+              "parsed": "TRANSPORTATION EXP",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "30/ 900",
+              "parsed": "30/ 900",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "TRIP INTERRUPTION",
+              "parsed": "TRIP INTERRUPTION",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "NONE",
+              "parsed": "NONE",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "CUSTOMIZING",
+              "parsed": "CUSTOMIZING",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "NO",
+              "parsed": "NO",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "NO",
+              "parsed": "No",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "EXCESS SOUND",
+              "parsed": "EXCESS SOUND",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "NO",
+              "parsed": "NO",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "NO",
+              "parsed": "No",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "AUDIO/VISUAL",
+              "parsed": "AUDIO/VISUAL",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "NO",
+              "parsed": "NO",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "NO",
+              "parsed": "No",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "TAPES/DISCS & MEDIA",
+              "parsed": "TAPES/DISCS & MEDIA",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "NO",
+              "parsed": "NO",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "NO",
+              "parsed": "No",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "PET INJURY COVERAGE",
+              "parsed": "PET INJURY COVERAGE",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "500",
+              "parsed": "500",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "EXTENDED NON-OWNED",
+              "parsed": "EXTENDED NON-OWNED",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "NO",
+              "parsed": "NO",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "NO",
+              "parsed": "No",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2,
+                3
+              ],
+              "flagged": false
+            }
+          }
+        ],
+        "coverage_rating_symbols": [
+          {
+            "coverage_type": {
+              "raw": "OTC",
+              "parsed": "OTC",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3
+              ],
+              "flagged": false
+            },
+            "symbol": {
+              "raw": "43",
+              "parsed": "43",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_type": {
+              "raw": "COLL",
+              "parsed": "COLL",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                2
+              ],
+              "flagged": false
+            },
+            "symbol": {
+              "raw": "42",
+              "parsed": "42",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_type": {
+              "raw": "CSL",
+              "parsed": "CSL",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "symbol": {
+              "raw": "001",
+              "parsed": "001",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_type": {
+              "raw": "BI",
+              "parsed": "BI",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "symbol": {
+              "raw": "001",
+              "parsed": "001",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_type": {
+              "raw": "PD",
+              "parsed": "PD",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "symbol": {
+              "raw": "001",
+              "parsed": "001",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_type": {
+              "raw": "PIP",
+              "parsed": "PIP",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1
+              ],
+              "flagged": false
+            },
+            "symbol": {
+              "raw": "002",
+              "parsed": "002",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_type": {
+              "raw": "MP",
+              "parsed": "MP",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3
+              ],
+              "flagged": false
+            },
+            "symbol": {
+              "raw": "002",
+              "parsed": "002",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            }
+          }
+        ],
+        "vehicle_use": {
+          "raw": "PLEASURE",
+          "parsed": "PLEASURE",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "principal_driver_name": {
+          "raw": "DAVID P SCRANTON",
+          "parsed": "DAVID P SCRANTON",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "low_speed_vehicle_indicator": {
+          "raw": "NO",
+          "parsed": "No",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "joint_ownership_indicator": {
+          "raw": "NO",
+          "parsed": "No",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "actual_cash_value": {
+          "raw": "0",
+          "parsed": 0.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "cost_new": {
+          "raw": "0",
+          "parsed": 0.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "lienholder": {
+          "name": {
+            "raw": "TOYOTA MOTOR CREDIT CORP",
+            "parsed": "TOYOTA MOTOR CREDIT CORP",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              2
+            ],
+            "flagged": false
+          },
+          "status": {
+            "raw": "ACTIVE",
+            "parsed": "ACTIVE",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              2
+            ],
+            "flagged": false
+          },
+          "form_reference": {
+            "raw": "PP0305",
+            "parsed": "PP0305",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              2
+            ],
+            "flagged": false
+          },
+          "rank": {
+            "raw": "4",
+            "parsed": 4,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              3
+            ],
+            "flagged": false
+          },
+          "party_type": {
+            "raw": "LOSS PAYEE",
+            "parsed": "LOSS PAYEE",
+            "confidence": {
+              "score": 1.0,
+              "source": "structural"
+            },
+            "page_ref": [
+              2
+            ],
+            "flagged": false
+          }
+        }
+      }
+    ],
+    "discounts": [
+      {
+        "discount_name": {
+          "raw": "ANTI-LOCK BRAKES",
+          "parsed": "ANTI-LOCK BRAKES",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "percentage": {
+          "raw": "7%",
+          "parsed": "7%",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "PASSIVE RESTRAINT",
+          "parsed": "PASSIVE RESTRAINT",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "percentage": {
+          "raw": "30%",
+          "parsed": "30%",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "ANTI-THEFT DEVICE",
+          "parsed": "ANTI-THEFT DEVICE",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "percentage": {
+          "raw": "15%",
+          "parsed": "15%",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            3
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "DAYTIME RUNNING LAMPS",
+          "parsed": "DAYTIME RUNNING LAMPS",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "percentage": {
+          "raw": "3%",
+          "parsed": "3%",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "MULTI-CAR",
+          "parsed": "MULTI-CAR",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "percentage": {
+          "raw": "NO",
+          "parsed": null,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "COUPLER (COMBO)",
+          "parsed": "COUPLER (COMBO)",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "percentage": {
+          "raw": "INCL",
+          "parsed": "INCL",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "NO-FAULT WORK LOSS REDUCTION",
+          "parsed": "NO-FAULT WORK LOSS REDUCTION",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "percentage": {
+          "raw": "NO",
+          "parsed": null,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "ACCIDENT PREVENTION COURSE",
+          "parsed": "ACCIDENT PREVENTION COURSE",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "percentage": {
+          "raw": "NO",
+          "parsed": null,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "DRIVER TRAINING",
+          "parsed": "DRIVER TRAINING",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "percentage": {
+          "raw": "NO",
+          "parsed": null,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "AWAY AT SCHOOL",
+          "parsed": "AWAY AT SCHOOL",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "percentage": {
+          "raw": "NO",
+          "parsed": null,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "EMPLOYEE DISCOUNT",
+          "parsed": "EMPLOYEE DISCOUNT",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "percentage": {
+          "raw": "NO",
+          "parsed": null,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "PAID IN FULL DISCOUNT",
+          "parsed": "PAID IN FULL DISCOUNT",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "percentage": {
+          "raw": "NO",
+          "parsed": null,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "ELECTRONIC FUND TRANSFER",
+          "parsed": "ELECTRONIC FUND TRANSFER",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "percentage": {
+          "raw": "NO",
+          "parsed": null,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "CLAIMS FREE DISCOUNT",
+          "parsed": "CLAIMS FREE DISCOUNT",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "percentage": {
+          "raw": "NO",
+          "parsed": null,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "GOOD STUDENT DISCOUNT",
+          "parsed": "GOOD STUDENT DISCOUNT",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "percentage": {
+          "raw": "NO",
+          "parsed": null,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "SENIOR DISCOUNT",
+          "parsed": "SENIOR DISCOUNT",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "percentage": {
+          "raw": "NO",
+          "parsed": null,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "NEW CAR DISCOUNT",
+          "parsed": "NEW CAR DISCOUNT",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "percentage": {
+          "raw": "12%",
+          "parsed": "12%",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "INJURY PROTECTION DISCOUNT",
+          "parsed": "INJURY PROTECTION DISCOUNT",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "percentage": {
+          "raw": "NO",
+          "parsed": null,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "HOME OWNERSHIP",
+          "parsed": "HOME OWNERSHIP",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "percentage": {
+          "raw": "NO",
+          "parsed": null,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "INCONTROL",
+          "parsed": "INCONTROL",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "percentage": {
+          "raw": "NO",
+          "parsed": null,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "LOW MILEAGE DISCOUNT",
+          "parsed": "LOW MILEAGE DISCOUNT",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "percentage": {
+          "raw": "NO",
+          "parsed": null,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        }
+      }
+    ],
+    "drivers": [
+      {
+        "driver_number": {
+          "raw": "1",
+          "parsed": 1,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "name": {
+          "raw": "Marcus Sutcliffe",
+          "parsed": "Marcus Sutcliffe",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "marital_status": {
+          "raw": "SINGLE",
+          "parsed": "SINGLE",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "gender": {
+          "raw": "MALE",
+          "parsed": "MALE",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "date_of_birth": {
+          "raw": "01-29-1964",
+          "parsed": "01/29/1964",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "license_number": {
+          "raw": "XXXXX3789",
+          "parsed": "XXXXX3789",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "ssn": {
+          "raw": "XXXXX0936",
+          "parsed": "XXXXX0936",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "education_level": {
+          "raw": "ASSOCIATE",
+          "parsed": "ASSOCIATE",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "occupation": {
+          "raw": "SKILLED AND TRADES",
+          "parsed": "SKILLED AND TRADES",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "employment_status": {
+          "raw": "SELF-EMPLOYED",
+          "parsed": "SELF-EMPLOYED",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "business_on_premises_indicator": {
+          "raw": "NO",
+          "parsed": "No",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "violations_and_accidents": [
+          {
+            "date": {
+              "raw": "02-25-2015",
+              "parsed": "02/25/2015",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            },
+            "description": {
+              "raw": "ANIMAL (COMPREHENSIVE LESS OR EQUAL $750)",
+              "parsed": "ANIMAL (COMPREHENSIVE LESS OR EQUAL $750)",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "points": {
+              "raw": "0.00",
+              "parsed": 0.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [],
+              "flagged": false
+            },
+            "occurrence_count": {
+              "raw": "1.00",
+              "parsed": 1.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                1,
+                3
+              ],
+              "flagged": false
+            },
+            "report_source": {
+              "raw": "NYCM CLAIM",
+              "parsed": "NYCM CLAIM",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            }
+          }
+        ]
+      }
+    ],
+    "household": {
+      "unlicensed_household_members_under_19_count": {
+        "raw": "0",
+        "parsed": 0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "residence_ownership": {
+        "raw": "YES",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "residence_type": {
+        "raw": "SINGLE FAMILY DWELLING",
+        "parsed": "SINGLE FAMILY DWELLING",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "locations": [
+    {
+      "location_number": {
+        "raw": "1",
+        "parsed": 1,
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1,
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "address": {
+        "full": {
+          "raw": "180 ROUTE 28 INLET, NY 13360",
+          "parsed": "180 ROUTE 28 INLET, NY 13360",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        }
+      }
+    }
+  ],
+  "loss_history": [
+    {
+      "loss_date": {
+        "raw": "07-03-2004",
+        "parsed": "07/03/2004",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "description": {
+        "raw": "OTC-ANIMAL DAMAGE",
+        "parsed": "OTC-ANIMAL DAMAGE",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "status": {
+        "raw": "COMPREHENSIVE MORE THAN $750",
+        "parsed": "COMPREHENSIVE MORE THAN $750",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "paid_amount": {
+        "raw": "1093.10",
+        "parsed": 1093.1,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      }
+    }
+  ],
+  "additional_fields": [
+    {
+      "section": "Policy",
+      "label": "Tier",
+      "value": {
+        "raw": "ULTRA SELECT - Tier 1",
+        "parsed": "ULTRA SELECT - Tier 1",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Third Party Designee",
+      "label": "Name",
+      "value": {
+        "raw": "NONE",
+        "parsed": "NONE",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Account Information",
+      "label": "Preferred Due Day",
+      "value": {
+        "raw": "0",
+        "parsed": "0",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Exceptions",
+      "label": "Exceptions",
+      "value": {
+        "raw": "NONE",
+        "parsed": "NONE",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Insurance Score Information",
+      "label": "Marcus Sutcliffe 06-08-2006",
+      "value": {
+        "raw": "AA",
+        "parsed": "AA",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Insurance Score Information",
+      "label": "Marcus Sutcliffe 09-16-2005",
+      "value": {
+        "raw": "Z",
+        "parsed": "Z",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Loss payee",
+      "label": "Address",
+      "value": {
+        "raw": "PO BOX 30203 COLLEGE STATION TX 77842",
+        "parsed": "PO BOX 30203 COLLEGE STATION TX 77842",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Remarks",
+      "label": "Remark",
+      "value": {
+        "raw": "FS-6T IN AGENT FILE",
+        "parsed": "FS-6T IN AGENT FILE",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Remarks",
+      "label": "COUPLER INFO POLICY NUMBER",
+      "value": {
+        "raw": "4823278",
+        "parsed": "4823278",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Manual Losses",
+      "label": "LOSS FROM / POINTS / OCCR",
+      "value": {
+        "raw": "NYCM CLAIM 0.00 0.50",
+        "parsed": "NYCM CLAIM 0.00 0.50",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      }
+    }
+  ],
+  "text_sections": {
+    "page1_s1": {
+      "section_id": "page1_s1",
+      "section_title": null,
+      "section_type": "prose",
+      "raw_text": "New York Central Mutual Fire Insurance Company 1899 Central Plaza East,Edmeston NY 13335-1899",
+      "page_range": [
+        1
+      ],
+      "form_number": null
+    },
+    "page2_s1": {
+      "section_id": "page2_s1",
+      "section_title": "VEHICLEUSAGEINFORMATION",
+      "section_type": "prose",
+      "raw_text": "VEH USE MILES PER DAYS PER PRINCIPAL DRIVER EXCEPTION DRIVER VEHICLE",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    },
+    "page2_s2": {
+      "section_id": "page2_s2",
+      "section_title": "DRIVERANDHOUSEHOLDMEMBERINFORMATION",
+      "section_type": "prose",
+      "raw_text": "DRV NAME MAR SEX DOB LICENSE ISSUE DATE NSS",
+      "page_range": [
+        2
+      ],
+      "form_number": null
+    }
+  },
+  "fideon:provenance": {
+    "source": "NYCM Insurance/personal_auto/nycm_insurance_autop_2.pdf",
+    "schema": "personal_auto v1.4.0",
+    "synthetic": false,
+    "gold": "reviewed and completed by Claude against the printed pages",
+    "reviewed": "2026-09-28"
+  }
+}

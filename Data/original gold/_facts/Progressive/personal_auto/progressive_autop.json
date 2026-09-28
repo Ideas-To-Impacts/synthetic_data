@@ -1,0 +1,369 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "This is your Renewal Declarations Page",
+   "parsed": "Renewal Declarations"
+  },
+  "document_title_as_stated": "Motorcycle Insurance Coverage Summary",
+  "line_of_business_as_stated": "Motorcycle",
+  "issue_date": "December 16, 2025",
+  "print_code": "Form 6489 NY (07/07)"
+ },
+ "carrier": {
+  "company_name": "Progressive Northwestern Ins Co"
+ },
+ "claim_reporting": {
+  "claims_phone": "1-800-274-4499"
+ },
+ "producer": {
+  "agency_name": "PATRIOTIC INS GROUP",
+  "contact": {
+   "phone": "1-315-357-5901",
+   "website": "progressiveagent.com"
+  },
+  "address": {
+   "line_1": "159 NY-28",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Marcus Jarrow",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "mailing_address": {
+   "line_1": "PO BOX 895",
+   "city": "OLD FORGE",
+   "state": "NY",
+   "postal_code": "13420"
+  }
+ },
+ "policy": {
+  "policy_number": "16223878",
+  "effective_date": "January 30, 2026",
+  "expiration_date": "January 30, 2027",
+  "effective_time": "12:01 a.m.",
+  "expiration_time": "12:01 a.m.",
+  "policy_term_as_printed": "Jan 30, 2026 - Jan 30, 2027",
+  "policy_term_months": {
+   "raw": "12 month",
+   "parsed": 12
+  },
+  "is_renewal": {
+   "raw": "Renewal",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "policy_form_number": "5979 NY",
+  "policy_form_edition": "10/17"
+ },
+ "premium": {
+  "total_policy_premium": "$141",
+  "discounts_and_credits": [
+   {
+    "description": "Discount if paid in full",
+    "amount": {
+     "raw": "-16",
+     "parsed": -16.0
+    },
+    "is_applied": {
+     "raw": "Discount if paid in full",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   }
+  ]
+ },
+ "billing": {
+  "due_date": "January 30, 2026",
+  "payment_coupon_scan_line": "030816223878 31160 0004025 0014600 5000582 8095909 008001302606",
+  "installments": [
+   {
+    "installment_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "due_date": "Jan 30, 2026",
+    "amount": "$40.25",
+    "installment_fee": "$5.00"
+   },
+   {
+    "installment_number": {
+     "raw": "2",
+     "source": "structural",
+     "parsed": 2
+    },
+    "due_date": "Feb 28, 2026",
+    "amount": "$40.25",
+    "installment_fee": "$5.00"
+   },
+   {
+    "installment_number": {
+     "raw": "3",
+     "source": "structural",
+     "parsed": 3
+    },
+    "due_date": "Mar 30, 2026",
+    "amount": "$40.25",
+    "installment_fee": "$5.00"
+   },
+   {
+    "installment_number": {
+     "raw": "4",
+     "source": "structural",
+     "parsed": 4
+    },
+    "due_date": "Apr 30, 2026",
+    "amount": "$40.25",
+    "installment_fee": "$5.00"
+   }
+  ]
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "5979 NY",
+   "edition_date": "10/17",
+   "form_type": {
+    "raw": "Policy contract",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "A135 NY",
+   "edition_date": "11/13",
+   "form_type": {
+    "raw": "Endorsement",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "Z385 NY",
+   "edition_date": "12/07",
+   "form_type": {
+    "raw": "Endorsement",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "6489 NY",
+   "edition_date": "07/07"
+  },
+  {
+   "form_number": "A016",
+   "edition_date": "07/19"
+  },
+  {
+   "form_number": "A034",
+   "edition_date": "04/17"
+  }
+ ],
+ "state_notices": [
+  {
+   "notice_title": "SEE ENCLOSURE FOR SUPPLEMENTAL SPOUSAL LIABILITY INSURANCE NOTICE",
+   "state": {
+    "raw": "NY",
+    "source": "structural"
+   }
+  }
+ ],
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_effective_date": "January 30, 2026",
+   "renewal_expiration_date": "January 30, 2027",
+   "renewal_premium": "$141.00",
+   "expiring_policy_expiration_date": "01/30/2026",
+   "offer_issue_date": "December 16, 2025",
+   "payment_due_date": "January 30, 2026"
+  }
+ },
+ "auto": {
+  "drivers": [
+   {
+    "driver_number": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "name": "Marcus Jarrow",
+    "age": {
+     "raw": "64",
+     "parsed": 64
+    },
+    "gender": "Male",
+    "marital_status": "Married",
+    "is_named_insured": {
+     "raw": "Named insured",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "driver_number": {
+     "raw": "2",
+     "parsed": 2
+    },
+    "name": "Verity Norcross",
+    "age": {
+     "raw": "32",
+     "parsed": 32
+    },
+    "gender": "Male",
+    "marital_status": "Single"
+   }
+  ],
+  "vehicles": [
+   {
+    "vehicle_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "2017",
+     "parsed": 2017
+    },
+    "make": "POLARIS",
+    "model": "RANGER 900",
+    "vin": "3NSRTA879HG952085",
+    "engine_displacement": "875 cc's",
+    "garaging_territory": {
+     "raw": "Garaging Zip Code : 13420",
+     "parsed": "13420"
+    },
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury Liability",
+      "limit_amount": "$250,000 each person/$500,000 each accident",
+      "premium": "$33",
+      "notes": "Including Supplemental Spousal Liability"
+     },
+     {
+      "coverage_name": "Property Damage Liability",
+      "limit_amount": "$100,000 each accident",
+      "premium": {
+       "raw": "18",
+       "parsed": 18.0
+      }
+     },
+     {
+      "coverage_name": "Mandatory Pedestrian Personal Injury Protection",
+      "limit_amount": "$50,000 each person",
+      "deductible_amount": "$0",
+      "premium": {
+       "raw": "2",
+       "parsed": 2.0
+      }
+     },
+     {
+      "coverage_name": "Aggregate Pedestrian No-Fault Benefits",
+      "limit_amount": "$50,000"
+     },
+     {
+      "coverage_name": "Death Benefit",
+      "limit_amount": "$2,000"
+     },
+     {
+      "coverage_name": "Maximum Monthly Work Loss",
+      "limit_amount": "$2,000"
+     },
+     {
+      "coverage_name": "Other Reasonable & Necessary Expenses (per day)",
+      "limit_amount": "$25"
+     },
+     {
+      "coverage_name": "Supplementary Uninsured/Underinsured Motorist",
+      "limit_amount": "$250,000 each person/$500,000 each accident",
+      "premium": {
+       "raw": "4",
+       "parsed": 4.0
+      }
+     },
+     {
+      "coverage_name": "Medical Payments",
+      "limit_amount": "$1,000 each person",
+      "premium": {
+       "raw": "2",
+       "parsed": 2.0
+      }
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "limit_amount": "Actual Cash Value at time of loss",
+      "deductible_amount": "$500",
+      "premium": {
+       "raw": "35",
+       "parsed": 35.0
+      }
+     },
+     {
+      "coverage_name": "Collision",
+      "limit_amount": "Actual Cash Value at time of loss",
+      "deductible_amount": "$500",
+      "premium": {
+       "raw": "47",
+       "parsed": 47.0
+      }
+     },
+     {
+      "coverage_name": "Accessory Coverage",
+      "limit_amount": "$3,000",
+      "is_included": {
+       "raw": "included",
+       "parsed": "Yes"
+      }
+     }
+    ]
+   }
+  ],
+  "discounts": [
+   {
+    "discount_name": "Multi-Policy",
+    "amount": "$7",
+    "applies_to": {
+     "raw": "2017 POLARIS RANGER 900",
+     "source": "structural"
+    }
+   },
+   {
+    "discount_name": "Claim Free Renewal",
+    "amount": "$3",
+    "applies_to": {
+     "raw": "2017 POLARIS RANGER 900",
+     "source": "structural"
+    }
+   },
+   {
+    "discount_name": "Home Owner",
+    "amount": "$42",
+    "applies_to": {
+     "raw": "2017 POLARIS RANGER 900",
+     "source": "structural"
+    }
+   }
+  ]
+ },
+ "additional_fields": [
+  {
+   "section": "Policy tier",
+   "label": "Policy tier",
+   "value": "Ultra Preferred D"
+  },
+  {
+   "section": "Outline of coverage",
+   "label": "Total 12 month policy premium if paid in full",
+   "value": "$125"
+  },
+  {
+   "section": "Choose a Payment Option",
+   "label": "PAY IN FULL Total Cost",
+   "value": "$125.00"
+  },
+  {
+   "section": "Choose a Payment Option",
+   "label": "PAY IN INSTALLMENTS Total Cost",
+   "value": "$161.00"
+  }
+ ]
+}

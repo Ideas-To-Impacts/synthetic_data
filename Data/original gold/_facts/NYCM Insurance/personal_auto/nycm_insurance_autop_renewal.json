@@ -1,0 +1,625 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "DECLARATIONS",
+   "parsed": "Renewal Declarations"
+  },
+  "document_title_as_stated": "DECLARATIONS",
+  "copy_type": "INSURED COPY",
+  "print_date": "06/08/2026",
+  "print_time": "05:36:13",
+  "batch_number": "05/PPBRGE6",
+  "transaction_type": "RENEWAL",
+  "transaction_effective_date": "07/16/2026"
+ },
+ "carrier": {
+  "company_name": "New York Central Mutual Fire Insurance Company",
+  "contact": {
+   "phone": "800-234-6926",
+   "website": "www.nycm.com"
+  },
+  "address": {
+   "line_1": "1899 Central Plaza East",
+   "city": "Edmeston",
+   "state": "NY",
+   "postal_code": "13335-1899"
+  }
+ },
+ "producer": {
+  "agency_name": "STABLE ROCK INSURANCE AGENCY LLC",
+  "producer_code": "08014",
+  "territory": "3R",
+  "contact": {
+   "phone": "315-357-5901",
+   "fax": "315-357-5126",
+   "email": "agency@patrioticinsurancegroup.com",
+   "website": "https://patrioticinsurancegroup.com"
+  },
+  "address": {
+   "line_1": "159 ROUTE 28",
+   "line_2": "PO BOX 329",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360-0329"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Juno Keswick",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "mailing_address": {
+   "line_1": "PO BOX 61",
+   "city": "EAGLE BAY",
+   "state": "NY",
+   "postal_code": "13331-0061"
+  }
+ },
+ "policy": {
+  "policy_number": "80320020",
+  "policy_type": "AUTO VOLUNTARY",
+  "original_inception_date": "07/16/2024",
+  "policyholder_since_date": "07/16/2014",
+  "effective_date": "07/16/2026",
+  "expiration_date": "07/16/2027",
+  "effective_time": "12:01 AM",
+  "expiration_time": "12:01 AM",
+  "time_zone": "EST",
+  "policy_term_as_printed": "12 MONTHS",
+  "policy_term_months": {
+   "raw": "12 MONTHS",
+   "parsed": 12
+  },
+  "is_renewal": {
+   "raw": "RENEWAL",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "policy_form_number": "NYCPP0001",
+  "policy_form_edition": "06 22",
+  "policy_form_name": "PERSONAL AUTO POLICY"
+ },
+ "premium": {
+  "total_policy_premium": "$1,721.00"
+ },
+ "billing": {
+  "billing_note": "BILL WILL FOLLOW"
+ },
+ "interested_parties": [
+  {
+   "name": "AMERICU CREDIT UNION",
+   "party_type": "LOSS PAYEE",
+   "address": {
+    "line_1": "1916 BLACK RIVER BLVD",
+    "city": "ROME",
+    "state": "NY",
+    "postal_code": "13440"
+   }
+  }
+ ],
+ "forms_and_endorsements": [
+  {
+   "form_number": "ILN0002",
+   "edition_date": "1110",
+   "form_title": "NEW YORK RENTAL REIMBURSEMENT COVERAGE DISCLOSURE"
+  },
+  {
+   "form_number": "NYC 274",
+   "edition_date": "07 24",
+   "form_title": "AMENDMENT OF POLICY PROVISIONS - NEW YORK"
+  },
+  {
+   "form_number": "NYC DN 283",
+   "edition_date": "08 17",
+   "form_title": "ADVISORY NOTICE TO POLICYHOLDERS"
+  },
+  {
+   "form_number": "NYC DN 292",
+   "edition_date": "09 22",
+   "form_title": "NOTICE TO POLICYHOLDERS"
+  },
+  {
+   "form_number": "NYC DN 294",
+   "edition_date": "09 22",
+   "form_title": "ADVISORY NOTICE TO POLICYHOLDERS EXCLUSION PEER-TO-PEER CAR SHARING PROGRAM"
+  },
+  {
+   "form_number": "NYC DN 302",
+   "edition_date": "03 25",
+   "form_title": "NOTICE TO POLICYHOLDERS - SUPPLEMENTAL SPOUSAL LIABILITY COVERAGE - AVAILABILITY"
+  },
+  {
+   "form_number": "NYC PP 275",
+   "edition_date": "09 22",
+   "form_title": "PEER-TO-PEER CAR SHARING PROGRAM EXCLUSION ENDORSEMENT"
+  },
+  {
+   "form_number": "NYC PP272",
+   "edition_date": "0817",
+   "form_title": "TRANSPORTATION NETWORK COMPANY"
+  },
+  {
+   "form_number": "NYC0366",
+   "edition_date": "09 22",
+   "form_title": "RATING INFORMATION - NEW YORK"
+  },
+  {
+   "form_number": "NYC215",
+   "edition_date": "0801",
+   "form_title": "IDENTIFICATION CARDS"
+  },
+  {
+   "form_number": "NYC219",
+   "edition_date": "0611",
+   "form_title": "YOUR PERSONAL AUTO POLICY QUICK REFERENCE"
+  },
+  {
+   "form_number": "NYC221",
+   "edition_date": "06 18",
+   "form_title": "SUM COVERAGE PAMPHLET"
+  },
+  {
+   "form_number": "NYC230",
+   "edition_date": "0611",
+   "form_title": "RENTAL VEHICLE COVERAGE"
+  },
+  {
+   "form_number": "NYC237",
+   "edition_date": "0611",
+   "form_title": "RENEWAL CREDIT SCORE NOTICE"
+  },
+  {
+   "form_number": "NYCM PN",
+   "edition_date": "03 25",
+   "form_title": "PRIVACY NOTICE"
+  },
+  {
+   "form_number": "NYCPP0001",
+   "edition_date": "06 22",
+   "form_title": "PERSONAL AUTO POLICY"
+  },
+  {
+   "form_number": "NYCPP0346",
+   "edition_date": "09 22",
+   "form_title": "RENTAL VEHICLE COVERAGE ENDORSEMENT - NEW YORK"
+  },
+  {
+   "form_number": "NYCPP0409",
+   "edition_date": "09 22",
+   "form_title": "SUPPLEMENTARY UNINSURED/UNDERINSURED MOTORISTS LIM"
+  },
+  {
+   "form_number": "NYCPP0587",
+   "edition_date": "09 22",
+   "form_title": "PERSONAL INJURY PROTECTION COVERAGE - NEW YORK"
+  },
+  {
+   "form_number": "NYCPP0588",
+   "edition_date": "09 22",
+   "form_title": "ADDITIONAL PERSONAL INJURY PROTECTION COVERAGE - NEW YORK"
+  },
+  {
+   "form_number": "NYCPP260",
+   "edition_date": "0316",
+   "form_title": "ACCIDENT FORGIVENESS PLUS"
+  },
+  {
+   "form_number": "NYCPP279",
+   "edition_date": "08 24",
+   "form_title": "AMENDMENT OF POLICY PROVISIONS"
+  },
+  {
+   "form_number": "PHN131",
+   "edition_date": "0925",
+   "form_title": "POLICYHOLDER DISCLOSURE NOTICE"
+  },
+  {
+   "form_number": "PP0593",
+   "edition_date": "1191",
+   "form_title": "OPTIONAL BASIC ECONOMIC LOSS COVERAGE - NEW YORK"
+  },
+  {
+   "form_number": "UA154",
+   "edition_date": "0912",
+   "form_title": "DWI INFORMATION FORM"
+  },
+  {
+   "form_number": "NYCPP263",
+   "edition_date": "0815",
+   "form_title": "PET INJURY COVERAGE"
+  },
+  {
+   "form_number": "PP0302",
+   "edition_date": "0698",
+   "form_title": "OPTIONAL LIMITS TRANSPORTATION EXPENSES COVERAGE"
+  },
+  {
+   "form_number": "PP0305",
+   "edition_date": "0886",
+   "form_title": "LOSS PAYABLE CLAUSE"
+  },
+  {
+   "form_number": "PP0365",
+   "edition_date": "0886",
+   "form_title": "FULL COVERAGE WINDOW GLASS - NEW YORK"
+  }
+ ],
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_effective_date": "07/16/2026",
+   "renewal_expiration_date": "07/16/2027",
+   "renewal_premium": "$1,721.00"
+  }
+ },
+ "auto": {
+  "accident_forgiveness_status": "YES (PLUS)",
+  "drivers": [
+   {
+    "driver_number": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "name": "Juno Keswick",
+    "operator_type": "PRIMARY INSURED",
+    "driver_status": "RATED DRIVER",
+    "marital_status": "DIVORCED",
+    "gender": "FEMALE"
+   }
+  ],
+  "vehicles": [
+   {
+    "vehicle_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "vehicle_category": "PRIVATE PASSENGER",
+    "year": {
+     "raw": "2021",
+     "parsed": 2021
+    },
+    "make": "FORD",
+    "model": "EXPLORER X",
+    "vin": "1FMSK8DH9MGA10830",
+    "class_code": "62NFSP10",
+    "symbol_or_class_code": "LW/LZ",
+    "garaging_territory": "367",
+    "cost_new": {
+     "raw": "0",
+     "parsed": 0.0
+    },
+    "actual_cash_value": {
+     "raw": "0",
+     "parsed": 0.0
+    },
+    "low_speed_vehicle_indicator": {
+     "raw": "NO",
+     "parsed": "No"
+    },
+    "principal_driver_name": "Juno Keswick",
+    "rated_driver_name": "Juno Keswick",
+    "premium": "$1,721.00",
+    "motor_vehicle_law_enforcement_fee": "$10.00",
+    "coverage_rating_symbols": [
+     {
+      "coverage_type": "Other Than Collision",
+      "symbol": "LZ"
+     },
+     {
+      "coverage_type": "Collision",
+      "symbol": "LW"
+     },
+     {
+      "coverage_type": "Combined Single Limit",
+      "symbol": "NL"
+     },
+     {
+      "coverage_type": "Bodily Injury",
+      "symbol": "HH"
+     },
+     {
+      "coverage_type": "Property Damage",
+      "symbol": "MR"
+     },
+     {
+      "coverage_type": "PIP",
+      "symbol": "KF"
+     },
+     {
+      "coverage_type": "Med Pay",
+      "symbol": "JM"
+     }
+    ],
+    "coverages": [
+     {
+      "coverage_name": "BODILY INJURY SPLIT LIMITS",
+      "limit_amount": "100,000/300,000 PER PERSON/PER ACCIDENT",
+      "premium": "$152.00"
+     },
+     {
+      "coverage_name": "PROPERTY DAMAGE",
+      "limit_amount": "100,000 PER ACCIDENT",
+      "premium": "$232.00"
+     },
+     {
+      "coverage_name": "SUPPLEMENTARY UNINSURED/UNDERINSURED MOTORISTS*",
+      "limit_amount": "100,000/300,000 PER PERSON/PER ACCIDENT",
+      "premium": "$72.00"
+     },
+     {
+      "coverage_name": "PERSONAL INJURY PROTECTION (PIP)",
+      "limit_amount": "50,000 PER PERSON",
+      "deductible_amount": "FULL",
+      "premium": "$93.00"
+     },
+     {
+      "coverage_name": "ADDITIONAL PERSONAL INJURY PROTECTION (PIP)",
+      "limit_amount": "25,000 PER PERSON",
+      "premium": "$14.00"
+     },
+     {
+      "coverage_name": "OPTIONAL BASIC ECONOMIC LOSS",
+      "limit_amount": "25,000 PER PERSON",
+      "premium": "$8.00"
+     },
+     {
+      "coverage_name": "AGGREGATE NO FAULT BENEFITS AVAILABLE",
+      "limit_amount": "100,000",
+      "premium": "$115.00"
+     },
+     {
+      "coverage_name": "OUT OF STATE PERSONAL INJURY PROTECTION (PIP)",
+      "limit_amount": "50,000 PER PERSON",
+      "premium": "$3.00"
+     },
+     {
+      "coverage_name": "MAXIMUM MONTHLY WORK LOSS",
+      "limit_amount": "2,000 PER PERSON",
+      "is_included": {
+       "raw": "INCL.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "ADDITIONAL MONTHLY WORK LOSS",
+      "limit_amount": "1,000 PER PERSON",
+      "is_included": {
+       "raw": "INCL.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "AGGREGATE WORK LOSS",
+      "limit_amount": "3,000",
+      "is_included": {
+       "raw": "INCL.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "OTHER NECESSARY EXPENSES",
+      "limit_amount": "25 PER DAY",
+      "is_included": {
+       "raw": "INCL.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "ADDITIONAL OTHER NECESSARY EXPENSES",
+      "limit_amount": "25 PER DAY",
+      "is_included": {
+       "raw": "INCL.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "AGGREGATE OTHER NECESSARY EXPENSES",
+      "limit_amount": "50",
+      "is_included": {
+       "raw": "INCL.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "DEATH BENEFITS",
+      "limit_amount": "2,000 PER PERSON",
+      "is_included": {
+       "raw": "INCL.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "ADDITIONAL DEATH BENEFITS",
+      "limit_amount": "2,000 PER PERSON",
+      "premium": "$3.00"
+     },
+     {
+      "coverage_name": "AGGREGATE DEATH BENEFITS",
+      "limit_amount": "4,000",
+      "premium": "$3.00"
+     },
+     {
+      "coverage_name": "MEDICAL PAYMENTS",
+      "limit_amount": "5,000 PER PERSON",
+      "premium": "$4.00"
+     },
+     {
+      "coverage_name": "OTHER THAN COLLISION LOSS",
+      "deductible_amount": "200",
+      "premium": "$486.00"
+     },
+     {
+      "coverage_name": "COLLISION LOSS",
+      "deductible_amount": "500",
+      "premium": "$520.00"
+     },
+     {
+      "coverage_name": "FULL COVERAGE WINDOW GLASS",
+      "premium": "$110.00"
+     },
+     {
+      "coverage_name": "OPTIONAL LIMITS TRANSPORTATION EXPENSES COVERAGE",
+      "limit_amount": "50/1,500 PER DAY/MAXIMUM",
+      "premium": "$14.00"
+     },
+     {
+      "coverage_name": "PET INJURY COVERAGE",
+      "limit_amount": "500 PER ACCIDENT",
+      "is_included": {
+       "raw": "INCL.",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "PERSONAL ARTICLES COVERAGE",
+      "limit_amount": "100 PER ACCIDENT",
+      "is_included": {
+       "raw": "INCL.",
+       "parsed": "Yes"
+      }
+     }
+    ]
+   }
+  ],
+  "discounts": [
+   {
+    "discount_name": "PASSIVE RESTRAINT",
+    "amount": "$55.00",
+    "applies_to": {
+     "raw": "Vehicle 1",
+     "source": "structural"
+    }
+   },
+   {
+    "discount_name": "ANTI-THEFT DEVICE",
+    "amount": "$135.00",
+    "applies_to": {
+     "raw": "Vehicle 1",
+     "source": "structural"
+    }
+   },
+   {
+    "discount_name": "ANTI-LOCK BRAKES",
+    "amount": "$87.00",
+    "applies_to": {
+     "raw": "Vehicle 1",
+     "source": "structural"
+    }
+   },
+   {
+    "discount_name": "DAYTIME RUNNING LAMPS",
+    "amount": "$37.00",
+    "applies_to": {
+     "raw": "Vehicle 1",
+     "source": "structural"
+    }
+   },
+   {
+    "discount_name": "COUPLER (COMBO) - BODILY INJURY",
+    "amount": "$25.00",
+    "applies_to": {
+     "raw": "Vehicle 1",
+     "source": "structural"
+    }
+   },
+   {
+    "discount_name": "COUPLER (COMBO) - PROPERTY DAMAGE",
+    "amount": "$41.00",
+    "applies_to": {
+     "raw": "Vehicle 1",
+     "source": "structural"
+    }
+   },
+   {
+    "discount_name": "COUPLER (COMBO) - PERSONAL INJURY PROTECTION",
+    "amount": "$14.00",
+    "applies_to": {
+     "raw": "Vehicle 1",
+     "source": "structural"
+    }
+   },
+   {
+    "discount_name": "COUPLER (COMBO) - OTHER THAN COLLISION",
+    "amount": "$90.00",
+    "applies_to": {
+     "raw": "Vehicle 1",
+     "source": "structural"
+    }
+   },
+   {
+    "discount_name": "COUPLER (COMBO) - COLLISION",
+    "amount": "$95.00",
+    "applies_to": {
+     "raw": "Vehicle 1",
+     "source": "structural"
+    }
+   },
+   {
+    "discount_name": "COUPLER (COMBO) - FULL GLASS",
+    "amount": "$21.00",
+    "applies_to": {
+     "raw": "Vehicle 1",
+     "source": "structural"
+    }
+   },
+   {
+    "discount_name": "CLAIMS FREE DISCOUNT",
+    "amount": "$185.00",
+    "applies_to": {
+     "raw": "Vehicle 1",
+     "source": "structural"
+    }
+   },
+   {
+    "discount_name": "PAID IN FULL DISCOUNT",
+    "amount": "$198.00",
+    "applies_to": {
+     "raw": "Vehicle 1",
+     "source": "structural"
+    }
+   },
+   {
+    "discount_name": "HOME OWNERSHIP",
+    "amount": "$65.00",
+    "applies_to": {
+     "raw": "Vehicle 1",
+     "source": "structural"
+    }
+   }
+  ]
+ },
+ "locations": [
+  {
+   "location_number": {
+    "raw": "1",
+    "source": "structural",
+    "parsed": 1
+   },
+   "address": {
+    "line_1": "109 WEST AVE",
+    "city": "EAGLE BAY",
+    "state": "NY",
+    "postal_code": "13331-1714",
+    "county": "HERKIMER"
+   }
+  }
+ ],
+ "additional_fields": [
+  {
+   "section": "Policy Information",
+   "label": "Tier",
+   "value": "33"
+  },
+  {
+   "section": "Agency Information",
+   "label": "Paper Off",
+   "value": "YES"
+  },
+  {
+   "section": "Agency Information",
+   "label": "Direct Mail",
+   "value": "YES"
+  }
+ ]
+}

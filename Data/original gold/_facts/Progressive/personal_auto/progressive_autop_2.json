@@ -1,0 +1,517 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "This is your Renewal Declarations Page",
+   "parsed": "Renewal Declarations"
+  },
+  "document_title_as_stated": "Auto Insurance Coverage Summary",
+  "line_of_business_as_stated": "Auto",
+  "issue_date": {
+   "raw": "Date of Mailing: July 9, 2026",
+   "parsed": "07/09/2026"
+  },
+  "print_code": "Form 6489 NY (12/21)"
+ },
+ "carrier": {
+  "company_name": "Progressive Casualty Insurance Co"
+ },
+ "claim_reporting": {
+  "claims_phone": "1-800-274-4499"
+ },
+ "producer": {
+  "agency_name": "PATRIOTIC INS GROUP",
+  "contact": {
+   "phone": "1-315-357-5901",
+   "website": "progressiveagent.com"
+  },
+  "address": {
+   "line_1": "159 NY-28",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Bertram Keswick",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "additional_named_insureds": [
+   {
+    "name": "Ambrose Radcliffe"
+   }
+  ],
+  "mailing_address": {
+   "line_1": "PO BOX 121",
+   "city": "THENDARA",
+   "state": "NY",
+   "postal_code": "13472"
+  }
+ },
+ "policy": {
+  "policy_number": "919482186",
+  "effective_date": "August 11, 2026",
+  "expiration_date": "February 11, 2027",
+  "effective_time": "12:01 a.m.",
+  "expiration_time": "12:01 a.m.",
+  "policy_term_as_printed": "Aug 11, 2026 - Feb 11, 2027",
+  "policy_term_months": {
+   "raw": "6 month",
+   "parsed": 6
+  },
+  "is_renewal": {
+   "raw": "Renewal",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "policy_form_number": "9611A NY",
+  "policy_form_edition": "09/22",
+  "policyholder_since_date": "February 11, 2002",
+  "program_name": "Crown Level"
+ },
+ "premium": {
+  "total_policy_premium": "$693.00",
+  "basic_premium": "$688.00",
+  "motor_vehicle_law_enforcement_fee": {
+   "raw": "5.00",
+   "parsed": 5.0
+  },
+  "discounts_and_credits": [
+   {
+    "description": "Discount if paid in full",
+    "amount": {
+     "raw": "-61.00",
+     "parsed": -61.0
+    },
+    "is_applied": {
+     "raw": "Discount if paid in full",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   }
+  ]
+ },
+ "billing": {
+  "due_date": "August 11, 2026",
+  "amount_due": "$632.00",
+  "payment_coupon_scan_line": "030891948218631018 0012569 0069900 5000782 2710594 017008112603",
+  "installments": [
+   {
+    "installment_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "due_date": "Aug 11, 2026",
+    "amount": "$125.69",
+    "installment_fee": "$6.00"
+   },
+   {
+    "installment_number": {
+     "raw": "2",
+     "source": "structural",
+     "parsed": 2
+    },
+    "due_date": "Sep 11, 2026",
+    "amount": "$120.67",
+    "installment_fee": "$6.00"
+   },
+   {
+    "installment_number": {
+     "raw": "3",
+     "source": "structural",
+     "parsed": 3
+    },
+    "due_date": "Oct 11, 2026",
+    "amount": "$120.67",
+    "installment_fee": "$6.00"
+   },
+   {
+    "installment_number": {
+     "raw": "4",
+     "source": "structural",
+     "parsed": 4
+    },
+    "due_date": "Nov 11, 2026",
+    "amount": "$120.67",
+    "installment_fee": "$6.00"
+   },
+   {
+    "installment_number": {
+     "raw": "5",
+     "source": "structural",
+     "parsed": 5
+    },
+    "due_date": "Dec 11, 2026",
+    "amount": "$120.67",
+    "installment_fee": "$6.00"
+   },
+   {
+    "installment_number": {
+     "raw": "6",
+     "source": "structural",
+     "parsed": 6
+    },
+    "due_date": "Jan 11, 2027",
+    "amount": "$120.63",
+    "installment_fee": "$6.00"
+   }
+  ]
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "9611A NY",
+   "edition_date": "09/22",
+   "form_type": {
+    "raw": "Policy contract",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "A403 NY",
+   "edition_date": "11/23",
+   "form_type": {
+    "raw": "Endorsement",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "6489 NY",
+   "edition_date": "12/21"
+  },
+  {
+   "form_number": "A016",
+   "edition_date": "07/19"
+  }
+ ],
+ "state_notices": [
+  {
+   "notice_title": "SEE ENCLOSURE FOR SUPPLEMENTAL SPOUSAL LIABILITY INSURANCE NOTICE",
+   "state": {
+    "raw": "NY",
+    "source": "structural"
+   }
+  }
+ ],
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_effective_date": "August 11, 2026",
+   "renewal_expiration_date": "February 11, 2027",
+   "renewal_premium": "$693.00",
+   "expiring_policy_expiration_date": "08/11/2026",
+   "offer_issue_date": "July 9, 2026",
+   "payment_due_date": "August 11, 2026"
+  }
+ },
+ "auto": {
+  "drivers": [
+   {
+    "driver_number": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "name": "Bertram Keswick",
+    "age": {
+     "raw": "58",
+     "parsed": 58
+    },
+    "gender": "Female",
+    "marital_status": "Married",
+    "is_named_insured": {
+     "raw": "Named insured",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "driver_number": {
+     "raw": "2",
+     "parsed": 2
+    },
+    "name": "Ambrose Radcliffe",
+    "age": {
+     "raw": "64",
+     "parsed": 64
+    },
+    "gender": "Male",
+    "marital_status": "Married",
+    "is_named_insured": {
+     "raw": "Named insured",
+     "parsed": "Yes"
+    }
+   }
+  ],
+  "vehicles": [
+   {
+    "vehicle_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "2024",
+     "parsed": 2024
+    },
+    "make": "SUBARU",
+    "model": "OUTBACK",
+    "body_type": "STATION WAGON",
+    "vin": "4S4BTADC9R3278798",
+    "garaging_territory": {
+     "raw": "Garaging ZIP Code: 13420",
+     "parsed": "13420"
+    },
+    "vehicle_use": "Pleasure/Personal",
+    "annual_mileage": "10,000 - 11,999",
+    "lienholder": {
+     "name": "CHASE AUTO FINANCE",
+     "party_type": {
+      "raw": "Lienholder",
+      "source": "structural"
+     }
+    },
+    "coverages": [
+     {
+      "coverage_name": "Liability To Others",
+      "premium": "$120"
+     },
+     {
+      "coverage_name": "Bodily Injury Liability",
+      "limit_amount": "$100,000 each person/$300,000 each accident"
+     },
+     {
+      "coverage_name": "Supplemental Spousal Liability",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Property Damage Liability",
+      "limit_amount": "$100,000 each accident"
+     },
+     {
+      "coverage_name": "Mandatory Personal Injury Protection",
+      "limit_amount": "$50,000 each person",
+      "deductible_amount": "$0",
+      "premium": {
+       "raw": "30",
+       "parsed": 30.0
+      }
+     },
+     {
+      "coverage_name": "Additional Personal Injury Protection - Full",
+      "limit_amount": "$100,000 each person",
+      "premium": {
+       "raw": "6",
+       "parsed": 6.0
+      }
+     },
+     {
+      "coverage_name": "Optional Basic Economic Loss",
+      "limit_amount": "$25,000 each person",
+      "premium": {
+       "raw": "5",
+       "parsed": 5.0
+      }
+     },
+     {
+      "coverage_name": "Aggregate No-Fault Benefits Available",
+      "limit_amount": "$175,000"
+     },
+     {
+      "coverage_name": "Death Benefit",
+      "limit_amount": "$2,000"
+     },
+     {
+      "coverage_name": "Maximum Monthly Work Loss",
+      "limit_amount": "$5,000"
+     },
+     {
+      "coverage_name": "Other Reasonable & Necessary Expenses (per day)",
+      "limit_amount": "$75"
+     },
+     {
+      "coverage_name": "Supplementary Uninsured/Underinsured Motorist",
+      "limit_amount": "$100,000 each person/$300,000 each accident",
+      "premium": {
+       "raw": "16",
+       "parsed": 16.0
+      }
+     },
+     {
+      "coverage_name": "Medical Payments",
+      "limit_amount": "$10,000 each person",
+      "premium": {
+       "raw": "5",
+       "parsed": 5.0
+      }
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "limit_amount": "Actual Cash Value",
+      "deductible_amount": "$200",
+      "premium": {
+       "raw": "315",
+       "parsed": 315.0
+      }
+     },
+     {
+      "coverage_name": "Comprehensive Window Glass",
+      "deductible_amount": "$0 glass"
+     },
+     {
+      "coverage_name": "Collision",
+      "limit_amount": "Actual Cash Value",
+      "deductible_amount": "$500",
+      "premium": {
+       "raw": "164",
+       "parsed": 164.0
+      }
+     },
+     {
+      "coverage_name": "Rental Reimbursement",
+      "limit_amount": "up to $40 each day/maximum 30 days",
+      "premium": {
+       "raw": "22",
+       "parsed": 22.0
+      }
+     },
+     {
+      "coverage_name": "Roadside Assistance",
+      "premium": {
+       "raw": "5",
+       "parsed": 5.0
+      }
+     }
+    ]
+   }
+  ],
+  "discounts": [
+   {
+    "discount_name": "Five-Year Accident Free",
+    "amount": "$35"
+   },
+   {
+    "discount_name": "Daytime Running Lamps",
+    "amount": "$3"
+   },
+   {
+    "discount_name": "Home Owner",
+    "amount": "$16"
+   },
+   {
+    "discount_name": "Multi-Policy/Affiliate",
+    "amount": "$20"
+   },
+   {
+    "discount_name": "Continuous Insurance: Diamond",
+    "amount": "$27"
+   },
+   {
+    "discount_name": "Anti-Lock Brakes/Passive Restraint",
+    "amount": "$3"
+   },
+   {
+    "discount_name": "Three-Year Safe Driver",
+    "amount": "$17"
+   }
+  ],
+  "loyalty_rewards": [
+   {
+    "reward_name": "Small Accident Forgiveness"
+   },
+   {
+    "reward_name": "Continuous Insurance Discount/Diamond"
+   },
+   {
+    "reward_name": "Teen Driver Discount"
+   },
+   {
+    "reward_name": "Large Accident Forgiveness"
+   },
+   {
+    "reward_name": "Priority Call Routing"
+   },
+   {
+    "reward_name": "Lifetime Renewal Guarantee"
+   }
+  ],
+  "liability_coverages": {
+   "bodily_injury_per_person_limit": {
+    "raw": "$100,000 each person",
+    "parsed": 100000.0
+   },
+   "bodily_injury_per_accident_limit": {
+    "raw": "$300,000 each accident",
+    "parsed": 300000.0
+   },
+   "property_damage_limit": {
+    "raw": "$100,000 each accident",
+    "parsed": 100000.0
+   },
+   "supplemental_spousal_liability": {
+    "raw": "Included",
+    "parsed": "Yes"
+   },
+   "medical_payments_limit": {
+    "raw": "$10,000 each person",
+    "parsed": 10000.0
+   }
+  },
+  "no_fault_benefits": {
+   "mandatory_pip_limit": {
+    "raw": "$50,000 each person",
+    "parsed": 50000.0
+   },
+   "no_fault_deductible": "$0",
+   "additional_pip_limit": {
+    "raw": "$100,000 each person",
+    "parsed": 100000.0
+   },
+   "optional_basic_economic_loss_limit": {
+    "raw": "$25,000 each person",
+    "parsed": 25000.0
+   },
+   "aggregate_no_fault_benefits_available": "$175,000",
+   "death_benefit": "$2,000",
+   "maximum_monthly_work_loss": "$5,000",
+   "other_necessary_expenses_per_day": "$75"
+  },
+  "physical_damage_coverages": {
+   "comprehensive_deductible": "$200",
+   "collision_deductible": "$500",
+   "full_glass_deductible": {
+    "raw": "$0 glass",
+    "parsed": "$0"
+   },
+   "valuation_basis": "Actual Cash Value",
+   "rental_reimbursement_daily_maximum": "$40",
+   "rental_reimbursement_maximum_days": {
+    "raw": "maximum 30 days",
+    "parsed": 30
+   }
+  }
+ },
+ "additional_fields": [
+  {
+   "section": "Policy tier",
+   "label": "Policy tier",
+   "value": "3X"
+  },
+  {
+   "section": "Outline of coverage",
+   "label": "Total 6 month policy premium if paid in full and fees",
+   "value": "$632.00"
+  },
+  {
+   "section": "Choose a Payment Option",
+   "label": "PAY IN INSTALLMENTS Total Cost",
+   "value": "$729.00"
+  },
+  {
+   "section": "Lienholder information",
+   "label": "Lienholder address",
+   "value": "FT WORTH, TX 76101"
+  }
+ ]
+}

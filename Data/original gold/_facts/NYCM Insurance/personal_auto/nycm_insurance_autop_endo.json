@@ -1,0 +1,547 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "NYCM AUTOMOBILE ENDORSEMENT SUMMARY",
+   "parsed": "Policy Change Summary"
+  },
+  "document_title_as_stated": "NYCM AUTOMOBILE ENDORSEMENT SUMMARY",
+  "print_date": "12-23-2024",
+  "print_code": "NYC 79A 01/2017",
+  "transaction_effective_date": "12-19-2024",
+  "transaction_type": {
+   "raw": "Endorsement",
+   "source": "structural"
+  }
+ },
+ "carrier": {
+  "company_name": "New York Central Mutual Fire Insurance Company",
+  "contact": {
+   "phone": "800-234-6926",
+   "website": "www.nycm.com"
+  },
+  "address": {
+   "line_1": "1899 Central Plaza East",
+   "city": "Edmeston",
+   "state": "NY",
+   "postal_code": "13335-1899"
+  }
+ },
+ "producer": {
+  "agency_name": "PATRIOTIC INSURANCE GROUP BROKERAGE INC",
+  "producer_code": "08014",
+  "territory": "3R",
+  "contact": {
+   "phone": "315-357-5901",
+   "fax": "315-357-5126",
+   "email": "agency@patrioticinsurancegroup.com"
+  },
+  "address": {
+   "line_1": "159 ROUTE 28",
+   "line_2": "PO BOX 329",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360-0329"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Juno Keswick",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "mailing_address": {
+   "line_1": "PO BOX 61",
+   "city": "EAGLE BAY",
+   "state": "NY",
+   "postal_code": "13331-0061"
+  },
+  "contact": {
+   "phone": "315-555-0071",
+   "email": "juno.keswick@example.com"
+  }
+ },
+ "policy": {
+  "policy_number": "80320020",
+  "quote_number": "Q27786914",
+  "effective_date": "07-16-2024",
+  "expiration_date": "07-16-2025",
+  "effective_time": "12:01 AM",
+  "time_zone": "STANDARD TIME AT INSURED ADDRESS"
+ },
+ "premium": {
+  "estimated_annual_premium": {
+   "raw": "1465.00",
+   "parsed": 1465.0
+  },
+  "prorated_premium_amount": {
+   "raw": "0.00",
+   "parsed": 0.0
+  }
+ },
+ "document_type_detail": {
+  "policy_change": {
+   "transaction_effective_date": "12-19-2024",
+   "net_change_amount": {
+    "raw": "0.00",
+    "parsed": 0.0
+   },
+   "changes": [
+    {
+     "change_description": "LAST NAME HAS BEEN CHANGED FROM 'Thorne' TO 'Keswick' FOR Juno Keswick."
+    },
+    {
+     "change_description": "MARITAL STATUS HAS BEEN CHANGED FROM 'SEPARATED' TO 'DIVORCED' FOR Juno Keswick."
+    }
+   ]
+  }
+ },
+ "auto": {
+  "vehicles": [
+   {
+    "vehicle_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "2021",
+     "parsed": 2021
+    },
+    "make": "FORD",
+    "model": "EXPLORER X",
+    "vin": "1FMSK8DH9MGA10830",
+    "garaging_territory": "367",
+    "class_code": "60NFSP10",
+    "rated_driver_name": "Juno Keswick",
+    "premium": "$1,455.00",
+    "coverages": [
+     {
+      "coverage_name": "BODILY INJURY",
+      "limit_amount": "100,000/ 300,000"
+     },
+     {
+      "coverage_name": "PROPERTY DAMAGE",
+      "limit_amount": "100,000"
+     },
+     {
+      "coverage_name": "PIP DEDUCTIBLE",
+      "limit_amount": "FULL"
+     },
+     {
+      "coverage_name": "INCREASED PIP",
+      "limit_amount": "25,000"
+     },
+     {
+      "coverage_name": "BROADENED ADDITIONAL PIP",
+      "limit_amount": "NO",
+      "is_included": {
+       "raw": "NO",
+       "parsed": "No"
+      }
+     },
+     {
+      "coverage_name": "OUT OF STATE PIP",
+      "limit_amount": "50,000"
+     },
+     {
+      "coverage_name": "OBEL",
+      "limit_amount": "25,000"
+     },
+     {
+      "coverage_name": "DEATH BENEFIT",
+      "limit_amount": "YES",
+      "is_included": {
+       "raw": "YES",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "MEDICAL PAYMENTS",
+      "limit_amount": "5,000"
+     },
+     {
+      "coverage_name": "SUPP SPOUSAL LIAB",
+      "limit_amount": "NO",
+      "is_included": {
+       "raw": "NO",
+       "parsed": "No"
+      }
+     },
+     {
+      "coverage_name": "STAT/SUM",
+      "limit_amount": "100,000/ 300,000"
+     },
+     {
+      "coverage_name": "OTHER THAN COLL",
+      "limit_amount": "200"
+     },
+     {
+      "coverage_name": "COLLISION",
+      "limit_amount": "500"
+     },
+     {
+      "coverage_name": "FULL GLASS",
+      "limit_amount": "YES",
+      "is_included": {
+       "raw": "YES",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "ROADSIDE ASSISTANCE",
+      "limit_amount": "NONE"
+     },
+     {
+      "coverage_name": "TRANSPORTATION EXP",
+      "limit_amount": "50/ 1,500"
+     },
+     {
+      "coverage_name": "TRIP INTERRUPTION",
+      "limit_amount": "NONE"
+     },
+     {
+      "coverage_name": "CUSTOMIZING",
+      "limit_amount": "0"
+     },
+     {
+      "coverage_name": "EXCESS EQUIPMENT",
+      "limit_amount": "NO",
+      "is_included": {
+       "raw": "NO",
+       "parsed": "No"
+      }
+     },
+     {
+      "coverage_name": "TAPES/DISCS & MEDIA",
+      "limit_amount": "NO",
+      "is_included": {
+       "raw": "NO",
+       "parsed": "No"
+      }
+     },
+     {
+      "coverage_name": "PET INJURY COVERAGE",
+      "limit_amount": "500"
+     },
+     {
+      "coverage_name": "NEW CAR REPLACEMENT",
+      "limit_amount": "NO",
+      "is_included": {
+       "raw": "NO",
+       "parsed": "No"
+      }
+     },
+     {
+      "coverage_name": "OEM PARTS",
+      "limit_amount": "NO",
+      "is_included": {
+       "raw": "NO",
+       "parsed": "No"
+      }
+     },
+     {
+      "coverage_name": "PERSONAL ARTICLES",
+      "limit_amount": "100"
+     },
+     {
+      "coverage_name": "EXTENDED NON-OWNED",
+      "limit_amount": "NO",
+      "is_included": {
+       "raw": "NO",
+       "parsed": "No"
+      }
+     }
+    ],
+    "coverage_rating_symbols": [
+     {
+      "coverage_type": "OTC",
+      "symbol": "LZ"
+     },
+     {
+      "coverage_type": "COLL",
+      "symbol": "LW"
+     },
+     {
+      "coverage_type": "CSL",
+      "symbol": "NL"
+     },
+     {
+      "coverage_type": "BI",
+      "symbol": "HH"
+     },
+     {
+      "coverage_type": "PD",
+      "symbol": "MR"
+     },
+     {
+      "coverage_type": "PIP",
+      "symbol": "KF"
+     },
+     {
+      "coverage_type": "MP",
+      "symbol": "JM"
+     }
+    ],
+    "vehicle_use": "PLEASURE",
+    "principal_driver_name": "Juno Keswick",
+    "registered_to_name": "Juno Keswick",
+    "low_speed_vehicle_indicator": {
+     "raw": "NO",
+     "parsed": "No"
+    },
+    "joint_ownership_indicator": {
+     "raw": "NO",
+     "parsed": "No"
+    },
+    "actual_cash_value": {
+     "raw": "0",
+     "parsed": 0.0
+    },
+    "cost_new": {
+     "raw": "0",
+     "parsed": 0.0
+    },
+    "lienholder": {
+     "name": "AMERICU CREDIT UNION",
+     "status": "ACTIVE",
+     "form_reference": "PP0305",
+     "rank": {
+      "raw": "1",
+      "parsed": 1
+     },
+     "party_type": {
+      "raw": "LOSS PAYEE",
+      "source": "structural"
+     }
+    }
+   }
+  ],
+  "discounts": [
+   {
+    "discount_name": "ANTI-LOCK BRAKES",
+    "percentage": "7%"
+   },
+   {
+    "discount_name": "PASSIVE RESTRAINT",
+    "percentage": "30%"
+   },
+   {
+    "discount_name": "ANTI-THEFT DEVICE",
+    "percentage": "15%"
+   },
+   {
+    "discount_name": "DAYTIME RUNNING LAMPS",
+    "percentage": "3%"
+   },
+   {
+    "discount_name": "MULTI-CAR",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   },
+   {
+    "discount_name": "COUPLER (COMBO)",
+    "percentage": "INCL"
+   },
+   {
+    "discount_name": "NO-FAULT WORK LOSS REDUCTION",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   },
+   {
+    "discount_name": "ACCIDENT PREVENTION COURSE",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   },
+   {
+    "discount_name": "DRIVER TRAINING",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   },
+   {
+    "discount_name": "AWAY AT SCHOOL",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   },
+   {
+    "discount_name": "EMPLOYEE DISCOUNT",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   },
+   {
+    "discount_name": "PAID IN FULL DISCOUNT",
+    "percentage": "10%"
+   },
+   {
+    "discount_name": "ELECTRONIC FUND TRANSFER",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   },
+   {
+    "discount_name": "CLAIMS FREE DISCOUNT",
+    "percentage": "5%"
+   },
+   {
+    "discount_name": "GOOD STUDENT DISCOUNT",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   },
+   {
+    "discount_name": "SENIOR DISCOUNT",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   },
+   {
+    "discount_name": "NEW CAR DISCOUNT",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   },
+   {
+    "discount_name": "INJURY PROTECTION DISCOUNT",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   },
+   {
+    "discount_name": "HOME OWNERSHIP",
+    "percentage": "2.5%"
+   },
+   {
+    "discount_name": "INCONTROL",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   },
+   {
+    "discount_name": "LOW MILEAGE DISCOUNT",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   }
+  ],
+  "drivers": [
+   {
+    "driver_number": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "name": "Juno Keswick",
+    "marital_status": "DIVORCED",
+    "gender": "FEMALE",
+    "date_of_birth": "02-16-1964",
+    "license_number": "XXXXX7759",
+    "ssn": "XXXXX0096",
+    "education_level": "ASSOCIATE",
+    "occupation": "RESTAURANT AND FOOD SERVICES",
+    "employment_status": "FULL-TIME",
+    "violations_and_accidents": [
+     {
+      "date": "12-17-2020",
+      "description": "COLLISION (NOT OUR INSURED)",
+      "points": {
+       "raw": "0.00",
+       "parsed": 0.0
+      },
+      "occurrence_count": {
+       "raw": "0.00",
+       "parsed": 0.0
+      },
+      "report_source": "CLUE/A+",
+      "dispute_indicator": {
+       "raw": "N",
+       "parsed": "No"
+      }
+     }
+    ]
+   }
+  ],
+  "household": {
+   "unlicensed_household_members_under_19_count": {
+    "raw": "0",
+    "parsed": 0
+   },
+   "residence_ownership": {
+    "raw": "YES",
+    "parsed": "Yes"
+   },
+   "residence_type": "SINGLE FAMILY DWELLING"
+  }
+ },
+ "locations": [
+  {
+   "location_number": {
+    "raw": "1",
+    "source": "structural",
+    "parsed": 1
+   },
+   "address": {
+    "full": "109 WEST AVE EAGLE BAY, NY 13331"
+   }
+  }
+ ],
+ "loss_history": [],
+ "additional_fields": [
+  {
+   "section": "Policy",
+   "label": "Tier",
+   "value": "Tier 33"
+  },
+  {
+   "section": "Third Party Designee",
+   "label": "Name",
+   "value": "NONE"
+  },
+  {
+   "section": "Account Information",
+   "label": "Preferred Due Day",
+   "value": "0"
+  },
+  {
+   "section": "Exceptions",
+   "label": "Exceptions",
+   "value": "NONE"
+  },
+  {
+   "section": "Insurance Score Information",
+   "label": "Juno Keswick 06-21-2024",
+   "value": "NCF FF"
+  },
+  {
+   "section": "Loss payee",
+   "label": "Address",
+   "value": "1916 BLACK RIVER BLVD ROME NY 13440"
+  },
+  {
+   "section": "Remarks",
+   "label": "COUPLER INFO POLICY NUMBER",
+   "value": "4798205"
+  },
+  {
+   "section": "Manual Losses",
+   "label": "Manual Losses",
+   "value": "NONE"
+  }
+ ]
+}

@@ -1,0 +1,570 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "NYCM AUTOMOBILE ENDORSEMENT SUMMARY",
+   "parsed": "Policy Change Summary"
+  },
+  "document_title_as_stated": "NYCM AUTOMOBILE ENDORSEMENT SUMMARY",
+  "print_date": "05-29-2024",
+  "print_code": "NYC 79A 01/2017",
+  "transaction_effective_date": "05-22-2024",
+  "transaction_type": {
+   "raw": "Endorsement",
+   "source": "structural"
+  }
+ },
+ "carrier": {
+  "company_name": "New York Central Mutual Fire Insurance Company",
+  "contact": {
+   "phone": "800-234-6926",
+   "website": "www.nycm.com"
+  },
+  "address": {
+   "line_1": "1899 Central Plaza East",
+   "city": "Edmeston",
+   "state": "NY",
+   "postal_code": "13335-1899"
+  }
+ },
+ "producer": {
+  "agency_name": "PATRIOTIC INSURANCE GROUP BROKERAGE INC",
+  "producer_code": "08014",
+  "territory": "3R",
+  "contact": {
+   "phone": "315-357-5901",
+   "fax": "315-357-5126",
+   "email": "beservice@patrioticinsurancegroup.com"
+  },
+  "address": {
+   "line_1": "159 ROUTE 28",
+   "line_2": "PO BOX 329",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360-0329"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Marcus Sutcliffe",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "mailing_address": {
+   "line_1": "PO BOX 685",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360-0685"
+  },
+  "contact": {
+   "phone": "315-555-0061",
+   "email": "customer006@example.com"
+  },
+  "contacts": [
+   {
+    "contact_type": {
+     "raw": "C",
+     "source": "structural"
+    },
+    "contact_value": "315-555-0062"
+   }
+  ]
+ },
+ "policy": {
+  "policy_number": "7596489",
+  "quote_number": "Q25761374",
+  "effective_date": "08-03-2023",
+  "expiration_date": "08-03-2024",
+  "effective_time": "12:01 AM",
+  "time_zone": "STANDARD TIME AT INSURED ADDRESS"
+ },
+ "premium": {
+  "estimated_annual_premium": {
+   "raw": "1741.00",
+   "parsed": 1741.0
+  },
+  "prorated_premium_amount": {
+   "raw": "-119.00",
+   "parsed": -119.0
+  }
+ },
+ "document_type_detail": {
+  "policy_change": {
+   "transaction_effective_date": "05-22-2024",
+   "net_change_amount": {
+    "raw": "-119.00",
+    "parsed": -119.0
+   },
+   "changes": [
+    {
+     "change_description": "REMOVED VEHICLE WITH VIN 4T3BK3BB0EU098551."
+    }
+   ]
+  }
+ },
+ "auto": {
+  "vehicles": [
+   {
+    "vehicle_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "2024",
+     "parsed": 2024
+    },
+    "make": "MAZDA",
+    "model": "CX-50 2.5",
+    "vin": "7MMVABXYXRN188164",
+    "garaging_territory": "167",
+    "class_code": "50NMSP10",
+    "rated_driver_name": "Marcus Sutcliffe",
+    "premium": "$1,731.00",
+    "coverages": [
+     {
+      "coverage_name": "BODILY INJURY",
+      "limit_amount": "250,000/ 500,000"
+     },
+     {
+      "coverage_name": "PROPERTY DAMAGE",
+      "limit_amount": "250,000"
+     },
+     {
+      "coverage_name": "PIP DEDUCTIBLE",
+      "limit_amount": "FULL"
+     },
+     {
+      "coverage_name": "INCREASED PIP",
+      "limit_amount": "50,000"
+     },
+     {
+      "coverage_name": "BROADENED ADDITIONAL PIP",
+      "limit_amount": "NO",
+      "is_included": {
+       "raw": "NO",
+       "parsed": "No"
+      }
+     },
+     {
+      "coverage_name": "OUT OF STATE PIP",
+      "limit_amount": "50,000"
+     },
+     {
+      "coverage_name": "OBEL",
+      "limit_amount": "25,000"
+     },
+     {
+      "coverage_name": "DEATH BENEFIT",
+      "limit_amount": "NO",
+      "is_included": {
+       "raw": "NO",
+       "parsed": "No"
+      }
+     },
+     {
+      "coverage_name": "MEDICAL PAYMENTS",
+      "limit_amount": "5,000"
+     },
+     {
+      "coverage_name": "SUPP SPOUSAL LIAB",
+      "limit_amount": "YES",
+      "is_included": {
+       "raw": "YES",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "STAT/SUM",
+      "limit_amount": "250,000/ 500,000"
+     },
+     {
+      "coverage_name": "OTHER THAN COLL",
+      "limit_amount": "250"
+     },
+     {
+      "coverage_name": "COLLISION",
+      "limit_amount": "500"
+     },
+     {
+      "coverage_name": "FULL GLASS",
+      "limit_amount": "YES",
+      "is_included": {
+       "raw": "YES",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "ROADSIDE ASSISTANCE",
+      "limit_amount": "NONE"
+     },
+     {
+      "coverage_name": "TRANSPORTATION EXP",
+      "limit_amount": "30/ 900"
+     },
+     {
+      "coverage_name": "TRIP INTERRUPTION",
+      "limit_amount": "NONE"
+     },
+     {
+      "coverage_name": "CUSTOMIZING",
+      "limit_amount": "NO",
+      "is_included": {
+       "raw": "NO",
+       "parsed": "No"
+      }
+     },
+     {
+      "coverage_name": "EXCESS SOUND",
+      "limit_amount": "NO",
+      "is_included": {
+       "raw": "NO",
+       "parsed": "No"
+      }
+     },
+     {
+      "coverage_name": "AUDIO/VISUAL",
+      "limit_amount": "NO",
+      "is_included": {
+       "raw": "NO",
+       "parsed": "No"
+      }
+     },
+     {
+      "coverage_name": "TAPES/DISCS & MEDIA",
+      "limit_amount": "NO",
+      "is_included": {
+       "raw": "NO",
+       "parsed": "No"
+      }
+     },
+     {
+      "coverage_name": "PET INJURY COVERAGE",
+      "limit_amount": "500"
+     },
+     {
+      "coverage_name": "EXTENDED NON-OWNED",
+      "limit_amount": "NO",
+      "is_included": {
+       "raw": "NO",
+       "parsed": "No"
+      }
+     }
+    ],
+    "coverage_rating_symbols": [
+     {
+      "coverage_type": "OTC",
+      "symbol": "43"
+     },
+     {
+      "coverage_type": "COLL",
+      "symbol": "42"
+     },
+     {
+      "coverage_type": "CSL",
+      "symbol": "001"
+     },
+     {
+      "coverage_type": "BI",
+      "symbol": "001"
+     },
+     {
+      "coverage_type": "PD",
+      "symbol": "001"
+     },
+     {
+      "coverage_type": "PIP",
+      "symbol": "002"
+     },
+     {
+      "coverage_type": "MP",
+      "symbol": "002"
+     }
+    ],
+    "vehicle_use": "PLEASURE",
+    "principal_driver_name": "DAVID P SCRANTON",
+    "low_speed_vehicle_indicator": {
+     "raw": "NO",
+     "parsed": "No"
+    },
+    "joint_ownership_indicator": {
+     "raw": "NO",
+     "parsed": "No"
+    },
+    "actual_cash_value": {
+     "raw": "0",
+     "parsed": 0.0
+    },
+    "cost_new": {
+     "raw": "0",
+     "parsed": 0.0
+    },
+    "lienholder": {
+     "name": "TOYOTA MOTOR CREDIT CORP",
+     "status": "ACTIVE",
+     "form_reference": "PP0305",
+     "rank": {
+      "raw": "4",
+      "parsed": 4
+     },
+     "party_type": {
+      "raw": "LOSS PAYEE",
+      "source": "structural"
+     }
+    }
+   }
+  ],
+  "discounts": [
+   {
+    "discount_name": "ANTI-LOCK BRAKES",
+    "percentage": "7%"
+   },
+   {
+    "discount_name": "PASSIVE RESTRAINT",
+    "percentage": "30%"
+   },
+   {
+    "discount_name": "ANTI-THEFT DEVICE",
+    "percentage": "15%"
+   },
+   {
+    "discount_name": "DAYTIME RUNNING LAMPS",
+    "percentage": "3%"
+   },
+   {
+    "discount_name": "MULTI-CAR",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   },
+   {
+    "discount_name": "COUPLER (COMBO)",
+    "percentage": "INCL"
+   },
+   {
+    "discount_name": "NO-FAULT WORK LOSS REDUCTION",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   },
+   {
+    "discount_name": "ACCIDENT PREVENTION COURSE",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   },
+   {
+    "discount_name": "DRIVER TRAINING",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   },
+   {
+    "discount_name": "AWAY AT SCHOOL",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   },
+   {
+    "discount_name": "EMPLOYEE DISCOUNT",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   },
+   {
+    "discount_name": "PAID IN FULL DISCOUNT",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   },
+   {
+    "discount_name": "ELECTRONIC FUND TRANSFER",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   },
+   {
+    "discount_name": "CLAIMS FREE DISCOUNT",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   },
+   {
+    "discount_name": "GOOD STUDENT DISCOUNT",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   },
+   {
+    "discount_name": "SENIOR DISCOUNT",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   },
+   {
+    "discount_name": "NEW CAR DISCOUNT",
+    "percentage": "12%"
+   },
+   {
+    "discount_name": "INJURY PROTECTION DISCOUNT",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   },
+   {
+    "discount_name": "HOME OWNERSHIP",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   },
+   {
+    "discount_name": "INCONTROL",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   },
+   {
+    "discount_name": "LOW MILEAGE DISCOUNT",
+    "percentage": {
+     "raw": "NO",
+     "parsed": null
+    }
+   }
+  ],
+  "drivers": [
+   {
+    "driver_number": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "name": "Marcus Sutcliffe",
+    "marital_status": "SINGLE",
+    "gender": "MALE",
+    "date_of_birth": "01-29-1964",
+    "license_number": "XXXXX3789",
+    "ssn": "XXXXX0936",
+    "education_level": "ASSOCIATE",
+    "occupation": "SKILLED AND TRADES",
+    "employment_status": "SELF-EMPLOYED",
+    "business_on_premises_indicator": {
+     "raw": "NO",
+     "parsed": "No"
+    },
+    "violations_and_accidents": [
+     {
+      "date": "02-25-2015",
+      "description": "ANIMAL (COMPREHENSIVE LESS OR EQUAL $750)",
+      "points": {
+       "raw": "0.00",
+       "parsed": 0.0
+      },
+      "occurrence_count": {
+       "raw": "1.00",
+       "parsed": 1.0
+      },
+      "report_source": "NYCM CLAIM"
+     }
+    ]
+   }
+  ],
+  "household": {
+   "unlicensed_household_members_under_19_count": {
+    "raw": "0",
+    "parsed": 0
+   },
+   "residence_ownership": {
+    "raw": "YES",
+    "parsed": "Yes"
+   },
+   "residence_type": "SINGLE FAMILY DWELLING"
+  }
+ },
+ "locations": [
+  {
+   "location_number": {
+    "raw": "1",
+    "source": "structural",
+    "parsed": 1
+   },
+   "address": {
+    "full": "180 ROUTE 28 INLET, NY 13360"
+   }
+  }
+ ],
+ "loss_history": [
+  {
+   "loss_date": "07-03-2004",
+   "description": "OTC-ANIMAL DAMAGE",
+   "status": "COMPREHENSIVE MORE THAN $750",
+   "paid_amount": {
+    "raw": "1093.10",
+    "parsed": 1093.1
+   }
+  }
+ ],
+ "additional_fields": [
+  {
+   "section": "Policy",
+   "label": "Tier",
+   "value": "ULTRA SELECT - Tier 1"
+  },
+  {
+   "section": "Third Party Designee",
+   "label": "Name",
+   "value": "NONE"
+  },
+  {
+   "section": "Account Information",
+   "label": "Preferred Due Day",
+   "value": "0"
+  },
+  {
+   "section": "Exceptions",
+   "label": "Exceptions",
+   "value": "NONE"
+  },
+  {
+   "section": "Insurance Score Information",
+   "label": "Marcus Sutcliffe 06-08-2006",
+   "value": "AA"
+  },
+  {
+   "section": "Insurance Score Information",
+   "label": "Marcus Sutcliffe 09-16-2005",
+   "value": "Z"
+  },
+  {
+   "section": "Loss payee",
+   "label": "Address",
+   "value": "PO BOX 30203 COLLEGE STATION TX 77842"
+  },
+  {
+   "section": "Remarks",
+   "label": "Remark",
+   "value": "FS-6T IN AGENT FILE"
+  },
+  {
+   "section": "Remarks",
+   "label": "COUPLER INFO POLICY NUMBER",
+   "value": "4823278"
+  },
+  {
+   "section": "Manual Losses",
+   "label": "LOSS FROM / POINTS / OCCR",
+   "value": "NYCM CLAIM 0.00 0.50"
+  }
+ ]
+}
