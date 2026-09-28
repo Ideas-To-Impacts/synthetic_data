@@ -1,0 +1,275 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "Coverage Summary",
+   "parsed": "Declarations"
+  },
+  "document_title_as_stated": "Coverage Summary",
+  "line_of_business_as_stated": "Chubb Masterpiece Policy",
+  "copy_type": "Reference Copy",
+  "document_form_number": "Q0802000"
+ },
+ "carrier": {
+  "company_name": "Clearwater Enterprises of New Jersey",
+  "company_structure": "a stock Granite Row incorpo",
+  "contact": {
+   "phone": "1.866.324.8222",
+   "email": "care@fairhavenins.com"
+  }
+ },
+ "claim_reporting": {
+  "claims_phone": "1-800-252-4670"
+ },
+ "producer": {
+  "agency_name": "CLEARWATER CONTRACTING",
+  "address": {
+   "line_1": "3811 RIVERSIDE",
+   "city": "WARWICK",
+   "state": "OH",
+   "postal_code": "10990"
+  }
+ },
+ "named_insured": {
+  "primary_name": "R FUENTES",
+  "mailing_address": {
+   "line_1": "9659 FRANKLIN",
+   "city": "MONROE",
+   "state": "NJ",
+   "postal_code": "10950"
+  }
+ },
+ "policy": {
+  "policy_number": "82981184-64",
+  "effective_date": {
+   "raw": "6/4/21",
+   "parsed": "06/04/2021"
+  },
+  "expiration_date": {
+   "raw": "6/4/22",
+   "parsed": "06/04/2022"
+  },
+  "program_name": "Chubb Masterpiece"
+ },
+ "premium": {
+  "total_policy_premium": "$ 9,677.71",
+  "guaranty_association_surcharge": "$ 57.71",
+  "total_discount_amount": "$1,773",
+  "premium_before_discounts": "$11,450",
+  "premium_by_coverage_part": [
+   {
+    "coverage_part": "Homes and Contents",
+    "property_covered": "9659 FRANKLIN",
+    "applies_to": "HOME, CONTENTS, LIABILITY",
+    "premium": "$ 9,213.00"
+   },
+   {
+    "coverage_part": "Valuable Articles",
+    "property_covered": "JEWELRY",
+    "applies_to": "VALUABLE ARTICLES",
+    "premium": "$ 407.00"
+   }
+  ],
+  "discounts_and_credits": [
+   {
+    "description": "10% because you also insure your automobile(s) with Chubb",
+    "percentage": {
+     "raw": "10%",
+     "parsed": "10%"
+    },
+    "applies_to": "Homes and Contents"
+   },
+   {
+    "description": "5% because you also insure your valuable articles with Chubb",
+    "percentage": {
+     "raw": "5%",
+     "parsed": "5%"
+    },
+    "applies_to": "Homes and Contents"
+   },
+   {
+    "description": "4% since your owned residence has no mortgage or lien",
+    "percentage": {
+     "raw": "4%",
+     "parsed": "4%"
+    },
+    "applies_to": "Homes and Contents"
+   },
+   {
+    "description": "A reduction for having a burglar alarm that meets our criteria",
+    "applies_to": "Homes and Contents"
+   },
+   {
+    "description": "A reduction for having a fire alarm that meets our criteria",
+    "applies_to": "Homes and Contents"
+   },
+   {
+    "description": "A reduction for having a burglar alarm that meets our criteria",
+    "applies_to": "Valuable Articles"
+   },
+   {
+    "description": "The jewelry portion of your Valuable Articles premium has been reduced by a 10% burglar alarm credit.",
+    "percentage": {
+     "raw": "10%",
+     "parsed": "10%"
+    },
+    "applies_to": "Valuable Articles"
+   }
+  ]
+ },
+ "signature": {
+  "authorized_representative_name": "Paul N. Morrissette",
+  "title": "Authorized representative"
+ },
+ "forms_and_endorsements": [
+  {
+   "form_title": "Introduction",
+   "page_reference": "A-1"
+  },
+  {
+   "form_title": "Deluxe House Coverage",
+   "edition_date": "11/20",
+   "state": "N J",
+   "page_reference": "B-1"
+  },
+  {
+   "form_title": "Deluxe Contents Coverage",
+   "edition_date": "11/20",
+   "state": "N J",
+   "page_reference": "C-1"
+  },
+  {
+   "form_title": "Valuable Articles Coverage",
+   "edition_date": "04/21",
+   "state": "N J",
+   "page_reference": "N-1"
+  },
+  {
+   "form_title": "Personal Liability Coverage",
+   "edition_date": "02/20",
+   "state": "N J",
+   "page_reference": "T-1"
+  },
+  {
+   "form_title": "Policy Terms",
+   "edition_date": "04/17",
+   "state": "N J",
+   "page_reference": "Y-1"
+  },
+  {
+   "form_title": "Policy Information Notice",
+   "edition_date": "04/17",
+   "state": "N J",
+   "page_reference": null
+  }
+ ],
+ "underwriting": {
+  "consumer_report_disclosures": [
+   {
+    "notice_type": "Adverse Action Notice - Home",
+    "form_reference": "Q6629126 (Ed. 04-17)",
+    "reporting_agency": "LexisNexis® Ridgeway Mechanical",
+    "adverse_action_factors": [
+     "# of Accounts that have been Established",
+     "# of Open Accounts with High % of Balance to Credit Limit",
+     "% of Open Bank Revolving Accounts to Total Open Accounts",
+     "Insufficient Informaton on Personal Finance Accounts"
+    ],
+    "reporting_agency_website": "www.consumerdisclosure.com"
+   }
+  ]
+ },
+ "homeowners": {
+  "dwelling": {
+   "described_location": {
+    "line_1": "9659 FRANKLIN",
+    "city": "COLTS NECK",
+    "state": "NJ"
+   }
+  },
+  "scheduled_locations": [
+   {
+    "location_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "address": {
+     "line_1": "9659 FRANKLIN",
+     "city": "CANTON"
+    },
+    "section_i_property_coverages": {
+     "coverage_a_dwelling_limit": "$2,100,000",
+     "coverage_c_personal_property_limit": "$1,050,000"
+    },
+    "deductibles": {
+     "all_other_perils_deductible": "$5,000",
+     "deductible_waiver_threshold": "$50,000",
+     "water_backup_deductible": "$7,500"
+    }
+   }
+  ],
+  "section_i_property_coverages": {
+   "coverage_a_dwelling_limit": "$2,100,000",
+   "coverage_c_personal_property_limit": "$1,050,000",
+   "coverage_b_other_structures_limit": {
+    "raw": "1,200,000",
+    "parsed": 1200000.0
+   },
+   "loss_settlement_basis": "EXTENDED REPLACEMENT COST",
+   "personal_property_loss_settlement_basis": "REPLACEMENT COST"
+  },
+  "section_ii_liability_coverages": {
+   "coverage_e_personal_liability_limit": "$1,000,000"
+  },
+  "deductibles": {
+   "all_other_perils_deductible": "$5,000",
+   "deductible_waiver_threshold": "$50,000",
+   "water_backup_deductible": "$7,500"
+  },
+  "scheduled_personal_property": [
+   {
+    "class_description": "JEWELRY",
+    "class_total_amount": "$ 25,000",
+    "item_description": "NO COVERAGE",
+    "deductible": "There is no deductible for this coverage."
+   }
+  ]
+ },
+ "additional_fields": [
+  {
+   "section": "Premium Summary",
+   "label": "Named insured",
+   "value": "MEGHAN & PETER FUENTES"
+  },
+  {
+   "section": "Coverage Summary",
+   "label": "House coverage",
+   "value": "DELUXE COVERAGE"
+  },
+  {
+   "section": "Coverage Summary",
+   "label": "Contents coverage",
+   "value": "DELUXE COVERAGE"
+  },
+  {
+   "section": "Valuable Articles",
+   "label": "JEWELRY Blanket limit per item",
+   "value": "$ 50,000"
+  },
+  {
+   "section": "Valuable Articles",
+   "label": "JEWELRY Amount of itemized coverage",
+   "value": "NO COVERAGE"
+  },
+  {
+   "section": "Liability",
+   "label": "Home",
+   "value": "PERSONAL LIABILITY 9659 FRANKLIN"
+  },
+  {
+   "section": "Premium Discount Summary",
+   "label": "Policy period",
+   "value": "6/4/22"
+  }
+ ]
+}
