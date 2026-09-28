@@ -114,6 +114,22 @@ def _worded(seg):
     return bool(re.match(r"\s+[A-Za-z]{2,}", after)) and not re.match(r"(?i)^\s*(?:incl|each|per)\b", after)
 
 
+def _basis(field):
+    """A limit's basis ("Each Occurrence"), cleaned of a second amount that
+    bled into it. A row whose limit and aggregate share one visual line with
+    the premium between them ("$2,000,000 Each Occurrence $77.00 3,000,000
+    Aggregate Limit") is not split cleanly upstream, so the qualifier text
+    can end up carrying a second, unrelated dollar figure; cut it there
+    rather than store a basis that is not, itself, a phrase the page prints."""
+    raw = field["raw"]
+    m = re.search(r"(?<!\w)\$?\s?\d[\d,]*(?:\.\d+)?\b", raw)
+    if m and m.start() > 0:
+        cut = raw[:m.start()].rstrip(" :-")
+        if cut:
+            return fv(cut)
+    return field
+
+
 def say(segs):
     """A FieldValue for the text of ``segs``. A replaced value inside it is
     printed apart from the words around it, so the longest run of words
@@ -1575,7 +1591,8 @@ class Reader:
                 if not name and extra and last is not None:
                     basis = last.get("limit_basis")   # "each occurrence" under a limit
                     if basis is not None:
-                        basis["raw"] = basis["parsed"] = basis["raw"] + " " + extra
+                        combined = _basis(fv(basis["raw"] + " " + extra))
+                        basis["raw"] = basis["parsed"] = combined["raw"]
                         basis["_evidence"] = extra
                     continue
                 if re.match(r"(?i)includes? ", name) and last is not None:
@@ -1682,7 +1699,7 @@ class Reader:
                     and "limit" in vals and "limit_amount" not in last:
                 last["limit_amount"] = self._amount(vals["limit"])
                 if extra:
-                    last.setdefault("limit_basis", said_extra)
+                    last.setdefault("limit_basis", _basis(said_extra))
                 last.setdefault("coverage_description", said_name)
                 self._targets(unit, name, limit=last["limit_amount"])
                 continue
@@ -1821,7 +1838,7 @@ class Reader:
         if extra:
             said_extra = said_extra or fv(extra)
             if "limit_amount" in item:
-                item["limit_basis"] = said_extra
+                item["limit_basis"] = _basis(said_extra)
                 # "Agreed Value $52,000": the limit is also the unit's own value
                 rels = [r for r in self.unit_index.get(self.norm(extra), [])
                         if r.endswith(("price", "value"))]
