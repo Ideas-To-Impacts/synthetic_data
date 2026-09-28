@@ -1,0 +1,412 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "DECLARATIONS",
+   "parsed": "Renewal Declarations"
+  },
+  "document_title_as_stated": "DECLARATIONS",
+  "transaction_type": "RENEWAL",
+  "copy_type": "*INSURED COPY*",
+  "print_date": "07/29/2021",
+  "print_time": "05:47:53",
+  "print_routing_code": "H2/X"
+ },
+ "carrier": {
+  "company_name": "New York Central Mutual Fire Insurance Company",
+  "contact": {
+   "phone": "800-234-6926",
+   "website": "www.nycm.com"
+  },
+  "address": {
+   "line_1": "1899 Central Plaza East",
+   "city": "Edmeston",
+   "state": "NY",
+   "postal_code": "13335-1899"
+  }
+ },
+ "producer": {
+  "agency_name": "Glenmara Group Corp",
+  "producer_code": "05827",
+  "territory": "3U",
+  "paperless_indicator": {
+   "raw": "YES",
+   "parsed": "Yes"
+  },
+  "direct_mail_indicator": {
+   "raw": "YES",
+   "parsed": "Yes"
+  },
+  "contact": {
+   "phone": "845-610-5700",
+   "fax": "845-610-5705",
+   "email": "rob@insuranceleadership.com",
+   "website": "www.robboweninsurance.com"
+  },
+  "address": {
+   "line_1": "78 BROOKSIDE AVE STE 132B",
+   "city": "CHESTER",
+   "state": "NY",
+   "postal_code": "10918"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Cordelia Rowntree",
+  "additional_named_insureds": [
+   {
+    "name": "Hazel Keswick"
+   }
+  ],
+  "mailing_address": {
+   "line_1": "12 JAY LN",
+   "city": "HOPEWELL JUNCTION",
+   "state": "NY",
+   "postal_code": "12533-5918"
+  },
+  "individuals": [
+   {
+    "name": "Cordelia Rowntree",
+    "insured_type": "PRIMARY INSURED",
+    "marital_status": "MARRIED",
+    "gender": "FEMALE"
+   },
+   {
+    "name": "Hazel Keswick",
+    "insured_type": "NAMED INSURED",
+    "marital_status": "MARRIED",
+    "gender": "MALE"
+   }
+  ]
+ },
+ "policy": {
+  "policy_number": "4765724",
+  "policy_type": "HOMEOWNER",
+  "original_inception_date": "09/03/2019",
+  "policyholder_since_date": "09/03/2019",
+  "effective_date": "09/03/2021",
+  "expiration_date": "09/03/2022",
+  "effective_time": "12:01 AM",
+  "expiration_time": "12:01 AM",
+  "time_zone": "EST",
+  "policy_term_as_printed": "12 MONTHS",
+  "policy_term_months": {
+   "raw": "12 MONTHS",
+   "parsed": 12
+  },
+  "policy_tier": "28",
+  "is_renewal": {
+   "raw": "RENEWAL",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "policy_form_number": "NYC HO 7",
+  "policy_form_edition": "05 18",
+  "policy_form_name": "PREMIER PROTECTION POLICY"
+ },
+ "premium": {
+  "total_policy_premium": "$1,102.00",
+  "discounts_and_credits": [
+   {
+    "form_reference": "NYC HO 7",
+    "edition_date": "05 18",
+    "description": "AGE OF HOME DISCOUNT",
+    "amount": "$41.00"
+   },
+   {
+    "form_reference": "NYC HO 04 16",
+    "edition_date": "05 08",
+    "description": "ALARM SYSTEM",
+    "amount": "$60.00"
+   },
+   {
+    "form_reference": "NYC HO 7",
+    "edition_date": "05 18",
+    "description": "COUPLER",
+    "amount": "$580.00"
+   }
+  ]
+ },
+ "billing": {
+  "bill_to_party": {
+   "raw": "Bill Mortgagee YES",
+   "parsed": "Mortgagee"
+  },
+  "billing_note": "BILL WILL FOLLOW TO MORTGAGEE"
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "NYC HO 7",
+   "edition_date": "05 18",
+   "form_title": "PREMIER PROTECTION POLICY",
+   "premium": "$1,097.00"
+  },
+  {
+   "form_number": "HO 24 93",
+   "edition_date": "05 02",
+   "form_title": "WORKERS COMPENSATION CERTAIN RESIDENCE EMPLOYEES - NEW YORK",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "IL N 160",
+   "edition_date": "09 08",
+   "form_title": "FLOOD FORM",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYC237",
+   "edition_date": "1106",
+   "form_title": "INS SCORE NOTICE",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYC 211",
+   "edition_date": "8/91",
+   "form_title": "IMPORTANT SENIOR CITIZEN INFORMATION",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYC HO 04 16",
+   "edition_date": "05 08",
+   "form_title": "PROTECTIVE DEVICE CREDITS",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYC HO 219",
+   "edition_date": "05 18",
+   "form_title": "HOMEOWNER QUICK REFERENCE GUIDE",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYC HO 500",
+   "edition_date": "07 03",
+   "form_title": "REPLACEMENT OR REPAIR COST PROTECTION - COV.A DWELLING",
+   "premium": "$5.00"
+  }
+ ],
+ "homeowners": {
+  "scheduled_locations": [
+   {
+    "location_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "address": {
+     "line_1": "12 JAY LN",
+     "city": "HOPEWELL JUNCTION",
+     "state": "NY",
+     "postal_code": "12533-5918",
+     "county": "DUTCHESS",
+     "county_code": "027",
+     "sub_county": "9"
+    },
+    "premium": "$1,102.00",
+    "construction_type": "FRAME",
+    "year_built": {
+     "raw": "1987",
+     "parsed": 1987
+    },
+    "number_of_families": {
+     "raw": "2 FAMILIES",
+     "parsed": 2
+    },
+    "townhouse_rowhouse_indicator": {
+     "raw": "N",
+     "parsed": "No"
+    },
+    "territory_code": "474",
+    "doublewide_indicator": {
+     "raw": "N",
+     "parsed": "No"
+    },
+    "number_of_units": {
+     "raw": "0",
+     "parsed": 0
+    },
+    "protection_class": "4Y - PROTECTED",
+    "fire_district": "EAST FISHKILL FD",
+    "feet_from_hydrant": "1001",
+    "distance_to_fire_station": "01",
+    "policy_form_number": "NYC HO 7 - PREMIER PROTECTION POLICY",
+    "deductibles": {
+     "all_other_perils_deductible": "$1,000"
+    },
+    "section_i_property_coverages": {
+     "coverage_a_dwelling_limit": "528,000",
+     "coverage_a_dwelling_premium": "$1,058.00",
+     "coverage_b_other_structures_limit": "105,600",
+     "coverage_c_personal_property_limit": "369,600",
+     "coverage_d_loss_of_use_limit": "158,400",
+     "inflation_guard_percentage": "0.00%"
+    },
+    "section_ii_liability_coverages": {
+     "coverage_e_personal_liability_limit": "300,000",
+     "coverage_f_medical_payments_limit": "5,000"
+    },
+    "discounts": [
+     {
+      "discount_name": "AGE OF HOME DISCOUNT",
+      "amount": "$41.00"
+     },
+     {
+      "discount_name": "ALARM SYSTEM",
+      "amount": "$60.00"
+     },
+     {
+      "discount_name": "COUPLER",
+      "amount": "$580.00"
+     }
+    ]
+   }
+  ],
+  "dwelling": {
+   "described_location": {
+    "line_1": "12 JAY LN",
+    "city": "HOPEWELL JUNCTION",
+    "state": "NY",
+    "postal_code": "12533-5918",
+    "county": "DUTCHESS",
+    "county_code": "027",
+    "sub_county": "9"
+   },
+   "construction_type": "FRAME",
+   "year_built": {
+    "raw": "1987",
+    "parsed": 1987
+   },
+   "number_of_families": {
+    "raw": "2 FAMILIES",
+    "parsed": 2
+   },
+   "protection_class": "4Y - PROTECTED",
+   "territory_code": "474",
+   "replacement_cost_estimator": "XACTWARE APPRAISAL SYSTEM",
+   "protective_devices": [
+    {
+     "device_description": "LOCAL FIRE ALARM",
+     "credit_percentage": "2%",
+     "form_reference": "NYC HO 04 16"
+    },
+    {
+     "device_description": "FIRE EXTINGUISHER",
+     "credit_percentage": "2%",
+     "form_reference": "NYC HO 04 16"
+    },
+    {
+     "device_description": "DEADBOLTS",
+     "credit_percentage": "2%",
+     "form_reference": "NYC HO 04 16"
+    }
+   ]
+  },
+  "rating_characteristics": {
+   "feet_from_hydrant": "1001",
+   "distance_to_fire_station": "01",
+   "fire_district": "EAST FISHKILL FD",
+   "policy_tier": "28"
+  },
+  "deductibles": {
+   "all_other_perils_deductible": "$1,000"
+  },
+  "section_i_property_coverages": {
+   "coverage_a_dwelling_limit": "528,000",
+   "coverage_a_dwelling_premium": "$1,058.00",
+   "coverage_b_other_structures_limit": "105,600",
+   "coverage_c_personal_property_limit": "369,600",
+   "coverage_d_loss_of_use_limit": "158,400",
+   "inflation_guard_percentage": "0.00%"
+  },
+  "section_ii_liability_coverages": {
+   "coverage_e_personal_liability_limit": "300,000",
+   "coverage_e_personal_liability_premium": "$29.00",
+   "coverage_f_medical_payments_limit": "5,000",
+   "coverage_f_medical_payments_premium": "$10.00"
+  },
+  "mortgagees": [
+   {
+    "rank": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "name": "TEGFCU",
+    "clause_type": "ISAOA",
+    "status": "ACTIVE",
+    "loan_number": "23009114",
+    "party_type": {
+     "raw": "Mortgagee",
+     "source": "structural"
+    },
+    "is_payor": {
+     "raw": "Bill Mortgagee YES",
+     "parsed": "Yes"
+    },
+    "address": {
+     "line_1": "1 COMMERCE ST",
+     "city": "POUGHKEEPSIE",
+     "state": "NY",
+     "postal_code": "12603"
+    }
+   },
+   {
+    "rank": {
+     "raw": "2",
+     "parsed": 2
+    },
+    "name": "HUDSON VALLEY CREDIT UNION",
+    "clause_type": "ITS SUCCESSORS AND/OR ASSIGNS",
+    "status": "ACTIVE",
+    "party_type": {
+     "raw": "Mortgagee",
+     "source": "structural"
+    },
+    "address": {
+     "line_1": "PO BOX 924121",
+     "city": "FORT WORTH",
+     "state": "TX",
+     "postal_code": "76124-4121"
+    }
+   }
+  ]
+ },
+ "additional_fields": [
+  {
+   "section": "Location Details",
+   "label": "Secondary",
+   "value": "NO"
+  },
+  {
+   "section": "Surcharge Information",
+   "label": "Surcharges",
+   "value": "*** NO SURCHARGES EXIST FOR THIS LOCATION ***"
+  },
+  {
+   "section": "Detailed Form Information",
+   "label": "NYC HO 500 Coverage Description",
+   "value": "GUARANTEED REPLACEMENT COVERAGE ADJUSTED UNDER XACTWARE APPRAISAL SYSTEM"
+  }
+ ],
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_effective_date": "09/03/2021",
+   "renewal_expiration_date": "09/03/2022",
+   "renewal_premium": "$1,102.00"
+  }
+ }
+}

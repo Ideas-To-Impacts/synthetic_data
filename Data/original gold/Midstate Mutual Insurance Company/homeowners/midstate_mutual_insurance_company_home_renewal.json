@@ -1,0 +1,4152 @@
+{
+  "document": {
+    "document_type": {
+      "raw": "RENEWAL OF Policy ID 534038",
+      "parsed": "Renewal Declarations",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "flagged": false
+    },
+    "document_title_as_stated": {
+      "raw": "YOUR Preferred Homeowners POLICY IN PLAIN LANGUAGE",
+      "parsed": "YOUR Preferred Homeowners POLICY IN PLAIN LANGUAGE",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "flagged": false
+    },
+    "copy_type": {
+      "raw": "OFFICE COPY",
+      "parsed": "OFFICE COPY",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "flagged": false
+    },
+    "print_date": {
+      "raw": "DEC 18, 2025",
+      "parsed": "12/18/2025",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "flagged": false
+    },
+    "batch_number": {
+      "raw": "23 01 19 03",
+      "parsed": "23 01 19 03",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        2,
+        6
+      ],
+      "flagged": false
+    },
+    "source_file_name": {
+      "raw": "midstate_mutual_insurance_company_home_renewal.pdf",
+      "parsed": "midstate_mutual_insurance_company_home_renewal.pdf",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "page_count": {
+      "raw": "6",
+      "parsed": 6,
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "flagged": false
+    }
+  },
+  "carrier": {
+    "company_name": {
+      "raw": "Midstate Mutual Insurance Company",
+      "parsed": "Midstate Mutual Insurance Company",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "flagged": false
+    },
+    "address": {
+      "line_1": {
+        "raw": "P.O. Box 430",
+        "parsed": "P.O. Box 430",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Auburn",
+        "parsed": "Auburn",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13021-0430",
+        "parsed": "13021-0430",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "producer": {
+    "agency_name": {
+      "raw": "Patriotic Insurance Group",
+      "parsed": "Patriotic Insurance Group",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "flagged": false
+    },
+    "contact": {
+      "phone": {
+        "raw": "(315) 357-5901",
+        "parsed": "(315) 357-5901",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "flagged": false
+      },
+      "fax": {
+        "raw": "(315) 357-5126",
+        "parsed": "(315) 357-5126",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "flagged": false
+      }
+    },
+    "address": {
+      "line_1": {
+        "raw": "Main Street",
+        "parsed": "Main Street",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "flagged": false
+      },
+      "line_2": {
+        "raw": "PO Box 329",
+        "parsed": "PO Box 329",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Inlet",
+        "parsed": "Inlet",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13360",
+        "parsed": "13360",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "named_insured": {
+    "primary_name": {
+      "raw": "Maeve Underhill",
+      "parsed": "Maeve Underhill",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "flagged": false
+    },
+    "mailing_address": {
+      "line_1": {
+        "raw": "P.O. Box 1007",
+        "parsed": "P.O. Box 1007",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Old Forge",
+        "parsed": "Old Forge",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13420",
+        "parsed": "13420",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "flagged": false
+      }
+    },
+    "contact": {
+      "phone": {
+        "raw": "(315) 555-0571",
+        "parsed": "(315) 555-0571",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "policy": {
+    "policy_number": {
+      "raw": "547792",
+      "parsed": "547792",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "flagged": false
+    },
+    "effective_date": {
+      "raw": "JAN 19, 2026",
+      "parsed": "01/19/2026",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "flagged": false
+    },
+    "expiration_date": {
+      "raw": "JAN 19, 2027",
+      "parsed": "01/19/2027",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "flagged": false
+    },
+    "effective_time": {
+      "raw": "12:01 am",
+      "parsed": "12:01 am",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "flagged": false
+    },
+    "time_zone": {
+      "raw": "Standard Time",
+      "parsed": "Standard Time",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "flagged": false
+    },
+    "program_name": {
+      "raw": "Preferred Homeowners",
+      "parsed": "Preferred Homeowners",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "flagged": false
+    },
+    "prior_policy_number": {
+      "raw": "534038",
+      "parsed": "534038",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "flagged": false
+    },
+    "is_renewal": {
+      "raw": "RENEWAL OF Policy ID 534038",
+      "parsed": "Yes",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "flagged": false
+    }
+  },
+  "premium": {
+    "total_policy_premium": {
+      "raw": "937.00",
+      "parsed": 937.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "basic_premium": {
+      "raw": "$ 937.00",
+      "parsed": 937.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "fire_fee": {
+      "raw": ".00",
+      "parsed": 0.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    }
+  },
+  "billing": {
+    "amount_due": {
+      "raw": "$ 937.00",
+      "parsed": 937.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "billing_note": {
+      "raw": "Subsequent payments will be due each year on the anniversary date based on the rates in effect at that time.",
+      "parsed": "Subsequent payments will be due each year on the anniversary date based on the rates in effect at that time.",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [],
+      "flagged": false
+    }
+  },
+  "signature": {
+    "countersignature_date": {
+      "raw": "DEC 18, 2025",
+      "parsed": "12/18/2025",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "flagged": false
+    },
+    "title": {
+      "raw": "Our Authorized Representative",
+      "parsed": "Our Authorized Representative",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        2
+      ],
+      "flagged": false
+    }
+  },
+  "forms_and_endorsements": [
+    {
+      "form_number": {
+        "raw": "ML-20",
+        "parsed": "ML-20",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "06/99",
+        "parsed": "06/99",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Basic Forms",
+        "parsed": "Basic Forms",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "MFL-25A-COOP",
+        "parsed": "MFL-25A-COOP",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "01/87",
+        "parsed": "01/87",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Basic Forms",
+        "parsed": "Basic Forms",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "ML-55",
+        "parsed": "ML-55",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "06/99",
+        "parsed": "06/99",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Basic Forms",
+        "parsed": "Basic Forms",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "ML-366ACOOP",
+        "parsed": "ML-366ACOOP",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "08/95",
+        "parsed": "08/95",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Basic Forms",
+        "parsed": "Basic Forms",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "MFL-84A",
+        "parsed": "MFL-84A",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "02/00",
+        "parsed": "02/00",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Basic Forms",
+        "parsed": "Basic Forms",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "ML-83",
+        "parsed": "ML-83",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "02/02",
+        "parsed": "02/02",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Basic Forms",
+        "parsed": "Basic Forms",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "ML-360",
+        "parsed": "ML-360",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "01/99",
+        "parsed": "01/99",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Basic Forms",
+        "parsed": "Basic Forms",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "ML-216",
+        "parsed": "ML-216",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "06/99",
+        "parsed": "06/99",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Basic Forms",
+        "parsed": "Basic Forms",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "ML-82",
+        "parsed": "ML-82",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "02/99",
+        "parsed": "02/99",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Basic Forms",
+        "parsed": "Basic Forms",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "ML-59",
+        "parsed": "ML-59",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "06/99",
+        "parsed": "06/99",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Basic Forms",
+        "parsed": "Basic Forms",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "ML-340",
+        "parsed": "ML-340",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "05/00",
+        "parsed": "05/00",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Basic Forms",
+        "parsed": "Basic Forms",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "NYSTAT-1",
+        "parsed": "NYSTAT-1",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "11/08",
+        "parsed": "11/08",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Basic Forms",
+        "parsed": "Basic Forms",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "ML-19",
+        "parsed": "ML-19",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "10/06",
+        "parsed": "10/06",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Basic Forms",
+        "parsed": "Basic Forms",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "ML-52A",
+        "parsed": "ML-52A",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "06/99",
+        "parsed": "06/99",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Basic Forms",
+        "parsed": "Basic Forms",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "ML-74",
+        "parsed": "ML-74",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "03/12",
+        "parsed": "03/12",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Basic Forms",
+        "parsed": "Basic Forms",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "ML-87",
+        "parsed": "ML-87",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "06/99",
+        "parsed": "06/99",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Basic Forms",
+        "parsed": "Basic Forms",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "ML-MOTVEH-MMIC",
+        "parsed": "ML-MOTVEH-MMIC",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "11/13",
+        "parsed": "11/13",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Basic Forms",
+        "parsed": "Basic Forms",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "ML-94",
+        "parsed": "ML-94",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "08/24",
+        "parsed": "08/24",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "form_type": {
+        "raw": "Basic Forms",
+        "parsed": "Basic Forms",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "ML-3",
+        "parsed": "ML-3",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "06/99",
+        "parsed": "06/99",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Causes of Loss Section-Coverages A,B,C and D (Causes of Loss and Replacement Cost Provision)",
+        "parsed": "Causes of Loss Section-Coverages A,B,C and D (Causes of Loss and Replacement Cost Provision)",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "955.00",
+        "parsed": 955.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "ML-9",
+        "parsed": "ML-9",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "01/87",
+        "parsed": "01/87",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Liability Coverage Section",
+        "parsed": "Liability Coverage Section",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "33.00",
+        "parsed": 33.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "MFL-409",
+        "parsed": "MFL-409",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "01/89",
+        "parsed": "01/89",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Limited(Personal)Sudden & Accidental Pollution Liab Cov",
+        "parsed": "Limited(Personal)Sudden & Accidental Pollution Liab Cov",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "0.00",
+        "parsed": 0.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "FED",
+        "parsed": "FED",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "00/00",
+        "parsed": "00/00",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Fire Extinguisher Discount",
+        "parsed": "Fire Extinguisher Discount",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "-12.00",
+        "parsed": -12.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "DBD",
+        "parsed": "DBD",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "00/00",
+        "parsed": "00/00",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Dead Bolt Discount",
+        "parsed": "Dead Bolt Discount",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "-12.00",
+        "parsed": -12.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "GEN",
+        "parsed": "GEN",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "00/00",
+        "parsed": "00/00",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Automatic Generator Discount",
+        "parsed": "Automatic Generator Discount",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "-119.00",
+        "parsed": -119.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "CF",
+        "parsed": "CF",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "00/00",
+        "parsed": "00/00",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Claims Free Discount",
+        "parsed": "Claims Free Discount",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "Applied",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "ML-MMIC-PPLE",
+        "parsed": "ML-MMIC-PPLE",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "07/17",
+        "parsed": "07/17",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Personal Property and Liability Enhancement",
+        "parsed": "Personal Property and Liability Enhancement",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "0.00",
+        "parsed": 0.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "ML-46A",
+        "parsed": "ML-46A",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "07/14",
+        "parsed": "07/14",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Personal Injury Coverage",
+        "parsed": "Personal Injury Coverage",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          4
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "0.00",
+        "parsed": 0.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "ML-72A",
+        "parsed": "ML-72A",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "05/13",
+        "parsed": "05/13",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Added Water Damages Coverage",
+        "parsed": "Added Water Damages Coverage",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          4
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "0.00",
+        "parsed": 0.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "ML-185",
+        "parsed": "ML-185",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "12/05",
+        "parsed": "12/05",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Automatic Inflation Protection",
+        "parsed": "Automatic Inflation Protection",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "0.00",
+        "parsed": 0.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "ML-305A",
+        "parsed": "ML-305A",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "06/99",
+        "parsed": "06/99",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Added Perils For Refrigerated Food Products",
+        "parsed": "Added Perils For Refrigerated Food Products",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          4
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "0.00",
+        "parsed": 0.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "ML-342",
+        "parsed": "ML-342",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "06/19",
+        "parsed": "06/19",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Underground Utility Line Endorsement",
+        "parsed": "Underground Utility Line Endorsement",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          4
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "33.00",
+        "parsed": 33.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "ML-346BG",
+        "parsed": "ML-346BG",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          5
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "09/13",
+        "parsed": "09/13",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          5
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Equipment Breakdown Enhancement Endorsement",
+        "parsed": "Equipment Breakdown Enhancement Endorsement",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          5
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "20.00",
+        "parsed": 20.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "ML-611",
+        "parsed": "ML-611",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          5
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "06/20",
+        "parsed": "06/20",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          5
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "Home Cyber Protection Coverage",
+        "parsed": "Home Cyber Protection Coverage",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          5
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "39.00",
+        "parsed": 39.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    }
+  ],
+  "homeowners": {
+    "scheduled_locations": [
+      {
+        "location_number": {
+          "raw": "1)",
+          "parsed": 1,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "flagged": false
+        },
+        "notes": {
+          "raw": "179 Cohasset Point Road, Webb, Herkimer, Old Forge, NY 13420",
+          "parsed": "179 Cohasset Point Road, Webb, Herkimer, Old Forge, NY 13420",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "construction_type": {
+          "raw": "Frame",
+          "parsed": "Frame",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "protection_class": {
+          "raw": "U UNPROTECTED",
+          "parsed": "U UNPROTECTED",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "fire_district": {
+          "raw": "Eagle Bay",
+          "parsed": "Eagle Bay",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "number_of_families": {
+          "raw": "1",
+          "parsed": 1,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "flagged": false
+        },
+        "feet_from_hydrant": {
+          "raw": "1001 ft to hydrant-6 mi to FD",
+          "parsed": "1001 ft to hydrant-6 mi to FD",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "deductibles": {
+          "all_other_perils_deductible": {
+            "raw": "$1,000",
+            "parsed": 1000.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3,
+              4
+            ],
+            "flagged": false
+          }
+        },
+        "section_i_property_coverages": {
+          "coverage_a_dwelling_limit": {
+            "raw": "351,356",
+            "parsed": "351,356",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "coverage_b_other_structures_limit": {
+            "raw": "35,136",
+            "parsed": "35,136",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "coverage_c_personal_property_limit": {
+            "raw": "245,949",
+            "parsed": "245,949",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "coverage_d_loss_of_use_limit": {
+            "raw": "70,271",
+            "parsed": "70,271",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          }
+        }
+      }
+    ],
+    "section_i_property_coverages": {
+      "coverage_a_dwelling_limit": {
+        "raw": "351,356",
+        "parsed": "351,356",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "coverage_b_other_structures_limit": {
+        "raw": "35,136",
+        "parsed": "35,136",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "coverage_c_personal_property_limit": {
+        "raw": "245,949",
+        "parsed": "245,949",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "coverage_d_loss_of_use_limit": {
+        "raw": "70,271",
+        "parsed": "70,271",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "farm_personal_property_scheduled_limit": {
+        "raw": "N/A",
+        "parsed": null,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "farm_barns_buildings_structures_limit": {
+        "raw": "N/A",
+        "parsed": null,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "additional_coverages": [
+        {
+          "coverage_name": {
+            "raw": "a. Money",
+            "parsed": "a. Money",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3
+            ],
+            "flagged": false
+          },
+          "limit_amount": {
+            "raw": "$200",
+            "parsed": 200.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3
+            ],
+            "flagged": false
+          },
+          "total_limit": {
+            "raw": "$200",
+            "parsed": 200.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3
+            ],
+            "flagged": false
+          },
+          "premium": {
+            "raw": "$0",
+            "parsed": 0.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "form_reference": {
+            "raw": "ML-MMIC-PPLE",
+            "parsed": "ML-MMIC-PPLE",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              2,
+              3,
+              4
+            ],
+            "flagged": false
+          }
+        },
+        {
+          "coverage_name": {
+            "raw": "b. Securities",
+            "parsed": "b. Securities",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3
+            ],
+            "flagged": false
+          },
+          "limit_amount": {
+            "raw": "$1,000",
+            "parsed": 1000.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "total_limit": {
+            "raw": "$1,000",
+            "parsed": 1000.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "premium": {
+            "raw": "$0",
+            "parsed": 0.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "form_reference": {
+            "raw": "ML-MMIC-PPLE",
+            "parsed": "ML-MMIC-PPLE",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              2,
+              3,
+              4
+            ],
+            "flagged": false
+          }
+        },
+        {
+          "coverage_name": {
+            "raw": "c. Jewelry",
+            "parsed": "c. Jewelry",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3
+            ],
+            "flagged": false
+          },
+          "limit_amount": {
+            "raw": "$1,000",
+            "parsed": 1000.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "total_limit": {
+            "raw": "$1,000",
+            "parsed": 1000.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "premium": {
+            "raw": "$0",
+            "parsed": 0.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "form_reference": {
+            "raw": "ML-MMIC-PPLE",
+            "parsed": "ML-MMIC-PPLE",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              2,
+              3,
+              4
+            ],
+            "flagged": false
+          }
+        },
+        {
+          "coverage_name": {
+            "raw": "d. Guns",
+            "parsed": "d. Guns",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3
+            ],
+            "flagged": false
+          },
+          "limit_amount": {
+            "raw": "$2,000",
+            "parsed": 2000.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3
+            ],
+            "flagged": false
+          },
+          "total_limit": {
+            "raw": "$2,000",
+            "parsed": 2000.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3
+            ],
+            "flagged": false
+          },
+          "premium": {
+            "raw": "$0",
+            "parsed": 0.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "form_reference": {
+            "raw": "ML-MMIC-PPLE",
+            "parsed": "ML-MMIC-PPLE",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              2,
+              3,
+              4
+            ],
+            "flagged": false
+          }
+        },
+        {
+          "coverage_name": {
+            "raw": "e. Watercraft",
+            "parsed": "e. Watercraft",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3
+            ],
+            "flagged": false
+          },
+          "limit_amount": {
+            "raw": "$1,000",
+            "parsed": 1000.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "total_limit": {
+            "raw": "$1,000",
+            "parsed": 1000.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "premium": {
+            "raw": "$0",
+            "parsed": 0.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "form_reference": {
+            "raw": "ML-MMIC-PPLE",
+            "parsed": "ML-MMIC-PPLE",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              2,
+              3,
+              4
+            ],
+            "flagged": false
+          }
+        },
+        {
+          "coverage_name": {
+            "raw": "f. Trailer",
+            "parsed": "f. Trailer",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3
+            ],
+            "flagged": false
+          },
+          "limit_amount": {
+            "raw": "$1,000",
+            "parsed": 1000.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "total_limit": {
+            "raw": "$1,000",
+            "parsed": 1000.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "premium": {
+            "raw": "$0",
+            "parsed": 0.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "form_reference": {
+            "raw": "ML-MMIC-PPLE",
+            "parsed": "ML-MMIC-PPLE",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              2,
+              3,
+              4
+            ],
+            "flagged": false
+          }
+        },
+        {
+          "coverage_name": {
+            "raw": "g. Silverware",
+            "parsed": "g. Silverware",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3
+            ],
+            "flagged": false
+          },
+          "limit_amount": {
+            "raw": "$2,500",
+            "parsed": 2500.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "total_limit": {
+            "raw": "$2,500",
+            "parsed": 2500.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "premium": {
+            "raw": "$0",
+            "parsed": 0.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "form_reference": {
+            "raw": "ML-MMIC-PPLE",
+            "parsed": "ML-MMIC-PPLE",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              2,
+              3,
+              4
+            ],
+            "flagged": false
+          }
+        },
+        {
+          "coverage_name": {
+            "raw": "h. Motorized Vehicles",
+            "parsed": "h. Motorized Vehicles",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3
+            ],
+            "flagged": false
+          },
+          "limit_amount": {
+            "raw": "$24,594",
+            "parsed": 24594.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3
+            ],
+            "flagged": false
+          },
+          "total_limit": {
+            "raw": "$24,594",
+            "parsed": 24594.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3
+            ],
+            "flagged": false
+          },
+          "premium": {
+            "raw": "$0",
+            "parsed": 0.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "form_reference": {
+            "raw": "ML-MMIC-PPLE",
+            "parsed": "ML-MMIC-PPLE",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              2,
+              3,
+              4
+            ],
+            "flagged": false
+          }
+        },
+        {
+          "coverage_name": {
+            "raw": "i. Grave Markers",
+            "parsed": "i. Grave Markers",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [],
+            "flagged": false
+          },
+          "limit_amount": {
+            "raw": "$2,000",
+            "parsed": 2000.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3
+            ],
+            "flagged": false
+          },
+          "total_limit": {
+            "raw": "$2,000",
+            "parsed": 2000.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3
+            ],
+            "flagged": false
+          },
+          "premium": {
+            "raw": "$0",
+            "parsed": 0.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "form_reference": {
+            "raw": "ML-MMIC-PPLE",
+            "parsed": "ML-MMIC-PPLE",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              2,
+              3,
+              4
+            ],
+            "flagged": false
+          }
+        },
+        {
+          "coverage_name": {
+            "raw": "j. Electronic",
+            "parsed": "j. Electronic",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              4
+            ],
+            "flagged": false
+          },
+          "limit_amount": {
+            "raw": "$1,000",
+            "parsed": 1000.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "total_limit": {
+            "raw": "$1,000",
+            "parsed": 1000.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "premium": {
+            "raw": "$0",
+            "parsed": 0.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "form_reference": {
+            "raw": "ML-MMIC-PPLE",
+            "parsed": "ML-MMIC-PPLE",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              2,
+              3,
+              4
+            ],
+            "flagged": false
+          }
+        },
+        {
+          "coverage_name": {
+            "raw": "k. Away from Premises",
+            "parsed": "k. Away from Premises",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              4
+            ],
+            "flagged": false
+          },
+          "limit_amount": {
+            "raw": "$250",
+            "parsed": 250.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              4
+            ],
+            "flagged": false
+          },
+          "total_limit": {
+            "raw": "$250",
+            "parsed": 250.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              4
+            ],
+            "flagged": false
+          },
+          "premium": {
+            "raw": "$0",
+            "parsed": 0.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "form_reference": {
+            "raw": "ML-MMIC-PPLE",
+            "parsed": "ML-MMIC-PPLE",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              2,
+              3,
+              4
+            ],
+            "flagged": false
+          }
+        },
+        {
+          "coverage_name": {
+            "raw": "a. Business Property",
+            "parsed": "a. Business Property",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              4
+            ],
+            "flagged": false
+          },
+          "limit_amount": {
+            "raw": "$2,500",
+            "parsed": 2500.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "total_limit": {
+            "raw": "$2,500",
+            "parsed": 2500.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "premium": {
+            "raw": "$0",
+            "parsed": 0.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "form_reference": {
+            "raw": "ML-MMIC-PPLE",
+            "parsed": "ML-MMIC-PPLE",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              2,
+              3,
+              4
+            ],
+            "flagged": false
+          }
+        },
+        {
+          "coverage_name": {
+            "raw": "b. Camper Bodies",
+            "parsed": "b. Camper Bodies",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              4
+            ],
+            "flagged": false
+          },
+          "limit_amount": {
+            "raw": "$1,000",
+            "parsed": 1000.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "total_limit": {
+            "raw": "$1,000",
+            "parsed": 1000.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "premium": {
+            "raw": "$0",
+            "parsed": 0.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "form_reference": {
+            "raw": "ML-MMIC-PPLE",
+            "parsed": "ML-MMIC-PPLE",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              2,
+              3,
+              4
+            ],
+            "flagged": false
+          }
+        },
+        {
+          "coverage_name": {
+            "raw": "c. Appliances",
+            "parsed": "c. Appliances",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              4
+            ],
+            "flagged": false
+          },
+          "limit_amount": {
+            "raw": "$1,000",
+            "parsed": 1000.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "total_limit": {
+            "raw": "$1,000",
+            "parsed": 1000.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "premium": {
+            "raw": "$0",
+            "parsed": 0.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "form_reference": {
+            "raw": "ML-MMIC-PPLE",
+            "parsed": "ML-MMIC-PPLE",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              2,
+              3,
+              4
+            ],
+            "flagged": false
+          }
+        }
+      ]
+    },
+    "section_ii_liability_coverages": {
+      "coverage_e_personal_liability_limit": {
+        "raw": "500,000",
+        "parsed": "500,000",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "coverage_f_medical_payments_limit": {
+        "raw": "1,000",
+        "parsed": "1,000",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "coverage_f_limit_increase": {
+        "raw": "increased by $1,000",
+        "parsed": 1000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "damage_to_property_of_others_limit_increase": {
+        "raw": "increased by $500",
+        "parsed": 500.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    "deductibles": {
+      "all_other_perils_deductible": {
+        "raw": "$1,000",
+        "parsed": 1000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3,
+          4
+        ],
+        "flagged": false
+      }
+    },
+    "rating_characteristics": {
+      "feet_from_hydrant": {
+        "raw": "1001 ft to hydrant-6 mi to FD",
+        "parsed": "1001 ft to hydrant-6 mi to FD",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "fire_district": {
+        "raw": "Eagle Bay",
+        "parsed": "Eagle Bay",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "dwelling": {
+      "construction_type": {
+        "raw": "Frame",
+        "parsed": "Frame",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "protection_class": {
+        "raw": "U UNPROTECTED",
+        "parsed": "U UNPROTECTED",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "number_of_families": {
+        "raw": "1",
+        "parsed": 1,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "flagged": false
+      }
+    },
+    "discounts": [
+      {
+        "discount_name": {
+          "raw": "Fire Extinguisher Discount",
+          "parsed": "Fire Extinguisher Discount",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "form_reference": {
+          "raw": "FED",
+          "parsed": "FED",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "-12.00",
+          "parsed": -12.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "Dead Bolt Discount",
+          "parsed": "Dead Bolt Discount",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "form_reference": {
+          "raw": "DBD",
+          "parsed": "DBD",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "-12.00",
+          "parsed": -12.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "Automatic Generator Discount",
+          "parsed": "Automatic Generator Discount",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "form_reference": {
+          "raw": "GEN",
+          "parsed": "GEN",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "-119.00",
+          "parsed": -119.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "Claims Free Discount",
+          "parsed": "Claims Free Discount",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "form_reference": {
+          "raw": "CF",
+          "parsed": "CF",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "Applied",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            3
+          ],
+          "flagged": false
+        }
+      }
+    ],
+    "optional_endorsement_coverages": [
+      {
+        "coverage_name": {
+          "raw": "Added Water Damages Coverage",
+          "parsed": "Added Water Damages Coverage",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            4
+          ],
+          "flagged": false
+        },
+        "form_reference": {
+          "raw": "ML-72A",
+          "parsed": "ML-72A",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            4
+          ],
+          "flagged": false
+        },
+        "limit_amount": {
+          "raw": "$7,500",
+          "parsed": 7500.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        },
+        "notes": {
+          "raw": "Deductible: see location deductible",
+          "parsed": "Deductible: see location deductible",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_name": {
+          "raw": "Added Perils For Refrigerated Food Products",
+          "parsed": "Added Perils For Refrigerated Food Products",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            4
+          ],
+          "flagged": false
+        },
+        "form_reference": {
+          "raw": "ML-305A",
+          "parsed": "ML-305A",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            4
+          ],
+          "flagged": false
+        },
+        "limit_amount": {
+          "raw": "$1,000",
+          "parsed": 1000.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            3,
+            4
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_name": {
+          "raw": "Underground Utility Line Endorsement",
+          "parsed": "Underground Utility Line Endorsement",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            4
+          ],
+          "flagged": false
+        },
+        "form_reference": {
+          "raw": "ML-342",
+          "parsed": "ML-342",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        },
+        "limit_amount": {
+          "raw": "$10,000",
+          "parsed": 10000.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4
+          ],
+          "flagged": false
+        },
+        "deductible_amount": {
+          "raw": "$500",
+          "parsed": 500.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4,
+            5
+          ],
+          "flagged": false
+        },
+        "premium": {
+          "raw": "$33",
+          "parsed": 33.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_name": {
+          "raw": "Equipment Breakdown Enhancement Endorsement",
+          "parsed": "Equipment Breakdown Enhancement Endorsement",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            5
+          ],
+          "flagged": false
+        },
+        "form_reference": {
+          "raw": "ML-346BG",
+          "parsed": "ML-346BG",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            5
+          ],
+          "flagged": false
+        },
+        "limit_amount": {
+          "raw": "$100,000",
+          "parsed": 100000.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            5
+          ],
+          "flagged": false
+        },
+        "deductible_amount": {
+          "raw": "$500",
+          "parsed": 500.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4,
+            5
+          ],
+          "flagged": false
+        },
+        "premium": {
+          "raw": "$20",
+          "parsed": 20.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            5
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_name": {
+          "raw": "Home Cyber Protection Coverage",
+          "parsed": "Home Cyber Protection Coverage",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            5
+          ],
+          "flagged": false
+        },
+        "form_reference": {
+          "raw": "ML-611",
+          "parsed": "ML-611",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2,
+            5
+          ],
+          "flagged": false
+        },
+        "aggregate_limit_amount": {
+          "raw": "$25,000",
+          "parsed": 25000.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            5
+          ],
+          "flagged": false
+        },
+        "deductible_amount": {
+          "raw": "$500",
+          "parsed": 500.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            4,
+            5
+          ],
+          "flagged": false
+        },
+        "premium": {
+          "raw": "$39",
+          "parsed": 39.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            5
+          ],
+          "flagged": false
+        }
+      }
+    ],
+    "mortgagees": [
+      {
+        "rank": {
+          "raw": "1)",
+          "parsed": 1,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "flagged": false
+        },
+        "name": {
+          "raw": "Community Bank NA",
+          "parsed": "Community Bank NA",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "clause_type": {
+          "raw": "Its successors and/or assigns As their interest may appear",
+          "parsed": "Its successors and/or assigns As their interest may appear",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "loan_number": {
+          "raw": "0842173412",
+          "parsed": "0842173412",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "description_of_interest": {
+          "raw": "First Mortgage",
+          "parsed": "First Mortgage",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "party_type": {
+          "raw": "Mortgagee or Secured Party",
+          "parsed": "Mortgagee or Secured Party",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            2
+          ],
+          "flagged": false
+        },
+        "address": {
+          "line_1": {
+            "raw": "P.O.Box 688",
+            "parsed": "P.O.Box 688",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              2
+            ],
+            "flagged": false
+          },
+          "city": {
+            "raw": "Olean",
+            "parsed": "Olean",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              2
+            ],
+            "flagged": false
+          },
+          "state": {
+            "raw": "NY",
+            "parsed": "NY",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "flagged": false
+          },
+          "postal_code": {
+            "raw": "14760",
+            "parsed": "14760",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              2
+            ],
+            "flagged": false
+          }
+        }
+      }
+    ]
+  },
+  "document_type_detail": {
+    "renewal_offer": {
+      "renewal_effective_date": {
+        "raw": "JAN 19, 2026",
+        "parsed": "01/19/2026",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "flagged": false
+      },
+      "renewal_expiration_date": {
+        "raw": "JAN 19, 2027",
+        "parsed": "01/19/2027",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "flagged": false
+      },
+      "renewal_premium": {
+        "raw": "937.00",
+        "parsed": 937.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "fideon:provenance": {
+    "source": "Midstate Mutual Insurance Company/homeowners/midstate_mutual_insurance_company_home_renewal.pdf",
+    "schema": "homeowners v1.4.0",
+    "synthetic": false,
+    "gold": "reviewed and completed by Claude against the printed pages",
+    "reviewed": "2026-09-28"
+  }
+}

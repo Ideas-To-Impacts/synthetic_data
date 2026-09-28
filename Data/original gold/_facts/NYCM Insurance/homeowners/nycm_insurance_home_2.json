@@ -1,0 +1,487 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "NYCM HOMEOWNER ENDORSEMENT SUMMARY",
+   "parsed": "Policy Change Summary"
+  },
+  "document_title_as_stated": "NYCM HOMEOWNER ENDORSEMENT SUMMARY",
+  "print_date": "03-09-2026",
+  "print_code": "NYC HO-194 01/2017",
+  "transaction_effective_date": "03-09-2026",
+  "transaction_type": {
+   "raw": "Endorsement",
+   "source": "structural"
+  },
+  "summary_of_changes": "SUB CO. CODE HAS BEEN CHANGED FROM ' ' TO '9' FOR LOC 1. ADDED LOC 1 FORM HO 04 41."
+ },
+ "carrier": {
+  "company_name": "New York Central Mutual Fire Insurance Company",
+  "contact": {
+   "phone": "800-234-6926",
+   "website": "www.nycm.com"
+  },
+  "address": {
+   "line_1": "1899 Central Plaza East",
+   "city": "Edmeston",
+   "state": "NY",
+   "postal_code": "13335-1899"
+  }
+ },
+ "producer": {
+  "agency_name": "PATRIOTIC INSURANCE GROUP BROKERAGE INC",
+  "producer_code": "08014",
+  "territory": "3R",
+  "contact": {
+   "phone": "315-357-5901",
+   "fax": "315-357-5126",
+   "email": "agency@patrioticinsurancegroup.com"
+  },
+  "address": {
+   "line_1": "159 ROUTE 28",
+   "line_2": "PO BOX 329",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360-0329"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Malcolm Jarrow",
+  "additional_named_insureds": [
+   {
+    "name": "Silas Vasey"
+   }
+  ],
+  "mailing_address": {
+   "line_1": "PO BOX 101",
+   "city": "OLD FORGE",
+   "state": "NY",
+   "postal_code": "13420-0101"
+  },
+  "contact": {
+   "phone": "315-555-0101",
+   "email": "customer010@example.com"
+  },
+  "individuals": [
+   {
+    "name": "Malcolm Jarrow",
+    "insured_type": "PRIMARY",
+    "marital_status": "MARRIED",
+    "gender": "MALE",
+    "date_of_birth": "07-07-1948",
+    "ssn_masked": "NOT AVAILABLE",
+    "occupation": "SELF EMPLOYED",
+    "employment_status": "SELF-EMPLOYED",
+    "business_on_premises": {
+     "raw": "NO",
+     "parsed": "No"
+    }
+   },
+   {
+    "name": "Silas Vasey",
+    "insured_type": "NAMED",
+    "marital_status": "MARRIED",
+    "gender": "FEMALE",
+    "date_of_birth": "05-16-1946",
+    "ssn_masked": "XXXXX6611",
+    "occupation": "SELF EMPLOYED",
+    "employment_status": "SELF-EMPLOYED",
+    "business_on_premises": {
+     "raw": "NO",
+     "parsed": "No"
+    }
+   }
+  ]
+ },
+ "policy": {
+  "policy_number": "4688667",
+  "quote_number": "Q31829763",
+  "effective_date": "12-20-2025",
+  "expiration_date": "12-20-2026",
+  "effective_time": "12:01 AM",
+  "time_zone": "STANDARD TIME AT INSURED ADDRESS",
+  "policy_tier": "9",
+  "policy_form_number": "NYC HO 10"
+ },
+ "premium": {
+  "estimated_annual_premium": {
+   "raw": "18469.00",
+   "parsed": 18469.0
+  },
+  "pro_rata_premium_change": {
+   "raw": "0.00",
+   "parsed": 0.0
+  }
+ },
+ "underwriting": {
+  "insurance_scores": [
+   {
+    "insured_name": "Malcolm Jarrow",
+    "ordered_date": "11-15-2022",
+    "report_vendor": "NCF",
+    "coded_score": "C"
+   },
+   {
+    "insured_name": "Malcolm Jarrow",
+    "ordered_date": "11-10-2016",
+    "report_vendor": "NCF",
+    "coded_score": "EE"
+   }
+  ]
+ },
+ "interested_parties": [
+  {
+   "party_id": "ID 12",
+   "party_type": {
+    "raw": "Additional Insured",
+    "source": "structural"
+   },
+   "form_reference": "HO 04 41",
+   "location_reference": "1",
+   "name": "Marguerite Radcliffe IRREVOCABLE TRUST DATED AUGUST 29 2023",
+   "description_of_interest": "OWNER(S) BY DEED",
+   "address": {
+    "line_1": "PO BOX 101",
+    "city": "OLD FORGE",
+    "state": "NY",
+    "postal_code": "13420"
+   }
+  }
+ ],
+ "forms_and_endorsements": [
+  {
+   "form_number": "HO 04 41",
+   "edition_date": "10 00",
+   "applies_to": "1"
+  },
+  {
+   "form_number": "IM-175",
+   "edition_date": "1.0",
+   "applies_to": "1"
+  },
+  {
+   "form_number": "NYC HO 04 16",
+   "edition_date": "05 08",
+   "applies_to": "1"
+  },
+  {
+   "form_number": "NYC HO 278",
+   "edition_date": "03 11",
+   "applies_to": "1",
+   "limit_amount": "$20000"
+  }
+ ],
+ "document_type_detail": {
+  "policy_change": {
+   "transaction_effective_date": "03-09-2026",
+   "net_change_amount": {
+    "raw": "0.00",
+    "parsed": 0.0
+   },
+   "changes": [
+    {
+     "change_description": "SUB CO. CODE HAS BEEN CHANGED FROM ' ' TO '9' FOR LOC 1."
+    },
+    {
+     "change_description": "ADDED LOC 1 FORM HO 04 41."
+    }
+   ],
+   "endorsements_added": [
+    {
+     "form_number": "HO 04 41",
+     "edition_date": "10 00",
+     "applies_to": "1"
+    }
+   ]
+  }
+ },
+ "homeowners": {
+  "scheduled_locations": [
+   {
+    "location_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "description": "PRIMARY",
+    "year_built": {
+     "raw": "2005",
+     "parsed": 2005
+    },
+    "territory_code": "42/444",
+    "feet_from_hydrant": "40",
+    "distance_to_fire_station": "03",
+    "protection_class": "4Y",
+    "construction_type": "FRAME",
+    "fire_district": "WEBB TFD NO 1",
+    "policy_form_number": "NYC HO 10",
+    "deductibles": {
+     "all_other_perils_deductible": "1000.00"
+    },
+    "section_i_property_coverages": {
+     "coverage_a_dwelling_limit": "3416000",
+     "coverage_b_other_structures_limit": "1024800",
+     "coverage_c_personal_property_limit": "3416000",
+     "coverage_d_loss_of_use_limit": "1366400"
+    },
+    "section_ii_liability_coverages": {
+     "coverage_e_personal_liability_limit": "1000000",
+     "coverage_f_medical_payments_limit": "1000"
+    },
+    "number_of_families": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "townhouse_rowhouse_indicator": {
+     "raw": "N",
+     "parsed": "No"
+    },
+    "doublewide_indicator": {
+     "raw": "N",
+     "parsed": "No"
+    },
+    "months_occupied_annually": {
+     "raw": "12",
+     "parsed": 12
+    },
+    "heating_type": "LIQUID PROPANE",
+    "secondary_heating_type": "NONE",
+    "basement_type": "BASEMENT",
+    "fuel_tank_location": "NONE",
+    "gated_community": {
+     "raw": "NO",
+     "parsed": "No"
+    },
+    "swimming_pool": {
+     "raw": "NO",
+     "parsed": "No"
+    },
+    "related_policy_number": "NA",
+    "address": {
+     "line_1": "333 S SHORE ACRES RD",
+     "city": "OLD FORGE",
+     "state": "NY",
+     "postal_code": "13420 7912",
+     "county": "HERKIMER",
+     "sub_county": "REMAINDER OF COUNTY"
+    }
+   }
+  ],
+  "dwelling": {
+   "described_location": {
+    "line_1": "333 S SHORE ACRES RD",
+    "city": "OLD FORGE",
+    "state": "NY",
+    "postal_code": "13420 7912",
+    "county": "HERKIMER",
+    "sub_county": "REMAINDER OF COUNTY"
+   },
+   "year_built": {
+    "raw": "2005",
+    "parsed": 2005
+   },
+   "construction_type": "FRAME",
+   "protection_class": "4Y",
+   "territory_code": "42/444",
+   "number_of_families": {
+    "raw": "1",
+    "parsed": 1
+   },
+   "months_occupied_annually": {
+    "raw": "12",
+    "parsed": 12
+   },
+   "heating_fuel_type": "LIQUID PROPANE",
+   "secondary_heating_type": "NONE",
+   "basement_type": "BASEMENT",
+   "fuel_tank_location": "NONE",
+   "gated_community": {
+    "raw": "NO",
+    "parsed": "No"
+   },
+   "swimming_pool": {
+    "raw": "NO",
+    "parsed": "No"
+   },
+   "townhouse_rowhouse_indicator": {
+    "raw": "N",
+    "parsed": "No"
+   },
+   "doublewide_indicator": {
+    "raw": "N",
+    "parsed": "No"
+   },
+   "protective_devices": [
+    {
+     "device_description": "Fire Extinguisher",
+     "credit_percentage": "2%",
+     "form_reference": "NYC HO 04 16"
+    },
+    {
+     "device_description": "Professionally Monitored Fire Alarm.",
+     "credit_percentage": "8%",
+     "form_reference": "NYC HO 04 16"
+    },
+    {
+     "device_description": "Deadbolts.",
+     "credit_percentage": "2%",
+     "form_reference": "NYC HO 04 16"
+    },
+    {
+     "device_description": "Automatic (hard wired) Generator",
+     "credit_percentage": "5%",
+     "form_reference": "NYC HO 04 16"
+    }
+   ]
+  },
+  "rating_characteristics": {
+   "feet_from_hydrant": "40",
+   "distance_to_fire_station": "03",
+   "fire_district": "WEBB TFD NO 1",
+   "policy_tier": "9"
+  },
+  "deductibles": {
+   "all_other_perils_deductible": "1000.00"
+  },
+  "section_i_property_coverages": {
+   "coverage_a_dwelling_limit": "3416000",
+   "coverage_b_other_structures_limit": "1024800",
+   "coverage_c_personal_property_limit": "3416000",
+   "coverage_d_loss_of_use_limit": "1366400"
+  },
+  "section_ii_liability_coverages": {
+   "coverage_e_personal_liability_limit": "1000000",
+   "coverage_f_medical_payments_limit": "1000"
+  },
+  "mortgagees": [
+   {
+    "rank": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "name": "KEY BANK NATIONAL ASSOCIATION",
+    "loan_number": "0020048910",
+    "party_type": {
+     "raw": "Mortgagee",
+     "source": "structural"
+    },
+    "location_reference": "1",
+    "address": {
+     "line_1": "ATTN: INSURANCE DEPT",
+     "line_2": "PO BOX 1868",
+     "city": "KENNESHAW",
+     "state": "GA",
+     "postal_code": "30156"
+    }
+   }
+  ],
+  "scheduled_personal_property": [
+   {
+    "form_reference": "IM-175",
+    "class_description": "JEWELRY",
+    "class_total_amount": "14,150",
+    "form_total_amount": "21,150",
+    "item_number": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "item_description": "18KT YELLOW GOLD 1.00CT EMERALD PEAR SHAPE RING W/4 .02CT SQUARE CUT DIAMONDS ON EACH SIDE",
+    "scheduled_limit": "4,000"
+   },
+   {
+    "form_reference": "IM-175",
+    "class_description": "JEWELRY",
+    "class_total_amount": "14,150",
+    "form_total_amount": "21,150",
+    "item_number": {
+     "raw": "2",
+     "parsed": 2
+    },
+    "item_description": "14KT YELLOW GOLD 4 PRONG DIAMOND EARRINGS W/1.41CTW",
+    "scheduled_limit": "6,000"
+   },
+   {
+    "form_reference": "IM-175",
+    "class_description": "JEWELRY",
+    "class_total_amount": "14,150",
+    "form_total_amount": "21,150",
+    "item_number": {
+     "raw": "3",
+     "parsed": 3
+    },
+    "item_description": "14KT YELLOW GOLD DIAMOND RING W/1 DIAMOND 0.75CT MOUNTED IN A FOUR PRONG HEAD",
+    "scheduled_limit": "3,000"
+   },
+   {
+    "form_reference": "IM-175",
+    "class_description": "JEWELRY",
+    "class_total_amount": "14,150",
+    "form_total_amount": "21,150",
+    "item_number": {
+     "raw": "4",
+     "parsed": 4
+    },
+    "item_description": "14KT YELLOW GOLD DIAMOND PENDANT ENHANCER W/3 DIAMONDS 0.01CT",
+    "scheduled_limit": "400"
+   },
+   {
+    "form_reference": "IM-175",
+    "class_description": "JEWELRY",
+    "class_total_amount": "14,150",
+    "form_total_amount": "21,150",
+    "item_number": {
+     "raw": "5",
+     "parsed": 5
+    },
+    "item_description": "14KT YELLOW GOLD 0.30CT DIAMOND PENDANT W/18\" ROPE CHAIN",
+    "scheduled_limit": "600"
+   },
+   {
+    "form_reference": "IM-175",
+    "class_description": "JEWELRY",
+    "class_total_amount": "14,150",
+    "form_total_amount": "21,150",
+    "item_number": {
+     "raw": "6",
+     "parsed": 6
+    },
+    "item_description": "14KT YELLOW GOLD CROSS",
+    "scheduled_limit": "150"
+   },
+   {
+    "form_reference": "IM-175",
+    "class_description": "SILVERWARE",
+    "class_total_amount": "7,000",
+    "form_total_amount": "21,150",
+    "item_number": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "item_description": "8 6-PC SETTINGS BY TOWELE W/STERLING HANDLE,STAIN- LESS BLADE, 1 SUGAR SHELL,1 CAKE SERVER, 2 SERVING SPOONS,1 PIERCED SPOON,1MEAT KNIFE,1 PICKLE FORK",
+    "scheduled_limit": "7,000"
+   }
+  ],
+  "scheduled_personal_property_total": "21,150"
+ },
+ "additional_fields": [
+  {
+   "section": "Additional Location Details",
+   "label": "Secondary Indicator",
+   "value": "N"
+  },
+  {
+   "section": "Account Information",
+   "label": "Preferred Due Day",
+   "value": "0"
+  },
+  {
+   "section": "Exceptions",
+   "label": "Exceptions",
+   "value": "NONE"
+  },
+  {
+   "section": "IM Schedule",
+   "label": "TOTAL IM SCHEDULE",
+   "value": "21,150"
+  }
+ ]
+}
