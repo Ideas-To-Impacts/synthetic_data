@@ -1,0 +1,410 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "Renewal Homeowners Insurance Declarations",
+   "parsed": "Renewal Declarations"
+  },
+  "document_title_as_stated": "Renewal Homeowners Insurance Declarations",
+  "line_of_business_as_stated": "HO-3 Homeowners",
+  "issue_date": {
+   "raw": "Date Mailed: 04/02/2026",
+   "parsed": "04/02/2026"
+  },
+  "print_code": "NYHDEC01 (02/2026)",
+  "batch_number": "HODEC02##Insured##IN-435221751##839559B834184360967CDE5ABF03EC67##0"
+ },
+ "carrier": {
+  "company_name": "Mercury Casualty Company",
+  "company_structure": "(A Stock Company)",
+  "address": {
+   "line_1": "555 West Imperial Highway",
+   "city": "Brea",
+   "state": "CA",
+   "postal_code": "92821"
+  }
+ },
+ "claim_reporting": {
+  "claims_phone": "(800) 503-3724"
+ },
+ "producer": {
+  "agency_name": "PATRIOTIC INSURANCE GROUP BROKERAGE INC",
+  "producer_code": "312479",
+  "contact": {
+   "phone": "(845) 610-5700"
+  },
+  "address": {
+   "line_1": "159 ROUTE 28",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Clemence Fairbank",
+  "mailing_address": {
+   "line_1": "2 TOWN RD",
+   "city": "MOUNT MARION",
+   "state": "NY",
+   "postal_code": "12456-6020"
+  }
+ },
+ "policy": {
+  "policy_number": "NYHP0000004000",
+  "effective_date": "05/21/2026",
+  "expiration_date": "05/21/2027",
+  "effective_time": "12:01 A.M.",
+  "expiration_time": "12:01 A.M.",
+  "time_zone": "Standard time at the address of the property location below",
+  "policy_type": "HO3",
+  "policy_form_number": "NY H0003",
+  "policy_form_edition": "12/2019",
+  "is_renewal": {
+   "raw": "Renewal Homeowners Insurance Declarations",
+   "source": "structural",
+   "parsed": "Yes"
+  }
+ },
+ "premium": {
+  "basic_premium": "$932.00",
+  "forms_and_endorsements_premium": "$141.00",
+  "total_policy_premium": "$1,073.00"
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "NY H0003",
+   "edition_date": "12/2019",
+   "form_title": "Policy Jacket for HO3"
+  },
+  {
+   "form_number": "H0035",
+   "edition_date": "12/2012",
+   "form_title": "Loss Assessment Coverage"
+  },
+  {
+   "form_number": "H0082NY",
+   "edition_date": "12/2019",
+   "form_title": "Personal Injury"
+  },
+  {
+   "form_number": "H0208",
+   "edition_date": "12/2019",
+   "form_title": "Water Back-Up and Sump Discharge or Overflow"
+  },
+  {
+   "form_number": "H0290",
+   "edition_date": "12/2019",
+   "form_title": "Personal Property Replacement Cost Loss Settlement"
+  },
+  {
+   "form_number": "H0420",
+   "edition_date": "12/2019",
+   "form_title": "Additional Replacement Cost Protection - Specified Amount"
+  },
+  {
+   "form_number": "H0455NY",
+   "edition_date": "12/2019",
+   "form_title": "Identity Fraud Expense and Resolution Services Coverage"
+  },
+  {
+   "form_number": "H0999NY",
+   "edition_date": "12/2019",
+   "form_title": "Special Provisions - New York"
+  },
+  {
+   "form_number": "H0145",
+   "edition_date": "10/2019",
+   "form_title": "Exclusion of Cosmetic Damage to Roof Coverings Caused By Hail"
+  },
+  {
+   "form_number": "H0210NY",
+   "edition_date": "03/2021",
+   "form_title": "Service Line Coverage"
+  },
+  {
+   "form_number": "H0475NY",
+   "edition_date": "03/2021",
+   "form_title": "Home Systems Protection"
+  },
+  {
+   "form_number": "H0653NY",
+   "edition_date": "12/2019",
+   "form_title": "Home-sharing Host Activities Amendatory Endorsement"
+  },
+  {
+   "form_number": "H0090NY",
+   "edition_date": "12/2019",
+   "form_title": "Workers' Compensation Residence Employee Mandatory Coverage"
+  }
+ ],
+ "billing": {
+  "bill_to_party": {
+   "raw": "Paid By: Mortgagee",
+   "parsed": "Mortgagee"
+  }
+ },
+ "homeowners": {
+  "dwelling": {
+   "described_location": {
+    "line_1": "2 TOWN RD",
+    "city": "MOUNT MARION",
+    "state": "NY",
+    "postal_code": "12456-6020"
+   },
+   "year_built": {
+    "raw": "1955",
+    "parsed": 1955
+   },
+   "square_footage": {
+    "raw": "957",
+    "parsed": 957
+   },
+   "protection_class": "3",
+   "construction_type": "Siding, Vinyl"
+  },
+  "mortgagees": [
+   {
+    "rank": {
+     "raw": "First",
+     "parsed": 1
+    },
+    "name": "M & T Bank",
+    "clause_type": "Its Successors and/or Assigns ATIMA",
+    "party_type": {
+     "raw": "Mortgagee",
+     "source": "structural"
+    },
+    "loan_number": "0033900481",
+    "is_payor": {
+     "raw": "Yes",
+     "parsed": "Yes"
+    },
+    "address": {
+     "line_1": "PO Box 5738",
+     "city": "Springfield",
+     "state": "OH",
+     "postal_code": "45501-5738"
+    }
+   }
+  ],
+  "deductibles": {
+   "all_other_perils_deductible": "$1,000"
+  },
+  "section_i_property_coverages": {
+   "coverage_a_dwelling_limit": "$232,000",
+   "coverage_b_other_structures_limit": "$46,400",
+   "coverage_c_personal_property_limit": "$174,000",
+   "coverage_d_loss_of_use_limit": "$46,400",
+   "extended_replacement_cost_percentage": {
+    "raw": "25% of Coverage A",
+    "parsed": "25%"
+   },
+   "ordinance_or_law_percentage": {
+    "raw": "10% of Coverage A",
+    "parsed": "10%"
+   },
+   "water_backup_and_sump_overflow_limit": "$5,000",
+   "credit_card_forgery_counterfeit_money_limit": "$1,000",
+   "loss_assessment_limit": "$2,000",
+   "additional_coverages": [
+    {
+     "coverage_name": "Jewelry and Furs",
+     "limit_amount": "$1,500",
+     "is_included": {
+      "raw": "Included*",
+      "parsed": "Yes"
+     },
+     "coverage_description": "Special Limits of Liability"
+    },
+    {
+     "coverage_name": "Money, Coins",
+     "limit_amount": "$200",
+     "is_included": {
+      "raw": "Included*",
+      "parsed": "Yes"
+     },
+     "coverage_description": "Special Limits of Liability"
+    },
+    {
+     "coverage_name": "Securities, Stamps",
+     "limit_amount": "$1,500",
+     "is_included": {
+      "raw": "Included*",
+      "parsed": "Yes"
+     },
+     "coverage_description": "Special Limits of Liability"
+    },
+    {
+     "coverage_name": "Silverware",
+     "limit_amount": "$2,500",
+     "is_included": {
+      "raw": "Included*",
+      "parsed": "Yes"
+     },
+     "coverage_description": "Special Limits of Liability"
+    },
+    {
+     "coverage_name": "Firearms",
+     "limit_amount": "$2,500",
+     "is_included": {
+      "raw": "Included*",
+      "parsed": "Yes"
+     },
+     "coverage_description": "Special Limits of Liability"
+    },
+    {
+     "coverage_name": "Electronic Apparatus in/upon vehicle",
+     "limit_amount": "$1,500",
+     "is_included": {
+      "raw": "Included*",
+      "parsed": "Yes"
+     },
+     "coverage_description": "Special Limits of Liability"
+    },
+    {
+     "coverage_name": "Tapes, records, discs or other media in/upon vehicle",
+     "limit_amount": "$250",
+     "is_included": {
+      "raw": "Included*",
+      "parsed": "Yes"
+     },
+     "coverage_description": "Special Limits of Liability"
+    },
+    {
+     "coverage_name": "Home Computers",
+     "limit_amount": "$5,000",
+     "is_included": {
+      "raw": "Included*",
+      "parsed": "Yes"
+     },
+     "coverage_description": "Special Limits of Liability"
+    }
+   ]
+  },
+  "section_ii_liability_coverages": {
+   "coverage_e_personal_liability_limit": "$300,000",
+   "coverage_f_medical_payments_limit": "$2,000",
+   "damage_to_property_of_others_limit": "$1,000"
+  },
+  "optional_endorsement_coverages": [
+   {
+    "coverage_name": "Personal Injury",
+    "premium": "$18.00"
+   },
+   {
+    "coverage_name": "Additional Replacement Cost",
+    "limit_amount": "25% of Coverage A",
+    "is_included": {
+     "raw": "Included*",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Water Backup and Sump Discharge or Overflow",
+    "limit_amount": "$5,000",
+    "is_included": {
+     "raw": "Included*",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Personal Property Replacement Cost",
+    "is_included": {
+     "raw": "Included*",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Credit Card, EFT Card, Forgery, Etc",
+    "limit_amount": "$1,000",
+    "is_included": {
+     "raw": "Included*",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Business Property Increased Limits On Premises/Off Premises",
+    "limit_amount": "$5,000 / $1,500",
+    "is_included": {
+     "raw": "Included*",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Loss Assessment Coverage - Residence Premises",
+    "limit_amount": "$2,000",
+    "premium": "$3.00"
+   },
+   {
+    "coverage_name": "Ordinance Or Law",
+    "limit_amount": "10% of Coverage A",
+    "is_included": {
+     "raw": "Included*",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Limited Fungi, Other Microbes or Rot(Section I)",
+    "limit_amount": "$20,000 per policy period",
+    "is_included": {
+     "raw": "Included*",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Identity Fraud Expense and Resolution Services Coverage",
+    "limit_amount": "$25,000",
+    "premium": "$25.00"
+   },
+   {
+    "coverage_name": "Home Systems Protection",
+    "limit_amount": "$50,000",
+    "premium": "$45.00"
+   },
+   {
+    "coverage_name": "Service Line Coverage",
+    "limit_amount": "$10,000",
+    "premium": "$50.00"
+   },
+   {
+    "coverage_name": "Workers' Compensation Residence Employee Mandatory Coverage",
+    "is_included": {
+     "raw": "Included*",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Damage to Property of Others",
+    "limit_amount": "$1,000",
+    "is_included": {
+     "raw": "Included*",
+     "parsed": "Yes"
+    }
+   }
+  ],
+  "discounts": [
+   {
+    "discount_name": "Loss Free"
+   },
+   {
+    "discount_name": "Renovation - Roof"
+   },
+   {
+    "discount_name": "Renovation - Heat"
+   }
+  ]
+ },
+ "additional_fields": [
+  {
+   "section": "DISCOUNTS",
+   "label": "Water Leak Detection",
+   "value": "No"
+  }
+ ],
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_effective_date": "05/21/2026",
+   "renewal_expiration_date": "05/21/2027",
+   "renewal_premium": "$1,073.00"
+  }
+ }
+}
