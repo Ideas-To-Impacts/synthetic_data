@@ -1,0 +1,219 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "Evidence of Insurance",
+   "parsed": "Evidence of Insurance"
+  },
+  "document_title_as_stated": "Evidence of Insurance",
+  "print_code": "PRH EOI 11/18",
+  "print_date": "03/01/2024",
+  "transaction_effective_date": "02/29/2024"
+ },
+ "carrier": {
+  "company_name": "Palisades Property and Casualty Insurance Company",
+  "address": {
+   "line_1": "PO Box 505",
+   "city": "Liberty",
+   "state": "NJ",
+   "postal_code": "12754-8824"
+  }
+ },
+ "producer": {
+  "agency_name": "PATRIOTIC INSURANCE GROUP BROKERAGE INC.",
+  "producer_code": "7001894",
+  "contact": {
+   "phone": "(226) 783-0236"
+  },
+  "address": {
+   "line_1": "159 NY 28",
+   "city": "BEACON",
+   "state": "NY",
+   "postal_code": "12508"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Edward Stanhope",
+  "physical_address": {
+   "line_1": "2603 Barclay Mnr",
+   "city": "Ilion",
+   "state": "NY",
+   "postal_code": "13357"
+  }
+ },
+ "policy": {
+  "policy_number": "NYH11239751046",
+  "effective_date": "02/29/2024",
+  "expiration_date": "02/28/2025"
+ },
+ "premium": {
+  "total_policy_premium": {
+   "raw": "$547",
+   "parsed": 547.0
+  }
+ },
+ "billing": {
+  "payment_plan": "Pay in Full",
+  "checks_payable_to": "Plymouth Rock Assurance",
+  "payments": [
+   {
+    "payer_name": "KEITH ELLERY",
+    "payer_address": {
+     "line_1": "1943NBDZKTG NMA",
+     "city": "CANTON",
+     "state": "NY",
+     "postal_code": "13617"
+    },
+    "payment_type": "CREDIT",
+    "account_number_masked": "************7874",
+    "payment_status": "Processed",
+    "payment_date": "03/01/2024",
+    "amount": "$547.00",
+    "insurer": "Palisades Property and Casualty Insurance Company",
+    "account_holder_signature": "X KEITH ELLERY"
+   }
+  ]
+ },
+ "signature": {
+  "authorized_representative_name": "Samantha Romig"
+ },
+ "forms_and_endorsements": [
+  {
+   "form_title": "Homeowners 6 - Unit-Owners Form",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_title": "Special Provisions - New York",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_title": "Amendatory Endorsement - New York",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_title": "Amendatory Endorsement Pollution Exclusion",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_title": "Home-Sharing Host Activities Amendatory Endorsement",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_title": "Identity Theft Resolution Services Coverage",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_title": "Inflation Guard",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_title": "Limited Fungi, Wet, or Dry Rot, Or Bacteria coverage",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_title": "No Section II-Liability Coverages for Home Day Care Business Limited Section I",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_title": "Unit Owner Coverage A - Special Coverage",
+   "premium": "$77.00"
+  },
+  {
+   "form_title": "Loss Assessment Coverage",
+   "premium": "$27.00"
+  },
+  {
+   "form_title": "Personal Property (Coverage C) Replacement Cost Coverage",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_title": "Unit Owner Rental to Others",
+   "premium": "$29.00"
+  }
+ ],
+ "homeowners": {
+  "deductibles": {
+   "all_other_perils_deductible": "$1,000",
+   "wind_hail_deductible": "$1,000"
+  },
+  "section_i_property_coverages": {
+   "coverage_a_dwelling_limit": "$80,000",
+   "coverage_a_dwelling_premium": "$302.00",
+   "coverage_c_personal_property_limit": "$20,000",
+   "coverage_c_personal_property_premium": "$66.00",
+   "coverage_d_loss_of_use_limit": "$8,000",
+   "coverage_d_loss_of_use_premium": "$12.00"
+  },
+  "section_ii_liability_coverages": {
+   "coverage_e_personal_liability_limit": "$1,000,000",
+   "coverage_e_personal_liability_premium": "$34.00",
+   "coverage_f_medical_payments_limit": "$1,000",
+   "coverage_f_medical_payments_premium": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  "mortgagees": []
+ },
+ "additional_fields": [
+  {
+   "section": "Payment Confirmation",
+   "label": "Policy Term",
+   "value": "02/29/6811yo45/28/2025"
+  },
+  {
+   "section": "Payment Confirmation",
+   "label": "Named Insured",
+   "value": "KEITH ELLERY"
+  },
+  {
+   "section": "Payment Confirmation",
+   "label": "Residence Address",
+   "value": "3799DVCNFRJCBT NEWBURGH, NY 12550"
+  },
+  {
+   "section": "Payment Confirmation",
+   "label": "Agent",
+   "value": "PATRIOTIC INSURANCE GROUP BROKERA"
+  },
+  {
+   "section": "Evidence of Insurance",
+   "label": "Mortgagee Company Name",
+   "value": "None"
+  },
+  {
+   "section": "Mortgage Data",
+   "label": "First",
+   "value": "None"
+  }
+ ]
+}

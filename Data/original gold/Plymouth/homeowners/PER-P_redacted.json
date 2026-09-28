@@ -1,0 +1,1179 @@
+{
+  "document": {
+    "document_type": {
+      "raw": "Evidence of Insurance",
+      "parsed": "Evidence of Insurance",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "document_title_as_stated": {
+      "raw": "Evidence of Insurance",
+      "parsed": "Evidence of Insurance",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "print_code": {
+      "raw": "PRH EOI 11/18",
+      "parsed": "PRH EOI 11/18",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "print_date": {
+      "raw": "03/01/2024",
+      "parsed": "03/01/2024",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "transaction_effective_date": {
+      "raw": "02/29/2024",
+      "parsed": "02/29/2024",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "source_file_name": {
+      "raw": "PER-P_redacted.pdf",
+      "parsed": "PER-P_redacted.pdf",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "page_count": {
+      "raw": "4",
+      "parsed": 4,
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    }
+  },
+  "carrier": {
+    "company_name": {
+      "raw": "Palisades Property and Casualty Insurance Company",
+      "parsed": "Palisades Property and Casualty Insurance Company",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "address": {
+      "line_1": {
+        "raw": "PO Box 505",
+        "parsed": "PO Box 505",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Liberty",
+        "parsed": "Liberty",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NJ",
+        "parsed": "NJ",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "12754-8824",
+        "parsed": "12754-8824",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "producer": {
+    "agency_name": {
+      "raw": "PATRIOTIC INSURANCE GROUP BROKERAGE INC.",
+      "parsed": "PATRIOTIC INSURANCE GROUP BROKERAGE INC.",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        2
+      ],
+      "flagged": false
+    },
+    "producer_code": {
+      "raw": "7001894",
+      "parsed": "7001894",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        2
+      ],
+      "flagged": false
+    },
+    "contact": {
+      "phone": {
+        "raw": "(226) 783-0236",
+        "parsed": "(226) 783-0236",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    "address": {
+      "line_1": {
+        "raw": "159 NY 28",
+        "parsed": "159 NY 28",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "BEACON",
+        "parsed": "BEACON",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          4
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "12508",
+        "parsed": "12508",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "named_insured": {
+    "primary_name": {
+      "raw": "Edward Stanhope",
+      "parsed": "Edward Stanhope",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        2
+      ],
+      "flagged": false
+    },
+    "physical_address": {
+      "line_1": {
+        "raw": "2603 Barclay Mnr",
+        "parsed": "2603 Barclay Mnr",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Ilion",
+        "parsed": "Ilion",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          4
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13357",
+        "parsed": "13357",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "policy": {
+    "policy_number": {
+      "raw": "NYH11239751046",
+      "parsed": "NYH11239751046",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "effective_date": {
+      "raw": "02/29/2024",
+      "parsed": "02/29/2024",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "expiration_date": {
+      "raw": "02/28/2025",
+      "parsed": "02/28/2025",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        2
+      ],
+      "flagged": false
+    }
+  },
+  "premium": {
+    "total_policy_premium": {
+      "raw": "$547",
+      "parsed": 547.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    }
+  },
+  "billing": {
+    "payment_plan": {
+      "raw": "Pay in Full",
+      "parsed": "Pay in Full",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        2
+      ],
+      "flagged": false
+    },
+    "checks_payable_to": {
+      "raw": "Plymouth Rock Assurance",
+      "parsed": "Plymouth Rock Assurance",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        2
+      ],
+      "flagged": false
+    },
+    "payments": [
+      {
+        "payer_name": {
+          "raw": "KEITH ELLERY",
+          "parsed": "KEITH ELLERY",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "payer_address": {
+          "line_1": {
+            "raw": "1943NBDZKTG NMA",
+            "parsed": "1943NBDZKTG NMA",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "city": {
+            "raw": "CANTON",
+            "parsed": "CANTON",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "state": {
+            "raw": "NY",
+            "parsed": "NY",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              4
+            ],
+            "flagged": false
+          },
+          "postal_code": {
+            "raw": "13617",
+            "parsed": "13617",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          }
+        },
+        "payment_type": {
+          "raw": "CREDIT",
+          "parsed": "CREDIT",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "account_number_masked": {
+          "raw": "************7874",
+          "parsed": "************7874",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [],
+          "flagged": false
+        },
+        "payment_status": {
+          "raw": "Processed",
+          "parsed": "Processed",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "payment_date": {
+          "raw": "03/01/2024",
+          "parsed": "03/01/2024",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$547.00",
+          "parsed": 547.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "insurer": {
+          "raw": "Palisades Property and Casualty Insurance Company",
+          "parsed": "Palisades Property and Casualty Insurance Company",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "account_holder_signature": {
+          "raw": "X KEITH ELLERY",
+          "parsed": "X KEITH ELLERY",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "signature": {
+    "authorized_representative_name": {
+      "raw": "Samantha Romig",
+      "parsed": "Samantha Romig",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3
+      ],
+      "flagged": false
+    }
+  },
+  "forms_and_endorsements": [
+    {
+      "form_title": {
+        "raw": "Homeowners 6 - Unit-Owners Form",
+        "parsed": "Homeowners 6 - Unit-Owners Form",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "Included",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_title": {
+        "raw": "Special Provisions - New York",
+        "parsed": "Special Provisions - New York",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "Included",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_title": {
+        "raw": "Amendatory Endorsement - New York",
+        "parsed": "Amendatory Endorsement - New York",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "Included",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_title": {
+        "raw": "Amendatory Endorsement Pollution Exclusion",
+        "parsed": "Amendatory Endorsement Pollution Exclusion",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "Included",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_title": {
+        "raw": "Home-Sharing Host Activities Amendatory Endorsement",
+        "parsed": "Home-Sharing Host Activities Amendatory Endorsement",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "Included",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_title": {
+        "raw": "Identity Theft Resolution Services Coverage",
+        "parsed": "Identity Theft Resolution Services Coverage",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "Included",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_title": {
+        "raw": "Inflation Guard",
+        "parsed": "Inflation Guard",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "Included",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_title": {
+        "raw": "Limited Fungi, Wet, or Dry Rot, Or Bacteria coverage",
+        "parsed": "Limited Fungi, Wet, or Dry Rot, Or Bacteria coverage",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "Included",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_title": {
+        "raw": "No Section II-Liability Coverages for Home Day Care Business Limited Section I",
+        "parsed": "No Section II-Liability Coverages for Home Day Care Business Limited Section I",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "Included",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_title": {
+        "raw": "Unit Owner Coverage A - Special Coverage",
+        "parsed": "Unit Owner Coverage A - Special Coverage",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "$77.00",
+        "parsed": 77.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_title": {
+        "raw": "Loss Assessment Coverage",
+        "parsed": "Loss Assessment Coverage",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "$27.00",
+        "parsed": 27.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_title": {
+        "raw": "Personal Property (Coverage C) Replacement Cost Coverage",
+        "parsed": "Personal Property (Coverage C) Replacement Cost Coverage",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "Included",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_title": {
+        "raw": "Unit Owner Rental to Others",
+        "parsed": "Unit Owner Rental to Others",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "$29.00",
+        "parsed": 29.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      }
+    }
+  ],
+  "homeowners": {
+    "deductibles": {
+      "all_other_perils_deductible": {
+        "raw": "$1,000",
+        "parsed": 1000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "wind_hail_deductible": {
+        "raw": "$1,000",
+        "parsed": 1000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    },
+    "section_i_property_coverages": {
+      "coverage_a_dwelling_limit": {
+        "raw": "$80,000",
+        "parsed": 80000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "coverage_a_dwelling_premium": {
+        "raw": "$302.00",
+        "parsed": 302.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "coverage_c_personal_property_limit": {
+        "raw": "$20,000",
+        "parsed": 20000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "coverage_c_personal_property_premium": {
+        "raw": "$66.00",
+        "parsed": 66.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "coverage_d_loss_of_use_limit": {
+        "raw": "$8,000",
+        "parsed": 8000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "coverage_d_loss_of_use_premium": {
+        "raw": "$12.00",
+        "parsed": 12.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    },
+    "section_ii_liability_coverages": {
+      "coverage_e_personal_liability_limit": {
+        "raw": "$1,000,000",
+        "parsed": 1000000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "coverage_e_personal_liability_premium": {
+        "raw": "$34.00",
+        "parsed": 34.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "coverage_f_medical_payments_limit": {
+        "raw": "$1,000",
+        "parsed": 1000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "coverage_f_medical_payments_premium": {
+        "raw": "Included",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "additional_fields": [
+    {
+      "section": "Payment Confirmation",
+      "label": "Policy Term",
+      "value": {
+        "raw": "02/29/6811yo45/28/2025",
+        "parsed": "02/29/6811yo45/28/2025",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Payment Confirmation",
+      "label": "Named Insured",
+      "value": {
+        "raw": "KEITH ELLERY",
+        "parsed": "KEITH ELLERY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Payment Confirmation",
+      "label": "Residence Address",
+      "value": {
+        "raw": "3799DVCNFRJCBT NEWBURGH, NY 12550",
+        "parsed": "3799DVCNFRJCBT NEWBURGH, NY 12550",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Payment Confirmation",
+      "label": "Agent",
+      "value": {
+        "raw": "PATRIOTIC INSURANCE GROUP BROKERA",
+        "parsed": "PATRIOTIC INSURANCE GROUP BROKERA",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Evidence of Insurance",
+      "label": "Mortgagee Company Name",
+      "value": {
+        "raw": "None",
+        "parsed": "None",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Mortgage Data",
+      "label": "First",
+      "value": {
+        "raw": "None",
+        "parsed": "None",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    }
+  ],
+  "fideon:provenance": {
+    "source": "Plymouth/homeowners/PER-P_redacted.pdf",
+    "schema": "homeowners v1.4.0",
+    "synthetic": false,
+    "gold": "reviewed and completed by Claude against the printed pages",
+    "reviewed": "2026-09-28"
+  }
+}
