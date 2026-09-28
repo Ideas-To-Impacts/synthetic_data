@@ -504,7 +504,11 @@ def cells(page, matrix=fitz.Identity, ink: Optional[Ink] = None,
                 if column:
                     out.append(Cell("".join(text), members, r, page.number))
                     text, members = [], []
-                elif ch.space_before or gap > max(0.8, 0.3 * height):
+                # two separate PDF text runs set close on the same row (a
+                # label and a value placed independently) are two words even
+                # where their gap falls a hair under a same-run word space
+                elif ch.space_before or gap > max(0.8, 0.3 * height) or \
+                        (ch.line != prev.line and gap > max(0.8, 0.2 * height)):
                     text.append(" ")
                     members.append(None)
             text.append(ch.c)
