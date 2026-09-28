@@ -1,0 +1,185 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "Flood Insurance Policy Declarations",
+   "parsed": "New Policy Declarations"
+  },
+  "document_title_as_stated": "Flood Insurance Policy Declarations",
+  "print_date": {
+   "raw": "Printed: 08/13/2022",
+   "parsed": "08/13/2022"
+  }
+ },
+ "carrier": {
+  "company_name": "Occidental Fire & Casualty of NC",
+  "naic_number": "23248"
+ },
+ "producer": {
+  "producer_contact_name": "Bowen, Robert M Jr",
+  "contact": {
+   "phone": "(226) 783-0236"
+  },
+  "address": {
+   "line_1": "78 Brookside Ave Ste 132B",
+   "line_2": "Jccd Corp",
+   "full": "Chester,EU76904-6312"
+  }
+ },
+ "named_insured": {
+  "primary_name": "8123 MILLBROOK ROAD",
+  "mailing_address": {
+   "line_1": "61 HARBOR ROAD",
+   "city": "Boonville",
+   "state": "NY"
+  }
+ },
+ "policy": {
+  "policy_number": "26639170030228",
+  "effective_date": "08/10/2022",
+  "expiration_date": "08/10/2023",
+  "effective_time": "12:01 AM",
+  "expiration_time": "12:01 AM",
+  "alternate_policy_identifiers": [
+   {
+    "identifier_type": {
+     "raw": "(unlabelled)",
+     "source": "structural"
+    },
+    "identifier_value": "TMEVRvngpsAkcpwf8800769132"
+   }
+  ]
+ },
+ "premium": {
+  "total_policy_premium": "$1,840"
+ },
+ "locations": [
+  {
+   "location_number": {
+    "raw": "1",
+    "source": "structural",
+    "parsed": 1
+   },
+   "address": {
+    "full": "56GVGBMANF WF BYANPYWMLJRR,KQ72771-9041"
+   }
+  }
+ ],
+ "coverages": [
+  {
+   "coverage_name": "Building",
+   "limit": "$250,000",
+   "deductible": "$5,000"
+  },
+  {
+   "coverage_name": "Contents",
+   "limit": {
+    "raw": "$0",
+    "parsed": 0.0
+   },
+   "deductible": {
+    "raw": "$0",
+    "parsed": 0.0
+   }
+  }
+ ],
+ "flood": {
+  "nfip": {
+   "policy_form": "General Property",
+   "policy_declarations_type": "New Policy Declarations",
+   "payor": {
+    "raw": "Insured",
+    "parsed": "Insured"
+   },
+   "wyo_company_name": "Occidental Fire & Casualty of NC",
+   "wyo_company_naic_number": "23248",
+   "rating_engine": "Rating Engine"
+  },
+  "coverage_and_rating": {
+   "building_coverage_limit": "$250,000",
+   "building_deductible": "$5,000",
+   "contents_coverage_limit": {
+    "raw": "$0",
+    "parsed": 0.0
+   },
+   "contents_deductible": {
+    "raw": "$0",
+    "parsed": 0.0
+   }
+  },
+  "property_information": {
+   "flood_zone": "A",
+   "primary_residence": "No",
+   "building_occupancy": "Non-res. Building",
+   "building_description": "Commercial",
+   "first_floor_height": "3.9000001248 Feet",
+   "method_used_for_first_floor_height": "TOOL",
+   "property_description": "Slab on Grade, 3 Floors, Masonry",
+   "date_of_construction_or_substantial_improvement": "06/15/1984",
+   "replacement_cost_value": "$250,000",
+   "prior_nfip_claims_count": {
+    "raw": "0 claims",
+    "parsed": 0
+   },
+   "number_of_units": {
+    "raw": "3",
+    "parsed": 3
+   }
+  },
+  "premium_detail": {
+   "building_premium": "$1,341",
+   "contents_premium": "$0",
+   "increased_cost_of_compliance_premium": "$25",
+   "mitigation_discounts": {
+    "raw": "(-$58)",
+    "parsed": -58.0
+   },
+   "crs_discount": {
+    "raw": "(-$0)",
+    "parsed": -0.0
+   },
+   "full_risk_premium": "$1,308",
+   "annual_increase_cap_discount": {
+    "raw": "(-$0)",
+    "parsed": -0.0
+   },
+   "pre_firm_discount": {
+    "raw": "(-$0)",
+    "parsed": -0.0
+   },
+   "newly_mapped_discount": {
+    "raw": "(-$0)",
+    "parsed": -0.0
+   },
+   "other_statutory_discounts": {
+    "raw": "(-$0)",
+    "parsed": -0.0
+   },
+   "discounted_premium": "$1,308",
+   "reserve_fund_assessment": "$235",
+   "hfiaa_surcharge": "$250",
+   "federal_policy_fee": "$47",
+   "probation_surcharge": "$0",
+   "total_annual_premium": "$1,840"
+  },
+  "mortgage_information": [
+   {
+    "name": "TEG FCU",
+    "party_type": {
+     "raw": "First Mortgagee",
+     "source": "structural"
+    },
+    "rank": {
+     "raw": "First",
+     "source": "structural",
+     "parsed": 1
+    },
+    "address": {
+     "line_1": "8677 Chestnut",
+     "city": "Poughkeepsie",
+     "state": "NY",
+     "postal_code": "12603-2608"
+    }
+   }
+  ]
+ }
+}

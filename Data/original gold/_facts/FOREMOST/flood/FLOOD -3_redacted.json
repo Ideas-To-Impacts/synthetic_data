@@ -1,0 +1,176 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "FLOOD INSURANCE POLICY DECLARATIONS",
+   "parsed": "Revised Policy Declarations"
+  },
+  "document_title_as_stated": "FLOOD INSURANCE POLICY DECLARATIONS",
+  "issue_date": {
+   "raw": "Date Mailed: 08-08-2024",
+   "parsed": "08/08/2024"
+  },
+  "transaction_effective_date": "08-08-2024",
+  "transaction_reason": "Mortgagee"
+ },
+ "carrier": {
+  "company_name": "Foremost Insurance Company Grand Rapids MI",
+  "naic_number": "21660",
+  "contact": {
+   "website": "https://www.foremost.com/",
+   "phone": "(964) 441-2033"
+  },
+  "address": {
+   "line_1": "PO Box 6383",
+   "city": "Oneonta",
+   "state": "MT",
+   "postal_code": "13820",
+   "country": "USA"
+  }
+ },
+ "producer": {
+  "producer_contact_name": "BOWEN, ROBERT M JR",
+  "contact": {
+   "phone": "8456105700"
+  },
+  "address": {
+   "line_1": "522 SUMMIT LANE STE 132B, IRONVALE",
+   "city": "Chester",
+   "state": "NY",
+   "postal_code": "10918"
+  }
+ },
+ "named_insured": {
+  "primary_name": "PETER OLIVER & SAMANTHA MICHEL",
+  "mailing_address": {
+   "line_1": "4130 46th St. Apt. 4M",
+   "city": "Sunnyside",
+   "state": "NY",
+   "postal_code": "11104"
+  }
+ },
+ "policy": {
+  "policy_number": "FLD9545933661",
+  "effective_date": "06-17-2024",
+  "expiration_date": "06-17-2025",
+  "effective_time": "12:01 AM",
+  "expiration_time": "12:01 AM"
+ },
+ "premium": {
+  "total_policy_premium": "$ 1,743"
+ },
+ "locations": [
+  {
+   "location_number": {
+    "raw": "1",
+    "source": "structural",
+    "parsed": 1
+   },
+   "address": {
+    "full": "32 HBAFXP GJRJS 4Y, Vqcimg, UT, 57686"
+   }
+  }
+ ],
+ "coverages": [
+  {
+   "coverage_name": "Building",
+   "limit": "$ 201,000",
+   "deductible": "$ 2,000"
+  },
+  {
+   "coverage_name": "Contents",
+   "limit": "$ 0",
+   "deductible": "$ 0"
+  }
+ ],
+ "flood": {
+  "nfip": {
+   "nfip_policy_number": "6883394059",
+   "policy_form": "Dwelling Policy",
+   "policy_declarations_type": "Revised Policy Declarations",
+   "payor": "CENTRAL LOAN ADMINISTRATION & REPORTING ISAOA ATIMA",
+   "wyo_company_name": "Foremost Insurance Company Grand Rapids MI",
+   "wyo_company_naic_number": "21660"
+  },
+  "coverage_and_rating": {
+   "building_coverage_limit": "$ 201,000",
+   "building_deductible": "$ 2,000",
+   "contents_coverage_limit": "$ 0",
+   "contents_deductible": "$ 0"
+  },
+  "property_information": {
+   "primary_residence": {
+    "raw": "NO",
+    "parsed": "No"
+   },
+   "building_occupancy": "Single Family",
+   "building_description": "Main House/Building",
+   "first_floor_height": "0",
+   "method_used_for_first_floor_height": "EC",
+   "property_description": "Slab on Grade (non-elevated), 1 Floors , Frame",
+   "date_of_construction_or_substantial_improvement": "06-15-1970",
+   "prior_nfip_claims_count": {
+    "raw": "0 Claim(s)",
+    "parsed": 0
+   }
+  },
+  "premium_detail": {
+   "building_premium": "$ 1,255",
+   "contents_premium": "$ 0",
+   "increased_cost_of_compliance_premium": "$ 24",
+   "mitigation_discounts": {
+    "raw": "$ (54.00)",
+    "parsed": -54.0
+   },
+   "crs_discount": "$ 0",
+   "full_risk_premium": "$ 1,225",
+   "discounted_premium": "$ 1,225",
+   "reserve_fund_assessment": "$ 221",
+   "hfiaa_surcharge": "$ 250",
+   "federal_policy_fee": "$ 47",
+   "total_annual_premium": "$ 1,743"
+  },
+  "mortgage_information": [
+   {
+    "name": "CENTRAL LOAN ADMINISTRATION & REPORTING ISAOA ATIMA",
+    "party_type": {
+     "raw": "First Mortgagee",
+     "source": "structural"
+    },
+    "rank": {
+     "raw": "First",
+     "source": "structural",
+     "parsed": 1
+    },
+    "loan_number": {
+     "raw": "Loan # : 0167457431",
+     "parsed": "0167457431"
+    },
+    "address": {
+     "line_1": "PO BOX 6539",
+     "city": "Florence",
+     "state": "SC",
+     "postal_code": "29502"
+    }
+   }
+  ]
+ },
+ "additional_fields": [
+  {
+   "section": "Policy Coverages & Endorsements",
+   "label": "Total Annual Payment",
+   "value": "$ 1,743"
+  }
+ ],
+ "interested_parties": [
+  {
+   "name": "FAIRMOUNT BUILDERS",
+   "party_type": {
+    "raw": "Additional Insured",
+    "source": "structural"
+   },
+   "address": {
+    "full": "s_HouseNo 32 HBAFXP GJRJS 4Y, Vqcimg, UT, 57686"
+   }
+  }
+ ]
+}

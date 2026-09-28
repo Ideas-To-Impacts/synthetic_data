@@ -1,0 +1,1019 @@
+{
+  "document": {
+    "document_type": {
+      "raw": "Flood Insurance Policy Declarations",
+      "parsed": "New Policy Declarations",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "document_title_as_stated": {
+      "raw": "Flood Insurance Policy Declarations",
+      "parsed": "Flood Insurance Policy Declarations",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "print_date": {
+      "raw": "Printed: 08/16/2023",
+      "parsed": "08/16/2023",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "source_file_name": {
+      "raw": "FLOOD- 1_redacted.pdf",
+      "parsed": "FLOOD- 1_redacted.pdf",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "page_count": {
+      "raw": "1",
+      "parsed": 1,
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "carrier": {
+    "company_name": {
+      "raw": "Foremost Insurance Company",
+      "parsed": "Foremost Insurance Company",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "naic_number": {
+      "raw": "21660",
+      "parsed": "21660",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "producer": {
+    "producer_contact_name": {
+      "raw": "Bowen, Robert M Jr",
+      "parsed": "Bowen, Robert M Jr",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "contact": {
+      "phone": {
+        "raw": "(226) 783-0236",
+        "parsed": "(226) 783-0236",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "address": {
+      "line_1": {
+        "raw": "1992 Harbor Ste 132B",
+        "parsed": "1992 Harbor Ste 132B",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "line_2": {
+        "raw": "Tallgrass",
+        "parsed": "Tallgrass",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Monroe",
+        "parsed": "Monroe",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "10950-5096",
+        "parsed": "10950-5096",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "named_insured": {
+    "primary_name": {
+      "raw": "STONEPATH WORKS",
+      "parsed": "STONEPATH WORKS",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "mailing_address": {
+      "line_1": {
+        "raw": "32 VANTAGE CONTRACTING",
+        "parsed": "32 VANTAGE CONTRACTING",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "line_2": {
+        "raw": "6499 Summit Fl 2",
+        "parsed": "6499 Summit Fl 2",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Canton",
+        "parsed": "Canton",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13617-3255",
+        "parsed": "13617-3255",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "policy": {
+    "policy_number": {
+      "raw": "03638598835199",
+      "parsed": "03638598835199",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "effective_date": {
+      "raw": "08/10/2023",
+      "parsed": "08/10/2023",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "expiration_date": {
+      "raw": "08/10/2024",
+      "parsed": "08/10/2024",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "effective_time": {
+      "raw": "12:01 AM",
+      "parsed": "12:01 AM",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "expiration_time": {
+      "raw": "12:01 AM",
+      "parsed": "12:01 AM",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "premium": {
+    "total_policy_premium": {
+      "raw": "$1,839",
+      "parsed": 1839.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "locations": [
+    {
+      "location_number": {
+        "raw": "1",
+        "parsed": 1,
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "address": {
+        "line_1": {
+          "raw": "2934 LINCOLN",
+          "parsed": "2934 LINCOLN",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "city": {
+          "raw": "BOONVILLE",
+          "parsed": "BOONVILLE",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "state": {
+          "raw": "NY",
+          "parsed": "NY",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "postal_code": {
+          "raw": "13309-2265",
+          "parsed": "13309-2265",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      }
+    }
+  ],
+  "coverages": [
+    {
+      "coverage_name": {
+        "raw": "Building",
+        "parsed": "Building",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "limit": {
+        "raw": "$250,000",
+        "parsed": 250000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "deductible": {
+        "raw": "$5,000",
+        "parsed": 5000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "coverage_name": {
+        "raw": "Contents",
+        "parsed": "Contents",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "limit": {
+        "raw": "$0",
+        "parsed": 0.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "deductible": {
+        "raw": "$0",
+        "parsed": 0.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  ],
+  "flood": {
+    "nfip": {
+      "nfip_policy_number": {
+        "raw": "0419049575",
+        "parsed": "0419049575",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "policy_form": {
+        "raw": "General Property",
+        "parsed": "General Property",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "policy_declarations_type": {
+        "raw": "New Policy Declarations",
+        "parsed": "New Policy Declarations",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "payor": {
+        "raw": "Insured",
+        "parsed": "Insured",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "wyo_company_name": {
+        "raw": "Foremost Insurance Company",
+        "parsed": "Foremost Insurance Company",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "wyo_company_naic_number": {
+        "raw": "21660",
+        "parsed": "21660",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "coverage_and_rating": {
+      "building_coverage_limit": {
+        "raw": "$250,000",
+        "parsed": 250000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "building_deductible": {
+        "raw": "$5,000",
+        "parsed": 5000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "contents_coverage_limit": {
+        "raw": "$0",
+        "parsed": 0.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "contents_deductible": {
+        "raw": "$0",
+        "parsed": 0.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "property_information": {
+      "flood_zone": {
+        "raw": "A",
+        "parsed": "A",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "primary_residence": {
+        "raw": "No",
+        "parsed": "No",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "building_occupancy": {
+        "raw": "Non-res. Building",
+        "parsed": "Non-res. Building",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "building_description": {
+        "raw": "Commercial",
+        "parsed": "Commercial",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "first_floor_height": {
+        "raw": "3.9 Feet",
+        "parsed": "3.9 Feet",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "method_used_for_first_floor_height": {
+        "raw": "FEMA determined",
+        "parsed": "FEMA determined",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "property_description": {
+        "raw": "Slab on Grade, 3 Floors, Masonry",
+        "parsed": "Slab on Grade, 3 Floors, Masonry",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "date_of_construction_or_substantial_improvement": {
+        "raw": "06/15/1984",
+        "parsed": "06/15/1984",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "replacement_cost_value": {
+        "raw": "$250,000",
+        "parsed": 250000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "prior_nfip_claims_count": {
+        "raw": "0 claims",
+        "parsed": 0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "number_of_units": {
+        "raw": "3",
+        "parsed": 3,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "premium_detail": {
+      "building_premium": {
+        "raw": "$1,341",
+        "parsed": 1341.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "contents_premium": {
+        "raw": "$0",
+        "parsed": 0.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "increased_cost_of_compliance_premium": {
+        "raw": "$25",
+        "parsed": 25.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "mitigation_discounts": {
+        "raw": "(-$59)",
+        "parsed": -59.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "crs_discount": {
+        "raw": "(-$0)",
+        "parsed": -0.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "full_risk_premium": {
+        "raw": "$1,307",
+        "parsed": 1307.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "annual_increase_cap_discount": {
+        "raw": "(-$0)",
+        "parsed": -0.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "pre_firm_discount": {
+        "raw": "(-$0)",
+        "parsed": -0.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "newly_mapped_discount": {
+        "raw": "(-$0)",
+        "parsed": -0.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "other_statutory_discounts": {
+        "raw": "(-$0)",
+        "parsed": -0.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "discounted_premium": {
+        "raw": "$1,307",
+        "parsed": 1307.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "reserve_fund_assessment": {
+        "raw": "$235",
+        "parsed": 235.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "hfiaa_surcharge": {
+        "raw": "$250",
+        "parsed": 250.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "federal_policy_fee": {
+        "raw": "$47",
+        "parsed": 47.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "probation_surcharge": {
+        "raw": "$0",
+        "parsed": 0.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "total_annual_premium": {
+        "raw": "$1,839",
+        "parsed": 1839.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "mortgage_information": [
+      {
+        "name": {
+          "raw": "TEG FCU Its successors and/or Assigns. ATIMA",
+          "parsed": "TEG FCU Its successors and/or Assigns. ATIMA",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "party_type": {
+          "raw": "First Mortgagee",
+          "parsed": "First Mortgagee",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "rank": {
+          "raw": "First",
+          "parsed": 1,
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "address": {
+          "line_1": {
+            "raw": "PO Box 4090",
+            "parsed": "PO Box 4090",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "city": {
+            "raw": "Northville",
+            "parsed": "Northville",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "state": {
+            "raw": "NY",
+            "parsed": "NY",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "postal_code": {
+            "raw": "12134-",
+            "parsed": "12134-",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          }
+        }
+      }
+    ]
+  },
+  "fideon:provenance": {
+    "source": "FOREMOST/flood/FLOOD- 1_redacted.pdf",
+    "schema": "flood v1.4.0",
+    "synthetic": false,
+    "gold": "reviewed and completed by Claude against the printed pages",
+    "reviewed": "2026-09-28"
+  }
+}

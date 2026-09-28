@@ -1,0 +1,161 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "FLOOD INSURANCE POLICY DECLARATIONS",
+   "parsed": "Revised Policy Declarations"
+  },
+  "document_title_as_stated": "FLOOD INSURANCE POLICY DECLARATIONS",
+  "issue_date": {
+   "raw": "Date Mailed: 02-13-2026",
+   "parsed": "02/13/2026"
+  },
+  "transaction_effective_date": "08-10-2025"
+ },
+ "carrier": {
+  "company_name": "Foremost Insurance Company Grand Rapids MI",
+  "naic_number": "21660",
+  "contact": {
+   "website": "https://www.foremost.com/",
+   "phone": "(964) 441-2033"
+  },
+  "address": {
+   "line_1": "PO Box 6383",
+   "city": "Oneonta",
+   "state": "MT",
+   "postal_code": "13820",
+   "country": "USA"
+  }
+ },
+ "producer": {
+  "producer_contact_name": "BOWEN, ROBERT M JR",
+  "contact": {
+   "phone": "8456105700"
+  },
+  "address": {
+   "line_1": "522 SUMMIT LANE STE 132B, IRONVALE",
+   "city": "Chester",
+   "state": "NY",
+   "postal_code": "10918"
+  }
+ },
+ "named_insured": {
+  "primary_name": "32 VANTAGE CONTRACTING",
+  "mailing_address": {
+   "line_1": "6499 Summit Fl 2",
+   "city": "Bronx",
+   "state": "NY",
+   "postal_code": "10457"
+  }
+ },
+ "policy": {
+  "policy_number": "0419049575",
+  "effective_date": "08-10-2025",
+  "expiration_date": "08-10-2026",
+  "effective_time": "12:01 AM",
+  "expiration_time": "12:01 AM"
+ },
+ "premium": {
+  "total_policy_premium": "$ 1,839"
+ },
+ "locations": [
+  {
+   "location_number": {
+    "raw": "1",
+    "source": "structural",
+    "parsed": 1
+   },
+   "address": {
+    "full": "60 QJPFRFFD XK, Wxecunfnsuki, YW, 33678"
+   }
+  }
+ ],
+ "coverages": [
+  {
+   "coverage_name": "Building",
+   "limit": "$ 250,000",
+   "deductible": "$ 5,000"
+  },
+  {
+   "coverage_name": "Contents",
+   "limit": "$ 0",
+   "deductible": "$ 0"
+  }
+ ],
+ "flood": {
+  "nfip": {
+   "nfip_policy_number": "0419049575",
+   "policy_form": "General Property Form",
+   "policy_declarations_type": "Revised Policy Declarations",
+   "payor": "32 VANTAGE CONTRACTING",
+   "rating_engine": "RatingEngine",
+   "wyo_company_name": "Foremost Insurance Company Grand Rapids MI",
+   "wyo_company_naic_number": "21660"
+  },
+  "coverage_and_rating": {
+   "building_coverage_limit": "$ 250,000",
+   "building_deductible": "$ 5,000",
+   "contents_coverage_limit": "$ 0",
+   "contents_deductible": "$ 0"
+  },
+  "property_information": {
+   "primary_residence": {
+    "raw": "NO",
+    "parsed": "No"
+   },
+   "building_occupancy": "Non-Residential Building",
+   "building_description": "Commercial",
+   "first_floor_height": "3.9",
+   "method_used_for_first_floor_height": "FEMA Determined",
+   "property_description": "Slab on Grade (non-elevated), 3 Floors , Masonry",
+   "date_of_construction_or_substantial_improvement": "06-15-1984",
+   "prior_nfip_claims_count": {
+    "raw": "0 Claim(s)",
+    "parsed": 0
+   },
+   "replacement_cost_value": "$ 250,000.00"
+  },
+  "premium_detail": {
+   "building_premium": "$ 1,341",
+   "contents_premium": "$ 0",
+   "increased_cost_of_compliance_premium": "$ 25",
+   "mitigation_discounts": {
+    "raw": "$ (59.00)",
+    "parsed": -59.0
+   },
+   "crs_discount": "$ 0",
+   "full_risk_premium": "$ 1,307",
+   "discounted_premium": "$ 1,307",
+   "reserve_fund_assessment": "$ 235",
+   "hfiaa_surcharge": "$ 250",
+   "federal_policy_fee": "$ 47",
+   "total_annual_premium": "$ 1,839"
+  },
+  "mortgage_information": [
+   {
+    "name": "TEG FCU ITS SUCCESSORS AND/OR ASSIGNS ATIMA,",
+    "party_type": {
+     "raw": "First Mortgagee",
+     "source": "structural"
+    },
+    "rank": {
+     "raw": "First",
+     "source": "structural",
+     "parsed": 1
+    },
+    "address": {
+     "line_1": "PO BOX 6177",
+     "city": "LIBERTY",
+     "state": "NY",
+     "postal_code": "12754"
+    }
+   }
+  ]
+ },
+ "additional_fields": [
+  {
+   "section": "Policy Coverages & Endorsements",
+   "label": "Total Annual Payment",
+   "value": "$ 1,839"
+  }
+ ]
+}
