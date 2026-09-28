@@ -1,0 +1,408 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "DECLARATION, Dwelling Fire",
+   "parsed": "Declarations"
+  },
+  "document_title_as_stated": "DECLARATION, Dwelling Fire",
+  "line_of_business_as_stated": "Dwelling Fire",
+  "print_code": "LCIC(4/11)",
+  "transaction_type": "Renewal"
+ },
+ "carrier": {
+  "company_name": "Leatherstocking Cooperative Insurance Company",
+  "contact": {
+   "phone": "607-547-2007",
+   "fax": "607-547-2056",
+   "website": "www.leatherstockinginsurance.com"
+  },
+  "address": {
+   "line_1": "PO Box 630",
+   "line_2": "4313 County Highway 11",
+   "city": "Cooperstown",
+   "state": "NY",
+   "postal_code": "13326"
+  }
+ },
+ "producer": {
+  "agency_name": "Patriotic Insurance Group Brokerage Inc- RBF",
+  "contact": {
+   "phone": "(226) 783-0236",
+   "fax": "(440) 929-3100"
+  },
+  "address": {
+   "line_1": "159 NY - 28",
+   "city": "Ilion",
+   "state": "NY",
+   "postal_code": "13357"
+  }
+ },
+ "named_insured": {
+  "primary_name": "VANTAGE CONTRACTING",
+  "mailing_address": {
+   "line_1": "375 Meridian",
+   "city": "Beacon",
+   "state": "NY",
+   "postal_code": "12508"
+  },
+  "additional_named_insureds": []
+ },
+ "policy": {
+  "policy_number": "29-5166-0657",
+  "effective_date": "01/31/2025",
+  "expiration_date": "01/31/2026",
+  "effective_time": "12:01AM",
+  "expiration_time": "12:01AM",
+  "time_zone": "Standard Time",
+  "is_renewal": {
+   "raw": "Renewal",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "plan_type": "-OPERATIVE ASSESSMENT PLAN",
+  "is_assessable": {
+   "raw": "ASSESSMENT PLAN",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "total_number_of_risks": {
+   "raw": "Property: 1 of 1",
+   "source": "structural",
+   "parsed": 1
+  }
+ },
+ "premium": {
+  "total_policy_premium": "$1,856.00",
+  "taxes_and_fees": [
+   {
+    "description": "Fees",
+    "amount": "$0.00"
+   }
+  ]
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "FL-18",
+   "edition_date": "6/96",
+   "form_title": "Intentional Act Exclusion"
+  },
+  {
+   "form_number": "FL-20",
+   "edition_date": "1/92",
+   "form_title": "Agreement"
+  },
+  {
+   "form_number": "FL-83",
+   "edition_date": "02/02",
+   "form_title": "Amendment of Policy Conditions"
+  },
+  {
+   "form_number": "FL-90",
+   "edition_date": "11/06",
+   "form_title": "Clarification Endorsement"
+  },
+  {
+   "form_number": "FMD-1",
+   "edition_date": "12/94",
+   "form_title": "Important Flood Insurance Notice"
+  },
+  {
+   "form_number": "LCI-11",
+   "edition_date": "4/91",
+   "form_title": "Senior Citizen Form"
+  },
+  {
+   "form_number": "PR",
+   "edition_date": "3/01",
+   "form_title": "Notice of Privacy Policy"
+  },
+  {
+   "form_number": "LCI-J",
+   "edition_date": "9/17",
+   "form_title": "By-Laws"
+  },
+  {
+   "form_number": "FL-21",
+   "edition_date": "05/10",
+   "form_title": "Suit Against Us Amendatory Endorsement"
+  },
+  {
+   "form_number": "FL-3B",
+   "edition_date": "9/00",
+   "form_title": "Causes of Loss"
+  },
+  {
+   "form_number": "ML-WD",
+   "edition_date": "1.1",
+   "form_title": "Water Damage-Sewers and Drains"
+  },
+  {
+   "form_number": "FL-OLT",
+   "edition_date": "1/92",
+   "form_title": "Premises Liability Insurance Coverage Part"
+  },
+  {
+   "form_number": "ML-59",
+   "edition_date": "6/99",
+   "form_title": "Lead Exclusion"
+  },
+  {
+   "form_number": "SM-26",
+   "edition_date": "7/00",
+   "form_title": "Automatic Increase"
+  },
+  {
+   "form_number": "FL-80",
+   "edition_date": "7/96",
+   "form_title": "Redefinition of Insured"
+  }
+ ],
+ "dwelling_fire": {
+  "dwellings": [
+   {
+    "location_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "described_location": {
+     "line_1": "670 Route 32",
+     "city": "Ilion",
+     "state": "NY",
+     "postal_code": "13357",
+     "county": "Ulster County"
+    },
+    "total_premium": "$1,856.00",
+    "construction_type": "Frame",
+    "protection_class": "Protected",
+    "rating_zone": "All Other",
+    "occupancy_type": "1-2 Family",
+    "loss_settlement_basis": "RC",
+    "covered_causes_of_loss": "Special Form (FL-3)",
+    "all_other_perils_deductible": "$1,000.00",
+    "vandalism_basis": null,
+    "liability_coverage_form": null,
+    "year_built": null,
+    "hazardous_conditions_occupancy": null,
+    "territory_code": "19 - All Others",
+    "occupancy_classification_code": "Dwelling - 2 Family",
+    "coverages": [
+     {
+      "coverage_name": "Coverage A - Residence",
+      "coverage_section": "Section I",
+      "premium": "$857.00",
+      "limit_amount": "$455,500",
+      "deductible_amount": "$1,000.00",
+      "valuation_basis": "RC",
+      "protection_class": "Protected",
+      "rating_zone": "All Other",
+      "occupancy_type": "1-2 Family",
+      "construction_type": "Frame",
+      "covered_causes_of_loss": "Special Form (FL-3)"
+     },
+     {
+      "coverage_name": "EC - Residence",
+      "coverage_section": "Section I",
+      "premium": "$257.00"
+     },
+     {
+      "coverage_name": "VMM - Residence",
+      "coverage_section": "Section I",
+      "premium": "$282.00"
+     },
+     {
+      "coverage_name": "Coverage B - Related Private Structures",
+      "coverage_section": "Section I",
+      "premium": "$79.00",
+      "limit_amount": "$45,600",
+      "deductible_amount": "$1,000.00",
+      "valuation_basis": "RC",
+      "protection_class": "Protected",
+      "rating_zone": "All Other",
+      "occupancy_type": "1-2 Family",
+      "covered_causes_of_loss": "Special Form (FL-3)"
+     },
+     {
+      "coverage_name": "EC - Related Private Structures",
+      "coverage_section": "Section I",
+      "premium": "$28.00"
+     },
+     {
+      "coverage_name": "VMM - Related Private Structures",
+      "coverage_section": "Section I",
+      "premium": "$28.00"
+     },
+     {
+      "coverage_name": "Coverage C - Personal Property",
+      "coverage_section": "Section I",
+      "premium": "$10.00",
+      "limit_amount": "$5,000",
+      "deductible_amount": "$1,000.00",
+      "protection_class": "Protected",
+      "rating_zone": "All Other",
+      "occupancy_type": "1-2 Family",
+      "construction_type": "Frame",
+      "covered_causes_of_loss": "Special Form (FL-3)"
+     },
+     {
+      "coverage_name": "EC - Personal Property",
+      "coverage_section": "Section I",
+      "premium": "$1.00"
+     },
+     {
+      "coverage_name": "VMM - Personal Property",
+      "coverage_section": "Section I",
+      "premium": "$4.00"
+     },
+     {
+      "coverage_name": "Coverage D - Additional Living Expense / Loss of Rent",
+      "coverage_section": "Section I",
+      "premium": "$79.00",
+      "limit_amount": "$45,600",
+      "deductible_amount": "$1,000.00",
+      "valuation_basis": "RC",
+      "protection_class": "Protected",
+      "rating_zone": "All Other",
+      "occupancy_type": "1-2 Family",
+      "covered_causes_of_loss": "Special Form (FL-3)"
+     },
+     {
+      "coverage_name": "EC - Additional Living Expense / Loss of Rent",
+      "coverage_section": "Section I",
+      "premium": "$28.00"
+     },
+     {
+      "coverage_name": "VMM - Additional Living Expense / Loss of Rent",
+      "coverage_section": "Section I",
+      "premium": "$28.00"
+     },
+     {
+      "coverage_name": "Coverage L - Premises Liability (Each Occurrence)",
+      "coverage_section": "Section II",
+      "premium": "$125.00",
+      "limit_amount": "$1,000,000",
+      "occupancy_classification": "Dwelling - 2 Family",
+      "territory_code": "19 - All Others"
+     },
+     {
+      "coverage_name": "Coverage M - Medical Payments - Per Person (Per Person)",
+      "coverage_section": "Section II",
+      "premium": "$34.00",
+      "limit_amount": "$5,000"
+     },
+     {
+      "coverage_name": "Coverage M - Medical Payments - Per Occurrence (Per Occurrence)",
+      "coverage_section": "Section II",
+      "premium": "$0.00",
+      "limit_amount": "$25,000"
+     },
+     {
+      "coverage_name": "ML-59 - Lead Exclusion",
+      "coverage_section": "Section II",
+      "premium": "-$9.00"
+     },
+     {
+      "coverage_name": "ML-WD - Water Backup-Sewers and Drains",
+      "coverage_section": "Optional Items",
+      "premium": "$25.00"
+     }
+    ]
+   }
+  ],
+  "property_coverages": {
+   "coverage_a_dwelling_limit": "$455,500",
+   "coverage_b_other_structures_limit": "$45,600",
+   "coverage_c_personal_property_limit": "$5,000",
+   "coverage_d_fair_rental_value_limit": "$45,600",
+   "loss_settlement_basis": "RC",
+   "covered_causes_of_loss": "Special Form (FL-3)",
+   "vandalism_basis": null
+  },
+  "liability_coverages": {
+   "coverage_l_premises_liability_limit": "$1,000,000",
+   "coverage_m_medical_payments_per_person_limit": "$5,000",
+   "coverage_m_medical_payments_per_occurrence_limit": "$25,000",
+   "liability_coverage_form": null
+  },
+  "deductibles": {
+   "all_other_perils_deductible": "$1,000.00"
+  },
+  "optional_endorsement_coverages": [
+   {
+    "coverage_name": "ML-59 - Lead Exclusion",
+    "premium": "-$9.00"
+   },
+   {
+    "coverage_name": "ML-WD - Water Backup-Sewers and Drains",
+    "premium": "$25.00"
+   }
+  ],
+  "mortgagees": [
+   {
+    "name": "TEG Federal Credit Union",
+    "clause_type": "ISAOA/ATIMA",
+    "address": {
+     "line_1": "PO Box 4090",
+     "city": "Cortland",
+     "state": "NY",
+     "postal_code": "13045"
+    },
+    "rank": {
+     "raw": "1st Mortgagee",
+     "source": "structural",
+     "parsed": 1
+    },
+    "party_type": {
+     "raw": "Mortgagee",
+     "source": "structural"
+    },
+    "applies_to": {
+     "raw": "Property 1",
+     "source": "structural"
+    }
+   }
+  ]
+ },
+ "locations": [
+  {
+   "location_number": {
+    "raw": "1",
+    "source": "structural",
+    "parsed": 1
+   },
+   "address": {
+    "line_1": "670 Route 32",
+    "city": "Ilion",
+    "state": "NY",
+    "postal_code": "13357",
+    "county": "Ulster County"
+   },
+   "location_premium": "$1,856.00"
+  }
+ ],
+ "document_type_detail": {
+  "declarations": {
+   "policy_id": "29-5166-0657"
+  },
+  "renewal_offer": {
+   "renewal_effective_date": "01/31/2025",
+   "renewal_expiration_date": "01/31/2026",
+   "renewal_premium": "$1,856.00"
+  }
+ },
+ "additional_fields": [
+  {
+   "section": "Premium",
+   "label": "Coverage Premium",
+   "value": "$1,856.00"
+  },
+  {
+   "section": "SM-26 Automatic Increase, RC",
+   "label": "Modifies Coverage(s) at Renewal",
+   "value": {
+    "raw": "SM-26 Automatic Increase, RC",
+    "source": "structural"
+   }
+  }
+ ]
+}

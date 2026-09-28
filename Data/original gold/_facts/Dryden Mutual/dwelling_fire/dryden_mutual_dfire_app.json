@@ -1,0 +1,1319 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "Application",
+   "parsed": "Application"
+  },
+  "document_title_as_stated": "Application",
+  "line_of_business_as_stated": "Standard Landlords Package Policy",
+  "print_date": "05/29/2026",
+  "transaction_type": "New Business"
+ },
+ "carrier": {
+  "company_name": "Dryden Mutual Insurance Company",
+  "company_structure": "A New York State Advance Premium Co-Operative Fire Insurance Corporation",
+  "address": {
+   "line_1": "12 Ellis Drive",
+   "line_2": "P.O. Box 635",
+   "city": "Dryden",
+   "state": "New York",
+   "postal_code": "13053"
+  }
+ },
+ "producer": {
+  "agency_name": "Patriotic Insurance Group Brokerage",
+  "producer_code": "760",
+  "producer_contact_name": "Noelle Delaney",
+  "contact": {
+   "phone": "(845) 610-5700",
+   "email": "glevi@stablerock.com"
+  },
+  "address": {
+   "line_1": "159 NY-28",
+   "city": "Inlet",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Marguerite Ellery & Noelle Norcross",
+  "date_of_birth": "11/05/1969",
+  "marital_status": "Married",
+  "contact": {
+   "email": "marguerite.ellery@example.com",
+   "phone": "(808) 555-1831"
+  },
+  "mailing_address": {
+   "line_1": "PO Box 236",
+   "city": "Blue Mountain Lake",
+   "state": "NY",
+   "postal_code": "12812-0236"
+  },
+  "additional_named_insureds": [
+   {
+    "name": "Marguerite Ellery",
+    "date_of_birth": "11/05/1969",
+    "marital_status": "Married"
+   },
+   {
+    "name": "Noelle Norcross",
+    "date_of_birth": "08/03/1971"
+   }
+  ]
+ },
+ "policy": {
+  "file_number": "L653169",
+  "effective_date": "06/01/2026",
+  "expiration_date": "06/01/2027",
+  "effective_time": "12:01am",
+  "expiration_time": "12:01am",
+  "time_zone": "Standard Time",
+  "policy_type": "Standard Landlords Package Policy",
+  "previous_carrier_name": "NYCM",
+  "previous_policy_expiration_date": "06/01/2026",
+  "total_number_of_risks": {
+   "raw": "Total Number of Risks: 2",
+   "parsed": 2
+  }
+ },
+ "premium": {
+  "total_policy_premium": "$3,632.00"
+ },
+ "billing": {
+  "bill_to_party": "Insured",
+  "billing_plan": "Direct",
+  "payment_frequency": "Annual"
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "FL-3",
+   "form_title": "Causes of Loss (Special Perils)"
+  },
+  {
+   "form_number": "FMD-1",
+   "form_title": "Flood Disclosure Notice"
+  },
+  {
+   "form_number": "FL-10",
+   "form_title": "Auto Increase in Insurance",
+   "form_details": [
+    {
+     "description": "1.0% per Quarter",
+     "percentage": {
+      "raw": "1.0% per Quarter",
+      "parsed": "1.0%"
+     }
+    }
+   ]
+  },
+  {
+   "form_number": "FL-18",
+   "form_title": "Intentional Acts Exclusion"
+  },
+  {
+   "form_number": "FL-20",
+   "form_title": "Agreement"
+  },
+  {
+   "form_number": "FL-30",
+   "form_title": "Amendatory Endorsement"
+  },
+  {
+   "form_number": "FL-42",
+   "form_title": "Building Theft Coverage"
+  },
+  {
+   "form_number": "FL-52A",
+   "form_title": "Trampoline Exclusion"
+  },
+  {
+   "form_number": "FL-83",
+   "form_title": "Amendment of Policy Conditions"
+  },
+  {
+   "form_number": "FL-84A",
+   "form_title": "New York Amendatory End."
+  },
+  {
+   "form_number": "FL-19",
+   "form_title": "Amended Limits of Liability"
+  },
+  {
+   "form_number": "FL-OLT",
+   "form_title": "Premises Liability Coverage"
+  },
+  {
+   "form_number": "DMIC-PP",
+   "form_title": "Privacy Notice"
+  },
+  {
+   "form_number": "DFL-153P",
+   "form_title": "Dwelling Package VIP Plus (FL2 and FL3)",
+   "included_coverages": [
+    "Coverage C- Personal Property Replacement Cost",
+    "Limited Flood Coverage",
+    "Debris Removal",
+    "Trees Plants Shrubs And Lawns",
+    "Generator Expense",
+    "Earth Movement",
+    "Ordinance or Law",
+    "Motorized Vehicles",
+    "Replacement of Locks",
+    "Underground Utility Line Coverage",
+    "Extension of Coverage- Green Environmental, Safety and Efficiency Improvements",
+    "Personal Injury",
+    "Pollution Liability",
+    "Premises Medical Payments"
+   ]
+  },
+  {
+   "form_number": "ML-216",
+   "form_title": "Premises Alarm",
+   "form_details": [
+    {
+     "description": "Smoke Detectors 2%",
+     "percentage": {
+      "raw": "Smoke Detectors 2%",
+      "parsed": "2%"
+     }
+    }
+   ]
+  }
+ ],
+ "underwriting_questions": [
+  {
+   "question": "Has any company cancelled, non-renewed or refused insurance (including non-payment of premium) for this applicant?",
+   "answer": {
+    "raw": "No",
+    "source": "structural",
+    "parsed": "No"
+   }
+  },
+  {
+   "question": "Does Insured have other policies with Dryden Mutual?",
+   "answer": {
+    "raw": "Yes",
+    "source": "structural",
+    "parsed": "Yes"
+   },
+   "details": "HPP00120326 & RFP000080503"
+  },
+  {
+   "question": "Was prior approval given from underwriting for this risk?",
+   "answer": {
+    "raw": "No",
+    "source": "structural",
+    "parsed": "No"
+   }
+  },
+  {
+   "question": "Has this property been visually inspected by agency staff?",
+   "answer": {
+    "raw": "Yes",
+    "source": "structural",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "question": "Overall condition of the risk:",
+   "answer": "Good"
+  },
+  {
+   "question": "Does this property have a local caretaker other than the insured?",
+   "answer": {
+    "raw": "No",
+    "source": "structural",
+    "parsed": "No"
+   }
+  },
+  {
+   "question": "Is this property currently rented?",
+   "answer": {
+    "raw": "Yes",
+    "source": "structural",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "question": "Are any tenants’ college students?",
+   "answer": {
+    "raw": "No",
+    "source": "structural",
+    "parsed": "No"
+   }
+  },
+  {
+   "question": "Is this a seasonal rental property?",
+   "answer": {
+    "raw": "No",
+    "source": "structural",
+    "parsed": "No"
+   }
+  },
+  {
+   "question": "Are there other structures on premises considered to be related private structures?",
+   "answer": {
+    "raw": "No",
+    "source": "structural",
+    "parsed": "No"
+   }
+  },
+  {
+   "question": "Any Water Exposures?",
+   "answer": "Lake / River Frontage"
+  },
+  {
+   "question": "Any Business conducted on premises (in dwelling or outbuilding)?",
+   "answer": {
+    "raw": "No",
+    "source": "structural",
+    "parsed": "No"
+   }
+  },
+  {
+   "question": "Are there any dogs owned by the residents of the property?",
+   "answer": {
+    "raw": "No",
+    "source": "structural",
+    "parsed": "No"
+   }
+  },
+  {
+   "question": "Are there any other animals besides dogs?",
+   "answer": {
+    "raw": "No",
+    "source": "structural",
+    "parsed": "No"
+   }
+  },
+  {
+   "question": "Any previous property or liability losses, whether or not paid by insurance during the last 5 years, on any owned or previously owned risk in which you have or had an insured interest?",
+   "answer": {
+    "raw": "No",
+    "source": "structural",
+    "parsed": "No"
+   }
+  }
+ ],
+ "dwelling_fire": {
+  "dwellings": [
+   {
+    "location_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "building_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "property_description": "1 Family Dwelling",
+    "occupancy_type": "1 Family Dwelling",
+    "described_location": {
+     "line_1": "221 State Route 28",
+     "city": "Raquette Lake",
+     "state": "NY",
+     "postal_code": "13436-1903",
+     "county": "Hamilton"
+    },
+    "total_premium": {
+     "raw": "$ 2,209.00",
+     "parsed": 2209.0
+    },
+    "rating_type": "Standard",
+    "covered_causes_of_loss": "FL-3 (Special)",
+    "number_of_units": {
+     "raw": "1 Family",
+     "parsed": 1
+    },
+    "construction_type": "Frame",
+    "year_built": {
+     "raw": "1959",
+     "parsed": 1959
+    },
+    "rating_zone": "1",
+    "fire_district": "Raquette Lake Fire Department",
+    "feet_to_hydrant": "Greater than 1000 Feet",
+    "fire_alarm_type": "Smoke Detectors 2%",
+    "special_rating_conditions": "None",
+    "all_other_perils_deductible": "$ 2,500",
+    "loss_settlement_basis": "Replacement Cost",
+    "loss_settlement_contents": "Replacement Cost Contents",
+    "renovator_credit": {
+     "raw": "No",
+     "parsed": "No"
+    },
+    "protection_class": "Semi-Protected",
+    "miles_to_fire_department": "5 Miles or Less",
+    "coverages": [
+     {
+      "coverage_name": "Coverage A Residence",
+      "limit_amount": {
+       "raw": "500,000",
+       "parsed": 500000.0
+      },
+      "coverage_description": "Base Premium",
+      "premium": {
+       "raw": "$ 2,194.00",
+       "parsed": 2194.0
+      }
+     },
+     {
+      "coverage_name": "Coverage B Other Structures",
+      "limit_amount": {
+       "raw": "50,000",
+       "parsed": 50000.0
+      }
+     },
+     {
+      "coverage_name": "Coverage C Personal Property",
+      "limit_amount": {
+       "raw": "10,000",
+       "parsed": 10000.0
+      },
+      "premium": {
+       "raw": "$ 51.00",
+       "parsed": 51.0
+      }
+     },
+     {
+      "coverage_name": "Coverage D Addl.Living Exp. and Loss of Rent",
+      "limit_amount": {
+       "raw": "50,000",
+       "parsed": 50000.0
+      }
+     },
+     {
+      "coverage_name": "Coverage L Premises Liability",
+      "limit_amount": {
+       "raw": "$2,000,000",
+       "parsed": 2000000.0
+      },
+      "limit_basis": "Each Occurrence",
+      "aggregate_limit_amount": {
+       "raw": "$3,000,000",
+       "parsed": 3000000.0
+      },
+      "premium": {
+       "raw": "$ 77.00",
+       "parsed": 77.0
+      }
+     },
+     {
+      "coverage_name": "Coverage M Medical Payments",
+      "limit_amount": {
+       "raw": "$ 5,000",
+       "parsed": 5000.0
+      },
+      "limit_basis": "Each Person",
+      "aggregate_limit_amount": {
+       "raw": "$ 50,000",
+       "parsed": 50000.0
+      },
+      "premium": {
+       "raw": "$ 33.00",
+       "parsed": 33.0
+      }
+     },
+     {
+      "coverage_name": "Auto Increase in Insurance",
+      "form_reference": "FL-10",
+      "premium": {
+       "raw": "$ 44.00",
+       "parsed": 44.0
+      }
+     },
+     {
+      "coverage_name": "Intentional Acts Exclusion",
+      "form_reference": "FL-18",
+      "is_included": {
+       "raw": "Incl",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Building Theft Coverage",
+      "form_reference": "FL-42",
+      "premium": {
+       "raw": "$ 10.00",
+       "parsed": 10.0
+      }
+     },
+     {
+      "coverage_name": "Trampoline Exclusion",
+      "form_reference": "FL-52A",
+      "premium": {
+       "raw": "$ -2.00",
+       "parsed": -2.0
+      }
+     },
+     {
+      "coverage_name": "Dwelling Package VIP Plus (FL2 and FL3)",
+      "form_reference": "DFL-153P",
+      "premium": {
+       "raw": "$ 219.00",
+       "parsed": 219.0
+      }
+     },
+     {
+      "coverage_name": "Premises Liability Coverage",
+      "form_reference": "FL-OLT",
+      "is_included": {
+       "raw": "Incl",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Premises Alarm",
+      "form_reference": "ML-216",
+      "premium": {
+       "raw": "-44.00",
+       "parsed": -44.0
+      }
+     },
+     {
+      "coverage_name": "Credit or Surcharge for Coverage A - Deductible",
+      "coverage_code": "Deductible",
+      "premium": {
+       "raw": "-373.00",
+       "parsed": -373.0
+      }
+     },
+     {
+      "coverage_name": "Causes of Loss (Special Perils)",
+      "form_reference": "FL-3",
+      "is_included": {
+       "raw": "Incl",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Flood Disclosure Notice",
+      "form_reference": "FMD-1",
+      "is_included": {
+       "raw": "Incl",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Agreement",
+      "form_reference": "FL-20",
+      "is_included": {
+       "raw": "Incl",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Amendatory Endorsement",
+      "form_reference": "FL-30",
+      "is_included": {
+       "raw": "Incl",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Amendment of Policy Conditions",
+      "form_reference": "FL-83",
+      "is_included": {
+       "raw": "Incl",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "New York Amendatory End.",
+      "form_reference": "FL-84A",
+      "is_included": {
+       "raw": "Incl",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Amended Limits of Liability",
+      "form_reference": "FL-19",
+      "is_included": {
+       "raw": "Incl",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Privacy Notice",
+      "form_reference": "DMIC-PP",
+      "is_included": {
+       "raw": "Incl",
+       "parsed": "Yes"
+      }
+     }
+    ],
+    "heating_type": "Hot Water Boiler",
+    "fuel_type": "Oil",
+    "year_primary_system_updated": {
+     "raw": "2009",
+     "parsed": 2009
+    },
+    "secondary_heating_present": {
+     "raw": "Yes",
+     "source": "structural",
+     "parsed": "Yes"
+    },
+    "secondary_heating": "Other",
+    "secondary_heating_description": "fireplace",
+    "year_roof_updated": {
+     "raw": "2025",
+     "parsed": 2025
+    },
+    "electrical_service": "Circuit Breakers",
+    "roof_updated_within_20_years": {
+     "raw": "Yes",
+     "source": "structural",
+     "parsed": "Yes"
+    },
+    "roof_type": "Metal/Steel",
+    "years_owned": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "market_value": {
+     "raw": "$ 800,000",
+     "parsed": 800000.0
+    },
+    "tenant_occupied": {
+     "raw": "Yes",
+     "source": "structural",
+     "parsed": "Yes"
+    },
+    "seasonal_or_vacant": {
+     "raw": "No",
+     "source": "structural",
+     "parsed": "No"
+    }
+   },
+   {
+    "location_number": {
+     "raw": "2",
+     "source": "structural",
+     "parsed": 2
+    },
+    "building_number": {
+     "raw": "2",
+     "source": "structural",
+     "parsed": 2
+    },
+    "property_description": "1 Family Dwelling",
+    "occupancy_type": "1 Family Dwelling",
+    "described_location": {
+     "line_1": "221 State Route 28",
+     "city": "Raquette Lake",
+     "state": "NY",
+     "postal_code": "13436-1903",
+     "county": "Hamilton"
+    },
+    "total_premium": {
+     "raw": "$ 1,423.00",
+     "parsed": 1423.0
+    },
+    "rating_type": "Standard",
+    "covered_causes_of_loss": "FL-3 (Special)",
+    "number_of_units": {
+     "raw": "1 Family",
+     "parsed": 1
+    },
+    "construction_type": "Frame",
+    "year_built": {
+     "raw": "1950",
+     "parsed": 1950
+    },
+    "rating_zone": "1",
+    "fire_district": "Raquette Lake Fire Department",
+    "feet_to_hydrant": "Greater than 1000 Feet",
+    "fire_alarm_type": "Smoke Detectors 2%",
+    "special_rating_conditions": "None",
+    "all_other_perils_deductible": "$ 2,500",
+    "loss_settlement_basis": "Replacement Cost",
+    "loss_settlement_contents": "Replacement Cost Contents",
+    "renovator_credit": {
+     "raw": "No",
+     "parsed": "No"
+    },
+    "protection_class": "Semi-Protected",
+    "miles_to_fire_department": "5 Miles or Less",
+    "coverages": [
+     {
+      "coverage_name": "Coverage A Residence",
+      "limit_amount": {
+       "raw": "300,000",
+       "parsed": 300000.0
+      },
+      "coverage_description": "Base Premium",
+      "premium": {
+       "raw": "$ 1,348.00",
+       "parsed": 1348.0
+      }
+     },
+     {
+      "coverage_name": "Coverage B Other Structures",
+      "limit_amount": {
+       "raw": "30,000",
+       "parsed": 30000.0
+      }
+     },
+     {
+      "coverage_name": "Coverage C Personal Property",
+      "limit_amount": {
+       "raw": "10,000",
+       "parsed": 10000.0
+      },
+      "premium": {
+       "raw": "$ 51.00",
+       "parsed": 51.0
+      }
+     },
+     {
+      "coverage_name": "Coverage D Addl.Living Exp. and Loss of Rent",
+      "limit_amount": {
+       "raw": "30,000",
+       "parsed": 30000.0
+      }
+     },
+     {
+      "coverage_name": "Coverage L Premises Liability",
+      "limit_amount": {
+       "raw": "$2,000,000",
+       "parsed": 2000000.0
+      },
+      "limit_basis": "Each Occurrence",
+      "aggregate_limit_amount": {
+       "raw": "$3,000,000",
+       "parsed": 3000000.0
+      },
+      "premium": {
+       "raw": "$ 77.00",
+       "parsed": 77.0
+      }
+     },
+     {
+      "coverage_name": "Coverage M Medical Payments",
+      "limit_amount": {
+       "raw": "$ 5,000",
+       "parsed": 5000.0
+      },
+      "limit_basis": "Each Person",
+      "aggregate_limit_amount": {
+       "raw": "$ 50,000",
+       "parsed": 50000.0
+      },
+      "premium": {
+       "raw": "$ 33.00",
+       "parsed": 33.0
+      }
+     },
+     {
+      "coverage_name": "Auto Increase in Insurance",
+      "form_reference": "FL-10",
+      "premium": {
+       "raw": "$ 27.00",
+       "parsed": 27.0
+      }
+     },
+     {
+      "coverage_name": "Intentional Acts Exclusion",
+      "form_reference": "FL-18",
+      "is_included": {
+       "raw": "Incl",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Building Theft Coverage",
+      "form_reference": "FL-42",
+      "premium": {
+       "raw": "$ 10.00",
+       "parsed": 10.0
+      }
+     },
+     {
+      "coverage_name": "Trampoline Exclusion",
+      "form_reference": "FL-52A",
+      "premium": {
+       "raw": "$ -2.00",
+       "parsed": -2.0
+      }
+     },
+     {
+      "coverage_name": "Dwelling Package VIP Plus (FL2 and FL3)",
+      "form_reference": "DFL-153P",
+      "premium": {
+       "raw": "$ 135.00",
+       "parsed": 135.0
+      }
+     },
+     {
+      "coverage_name": "Premises Liability Coverage",
+      "form_reference": "FL-OLT",
+      "is_included": {
+       "raw": "Incl",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Premises Alarm",
+      "form_reference": "ML-216",
+      "premium": {
+       "raw": "-27.00",
+       "parsed": -27.0
+      }
+     },
+     {
+      "coverage_name": "Credit or Surcharge for Coverage A - Deductible",
+      "coverage_code": "Deductible",
+      "premium": {
+       "raw": "-229.00",
+       "parsed": -229.0
+      }
+     },
+     {
+      "coverage_name": "Causes of Loss (Special Perils)",
+      "form_reference": "FL-3",
+      "is_included": {
+       "raw": "Incl",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Flood Disclosure Notice",
+      "form_reference": "FMD-1",
+      "is_included": {
+       "raw": "Incl",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Agreement",
+      "form_reference": "FL-20",
+      "is_included": {
+       "raw": "Incl",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Amendatory Endorsement",
+      "form_reference": "FL-30",
+      "is_included": {
+       "raw": "Incl",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Amendment of Policy Conditions",
+      "form_reference": "FL-83",
+      "is_included": {
+       "raw": "Incl",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "New York Amendatory End.",
+      "form_reference": "FL-84A",
+      "is_included": {
+       "raw": "Incl",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Amended Limits of Liability",
+      "form_reference": "FL-19",
+      "is_included": {
+       "raw": "Incl",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Privacy Notice",
+      "form_reference": "DMIC-PP",
+      "is_included": {
+       "raw": "Incl",
+       "parsed": "Yes"
+      }
+     }
+    ],
+    "heating_type": "Hot Water Boiler",
+    "fuel_type": "Propane",
+    "year_primary_system_updated": {
+     "raw": "2025",
+     "parsed": 2025
+    },
+    "secondary_heating_present": {
+     "raw": "No",
+     "source": "structural",
+     "parsed": "No"
+    },
+    "year_roof_updated": {
+     "raw": "2012",
+     "parsed": 2012
+    },
+    "electrical_service": "Circuit Breakers",
+    "roof_updated_within_20_years": {
+     "raw": "Yes",
+     "source": "structural",
+     "parsed": "Yes"
+    },
+    "roof_type": "Metal/Steel",
+    "years_owned": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "market_value": {
+     "raw": "$ 800,000",
+     "parsed": 800000.0
+    },
+    "tenant_occupied": {
+     "raw": "Yes",
+     "source": "structural",
+     "parsed": "Yes"
+    },
+    "seasonal_or_vacant": {
+     "raw": "No",
+     "source": "structural",
+     "parsed": "No"
+    }
+   }
+  ],
+  "liability_coverages": {
+   "premises_liability_limit": {
+    "raw": "$ 2,000,000",
+    "parsed": 2000000.0
+   },
+   "premises_liability_aggregate_limit": {
+    "raw": "$ 3,000,000",
+    "parsed": 3000000.0
+   },
+   "medical_payments_per_person_limit": {
+    "raw": "$ 5,000",
+    "parsed": 5000.0
+   },
+   "medical_payments_per_occurrence_limit": {
+    "raw": "$ 50,000",
+    "parsed": 50000.0
+   }
+  },
+  "deductibles": {
+   "all_other_perils_deductible": "$ 2,500"
+  }
+ },
+ "document_type_detail": {
+  "application": {
+   "application_title": "Application",
+   "applicant_name": "Marguerite Ellery & Noelle Norcross",
+   "application_date": "05/29/2026",
+   "applicant_address": {
+    "line_1": "PO Box 236",
+    "city": "Blue Mountain Lake",
+    "state": "NY",
+    "postal_code": "12812-0236"
+   },
+   "requested_effective_date": "06/01/2026",
+   "applicant_signature_present": {
+    "raw": "Marguerite Ellery",
+    "source": "structural",
+    "parsed": "Yes"
+   },
+   "applicant_signature_date": "05/31/2026",
+   "producer_signature_present": {
+    "raw": "Noelle Delaney",
+    "source": "structural",
+    "parsed": "Yes"
+   },
+   "producer_signature_date": "06/01/2026",
+   "prior_insurance": [
+    {
+     "carrier": "NYCM",
+     "expiration_date": "06/01/2026"
+    }
+   ],
+   "underwriting_questions": [
+    {
+     "question_text": "Has any company cancelled, non-renewed or refused insurance (including non-payment of premium) for this applicant?",
+     "answer": {
+      "raw": "No",
+      "source": "structural",
+      "parsed": "No"
+     }
+    },
+    {
+     "question_text": "Does Insured have other policies with Dryden Mutual?",
+     "answer": {
+      "raw": "Yes",
+      "source": "structural",
+      "parsed": "Yes"
+     },
+     "explanation": "HPP00120326 & RFP000080503"
+    },
+    {
+     "question_text": "Was prior approval given from underwriting for this risk?",
+     "answer": {
+      "raw": "No",
+      "source": "structural",
+      "parsed": "No"
+     }
+    },
+    {
+     "question_text": "Has this property been visually inspected by agency staff?",
+     "answer": {
+      "raw": "Yes",
+      "source": "structural",
+      "parsed": "Yes"
+     }
+    },
+    {
+     "question_text": "Overall condition of the risk:",
+     "answer": "Good"
+    },
+    {
+     "question_text": "Does this property have a local caretaker other than the insured?",
+     "answer": {
+      "raw": "No",
+      "source": "structural",
+      "parsed": "No"
+     }
+    },
+    {
+     "question_text": "Is this property currently rented?",
+     "answer": {
+      "raw": "Yes",
+      "source": "structural",
+      "parsed": "Yes"
+     }
+    },
+    {
+     "question_text": "Are any tenants’ college students?",
+     "answer": {
+      "raw": "No",
+      "source": "structural",
+      "parsed": "No"
+     }
+    },
+    {
+     "question_text": "Is this a seasonal rental property?",
+     "answer": {
+      "raw": "No",
+      "source": "structural",
+      "parsed": "No"
+     }
+    },
+    {
+     "question_text": "Are there other structures on premises considered to be related private structures?",
+     "answer": {
+      "raw": "No",
+      "source": "structural",
+      "parsed": "No"
+     }
+    },
+    {
+     "question_text": "Any Water Exposures?",
+     "answer": "Lake / River Frontage"
+    },
+    {
+     "question_text": "Any Business conducted on premises (in dwelling or outbuilding)?",
+     "answer": {
+      "raw": "No",
+      "source": "structural",
+      "parsed": "No"
+     }
+    },
+    {
+     "question_text": "Are there any dogs owned by the residents of the property?",
+     "answer": {
+      "raw": "No",
+      "source": "structural",
+      "parsed": "No"
+     }
+    },
+    {
+     "question_text": "Are there any other animals besides dogs?",
+     "answer": {
+      "raw": "No",
+      "source": "structural",
+      "parsed": "No"
+     }
+    },
+    {
+     "question_text": "Any previous property or liability losses, whether or not paid by insurance during the last 5 years, on any owned or previously owned risk in which you have or had an insured interest?",
+     "answer": {
+      "raw": "No",
+      "source": "structural",
+      "parsed": "No"
+     }
+    }
+   ],
+   "prior_policy_cancellation_request": {
+    "acord_form_number": "ACORD 35",
+    "acord_form_edition": "2017/05",
+    "form_date": "05/18/2026",
+    "print_date": "May 29, 2026",
+    "print_time": "03:28PM",
+    "producer": {
+     "name": "Stable Rock Insurance Agency LLC",
+     "phone": "(315)357-5901",
+     "code": "08014",
+     "agency_customer_id": "00004315",
+     "address": {
+      "line_1": "159 NY-28",
+      "city": "Inlet",
+      "state": "NY",
+      "postal_code": "13360"
+     }
+    },
+    "company": {
+     "company_name": "New York Central Mutual Fire Insurance Company",
+     "naic_code": "14834",
+     "address": {
+      "line_1": "1899 Central Plaza E",
+      "city": "Edmeston",
+      "state": "NY",
+      "postal_code": "13335"
+     }
+    },
+    "policy_type": "Homeowners: Personal",
+    "policy_number": "4803762",
+    "insured": {
+     "name": "Carol B Mitchell",
+     "address": {
+      "line_1": "221 State Route 28",
+      "city": "Raquette Lake",
+      "state": "NY",
+      "postal_code": "13436-1903"
+     }
+    },
+    "cancellation_date": "06/01/2026",
+    "cancellation_time": {
+     "raw": "12:01 AM",
+     "parsed": "12:01 AM"
+    },
+    "effective_date": "04/09/2026",
+    "expiration_date": "04/09/2027",
+    "request_type": {
+     "raw": "POLICY RELEASE",
+     "source": "structural",
+     "parsed": "Policy Release"
+    },
+    "named_insured_signature_present": {
+     "raw": "Marguerite Ellery",
+     "source": "structural",
+     "parsed": "Yes"
+    },
+    "named_insured_signature_date": "05/31/2026",
+    "reason_for_cancellation": {
+     "raw": "OTHER (Identify)",
+     "source": "structural",
+     "parsed": "Other"
+    },
+    "reason_other_description": "Insured deceased",
+    "method_of_cancellation": {
+     "raw": "PRO RATA",
+     "source": "structural",
+     "parsed": "Pro Rata"
+    },
+    "distribution": [
+     {
+      "raw": "INSURED",
+      "source": "structural",
+      "parsed": "Insured"
+     }
+    ],
+    "producer_signature_present": {
+     "raw": "PRODUCER'S SIGNATURE",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   "flood_selection_rejection": {
+    "acord_form_number": "ACORD 60",
+    "acord_form_edition": "2010/04",
+    "form_date": "05/29/2026",
+    "agency_customer_id": "00006168",
+    "agency_name": "Stable Rock Insurance Agency LLC",
+    "carrier_name": "Dryden Mutual",
+    "effective_date": {
+     "raw": "06/01/26",
+     "parsed": "06/01/2026"
+    },
+    "applicant_name": "Marguerite Ellery",
+    "applicant_signature_present": {
+     "raw": "Marguerite Ellery",
+     "source": "structural",
+     "parsed": "Yes"
+    },
+    "applicant_signature_date": "05/31/2026",
+    "producer_signature_present": {
+     "raw": "Noelle Delaney",
+     "source": "structural",
+     "parsed": "Yes"
+    },
+    "producer_signature_date": "06/01/2026",
+    "property_address": {
+     "line_1": "221 State Route 28",
+     "city": "Raquette Lake",
+     "state": "NY",
+     "postal_code": "13436"
+    },
+    "print_date": "May 29, 2026",
+    "print_time": "03:35PM",
+    "selections": [
+     {
+      "coverage_type": "NFIP Building Coverage",
+      "rejected": {
+       "raw": "REJECT",
+       "source": "structural",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_type": "NFIP Contents / Personal Property",
+      "rejected": {
+       "raw": "REJECT",
+       "source": "structural",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_type": "Excess Building Coverage",
+      "rejected": {
+       "raw": "REJECT",
+       "source": "structural",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_type": "Excess Contents / Personal Property",
+      "rejected": {
+       "raw": "REJECT",
+       "source": "structural",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_type": "Alternative Market Primary Building Coverage",
+      "rejected": {
+       "raw": "REJECT",
+       "source": "structural",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_type": "Alternative Market Primary Contents Coverage",
+      "rejected": {
+       "raw": "REJECT",
+       "source": "structural",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_type": "Alternative Market Loss of Income or Additional Living Expense",
+      "rejected": {
+       "raw": "REJECT",
+       "source": "structural",
+       "parsed": "Yes"
+      }
+     }
+    ]
+   },
+   "esignature_certificate": {
+    "certificate_title": "Document Completion Certificate",
+    "envelope_id": "518d5b0f-d56f-4579-b89e-29f4d853f9ce",
+    "document_title": "Landlord Application/Cancellation Form",
+    "document_region": "Northern Virginia",
+    "sender_name": "No Name",
+    "sender_email": "beservice@stablerock.com",
+    "total_document_pages": {
+     "raw": "12",
+     "parsed": 12
+    },
+    "secondary_security": "Not Required",
+    "participants": [
+     {
+      "name": "Marguerite Ellery",
+      "email": "marguerite.ellery@example.com"
+     },
+     {
+      "name": "Noelle Delaney",
+      "email": "glevi@stablerock.com"
+     }
+    ],
+    "history": [
+     {
+      "timestamp": "05/29/2026 03:31PM",
+      "description": "Sender downloaded document."
+     },
+     {
+      "timestamp": "05/29/2026 03:36PM",
+      "description": "Sender downloaded document."
+     },
+     {
+      "timestamp": "05/29/2026 03:37PM",
+      "description": "Document sent by No Name (beservice@stablerock.com)."
+     },
+     {
+      "timestamp": "05/29/2026 03:37PM",
+      "description": "Email sent to Marguerite Ellery marguerite.ellery@example.com"
+     },
+     {
+      "timestamp": "05/29/2026 03:37PM",
+      "description": "Email sent to No Name (beservice@stablerock.com)."
+     },
+     {
+      "timestamp": "05/30/2026 12:31PM",
+      "description": "Email sent to Marguerite Ellery marguerite.ellery@example.com"
+     },
+     {
+      "timestamp": "05/31/2026 08:00AM",
+      "description": "Document viewed by Marguerite Ellery marguerite.ellery@example.com",
+      "ip_address": "50.108.208.163"
+     },
+     {
+      "timestamp": "05/31/2026 08:04AM",
+      "description": "Signed by Marguerite Ellery marguerite.ellery@example.com",
+      "ip_address": "50.108.208.163"
+     },
+     {
+      "timestamp": "05/31/2026 08:04AM",
+      "description": "Email sent to Noelle Delaney(glevi@stablerock.com)."
+     },
+     {
+      "timestamp": "06/01/2026 09:04AM",
+      "description": "Document viewed by Noelle Delaney(glevi@stablerock.com).",
+      "ip_address": "38.77.7.105"
+     },
+     {
+      "timestamp": "06/01/2026 09:05AM",
+      "description": "Signed by Noelle Delaney(glevi@stablerock.com).",
+      "ip_address": "38.77.7.105"
+     },
+     {
+      "timestamp": "06/01/2026 09:05AM",
+      "description": "Document copy sent to Marguerite Ellery marguerite.ellery@example.com"
+     },
+     {
+      "timestamp": "06/01/2026 09:05AM",
+      "description": "Document copy sent to Noelle Delaney(glevi@stablerock.com)."
+     },
+     {
+      "timestamp": "06/01/2026 09:05AM",
+      "description": "Document copy sent to No Name (beservice@stablerock.com)."
+     }
+    ]
+   }
+  }
+ },
+ "additional_fields": [
+  {
+   "section": "Regulation 194 Disclosure",
+   "label": "Name of Applicant",
+   "value": "Kenneth &Noelle Norcross"
+  },
+  {
+   "section": "Regulation 194 Disclosure",
+   "label": "Name of Companies",
+   "value": "Dryden Stable Rock"
+  }
+ ]
+}

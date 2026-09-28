@@ -1,0 +1,357 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "DECLARATIONS",
+   "parsed": "Declarations"
+  },
+  "document_title_as_stated": "DECLARATIONS",
+  "copy_type": "INSURED COPY",
+  "print_date": "09/06/2024",
+  "print_time": "13:14:33",
+  "batch_number": "D8/I",
+  "transaction_type": "ENDORSEMENT",
+  "transaction_effective_date": "09/06/2024",
+  "transaction_reason": "PER AGENT AMEND BASE FORM"
+ },
+ "carrier": {
+  "company_name": "New York Central Mutual Fire Insurance Company",
+  "contact": {
+   "phone": "800-234-6926",
+   "website": "www.nycm.com"
+  },
+  "address": {
+   "line_1": "1899 Central Plaza East",
+   "city": "Edmeston",
+   "state": "NY",
+   "postal_code": "13335-1899"
+  }
+ },
+ "producer": {
+  "agency_name": "PATRIOTIC INSURANCE GROUP BROKERAGE INC",
+  "producer_code": "08014",
+  "territory_code": "3R",
+  "paper_off": {
+   "raw": "YES",
+   "parsed": "Yes"
+  },
+  "direct_mail": {
+   "raw": "YES",
+   "parsed": "Yes"
+  },
+  "contact": {
+   "phone": "315-357-5901",
+   "fax": "315-357-5126",
+   "email": "beservice@patrioticinsurancegroup.com",
+   "website": "https://patrioticinsurancegroup.com"
+  },
+  "address": {
+   "line_1": "159 ROUTE 28",
+   "line_2": "PO BOX 329",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360-0329"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Rafael Ingram",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "insured_type": "PRIMARY INSURED",
+  "marital_status": "MARRIED",
+  "gender": "MALE",
+  "mailing_address": {
+   "line_1": "PO BOX 239",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "policy": {
+  "policy_number": "6136287",
+  "policy_type": "DWELLING FIRE",
+  "original_inception_date": "10/09/2010",
+  "policyholder_since_date": "10/09/2010",
+  "effective_date": "10/09/2023",
+  "effective_time": "12:01 AM",
+  "expiration_date": "10/09/2024",
+  "expiration_time": "12:01 AM",
+  "time_zone": "EST",
+  "policy_term_as_printed": "12 MONTHS",
+  "policy_term_months": {
+   "raw": "12 MONTHS",
+   "parsed": 12
+  },
+  "policy_form_number": "FL-1",
+  "policy_form_edition": "11 79",
+  "policy_form_name": "BASIC FORM",
+  "is_renewal": {
+   "raw": "ENDORSEMENT",
+   "source": "structural",
+   "parsed": "No"
+  }
+ },
+ "premium": {
+  "total_policy_premium": "$1,045.00",
+  "discounts_and_credits": [
+   {
+    "description": "ALARM SYSTEM",
+    "amount": "$32.00",
+    "form_reference": "ML-216",
+    "edition_date": "07 78",
+    "percentage": "3%",
+    "is_applied": {
+     "raw": "ALARM SYSTEM",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   }
+  ]
+ },
+ "billing": {
+  "billing_note": null
+ },
+ "terrorism": {
+  "terrorism_premium": "$0.00",
+  "disclosure_form_number": "NYC 1045"
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "FL-1",
+   "edition_date": "11 79",
+   "form_title": "BASIC FORM",
+   "premium": "$1,045.00"
+  },
+  {
+   "form_number": "FL-20",
+   "edition_date": "11 79",
+   "form_title": "GENERAL POLICY PROVISIONS",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "FL-84",
+   "edition_date": "07 81",
+   "form_title": "NEW YORK ENDORSEMENT",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "FL-250",
+   "edition_date": "10 84",
+   "form_title": "AMENDATORY ENDORSEMENT",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "DP 7570",
+   "edition_date": "02 21",
+   "form_title": "CERTIFIED TERRORISM LOSS",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   },
+   "form_details": [
+    {
+     "description": "CERTIFIED TERRORISM LOSS PREMIUM",
+     "amount": "$0.00"
+    }
+   ]
+  },
+  {
+   "form_number": "ML-216",
+   "edition_date": "07 78",
+   "form_title": "PREMISES ALARM OR FIRE PROTECTION SYSTEM",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   },
+   "form_details": [
+    {
+     "description": "LOCAL FIRE ALARM",
+     "percentage": "3%"
+    }
+   ]
+  },
+  {
+   "form_number": "NYC 1045",
+   "edition_date": "12 20",
+   "form_title": "POLICYHOLDER DISCLOSURE NOTICE OF TERRORISM INSURANCE COVERAGE",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "IL N 160",
+   "edition_date": "09 08",
+   "form_title": "FLOOD/MUDSLIDE EXCLUSION ADVISORY NOTICE TO POLICYHOLDERS - NEW YORK",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYC-211",
+   "edition_date": "08 91",
+   "form_title": "IMPORTANT SENIOR CITIZEN INFORMATION",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NYCM FL 268",
+   "edition_date": "05 10",
+   "form_title": "INFLATION GUARD",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   },
+   "form_details": [
+    {
+     "percentage": "5.00%"
+    }
+   ]
+  },
+  {
+   "form_number": "NYC FL 263",
+   "edition_date": "09 14",
+   "form_title": "AMENDATORY ENDORSEMENT NEW YORK",
+   "is_included": {
+    "raw": "INCL.",
+    "parsed": "Yes"
+   }
+  }
+ ],
+ "dwelling_fire": {
+  "dwellings": [
+   {
+    "location_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "property_description": "PRIMARY BUILDING",
+    "described_location": {
+     "line_1": "431 ROUTE 28",
+     "city": "INLET",
+     "state": "NY",
+     "postal_code": "13360-1610",
+     "county_code": "041",
+     "county": "HAMILTON"
+    },
+    "year_built": {
+     "raw": "1970",
+     "parsed": 1970
+    },
+    "number_of_units": {
+     "raw": "2",
+     "parsed": 2
+    },
+    "construction_type": "FRAME",
+    "occupancy_type": "VACANT",
+    "lead_abatement": "NO",
+    "seasonal_or_vacant": {
+     "raw": "NO",
+     "parsed": "No"
+    },
+    "protection_class": "PARTIALLY PROTECTED",
+    "fire_district": "INLET",
+    "territory_code": "A",
+    "all_other_perils_deductible": "$500",
+    "inflation_guard_percentage": "5.00%",
+    "surcharges_none_reported": {
+     "raw": "*** NO SURCHARGES EXIST FOR THIS LOCATION ***",
+     "parsed": "Yes"
+    },
+    "total_premium": "$1,045.00",
+    "coverages": [
+     {
+      "coverage_name": "Coverage A RESIDENCE FIRE",
+      "limit_amount": {
+       "raw": "311,000",
+       "parsed": 311000.0
+      },
+      "premium": "$1,032.00"
+     },
+     {
+      "coverage_name": "Coverage C PERSONAL PROPERTY FIRE",
+      "limit_amount": {
+       "raw": "5,000",
+       "parsed": 5000.0
+      },
+      "premium": "$13.00"
+     },
+     {
+      "coverage_name": "Coverage D ADDL LIVING EXP AND LOSS OF RENT FIRE INCL",
+      "limit_amount": {
+       "raw": "31,100",
+       "parsed": 31100.0
+      },
+      "is_included": {
+       "raw": "INCL.",
+       "parsed": "Yes"
+      }
+     }
+    ]
+   }
+  ],
+  "property_coverages": {
+   "coverage_a_dwelling_limit": {
+    "raw": "311,000",
+    "parsed": 311000.0
+   },
+   "coverage_c_personal_property_limit": {
+    "raw": "5,000",
+    "parsed": 5000.0
+   },
+   "coverage_d_fair_rental_value_limit": {
+    "raw": "31,100",
+    "parsed": 31100.0
+   },
+   "inflation_guard_percentage": "5.00%",
+   "covered_causes_of_loss": "FL-1 - BASIC FORM"
+  },
+  "deductibles": {
+   "all_other_perils_deductible": "$500"
+  }
+ },
+ "locations": [
+  {
+   "location_number": {
+    "raw": "1",
+    "source": "structural",
+    "parsed": 1
+   },
+   "address": {
+    "line_1": "431 ROUTE 28",
+    "city": "INLET",
+    "state": "NY",
+    "postal_code": "13360-1610",
+    "county_code": "041",
+    "county": "HAMILTON"
+   },
+   "location_premium": "$1,045.00"
+  }
+ ],
+ "document_type_detail": {
+  "policy_change": {
+   "transaction_type": "ENDORSEMENT",
+   "transaction_effective_date": "09/06/2024",
+   "transaction_expiration_date": "10/09/2024",
+   "transaction_reason_description": "PER AGENT AMEND BASE FORM",
+   "net_change_amount": {
+    "raw": "-$33.00",
+    "parsed": -33.0
+   }
+  }
+ }
+}

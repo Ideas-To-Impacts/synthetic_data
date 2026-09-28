@@ -1,0 +1,361 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "DECLARATION, Dwelling Fire",
+   "parsed": "Declarations"
+  },
+  "document_title_as_stated": "DECLARATION, Dwelling Fire",
+  "line_of_business_as_stated": "Dwelling Fire",
+  "print_code": "LCIC(4/11)",
+  "transaction_type": "New Policy"
+ },
+ "carrier": {
+  "company_name": "Leatherstocking Cooperative Insurance Company",
+  "contact": {
+   "phone": "607-547-2007",
+   "fax": "607-547-2056",
+   "website": "www.leatherstockinginsurance.com"
+  },
+  "address": {
+   "line_1": "PO Box 630",
+   "line_2": "4313 County Highway 11",
+   "city": "Cooperstown",
+   "state": "NY",
+   "postal_code": "13326"
+  }
+ },
+ "producer": {
+  "agency_name": "Stable Rock Insurance Agency LLC - RBF",
+  "contact": {
+   "phone": "(845) 610-5700",
+   "fax": "(845) 610-5705"
+  },
+  "address": {
+   "line_1": "159 NY - 28",
+   "city": "Inlet",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Marguerite Calloway",
+  "mailing_address": {
+   "line_1": "291 Poplar Point",
+   "city": "Raquette Lake",
+   "state": "NY",
+   "postal_code": "13436"
+  },
+  "additional_named_insureds": [
+   {
+    "name": "Delphine Underhill"
+   }
+  ]
+ },
+ "policy": {
+  "policy_number": "10-2026-16132",
+  "effective_date": "05/06/2026",
+  "expiration_date": "05/06/2027",
+  "effective_time": "12:01AM",
+  "expiration_time": "12:01AM",
+  "time_zone": "Standard Time",
+  "is_renewal": {
+   "raw": "New Policy",
+   "source": "structural",
+   "parsed": "No"
+  },
+  "plan_type": "THIS POLICY IS ISSUED ON THE CO-OPERATIVE ASSESSMENT PLAN",
+  "is_assessable": {
+   "raw": "ASSESSMENT PLAN",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "total_number_of_risks": {
+   "raw": "Property: 1 of 1",
+   "source": "structural",
+   "parsed": 1
+  }
+ },
+ "premium": {
+  "total_policy_premium": "$1,325.00",
+  "taxes_and_fees": [
+   {
+    "description": "Fees",
+    "amount": "$0.00"
+   }
+  ]
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "FL-52A",
+   "edition_date": "12/98",
+   "form_title": "Trampoline Exclusion"
+  },
+  {
+   "form_number": "FL-18",
+   "edition_date": "6/96",
+   "form_title": "Intentional Act Exclusion"
+  },
+  {
+   "form_number": "FL-20",
+   "edition_date": "1/92",
+   "form_title": "Agreement"
+  },
+  {
+   "form_number": "FL-83",
+   "edition_date": "02/02",
+   "form_title": "Amendment of Policy Conditions"
+  },
+  {
+   "form_number": "FL-90",
+   "edition_date": "11/06",
+   "form_title": "Clarification Endorsement"
+  },
+  {
+   "form_number": "FMD-1",
+   "edition_date": "12/94",
+   "form_title": "Important Flood Insurance Notice"
+  },
+  {
+   "form_number": "LCI-11",
+   "edition_date": "4/91",
+   "form_title": "Senior Citizen Form"
+  },
+  {
+   "form_number": "PR",
+   "edition_date": "3/01",
+   "form_title": "Notice of Privacy Policy"
+  },
+  {
+   "form_number": "LCI-J",
+   "edition_date": "9/17",
+   "form_title": "By-Laws"
+  },
+  {
+   "form_number": "FL-21",
+   "edition_date": "05/10",
+   "form_title": "Suit Against Us Amendatory Endorsement"
+  },
+  {
+   "form_number": "FL-1R",
+   "edition_date": "1/92",
+   "form_title": "Causes of Loss"
+  },
+  {
+   "form_number": "ML-WD",
+   "edition_date": "1.1",
+   "form_title": "Water Damage-Sewers and Drains"
+  },
+  {
+   "form_number": "FL-OLT",
+   "edition_date": "1/92",
+   "form_title": "Premises Liability Insurance Coverage Part"
+  },
+  {
+   "form_number": "ML-59",
+   "edition_date": "6/99",
+   "form_title": "Lead Exclusion"
+  },
+  {
+   "form_number": "SM-26",
+   "edition_date": "7/00",
+   "form_title": "Automatic Increase"
+  },
+  {
+   "form_number": "FL-80",
+   "edition_date": "7/96",
+   "form_title": "Redefinition of Insured"
+  },
+  {
+   "form_number": "LCIC-DX",
+   "edition_date": "06/23",
+   "form_title": "Exclusion of Canine Related Injuries or Damages"
+  }
+ ],
+ "dwelling_fire": {
+  "dwellings": [
+   {
+    "location_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "described_location": {
+     "line_1": "175 Durant Rd",
+     "city": "Blue Mountain Lake",
+     "state": "NY",
+     "postal_code": "12812",
+     "county": "Hamilton County"
+    },
+    "total_premium": "$1,327.00",
+    "construction_type": "Frame",
+    "protection_class": "Semi-Protected",
+    "rating_zone": "All Other",
+    "occupancy_type": "1-2 Family",
+    "loss_settlement_basis": "RC",
+    "covered_causes_of_loss": "Basic Form (FL-1)",
+    "all_other_perils_deductible": "$1,000.00",
+    "vandalism_basis": null,
+    "liability_coverage_form": null,
+    "year_built": null,
+    "hazardous_conditions_occupancy": "Unoccupancy",
+    "territory_code": "19 - All Others",
+    "occupancy_classification_code": "Dwelling - 1 Family",
+    "coverages": [
+     {
+      "coverage_name": "Coverage A - Residence",
+      "coverage_section": "Section I",
+      "premium": "$868.00",
+      "limit_amount": "$234,500",
+      "deductible_amount": "$1,000.00",
+      "valuation_basis": "RC",
+      "protection_class": "Semi-Protected",
+      "rating_zone": "All Other",
+      "occupancy_type": "1-2 Family",
+      "construction_type": "Frame",
+      "covered_causes_of_loss": "Basic Form (FL-1)"
+     },
+     {
+      "coverage_name": "EC - Residence",
+      "coverage_section": "Section I",
+      "premium": "$120.00"
+     },
+     {
+      "coverage_name": "VMM - Residence",
+      "coverage_section": "Section I",
+      "premium": "$14.00"
+     },
+     {
+      "coverage_name": "Coverage C - Personal Property",
+      "coverage_section": "Section I",
+      "premium": "$16.00",
+      "limit_amount": "$5,000",
+      "deductible_amount": "$1,000.00",
+      "protection_class": "Semi-Protected",
+      "rating_zone": "All Other",
+      "occupancy_type": "1-2 Family",
+      "construction_type": "Frame",
+      "covered_causes_of_loss": "Basic Form (FL-1)"
+     },
+     {
+      "coverage_name": "EC - Personal Property",
+      "coverage_section": "Section I",
+      "premium": "$1.00"
+     },
+     {
+      "coverage_name": "VMM - Personal Property",
+      "coverage_section": "Section I",
+      "premium": "$1.00"
+     },
+     {
+      "coverage_name": "Coverage L - Premises Liability (Each Occurrence)",
+      "coverage_section": "Section II",
+      "premium": "$66.00",
+      "limit_amount": "$500,000",
+      "occupancy_classification": "Dwelling - 1 Family",
+      "territory_code": "19 - All Others"
+     },
+     {
+      "coverage_name": "ML-59 - Lead Exclusion",
+      "coverage_section": "Section II",
+      "premium": "-$5.00"
+     },
+     {
+      "coverage_name": "FL-52A Trampoline Exclusion",
+      "coverage_section": "Section II",
+      "premium": "-$2.00"
+     },
+     {
+      "coverage_name": "ML-WD - Water Backup-Sewers and Drains",
+      "coverage_section": "Optional Items",
+      "premium": "$25.00"
+     },
+     {
+      "coverage_name": "Hazardous Conditions - Occupancy",
+      "coverage_section": "Optional Items",
+      "premium": "$221.00",
+      "hazardous_condition": "Unoccupancy"
+     }
+    ]
+   }
+  ],
+  "property_coverages": {
+   "coverage_a_dwelling_limit": "$234,500",
+   "coverage_c_personal_property_limit": "$5,000",
+   "loss_settlement_basis": "RC",
+   "covered_causes_of_loss": "Basic Form (FL-1)",
+   "vandalism_basis": null
+  },
+  "liability_coverages": {
+   "coverage_l_premises_liability_limit": "$500,000",
+   "liability_coverage_form": null
+  },
+  "deductibles": {
+   "all_other_perils_deductible": "$1,000.00"
+  },
+  "optional_endorsement_coverages": [
+   {
+    "coverage_name": "ML-59 - Lead Exclusion",
+    "premium": "-$5.00"
+   },
+   {
+    "coverage_name": "FL-52A Trampoline Exclusion",
+    "premium": "-$2.00"
+   },
+   {
+    "coverage_name": "ML-WD - Water Backup-Sewers and Drains",
+    "premium": "$25.00"
+   },
+   {
+    "coverage_name": "Hazardous Conditions - Occupancy",
+    "premium": "$221.00",
+    "hazardous_condition": "Unoccupancy"
+   },
+   {
+    "coverage_name": "LCIC-DX Exclusion of Canine Related Injuries or Damages",
+    "is_included": {
+     "raw": "LCIC-DX Exclusion of Canine Related Injuries or Damages",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   }
+  ],
+  "mortgagees": []
+ },
+ "locations": [
+  {
+   "location_number": {
+    "raw": "1",
+    "source": "structural",
+    "parsed": 1
+   },
+   "address": {
+    "line_1": "175 Durant Rd",
+    "city": "Blue Mountain Lake",
+    "state": "NY",
+    "postal_code": "12812",
+    "county": "Hamilton County"
+   },
+   "location_premium": "$1,327.00"
+  }
+ ],
+ "document_type_detail": {
+  "declarations": {
+   "policy_id": "10-2026-16132"
+  }
+ },
+ "additional_fields": [
+  {
+   "section": "Premium",
+   "label": "Coverage Premium",
+   "value": "$1,325.00"
+  },
+  {
+   "section": "SM-26 Automatic Increase, RC",
+   "label": "Modifies Coverage(s) at Renewal",
+   "value": {
+    "raw": "SM-26 Automatic Increase, RC",
+    "source": "structural"
+   }
+  }
+ ]
+}

@@ -1,0 +1,352 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "Fire Policy Declaration",
+   "parsed": "Declarations"
+  },
+  "document_title_as_stated": "Fire Policy Declaration",
+  "transaction_type": "New Business",
+  "copy_type": "Agent Copy",
+  "print_code": "NCIC 07/14",
+  "print_date": "08/03/2026"
+ },
+ "carrier": {
+  "company_name": "North Country Insurance Company",
+  "address": {
+   "line_1": "21170 NYS Route 232",
+   "line_2": "PO Box 6540",
+   "city": "Watertown",
+   "state": "NY",
+   "postal_code": "13601"
+  }
+ },
+ "producer": {
+  "agency_name": "STABLE ROCK INSURANCE AGENCY,",
+  "producer_code": "848",
+  "contact": {
+   "phone": "(315)357-5901",
+   "email": "agency@patrioticinsurancegroup.com"
+  },
+  "address": {
+   "line_1": "PO BOX 329",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Rosalind Marsh",
+  "mailing_address": {
+   "line_1": "PO BOX 274",
+   "city": "THENDARA",
+   "state": "NY",
+   "postal_code": "13472"
+  },
+  "additional_named_insureds": []
+ },
+ "policy": {
+  "policy_number": "DF000629",
+  "original_inception_date": "08/04/2026",
+  "effective_date": "08/04/2026",
+  "expiration_date": "08/04/2029",
+  "expiration_time": "12:01 A.M.",
+  "is_renewal": {
+   "raw": "New Business",
+   "source": "structural",
+   "parsed": "No"
+  },
+  "is_assessable": {
+   "raw": "THIS NON-ASSESSABLE POLICY IS ISSUED ON THE CO-OPERATIVE PLAN",
+   "parsed": "No"
+  },
+  "plan_type": "THIS NON-ASSESSABLE POLICY IS ISSUED ON THE CO-OPERATIVE PLAN"
+ },
+ "premium": {
+  "basic_premium": "$1,821.00",
+  "forms_and_endorsements_premium": "$17.00",
+  "total_policy_premium": "$1,838.00",
+  "discounts_and_credits": [
+   {
+    "description": "Deductible Credit",
+    "applies_to": "Loc 1/Bldg 1",
+    "is_applied": {
+     "raw": "Included",
+     "parsed": "Yes"
+    }
+   }
+  ],
+  "surcharges": [
+   {
+    "description": "Unoccupied/Seasonal Surcharge",
+    "applies_to": "Loc 1/Bldg 1",
+    "is_included": {
+     "raw": "Included",
+     "parsed": "Yes"
+    }
+   }
+  ]
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "FL-18",
+   "edition_date": "0696",
+   "form_title": "Intentional Acts Exclusion",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "FL-20",
+   "edition_date": "0192",
+   "form_title": "Agreement",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "FL-345",
+   "edition_date": "1200",
+   "form_title": "Mechanical, Electrical, or",
+   "premium": "$20.00"
+  },
+  {
+   "form_number": "FL-373A",
+   "edition_date": "0523",
+   "form_title": "Canine Related Injuries or",
+   "premium": {
+    "raw": "($1.00)",
+    "parsed": -1.0
+   }
+  },
+  {
+   "form_number": "FL-52A",
+   "edition_date": "1298",
+   "form_title": "Trampoline Exclusion",
+   "premium": {
+    "raw": "($2.00)",
+    "parsed": -2.0
+   }
+  },
+  {
+   "form_number": "FL-59",
+   "edition_date": "0697",
+   "form_title": "Lead Exclusion",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "FL-84A",
+   "edition_date": "0494",
+   "form_title": "New York Amendatory",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "FL-87",
+   "edition_date": "0192",
+   "form_title": "Excl.-",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "FL-99",
+   "edition_date": "0598",
+   "form_title": "Calendar Date Exclusion",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "FL-OLT",
+   "edition_date": "0192",
+   "form_title": "Seasonal or Tenant Occupied",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "FMD-1",
+   "edition_date": "0808",
+   "form_title": "Important Flood Insurance",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-430",
+   "edition_date": "0191",
+   "form_title": "Renewal Endorsement",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NC-FL-90",
+   "edition_date": "1106",
+   "form_title": "Clarification End",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NY-STAT-1",
+   "edition_date": "1108",
+   "form_title": "NY Statutory",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "FL-3B",
+   "edition_date": "0192",
+   "form_title": "Causes of Loss",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   },
+   "applies_to": "Loc 1/Bldg 1"
+  }
+ ],
+ "interested_parties": [],
+ "dwelling_fire": {
+  "dwellings": [
+   {
+    "location_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "building_number": {
+     "raw": "Loc 1/Bldg 1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "described_location": {
+     "line_1": "177 Park Ave",
+     "city": "Old Forge",
+     "state": "NY",
+     "postal_code": "13420"
+    },
+    "structure_description": "Main Residence",
+    "property_description": "Year Round Home",
+    "protection_class": "Protected",
+    "rating_zone": "Zone 1, Sub-Zone 4",
+    "construction_type": "Frame",
+    "year_built": {
+     "raw": "1959",
+     "parsed": 1959
+    },
+    "occupancy_type": "Unoccupied / Seasonal",
+    "all_other_perils_deductible": "$1,000",
+    "usage": "Secondary",
+    "number_of_units": {
+     "raw": "1 Family",
+     "parsed": 1
+    },
+    "burglar_alarm_type": "None",
+    "fire_alarm_type": "Smoke Alarm/Detector",
+    "sprinklered": {
+     "raw": "None",
+     "parsed": "No"
+    },
+    "loss_settlement_basis": "Replacement Cost",
+    "coverages": [
+     {
+      "coverage_name": "Cov A - Dwelling",
+      "limit_amount": "$361,000",
+      "applies_to": "Loc 1/Bldg 1",
+      "deductible_amount": {
+       "raw": "$1000",
+       "parsed": 1000.0
+      },
+      "premium": "$1,456.00"
+     },
+     {
+      "coverage_name": "Cov B - Related Private Structures",
+      "limit_amount": "$36,100",
+      "applies_to": "Loc 1/Bldg 1",
+      "deductible_amount": {
+       "raw": "$1000",
+       "parsed": 1000.0
+      },
+      "premium": "$72.00"
+     },
+     {
+      "coverage_name": "Cov C - Personal Property",
+      "limit_amount": "$5,000",
+      "applies_to": "Loc 1/Bldg 1",
+      "deductible_amount": {
+       "raw": "$1000",
+       "parsed": 1000.0
+      },
+      "premium": "$17.00"
+     },
+     {
+      "coverage_name": "Cov D - Addl Living Exp/Loss of Rents",
+      "limit_amount": "$36,100",
+      "applies_to": "Loc 1/Bldg 1",
+      "deductible_amount": {
+       "raw": "$1000",
+       "parsed": 1000.0
+      },
+      "premium": "$144.00"
+     },
+     {
+      "coverage_name": "Cov L - Premises Liability",
+      "limit_amount": "$500,000 Occ",
+      "premium": "$98.00"
+     },
+     {
+      "coverage_name": "Cov M - Medical Payments",
+      "limit_amount": "$5,000 Per/$10,000 Acc",
+      "premium": "$34.00"
+     }
+    ]
+   }
+  ],
+  "property_coverages": {
+   "coverage_a_dwelling_limit": "$361,000",
+   "coverage_b_other_structures_limit": "$36,100",
+   "coverage_c_personal_property_limit": "$5,000",
+   "coverage_d_fair_rental_value_limit": "$36,100",
+   "loss_settlement_basis": "Replacement Cost"
+  },
+  "liability_coverages": {
+   "coverage_l_premises_liability_limit": "$500,000 Occ",
+   "coverage_m_medical_payments_per_person_limit": "$5,000 Per/$10,000 Acc"
+  },
+  "deductibles": {
+   "all_other_perils_deductible": "$1,000"
+  }
+ },
+ "locations": [
+  {
+   "location_number": {
+    "raw": "1",
+    "source": "structural",
+    "parsed": 1
+   },
+   "address": {
+    "line_1": "177 Park Ave",
+    "city": "Old Forge",
+    "state": "NY",
+    "postal_code": "13420",
+    "county": "00043-Herkimer"
+   }
+  }
+ ]
+}

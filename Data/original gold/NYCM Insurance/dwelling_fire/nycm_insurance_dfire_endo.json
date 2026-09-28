@@ -1,0 +1,2224 @@
+{
+  "document": {
+    "document_type": {
+      "raw": "DECLARATIONS",
+      "parsed": "Declarations",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "flagged": false
+    },
+    "document_title_as_stated": {
+      "raw": "DECLARATIONS",
+      "parsed": "DECLARATIONS",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "flagged": false
+    },
+    "copy_type": {
+      "raw": "INSURED COPY",
+      "parsed": "INSURED COPY",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "print_date": {
+      "raw": "09/06/2024",
+      "parsed": "09/06/2024",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "print_time": {
+      "raw": "13:14:33",
+      "parsed": "13:14:33",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "batch_number": {
+      "raw": "D8/I",
+      "parsed": "D8/I",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "transaction_type": {
+      "raw": "ENDORSEMENT",
+      "parsed": "ENDORSEMENT",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        4
+      ],
+      "flagged": false
+    },
+    "transaction_effective_date": {
+      "raw": "09/06/2024",
+      "parsed": "09/06/2024",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "transaction_reason": {
+      "raw": "PER AGENT AMEND BASE FORM",
+      "parsed": "PER AGENT AMEND BASE FORM",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "source_file_name": {
+      "raw": "nycm_insurance_dfire_endo.pdf",
+      "parsed": "nycm_insurance_dfire_endo.pdf",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "page_count": {
+      "raw": "5",
+      "parsed": 5,
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "flagged": false
+    }
+  },
+  "carrier": {
+    "company_name": {
+      "raw": "New York Central Mutual Fire Insurance Company",
+      "parsed": "New York Central Mutual Fire Insurance Company",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "flagged": false
+    },
+    "contact": {
+      "phone": {
+        "raw": "800-234-6926",
+        "parsed": "800-234-6926",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "flagged": false
+      },
+      "website": {
+        "raw": "www.nycm.com",
+        "parsed": "www.nycm.com",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "flagged": false
+      }
+    },
+    "address": {
+      "line_1": {
+        "raw": "1899 Central Plaza East",
+        "parsed": "1899 Central Plaza East",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Edmeston",
+        "parsed": "Edmeston",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13335-1899",
+        "parsed": "13335-1899",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "producer": {
+    "agency_name": {
+      "raw": "PATRIOTIC INSURANCE GROUP BROKERAGE INC",
+      "parsed": "PATRIOTIC INSURANCE GROUP BROKERAGE INC",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "producer_code": {
+      "raw": "08014",
+      "parsed": "08014",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "territory_code": {
+      "raw": "3R",
+      "parsed": "3R",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "paper_off": {
+      "raw": "YES",
+      "parsed": "Yes",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "direct_mail": {
+      "raw": "YES",
+      "parsed": "Yes",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "contact": {
+      "phone": {
+        "raw": "315-357-5901",
+        "parsed": "315-357-5901",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "fax": {
+        "raw": "315-357-5126",
+        "parsed": "315-357-5126",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "email": {
+        "raw": "beservice@patrioticinsurancegroup.com",
+        "parsed": "beservice@patrioticinsurancegroup.com",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "website": {
+        "raw": "https://patrioticinsurancegroup.com",
+        "parsed": "https://patrioticinsurancegroup.com",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "address": {
+      "line_1": {
+        "raw": "159 ROUTE 28",
+        "parsed": "159 ROUTE 28",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "line_2": {
+        "raw": "PO BOX 329",
+        "parsed": "PO BOX 329",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "INLET",
+        "parsed": "INLET",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13360-0329",
+        "parsed": "13360-0329",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "named_insured": {
+    "primary_name": {
+      "raw": "Rafael Ingram",
+      "parsed": "Rafael Ingram",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "entity_type": {
+      "raw": "Individual",
+      "parsed": "Individual",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "insured_type": {
+      "raw": "PRIMARY INSURED",
+      "parsed": "PRIMARY INSURED",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "marital_status": {
+      "raw": "MARRIED",
+      "parsed": "MARRIED",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "gender": {
+      "raw": "MALE",
+      "parsed": "MALE",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "mailing_address": {
+      "line_1": {
+        "raw": "PO BOX 239",
+        "parsed": "PO BOX 239",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "INLET",
+        "parsed": "INLET",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13360",
+        "parsed": "13360",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "policy": {
+    "policy_number": {
+      "raw": "6136287",
+      "parsed": "6136287",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "flagged": false
+    },
+    "policy_type": {
+      "raw": "DWELLING FIRE",
+      "parsed": "DWELLING FIRE",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "original_inception_date": {
+      "raw": "10/09/2010",
+      "parsed": "10/09/2010",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "policyholder_since_date": {
+      "raw": "10/09/2010",
+      "parsed": "10/09/2010",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "effective_date": {
+      "raw": "10/09/2023",
+      "parsed": "10/09/2023",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "effective_time": {
+      "raw": "12:01 AM",
+      "parsed": "12:01 AM",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "expiration_date": {
+      "raw": "10/09/2024",
+      "parsed": "10/09/2024",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "expiration_time": {
+      "raw": "12:01 AM",
+      "parsed": "12:01 AM",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "time_zone": {
+      "raw": "EST",
+      "parsed": "EST",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "flagged": false
+    },
+    "policy_term_as_printed": {
+      "raw": "12 MONTHS",
+      "parsed": "12 MONTHS",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "policy_term_months": {
+      "raw": "12 MONTHS",
+      "parsed": 12,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "policy_form_number": {
+      "raw": "FL-1",
+      "parsed": "FL-1",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3,
+        4,
+        5
+      ],
+      "flagged": false
+    },
+    "policy_form_edition": {
+      "raw": "11 79",
+      "parsed": "11 79",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        4,
+        5
+      ],
+      "flagged": false
+    },
+    "policy_form_name": {
+      "raw": "BASIC FORM",
+      "parsed": "BASIC FORM",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3,
+        4,
+        5
+      ],
+      "flagged": false
+    },
+    "is_renewal": {
+      "raw": "ENDORSEMENT",
+      "parsed": "No",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1,
+        4
+      ],
+      "flagged": false
+    }
+  },
+  "premium": {
+    "total_policy_premium": {
+      "raw": "$1,045.00",
+      "parsed": 1045.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        3,
+        4
+      ],
+      "flagged": false
+    },
+    "discounts_and_credits": [
+      {
+        "description": {
+          "raw": "ALARM SYSTEM",
+          "parsed": "ALARM SYSTEM",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$32.00",
+          "parsed": 32.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "form_reference": {
+          "raw": "ML-216",
+          "parsed": "ML-216",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "edition_date": {
+          "raw": "07 78",
+          "parsed": "07 78",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "percentage": {
+          "raw": "3%",
+          "parsed": "3%",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "flagged": false
+        },
+        "is_applied": {
+          "raw": "ALARM SYSTEM",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "billing": {},
+  "terrorism": {
+    "terrorism_premium": {
+      "raw": "$0.00",
+      "parsed": 0.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        4
+      ],
+      "flagged": false
+    },
+    "disclosure_form_number": {
+      "raw": "NYC 1045",
+      "parsed": "NYC 1045",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        4
+      ],
+      "flagged": false
+    }
+  },
+  "forms_and_endorsements": [
+    {
+      "form_number": {
+        "raw": "FL-1",
+        "parsed": "FL-1",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4,
+          5
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "11 79",
+        "parsed": "11 79",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4,
+          5
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "BASIC FORM",
+        "parsed": "BASIC FORM",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4,
+          5
+        ],
+        "flagged": false
+      },
+      "premium": {
+        "raw": "$1,045.00",
+        "parsed": 1045.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3,
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "FL-20",
+        "parsed": "FL-20",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "11 79",
+        "parsed": "11 79",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4,
+          5
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "GENERAL POLICY PROVISIONS",
+        "parsed": "GENERAL POLICY PROVISIONS",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "INCL.",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "FL-84",
+        "parsed": "FL-84",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "07 81",
+        "parsed": "07 81",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "NEW YORK ENDORSEMENT",
+        "parsed": "NEW YORK ENDORSEMENT",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "INCL.",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "FL-250",
+        "parsed": "FL-250",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "10 84",
+        "parsed": "10 84",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "AMENDATORY ENDORSEMENT",
+        "parsed": "AMENDATORY ENDORSEMENT",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "INCL.",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "DP 7570",
+        "parsed": "DP 7570",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "02 21",
+        "parsed": "02 21",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "CERTIFIED TERRORISM LOSS",
+        "parsed": "CERTIFIED TERRORISM LOSS",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "INCL.",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "form_details": [
+        {
+          "description": {
+            "raw": "CERTIFIED TERRORISM LOSS PREMIUM",
+            "parsed": "CERTIFIED TERRORISM LOSS PREMIUM",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              4
+            ],
+            "flagged": false
+          },
+          "amount": {
+            "raw": "$0.00",
+            "parsed": 0.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              4
+            ],
+            "flagged": false
+          }
+        }
+      ]
+    },
+    {
+      "form_number": {
+        "raw": "ML-216",
+        "parsed": "ML-216",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "07 78",
+        "parsed": "07 78",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "PREMISES ALARM OR FIRE PROTECTION SYSTEM",
+        "parsed": "PREMISES ALARM OR FIRE PROTECTION SYSTEM",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "INCL.",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "form_details": [
+        {
+          "description": {
+            "raw": "LOCAL FIRE ALARM",
+            "parsed": "LOCAL FIRE ALARM",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              4
+            ],
+            "flagged": false
+          },
+          "percentage": {
+            "raw": "3%",
+            "parsed": "3%",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "flagged": false
+          }
+        }
+      ]
+    },
+    {
+      "form_number": {
+        "raw": "NYC 1045",
+        "parsed": "NYC 1045",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "12 20",
+        "parsed": "12 20",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "POLICYHOLDER DISCLOSURE NOTICE OF TERRORISM INSURANCE COVERAGE",
+        "parsed": "POLICYHOLDER DISCLOSURE NOTICE OF TERRORISM INSURANCE COVERAGE",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "INCL.",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "IL N 160",
+        "parsed": "IL N 160",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "09 08",
+        "parsed": "09 08",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "FLOOD/MUDSLIDE EXCLUSION ADVISORY NOTICE TO POLICYHOLDERS - NEW YORK",
+        "parsed": "FLOOD/MUDSLIDE EXCLUSION ADVISORY NOTICE TO POLICYHOLDERS - NEW YORK",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "INCL.",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "NYC-211",
+        "parsed": "NYC-211",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "08 91",
+        "parsed": "08 91",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "IMPORTANT SENIOR CITIZEN INFORMATION",
+        "parsed": "IMPORTANT SENIOR CITIZEN INFORMATION",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "INCL.",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "NYCM FL 268",
+        "parsed": "NYCM FL 268",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "05 10",
+        "parsed": "05 10",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "INFLATION GUARD",
+        "parsed": "INFLATION GUARD",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "INCL.",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "form_details": [
+        {
+          "percentage": {
+            "raw": "5.00%",
+            "parsed": "5.00%",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3,
+              4
+            ],
+            "flagged": false
+          }
+        }
+      ]
+    },
+    {
+      "form_number": {
+        "raw": "NYC FL 263",
+        "parsed": "NYC FL 263",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "09 14",
+        "parsed": "09 14",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "AMENDATORY ENDORSEMENT NEW YORK",
+        "parsed": "AMENDATORY ENDORSEMENT NEW YORK",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      },
+      "is_included": {
+        "raw": "INCL.",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
+        ],
+        "flagged": false
+      }
+    }
+  ],
+  "dwelling_fire": {
+    "dwellings": [
+      {
+        "location_number": {
+          "raw": "1",
+          "parsed": 1,
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "flagged": false
+        },
+        "property_description": {
+          "raw": "PRIMARY BUILDING",
+          "parsed": "PRIMARY BUILDING",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            3
+          ],
+          "flagged": false
+        },
+        "described_location": {
+          "line_1": {
+            "raw": "431 ROUTE 28",
+            "parsed": "431 ROUTE 28",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3
+            ],
+            "flagged": false
+          },
+          "city": {
+            "raw": "INLET",
+            "parsed": "INLET",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3
+            ],
+            "flagged": false
+          },
+          "state": {
+            "raw": "NY",
+            "parsed": "NY",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "flagged": false
+          },
+          "postal_code": {
+            "raw": "13360-1610",
+            "parsed": "13360-1610",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3
+            ],
+            "flagged": false
+          },
+          "county_code": {
+            "raw": "041",
+            "parsed": "041",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3
+            ],
+            "flagged": false
+          },
+          "county": {
+            "raw": "HAMILTON",
+            "parsed": "HAMILTON",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3
+            ],
+            "flagged": false
+          }
+        },
+        "year_built": {
+          "raw": "1970",
+          "parsed": 1970,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "number_of_units": {
+          "raw": "2",
+          "parsed": 2,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "flagged": false
+        },
+        "construction_type": {
+          "raw": "FRAME",
+          "parsed": "FRAME",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "occupancy_type": {
+          "raw": "VACANT",
+          "parsed": "VACANT",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            5
+          ],
+          "flagged": false
+        },
+        "lead_abatement": {
+          "raw": "NO",
+          "parsed": "NO",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4,
+            5
+          ],
+          "flagged": false
+        },
+        "seasonal_or_vacant": {
+          "raw": "NO",
+          "parsed": "No",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3,
+            4,
+            5
+          ],
+          "flagged": false
+        },
+        "protection_class": {
+          "raw": "PARTIALLY PROTECTED",
+          "parsed": "PARTIALLY PROTECTED",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "fire_district": {
+          "raw": "INLET",
+          "parsed": "INLET",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            3
+          ],
+          "flagged": false
+        },
+        "territory_code": {
+          "raw": "A",
+          "parsed": "A",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "flagged": false
+        },
+        "all_other_perils_deductible": {
+          "raw": "$500",
+          "parsed": 500.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "inflation_guard_percentage": {
+          "raw": "5.00%",
+          "parsed": "5.00%",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "surcharges_none_reported": {
+          "raw": "*** NO SURCHARGES EXIST FOR THIS LOCATION ***",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "total_premium": {
+          "raw": "$1,045.00",
+          "parsed": 1045.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            3,
+            4
+          ],
+          "flagged": false
+        },
+        "coverages": [
+          {
+            "coverage_name": {
+              "raw": "Coverage A RESIDENCE FIRE",
+              "parsed": "Coverage A RESIDENCE FIRE",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "311,000",
+              "parsed": 311000.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$1,032.00",
+              "parsed": 1032.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Coverage C PERSONAL PROPERTY FIRE",
+              "parsed": "Coverage C PERSONAL PROPERTY FIRE",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "5,000",
+              "parsed": 5000.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            },
+            "premium": {
+              "raw": "$13.00",
+              "parsed": 13.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            }
+          },
+          {
+            "coverage_name": {
+              "raw": "Coverage D ADDL LIVING EXP AND LOSS OF RENT FIRE INCL",
+              "parsed": "Coverage D ADDL LIVING EXP AND LOSS OF RENT FIRE INCL",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            },
+            "limit_amount": {
+              "raw": "31,100",
+              "parsed": 31100.0,
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3
+              ],
+              "flagged": false
+            },
+            "is_included": {
+              "raw": "INCL.",
+              "parsed": "Yes",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                4
+              ],
+              "flagged": false
+            }
+          }
+        ]
+      }
+    ],
+    "property_coverages": {
+      "coverage_a_dwelling_limit": {
+        "raw": "311,000",
+        "parsed": 311000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "coverage_c_personal_property_limit": {
+        "raw": "5,000",
+        "parsed": 5000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "coverage_d_fair_rental_value_limit": {
+        "raw": "31,100",
+        "parsed": 31100.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "inflation_guard_percentage": {
+        "raw": "5.00%",
+        "parsed": "5.00%",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "covered_causes_of_loss": {
+        "raw": "FL-1 - BASIC FORM",
+        "parsed": "FL-1 - BASIC FORM",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      }
+    },
+    "deductibles": {
+      "all_other_perils_deductible": {
+        "raw": "$500",
+        "parsed": 500.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "locations": [
+    {
+      "location_number": {
+        "raw": "1",
+        "parsed": 1,
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "flagged": false
+      },
+      "address": {
+        "line_1": {
+          "raw": "431 ROUTE 28",
+          "parsed": "431 ROUTE 28",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            3
+          ],
+          "flagged": false
+        },
+        "city": {
+          "raw": "INLET",
+          "parsed": "INLET",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            3
+          ],
+          "flagged": false
+        },
+        "state": {
+          "raw": "NY",
+          "parsed": "NY",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "flagged": false
+        },
+        "postal_code": {
+          "raw": "13360-1610",
+          "parsed": "13360-1610",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            3
+          ],
+          "flagged": false
+        },
+        "county_code": {
+          "raw": "041",
+          "parsed": "041",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        },
+        "county": {
+          "raw": "HAMILTON",
+          "parsed": "HAMILTON",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            3
+          ],
+          "flagged": false
+        }
+      },
+      "location_premium": {
+        "raw": "$1,045.00",
+        "parsed": 1045.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          3,
+          4
+        ],
+        "flagged": false
+      }
+    }
+  ],
+  "document_type_detail": {
+    "policy_change": {
+      "transaction_type": {
+        "raw": "ENDORSEMENT",
+        "parsed": "ENDORSEMENT",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          4
+        ],
+        "flagged": false
+      },
+      "transaction_effective_date": {
+        "raw": "09/06/2024",
+        "parsed": "09/06/2024",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "transaction_expiration_date": {
+        "raw": "10/09/2024",
+        "parsed": "10/09/2024",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "transaction_reason_description": {
+        "raw": "PER AGENT AMEND BASE FORM",
+        "parsed": "PER AGENT AMEND BASE FORM",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "net_change_amount": {
+        "raw": "-$33.00",
+        "parsed": -33.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "fideon:provenance": {
+    "source": "NYCM Insurance/dwelling_fire/nycm_insurance_dfire_endo.pdf",
+    "schema": "dwelling_fire v1.4.0",
+    "synthetic": false,
+    "gold": "reviewed and completed by Claude against the printed pages",
+    "reviewed": "2026-09-28"
+  }
+}
