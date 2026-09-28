@@ -1,0 +1,230 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "Flood Declarations Page",
+   "parsed": "Declarations"
+  },
+  "document_title_as_stated": "Flood Declarations Page",
+  "issue_date": "07/03/2025"
+ },
+ "carrier": {
+  "company_name": "Lloyd's of London",
+  "is_surplus_lines": {
+   "raw": "THE INSURER(S) NAMED HEREIN IS (ARE) NOT LICENSED BY THE STATE OF NEW YORK",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "surplus_lines_broker_name": "Sterling Surplus Underwriters",
+  "surplus_lines_license_number": "EX-1299609A"
+ },
+ "claim_reporting": {
+  "claims_email": "claims@sterlingsu.com",
+  "claims_notice_recipient": "Sterling Surplus Underwriters"
+ },
+ "producer": {
+  "agency_name": "Patriotic Insurance Group Brokerage Inc",
+  "producer_contact_name": "Rob Bowen",
+  "producer_code": "AGT7756",
+  "contact": {
+   "phone": "845-610-5700",
+   "email": "agency@patrioticinsurancegroup.com"
+  },
+  "address": {
+   "line_1": "78 Brookside Ave, Ste 132B",
+   "city": "Chester",
+   "state": "NY",
+   "postal_code": "10918"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Verity Oakden",
+  "mailing_address": {
+   "line_1": "40 Moore Avenue, Apt 5t",
+   "city": "Mount Kisco",
+   "state": "NY",
+   "postal_code": "10540"
+  }
+ },
+ "policy": {
+  "policy_number": "25SSJ231PF3130",
+  "is_renewal": {
+   "raw": "Yes",
+   "parsed": "Yes"
+  },
+  "effective_date": "07/24/2025",
+  "expiration_date": "07/24/2026",
+  "effective_time": "12:01am",
+  "time_zone": "LST",
+  "policy_term_as_printed": "12 months",
+  "policy_term_months": {
+   "raw": "12 months",
+   "parsed": 12
+  },
+  "alternate_policy_identifiers": [
+   {
+    "identifier_type": {
+     "raw": "Unique Market Ref",
+     "source": "structural"
+    },
+    "identifier_value": "B123024STE1355"
+   }
+  ],
+  "prior_policy_number": "24SSJ231PF3452"
+ },
+ "premium": {
+  "total_policy_premium": "$467.64",
+  "basic_premium": "$417.00",
+  "taxes_and_fees": [
+   {
+    "description": "Broker Fee (Fully Earned)",
+    "amount": "$35.00",
+    "is_fully_earned": {
+     "raw": "(Fully Earned)",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Surplus Lines Tax",
+    "amount": "$15.01"
+   },
+   {
+    "description": "Stamp Fee",
+    "amount": "$0.63"
+   }
+  ],
+  "minimum_earned_premium_percentage": null
+ },
+ "billing": {
+  "bill_to_party": "Sterling Surplus Underwriters",
+  "phone": "855-227-2202"
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "1230NASR0155EI"
+  },
+  {
+   "form_number": "Flood Wording"
+  },
+  {
+   "form_number": "SSPF-001"
+  },
+  {
+   "form_number": "PPRCE"
+  },
+  {
+   "form_number": "FLEND1"
+  },
+  {
+   "form_number": "FLEND2"
+  },
+  {
+   "form_number": "OFAC Notice"
+  },
+  {
+   "form_number": "LSW1135B"
+  },
+  {
+   "form_number": "NYSID-41C"
+  },
+  {
+   "form_number": "NYSID-NELP"
+  },
+  {
+   "form_number": "LSW1001"
+  }
+ ],
+ "locations": [
+  {
+   "location_number": {
+    "raw": "1",
+    "source": "structural",
+    "parsed": 1
+   },
+   "address": {
+    "line_1": "6 Cottage Lane",
+    "city": "North Salem",
+    "state": "NY",
+    "postal_code": "10560"
+   }
+  }
+ ],
+ "flood": {
+  "coverage_and_rating": {
+   "building_coverage_limit": "$119,700",
+   "building_deductible": "$5,000",
+   "contents_coverage_limit": "$0",
+   "other_structures_coverage_limit": "$11,970"
+  },
+  "property_information": {
+   "flood_zone": "AE",
+   "basement_type": {
+    "raw": "Basement: N",
+    "parsed": "No"
+   },
+   "has_elevator": {
+    "raw": "Elevator: N",
+    "parsed": "No"
+   }
+  },
+  "mortgage_information": [
+   {
+    "party_type": {
+     "raw": "Mortgage Details",
+     "source": "structural"
+    },
+    "loan_number": {
+     "raw": "Loan #: 6500335135",
+     "parsed": "6500335135"
+    },
+    "name": "Tompkins Community Bank",
+    "clause_type": "ISAOA, ATIMA",
+    "address": {
+     "line_1": "PO Box 390197",
+     "city": "Minneapolis",
+     "state": "MN",
+     "postal_code": "55439-0197"
+    },
+    "rank": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    }
+   }
+  ]
+ },
+ "coverages": [
+  {
+   "coverage_name": "Dwelling",
+   "limit": "$119,700",
+   "deductible": "$5,000"
+  },
+  {
+   "coverage_name": "Contents",
+   "limit": "$0"
+  },
+  {
+   "coverage_name": "Other Structures",
+   "limit": "$11,970"
+  }
+ ],
+ "signature": {
+  "authorized_representative_name": "C. Brad Moncrief",
+  "title": "Principal",
+  "signature_date": "07/03/2025"
+ },
+ "additional_fields": [
+  {
+   "section": "Minimum earned premium",
+   "label": "Minimum earned premium",
+   "value": "25% ($105) minimum earned premium or minimum earned premium endorsement."
+  }
+ ],
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_effective_date": "07/24/2025",
+   "renewal_expiration_date": "07/24/2026",
+   "renewal_premium": "$467.64"
+  }
+ }
+}

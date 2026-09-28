@@ -1,0 +1,227 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "FLOOD DECLARATIONS PAGE",
+   "parsed": "Declarations"
+  },
+  "document_title_as_stated": "FLOOD DECLARATIONS PAGE",
+  "print_code": "(Form SLC-3 USA NMA 2868)",
+  "issue_date": "03/25/2021"
+ },
+ "carrier": {
+  "company_name": "LLOYD'S",
+  "surplus_lines_broker_name": "STERLING SURPLUS UNDERWRITERS",
+  "is_surplus_lines": {
+   "raw": "THE INSURER(S) NAMED HEREIN IS (ARE) NOT LICENSED BY THE STATE OF NEW YORK",
+   "source": "structural",
+   "parsed": "Yes"
+  }
+ },
+ "claim_reporting": {
+  "claims_notice_recipient": "Sterling Surplus Underwriters"
+ },
+ "producer": {
+  "agency_name": "Patriotic Insurance Group",
+  "producer_contact_name": "Rob Bowen",
+  "contact": {
+   "phone": "845-610-5700"
+  },
+  "address": {
+   "line_1": "78 Brookside Ave, Ste 132B",
+   "city": "Chester",
+   "state": "NY",
+   "postal_code": "10918"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Marcus Brandt",
+  "mailing_address": {
+   "line_1": "22 N Winter Park Dr",
+   "city": "Hopewell Junction",
+   "state": "NY",
+   "postal_code": "12533"
+  }
+ },
+ "policy": {
+  "policy_number": "21SSJ231CM2006",
+  "prior_policy_number": {
+   "raw": "N/A",
+   "parsed": null
+  },
+  "is_renewal": {
+   "raw": "YES",
+   "parsed": "Yes"
+  },
+  "effective_date": "04/09/2021",
+  "expiration_date": "04/09/2022",
+  "effective_time": "12:01am",
+  "time_zone": "LST",
+  "original_inception_date": "04/09/2021",
+  "policy_term_as_printed": "12 months",
+  "policy_term_months": {
+   "raw": "12 months",
+   "parsed": 12
+  },
+  "alternate_policy_identifiers": [
+   {
+    "identifier_type": {
+     "raw": "Unique Market Ref",
+     "source": "structural"
+    },
+    "identifier_value": "B123021STE1355"
+   }
+  ]
+ },
+ "premium": {
+  "basic_premium": "$1,239.00",
+  "total_policy_premium": "$1,389.48",
+  "taxes_and_fees": [
+   {
+    "description": "Fees",
+    "amount": "$100.00"
+   },
+   {
+    "description": "Stamp",
+    "amount": "$2.28"
+   },
+   {
+    "description": "Taxes",
+    "amount": "$48.20"
+   }
+  ]
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "Policy Wording"
+  },
+  {
+   "form_number": "Adequacy Cert"
+  },
+  {
+   "form_number": "LM19815"
+  },
+  {
+   "form_number": "PPRCE"
+  },
+  {
+   "form_number": "FLEND1"
+  },
+  {
+   "form_number": "FLEND2"
+  },
+  {
+   "form_number": "OFAC Notice"
+  },
+  {
+   "form_number": "NMA2915"
+  },
+  {
+   "form_number": "Min Premium"
+  },
+  {
+   "form_number": "LSW1135B"
+  },
+  {
+   "form_number": "Complaint"
+  },
+  {
+   "form_number": "LMA9011"
+  },
+  {
+   "form_number": "NYSID41C"
+  },
+  {
+   "form_number": "NYSID-NELP"
+  }
+ ],
+ "locations": [
+  {
+   "location_number": {
+    "raw": "1",
+    "source": "structural",
+    "parsed": 1
+   },
+   "address": {
+    "line_1": "1 West Main Street",
+    "city": "Goshen",
+    "state": "NY",
+    "postal_code": "10924"
+   }
+  }
+ ],
+ "coverages": [
+  {
+   "coverage_name": "Building",
+   "limit": "$475,200",
+   "deductible": "$5,000"
+  },
+  {
+   "coverage_name": "Contents",
+   "limit": "$0",
+   "deductible": "$5,000"
+  },
+  {
+   "coverage_name": "Loss of Use",
+   "limit": "$0",
+   "deductible": "14-day deductible"
+  },
+  {
+   "coverage_name": "Other Structures",
+   "limit": "$0",
+   "deductible": "$5,000"
+  }
+ ],
+ "flood": {
+  "coverage_and_rating": {
+   "building_coverage_limit": "$475,200",
+   "building_deductible": "$5,000",
+   "contents_coverage_limit": "$0",
+   "contents_deductible": "$5,000",
+   "loss_of_use_coverage_limit": "$0",
+   "loss_of_use_deductible": "14-day deductible",
+   "other_structures_coverage_limit": "$0",
+   "other_structures_deductible": "$5,000"
+  },
+  "property_information": {
+   "flood_zone": "X",
+   "replacement_cost_value": "$475,200",
+   "base_flood_elevation": "Pre-FIRM",
+   "lowest_floor_elevation": "Pre-FIRM",
+   "lfe_bfe_difference": "Pre-FIRM",
+   "year_built": {
+    "raw": "1930",
+    "parsed": 1930
+   },
+   "number_of_floors": {
+    "raw": "3",
+    "parsed": 3
+   },
+   "enclosure_type": "none"
+  },
+  "mortgage_information": []
+ },
+ "signature": {
+  "authorized_representative_name": "C. Brad Moncrief",
+  "title": "Principal",
+  "signature_date": "03/25/2021"
+ },
+ "additional_fields": [
+  {
+   "section": "Coverage / Deductible",
+   "label": "Cancellation",
+   "value": "NO FLAT CANCELLATIONS UNLESS REQUESTED BY UNDERWRITERS"
+  },
+  {
+   "section": "Coverage / Deductible",
+   "label": "Minimum earned premium",
+   "value": "25% Minimum Earned Premium —OR— Minimum Earned Premium Endorsement"
+  }
+ ],
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_effective_date": "04/09/2021",
+   "renewal_expiration_date": "04/09/2022",
+   "renewal_premium": "$1,389.48"
+  }
+ }
+}

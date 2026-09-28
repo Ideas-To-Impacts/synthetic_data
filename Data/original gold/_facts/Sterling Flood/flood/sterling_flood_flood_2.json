@@ -1,0 +1,256 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "Flood Declarations Page",
+   "parsed": "Declarations"
+  },
+  "document_title_as_stated": "Flood Declarations Page",
+  "issue_date": "11/22/2024"
+ },
+ "carrier": {
+  "company_name": "Lloyd's of London",
+  "is_surplus_lines": {
+   "raw": "THE INSURER(S) NAMED HEREIN IS (ARE) NOT LICENSED BY THE STATE OF NEW YORK",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "surplus_lines_broker_name": "Sterling Surplus Underwriters",
+  "surplus_lines_license_number": "EX-1299609A"
+ },
+ "claim_reporting": {
+  "claims_email": "claims@sterlingsu.com",
+  "claims_notice_recipient": "Sterling Surplus Underwriters"
+ },
+ "producer": {
+  "agency_name": "Patriotic Insurance Group Brokerage Inc",
+  "producer_contact_name": "Rob Bowen",
+  "producer_code": "AGT7756",
+  "contact": {
+   "phone": "845-610-5700",
+   "email": "agency@patrioticinsurancegroup.com"
+  },
+  "address": {
+   "line_1": "78 Brookside Ave, Ste 132B",
+   "city": "Chester",
+   "state": "NY",
+   "postal_code": "10918"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Ida Jarrow",
+  "mailing_address": {
+   "line_1": "10 Sanford Avenue",
+   "city": "Chester",
+   "state": "NY",
+   "postal_code": "10918"
+  }
+ },
+ "policy": {
+  "policy_number": "24SSJ231PF4249",
+  "is_renewal": {
+   "raw": "Yes",
+   "parsed": "Yes"
+  },
+  "effective_date": "11/25/2024",
+  "expiration_date": "11/25/2025",
+  "effective_time": "12:01am",
+  "time_zone": "LST",
+  "policy_term_as_printed": "12 months",
+  "policy_term_months": {
+   "raw": "12 months",
+   "parsed": 12
+  },
+  "alternate_policy_identifiers": [
+   {
+    "identifier_type": {
+     "raw": "Unique Market Ref",
+     "source": "structural"
+    },
+    "identifier_value": "B123024STE1355"
+   }
+  ],
+  "prior_policy_number": "23SSJ231PF3605"
+ },
+ "premium": {
+  "total_policy_premium": "$693.81",
+  "basic_premium": "$635.00",
+  "taxes_and_fees": [
+   {
+    "description": "Broker Fee (Fully Earned)",
+    "amount": "$35.00",
+    "is_fully_earned": {
+     "raw": "(Fully Earned)",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Surplus Lines Tax",
+    "amount": "$22.86"
+   },
+   {
+    "description": "Stamp Fee",
+    "amount": "$0.95"
+   }
+  ],
+  "minimum_earned_premium_percentage": null
+ },
+ "billing": {
+  "bill_to_party": "Sterling Surplus Underwriters",
+  "phone": "855-227-2202"
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "1230NASR0155EI"
+  },
+  {
+   "form_number": "Flood Wording"
+  },
+  {
+   "form_number": "SSPF-001"
+  },
+  {
+   "form_number": "PPRCE"
+  },
+  {
+   "form_number": "FLEND1"
+  },
+  {
+   "form_number": "FLEND2"
+  },
+  {
+   "form_number": "OFAC Notice"
+  },
+  {
+   "form_number": "LSW1135B"
+  },
+  {
+   "form_number": "NYSID-41C"
+  },
+  {
+   "form_number": "NYSID-NELP"
+  },
+  {
+   "form_number": "LSW1001"
+  }
+ ],
+ "locations": [
+  {
+   "location_number": {
+    "raw": "1",
+    "source": "structural",
+    "parsed": 1
+   },
+   "address": {
+    "line_1": "10 Sanford Avenue",
+    "city": "Chester",
+    "state": "NY",
+    "postal_code": "10918"
+   }
+  }
+ ],
+ "flood": {
+  "coverage_and_rating": {
+   "building_coverage_limit": "$203,175",
+   "building_deductible": "$5,000",
+   "contents_coverage_limit": "$73,143",
+   "contents_deductible": "$5,000",
+   "other_structures_coverage_limit": "$20,317"
+  },
+  "property_information": {
+   "flood_zone": "AE",
+   "basement_type": {
+    "raw": "Basement: Y",
+    "parsed": "Yes"
+   },
+   "has_elevator": {
+    "raw": "Elevator: N",
+    "parsed": "No"
+   }
+  },
+  "mortgage_information": [
+   {
+    "party_type": {
+     "raw": "Mortgage Details",
+     "source": "structural"
+    },
+    "loan_number": {
+     "raw": "Loan #: 5000569229",
+     "parsed": "5000569229"
+    },
+    "name": "JPMorgan Chase Bank, N.A.",
+    "clause_type": "ISAOA/ATIMA",
+    "address": {
+     "line_1": "PO Box 4465",
+     "city": "Springfield",
+     "state": "OH",
+     "postal_code": "45501-4465"
+    },
+    "rank": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    }
+   },
+   {
+    "party_type": {
+     "raw": "Mortgage Details",
+     "source": "structural"
+    },
+    "loan_number": {
+     "raw": "Loan #: 1000000",
+     "parsed": "1000000"
+    },
+    "name": "KeyBank National Association,",
+    "clause_type": "ISAOA",
+    "address": {
+     "line_1": "11501 Outlook Street",
+     "line_2": "Suite #300",
+     "city": "Overland Park",
+     "state": "KS",
+     "postal_code": "66211"
+    },
+    "rank": {
+     "raw": "2",
+     "source": "structural",
+     "parsed": 2
+    }
+   }
+  ]
+ },
+ "coverages": [
+  {
+   "coverage_name": "Dwelling",
+   "limit": "$203,175",
+   "deductible": "$5,000"
+  },
+  {
+   "coverage_name": "Contents",
+   "limit": "$73,143",
+   "deductible": "$5,000"
+  },
+  {
+   "coverage_name": "Other Structures",
+   "limit": "$20,317"
+  }
+ ],
+ "signature": {
+  "authorized_representative_name": "C. Brad Moncrief",
+  "title": "Principal",
+  "signature_date": "11/22/2024"
+ },
+ "additional_fields": [
+  {
+   "section": "Minimum earned premium",
+   "label": "Minimum earned premium",
+   "value": "25% ($159) minimum earned premium or minimum earned premium endorsement."
+  }
+ ],
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_effective_date": "11/25/2024",
+   "renewal_expiration_date": "11/25/2025",
+   "renewal_premium": "$693.81"
+  }
+ }
+}
