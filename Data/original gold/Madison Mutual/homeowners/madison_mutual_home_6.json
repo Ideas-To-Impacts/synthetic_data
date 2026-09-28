@@ -1912,6 +1912,69 @@
             2
           ],
           "flagged": false
+        },
+        "address": {
+          "line_1": {
+            "raw": "602 Antlers Rd",
+            "parsed": "602 Antlers Rd",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "city": {
+            "raw": "Raquette Lake",
+            "parsed": "Raquette Lake",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "state": {
+            "raw": "NY",
+            "parsed": "NY",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3
+            ],
+            "flagged": false
+          },
+          "postal_code": {
+            "raw": "13436",
+            "parsed": "13436",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "county": {
+            "raw": "Hamilton County",
+            "parsed": "Hamilton County",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          }
         }
       }
     ],

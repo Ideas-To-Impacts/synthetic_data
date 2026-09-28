@@ -22,8 +22,7 @@
    "city": "Milwaukee",
    "state": "WI",
    "postal_code": "53213-0008"
-  },
-  "writing_company_name": "Hagerty Insurance Agency, LLC."
+  }
  },
  "claim_reporting": {
   "claims_phone": "800-922-4050"
@@ -351,6 +350,11 @@
    "section": "Additional Information",
    "label": "Death Benefit",
    "value": "$2,000"
+  },
+  {
+   "section": "Carrier",
+   "label": "Service and Claims agency",
+   "value": "Hagerty Insurance Agency, LLC."
   }
  ],
  "document_type_detail": {

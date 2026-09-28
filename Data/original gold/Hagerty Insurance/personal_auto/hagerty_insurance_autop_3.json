@@ -187,18 +187,6 @@
         ],
         "flagged": false
       }
-    },
-    "writing_company_name": {
-      "raw": "Hagerty Insurance Agency, LLC.",
-      "parsed": "Hagerty Insurance Agency, LLC.",
-      "confidence": {
-        "score": 1.0,
-        "source": "deterministic"
-      },
-      "page_ref": [
-        1
-      ],
-      "flagged": false
     }
   },
   "claim_reporting": {
@@ -1393,6 +1381,22 @@
       "value": {
         "raw": "You may designate a third party to receive copies of cancellation, lapse, and nonrenewal notices.",
         "parsed": "You may designate a third party to receive copies of cancellation, lapse, and nonrenewal notices.",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Carrier",
+      "label": "Service and Claims agency",
+      "value": {
+        "raw": "Hagerty Insurance Agency, LLC.",
+        "parsed": "Hagerty Insurance Agency, LLC.",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"

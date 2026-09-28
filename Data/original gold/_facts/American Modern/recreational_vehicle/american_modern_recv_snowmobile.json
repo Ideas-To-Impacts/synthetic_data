@@ -435,18 +435,7 @@
     "raw": "800 Per occurrence",
     "parsed": 800.0
    },
-   "travel_loss_per_occurrence_limit": {
-    "raw": "300 Per occurrence",
-    "parsed": 300.0
-   },
-   "travel_loss_per_policy_limit": {
-    "raw": "600 Per Policy",
-    "parsed": 600.0
-   },
-   "trip_interruption": {
-    "raw": "Included",
-    "parsed": "Yes"
-   }
+   "trip_interruption": "300 Per occurrence/600 Per Policy Period"
   }
  },
  "document_type_detail": {
@@ -462,6 +451,11 @@
    "section": "Cover letter",
    "label": "Form",
    "value": "IL-CW-CL-0018 10-15"
+  },
+  {
+   "section": "Physical Damage Coverages",
+   "label": "Travel Loss",
+   "value": "Included"
   }
  ]
 }

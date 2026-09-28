@@ -1685,6 +1685,70 @@
             2
           ],
           "flagged": false
+        },
+        "address": {
+          "line_1": {
+            "raw": "146 Forest Trl",
+            "parsed": "146 Forest Trl",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "city": {
+            "raw": "Old Forge",
+            "parsed": "Old Forge",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "state": {
+            "raw": "NY",
+            "parsed": "NY",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              3
+            ],
+            "flagged": false
+          },
+          "postal_code": {
+            "raw": "13420",
+            "parsed": "13420",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "county": {
+            "raw": "Herkimer County",
+            "parsed": "Herkimer County",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          }
         }
       }
     ],

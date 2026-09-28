@@ -2214,6 +2214,71 @@
             3
           ],
           "flagged": false
+        },
+        "address": {
+          "line_1": {
+            "raw": "125 Old Beckers Road",
+            "parsed": "125 Old Beckers Road",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "city": {
+            "raw": "Old Forge",
+            "parsed": "Old Forge",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3
+            ],
+            "flagged": false
+          },
+          "state": {
+            "raw": "NY",
+            "parsed": "NY",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              3,
+              4
+            ],
+            "flagged": false
+          },
+          "postal_code": {
+            "raw": "13420-4117",
+            "parsed": "13420-4117",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "county": {
+            "raw": "Herkimer County",
+            "parsed": "Herkimer County",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          }
         }
       }
     ],

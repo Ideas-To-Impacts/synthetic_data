@@ -12,16 +12,12 @@
  },
  "carrier": {
   "company_name": "Madison Mutual Insurance Company",
-  "contact": {
-   "phone": "315-687-3211",
-   "website": "www.mminsco.com"
-  },
   "address": {
-   "line_1": "1256 State Route 5",
-   "line_2": "PO Box 357",
-   "city": "Chittenango",
+   "line_1": "2771 Harbor Lane 5",
+   "line_2": "PO Box 664",
+   "city": "Beacon",
    "state": "NY",
-   "postal_code": "13037-0357"
+   "postal_code": "12508-5761"
   }
  },
  "producer": {
@@ -323,7 +319,14 @@
     "policy_form_number": "HO 0005 -- Special Building And Contents Form",
     "occupancy_type": "Primary",
     "dwelling_type": "1 Family - Freestanding",
-    "program_name": "Gold"
+    "program_name": "Gold",
+    "address": {
+     "line_1": "9828 Millbrook Road",
+     "city": "Canton",
+     "state": "NY",
+     "postal_code": "13617-2012",
+     "county": "Herkimer County"
+    }
    }
   ],
   "section_i_property_coverages": {

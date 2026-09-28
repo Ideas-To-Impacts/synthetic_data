@@ -91,13 +91,15 @@
   },
   "carrier": {
     "company_name": {
-      "raw": "Allstate Prin",
-      "parsed": "Allstate Prin",
+      "raw": "Allstate",
+      "parsed": "Allstate",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
       },
-      "page_ref": [],
+      "page_ref": [
+        1
+      ],
       "flagged": false
     }
   },

@@ -113,32 +113,10 @@
       "page_ref": [],
       "flagged": false
     },
-    "contact": {
-      "phone": {
-        "raw": "315-687-3211",
-        "parsed": "315-687-3211",
-        "confidence": {
-          "score": 1.0,
-          "source": "deterministic"
-        },
-        "page_ref": [],
-        "flagged": false
-      },
-      "website": {
-        "raw": "www.mminsco.com",
-        "parsed": "www.mminsco.com",
-        "confidence": {
-          "score": 1.0,
-          "source": "deterministic"
-        },
-        "page_ref": [],
-        "flagged": false
-      }
-    },
     "address": {
       "line_1": {
-        "raw": "1256 State Route 5",
-        "parsed": "1256 State Route 5",
+        "raw": "2771 Harbor Lane 5",
+        "parsed": "2771 Harbor Lane 5",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -147,23 +125,27 @@
         "flagged": false
       },
       "line_2": {
-        "raw": "PO Box 357",
-        "parsed": "PO Box 357",
+        "raw": "PO Box 664",
+        "parsed": "PO Box 664",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
         },
-        "page_ref": [],
+        "page_ref": [
+          1
+        ],
         "flagged": false
       },
       "city": {
-        "raw": "Chittenango",
-        "parsed": "Chittenango",
+        "raw": "Beacon",
+        "parsed": "Beacon",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
         },
-        "page_ref": [],
+        "page_ref": [
+          1
+        ],
         "flagged": false
       },
       "state": {
@@ -180,13 +162,15 @@
         "flagged": false
       },
       "postal_code": {
-        "raw": "13037-0357",
-        "parsed": "13037-0357",
+        "raw": "12508-5761",
+        "parsed": "12508-5761",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
         },
-        "page_ref": [],
+        "page_ref": [
+          1
+        ],
         "flagged": false
       }
     }
@@ -1912,6 +1896,69 @@
             3
           ],
           "flagged": false
+        },
+        "address": {
+          "line_1": {
+            "raw": "709 Riverside",
+            "parsed": "709 Riverside",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "city": {
+            "raw": "Medina",
+            "parsed": "Medina",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "state": {
+            "raw": "NY",
+            "parsed": "NY",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              4
+            ],
+            "flagged": false
+          },
+          "postal_code": {
+            "raw": "14103",
+            "parsed": "14103",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "county": {
+            "raw": "Hamilton County",
+            "parsed": "Hamilton County",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          }
         }
       }
     ],

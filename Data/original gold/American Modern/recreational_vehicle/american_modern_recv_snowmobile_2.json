@@ -3268,42 +3268,15 @@
         ],
         "flagged": false
       },
-      "travel_loss_per_occurrence_limit": {
-        "raw": "300 Per occurrence",
-        "parsed": 300.0,
-        "confidence": {
-          "score": 1.0,
-          "source": "deterministic"
-        },
-        "page_ref": [
-          3
-        ],
-        "flagged": false
-      },
-      "travel_loss_per_policy_limit": {
-        "raw": "600 Per Policy",
-        "parsed": 600.0,
-        "confidence": {
-          "score": 1.0,
-          "source": "deterministic"
-        },
-        "page_ref": [
-          3
-        ],
-        "flagged": false
-      },
       "trip_interruption": {
-        "raw": "Included",
-        "parsed": "Yes",
+        "raw": "300 Per occurrence/600 Per Policy Period",
+        "parsed": "300 Per occurrence/600 Per Policy Period",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
         },
         "page_ref": [
-          3,
-          4,
-          5,
-          27
+          3
         ],
         "flagged": false
       }
@@ -3383,6 +3356,25 @@
         },
         "page_ref": [
           1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Physical Damage Coverages",
+      "label": "Travel Loss",
+      "value": {
+        "raw": "Included",
+        "parsed": "Included",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4,
+          5,
+          27
         ],
         "flagged": false
       }

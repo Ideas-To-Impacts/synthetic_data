@@ -12,16 +12,12 @@
  },
  "carrier": {
   "company_name": "Madison Mutual Insurance Company",
-  "contact": {
-   "phone": "315-687-3211",
-   "website": "www.mminsco.com"
-  },
   "address": {
-   "line_1": "1256 State Route 5",
-   "line_2": "PO Box 357",
-   "city": "Chittenango",
+   "line_1": "2771 Harbor Lane 5",
+   "line_2": "PO Box 664",
+   "city": "Beacon",
    "state": "NY",
-   "postal_code": "13037-0357"
+   "postal_code": "12508-5761"
   }
  },
  "producer": {
@@ -255,7 +251,14 @@
      "raw": "Yes",
      "parsed": "Yes"
     },
-    "acreage": "Under 10 Acres"
+    "acreage": "Under 10 Acres",
+    "address": {
+     "line_1": "709 Riverside",
+     "city": "Medina",
+     "state": "NY",
+     "postal_code": "14103",
+     "county": "Hamilton County"
+    }
    }
   ],
   "section_i_property_coverages": {

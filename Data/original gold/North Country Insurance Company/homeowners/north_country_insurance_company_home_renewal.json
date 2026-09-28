@@ -447,6 +447,19 @@
         2
       ],
       "flagged": false
+    },
+    "effective_date": {
+      "raw": "08/05/2026",
+      "parsed": "08/05/2026",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
     }
   },
   "premium": {
@@ -2709,6 +2722,19 @@
           "source": "deterministic"
         },
         "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "renewal_effective_date": {
+        "raw": "08/05/2026",
+        "parsed": "08/05/2026",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
           2
         ],
         "flagged": false
