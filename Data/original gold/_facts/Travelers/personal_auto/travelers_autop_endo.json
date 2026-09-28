@@ -1,0 +1,466 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "Automobile Policy Declarations",
+   "parsed": "Policy Change Declaration"
+  },
+  "document_title_as_stated": "Automobile Policy Declarations",
+  "issue_date": "July 6, 2026",
+  "print_code": "PL-50014 NY (05-25)",
+  "batch_number": "577/0DQD25",
+  "transaction_type": {
+   "raw": "Policy Change",
+   "source": "structural"
+  },
+  "transaction_effective_date": "July 3, 2026",
+  "summary_of_changes": "Vehicle use or driver use of the vehicle has changed. Driver license information has been updated."
+ },
+ "carrier": {
+  "company_name": "TRAVELERS PERSONAL INSURANCE COMPANY",
+  "address": {
+   "line_1": "ONE TOWER SQUARE",
+   "city": "HARTFORD",
+   "state": "CT",
+   "postal_code": "06183"
+  }
+ },
+ "claim_reporting": {
+  "claims_phone": "1.800.252.4633"
+ },
+ "producer": {
+  "agency_name": "PATRIOTIC INS GRP BKR",
+  "contact": {
+   "phone": "1.845.610.5700"
+  },
+  "address": {
+   "line_1": "159 NY 28",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Hugo Vasey",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "mailing_address": {
+   "line_1": "PO BOX 494",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360-0494"
+  }
+ },
+ "policy": {
+  "policy_number": "617728881 203 1",
+  "account_id": "617728881",
+  "product_code": "QA2",
+  "effective_date": "February 15, 2026",
+  "expiration_date": "August 15, 2026",
+  "effective_time": "12:01 A.M.",
+  "time_zone": "STANDARD TIME"
+ },
+ "premium": {
+  "total_policy_premium": "$992.00",
+  "subtotal_premium": "$987",
+  "motor_vehicle_law_enforcement_fee": "$5.00",
+  "total_discount_savings_amount": "$327",
+  "discounts_and_credits": [
+   {
+    "description": "Home Ownership Discount",
+    "amount": {
+     "raw": "-$52.00",
+     "parsed": -52.0
+    }
+   },
+   {
+    "description": "Paid in Full Discount",
+    "amount": {
+     "raw": "-$52.00",
+     "parsed": -52.0
+    }
+   },
+   {
+    "description": "EFT Discount",
+    "amount": {
+     "raw": "-$40.00",
+     "parsed": -40.0
+    }
+   },
+   {
+    "description": "Continuous Insurance Discount",
+    "amount": {
+     "raw": "-$95.00",
+     "parsed": -95.0
+    }
+   },
+   {
+    "description": "New Car Discount",
+    "amount": {
+     "raw": "-$38.00",
+     "parsed": -38.0
+    },
+    "applies_to": "25 CHEVR"
+   },
+   {
+    "description": "Anti-Theft Discount",
+    "amount": {
+     "raw": "-$13.00",
+     "parsed": -13.0
+    },
+    "applies_to": "25 CHEVR"
+   },
+   {
+    "description": "Anti-Lock Brakes Discount",
+    "amount": {
+     "raw": "-$15.00",
+     "parsed": -15.0
+    },
+    "applies_to": "25 CHEVR"
+   },
+   {
+    "description": "Passive Restraint Discount",
+    "amount": {
+     "raw": "-$4.00",
+     "parsed": -4.0
+    },
+    "applies_to": "25 CHEVR"
+   },
+   {
+    "description": "Daytime Running Lights Discount",
+    "amount": {
+     "raw": "-$18.00",
+     "parsed": -18.0
+    },
+    "applies_to": "25 CHEVR"
+   }
+  ]
+ },
+ "billing": {
+  "billing_note": "This is not a bill. You will be billed separately for this transaction."
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "G01NY03",
+   "edition_date": "05-25",
+   "form_title": "General Provisions Section"
+  },
+  {
+   "form_number": "L01NY03",
+   "edition_date": "05-25",
+   "form_title": "Liability Coverage Section"
+  },
+  {
+   "form_number": "M01NY02",
+   "edition_date": "04-18",
+   "form_title": "Medical Payments Coverage Section"
+  },
+  {
+   "form_number": "P01NY02",
+   "edition_date": "04-18",
+   "form_title": "Damage To Your Auto Coverage Section"
+  },
+  {
+   "form_number": "S01NY00",
+   "edition_date": "10-13",
+   "form_title": "Signature Page"
+  },
+  {
+   "form_number": "E1MNY00",
+   "edition_date": "10-13",
+   "form_title": "Extended Transportation Expenses"
+  },
+  {
+   "form_number": "E1ONY01",
+   "edition_date": "07-16",
+   "form_title": "Glass Deductible"
+  },
+  {
+   "form_number": "E1RNY00",
+   "edition_date": "10-13",
+   "form_title": "Roadside Assistance Coverage"
+  },
+  {
+   "form_number": "E2HNY02",
+   "edition_date": "11-23",
+   "form_title": "Rental Vehicle Coverage Endorsement"
+  },
+  {
+   "form_number": "E2JNY02",
+   "edition_date": "11-23",
+   "form_title": "Supplementary Uninsured/Underinsured Motorists Endorsement - New York"
+  },
+  {
+   "form_number": "E2KNY02",
+   "edition_date": "11-23",
+   "form_title": "Mandatory Personal Injury Protection Endorsement (New York)"
+  },
+  {
+   "form_number": "E2MNY00",
+   "edition_date": "10-13",
+   "form_title": "Optional Basic Economic Loss Coverage Endorsement (New York)"
+  },
+  {
+   "form_number": "E2RNY00",
+   "edition_date": "11-23",
+   "form_title": "Amendment of Policy Provisions - New York"
+  },
+  {
+   "form_number": "E3ANY00",
+   "edition_date": "05-25",
+   "form_title": "Supplemental Spousal Liability Coverage"
+  },
+  {
+   "form_number": "PL-50011",
+   "edition_date": "05-21",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "PL-50097",
+   "edition_date": "05-25",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "PL-50014 NY",
+   "edition_date": "05-25",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "PL-51474",
+   "edition_date": "07-24",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "PL-50096",
+   "edition_date": "11-23",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "PL-51546",
+   "edition_date": "05-25",
+   "form_type": {
+    "raw": "Notice",
+    "source": "structural"
+   }
+  }
+ ],
+ "document_type_detail": {
+  "policy_change": {
+   "transaction_effective_date": "July 3, 2026",
+   "net_change_amount": {
+    "raw": "$14",
+    "parsed": -14.0
+   },
+   "transaction_reason_description": "This change decreases the premium by $14 for the remainder of the policy period.",
+   "changes": [
+    {
+     "change_description": "Vehicle use or driver use of the vehicle has changed."
+    },
+    {
+     "change_description": "Driver license information has been updated."
+    }
+   ]
+  }
+ },
+ "auto": {
+  "vehicles": [
+   {
+    "vehicle_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "2025",
+     "parsed": 2025
+    },
+    "make": "CHEVR",
+    "model": "SILVERADO",
+    "vin": "2GC4KREY9S1173568",
+    "vehicle_use": "Pleasure",
+    "annual_mileage": "Not Verified",
+    "class_code": "5374",
+    "garaging_territory": "3360",
+    "premium": "$987",
+    "lienholder": {
+     "name": "GM FINANCIAL",
+     "party_type": {
+      "raw": "Lienholder/Loss Payee",
+      "source": "structural"
+     }
+    },
+    "coverages": [
+     {
+      "coverage_name": "A. Bodily Injury",
+      "limit_amount": "$100,000 each person $300,000 each accident",
+      "premium": "$236"
+     },
+     {
+      "coverage_name": "Supplemental Spousal Liability",
+      "is_included": {
+       "raw": "Incl",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "B. Property Damage",
+      "limit_amount": "$100,000 each accident",
+      "premium": "$105"
+     },
+     {
+      "coverage_name": "C. Medical Payments",
+      "limit_amount": "$5,000 each person",
+      "premium": "$1"
+     },
+     {
+      "coverage_name": "D. Supplementary Uninsured/ Underinsured Motorists Coverage",
+      "limit_amount": "$100,000 each person $300,000 each accident",
+      "form_reference": "E2JNY02 (11-23)",
+      "premium": "$31"
+     },
+     {
+      "coverage_name": "E. Collision",
+      "limit_amount": "Actual Cash Value",
+      "deductible_amount": "$500",
+      "premium": "$281"
+     },
+     {
+      "coverage_name": "F. Comprehensive",
+      "limit_amount": "Actual Cash Value",
+      "deductible_amount": "$500",
+      "premium": "$227"
+     },
+     {
+      "coverage_name": "Glass Deductible",
+      "deductible_amount": "$0",
+      "form_reference": "E1ONY01 (07-16)",
+      "is_included": {
+       "raw": "Incl",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Q. Mandatory Personal Injury Protection",
+      "limit_amount": "$50,000 each person each accident",
+      "form_reference": "E2KNY02 (11-23)",
+      "premium": "$63"
+     },
+     {
+      "coverage_name": "R4. Additional Personal Injury Protection",
+      "limit_amount": "$100,000 each person each accident",
+      "form_reference": "E2KNY02 (11-23)",
+      "premium": "$23"
+     },
+     {
+      "coverage_name": "W. Optional Basic Economic Loss",
+      "limit_amount": "$25,000 each person each accident",
+      "form_reference": "E2MNY00 (10-13)",
+      "premium": "$7"
+     },
+     {
+      "coverage_name": "Extended Transportation Expenses",
+      "limit_amount": "$30 per day/$900 maximum",
+      "form_reference": "E1MNY00 (10-13)",
+      "premium": "$10"
+     },
+     {
+      "coverage_name": "Roadside Assistance Coverage",
+      "limit_amount": "Up to 15 miles per disablement",
+      "form_reference": "E1RNY00 (10-13)",
+      "premium": "$3"
+     }
+    ]
+   }
+  ],
+  "drivers": [
+   {
+    "driver_number": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "name": "ADAM",
+    "date_of_birth": "10-21-1997",
+    "gender": "Male",
+    "marital_status": "Married",
+    "license_status": "Licensed"
+   },
+   {
+    "driver_number": {
+     "raw": "2",
+     "parsed": 2
+    },
+    "name": "MAGGIE",
+    "date_of_birth": "04-14-1998",
+    "gender": "Female",
+    "marital_status": "Married",
+    "license_status": "Licensed"
+   }
+  ],
+  "no_fault_benefits": {
+   "mandatory_pip_limit": "$50,000",
+   "optional_basic_economic_loss_limit": "$25,000",
+   "additional_pip_limit": "$100,000",
+   "aggregate_no_fault_benefits_available": "$175,000",
+   "maximum_monthly_work_loss": "$ 4,000",
+   "other_necessary_expenses_per_day": "$ 50",
+   "death_benefit": "$ 2,000"
+  },
+  "liability_coverages": {
+   "supplemental_spousal_liability": {
+    "raw": "Incl",
+    "parsed": "Yes"
+   },
+   "supplemental_spousal_liability_percentage": {
+    "raw": "4%",
+    "parsed": "4%"
+   }
+  }
+ },
+ "interested_parties": [
+  {
+   "name": "GM FINANCIAL",
+   "party_type": {
+    "raw": "Lienholder/Loss Payee",
+    "source": "structural"
+   },
+   "address": {
+    "line_1": "PO BOX 1617",
+    "city": "MINNEAPOLIS",
+    "state": "MN",
+    "postal_code": "55440-1617"
+   }
+  }
+ ],
+ "additional_fields": [
+  {
+   "section": "Policy Tier",
+   "label": "tier",
+   "value": "0030"
+  },
+  {
+   "section": "Rental Vehicle Coverage Notice",
+   "label": "Rental Vehicle Coverage Premium Charge",
+   "value": {
+    "raw": "NO: X",
+    "source": "structural",
+    "parsed": "No"
+   }
+  }
+ ]
+}

@@ -1,0 +1,554 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "AUTOMOBILE POLICY CONTINUATION DECLARATIONS",
+   "parsed": "Renewal Declarations"
+  },
+  "document_title_as_stated": "AUTOMOBILE POLICY CONTINUATION DECLARATIONS",
+  "issue_date": "August 23, 2026",
+  "print_code": "PL-7782 5-25",
+  "batch_number": "577/0DQD25"
+ },
+ "carrier": {
+  "company_name": "Travelers Property Casualty Company of America",
+  "address": {
+   "line_1": "One Tower Square",
+   "city": "Hartford",
+   "state": "CT",
+   "postal_code": "06183"
+  }
+ },
+ "claim_reporting": {
+  "claims_phone": "1-800-CLAIM33"
+ },
+ "producer": {
+  "agency_name": "STABLE ROCK INS AGENCY",
+  "contact": {
+   "phone": "845-610-5700"
+  },
+  "address": {
+   "line_1": "159 NY 28",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Marguerite Everly & Marguerite Prentice",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "mailing_address": {
+   "line_1": "PO BOX 252",
+   "city": "EAGLE BAY",
+   "state": "NY",
+   "postal_code": "133310252"
+  }
+ },
+ "policy": {
+  "policy_number": "980301339 101 1",
+  "account_id": "980301339",
+  "product_code": "AT1",
+  "effective_date": "September 26, 2026",
+  "expiration_date": "March 26, 2027",
+  "is_renewal": {
+   "raw": "CONTINUATION",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "policy_form_number": "101",
+  "policy_form_edition": "2A"
+ },
+ "premium": {
+  "total_policy_premium": "$934.00",
+  "motor_vehicle_law_enforcement_fee": "$15",
+  "discounts_and_credits": [
+   {
+    "description": "Anti Theft",
+    "amount": {
+     "raw": "- $15.00",
+     "parsed": -15.0
+    },
+    "applies_to": "05 SAAB 11 JEEP 20 JEEP"
+   },
+   {
+    "description": "Anti Lock Brake",
+    "amount": {
+     "raw": "- $30.00",
+     "parsed": -30.0
+    },
+    "applies_to": "05 SAAB 11 JEEP 20 JEEP"
+   },
+   {
+    "description": "Passive Restraint",
+    "amount": {
+     "raw": "- $40.00",
+     "parsed": -40.0
+    },
+    "applies_to": "05 SAAB 11 JEEP 20 JEEP"
+   },
+   {
+    "description": "Multiple Cars",
+    "amount": {
+     "raw": "- $174.00",
+     "parsed": -174.0
+    },
+    "applies_to": "Policy"
+   },
+   {
+    "description": "Daytime Running Lights",
+    "amount": {
+     "raw": "- $5.00",
+     "parsed": -5.0
+    },
+    "applies_to": "05 SAAB"
+   }
+  ]
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "A31045",
+   "form_title": "Supplementary Uninsured/Underinsured Motorists Endorsement New York"
+  },
+  {
+   "form_number": "A31121",
+   "form_title": "Coverage W - Optional Basic Economic Loss Coverage Endorsement - New York"
+  },
+  {
+   "form_number": "24884",
+   "form_title": "Mandatory Personal Injury Protection Endorsement (New York)"
+  },
+  {
+   "form_number": "29435",
+   "form_title": "Waiver of Deductible - Breakage of Glass"
+  },
+  {
+   "form_number": "33125",
+   "form_title": "Amendment Endorsement - New York"
+  },
+  {
+   "form_number": "44020",
+   "form_title": "Special Amendment of Physical Damage Insurance - New York"
+  },
+  {
+   "form_number": "44033",
+   "form_title": "Rental Vehicle Coverage Endorsement - New York"
+  },
+  {
+   "form_number": "A31450",
+   "form_title": "Roadside Assistance Coverage - New York"
+  },
+  {
+   "form_number": "A31180",
+   "form_title": "Supplemental Spousal Liability Coverage"
+  }
+ ],
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_effective_date": "September 26, 2026",
+   "renewal_expiration_date": "March 26, 2027",
+   "renewal_premium": "$934.00",
+   "offer_issue_date": "August 23, 2026"
+  }
+ },
+ "auto": {
+  "vehicles": [
+   {
+    "vehicle_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "unit_description": "05 SAAB 9-3 ARC",
+    "year": {
+     "raw": "2005",
+     "parsed": 2005
+    },
+    "make": "SAAB",
+    "model": "9-3 ARC",
+    "vin": "YS3FD79Y756007623",
+    "vehicle_use": "Pleasure",
+    "class_code": "4574",
+    "garaging_territory": {
+     "raw": "INLET NY",
+     "parsed": "INLET NY"
+    },
+    "premium": "$211",
+    "coverages": [
+     {
+      "coverage_name": "A - Bodily Injury",
+      "limit_amount": "$250,000 each person $500,000 each accident",
+      "premium": "$ 80"
+     },
+     {
+      "coverage_name": "Supplemental Spousal Liability",
+      "is_included": {
+       "raw": "Incl*",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "B - Property Damage",
+      "limit_amount": "$100,000 each accident",
+      "premium": {
+       "raw": "54",
+       "parsed": 54.0
+      }
+     },
+     {
+      "coverage_name": "C - Medical Payments",
+      "limit_amount": "$10,000 each person",
+      "premium": {
+       "raw": "1",
+       "parsed": 1.0
+      }
+     },
+     {
+      "coverage_name": "D - Supplementary Uninsured/ Underinsured Motorists",
+      "limit_amount": "$250,000 each person $500,000 each accident",
+      "form_reference": "A31045",
+      "premium": {
+       "raw": "30",
+       "parsed": 30.0
+      }
+     },
+     {
+      "coverage_name": "Q - Mandatory Personal Injury Protection",
+      "limit_amount": "$50,000 each person each accident",
+      "form_reference": "24884",
+      "premium": {
+       "raw": "30",
+       "parsed": 30.0
+      }
+     },
+     {
+      "coverage_name": "R3 - Additional Personal Injury Protection",
+      "limit_amount": "$50,000 each person each accident",
+      "form_reference": "24884",
+      "premium": {
+       "raw": "11",
+       "parsed": 11.0
+      }
+     },
+     {
+      "coverage_name": "W - Optional Basic Economical Loss",
+      "limit_amount": "$25,000 each person each accident",
+      "form_reference": "A31121",
+      "premium": {
+       "raw": "5",
+       "parsed": 5.0
+      }
+     }
+    ]
+   },
+   {
+    "vehicle_number": {
+     "raw": "2",
+     "source": "structural",
+     "parsed": 2
+    },
+    "unit_description": "11 JEEP WRANGLER U",
+    "year": {
+     "raw": "2011",
+     "parsed": 2011
+    },
+    "make": "JEEP",
+    "model": "WRANGLER U",
+    "vin": "1J4BA5H10BL587070",
+    "vehicle_use": "Pleasure",
+    "class_code": "9721",
+    "garaging_territory": {
+     "raw": "INLET NY",
+     "parsed": "INLET NY"
+    },
+    "premium": "$248",
+    "coverages": [
+     {
+      "coverage_name": "A - Bodily Injury",
+      "limit_amount": "$250,000 each person $500,000 each accident",
+      "premium": "$ 96"
+     },
+     {
+      "coverage_name": "Supplemental Spousal Liability",
+      "is_included": {
+       "raw": "Incl*",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "B - Property Damage",
+      "limit_amount": "$100,000 each accident",
+      "premium": {
+       "raw": "67",
+       "parsed": 67.0
+      }
+     },
+     {
+      "coverage_name": "C - Medical Payments",
+      "limit_amount": "$10,000 each person",
+      "premium": {
+       "raw": "2",
+       "parsed": 2.0
+      }
+     },
+     {
+      "coverage_name": "D - Supplementary Uninsured/ Underinsured Motorists",
+      "limit_amount": "$250,000 each person $500,000 each accident",
+      "form_reference": "A31045",
+      "premium": {
+       "raw": "30",
+       "parsed": 30.0
+      }
+     },
+     {
+      "coverage_name": "Q - Mandatory Personal Injury Protection",
+      "limit_amount": "$50,000 each person each accident",
+      "form_reference": "24884",
+      "premium": {
+       "raw": "37",
+       "parsed": 37.0
+      }
+     },
+     {
+      "coverage_name": "R3 - Additional Personal Injury Protection",
+      "limit_amount": "$50,000 each person each accident",
+      "form_reference": "24884",
+      "premium": {
+       "raw": "11",
+       "parsed": 11.0
+      }
+     },
+     {
+      "coverage_name": "W - Optional Basic Economical Loss",
+      "limit_amount": "$25,000 each person each accident",
+      "form_reference": "A31121",
+      "premium": {
+       "raw": "5",
+       "parsed": 5.0
+      }
+     }
+    ]
+   },
+   {
+    "vehicle_number": {
+     "raw": "3",
+     "source": "structural",
+     "parsed": 3
+    },
+    "unit_description": "20 JEEP GLADIATOR",
+    "year": {
+     "raw": "2020",
+     "parsed": 2020
+    },
+    "make": "JEEP",
+    "model": "GLADIATOR",
+    "vin": "1C6HJTFG4LL126247",
+    "vehicle_use": "Pleasure",
+    "class_code": "3401",
+    "garaging_territory": {
+     "raw": "INLET NY",
+     "parsed": "INLET NY"
+    },
+    "premium": "$460",
+    "coverages": [
+     {
+      "coverage_name": "A - Bodily Injury",
+      "limit_amount": "$250,000 each person $500,000 each accident",
+      "premium": "$ 97"
+     },
+     {
+      "coverage_name": "Supplemental Spousal Liability",
+      "is_included": {
+       "raw": "Incl*",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "B - Property Damage",
+      "limit_amount": "$100,000 each accident",
+      "premium": {
+       "raw": "67",
+       "parsed": 67.0
+      }
+     },
+     {
+      "coverage_name": "C - Medical Payments",
+      "limit_amount": "$10,000 each person",
+      "premium": {
+       "raw": "2",
+       "parsed": 2.0
+      }
+     },
+     {
+      "coverage_name": "D - Supplementary Uninsured/ Underinsured Motorists",
+      "limit_amount": "$250,000 each person $500,000 each accident",
+      "form_reference": "A31045",
+      "premium": {
+       "raw": "30",
+       "parsed": 30.0
+      }
+     },
+     {
+      "coverage_name": "Q - Mandatory Personal Injury Protection",
+      "limit_amount": "$50,000 each person each accident",
+      "form_reference": "24884",
+      "premium": {
+       "raw": "26",
+       "parsed": 26.0
+      }
+     },
+     {
+      "coverage_name": "R3 - Additional Personal Injury Protection",
+      "limit_amount": "$50,000 each person each accident",
+      "form_reference": "24884",
+      "premium": {
+       "raw": "11",
+       "parsed": 11.0
+      }
+     },
+     {
+      "coverage_name": "W - Optional Basic Economical Loss",
+      "limit_amount": "$25,000 each person each accident",
+      "form_reference": "A31121",
+      "premium": {
+       "raw": "5",
+       "parsed": 5.0
+      }
+     },
+     {
+      "coverage_name": "E - Collision",
+      "limit_amount": "Actual Cash Value",
+      "deductible_amount": "$500",
+      "premium": {
+       "raw": "136",
+       "parsed": 136.0
+      }
+     },
+     {
+      "coverage_name": "F - Comprehensive (Other than Collision)",
+      "limit_amount": "Actual Cash Value",
+      "deductible_amount": "$500",
+      "premium": {
+       "raw": "81",
+       "parsed": 81.0
+      }
+     },
+     {
+      "coverage_name": "No deductible for glass",
+      "form_reference": "29435",
+      "is_included": {
+       "raw": "Incl*",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "G - Rental Reimbursement",
+      "limit_amount": "$15 per day/$450 maximum",
+      "premium": {
+       "raw": "5",
+       "parsed": 5.0
+      }
+     },
+     {
+      "coverage_name": "Roadside Assistance Coverage",
+      "limit_amount": "15 miles",
+      "form_reference": "A31450",
+      "is_included": {
+       "raw": "Incl*",
+       "parsed": "Yes"
+      }
+     }
+    ]
+   }
+  ],
+  "drivers": [
+   {
+    "driver_number": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "name": "ROBERT JR",
+    "date_of_birth": {
+     "raw": "12-26-53",
+     "parsed": "12/26/1953"
+    },
+    "marital_status": "Married"
+   },
+   {
+    "driver_number": {
+     "raw": "2",
+     "parsed": 2
+    },
+    "name": "KATHERINE",
+    "date_of_birth": {
+     "raw": "10-21-62",
+     "parsed": "10/21/1962"
+    },
+    "marital_status": "Married"
+   },
+   {
+    "driver_number": {
+     "raw": "3",
+     "parsed": 3
+    },
+    "name": "RYAN A",
+    "date_of_birth": {
+     "raw": "08-18-93",
+     "parsed": "08/18/1993"
+    },
+    "marital_status": "Single"
+   },
+   {
+    "driver_number": {
+     "raw": "4",
+     "parsed": 4
+    },
+    "name": "MARGARET",
+    "date_of_birth": {
+     "raw": "06-30-98",
+     "parsed": "06/30/1998"
+    },
+    "marital_status": "Single"
+   }
+  ],
+  "liability_coverages": {
+   "bodily_injury_per_person_limit": {
+    "raw": "$250,000 each person",
+    "parsed": 250000.0
+   },
+   "bodily_injury_per_accident_limit": {
+    "raw": "$500,000 each accident",
+    "parsed": 500000.0
+   },
+   "property_damage_limit": {
+    "raw": "$100,000 each accident",
+    "parsed": 100000.0
+   },
+   "medical_payments_limit": {
+    "raw": "$10,000 each person",
+    "parsed": 10000.0
+   },
+   "supplemental_spousal_liability": {
+    "raw": "Incl*",
+    "parsed": "Yes"
+   }
+  },
+  "no_fault_benefits": {
+   "mandatory_pip_limit": "$ 50,000",
+   "optional_basic_economic_loss_limit": "$ 25,000",
+   "additional_pip_limit": "$ 50,000",
+   "aggregate_no_fault_benefits_available": "$125,000",
+   "maximum_monthly_work_loss": "$ 3,000",
+   "other_necessary_expenses_per_day": "$ 50",
+   "death_benefit": "$ 2,000"
+  }
+ },
+ "additional_fields": [
+  {
+   "section": "Rating Tier",
+   "label": "Rating Tier",
+   "value": "LVL01"
+  }
+ ]
+}
