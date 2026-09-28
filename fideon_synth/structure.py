@@ -58,8 +58,12 @@ DOC_TYPE = {"declaration": "Declaration", "policy history": "Policy History",
 VALUE = re.compile(r"^-?\(?\$?\d[\d,]*(?:\.\d+)?\)?\*?$|^(?:incl(?:uded)?|excluded|n/?a)\W*$", re.I)
 INCLUDED = re.compile(r"^incl", re.I)
 COVERAGE_HEAD = {"name": {"coverage", "coverages", "endorsement", "endorsements"},
-                 "limit": {"limit", "limits", "amount"},
-                 "deductible": {"deductible", "deductibles"}, "premium": {"premium", "premiums"}}
+                 # a header cell joining two words with a slash ("Limit/Deductible")
+                 # loses the slash to the same punctuation strip that reads
+                 # "Limit" alone, coming out as one unrecognised run of letters
+                 "limit": {"limit", "limits", "amount", "limitdeductible"},
+                 "deductible": {"deductible", "deductibles", "limitdeductible"},
+                 "premium": {"premium", "premiums"}}
 #: a unit's own description line: "2024 Viaggio by Misty Harbor 20 Lago Series"
 UNIT_LINE = re.compile(r"^((?:19|20)\d\d)\s+([A-Za-z].*?)(\s+\(continued\))?$", re.I)
 #: a form reference: "BY-403 CW (11-23)", "PL-50776 NY (11-23)"
@@ -1633,8 +1637,8 @@ class Reader:
                         if d["applies_to"]["raw"] == old_name:
                             d["applies_to"] = fv(last[key]["raw"])
                     continue
-                if pending and not pending.get("item") and abs(x0 - pending["x"]) < 3 \
-                        and not pending.get("desc"):
+                if pending and not pending.get("item") and not pending.get("used") \
+                        and abs(x0 - pending["x"]) < 3 and not pending.get("desc"):
                     pending["name"] += " " + name     # a name wrapped onto a second line
                     continue
                 pending = {"name": name, "x": x0}

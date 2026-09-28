@@ -259,7 +259,7 @@ KIND_FITS = {
     # over a producer's contact)
     "person": re.compile(r"^(?!.*(?:agency|company|carrier|insurer|group)_)"
                          r".*(?:name|insured|representative|designee|agent|holder|contact|driver|operator|signator)"),
-    "company": re.compile(r"name|agency|company|carrier|insurer|lienholder|payee|party|designee"),
+    "company": re.compile(r"name|agency|company|carrier|insurer|lienholder|payee|party|designee|channel"),
     "street": re.compile(r"line_|address|street"), "pobox": re.compile(r"line_|address"),
     "cityline": re.compile(r"city|address"), "place": re.compile(r"city|town|address|district"),
     "county": re.compile(r"county"), "zip": re.compile(r"postal|zip"),
@@ -1395,6 +1395,13 @@ def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text, cel
                         not any(e["name"]["raw"] == f.new for e in extra):
                     extra.append({"name": fv(f.new), "entity_type": derived(
                         "Individual" if f.kind == "person" else "Organization", f.new)})
+                continue
+            # the agency has no list of its own to grow the way an insured's
+            # does; its own name printed again, with no caption of its own
+            # (a summary box repeating "ALLIANCE AGENCY" under itself), is the
+            # same party restated, not a second one to report as unmapped
+            if base == "producer" and \
+                    _company_key(f.new) == _company_key(gold["producer"][name_path.split(".")[-1]]["raw"]):
                 continue
             unmapped.append({"kind": f.kind, "label": f.label.strip(), "value": f.new,
                              "page": f.cell.page + 1})
