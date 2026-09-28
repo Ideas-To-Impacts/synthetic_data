@@ -1,0 +1,476 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "Seasonal Homeowners Policy Declaration",
+   "parsed": "Renewal Declarations"
+  },
+  "document_title_as_stated": "Seasonal Homeowners Policy Declaration",
+  "transaction_type": "Renewal",
+  "copy_type": "Agent Copy",
+  "print_code": "NCIC 07/14",
+  "print_date": "01/14/2026"
+ },
+ "carrier": {
+  "company_name": "North Country Insurance Company",
+  "address": {
+   "line_1": "21170 NYS Route 232",
+   "line_2": "PO Box 6540",
+   "city": "Watertown",
+   "state": "NY",
+   "postal_code": "13601"
+  }
+ },
+ "producer": {
+  "agency_name": "PATRIOTIC INSURANCE GROUP",
+  "producer_code": "848",
+  "contact": {
+   "phone": "(315)357-5901",
+   "email": "agency@patrioticinsurancegroup.com"
+  },
+  "address": {
+   "line_1": "PO BOX 329",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Rafael Radcliffe",
+  "mailing_address": {
+   "line_1": "17 WEST 68TH STREET, APT. 4",
+   "city": "NEW YORK",
+   "state": "NY",
+   "postal_code": "10023"
+  },
+  "additional_named_insureds": [
+   {
+    "name": "Marguerite Keswick"
+   }
+  ]
+ },
+ "policy": {
+  "policy_number": "HS001300",
+  "original_inception_date": "02/13/2026",
+  "expiration_date": "02/13/2029",
+  "expiration_time": "12:01 A.M.",
+  "effective_date": "02/13/2026",
+  "is_renewal": {
+   "raw": "Renewal",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "is_assessable": {
+   "raw": "THIS NON-ASSESSABLE POLICY IS ISSUED ON THE CO-OPERATIVE PLAN",
+   "parsed": "No"
+  },
+  "plan_type": "THIS NON-ASSESSABLE POLICY IS ISSUED ON THE CO-OPERATIVE PLAN"
+ },
+ "premium": {
+  "basic_premium": "$5,144.00",
+  "forms_and_endorsements_premium": "$1,349.00",
+  "total_policy_premium": "$6,355.00"
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "FMD-1",
+   "edition_date": "0808",
+   "form_title": "Important Flood Insurance Notice",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-14",
+   "edition_date": "0699",
+   "form_title": "Punitive Damages Exclusion",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-19",
+   "edition_date": "1006",
+   "form_title": "Policy Endorsement",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-20",
+   "edition_date": "0699",
+   "form_title": "General Policy Provisions",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-340",
+   "edition_date": "0500",
+   "form_title": "Exclusion (Farm Animals)",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-346",
+   "edition_date": "0806",
+   "form_title": "Mech/Elec/Pressure Sys",
+   "premium": "$20.00"
+  },
+  {
+   "form_number": "ML-373A",
+   "edition_date": "0123",
+   "form_title": "Exclusion of Canine Related",
+   "premium": {
+    "raw": "($1.00)",
+    "parsed": -1.0
+   }
+  },
+  {
+   "form_number": "ML-430",
+   "edition_date": "0699",
+   "form_title": "Renewal Endorsement",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-52A",
+   "edition_date": "0699",
+   "form_title": "Trampoline Exclusion",
+   "premium": {
+    "raw": "($2.00)",
+    "parsed": -2.0
+   }
+  },
+  {
+   "form_number": "ML-78",
+   "edition_date": "0803",
+   "form_title": "Sudden and Accidental Pollution",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-84",
+   "edition_date": "0807",
+   "form_title": "New York Amendatory",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-9",
+   "edition_date": "0187",
+   "form_title": "Liability and Medical Payments",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-99",
+   "edition_date": "0699",
+   "form_title": "Calendar Date Exclusion",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NC-ML-90",
+   "edition_date": "1106",
+   "form_title": "Clarification Endorsement",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NY-STAT-1",
+   "edition_date": "1108",
+   "form_title": "NY Statutory Endorsement",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-41",
+   "edition_date": "0699",
+   "form_title": "Additional Insured",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-5",
+   "edition_date": "0699",
+   "form_title": "Superior Cause of Loss Form",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   },
+   "applies_to": "Loc 1/Bldg 1"
+  },
+  {
+   "form_number": "ML-342",
+   "edition_date": "0714",
+   "form_title": "Underground Utility Line",
+   "premium": "$30.00",
+   "applies_to": "Loc 1/Bldg 1",
+   "limit_amount": "$10,000",
+   "deductible_amount": "$500"
+  },
+  {
+   "form_number": "NC-AE-9",
+   "edition_date": "0104",
+   "form_title": "Amendatory Endorsement",
+   "premium": "$27.00",
+   "applies_to": "Loc 1/Bldg 1"
+  },
+  {
+   "form_number": "NC-ML-184",
+   "edition_date": "0297",
+   "form_title": "Inflation Guard",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   },
+   "applies_to": "Loc 1/Bldg 1"
+  },
+  {
+   "form_number": "ML-360",
+   "edition_date": "0699",
+   "form_title": "Ordinance and Law",
+   "premium": "$690.00",
+   "applies_to": "Loc 1/Bldg 1"
+  },
+  {
+   "form_number": "ML-48",
+   "edition_date": "0699",
+   "form_title": "Private Structures - Increased",
+   "premium": "$840.00",
+   "applies_to": "Loc 1/Bldg 1",
+   "limit_amount": "$280,000"
+  },
+  {
+   "form_number": "ML-48",
+   "edition_date": "0699",
+   "form_title": "Private Structures - Increased",
+   "premium": "$75.00",
+   "applies_to": "Loc 1/Bldg 1",
+   "limit_amount": "$25,000"
+  },
+  {
+   "form_number": "ML-216-NCIC",
+   "edition_date": "1117",
+   "form_title": "Protective Device Credit",
+   "premium": {
+    "raw": "($330.00)",
+    "parsed": -330.0
+   },
+   "applies_to": "Loc 1/Bldg 1"
+  },
+  {
+   "form_number": "ML-305A",
+   "edition_date": "0699",
+   "form_title": "Refrigerated Food Products",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   },
+   "applies_to": "Loc 1/Bldg 1",
+   "limit_amount": "$500"
+  },
+  {
+   "form_number": "ML-416NCIC",
+   "edition_date": "1017",
+   "form_title": "Seasonal/Secondary",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   },
+   "applies_to": "Loc 1/Bldg 1"
+  }
+ ],
+ "interested_parties": [
+  {
+   "name": "125 WILLOW BROOK ROAD REALTY TRUST",
+   "applies_to": "Policy",
+   "description_of_interest": "Owner By Deed (ML-41)",
+   "is_payor": {
+    "raw": "No",
+    "parsed": "No"
+   },
+   "address": {
+    "line_1": "74 HILLCREST PARKWAY",
+    "city": "WINCHESTER",
+    "state": "MA",
+    "postal_code": "01890"
+   }
+  }
+ ],
+ "homeowners": {
+  "scheduled_locations": [
+   {
+    "location_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "building_number": {
+     "raw": "Loc 1/Bldg 1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "description": "Second home",
+    "protection_class": "Semi-Protected",
+    "territorial_zone": "Zone 1, SubZone 5",
+    "construction_type": "Frame",
+    "year_built": {
+     "raw": "1980",
+     "parsed": 1980
+    },
+    "occupancy_type": "Owner",
+    "usage_type": "Seasonal",
+    "number_of_families": {
+     "raw": "1 Family",
+     "parsed": 1
+    },
+    "alarm_type": "Fire Alarm: Local",
+    "sprinklered": {
+     "raw": "Sprinklers: None",
+     "parsed": "No"
+    },
+    "deductibles": {
+     "all_other_perils_deductible": "$1,000"
+    },
+    "section_i_property_coverages": {
+     "coverage_a_dwelling_limit": "$1,500,000",
+     "coverage_b_other_structures_limit": "$150,000",
+     "coverage_c_personal_property_limit": "$750,000",
+     "coverage_d_loss_of_use_limit": "$300,000",
+     "coverage_a_dwelling_premium": "$5,379.00",
+     "loss_settlement_basis": "Replacement Cost"
+    },
+    "applicable_forms": [
+     {
+      "form_title": "Cov A - Dwelling",
+      "limit_amount": "$1,500,000",
+      "premium": "$5,379.00"
+     },
+     {
+      "form_title": "Cov B - Other Structures",
+      "limit_amount": "$150,000",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "form_title": "Cov C - Personal Property",
+      "limit_amount": "$750,000",
+      "premium": {
+       "raw": "($300.00)",
+       "parsed": -300.0
+      }
+     },
+     {
+      "form_title": "Cov D - Addl Living Exp/Loss of Rents",
+      "limit_amount": "$300,000",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "form_title": "Cov L - Personal Liability",
+      "limit_amount": "$500,000 Occ",
+      "premium": "$38.00"
+     },
+     {
+      "form_title": "Cov M - Medical Payments",
+      "limit_amount": "$5,000 Per/$25,000 Acc",
+      "premium": "$27.00"
+     }
+    ]
+   }
+  ],
+  "section_i_property_coverages": {
+   "coverage_a_dwelling_limit": "$1,500,000",
+   "coverage_b_other_structures_limit": "$150,000",
+   "coverage_c_personal_property_limit": "$750,000",
+   "coverage_d_loss_of_use_limit": "$300,000",
+   "coverage_a_dwelling_premium": "$5,379.00",
+   "loss_settlement_basis": "Replacement Cost"
+  },
+  "section_ii_liability_coverages": {
+   "coverage_e_personal_liability_limit": "$500,000 Occ",
+   "coverage_e_personal_liability_premium": "$38.00",
+   "coverage_f_medical_payments_limit": "$5,000 Per/$25,000 Acc",
+   "coverage_f_medical_payments_premium": "$27.00"
+  },
+  "discounts": [
+   {
+    "discount_name": "Non-Smoker Credit",
+    "applies_to": "Loc 1/Bldg 1",
+    "amount": {
+     "raw": "($138.00)",
+     "parsed": -138.0
+    }
+   },
+   {
+    "discount_name": "Deductible Credit",
+    "applies_to": "Loc 1/Bldg 1",
+    "is_applied": {
+     "raw": "Included",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "discount_name": "Seasonal Credit",
+    "applies_to": "Loc 1/Bldg 1",
+    "is_applied": {
+     "raw": "Included",
+     "parsed": "Yes"
+    }
+   }
+  ],
+  "deductibles": {
+   "all_other_perils_deductible": "$1,000"
+  }
+ },
+ "locations": [
+  {
+   "location_number": {
+    "raw": "1",
+    "source": "structural",
+    "parsed": 1
+   },
+   "address": {
+    "line_1": "125 Willow Brook Road",
+    "city": "Inlet",
+    "state": "NY",
+    "postal_code": "13360",
+    "county": "00043-Herkimer"
+   }
+  }
+ ],
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_expiration_date": "02/13/2029",
+   "renewal_premium": "$6,355.00",
+   "renewal_effective_date": "02/13/2026"
+  }
+ }
+}

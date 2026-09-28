@@ -1,0 +1,486 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "Policy Summary",
+   "parsed": "Policy Summary"
+  },
+  "document_title_as_stated": "Policy Summary",
+  "line_of_business_as_stated": "Homeowners Policy",
+  "issue_date": "August 17, 2026",
+  "print_code": "PL-50355 PA (05-17)",
+  "batch_number": "577/0DQD25"
+ },
+ "carrier": {
+  "company_name": "TRAVELERS PERSONAL INSURANCE COMPANY",
+  "group_name": "The Travelers Indemnity Company",
+  "address": {
+   "line_1": "One Tower Square",
+   "city": "Hartford",
+   "state": "CT",
+   "postal_code": "06183"
+  }
+ },
+ "claim_reporting": {
+  "claims_phone": "1.800.252.4633"
+ },
+ "producer": {
+  "agency_name": "STABLE ROCK INS AGENCY",
+  "contact": {
+   "phone": "1.845.610.5700",
+   "fax": "(845) 610-5705"
+  },
+  "address": {
+   "line_1": "159 NY 28",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "KYLE HARDY",
+  "additional_named_insureds": [
+   {
+    "name": "ELAINE THIBAULT-HARDY"
+   }
+  ],
+  "contact": {
+   "email": "customer000@example.com"
+  },
+  "mailing_address": {
+   "line_1": "3844 VICTORS WAY",
+   "city": "EASTON",
+   "state": "PA",
+   "postal_code": "18045-9707"
+  }
+ },
+ "policy": {
+  "policy_number": "619162433 633 1",
+  "effective_date": "August 28, 2026",
+  "expiration_date": "August 28, 2027",
+  "effective_time": "12:01 A.M.",
+  "expiration_time": "12:01 A.M.",
+  "time_zone": "STANDARD TIME",
+  "policy_period_location_basis": "at the residence premises",
+  "policy_form_number": {
+   "raw": "Form: 633",
+   "parsed": "633"
+  },
+  "program_name": "Travelers Protect"
+ },
+ "premium": {
+  "total_policy_premium": "$1,132.00",
+  "discounts_and_credits": [
+   {
+    "description": "Multi-Policy",
+    "is_applied": {
+     "raw": "Multi-Policy",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Early Quote",
+    "is_applied": {
+     "raw": "Early Quote",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Loss Free",
+    "is_applied": {
+     "raw": "Loss Free",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Good Payer",
+    "is_applied": {
+     "raw": "Good Payer",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Fire Protective Device",
+    "is_applied": {
+     "raw": "Fire Protective Device",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   }
+  ]
+ },
+ "billing": {
+  "billing_note": "This is not a bill. The mortgagee will be billed separately for this policy.",
+  "bill_to_party": "SHELLPOINT MORTGAGE SERVICING",
+  "amount_due": "$1,132.00"
+ },
+ "forms_and_endorsements": [
+  {
+   "form_title": "Policy Quick Reference",
+   "form_number": "HQ-T77 CW",
+   "edition_date": "05-17"
+  },
+  {
+   "form_title": "Agreement, Definitions & Policy Conditions",
+   "form_number": "HQ-D77 PA",
+   "edition_date": "05-17"
+  },
+  {
+   "form_title": "Property Coverage Section",
+   "form_number": "HQ-P03 PA",
+   "edition_date": "05-17"
+  },
+  {
+   "form_title": "Liability Coverage Section",
+   "form_number": "HQ-L77 PA",
+   "edition_date": "05-17"
+  },
+  {
+   "form_title": "Signature Page",
+   "form_number": "HQ-S99 CW",
+   "edition_date": "05-17"
+  },
+  {
+   "form_title": "Special Provisions - Pennsylvania",
+   "form_number": "HQ-300 PA",
+   "edition_date": "01-22"
+  },
+  {
+   "form_title": "Additional Benefits",
+   "form_number": "HQ-860 PA",
+   "edition_date": "08-18"
+  },
+  {
+   "form_title": "Special Personal Property Coverage",
+   "form_number": "HQ-015 PA",
+   "edition_date": "02-21",
+   "form_type": {
+    "raw": "Optional Coverage",
+    "source": "structural"
+   }
+  },
+  {
+   "form_title": "Personal Injury Coverage",
+   "form_number": "HQ-082 PA",
+   "edition_date": "02-19",
+   "form_type": {
+    "raw": "Optional Coverage",
+    "source": "structural"
+   }
+  },
+  {
+   "form_title": "Personal Property Replacement Cost Loss Settlement",
+   "form_number": "HQ-290 CW",
+   "edition_date": "02-21",
+   "form_type": {
+    "raw": "Optional Coverage",
+    "source": "structural"
+   }
+  },
+  {
+   "form_title": "Windstorm or Hail Deductible",
+   "form_number": "HQ-313 CW",
+   "edition_date": "05-17",
+   "form_type": {
+    "raw": "Optional Coverage",
+    "source": "structural"
+   }
+  },
+  {
+   "form_title": "Equipment Breakdown Coverage",
+   "form_number": "HQ-855 CW",
+   "edition_date": "05-17",
+   "form_type": {
+    "raw": "Optional Coverage",
+    "source": "structural"
+   }
+  }
+ ],
+ "homeowners": {
+  "mortgagees": [
+   {
+    "name": "SHELLPOINT MORTGAGE SERVICING",
+    "clause_type": "ISAOA/ATIMA",
+    "rank": {
+     "raw": "1.",
+     "parsed": 1
+    },
+    "party_type": {
+     "raw": "Mortgagee",
+     "source": "structural"
+    },
+    "loan_number": {
+     "raw": "LOAN NUMBER: 207172156",
+     "parsed": "207172156"
+    },
+    "is_payor": {
+     "raw": "The mortgagee will be billed separately for this policy.",
+     "source": "structural",
+     "parsed": "Yes"
+    },
+    "address": {
+     "line_1": "PO BOX 7050",
+     "city": "TROY",
+     "state": "MI",
+     "postal_code": "48007-7050"
+    }
+   }
+  ],
+  "section_i_property_coverages": {
+   "coverage_a_dwelling_limit": "$584,000",
+   "coverage_b_other_structures_limit": "$58,400",
+   "coverage_c_personal_property_limit": "$292,000",
+   "coverage_d_loss_of_use_limit": "$116,800",
+   "ordinance_or_law_limit": "$146,000",
+   "ordinance_or_law_percentage": {
+    "raw": "25%",
+    "parsed": "25%"
+   },
+   "credit_card_forgery_counterfeit_money_limit": "$1,000",
+   "loss_assessment_limit": "$1,000",
+   "additional_coverages": [
+    {
+     "coverage_name": "Debris Removal (Additional % of damaged covered property limit)",
+     "notes": "5%"
+    },
+    {
+     "coverage_name": "Tree Removal",
+     "limit_amount": "Per Tree $500 Per Loss $1,000"
+    },
+    {
+     "coverage_name": "Trees, Shrubs and Other Plants",
+     "limit_amount": "Per Tree $500 Per Loss $29,200",
+     "notes": "(5% of Coverage A - Dwelling Limit)"
+    },
+    {
+     "coverage_name": "Fire Department Service Charge",
+     "limit_amount": "$500"
+    },
+    {
+     "coverage_name": "Credit Card, Fund Transfer, Forgery and Counterfeit Money",
+     "limit_amount": "$1,000"
+    },
+    {
+     "coverage_name": "Loss Assessment",
+     "limit_amount": "$1,000"
+    },
+    {
+     "coverage_name": "Landlord Furnishings",
+     "limit_amount": "$2,500"
+    },
+    {
+     "coverage_name": "Ordinance or Law (25% of Coverage A - Dwelling Limit)",
+     "limit_amount": "$146,000"
+    },
+    {
+     "coverage_name": "Personal Records and Data Replacement",
+     "limit_amount": "$1,500"
+    },
+    {
+     "coverage_name": "Limited Fungi or Other Microbes Remediation",
+     "limit_amount": "$5,000"
+    },
+    {
+     "coverage_name": "a. Money, bank notes, coins, stored value cards",
+     "limit_amount": "$250",
+     "coverage_description": "Personal Property – Special Limits of Liability"
+    },
+    {
+     "coverage_name": "b. Securities, accounts, passports, tickets, stamps",
+     "limit_amount": "$1,500",
+     "coverage_description": "Personal Property – Special Limits of Liability"
+    },
+    {
+     "coverage_name": "c. Comic books and trading cards",
+     "limit_amount": "$1,000",
+     "coverage_description": "Personal Property – Special Limits of Liability"
+    },
+    {
+     "coverage_name": "d. Collectibles, figurines, glassware, marble, porcelains, statuary",
+     "limit_amount": "$1,000",
+     "coverage_description": "Personal Property – Special Limits of Liability"
+    },
+    {
+     "coverage_name": "e. Theft, misplacing or losing of jewelry, watches, precious stones",
+     "limit_amount": "$1,500",
+     "coverage_description": "Personal Property – Special Limits of Liability"
+    },
+    {
+     "coverage_name": "f. Theft, misplacing or losing of furs",
+     "limit_amount": "$1,500",
+     "coverage_description": "Personal Property – Special Limits of Liability"
+    },
+    {
+     "coverage_name": "g. Theft, misplacing or losing of silverware, goldware, pewterware",
+     "limit_amount": "$1,500",
+     "coverage_description": "Personal Property – Special Limits of Liability"
+    },
+    {
+     "coverage_name": "h. Theft, misplacing or losing of firearms and related equipment",
+     "limit_amount": "$1,500",
+     "coverage_description": "Personal Property – Special Limits of Liability"
+    },
+    {
+     "coverage_name": "i. Theft of tools and their accessories",
+     "limit_amount": "$1,500",
+     "coverage_description": "Personal Property – Special Limits of Liability"
+    },
+    {
+     "coverage_name": "j. Theft of rugs, tapestries and wall hangings",
+     "limit_amount": "$1,500",
+     "coverage_description": "Personal Property – Special Limits of Liability"
+    },
+    {
+     "coverage_name": "k. Business property on the residence premises",
+     "limit_amount": "$3,000",
+     "coverage_description": "Personal Property – Special Limits of Liability"
+    },
+    {
+     "coverage_name": "l. Business property away from the residence premises",
+     "limit_amount": "$1,500",
+     "coverage_description": "Personal Property – Special Limits of Liability"
+    },
+    {
+     "coverage_name": "m. Trailers or semitrailers not used with watercraft",
+     "limit_amount": "$1,500",
+     "coverage_description": "Personal Property – Special Limits of Liability"
+    },
+    {
+     "coverage_name": "n. Motor vehicle parts or equipment not attached to motor vehicle",
+     "limit_amount": "$500",
+     "coverage_description": "Personal Property – Special Limits of Liability"
+    },
+    {
+     "coverage_name": "o. Electronic apparatus while in or upon a motor vehicle or watercraft",
+     "limit_amount": "$1,500",
+     "coverage_description": "Personal Property – Special Limits of Liability"
+    }
+   ]
+  },
+  "section_ii_liability_coverages": {
+   "coverage_e_personal_liability_limit": "$500,000",
+   "coverage_f_medical_payments_limit": "$1,000",
+   "damage_to_property_of_others_limit": "$1,000"
+  },
+  "deductibles": {
+   "all_other_perils_deductible": "$1,000",
+   "wind_hail_deductible": "$5,000"
+  },
+  "optional_endorsement_coverages": [
+   {
+    "coverage_name": "Special Personal Property Coverage",
+    "form_reference": "HQ-015 PA (02-21)",
+    "is_included": {
+     "raw": "Included*",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Personal Injury Coverage",
+    "form_reference": "HQ-082 PA (02-19)",
+    "premium": "$16.00"
+   },
+   {
+    "coverage_name": "Personal Property Replacement Cost Loss Settlement",
+    "form_reference": "HQ-290 CW (02-21)",
+    "is_included": {
+     "raw": "Included*",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Windstorm or Hail Deductible",
+    "form_reference": "HQ-313 CW (05-17)",
+    "is_included": {
+     "raw": "Included*",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Equipment Breakdown Coverage",
+    "form_reference": "HQ-855 CW (05-17)",
+    "limit_amount": "$50,000",
+    "premium": "$36.00"
+   }
+  ],
+  "discounts": [
+   {
+    "discount_name": "Savings Reflected in Your Total Premium",
+    "amount": "$519.00"
+   }
+  ],
+  "dwelling": {
+   "described_location": {
+    "line_1": "3844 VICTORS WAY",
+    "city": "EASTON",
+    "state": "PA",
+    "postal_code": "18045-9707"
+   },
+   "year_built": {
+    "raw": "2023",
+    "parsed": 2023
+   },
+   "garage_type": "None",
+   "swimming_pool": {
+    "raw": "Pool: No",
+    "parsed": "No"
+   },
+   "number_of_families": {
+    "raw": "1 Family",
+    "parsed": 1
+   },
+   "square_footage": {
+    "raw": "2515",
+    "parsed": 2515
+   },
+   "roof_age": {
+    "raw": "3",
+    "parsed": 3
+   },
+   "number_of_stories": {
+    "raw": "1",
+    "parsed": 1
+   },
+   "construction_type": "Frame",
+   "roof_type": "Architectural Shingle",
+   "number_of_bathrooms": {
+    "raw": "02",
+    "parsed": 2
+   },
+   "exterior_wall_type": "Vinyl",
+   "number_of_residence_employees": {
+    "raw": "00",
+    "parsed": 0
+   },
+   "basement_type": "Basement",
+   "garage_number_of_cars": {
+    "raw": "00",
+    "parsed": 0
+   },
+   "basement_finished_percentage": {
+    "raw": "00",
+    "parsed": 0
+   }
+  }
+ },
+ "additional_fields": [
+  {
+   "section": "Receipt of Payment",
+   "label": "Date Paid",
+   "value": "08/17/2026"
+  },
+  {
+   "section": "Receipt of Payment",
+   "label": "Premium Amount",
+   "value": "$1,132.00"
+  },
+  {
+   "section": "Mortgage Invoice",
+   "label": "Remit to",
+   "value": "TRAVELERS, PO BOX 660307, DALLAS, TX 75266-0307"
+  }
+ ]
+}

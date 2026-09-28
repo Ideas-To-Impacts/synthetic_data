@@ -1,0 +1,447 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "Seasonal Homeowners Policy Declaration",
+   "parsed": "Renewal Declarations"
+  },
+  "document_title_as_stated": "Seasonal Homeowners Policy Declaration",
+  "transaction_type": "Renewal",
+  "copy_type": "Agent Copy",
+  "print_code": "NCIC 07/14",
+  "print_date": "07/06/2026"
+ },
+ "carrier": {
+  "company_name": "North Country Insurance Company",
+  "address": {
+   "line_1": "21170 NYS Route 232",
+   "line_2": "PO Box 6540",
+   "city": "Watertown",
+   "state": "NY",
+   "postal_code": "13601"
+  }
+ },
+ "producer": {
+  "agency_name": "STABLE ROCK INSURANCE AGENCY,",
+  "producer_code": "848",
+  "contact": {
+   "phone": "(315)357-5901",
+   "email": "agency@patrioticinsurancegroup.com"
+  },
+  "address": {
+   "line_1": "PO BOX 329",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Rafael Ingram",
+  "mailing_address": {
+   "line_1": "PO BOX 239",
+   "city": "INLET",
+   "state": "NY",
+   "postal_code": "13360"
+  },
+  "additional_named_insureds": []
+ },
+ "policy": {
+  "policy_number": "HS001404",
+  "original_inception_date": "08/05/2026",
+  "expiration_date": "08/05/2029",
+  "expiration_time": "12:01 A.M.",
+  "is_renewal": {
+   "raw": "Renewal",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "is_assessable": {
+   "raw": "THIS NON-ASSESSABLE POLICY IS ISSUED ON THE CO-OPERATIVE PLAN",
+   "parsed": "No"
+  },
+  "plan_type": "THIS NON-ASSESSABLE POLICY IS ISSUED ON THE CO-OPERATIVE PLAN"
+ },
+ "premium": {
+  "basic_premium": "$559.00",
+  "forms_and_endorsements_premium": "$44.00",
+  "total_policy_premium": "$603.00"
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "FMD-1",
+   "edition_date": "0808",
+   "form_title": "Important Flood Insurance Notice",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-14",
+   "edition_date": "0699",
+   "form_title": "Punitive Damages Exclusion",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-19",
+   "edition_date": "1006",
+   "form_title": "Policy Endorsement",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-20",
+   "edition_date": "0699",
+   "form_title": "General Policy Provisions",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-340",
+   "edition_date": "0500",
+   "form_title": "Exclusion (Farm Animals)",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-346",
+   "edition_date": "0806",
+   "form_title": "Mech/Elec/Pressure Sys",
+   "premium": "$20.00"
+  },
+  {
+   "form_number": "ML-373A",
+   "edition_date": "0123",
+   "form_title": "Exclusion of Canine Related",
+   "premium": {
+    "raw": "($1.00)",
+    "parsed": -1.0
+   }
+  },
+  {
+   "form_number": "ML-430",
+   "edition_date": "0699",
+   "form_title": "Renewal Endorsement",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-52A",
+   "edition_date": "0699",
+   "form_title": "Trampoline Exclusion",
+   "premium": {
+    "raw": "($2.00)",
+    "parsed": -2.0
+   }
+  },
+  {
+   "form_number": "ML-78",
+   "edition_date": "0803",
+   "form_title": "Sudden and Accidental Pollution",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-84",
+   "edition_date": "0807",
+   "form_title": "New York Amendatory",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-9",
+   "edition_date": "0187",
+   "form_title": "Liability and Medical Payments",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-99",
+   "edition_date": "0699",
+   "form_title": "Calendar Date Exclusion",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NC-ML-90",
+   "edition_date": "1106",
+   "form_title": "Clarification Endorsement",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "NY-STAT-1",
+   "edition_date": "1108",
+   "form_title": "NY Statutory Endorsement",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   }
+  },
+  {
+   "form_number": "ML-1",
+   "edition_date": "0699",
+   "form_title": "Standard Cause of Loss Form",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   },
+   "applies_to": "Loc 1/Bldg 1"
+  },
+  {
+   "form_number": "ML-13",
+   "edition_date": "0699",
+   "form_title": "Actual Cash Value Provision",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   },
+   "applies_to": "Loc 1/Bldg 1"
+  },
+  {
+   "form_number": "NC-AE-9",
+   "edition_date": "0104",
+   "form_title": "Amendatory Endorsement",
+   "premium": "$27.00",
+   "applies_to": "Loc 1/Bldg 1"
+  },
+  {
+   "form_number": "NC-ML-184",
+   "edition_date": "0297",
+   "form_title": "Inflation Guard",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   },
+   "applies_to": "Loc 1/Bldg 1"
+  },
+  {
+   "form_number": "ML-305A",
+   "edition_date": "0699",
+   "form_title": "Refrigerated Food Products",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   },
+   "applies_to": "Loc 1/Bldg 1",
+   "limit_amount": "$500"
+  },
+  {
+   "form_number": "ML-416NCIC",
+   "edition_date": "1017",
+   "form_title": "Seasonal/Secondary",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   },
+   "applies_to": "Loc 1/Bldg 1"
+  },
+  {
+   "form_number": "ML-41",
+   "edition_date": "0699",
+   "form_title": "Additional Insured",
+   "is_included": {
+    "raw": "Included",
+    "parsed": "Yes"
+   },
+   "applies_to": "Loc 1/Bldg 1"
+  }
+ ],
+ "interested_parties": [
+  {
+   "name": "LONG PINE CAMP RL LLC",
+   "applies_to": "Loc 1/Bldg 1",
+   "description_of_interest": "LLC (ML-41)",
+   "is_payor": {
+    "raw": "No",
+    "parsed": "No"
+   },
+   "address": {
+    "line_1": "PO BOX 267",
+    "city": "INLET",
+    "state": "NY",
+    "postal_code": "13360"
+   }
+  }
+ ],
+ "homeowners": {
+  "scheduled_locations": [
+   {
+    "location_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "building_number": {
+     "raw": "Loc 1/Bldg 1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "description": "Main House",
+    "protection_class": "Unprotected",
+    "territorial_zone": "Zone 1, SubZone 1",
+    "construction_type": "Frame",
+    "year_built": {
+     "raw": "1875",
+     "parsed": 1875
+    },
+    "occupancy_type": "Owner",
+    "usage_type": "Seasonal",
+    "number_of_families": {
+     "raw": "1 Family",
+     "parsed": 1
+    },
+    "alarm_type": "Fire Alarm: None",
+    "sprinklered": {
+     "raw": "Sprinklers: None",
+     "parsed": "No"
+    },
+    "deductibles": {
+     "all_other_perils_deductible": "$500"
+    },
+    "section_i_property_coverages": {
+     "coverage_a_dwelling_limit": "$144,000",
+     "coverage_b_other_structures_limit": "$14,400",
+     "coverage_c_personal_property_limit": "$72,000",
+     "coverage_d_loss_of_use_limit": "$14,400",
+     "coverage_a_dwelling_premium": "$531.00",
+     "loss_settlement_basis": "Actual Cash Value"
+    },
+    "applicable_forms": [
+     {
+      "form_title": "Cov A - Dwelling",
+      "limit_amount": "$144,000",
+      "premium": "$531.00"
+     },
+     {
+      "form_title": "Cov B - Other Structures",
+      "limit_amount": "$14,400",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "form_title": "Cov C - Personal Property",
+      "limit_amount": "$72,000",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "form_title": "Cov D - Addl Living Exp/Loss of Rents",
+      "limit_amount": "$14,400",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "form_title": "Cov L - Personal Liability",
+      "limit_amount": "$300,000 Occ",
+      "premium": "$25.00"
+     },
+     {
+      "form_title": "Cov M - Medical Payments",
+      "limit_amount": "$1,000 Per/$25,000 Acc",
+      "premium": "$3.00"
+     }
+    ]
+   }
+  ],
+  "section_i_property_coverages": {
+   "coverage_a_dwelling_limit": "$144,000",
+   "coverage_b_other_structures_limit": "$14,400",
+   "coverage_c_personal_property_limit": "$72,000",
+   "coverage_d_loss_of_use_limit": "$14,400",
+   "coverage_a_dwelling_premium": "$531.00",
+   "loss_settlement_basis": "Actual Cash Value"
+  },
+  "section_ii_liability_coverages": {
+   "coverage_e_personal_liability_limit": "$300,000 Occ",
+   "coverage_e_personal_liability_premium": "$25.00",
+   "coverage_f_medical_payments_limit": "$1,000 Per/$25,000 Acc",
+   "coverage_f_medical_payments_premium": "$3.00"
+  },
+  "discounts": [
+   {
+    "discount_name": "Auxiliary Heating Surcharge",
+    "applies_to": "Loc 1/Bldg 1",
+    "is_applied": {
+     "raw": "Included",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "discount_name": "Renovation Credit",
+    "applies_to": "Loc 1/Bldg 1",
+    "is_applied": {
+     "raw": "Included",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "discount_name": "Deductible Credit",
+    "applies_to": "Loc 1/Bldg 1",
+    "is_applied": {
+     "raw": "Included",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "discount_name": "Seasonal Credit",
+    "applies_to": "Loc 1/Bldg 1",
+    "is_applied": {
+     "raw": "Included",
+     "parsed": "Yes"
+    }
+   }
+  ],
+  "deductibles": {
+   "all_other_perils_deductible": "$500"
+  }
+ },
+ "locations": [
+  {
+   "location_number": {
+    "raw": "1",
+    "source": "structural",
+    "parsed": 1
+   },
+   "address": {
+    "line_1": "3055 Sucker Brook Bay",
+    "city": "Raquette Lake",
+    "state": "NY",
+    "postal_code": "13436",
+    "county": "00041-Hamilton"
+   }
+  }
+ ],
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_expiration_date": "08/05/2029",
+   "renewal_premium": "$603.00"
+  }
+ }
+}

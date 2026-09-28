@@ -1,0 +1,1443 @@
+{
+  "document": {
+    "document_type": {
+      "raw": "RENEWAL",
+      "parsed": "Policy History",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "transaction_type": {
+      "raw": "RENEWAL",
+      "parsed": "RENEWAL",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "transaction_effective_date": {
+      "raw": "10/29/2025",
+      "parsed": "10/29/2025",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "print_date": {
+      "raw": "Printed on 09/18/2026",
+      "parsed": "09/18/2026",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "print_time": {
+      "raw": "07:33",
+      "parsed": "07:33",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "source_file_name": {
+      "raw": "travelers_home_policy.pdf",
+      "parsed": "travelers_home_policy.pdf",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [],
+      "flagged": false
+    },
+    "page_count": {
+      "raw": "2",
+      "parsed": 2,
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    }
+  },
+  "carrier": {
+    "company_name": {
+      "raw": "TRAVELERS PROPERTY CASUAL",
+      "parsed": "TRAVELERS PROPERTY CASUAL",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "naic_number": {
+      "raw": "27998",
+      "parsed": "27998",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "producer": {
+    "producer_code": {
+      "raw": "0DQD25",
+      "parsed": "0DQD25",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "named_insured": {
+    "primary_name": {
+      "raw": "Dorian Granger & Verity Everly",
+      "parsed": "Dorian Granger & Verity Everly",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "contact": {
+      "phone": {
+        "raw": "315‐555‐0248",
+        "parsed": "315‐555‐0248",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "mailing_address": {
+      "line_1": {
+        "raw": "PO Box 104",
+        "parsed": "PO Box 104",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Inlet",
+        "parsed": "Inlet",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "NY",
+        "parsed": "NY",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "13360",
+        "parsed": "13360",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "policy": {
+    "policy_number": {
+      "raw": "6034197086341",
+      "parsed": "6034197086341",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "account_id": {
+      "raw": "603419708",
+      "parsed": "603419708",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "effective_date": {
+      "raw": "10/29/2025",
+      "parsed": "10/29/2025",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "expiration_date": {
+      "raw": "10/29/2026",
+      "parsed": "10/29/2026",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "original_inception_date": {
+      "raw": "10/29/2018",
+      "parsed": "10/29/2018",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "policy_type": {
+      "raw": "Homeowners",
+      "parsed": "Homeowners",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1,
+        2
+      ],
+      "flagged": false
+    },
+    "is_renewal": {
+      "raw": "RENEWAL",
+      "parsed": "Yes",
+      "confidence": {
+        "score": 1.0,
+        "source": "structural"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    },
+    "alternate_policy_identifiers": [
+      {
+        "identifier_type": {
+          "raw": "CONTRACT #",
+          "parsed": "CONTRACT #",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "identifier_value": {
+          "raw": "0DQD250000",
+          "parsed": "0DQD250000",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "identifier_type": {
+          "raw": "NAME PRINTED ON DEC PAGES",
+          "parsed": "NAME PRINTED ON DEC PAGES",
+          "confidence": {
+            "score": 1.0,
+            "source": "structural"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "identifier_value": {
+          "raw": "Dorian Granger &Verity Everly",
+          "parsed": "Dorian Granger &Verity Everly",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "premium": {
+    "total_policy_premium": {
+      "raw": "$151.00",
+      "parsed": 151.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
+    }
+  },
+  "forms_and_endorsements": [
+    {
+      "form_number": {
+        "raw": "HO-4",
+        "parsed": "HO-4",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "HOMEOWNERS 4 CONTENTS BROAD FORM",
+        "parsed": "HOMEOWNERS 4 CONTENTS BROAD FORM",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "12/1/1986",
+        "parsed": "12/01/1986",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "HA-300",
+        "parsed": "HA-300",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "NY SPECIAL PROVISIONS & COMBINATION ENDORSEMENT",
+        "parsed": "NY SPECIAL PROVISIONS & COMBINATION ENDORSEMENT",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "10/1/2022",
+        "parsed": "10/01/2022",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "HA-404",
+        "parsed": "HA-404",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "form_title": {
+        "raw": "NY SPECIAL TENANTS FORM PROVISIONS",
+        "parsed": "NY SPECIAL TENANTS FORM PROVISIONS",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "7/1/2018",
+        "parsed": "07/01/2018",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    }
+  ],
+  "locations": [
+    {
+      "location_number": {
+        "raw": "1",
+        "parsed": 1,
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "address": {
+        "line_1": {
+          "raw": "171 Route 28",
+          "parsed": "171 Route 28",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "city": {
+          "raw": "Inlet",
+          "parsed": "Inlet",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "state": {
+          "raw": "NY",
+          "parsed": "NY",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "postal_code": {
+          "raw": "13360",
+          "parsed": "13360",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        }
+      }
+    }
+  ],
+  "document_type_detail": {
+    "policy_history": {
+      "transactions": [
+        {
+          "transaction_type": {
+            "raw": "RENEWAL",
+            "parsed": "RENEWAL",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "transaction_date": {
+            "raw": "9/10/2025",
+            "parsed": "09/10/2025",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "transaction_effective_date": {
+            "raw": "10/29/2025",
+            "parsed": "10/29/2025",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "net_change_amount": {
+            "raw": "$151.00",
+            "parsed": 151.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "effective_date": {
+            "raw": "10/29/2025",
+            "parsed": "10/29/2025",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "expiration_date": {
+            "raw": "10/29/2026",
+            "parsed": "10/29/2026",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "term_amount": {
+            "raw": "$151.00",
+            "parsed": 151.0,
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          }
+        }
+      ],
+      "term_amount": {
+        "raw": "$151.00",
+        "parsed": 151.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "inception_date": {
+        "raw": "10/29/2018",
+        "parsed": "10/29/2018",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    }
+  },
+  "homeowners": {
+    "dwelling": {
+      "described_location": {
+        "line_1": {
+          "raw": "171 Route 28",
+          "parsed": "171 Route 28",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "city": {
+          "raw": "Inlet",
+          "parsed": "Inlet",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "state": {
+          "raw": "NY",
+          "parsed": "NY",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "postal_code": {
+          "raw": "13360",
+          "parsed": "13360",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        }
+      },
+      "territory_code": {
+        "raw": "104",
+        "parsed": "104",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "protection_class": {
+        "raw": "9",
+        "parsed": "9",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "construction_type": {
+        "raw": "Frame",
+        "parsed": "Frame",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "heating_fuel_type": {
+        "raw": "Oil",
+        "parsed": "Oil",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "thermostat_controlled_central_heat": {
+        "raw": "Yes",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "roof_type": {
+        "raw": "Composition (Fiberglass, Asphalt, etc.)",
+        "parsed": "Composition (Fiberglass, Asphalt, etc.)",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "principal_unit_at_risk": {
+        "raw": "Yes",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "number_of_units": {
+        "raw": "Number of Apartments: 1",
+        "parsed": 1,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "basement_type": {
+        "raw": "Basement: No",
+        "parsed": "No",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "dwelling_type": {
+        "raw": "Apartment",
+        "parsed": "Apartment",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "slab_foundation": {
+        "raw": "Slab: No",
+        "parsed": "No",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "usage_type": {
+        "raw": "Primary, (non-seasonal)",
+        "parsed": "Primary, (non-seasonal)",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "garage_number_of_cars": {
+        "raw": "0",
+        "parsed": 0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "visibility": {
+        "raw": "No",
+        "parsed": "No",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      },
+      "protective_devices": [
+        {
+          "device_type": {
+            "raw": "Fire Extinguisher",
+            "parsed": "Fire Extinguisher",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "is_present": {
+            "raw": "Yes",
+            "parsed": "Yes",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          }
+        },
+        {
+          "device_type": {
+            "raw": "Smoke Alarm",
+            "parsed": "Smoke Alarm",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "device_description": {
+            "raw": "Smoke (Detector)",
+            "parsed": "Smoke (Detector)",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          }
+        }
+      ]
+    },
+    "rating_characteristics": {
+      "feet_from_hydrant": {
+        "raw": "2,000 ft",
+        "parsed": "2,000 ft",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "distance_to_fire_station": {
+        "raw": "1 Mile(s)",
+        "parsed": "1 Mile(s)",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "fire_district": {
+        "raw": "INLET FPSA",
+        "parsed": "INLET FPSA",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "classification_description": {
+        "raw": "TENANTS HOMEOWNERS UNDERWRITING (H04)",
+        "parsed": "TENANTS HOMEOWNERS UNDERWRITING (H04)",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "section_i_property_coverages": {
+      "coverage_c_personal_property_limit": {
+        "raw": "68,600",
+        "parsed": 68600.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "coverage_c_personal_property_premium": {
+        "raw": "$157.00",
+        "parsed": 157.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "coverage_d_loss_of_use_limit": {
+        "raw": "13,720",
+        "parsed": 13720.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "personal_property_loss_settlement_basis": {
+        "raw": "Replacement Cost",
+        "parsed": "Replacement Cost",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "section_ii_liability_coverages": {
+      "coverage_e_personal_liability_limit": {
+        "raw": "300,000",
+        "parsed": 300000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "coverage_f_medical_payments_limit": {
+        "raw": "1,000",
+        "parsed": 1000.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "deductibles": {
+      "all_other_perils_deductible": {
+        "raw": "500",
+        "parsed": 500.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
+    },
+    "optional_endorsement_coverages": [
+      {
+        "coverage_name": {
+          "raw": "Personal Property Replacement Cost",
+          "parsed": "Personal Property Replacement Cost",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "premium": {
+          "raw": "$56.00",
+          "parsed": 56.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_name": {
+          "raw": "Loss Of Use (Cov. D)",
+          "parsed": "Loss Of Use (Cov. D)",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "limit_amount": {
+          "raw": "13,720",
+          "parsed": 13720.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "is_included": {
+          "raw": "Included",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_name": {
+          "raw": "Liability",
+          "parsed": "Liability",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "limit_amount": {
+          "raw": "300,000",
+          "parsed": 300000.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "is_included": {
+          "raw": "Included",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_name": {
+          "raw": "Medical",
+          "parsed": "Medical",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "limit_amount": {
+          "raw": "1,000",
+          "parsed": 1000.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "is_included": {
+          "raw": "Included",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_name": {
+          "raw": "Personal Property",
+          "parsed": "Personal Property",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "limit_amount": {
+          "raw": "68,600",
+          "parsed": 68600.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "deductible_amount": {
+          "raw": "500",
+          "parsed": 500.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "premium": {
+          "raw": "$157.00",
+          "parsed": 157.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "coverage_name": {
+          "raw": "Mold",
+          "parsed": "Mold",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "limit_amount": {
+          "raw": "0",
+          "parsed": 0.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "is_included": {
+          "raw": "Included",
+          "parsed": "Yes",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      }
+    ],
+    "discounts": [
+      {
+        "discount_name": {
+          "raw": "Premises Alarm",
+          "parsed": "Premises Alarm",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "-$3.00",
+          "parsed": -3.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "Multi Policy Credit",
+          "parsed": "Multi Policy Credit",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "-$27.00",
+          "parsed": -27.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      },
+      {
+        "discount_name": {
+          "raw": "Loss Free Credit",
+          "parsed": "Loss Free Credit",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "-$32.00",
+          "parsed": -32.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      }
+    ]
+  },
+  "additional_fields": [
+    {
+      "section": "Insured Information",
+      "label": "Date of Birth",
+      "value": {
+        "raw": "10/4/1950",
+        "parsed": "10/04/1950",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Remarks",
+      "label": "POL COMM",
+      "value": {
+        "raw": ".20000",
+        "parsed": ".20000",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    }
+  ],
+  "fideon:provenance": {
+    "source": "Travelers/homeowners/travelers_home_policy.pdf",
+    "schema": "homeowners v1.4.0",
+    "synthetic": false,
+    "gold": "reviewed and completed by Claude against the printed pages",
+    "reviewed": "2026-09-28"
+  }
+}

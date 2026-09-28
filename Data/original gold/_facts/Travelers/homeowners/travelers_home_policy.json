@@ -1,0 +1,295 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "RENEWAL",
+   "parsed": "Policy History"
+  },
+  "transaction_type": "RENEWAL",
+  "transaction_effective_date": "10/29/2025",
+  "print_date": {
+   "raw": "Printed on 09/18/2026",
+   "parsed": "09/18/2026"
+  },
+  "print_time": "07:33"
+ },
+ "carrier": {
+  "company_name": "TRAVELERS PROPERTY CASUAL",
+  "naic_number": "27998"
+ },
+ "producer": {
+  "producer_code": "0DQD25"
+ },
+ "named_insured": {
+  "primary_name": "Dorian Granger & Verity Everly",
+  "contact": {
+   "phone": "315‐555‐0248"
+  },
+  "mailing_address": {
+   "line_1": "PO Box 104",
+   "city": "Inlet",
+   "state": "NY",
+   "postal_code": "13360"
+  }
+ },
+ "policy": {
+  "policy_number": "6034197086341",
+  "account_id": "603419708",
+  "effective_date": "10/29/2025",
+  "expiration_date": "10/29/2026",
+  "original_inception_date": "10/29/2018",
+  "policy_type": "Homeowners",
+  "is_renewal": {
+   "raw": "RENEWAL",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "alternate_policy_identifiers": [
+   {
+    "identifier_type": {
+     "raw": "CONTRACT #",
+     "source": "structural"
+    },
+    "identifier_value": "0DQD250000"
+   },
+   {
+    "identifier_type": {
+     "raw": "NAME PRINTED ON DEC PAGES",
+     "source": "structural"
+    },
+    "identifier_value": "Dorian Granger &Verity Everly"
+   }
+  ]
+ },
+ "premium": {
+  "total_policy_premium": "$151.00"
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "HO-4",
+   "form_title": "HOMEOWNERS 4 CONTENTS BROAD FORM",
+   "edition_date": "12/1/1986"
+  },
+  {
+   "form_number": "HA-300",
+   "form_title": "NY SPECIAL PROVISIONS & COMBINATION ENDORSEMENT",
+   "edition_date": "10/1/2022"
+  },
+  {
+   "form_number": "HA-404",
+   "form_title": "NY SPECIAL TENANTS FORM PROVISIONS",
+   "edition_date": "7/1/2018"
+  }
+ ],
+ "locations": [
+  {
+   "location_number": {
+    "raw": "1",
+    "source": "structural",
+    "parsed": 1
+   },
+   "address": {
+    "line_1": "171 Route 28",
+    "city": "Inlet",
+    "state": "NY",
+    "postal_code": "13360"
+   }
+  }
+ ],
+ "document_type_detail": {
+  "policy_history": {
+   "transactions": [
+    {
+     "transaction_type": "RENEWAL",
+     "transaction_date": "9/10/2025",
+     "transaction_effective_date": "10/29/2025",
+     "net_change_amount": "$151.00",
+     "effective_date": "10/29/2025",
+     "expiration_date": "10/29/2026",
+     "term_amount": "$151.00"
+    }
+   ],
+   "term_amount": "$151.00",
+   "inception_date": "10/29/2018"
+  }
+ },
+ "homeowners": {
+  "dwelling": {
+   "described_location": {
+    "line_1": "171 Route 28",
+    "city": "Inlet",
+    "state": "NY",
+    "postal_code": "13360"
+   },
+   "territory_code": "104",
+   "protection_class": "9",
+   "construction_type": "Frame",
+   "heating_fuel_type": "Oil",
+   "thermostat_controlled_central_heat": {
+    "raw": "Yes",
+    "parsed": "Yes"
+   },
+   "roof_type": "Composition (Fiberglass, Asphalt, etc.)",
+   "principal_unit_at_risk": {
+    "raw": "Yes",
+    "parsed": "Yes"
+   },
+   "number_of_units": {
+    "raw": "Number of Apartments: 1",
+    "parsed": 1
+   },
+   "basement_type": {
+    "raw": "Basement: No",
+    "parsed": "No"
+   },
+   "dwelling_type": "Apartment",
+   "slab_foundation": {
+    "raw": "Slab: No",
+    "parsed": "No"
+   },
+   "usage_type": "Primary, (non-seasonal)",
+   "garage_number_of_cars": {
+    "raw": "0",
+    "parsed": 0
+   },
+   "visibility": "No",
+   "protective_devices": [
+    {
+     "device_type": "Fire Extinguisher",
+     "is_present": {
+      "raw": "Yes",
+      "parsed": "Yes"
+     }
+    },
+    {
+     "device_type": "Smoke Alarm",
+     "device_description": "Smoke (Detector)"
+    }
+   ]
+  },
+  "rating_characteristics": {
+   "feet_from_hydrant": "2,000 ft",
+   "distance_to_fire_station": "1 Mile(s)",
+   "fire_district": "INLET FPSA",
+   "classification_description": "TENANTS HOMEOWNERS UNDERWRITING (H04)"
+  },
+  "section_i_property_coverages": {
+   "coverage_c_personal_property_limit": {
+    "raw": "68,600",
+    "parsed": 68600.0
+   },
+   "coverage_c_personal_property_premium": "$157.00",
+   "coverage_d_loss_of_use_limit": {
+    "raw": "13,720",
+    "parsed": 13720.0
+   },
+   "personal_property_loss_settlement_basis": {
+    "raw": "Replacement Cost",
+    "source": "structural"
+   }
+  },
+  "section_ii_liability_coverages": {
+   "coverage_e_personal_liability_limit": {
+    "raw": "300,000",
+    "parsed": 300000.0
+   },
+   "coverage_f_medical_payments_limit": {
+    "raw": "1,000",
+    "parsed": 1000.0
+   }
+  },
+  "deductibles": {
+   "all_other_perils_deductible": {
+    "raw": "500",
+    "parsed": 500.0
+   }
+  },
+  "optional_endorsement_coverages": [
+   {
+    "coverage_name": "Personal Property Replacement Cost",
+    "premium": "$56.00"
+   },
+   {
+    "coverage_name": "Loss Of Use (Cov. D)",
+    "limit_amount": {
+     "raw": "13,720",
+     "parsed": 13720.0
+    },
+    "is_included": {
+     "raw": "Included",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Liability",
+    "limit_amount": {
+     "raw": "300,000",
+     "parsed": 300000.0
+    },
+    "is_included": {
+     "raw": "Included",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Medical",
+    "limit_amount": {
+     "raw": "1,000",
+     "parsed": 1000.0
+    },
+    "is_included": {
+     "raw": "Included",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "coverage_name": "Personal Property",
+    "limit_amount": {
+     "raw": "68,600",
+     "parsed": 68600.0
+    },
+    "deductible_amount": {
+     "raw": "500",
+     "parsed": 500.0
+    },
+    "premium": "$157.00"
+   },
+   {
+    "coverage_name": "Mold",
+    "limit_amount": {
+     "raw": "0",
+     "parsed": 0.0
+    },
+    "is_included": {
+     "raw": "Included",
+     "parsed": "Yes"
+    }
+   }
+  ],
+  "discounts": [
+   {
+    "discount_name": "Premises Alarm",
+    "amount": "-$3.00"
+   },
+   {
+    "discount_name": "Multi Policy Credit",
+    "amount": "-$27.00"
+   },
+   {
+    "discount_name": "Loss Free Credit",
+    "amount": "-$32.00"
+   }
+  ]
+ },
+ "additional_fields": [
+  {
+   "section": "Insured Information",
+   "label": "Date of Birth",
+   "value": "10/4/1950"
+  },
+  {
+   "section": "Remarks",
+   "label": "POL COMM",
+   "value": ".20000"
+  }
+ ]
+}
