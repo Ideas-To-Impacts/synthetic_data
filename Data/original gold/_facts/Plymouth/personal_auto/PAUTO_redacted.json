@@ -1,0 +1,520 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "Personal Auto Declarations Page",
+   "parsed": "Policy Change Declaration"
+  },
+  "document_title_as_stated": "Personal Auto Declarations Page",
+  "issue_date": "07/22/2021",
+  "print_code": "PRA NY 200 10/18",
+  "transaction_type": "Endorsement",
+  "transaction_reason": "Delete Driver",
+  "transaction_effective_date": "07/15/2021",
+  "summary_of_changes": "Total return premium: $367.00"
+ },
+ "carrier": {
+  "company_name": "Plymouth Rock Assurance Preferred Corporation",
+  "address": {
+   "line_1": "9881 Millbrook Lane",
+   "city": "Beacon",
+   "state": "MA",
+   "postal_code": "12508"
+  }
+ },
+ "claim_reporting": {
+  "claims_phone": "844-208-1933"
+ },
+ "producer": {
+  "agency_name": "JCCD Corp",
+  "contact": {
+   "phone": "845-610-5700"
+  },
+  "address": {
+   "line_1": "78 Brookside Av 132B",
+   "city": "Liberty",
+   "state": "NY",
+   "postal_code": "12754"
+  }
+ },
+ "named_insured": {
+  "primary_name": "MARCUS QUIMBY",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "mailing_address": {
+   "line_1": "8189 CHESTNUT",
+   "city": "ILION",
+   "state": "NY",
+   "postal_code": "13357"
+  },
+  "additional_named_insureds": [
+   {
+    "name": "MANJA YIRKA"
+   }
+  ]
+ },
+ "policy": {
+  "policy_number": "NYA11328858485",
+  "effective_date": "10/15/2020",
+  "expiration_date": "10/15/2021",
+  "effective_time": "12:01 am",
+  "expiration_time": "12:01 am",
+  "time_zone": "Eastern Standard Time",
+  "is_renewal": {
+   "raw": "Endorsement",
+   "source": "structural",
+   "parsed": "No"
+  },
+  "policy_form_number": "PRA NY 201",
+  "policy_form_edition": "08/19",
+  "policy_form_name": "New York Automobile Policy"
+ },
+ "premium": {
+  "total_policy_premium": "$1,949.00",
+  "subtotal_premium": "$1,919.00",
+  "motor_vehicle_law_enforcement_fee": "$30.00",
+  "return_premium": "$367.00",
+  "discounts_and_credits": [
+   {
+    "description": "Companion Package: Home Discount, eDocument Discount",
+    "applies_to": "Your Policy",
+    "is_applied": {
+     "raw": "Companion Package: Home Discount, eDocument Discount",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Passive Restraint Discount",
+    "applies_to": "2017 VOLK, 2012 HYUN",
+    "is_applied": {
+     "raw": "Passive Restraint Discount",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Accident Prevention Course Discount",
+    "applies_to": "2017 VOLK, 2012 HYUN",
+    "is_applied": {
+     "raw": "Accident Prevention Course Discount",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Anti-Lock Braking System (ABS) Discount",
+    "applies_to": "2017 VOLK, 2012 HYUN",
+    "is_applied": {
+     "raw": "Anti-Lock Braking System (ABS) Discount",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   }
+  ],
+  "total_surcharge_amount": {
+   "raw": "$0.00",
+   "parsed": 0.0
+  }
+ },
+ "billing": {
+  "payment_plan": "EFT 12 Payment Plan"
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "PRA NY 201",
+   "edition_date": "08/19",
+   "form_title": "New York Automobile Policy"
+  },
+  {
+   "form_number": "PRA NY 423",
+   "edition_date": "10/18",
+   "form_title": "Rental Vehicle Coverage Endorsement"
+  },
+  {
+   "form_number": "PRA NY 213",
+   "edition_date": "10/18",
+   "form_title": "Assurance Plus Endorsement"
+  },
+  {
+   "form_number": "PRA 222",
+   "edition_date": "10/14",
+   "form_title": "Full Glass Coverage"
+  },
+  {
+   "form_number": "PRA NY 216",
+   "edition_date": "08/19",
+   "form_title": "Additional Policy Benefits"
+  },
+  {
+   "form_number": "PRA NY IA 426",
+   "edition_date": "10/18",
+   "form_title": "Discounts and Surcharges",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   }
+  }
+ ],
+ "auto": {
+  "vehicles": [
+   {
+    "vehicle_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "2012",
+     "parsed": 2012
+    },
+    "make": "HYUN",
+    "model": "SONATA GLS",
+    "vin": "5NPEB4ACXCH320692",
+    "vehicle_use": "Personal Use",
+    "premium": "$903.00",
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury",
+      "limit_amount": "$250,000/ $500,000",
+      "limit_basis": "each person/each accident",
+      "premium": "$194",
+      "notes": "Without Supplemental Spousal Liability"
+     },
+     {
+      "coverage_name": "Property Damage",
+      "limit_amount": "$100,000",
+      "limit_basis": "each accident",
+      "premium": "$121"
+     },
+     {
+      "coverage_name": "Supplementary Uninsured/Underinsured Motorists (SUM)* Bodily Injury",
+      "limit_amount": "$250,000/ $500,000",
+      "limit_basis": "each person/each accident",
+      "premium": "$22"
+     },
+     {
+      "coverage_name": "Mandatory PIP",
+      "limit_amount": "$50,000",
+      "limit_basis": "each person",
+      "premium": "$131"
+     },
+     {
+      "coverage_name": "Deductible",
+      "coverage_description": "Personal Injury Protection (PIP)",
+      "deductible_amount": "$0",
+      "limit_basis": "each occurrence",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Optional Basic Economic Loss",
+      "limit_basis": "each person",
+      "is_excluded": {
+       "raw": "No Coverage",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Additional PIP",
+      "limit_amount": "$100,000",
+      "limit_basis": "each person",
+      "premium": "$11"
+     },
+     {
+      "coverage_name": "Aggregate PIP Benefits",
+      "limit_amount": "$150,000",
+      "limit_basis": "each person",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Maximum Monthly Work Loss",
+      "limit_amount": "$4,000"
+     },
+     {
+      "coverage_name": "Other Necessary Expenses",
+      "limit_amount": "$50",
+      "limit_basis": "Per Day"
+     },
+     {
+      "coverage_name": "Death Benefit",
+      "limit_amount": "$2,000"
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "deductible_amount": "$500",
+      "notes": "Full Glass Coverage",
+      "premium": "$154"
+     },
+     {
+      "coverage_name": "Collision",
+      "deductible_amount": "$500",
+      "premium": "$232"
+     },
+     {
+      "coverage_name": "Substitute Transportation",
+      "limit_amount": "$50/ $1,500",
+      "limit_basis": "per day/max",
+      "premium": "$26"
+     },
+     {
+      "coverage_name": "Towing and Labor",
+      "limit_amount": "$100",
+      "limit_basis": "each occurrence",
+      "premium": "$12"
+     }
+    ]
+   },
+   {
+    "vehicle_number": {
+     "raw": "2",
+     "source": "structural",
+     "parsed": 2
+    },
+    "year": {
+     "raw": "2017",
+     "parsed": 2017
+    },
+    "make": "VOLK",
+    "model": "GOLF SPORTWAGEN S AW",
+    "vin": "3VW017AU0HM510328",
+    "vehicle_use": "Personal Use",
+    "premium": "$1,016.00",
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury",
+      "limit_amount": "$250,000/ $500,000",
+      "limit_basis": "each person/each accident",
+      "premium": "$169",
+      "notes": "Without Supplemental Spousal Liability"
+     },
+     {
+      "coverage_name": "Property Damage",
+      "limit_amount": "$100,000",
+      "limit_basis": "each accident",
+      "premium": "$109"
+     },
+     {
+      "coverage_name": "Supplementary Uninsured/Underinsured Motorists (SUM)* Bodily Injury",
+      "limit_amount": "$250,000/ $500,000",
+      "limit_basis": "each person/each accident",
+      "premium": "$22"
+     },
+     {
+      "coverage_name": "Mandatory PIP",
+      "limit_amount": "$50,000",
+      "limit_basis": "each person",
+      "premium": "$98"
+     },
+     {
+      "coverage_name": "Deductible",
+      "coverage_description": "Personal Injury Protection (PIP)",
+      "deductible_amount": "$0",
+      "limit_basis": "each occurrence",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Optional Basic Economic Loss",
+      "limit_basis": "each person",
+      "is_excluded": {
+       "raw": "No Coverage",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Additional PIP",
+      "limit_amount": "$100,000",
+      "limit_basis": "each person",
+      "premium": "$8"
+     },
+     {
+      "coverage_name": "Aggregate PIP Benefits",
+      "limit_amount": "$150,000",
+      "limit_basis": "each person",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Maximum Monthly Work Loss",
+      "limit_amount": "$4,000"
+     },
+     {
+      "coverage_name": "Other Necessary Expenses",
+      "limit_amount": "$50",
+      "limit_basis": "Per Day"
+     },
+     {
+      "coverage_name": "Death Benefit",
+      "limit_amount": "$2,000"
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "deductible_amount": "$500",
+      "notes": "Full Glass Coverage",
+      "premium": "$239"
+     },
+     {
+      "coverage_name": "Collision",
+      "deductible_amount": "$500",
+      "premium": "$333"
+     },
+     {
+      "coverage_name": "Substitute Transportation",
+      "limit_amount": "$50/ $1,500",
+      "limit_basis": "per day/max",
+      "premium": "$26"
+     },
+     {
+      "coverage_name": "Towing and Labor",
+      "limit_amount": "$100",
+      "limit_basis": "each occurrence",
+      "premium": "$12"
+     }
+    ]
+   }
+  ],
+  "drivers": [
+   {
+    "driver_number": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "name": "MARCUS QUIMBY",
+    "date_of_birth": "08/22/1956",
+    "driver_status": "Insured CEDARLINE",
+    "driver_class_description": "Married, Male Driver, age 64, 48 years driving experience."
+   },
+   {
+    "driver_number": {
+     "raw": "2",
+     "parsed": 2
+    },
+    "name": "MANJA YIRKA",
+    "date_of_birth": "01/18/1951",
+    "driver_status": "Insured CEDARLINE",
+    "driver_class_description": "Married, Female Driver, age 69, 53 years driving experience."
+   }
+  ],
+  "coverage_packages": [
+   {
+    "package_name": "Assurance Plus Package",
+    "premium": {
+     "raw": "Included",
+     "parsed": "Yes"
+    },
+    "form_reference": "PRA NY 213",
+    "included_coverages": [
+     "Personal Digital Assistant Device Replacement",
+     "Pet Injury Coverage",
+     "Laptop Computer Replacement",
+     "Seat Belt/Air Bag Benefit",
+     "Child Car Seat Replacement",
+     "Personal Belongings Replacement",
+     "Waiver of Collision Deductible",
+     "Bail Bonds - Increased Limit",
+     "Loss of Earnings - Increased Limit",
+     "Waiver of Deductible for Glass Repair"
+    ]
+   }
+  ],
+  "discounts": [
+   {
+    "discount_name": "Accident Prevention Course discount",
+    "amount": "$132"
+   },
+   {
+    "discount_name": "Passive Restraint discount",
+    "amount": "$4"
+   },
+   {
+    "discount_name": "Anti-lock Braking System discount",
+    "amount": "$12"
+   },
+   {
+    "discount_name": "Anti-theft Device discount",
+    "amount": "$0"
+   },
+   {
+    "discount_name": "Daytime Running Lights discount",
+    "amount": "$0"
+   },
+   {
+    "discount_name": "Total Savings from these discounts",
+    "amount": "$148"
+   }
+  ]
+ },
+ "additional_fields": [
+  {
+   "section": "Important Details and Messages",
+   "label": "Your Policy Rating Tier is",
+   "value": "276"
+  },
+  {
+   "section": "Vehicle Symbol / Rating Territory",
+   "label": "2017 VOLK GOLF SPORTWAGEN S AW",
+   "value": "010 - 007 - 051 - 392 / 903"
+  },
+  {
+   "section": "Vehicle Symbol / Rating Territory",
+   "label": "2012 HYUN SONATA GLS",
+   "value": "774 - 149 - 322 - 515 / 785"
+  },
+  {
+   "section": "Driver Class",
+   "label": "MARCUS QUIMBY",
+   "value": "Married, Male Driver, age 64, 48 years driving experience."
+  },
+  {
+   "section": "Driver Class",
+   "label": "Manja Yirka",
+   "value": "Married, Female Driver, age 69, 53 years driving experience."
+  },
+  {
+   "section": "Accident(s) and Violation(s)",
+   "label": "07/21/2016 Not At Fault Incident",
+   "value": "Your Policy"
+  },
+  {
+   "section": "Accident(s) and Violation(s)",
+   "label": "04/19/2019 Not At Fault Incident",
+   "value": "MANJA YIRKA"
+  }
+ ],
+ "loss_history": [
+  {
+   "loss_date": "07/21/2016",
+   "description": "Not At Fault Incident"
+  },
+  {
+   "loss_date": "04/19/2019",
+   "description": "Not At Fault Incident"
+  }
+ ],
+ "document_type_detail": {
+  "policy_change": {
+   "transaction_effective_date": "07/15/2021",
+   "transaction_reason_description": "Delete Driver",
+   "changes": [
+    {
+     "change_description": "Total return premium: $367.00"
+    }
+   ],
+   "net_change_amount": {
+    "raw": "$367.00",
+    "parsed": -367.0
+   }
+  }
+ }
+}

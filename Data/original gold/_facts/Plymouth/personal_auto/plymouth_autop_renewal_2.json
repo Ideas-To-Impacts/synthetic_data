@@ -1,0 +1,673 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "Personal Auto Declarations Page",
+   "parsed": "Renewal Declarations"
+  },
+  "document_title_as_stated": "Personal Auto Declarations Page",
+  "issue_date": "06/18/2024",
+  "print_code": "PRA NY 200 10/18",
+  "transaction_type": "Renewal",
+  "summary_of_changes": "Thank you for being a loyal customer. Your policy includes our Assurance Plus Package at no additional charge."
+ },
+ "carrier": {
+  "company_name": "Plymouth Rock Assurance Preferred Corporation",
+  "address": {
+   "line_1": "695 Atlantic Avenue",
+   "city": "Boston",
+   "state": "MA",
+   "postal_code": "02111"
+  }
+ },
+ "claim_reporting": {
+  "claims_phone": "844-208-1933"
+ },
+ "producer": {
+  "agency_name": "PATRIOTIC INSURANCE GROUP BROKERAGE INC",
+  "contact": {
+   "phone": "845-610-5700"
+  },
+  "address": {
+   "line_1": "78 Brookside Av 132B",
+   "city": "Chester",
+   "state": "NY",
+   "postal_code": "10918"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Elena Vasey",
+  "entity_type": {
+   "raw": "Individual",
+   "source": "structural"
+  },
+  "mailing_address": {
+   "line_1": "124 BIG ISLAND RD",
+   "city": "WARWICK",
+   "state": "NY",
+   "postal_code": "10990"
+  },
+  "additional_named_insureds": [
+   {
+    "name": "Rosalind Sutcliffe"
+   }
+  ]
+ },
+ "policy": {
+  "policy_number": "NYA00002058585",
+  "effective_date": "07/21/2024",
+  "expiration_date": "07/21/2025",
+  "effective_time": "12:01 am",
+  "expiration_time": "12:01 am",
+  "time_zone": "Eastern Standard Time",
+  "is_renewal": {
+   "raw": "Renewal",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "policy_form_number": "PRA NY 201",
+  "policy_form_edition": "02/24",
+  "policy_form_name": "New York Automobile Policy"
+ },
+ "premium": {
+  "total_policy_premium": "$2,336.00",
+  "subtotal_premium": "$2,316.00",
+  "motor_vehicle_law_enforcement_fee": "$20.00",
+  "discounts_and_credits": [
+   {
+    "description": "Paid in Full Discount, Companion Package: Home Discount, eDocument Discount, 5 Year Claims Free Discount",
+    "applies_to": "Your Policy",
+    "is_applied": {
+     "raw": "Paid in Full Discount, Companion Package: Home Discount, eDocument Discount, 5 Year Claims Free Discount",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Passive Restraint Discount",
+    "applies_to": "2017 GMC, 2018 HOND",
+    "is_applied": {
+     "raw": "Passive Restraint Discount",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Anti-Lock Braking System (ABS) Discount",
+    "applies_to": "2017 GMC, 2018 HOND",
+    "is_applied": {
+     "raw": "Anti-Lock Braking System (ABS) Discount",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Daytime Running Lights",
+    "applies_to": "2017 GMC, 2018 HOND",
+    "is_applied": {
+     "raw": "Daytime Running Lights",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   }
+  ],
+  "total_surcharge_amount": {
+   "raw": "$0.00",
+   "parsed": 0.0
+  }
+ },
+ "billing": {
+  "payment_plan": "Paper 1 Payment Plan"
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "PRA NY 201",
+   "edition_date": "02/24",
+   "form_title": "New York Automobile Policy"
+  },
+  {
+   "form_number": "PRA NY 202",
+   "edition_date": "07/22",
+   "form_title": "Amendatory Endorsement"
+  },
+  {
+   "form_number": "PRA NY 423",
+   "edition_date": "07/22",
+   "form_title": "Rental Vehicle Coverage Endorsement"
+  },
+  {
+   "form_number": "PRA NY 213",
+   "edition_date": "10/18",
+   "form_title": "Assurance Plus Endorsement"
+  },
+  {
+   "form_number": "PRA 222",
+   "edition_date": "10/14",
+   "form_title": "Full Glass Coverage"
+  },
+  {
+   "form_number": "PRA 215",
+   "edition_date": "04/19",
+   "form_title": "Roadside Assistance"
+  },
+  {
+   "form_number": "PRA NY 216",
+   "edition_date": "08/19",
+   "form_title": "Additional Policy Benefits"
+  },
+  {
+   "form_number": "PRA NY 524",
+   "edition_date": "10/18",
+   "form_title": "Optional Basic Economic Loss Coverage Offer (OBEL)",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "PRA NY 528",
+   "edition_date": "01/23",
+   "form_title": "Supplemental Spousal Liability Insurance Declination Form",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "PRA NY 424",
+   "edition_date": "01/23",
+   "form_title": "Supplemental Spousal Liability Coverage",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "PRA NY 430",
+   "edition_date": "10/18",
+   "form_title": "UM/SUM Explanatory Notice",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "PRA NY 425",
+   "edition_date": "07/22",
+   "form_title": "Rental Vehicle Coverage Notice to Policyholders",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "PRA NY 421",
+   "edition_date": "10/18",
+   "form_title": "New York Rental Vehicle Reimbursement Coverage",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "PRA NY 422",
+   "edition_date": "10/18",
+   "form_title": "Accident Prevention Course Discount Information",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "PRA NY 409",
+   "edition_date": "07/22",
+   "form_title": "Important Rating Information NY",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "PRA NY 429",
+   "edition_date": "10/18",
+   "form_title": "Multi-Tier Program",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "PRA NY 419",
+   "edition_date": "10/18",
+   "form_title": "Important Insurance Information for Policyholders - New York ID Cards",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "PRA 405",
+   "edition_date": "03/24",
+   "form_title": "Privacy Policy",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "PRA 511A",
+   "edition_date": "02/19",
+   "form_title": "Consent to Conduct Business Electronically",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "PRA 408",
+   "edition_date": "10/18",
+   "form_title": "Producer Compensation",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "PRA NY 416",
+   "edition_date": "10/18",
+   "form_title": "Important Information About the Cost of Your Insurance - Use of Consumer Reports",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "PRA FRAUD",
+   "edition_date": "04/18",
+   "form_title": "Accidents Happen Fraud Should Not",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "PRA NY 420",
+   "edition_date": "10/18",
+   "form_title": "To All Operators of Motor Vehicles in New York State (DUI)",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "PRA NY 427",
+   "edition_date": "10/18",
+   "form_title": "Important Notice to Senior Policyholders",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "PRA NY 428",
+   "edition_date": "10/18",
+   "form_title": "Important Notice to Policyholders Serving in Active Military Duty",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "PRA NY IA 426",
+   "edition_date": "10/18",
+   "form_title": "Discounts and Surcharges",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   }
+  },
+  {
+   "form_number": "PRA NY 433",
+   "edition_date": "07/22",
+   "form_title": "Transportation Network Company Vehicle Coverage and Peer to Peer Car Sharing Program Coverage",
+   "form_type": {
+    "raw": "FOR YOUR INFORMATION",
+    "source": "structural"
+   }
+  }
+ ],
+ "auto": {
+  "vehicles": [
+   {
+    "vehicle_number": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "year": {
+     "raw": "2017",
+     "parsed": 2017
+    },
+    "make": "GMC",
+    "model": "SIERRA K1500 SLE",
+    "vin": "3GTU2MEC8HG275290",
+    "vehicle_use": "Personal Use",
+    "premium": "$1,202.00",
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury",
+      "limit_amount": "$100,000/ $300,000",
+      "limit_basis": "each person/each accident",
+      "premium": "$224",
+      "notes": "Including Supplemental Spousal Liability"
+     },
+     {
+      "coverage_name": "Property Damage",
+      "limit_amount": "$100,000",
+      "limit_basis": "each accident",
+      "premium": "$169"
+     },
+     {
+      "coverage_name": "Supplementary Uninsured/Underinsured Motorists (SUM)* Bodily Injury",
+      "limit_amount": "$100,000/ $300,000",
+      "limit_basis": "each person/each accident",
+      "premium": "$25"
+     },
+     {
+      "coverage_name": "Mandatory PIP",
+      "limit_amount": "$50,000",
+      "limit_basis": "each person",
+      "premium": "$97"
+     },
+     {
+      "coverage_name": "Deductible",
+      "coverage_description": "Personal Injury Protection (PIP)",
+      "deductible_amount": "$0",
+      "limit_basis": "each occurrence",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Optional Basic Economic Loss",
+      "limit_amount": "$25,000",
+      "limit_basis": "each person",
+      "premium": "$8"
+     },
+     {
+      "coverage_name": "Additional PIP",
+      "limit_amount": "$100,000",
+      "limit_basis": "each person",
+      "premium": "$10"
+     },
+     {
+      "coverage_name": "Aggregate PIP Benefits",
+      "limit_amount": "$175,000",
+      "limit_basis": "each person",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Maximum Monthly Work Loss",
+      "limit_amount": "$4,000"
+     },
+     {
+      "coverage_name": "Other Necessary Expenses",
+      "limit_amount": "$50",
+      "limit_basis": "Per Day"
+     },
+     {
+      "coverage_name": "Death Benefit",
+      "limit_amount": "$2,000"
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "deductible_amount": "$500",
+      "notes": "Full Glass Coverage",
+      "premium": "$289"
+     },
+     {
+      "coverage_name": "Collision",
+      "deductible_amount": "$500",
+      "premium": "$351"
+     },
+     {
+      "coverage_name": "Substitute Transportation",
+      "limit_amount": "$30/ $900",
+      "limit_basis": "per day/max",
+      "premium": "$17"
+     },
+     {
+      "coverage_name": "Towing and Labor",
+      "limit_amount": "$100",
+      "limit_basis": "each occurrence",
+      "premium": "$12"
+     }
+    ]
+   },
+   {
+    "vehicle_number": {
+     "raw": "2",
+     "source": "structural",
+     "parsed": 2
+    },
+    "year": {
+     "raw": "2018",
+     "parsed": 2018
+    },
+    "make": "HOND",
+    "model": "CR-V EX AWD",
+    "vin": "2HKRW2H5XJH683167",
+    "vehicle_use": "Personal Use",
+    "premium": "$1,084.00",
+    "coverages": [
+     {
+      "coverage_name": "Bodily Injury",
+      "limit_amount": "$100,000/ $300,000",
+      "limit_basis": "each person/each accident",
+      "premium": "$184",
+      "notes": "Including Supplemental Spousal Liability"
+     },
+     {
+      "coverage_name": "Property Damage",
+      "limit_amount": "$100,000",
+      "limit_basis": "each accident",
+      "premium": "$145"
+     },
+     {
+      "coverage_name": "Supplementary Uninsured/Underinsured Motorists (SUM)* Bodily Injury",
+      "limit_amount": "$100,000/ $300,000",
+      "limit_basis": "each person/each accident",
+      "premium": "$25"
+     },
+     {
+      "coverage_name": "Mandatory PIP",
+      "limit_amount": "$50,000",
+      "limit_basis": "each person",
+      "premium": "$115"
+     },
+     {
+      "coverage_name": "Deductible",
+      "coverage_description": "Personal Injury Protection (PIP)",
+      "deductible_amount": "$0",
+      "limit_basis": "each occurrence",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Optional Basic Economic Loss",
+      "limit_amount": "$25,000",
+      "limit_basis": "each person",
+      "premium": "$10"
+     },
+     {
+      "coverage_name": "Additional PIP",
+      "limit_amount": "$100,000",
+      "limit_basis": "each person",
+      "premium": "$12"
+     },
+     {
+      "coverage_name": "Aggregate PIP Benefits",
+      "limit_amount": "$175,000",
+      "limit_basis": "each person",
+      "is_included": {
+       "raw": "Included",
+       "parsed": "Yes"
+      }
+     },
+     {
+      "coverage_name": "Maximum Monthly Work Loss",
+      "limit_amount": "$4,000"
+     },
+     {
+      "coverage_name": "Other Necessary Expenses",
+      "limit_amount": "$50",
+      "limit_basis": "Per Day"
+     },
+     {
+      "coverage_name": "Death Benefit",
+      "limit_amount": "$2,000"
+     },
+     {
+      "coverage_name": "Comprehensive",
+      "deductible_amount": "$500",
+      "notes": "Full Glass Coverage",
+      "premium": "$221"
+     },
+     {
+      "coverage_name": "Collision",
+      "deductible_amount": "$500",
+      "premium": "$343"
+     },
+     {
+      "coverage_name": "Substitute Transportation",
+      "limit_amount": "$30/ $900",
+      "limit_basis": "per day/max",
+      "premium": "$17"
+     },
+     {
+      "coverage_name": "Towing and Labor",
+      "limit_amount": "$100",
+      "limit_basis": "each occurrence",
+      "premium": "$12"
+     }
+    ]
+   }
+  ],
+  "drivers": [
+   {
+    "driver_number": {
+     "raw": "1",
+     "parsed": 1
+    },
+    "name": "Elena Vasey",
+    "date_of_birth": "02/27/1986",
+    "driver_status": "Insured on This Policy",
+    "driver_class_description": "Married, Male Driver, age 38, 22 years driving experience."
+   },
+   {
+    "driver_number": {
+     "raw": "2",
+     "parsed": 2
+    },
+    "name": "Rosalind Sutcliffe",
+    "date_of_birth": "06/14/1986",
+    "driver_status": "Insured on This Policy",
+    "driver_class_description": "Married, Female Driver, age 38, 22 years driving experience."
+   }
+  ],
+  "coverage_packages": [
+   {
+    "package_name": "Assurance Plus Package",
+    "premium": {
+     "raw": "Included",
+     "parsed": "Yes"
+    },
+    "form_reference": "PRA NY 213",
+    "included_coverages": [
+     "Personal Digital Assistant Device Replacement",
+     "Pet Injury Coverage",
+     "Laptop Computer Replacement",
+     "Seat Belt/Air Bag Benefit",
+     "Child Car Seat Replacement",
+     "Personal Belongings Replacement",
+     "Waiver of Collision Deductible",
+     "Bail Bonds - Increased Limit",
+     "Loss of Earnings - Increased Limit",
+     "Waiver of Deductible for Glass Repair"
+    ]
+   }
+  ],
+  "discounts": [
+   {
+    "discount_name": "Accident Prevention Course discount",
+    "amount": "$0"
+   },
+   {
+    "discount_name": "Passive Restraint discount",
+    "amount": "$3"
+   },
+   {
+    "discount_name": "Anti-lock Braking System discount",
+    "amount": "$17"
+   },
+   {
+    "discount_name": "Anti-theft Device discount",
+    "amount": "$0"
+   },
+   {
+    "discount_name": "Daytime Running Lights discount",
+    "amount": "$17"
+   },
+   {
+    "discount_name": "Total Savings from these discounts",
+    "amount": "$37"
+   }
+  ],
+  "additional_coverages": [
+   {
+    "coverage_name": "Roadside Assistance",
+    "premium": "$30.00"
+   }
+  ]
+ },
+ "additional_fields": [
+  {
+   "section": "Important Details and Messages",
+   "label": "Your Policy Rating Tier is",
+   "value": "247"
+  },
+  {
+   "section": "Vehicle Symbol / Rating Territory",
+   "label": "2017 GMC SIERRA K1500 SLE",
+   "value": "042 - 044 - 002 - 087 - 061 / 030"
+  },
+  {
+   "section": "Vehicle Symbol / Rating Territory",
+   "label": "2018 HOND CR-V EX AWD",
+   "value": "017 - 022 - 019 - 049 - 053 / 030"
+  },
+  {
+   "section": "Driver Class",
+   "label": "Elena Vasey",
+   "value": "Married, Male Driver, age 38, 22 years driving experience."
+  },
+  {
+   "section": "Driver Class",
+   "label": "Rosalind Sutcliffe",
+   "value": "Married, Female Driver, age 38, 22 years driving experience."
+  }
+ ],
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_effective_date": "07/21/2024",
+   "renewal_expiration_date": "07/21/2025",
+   "renewal_premium": "$2,336.00",
+   "offer_issue_date": "06/18/2024"
+  }
+ }
+}
