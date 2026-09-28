@@ -1,0 +1,261 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "Quote #165210-5610109",
+   "parsed": "Quote"
+  },
+  "document_title_as_stated": "Non-CBRA Renewal",
+  "issue_date": "January 28, 2022"
+ },
+ "carrier": {
+  "company_name": "Lloyd's of London",
+  "is_surplus_lines": {
+   "raw": "Non-Admitted",
+   "parsed": "Yes"
+  },
+  "surplus_lines_broker_name": "Sterling Surplus Underwriters"
+ },
+ "claim_reporting": {
+  "claims_notice_recipient": "Sterling Surplus Underwriters"
+ },
+ "producer": {
+  "agency_name": "Patriotic Insurance Group",
+  "producer_contact_name": "Rob Bowen",
+  "contact": {
+   "phone": "8456105700"
+  },
+  "address": {
+   "line_1": "78 Brookside Ave, Ste 132B",
+   "city": "Chester",
+   "state": "NY",
+   "postal_code": "10918"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Marcus Brandt"
+ },
+ "policy": {
+  "quote_number": "165210-5610109",
+  "effective_date": "03/29/2022",
+  "expiration_date": "03/29/2023",
+  "alternate_policy_identifiers": [
+   {
+    "identifier_type": {
+     "raw": "Insurer reference",
+     "source": "structural"
+    },
+    "identifier_value": {
+     "raw": "Lloyd's of London—22SSI224",
+     "parsed": "22SSI224"
+    }
+   }
+  ]
+ },
+ "premium": {
+  "basic_premium": "$659.00",
+  "total_policy_premium": "$708.84",
+  "taxes_and_fees": [
+   {
+    "description": "Fees",
+    "amount": "$25.00"
+   },
+   {
+    "description": "Windstorm Fee",
+    "amount": "$0.00"
+   },
+   {
+    "description": "Stamp",
+    "amount": "$1.12"
+   },
+   {
+    "description": "Taxes",
+    "amount": "$23.72"
+   }
+  ]
+ },
+ "forms_and_endorsements": [
+  {
+   "form_title": "Flood Wording - Sterling Standard Flood Form"
+  },
+  {
+   "form_title": "45 days Cancellation Clause"
+  },
+  {
+   "form_title": "Dwelling Enclosure Endorsement"
+  },
+  {
+   "form_title": "Flood Lender Endorsement #1"
+  },
+  {
+   "form_title": "Flood Lender Endorsement #2"
+  },
+  {
+   "form_title": "Mortgage Clause"
+  },
+  {
+   "form_title": "Applicable Law Clause"
+  },
+  {
+   "form_title": "TRIA Acceptance Endorsement, New & Renewal Business"
+  },
+  {
+   "form_title": "TRIA Not Purchased Clause"
+  },
+  {
+   "form_title": "Sanction Limitation and Exclusion Clause"
+  },
+  {
+   "form_title": "Several Liability Notice"
+  },
+  {
+   "form_title": "Privacy Policy Statement"
+  },
+  {
+   "form_title": "Service of Suit Clause"
+  },
+  {
+   "form_title": "Minimum Earned Premium Clause"
+  },
+  {
+   "form_title": "NY Part C Affidavit by Producing Broker"
+  },
+  {
+   "form_title": "NY Notice of Excess Line Placement"
+  },
+  {
+   "form_title": "USA FLOOD MINIMUM EARNED PREMIUM ENDORSEMENT"
+  }
+ ],
+ "locations": [
+  {
+   "location_number": {
+    "raw": "1",
+    "source": "structural",
+    "parsed": 1
+   },
+   "address": {
+    "line_1": "2858 New York 52",
+    "city": "Hopewell Junction",
+    "state": "NY",
+    "postal_code": "12533"
+   }
+  }
+ ],
+ "coverages": [
+  {
+   "coverage_name": "Building Coverage - Each and Every Loss",
+   "limit": "$250,000",
+   "deductible": "$5,000"
+  },
+  {
+   "coverage_name": "Other Structures",
+   "limit": "$0"
+  },
+  {
+   "coverage_name": "Contents Coverage - Each and Every Loss",
+   "limit": "$0",
+   "deductible": "$5,000"
+  },
+  {
+   "coverage_name": "Loss of Use",
+   "limit": "$0",
+   "deductible": "14-day"
+  }
+ ],
+ "flood": {
+  "coverage_and_rating": {
+   "building_coverage_limit": "$250,000",
+   "building_deductible": "$5,000",
+   "other_structures_coverage_limit": "$0",
+   "contents_coverage_limit": "$0",
+   "contents_deductible": "$5,000",
+   "loss_of_use_coverage_limit": "$0",
+   "loss_of_use_deductible": "14-day"
+  },
+  "property_information": {
+   "replacement_cost_value": "$250,000",
+   "year_built": {
+    "raw": "1996",
+    "parsed": 1996
+   },
+   "flood_zone": "AE",
+   "building_description_detail": {
+    "raw": "Diagram: 1A",
+    "parsed": "1A"
+   },
+   "lfe_bfe_difference": "0.16"
+  },
+  "mortgage_information": [
+   {
+    "name": "Salisbury Bank and Trust Company",
+    "clause_type": "ISAOA/ATIMA",
+    "party_type": {
+     "raw": "Mortgagee(s)",
+     "source": "structural"
+    },
+    "rank": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "loan_number": {
+     "raw": "Loan: 000000",
+     "parsed": "000000"
+    },
+    "address": {
+     "line_1": "P.O. Box 1868",
+     "city": "Lakeville",
+     "state": "CT",
+     "postal_code": "06039"
+    }
+   }
+  ]
+ },
+ "document_type_detail": {
+  "quote_proposal": {
+   "quote_reference_number": "165210-5610109",
+   "proposal_created_date": "January 28, 2022",
+   "proposed_policy_term_start": "03/29/2022",
+   "proposed_policy_term_end": "03/29/2023",
+   "estimated_annual_premium": "$708.84",
+   "conditions_to_bind": [
+    "Signed Application",
+    "Email Request to Bind",
+    "No Losses or Changes in Information Prior to Renewal"
+   ],
+   "quoted_coverages": [
+    {
+     "coverage_name": "Building Coverage - Each and Every Loss",
+     "limit_amount": "$250,000",
+     "deductible_amount": "$5,000"
+    },
+    {
+     "coverage_name": "Other Structures",
+     "limit_amount": "$0"
+    },
+    {
+     "coverage_name": "Contents Coverage - Each and Every Loss",
+     "limit_amount": "$0",
+     "deductible_amount": "$5,000"
+    },
+    {
+     "coverage_name": "Loss of Use",
+     "limit_amount": "$0",
+     "deductible_amount": "14-day"
+    }
+   ]
+  }
+ },
+ "additional_fields": [
+  {
+   "section": "Coverage",
+   "label": "Coverage",
+   "value": "Non-CBRA"
+  },
+  {
+   "section": "Quote",
+   "label": "Validity",
+   "value": "QUOTES ARE VALID FOR 30 DAYS ONLY!"
+  }
+ ]
+}

@@ -1,0 +1,250 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "FLOOD DECLARATIONS PAGE",
+   "parsed": "Policy Package"
+  },
+  "document_title_as_stated": "FLOOD DECLARATIONS PAGE",
+  "print_code": "(Form SLC-3 USA NMA 2868)",
+  "issue_date": "10/16/2023"
+ },
+ "carrier": {
+  "company_name": "LLOYD'S",
+  "surplus_lines_broker_name": "STERLING SURPLUS UNDERWRITERS",
+  "is_surplus_lines": {
+   "raw": "THE INSURER(S) NAMED HEREIN IS (ARE) NOT LICENSED BY THE STATE OF NEW YORK",
+   "source": "structural",
+   "parsed": "Yes"
+  }
+ },
+ "claim_reporting": {
+  "claims_notice_recipient": "Sterling Surplus Underwriters",
+  "claims_email": "info@sterlingsu.com",
+  "claim_reporting_instructions": "https://backoffice.sterlingsu.com/submitclaim"
+ },
+ "producer": {
+  "agency_name": "Patriotic Insurance Group",
+  "producer_contact_name": "Rob Bowen",
+  "contact": {
+   "phone": "845-610-5700"
+  },
+  "address": {
+   "line_1": "78 Brookside Ave, Ste 132B",
+   "city": "Chester",
+   "state": "NY",
+   "postal_code": "10918"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Ida Jarrow",
+  "mailing_address": {
+   "line_1": "10 Sanford Avenue",
+   "city": "Chester",
+   "state": "NY",
+   "postal_code": "10918"
+  }
+ },
+ "policy": {
+  "policy_number": "23SSJ231PF3605",
+  "prior_policy_number": {
+   "raw": "N/A",
+   "parsed": null
+  },
+  "is_renewal": {
+   "raw": "YES",
+   "parsed": "Yes"
+  },
+  "effective_date": "11/25/2023",
+  "expiration_date": "11/25/2024",
+  "effective_time": "12:01am",
+  "time_zone": "LST",
+  "original_inception_date": "11/25/2023",
+  "policy_term_as_printed": "12 months",
+  "policy_term_months": {
+   "raw": "12 months",
+   "parsed": 12
+  }
+ },
+ "premium": {
+  "basic_premium": "$604.00",
+  "total_policy_premium": "$661.65",
+  "taxes_and_fees": [
+   {
+    "description": "Fees",
+    "amount": "$35.00"
+   },
+   {
+    "description": "Stamp",
+    "amount": "$0.91"
+   },
+   {
+    "description": "Taxes",
+    "amount": "$21.74"
+   }
+  ]
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "Flood Wording"
+  },
+  {
+   "form_number": "LM19815"
+  },
+  {
+   "form_number": "PPRCE"
+  },
+  {
+   "form_number": "FLEND1"
+  },
+  {
+   "form_number": "FLEND2"
+  },
+  {
+   "form_number": "OFAC Notice"
+  },
+  {
+   "form_number": "LSW1135B"
+  },
+  {
+   "form_number": "NYSID-41C"
+  },
+  {
+   "form_number": "NYSID-NELP"
+  }
+ ],
+ "locations": [
+  {
+   "location_number": {
+    "raw": "1",
+    "source": "structural",
+    "parsed": 1
+   },
+   "address": {
+    "line_1": "10 Sanford Avenue",
+    "city": "Chester",
+    "state": "NY",
+    "postal_code": "10918"
+   }
+  }
+ ],
+ "coverages": [
+  {
+   "coverage_name": "Building",
+   "limit": "$203,175",
+   "deductible": "$5,000"
+  },
+  {
+   "coverage_name": "Contents",
+   "limit": "$73,143",
+   "deductible": "$5,000"
+  },
+  {
+   "coverage_name": "Loss of Use",
+   "limit": {
+    "raw": "No",
+    "parsed": null
+   }
+  },
+  {
+   "coverage_name": "Other Structures",
+   "limit": "$20,318"
+  }
+ ],
+ "flood": {
+  "coverage_and_rating": {
+   "building_coverage_limit": "$203,175",
+   "building_deductible": "$5,000",
+   "contents_coverage_limit": "$73,143",
+   "contents_deductible": "$5,000",
+   "other_structures_coverage_limit": "$20,318",
+   "basement_coverage": {
+    "raw": "Yes",
+    "parsed": "Yes"
+   }
+  },
+  "property_information": {
+   "flood_zone": "AE",
+   "replacement_cost_value": "$193,500",
+   "base_flood_elevation": "Pre-FIRM",
+   "lowest_floor_elevation": "Pre-FIRM",
+   "lfe_bfe_difference": "Pre-FIRM",
+   "year_built": {
+    "raw": "1937",
+    "parsed": 1937
+   },
+   "number_of_floors": {
+    "raw": "1",
+    "parsed": 1
+   },
+   "enclosure_type": "unfinished",
+   "basement_type": {
+    "raw": "Basement: Yes",
+    "parsed": "Yes"
+   }
+  },
+  "mortgage_information": [
+   {
+    "name": "Chase Home Finance, LLC",
+    "clause_type": "ISAOA/ATIMA",
+    "party_type": {
+     "raw": "Mortgage Detail",
+     "source": "structural"
+    },
+    "rank": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "loan_number": {
+     "raw": "LOAN: 5000569229",
+     "parsed": "5000569229"
+    },
+    "address": {
+     "line_1": "Po Box 4465",
+     "city": "Springfield",
+     "state": "OH",
+     "postal_code": "45501"
+    }
+   }
+  ]
+ },
+ "signature": {
+  "authorized_representative_name": "C. Brad Moncrief",
+  "title": "Principal",
+  "signature_date": "10/16/2023"
+ },
+ "additional_fields": [
+  {
+   "section": "Coverage / Deductible",
+   "label": "Cancellation",
+   "value": "NO FLAT CANCELLATIONS UNLESS REQUESTED BY UNDERWRITERS"
+  },
+  {
+   "section": "Coverage / Deductible",
+   "label": "Minimum earned premium",
+   "value": "25% Minimum Earned Premium —OR— Minimum Earned Premium Endorsement"
+  },
+  {
+   "section": "Cover letter",
+   "label": "Date",
+   "value": "10/16/2023"
+  },
+  {
+   "section": "Cover letter",
+   "label": "fx",
+   "value": "888-645-1716"
+  },
+  {
+   "section": "Coverage / Deductible",
+   "label": "Basement Personal Property",
+   "value": "$15,000"
+  }
+ ],
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_effective_date": "11/25/2023",
+   "renewal_expiration_date": "11/25/2024",
+   "renewal_premium": "$661.65"
+  }
+ }
+}

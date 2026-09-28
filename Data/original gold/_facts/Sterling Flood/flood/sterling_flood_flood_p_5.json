@@ -1,0 +1,255 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "Flood Declarations Page",
+   "parsed": "Policy Package"
+  },
+  "document_title_as_stated": "Flood Declarations Page",
+  "issue_date": "08/02/2024"
+ },
+ "carrier": {
+  "company_name": "Lloyd's of London",
+  "is_surplus_lines": {
+   "raw": "THE INSURER(S) NAMED HEREIN IS (ARE) NOT LICENSED BY THE STATE OF NEW YORK",
+   "source": "structural",
+   "parsed": "Yes"
+  },
+  "surplus_lines_broker_name": "Sterling Surplus Underwriters"
+ },
+ "claim_reporting": {
+  "claims_email": "info@sterlingsu.com",
+  "claims_notice_recipient": "Sterling Surplus Underwriters",
+  "claim_reporting_instructions": "https://backoffice.sterlingsu.com/submitclaim"
+ },
+ "producer": {
+  "agency_name": "Patriotic Insurance Group Brokerage Inc",
+  "producer_contact_name": "Rob Bowen",
+  "producer_code": "AGT7756",
+  "contact": {
+   "phone": "845-610-5700",
+   "email": "agency@patrioticinsurancegroup.com"
+  },
+  "address": {
+   "line_1": "78 Brookside Ave, Ste 132B",
+   "city": "Chester",
+   "state": "NY",
+   "postal_code": "10918"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Alderwood Group LLC",
+  "mailing_address": {
+   "line_1": "10 Hibbing Way",
+   "city": "Newburgh",
+   "state": "NY",
+   "postal_code": "12550"
+  }
+ },
+ "policy": {
+  "policy_number": "24VAVEPF2609",
+  "is_renewal": {
+   "raw": "No",
+   "parsed": "No"
+  },
+  "effective_date": "08/01/2024",
+  "expiration_date": "08/01/2025",
+  "effective_time": "12:01am",
+  "time_zone": "LST",
+  "policy_term_as_printed": "12 months",
+  "policy_term_months": {
+   "raw": "12 months",
+   "parsed": 12
+  },
+  "alternate_policy_identifiers": [
+   {
+    "identifier_type": {
+     "raw": "Unique Market Ref",
+     "source": "structural"
+    },
+    "identifier_value": "B1776BH203250Q"
+   }
+  ],
+  "prior_policy_number": {
+   "raw": "N/A",
+   "parsed": null
+  }
+ },
+ "premium": {
+  "total_policy_premium": "$1,804.98",
+  "basic_premium": "$1,706.00",
+  "taxes_and_fees": [
+   {
+    "description": "Policy Fee (Fully Earned)",
+    "amount": "$35.00",
+    "is_fully_earned": {
+     "raw": "(Fully Earned)",
+     "source": "structural",
+     "parsed": "Yes"
+    }
+   },
+   {
+    "description": "Surplus Lines Tax",
+    "amount": "$61.42"
+   },
+   {
+    "description": "Stamp Fee",
+    "amount": "$2.56"
+   }
+  ],
+  "minimum_earned_premium_percentage": null
+ },
+ "billing": {
+  "bill_to_party": "Sterling Surplus Underwriters",
+  "phone": "855-227-2202"
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "NMA2868"
+  },
+  {
+   "form_number": "Lloyds' Certificate Provisions"
+  },
+  {
+   "form_number": "Shortrate Cancellation Table"
+  },
+  {
+   "form_number": "LMA5018"
+  },
+  {
+   "form_number": "LMA5062"
+  },
+  {
+   "form_number": "LMA5393"
+  },
+  {
+   "form_number": "LMA9067"
+  },
+  {
+   "form_number": "NMA2802"
+  },
+  {
+   "form_number": "NMA1191"
+  },
+  {
+   "form_number": "NMA2918"
+  },
+  {
+   "form_number": "LMA5401"
+  },
+  {
+   "form_number": "Vave-F04-06-22"
+  },
+  {
+   "form_number": "Vave-F08-03-23"
+  },
+  {
+   "form_number": "Vave-F11-12-23"
+  }
+ ],
+ "locations": [
+  {
+   "location_number": {
+    "raw": "1",
+    "source": "structural",
+    "parsed": 1
+   },
+   "address": {
+    "line_1": "1 Morgan Avenue",
+    "city": "Poughkeepsie",
+    "state": "NY",
+    "postal_code": "12601"
+   }
+  }
+ ],
+ "flood": {
+  "coverage_and_rating": {
+   "building_coverage_limit": "$250,000",
+   "building_deductible": "$10,000",
+   "contents_coverage_limit": "$0"
+  },
+  "property_information": {
+   "flood_zone": "X",
+   "basement_type": {
+    "raw": "Basement: Y",
+    "parsed": "Yes"
+   },
+   "has_elevator": {
+    "raw": "Elevator: N",
+    "parsed": "No"
+   }
+  },
+  "mortgage_information": [
+   {
+    "party_type": {
+     "raw": "Mortgage Details",
+     "source": "structural"
+    },
+    "loan_number": {
+     "raw": "Loan #: 1535007402",
+     "parsed": "1535007402"
+    },
+    "name": "BSI Financial Services",
+    "clause_type": "ISAOA/ATIMA",
+    "address": {
+     "line_1": "PO Box 691690",
+     "city": "San Antonio",
+     "state": "TX",
+     "postal_code": "78269"
+    },
+    "rank": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    }
+   }
+  ]
+ },
+ "coverages": [
+  {
+   "coverage_name": "Dwelling",
+   "limit": "$250,000",
+   "deductible": "$10,000"
+  },
+  {
+   "coverage_name": "Contents",
+   "limit": "$0"
+  }
+ ],
+ "signature": {
+  "authorized_representative_name": "Jamie Martin",
+  "title": "Vave Digital Services Limited",
+  "signature_date": "08/02/2024"
+ },
+ "additional_fields": [
+  {
+   "section": "Minimum earned premium",
+   "label": "Minimum earned premium",
+   "value": "25% ($427) minimum earned premium or minimum earned premium endorsement."
+  },
+  {
+   "section": "Cover letter",
+   "label": "fx",
+   "value": "888-645-1716"
+  },
+  {
+   "section": "Cover letter",
+   "label": "Signed",
+   "value": "C. Brad Moncrief"
+  },
+  {
+   "section": "WRITTEN LINES",
+   "label": "Facility Number",
+   "value": "B1776BH203250Q"
+  },
+  {
+   "section": "WRITTEN LINES",
+   "label": "Underwriters at Lloyd's",
+   "value": "100.00%"
+  },
+  {
+   "section": "Lloyds Syndicates",
+   "label": "4444 CNP",
+   "value": "100.0000%"
+  }
+ ]
+}

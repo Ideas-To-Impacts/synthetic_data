@@ -1,0 +1,273 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "FLOOD DECLARATIONS PAGE",
+   "parsed": "Policy Package"
+  },
+  "document_title_as_stated": "FLOOD DECLARATIONS PAGE",
+  "print_code": "(Form SLC-3 USA NMA 2868)",
+  "issue_date": "02/15/2022"
+ },
+ "carrier": {
+  "company_name": "LLOYD'S",
+  "surplus_lines_broker_name": "STERLING SURPLUS UNDERWRITERS",
+  "is_surplus_lines": {
+   "raw": "THE INSURER(S) NAMED HEREIN IS (ARE) NOT LICENSED BY THE STATE OF NEW YORK",
+   "source": "structural",
+   "parsed": "Yes"
+  }
+ },
+ "claim_reporting": {
+  "claims_notice_recipient": "Sterling Surplus Underwriters",
+  "claims_email": "brad@sterlingsu.com",
+  "claim_reporting_instructions": "https://backoffice.sterlingsu.com/submitclaim"
+ },
+ "producer": {
+  "agency_name": "Patriotic Insurance Group",
+  "producer_contact_name": "Rob Bowen",
+  "contact": {
+   "phone": "845-610-5700"
+  },
+  "address": {
+   "line_1": "78 Brookside Ave, Ste 132B",
+   "city": "Chester",
+   "state": "NY",
+   "postal_code": "10918"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Marcus Brandt",
+  "mailing_address": {
+   "line_1": "17 Prentiss Dr",
+   "city": "Hopewell Junction",
+   "state": "NY",
+   "postal_code": "12533"
+  }
+ },
+ "policy": {
+  "policy_number": "22SSI224PF2024",
+  "prior_policy_number": {
+   "raw": "N/A",
+   "parsed": null
+  },
+  "is_renewal": {
+   "raw": "YES",
+   "parsed": "Yes"
+  },
+  "effective_date": "03/29/2022",
+  "expiration_date": "03/29/2023",
+  "effective_time": "12:01am",
+  "time_zone": "LST",
+  "original_inception_date": "03/29/2022",
+  "policy_term_as_printed": "12 months",
+  "policy_term_months": {
+   "raw": "12 months",
+   "parsed": 12
+  },
+  "alternate_policy_identifiers": [
+   {
+    "identifier_type": {
+     "raw": "Unique Market Ref",
+     "source": "structural"
+    },
+    "identifier_value": "B123022STE1352"
+   }
+  ]
+ },
+ "premium": {
+  "basic_premium": "$659.00",
+  "total_policy_premium": "$708.84",
+  "taxes_and_fees": [
+   {
+    "description": "Fees",
+    "amount": "$25.00"
+   },
+   {
+    "description": "Stamp",
+    "amount": "$1.12"
+   },
+   {
+    "description": "Taxes",
+    "amount": "$23.72"
+   },
+   {
+    "description": "Windstorm",
+    "amount": "$0.00"
+   }
+  ]
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "Flood Wording"
+  },
+  {
+   "form_number": "NMA1998"
+  },
+  {
+   "form_number": "NMA1331"
+  },
+  {
+   "form_number": "Encl End"
+  },
+  {
+   "form_number": "FLEND1"
+  },
+  {
+   "form_number": "FLEND2"
+  },
+  {
+   "form_number": "CF1245"
+  },
+  {
+   "form_number": "LMA5021"
+  },
+  {
+   "form_number": "LMA5218"
+  },
+  {
+   "form_number": "LMA5219"
+  },
+  {
+   "form_number": "LMA3100"
+  },
+  {
+   "form_number": "LSW1001"
+  },
+  {
+   "form_number": "664THBNA00119"
+  },
+  {
+   "form_number": "LSW1135B"
+  },
+  {
+   "form_number": "NYSID-41C"
+  },
+  {
+   "form_number": "NYSID-NELP"
+  }
+ ],
+ "locations": [
+  {
+   "location_number": {
+    "raw": "1",
+    "source": "structural",
+    "parsed": 1
+   },
+   "address": {
+    "line_1": "2858 New York 52",
+    "city": "Hopewell Junction",
+    "state": "NY",
+    "postal_code": "12533"
+   }
+  }
+ ],
+ "coverages": [
+  {
+   "coverage_name": "Building",
+   "limit": "$250,000",
+   "deductible": "$5,000"
+  },
+  {
+   "coverage_name": "Contents",
+   "limit": "$0",
+   "deductible": "$5,000"
+  },
+  {
+   "coverage_name": "Loss of Use",
+   "limit": "$0",
+   "deductible": "14-day deductible"
+  },
+  {
+   "coverage_name": "Other Structures",
+   "limit": "$0",
+   "deductible": "$5,000"
+  }
+ ],
+ "flood": {
+  "coverage_and_rating": {
+   "building_coverage_limit": "$250,000",
+   "building_deductible": "$5,000",
+   "contents_coverage_limit": "$0",
+   "contents_deductible": "$5,000",
+   "loss_of_use_coverage_limit": "$0",
+   "loss_of_use_deductible": "14-day deductible",
+   "other_structures_coverage_limit": "$0",
+   "other_structures_deductible": "$5,000"
+  },
+  "property_information": {
+   "flood_zone": "AE",
+   "replacement_cost_value": "$250,000",
+   "base_flood_elevation": "310.95",
+   "lowest_floor_elevation": "311.11",
+   "lfe_bfe_difference": "0.16",
+   "year_built": {
+    "raw": "1996",
+    "parsed": 1996
+   },
+   "number_of_floors": {
+    "raw": "2",
+    "parsed": 2
+   },
+   "enclosure_type": "none"
+  },
+  "mortgage_information": [
+   {
+    "name": "Salisbury Bank and Trust Company",
+    "clause_type": "ISAOA/ATIMA",
+    "party_type": {
+     "raw": "Mortgage Detail",
+     "source": "structural"
+    },
+    "rank": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "loan_number": {
+     "raw": "LOAN: 1234",
+     "parsed": "1234"
+    },
+    "address": {
+     "line_1": "P.O. Box 1868",
+     "city": "Lakeville",
+     "state": "CT",
+     "postal_code": "06039"
+    }
+   }
+  ]
+ },
+ "signature": {
+  "authorized_representative_name": "C. Brad Moncrief",
+  "title": "Principal",
+  "signature_date": "02/15/2022"
+ },
+ "additional_fields": [
+  {
+   "section": "Coverage / Deductible",
+   "label": "Cancellation",
+   "value": "NO FLAT CANCELLATIONS UNLESS REQUESTED BY UNDERWRITERS"
+  },
+  {
+   "section": "Coverage / Deductible",
+   "label": "Minimum earned premium",
+   "value": "25% Minimum Earned Premium —OR— Minimum Earned Premium Endorsement"
+  },
+  {
+   "section": "Cover letter",
+   "label": "Date",
+   "value": "02/15/2022"
+  },
+  {
+   "section": "Cover letter",
+   "label": "fx",
+   "value": "888-645-1716"
+  }
+ ],
+ "document_type_detail": {
+  "renewal_offer": {
+   "renewal_effective_date": "03/29/2022",
+   "renewal_expiration_date": "03/29/2023",
+   "renewal_premium": "$708.84"
+  }
+ }
+}

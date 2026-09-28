@@ -1,0 +1,241 @@
+{
+ "document": {
+  "document_type": {
+   "raw": "FLOOD DECLARATIONS PAGE",
+   "parsed": "Policy Package"
+  },
+  "document_title_as_stated": "FLOOD DECLARATIONS PAGE",
+  "print_code": "(Form SLC-3 USA NMA 2868)",
+  "issue_date": "10/27/2021"
+ },
+ "carrier": {
+  "company_name": "LLOYD'S",
+  "surplus_lines_broker_name": "STERLING SURPLUS UNDERWRITERS",
+  "is_surplus_lines": {
+   "raw": "THE INSURER(S) NAMED HEREIN IS (ARE) NOT LICENSED BY THE STATE OF NEW YORK",
+   "source": "structural",
+   "parsed": "Yes"
+  }
+ },
+ "claim_reporting": {
+  "claims_notice_recipient": "Sterling Surplus Underwriters",
+  "claims_email": "brad@sterlingsu.com",
+  "claim_reporting_instructions": "https://backoffice.sterlingsu.com/submitclaim"
+ },
+ "producer": {
+  "agency_name": "Patriotic Insurance Group",
+  "producer_contact_name": "Rob Bowen",
+  "contact": {
+   "phone": "845-610-5700"
+  },
+  "address": {
+   "line_1": "78 Brookside Ave, Ste 132B",
+   "city": "Chester",
+   "state": "NY",
+   "postal_code": "10918"
+  }
+ },
+ "named_insured": {
+  "primary_name": "Kestrel Works LLC",
+  "mailing_address": {
+   "line_1": "367 Windsor Highway",
+   "city": "New Windsor",
+   "state": "NY",
+   "postal_code": "12553"
+  }
+ },
+ "policy": {
+  "policy_number": "21SSJ231PF3405",
+  "prior_policy_number": {
+   "raw": "N/A",
+   "parsed": null
+  },
+  "is_renewal": {
+   "raw": "NO",
+   "parsed": "No"
+  },
+  "effective_date": "10/27/2021",
+  "expiration_date": "10/27/2022",
+  "effective_time": "12:01am",
+  "time_zone": "LST",
+  "original_inception_date": "10/27/2021",
+  "policy_term_as_printed": "12 months",
+  "policy_term_months": {
+   "raw": "12 months",
+   "parsed": 12
+  },
+  "alternate_policy_identifiers": [
+   {
+    "identifier_type": {
+     "raw": "Unique Market Ref",
+     "source": "structural"
+    },
+    "identifier_value": "B123021STE1355"
+   }
+  ]
+ },
+ "premium": {
+  "basic_premium": "$822.00",
+  "total_policy_premium": "$887.99",
+  "taxes_and_fees": [
+   {
+    "description": "Fees",
+    "amount": "$35.00"
+   },
+   {
+    "description": "Stamp",
+    "amount": "$1.40"
+   },
+   {
+    "description": "Taxes",
+    "amount": "$29.59"
+   }
+  ]
+ },
+ "forms_and_endorsements": [
+  {
+   "form_number": "Flood Wording"
+  },
+  {
+   "form_number": "PPRCE"
+  },
+  {
+   "form_number": "FLEND1"
+  },
+  {
+   "form_number": "FLEND2"
+  },
+  {
+   "form_number": "OFAC Notice"
+  },
+  {
+   "form_number": "NMA2915"
+  },
+  {
+   "form_number": "LSW1135B"
+  },
+  {
+   "form_number": "NYSID41C"
+  },
+  {
+   "form_number": "NYSID-NELP"
+  }
+ ],
+ "locations": [
+  {
+   "location_number": {
+    "raw": "1",
+    "source": "structural",
+    "parsed": 1
+   },
+   "address": {
+    "line_1": "17 Canterberry Court",
+    "city": "Hopewell Junction",
+    "state": "NY",
+    "postal_code": "12533"
+   }
+  }
+ ],
+ "coverages": [
+  {
+   "coverage_name": "Building",
+   "limit": "$269,400",
+   "deductible": "$5,000"
+  },
+  {
+   "coverage_name": "Contents",
+   "limit": "$29,634",
+   "deductible": "$5,000"
+  },
+  {
+   "coverage_name": "Loss of Use",
+   "limit": "$53,880",
+   "deductible": "14-day deductible"
+  },
+  {
+   "coverage_name": "Other Structures",
+   "limit": "$26,940",
+   "deductible": "$5,000"
+  }
+ ],
+ "flood": {
+  "coverage_and_rating": {
+   "building_coverage_limit": "$269,400",
+   "building_deductible": "$5,000",
+   "contents_coverage_limit": "$29,634",
+   "contents_deductible": "$5,000",
+   "loss_of_use_coverage_limit": "$53,880",
+   "loss_of_use_deductible": "14-day deductible",
+   "other_structures_coverage_limit": "$26,940",
+   "other_structures_deductible": "$5,000"
+  },
+  "property_information": {
+   "flood_zone": "AE",
+   "replacement_cost_value": "$269,400",
+   "base_flood_elevation": "268.52",
+   "lowest_floor_elevation": "275.87",
+   "lfe_bfe_difference": "7.35",
+   "year_built": {
+    "raw": "1999",
+    "parsed": 1999
+   },
+   "number_of_floors": {
+    "raw": "2",
+    "parsed": 2
+   },
+   "enclosure_type": "unfinished"
+  },
+  "mortgage_information": [
+   {
+    "name": "LendingHome Funding Corp.",
+    "clause_type": "ISAOA",
+    "party_type": {
+     "raw": "Mortgage Detail",
+     "source": "structural"
+    },
+    "rank": {
+     "raw": "1",
+     "source": "structural",
+     "parsed": 1
+    },
+    "loan_number": {
+     "raw": "LOAN: 34287245",
+     "parsed": "34287245"
+    },
+    "address": {
+     "line_1": "PO Box 2552",
+     "city": "Kennesaw",
+     "state": "GA",
+     "postal_code": "30156"
+    }
+   }
+  ]
+ },
+ "signature": {
+  "authorized_representative_name": "C. Brad Moncrief",
+  "title": "Principal",
+  "signature_date": "10/27/2021"
+ },
+ "additional_fields": [
+  {
+   "section": "Coverage / Deductible",
+   "label": "Cancellation",
+   "value": "NO FLAT CANCELLATIONS UNLESS REQUESTED BY UNDERWRITERS"
+  },
+  {
+   "section": "Coverage / Deductible",
+   "label": "Minimum earned premium",
+   "value": "25% Minimum Earned Premium —OR— Minimum Earned Premium Endorsement"
+  },
+  {
+   "section": "Cover letter",
+   "label": "Date",
+   "value": "10/27/2021"
+  },
+  {
+   "section": "Cover letter",
+   "label": "fx",
+   "value": "888-645-1716"
+  }
+ ]
+}
