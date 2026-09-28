@@ -171,6 +171,9 @@ def main(argv=None):
     parser.add_argument("--originals-only", action="store_true",
                         help="make only the originals (the split and its band stay those of the full build "
                              "with --per-source synthetic twins), e.g. where the twins were made elsewhere")
+    parser.add_argument("--generator-gold", action="store_true",
+                        help="leave the originals with the gold the generator reads off them, instead of "
+                             "their reviewed gold from Data/original gold")
     parser.add_argument("--workers", type=int, default=10)
     parser.add_argument("--ocr-cache", default=None,
                         help="where OCR readings are kept for all workers (default: <out>/.ocr_cache)")
@@ -309,6 +312,10 @@ def main(argv=None):
                 else:
                     pending.append(t)
     print("DONE: %d made this run, %d with problems" % (done, failed))
+    if args.originals and not args.generator_gold:
+        # a remade original has the generator's gold again: give it back its reviewed gold
+        import use_reviewed_gold
+        use_reviewed_gold.main(["--out", str(out)])
     return 0
 
 
