@@ -1830,6 +1830,23 @@
         ],
         "flagged": false
       }
+    },
+    {
+      "section": "Bodily Injury Liability",
+      "label": "Note",
+      "value": {
+        "raw": "Including Supplemental Spousal Liability",
+        "parsed": "Including Supplemental Spousal Liability",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2
+        ],
+        "flagged": false
+      }
     }
   ],
   "text_sections": {
@@ -1889,6 +1906,6 @@
     "schema": "personal_umbrella v3.0.0",
     "synthetic": false,
     "gold": "reviewed and completed by Claude against the printed pages",
-    "reviewed": "2026-09-28"
+    "reviewed": "2026-09-29"
   }
 }

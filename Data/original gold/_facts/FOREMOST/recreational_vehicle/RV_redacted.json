@@ -184,7 +184,18 @@
     "installment_fee": "$ 6.00"
    }
   ],
-  "billing_note": "OR, TO PAY IN FULL, PAY $ 1,552.00"
+  "billing_note": "OR, TO PAY IN FULL, PAY $ 1,552.00",
+  "remittance_addresses": [
+   {
+    "address_type": "Payment",
+    "address": {
+     "line_1": "PO BOX 0915",
+     "city": "CAROL STREAM",
+     "state": "IL",
+     "postal_code": "60132-0915"
+    }
+   }
+  ]
  },
  "forms_and_endorsements": [
   {

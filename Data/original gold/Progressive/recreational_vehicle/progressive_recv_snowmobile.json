@@ -1096,6 +1096,59 @@
         ],
         "flagged": false
       }
+    },
+    {
+      "form_number": {
+        "raw": "A016",
+        "parsed": "A016",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "07/19",
+        "parsed": "07/19",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "form_number": {
+        "raw": "A034",
+        "parsed": "A034",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          5
+        ],
+        "flagged": false
+      },
+      "edition_date": {
+        "raw": "04/17",
+        "parsed": "04/17",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          5
+        ],
+        "flagged": false
+      }
     }
   ],
   "recreational_vehicle": {
@@ -2184,6 +2237,22 @@
         ],
         "flagged": false
       }
+    },
+    {
+      "section": "Payment Coupon",
+      "label": "Make check payable to",
+      "value": {
+        "raw": "Progressive Northwestern Ins Co.",
+        "parsed": "Progressive Northwestern Ins Co.",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      }
     }
   ],
   "billing": {
@@ -2798,6 +2867,6 @@
     "schema": "recreational_vehicle v1.4.0",
     "synthetic": false,
     "gold": "reviewed and completed by Claude against the printed pages",
-    "reviewed": "2026-09-28"
+    "reviewed": "2026-09-29"
   }
 }

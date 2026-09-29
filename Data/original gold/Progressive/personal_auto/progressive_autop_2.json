@@ -1557,6 +1557,44 @@
               2
             ],
             "flagged": false
+          },
+          "address": {
+            "city": {
+              "raw": "FT WORTH",
+              "parsed": "FT WORTH",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "state": {
+              "raw": "TX",
+              "parsed": "TX",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            },
+            "postal_code": {
+              "raw": "76101",
+              "parsed": "76101",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2
+              ],
+              "flagged": false
+            }
           }
         },
         "coverages": [
@@ -2753,17 +2791,35 @@
       }
     },
     {
-      "section": "Lienholder information",
-      "label": "Lienholder address",
+      "section": "Payment Coupon",
+      "label": "Make check payable to",
       "value": {
-        "raw": "FT WORTH, TX 76101",
-        "parsed": "FT WORTH, TX 76101",
+        "raw": "Progressive Casualty Insurance Co.",
+        "parsed": "Progressive Casualty Insurance Co.",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
         },
         "page_ref": [
-          2
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Policy",
+      "label": "Progressive customer since",
+      "value": {
+        "raw": "2002",
+        "parsed": "2002",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          4,
+          5
         ],
         "flagged": false
       }
@@ -3066,6 +3122,6 @@
     "schema": "personal_auto v1.4.0",
     "synthetic": false,
     "gold": "reviewed and completed by Claude against the printed pages",
-    "reviewed": "2026-09-28"
+    "reviewed": "2026-09-29"
   }
 }

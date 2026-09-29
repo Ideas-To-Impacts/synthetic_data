@@ -1240,27 +1240,13 @@
           },
           {
             "coverage_name": {
-              "raw": "Additional Personal Injury Protection",
-              "parsed": "Additional Personal Injury Protection",
+              "raw": "Additional Personal Injury Protection - Out-of-state Guest Occupancy Only",
+              "parsed": "Additional Personal Injury Protection - Out-of-state Guest Occupancy Only",
               "confidence": {
                 "score": 1.0,
                 "source": "deterministic"
               },
-              "page_ref": [
-                2
-              ],
-              "flagged": false
-            },
-            "limit_amount": {
-              "raw": "Out-of-state Guest Occupancy Only",
-              "parsed": "Out-of-state Guest Occupancy Only",
-              "confidence": {
-                "score": 1.0,
-                "source": "deterministic"
-              },
-              "page_ref": [
-                2
-              ],
+              "page_ref": [],
               "flagged": false
             },
             "premium": {
@@ -2809,6 +2795,6 @@
     "schema": "recreational_vehicle v1.4.0",
     "synthetic": false,
     "gold": "reviewed and completed by Claude against the printed pages",
-    "reviewed": "2026-09-28"
+    "reviewed": "2026-09-29"
   }
 }

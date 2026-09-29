@@ -1758,6 +1758,22 @@
         ],
         "flagged": false
       }
+    },
+    {
+      "section": "Carrier",
+      "label": "PC License",
+      "value": {
+        "raw": "PC-1299609A",
+        "parsed": "PC-1299609A",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          5
+        ],
+        "flagged": false
+      }
     }
   ],
   "document_type_detail": {
@@ -5240,6 +5256,6 @@
     "schema": "flood v1.4.0",
     "synthetic": false,
     "gold": "reviewed and completed by Claude against the printed pages",
-    "reviewed": "2026-09-28"
+    "reviewed": "2026-09-29"
   }
 }

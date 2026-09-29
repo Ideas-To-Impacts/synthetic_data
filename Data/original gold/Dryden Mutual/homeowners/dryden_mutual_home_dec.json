@@ -2746,6 +2746,22 @@
         ],
         "flagged": false
       }
+    },
+    {
+      "section": "Billing Information",
+      "label": "Billing Information",
+      "value": {
+        "raw": "Insured Direct Annual New Business",
+        "parsed": "Insured Direct Annual New Business",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
     }
   ],
   "forms_and_endorsements": [
@@ -3502,6 +3518,6 @@
     "schema": "homeowners v1.4.0",
     "synthetic": false,
     "gold": "reviewed and completed by Claude against the printed pages",
-    "reviewed": "2026-09-28"
+    "reviewed": "2026-09-29"
   }
 }

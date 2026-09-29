@@ -1668,6 +1668,36 @@
         ],
         "flagged": false
       }
+    },
+    {
+      "section": "Written Lines",
+      "label": "Facility Number",
+      "value": {
+        "raw": "B123023STE1355",
+        "parsed": "B123023STE1355",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          6
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Written Lines",
+      "label": "Lloyd's Syndicate",
+      "value": {
+        "raw": "0033 HIS 100.0000%",
+        "parsed": "0033 HIS 100.0000%",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      }
     }
   ],
   "document_type_detail": {
@@ -5830,6 +5860,6 @@
     "schema": "flood v1.4.0",
     "synthetic": false,
     "gold": "reviewed and completed by Claude against the printed pages",
-    "reviewed": "2026-09-28"
+    "reviewed": "2026-09-29"
   }
 }

@@ -6163,6 +6163,22 @@
         ],
         "flagged": false
       }
+    },
+    {
+      "section": "Mailer",
+      "label": "Code above agency name",
+      "value": {
+        "raw": "PIB 796",
+        "parsed": "PIB 796",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          9
+        ],
+        "flagged": false
+      }
     }
   ],
   "document_type_detail": {
@@ -6347,6 +6363,6 @@
     "schema": "homeowners v1.4.0",
     "synthetic": false,
     "gold": "reviewed and completed by Claude against the printed pages",
-    "reviewed": "2026-09-28"
+    "reviewed": "2026-09-29"
   }
 }

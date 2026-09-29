@@ -58,7 +58,9 @@
    "parsed": "Yes"
   },
   "policy_form_number": "101",
-  "policy_form_edition": "2A"
+  "policy_form_edition": "2A",
+  "effective_time": "12:01 AM",
+  "time_zone": "STANDARD TIME AT THE RESIDENCE PREMISES"
  },
  "premium": {
   "total_policy_premium": "$934.00",
@@ -549,6 +551,16 @@
    "section": "Rating Tier",
    "label": "Rating Tier",
    "value": "LVL01"
+  },
+  {
+   "section": "Billing and Payment Information",
+   "label": "Phone",
+   "value": "1.800.550.7716"
+  },
+  {
+   "section": "ID Cards",
+   "label": "NY insurer code",
+   "value": "341"
   }
  ]
 }

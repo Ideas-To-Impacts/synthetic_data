@@ -83,6 +83,32 @@
         1
       ],
       "flagged": false
+    },
+    "address": {
+      "city": {
+        "raw": "Grand Rapids",
+        "parsed": "Grand Rapids",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "MI",
+        "parsed": "MI",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
     }
   },
   "producer": {
@@ -1046,6 +1072,6 @@
     "schema": "flood v1.4.0",
     "synthetic": false,
     "gold": "reviewed and completed by Claude against the printed pages",
-    "reviewed": "2026-09-28"
+    "reviewed": "2026-09-29"
   }
 }

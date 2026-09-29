@@ -1759,6 +1759,36 @@
         ],
         "flagged": false
       }
+    },
+    {
+      "section": "Sterling Surplus Underwriters",
+      "label": "Phone Number",
+      "value": {
+        "raw": "855-227-2202",
+        "parsed": "855-227-2202",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          8
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Written Lines",
+      "label": "Lloyd's Syndicate",
+      "value": {
+        "raw": "0033 HIS 100.0000%",
+        "parsed": "0033 HIS 100.0000%",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      }
     }
   ],
   "text_sections": {
@@ -6218,6 +6248,6 @@
     "schema": "flood v1.4.0",
     "synthetic": false,
     "gold": "reviewed and completed by Claude against the printed pages",
-    "reviewed": "2026-09-28"
+    "reviewed": "2026-09-29"
   }
 }

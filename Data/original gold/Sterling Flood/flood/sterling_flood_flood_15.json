@@ -530,6 +530,32 @@
           ],
           "flagged": false
         }
+      },
+      {
+        "description": {
+          "raw": "Windstorm",
+          "parsed": "Windstorm",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "amount": {
+          "raw": "$0.00",
+          "parsed": 0.0,
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
       }
     ]
   },
@@ -1422,6 +1448,6 @@
     "schema": "flood v1.4.0",
     "synthetic": false,
     "gold": "reviewed and completed by Claude against the printed pages",
-    "reviewed": "2026-09-28"
+    "reviewed": "2026-09-29"
   }
 }

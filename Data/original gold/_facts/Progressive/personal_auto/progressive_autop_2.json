@@ -273,6 +273,11 @@
      "party_type": {
       "raw": "Lienholder",
       "source": "structural"
+     },
+     "address": {
+      "city": "FT WORTH",
+      "state": "TX",
+      "postal_code": "76101"
      }
     },
     "coverages": [
@@ -515,9 +520,14 @@
    "value": "$729.00"
   },
   {
-   "section": "Lienholder information",
-   "label": "Lienholder address",
-   "value": "FT WORTH, TX 76101"
+   "section": "Payment Coupon",
+   "label": "Make check payable to",
+   "value": "Progressive Casualty Insurance Co."
+  },
+  {
+   "section": "Policy",
+   "label": "Progressive customer since",
+   "value": "2002"
   }
  ]
 }

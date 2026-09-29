@@ -3013,6 +3013,22 @@
         "page_ref": [],
         "flagged": false
       }
+    },
+    {
+      "section": "No Fault",
+      "label": "Aggregate No Fault Benefits premium",
+      "value": {
+        "raw": "$93",
+        "parsed": 93.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          9
+        ],
+        "flagged": false
+      }
     }
   ],
   "text_sections": {
@@ -3562,6 +3578,6 @@
     "schema": "personal_auto v1.4.0",
     "synthetic": false,
     "gold": "reviewed and completed by Claude against the printed pages",
-    "reviewed": "2026-09-28"
+    "reviewed": "2026-09-29"
   }
 }

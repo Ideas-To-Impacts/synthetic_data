@@ -3402,6 +3402,23 @@
         ],
         "flagged": false
       }
+    },
+    {
+      "section": "Towing and Emergency Expense (Agero)",
+      "label": "Phone",
+      "value": {
+        "raw": "1-866-877-9095",
+        "parsed": "1-866-877-9095",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          11,
+          12
+        ],
+        "flagged": false
+      }
     }
   ],
   "text_sections": {
@@ -7741,6 +7758,6 @@
     "schema": "recreational_vehicle v1.4.0",
     "synthetic": false,
     "gold": "reviewed and completed by Claude against the printed pages",
-    "reviewed": "2026-09-28"
+    "reviewed": "2026-09-29"
   }
 }

@@ -326,8 +326,18 @@
    "loss_settlement_basis": "Replacement Cost"
   },
   "liability_coverages": {
-   "coverage_l_premises_liability_limit": "$500,000 Occ",
-   "coverage_m_medical_payments_per_person_limit": "$5,000 Per/$10,000 Acc"
+   "coverage_l_premises_liability_limit": {
+    "raw": "$500,000 Occ",
+    "parsed": 500000.0
+   },
+   "coverage_m_medical_payments_per_person_limit": {
+    "raw": "$5,000 Per",
+    "parsed": 5000.0
+   },
+   "coverage_m_medical_payments_per_occurrence_limit": {
+    "raw": "$10,000 Acc",
+    "parsed": 10000.0
+   }
   },
   "deductibles": {
    "all_other_perils_deductible": "$1,000"

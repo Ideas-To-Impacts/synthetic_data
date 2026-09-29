@@ -1,7 +1,7 @@
 {
   "document": {
     "document_type": {
-      "raw": "DECLARATIONS, Homeowner Policy Amended Date: 07/03/2024",
+      "raw": "DECLARATIONS, Homeowner Policy",
       "parsed": "Declarations",
       "confidence": {
         "score": 1.0,
@@ -13,8 +13,8 @@
       "flagged": false
     },
     "document_title_as_stated": {
-      "raw": "DECLARATIONS, Homeowner Policy Amended Date: 07/03/2024",
-      "parsed": "DECLARATIONS, Homeowner Policy Amended Date: 07/03/2024",
+      "raw": "DECLARATIONS, Homeowner Policy",
+      "parsed": "DECLARATIONS, Homeowner Policy",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -25,8 +25,8 @@
       "flagged": false
     },
     "line_of_business_as_stated": {
-      "raw": "Homeowner Policy Amended Date: 07/03/2024",
-      "parsed": "Homeowner Policy Amended Date: 07/03/2024",
+      "raw": "Homeowner Policy",
+      "parsed": "Homeowner Policy",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -2712,6 +2712,23 @@
         "page_ref": [],
         "flagged": false
       }
+    },
+    {
+      "section": "Document",
+      "label": "Amended Date",
+      "value": {
+        "raw": "07/03/2024",
+        "parsed": "07/03/2024",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          4
+        ],
+        "flagged": false
+      }
     }
   ],
   "document_type_detail": {
@@ -2906,6 +2923,6 @@
     "schema": "homeowners v1.4.0",
     "synthetic": false,
     "gold": "reviewed and completed by Claude against the printed pages",
-    "reviewed": "2026-09-28"
+    "reviewed": "2026-09-29"
   }
 }

@@ -648,6 +648,30 @@
         46
       ],
       "flagged": false
+    },
+    "effective_time": {
+      "raw": "12:01 AM",
+      "parsed": "12:01 AM",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3
+      ],
+      "flagged": false
+    },
+    "time_zone": {
+      "raw": "STANDARD TIME AT THE RESIDENCE PREMISES",
+      "parsed": "STANDARD TIME AT THE RESIDENCE PREMISES",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        3
+      ],
+      "flagged": false
     }
   },
   "premium": {
@@ -4257,6 +4281,41 @@
         ],
         "flagged": false
       }
+    },
+    {
+      "section": "Billing and Payment Information",
+      "label": "Phone",
+      "value": {
+        "raw": "1.800.550.7716",
+        "parsed": "1.800.550.7716",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "ID Cards",
+      "label": "NY insurer code",
+      "value": {
+        "raw": "341",
+        "parsed": "341",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          7,
+          9,
+          30
+        ],
+        "flagged": false
+      }
     }
   ],
   "text_sections": {
@@ -6966,6 +7025,6 @@
     "schema": "personal_auto v1.4.0",
     "synthetic": false,
     "gold": "reviewed and completed by Claude against the printed pages",
-    "reviewed": "2026-09-28"
+    "reviewed": "2026-09-29"
   }
 }

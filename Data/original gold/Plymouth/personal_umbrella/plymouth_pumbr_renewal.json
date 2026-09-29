@@ -1082,18 +1082,6 @@
         ],
         "flagged": false
       },
-      "form_type": {
-        "raw": "FOR YOUR INFORMATION",
-        "parsed": "FOR YOUR INFORMATION",
-        "confidence": {
-          "score": 1.0,
-          "source": "structural"
-        },
-        "page_ref": [
-          3
-        ],
-        "flagged": false
-      },
       "form_title": {
         "raw": "POLICY RENEWAL IMPORTANT NOTICE",
         "parsed": "POLICY RENEWAL IMPORTANT NOTICE",
@@ -2022,6 +2010,6 @@
     "schema": "personal_umbrella v3.0.0",
     "synthetic": false,
     "gold": "reviewed and completed by Claude against the printed pages",
-    "reviewed": "2026-09-28"
+    "reviewed": "2026-09-29"
   }
 }

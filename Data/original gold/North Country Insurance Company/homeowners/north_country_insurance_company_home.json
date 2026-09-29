@@ -2997,6 +2997,24 @@
       }
     }
   },
+  "additional_fields": [
+    {
+      "section": "Rating Characteristics",
+      "label": "Burglar Alarm",
+      "value": {
+        "raw": "None",
+        "parsed": "None",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
+        "flagged": false
+      }
+    }
+  ],
   "text_sections": {
     "page1_s1": {
       "section_id": "page1_s1",
@@ -3044,6 +3062,6 @@
     "schema": "homeowners v1.4.0",
     "synthetic": false,
     "gold": "reviewed and completed by Claude against the printed pages",
-    "reviewed": "2026-09-28"
+    "reviewed": "2026-09-29"
   }
 }

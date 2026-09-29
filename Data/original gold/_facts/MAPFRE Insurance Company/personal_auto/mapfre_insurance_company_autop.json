@@ -91,32 +91,5 @@
    ]
   }
  },
- "auto": {
-  "drivers": [
-   {
-    "name": "Juno Prentice",
-    "gender": "Female",
-    "marital_status": "Married",
-    "date_of_birth": "1/27/1976",
-    "occupation": "Other",
-    "is_named_insured": {
-     "raw": "Insured Information",
-     "source": "structural",
-     "parsed": "Yes"
-    }
-   },
-   {
-    "name": "Hazel Vance",
-    "gender": "Male",
-    "marital_status": "Married",
-    "date_of_birth": "2/6/1975",
-    "occupation": "Other",
-    "is_named_insured": {
-     "raw": "Co-Insured Information",
-     "source": "structural",
-     "parsed": "Yes"
-    }
-   }
-  ]
- }
+ "auto": {}
 }

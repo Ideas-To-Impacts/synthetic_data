@@ -2624,15 +2624,13 @@
           "flagged": false
         },
         "required_minimum_limit": {
-          "raw": "$300,000 Each Occurrence - Combined Single Limit",
-          "parsed": "$300,000 Each Occurrence - Combined Single Limit",
+          "raw": "$300,000 Each Occurrence - Combined Single Limit Or $250,000 Each Person - Bodily Injury $500,000 Each Occurrence - Bodily Injury $100,000 Each Occurrence - Property Damage",
+          "parsed": "$300,000 Each Occurrence - Combined Single Limit Or $250,000 Each Person - Bodily Injury $500,000 Each Occurrence - Bodily Injury $100,000 Each Occurrence - Property Damage",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
           },
-          "page_ref": [
-            3
-          ],
+          "page_ref": [],
           "flagged": false
         }
       },
@@ -2650,8 +2648,8 @@
           "flagged": false
         },
         "required_minimum_limit": {
-          "raw": "$300,000 Each Occurrence",
-          "parsed": "$300,000 Each Occurrence",
+          "raw": "$300,000 Each Occurrence - Combined Single Limit",
+          "parsed": "$300,000 Each Occurrence - Combined Single Limit",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -2676,8 +2674,8 @@
           "flagged": false
         },
         "required_minimum_limit": {
-          "raw": "$300,000 Each Occurrence",
-          "parsed": "$300,000 Each Occurrence",
+          "raw": "$300,000 Each Occurrence - Combined Single Limit",
+          "parsed": "$300,000 Each Occurrence - Combined Single Limit",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -2702,15 +2700,13 @@
           "flagged": false
         },
         "required_minimum_limit": {
-          "raw": "$300,000 Each Occurrence - Combined Single Limit",
-          "parsed": "$300,000 Each Occurrence - Combined Single Limit",
+          "raw": "$300,000 Each Occurrence - Combined Single Limit Or $250,000 Each Person - Bodily Injury $500,000 Each Occurrence - Bodily Injury $100,000 Each Occurrence - Property Damage",
+          "parsed": "$300,000 Each Occurrence - Combined Single Limit Or $250,000 Each Person - Bodily Injury $500,000 Each Occurrence - Bodily Injury $100,000 Each Occurrence - Property Damage",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
           },
-          "page_ref": [
-            3
-          ],
+          "page_ref": [],
           "flagged": false
         }
       }
@@ -2966,6 +2962,6 @@
     "schema": "personal_umbrella v3.0.0",
     "synthetic": false,
     "gold": "reviewed and completed by Claude against the printed pages",
-    "reviewed": "2026-09-28"
+    "reviewed": "2026-09-29"
   }
 }

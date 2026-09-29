@@ -1611,6 +1611,20 @@
         ],
         "flagged": false
       }
+    },
+    {
+      "section": "Carrier",
+      "label": "Service and Claims agency address",
+      "value": {
+        "raw": "PO Box 8398 Monroe, MI 10950",
+        "parsed": "PO Box 8398 Monroe, MI 10950",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      }
     }
   ],
   "document_type_detail": {
@@ -1709,6 +1723,6 @@
     "schema": "personal_auto v1.4.0",
     "synthetic": false,
     "gold": "reviewed and completed by Claude against the printed pages",
-    "reviewed": "2026-09-28"
+    "reviewed": "2026-09-29"
   }
 }

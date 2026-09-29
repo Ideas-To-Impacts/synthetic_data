@@ -2007,6 +2007,39 @@
         ],
         "flagged": false
       }
+    },
+    {
+      "section": "Payment Coupon",
+      "label": "Make check payable to",
+      "value": {
+        "raw": "Progressive Northwestern Ins Co.",
+        "parsed": "Progressive Northwestern Ins Co.",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Policy",
+      "label": "Progressive customer since",
+      "value": {
+        "raw": "2017",
+        "parsed": "2017",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2,
+          3
+        ],
+        "flagged": false
+      }
     }
   ],
   "text_sections": {
@@ -2256,6 +2289,6 @@
     "schema": "personal_auto v1.4.0",
     "synthetic": false,
     "gold": "reviewed and completed by Claude against the printed pages",
-    "reviewed": "2026-09-28"
+    "reviewed": "2026-09-29"
   }
 }
