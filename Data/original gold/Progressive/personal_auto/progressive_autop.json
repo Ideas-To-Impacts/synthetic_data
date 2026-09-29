@@ -744,7 +744,61 @@
           "flagged": false
         }
       }
-    ]
+    ],
+    "remittance_address": {
+      "line_1": {
+        "raw": "PO BOX 7247-0308",
+        "parsed": "PO BOX 7247-0308",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "PHILADELPHIA",
+        "parsed": "PHILADELPHIA",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "PA",
+        "parsed": "PA",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "19170-0308",
+        "parsed": "19170-0308",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      }
+    }
   },
   "forms_and_endorsements": [
     {

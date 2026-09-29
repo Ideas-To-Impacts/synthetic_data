@@ -162,12 +162,86 @@
         1
       ],
       "flagged": false
+    },
+    "claims_address": {
+      "line_1": {
+        "raw": "PO Box 176",
+        "parsed": "PO Box 176",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          5
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Madison",
+        "parsed": "Madison",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          5
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "MS",
+        "parsed": "MS",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          19,
+          20,
+          22,
+          27,
+          28,
+          31,
+          33,
+          38
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "39130",
+        "parsed": "39130",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          5
+        ],
+        "flagged": false
+      }
     }
   },
   "producer": {
     "agency_name": {
-      "raw": "Patriotic Insurance Group",
-      "parsed": "Patriotic Insurance Group",
+      "raw": "Patriotic Insurance Group Brokerage Inc",
+      "parsed": "Patriotic Insurance Group Brokerage Inc",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -1420,14 +1494,14 @@
           "flagged": false
         },
         "party_type": {
-          "raw": "Mortgage Detail",
-          "parsed": "Mortgage Detail",
+          "raw": "Mortgagee",
+          "parsed": "Mortgagee",
           "confidence": {
             "score": 1.0,
             "source": "structural"
           },
           "page_ref": [
-            5
+            21
           ],
           "flagged": false
         },

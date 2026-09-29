@@ -732,19 +732,6 @@
     }
   },
   "billing": {
-    "amount_due": {
-      "raw": "$ 3,294.00",
-      "parsed": 3294.0,
-      "confidence": {
-        "score": 1.0,
-        "source": "deterministic"
-      },
-      "page_ref": [
-        2,
-        3
-      ],
-      "flagged": false
-    },
     "billing_note": {
       "raw": "Subsequent payments will be due each year on the anniversary date based on the rates in effect at that time.",
       "parsed": "Subsequent payments will be due each year on the anniversary date based on the rates in effect at that time.",
@@ -4025,6 +4012,59 @@
               ],
               "flagged": false
             }
+          },
+          {
+            "form_number": {
+              "raw": "ML-305A",
+              "parsed": "ML-305A",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                6,
+                7,
+                8,
+                9
+              ],
+              "flagged": false
+            },
+            "edition_date": {
+              "raw": "06/99",
+              "parsed": "06/99",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ],
+              "flagged": false
+            },
+            "form_title": {
+              "raw": "Added Perils For Refrigerated Food Products",
+              "parsed": "Added Perils For Refrigerated Food Products",
+              "confidence": {
+                "score": 1.0,
+                "source": "deterministic"
+              },
+              "page_ref": [
+                3,
+                6,
+                7,
+                8,
+                9
+              ],
+              "flagged": false
+            }
           }
         ],
         "address": {
@@ -5990,26 +6030,6 @@
     ],
     "mortgagees": [
       {
-        "rank": {
-          "raw": "1)",
-          "parsed": 1,
-          "confidence": {
-            "score": 1.0,
-            "source": "deterministic"
-          },
-          "page_ref": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9
-          ],
-          "flagged": false
-        },
         "name": {
           "raw": "Community Bank, NA",
           "parsed": "Community Bank, NA",
@@ -6127,6 +6147,26 @@
             ],
             "flagged": false
           }
+        },
+        "location_reference": {
+          "raw": "1)",
+          "parsed": "1)",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "flagged": false
         }
       }
     ],

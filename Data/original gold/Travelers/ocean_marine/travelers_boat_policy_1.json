@@ -3222,6 +3222,26 @@
       }
     }
   },
+  "additional_fields": [
+    {
+      "section": "Discounts",
+      "label": "Total Savings",
+      "value": {
+        "raw": "$208.00",
+        "parsed": 208.0,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          7
+        ],
+        "flagged": false
+      }
+    }
+  ],
   "text_sections": {
     "page1_s1": {
       "section_id": "page1_s1",

@@ -1199,15 +1199,13 @@
           "flagged": false
         },
         "party_type": {
-          "raw": "Mortgage Detail",
-          "parsed": "Mortgage Detail",
+          "raw": "Mortgagee",
+          "parsed": "Mortgagee",
           "confidence": {
             "score": 1.0,
             "source": "structural"
           },
-          "page_ref": [
-            1
-          ],
+          "page_ref": [],
           "flagged": false
         },
         "rank": {

@@ -2007,11 +2007,11 @@
       "section": "SM-26 Automatic Increase, ACV",
       "label": "Modifies Coverage(s) at Renewal",
       "value": {
-        "raw": "SM-26 Automatic Increase, ACV",
-        "parsed": "SM-26 Automatic Increase, ACV",
+        "raw": "Coverage A - Residence, Coverage D - Additional Living Expense / Loss of Rent, Coverage B - Related Private Structures",
+        "parsed": "Coverage A - Residence, Coverage D - Additional Living Expense / Loss of Rent, Coverage B - Related Private Structures",
         "confidence": {
           "score": 1.0,
-          "source": "structural"
+          "source": "deterministic"
         },
         "page_ref": [
           2

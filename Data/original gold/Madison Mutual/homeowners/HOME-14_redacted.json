@@ -1510,20 +1510,6 @@
           ],
           "flagged": false
         },
-        "swimming_pool": {
-          "raw": "No",
-          "parsed": "No",
-          "confidence": {
-            "score": 1.0,
-            "source": "deterministic"
-          },
-          "page_ref": [
-            1,
-            2,
-            3
-          ],
-          "flagged": false
-        },
         "acreage": {
           "raw": "10 - 99 Acres",
           "parsed": "10 - 99 Acres",
@@ -1535,6 +1521,66 @@
             2
           ],
           "flagged": false
+        },
+        "address": {
+          "line_1": {
+            "raw": "5706 Riverside West",
+            "parsed": "5706 Riverside West",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [],
+            "flagged": false
+          },
+          "city": {
+            "raw": "Beacon",
+            "parsed": "Beacon",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "state": {
+            "raw": "NY",
+            "parsed": "NY",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              3
+            ],
+            "flagged": false
+          },
+          "postal_code": {
+            "raw": "12508-3130",
+            "parsed": "12508-3130",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1
+            ],
+            "flagged": false
+          },
+          "county": {
+            "raw": "Cortland Epmuhhev",
+            "parsed": "Cortland Epmuhhev",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [],
+            "flagged": false
+          }
         }
       }
     ],
@@ -2062,6 +2108,24 @@
           "source": "deterministic"
         },
         "page_ref": [],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Property Characteristics",
+      "label": "Swimming Pool, Dock or Beach",
+      "value": {
+        "raw": "No",
+        "parsed": "No",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3
+        ],
         "flagged": false
       }
     }

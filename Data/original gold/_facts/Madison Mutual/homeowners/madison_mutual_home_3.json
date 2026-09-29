@@ -25,7 +25,7 @@
   }
  },
  "producer": {
-  "agency_name": "Stable Rock Insurance Agency LLC (86)",
+  "agency_name": "Stable Rock Insurance Agency LLC",
   "contact": {
    "phone": "(845) 610-5700"
   },
@@ -35,7 +35,8 @@
    "postal_code": "13360",
    "line_1": "159 NY-28",
    "line_2": "PO Box 329"
-  }
+  },
+  "producer_code": "(86)"
  },
  "named_insured": {
   "primary_name": "Corwin Sutcliffe",
@@ -483,14 +484,6 @@
   }
  ],
  "additional_fields": [
-  {
-   "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
-   "label": "Additional Insured Information",
-   "value": {
-    "raw": "(heading)",
-    "source": "structural"
-   }
-  },
   {
    "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
    "label": "Name of Person or Organization",

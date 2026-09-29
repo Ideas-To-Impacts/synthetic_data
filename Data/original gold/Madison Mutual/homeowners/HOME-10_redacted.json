@@ -1564,18 +1564,6 @@
           ],
           "flagged": false
         },
-        "swimming_pool": {
-          "raw": "Yes",
-          "parsed": "Yes",
-          "confidence": {
-            "score": 1.0,
-            "source": "deterministic"
-          },
-          "page_ref": [
-            2
-          ],
-          "flagged": false
-        },
         "acreage": {
           "raw": "Under 10 Acres",
           "parsed": "Under 10 Acres",
@@ -2097,6 +2085,22 @@
           "source": "deterministic"
         },
         "page_ref": [],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Property Characteristics",
+      "label": "Swimming Pool, Dock or Beach",
+      "value": {
+        "raw": "Yes",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
+        ],
         "flagged": false
       }
     }

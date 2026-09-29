@@ -133,6 +133,56 @@
         1
       ],
       "flagged": false
+    },
+    "claims_address": {
+      "line_1": {
+        "raw": "PO Box 176",
+        "parsed": "PO Box 176",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Madison",
+        "parsed": "Madison",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "MS",
+        "parsed": "MS",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "39130",
+        "parsed": "39130",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
     }
   },
   "producer": {

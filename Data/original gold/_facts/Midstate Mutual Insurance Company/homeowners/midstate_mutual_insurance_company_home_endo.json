@@ -78,10 +78,6 @@
   }
  },
  "billing": {
-  "amount_due": {
-   "raw": "$ 3,294.00",
-   "parsed": 3294.0
-  },
   "billing_note": "Subsequent payments will be due each year on the anniversary date based on the rates in effect at that time."
  },
  "signature": {
@@ -561,6 +557,11 @@
       "form_number": "ML-2",
       "edition_date": "06/99",
       "form_title": "Causes of Loss Section-Coverages A,B,C and D (Causes of Loss an"
+     },
+     {
+      "form_number": "ML-305A",
+      "edition_date": "06/99",
+      "form_title": "Added Perils For Refrigerated Food Products"
      }
     ],
     "address": {
@@ -791,10 +792,6 @@
   ],
   "mortgagees": [
    {
-    "rank": {
-     "raw": "1)",
-     "parsed": 1
-    },
     "name": "Community Bank, NA",
     "clause_type": "Its successors and/or assigns",
     "loan_number": "0842535627",
@@ -808,7 +805,8 @@
      "city": "Olean",
      "state": "NY",
      "postal_code": "14760"
-    }
+    },
+    "location_reference": "1)"
    }
   ],
   "scheduled_other_structures": [

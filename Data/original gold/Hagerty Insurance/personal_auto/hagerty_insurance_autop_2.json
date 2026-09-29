@@ -2032,6 +2032,22 @@
         ],
         "flagged": false
       }
+    },
+    {
+      "section": "Carrier",
+      "label": "Service and Claims agency address",
+      "value": {
+        "raw": "PO Box 87 Traverse City, MI 49685",
+        "parsed": "PO Box 87 Traverse City, MI 49685",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
     }
   ],
   "document_type_detail": {

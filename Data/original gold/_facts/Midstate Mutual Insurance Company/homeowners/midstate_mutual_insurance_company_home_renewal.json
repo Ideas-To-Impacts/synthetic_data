@@ -612,10 +612,6 @@
   ],
   "mortgagees": [
    {
-    "rank": {
-     "raw": "1)",
-     "parsed": 1
-    },
     "name": "Community Bank NA",
     "clause_type": "Its successors and/or assigns As their interest may appear",
     "loan_number": "0842173412",
@@ -629,7 +625,8 @@
      "city": "Olean",
      "state": "NY",
      "postal_code": "14760"
-    }
+    },
+    "location_reference": "1)"
    }
   ]
  },

@@ -18,9 +18,15 @@
   "surplus_lines_license_number": "EX-1299609A"
  },
  "claim_reporting": {
-  "claims_email": "info@sterlingsu.com",
+  "claims_email": "claims@sterlingsu.com",
   "claims_notice_recipient": "Sterling Surplus Underwriters",
-  "claim_reporting_instructions": "https://backoffice.sterlingsu.com/submitclaim"
+  "claim_reporting_instructions": "https://backoffice.sterlingsu.com/submitclaim",
+  "claims_address": {
+   "line_1": "PO Box 176",
+   "city": "Madison",
+   "state": "MS",
+   "postal_code": "39130"
+  }
  },
  "producer": {
   "agency_name": "Patriotic Insurance Group Brokerage Inc",
@@ -201,7 +207,7 @@
      "raw": "Loan #: 5000008312280390",
      "parsed": "5000008312280390"
     },
-    "name": "KeyBank National Association,",
+    "name": "KeyBank National Association",
     "clause_type": "ISAOA",
     "address": {
      "line_1": "11501 Outlook Street",
@@ -244,7 +250,7 @@
   {
    "section": "Cover letter",
    "label": "fx",
-   "value": "https://backoffice.sterlingsu.com/submitclaim"
+   "value": "626-555-1751"
   },
   {
    "section": "Cover letter",

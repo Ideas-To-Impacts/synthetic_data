@@ -2447,7 +2447,7 @@
   },
   "additional_fields": [
     {
-      "section": "Device, Forgery And Counterfeit Money (Property 1)",
+      "section": "HO 2530 01 06 Incidental Property Coverages - Higher Limits - Credit Card, Electronic Fund Transfer Card Or Access Device, Forgery And Counterfeit Money (Property 1)",
       "label": "Amount of Increase",
       "value": {
         "raw": "$1,000",
@@ -2463,11 +2463,11 @@
       }
     },
     {
-      "section": "Device, Forgery And Counterfeit Money (Property 1)",
+      "section": "HO 2530 01 06 Incidental Property Coverages - Higher Limits - Credit Card, Electronic Fund Transfer Card Or Access Device, Forgery And Counterfeit Money (Property 1)",
       "label": "Total Limit",
       "value": {
-        "raw": "The Total Limit for this Incidental Property Coverage is the Amount of Increase shown plus the amount provided",
-        "parsed": "The Total Limit for this Incidental Property Coverage is the Amount of Increase shown plus the amount provided",
+        "raw": "The Total Limit for this Incidental Property Coverage is the Amount of Increase shown plus the amount provided under Incidental Property Coverages in the Policy Form.",
+        "parsed": "The Total Limit for this Incidental Property Coverage is the Amount of Increase shown plus the amount provided under Incidental Property Coverages in the Policy Form.",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -2475,20 +2475,6 @@
         "page_ref": [
           2
         ],
-        "flagged": false
-      }
-    },
-    {
-      "section": "Device, Forgery And Counterfeit Money (Property 1)",
-      "label": "under Incidental Property Coverages in the Policy Form.",
-      "value": {
-        "raw": "(heading)",
-        "parsed": "(heading)",
-        "confidence": {
-          "score": 1.0,
-          "source": "structural"
-        },
-        "page_ref": [],
         "flagged": false
       }
     },

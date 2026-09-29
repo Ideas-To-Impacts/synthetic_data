@@ -3552,6 +3552,22 @@
         ],
         "flagged": false
       }
+    },
+    {
+      "section": "Policy Status",
+      "label": "Premium",
+      "value": {
+        "raw": "$986.14",
+        "parsed": 986.14,
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      }
     }
   ],
   "fideon:provenance": {

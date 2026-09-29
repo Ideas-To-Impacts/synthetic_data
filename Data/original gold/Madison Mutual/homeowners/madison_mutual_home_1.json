@@ -1721,19 +1721,6 @@
           ],
           "flagged": false
         },
-        "swimming_pool": {
-          "raw": "Yes",
-          "parsed": "Yes",
-          "confidence": {
-            "score": 1.0,
-            "source": "deterministic"
-          },
-          "page_ref": [
-            3,
-            4
-          ],
-          "flagged": false
-        },
         "acreage": {
           "raw": "Under 10 Acres",
           "parsed": "Under 10 Acres",
@@ -2409,19 +2396,6 @@
           ],
           "flagged": false
         },
-        "swimming_pool": {
-          "raw": "Yes",
-          "parsed": "Yes",
-          "confidence": {
-            "score": 1.0,
-            "source": "deterministic"
-          },
-          "page_ref": [
-            3,
-            4
-          ],
-          "flagged": false
-        },
         "acreage": {
           "raw": "Under 10 Acres",
           "parsed": "Under 10 Acres",
@@ -3092,19 +3066,6 @@
           },
           "page_ref": [
             1,
-            3,
-            4
-          ],
-          "flagged": false
-        },
-        "swimming_pool": {
-          "raw": "Yes",
-          "parsed": "Yes",
-          "confidence": {
-            "score": 1.0,
-            "source": "deterministic"
-          },
-          "page_ref": [
             3,
             4
           ],
@@ -4433,6 +4394,57 @@
         },
         "page_ref": [
           1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Property Characteristics (Property: 1 of 3)",
+      "label": "Swimming Pool, Dock or Beach",
+      "value": {
+        "raw": "Yes",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Property Characteristics (Property: 2 of 3)",
+      "label": "Swimming Pool, Dock or Beach",
+      "value": {
+        "raw": "Yes",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Property Characteristics (Property: 3 of 3)",
+      "label": "Swimming Pool, Dock or Beach",
+      "value": {
+        "raw": "Yes",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
         ],
         "flagged": false
       }

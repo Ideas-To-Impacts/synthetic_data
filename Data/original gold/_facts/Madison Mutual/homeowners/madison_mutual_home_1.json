@@ -279,10 +279,6 @@
      "raw": "Yes",
      "parsed": "Yes"
     },
-    "swimming_pool": {
-     "raw": "Yes",
-     "parsed": "Yes"
-    },
     "acreage": "Under 10 Acres",
     "address": {
      "line_1": "12819 State Route 28",
@@ -398,10 +394,6 @@
      "raw": "No",
      "parsed": "No"
     },
-    "swimming_pool": {
-     "raw": "Yes",
-     "parsed": "Yes"
-    },
     "acreage": "Under 10 Acres",
     "address": {
      "line_1": "12819 State Route 28",
@@ -516,10 +508,6 @@
     "solid_fuel_burning_device_present": {
      "raw": "No",
      "parsed": "No"
-    },
-    "swimming_pool": {
-     "raw": "Yes",
-     "parsed": "Yes"
     },
     "acreage": "Under 10 Acres",
     "address": {
@@ -799,6 +787,21 @@
    "section": "Mail To",
    "label": "Mail To",
    "value": "Patriotic Insurance Group Brokerage Inc (86) 159 Main St PO Box 329 Inlet, NY 13360-0329"
+  },
+  {
+   "section": "Property Characteristics (Property: 1 of 3)",
+   "label": "Swimming Pool, Dock or Beach",
+   "value": "Yes"
+  },
+  {
+   "section": "Property Characteristics (Property: 2 of 3)",
+   "label": "Swimming Pool, Dock or Beach",
+   "value": "Yes"
+  },
+  {
+   "section": "Property Characteristics (Property: 3 of 3)",
+   "label": "Swimming Pool, Dock or Beach",
+   "value": "Yes"
   }
  ],
  "document_type_detail": {

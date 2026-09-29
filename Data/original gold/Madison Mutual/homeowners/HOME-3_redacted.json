@@ -181,8 +181,8 @@
   },
   "producer": {
     "agency_name": {
-      "raw": "Stable Rock Insurance Agency LLC (86)",
-      "parsed": "Stable Rock Insurance Agency LLC (86)",
+      "raw": "Stable Rock Insurance Agency LLC",
+      "parsed": "Stable Rock Insurance Agency LLC",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -269,6 +269,18 @@
         ],
         "flagged": false
       }
+    },
+    "producer_code": {
+      "raw": "(86)",
+      "parsed": "(86)",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
     }
   },
   "named_insured": {
@@ -2869,20 +2881,6 @@
     }
   ],
   "additional_fields": [
-    {
-      "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
-      "label": "Additional Insured Liberty",
-      "value": {
-        "raw": "(heading)",
-        "parsed": "(heading)",
-        "confidence": {
-          "score": 1.0,
-          "source": "structural"
-        },
-        "page_ref": [],
-        "flagged": false
-      }
-    },
     {
       "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
       "label": "Name of Person or Organization",

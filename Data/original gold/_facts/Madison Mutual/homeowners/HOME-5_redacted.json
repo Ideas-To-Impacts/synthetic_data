@@ -73,7 +73,9 @@
     "description": "Fees",
     "amount": "$0.00"
    }
-  ]
+  ],
+  "annual_premium_change": "$29.00",
+  "pro_rata_premium_change": "$19.30"
  },
  "forms_and_endorsements": [
   {
@@ -430,16 +432,22 @@
   "title": "PRESIDENT & CEO",
   "signature_date": "07/03/2024"
  },
- "interested_parties": [],
- "additional_fields": [
+ "interested_parties": [
   {
-   "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
-   "label": "Additional Insured Liberty",
-   "value": {
-    "raw": "(heading)",
+   "name": "CEDARLINE MOTORWORKS",
+   "party_type": {
+    "raw": "Additional Interest",
     "source": "structural"
+   },
+   "address": {
+    "line_1": "9042 Station",
+    "city": "Warwick",
+    "state": "FL",
+    "postal_code": "10990"
    }
-  },
+  }
+ ],
+ "additional_fields": [
   {
    "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
    "label": "Name of Person or Organization",
@@ -458,15 +466,7 @@
   {
    "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
    "label": "Applicable Coverage(s)",
-   "value": "Coverage A -- Residence; Coverage B -- Related Private Structures; Coverage C -- Personal Property;"
-  },
-  {
-   "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
-   "label": "Coverage L -- Personal Liability; Coverage M -- Medical Payments To Others",
-   "value": {
-    "raw": "(heading)",
-    "source": "structural"
-   }
+   "value": "Coverage A -- Residence; Coverage B -- Related Private Structures; Coverage C -- Personal Property; Coverage L -- Personal Liability; Coverage M -- Medical Payments To Others"
   },
   {
    "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
@@ -474,35 +474,30 @@
    "value": "No answer provided"
   },
   {
-   "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
-   "label": "HO 2530 01 06 Incidental Property Coverages - Higher Limits - Credit Card, Electronic Fund Transfer Card Or Access",
-   "value": {
-    "raw": "(heading)",
-    "source": "structural"
-   }
-  },
-  {
-   "section": "Device, Forgery And Counterfeit Money (Property 1)",
+   "section": "HO 2530 01 06 Incidental Property Coverages - Higher Limits - Credit Card, Electronic Fund Transfer Card Or Access Device, Forgery And Counterfeit Money (Property 1)",
    "label": "Amount of Increase",
    "value": "$1,000"
   },
   {
-   "section": "Device, Forgery And Counterfeit Money (Property 1)",
+   "section": "HO 2530 01 06 Incidental Property Coverages - Higher Limits - Credit Card, Electronic Fund Transfer Card Or Access Device, Forgery And Counterfeit Money (Property 1)",
    "label": "Total Limit",
-   "value": "The Total Limit for this Incidental Property Coverage is the Amount of Increase shown plus the amount provided"
-  },
-  {
-   "section": "Device, Forgery And Counterfeit Money (Property 1)",
-   "label": "under Incidental Property Coverages in the Policy Form.",
-   "value": {
-    "raw": "(heading)",
-    "source": "structural"
-   }
+   "value": "The Total Limit for this Incidental Property Coverage is the Amount of Increase shown plus the amount provided under Incidental Property Coverages in the Policy Form."
   },
   {
    "section": "Mail To",
    "label": "Mail To",
    "value": "Patriotic Insurance Group Brokerage Inc (86) 2251 Station PO Box 592 Ilion, NY 13357-5943"
   }
- ]
+ ],
+ "document_type_detail": {
+  "policy_change": {
+   "transaction_date": "07/03/2024",
+   "transaction_reason_description": "Amended Policy; Added MM HO 5140 09 19 Additional Insured -- Specified Coverages for LLC",
+   "changes": [
+    {
+     "change_description": "Amended Policy; Added MM HO 5140 09 19 Additional Insured -- Specified Coverages for LLC"
+    }
+   ]
+  }
+ }
 }

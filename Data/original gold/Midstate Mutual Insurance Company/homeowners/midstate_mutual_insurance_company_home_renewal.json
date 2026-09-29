@@ -4045,23 +4045,6 @@
     ],
     "mortgagees": [
       {
-        "rank": {
-          "raw": "1)",
-          "parsed": 1,
-          "confidence": {
-            "score": 1.0,
-            "source": "deterministic"
-          },
-          "page_ref": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6
-          ],
-          "flagged": false
-        },
         "name": {
           "raw": "Community Bank NA",
           "parsed": "Community Bank NA",
@@ -4176,6 +4159,23 @@
             ],
             "flagged": false
           }
+        },
+        "location_reference": {
+          "raw": "1)",
+          "parsed": "1)",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "flagged": false
         }
       }
     ]

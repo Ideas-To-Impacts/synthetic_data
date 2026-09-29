@@ -1669,53 +1669,6 @@
     },
     {
       "form_number": {
-        "raw": "CF",
-        "parsed": "CF",
-        "confidence": {
-          "score": 1.0,
-          "source": "deterministic"
-        },
-        "page_ref": [
-          2
-        ],
-        "flagged": false
-      },
-      "edition_date": {
-        "raw": "00/00",
-        "parsed": "00/00",
-        "confidence": {
-          "score": 1.0,
-          "source": "deterministic"
-        },
-        "page_ref": [
-          3,
-          4
-        ],
-        "flagged": false
-      },
-      "form_title": {
-        "raw": "Claims Free Discount",
-        "parsed": "Claims Free Discount",
-        "confidence": {
-          "score": 1.0,
-          "source": "deterministic"
-        },
-        "page_ref": [],
-        "flagged": false
-      },
-      "is_included": {
-        "raw": "Applied",
-        "parsed": "Yes",
-        "confidence": {
-          "score": 1.0,
-          "source": "deterministic"
-        },
-        "page_ref": [],
-        "flagged": false
-      }
-    },
-    {
-      "form_number": {
         "raw": "ML-MMIC-PPLE",
         "parsed": "ML-MMIC-PPLE",
         "confidence": {
@@ -3657,40 +3610,6 @@
           ],
           "flagged": false
         }
-      },
-      {
-        "discount_name": {
-          "raw": "Claims Free Discount",
-          "parsed": "Claims Free Discount",
-          "confidence": {
-            "score": 1.0,
-            "source": "deterministic"
-          },
-          "page_ref": [],
-          "flagged": false
-        },
-        "form_reference": {
-          "raw": "CF",
-          "parsed": "CF",
-          "confidence": {
-            "score": 1.0,
-            "source": "deterministic"
-          },
-          "page_ref": [
-            2
-          ],
-          "flagged": false
-        },
-        "is_applied": {
-          "raw": "Applied",
-          "parsed": "Yes",
-          "confidence": {
-            "score": 1.0,
-            "source": "deterministic"
-          },
-          "page_ref": [],
-          "flagged": false
-        }
       }
     ],
     "optional_endorsement_coverages": [
@@ -3983,23 +3902,6 @@
     ],
     "mortgagees": [
       {
-        "rank": {
-          "raw": "1)",
-          "parsed": 1,
-          "confidence": {
-            "score": 1.0,
-            "source": "deterministic"
-          },
-          "page_ref": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6
-          ],
-          "flagged": false
-        },
         "name": {
           "raw": "Community Bank NA",
           "parsed": "Community Bank NA",
@@ -4114,6 +4016,23 @@
             ],
             "flagged": false
           }
+        },
+        "location_reference": {
+          "raw": "1)",
+          "parsed": "1)",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "flagged": false
         }
       }
     ]

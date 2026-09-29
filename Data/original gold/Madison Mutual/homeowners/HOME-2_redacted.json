@@ -1654,19 +1654,6 @@
           ],
           "flagged": false
         },
-        "swimming_pool": {
-          "raw": "Yes",
-          "parsed": "Yes",
-          "confidence": {
-            "score": 1.0,
-            "source": "deterministic"
-          },
-          "page_ref": [
-            3,
-            4
-          ],
-          "flagged": false
-        },
         "acreage": {
           "raw": "Under 10 Acres",
           "parsed": "Under 10 Acres",
@@ -2268,19 +2255,6 @@
           ],
           "flagged": false
         },
-        "swimming_pool": {
-          "raw": "Yes",
-          "parsed": "Yes",
-          "confidence": {
-            "score": 1.0,
-            "source": "deterministic"
-          },
-          "page_ref": [
-            3,
-            4
-          ],
-          "flagged": false
-        },
         "acreage": {
           "raw": "Under 10 Acres",
           "parsed": "Under 10 Acres",
@@ -2870,19 +2844,6 @@
           ],
           "flagged": false
         },
-        "swimming_pool": {
-          "raw": "Yes",
-          "parsed": "Yes",
-          "confidence": {
-            "score": 1.0,
-            "source": "deterministic"
-          },
-          "page_ref": [
-            3,
-            4
-          ],
-          "flagged": false
-        },
         "acreage": {
           "raw": "Under 10 Acres",
           "parsed": "Under 10 Acres",
@@ -2895,6 +2856,70 @@
             4
           ],
           "flagged": false
+        },
+        "address": {
+          "line_1": {
+            "raw": "52457 Tihcj Soysx 28",
+            "parsed": "52457 Tihcj Soysx 28",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [],
+            "flagged": false
+          },
+          "city": {
+            "raw": "Kingston",
+            "parsed": "Kingston",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              4
+            ],
+            "flagged": false
+          },
+          "state": {
+            "raw": "NY",
+            "parsed": "NY",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              4
+            ],
+            "flagged": false
+          },
+          "postal_code": {
+            "raw": "12401",
+            "parsed": "12401",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              1,
+              2,
+              4
+            ],
+            "flagged": false
+          },
+          "county": {
+            "raw": "Cortland Nvvhtbgw",
+            "parsed": "Cortland Nvvhtbgw",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [],
+            "flagged": false
+          }
         }
       }
     ],
@@ -3488,14 +3513,14 @@
           "flagged": false
         },
         "discount_type": {
-          "raw": "Credit",
-          "parsed": "Credit",
+          "raw": "Surcharge",
+          "parsed": "Surcharge",
           "confidence": {
             "score": 1.0,
             "source": "structural"
           },
           "page_ref": [
-            2
+            3
           ],
           "flagged": false
         }
@@ -4119,6 +4144,57 @@
           "source": "deterministic"
         },
         "page_ref": [],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Property Characteristics (1)",
+      "label": "Swimming Pool, Dock or Beach",
+      "value": {
+        "raw": "Yes",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Property Characteristics (Property: 2 of 3)",
+      "label": "Swimming Pool, Dock or Beach",
+      "value": {
+        "raw": "Yes",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Property Characteristics (1)",
+      "label": "Swimming Pool, Dock or Beach",
+      "value": {
+        "raw": "Yes",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3,
+          4
+        ],
         "flagged": false
       }
     }

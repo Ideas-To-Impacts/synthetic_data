@@ -1621,18 +1621,6 @@
           ],
           "flagged": false
         },
-        "swimming_pool": {
-          "raw": "Yes",
-          "parsed": "Yes",
-          "confidence": {
-            "score": 1.0,
-            "source": "deterministic"
-          },
-          "page_ref": [
-            2
-          ],
-          "flagged": false
-        },
         "acreage": {
           "raw": "Under 10 Acres",
           "parsed": "Under 10 Acres",
@@ -2126,6 +2114,93 @@
       "flagged": false
     }
   },
+  "interested_parties": [
+    {
+      "name": {
+        "raw": "Glenmara Ventures LLC",
+        "parsed": "Glenmara Ventures LLC",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1
+        ],
+        "flagged": false
+      },
+      "party_type": {
+        "raw": "Additional Interest",
+        "parsed": "Additional Interest",
+        "confidence": {
+          "score": 1.0,
+          "source": "structural"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "description_of_interest": {
+        "raw": "Deed Owner",
+        "parsed": "Deed Owner",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [],
+        "flagged": false
+      },
+      "address": {
+        "line_1": {
+          "raw": "470 Coach Rd",
+          "parsed": "470 Coach Rd",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "city": {
+          "raw": "Satellite Beach",
+          "parsed": "Satellite Beach",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        },
+        "state": {
+          "raw": "FL",
+          "parsed": "FL",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2
+          ],
+          "flagged": false
+        },
+        "postal_code": {
+          "raw": "32937",
+          "parsed": "32937",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1
+          ],
+          "flagged": false
+        }
+      }
+    }
+  ],
   "additional_fields": [
     {
       "section": "Premium Adjustment (Property 1)",
@@ -2155,6 +2230,22 @@
         },
         "page_ref": [
           1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Property Characteristics",
+      "label": "Swimming Pool, Dock or Beach",
+      "value": {
+        "raw": "Yes",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
         ],
         "flagged": false
       }

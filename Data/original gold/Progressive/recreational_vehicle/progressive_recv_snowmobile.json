@@ -2168,6 +2168,22 @@
         ],
         "flagged": false
       }
+    },
+    {
+      "section": "Payment Coupon",
+      "label": "Remit to",
+      "value": {
+        "raw": "PROGRESSIVE PO BOX 7247-0308 PHILADELPHIA PA 19170-0308",
+        "parsed": "PROGRESSIVE PO BOX 7247-0308 PHILADELPHIA PA 19170-0308",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      }
     }
   ],
   "billing": {

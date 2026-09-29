@@ -25,7 +25,7 @@
   }
  },
  "producer": {
-  "agency_name": "Stable Rock Insurance Agency LLC (86)",
+  "agency_name": "Stable Rock Insurance Agency LLC",
   "contact": {
    "phone": "(845) 610-5700"
   },
@@ -34,7 +34,8 @@
    "state": "NY",
    "postal_code": "13360",
    "line_1": "159 NY-28"
-  }
+  },
+  "producer_code": "(86)"
  },
  "named_insured": {
   "primary_name": "Glenmara Ventures LLC",
@@ -260,10 +261,6 @@
      "raw": "No",
      "parsed": "No"
     },
-    "swimming_pool": {
-     "raw": "Yes",
-     "parsed": "Yes"
-    },
     "acreage": "Under 10 Acres",
     "address": {
      "line_1": "602 Antlers Rd",
@@ -361,7 +358,22 @@
   "title": "PRESIDENT & CEO",
   "signature_date": "05/31/2026"
  },
- "interested_parties": [],
+ "interested_parties": [
+  {
+   "name": "Glenmara Ventures LLC",
+   "party_type": {
+    "raw": "Additional Interest",
+    "source": "structural"
+   },
+   "description_of_interest": "Deed Owner",
+   "address": {
+    "line_1": "470 Coach Rd",
+    "city": "Satellite Beach",
+    "state": "FL",
+    "postal_code": "32937"
+   }
+  }
+ ],
  "additional_fields": [
   {
    "section": "Premium Adjustment (Property 1)",
@@ -372,6 +384,11 @@
    "section": "Mail To",
    "label": "Mail To",
    "value": "Stable Rock Insurance Agency LLC (86) 159 NY-28 Inlet, NY 13360"
+  },
+  {
+   "section": "Property Characteristics",
+   "label": "Swimming Pool, Dock or Beach",
+   "value": "Yes"
   }
  ],
  "document_type_detail": {

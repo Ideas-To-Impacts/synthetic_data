@@ -124,16 +124,14 @@
   },
   "claim_reporting": {
     "claims_email": {
-      "raw": "info@sterlingsu.com",
-      "parsed": "info@sterlingsu.com",
+      "raw": "claims@sterlingsu.com",
+      "parsed": "claims@sterlingsu.com",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
       },
       "page_ref": [
-        1,
-        7,
-        38
+        5
       ],
       "flagged": false
     },
@@ -164,6 +162,83 @@
         1
       ],
       "flagged": false
+    },
+    "claims_address": {
+      "line_1": {
+        "raw": "PO Box 176",
+        "parsed": "PO Box 176",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          5,
+          7
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Madison",
+        "parsed": "Madison",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          5,
+          7
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "MS",
+        "parsed": "MS",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          11,
+          12,
+          13,
+          14,
+          20,
+          21,
+          22,
+          26,
+          27,
+          30,
+          32,
+          37
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "39130",
+        "parsed": "39130",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          5,
+          7
+        ],
+        "flagged": false
+      }
     }
   },
   "producer": {
@@ -1307,8 +1382,8 @@
           "flagged": false
         },
         "name": {
-          "raw": "KeyBank National Association,",
-          "parsed": "KeyBank National Association,",
+          "raw": "KeyBank National Association",
+          "parsed": "KeyBank National Association",
           "confidence": {
             "score": 1.0,
             "source": "deterministic"
@@ -1606,8 +1681,8 @@
       "section": "Cover letter",
       "label": "fx",
       "value": {
-        "raw": "https://backoffice.sterlingsu.com/submitclaim",
-        "parsed": "https://backoffice.sterlingsu.com/submitclaim",
+        "raw": "626-555-1751",
+        "parsed": "626-555-1751",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"

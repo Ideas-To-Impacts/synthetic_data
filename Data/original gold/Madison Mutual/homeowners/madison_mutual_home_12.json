@@ -207,8 +207,8 @@
   },
   "producer": {
     "agency_name": {
-      "raw": "Stable Rock Insurance Agency LLC (86)",
-      "parsed": "Stable Rock Insurance Agency LLC (86)",
+      "raw": "Stable Rock Insurance Agency LLC",
+      "parsed": "Stable Rock Insurance Agency LLC",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
@@ -295,6 +295,18 @@
         ],
         "flagged": false
       }
+    },
+    "producer_code": {
+      "raw": "(86)",
+      "parsed": "(86)",
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        1
+      ],
+      "flagged": false
     }
   },
   "named_insured": {
@@ -1550,18 +1562,6 @@
           ],
           "flagged": false
         },
-        "swimming_pool": {
-          "raw": "Yes",
-          "parsed": "Yes",
-          "confidence": {
-            "score": 1.0,
-            "source": "deterministic"
-          },
-          "page_ref": [
-            2
-          ],
-          "flagged": false
-        },
         "acreage": {
           "raw": "Under 10 Acres",
           "parsed": "Under 10 Acres",
@@ -2163,6 +2163,22 @@
         },
         "page_ref": [
           1
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Property Characteristics",
+      "label": "Swimming Pool, Dock or Beach",
+      "value": {
+        "raw": "Yes",
+        "parsed": "Yes",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          2
         ],
         "flagged": false
       }

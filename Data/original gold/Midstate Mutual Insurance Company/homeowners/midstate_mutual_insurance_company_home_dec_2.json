@@ -726,18 +726,6 @@
     }
   },
   "billing": {
-    "amount_due": {
-      "raw": "$ 2,331.00",
-      "parsed": 2331.0,
-      "confidence": {
-        "score": 1.0,
-        "source": "deterministic"
-      },
-      "page_ref": [
-        2
-      ],
-      "flagged": false
-    },
     "billing_note": {
       "raw": "Subsequent payments will be due each year on the anniversary date based on the rates in effect at that time.",
       "parsed": "Subsequent payments will be due each year on the anniversary date based on the rates in effect at that time.",

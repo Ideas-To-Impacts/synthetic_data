@@ -111,14 +111,14 @@
   },
   "claim_reporting": {
     "claims_email": {
-      "raw": "info@sterlingsu.com",
-      "parsed": "info@sterlingsu.com",
+      "raw": "claims@sterlingsu.com",
+      "parsed": "claims@sterlingsu.com",
       "confidence": {
         "score": 1.0,
         "source": "deterministic"
       },
       "page_ref": [
-        1
+        5
       ],
       "flagged": false
     },
@@ -147,6 +147,88 @@
         1
       ],
       "flagged": false
+    },
+    "claims_address": {
+      "line_1": {
+        "raw": "PO Box 176",
+        "parsed": "PO Box 176",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          5
+        ],
+        "flagged": false
+      },
+      "city": {
+        "raw": "Madison",
+        "parsed": "Madison",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          5
+        ],
+        "flagged": false
+      },
+      "state": {
+        "raw": "MS",
+        "parsed": "MS",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          9,
+          10,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          21,
+          23,
+          24,
+          28,
+          29,
+          31,
+          34,
+          36,
+          37,
+          38,
+          44,
+          45
+        ],
+        "flagged": false
+      },
+      "postal_code": {
+        "raw": "39130",
+        "parsed": "39130",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          2,
+          5
+        ],
+        "flagged": false
+      }
     }
   },
   "producer": {
@@ -1465,18 +1547,6 @@
       ],
       "flagged": false
     },
-    "title": {
-      "raw": "Vave Digital Services Limited",
-      "parsed": "Vave Digital Services Limited",
-      "confidence": {
-        "score": 1.0,
-        "source": "deterministic"
-      },
-      "page_ref": [
-        5
-      ],
-      "flagged": false
-    },
     "signature_date": {
       "raw": "08/02/2024",
       "parsed": "08/02/2024",
@@ -1585,6 +1655,22 @@
         },
         "page_ref": [
           35
+        ],
+        "flagged": false
+      }
+    },
+    {
+      "section": "Signature",
+      "label": "Signed for",
+      "value": {
+        "raw": "Vave Digital Services Limited",
+        "parsed": "Vave Digital Services Limited",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          5
         ],
         "flagged": false
       }

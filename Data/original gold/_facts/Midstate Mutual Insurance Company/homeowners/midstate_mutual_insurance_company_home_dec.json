@@ -276,15 +276,6 @@
    }
   },
   {
-   "form_number": "CF",
-   "edition_date": "00/00",
-   "form_title": "Claims Free Discount",
-   "is_included": {
-    "raw": "Applied",
-    "parsed": "Yes"
-   }
-  },
-  {
    "form_number": "ML-MMIC-PPLE",
    "edition_date": "07/17",
    "form_title": "Personal Property and Liability Enhancement",
@@ -558,14 +549,6 @@
      "raw": "-118.00",
      "parsed": -118.0
     }
-   },
-   {
-    "discount_name": "Claims Free Discount",
-    "form_reference": "CF",
-    "is_applied": {
-     "raw": "Applied",
-     "parsed": "Yes"
-    }
    }
   ],
   "optional_endorsement_coverages": [
@@ -604,10 +587,6 @@
   ],
   "mortgagees": [
    {
-    "rank": {
-     "raw": "1)",
-     "parsed": 1
-    },
     "name": "Community Bank NA",
     "clause_type": "Its successors and/or assigns As their interest may appear",
     "loan_number": "0842173412",
@@ -621,7 +600,8 @@
      "city": "Olean",
      "state": "NY",
      "postal_code": "14760"
-    }
+    },
+    "location_reference": "1)"
    }
   ]
  },

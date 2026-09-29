@@ -250,11 +250,14 @@
      "raw": "Yes",
      "parsed": "Yes"
     },
-    "swimming_pool": {
-     "raw": "No",
-     "parsed": "No"
-    },
-    "acreage": "10 - 99 Acres"
+    "acreage": "10 - 99 Acres",
+    "address": {
+     "line_1": "5706 Riverside West",
+     "city": "Beacon",
+     "state": "NY",
+     "postal_code": "12508-3130",
+     "county": "Cortland Epmuhhev"
+    }
    }
   ],
   "section_i_property_coverages": {
@@ -379,6 +382,11 @@
    "section": "Mail To",
    "label": "Mail To",
    "value": "Patriotic Insurance Group Brokerage Inc (86) 2251 Station PO Box 592 Ilion, NY 13357-5943"
+  },
+  {
+   "section": "Property Characteristics",
+   "label": "Swimming Pool, Dock or Beach",
+   "value": "No"
   }
  ],
  "document_type_detail": {

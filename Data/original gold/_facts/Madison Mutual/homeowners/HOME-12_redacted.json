@@ -21,7 +21,7 @@
   }
  },
  "producer": {
-  "agency_name": "Stable Rock Insurance Agency LLC (86)",
+  "agency_name": "Stable Rock Insurance Agency LLC",
   "address": {
    "city": "Ilion",
    "state": "NY",
@@ -31,7 +31,8 @@
   },
   "contact": {
    "phone": "(226) 783-0236"
-  }
+  },
+  "producer_code": "(86)"
  },
  "named_insured": {
   "primary_name": "Meridian Logistics",
@@ -245,10 +246,6 @@
      "raw": "Yes",
      "parsed": "Yes"
     },
-    "swimming_pool": {
-     "raw": "Yes",
-     "parsed": "Yes"
-    },
     "acreage": "Under 10 Acres",
     "address": {
      "line_1": "3553 Summit Drive",
@@ -381,6 +378,11 @@
    "section": "Mail To",
    "label": "Mail To",
    "value": "Stable Rock Insurance Agency LLC (86) 159 NY-28 PO Box 592 Ilion, NY 13357"
+  },
+  {
+   "section": "Property Characteristics",
+   "label": "Swimming Pool, Dock or Beach",
+   "value": "Yes"
   }
  ],
  "document_type_detail": {

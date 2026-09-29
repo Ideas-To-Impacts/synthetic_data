@@ -18,7 +18,13 @@
   }
  },
  "claim_reporting": {
-  "claims_notice_recipient": "Sterling Surplus Underwriters"
+  "claims_notice_recipient": "Sterling Surplus Underwriters",
+  "claims_address": {
+   "line_1": "PO Box 176",
+   "city": "Madison",
+   "state": "MS",
+   "postal_code": "39130"
+  }
  },
  "producer": {
   "agency_name": "Patriotic Insurance Group",
@@ -215,6 +221,11 @@
    "section": "Coverage / Deductible",
    "label": "Minimum earned premium",
    "value": "25% Minimum Earned Premium —OR— Minimum Earned Premium Endorsement"
+  },
+  {
+   "section": "Service of Suit",
+   "label": "Service of Suit made upon",
+   "value": "Lloyd's America, Inc. 280 Park Ave, East Tower, 25th Flr New York, NY 10017, USA"
   }
  ],
  "document_type_detail": {

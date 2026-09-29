@@ -571,7 +571,31 @@
           "flagged": false
         }
       }
-    ]
+    ],
+    "annual_premium_change": {
+      "raw": "$29.00",
+      "parsed": 29.0,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        2
+      ],
+      "flagged": false
+    },
+    "pro_rata_premium_change": {
+      "raw": "$19.30",
+      "parsed": 19.3,
+      "confidence": {
+        "score": 1.0,
+        "source": "deterministic"
+      },
+      "page_ref": [
+        2
+      ],
+      "flagged": false
+    }
   },
   "forms_and_endorsements": [
     {
@@ -2607,21 +2631,102 @@
       "flagged": false
     }
   },
-  "additional_fields": [
+  "interested_parties": [
     {
-      "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
-      "label": "Additional Insured Information",
-      "value": {
-        "raw": "(heading)",
-        "parsed": "(heading)",
+      "name": {
+        "raw": "Glenmara Ventures LLC",
+        "parsed": "Glenmara Ventures LLC",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "party_type": {
+        "raw": "Additional Interest",
+        "parsed": "Additional Interest",
         "confidence": {
           "score": 1.0,
           "source": "structural"
         },
-        "page_ref": [],
+        "page_ref": [
+          3
+        ],
         "flagged": false
+      },
+      "description_of_interest": {
+        "raw": "Deed Owner",
+        "parsed": "Deed Owner",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "address": {
+        "line_1": {
+          "raw": "470 Coach Rd",
+          "parsed": "470 Coach Rd",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            3
+          ],
+          "flagged": false
+        },
+        "city": {
+          "raw": "Satellite Beach",
+          "parsed": "Satellite Beach",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            3
+          ],
+          "flagged": false
+        },
+        "state": {
+          "raw": "FL",
+          "parsed": "FL",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            2,
+            3
+          ],
+          "flagged": false
+        },
+        "postal_code": {
+          "raw": "32937",
+          "parsed": "32937",
+          "confidence": {
+            "score": 1.0,
+            "source": "deterministic"
+          },
+          "page_ref": [
+            1,
+            3
+          ],
+          "flagged": false
+        }
       }
-    },
+    }
+  ],
+  "additional_fields": [
     {
       "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
       "label": "Name of Person or Organization",
@@ -2675,8 +2780,8 @@
       "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
       "label": "Applicable Coverage(s)",
       "value": {
-        "raw": "Coverage A -- Residence; Coverage B -- Related Private Structures; Coverage C -- Personal Property;",
-        "parsed": "Coverage A -- Residence; Coverage B -- Related Private Structures; Coverage C -- Personal Property;",
+        "raw": "Coverage A -- Residence; Coverage B -- Related Private Structures; Coverage C -- Personal Property; Coverage L -- Personal Liability; Coverage M -- Medical Payments To Others",
+        "parsed": "Coverage A -- Residence; Coverage B -- Related Private Structures; Coverage C -- Personal Property; Coverage L -- Personal Liability; Coverage M -- Medical Payments To Others",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -2684,20 +2789,6 @@
         "page_ref": [
           3
         ],
-        "flagged": false
-      }
-    },
-    {
-      "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
-      "label": "Coverage L -- Personal Liability; Coverage M -- Medical Payments To Others",
-      "value": {
-        "raw": "(heading)",
-        "parsed": "(heading)",
-        "confidence": {
-          "score": 1.0,
-          "source": "structural"
-        },
-        "page_ref": [],
         "flagged": false
       }
     },
@@ -2718,21 +2809,7 @@
       }
     },
     {
-      "section": "MM HO 5140 09 19 Additional Insured -- Specified Coverages (Property 1)",
-      "label": "HO 2530 01 06 Incidental Property Coverages - Higher Limits - Credit Card, Electronic Fund Transfer Card Or Access",
-      "value": {
-        "raw": "(heading)",
-        "parsed": "(heading)",
-        "confidence": {
-          "score": 1.0,
-          "source": "structural"
-        },
-        "page_ref": [],
-        "flagged": false
-      }
-    },
-    {
-      "section": "Device, Forgery And Counterfeit Money (Property 1)",
+      "section": "HO 2530 01 06 Incidental Property Coverages - Higher Limits - Credit Card, Electronic Fund Transfer Card Or Access Device, Forgery And Counterfeit Money (Property 1)",
       "label": "Amount of Increase",
       "value": {
         "raw": "$1,000",
@@ -2748,11 +2825,11 @@
       }
     },
     {
-      "section": "Device, Forgery And Counterfeit Money (Property 1)",
+      "section": "HO 2530 01 06 Incidental Property Coverages - Higher Limits - Credit Card, Electronic Fund Transfer Card Or Access Device, Forgery And Counterfeit Money (Property 1)",
       "label": "Total Limit",
       "value": {
-        "raw": "The Total Limit for this Incidental Property Coverage is the Amount of Increase shown plus the amount provided",
-        "parsed": "The Total Limit for this Incidental Property Coverage is the Amount of Increase shown plus the amount provided",
+        "raw": "The Total Limit for this Incidental Property Coverage is the Amount of Increase shown plus the amount provided under Incidental Property Coverages in the Policy Form.",
+        "parsed": "The Total Limit for this Incidental Property Coverage is the Amount of Increase shown plus the amount provided under Incidental Property Coverages in the Policy Form.",
         "confidence": {
           "score": 1.0,
           "source": "deterministic"
@@ -2760,20 +2837,6 @@
         "page_ref": [
           3
         ],
-        "flagged": false
-      }
-    },
-    {
-      "section": "Device, Forgery And Counterfeit Money (Property 1)",
-      "label": "under Incidental Property Coverages in the Policy Form.",
-      "value": {
-        "raw": "(heading)",
-        "parsed": "(heading)",
-        "confidence": {
-          "score": 1.0,
-          "source": "structural"
-        },
-        "page_ref": [],
         "flagged": false
       }
     },
@@ -2794,6 +2857,51 @@
       }
     }
   ],
+  "document_type_detail": {
+    "policy_change": {
+      "transaction_date": {
+        "raw": "07/03/2024",
+        "parsed": "07/03/2024",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          1,
+          4
+        ],
+        "flagged": false
+      },
+      "transaction_reason_description": {
+        "raw": "Amended Policy; Added MM HO 5140 09 19 Additional Insured -- Specified Coverages for LLC",
+        "parsed": "Amended Policy; Added MM HO 5140 09 19 Additional Insured -- Specified Coverages for LLC",
+        "confidence": {
+          "score": 1.0,
+          "source": "deterministic"
+        },
+        "page_ref": [
+          3
+        ],
+        "flagged": false
+      },
+      "changes": [
+        {
+          "change_description": {
+            "raw": "Amended Policy; Added MM HO 5140 09 19 Additional Insured -- Specified Coverages for LLC",
+            "parsed": "Amended Policy; Added MM HO 5140 09 19 Additional Insured -- Specified Coverages for LLC",
+            "confidence": {
+              "score": 1.0,
+              "source": "deterministic"
+            },
+            "page_ref": [
+              3
+            ],
+            "flagged": false
+          }
+        }
+      ]
+    }
+  },
   "text_sections": {
     "page1_s1": {
       "section_id": "page1_s1",

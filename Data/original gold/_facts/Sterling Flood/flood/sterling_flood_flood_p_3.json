@@ -20,10 +20,16 @@
  "claim_reporting": {
   "claims_notice_recipient": "Sterling Surplus Underwriters",
   "claims_email": "info@sterlingsu.com",
-  "claim_reporting_instructions": "https://backoffice.sterlingsu.com/submitclaim"
+  "claim_reporting_instructions": "https://backoffice.sterlingsu.com/submitclaim",
+  "claims_address": {
+   "line_1": "PO Box 176",
+   "city": "Madison",
+   "state": "MS",
+   "postal_code": "39130"
+  }
  },
  "producer": {
-  "agency_name": "Patriotic Insurance Group",
+  "agency_name": "Patriotic Insurance Group Brokerage Inc",
   "producer_contact_name": "Rob Bowen",
   "contact": {
    "phone": "845-610-5700"
@@ -197,7 +203,7 @@
     "name": "NBT Bank, N.A.",
     "clause_type": "ISOA ATIMA",
     "party_type": {
-     "raw": "Mortgage Detail",
+     "raw": "Mortgagee",
      "source": "structural"
     },
     "rank": {
