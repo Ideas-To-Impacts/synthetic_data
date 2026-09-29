@@ -58,8 +58,12 @@ DOC_TYPE = {"declaration": "Declaration", "policy history": "Policy History",
 VALUE = re.compile(r"^-?\(?\$?\d[\d,]*(?:\.\d+)?\)?\*?$|^(?:incl(?:uded)?|excluded|n/?a)\W*$", re.I)
 INCLUDED = re.compile(r"^incl", re.I)
 COVERAGE_HEAD = {"name": {"coverage", "coverages", "endorsement", "endorsements"},
-                 "limit": {"limit", "limits", "amount"},
-                 "deductible": {"deductible", "deductibles"}, "premium": {"premium", "premiums"}}
+                 # a header cell joining two words with a slash ("Limit/Deductible")
+                 # loses the slash to the same punctuation strip that reads
+                 # "Limit" alone, coming out as one unrecognised run of letters
+                 "limit": {"limit", "limits", "amount", "limitdeductible"},
+                 "deductible": {"deductible", "deductibles", "limitdeductible"},
+                 "premium": {"premium", "premiums"}}
 #: a unit's own description line: "2024 Viaggio by Misty Harbor 20 Lago Series"
 UNIT_LINE = re.compile(r"^((?:19|20)\d\d)\s+([A-Za-z].*?)(\s+\(continued\))?$", re.I)
 #: a form reference: "BY-403 CW (11-23)", "PL-50776 NY (11-23)"
@@ -112,6 +116,22 @@ def _worded(seg):
         return False
     after = seg.cell.text[seg.start + len(seg.orig):]
     return bool(re.match(r"\s+[A-Za-z]{2,}", after)) and not re.match(r"(?i)^\s*(?:incl|each|per)\b", after)
+
+
+def _basis(field):
+    """A limit's basis ("Each Occurrence"), cleaned of a second amount that
+    bled into it. A row whose limit and aggregate share one visual line with
+    the premium between them ("$2,000,000 Each Occurrence $77.00 3,000,000
+    Aggregate Limit") is not split cleanly upstream, so the qualifier text
+    can end up carrying a second, unrelated dollar figure; cut it there
+    rather than store a basis that is not, itself, a phrase the page prints."""
+    raw = field["raw"]
+    m = re.search(r"(?<!\w)\$?\s?\d[\d,]*(?:\.\d+)?\b", raw)
+    if m and m.start() > 0:
+        cut = raw[:m.start()].rstrip(" :-")
+        if cut:
+            return fv(cut)
+    return field
 
 
 def say(segs):
@@ -1575,7 +1595,8 @@ class Reader:
                 if not name and extra and last is not None:
                     basis = last.get("limit_basis")   # "each occurrence" under a limit
                     if basis is not None:
-                        basis["raw"] = basis["parsed"] = basis["raw"] + " " + extra
+                        combined = _basis(fv(basis["raw"] + " " + extra))
+                        basis["raw"] = basis["parsed"] = combined["raw"]
                         basis["_evidence"] = extra
                     continue
                 if re.match(r"(?i)includes? ", name) and last is not None:
@@ -1616,8 +1637,8 @@ class Reader:
                         if d["applies_to"]["raw"] == old_name:
                             d["applies_to"] = fv(last[key]["raw"])
                     continue
-                if pending and not pending.get("item") and abs(x0 - pending["x"]) < 3 \
-                        and not pending.get("desc"):
+                if pending and not pending.get("item") and not pending.get("used") \
+                        and abs(x0 - pending["x"]) < 3 and not pending.get("desc"):
                     pending["name"] += " " + name     # a name wrapped onto a second line
                     continue
                 pending = {"name": name, "x": x0}
@@ -1682,7 +1703,7 @@ class Reader:
                     and "limit" in vals and "limit_amount" not in last:
                 last["limit_amount"] = self._amount(vals["limit"])
                 if extra:
-                    last.setdefault("limit_basis", said_extra)
+                    last.setdefault("limit_basis", _basis(said_extra))
                 last.setdefault("coverage_description", said_name)
                 self._targets(unit, name, limit=last["limit_amount"])
                 continue
@@ -1821,7 +1842,7 @@ class Reader:
         if extra:
             said_extra = said_extra or fv(extra)
             if "limit_amount" in item:
-                item["limit_basis"] = said_extra
+                item["limit_basis"] = _basis(said_extra)
                 # "Agreed Value $52,000": the limit is also the unit's own value
                 rels = [r for r in self.unit_index.get(self.norm(extra), [])
                         if r.endswith(("price", "value"))]

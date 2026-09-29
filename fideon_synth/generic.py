@@ -107,8 +107,9 @@ PATTERNS = [   # (kind, regex) - earlier kinds win overlaps
         r"(?<![\w/$.,-])\d{1,6}\s+(?:(?:(?-i:%s|US|SR|CR)|State\s+Route|County\s+Road|Route|Rte|Hwy)"
         r"[- ]\d{1,4}\b(?![-/])|"
         r"(?!\d)(?:[A-Za-z0-9.']+\s){0,3}(?:St|Street|Rd|Road|Ave|Av|Avenue|Way|"
-        r"Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Blvd|Hwy|Highway|Route|Rte|Pkwy|Ter|Terrace|"
-        r"Cir|Circle|Trl|Trail|Pt|Point|Cove|Loop|Run|Pike|Path|Row|Sq)\b(?![-/]\d)\.?)"
+        r"Ln|Lane|Dr|Drive|Pl|Place|Plaza|Ct|Court|Blvd|Boulevard|Hwy|Highway|Route|Rte|Parkway|Pkwy|Ter|Terrace|"
+        r"Cir|Circle|Trl|Trail|Pt|Point|Cove|Loop|Run|Pike|Path|Row|Sq|Square|Crescent|Walk|Crossing|Grn|Green)"
+        r"\b(?![-/]\d)\.?)"
         r"(?:\s+(?:UNIT|APT|SUITE|STE|#)\s*[\w-]+)?" % "|".join(sorted(STATES)), re.I)),
     ("date", re.compile(r"(?<![\d/])\d{1,2}/\d{1,2}/(?:\d{4}|\d{2})(?![\d/])")),
     ("date", re.compile(r"(?<![\d-])\d{4}-\d{2}-\d{2}(?![\d-])")),
@@ -258,9 +259,9 @@ KIND_FITS = {
     # over a producer's contact)
     "person": re.compile(r"^(?!.*(?:agency|company|carrier|insurer|group)_)"
                          r".*(?:name|insured|representative|designee|agent|holder|contact|driver|operator|signator)"),
-    "company": re.compile(r"name|agency|company|carrier|insurer|lienholder|payee|party|designee"),
+    "company": re.compile(r"name|agency|company|carrier|insurer|lienholder|payee|party|designee|channel"),
     "street": re.compile(r"line_|address|street"), "pobox": re.compile(r"line_|address"),
-    "cityline": re.compile(r"city|address"), "place": re.compile(r"city|town|address"),
+    "cityline": re.compile(r"city|address"), "place": re.compile(r"city|town|address|district"),
     "county": re.compile(r"county"), "zip": re.compile(r"postal|zip"),
 }
 
@@ -1017,6 +1018,20 @@ UNTYPED_STREET = re.compile(r"[1-9]\d{0,5}\s+[A-Za-z][A-Za-z .'#-]*")   # not "0
 TOWN_LINE = re.compile(r"[A-Z][A-Za-z.'-]*(?:\s+[A-Z][A-Za-z.'-]*){0,2}")
 
 
+def _label_street(label):
+    """A street or PO box printed on the same visual line as the town that
+    follows it - "1899 Central Plaza East, Edmeston NY 13335-1899" reads its
+    town from the matched cityline and leaves this, its street, as the
+    "label" text before it."""
+    text = (label or "").strip().rstrip(",").strip()
+    if not text:
+        return None
+    m = PATTERNS[3][1].search(text) or PATTERNS[7][1].search(text)
+    if m:
+        return m.group(0)
+    return text if UNTYPED_STREET.fullmatch(text) else None
+
+
 def _address_block(found, cell_list):
     """The lines of a name-and-address block its shapes do not give away: a
     street with no street-type word, the town set on a line of its own, the
@@ -1148,7 +1163,8 @@ class Faker:
                 self.memo[key] = self._id(f.text)
             chars = iter(re.sub(r"[^A-Za-z0-9]", "", self.memo[key]))
             return "".join(next(chars, c) if c.isalnum() else c for c in f.text)
-        key = (f.kind, f.key or _key(f.text))
+        raw_key = f.key or f.text
+        key = (f.kind, _company_key(raw_key) if f.kind == "company" else _key(raw_key))
         if key not in self.memo:
             self.memo[key] = getattr(self, "_" + f.kind)(f.whole or f.text)
         new = self.memo[key]
@@ -1369,13 +1385,23 @@ def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text, cel
                 placed.add(path)
                 continue
             # a second policyholder printed in the same mailing block, or
-            # under a label that names policyholders ("CLIENTS")
-            if base == "named_insured" and (not f.label or INSURED_LABEL.search(f.label)):
+            # under a label that names policyholders ("CLIENTS"); a name split
+            # on "and"/"&" leaves the first name as the second one's "label"
+            # ("Kenneth Hinckley and") - that is the same block, not a caption
+            if base == "named_insured" and (not f.label or INSURED_LABEL.search(f.label)
+                                            or re.search(r"(?:\band\b|&)\s*$", f.label)):
                 extra = gold["named_insured"].setdefault("additional_named_insureds", [])
                 if f.new != gold["named_insured"]["primary_name"]["raw"] and \
                         not any(e["name"]["raw"] == f.new for e in extra):
                     extra.append({"name": fv(f.new), "entity_type": derived(
                         "Individual" if f.kind == "person" else "Organization", f.new)})
+                continue
+            # the agency has no list of its own to grow the way an insured's
+            # does; its own name printed again, with no caption of its own
+            # (a summary box repeating "ALLIANCE AGENCY" under itself), is the
+            # same party restated, not a second one to report as unmapped
+            if base == "producer" and \
+                    _company_key(f.new) == _company_key(gold["producer"][name_path.split(".")[-1]]["raw"]):
                 continue
             unmapped.append({"kind": f.kind, "label": f.label.strip(), "value": f.new,
                              "page": f.cell.page + 1})
@@ -1436,9 +1462,15 @@ def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text, cel
         path = match_label(label, f.kind, index)
         if f.kind in ("phone", "email") and PRODUCER_LABEL.search(f.label):
             path = "producer.contact." + f.kind
-        elif f.kind == "phone" and f.cell.page == 0 and f.rect.y1 < LETTERHEAD                 and not (PRODUCER_LABEL.search(f.label) or INSURED_LABEL.search(f.label)):
-            # the letterhead's "Phone: ... Fax: ..." is the insurer's
-            path = "carrier.contact." + ("fax" if re.search(r"(?i)(?<![a-z])fax", f.label) else "phone")
+        elif f.kind == "phone" and f.rect.y1 < LETTERHEAD \
+                and not (PRODUCER_LABEL.search(f.label) or INSURED_LABEL.search(f.label)):
+            # the letterhead's "Phone: ... Fax: ..." is the insurer's; a form
+            # that repeats its letterhead on every page states it again below
+            # page 1's, so a later page only takes it when it is that repeat
+            key = "fax" if re.search(r"(?i)(?<![a-z])fax", f.label) else "phone"
+            existing = (_get(gold, "carrier.contact." + key) or {}).get("raw")
+            if f.cell.page == 0 or (existing and _key(existing) == _key(f.new)):
+                path = "carrier.contact." + key
         if path == "policy.effective_date" and path in placed and f.kind == "date" \
                 and "policy.expiration_date" not in placed:
             # the second date of a period printed beside one label: "Policy
@@ -1457,9 +1489,43 @@ def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text, cel
                     if base + "." + key not in placed:
                         _set(gold, base + "." + key, fv(value))
                         placed.add(base + "." + key)
+                street = _label_street(f.label)
+                if street and base + ".line_1" not in placed:
+                    _set(gold, base + ".line_1", fv(street))
+                    placed.add(base + ".line_1")
                 continue
             if f.kind != "cityline":
                 path = base + ".line_1"
+        if path is None and f.kind in ("street", "pobox", "cityline", "place") \
+                and f.rect.y1 < LETTERHEAD \
+                and not (PRODUCER_LABEL.search(f.label) or INSURED_LABEL.search(f.label)):
+            # the carrier's own address, printed in the letterhead above its
+            # "Phone: ... Fax: ..." line - never a party's, this high with no label.
+            # A form that repeats its letterhead on every page prints the same
+            # address again below page 1's; a later page only ever states it
+            # once more, so it is only taken there when it is that repeat.
+            on_first_page = f.cell.page == 0
+            if f.kind == "cityline":
+                m = PATTERNS[4][1].search(f.new)
+                if m:
+                    city = (_get(gold, "carrier.address.city") or {}).get("raw")
+                    if on_first_page or (city and _key(city) == _key(m.group(1))):
+                        for key, value in zip(("city", "state", "postal_code"), m.groups()[:3]):
+                            if "carrier.address." + key not in placed:
+                                _set(gold, "carrier.address." + key, fv(value))
+                                placed.add("carrier.address." + key)
+                        street = _label_street(f.label)
+                        if street and "carrier.address.line_1" not in placed:
+                            _set(gold, "carrier.address.line_1", fv(street))
+                            placed.add("carrier.address.line_1")
+                        continue
+            else:
+                target = "carrier.address.city" if f.kind == "place" else "carrier.address.line_1"
+                existing = (_get(gold, target) or {}).get("raw")
+                if on_first_page:
+                    path = target
+                elif existing and _key(existing) == _key(f.new):
+                    continue
         if path is None and PRODUCER_LABEL.search(f.label):
             # an agent's block under any heading that says so: "Agency
             # Information", "Your Agent", "Producer"
@@ -1473,11 +1539,22 @@ def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text, cel
                 or _get(gold, path).get("parsed") == _field(f.kind, f.new).get("parsed")):
             continue                                  # same value printed again
         elif f.kind in ("person", "company") and _key(f.new) in (
-                _key((_get(gold, "producer.agency_name") or {}).get("raw") or ""),
-                _key((_get(gold, "named_insured.primary_name") or {}).get("raw") or "")):
-            continue                  # this party's name, printed again in a
-                                       # different case with no label a field
-                                       # can be matched to
+                {_key((_get(gold, "producer.agency_name") or {}).get("raw") or ""),
+                 _key((_get(gold, "named_insured.primary_name") or {}).get("raw") or "")} |
+                {_key(e["name"]["raw"]) for e in
+                 (_get(gold, "named_insured.additional_named_insureds") or [])}):
+            continue                  # a party's name, printed again on a later
+                                       # page (another building's own
+                                       # declaration restates it) with no label
+                                       # a field can be matched to
+        elif path == "named_insured.primary_name" and f.kind in ("person", "company") \
+                and INSURED_LABEL.search(f.label or ""):
+            # a genuinely different named insured under its own "Insured:"
+            # caption, on another building's page of the same policy - the
+            # primary's own slot is taken, so this one joins the others
+            extra = gold["named_insured"].setdefault("additional_named_insureds", [])
+            extra.append({"name": fv(f.new), "entity_type": derived(
+                "Individual" if f.kind == "person" else "Organization", f.new)})
         else:
             unmapped.append({"kind": f.kind, "label": f.label.strip(), "value": f.new,
                              "page": f.cell.page + 1})
@@ -1846,6 +1923,18 @@ def _not_values(pages):
 
 def _key(text):
     return " ".join(text.lower().split())
+
+
+#: a corporate designator a company's own name is printed with or without,
+#: depending where on the page it sits ("Patriotic Insurance Group Brokerage"
+#: under one heading, "...Brokerage Inc" under another) - one company, one
+#: replacement, so a cache key must not see these as two different names
+CORP_SUFFIX_WORD = re.compile(r"\s+(?:inc|incorporated|llc|l\.?l\.?c\.?|corp|corporation|co|company|ltd|"
+                              r"llp|lp|pllc|pc)\.?$", re.I)
+
+
+def _company_key(text):
+    return CORP_SUFFIX_WORD.sub("", _key(text))
 
 
 def _carrier_marks(carrier):
