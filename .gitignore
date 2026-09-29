@@ -6,3 +6,6 @@ dist/
 .pytest_cache/
 .venv/
 logs/
+
+# generated dataset (built by scripts/build_dataset.py)
+Data/synthetic data/
