@@ -267,6 +267,7 @@ KIND_FITS = {
 
 
 def _norm_label(text):
+    text = re.sub(r"(?i)^item\s+\d+[a-z]?[.:)]?\s*", "", text)   # "Item 3.  Limit of Liability"
     text = re.sub(r"[^a-z0-9 ]", " ", text.lower())
     words = [w for w in text.split() if w not in ("your", "the", "of")]
     return " ".join(words)
@@ -663,6 +664,25 @@ def _label_for(f, cell_list):
     return up or ""
 
 
+def _alt_label_for(f, cell_list):
+    """The candidate :func:`_label_for` did not choose for ``f`` - the cell
+    above when it chose the same-row neighbour, or the same-row neighbour
+    when it chose the cell above (or found nothing). A form with two "Item"
+    blocks set side by side can share a row without sharing a column, so the
+    chosen candidate is sometimes the other block's own label; tried as a
+    fallback once the chosen one fails to name any field at all."""
+    chosen = (f.label or "").strip()
+    left = _left(f.cell, cell_list)
+    left_text = left.text.strip() if left is not None and re.search(r"[A-Za-z]{2}", left.text) \
+        and not re.search(r"\d", left.text) else None
+    up = _label_above(f.rect, cell_list)
+    up = up.strip() if up else None
+    for cand in (up, left_text):
+        if cand and cand != chosen:
+            return cand
+    return None
+
+
 def _label_above(r, cell_list, max_gap=2.2):
     """The label printed over a value: the nearest cell above it, by vertical
     gap and then horizontal distance - a value in a box is often indented from
@@ -913,6 +933,25 @@ def find_values(cell_list):
                 break
             if NAME_LABEL.search(up.text) or PRODUCER_LABEL.search(up.text):
                 context = up.text
+        if not context:
+            # a box's own heading ("PRODUCER") set at the box's edge rather
+            # than over its content - too far from the content's own x0 for
+            # _above's column-alignment rule, so found instead by whether the
+            # heading's width overlaps the content's at all
+            r = f.cell.rect
+            heading = None
+            for other in cell_list:
+                o = other.rect
+                if o.y1 > r.y0 + 0.5 * r.height or r.y0 - o.y1 > 4.0 * r.height:
+                    continue
+                if min(o.x1, r.x1) - max(o.x0, r.x0) < 0:
+                    continue                      # no horizontal overlap at all
+                text = other.text.strip()
+                if NAME_LABEL.search(text) or PRODUCER_LABEL.search(text):
+                    if heading is None or o.y1 > heading.rect.y1:
+                        heading = other
+            if heading is not None:
+                context = heading.text
         if PRODUCER_LABEL.search(context or ""):
             f.role = "producer"
         elif INSURED_LABEL.search(context or ""):
@@ -1460,6 +1499,17 @@ def build_gold(found, index, carrier, lob_title, pdf_name, pages, page_text, cel
             continue
         label = _norm_label(f.label)
         path = match_label(label, f.kind, index)
+        if path is None and cells:
+            # a value's chosen label (nearest by geometry) can be a same-row
+            # neighbour from an unrelated block, or a heading set over an
+            # unrelated block above - tried only now, since the geometry that
+            # chose it is usually right and must not be second-guessed when
+            # it already names a field
+            alt = _alt_label_for(f, cells.get(f.cell.page) or [])
+            if alt:
+                alt_path = match_label(_norm_label(alt), f.kind, index)
+                if alt_path is not None:
+                    path, label, f.label = alt_path, _norm_label(alt), alt
         if f.kind in ("phone", "email") and PRODUCER_LABEL.search(f.label):
             path = "producer.contact." + f.kind
         elif f.kind == "phone" and f.rect.y1 < LETTERHEAD \

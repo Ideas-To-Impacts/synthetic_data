@@ -1183,7 +1183,8 @@
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "Policy Total Premium",
-            "Total Policy Premium"
+            "Total Policy Premium",
+            "Policy Premium"
           ]
         },
         "basic_premium": {
@@ -1769,7 +1770,11 @@
               "$ref": "#/$defs/FieldValue"
             },
             "aggregate_limit": {
-              "$ref": "#/$defs/FieldValue"
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "Limit of Liability",
+                "Maximum Aggregate Limit of Liability"
+              ]
             },
             "products_completed_operations_aggregate_limit": {
               "$ref": "#/$defs/FieldValue",
