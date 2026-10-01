@@ -132,7 +132,7 @@ def doc_name(lob, pdf, k, shared):
 
 def make(task):
     split, lob, pdf, k, out, name = task
-    from fideon_synth import generic
+    from fideon_synth import generator as generic
     from fideon_synth.schema import CanonicalSchema
     from fideon_synth.values import Values
     pdf_out = Path(out) / split / "pdfs" / (name + ".pdf")

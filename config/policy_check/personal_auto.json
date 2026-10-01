@@ -3,25 +3,23 @@
   "title": "Personal Auto policy",
   "fideon:doc_type": "policy_check",
   "fideon:lob": "personal_auto",
-  "fideon:note": "Generated from the supplied personal_auto.schema.json v1.4.0 by scripts/build_canonical_policy_schemas.py. Do not hand-edit; edit the source and regenerate. Extended by scripts/canonical_schema_extensions.py with fields the supplied skeleton did not carry; re-run it after any regeneration. Fields carried over from ocean_marine 2026-09-25 (text_sections and printed facts every line of business prints): text_sections, document.print_time, document.print_code, document.source_url, policy.product_code, policy.policy_period_location_basis, billing.billing_note, billing.payment_coupon_scan_line, billing.phone. Fields carried over from SLM L1 2026-09-27 by scripts/slm_l1_additions.py: additional_fields, address full, policy tier/rating state/quote/original inception/cancellation method/renewal offer/term as printed, named insured contact name/occupation/marital status, document endorsement number/delivery preference/e-signature certificate, signature presence, coverages and the math audit rule; re-run it after any regeneration.",
+  "fideon:note": "Generated from the supplied personal_auto.schema.json v1.4.0 by scripts/build_canonical_policy.py. Do not hand-edit; edit the source and regenerate. Hand-extended to v1.5.0: see fideon:source.change_log.",
   "fideon:source": {
     "schema_id": "fideon.canonical.personal_auto",
-    "version": "1.4.0",
+    "version": "1.5.0",
     "line_of_business_as_supplied": "Personal Auto",
     "line_specific_block": "auto",
-    "field_count": 1015,
+    "field_count": 1002,
     "corpus_document_count": 26,
     "corpus_carrier_count": 8,
-    "aliased_fields": 357,
+    "aliased_fields": 361,
     "field_count_as_supplied": 434,
-    "extensions_applied": "scripts/canonical_schema_extensions.py",
-    "gap_analysis_extensions": "2026-09-25: personal auto gap analysis of 26 PDFs from 8 carriers (AEIC, Hagerty, MAPFRE, Mercury, NYCM, Plymouth, Progressive, Travelers). 89 schema nodes added (declarations form number, NY DMV insurer code, original inception date, purchase date/time, product code, named/co-insured demographics, contact table, insurance score vendor, per-vehicle MVLE fee / optional coverages premium / discount total, supplemental spousal liability premium and rate, remittance and bill-plan options, UM and SUM per-person/per-accident limits, statutory UM and SUM out-of-state indicators, no-fault benefit periods, transportation and substitute transportation daily/maximum limits, roadside towing distance, rental vehicle coverage premium-charge election, coverage_packages[], vehicle/driver change status, accident prevention course date, class code components, residence type, id_cards[], printed name on declination forms); printed labels added as aliases on existing fields. Misplaced aliases moved: Inception Date (policy.effective_date -> policy.original_inception_date), Coverage Details and Coverage Summary (auto.liability_coverages -> auto.vehicles[].coverages[] / document.document_title_as_stated); ISSUE DATE on auto.drivers[].date_licensed replaced by LICENSE ISSUE DATE; Roadside Assistance now also names auto.physical_damage_coverages.roadside_assistance_limit. Merged duplicate fields: auto.physical_damage_coverages.other_than_collision_deductible -> comprehensive_deductible; auto.no_fault_benefits.basic_economic_loss_limit -> mandatory_pip_limit. Applied directly to this file. Gold review (same day, 23 generated samples checked against their scans): Name -> named_insured.primary_name (was taken by third_party_designee.name); Actual Cash Value off physical_damage_coverages.valuation_basis; Comprehensive / Other Than Collision / Collision moved to the premium fields (the amount printed after them is the premium) and Comprehensive deductible / Collision deductible added to the deductibles; bare Bodily Injury / Property Damage / EACH ACCIDENT removed (they matched discount lines); EFF DATE moved to document.transaction_effective_date; Pay in Full / Pay in Installments moved to the option totals; auto.vehicles[].unit_description and auto.vehicles[].total_loss_settlement_basis declared (the generator writes both). Bare 'Comprehensive' / 'Collision' removed from the premium fields: the amount printed after them is the premium on some forms (Hagerty) and the deductible on others (Plymouth). billing.remittance_payable_to renamed billing.payable_to, the name the generator writes."
-  },
-  "fideon:verification": {
-    "source_documents": 26,
-    "source_carriers": 8,
-    "verified_against_documents": true,
-    "note": "fields reviewed against these documents; see fideon:source.gap_analysis_extensions"
+    "repo_additions": 1,
+    "external_gap_analysis_notes": "2026-09-25: personal auto gap analysis of 26 PDFs from 8 carriers (AEIC, Hagerty, MAPFRE, Mercury, NYCM, Plymouth, Progressive, Travelers). 89 schema nodes added (declarations form number, NY DMV insurer code, original inception date, purchase date/time, product code, named/co-insured demographics, contact table, insurance score vendor, per-vehicle MVLE fee / optional coverages premium / discount total, supplemental spousal liability premium and rate, remittance and bill-plan options, UM and SUM per-person/per-accident limits, statutory UM and SUM out-of-state indicators, no-fault benefit periods, transportation and substitute transportation daily/maximum limits, roadside towing distance, rental vehicle coverage premium-charge election, coverage_packages[], vehicle/driver change status, accident prevention course date, class code components, residence type, id_cards[], printed name on declination forms); printed labels added as aliases on existing fields. Misplaced aliases moved: Inception Date (policy.effective_date -> policy.original_inception_date), Coverage Details and Coverage Summary (auto.liability_coverages -> auto.vehicles[].coverages[] / document.document_title_as_stated); ISSUE DATE on auto.drivers[].date_licensed replaced by LICENSE ISSUE DATE; Roadside Assistance now also names auto.physical_damage_coverages.roadside_assistance_limit. Merged duplicate fields: auto.physical_damage_coverages.other_than_collision_deductible -> comprehensive_deductible; auto.no_fault_benefits.basic_economic_loss_limit -> mandatory_pip_limit. Applied directly to this file. Gold review (same day, 23 generated samples checked against their scans): Name -> named_insured.primary_name (was taken by third_party_designee.name); Actual Cash Value off physical_damage_coverages.valuation_basis; Comprehensive / Other Than Collision / Collision moved to the premium fields (the amount printed after them is the premium) and Comprehensive deductible / Collision deductible added to the deductibles; bare Bodily Injury / Property Damage / EACH ACCIDENT removed (they matched discount lines); EFF DATE moved to document.transaction_effective_date; Pay in Full / Pay in Installments moved to the option totals; auto.vehicles[].unit_description and auto.vehicles[].total_loss_settlement_basis declared (the generator writes both). Bare 'Comprehensive' / 'Collision' removed from the premium fields: the amount printed after them is the premium on some forms (Hagerty) and the deductible on others (Plymouth). billing.remittance_payable_to renamed billing.payable_to, the name the generator writes.",
+    "merged_from_synthetic_data_repo": "config/policy_check/personal_auto.json at Ideas-To-Impacts/synthetic_data@main, merged 2026-09-26",
+    "change_log": [
+      "1.5.0 (2026-09-29): added named_insured.all_named_insureds[].name. Every name the declarations' insured block prints, in order (one, two or more) -- the primary first. Built only from that block, never from an insured-summary table; see _header_named_insureds in fideon/l1/registry_extractor.py."
+    ]
   },
   "fideon:mandatory_fields": [
     "carrier",
@@ -33,21 +31,8 @@
       "policy.effective_date <= policy.expiration_date"
     ],
     "math": [
-      "sum(coverages[*].premium) \u2248 premium.total_policy_premium \u00b1 0.01"
+      "sum(coverages[*].premium) ≈ premium.total_policy_premium ± 0.01"
     ]
-  },
-  "fideon:parsed_formats": {
-    "date": {
-      "format": "MM/DD/YYYY",
-      "strftime": "%m/%d/%Y",
-      "pattern": "^(0[1-9]|1[0-2])/(0[1-9]|[12][0-9]|3[01])/[0-9]{4}$",
-      "example": "05/06/2026",
-      "applies_to": "(^|_)dated?(_|$)",
-      "exceptions": [
-        "edition_date"
-      ],
-      "note": "US insurance documents print dates month/day/year, so every date's parsed value is MM/DD/YYYY: two-digit month and day, four-digit year, whatever the page prints (5/6/26, May 6, 2026 and 2026-05-06 are all parsed as 05/06/2026). raw stays exactly as printed. applies_to matches field names such as effective_date, date_of_birth and replaces_prior_declaration_dated. A form edition_date (\"04/07\") has no day and keeps its printed form. A value that is not a calendar date (\"Full Prior Acts\", \"None\") has parsed null. Compare dates as dates, not strings: as text, 12/31/2025 sorts after 01/01/2026 - this includes the date_ordering audit rules."
-    }
   },
   "type": "object",
   "required": [
@@ -106,9 +91,9 @@
         "transaction_type": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
-            "Renewal Of",
             "TRANS TYPE",
-            "Transaction Type"
+            "Transaction Type",
+            "Renewal Of"
           ]
         },
         "transaction_reason": {
@@ -116,36 +101,19 @@
           "fideon:aliases": [
             "Amended Date",
             "Modifies Coverage(s) at Renewal",
-            "Reason",
-            "Reason(s) for Modification"
+            "Reason(s) for Modification",
+            "Reason"
           ]
         },
         "transaction_effective_date": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
+            "transaction_date",
             "Effective Date of Endorsement",
             "Policy Changes Made As Of",
             "Transaction Effective",
             "EFF DATE",
             "Endorsement Policy Declarations Effective"
-          ]
-        },
-        "transaction_date": {
-          "$ref": "#/$defs/FieldValue",
-          "fideon:aliases": [
-            "Transaction Date"
-          ]
-        },
-        "transaction_expiration_date": {
-          "$ref": "#/$defs/FieldValue",
-          "fideon:aliases": [
-            "Transaction Expiration"
-          ]
-        },
-        "transaction_number": {
-          "$ref": "#/$defs/FieldValue",
-          "fideon:aliases": [
-            "Change Number"
           ]
         },
         "issue_date": {
@@ -159,13 +127,13 @@
         "print_date": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
-            "Date Printed",
             "Date Summary Printed",
             "Last Updated",
+            "PROCESSING DATE",
+            "Process Date",
+            "Date Printed",
             "Print Date",
             "Printed On",
-            "Process Date",
-            "PROCESSING DATE",
             "Date Mailed",
             "Date of Mailing",
             "Generated",
@@ -186,6 +154,36 @@
         },
         "source_system": {
           "$ref": "#/$defs/FieldValue"
+        },
+        "endorsement_number": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 11 of the 22 lines. Which endorsement THIS document is. `forms_and_endorsements[]` lists the forms attached to the policy; this names the change the page represents."
+        },
+        "esignature_certificate": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 5 of the 22 lines. The e-signature certificate id -- the evidence the document was signed."
+        },
+        "delivery_preference": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 4 of the 22 lines. Paper or electronic. A notice sent the way the policyholder did not choose is a compliance failure."
+        },
+        "transaction_date": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Transaction Date"
+          ]
+        },
+        "transaction_expiration_date": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Transaction Expiration"
+          ]
+        },
+        "transaction_number": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "Change Number"
+          ]
         },
         "copy_type": {
           "$ref": "#/$defs/FieldValue",
@@ -270,122 +268,6 @@
             "Link",
             "Source URL"
           ]
-        },
-        "endorsement_number": {
-          "$ref": "#/$defs/FieldValue",
-          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 11 of the 22 lines. Which endorsement THIS document is. `forms_and_endorsements[]` lists the forms attached to the policy; this names the change the page represents."
-        },
-        "esignature_certificate": {
-          "type": "object",
-          "properties": {
-            "document_reference": {
-              "$ref": "#/$defs/FieldValue",
-              "fideon:aliases": [
-                "Document Reference"
-              ]
-            },
-            "document_title": {
-              "$ref": "#/$defs/FieldValue",
-              "fideon:aliases": [
-                "Document Title"
-              ]
-            },
-            "document_region": {
-              "$ref": "#/$defs/FieldValue",
-              "fideon:aliases": [
-                "Document Region"
-              ]
-            },
-            "sender_name": {
-              "$ref": "#/$defs/FieldValue",
-              "fideon:aliases": [
-                "Sender Name"
-              ]
-            },
-            "sender_email": {
-              "$ref": "#/$defs/FieldValue",
-              "fideon:aliases": [
-                "Sender Email"
-              ]
-            },
-            "total_pages": {
-              "$ref": "#/$defs/FieldValue",
-              "fideon:aliases": [
-                "Total Document Pages"
-              ]
-            },
-            "secondary_security": {
-              "$ref": "#/$defs/FieldValue",
-              "fideon:aliases": [
-                "Secondary Security"
-              ]
-            },
-            "participants": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "name": {
-                    "$ref": "#/$defs/FieldValue"
-                  },
-                  "email": {
-                    "$ref": "#/$defs/FieldValue"
-                  },
-                  "role": {
-                    "$ref": "#/$defs/FieldValue"
-                  },
-                  "signed_datetime": {
-                    "$ref": "#/$defs/FieldValue"
-                  }
-                }
-              },
-              "fideon:aliases": [
-                "Participants"
-              ]
-            },
-            "history": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "timestamp": {
-                    "$ref": "#/$defs/FieldValue",
-                    "fideon:aliases": [
-                      "Timestamp"
-                    ]
-                  },
-                  "event_description": {
-                    "$ref": "#/$defs/FieldValue",
-                    "fideon:aliases": [
-                      "Description"
-                    ]
-                  },
-                  "ip_address": {
-                    "$ref": "#/$defs/FieldValue"
-                  },
-                  "user_agent": {
-                    "$ref": "#/$defs/FieldValue"
-                  }
-                }
-              },
-              "fideon:aliases": [
-                "Document History"
-              ]
-            },
-            "attached_page_count": {
-              "$ref": "#/$defs/FieldValue",
-              "fideon:aliases": [
-                "page(s) attached here"
-              ]
-            },
-            "provider": {
-              "$ref": "#/$defs/FieldValue"
-            }
-          },
-          "fideon:aliases": [
-            "Document Completion Certificate"
-          ],
-          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 5 of the 22 lines. The e-signature certificate -- the evidence the document was signed. Same shape as homeowners."
         }
       }
     },
@@ -406,6 +288,9 @@
         "writing_company_name": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
+            "underwriting_company",
+            "writing_company",
+            "issuing_company",
             "Policy Issued By"
           ]
         },
@@ -415,6 +300,7 @@
         "naic_number": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
+            "naic_code",
             "NAIC #",
             "NAIC"
           ]
@@ -446,12 +332,12 @@
             "country": {
               "$ref": "#/$defs/FieldValue"
             },
-            "county_code": {
-              "$ref": "#/$defs/FieldValue"
-            },
             "full": {
               "$ref": "#/$defs/FieldValue",
-              "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
+              "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The supplied schema carries only the split parts, and L1 reads the block whole rather than guessing where the street ends and the city begins."
+            },
+            "county_code": {
+              "$ref": "#/$defs/FieldValue"
             }
           }
         },
@@ -491,6 +377,10 @@
         },
         "state_of_issue": {
           "$ref": "#/$defs/FieldValue"
+        },
+        "admitted_status": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 5 of the 22 lines. Admitted or surplus lines. `is_surplus_lines` is a boolean; carriers print a status word."
         },
         "company_structure": {
           "$ref": "#/$defs/FieldValue",
@@ -564,12 +454,12 @@
             "country": {
               "$ref": "#/$defs/FieldValue"
             },
-            "county_code": {
-              "$ref": "#/$defs/FieldValue"
-            },
             "full": {
               "$ref": "#/$defs/FieldValue",
-              "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
+              "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The supplied schema carries only the split parts, and L1 reads the block whole rather than guessing where the street ends and the city begins."
+            },
+            "county_code": {
+              "$ref": "#/$defs/FieldValue"
             }
           }
         },
@@ -579,14 +469,15 @@
             "phone": {
               "$ref": "#/$defs/FieldValue",
               "fideon:aliases": [
-                "FOR POLICY QUESTIONS OR CHANGES PLEASE CALL",
-                "For Policy Service Call",
                 "Home",
                 "Mobile",
+                "Work",
+                "agency_phone",
+                "FOR POLICY QUESTIONS OR CHANGES PLEASE CALL",
+                "For Policy Service Call",
                 "Phone O",
                 "Policy questions or changes",
                 "Telephone",
-                "Work",
                 "Office",
                 "For Policy Service"
               ]
@@ -620,14 +511,14 @@
         }
       },
       "fideon:aliases": [
-        "AGENCY NAME AND ADDRESS",
         "Agency",
+        "Agent",
+        "Producer",
+        "Broker",
+        "AGENCY NAME AND ADDRESS",
         "Agency Address",
         "Agency Information",
-        "Agent",
         "Agent or Broker",
-        "Broker",
-        "Producer",
         "Your Agency's Name and Address"
       ]
     },
@@ -684,15 +575,20 @@
         "program_name": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
+            "package_bundle",
             "Program"
           ]
         },
         "policy_form_name": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "form_name"
+          ]
         },
         "policy_form_number": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
+            "form_number",
             "Policy Form"
           ]
         },
@@ -712,15 +608,16 @@
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
             "Both dates",
+            "Start Date",
             "Effective Date Of Policy",
             "Policy Effective Date",
             "Policy Period From",
             "Policy Term Effective Date",
-            "Start Date",
             "The policy period is from",
             "Policy Period",
             "Policy Term",
-            "Policy Effective"
+            "Policy Effective",
+            "Eff. Date"
           ]
         },
         "expiration_date": {
@@ -749,10 +646,6 @@
             "Term Length"
           ]
         },
-        "policy_term_as_printed": {
-          "$ref": "#/$defs/FieldValue",
-          "fideon:repo_addition": "The policy term EXACTLY as the page states it, whichever form that takes. Carriers print two: a duration (`Policy Term: 12 Months`) and a date range (`Policy Term: 02/29/2024 to 02/28/2025`). `policy_term_months` counts months, so a carrier printing the range had its date pair written into a numeric field. Keeping both means `policy_term_months` stays a number and the printed form survives as the audit trail."
-        },
         "anniversary_date": {
           "$ref": "#/$defs/FieldValue"
         },
@@ -768,10 +661,6 @@
         "cancellation_reason": {
           "$ref": "#/$defs/FieldValue"
         },
-        "cancellation_method": {
-          "$ref": "#/$defs/FieldValue",
-          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 8 of the 22 lines. HOW a policy was cancelled -- flat, pro-rata, short rate. `cancellation_date` and `cancellation_reason` exist; the method is what decides the refund."
-        },
         "nonrenewal_notice_date": {
           "$ref": "#/$defs/FieldValue"
         },
@@ -784,6 +673,44 @@
         },
         "minimum_earned_premium_percentage": {
           "$ref": "#/$defs/FieldValue"
+        },
+        "original_inception_date": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 13 of the 22 lines. The date the policy FIRST incepted, which a renewal states beside its own term -- North Country prints `Inception Date`. Distinct from `effective_date` and from `anniversary_date`.",
+          "fideon:aliases": [
+            "Inception Date"
+          ]
+        },
+        "renewal_offer": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 12 of the 22 lines. Whether the carrier is offering renewal, and on what terms. A compliance fact on any non-renewal."
+        },
+        "rating_state": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 9 of the 22 lines. The state whose rates apply -- not always where the policy was issued (`carrier.state_of_issue`), nor where the risk sits."
+        },
+        "policy_tier": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 8 of the 22 lines. NYCM prints `Tier: 9`. A rating tier moves the premium and had no slot, so it travelled in `additional_fields` flagged as unverified."
+        },
+        "cancellation_method": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 8 of the 22 lines. HOW a policy was cancelled -- flat, pro-rata, short rate. `cancellation_date` and `cancellation_reason` exist; the method is what decides the refund."
+        },
+        "non_assessable_cooperative": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 7 of the 22 lines. Whether a co-operative may assess its members. Printed on the face of every Leatherstocking declaration, and a statement about the policyholder's liability rather than the carrier's."
+        },
+        "quote_number": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 4 of the 22 lines. The quote this policy was issued from. NYCM prints `QUOTE #: Q31829763` on every page.",
+          "fideon:aliases": [
+            "QUOTE #"
+          ]
+        },
+        "policy_term_as_printed": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "The policy term EXACTLY as the page states it, whichever form that takes. Carriers print two: a duration (`Policy Term: 12 Months`) and a date range (`Policy Term: 02/29/2024 to 02/28/2025`). `policy_term_months` counts months, so a carrier printing the range had its date pair written into a numeric field -- Plymouth Rock shipped `policy_term_months: \"02/29/2024 to 02/28/2025\"`, which is wrong for anyone who trusts the field name, and aliasing the two together would make that the intended behaviour. The alternative was to leave the range in `additional_fields`, flagged. Rejected: every carrier prints the term in one of these two forms, so that is a recurring flagged unknown for a fact the page states plainly. Keeping both fields means `policy_term_months` stays a number and the printed form survives as the audit trail; the date range itself is also in `effective_date`/`expiration_date`, and this says what the page said."
         },
         "plan_type": {
           "$ref": "#/$defs/FieldValue",
@@ -842,12 +769,6 @@
             "Final Market"
           ]
         },
-        "quote_number": {
-          "$ref": "#/$defs/FieldValue",
-          "fideon:aliases": [
-            "QUOTE #"
-          ]
-        },
         "account_type": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
@@ -883,12 +804,6 @@
             "EXCEPTIONS"
           ]
         },
-        "original_inception_date": {
-          "$ref": "#/$defs/FieldValue",
-          "fideon:aliases": [
-            "Inception Date"
-          ]
-        },
         "purchase_date": {
           "$ref": "#/$defs/FieldValue"
         },
@@ -910,17 +825,6 @@
             "At the address of the named insured",
             "Policy period location basis"
           ]
-        },
-        "rating_state": {
-          "$ref": "#/$defs/FieldValue",
-          "fideon:aliases": [
-            "Rating State"
-          ],
-          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 9 of the 22 lines. The state whose rates apply -- not always where the policy was issued (`carrier.state_of_issue`), nor where the risk sits."
-        },
-        "renewal_offer": {
-          "$ref": "#/$defs/FieldValue",
-          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 12 of the 22 lines. Whether the carrier is offering renewal, and on what terms. A compliance fact on any non-renewal."
         }
       },
       "fideon:aliases": [
@@ -975,18 +879,18 @@
             "country": {
               "$ref": "#/$defs/FieldValue"
             },
-            "county_code": {
-              "$ref": "#/$defs/FieldValue"
-            },
             "full": {
               "$ref": "#/$defs/FieldValue",
-              "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
+              "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The supplied schema carries only the split parts, and L1 reads the block whole rather than guessing where the street ends and the city begins."
+            },
+            "county_code": {
+              "$ref": "#/$defs/FieldValue"
             }
           },
           "fideon:aliases": [
+            "Mail To",
             "ATTN",
-            "Attn",
-            "Mail To"
+            "Attn"
           ]
         },
         "physical_address": {
@@ -1013,12 +917,12 @@
             "country": {
               "$ref": "#/$defs/FieldValue"
             },
-            "county_code": {
-              "$ref": "#/$defs/FieldValue"
-            },
             "full": {
               "$ref": "#/$defs/FieldValue",
-              "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
+              "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The supplied schema carries only the split parts, and L1 reads the block whole rather than guessing where the street ends and the city begins."
+            },
+            "county_code": {
+              "$ref": "#/$defs/FieldValue"
             }
           }
         },
@@ -1049,10 +953,6 @@
               "$ref": "#/$defs/FieldValue"
             }
           }
-        },
-        "contact_name": {
-          "$ref": "#/$defs/FieldValue",
-          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 12 of the 22 lines. `named_insured.contact` models phone, fax, email and website and carries no name, so the PERSON to contact had nowhere to go."
         },
         "business_description": {
           "$ref": "#/$defs/FieldValue",
@@ -1116,12 +1016,12 @@
                   "country": {
                     "$ref": "#/$defs/FieldValue"
                   },
-                  "county_code": {
-                    "$ref": "#/$defs/FieldValue"
-                  },
                   "full": {
                     "$ref": "#/$defs/FieldValue",
-                    "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
+                    "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The supplied schema carries only the split parts, and L1 reads the block whole rather than guessing where the street ends and the city begins."
+                  },
+                  "county_code": {
+                    "$ref": "#/$defs/FieldValue"
                   }
                 }
               },
@@ -1142,6 +1042,18 @@
           "fideon:aliases": [
             "Co-Insured Information"
           ]
+        },
+        "contact_name": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 12 of the 22 lines. `named_insured.contact` models phone, fax, email and website and carries no name, so the PERSON to contact had nowhere to go."
+        },
+        "marital_status": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 5 of the 22 lines. A personal-lines rating factor."
+        },
+        "occupation": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 4 of the 22 lines. A personal-lines rating factor."
         },
         "insurance_score": {
           "type": "object",
@@ -1205,10 +1117,6 @@
                 },
                 "country": {
                   "$ref": "#/$defs/FieldValue"
-                },
-                "full": {
-                  "$ref": "#/$defs/FieldValue",
-                  "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
                 }
               }
             },
@@ -1232,12 +1140,6 @@
           "$ref": "#/$defs/FieldValue"
         },
         "date_of_birth": {
-          "$ref": "#/$defs/FieldValue"
-        },
-        "marital_status": {
-          "$ref": "#/$defs/FieldValue"
-        },
-        "occupation": {
           "$ref": "#/$defs/FieldValue"
         },
         "contacts": {
@@ -1268,15 +1170,31 @@
           "fideon:aliases": [
             "Contact Info"
           ]
+        },
+        "all_named_insureds": {
+          "type": "array",
+          "fideon:repo_addition": "Every name the declarations' insured block prints, in order (one, two or more) -- the primary first. Built only from that block, never from an insured-summary table; see _header_named_insureds in fideon/l1/registry_extractor.py.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Named Insured(s)",
+                  "Named Insureds"
+                ]
+              }
+            }
+          }
         }
       },
       "fideon:aliases": [
-        "APPLICANT NAME AND ADDRESS",
-        "Applicant Name",
-        "Insured",
         "Named Insured",
-        "Named Insured and Address",
+        "Insured",
         "Policyholder",
+        "Applicant Name",
+        "APPLICANT NAME AND ADDRESS",
+        "Named Insured and Address",
         "Insured Information"
       ]
     },
@@ -1318,15 +1236,15 @@
               "country": {
                 "$ref": "#/$defs/FieldValue"
               },
+              "full": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The supplied schema carries only the split parts, and L1 reads the block whole rather than guessing where the street ends and the city begins."
+              },
               "county_code": {
                 "$ref": "#/$defs/FieldValue",
                 "fideon:aliases": [
                   "County Code"
                 ]
-              },
-              "full": {
-                "$ref": "#/$defs/FieldValue",
-                "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
               }
             }
           },
@@ -1480,6 +1398,7 @@
           "party_type": {
             "$ref": "#/$defs/FieldValue",
             "fideon:aliases": [
+              "interest_type",
               "Interest Type",
               "LOSS PAYEE",
               "Loss Payee",
@@ -1519,12 +1438,12 @@
               "country": {
                 "$ref": "#/$defs/FieldValue"
               },
-              "county_code": {
-                "$ref": "#/$defs/FieldValue"
-              },
               "full": {
                 "$ref": "#/$defs/FieldValue",
-                "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
+                "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The supplied schema carries only the split parts, and L1 reads the block whole rather than guessing where the street ends and the city begins."
+              },
+              "county_code": {
+                "$ref": "#/$defs/FieldValue"
               }
             }
           },
@@ -1574,6 +1493,8 @@
         "total_policy_premium": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
+            "annual_policy_premium",
+            "annual_premium",
             "Policy Total Premium",
             "Quoted Premium Amount",
             "Term Amount",
@@ -1588,8 +1509,7 @@
             "policy premium excluding billing fees and payment option discounts",
             "Total Full Term Premium",
             "Total Policy Cost",
-            "Total Charges",
-            "Total"
+            "Total Charges"
           ]
         },
         "basic_premium": {
@@ -1715,7 +1635,10 @@
               "is_applied": {
                 "$ref": "#/$defs/FieldValue"
               }
-            }
+            },
+            "fideon:aliases": [
+              "discounts"
+            ]
           },
           "fideon:aliases": [
             "Premium discounts"
@@ -1727,10 +1650,10 @@
         "fire_fee": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
-            "Fire Insurance Fee",
             "Includes New York Fire Fee Of",
-            "New York Fire Fee",
             "NY Fire Fee",
+            "New York Fire Fee",
+            "Fire Insurance Fee",
             "NYS Fire Insurance Fee",
             "State Fire Fee"
           ]
@@ -1741,9 +1664,9 @@
             "DMV FEE",
             "Enforcement Fee",
             "MVLE Fee",
-            "Mandatory New York Law Enforcement Fee",
             "Motor Vehicle Law Enforcement Fee",
             "NEW YORK MOTOR VEHICLE LAW ENFORCEMENT FEE",
+            "Mandatory New York Law Enforcement Fee",
             "Motor Vehicle Law Enforcement Fee (MVLE Fee)",
             "Motor Vehicle Law Enforcement Fee (state mandated)"
           ]
@@ -1763,9 +1686,9 @@
         "service_fee": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
+            "Service Fee",
             "Handling Fee",
-            "Paper Handling Fee",
-            "Service Fee"
+            "Paper Handling Fee"
           ]
         },
         "administrative_fee": {
@@ -1795,6 +1718,14 @@
         },
         "exposure_amount": {
           "$ref": "#/$defs/FieldValue"
+        },
+        "premium_change": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 9 of the 22 lines. The NET change an endorsement makes. `return_premium` and `additional_premium` model the two directions separately; a carrier prints one signed figure."
+        },
+        "pay_in_full_amount": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Printed across the POLICIES-FINAL corpus (277 documents, ~40 carriers) and absent from the supplied schemas. Printed on 7 of the 22 lines. What the policy costs paid at once, printed beside the instalment figure. Neither is the other."
         },
         "forms_and_endorsements_premium": {
           "$ref": "#/$defs/FieldValue",
@@ -1926,15 +1857,16 @@
         "payment_method": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
-            "AutoPay",
-            "Bill by Mail / Email",
             "ELECTRONIC FUND",
             "Electronic Fund Transfer",
+            "Pay by Check",
+            "Repetitive EFT",
+            "billing_method",
+            "AutoPay",
+            "Bill by Mail / Email",
             "Electronic Funds Transfer (EFT)",
             "PAY TYPE",
-            "Pay by Check",
-            "Recurring Credit Card (RCC)",
-            "Repetitive EFT"
+            "Recurring Credit Card (RCC)"
           ]
         },
         "payment_frequency": {
@@ -2059,10 +1991,6 @@
             },
             "country": {
               "$ref": "#/$defs/FieldValue"
-            },
-            "full": {
-              "$ref": "#/$defs/FieldValue",
-              "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
             }
           }
         },
@@ -2198,17 +2126,17 @@
         }
       },
       "fideon:aliases": [
+        "Privacy Disclosure Notice",
+        "SCHEDULE OF ADDITIONAL ENDORSEMENTS",
+        "Service of Suit Endorsement",
+        "Vehicle Under Construction Endorsement",
+        "attached at time of issue",
         "Form Summary",
         "Forms and Endorsements",
         "INDEX",
         "Policy Contract and Endorsements",
         "Policy Coverage Sections and Endorsements That Form a Part of This Policy",
         "Policy Endorsements",
-        "Privacy Disclosure Notice",
-        "SCHEDULE OF ADDITIONAL ENDORSEMENTS",
-        "Service of Suit Endorsement",
-        "Vehicle Under Construction Endorsement",
-        "attached at time of issue",
         "Forms and Endorsements Made Part of This Policy at time of Issue"
       ]
     },
@@ -2317,6 +2245,12 @@
           "notice_title": {
             "$ref": "#/$defs/FieldValue",
             "fideon:aliases": [
+              "LVANIA NOTICE",
+              "NEW YORK NOTICE",
+              "NOTICE TO SENIOR CITIZENS",
+              "PENNSYLVANIA NOTICE",
+              "Privacy Disclosure Notice",
+              "State Notice",
               "ADVISORY NOTICE TO POLICYHOLDERS",
               "DECLINATION FORM",
               "EXPLANATION OF STATUTORY UNINSURED MOTORISTS COVERAGE AND SUPPLEMENTARY UNINSURED/UNDERINSURED MOTORISTS COVERAGE",
@@ -2326,25 +2260,19 @@
               "IMPORTANT QUESTIONS FOR NEW YORK POLICYHOLDERS",
               "INFORMATION CONCERNING TRANSPORTATION NETWORK COMPANIES",
               "Information Concerning Peer-to-Peer Car Sharing Programs",
-              "LVANIA NOTICE",
               "NEW YORK AUTOMOBILE POLICYHOLDER NOTICE",
               "NEW YORK ID CARD IMPORTANT NOTICE",
-              "NEW YORK NOTICE",
               "NEW YORK RENTAL REIMBURSEMENT COVERAGE DISCLOSURE",
               "NEW YORK REQUIRED NOTICE OF AVAILABILITY OF SUPPLEMENTARY UNINSURED/UNDERINSURED MOTORISTS COVERAGE",
               "NOTICE TO POLICYHOLDERS",
-              "NOTICE TO SENIOR CITIZENS",
               "PEER-TO-PEER CAR SHARING PROGRAM",
-              "PENNSYLVANIA NOTICE",
               "POLICYHOLDER DISCLOSURE NOTICE",
               "PRIVACY NOTICE",
-              "Privacy Disclosure Notice",
               "Privacy Notice",
               "RATING INFORMATION - NEW YORK",
               "Rental Vehicle Coverage Notice to Policyholders - New York",
               "SUPPLEMENTAL SPOUSAL LIABILITY INSURANCE DECLINATION FORM",
               "Safe Driver Insurance Plan",
-              "State Notice",
               "Supplemental Spousal Liability Insurance Notice",
               "TRANSPORTATION NETWORK COMPANY SERVICES",
               "Third Party Designee Notice-Named Insureds who Are 65 Years of Age or Older",
@@ -2377,12 +2305,12 @@
         "claims_phone": {
           "$ref": "#/$defs/FieldValue",
           "fideon:aliases": [
-            "24 hour claim service",
             "CUSTOMER CARE",
-            "Claim",
             "Customer Service",
-            "For Claim Service Call",
             "Report a Claim",
+            "24 hour claim service",
+            "Claim",
+            "For Claim Service Call",
             "Service and Claims",
             "To Report a Claim",
             "For Claim Service",
@@ -2417,12 +2345,12 @@
             "country": {
               "$ref": "#/$defs/FieldValue"
             },
-            "county_code": {
-              "$ref": "#/$defs/FieldValue"
-            },
             "full": {
               "$ref": "#/$defs/FieldValue",
-              "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
+              "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The supplied schema carries only the split parts, and L1 reads the block whole rather than guessing where the street ends and the city begins."
+            },
+            "county_code": {
+              "$ref": "#/$defs/FieldValue"
             }
           }
         },
@@ -2443,7 +2371,12 @@
       "type": "object",
       "properties": {
         "authorized_representative_name": {
-          "$ref": "#/$defs/FieldValue"
+          "$ref": "#/$defs/FieldValue",
+          "fideon:aliases": [
+            "authorized_representative",
+            "authorized_rep",
+            "countersigned_by"
+          ]
         },
         "title": {
           "$ref": "#/$defs/FieldValue",
@@ -2468,6 +2401,10 @@
           "fideon:aliases": [
             "Countersignature Date"
           ]
+        },
+        "has_signature": {
+          "$ref": "#/$defs/FieldValue",
+          "fideon:repo_addition": "Whether the declarations page carries a signature at all. The supplied `signature` block models the signature's CONTENTS -- representative name, title, dates -- and has no key for its presence, so a reader that checks for one had nowhere to report it and the answer travelled in `additional_fields` on every document. An unsigned declarations page is a compliance question, so `false` is a finding rather than an absence."
         },
         "officer_signatories": {
           "type": "array",
@@ -2502,10 +2439,6 @@
           "fideon:aliases": [
             "PRINT NAME"
           ]
-        },
-        "has_signature": {
-          "$ref": "#/$defs/FieldValue",
-          "fideon:repo_addition": "Whether the declarations page carries a signature at all. The `signature` block models the signature's CONTENTS -- representative name, title, dates -- and has no key for its presence. An unsigned declarations page is a compliance question, so `false` is a finding rather than an absence."
         }
       }
     },
@@ -2552,11 +2485,11 @@
                 "$ref": "#/$defs/FieldValue",
                 "fideon:aliases": [
                   "Identification Number",
-                  "Identification Numbers",
                   "VEHICLENUMBER",
+                  "Vehicle ID Number",
+                  "Identification Numbers",
                   "VIN",
                   "VIN NUMBER",
-                  "Vehicle ID Number",
                   "Vehicle Identification Number"
                 ]
               },
@@ -2604,12 +2537,12 @@
                   },
                   "full": {
                     "$ref": "#/$defs/FieldValue",
-                    "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
+                    "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The supplied schema carries only the split parts, and L1 reads the block whole rather than guessing where the street ends and the city begins."
                   }
                 },
                 "fideon:aliases": [
-                  "Garaging Address Information",
                   "Garaging Zip Code",
+                  "Garaging Address Information",
                   "Location of Vehicle",
                   "VEHICLE GARAGING INFORMATION (if different than mailing address)"
                 ]
@@ -2656,6 +2589,183 @@
                   "SYM",
                   "Vehicle Symbol",
                   "Vehicle Symbol / Rating Territory"
+                ]
+              },
+              "coverages": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "coverage_code": {
+                      "$ref": "#/$defs/FieldValue"
+                    },
+                    "coverage_name": {
+                      "$ref": "#/$defs/FieldValue"
+                    },
+                    "coverage_description": {
+                      "$ref": "#/$defs/FieldValue"
+                    },
+                    "form_reference": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "See Endorsement"
+                      ]
+                    },
+                    "applies_to": {
+                      "$ref": "#/$defs/FieldValue"
+                    },
+                    "limit_amount": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "COVERAGE LIMIT",
+                        "LIMIT"
+                      ]
+                    },
+                    "limit_basis": {
+                      "$ref": "#/$defs/FieldValue"
+                    },
+                    "aggregate_limit_amount": {
+                      "$ref": "#/$defs/FieldValue"
+                    },
+                    "sublimit_amount": {
+                      "$ref": "#/$defs/FieldValue"
+                    },
+                    "sublimit_basis": {
+                      "$ref": "#/$defs/FieldValue"
+                    },
+                    "deductible_amount": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "ITEM IV. DEDUCTIBLE",
+                        "DEDUCTIBLE"
+                      ]
+                    },
+                    "deductible_type": {
+                      "$ref": "#/$defs/FieldValue"
+                    },
+                    "deductible_basis": {
+                      "$ref": "#/$defs/FieldValue"
+                    },
+                    "retention_amount": {
+                      "$ref": "#/$defs/FieldValue"
+                    },
+                    "waiting_period": {
+                      "$ref": "#/$defs/FieldValue"
+                    },
+                    "coinsurance_percentage": {
+                      "$ref": "#/$defs/FieldValue"
+                    },
+                    "valuation_basis": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Business Personal Property - Replacement Cost"
+                      ]
+                    },
+                    "premium": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "PREMIUMS"
+                      ]
+                    },
+                    "is_included": {
+                      "$ref": "#/$defs/FieldValue"
+                    },
+                    "is_excluded": {
+                      "$ref": "#/$defs/FieldValue"
+                    },
+                    "notes": {
+                      "$ref": "#/$defs/FieldValue"
+                    }
+                  }
+                },
+                "fideon:aliases": [
+                  "Coverage Information for Vehicle",
+                  "Coverages, Limits of Liability and Premiums",
+                  "VEHICLE COVERAGES",
+                  "Outline of coverage",
+                  "Coverage Details"
+                ]
+              },
+              "lienholder": {
+                "type": "object",
+                "properties": {
+                  "party_type": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "rank": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "name": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "address": {
+                    "type": "object",
+                    "properties": {
+                      "line_1": {
+                        "$ref": "#/$defs/FieldValue"
+                      },
+                      "line_2": {
+                        "$ref": "#/$defs/FieldValue"
+                      },
+                      "city": {
+                        "$ref": "#/$defs/FieldValue"
+                      },
+                      "state": {
+                        "$ref": "#/$defs/FieldValue"
+                      },
+                      "postal_code": {
+                        "$ref": "#/$defs/FieldValue"
+                      },
+                      "county": {
+                        "$ref": "#/$defs/FieldValue"
+                      },
+                      "country": {
+                        "$ref": "#/$defs/FieldValue"
+                      },
+                      "full": {
+                        "$ref": "#/$defs/FieldValue",
+                        "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The supplied schema carries only the split parts, and L1 reads the block whole rather than guessing where the street ends and the city begins."
+                      }
+                    }
+                  },
+                  "loan_number": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "clause_type": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "applies_to": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "description_of_interest": {
+                    "$ref": "#/$defs/FieldValue"
+                  },
+                  "status": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "STATUS"
+                    ]
+                  },
+                  "form_reference": {
+                    "$ref": "#/$defs/FieldValue",
+                    "fideon:aliases": [
+                      "FORM"
+                    ]
+                  }
+                },
+                "fideon:aliases": [
+                  "Lienholder Information",
+                  "Lienholder/Lease Company",
+                  "Lienholder/Loss Payees Information"
+                ]
+              },
+              "premium": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "PREM",
+                  "Premium by Vehicle",
+                  "TOTAL VEHICLE PREMIUM",
+                  "VEHICLE PREMIUM"
                 ]
               },
               "class_code": {
@@ -2805,183 +2915,6 @@
                   "Supp UM/UIM"
                 ]
               },
-              "coverages": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "coverage_code": {
-                      "$ref": "#/$defs/FieldValue"
-                    },
-                    "coverage_name": {
-                      "$ref": "#/$defs/FieldValue"
-                    },
-                    "coverage_description": {
-                      "$ref": "#/$defs/FieldValue"
-                    },
-                    "form_reference": {
-                      "$ref": "#/$defs/FieldValue",
-                      "fideon:aliases": [
-                        "See Endorsement"
-                      ]
-                    },
-                    "applies_to": {
-                      "$ref": "#/$defs/FieldValue"
-                    },
-                    "limit_amount": {
-                      "$ref": "#/$defs/FieldValue",
-                      "fideon:aliases": [
-                        "COVERAGE LIMIT",
-                        "LIMIT"
-                      ]
-                    },
-                    "limit_basis": {
-                      "$ref": "#/$defs/FieldValue"
-                    },
-                    "aggregate_limit_amount": {
-                      "$ref": "#/$defs/FieldValue"
-                    },
-                    "sublimit_amount": {
-                      "$ref": "#/$defs/FieldValue"
-                    },
-                    "sublimit_basis": {
-                      "$ref": "#/$defs/FieldValue"
-                    },
-                    "deductible_amount": {
-                      "$ref": "#/$defs/FieldValue",
-                      "fideon:aliases": [
-                        "ITEM IV. DEDUCTIBLE",
-                        "DEDUCTIBLE"
-                      ]
-                    },
-                    "deductible_type": {
-                      "$ref": "#/$defs/FieldValue"
-                    },
-                    "deductible_basis": {
-                      "$ref": "#/$defs/FieldValue"
-                    },
-                    "retention_amount": {
-                      "$ref": "#/$defs/FieldValue"
-                    },
-                    "waiting_period": {
-                      "$ref": "#/$defs/FieldValue"
-                    },
-                    "coinsurance_percentage": {
-                      "$ref": "#/$defs/FieldValue"
-                    },
-                    "valuation_basis": {
-                      "$ref": "#/$defs/FieldValue",
-                      "fideon:aliases": [
-                        "Business Personal Property - Replacement Cost"
-                      ]
-                    },
-                    "premium": {
-                      "$ref": "#/$defs/FieldValue",
-                      "fideon:aliases": [
-                        "PREMIUMS"
-                      ]
-                    },
-                    "is_included": {
-                      "$ref": "#/$defs/FieldValue"
-                    },
-                    "is_excluded": {
-                      "$ref": "#/$defs/FieldValue"
-                    },
-                    "notes": {
-                      "$ref": "#/$defs/FieldValue"
-                    }
-                  }
-                },
-                "fideon:aliases": [
-                  "Coverage Information for Vehicle",
-                  "Coverages, Limits of Liability and Premiums",
-                  "VEHICLE COVERAGES",
-                  "Outline of coverage",
-                  "Coverage Details"
-                ]
-              },
-              "lienholder": {
-                "type": "object",
-                "properties": {
-                  "party_type": {
-                    "$ref": "#/$defs/FieldValue"
-                  },
-                  "rank": {
-                    "$ref": "#/$defs/FieldValue"
-                  },
-                  "name": {
-                    "$ref": "#/$defs/FieldValue"
-                  },
-                  "address": {
-                    "type": "object",
-                    "properties": {
-                      "line_1": {
-                        "$ref": "#/$defs/FieldValue"
-                      },
-                      "line_2": {
-                        "$ref": "#/$defs/FieldValue"
-                      },
-                      "city": {
-                        "$ref": "#/$defs/FieldValue"
-                      },
-                      "state": {
-                        "$ref": "#/$defs/FieldValue"
-                      },
-                      "postal_code": {
-                        "$ref": "#/$defs/FieldValue"
-                      },
-                      "county": {
-                        "$ref": "#/$defs/FieldValue"
-                      },
-                      "country": {
-                        "$ref": "#/$defs/FieldValue"
-                      },
-                      "full": {
-                        "$ref": "#/$defs/FieldValue",
-                        "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
-                      }
-                    }
-                  },
-                  "loan_number": {
-                    "$ref": "#/$defs/FieldValue"
-                  },
-                  "clause_type": {
-                    "$ref": "#/$defs/FieldValue"
-                  },
-                  "applies_to": {
-                    "$ref": "#/$defs/FieldValue"
-                  },
-                  "description_of_interest": {
-                    "$ref": "#/$defs/FieldValue"
-                  },
-                  "status": {
-                    "$ref": "#/$defs/FieldValue",
-                    "fideon:aliases": [
-                      "STATUS"
-                    ]
-                  },
-                  "form_reference": {
-                    "$ref": "#/$defs/FieldValue",
-                    "fideon:aliases": [
-                      "FORM"
-                    ]
-                  }
-                },
-                "fideon:aliases": [
-                  "Lienholder Information",
-                  "Lienholder/Lease Company",
-                  "Lienholder/Loss Payees Information"
-                ]
-              },
-              "premium": {
-                "$ref": "#/$defs/FieldValue",
-                "fideon:aliases": [
-                  "PREM",
-                  "Premium by Vehicle",
-                  "TOTAL VEHICLE PREMIUM",
-                  "VEHICLE PREMIUM"
-                ]
-              },
               "motor_vehicle_law_enforcement_fee": {
                 "$ref": "#/$defs/FieldValue"
               },
@@ -3121,6 +3054,72 @@
                   "Status"
                 ]
               },
+              "assigned_vehicle_number": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "VEH"
+                ]
+              },
+              "excluded_driver": {
+                "$ref": "#/$defs/FieldValue",
+                "fideon:aliases": [
+                  "Excluded Person(s)"
+                ]
+              },
+              "violations_and_accidents": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "date": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Incident Date"
+                      ]
+                    },
+                    "description": {
+                      "$ref": "#/$defs/FieldValue"
+                    },
+                    "points": {
+                      "$ref": "#/$defs/FieldValue"
+                    },
+                    "applies_to": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "Applies To"
+                      ]
+                    },
+                    "occurrence_count": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "OCCUR"
+                      ]
+                    },
+                    "report_source": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "REPORT"
+                      ]
+                    },
+                    "dispute_indicator": {
+                      "$ref": "#/$defs/FieldValue",
+                      "fideon:aliases": [
+                        "DISPUTE INDICATOR"
+                      ]
+                    }
+                  }
+                },
+                "fideon:aliases": [
+                  "Accident(s) and Violation(s)",
+                  "VIOLATIONS"
+                ]
+              },
+              "driver_discounts": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/FieldValue"
+                }
+              },
               "operator_type": {
                 "$ref": "#/$defs/FieldValue",
                 "fideon:aliases": [
@@ -3190,72 +3189,6 @@
                   "BUSINESS ON PREMISES"
                 ]
               },
-              "assigned_vehicle_number": {
-                "$ref": "#/$defs/FieldValue",
-                "fideon:aliases": [
-                  "VEH"
-                ]
-              },
-              "excluded_driver": {
-                "$ref": "#/$defs/FieldValue",
-                "fideon:aliases": [
-                  "Excluded Person(s)"
-                ]
-              },
-              "violations_and_accidents": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "date": {
-                      "$ref": "#/$defs/FieldValue",
-                      "fideon:aliases": [
-                        "Incident Date"
-                      ]
-                    },
-                    "description": {
-                      "$ref": "#/$defs/FieldValue"
-                    },
-                    "points": {
-                      "$ref": "#/$defs/FieldValue"
-                    },
-                    "applies_to": {
-                      "$ref": "#/$defs/FieldValue",
-                      "fideon:aliases": [
-                        "Applies To"
-                      ]
-                    },
-                    "occurrence_count": {
-                      "$ref": "#/$defs/FieldValue",
-                      "fideon:aliases": [
-                        "OCCUR"
-                      ]
-                    },
-                    "report_source": {
-                      "$ref": "#/$defs/FieldValue",
-                      "fideon:aliases": [
-                        "REPORT"
-                      ]
-                    },
-                    "dispute_indicator": {
-                      "$ref": "#/$defs/FieldValue",
-                      "fideon:aliases": [
-                        "DISPUTE INDICATOR"
-                      ]
-                    }
-                  }
-                },
-                "fideon:aliases": [
-                  "Accident(s) and Violation(s)",
-                  "VIOLATIONS"
-                ]
-              },
-              "driver_discounts": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/$defs/FieldValue"
-                }
-              },
               "change_status": {
                 "$ref": "#/$defs/FieldValue"
               },
@@ -3307,11 +3240,11 @@
             "medical_payments_limit": {
               "$ref": "#/$defs/FieldValue",
               "fideon:aliases": [
-                "Med Payments",
-                "Medical Expense Limit",
                 "Medical Payments",
                 "Medical Payments Limit",
-                "Medical Payments Limit (any one person)"
+                "Medical Payments Limit (any one person)",
+                "Med Payments",
+                "Medical Expense Limit"
               ]
             },
             "uninsured_motorist_bodily_injury_limit": {
@@ -3433,14 +3366,6 @@
             "no_fault_state": {
               "$ref": "#/$defs/FieldValue"
             },
-            "tort_threshold_type": {
-              "$ref": "#/$defs/FieldValue",
-              "fideon:aliases": [
-                "No Threshold",
-                "Personal Injury Protection - Verbal Threshold",
-                "Verbal Threshold"
-              ]
-            },
             "mandatory_pip_limit": {
               "$ref": "#/$defs/FieldValue",
               "fideon:aliases": [
@@ -3460,16 +3385,19 @@
             "additional_pip_limit": {
               "$ref": "#/$defs/FieldValue",
               "fideon:aliases": [
+                "Additional PIP",
+                "Increased PIP",
                 "APIP",
                 "Added PIP",
                 "Added Personal Injury Protection Benefits",
-                "Additional PIP",
                 "Additional Personal Injury Protection",
                 "Additional Personal Injury Protection - Full",
                 "BROADENED ADDITIONAL PIP",
-                "Extended Medical Expenses",
-                "Increased PIP"
+                "Extended Medical Expenses"
               ]
+            },
+            "basic_economic_loss_limit": {
+              "$ref": "#/$defs/FieldValue"
             },
             "optional_basic_economic_loss_limit": {
               "$ref": "#/$defs/FieldValue",
@@ -3549,6 +3477,14 @@
                 "$ref": "#/$defs/FieldValue"
               }
             },
+            "tort_threshold_type": {
+              "$ref": "#/$defs/FieldValue",
+              "fideon:aliases": [
+                "No Threshold",
+                "Personal Injury Protection - Verbal Threshold",
+                "Verbal Threshold"
+              ]
+            },
             "out_of_state_pip_limit": {
               "$ref": "#/$defs/FieldValue",
               "fideon:aliases": [
@@ -3576,6 +3512,9 @@
             "comprehensive_deductible": {
               "$ref": "#/$defs/FieldValue",
               "fideon:aliases": [
+                "OTHER THAN COLL",
+                "Other Than Collision",
+                "Other Than Collision Loss",
                 "Comprehensive deductible"
               ]
             },
@@ -3631,10 +3570,10 @@
             "transportation_expenses_limit": {
               "$ref": "#/$defs/FieldValue",
               "fideon:aliases": [
-                "Extended Transportation Expenses",
-                "OPTIONAL LIMITS TRANSPORTATION EXPENSES COVERAGE",
                 "TRANSPORTATION EXP",
-                "TRAVEL - TRANSPORTATION EXPENSES (FAMILY PLUS)"
+                "TRAVEL - TRANSPORTATION EXPENSES (FAMILY PLUS)",
+                "Extended Transportation Expenses",
+                "OPTIONAL LIMITS TRANSPORTATION EXPENSES COVERAGE"
               ]
             },
             "trip_interruption_limit": {
@@ -3650,6 +3589,9 @@
                 "Roadside Assistance Coverage",
                 "Roadside Assistance"
               ]
+            },
+            "other_than_collision_deductible": {
+              "$ref": "#/$defs/FieldValue"
             },
             "guaranteed_value_indicator": {
               "$ref": "#/$defs/FieldValue",
@@ -3674,8 +3616,7 @@
             "collision_premium": {
               "$ref": "#/$defs/FieldValue",
               "fideon:aliases": [
-                "Collision Loss",
-                "Collision"
+                "Collision Loss"
               ]
             },
             "valuation_basis": {
@@ -3895,35 +3836,40 @@
               "discount_name": {
                 "$ref": "#/$defs/FieldValue",
                 "fideon:aliases": [
+                  "ABS Discount",
+                  "ANTI-LOCK BRAKES",
+                  "ANTI-THEFT DEVICE",
+                  "Accident Prevention Course Discount",
+                  "Anti-Lock Braking System (ABS) Discount",
+                  "CUSTOMIZING",
+                  "DAYTIME RUNNING LAMPS",
+                  "HOME OWNERSHIP",
+                  "Multi-Car Discount",
+                  "Multi-Vehicle Discount",
+                  "NEW CAR DISCOUNT",
+                  "PASSIVE RESTRAINT",
                   "5 Year Claims Free Discount",
                   "5 Year Claims-Free Discount",
-                  "ABS Discount",
                   "ACCIDENT FREE CREDIT",
                   "ACCOUNT DISCOUNT",
-                  "ANTI-LOCK BRAKES",
                   "ANTI-THEFT",
-                  "ANTI-THEFT DEVICE",
                   "AWAY AT SCHOOL",
                   "Accident Prevention Course Credit",
-                  "Accident Prevention Course Discount",
                   "Affinity Group Discount",
                   "Anti Lock Brake",
                   "Anti Theft",
                   "Anti-Lock Brakes and/or Daytime Running Lights",
                   "Anti-Lock Brakes/Passive Restraint",
-                  "Anti-Lock Braking System (ABS) Discount",
                   "Anti-Theft Discount",
                   "Away at School Discount",
                   "CLAIMS FREE DISCOUNT",
                   "CONTINUOUS INSURANCE CREDIT",
                   "COUPLER (COMBO)",
-                  "CUSTOMIZING",
                   "Claim Experience Discount",
                   "Claim Free Renewal",
                   "Companion Home Discount",
                   "Companion Package: Home Discount",
                   "Continuous Insurance: Diamond",
-                  "DAYTIME RUNNING LAMPS",
                   "DRIVER TRAINING",
                   "Daytime Running Lamps",
                   "Daytime Running Lights",
@@ -3938,22 +3884,17 @@
                   "Five-Year Accident Free",
                   "GOOD STUDENT DISCOUNT",
                   "Good Student Discount",
-                  "HOME OWNERSHIP",
                   "HYBRID VEHICLE DISCOUNT",
                   "Home Owner",
                   "INCONTROL",
                   "INJURY PROTECTION DISCOUNT",
                   "LOW MILEAGE DISCOUNT",
-                  "Multi-Car Discount",
                   "Multi-Policy",
                   "Multi-Policy/Affiliate",
-                  "Multi-Vehicle Discount",
                   "Multiple Cars",
-                  "NEW CAR DISCOUNT",
                   "NO-FAULT WORK LOSS REDUCTION",
                   "New Driver Family Discount",
                   "PAID IN FULL DISCOUNT",
-                  "PASSIVE RESTRAINT",
                   "Paid in Full Discount",
                   "Passive Restraint",
                   "Pay in Full Discount",
@@ -3986,8 +3927,7 @@
             "Discounts Included in Your Premium",
             "Policy Discounts/Credits, Surcharges, Other",
             "VEHICLE DISCOUNTS",
-            "Your policy discounts",
-            "Companion Package"
+            "Your policy discounts"
           ]
         },
         "household": {
@@ -4186,10 +4126,6 @@
                   },
                   "country": {
                     "$ref": "#/$defs/FieldValue"
-                  },
-                  "full": {
-                    "$ref": "#/$defs/FieldValue",
-                    "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
                   }
                 }
               }
@@ -4198,6 +4134,45 @@
           "fideon:aliases": [
             "NEW YORK STATE INSURANCE IDENTIFICATION CARD"
           ]
+        }
+      }
+    },
+    "coverages": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/CoverageSection"
+      },
+      "fideon:aliases": [
+        "Coverage",
+        "Coverages",
+        "Coverage Part",
+        "Schedule of Coverages",
+        "Limits of Insurance"
+      ]
+    },
+    "text_sections": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/TextSection"
+      },
+      "fideon:fsm_exclude": true,
+      "description": "Raw text blocks for SLM/LLM-based policy comparison — populated by the text extraction path, not the VLM FSM. These are what the Comparison API reads."
+    },
+    "additional_fields": {
+      "type": "array",
+      "description": "Captures the schema has no home for. SPEC_02 §5.1: nothing a reader found is dropped.",
+      "items": {
+        "type": "object",
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "value": {
+            "$ref": "#/$defs/FieldValue"
+          }
         }
       }
     },
@@ -4704,10 +4679,6 @@
                 },
                 "country": {
                   "$ref": "#/$defs/FieldValue"
-                },
-                "full": {
-                  "$ref": "#/$defs/FieldValue",
-                  "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
                 }
               }
             },
@@ -5046,10 +5017,6 @@
                     },
                     "country": {
                       "$ref": "#/$defs/FieldValue"
-                    },
-                    "full": {
-                      "$ref": "#/$defs/FieldValue",
-                      "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
                     }
                   }
                 },
@@ -5125,10 +5092,6 @@
                     },
                     "country": {
                       "$ref": "#/$defs/FieldValue"
-                    },
-                    "full": {
-                      "$ref": "#/$defs/FieldValue",
-                      "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
                     }
                   },
                   "fideon:aliases": [
@@ -5247,10 +5210,6 @@
                       },
                       "country": {
                         "$ref": "#/$defs/FieldValue"
-                      },
-                      "full": {
-                        "$ref": "#/$defs/FieldValue",
-                        "fideon:repo_addition": "The address as the document PRINTS it, unparsed. The split parts need a reader to guess where the street ends and the city begins; this keeps the block whole."
                       }
                     }
                   },
@@ -5553,52 +5512,6 @@
           }
         }
       }
-    },
-    "coverages": {
-      "type": "array",
-      "items": {
-        "$ref": "#/$defs/CoverageSection"
-      },
-      "fideon:aliases": [
-        "Coverage",
-        "Coverages",
-        "Coverage Part",
-        "Schedule of Coverages",
-        "Limits of Insurance"
-      ]
-    },
-    "text_sections": {
-      "type": "object",
-      "additionalProperties": {
-        "$ref": "#/$defs/TextSection"
-      },
-      "fideon:fsm_exclude": true,
-      "description": "Raw text blocks for SLM/LLM-based policy comparison \u2014 populated by the text extraction path, not the VLM FSM. These are what the Comparison API reads."
-    },
-    "additional_fields": {
-      "type": "array",
-      "description": "Printed label/value pairs that have no dedicated field above, kept as key and value: the label as the document prints it, the section heading it sits under, and the value as a FieldValue (raw, parsed, page_ref).",
-      "items": {
-        "type": "object",
-        "properties": {
-          "section": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "label": {
-            "type": "string"
-          },
-          "value": {
-            "$ref": "#/$defs/FieldValue"
-          }
-        },
-        "required": [
-          "label",
-          "value"
-        ]
-      }
     }
   },
   "$defs": {
@@ -5623,8 +5536,7 @@
             "string",
             "number",
             "null"
-          ],
-          "description": "The value in its standard form: a number for money and counts, a two-letter code for a state, and MM/DD/YYYY for every date (see fideon:parsed_formats)."
+          ]
         },
         "confidence": {
           "type": "object",
@@ -5655,48 +5567,6 @@
           "type": "boolean"
         }
       }
-    },
-    "TextSection": {
-      "type": "object",
-      "description": "A block of printed text exactly as the document carries it: a prose paragraph, notice, condition or disclaimer, or the page's remaining label/footer text. Nothing the page prints is left out of the gold; structured fields above hold the values, these hold the words.",
-      "properties": {
-        "section_id": {
-          "type": "string"
-        },
-        "section_title": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "section_type": {
-          "type": "string",
-          "enum": [
-            "prose",
-            "other"
-          ]
-        },
-        "raw_text": {
-          "type": "string"
-        },
-        "page_range": {
-          "type": "array",
-          "items": {
-            "type": "integer"
-          }
-        },
-        "form_number": {
-          "type": [
-            "string",
-            "null"
-          ]
-        }
-      },
-      "required": [
-        "section_id",
-        "raw_text",
-        "page_range"
-      ]
     },
     "CoverageSection": {
       "type": "object",
@@ -5735,6 +5605,41 @@
           }
         }
       }
+    },
+    "TextSection": {
+      "type": "object",
+      "required": [
+        "section_id",
+        "raw_text",
+        "page_range"
+      ],
+      "properties": {
+        "section_id": {
+          "type": "string",
+          "description": "Standard keys: conditions, exclusions, endorsements, insuring_agreement, definitions. Endorsements may be keyed by ISO form number (e.g. 'CG 21 47')."
+        },
+        "raw_text": {
+          "type": "string"
+        },
+        "page_range": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "form_number": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
     }
+  },
+  "fideon:verification": {
+    "registry_entries": 18,
+    "corpus_samples": 15,
+    "verified_against_documents": true,
+    "note": "15 sample document(s) across 18 registry entries"
   }
 }

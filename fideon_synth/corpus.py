@@ -1,10 +1,18 @@
 """
 Build a corpus and check it.
 
-    from fideon_synth import Corpus
-    from fideon_synth.forms import LeatherstockingDwellingFire
+For the generic engine - any source PDF in, synthetic digital twin + gold
+out, no hand-built template - see :mod:`generator`'s ``synthesize`` and
+``generate_folder``. ``Corpus``/``Template`` here are the base for a
+hand-written, declarative carrier form, should one ever be worth writing by
+hand instead of generated from a real source PDF:
 
-    report = Corpus(LeatherstockingDwellingFire(), "out/").build(count=20)
+    from fideon_synth import Corpus, Template
+
+    class MyForm(Template):
+        ...                   # see template.py
+
+    report = Corpus(MyForm(), "out/").build(count=20)
     report.ok            # False if anything failed
     print(report.summary())
 

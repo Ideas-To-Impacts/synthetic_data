@@ -266,7 +266,7 @@ class Reader:
     them again as unmapped."""
 
     def __init__(self, pages, schema, index, carrier):
-        from .generic import PATTERNS, _carrier_marks, _field, _norm_label, match_label
+        from .generator import PATTERNS, _carrier_marks, _field, _norm_label, match_label
         self.norm, self.match, self.field = _norm_label, match_label, _field
         self.cityline = PATTERNS[4][1]
         self.marks = _carrier_marks(carrier)
@@ -506,7 +506,7 @@ class Reader:
     def _carrier_address(self):
         """"GLEN ALLEN, VIRGINIA" printed under the carrier's name, or "One
         Tower Square, Hartford, CT 06183" under the insurer's."""
-        from .generic import INSURER_NAME
+        from .generator import INSURER_NAME
         for i, line in enumerate(self.lines):
             if not any(INSURER_NAME.search(c.text) and len(c.text.split()) <= 6
                        for c in line.cells):
@@ -1224,7 +1224,7 @@ class Reader:
         return out, j
 
     def _looks_named(self, cell):
-        from .generic import _looks_like_name
+        from .generator import _looks_like_name
         f = [g for g in self.found_in.get(id(cell), []) if not g.blank]
         if f and f[0].kind == "person" and f[0].start == 0:
             return f[0].new
@@ -1467,7 +1467,7 @@ class Reader:
                 m = re.match(r"\s*(This is not a bill\.(?:\s+[^.]{0,80}\.)?)", cell.text, re.I)
                 if m and "billing.billing_note" in self.schema.leaves:
                     _put(self.gold, "billing.billing_note", fv(m.group(1)))
-        from .generic import INSURER_NAME
+        from .generator import INSURER_NAME
         for n, _, cells, found in self.pages:
             for f in found:
                 if f.kind == "date" and not f.blank and id(f) not in self.consumed \
