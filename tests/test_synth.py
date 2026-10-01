@@ -1,23 +1,21 @@
 """
-Tests for fideon-synth.
+Tests for fideon-synth's reusable infrastructure - field values, page
+references, schema loading, seeded value generation, scanner profiles.
 
-The build itself runs four checks on every document, so these do not repeat
-them. What they cover is the machinery underneath - the places where a bug
-would make those four checks pass while being wrong.
+The engine itself (any source PDF in, synthetic digital twin + gold out) is
+covered in test_generic.py. The declarative per-carrier Corpus/Template
+system these tests used to also cover (fideon_synth.forms,
+fideon_synth.dfire) was removed: the generic engine already handles every
+line of business, dwelling_fire included, with no per-carrier code.
 """
 
 from __future__ import annotations
 
-import json
-
 import pytest
 
-from fideon_synth import CanonicalSchema, Corpus, Values, fields, scan
-from fideon_synth.fields import (NO_EVIDENCE, as_number, derived, fmt_money,
-                                 fv, money_from, walk, yes_no)
-from fideon_synth.forms import by_key, catalogue
-from fideon_synth.forms.leatherstocking_dwelling_fire import (
-    LeatherstockingDwellingFire, parse_forms, totals)
+from fideon_synth import CanonicalSchema, Values, scan
+from fideon_synth.fields import (as_number, derived, fmt_money, fv,
+                                 money_from, walk, yes_no)
 from fideon_synth.pageref import on_page
 
 pytestmark = pytest.mark.filterwarnings("ignore")
@@ -105,34 +103,14 @@ def test_missing_line_of_business_says_what_is_available():
         CanonicalSchema.load("not_a_real_lob")
 
 
-# ── the worked example ──────────────────────────────────────────────────────
-
-def test_hand_written_schedules_all_tie():
-    for variant in LeatherstockingDwellingFire().variants():
-        t = totals(variant)
-        assert abs(sum(p for _, p in t["rows"]) - t["property_total"]) < 0.01
-        assert abs(t["property_total"] + t["fees"] - t["total"]) < 0.01
-
-
-def test_forms_paragraph_round_trips():
-    text = ("FL-52A (12/98) Trampoline Exclusion, FL-21 05/10 Suit Against "
-            "Us Amendatory Endorsement, ML-WD (1.1) Water Damage-Sewers and "
-            "Drains, LCIC-DX (06/23) Exclusion of Canine Related Injuries "
-            "or Damages")
-    parsed = parse_forms(text)
-    assert [f["form_number"]["raw"] for f in parsed] == [
-        "FL-52A", "FL-21", "ML-WD", "LCIC-DX"]
-    assert parsed[1]["edition_date"]["raw"] == "05/10"     # no parentheses
-    assert parsed[3]["form_title"]["raw"].endswith("Injuries or Damages")
-
-
-def test_a_title_containing_a_comma_is_not_split_in_two():
-    """"Exclusion of Canine Related Injuries or Damages" survives; so does a
-    title that genuinely contains a comma."""
-    parsed = parse_forms("SM-26 (7/00) Automatic Increase, RC, "
-                         "FL-80 (7/96) Redefinition of Insured")
-    assert len(parsed) == 2
-    assert parsed[0]["form_title"]["raw"] == "Automatic Increase, RC"
+def test_schema_is_cached_by_file_and_mtime():
+    # repeat loads of the same schema file return the same object - and the
+    # label index built from it - rather than re-reading and re-walking it
+    from fideon_synth import generator
+    a = CanonicalSchema.load("dwelling_fire")
+    b = CanonicalSchema.load("dwelling_fire")
+    assert a is b
+    assert generator.label_index(a) is generator.label_index(b)
 
 
 # ── generated values ────────────────────────────────────────────────────────
@@ -173,6 +151,9 @@ def test_household_shares_a_surname():
 
 
 # ── scanner profiles ────────────────────────────────────────────────────────
+# scan.py's degradation profiles are no longer used by the generic engine
+# (the output stays digital), but remain for anything that still wants a
+# scanned-look render - kept correct, independent of the engine.
 
 def test_every_profile_has_a_distinct_key():
     keys = [p.key for p in scan.PROFILES]
@@ -182,86 +163,3 @@ def test_every_profile_has_a_distinct_key():
 def test_unknown_profile_lists_the_real_ones():
     with pytest.raises(KeyError, match="office_flatbed"):
         scan.by_key("nope")
-
-
-# ── end to end ──────────────────────────────────────────────────────────────
-
-@pytest.fixture(scope="module")
-def built(tmp_path_factory):
-    out = tmp_path_factory.mktemp("corpus")
-    corpus = Corpus(LeatherstockingDwellingFire(), out, scanned=True)
-    return corpus, corpus.build(count=2)
-
-
-def test_a_small_corpus_passes_every_check(built):
-    _, report = built
-    assert report.ok, report.summary()
-    assert len(report.documents) == 2
-
-
-def test_gold_has_no_private_keys_left(built):
-    corpus, report = built
-    doc = json.loads(report.documents[0].gold.read_text("utf-8"))
-    assert all("_evidence" not in field for _, field in walk(doc))
-
-
-def test_page_refs_point_at_real_pages(built):
-    corpus, report = built
-    doc = json.loads(report.documents[0].gold.read_text("utf-8"))
-    pages = report.documents[0].pages
-    printed = [f for _, f in walk(doc)
-               if f["confidence"]["source"] == "deterministic"]
-    assert printed, "nothing was marked as printed"
-    for field in printed:
-        assert field["page_ref"], field["raw"]
-        assert max(field["page_ref"]) <= pages
-
-    # the footer repeats the policy number, so it is on every page
-    assert doc["policy"]["policy_number"]["page_ref"] == list(
-        range(1, pages + 1))
-
-
-def test_scanned_twin_has_no_text_layer(built):
-    import fitz
-    fitz.TOOLS.mupdf_display_errors(False)
-    _, report = built
-    for document in report.documents:
-        pdf = fitz.open(str(document.scanned))
-        assert sum(len(p.get_text("words")) for p in pdf) == 0
-        pdf.close()
-
-
-def test_scanned_gold_says_where_its_page_refs_came_from(built):
-    _, report = built
-    gold = json.loads(report.documents[0].scanned_gold.read_text("utf-8"))
-    provenance = gold["fideon:provenance"]
-    assert provenance["render"] == "scanned"
-    assert provenance["page_refs_measured_on"].endswith(".pdf")
-    assert provenance["scan_profile"]
-
-
-def test_gold_does_not_assert_what_the_page_never_prints(built):
-    """Two fields that were wrong before the page-ref check caught them: a
-    renewal's prior policy number, and the kind of fee behind a line the
-    form labels only "Fees"."""
-    _, report = built
-    doc = json.loads(report.documents[0].gold.read_text("utf-8"))
-    assert "prior_policy_number" not in doc["policy"]
-    assert "policy_fee" not in doc["premium"]
-
-
-def test_the_audit_rule_actually_fails_when_it_should():
-    """A check that cannot fail is not a check."""
-    template = LeatherstockingDwellingFire()
-    doc = {"coverages": [{"premium": fv("$100.00")}],
-           "premium": {"total_policy_premium": fv("$250.00")}}
-    assert template.audit(doc)
-    doc["premium"]["total_policy_premium"] = fv("$100.00")
-    assert not template.audit(doc)
-
-
-def test_registry_round_trips():
-    assert by_key("leatherstocking_dwelling_fire").lob == "dwelling_fire"
-    assert catalogue()
-    with pytest.raises(KeyError, match="leatherstocking"):
-        by_key("nope")

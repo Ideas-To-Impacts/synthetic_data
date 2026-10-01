@@ -253,7 +253,7 @@ def _covered(box, layer):
 
 def _clean_value(text):
     """Is this a whole value of a kind the generator replaces?"""
-    from .generic import PATTERNS
+    from .generator import PATTERNS
     for kind, rx in PATTERNS:
         if kind in ("date", "money", "phone", "email", "fein") and rx.fullmatch(text):
             return True

@@ -83,6 +83,13 @@ class CanonicalSchema:
 
     # ── loading ─────────────────────────────────────────────────────────────
 
+    #: lob/schema_dir never changes which LOB a file loads to, so the merged
+    #: schema - and anything built from it once, like a label index - is
+    #: cached per source file, not reloaded and rebuilt on every call. Keyed
+    #: by each file's own path and mtime, so editing a schema on disk during
+    #: development still invalidates it; never stale by surprise.
+    _cache: dict = {}
+
     @classmethod
     def load(cls, lob, schema_dir=None, doc_type=DOC_TYPE):
         root = resolve_dir(schema_dir, doc_type, lob) / doc_type
@@ -91,8 +98,14 @@ class CanonicalSchema:
             raise FileNotFoundError(
                 "No schema for line of business %r in %s.\nAvailable: %s"
                 % (lob, root, ", ".join(available(schema_dir, doc_type))))
+        common_path = root / "_common.json"
+        key = (str(line_path), str(common_path))
+        stamp = (line_path.stat().st_mtime_ns, common_path.stat().st_mtime_ns)
+        cached = cls._cache.get(key)
+        if cached is not None and cached[0] == stamp:
+            return cached[1]
 
-        common = json.loads((root / "_common.json").read_text("utf-8"))
+        common = json.loads(common_path.read_text("utf-8"))
         line = json.loads(line_path.read_text("utf-8"))
 
         merged = dict(common)
@@ -103,7 +116,9 @@ class CanonicalSchema:
         defs = dict(common.get("$defs", {}))
         defs.update(line.get("$defs", {}))
         merged["$defs"] = defs
-        return cls(lob, merged, line_path)
+        schema = cls(lob, merged, line_path)
+        cls._cache[key] = (stamp, schema)
+        return schema
 
     # ── description ─────────────────────────────────────────────────────────
 
@@ -158,6 +173,33 @@ class CanonicalSchema:
         for key, node in self.merged["properties"].items():
             visit(node, key)
         return out
+
+    def skeleton(self):
+        """The full canonical shape: every object as a nested dict, every
+        array as ``[]``, every leaf a bare ``None``. Filling this in and
+        leaving the rest ``None`` is how a gold file states, rather than
+        omits, what a document does not say. Note: ``FieldValue`` is declared
+        ``"type": "object"`` in every schema, so a leaf left ``None`` fails
+        that same schema's own validation at that path - by design, per
+        product decision: those failures are expected and are reported
+        (``schema.validate()``), not treated as a build error."""
+        def visit(node):
+            if "$ref" in node:
+                name = node["$ref"].split("/")[-1]
+                if name == "FieldValue":
+                    return None
+                return visit(self.merged["$defs"][name])
+            kind = node.get("type")
+            if kind == "object":
+                props = node.get("properties")
+                if props:
+                    return {key: visit(sub) for key, sub in props.items()}
+                return {} if node.get("additionalProperties") else None
+            if kind == "array":
+                return []
+            return None
+
+        return {key: visit(node) for key, node in self.merged["properties"].items()}
 
     def absent_from(self, stated, ignore=("text_sections",)):
         """Schema leaves this document does not state.

@@ -26,9 +26,11 @@ It is idempotent and only adds - a key a file already has is left as it is:
                           source documents and carriers this line has here;
 7. ``fideon:source.field_count`` recounted.
 
-homeowners.json is also extended by ``canonical_schema_extensions.py``, which
-owns its ``text_sections``, ``coverages`` and ``field_count``; run that after
-this one.
+homeowners.json's own ``text_sections``, ``coverages`` and ``field_count``
+were authored separately (a one-time review of 69 reference documents,
+already applied) - this module still leaves those alone (OWNED_ELSEWHERE,
+below), since this script only adds what a file is missing, never
+overwrites what another process already got right.
 """
 
 from __future__ import annotations
@@ -139,7 +141,8 @@ MATH = ["sum(coverages[*].premium) \u2248 premium.total_policy_premium \u00b1 0.
 # bopgl/boppr already named their form-level coverage row CoverageSection
 OLD_ROW = "BusinessLiabilityCoverageRow"
 
-# canonical_schema_extensions.py owns these in homeowners.json
+# homeowners.json's text_sections/coverages/field_count were authored by a
+# separate one-time review, already applied - left alone here
 OWNED_ELSEWHERE = {"homeowners.json"}
 
 FREE_TEXT = ("text_sections", "additional_fields", "printed_lines")

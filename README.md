@@ -217,40 +217,20 @@ Profile(key="duplex_bleed", label="duplex, show-through",
 
 ---
 
-## Adding your own carrier form
+## A new carrier, a new line of business
 
-Three methods. Everything above — schema validation, page references, the
-absent list, scanned twins, the checks, the CLI — arrives with them.
+Nothing to write. The generic engine (`--source`, above) takes any real
+source PDF and reads the line of business straight off its own folder name
+(`.../<Carrier>/<lob>/x.pdf`) against whatever schema that name has under
+`config/policy_check/` — no per-carrier or per-document code, and no
+registration step. Point it at the new source folder and it works the same
+way every other carrier and line of business already does.
 
-```python
-from fideon_synth import Template, Values
-from fideon_synth.draw import Column, Table, render
-from fideon_synth.fields import fv, derived, money_from, date_fv
-
-class ButternutHomeowners(Template):
-    key = "butternut_homeowners"
-    lob = "homeowners"                       # names the canonical schema file
-
-    def variants(self, count=None, seed=0):  # plain dicts, your shape
-        ...
-    def render(self, variant, path):         # draw it, return the page count
-        return render(path, lambda sheet: _draw(sheet, variant))
-    def gold(self, variant, pdf_name, pages):
-        ...                                  # leave page_ref empty
-```
-
-Register it in `fideon_synth/forms/__init__.py` and `--form yourkey` finds it.
-
-`examples/new_form.py` is a complete working one — a different carrier on a
-different line of business, ~100 lines, passing all four checks. Run it.
-
-Two things to get right, because they are the ones that bite:
-
-- **Do not fill `page_ref`.** They are measured off the finished PDF. Filling
-  them by hand turns a check that catches layout drift into a check that
-  agrees with you.
-- **Use `derived()` for anything the page does not print**, with the printed
-  text it was read from as evidence.
+A hand-built, declarative form (drawn from scratch, not generated from a real
+source PDF) is still possible via `fideon_synth.Template`/`fideon_synth.Corpus`
+(see `corpus.py`, `template.py`) for the rare case that's worth writing by
+hand - but that path has no CLI flag or catalogue of its own any more; call
+`Corpus(YourTemplate(), out_dir).build()` directly.
 
 ### What the toolkit gives you
 
