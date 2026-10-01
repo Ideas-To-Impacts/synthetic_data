@@ -21,7 +21,9 @@ below is in visible page coordinates.
 
 from __future__ import annotations
 
+import os
 import re
+import tempfile
 from dataclasses import dataclass, field
 from typing import List, Optional
 
@@ -550,6 +552,18 @@ class Replacement:
     face_known: bool = False          # font taken from a visible text layer
     glued: bool = False               # printed against a label (HIN:327939)
     follows: bool = False             # more words printed after it on its line
+    source_font: Optional[str] = None  # the exact font the old text was set in
+                                       # (face_known pages only) - used in place
+                                       # of ``font``'s base-14 approximation
+                                       # when that exact font can be reused
+    font_obj: Optional["fitz.Font"] = None  # set alongside ``font`` when it is
+                                       # a re-embedded font, not a standard-14
+                                       # name: fitz.get_text_length only knows
+                                       # the latter, so width needs this instead
+    font_file: Optional[str] = None   # set alongside ``font`` for a re-embedded
+                                       # font: insert_text needs the font file
+                                       # itself passed on every call, a
+                                       # page-local alias is not enough
 
 
 def _size_from_ink(text, glyphs):
@@ -641,10 +655,76 @@ def _paper(pix, rect, pad=1.5):
     return tuple(float(v) / 255 for v in np.clip(c, 0, 255))
 
 
+def _embedded_font(page, name, cache):
+    """The exact font ``name`` was set in - PDF's own standard-14 name used
+    directly, or, for a font actually embedded in this very page, that font's
+    bytes written out once so every ``insert_text`` call can pass them - so a
+    replacement is drawn in the source document's own typeface (regular,
+    bold, italic, whichever it is) rather than the four-way regular/bold,
+    serif/sans approximation of it. ``insert_text`` only accepts a font file
+    by path, not a buffer, and re-resolves it on every call rather than
+    remembering an alias from an earlier one - so the bytes are kept on disk
+    for as long as this is needed, not just registered once.
+
+    Returns ``(name_to_use, font_file_path, font_obj)`` - ``font_file_path``
+    is set only for a re-embedded font (``insert_text`` needs it every
+    call); ``font_obj`` (a :class:`fitz.Font`) likewise, since
+    ``fitz.get_text_length`` (used to measure width) only recognises a
+    standard-14 name. ``(None, None, None)`` when the font is neither
+    standard nor extractable, and the caller falls back to the base-14
+    approximation, exactly as before this existed."""
+    if name in cache:
+        return cache[name]
+    result = (name, None, None) if name in fitz.Base14_fontnames else (None, None, None)
+    if result[0] is None:
+        try:
+            for f in page.get_fonts(full=False):
+                xref, basefont = f[0], f[3]
+                if basefont == name:
+                    ext, ftype, buf = page.parent.extract_font(xref)[1:4]
+                    if buf and ftype != "type3":  # a bitmap/outline font has no reusable program
+                        fd, path = tempfile.mkstemp(suffix=".font")
+                        with os.fdopen(fd, "wb") as fh:
+                            fh.write(buf)
+                        result = (basefont, path, fitz.Font(fontbuffer=buf))
+                    break
+        except Exception:
+            result = (None, None, None)
+    cache[name] = result
+    return result
+
+
+def _text_width(text, rep, size):
+    """A replacement's printed width at ``size`` - from its re-embedded font
+    directly when it has one (``fitz.get_text_length`` cannot measure a
+    page-local alias), else the usual base-14 measurement."""
+    if rep.font_obj is not None:
+        return rep.font_obj.text_length(text, fontsize=size)
+    return fitz.get_text_length(text, fontname=rep.font, fontsize=size)
+
+
 def apply(page, replacements: List[Replacement], ink: Ink, matrix=fitz.Identity):
     """Remove, cover and redraw every replacement on one page."""
     if not replacements:
         return
+    font_cache = {}
+    try:
+        _apply(page, replacements, ink, matrix, font_cache)
+    finally:
+        for _, font_file, _ in font_cache.values():
+            if font_file:
+                try:
+                    os.remove(font_file)
+                except OSError:
+                    pass
+
+
+def _apply(page, replacements: List[Replacement], ink: Ink, matrix, font_cache):
+    for rep in replacements:
+        if rep.face_known and rep.source_font:
+            real, font_file, font_obj = _embedded_font(page, rep.source_font, font_cache)
+            if real:
+                rep.font, rep.font_file, rep.font_obj = real, font_file, font_obj
     k, b, face = metrics(page, ink, matrix)
     # a text layer mapped through a fitted matrix is a point or two out;
     # there the printed word's own start is more reliable than the box
@@ -662,7 +742,7 @@ def apply(page, replacements: List[Replacement], ink: Ink, matrix=fitz.Identity)
                 x0 = ink.word_start(*band, r.x0 + 0.3 * size, gap=0.3 * size)
             # the print is about as wide as the old text in this size, and a
             # comma or a time printed after it is not part of it
-            printed = fitz.get_text_length(rep.old, fontname=rep.font, fontsize=size)
+            printed = _text_width(rep.old, rep, size)
             limit = min(rep.room if rep.room is not None else page.rect.width,
                         x0 + 1.2 * printed + 0.5)
             left, right = ink.run(*band, x0, max(x0 + 1, r.x1 - (r.x0 - x0)), limit,
@@ -762,7 +842,7 @@ def apply(page, replacements: List[Replacement], ink: Ink, matrix=fitz.Identity)
     for rep, size, baseline, cover, left, right in placed:
         if not rep.new.strip():
             continue                                  # a blanked piece
-        width = fitz.get_text_length(rep.new, fontname=rep.font, fontsize=size)
+        width = _text_width(rep.new, rep, size)
         if rep.align == "right":
             x = right - width
         else:
@@ -778,5 +858,11 @@ def apply(page, replacements: List[Replacement], ink: Ink, matrix=fitz.Identity)
             size *= max(0.8, fit / squeeze)
         c = rep.color
         morph = (fitz.Point(x, baseline), fitz.Matrix(squeeze, 1)) if squeeze < 1 else None
-        page.insert_text((x, baseline), rep.new, fontname=rep.font, fontsize=size, morph=morph,
+        # set_simple=True keeps a re-embedded font a plain, single-byte font
+        # instead of PyMuPDF's default Identity-H composite - which builds
+        # its own ToUnicode table and can map a glyph two codepoints share
+        # (Arial's "-" and the soft hyphen both point at one glyph) to the
+        # wrong one, so the hyphen a reader selects back out is invisible
+        page.insert_text((x, baseline), rep.new, fontname=rep.font, fontfile=rep.font_file,
+                         fontsize=size, morph=morph, set_simple=bool(rep.font_file),
                          color=((c >> 16 & 255) / 255, (c >> 8 & 255) / 255, (c & 255) / 255))

@@ -558,14 +558,18 @@ def _detect(cell_list):
 def _above(cell, cell_list, max_gap=1.9, x_tol=14):
     """The cell printed directly above ``cell`` in the same column."""
     r = cell.rect
-    best = None
+    best, best_key = None, None
     for other in cell_list:
         o = other.rect
         if other is cell or o.y1 > r.y0 + 0.5 * r.height or r.y0 - o.y1 > max_gap * r.height:
             continue
         if abs(o.x0 - r.x0) <= x_tol or (o.x0 <= r.x0 and o.x1 >= r.x0 + 4):
-            if best is None or o.y1 > best.rect.y1:
-                best = other
+            # nearest row first, and within a tied row the nearest column -
+            # two cells on the same row within x_tol ("1." then "Insured:")
+            # must not let the first one in reading order win by default
+            key = (o.y1, -abs(o.x0 - r.x0))
+            if best_key is None or key > best_key:
+                best, best_key = other, key
     return best
 
 
@@ -652,8 +656,12 @@ def _looks_like_name(text):
         return False                      # a heading or a sentence, not a name
     if ";" in text or any(w[0].islower() for w in words if w.lower() not in ("and", "of", "&", "de", "van", "von")):
         return False                      # names are capitalised; policy wording is not
-    if "," in text and not re.fullmatch(r"[A-Za-z'-]+, [A-Za-z.' -]+", text):
-        return False                      # "Smith, John" is a name; a list is not
+    if "," in text:
+        head, _, tail = text.rpartition(",")
+        tail_words = {w.lower().strip(".") for w in tail.split()}
+        if not (re.fullmatch(r"[A-Za-z'-]+, [A-Za-z.' -]+", text)
+                or (tail_words and tail_words <= COMPANY_WORDS)):
+            return False                  # "Smith, John" is a name; a list is not
     letters = sum(c.isalpha() for c in text)
     return letters >= 0.8 * len(text.replace(" ", "")) and not re.search(r"\d", text)
 
@@ -704,8 +712,18 @@ def _label_above(r, cell_list, max_gap=2.2):
     return best.text[start:end].strip()
 
 
-def find_values(cell_list):
-    """Everything on a page worth replacing, labelled where a label exists."""
+def find_values(cell_list, index=None):
+    """Everything on a page worth replacing, labelled where a label exists.
+
+    ``index`` (the schema's label index, :func:`label_index`) is optional -
+    without it, everything above behaves exactly as before. With it, one more
+    pass runs: a bare number with no currency sign, printed far to the right
+    of its label on the same line ("TOTAL ESTIMATED ANNUAL PREMIUM ... ...
+    2,773" - a summary box's wide gap, not "Label: value"), is still read as
+    money - but only when that label is itself one the schema already
+    treats as a money field. Never a hardcoded label list: the schema's own
+    aliases decide, so this never fires on an unrelated bare number (a
+    term, a count, a year)."""
     found = _detect(cell_list)
     found += _wrapped_dates(cell_list, found)
     found += _bare_streets(cell_list, found)
@@ -985,6 +1003,22 @@ def find_values(cell_list):
             f = Found("person", cell, s, e)
             f.label = _label_for(f, cell_list)
             found.append(f)
+
+    if index is not None:
+        bare_money = re.compile(r"\d{1,3}(?:,\d{3})+(?:\.\d{2})?|\d{2,6}(?:\.\d{2})?")
+        for cell in cell_list:
+            if any(f.cell is cell for f in found):
+                continue
+            if not bare_money.fullmatch(cell.text.strip()):
+                continue
+            left = _left(cell, cell_list)
+            if left is None or re.search(r"\d", left.text):
+                continue
+            if match_label(_norm_label(left.text), "money", index) is None:
+                continue
+            f = Found("money", cell, 0, len(cell.text))
+            f.label = left.text
+            found.append(f)
     return found
 
 
@@ -1061,8 +1095,14 @@ def _address_block(found, cell_list):
             s = len(right.text) - len(right.text.lstrip())
             pending.append(Found("place", right, s, s + len(right.text.strip())))
         for _ in range(6):
+            prev_row = cell.row
             cell = _below(cell, cell_list, max_gap=2.6)   # a block set with open leading
-            if cell is None:
+            if cell is None or cell.row != prev_row + 1:
+                # a printed row between them (a different column's label, say
+                # "Other workplaces not shown above:") was skipped only
+                # because it falls outside this block's own x-alignment -
+                # that gap means the block already ended, not that the next
+                # aligned line is still part of it
                 break
             text = cell.text.strip()
             mine = [g for g in found + out if g.cell is cell]
@@ -1977,7 +2017,13 @@ def _drop_carrier(found, cell_list, carrier):
         words = set(re.findall(r"[a-z]{3,}", f.text.lower()))
         first = (re.findall(r"[a-z]{3,}", f.text.lower()) or [""])[0]
         if f.kind == "company" and marks & words or f.kind == "person" and words and words <= marks \
-                or f.kind in ("person", "company") and first in marks:   # "CNA Granite Row"
+                or f.kind in ("person", "company") and first in marks \
+                or f.kind == "company" and INSURER_NAME.search(f.text):
+            # the carrier's own writing/underwriting entity, printed under a
+            # different legal name than the folder it is filed under
+            # ("AmTrust" the carrier, "Technology Insurance Company, Inc."
+            # the name actually printed) - still the carrier, not a
+            # policyholder, so it stays as printed like any other
             drop.add(id(f))
             heads.append(f.cell)
     # the carrier's name printed as plain text heads its address too: the
@@ -2233,6 +2279,7 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0, keep=False):
                 _flatten(doc, n)
                 flattened.add(n)
         turned = _upright(doc)
+        index = label_index(schema)
         found_all, plans, pages = [], [], []
         for page in doc:
             ink = overlay.Ink(page)
@@ -2249,7 +2296,7 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0, keep=False):
                     "page %d has no text layer (image only, %d image(s)) - "
                     "nothing on it could be detected" % (page.number + 1, len(page.get_images())))
             cell_list = overlay.cells(page, matrix, ink)
-            found = _drop_carrier(find_values(cell_list), cell_list, source_pdf.parent.parent.name)
+            found = _drop_carrier(find_values(cell_list, index), cell_list, source_pdf.parent.parent.name)
             pages.append((page, ink, matrix, visible, cell_list, found))
         _not_values(pages)
         _sweep(pages, _carrier_marks(source_pdf.parent.parent.name))
@@ -2290,6 +2337,7 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0, keep=False):
                     visible_rect=f.cell.span_rect(f.start, end),
                     ocr_rect=f.cell.span_rect(f.start, end, ocr=True),
                     font=overlay.base14(first.font, visible), face_known=visible,
+                    source_font=first.font if visible else None,
                     glued=f.start > 0 and f.cell.text[f.start - 1] not in " ",
                     color=first.color if visible else 0,
                     align=_alignment(f, cell_list), room=room,
@@ -2298,7 +2346,6 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0, keep=False):
             plans.append((page, reps, ink, matrix))
         signed = _signature_ink(pages)
         carrier = source_pdf.parent.parent.name
-        index = label_index(schema)
         reader = structure.Reader([(p.number, p.rect.height, cell_list, found)
                                    for p, _, _, _, cell_list, found in pages],
                                   schema, index, carrier)
@@ -2407,7 +2454,7 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0, keep=False):
 
         if "text_sections" in schema.merged["properties"]:
             # the printed paragraphs no field holds, in the replaced wording
-            gold["text_sections"] = prose.text_sections(digital, {f.new for f in found_all if f.new})
+            gold["text_sections"] = prose.text_sections(digital)
             for sec in gold["text_sections"].values():
                 sec["raw_text"] = _unglue(sec["raw_text"], vocab, titled=True)
             blob = " ".join(s["raw_text"] for s in gold["text_sections"].values()).lower()
@@ -2443,13 +2490,22 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0, keep=False):
             props = items.get("properties", {})
             required = items.get("required", [])
             label_key = next((k for k in required if k != "value"), "name")
+            # the same unplaced fact, printed again on a later page (a
+            # letterhead or a named-insured block a form repeats on every
+            # page), is not a second thing a reader found - it is measured
+            # onto every page it is on, the same as a field that did match
+            seen = {}
             for u in unmapped:
+                label = u["label"] or ""
+                if (label, u["value"]) in seen:
+                    continue
                 value = fv(u["value"])
                 value["page_ref"] = u.get("page_ref") or []
                 value.pop("_evidence", None)
-                entry = {label_key: u["label"] or u["kind"], "value": value}
+                entry = {label_key: label, "value": value}
                 if "section" in props and "section" not in entry:
                     entry["section"] = None
+                seen[(label, u["value"])] = entry
                 full["additional_fields"].append(entry)
         gold = full
 
