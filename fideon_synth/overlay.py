@@ -288,6 +288,7 @@ class Char:
     space_before: bool = False    # the text layer put a space before this char
     leader: bool = False          # one dot of a line drawn as a row of dots
     line: object = None           # the text-layer line it came from
+    invisible: bool = False       # the text layer claims ink here; the page has none
 
 
 @dataclass
@@ -395,6 +396,13 @@ def cells(page, matrix=fitz.Identity, ink: Optional[Ink] = None,
             glyphs = [ch["c"] for span in line["spans"] for ch in span["chars"] if ch["c"].strip()]
             leader = len(glyphs) >= 3 and sum(c in FILL for c in glyphs) >= 0.8 * len(glyphs)
             for span in line["spans"]:
+                # the text layer's own claim (a visible colour, a real font)
+                # is not proof a reader ever sees it - a tracking string set
+                # in a font built with blank glyphs claims plain black ink
+                # and still paints nothing; the rendered page is the truth
+                span_rect = fitz.Rect(span["bbox"]) * matrix
+                invisible = ink is not None and span_rect.get_area() > 0 \
+                    and ink.bbox(span_rect) is None
                 for ch in span["chars"]:
                     if not ch["c"].strip():
                         space = True
@@ -404,7 +412,7 @@ def cells(page, matrix=fitz.Identity, ink: Optional[Ink] = None,
                     ocr = fitz.Rect(ch["bbox"])
                     chars.append(Char(ch["c"], ocr * matrix, ocr, span["font"],
                                       span["size"], span.get("color", 0), space,
-                                      leader and ch["c"] in FILL, (b_no, l_no)))
+                                      leader and ch["c"] in FILL, (b_no, l_no), invisible))
                     space = False
     for band, x0, x1, p0, p1 in stretch or []:
         k = (p1 - p0) / max(x1 - x0, 1e-6)

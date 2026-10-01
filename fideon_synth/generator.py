@@ -21,9 +21,10 @@ No per-carrier or per-document code. For each source PDF:
    The gold JSON always has the schema's full shape - every canonical field
    present, ``null`` where the document does not state it - so a harness can
    tell "the document is silent" from "nobody looked". Anything changed that
-   could not be matched to a field with confidence is never dropped: it is
-   carried in the canonical ``additional_fields[]`` list instead, exactly as
-   the schema defines that field. What is laid out rather than labelled -
+   could not be matched to a field with confidence never enters the gold -
+   it has no canonical key to sit under - and is written instead, once per
+   distinct fact, to an ``unmapped_fields.log`` beside the gold JSON. What
+   is laid out rather than labelled -
    coverage and location tables, the forms list, a unit's details, plain text
    such as "TERM: 12 Months" - is read by :mod:`structure`. A printed
    paragraph with no field of its own (a disclaimer, a renewal notice) is
@@ -266,6 +267,10 @@ KIND_FITS = {
 
 
 def _norm_label(text):
+    # a text layer that drops the spaces between words but keeps their
+    # capitals ("PolicyEffectiveDate") still marks where they were - split
+    # there before the case that marked it is lowercased away
+    text = re.sub(r"(?<=[a-z0-9])(?=[A-Z])", " ", text)
     text = re.sub(r"[^a-z0-9 ]", " ", text.lower())
     words = [w for w in text.split() if w not in ("your", "the", "of")]
     return " ".join(words)
@@ -373,6 +378,15 @@ class Found:
     @property
     def rect(self):
         return self.cell.span_rect(self.start, self.end)
+
+    @property
+    def invisible(self):
+        """The text layer claims real ink here; the rendered page shows
+        none - a tracking string set in a font built with blank glyphs.
+        Never faked into something that reads as real and happens to stay
+        unseen only by the same accident - left exactly as printed."""
+        chars = [c for c in self.cell.chars[self.start:self.end] if c is not None]
+        return bool(chars) and all(c.invisible for c in chars)
 
 
 def _date_of(text):
@@ -1168,6 +1182,15 @@ def _reshape_digits(text, vals):
     return new
 
 
+def _is_masked(text):
+    """Already printed with most of it withheld on purpose - "XXXXX7759",
+    "***-**-1234", "**********" - never a real value to fake a plausible
+    replacement for; it must survive exactly as printed, X's and all."""
+    core = re.sub(r"[\s\-./]", "", text)
+    marks = sum(1 for c in core if c in "Xx*")
+    return len(core) >= 3 and marks >= 3 and marks >= 0.5 * len(core)
+
+
 class Faker:
     """Consistent replacements for one document."""
 
@@ -1190,6 +1213,8 @@ class Faker:
     def __call__(self, f: Found) -> str:
         if f.blank:
             return ""
+        if _is_masked(f.text) or f.invisible:
+            return f.text
         if f.name_part is not None:          # "MEGHAN" in a driver column: the new first name
             key = ("person", f.key)
             if key not in self.memo:
@@ -1864,15 +1889,22 @@ def _vertical(page, swapped):
                          color=((c >> 16 & 255) / 255, (c >> 8 & 255) / 255, (c & 255) / 255))
 
 
-def _mop_up(page, swaps):
+def _mop_up(page, swaps, ink=None):
     """The last pass: an original value still in the page's text - a copy
     the layout never read whole, in text overprinted by another line, or a
     scan's layer split into pieces - is removed, covered in the paper colour
-    and drawn anew, found by the value itself rather than by layout."""
+    and drawn anew, found by the value itself rather than by layout.
+
+    Found by the text alone, not by layout, so it has none of ``Found``'s
+    own shape checks - in particular not the invisible-text one: a hit the
+    rendered page shows no ink for at all is a copy set in a font built
+    never to be seen (a tracking string, not a printed value) and is left
+    exactly as printed, the same rule ``Faker`` already applies everywhere
+    else a value is found by its layout instead of by this sweep."""
     hits = []
     for old, new in swaps:
         for r in page.search_for(old):
-            if r.width > 1 and r.height > 1:
+            if r.width > 1 and r.height > 1 and (ink is None or ink.bbox(r) is not None):
                 hits.append((r, new))
     if not hits:
         return
@@ -2035,16 +2067,40 @@ def _drop_carrier(found, cell_list, carrier):
                 marks & set(re.findall(r"[a-z]{3,}", cell.text.lower()))
                 or INSURER_NAME.search(cell.text)):
             heads.append(cell)
+    by_row = {}
+    for cell in cell_list:
+        by_row.setdefault((cell.page, cell.row), []).append(cell)
     for head in heads:
-        cell = head
+        row = head.row
         for _ in range(3):                  # and the address printed under it
-            cell = _below(cell, cell_list)
-            if cell is None or NAME_LABEL.search(cell.text) or _looks_like_name(cell.text) \
-                    and not (marks & set(re.findall(r"[a-z]{3,}", cell.text.lower()))):
+            row += 1
+            # a letterhead's name is often centred or indented differently
+            # from its own address line below it ("MARKEL AMERICAN INSURANCE
+            # COMPANY" over "GLEN ALLEN, VIRGINIA", set well to its right,
+            # sharing the row with an unrelated watermark fragment) - the
+            # next printed row, not a column a fixed x-tolerance may miss
+            row_cells = by_row.get((head.page, row))
+            if not row_cells:
+                break
+            if any(NAME_LABEL.search(c.text) or _looks_like_name(c.text)
+                   and not (marks & set(re.findall(r"[a-z]{3,}", c.text.lower())))
+                   for c in row_cells):
                 break                       # another party's block begins
-            for g in found:
-                if g.cell is cell and g.kind in ("street", "pobox", "cityline", "zip", "place"):
-                    drop.add(id(g))
+            for cell in row_cells:
+                for g in found:
+                    if g.cell is not cell:
+                        continue
+                    if g.kind in ("street", "pobox", "cityline", "zip", "place"):
+                        drop.add(id(g))
+                    elif g.kind in ("person", "company") and g.end < len(cell.text) \
+                            and cell.text[g.end:].lstrip().startswith(","):
+                        # "GLEN ALLEN, VIRGINIA" - the state spelled out, not
+                        # abbreviated, leaves the city shaped exactly like a
+                        # person's name and read as one; the comma and more
+                        # text still sitting after it is what a lone name in
+                        # a masthead never has, and a city before its state
+                        # always does
+                        drop.add(id(g))
     return [f for f in found if id(f) not in drop]
 
 
@@ -2248,7 +2304,7 @@ def _fill_skeleton(skeleton, partial):
     the skeleton's empty one whole; a list replaces the skeleton's ``[]``
     whole, since array items cannot be merged piecemeal. Nothing outside the
     skeleton's own shape is ever added here - a value with no place in it is
-    the caller's job to route to ``additional_fields``, not this function's."""
+    the caller's job to log, not this function's."""
     for key, value in partial.items():
         current = skeleton.get(key)
         if isinstance(current, dict) and not is_field(current) and isinstance(value, dict):
@@ -2256,6 +2312,75 @@ def _fill_skeleton(skeleton, partial):
         else:
             skeleton[key] = value
     return skeleton
+
+
+def _schema_shape(node, defs):
+    """A property's schema node, with a ``$ref`` to ``FieldValue`` resolved
+    to the sentinel ``"leaf"`` - nothing under a leaf is ever walked - and
+    any other ``$ref`` resolved to the ``$defs`` entry it names."""
+    if "$ref" in node:
+        name = node["$ref"].split("/")[-1]
+        if name == "FieldValue":
+            return "leaf"
+        return _schema_shape(defs[name], defs)
+    return node
+
+
+def _prune_to_schema(node, shape, defs, path, removed):
+    """Strip anything structure.py's own working dicts set that the schema
+    does not define at this exact position - a key an array item's own
+    schema never declared (``unit_description`` beside a watercraft unit's
+    real ``year``/``make``/``model``), not just one with nowhere to go at
+    all. Removed values are collected, never silently dropped."""
+    shape = _schema_shape(shape, defs)
+    if shape == "leaf" or not isinstance(shape, dict):
+        return node
+    if isinstance(node, dict):
+        extra = shape.get("additionalProperties")
+        if extra and "properties" not in shape:
+            # a dynamically-keyed map ("text_sections", one entry per
+            # printed paragraph) - every key is valid, only its own shape
+            # is checked, never pruned by name
+            for key, value in node.items():
+                node[key] = _prune_to_schema(value, extra, defs,
+                                             path + "." + key if path else key, removed)
+            return node
+        props = shape.get("properties") or {}
+        for key in list(node.keys()):
+            if key not in props:
+                removed.append((path + "." + key if path else key, node.pop(key)))
+            else:
+                node[key] = _prune_to_schema(node[key], props[key], defs,
+                                             path + "." + key if path else key, removed)
+    elif isinstance(node, list):
+        items = shape.get("items") or {}
+        for i, item in enumerate(node):
+            _prune_to_schema(item, items, defs, "%s[%d]" % (path, i), removed)
+    return node
+
+
+def _log_unmapped(out_gold, file_name, unmapped):
+    """A changed value the schema has no canonical field for never enters the
+    gold - it is appended, once per distinct fact (the same fact printed
+    again on a later page is one line, not one per page), to a plain-text
+    log beside the gold JSON: the file it came from, the page(s) it is
+    printed on, its label as printed and the value now on the page."""
+    if not unmapped:
+        return
+    seen, lines = set(), []
+    for u in unmapped:
+        label = u["label"] or ""
+        key = (label, u["value"])
+        if key in seen:
+            continue
+        seen.add(key)
+        pages = ",".join(str(p) for p in sorted(set(u.get("page_ref") or []))) or "?"
+        lines.append("%s | page %s | %s: %s" % (file_name, pages, label, u["value"]))
+    if not lines:
+        return
+    log_path = Path(out_gold).parent / "unmapped_fields.log"
+    with open(log_path, "a", encoding="utf-8") as fh:
+        fh.write("\n".join(lines) + "\n")
 
 
 def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0, keep=False):
@@ -2358,7 +2483,7 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0, keep=False):
         for page, reps, ink, matrix in plans:
             overlay.apply(page, reps, ink, matrix)
             _vertical(page, swapped)
-            _mop_up(page, [(o, n) for o, n in swapped if len(o) >= 5 and o in personal])
+            _mop_up(page, [(o, n) for o, n in swapped if len(o) >= 5 and o in personal], ink)
         doc.save(str(digital), garbage=3, deflate=True)
         doc.close()
 
@@ -2468,6 +2593,23 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0, keep=False):
         _turn_back(built.pdf, turned)
         strip_evidence(gold)
 
+        # structure.py reads whole sections at once, into its own working
+        # dicts - a key no schema field at that exact position declares
+        # (a unit's own "unit_description", kept only to split year/make/
+        # model from) must not ride along into the gold just because the
+        # dict it sat in did; it is pruned here and logged, the same as a
+        # value that found no schema field to begin with
+        pruned = []
+        _prune_to_schema(gold, {"properties": schema.merged["properties"]},
+                         schema.merged["$defs"], "", pruned)
+        for path, value in pruned:
+            label = path.rsplit(".", 1)[-1].rsplit("[", 1)[0]
+            if isinstance(value, dict) and "raw" in value:
+                unmapped.append({"label": label, "value": value["raw"],
+                                 "page_ref": value.get("page_ref") or []})
+            elif not isinstance(value, (dict, list)) or value:
+                unmapped.append({"label": label, "value": str(value), "page_ref": []})
+
         # the gold always has the schema's full shape: every canonical field
         # present, an empty FieldValue (raw/parsed null) where the document
         # does not state it - never a bare null, which the schema's own
@@ -2475,38 +2617,15 @@ def synthesize(source_pdf, out_pdf, out_gold, schema, vals, seed=0, keep=False):
         # fideon:absent/fideon:unmapped side-channel instead
         full = schema.skeleton()
         _fill_skeleton(full, gold)
-        # anything detected and changed that no schema field would take with
-        # confidence is not dropped: it goes into the canonical
-        # additional_fields[] list the schema already defines for exactly
-        # this ("Captures what the schema has no home for... nothing a
-        # reader found is dropped"), never a non-canonical key
-        af_schema = schema.merged["properties"].get("additional_fields")
-        if af_schema:
+        # the schema's own additional_fields[] array (where it has one)
+        # stays present and empty - every canonical key is always there -
+        # but nothing detected and changed is ever written into it: a value
+        # that no schema field will take with confidence has no canonical
+        # key, so the gold does not hold it. It still is not dropped - it
+        # is logged once per distinct fact, never into the gold itself
+        if "additional_fields" in schema.merged["properties"]:
             full.setdefault("additional_fields", [])
-            # the label key's own name varies by schema (most call it "name";
-            # homeowners calls it "label" and adds an optional "section") -
-            # read it from the schema itself rather than assume one spelling
-            items = af_schema.get("items", {})
-            props = items.get("properties", {})
-            required = items.get("required", [])
-            label_key = next((k for k in required if k != "value"), "name")
-            # the same unplaced fact, printed again on a later page (a
-            # letterhead or a named-insured block a form repeats on every
-            # page), is not a second thing a reader found - it is measured
-            # onto every page it is on, the same as a field that did match
-            seen = {}
-            for u in unmapped:
-                label = u["label"] or ""
-                if (label, u["value"]) in seen:
-                    continue
-                value = fv(u["value"])
-                value["page_ref"] = u.get("page_ref") or []
-                value.pop("_evidence", None)
-                entry = {label_key: label, "value": value}
-                if "section" in props and "section" not in entry:
-                    entry["section"] = None
-                seen[(label, u["value"])] = entry
-                full["additional_fields"].append(entry)
+        _log_unmapped(out_gold, Path(out_pdf).name, unmapped)
         gold = full
 
         # a required section the document never labels clearly (no named
