@@ -7,12 +7,13 @@ disclaimer - have no field, yet they are printed and an extractor reads
 them. Each paragraph becomes a ``TextSection`` (see the canonical schema),
 titled by the heading printed over it.
 
-Read from the finished document, so the words are the replaced ones. A page
-with a real text layer is read from it, where bold type tells a heading from
-a paragraph; a scanned page is read by OCR from its image, because a scan's
-own text layer is often garbled ("Nicdical cack") and prose copied from it
-would claim words the page does not show. Without an OCR engine a scanned
-page contributes no sections, rather than wrong ones.
+Read from the finished document, so the words are the replaced ones, from
+its own text layer - the same layer field detection already reads, digital
+or an existing OCR layer alike, bold type telling a heading from a
+paragraph. No fresh OCR pass: whatever quality that layer already has is the
+same quality every field value on the page was already read at, so prose
+text is held to no different a standard, and a scanned page contributes
+sections like any other rather than none at all.
 """
 
 from __future__ import annotations
@@ -21,11 +22,10 @@ import re
 
 import fitz
 
-from . import overlay, recover
+from . import overlay
 
 _FORM_NO = re.compile(r"(?<![A-Za-z0-9])[A-Z]{1,6}[- ]?\d{1,5}[A-Z]?(?: [A-Z]{2})?\s?\(\d{1,2}[-/]\d{2,4}\)")
 WHITE = 0xFFFFFF
-OCR_DPI = 300
 #: a form or product code: "MAM5192-0417", "PL-50776"
 _CODE = re.compile(r"\b[A-Z]{2,}-?\d{3,}")
 
@@ -155,25 +155,6 @@ def _layer_lines(page):
     return _rows(pieces, tight=False)
 
 
-def _repair(text, values):
-    """A value the generator drew, as OCR read it with its spaces dropped
-    ("February25,2026"), printed as it was drawn. Only exact characters are
-    restored; a misread letter is left as read."""
-    for v in sorted(values, key=len, reverse=True):
-        if len(v) >= 6 and " " in v:
-            rx = r"\s*".join(re.escape(c) for c in v.replace(" ", ""))
-            text = re.sub(r"(?<![A-Za-z0-9])%s(?![A-Za-z0-9])" % rx, lambda m: v, text)
-    return text
-
-
-def _ocr_lines(page):
-    # read finer than for layout: small print loses its spaces at 200 dpi
-    # ("insurancepolicy.Pleasereferto"); and the engine splits a line at the
-    # double space after a full stop, so only a wide space is a column
-    return _rows([(r.y0, r.y1, r.x0, r.x1, text.strip(), None)
-                  for text, r, _ in recover.read_page(page, dpi=OCR_DPI)], column=2.5)
-
-
 def _section(out, n, title, text, kind="prose"):
     text = re.sub(r"\s+", " ", text).strip()
     form = _FORM_NO.search(text)
@@ -268,25 +249,13 @@ def _sections(lines, n):
     return out
 
 
-def text_sections(pdf_path, values=()):
-    """Every paragraph of printed prose in the PDF, as gold text sections.
-    ``values`` are the replacements drawn on it, restored where OCR ran
-    their words together."""
+def text_sections(pdf_path):
+    """Every paragraph of printed prose in the PDF, as gold text sections."""
     doc = fitz.open(str(pdf_path))
     sections = {}
     try:
         for page in doc:
-            scanned = recover.is_scanned(page, overlay.invisible_text(page))
-            if scanned:
-                if recover.engine() is None:
-                    continue
-                lines = _ocr_lines(page)
-            else:
-                lines = _layer_lines(page)
-            found = _sections(lines, page.number + 1)
-            if scanned:
-                for s in found.values():
-                    s["raw_text"] = _repair(s["raw_text"], values)
+            found = _sections(_layer_lines(page), page.number + 1)
             sections.update(found)
     finally:
         doc.close()

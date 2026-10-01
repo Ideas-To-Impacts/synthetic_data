@@ -933,7 +933,7 @@ class Reader:
                 and not cell.text.strip()[:1].islower():   # "occupation." wrapped out of a sentence
             nxt = self._right_of(cell)             # "Your Insurer  |  TRAVCO INSURANCE COMPANY"
             if nxt is None or ":" in nxt.text or self.found_in.get(id(nxt)) or \
-                    not self._value_like(nxt.text):
+                    not self._value_like(nxt.text) or self._above_of(nxt) is not None:
                 return
             label, value, vcell = cell.text, nxt.text.strip(), nxt
         else:
@@ -1027,6 +1027,23 @@ class Reader:
             if abs(q.x0 - r.x0) > 6:
                 continue
             if best is None or q.y0 < best.rect.y0:
+                best = o
+        return best
+
+    def _above_of(self, cell):
+        """The cell printed directly over ``cell``, left edges aligned - the
+        first line of a heading this one wraps onto ("LICENSE VEH" / "STATE",
+        two columns of one table header): such a cell is itself a label,
+        never a value sitting beside an unrelated one in the same row."""
+        r = cell.rect
+        best = None
+        for o in self.cells[cell.page]:
+            q = o.rect
+            if o is cell or q is None or q.y1 > r.y0 + 0.3 * r.height or r.y0 - q.y1 > 1.6 * r.height:
+                continue
+            if abs(q.x0 - r.x0) > 6:
+                continue
+            if best is None or q.y1 > best.rect.y1:
                 best = o
         return best
 
@@ -1620,6 +1637,12 @@ class Reader:
                     self._targets(unit, name, yes=True)
                     continue
                 included = None
+                if len(name.split()) > 10:
+                    # a caption explaining the table, not a row in it -
+                    # "COVERAGE IS PROVIDED WHERE A COVERAGE LIMIT OR PREMIUM
+                    # IS SHOWN FOR THE COVERAGE" - a coverage or form name is
+                    # never a full sentence this long
+                    continue
                 if pending and x0 > pending["x"] + 3:
                     pending.setdefault("desc", said_name)  # "50% of incurred cost"
                     continue
@@ -1713,8 +1736,11 @@ class Reader:
                     and ("premium" in vals or "deductible" in vals) \
                     and (last is not None or held):
                 if held and not held.get("used") and not held.get("item") \
-                        and not held.get("desc"):
+                        and not held.get("desc") and held.get("name"):
                     # the name over it was no group heading: "Roadside Assistance"
+                    # - but a held line with no name of its own (every word on
+                    # it already belonged to something else) names no coverage
+                    # either, and must not start one with a blank name
                     last = self._coverage(unit, held["name"], {}, "", forms,
                                           fv(held["name"]), None)
                     last_x, last_line = held["x"], line.y

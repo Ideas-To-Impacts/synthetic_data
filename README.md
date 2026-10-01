@@ -2,9 +2,9 @@
 
 Synthetic insurance documents with gold answers.
 
-Builds declarations pages that look like the ones a pipeline actually meets —
-each with a gold JSON conforming to the live canonical `policy_check` schema,
-and each with an image-only scanned twin.
+Builds synthetic digital twins of real declarations pages — each with a gold
+JSON conforming to the live canonical `policy_check` schema, built from the
+same single pass that drew the PDF, never re-derived from a rendered file.
 
 ```bash
 pip install -e .
@@ -22,7 +22,7 @@ fideon-synth --input-dir "Data\original data" --out E:\fideon-synth\output --cou
 Output lands in:
 
 ```
-output/PDF/          high-quality image-only scanned PDFs
+output/PDF/          synthetic digital PDFs - a real text layer, selectable
 output/gold_json/    canonical gold JSON conforming to config/policy_check/
 ```
 
@@ -54,9 +54,10 @@ type), so `config/policy_check` must keep that name.
 
 For each document it:
 
-1. reads the layout from the text layer - real text, or a scan's invisible
-   OCR layer (one that is flipped or scaled against the page is detected and
-   corrected);
+1. reads the layout from whatever text layer the source already has - real
+   text, or an existing OCR layer a prior scan left on it (one that is
+   flipped or scaled against the page is detected and corrected). No fresh
+   OCR pass is run on it;
 2. finds identifying values by shape and position - dates, money, phones,
    emails, FEINs, policy/hull/account numbers, street and city lines, PO
    boxes, and names above an address or under "Insured", "Agent", "Clients";
@@ -70,19 +71,22 @@ For each document it:
    panel) and draws the new one at the size, baseline and face (serif or
    sans) measured from the page - bounded by where the next word's ink
    begins, and condensed when it is longer than the old one, so it never
-   runs into the words after it - then rescans. Form numbers, ISO forms
-   ("CG 20 18 04 13") included, keep their numbers;
+   runs into the words after it. The output stays this digital render - no
+   scan-degradation pass. Form numbers, ISO forms ("CG 20 18 04 13")
+   included, keep their numbers;
 5. matches each value's printed label to the schema's field names and
-   aliases for the gold. Values it changed but could not place confidently go
-   to `fideon:unmapped` with their label and pages - the gold never guesses.
-   A required section it found no label for is listed in `fideon:incomplete`.
+   aliases for the gold. The gold always has the schema's full shape - every
+   canonical field present, `null` where the document does not state it.
+   Values it changed but could not place confidently are never dropped: they
+   go into the schema's own `additional_fields[]` list, with their label and
+   page - the gold never guesses, and never invents a non-canonical key to
+   hold them either.
 
 Printed paragraphs no field holds - a deductible condition, a navigation
 restriction, a renewal notice, a disclaimer - go to the gold's
 `text_sections`, one per paragraph, titled by the heading over it, in the
-replaced wording; a bulleted list is one section of its items. A scanned
-page's prose is read by OCR from the finished image rather than copied from
-the scan's text layer, which is often garbled. Words OCR ran together
+replaced wording; a bulleted list is one section of its items, read from the
+same text layer as everything else. Words run together in that layer
 ("combinedsinglelimiteachaccident") are set apart again - only into words the
 same document prints on its own; names, web addresses and figures are left
 as printed.
@@ -97,28 +101,13 @@ from one of them.
 A document fails if an original identifying value or date survives anywhere -
 in the PDF, even inside a longer run of digits, or in the gold itself,
 labels included - or if the gold claims a value that is not on the page.
-Known limit: a value the OCR misread is not recognised and stays as printed.
-`FIDEON_KEEP_DIGITAL=1` keeps the pre-scan render for inspection.
-
-**Scanned sources are read again with OCR.** A scan's own text layer often
-drops or garbles printed text (a form number, a date stamp), and an image-only
-PDF has no text at all - text the generator cannot see is neither replaced nor
-put in the gold. With the OCR extra installed, each scanned page is re-read
-from its image and reconciled with its layer: missing text is added, garbled
-values and lines are replaced, and what is added is checked against the page
-like everything else. Install it with:
-
-```bash
-pip install -e ".[ocr]"
-```
-
-Without it, scanned pages are read from their text layer alone; set
-`FIDEON_NO_OCR=1` to skip it on purpose. It adds about six seconds per scanned
-page; pages with a real text layer are not re-read.
+Known limit: a source page with an image and no text layer at all (no OCR
+ever run on it, nested in an otherwise-digital document) contributes nothing
+- flagged per page in the build log, not silently missing.
 
 ---
 
-## The four checks
+## What's checked
 
 Every document is checked as it is built, and the build reports failure rather
 than writing quietly broken data. `fideon-synth` exits non-zero, so it can sit
@@ -126,20 +115,16 @@ in CI without anyone reading the output to find out whether it worked.
 
 | check | what it catches |
 |---|---|
-| **schema** | the gold validates against the merged canonical schema |
+| **schema** | the gold validates against the merged canonical schema (an absent field's `null` failing `FieldValue`'s own `type: object` is expected, reported, not a build error) |
 | **arithmetic** | coverage premiums + fees equal the stated total — the rule the schema itself declares |
-| **page refs** | every value the gold says is printed was found on a page |
-| **scan** | the scanned twin has no extractable text, the same page count, the same page size |
+| **page refs** | every value the gold says is printed was found on a page, re-read off the actually-saved PDF - never just asserted from what the generator meant to draw |
 
-The third is the one that earns its keep. A generator knows what it *meant* to
+The last is the one that earns its keep. A generator knows what it *meant* to
 draw; only a search of the finished PDF knows what it drew. When those disagree
 it is almost always the gold asserting something the page does not say — the
 one kind of error a benchmark cannot survive, because every extractor is then
-marked wrong for reading the document correctly.
-
-It has already caught two: a renewal's prior policy number, and the *kind* of
-fee behind a line the form labels only `Fees:`. Neither is printed anywhere.
-Both are now in `fideon:absent` where they belong.
+marked wrong for reading the document correctly. A value it can't verify is
+dropped from the gold, not asserted on faith, and logged to the build manifest.
 
 ---
 
@@ -153,7 +138,7 @@ Leaves are `FieldValue` objects exactly as `_common.json` defines them:
   "page_ref": [1], "flagged": false }
 ```
 
-Four decisions are baked in, and you should know them before using the output:
+Three decisions are baked in, and you should know them before using the output:
 
 **`deterministic` vs `structural`.** A value printed on the page is
 `deterministic` — it can be quoted. A value the document only *implies* is
@@ -171,26 +156,24 @@ test finds the state `NY` inside `Company` and the language code `en` inside
 missing one, because nobody can spot it. A short value that genuinely occurs
 twice gets both pages — that is what the pages say.
 
-**Only stated fields are emitted.** The dwelling-fire schema has 364 leaves; a
-declaration states about a sixth. Writing the rest as nulls would sextuple the
-file and imply the document was checked for each. Instead every unstated leaf
-is named once in `fideon:absent`, so a harness can separate "the document is
-silent" from "nobody looked", and a hallucinated value has something to be
-scored against.
-
-**Scanned gold says where its page refs came from.** A scan has no text to
-search, so its references are carried from the digital twin, whose layout is
-identical by construction. `fideon:provenance.page_refs_measured_on` names the
-file they were measured on rather than leaving a reader to assume they were
-read off the image.
+**Every canonical field is present, `null` where the document is silent.** The
+gold is always the schema's full shape — every leaf the dwelling-fire schema
+declares (364 of them), say, not just the ~60 a given declaration states. A
+harness can tell "the document is silent" from "nobody looked" by looking at
+one field, not a separate side-list; a hallucinated value still has something
+real to be scored against. Anything detected and changed that couldn't be
+matched to a field with confidence isn't dropped either — it goes into the
+schema's own `additional_fields[]` array, never a non-canonical key.
 
 ---
 
 ## Scanner profiles
 
-Each document is also rasterised, degraded and re-embedded as an image, with
-**no text layer at all**. What varies is *how*. A corpus where every page came
-through one profile measures one thing; these are five different bad days:
+Not used by the generic engine above, which outputs a digital PDF directly.
+These remain for `fideon_synth.scan` - a page rasterised, degraded and
+re-embedded as an image, with **no text layer at all** - should a
+scanned-look render ever be wanted again, standalone or through the older
+declarative `Corpus`/`Template` path (see below). What varies is *how*:
 
 | profile | what it does |
 |---|---|
@@ -203,11 +186,7 @@ through one profile measures one thing; these are five different bad days:
 They are handed out one per document, so a corpus covers the range instead of
 sampling one point of it repeatedly. Degradation is seeded from the document
 key and page number: a scanned page that changed between runs would make a
-regression impossible to see.
-
-Degraded, not destroyed — RapidOCR at 300 dpi recovers 89–97% of the values
-the gold asserts. Restrict the set with `--profile fax_bitonal` (repeatable),
-or build your own:
+regression impossible to see. Build your own:
 
 ```python
 from fideon_synth import Profile
@@ -260,8 +239,7 @@ repetitive.
 
 ## Requirements
 
-`reportlab`, `PyMuPDF`, `Pillow`, `numpy`, `jsonschema`. The `ocr` extra pulls
-`rapidocr-onnxruntime`, needed only to measure how readable the scans are.
+`reportlab`, `PyMuPDF`, `Pillow`, `numpy`, `jsonschema`.
 
 The canonical schemas are read live rather than copied — gold built against a
 copy drifts the moment the real one changes, and nothing tells you, because
