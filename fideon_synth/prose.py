@@ -131,8 +131,11 @@ def _rows(pieces, column=0.9, tight=True):
     return out
 
 
-def _layer_lines(page):
-    """Lines of a page's visible text layer; white text (hidden print codes) left out."""
+def _layer_lines(page, ink=None):
+    """Lines of a page's visible text layer; white text (hidden print codes)
+    and text a font with blank glyphs draws no ink for at all - a tracking
+    string, invisible however honestly its own color metadata reads - are
+    both left out."""
     # the words and their spacing come from the word list; a span only says
     # whether its type is bold or white - spans often carry no spaces at all
     spans = []
@@ -142,7 +145,9 @@ def _layer_lines(page):
                 font = span.get("font", "").lower()
                 bold = bool(span.get("flags", 0) & 16) or any(
                     w in font for w in ("bold", "black", "heavy", "semibold"))
-                spans.append((fitz.Rect(span["bbox"]), bold, span.get("color") == WHITE))
+                r = fitz.Rect(span["bbox"])
+                invisible = ink is not None and r.get_area() > 0 and ink.bbox(r) is None
+                spans.append((r, bold, span.get("color") == WHITE or invisible))
     pieces = []
     for w in page.get_text("words"):
         if not str(w[4]).strip():
@@ -255,7 +260,8 @@ def text_sections(pdf_path):
     sections = {}
     try:
         for page in doc:
-            found = _sections(_layer_lines(page), page.number + 1)
+            ink = overlay.Ink(page)
+            found = _sections(_layer_lines(page, ink), page.number + 1)
             sections.update(found)
     finally:
         doc.close()

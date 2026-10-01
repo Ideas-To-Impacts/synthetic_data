@@ -207,8 +207,13 @@ def test_schedules_lists_and_plain_labels_reach_the_gold(tmp_path, schema, monke
     assert raw(location["location_number"]) == "1"
     assert raw(location["address"]["line_1"]) != "12 Cove Way"
 
-    # a value placed in a schedule is not listed again in additional_fields
-    assert not [a for a in gold["additional_fields"] if a["value"]["raw"] in ("$71", "$18")]
+    # the gold never carries an unmapped value - the schema's own
+    # additional_fields[] stays present and empty, nothing placed in it
+    assert gold["additional_fields"] == []
+    # a value placed in a schedule is not logged again as unmapped
+    log = out / "unmapped_fields.log"
+    logged = log.read_text("utf-8") if log.exists() else ""
+    assert ": $71" not in logged and ": $18" not in logged
 
 
 LEADERS = LINES[:9] + [
@@ -350,14 +355,16 @@ def test_printed_prose_reaches_the_gold_as_text_sections(tmp_path, schema):
     built = generic.synthesize(folder / "prose.pdf", out / "p.pdf", out / "p.json", schema, Values("t"))
     assert_built(built)
     sections = list(json.loads(built.gold.read_text("utf-8"))["text_sections"].values())
-    deductibles, = [s for s in sections if s["section_title"] == "Deductibles"]
-    assert deductibles["raw_text"].endswith("subject to the applicable deductible.")
+    # section_title/section_type are read off the page but are not canonical
+    # TextSection fields - never written into the gold, only into the log
+    assert not any("section_title" in s or "section_type" in s for s in sections)
+    deductibles, = [s for s in sections if s["raw_text"].endswith("subject to the applicable deductible.")]
     assert deductibles["page_range"] == [1]
     begins, = [s for s in sections if s["raw_text"].startswith("Your coverage begins on")]
     assert "08/26/2026" not in begins["raw_text"]         # the replaced date, not the original
     # a list set in two columns is one section; a "Label: value" row is no prose
-    listed, = [s for s in sections if s["section_type"] == "other"]
-    assert listed["raw_text"] == "Pay a bill; Update your policy; Report a claim; Check recalls"
+    listed, = [s for s in sections
+              if s["raw_text"] == "Pay a bill; Update your policy; Report a claim; Check recalls"]
     assert not any(s["raw_text"].startswith("Watercraft and Equipment Value") for s in sections)
 
 
